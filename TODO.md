@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-04-26
+Last updated: 2026-04-29
 
 ---
 
@@ -98,6 +98,17 @@ EPUB Accessibility 1.1 is now a W3C Recommendation and mandatory for all EPUB 3.
 - [ ] **Define wikilink strategy for distributed EPUBs** — choose between: (a) in-EPUB condensed wiki/glossary spine document linked via `doc-glossref`, or (b) strip wikilinks from distributed EPUBs and replace with endnotes. Decision needed before Birukoff epub goes to distribution.
 - [ ] **Update chapter XHTML templates** to use `epub:type` + `role` pairs on all interactive reference elements — never `epub:type` alone. Key pairs: `noteref`/`doc-noteref`, `glossref`/`doc-glossref`, `footnote`/`doc-footnote`
 - [ ] **Document `doc-glossref` as canonical wikilink representation** in the Manual of Style skill (`skills/manual/`) — the pattern for how wikilinks appear in EPUB output vs. in the PWA
+
+### 7. timelinegraph — execute the implementation plan
+*Spec: `docs/superpowers/specs/2026-04-29-timelinegraph-design.md` (`6ba0eec3`). Plan: `docs/superpowers/plans/2026-04-29-timelinegraph.md` (`7e987467`).*
+
+A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`), shipping privately first, surfaced on the landing page once the corpus passes ~200 nodes. Brainstormed, specced, and planned 2026-04-29; execution parked for a dedicated session.
+
+**To resume:** invoke `superpowers:subagent-driven-development` against the plan. 35 tasks across 5 tracks (~15+ hours of subagent activity).
+
+**Hard gate:** Task 21 (deuteranopia validation — Johan eyes-on the red↔green period transition at 1851) must pass before Track 3 starts.
+
+**v1 launch criterion:** internal-tool gate per `projects/timelinegraph/QA.md`. Public landing-page placement is gated separately on corpus density (~200 nodes) + designer pass on cloud-type palette + Lighthouse / axe-core CI.
 
 ---
 
