@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>timelinegraph — prototype 10 design (split-view: graph + vertical timeline + stub panel) — tolstoy.life docs</title>
+<style>
+:root {
+  --ink: #1e1a17;
+  --ink-soft: #4a4038;
+  --paper: #faf7f2;
+  --rule: #d9d1c5;
+  --accent: #6b4423;
+  --accent-soft: #8c6a4a;
+  --measure: 38rem;
+  --measure-wide: 52rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 150%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
+               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.site-header {
+  max-width: var(--measure-wide);
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-header a.home {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-style: italic;
+  white-space: nowrap;
+}
+.site-header a.home:hover { color: var(--accent); }
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
+
+header.doc-header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+header.doc-header .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.8rem;
+}
+header.doc-header h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+header.doc-header .meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+/* ── Typography ── */
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
+h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
+h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
+ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
+li { margin-bottom: 0.55rem; }
+li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+a { color: var(--accent); text-decoration: underline;
+    text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+blockquote {
+  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--accent-soft);
+  color: var(--ink-soft); font-style: italic;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+code, kbd, samp {
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88em;
+  background: rgba(107,68,35,0.07);
+  padding: 0.08em 0.34em;
+  border-radius: 2px;
+}
+pre {
+  background: rgba(107,68,35,0.05);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  margin: 0 0 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+
+table {
+  width: 100%; border-collapse: collapse;
+  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
+}
+th, td {
+  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  font-weight: 600; font-size: 0.82rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-soft); font-style: italic;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* ── Index page ── */
+.featured-section {
+  max-width: var(--measure-wide);
+  margin: 1rem auto 2.5rem;
+  padding: 0 1.5rem;
+}
+.featured-card {
+  display: block;
+  padding: 1.7rem 1.9rem;
+  background: rgba(107, 68, 35, 0.06);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.featured-card:hover {
+  border-color: var(--accent);
+  background: rgba(107, 68, 35, 0.10);
+  color: var(--ink);
+}
+.featured-card .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.7rem;
+}
+.featured-card .card-title {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.featured-card .card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.85rem;
+}
+.featured-card .card-lede {
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0 0 2.5rem;
+}
+.index-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: rgba(107,68,35,0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.index-card:hover {
+  border-color: var(--accent-soft);
+  background: rgba(107,68,35,0.07);
+  color: var(--ink);
+}
+.index-card .card-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.index-card .card-meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.index-card .card-lede {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 2.5rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── Annotations ── */
+mark.annotation {
+  background: rgba(107, 68, 35, 0.13);
+  border-bottom: 1.5px solid var(--accent-soft);
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 1px;
+}
+mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+
+#ann-popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--paper);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
+  padding: 0.9rem 1rem;
+  width: 22rem;
+  display: none;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+#ann-popover .ann-quote {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  border-left: 2px solid var(--accent-soft);
+  padding-left: 0.6rem;
+  line-height: 1.4;
+  max-height: 3.5rem;
+  overflow: hidden;
+}
+#ann-popover textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+  min-height: 4rem;
+  outline: none;
+}
+#ann-popover textarea:focus { border-color: var(--accent-soft); }
+#ann-popover .ann-actions {
+  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
+}
+#ann-popover button {
+  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
+  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink-soft);
+}
+#ann-popover button.primary {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
+#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
+
+#ann-tooltip {
+  position: fixed; z-index: 999;
+  background: var(--ink); color: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.85rem; line-height: 1.5;
+  padding: 0.6rem 0.85rem; border-radius: 3px;
+  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
+  pointer-events: none; display: none; white-space: pre-wrap;
+}
+
+#ann-bar {
+  position: fixed; bottom: 1.2rem; right: 1.4rem;
+  display: none; gap: 0.5rem; z-index: 998;
+}
+#ann-bar button {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
+  cursor: pointer; border: 1px solid var(--accent-soft);
+  background: var(--paper); color: var(--ink-soft);
+  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
+}
+#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
+#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
+#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="site-header">
+  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
+  
+        <span class="breadcrumb">
+          <a href="/INDEX.html">Index</a>
+          <span>›</span>
+          specs
+        </span>
+</div>
+<header class="doc-header">
+  <p class="eyebrow">specs</p>
+  <h1>timelinegraph — prototype 10 design (split-view: graph + vertical timeline + stub panel)</h1>
+  <p class="meta">Last modified 4 May 2026 · <a href="/superpowers/specs/2026-05-04-timelinegraph-prototype-10-design.md">view source</a></p>
+</header>
+<main>
+<h1>Prototype 10 — Split View Design</h1>
+<p>A prototype-level design that breaks the <strong>unified projection</strong> model used in 07–09 (graph and time fused on a single canvas) into <strong>separate, dedicated panels</strong>: a pure force-directed graph on the left, a narrow vertical timeline strip in the middle, and a stub-text panel on the right. The motivation is the complexity problem flagged at the end of prototype 09 — five visual signals (period bands, lane separators, work bars, edge web, varying-size nodes) competing for attention on the same canvas. Prototype 10 separates concerns: the graph shows topology, the timeline shows time, the panel shows content, and they coordinate by selection.</p>
+<p>This document is <strong>not</strong> an amendment to the canonical spec (<a href="./2026-04-29-timelinegraph-design.md"><code>2026-04-29-timelinegraph-design.md</code></a>). The canonical spec describes the unified-projection v1 design and is itself overdue for an amendment after 07–09's divergences (anisotropic Y-zoom, degree-based sizing, always-on edges, two-tier collapse). Prototype 10 is a <em>bigger</em> divergence still: graph and time become physically separate components. If 10 confirms the new direction, the canonical spec gets rewritten in a follow-up pass.</p>
+<hr />
+<h2>1. Decisions locked in</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Graph layout</td>
+<td>Pure d3-force, no time bias; nodes draggable (Obsidian-style)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Timeline visualisation</td>
+<td>Vertical strip, period colour bands as background, year-level → month-level → day-level zoom</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bidirectional graph↔timeline</td>
+<td>A: event-marks on the timeline are clickable → select matching event-node in graph</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Graph data</td>
+<td>Same fake data as prototype 09 (<code>cloudData</code>, <code>worksData</code>, <code>extraEdges</code>, <code>familyData</code>, <code>historyData</code>); real wiki integration deferred</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Right panel</td>
+<td>Stub-only (current <code>desc</code>); "View full article" disabled with tooltip; full articles arrive with real data</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Minor nodes</td>
+<td>Hidden by default; reveal as a local satellite cluster around a clicked work; rest of graph stays put</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Edges</td>
+<td>Always-on faint web (~0.075), SVG; selection brightens incident edges (carries 09's pattern)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Date anchoring</td>
+<td>Works → <code>[written, published]</code>; events → centre on <code>year</code>, span 5y; cloud entities → optional <code>dateRange</code> field, fallback centre on <code>year</code>, span 16y</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Concept anchoring</td>
+<td>When refining <code>dateRange</code> for concepts, prefer conception/coining year (not the person who carried it)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Works visual identity</td>
+<td>Coloured by period (Youth/Soldier/Great Works/Prophet); naturally larger via degree-based sizing</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Initial state</td>
+<td>Welcome panel + onboarding hint in the right panel ("Click a node to explore" + colour legend)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Layout widths</td>
+<td>Sidebar 168px fixed · graph flex · timeline 90px fixed · right panel 380px fixed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Layout</h2>
+<p>Four-column horizontal split, all visible at once, no panels collapsible in v1.</p>
+<pre><code>┌──────────┬────────────────────────────┬──────┬──────────────┐
+│ SIDEBAR  │   GRAPH (force-directed)   │ TIME │ RIGHT PANEL  │
+│ 168px    │   flex: 1 (~57% @ 1500px)  │ 90px │ 380px        │
+│ fixed    │                            │ fixed│ fixed        │
+└──────────┴────────────────────────────┴──────┴──────────────┘
+</code></pre>
+<ul>
+<li>Sidebar: same look as 09 — entity-type filters (person/place/source/concept/work/event), edges/labels toggles, reset button, prototype badge.</li>
+<li>Graph: pure force-directed d3 simulation, runs continuously.</li>
+<li>Timeline: narrow vertical strip with period colour bands as background.</li>
+<li>Right panel: stub content, no border decoration; reads as a quiet companion column.</li>
+</ul>
+<hr />
+<h2>3. Graph</h2>
+<h3>3.1 Layout engine</h3>
+<ul>
+<li>d3 <code>forceSimulation</code> with <code>forceManyBody</code> (charge), <code>forceLink</code>, <code>forceCollide</code>, <code>forceCenter</code>. No <code>forceX</code>/<code>forceY</code> — pure topology, no time bias.</li>
+<li>Simulation runs continuously (does not <code>.stop()</code> after warm-up like 09 did) so dragging a node ripples through the rest in real time.</li>
+<li>Default <code>alphaDecay</code> low enough that the layout stays "alive" but not jittery (~0.02).</li>
+</ul>
+<h3>3.2 Nodes</h3>
+<ul>
+<li>~44 in the default view: cloud (~19) + works (13) + family events (9) + history events (8). Minors hidden until a work is clicked.</li>
+<li>Sized by degree, reusing 09's mapping: <code>r = NODE_R_BASE + 1.4 × deg^0.55</code>, clamped 4–13px (no zoom multiplier — graph has no zoom).</li>
+<li>Coloured:</li>
+<li><strong>Works</strong> → period colour (Youth <code>#4A7C59</code>, Soldier <code>#B83232</code>, Great Works <code>#C8860A</code>, Prophet <code>#2B5F8E</code>). Works inherit 09's spine-bar metaphor.</li>
+<li><strong>Cloud entities</strong> → type colour (<code>TYPE_META</code>).</li>
+<li><strong>Family events</strong> → <code>#ec8853</code> (orange). <strong>History events</strong> → <code>#7aaac8</code> (blue). Same as 09.</li>
+<li>Halo behind each node (carried from 09) at low opacity to soften visual density.</li>
+</ul>
+<h3>3.3 Edges</h3>
+<ul>
+<li>All ~170 edges (with minors hidden — fewer than 09's 252) drawn as straight SVG lines at <code>stroke-opacity: 0.075</code>.</li>
+<li>On selection: incident edges brighten to <code>0.7</code> in the <em>other</em> endpoint's colour; 1-hop neighbour↔neighbour edges glow at <code>0.32</code> soft white; everything else dims to <code>0.025</code>. Carries 09's renderEdges palette.</li>
+<li>No bundling, no canvas, no on-demand reveal in 10. (Parked for prototype 11+.)</li>
+</ul>
+<h3>3.4 Labels</h3>
+<ul>
+<li>At rest: only nodes with <code>degree ≥ 4</code> show labels (carries 09's <code>LABEL_DEGREE_FLOOR</code>).</li>
+<li>On selection: selected node + 1-hop neighbours show labels regardless of degree.</li>
+</ul>
+<h3>3.5 Drag</h3>
+<ul>
+<li>Nodes are draggable using d3-drag. Drag end: pin the node by setting <code>fx/fy</code> to its drop position (so the layout you shape is preserved).</li>
+<li>Double-click a node: clear <code>fx/fy</code> to release the pin and let the simulation re-claim it.</li>
+<li>Dragging never triggers selection (clicks and drags must be distinguishable; use a small movement threshold ~4px, same as 09's <code>dragMoved</code> pattern).</li>
+</ul>
+<h3>3.6 Satellite reveal (work click only)</h3>
+<ul>
+<li>Clicking a work-node:<br />
+  1. Fetches the work's minors (5–11 of them, already in the data as <code>worksData[i].minors</code>).<br />
+  2. Renders them as a <em>separate satellite layer</em>, not added to the main simulation. Each minor's position is computed deterministically from the clicked work's current screen position: a small radial arrangement (e.g. evenly distributed on a ~70px-radius circle around the work, jittered slightly). The work-node itself stays governed by the main force; satellites move with the work as it drifts.<br />
+  3. Edges between work↔minor and minor↔minor (where they exist in <code>extraEdges</code>) are drawn in the same SVG layer as the satellites, at the selection-bright opacity.<br />
+  4. Satellites fade in over ~250ms.</li>
+<li>Clicking another work or background:<br />
+  1. Previous work's satellites fade out (~200ms).<br />
+  2. New satellites (if applicable) fade in.</li>
+<li>Satellites are not in the main d3 simulation, so they never exert charge/collide on the global graph. The non-minor nodes' force layout is completely unaffected by satellite reveal.</li>
+</ul>
+<h3>3.7 Selection state</h3>
+<table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click a node</td>
+<td>Spotlight (selected + 1-hop neighbours full opacity, rest dim to ~0.18); incident edges brighten; if a work, satellites fade in; right panel + timeline update</td>
+</tr>
+<tr>
+<td>Click background</td>
+<td>Drop spotlight; satellites fade out; right panel returns to welcome state; timeline stays at its current zoom</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>Same as click background</td>
+</tr>
+<tr>
+<td>Drag a node</td>
+<td>Pin (fx/fy); does not change selection</td>
+</tr>
+<tr>
+<td>Double-click a node</td>
+<td>Release pin</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Vertical timeline</h2>
+<h3>4.1 Visual identity</h3>
+<ul>
+<li>90px fixed-width vertical strip.</li>
+<li>Background: four period colour bands stacked top-to-bottom — Youth (1828–1851) green, Soldier (1851–1862) red, Great Works (1862–1880) amber, Prophet (1880–1910) blue. Pre/post zones subdued gray, same palette as 09's <code>PERIODS</code>.</li>
+<li>Period labels rotated 90° (or vertical-text) on each band.</li>
+<li>Year ticks on the left edge, granularity adapted to current zoom span:</li>
+<li>span &gt; 60y → every 10 years</li>
+<li>span 20–60y → every 5 years</li>
+<li>span 5–20y → every year</li>
+<li>span 1–5y → every quarter (or month if dense enough)</li>
+<li>span &lt; 1y → every month (or week / day at extreme zoom)</li>
+<li>Major event marks (small dots, ~3px) at their year position on the right edge of the strip, in the event's subtype colour. ~17 marks total at default zoom (9 family + 8 history).</li>
+</ul>
+<h3>4.2 Zoom-on-click-from-graph</h3>
+<p>When a node in the graph is selected, the timeline slides+zooms to its date region:</p>
+<table>
+<thead>
+<tr>
+<th>Node kind</th>
+<th>Target span (centre, span)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Work</td>
+<td>centre = <code>(written + published) / 2</code>, span = <code>max(5, (published − written) × 2)</code></td>
+</tr>
+<tr>
+<td>Event</td>
+<td>centre = <code>year</code>, span = <code>5</code> years</td>
+</tr>
+<tr>
+<td>Cloud entity with <code>dateRange = [s, e]</code></td>
+<td>centre = <code>(s + e) / 2</code>, span = <code>(e − s) × 1.1</code></td>
+</tr>
+<tr>
+<td>Cloud entity without <code>dateRange</code></td>
+<td>centre = <code>year</code>, span = <code>16</code> years (one period of context)</td>
+</tr>
+</tbody>
+</table>
+<p>Animation: ease <code>viewStart</code>/<code>viewEnd</code> (now scrolling vertically) over 750ms with <code>easeInOutCubic</code>. Same animation pattern as 09; respects <code>prefers-reduced-motion</code>.</p>
+<h3>4.3 Bidirectional: timeline → graph</h3>
+<ul>
+<li>Hovering an event-mark shows a small tooltip with the event title (same tooltip module as graph nodes).</li>
+<li>Clicking an event-mark selects the corresponding event-node in the graph (full selection cycle: spotlight, edge brighten, right panel update). The timeline does not zoom further on its own click — the selection IS the timeline's response.</li>
+<li>No drag-to-pan or wheel-zoom on the timeline strip in prototype 10. Reserved for a later pass.</li>
+</ul>
+<hr />
+<h2>5. Right panel</h2>
+<h3>5.1 At rest (welcome state)</h3>
+<ul>
+<li>Header: <code>Tolstoy's Universe</code>.</li>
+<li>One-line hint: <code>Click a node to explore.</code></li>
+<li>Compact colour legend: a small grid of swatches showing the type colours and their labels (Person, Place, Source, Concept, Work [period accent], Event).</li>
+<li>No fake content beyond this; the panel must read as deliberately quiet.</li>
+</ul>
+<h3>5.2 On selection</h3>
+<pre><code>┌──────────────────────────────┐
+│ [TITLE in entity colour]     │
+│ [Type badge] [Period chip*]  │
+│ [Date line]                  │
+│                              │
+│ [Stub paragraph, ~1–2 sent.] │
+│                              │
+│ Connected entities:          │
+│ • People — Sofia, Chertkov   │
+│ • Works — Anna Karenina, …   │
+│ • Concepts — Non-resistance  │
+│                              │
+│ [View full article →]        │
+│   (disabled, tooltip)        │
+└──────────────────────────────┘
+                      * works only
+</code></pre>
+<ul>
+<li>Title in entity colour (same <code>colorForId</code> rule as 09).</li>
+<li>Type badge: small pill, same styling as 09's tooltip's <code>tt-type</code>.</li>
+<li>Period chip (works only): the period name + range, in the period colour.</li>
+<li>Date line:</li>
+<li>Work → <code>Written {written} · Published {published}</code></li>
+<li>Event → <code>{year}</code></li>
+<li>Cloud with range → <code>{startYear}–{endYear}</code></li>
+<li>Cloud without range → <code>{year}</code></li>
+<li>Stub paragraph: the existing <code>desc</code> from the data, full text (no 160-char truncation like the tooltip).</li>
+<li>Connected entities: a list grouped by type (works, people, places, sources, concepts, events). Each entity is a clickable button that re-runs the selection cycle (spotlight + timeline zoom + panel re-fill). Excludes minors when minors are hidden globally.</li>
+<li>"View full article →" button: visually present but disabled (<code>opacity: 0.4</code>, <code>cursor: not-allowed</code>); tooltip on hover: <code>Full articles arrive with real wiki data.</code></li>
+</ul>
+<h3>5.3 Scroll</h3>
+<ul>
+<li>Panel content overflows vertically when the connected-entities list is long. Standard browser scroll, no custom scrollbar.</li>
+</ul>
+<h3>5.4 Close</h3>
+<ul>
+<li>No explicit close button. Clicking background in the graph clears selection, which returns the panel to its welcome state.</li>
+</ul>
+<hr />
+<h2>6. Data model</h2>
+<h3>6.1 Carried from prototype 09</h3>
+<ul>
+<li><code>cloudData</code>, <code>worksData</code> (with <code>minors</code>), <code>extraEdges</code>, <code>familyData</code>, <code>historyData</code> — copied unchanged.</li>
+<li><code>nodeById</code>, <code>allEdges</code>, <code>degreeById</code>, <code>getConnectedSet</code> — same construction logic.</li>
+<li><code>TYPE_META</code>, <code>PERIODS</code>, <code>periodFor</code> — same.</li>
+</ul>
+<h3>6.2 Additions for prototype 10</h3>
+<p><strong>Optional <code>dateRange</code> on cloud entities.</strong> Where the single <code>year</code> is misleading (Sofia anchored at her birth, Yasnaya at Tolstoy's birth there, etc.), add <code>dateRange: [startYear, endYear]</code>. Concrete entries to add:</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>Current <code>year</code></th>
+<th>Add <code>dateRange</code></th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sofia</code></td>
+<td>1844</td>
+<td><code>[1862, 1910]</code></td>
+<td>Married life is the relevant span</td>
+</tr>
+<tr>
+<td><code>yasnaya</code></td>
+<td>1828</td>
+<td><code>[1828, 1910]</code></td>
+<td>His entire life there</td>
+</tr>
+<tr>
+<td><code>caucasus-p</code></td>
+<td>1851</td>
+<td><code>[1851, 1854]</code></td>
+<td>Deployment span</td>
+</tr>
+<tr>
+<td><code>sevastopol-p</code></td>
+<td>1854</td>
+<td><code>[1854, 1856]</code></td>
+<td>Siege span</td>
+</tr>
+<tr>
+<td><code>chertkov-p</code></td>
+<td>1854</td>
+<td><code>[1883, 1910]</code></td>
+<td>Discipleship span</td>
+</tr>
+<tr>
+<td><code>non-resistance</code></td>
+<td>1880</td>
+<td><code>[1880, 1910]</code></td>
+<td>Articulated post-crisis through to death</td>
+</tr>
+<tr>
+<td><code>tolstoyanism</code></td>
+<td>1885</td>
+<td><code>[1885, 1910]</code></td>
+<td>Movement coalesced post-Confession</td>
+</tr>
+<tr>
+<td><code>astapovo</code></td>
+<td>1910</td>
+<td>(keep as point year)</td>
+<td>Date of death; one moment</td>
+</tr>
+<tr>
+<td>(others)</td>
+<td>—</td>
+<td>leave as point year unless meaningful</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>For concepts/philosophy, the anchor is conception/coining, not the carrier. The data above already follows this rule (Non-resistance anchored 1880 = post-Confession articulation, not Tolstoy's birth or death).</p>
+<h3>6.3 Removed from prototype 10</h3>
+<ul>
+<li><code>assignSubLanes</code>, <code>NUM_SUB_LANES</code>, sub-lane packing — works are now nodes, no Gantt placement needed.</li>
+<li><code>initGraphForce</code> (09's bespoke single-tick simulation pinning cloud to year and minors under works) — replaced by a continuously-running pure d3-force.</li>
+<li>Anisotropic Y-zoom (<code>Y_ANISO</code>) — graph has no zoom.</li>
+<li>Camera-DY drag — graph has no panning (force layout takes care of itself; user drags individual nodes).</li>
+<li>Period-zone overlay rendering inside the graph — period colour now lives on work-nodes and on the timeline strip.</li>
+<li>Spine, lanes, work-bar rendering — collapsed into nodes.</li>
+<li>Minimap — deferred.</li>
+</ul>
+<hr />
+<h2>7. Components (file structure)</h2>
+<p>Single self-contained HTML, same pattern as 07–09:</p>
+<pre><code>projects/timelinegraph/prototypes/10-split-view/
+├── index.html      single file: HTML, CSS, JS in one document
+└── NOTES.md        session handoff notes (written at end of prototype build)
+</code></pre>
+<p>The file is structured top-to-bottom in the same sections 09 used: config → fake data → derived structures → state → dimensions → projection → render layers (graph SVG, timeline SVG, panel DOM) → render functions per layer → tooltip → animated view → selection → input handlers (drag, click, keyboard) → sidebar → init/resize.</p>
+<p>No build step. d3 v7 from CDN. Open <code>index.html</code> in a browser to use.</p>
+<hr />
+<h2>8. Out of scope for prototype 10</h2>
+<p>Explicit non-goals so the prototype stays focused:</p>
+<ul>
+<li>Real wiki-data parsing (<code>website/src/wiki/**</code>). Still cross-cutting in <code>TODO.md</code>; prototype 10 keeps fake data.</li>
+<li>Edge rendering to canvas (D from Q8). Parked; revisit if perf needs it.</li>
+<li>Edge bundling / curved routing.</li>
+<li>Edges-on-demand or top-N edge filter.</li>
+<li>Bidirectional B/D from Q3 (timeline-driven graph filter, brushing).</li>
+<li>Minimap.</li>
+<li>Touch / pinch gestures.</li>
+<li>Keyboard navigation beyond Escape.</li>
+<li>Screen-reader fallback (a list view of currently-visible entities).</li>
+<li>URL state (focused node + viewport).</li>
+<li>Wheel-zoom or drag-pan on the timeline strip.</li>
+<li>"View full article" wiring (button is visibly disabled).</li>
+<li>Edge-provenance encoding (documented / inferred / biographer's claim).</li>
+</ul>
+<hr />
+<h2>9. Testing</h2>
+<p>No automated tests (consistent with 07–09 prototypes). Verification is Johan-eyes-on:</p>
+<ul>
+<li>Open <code>prototypes/10-split-view/index.html</code> in a browser.</li>
+<li>Default state: graph at rest, edges faint, timeline showing 1828–1910 with period bands, right panel in welcome mode.</li>
+<li>Click a few works in different periods → verify timeline slides+zooms to the work's span; satellites fade in around the work; right panel fills with stub + connections.</li>
+<li>Click a connected-entity link in the panel → verify selection updates correctly across all three components.</li>
+<li>Click a cloud entity (e.g. Sofia) → verify timeline zooms to her <code>dateRange</code> (1862–1910), no satellites.</li>
+<li>Click an event-mark on the timeline → verify the matching event-node lights up in the graph and the panel fills.</li>
+<li>Drag nodes around in the graph → verify pin behaviour; double-click → verify release.</li>
+<li>Click background or Esc → verify spotlight clears, satellites fade, panel returns to welcome, timeline stays at current zoom.</li>
+</ul>
+<p>The success criterion is the same as 09's complexity-reduction goal: at rest, the screen reads as <strong>three calm regions</strong>, not one busy canvas.</p>
+<hr />
+<h2>10. After prototype 10</h2>
+<p>If the structural shift confirms (Johan-eyes-on says yes):</p>
+<ol>
+<li>Write a NOTES.md handoff (same pattern as 07/08/09 NOTES).</li>
+<li>Update <code>projects/timelinegraph/TODO.md</code> with the prototype 10 outcome and any candidates for prototype 11.</li>
+<li>Amend the canonical spec (<a href="./2026-04-29-timelinegraph-design.md"><code>2026-04-29-timelinegraph-design.md</code></a>) to reflect the split-view architecture, since 07–09 plus 10 represent a substantial divergence from the unified-projection v1.</li>
+<li>Only then start the production track (<code>docs/superpowers/plans/2026-04-29-timelinegraph.md</code>, Tracks 0–4) on the new visual baseline.</li>
+</ol>
+<p>If the structural shift does <em>not</em> confirm, prototype 11 reverts toward 09's unified model and applies the lighter-weight complexity reductions parked in 09's NOTES (canvas edges, edges-on-demand, top-N filter, etc.).</p>
+</main>
+<footer>tolstoy.life · public documentation</footer>
+
+<!-- Annotation UI -->
+<div id="ann-popover">
+  <div class="ann-quote" id="ann-quote"></div>
+  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <div class="ann-actions">
+    <button id="ann-cancel">Cancel</button>
+    <button class="primary" id="ann-save">Save</button>
+  </div>
+</div>
+<div id="ann-tooltip"></div>
+<div id="ann-bar">
+  <button id="ann-export">Copy annotations</button>
+  <button class="danger" id="ann-clear">Clear all</button>
+</div>
+
+<script>
+(function() {
+  const DOC_KEY = 'docs/superpowers/specs/2026-05-04-timelinegraph-prototype-10-design';
+  const STORE_KEY = 'tolstoy_annotations';
+
+  // ── Storage ──────────────────────────────────────────────────────────────
+  function loadAll() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveAll(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+  function loadDoc() {
+    return loadAll()[DOC_KEY] || [];
+  }
+  function saveDoc(anns) {
+    const all = loadAll();
+    if (anns.length === 0) delete all[DOC_KEY];
+    else all[DOC_KEY] = anns;
+    saveAll(all);
+  }
+
+  // ── Fuzzy text anchor ────────────────────────────────────────────────────
+  function getContext(range) {
+    const selected = range.toString();
+    const container = range.commonAncestorContainer;
+    const full = (container.textContent || container.innerText || '');
+    const start = full.indexOf(selected);
+    if (start === -1) return null;
+    return {
+      text: selected,
+      before: full.slice(Math.max(0, start - 30), start),
+      after: full.slice(start + selected.length, start + selected.length + 30)
+    };
+  }
+
+  // ── Rendering ────────────────────────────────────────────────────────────
+  function findAndWrap(ann, index) {
+    const main = document.querySelector('main');
+    if (!main) return;
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const idx = node.textContent.indexOf(ann.anchor.text);
+      if (idx === -1) continue;
+      const before10 = ann.anchor.before.slice(-10);
+      const after10 = ann.anchor.after.slice(0, 10);
+      const nodeText = node.textContent;
+      const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
+                     || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
+      if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
+
+      const before = node.textContent.slice(0, idx);
+      const after = node.textContent.slice(idx + ann.anchor.text.length);
+      const mark = document.createElement('mark');
+      mark.className = 'annotation';
+      mark.dataset.index = index;
+      mark.textContent = ann.anchor.text;
+      const afterNode = document.createTextNode(after);
+      node.textContent = before;
+      node.parentNode.insertBefore(mark, node.nextSibling);
+      node.parentNode.insertBefore(afterNode, mark.nextSibling);
+      attachTooltip(mark, ann, index);
+      break;
+    }
+  }
+
+  function renderAll() {
+    document.querySelectorAll('mark.annotation').forEach(m => {
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    const anns = loadDoc();
+    anns.forEach((ann, i) => findAndWrap(ann, i));
+    updateBar();
+  }
+
+  // ── Tooltip ──────────────────────────────────────────────────────────────
+  const tooltip = document.getElementById('ann-tooltip');
+
+  function attachTooltip(mark, ann, index) {
+    mark.addEventListener('mouseenter', e => {
+      tooltip.textContent = ann.comment;
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    mark.addEventListener('mousemove', positionTooltip);
+    mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    mark.addEventListener('click', e => {
+      e.stopPropagation();
+      showDeleteConfirm(index, mark);
+    });
+  }
+
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // ── Delete confirm ────────────────────────────────────────────────────────
+  function showDeleteConfirm(index, mark) {
+    const anns = loadDoc();
+    const comment = anns[index] ? anns[index].comment : '';
+    if (confirm('Delete this annotation?\n\n"' + comment + '"')) {
+      anns.splice(index, 1);
+      saveDoc(anns);
+      renderAll();
+    }
+  }
+
+  // ── Popover ───────────────────────────────────────────────────────────────
+  const popover = document.getElementById('ann-popover');
+  const annText = document.getElementById('ann-text');
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+  let pendingRange = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
+
+  function hidePopover() {
+    popover.style.display = 'none';
+    annText.value = '';
+    pendingAnchor = null;
+    if (pendingRange) { window.getSelection().removeAllRanges(); pendingRange = null; }
+  }
+
+  function showPopover(x, y, anchor, range) {
+    pendingAnchor = anchor;
+    pendingRange = range;
+    annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
+    popover.style.display = 'block';
+    let px = x, py = y + 12;
+    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
+    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
+    setTimeout(() => annText.focus(), 50);
+  }
+
+  // ── Selection listener ────────────────────────────────────────────────────
+  document.addEventListener('mouseup', e => {
+    if (popover.contains(e.target)) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    const range = sel.getRangeAt(0);
+    if (!main.contains(range.commonAncestorContainer)) return;
+    const anchor = getContext(range);
+    if (!anchor) return;
+    showPopover(e.clientX, e.clientY, anchor, range);
+  });
+
+  document.addEventListener('mousedown', e => {
+    if (!popover.contains(e.target)) hidePopover();
+  });
+
+  // ── Export / clear bar ────────────────────────────────────────────────────
+  const bar = document.getElementById('ann-bar');
+
+  function updateBar() {
+    const anns = loadDoc();
+    bar.style.display = anns.length > 0 ? 'flex' : 'none';
+  }
+
+  document.getElementById('ann-export').addEventListener('click', () => {
+    const anns = loadDoc();
+    if (!anns.length) return;
+    const lines = ['# Annotations — ' + DOC_KEY, ''];
+    anns.forEach((a, i) => {
+      lines.push('## ' + (i+1) + '. ' + a.created.slice(0,10));
+      lines.push('> ' + a.anchor.text);
+      lines.push('');
+      lines.push(a.comment);
+      lines.push('');
+    });
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      const btn = document.getElementById('ann-export');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    });
+  });
+
+  document.getElementById('ann-clear').addEventListener('click', () => {
+    if (confirm('Delete all annotations on this page?')) {
+      saveDoc([]);
+      renderAll();
+    }
+  });
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  renderAll();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>timelinegraph — design spec — tolstoy.life docs</title>
+<style>
+:root {
+  --ink: #1e1a17;
+  --ink-soft: #4a4038;
+  --paper: #faf7f2;
+  --rule: #d9d1c5;
+  --accent: #6b4423;
+  --accent-soft: #8c6a4a;
+  --measure: 38rem;
+  --measure-wide: 52rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 150%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
+               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.site-header {
+  max-width: var(--measure-wide);
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-header a.home {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-style: italic;
+  white-space: nowrap;
+}
+.site-header a.home:hover { color: var(--accent); }
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
+
+header.doc-header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+header.doc-header .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.8rem;
+}
+header.doc-header h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+header.doc-header .meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+/* ── Typography ── */
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
+h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
+h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
+ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
+li { margin-bottom: 0.55rem; }
+li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+a { color: var(--accent); text-decoration: underline;
+    text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+blockquote {
+  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--accent-soft);
+  color: var(--ink-soft); font-style: italic;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+code, kbd, samp {
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88em;
+  background: rgba(107,68,35,0.07);
+  padding: 0.08em 0.34em;
+  border-radius: 2px;
+}
+pre {
+  background: rgba(107,68,35,0.05);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  margin: 0 0 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+
+table {
+  width: 100%; border-collapse: collapse;
+  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
+}
+th, td {
+  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  font-weight: 600; font-size: 0.82rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-soft); font-style: italic;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* ── Index page ── */
+.featured-section {
+  max-width: var(--measure-wide);
+  margin: 1rem auto 2.5rem;
+  padding: 0 1.5rem;
+}
+.featured-card {
+  display: block;
+  padding: 1.7rem 1.9rem;
+  background: rgba(107, 68, 35, 0.06);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.featured-card:hover {
+  border-color: var(--accent);
+  background: rgba(107, 68, 35, 0.10);
+  color: var(--ink);
+}
+.featured-card .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.7rem;
+}
+.featured-card .card-title {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.featured-card .card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.85rem;
+}
+.featured-card .card-lede {
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0 0 2.5rem;
+}
+.index-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: rgba(107,68,35,0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.index-card:hover {
+  border-color: var(--accent-soft);
+  background: rgba(107,68,35,0.07);
+  color: var(--ink);
+}
+.index-card .card-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.index-card .card-meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.index-card .card-lede {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 2.5rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── Annotations ── */
+mark.annotation {
+  background: rgba(107, 68, 35, 0.13);
+  border-bottom: 1.5px solid var(--accent-soft);
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 1px;
+}
+mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+
+#ann-popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--paper);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
+  padding: 0.9rem 1rem;
+  width: 22rem;
+  display: none;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+#ann-popover .ann-quote {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  border-left: 2px solid var(--accent-soft);
+  padding-left: 0.6rem;
+  line-height: 1.4;
+  max-height: 3.5rem;
+  overflow: hidden;
+}
+#ann-popover textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+  min-height: 4rem;
+  outline: none;
+}
+#ann-popover textarea:focus { border-color: var(--accent-soft); }
+#ann-popover .ann-actions {
+  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
+}
+#ann-popover button {
+  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
+  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink-soft);
+}
+#ann-popover button.primary {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
+#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
+
+#ann-tooltip {
+  position: fixed; z-index: 999;
+  background: var(--ink); color: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.85rem; line-height: 1.5;
+  padding: 0.6rem 0.85rem; border-radius: 3px;
+  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
+  pointer-events: none; display: none; white-space: pre-wrap;
+}
+
+#ann-bar {
+  position: fixed; bottom: 1.2rem; right: 1.4rem;
+  display: none; gap: 0.5rem; z-index: 998;
+}
+#ann-bar button {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
+  cursor: pointer; border: 1px solid var(--accent-soft);
+  background: var(--paper); color: var(--ink-soft);
+  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
+}
+#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
+#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
+#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="site-header">
+  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
+  
+        <span class="breadcrumb">
+          <a href="/INDEX.html">Index</a>
+          <span>›</span>
+          specs
+        </span>
+</div>
+<header class="doc-header">
+  <p class="eyebrow">specs</p>
+  <h1>timelinegraph — design spec</h1>
+  <p class="meta">Last modified 29 April 2026 · <a href="/superpowers/specs/2026-04-29-timelinegraph-design.md">view source</a></p>
+</header>
+<main>
+<h1>timelinegraph — Design Spec</h1>
+<p>A 2D knowledge-graph visualisation of Tolstoy's universe, intended for the landing page of <a href="https://tolstoy.life">tolstoy.life</a>. Combines a horizontal multi-lane timeline spine with an orbital cloud of related entities; uses Tolstoy's lifespan (1828–1910), divided into the four canonical periods, as the visual frame.</p>
+<p>This spec is the output of two research rounds (see <a href="../../../projects/timelinegraph/RESEARCH.md"><code>projects/timelinegraph/RESEARCH.md</code></a>) plus a structured brainstorming pass. It locks in the v1 design and serves as input to the implementation plan.</p>
+<hr />
+<h2>1. Decisions locked in</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>v1 staging</td>
+<td>Build privately, ship publicly when corpus passes ~200 nodes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Primary task</td>
+<td>Visitor exploration of Tolstoy's universe</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Entity scope</td>
+<td>All wiki types (person, place, event, concept, translator, institution, adaptation, criticalWork, archivalFond) + works + (eventually) letters; sidebar type filters; default all on</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Edge model</td>
+<td>Typed by relationship (frontmatter <code>relatedArticles</code>, <code>relatedWorks</code> with <code>relationshipType</code>, body <code>[[wikilinks]]</code>); colour/style encodes type</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Focus model</td>
+<td>Tolstoy default + URL-controlled focus param (<code>/graph/?focus=anna-karenina</code>)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Layout</td>
+<td>Horizontal multi-lane spine + orbital cloud (NOT radial-around-Tolstoy)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Lanes</td>
+<td>Works · Family Events · Historical Events · (Letters lane planned, deferred until corpus exists)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Cloud positioning</td>
+<td>Above + below spine; time-anchored where dates exist</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Lifespan band</td>
+<td>Four colored period zones (Green / Red / Amber / Blue) with vertical guidelines at transitions; pre/post zones subdued gray</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Tolstoy representation</td>
+<td>The colored band IS him; family-event nodes deep-link to anchored sections of his wiki page (e.g. <code>/wiki/leo-tolstoy/#starting-university</code>)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Hover</td>
+<td>Small floating stub-preview card (wikilink-style peek)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Click</td>
+<td>Opens larger modal with full stub; click modal again → navigate; click outside → close</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Zoom semantics</td>
+<td>Zoom = time resolution (decades → years → months → days); reveals more nodes near cursor</td>
+</tr>
+<tr>
+<td>14</td>
+<td>No draggable brush</td>
+<td>Zoom IS the time filter</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Architecture</h2>
+<p>A single Eleventy page (<code>website/src/pages/graph.njk</code>, served at <code>/graph/</code>), implemented as a vanilla-ES-module JavaScript bundle.</p>
+<p>Two stacked render layers, one shared data model, one shared coordinate system:</p>
+<pre><code>┌─────────────────────────────────────────────────┐
+│   D3 SVG layer (top, transparent over PIXI)     │
+│   • Spine axis (years), period zones,           │
+│     vertical period dividers, period labels     │
+│   • Lane backgrounds                            │
+│   • Work bars + event points                    │
+│   • Hover stub card                             │
+│   • Click modal                                 │
+│   • Sidebar UI (type filters)                   │
+├─────────────────────────────────────────────────┤
+│   PIXI.js v8 WebGL canvas (bottom)              │
+│   • Cloud nodes (bloom-filtered sprites)        │
+│   • Cloud edges (typed by relationship)         │
+│   • Parallax starfield                          │
+│   • Edge-flow particles (deferred — post-v1)    │
+└─────────────────────────────────────────────────┘
+</code></pre>
+<p>Both layers share:</p>
+<ul>
+<li>A <strong>graphology</strong> graph instance (single source of truth for nodes + edges).</li>
+<li>A <strong>D3 zoom transform</strong> representing the current time window. Both layers project from <code>(date, force_y) → (pixel_x, pixel_y)</code> using the same shared <code>timeScale</code>.</li>
+<li>A <strong>focus state</strong> (currently-focused entity ID, sourced from URL param or default <code>leo-tolstoy</code>).</li>
+</ul>
+<p>The page is fully static — no backend, no runtime queries. All data ships as a JSON artifact built at Eleventy build time.</p>
+<p>The bundle is <code>assets/graph/main.mjs</code>. No framework. Bundling step (esbuild or rollup) chosen to match what <code>website/</code> already uses.</p>
+<p><strong>Two-layer rationale:</strong> SVG is best for axes / text / accessibility / interactivity. WebGL is best for many sprites with bloom effects. Each layer does what its tech is good at.</p>
+<hr />
+<h2>3. Components</h2>
+<pre><code>assets/graph/
+├── main.mjs                 ← entry: wires everything, mounts to DOM
+├── data/
+│   ├── load.mjs             ← fetch + parse graph.json into graphology
+│   └── types.mjs            ← shared type definitions (nodes, edges)
+├── scale/
+│   └── timeScale.mjs        ← shared d3.scaleTime + zoom transform math
+├── spine/
+│   ├── axis.mjs             ← year ticks, period zones, period dividers + labels
+│   ├── lanes.mjs            ← lane backgrounds + lane labels
+│   └── items.mjs            ← work bars + event points; hover/click handlers
+├── cloud/
+│   ├── physics.mjs          ← d3-force (forceX/Y/Link/Collide)
+│   ├── render.mjs           ← PIXI sprites, bloom filter, edges
+│   └── starfield.mjs        ← parallax background layer
+├── interact/
+│   ├── zoom.mjs             ← scroll-wheel handler; updates timeScale
+│   ├── hover.mjs            ← stub-preview tooltip rendering
+│   ├── modal.mjs            ← click modal: open/close state, click-out-to-close, Esc handler
+│   └── route.mjs            ← URL focus param handling
+├── ui/
+│   ├── sidebar.mjs          ← entity-type filter checkboxes + reset button
+│   └── stub.mjs             ← shared stub-card content (hover and modal both render this)
+└── index.css                ← styles for SVG layer + UI chrome
+</code></pre>
+<h3>Module responsibilities</h3>
+<ul>
+<li><strong><code>load.mjs</code></strong> — fetches <code>graph.json</code> and <code>wiki-previews-*.json</code>, validates shapes, populates a graphology instance, returns it joined with stub data.</li>
+<li><strong><code>timeScale.mjs</code></strong> — owns the <code>(date) → (pixel_x)</code> transform and the current zoom state. Other modules subscribe to changes.</li>
+<li><strong><code>spine/axis.mjs</code></strong> — draws the time axis ticks (resolution adapts to zoom: decades → years → months → days), the four colored period zones (Youth/Soldier/Great Works/Prophet), the vertical period-transition guidelines (1851 / 1862 / 1880), the period labels, and the subdued pre-1828 / post-1910 grey zones.</li>
+<li><strong><code>spine/lanes.mjs</code></strong> — draws horizontal lane bands and lane labels (Works / Family / History / Letters).</li>
+<li><strong><code>spine/items.mjs</code></strong> — places work bars (start-of-writing → publication) and event points on the lanes. Wires hover and click events.</li>
+<li><strong><code>cloud/physics.mjs</code></strong> — runs the d3-force loop. Anchors nodes to time via <code>forceX(node =&gt; timeScale(node.dates.primary))</code>. Force-pulls cloud nodes away from the spine band via <code>forceY</code>. <code>forceLink</code> for edges. <code>forceCollide</code> for spacing.</li>
+<li><strong><code>cloud/render.mjs</code></strong> — every animation tick, syncs PIXI sprite positions to physics state. Owns the <code>AdvancedBloomFilter</code>.</li>
+<li><strong><code>cloud/starfield.mjs</code></strong> — three-layer parallax background. Drift speed scales with zoom-pan, not real time.</li>
+<li><strong><code>interact/zoom.mjs</code></strong> — scroll-wheel handler. Updates <code>timeScale</code> zoom transform. Notifies subscribers (<code>axis</code>, <code>items</code>, <code>physics</code>, <code>cloud render</code>, <code>starfield</code>).</li>
+<li><strong><code>interact/hover.mjs</code></strong> — picks up hover events from both layers, renders a small floating stub card following the cursor (8px offset, snaps inside viewport).</li>
+<li><strong><code>interact/modal.mjs</code></strong> — picks up click events from both layers, opens a larger centered modal, owns open/close state. Click anywhere on modal content → navigate (using the entity's <code>wikiUrl</code>, plus <code>#anchor</code> fragment for family events). Click outside modal or Esc → close. Click another node while a modal is open → swap to the new node's modal (no need to close first).</li>
+<li><strong><code>interact/route.mjs</code></strong> — reads <code>?focus=</code> on load, listens for <code>popstate</code>, exposes <code>setFocus(id)</code> API, updates URL via <code>history.replaceState</code>.</li>
+<li><strong><code>ui/sidebar.mjs</code></strong> — checkbox list of entity types; toggles set a <code>visibleTypes</code> Set; physics + render react. "Reset" button: clears focus, restores all type filters, resets zoom to full lifespan view.</li>
+<li><strong><code>ui/stub.mjs</code></strong> — shared stub-card content (rendered identically into hover tooltip and click modal, just at different sizes / detail levels). Sources content from the existing <code>wiki-previews-*.json</code> bundle.</li>
+</ul>
+<h3>Module boundaries</h3>
+<ul>
+<li>Modules communicate via a small <strong>event bus</strong> (mitt-style): <code>zoom:change</code>, <code>focus:change</code>, <code>filter:change</code>, <code>hover:enter</code>, <code>hover:leave</code>, <code>node:click</code>, <code>modal:open</code>, <code>modal:close</code>. No module imports another module's internal state.</li>
+<li>The graphology instance and <code>timeScale</code> are passed in at construction; modules don't reach for globals.</li>
+<li>Each module file should stay under ~200 lines. Growth past that is a signal it's doing too much.</li>
+</ul>
+<hr />
+<h2>4. Data pipeline</h2>
+<p>The viz consumes a single build-time JSON artifact: <code>graph.json</code>, built by a Node script that runs as a pre-build step inside the existing Eleventy chain (precedent: <code>website/.github/scripts/validate-frontmatter.mjs</code>).</p>
+<pre><code>website/src/wiki/*.md       ─┐
+website/src/works/**/*.md   ─┼─→  build-graph.mjs  ─→  graph.json
+website/src/letters/*.md    ─┘    (pre-Eleventy)        (passthrough-copied
+                                                         to /assets/graph/data/)
+                                                              │
+                                            ┌─────────────────┘
+wiki-previews-v&lt;date&gt;-&lt;hash&gt;.json ──────────┤    runtime: viz fetches both
+(existing Layer-1 artifact)                 ┘
+</code></pre>
+<h3>Pipeline rules</h3>
+<ul>
+<li><strong>Script location:</strong> <code>website/scripts/build-graph.mjs</code>. Node, ES module, follows existing JS conventions.</li>
+<li><strong>Trigger:</strong> runs as a <code>prebuild</code> npm script. Also runnable standalone (<code>npm run build:graph</code>).</li>
+<li><strong>Output:</strong> <code>website/src/_data/graph.json</code> (Eleventy data cascade) AND passthrough-copied to <code>/assets/graph/data/graph.json</code> for runtime fetch.</li>
+<li><strong>Stub data is NOT duplicated.</strong> <code>graph.json</code> contains a <code>stubKey</code> per node pointing into <code>wiki-previews-*.json</code>. Viz fetches both at load and joins them.</li>
+<li><strong>No new Python dependency.</strong> Layer 1 (Python) keeps producing <code>wiki-previews-*.json</code>. The graph artifact is its sibling, maintained in Node.</li>
+</ul>
+<h3><code>graph.json</code> shape</h3>
+<pre><code class="language-json">{
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;generatedAt&quot;: &quot;2026-04-29T12:00:00Z&quot;,
+  &quot;stats&quot;: { &quot;nodeCount&quot;: 29, &quot;edgeCount&quot;: 84 },
+
+  &quot;nodes&quot;: [
+    {
+      &quot;id&quot;: &quot;leo-tolstoy&quot;,
+      &quot;type&quot;: &quot;person&quot;,
+      &quot;title&quot;: &quot;Leo Tolstoy&quot;,
+      &quot;dates&quot;: { &quot;primary&quot;: &quot;1828-09-09&quot;, &quot;end&quot;: &quot;1910-11-20&quot;, &quot;approximate&quot;: false },
+      &quot;lane&quot;: null,
+      &quot;stubKey&quot;: &quot;leo-tolstoy&quot;,
+      &quot;wikiUrl&quot;: &quot;/wiki/leo-tolstoy/&quot;,
+      &quot;metrics&quot;: { &quot;degree&quot;: 14, &quot;bfsFromTolstoy&quot;: 0 }
+    },
+    {
+      &quot;id&quot;: &quot;war-and-peace&quot;,
+      &quot;type&quot;: &quot;work&quot;,
+      &quot;title&quot;: &quot;War and Peace&quot;,
+      &quot;dates&quot;: { &quot;primary&quot;: &quot;1863-01-01&quot;, &quot;end&quot;: &quot;1869-01-01&quot;, &quot;approximate&quot;: true },
+      &quot;lane&quot;: &quot;works&quot;,
+      &quot;period&quot;: &quot;great-works&quot;,
+      &quot;stubKey&quot;: &quot;war-and-peace&quot;,
+      &quot;wikiUrl&quot;: &quot;/works/fiction/war-and-peace/&quot;,
+      &quot;metrics&quot;: { &quot;degree&quot;: 12, &quot;bfsFromTolstoy&quot;: 1 }
+    }
+  ],
+
+  &quot;edges&quot;: [
+    { &quot;source&quot;: &quot;leo-tolstoy&quot;, &quot;target&quot;: &quot;war-and-peace&quot;, &quot;type&quot;: &quot;author&quot;, &quot;provenance&quot;: &quot;frontmatter&quot; },
+    { &quot;source&quot;: &quot;sophia-tolstaya&quot;, &quot;target&quot;: &quot;war-and-peace&quot;, &quot;type&quot;: &quot;transcriber&quot;, &quot;provenance&quot;: &quot;frontmatter&quot; }
+  ]
+}
+</code></pre>
+<h3>Field rules</h3>
+<ul>
+<li><strong><code>dates.primary</code></strong> — X-anchor on the spine. People: <code>birthDate</code>. Works: <code>dateAuthored</code> (start of writing). Events: the event date.</li>
+<li><strong><code>dates.end</code></strong> — optional. People: <code>deathDate</code> (visual extension; doesn't change anchor). Works: <code>dateFirstPublished</code> (makes work render as a bar). Events: usually omitted.</li>
+<li><strong><code>lane</code></strong> — <code>"works"</code> | <code>"family"</code> | <code>"history"</code> | <code>"letters"</code> | <code>null</code>. Determines whether entity renders on the spine or in the cloud:</li>
+<li><code>type: work</code> → <code>"works"</code></li>
+<li><code>type: event</code> + <code>scope: family</code> → <code>"family"</code> (note: schema may need <code>scope</code> field added — flag for content team)</li>
+<li><code>type: event</code> + <code>scope: external</code> → <code>"history"</code></li>
+<li>everything else → <code>null</code> (cloud)</li>
+<li><strong><code>period</code></strong> — for entities on the <code>works</code> lane only: <code>"youth"</code> | <code>"soldier"</code> | <code>"great-works"</code> | <code>"prophet"</code>. Computed from <code>dates.primary</code> falling within period bounds. Drives bar colour.</li>
+<li><strong><code>stubKey</code></strong> — key into <code>wiki-previews-*.json</code>. Identical to <code>id</code> in 99% of cases.</li>
+<li><strong><code>metrics.degree</code></strong> — node degree (used for LOD: hide low-degree nodes when zoomed out).</li>
+<li><strong><code>metrics.bfsFromTolstoy</code></strong> — graph distance from <code>leo-tolstoy</code>. Used to dim/hide irrelevant clusters as corpus grows.</li>
+</ul>
+<h3>Special case: the <code>leo-tolstoy</code> node</h3>
+<p>The <code>leo-tolstoy</code> node is <strong>always present</strong> in <code>nodes</code> (anchors edges, supports BFS, drives metrics). The renderer special-cases his ID and <strong>draws no sprite for him on the cloud or the spine</strong>: the four colored period zones ARE his visual representation. He's in the data model, not in the visible graph. Clicking anywhere on the period band does nothing; visitors reach his wiki page through family-event nodes (which deep-link to anchored sections of <code>/wiki/leo-tolstoy/</code>).</p>
+<h3>Edge types (controlled vocab)</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Source</th>
+<th>Visual encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>author</code></td>
+<td><code>relatedWorks.relationshipType: author</code></td>
+<td>gold solid line</td>
+</tr>
+<tr>
+<td><code>transcriber</code></td>
+<td><code>relatedWorks.relationshipType: transcriber</code></td>
+<td>silver solid</td>
+</tr>
+<tr>
+<td><code>editor</code> / <code>translator</code> / <code>publisher</code></td>
+<td><code>relatedWorks.relationshipType: editor</code> etc.</td>
+<td>varied solid</td>
+</tr>
+<tr>
+<td><code>related</code></td>
+<td><code>relatedArticles</code> (untyped)</td>
+<td>white thin solid</td>
+</tr>
+<tr>
+<td><code>mention</code></td>
+<td>body <code>[[wikilink]]</code>, no frontmatter pair</td>
+<td>white thin dashed</td>
+</tr>
+</tbody>
+</table>
+<h3>Build script edge cases</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Malformed YAML</td>
+<td>Warn with file path, skip file. <code>--strict</code> flag fails build.</td>
+</tr>
+<tr>
+<td>Wikilink resolves to nothing</td>
+<td>Warn once per dangling target, drop edge.</td>
+</tr>
+<tr>
+<td>Frontmatter + body wikilink for same pair</td>
+<td>Frontmatter wins; provenance recorded as <code>frontmatter</code>.</td>
+</tr>
+<tr>
+<td>Self-loop wikilink (page → itself)</td>
+<td>Skip silently.</td>
+</tr>
+<tr>
+<td>Pre-1918 dates</td>
+<td><code>birthDate</code> (NS) is canonical; OS ignored for the viz.</td>
+</tr>
+<tr>
+<td>Approximate dates</td>
+<td><code>dates.approximate: true</code>. Visual encoding (§5) fades the bar/point edges.</td>
+</tr>
+<tr>
+<td>Missing required <code>id</code></td>
+<td>Fail build. Should be caught upstream by <code>validate-frontmatter.mjs</code>.</td>
+</tr>
+<tr>
+<td>Duplicate <code>id</code></td>
+<td>Fail build. Data corruption.</td>
+</tr>
+<tr>
+<td>Date in unsupported format</td>
+<td>Warn, set <code>dates.primary: null</code> (cloud), continue.</td>
+</tr>
+</tbody>
+</table>
+<p>The script writes a <code>graph.build.log</code> alongside the output so warnings are auditable without re-running.</p>
+<hr />
+<h2>5. Interaction &amp; visual spec</h2>
+<h3>Viewport layout</h3>
+<pre><code>┌────────┬───────────────────────────────────────────────┐
+│ FILTER │  CLOUD (above)                                │
+│ TYPES  │     • •  •     •                              │
+│        │   •     •  •      • •                         │
+│ ☑ Person│   ⎯⎯⎯ pre-1828 (gray) ⎯⎯⎯|═══ Y ║║ S ║║ G ║║ P ═══|⎯⎯ post-1910 ⎯⎯
+│ ☑ Place│   Works:    ⎯⎯⎯[War &amp; Peace ━━]⎯⎯[Anna Karenina ━]⎯⎯       │
+│ ☑ Work │   Family:   ●        ●  ●  ●              ●   ●              │
+│ ☑ Event│   History:  ●           ●          ●        ●                │
+│ ☑ Conc │   Letters:  (deferred until corpus exists)                   │
+│ ☐ ...  │   ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+│        │  CLOUD (below)                                │
+│ Reset  │     •  •      •     •                         │
+│        │   •     • •     •  •                          │
+└────────┴───────────────────────────────────────────────┘
+
+Y = Youth (1828–1851) · S = Soldier (1851–1862) · G = Great Works (1862–1880) · P = Prophet (1880–1910)
+║║ = vertical period-transition guidelines
+</code></pre>
+<ul>
+<li><strong>Sidebar:</strong> left, fixed ~180px wide, collapsible on mobile.</li>
+<li><strong>Spine block:</strong> vertically centered, ~200px tall (4 lanes × 50px). Lane labels at left edge.</li>
+<li><strong>Cloud:</strong> fills remaining vertical above and below the spine.</li>
+<li><strong>Background:</strong> deep blue-black <code>#0a0e1a</code>. Three-layer parallax starfield.</li>
+</ul>
+<h3>Period colour integration</h3>
+<p>The four-period system from <a href="../../design/period-colours-research.md"><code>docs/design/period-colours-research.md</code></a> is the spine's visual identity.</p>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Years</th>
+<th>Colour</th>
+<th>Hex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I — Youth &amp; Formation</td>
+<td>1828–1851</td>
+<td>Green</td>
+<td><code>#4A7C59</code></td>
+</tr>
+<tr>
+<td>II — The Soldier &amp; Sinner</td>
+<td>1851–1862</td>
+<td>Red</td>
+<td><code>#B83232</code></td>
+</tr>
+<tr>
+<td>III — The Great Works</td>
+<td>1862–1880</td>
+<td>Amber</td>
+<td><code>#C8860A</code></td>
+</tr>
+<tr>
+<td>IV — The Prophet</td>
+<td>1880–1910</td>
+<td>Blue</td>
+<td><code>#2B5F8E</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Lifespan band</strong> splits into four sequential colored zones, each rendered as a soft overlay (~12% opacity) covering the spine's full vertical extent across all lanes.</li>
+<li><strong>Pre-1828 and post-1910</strong> zones use cool gray (rgba 50/50/60/0.20).</li>
+<li><strong>Period transitions</strong> (1851 / 1862 / 1880) render as faint vertical guidelines across all lanes (base color at 25% opacity, 1px wide). Small period labels above the spine ("Youth", "Soldier", "Great Works", "Prophet") are always visible at any zoom.</li>
+<li><strong>Work bars</strong> inherit the colour of the period they were written in. <em>War and Peace</em> (1863–1869) → Amber. <em>The Kingdom of God Is Within You</em> (1893) → Blue. Bar fill: period base lightened ~65%; border + bloom: period base at 100%.</li>
+<li><strong>Cloud entities</strong> (people, places, concepts) keep type-based colours (provisional palette below — designer pass needed before public launch). They live across periods, so don't carry period colour.</li>
+</ul>
+<p><strong>Provisional cloud-type palette</strong> (designer pass needed):<br />
+person <code>#f4ebd5</code> · work <code>#d4a85e</code> · place <code>#a8c4a1</code> · event <code>#ec8853</code> · concept <code>#c2b1d1</code> · translator <code>#d4a8b5</code> · institution <code>#8a99a8</code> · adaptation <code>#b88a99</code> · criticalWork <code>#e6dcb5</code> · archivalFond <code>#a89a85</code>.</p>
+<h3>Visual encoding</h3>
+<ul>
+<li><strong>Cloud nodes:</strong> filled circles, radius <code>8 + log₂(degree+1) × 2</code> px. PIXI <code>AdvancedBloomFilter</code> halo.</li>
+<li><strong>Spine work bars:</strong> rounded rectangles, height 24px, period-coloured.</li>
+<li><strong>Spine event points:</strong> filled circles 10px, color = lane (family vs history).</li>
+<li><strong>Edges:</strong> colored by relationship type per §4 table, opacity <code>0.6 − bfsFromTolstoy × 0.1</code>. Frontmatter edges solid; body-wikilink-only edges dashed.</li>
+</ul>
+<h3>Redundant encoding rule</h3>
+<p>Per <code>docs/design/period-colours-research.md</code>: colour is never the only signal. Every coloured element carries at least one secondary signal:</p>
+<ul>
+<li>Period zones — colour + label</li>
+<li>Work bars — colour + bar shape + title text + lane position</li>
+<li>Cloud nodes — colour + node shape (we may differentiate types by shape for colour-blind robustness; designer pass)</li>
+<li>Edges — colour + line style (solid/dashed) + thickness</li>
+<li>Period transitions — colour shift + vertical guideline + label</li>
+</ul>
+<p>Johan has deuteranopia and is the primary reviewer for the red-green boundary at 1851. Period labels make the meaning unambiguous; the <em>aesthetic</em> of the transition needs eyes-on validation before prototype 02 ships.</p>
+<h3>Dark-background tints</h3>
+<ul>
+<li><strong>Spine zones</strong> — base colour at 12% opacity over dark canvas.</li>
+<li><strong>Work bars</strong> — fill: base lightened ~65% (e.g. amber <code>#C8860A</code> → <code>#EBC780</code>); border + bloom: base at 100%.</li>
+<li><strong>Period dividers</strong> — base at 25% opacity, 1px wide.</li>
+<li><strong>Period labels</strong> — base at 90%, small caps, ~12pt.</li>
+</ul>
+<h3>Interactions</h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hover</strong> (cloud or spine)</td>
+<td>Small floating stub card follows cursor (8px offset, snaps to viewport). Card shows: title, type chip, dates, 1-line description.</td>
+</tr>
+<tr>
+<td><strong>Click on a node</strong></td>
+<td>Opens larger centered modal with full stub. Modal content: title, type chip, dates, full description, related entities, "click anywhere on this card to open the full article" hint. <strong>Modal has no explicit close (X) button</strong> — close affordances are click-outside, Esc, or clicking another node (which swaps in that node's modal). Keeping the modal small lets the cursor reach outside it easily.</td>
+</tr>
+<tr>
+<td><strong>Click on the open modal</strong></td>
+<td>Navigate to entity's <code>wikiUrl</code> (same tab). Family-event modals use <code>#anchor</code> fragment for deep section linking.</td>
+</tr>
+<tr>
+<td><strong>Click outside modal</strong></td>
+<td>Close, no navigation.</td>
+</tr>
+<tr>
+<td><strong>Esc</strong></td>
+<td>Close modal.</td>
+</tr>
+<tr>
+<td><strong>Click another node while modal is open</strong></td>
+<td>Swap to the new node's modal. No need to close first.</td>
+</tr>
+<tr>
+<td><strong>Scroll wheel up / pinch out</strong></td>
+<td>Zoom in: time window narrows. Resolution shifts decade → year → month → day with depth. More cloud nodes near cursor become visible (LOD culls hide low-degree nodes when zoomed out).</td>
+</tr>
+<tr>
+<td><strong>Scroll wheel down / pinch in</strong></td>
+<td>Zoom out.</td>
+</tr>
+<tr>
+<td><strong>Click and drag (on empty space)</strong></td>
+<td>Pan around the universe in 2D. Horizontal pan moves through time (same as panning the time scale). Vertical pan reveals more of the cloud above or below the current view. The two axes are independent. A drag-distance threshold (~5px) distinguishes pan from click — below the threshold the gesture is treated as a click on whatever was under the cursor; above, as a pan and any node-click is ignored.</td>
+</tr>
+<tr>
+<td><strong>Reset button (sidebar)</strong></td>
+<td>Reset zoom to full lifespan view, clear URL focus param, restore all type filters.</td>
+</tr>
+<tr>
+<td><strong>Sidebar checkbox toggle</strong></td>
+<td>Hide/show all entities of that type — both cloud and spine.</td>
+</tr>
+<tr>
+<td><strong>URL <code>?focus=anna-karenina</code> on load</strong></td>
+<td>Zoom transform animates to entity's date range; entity briefly highlights (1-second pulse); modal auto-opens.</td>
+</tr>
+</tbody>
+</table>
+<h3>Out of scope for v1</h3>
+<ul>
+<li>Full-text search inside the viz (sidebar type filter is the only finding affordance for v1).</li>
+<li>Edge-flow particles (deferred — interesting but not blocking).</li>
+<li>Audio / cinematic intro animation.</li>
+<li>Saved custom views / "tour" feature.</li>
+<li>Keyboard navigation through the graph (screen-reader fallback covers basic accessibility — see §6).</li>
+</ul>
+<hr />
+<h2>6. Error handling</h2>
+<h3>Build-time (<code>build-graph.mjs</code>)</h3>
+<p>See §4 "Build script edge cases" table. Behavior summary: warn-and-continue for soft errors, fail-build for data integrity violations (duplicate id, missing id), <code>--strict</code> flag escalates warnings to failures.</p>
+<h3>Runtime (browser)</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>graph.json</code> fetch fails</td>
+<td>Render fallback message in canvas: <em>"Could not load Tolstoy's universe."</em> + Retry button. Console error.</td>
+</tr>
+<tr>
+<td><code>wiki-previews-*.json</code> fetch fails</td>
+<td>Graph renders; hover and modal cards show <em>"Preview unavailable — click to read full article."</em> No retry.</td>
+</tr>
+<tr>
+<td>WebGL not supported</td>
+<td>Fall back to D3-only render: cloud nodes as plain SVG circles, no bloom, no starfield. Detected at boot via PIXI's <code>isWebGLSupported()</code>.</td>
+</tr>
+<tr>
+<td>JS disabled</td>
+<td>Static <code>&lt;noscript&gt;</code> fallback: <em>"This page requires JavaScript. Browse Tolstoy's universe at <a href="/wiki/">Wiki</a>."</em></td>
+</tr>
+<tr>
+<td>Bundle parse error</td>
+<td><code>&lt;noscript&gt;</code>-equivalent visible by default; JS hides on successful boot.</td>
+</tr>
+<tr>
+<td>Unhandled JS error in render loop</td>
+<td><code>window.onerror</code> shows fallback message. No telemetry.</td>
+</tr>
+</tbody>
+</table>
+<h3>UX edge cases</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All filters unchecked → zero visible entities</td>
+<td>Empty-state overlay: <em>"No entities match your filters."</em> + "Reset filters" button.</td>
+</tr>
+<tr>
+<td>Only 1 visible entity</td>
+<td>Render normally — node at its time anchor or canvas center.</td>
+</tr>
+<tr>
+<td>Sparse corpus (today's 29 nodes)</td>
+<td>Render normally. Sparse is the launch reality.</td>
+</tr>
+<tr>
+<td>Dense corpus (Phase 5+ ~26k nodes)</td>
+<td>LOD culling first (mandatory). Web-Worker offload of the force simulation is deferred to v2 — only built if v1 framerate is unacceptable at scale. Spec doesn't commit to it.</td>
+</tr>
+<tr>
+<td><code>?focus=nonexistent-id</code></td>
+<td>Log warning; fall back to default view. URL rewritten to remove the bad param.</td>
+</tr>
+<tr>
+<td><code>?focus=</code> with unsafe characters</td>
+<td>URL-decode, validate against slug regex <code>^[a-z0-9-]+$</code>, reject if invalid.</td>
+</tr>
+<tr>
+<td>Zoom past single-day resolution</td>
+<td>Hard cap.</td>
+</tr>
+<tr>
+<td>Zoom out past full corpus extent</td>
+<td>Hard cap.</td>
+</tr>
+<tr>
+<td>Pan past corpus extremes</td>
+<td>Hard-stop at edges (no rubber-band).</td>
+</tr>
+</tbody>
+</table>
+<h3>Accessibility</h3>
+<ul>
+<li><code>prefers-reduced-motion</code> → disable starfield drift, snap zoom transitions instead of tweening, disable any pulse animations.</li>
+<li><code>prefers-contrast: more</code> → period zones at 25% opacity instead of 12%; bloom disabled; edges thicker.</li>
+<li><strong>Screen-reader fallback</strong> — page includes a hidden <code>&lt;nav aria-label="Tolstoy's universe"&gt;</code> listing all currently-visible entities as wikilinks, regenerated on filter/zoom change. Lets a screen-reader user navigate the same set of entities even though the visual graph is unreadable.</li>
+<li><strong>Keyboard navigation</strong> — out of v1 scope, flagged as v2 gap.</li>
+</ul>
+<h3>Browser support</h3>
+<p>Modern evergreen (Chrome / Firefox / Safari / Edge, last 2 versions). Older browsers → static fallback.</p>
+<h3>Performance budget</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First paint</td>
+<td>&lt; 1.5s on broadband</td>
+</tr>
+<tr>
+<td>Time-to-interactive</td>
+<td>&lt; 3s on broadband</td>
+</tr>
+<tr>
+<td>Idle framerate</td>
+<td>60fps</td>
+</tr>
+<tr>
+<td>Pan/zoom framerate floor</td>
+<td>30fps</td>
+</tr>
+<tr>
+<td>Memory at full corpus</td>
+<td>&lt; 200MB</td>
+</tr>
+</tbody>
+</table>
+<p>Budget breach at scale → degrade gracefully (hide starfield, reduce bloom radius, raise LOD threshold) with <code>console.warn</code> documenting what was dropped.</p>
+<hr />
+<h2>7. Testing</h2>
+<h3>Build-script tests (mandatory)</h3>
+<p><code>website/scripts/__tests__/build-graph.test.mjs</code>. Fast, run on every commit.</p>
+<ul>
+<li><strong>Unit:</strong> YAML parsing, wikilink resolution, date normalization, edge dedup, lane assignment, period assignment, BFS metric.</li>
+<li><strong>Snapshot:</strong> runs against <code>tests/fixtures/</code> (synthetic mini-corpus of ~10 <code>.md</code> files covering every entity type, every edge type, plus deliberate edge cases: missing date, malformed YAML, dangling wikilink, self-loop, duplicate id). Output diffed against <code>tests/fixtures/expected/graph.json</code>.</li>
+<li><strong>Schema validation:</strong> <code>graph.json</code> validated against <code>scripts/graph.schema.json</code> after build. Fails CI on drift.</li>
+</ul>
+<h3>Browser smoke tests (recommended for v1)</h3>
+<p><code>website/tests/e2e/graph-smoke.spec.mjs</code>. Playwright, headless Chromium. Run on PRs.</p>
+<ul>
+<li>Mount: page loads, canvas appears, no console errors.</li>
+<li>Data: <code>graph.json</code> fetched and parsed.</li>
+<li>Hover: hovering a known node triggers the small stub tooltip.</li>
+<li>Click: clicking a node opens the larger modal (asserts modal visible, asserts URL did NOT change).</li>
+<li>Click modal: clicking the open modal navigates (asserts URL matches <code>wikiUrl</code>).</li>
+<li>Click outside: clicking outside the modal closes it without navigating.</li>
+<li>Filter: unchecking <code>person</code> hides all person nodes.</li>
+<li>Focus URL: <code>/graph/?focus=anna-karenina</code> highlights + zooms-to-range + auto-opens modal.</li>
+<li>Empty state: filtering everything off shows empty-state message.</li>
+</ul>
+<p>Uses the same <code>tests/fixtures/</code> corpus to decouple from real wiki data.</p>
+<h3>Visual regression (recommended for v1)</h3>
+<p>Playwright + pixel-diff. Three reference shots:</p>
+<ol>
+<li>Default view — full lifespan, all types visible.</li>
+<li>Zoomed in — 1869 ±5 years, <em>War and Peace</em> visible.</li>
+<li>Filtered to <code>person</code> only.</li>
+</ol>
+<p>Diffs flagged in PRs; threshold ~2% pixel delta.</p>
+<h3>Manual QA (mandatory before public launch)</h3>
+<p>Documented checklist in <code>projects/timelinegraph/QA.md</code>:</p>
+<ul>
+<li>Aesthetic check (bloom, starfield drift, period colours, transitions).</li>
+<li>Period-colour validation under deuteranopia (Johan signs off — primary reviewer).</li>
+<li>Label legibility at all zoom levels.</li>
+<li>Cross-browser spot check (Chrome, Firefox, Safari, mobile Safari iPad).</li>
+<li>Modal behavior (open, click-to-navigate, click-out-to-close, swap-on-other-click, Esc).</li>
+<li>URL focus deep-link from a wiki page works end-to-end.</li>
+<li>Empty state actually offers a way out.</li>
+</ul>
+<h3>Performance regression (deferred to public-launch readiness)</h3>
+<p>Lighthouse CI on PRs touching <code>assets/graph/</code>. Budget enforced in <code>lighthouserc.json</code>.</p>
+<h3>Accessibility (deferred to public-launch readiness)</h3>
+<p><code>axe-core</code> CI scan on <code>/graph/</code>. Failures block merges. Manual screen-reader spot check (VoiceOver on macOS) before public ship.</p>
+<h3>What is NOT tested</h3>
+<ul>
+<li>Cross-browser automation matrix — manual smoke is enough for v1.</li>
+<li>Stress test at full corpus scale — Phase 5+ concern.</li>
+<li>Visual diff under different OS font rendering — accept the variance.</li>
+<li>Network throttling beyond Lighthouse defaults.</li>
+</ul>
+<hr />
+<h2>8. Provisional / unresolved items (carried into the implementation plan)</h2>
+<ul>
+<li><strong>Period labels</strong> ("Youth", "Soldier", "Great Works", "Prophet") above the spine — kept for v1, may be removed after first prototype review.</li>
+<li><strong>Tolstoy entry path</strong> — family-event nodes deep-link to anchored sections of his wiki page. Wiki page needs to actually have those anchor headings (content task, not viz task; degrades gracefully if anchors missing).</li>
+<li><strong>Cloud-type palette</strong> — provisional values listed in §5; designer pass before public launch.</li>
+<li><strong>Color-blind validation</strong> — Johan eyes-on the red↔green period transition (1851) before prototype 02 ships.</li>
+<li><strong>Schema gap</strong> — <code>event</code> type may need a <code>scope</code> field (<code>family</code> | <code>external</code>) to drive lane assignment. Flag for content team.</li>
+<li><strong>Bundler choice</strong> — esbuild vs rollup; pick to match existing <code>website/</code> build chain during the implementation plan.</li>
+</ul>
+<hr />
+<h2>9. Out of scope for v1 (explicitly deferred)</h2>
+<ul>
+<li>Full-text search inside the viz.</li>
+<li>Edge-flow particles.</li>
+<li>Audio / cinematic intro animation.</li>
+<li>Saved custom views / "tour" feature.</li>
+<li>Keyboard navigation (screen-reader fallback covers basic a11y).</li>
+<li>Cross-browser automation matrix.</li>
+<li>Stress test at Phase 5+ scale.</li>
+<li>Public landing-page placement (deferred until corpus passes ~200 nodes).</li>
+</ul>
+<hr />
+<h2>10. References</h2>
+<ul>
+<li>Two research rounds: <a href="../../../projects/timelinegraph/RESEARCH.md"><code>projects/timelinegraph/RESEARCH.md</code></a></li>
+<li>Project home + prototype scaffolds: <a href="../../../projects/timelinegraph/"><code>projects/timelinegraph/</code></a></li>
+<li>Period colour system: <a href="../../design/period-colours-research.md"><code>docs/design/period-colours-research.md</code></a></li>
+<li>Wiki schema (entity types, frontmatter): <a href="../../../website/schema/wiki-schema.md"><code>website/schema/wiki-schema.md</code></a></li>
+<li>Works schema: <a href="../../../website/schema/tolstoy-works-schema.md"><code>website/schema/tolstoy-works-schema.md</code></a></li>
+<li>Project content / architecture: <a href="../../../AGENTS.md"><code>AGENTS.md</code></a></li>
+<li>Closest prior art (visit and study): <a href="http://www.sixdegreesoffrancisbacon.com/">Six Degrees of Francis Bacon</a> · <a href="https://kindred.stanford.edu/">Kindred Britain</a> · <a href="http://republicofletters.stanford.edu/publications/voltaire/letters/">Mapping the Republic of Letters / Voltaire's Network</a> · <a href="https://www.connectedpapers.com">Connected Papers</a> · <a href="https://atlas.nomic.ai/">Nomic Atlas</a></li>
+</ul>
+</main>
+<footer>tolstoy.life · public documentation</footer>
+
+<!-- Annotation UI -->
+<div id="ann-popover">
+  <div class="ann-quote" id="ann-quote"></div>
+  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <div class="ann-actions">
+    <button id="ann-cancel">Cancel</button>
+    <button class="primary" id="ann-save">Save</button>
+  </div>
+</div>
+<div id="ann-tooltip"></div>
+<div id="ann-bar">
+  <button id="ann-export">Copy annotations</button>
+  <button class="danger" id="ann-clear">Clear all</button>
+</div>
+
+<script>
+(function() {
+  const DOC_KEY = 'docs/superpowers/specs/2026-04-29-timelinegraph-design';
+  const STORE_KEY = 'tolstoy_annotations';
+
+  // ── Storage ──────────────────────────────────────────────────────────────
+  function loadAll() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveAll(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+  function loadDoc() {
+    return loadAll()[DOC_KEY] || [];
+  }
+  function saveDoc(anns) {
+    const all = loadAll();
+    if (anns.length === 0) delete all[DOC_KEY];
+    else all[DOC_KEY] = anns;
+    saveAll(all);
+  }
+
+  // ── Fuzzy text anchor ────────────────────────────────────────────────────
+  function getContext(range) {
+    const selected = range.toString();
+    const container = range.commonAncestorContainer;
+    const full = (container.textContent || container.innerText || '');
+    const start = full.indexOf(selected);
+    if (start === -1) return null;
+    return {
+      text: selected,
+      before: full.slice(Math.max(0, start - 30), start),
+      after: full.slice(start + selected.length, start + selected.length + 30)
+    };
+  }
+
+  // ── Rendering ────────────────────────────────────────────────────────────
+  function findAndWrap(ann, index) {
+    const main = document.querySelector('main');
+    if (!main) return;
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const idx = node.textContent.indexOf(ann.anchor.text);
+      if (idx === -1) continue;
+      const before10 = ann.anchor.before.slice(-10);
+      const after10 = ann.anchor.after.slice(0, 10);
+      const nodeText = node.textContent;
+      const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
+                     || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
+      if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
+
+      const before = node.textContent.slice(0, idx);
+      const after = node.textContent.slice(idx + ann.anchor.text.length);
+      const mark = document.createElement('mark');
+      mark.className = 'annotation';
+      mark.dataset.index = index;
+      mark.textContent = ann.anchor.text;
+      const afterNode = document.createTextNode(after);
+      node.textContent = before;
+      node.parentNode.insertBefore(mark, node.nextSibling);
+      node.parentNode.insertBefore(afterNode, mark.nextSibling);
+      attachTooltip(mark, ann, index);
+      break;
+    }
+  }
+
+  function renderAll() {
+    document.querySelectorAll('mark.annotation').forEach(m => {
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    const anns = loadDoc();
+    anns.forEach((ann, i) => findAndWrap(ann, i));
+    updateBar();
+  }
+
+  // ── Tooltip ──────────────────────────────────────────────────────────────
+  const tooltip = document.getElementById('ann-tooltip');
+
+  function attachTooltip(mark, ann, index) {
+    mark.addEventListener('mouseenter', e => {
+      tooltip.textContent = ann.comment;
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    mark.addEventListener('mousemove', positionTooltip);
+    mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    mark.addEventListener('click', e => {
+      e.stopPropagation();
+      showDeleteConfirm(index, mark);
+    });
+  }
+
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // ── Delete confirm ────────────────────────────────────────────────────────
+  function showDeleteConfirm(index, mark) {
+    const anns = loadDoc();
+    const comment = anns[index] ? anns[index].comment : '';
+    if (confirm('Delete this annotation?\n\n"' + comment + '"')) {
+      anns.splice(index, 1);
+      saveDoc(anns);
+      renderAll();
+    }
+  }
+
+  // ── Popover ───────────────────────────────────────────────────────────────
+  const popover = document.getElementById('ann-popover');
+  const annText = document.getElementById('ann-text');
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+  let pendingRange = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
+
+  function hidePopover() {
+    popover.style.display = 'none';
+    annText.value = '';
+    pendingAnchor = null;
+    if (pendingRange) { window.getSelection().removeAllRanges(); pendingRange = null; }
+  }
+
+  function showPopover(x, y, anchor, range) {
+    pendingAnchor = anchor;
+    pendingRange = range;
+    annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
+    popover.style.display = 'block';
+    let px = x, py = y + 12;
+    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
+    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
+    setTimeout(() => annText.focus(), 50);
+  }
+
+  // ── Selection listener ────────────────────────────────────────────────────
+  document.addEventListener('mouseup', e => {
+    if (popover.contains(e.target)) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    const range = sel.getRangeAt(0);
+    if (!main.contains(range.commonAncestorContainer)) return;
+    const anchor = getContext(range);
+    if (!anchor) return;
+    showPopover(e.clientX, e.clientY, anchor, range);
+  });
+
+  document.addEventListener('mousedown', e => {
+    if (!popover.contains(e.target)) hidePopover();
+  });
+
+  // ── Export / clear bar ────────────────────────────────────────────────────
+  const bar = document.getElementById('ann-bar');
+
+  function updateBar() {
+    const anns = loadDoc();
+    bar.style.display = anns.length > 0 ? 'flex' : 'none';
+  }
+
+  document.getElementById('ann-export').addEventListener('click', () => {
+    const anns = loadDoc();
+    if (!anns.length) return;
+    const lines = ['# Annotations — ' + DOC_KEY, ''];
+    anns.forEach((a, i) => {
+      lines.push('## ' + (i+1) + '. ' + a.created.slice(0,10));
+      lines.push('> ' + a.anchor.text);
+      lines.push('');
+      lines.push(a.comment);
+      lines.push('');
+    });
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      const btn = document.getElementById('ann-export');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    });
+  });
+
+  document.getElementById('ann-clear').addEventListener('click', () => {
+    if (confirm('Delete all annotations on this page?')) {
+      saveDoc([]);
+      renderAll();
+    }
+  });
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  renderAll();
+})();
+</script>
+</body>
+</html>

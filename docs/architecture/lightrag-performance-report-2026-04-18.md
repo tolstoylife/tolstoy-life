@@ -1,7 +1,7 @@
 # LightRAG Performance Report — Mac Mini M4 24GB
 
-Report: 2026-04-18 (updated same day — second ingestion run with bge-m3 embedding model)
-Context: This report covers two ingestion runs on the same 29-file vault. The first run used nomic-embed-text (768d). The second run used bge-m3 (1024d, multilingual) after the embedding model was switched. Both runs used qwen2.5:7b as the LLM. This document is the authoritative hardware, model, and performance reference for the Tolstoy Research Platform's LightRAG Layer 2.
+Report: 2026-04-18
+Context: First operational test of LightRAG on the Tolstoy Research Platform. This report documents the hardware findings, model benchmarks, configuration decisions, and ingestion time estimates for scaling from the current 29-file vault to the projected 26,500-file full corpus.
 
 ---
 
@@ -28,10 +28,9 @@ macOS and background services consume approximately 4–5 GB at idle. That leave
 
 | Model | Parameters | Quantization | Weight size | Purpose |
 |---|---|---|---|---|
-| qwen2.5:14b | 14B | Q4_K_M | ~9 GB | LLM (entity extraction) — rejected |
-| qwen2.5:7b | 7B | Q4_K_M | ~4.7 GB | LLM (entity extraction) — adopted |
-| nomic-embed-text | 137M | — | ~274 MB | Embedding (768d) — first run |
-| bge-m3 | 568M | — | ~1.2 GB | Embedding (1024d) — second run, adopted |
+| qwen2.5:14b | 14B | Q4_K_M | ~9 GB | LLM (entity extraction) |
+| qwen2.5:7b | 7B | Q4_K_M | ~4.7 GB | LLM (entity extraction) |
+| nomic-embed-text | 137M | — | ~274 MB | Embedding (768 dimensions) |
 
 ### qwen2.5:14b — rejected for this hardware
 
@@ -55,11 +54,11 @@ The 14B model consistently triggered memory pressure and swap, even after settin
 | Model weights | ~4.7 GB |
 | KV cache (32K context, 1 slot, flash attention) | ~1 GB |
 | Total LLM footprint | ~7.2 GB |
-| Observed memory usage during ingestion | 68.1% (run 1) / 73.6% (run 2, heavy background load) |
-| Swap usage | 0.0% (both runs) |
-| Free memory during operation | ~7.6 GB (run 1) / ~6.3 GB (run 2) |
-| Ingestion time (29 documents, ~80 KB) | 43 min (run 1) / 64 min (run 2) |
-| Result | **Stable, comfortable headroom — even under heavy background load** |
+| Observed memory usage during ingestion | 68.1% |
+| Swap usage | 0.0% |
+| Free memory during operation | ~7.6 GB |
+| Ingestion time (29 documents, ~80 KB) | 43 minutes |
+| Result | **Stable, comfortable headroom** |
 
 The 7B model leaves approximately 15–16 GB for macOS and Python, well within safe margins for unattended cron operation.
 
@@ -110,9 +109,9 @@ This alone can explain the difference between the 14B model working or failing o
 
 ---
 
-## 4. Embedding model comparison: nomic-embed-text vs bge-m3
+## 4. Embedding model comparison: 768 vs 1024 dimensions
 
-### Run 1: nomic-embed-text (768d)
+### Current model: nomic-embed-text (768d)
 
 | Metric | Value |
 |---|---|
@@ -124,7 +123,7 @@ This alone can explain the difference between the 14B model working or failing o
 | Multilingual support | English-primary; limited non-English |
 | Russian performance | Poor — no dedicated Russian training data |
 
-### Run 2: bge-m3 (1024d) — adopted
+### Alternative: bge-m3 (1024d)
 
 | Metric | Value |
 |---|---|
@@ -150,23 +149,7 @@ The MTEB benchmark difference (52.8 vs 54.3) translates to roughly:
 - At 768d: a query about "Софья Андреевна" may not reliably retrieve the "Sophia Tolstaya" wiki article
 - At 1024d with bge-m3: the Russian and English name forms map to nearby vectors
 
-For the Tolstoy vault specifically — which contains Russian names in Cyrillic (`titleRu` fields), Cyrillic transliterations, and will eventually contain Russian-language source texts — the multilingual gap is significant.
-
-### Graph quality impact (observed)
-
-Switching to bge-m3 produced a measurably richer knowledge graph from the same 29 documents:
-
-| Metric | nomic (768d) | bge-m3 (1024d) | Delta |
-|---|---|---|---|
-| Graph nodes | 192 | 226 | +34 (+17.7%) |
-| Graph edges | 196 | 227 | +31 (+15.8%) |
-| Ingestion time (29 docs) | 43 min | 64 min | +21 min (+49%) |
-| Memory peak | 68.1% | 73.6%* | +5.5 pp |
-| Swap usage | 0.0% | 0.0% | — |
-
-*Run 2 had significantly more background applications running (Comet, NordVPN, multiple Claude Helper renderer processes, Alfred, Mail, etc.), so the memory delta is not attributable to bge-m3 alone. True bge-m3 overhead is likely under 1–2 pp vs nomic.
-
-The +34 nodes and +31 edges represent genuine additional knowledge structure extracted from the same source material — not re-indexed duplicates. The richer embedding space appears to help the LightRAG graph merge step discriminate entities more cleanly, avoiding over-merging that would collapse distinct entities into one node.
+For the Tolstoy vault specifically, which contains Russian names in Cyrillic (`titleRu` fields), Cyrillic transliterations, and will eventually contain Russian-language source texts, the multilingual gap is significant.
 
 ### Storage and speed impact
 
@@ -178,6 +161,8 @@ The +34 nodes and +31 edges represent genuine additional knowledge structure ext
 
 Storage difference is negligible at all projected scales. Search latency difference is sub-millisecond.
 
+Embedding speed: bge-m3 is ~15–20% slower per batch due to larger output dimensions and 4× more parameters. For 26,500 documents: ~15–20 minutes (bge-m3) vs ~10–15 minutes (nomic). Both are trivial in the context of nightly cron.
+
 ### Memory impact with qwen2.5:7b
 
 Since `OLLAMA_MAX_LOADED_MODELS=1`, the LLM and embedding model swap. Peak memory is determined by whichever is larger:
@@ -187,14 +172,22 @@ Since `OLLAMA_MAX_LOADED_MODELS=1`, the LLM and embedding model swap. Peak memor
 | 7b + nomic (768d) | 4.7 GB (LLM peak) | ~7.2 GB | ~16.8 GB |
 | 7b + bge-m3 (1024d) | 4.7 GB (LLM peak) | ~7.2 GB | ~16.8 GB |
 
-The embedding model is always smaller than the LLM, so it doesn't affect peak memory. bge-m3's 1.5 GB is well under qwen2.5:7b's 4.7 GB. **No meaningful memory penalty for switching to bge-m3.**
+The embedding model is always smaller than the LLM, so it doesn't affect peak memory. bge-m3's 1.5 GB is well under qwen2.5:7b's 4.7 GB. **No memory penalty for switching to bge-m3 with the current setup.**
+
+### Recommendation
+
+Switch to bge-m3 for embedding. The multilingual advantage is significant for this project, there is no memory penalty with `MAX_LOADED_MODELS=1`, and the storage/speed differences are negligible. This requires:
+
+1. `ollama pull bge-m3`
+2. Update `config.py`: `EMBED_MODEL = "bge-m3"`, `EMBED_DIM = 1024`
+3. Delete `lightrag/data/` and re-ingest
 
 ### Other embedding models considered
 
 | Model | Dims | MTEB retrieval | Russian | RAM | Verdict |
 |---|---|---|---|---|---|
-| nomic-embed-text | 768 | 52.8 | Poor | 0.5 GB | Run 1 — adequate English, poor Russian |
-| bge-m3 | 1024 | 54.3 | Strong | 1.5 GB | **Run 2 — adopted** |
+| nomic-embed-text | 768 | 52.8 | Poor | 0.5 GB | Current — adequate for English |
+| bge-m3 | 1024 | 54.3 | Strong | 1.5 GB | **Recommended** — best multilingual |
 | mxbai-embed-large | 1024 | 54.4 | Poor | 1.0 GB | Slightly higher English score, no Russian |
 | snowflake-arctic-embed-l | 1024 | 55.0 | Poor | 1.0 GB | Highest English retrieval, no Russian |
 
@@ -202,9 +195,7 @@ The embedding model is always smaller than the LLM, so it doesn't affect peak me
 
 ## 5. Ingestion time estimates
 
-### Baseline measurements
-
-#### Run 1 — nomic-embed-text (768d)
+### Baseline measurement
 
 | Metric | Value |
 |---|---|
@@ -214,65 +205,49 @@ The embedding model is always smaller than the LLM, so it doesn't affect peak me
 | Ingestion time | 43 minutes (2,577 seconds) |
 | Time per document | ~89 seconds |
 | Knowledge graph result | 192 nodes, 196 edges |
-| Model | qwen2.5:7b + nomic-embed-text |
-| Background load | Light — few other applications running |
+| Model | qwen2.5:7b (Q4_K_M) |
 
-#### Run 2 — bge-m3 (1024d)
+The ~89 seconds per document includes: LLM entity extraction (dominant cost), embedding generation, graph merging, and vector storage.
 
-| Metric | Value |
-|---|---|
-| Documents | 29 |
-| Total content size | ~80 KB |
-| Average document size | ~2.8 KB |
-| Ingestion time | 64.4 minutes (3,865 seconds) |
-| Time per document | ~133 seconds |
-| Knowledge graph result | 226 nodes, 227 edges |
-| Model | qwen2.5:7b + bge-m3 |
-| Background load | **Heavy** — Comet renderer (8+ processes), NordVPN, Claude Helper, Alfred, Mail, Ollama serve, ingest.py concurrently |
-
-The ~50% increase in ingestion time (89 s → 133 s per document) should not be attributed solely to bge-m3. Run 2 was conducted under significantly heavier background load, which compresses CPU/GPU headroom and slows both the LLM extraction phase and disk I/O. The model swap overhead (bge-m3 is ~4× larger than nomic) contributes, but likely accounts for only ~15–20 s of the ~44 s increase per document.
-
-**Best estimate for bge-m3 under light load:** ~100–110 seconds per document, vs ~89 seconds for nomic. That is the realistic per-document time to use for scaling projections.
-
-### Time per document breakdown (estimated, bge-m3, light load)
+### Time per document breakdown (estimated)
 
 | Step | Estimated time | Notes |
 |---|---|---|
-| LLM extraction (2 passes) | ~70 s | Two LLM calls per document (extract + merge) — same as nomic |
-| Embedding generation | ~20 s | bge-m3 is ~4× larger than nomic; swap overhead included |
-| Graph merge + storage | ~15 s | In-memory operations, disk writes |
+| LLM extraction (2 passes) | ~70 s | Two LLM calls per document (extract + merge) |
+| Embedding generation | ~5 s | Fast — small model, short texts |
+| Graph merge + storage | ~14 s | In-memory operations, disk writes |
 
 ### Projections for future ingestion phases
 
-All projections below use 105 s/document as the bge-m3 baseline (midpoint of 100–110 s estimate, light-load conditions).
-
 #### TEI reference data (Phase 3)
 
-The TEI dataset contains 3,113 persons and 770 locations. Each person/location becomes a wiki page.
+The TEI dataset contains 3,113 persons and 770 locations. Each person/location becomes a wiki page. With the current pipeline, each page requires entity extraction.
 
 | Metric | Estimate |
 |---|---|
 | New documents | ~3,883 wiki pages |
 | Average document size | ~1–2 KB (structured metadata, short descriptions) |
-| Estimated time per document | ~75 s (smaller docs = faster extraction) |
-| Total ingestion time | ~81 hours |
-| Recommended approach | 4 overnight runs (~20 hours each) |
+| Estimated time per document | ~60 s (smaller docs = faster extraction) |
+| Total ingestion time | ~65 hours |
+| Recommended approach | 3 overnight runs (~22 hours each) |
 
 Note: These are new additions to the vault. The existing 29 documents would not need re-indexing.
 
 #### Birukoff biography
 
-The Birukoff biography (Paul Birukoff, *Leo Tolstoy: His Life and Work*, 1906 Heinemann edition) is 150,135 words across 17 chapters.
+The Birukoff biography (Paul Birukoff, *Leo Tolstoy: His Life and Work*, 1906 Heinemann edition) is 150,135 words across 17 chapters. When ingested into the vault, each chapter becomes a source text file.
 
 | Metric | Estimate |
 |---|---|
 | Documents | 17 chapter files |
 | Average chapter size | ~52 KB (~8,830 words) |
 | Total content | ~880 KB |
-| Estimated time per document | ~200 s (larger docs require more extraction passes) |
+| Estimated time per document | ~180 s (larger docs require more extraction passes) |
 | LightRAG chunking | ~5–8 chunks per chapter at default settings |
-| Total ingestion time | ~57 minutes |
+| Total ingestion time | ~51 minutes |
 | Recommended approach | Single run, daytime or overnight |
+
+The Birukoff biography will produce a dense knowledge graph — every chapter references multiple people, places, and events that should link to existing wiki entities.
 
 #### Full corpus (Phase 5)
 
@@ -281,20 +256,22 @@ The Birukoff biography (Paul Birukoff, *Leo Tolstoy: His Life and Work*, 1906 He
 | Total documents | ~26,500 |
 | Total content | ~72 MB |
 | Average document size | ~2.7 KB |
-| Estimated time per document | ~90 s (blended: short wiki pages + long text chapters, bge-m3) |
-| Total initial ingestion | ~663 hours (~28 days) |
-| Recommended approach | Batched overnight runs over 5–6 weeks |
-| Daily incremental sync (50 changed files) | ~75 minutes |
+| Estimated time per document | ~75 s (blended average: short wiki pages + long text chapters) |
+| Total initial ingestion | ~552 hours (~23 days) |
+| Recommended approach | Batched overnight runs over 4–5 weeks |
+| Daily incremental sync (50 changed files) | ~62 minutes |
 
 ### Comparison with earlier estimates
 
-| Scenario | 14B estimate (theoretical) | 7B + nomic (measured) | 7B + bge-m3 (projected, light load) |
-|---|---|---|---|
-| 29 files | ~15 min | 43 min | ~51 min |
-| Phase 3 (~3,900 files) | ~38 hours | ~65 hours | ~81 hours |
-| Phase 5 (~26,500 files) | ~110 hours | ~550 hours | ~663 hours |
+The scalability report (2026-04-15) estimated 110 hours for full indexing using a 14B model. Our actual measurement with the 7B model suggests longer per-document times due to lower throughput. However, the 7B model is more reliable on 24 GB hardware, avoiding the memory pressure and swap that would make a 14B ingestion fail partway through.
 
-The bge-m3 overhead (~20%) is real but modest in the context of multi-week ingestion runs. The richer knowledge graph it produces (+17% more nodes and edges on the same corpus) justifies the additional time.
+| Scenario | 14B estimate (theoretical) | 7B estimate (measured basis) |
+|---|---|---|
+| 29 files | ~15 min | 43 min |
+| Phase 3 (~3,900 files) | ~38 hours | ~65 hours |
+| Phase 5 (~26,500 files) | ~110 hours | ~550 hours |
+
+The 14B model is ~2× faster per token but cannot reliably run on 24 GB hardware. The 7B model is ~2× slower but stable. For unattended overnight operation, stability is worth more than speed.
 
 ---
 
@@ -335,8 +312,7 @@ The scripted pipeline (Layer 1) + LightRAG (Layer 2) together save approximately
 
 ### Short-term (config changes)
 
-- [x] Switch embedding model to bge-m3 (1024d) for Russian+English support
-- [x] Update `config.py`: `EMBED_MODEL = "bge-m3"`, `EMBED_DIM = 1024`
+- [ ] Switch embedding model to bge-m3 (1024d) for Russian+English support
 - [ ] Set up nightly cron job for `sync.py`
 - [ ] Test incremental sync after editing wiki pages
 
@@ -360,27 +336,22 @@ The scripted pipeline (Layer 1) + LightRAG (Layer 2) together save approximately
 # config.py — active settings as of 2026-04-18
 LLM_MODEL = "qwen2.5:7b"
 LLM_CONTEXT_WINDOW = 32768
-EMBED_MODEL = "bge-m3"
-EMBED_DIM = 1024
-EMBED_MAX_TOKENS = 8192
+EMBED_MODEL = "nomic-embed-text"  # TODO: switch to bge-m3
+EMBED_DIM = 768                    # TODO: update to 1024 with bge-m3
 OLLAMA_TIMEOUT = 600
 ```
 
-### Knowledge graph statistics — both ingestion runs
+### Knowledge graph statistics (first ingestion)
 
-| Metric | Run 1 (nomic, 768d) | Run 2 (bge-m3, 1024d) |
-|---|---|---|
-| Documents indexed | 29 | 29 |
-| Graph nodes | 192 | 226 |
-| Graph edges | 196 | 227 |
-| Ingestion time | 43 min | 64 min |
-| Memory usage (peak) | 68.1% | 73.6%* |
-| Swap usage | 0.0% | 0.0% |
-| Background load | Light | Heavy |
-
-*Higher memory in run 2 is attributable primarily to heavier background application load, not to bge-m3.
-
-Query response time (hybrid): ~30–60 seconds (unchanged — query performance is LLM-bound, not embedding-bound).
+| Metric | Value |
+|---|---|
+| Documents indexed | 29 |
+| Graph nodes | 192 |
+| Graph edges | 196 |
+| Ingestion time | 43 minutes |
+| Memory usage (peak) | 68.1% (16.3 GB of 24 GB) |
+| Swap usage | 0.0% |
+| Query response time (hybrid) | ~30–60 seconds |
 
 ---
 
@@ -392,10 +363,8 @@ Query response time (hybrid): ~30–60 seconds (unchanged — query performance 
 
 3. **qwen2.5:7b is the right model** for 24 GB hardware running LightRAG. It provides stable, swap-free operation with ~16 GB headroom.
 
-4. **bge-m3 has been adopted as the embedding model.** It produces a richer knowledge graph (+17% nodes and edges on the same 29-document corpus) and provides strong Russian+English multilingual retrieval. There is no meaningful memory penalty with `MAX_LOADED_MODELS=1`. The ~20% slower embedding speed is acceptable.
+4. **bge-m3 should replace nomic-embed-text** for the embedding model. The multilingual advantage is significant for Russian+English content, and there is no memory penalty with `MAX_LOADED_MODELS=1`.
 
-5. **The system is robust under heavy background load.** Run 2 was conducted with Comet, NordVPN, multiple Claude Helper renderer processes, and other applications running simultaneously. Memory stayed at 73.6% with no swap — confirming the architecture is safe for unattended cron operation even when the machine is in active use.
+5. **Full corpus ingestion will take approximately 550 hours** (4–5 weeks of overnight runs) with the 7B model. This is ~5× slower than the theoretical 14B estimate but achievable through patient batched processing.
 
-6. **Full corpus ingestion will take approximately 663 hours** (5–6 weeks of overnight runs) with bge-m3. This is ~20% longer than the nomic estimate but produces a meaningfully richer knowledge graph.
-
-7. **LightRAG eliminates all API token costs** for vault indexing and querying. The three-layer architecture (scripts + LightRAG + Claude) reduces Claude API costs by approximately 65%.
+6. **LightRAG eliminates all API token costs** for vault indexing and querying. The three-layer architecture (scripts + LightRAG + Claude) reduces Claude API costs by approximately 65%.
