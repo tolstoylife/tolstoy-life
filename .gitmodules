@@ -1,6 +1,3 @@
-[submodule "tools"]
-	path = tools
-	url = git@github.com:tolstoylife/tools.git
 [submodule "website"]
 	path = website
 	url = git@github.com:tolstoylife/website.git
