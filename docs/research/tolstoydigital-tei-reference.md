@@ -22,7 +22,27 @@ The 91st volume index has also been digitised as a web application: [index.tolst
 
 ---
 
-## 2. The tolstoydigital TEI repository
+## 2. "All Tolstoy in One Click" — the digitisation project
+
+The plain text corpus that underpins the tolstoydigital TEI repository was produced by a crowdsourcing project called *Весь Толстой в один клик* ("All Tolstoy in One Click"), completed in 2014.
+
+**The problem:** The Jubilee Edition had only ever been printed in a run of 5,000 copies and never reprinted. By the early 2010s it was a bibliographic rarity, held mainly in private collections and specialist libraries.
+
+**Initiated by** Fyokla Tolstaya — Leo Tolstoy's great-great-granddaughter and one of the key figures behind the broader tolstoydigital project — together with the Leo Tolstoy State Museum in Moscow.
+
+**How it worked:** ABBYY ran their FineReader OCR software on scanned PDFs of all 90 volumes. The OCR output then needed human verification — not straightforward, since Tolstoy wrote in Russian (sometimes in pre-reform orthography), French, Greek, Latin, and other languages. Rather than hire professional correctors, the project crowdsourced the proofreading through a dedicated website ([readingtolstoy.ru](http://readingtolstoy.ru/)). Over 3,000 volunteers from 49 countries each received a licence for FineReader and a packet of 20 pages to verify.
+
+**Result:** All 46,820 pages and 14.5 million words were proofread in 14 days — 8.5 volumes per day. The texts went live on [tolstoy.ru](https://tolstoy.ru) as 761 electronic book files, freely available in PDF, FB2, and EPUB formats.
+
+**The chain to the TEI corpus:** Jubilee Edition (print, 1928–1964) → crowdsourced OCR and proofreading (2014) → plain text on tolstoy.ru → TEI/XML encoding by the tolstoydigital team → `texts/` and `texts_txt/` in the GitHub repository.
+
+The `texts_txt/` folder in the tolstoydigital/TEI repo is essentially this digitised corpus in plain text form, making it the most directly usable asset for LightRAG ingestion.
+
+*Further reading:* The project is documented in the Orekhov (2020) paper held at `primary-sources/jubilee-edition/91vol.pdf`, and in an [ABBYY blog post](https://www.abbyy.com/blog/tolstoy-digitized-for-future-generations/).
+
+---
+
+## 3. The tolstoydigital TEI repository
 
 The repository [github.com/tolstoydigital/TEI](https://github.com/tolstoydigital/TEI) is the output of the *Слово Толстого* (Word of Tolstoy) project, a digital humanities initiative by HSE (Higher School of Economics, Moscow). It contains the full 90-volume Jubilee Edition encoded in TEI/XML, plus structured reference data.
 
@@ -49,7 +69,7 @@ Only the `reference/` folder has been downloaded, stored at `primary-sources/tol
 
 ---
 
-## 3. The reference files
+## 4. The reference files
 
 The nine XML files in `reference/` are structured entity data built to support the TEI encoding project. They are the machine-readable counterpart to the 91st volume index.
 
@@ -81,7 +101,7 @@ The 91st volume answers "where in the 90 volumes is this person mentioned?" The 
 
 ---
 
-## 4. Relevance to tolstoy.life
+## 5. Relevance to tolstoy.life
 
 ### Current use
 
@@ -97,7 +117,7 @@ A fork of `tolstoydigital/TEI` to the `tolstoylife` GitHub organisation would se
 
 ---
 
-## 5. Next steps
+## 6. Next steps
 
 - [ ] Fork `tolstoydigital/TEI` to `tolstoylife` org
 - [ ] Full `git clone` of the fork into `primary-sources/tolstoydigital-TEI/`
