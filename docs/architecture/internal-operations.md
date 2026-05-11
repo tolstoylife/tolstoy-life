@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-04-25
+tags: [architecture]
+---
+
 # Internal Operations — Tolstoy Research Platform
 
 Cost estimates, hardware specifications, and capacity planning details. Supplements `AGENTS.md` with operational context for anyone implementing or running the platform.

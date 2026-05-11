@@ -4,6 +4,8 @@ description: "Architectural notes on turning tolstoy.life into a true local-firs
 date: 2026-04-20
 status: draft
 tags: [architecture, pwa, local-first, annotations, tolstoy-life]
+layer: reference
+lastUpdated: 2026-04-25
 ---
 
 # Tolstoy e-reader: local-first PWA architecture

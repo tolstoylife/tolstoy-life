@@ -3,6 +3,8 @@ title: Development — tolstoy.life
 lastUpdated: 2026-05-11
 changelog:
   - 2026-05-11 — initial scaffold. Created folder with README and first feature recipe (source-mode-implementation.md).
+layer: reference
+tags: [development]
 ---
 
 # Development — tolstoy.life

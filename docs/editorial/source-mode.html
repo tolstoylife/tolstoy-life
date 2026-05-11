@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Penpot tokens — tolstoy.life docs</title>
+<title>Source mode — per-fact footnotes — tolstoy.life docs</title>
 <style>
 :root {
   --ink: #1e1a17;
@@ -358,290 +358,161 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <span class="breadcrumb">
           <a href="/INDEX.html">Index</a>
           <span>›</span>
-          design
+          editorial
         </span>
 </div>
 <header class="doc-header">
-  <p class="eyebrow">design</p>
-  <h1>Penpot tokens</h1>
-  <p class="meta">Last modified 11 May 2026 · <a href="/design/penpot-tokens.md">view source</a></p>
+  <p class="eyebrow">editorial</p>
+  <h1>Source mode — per-fact footnotes</h1>
+  <p class="meta">Last modified 11 May 2026 · <a href="/editorial/source-mode.md">view source</a></p>
 </header>
 <main>
-<p>How the design tokens in <code>website/src/_data/designTokens/</code> are pushed<br />
-into the <strong>tolstoy.life - design tokens</strong> file on<br />
-<a href="https://design.penpot.app">design.penpot.app</a>.</p>
-<h2>TL;DR</h2>
-<p>Always regenerate the DTCG artifact from JSON first, then push to Penpot<br />
-via MCP (preferred) or a manual UI import (fallback):</p>
-<pre><code class="language-bash">cd website
-npm run penpot:tokens   # regenerates tokens/penpot-tokens.dtcg.json + ../DESIGN.md
+<h1>Source mode — per-fact footnotes</h1>
+<p>How wiki and works pages cite their sources. Two requirements meet in one<br />
+mechanism: editorial verifiability (every claim traceable) and copyright<br />
+transparency (every CC BY-SA fact visibly attributed).</p>
+<p>The companion to this document is <code>website/schema/wiki-schema.md</code>, which<br />
+defines <code>fieldSources</code> for structured frontmatter fields. This file<br />
+defines the prose-side mechanism.</p>
+<hr />
+<h2>Markup</h2>
+<p>Standard markdown footnotes, inline in the prose, with a References<br />
+section auto-collected at the end of the file by markdown-it.</p>
+<pre><code class="language-md">Sophia Tolstaya was born on 3 October 1844 in Pokrovskoye-Streshnevo.[^1]
+She was Tolstoy's wife of 48 years and principal manuscript copyist.[^2]
+
+[^1]: Jubilee Edition, vol. 83, p. 12. (PD)
+[^2]: tolstoydigital/TEI, `personList.xml` entry Q2917962. (CC BY-SA 4.0)
 </code></pre>
-<p>Then one of:</p>
-<ul>
-<li><strong>Live push via MCP</strong> (preferred when the server is running) — ask<br />
-  Claude to push tokens; it walks the DTCG file via the Penpot Plugin<br />
-  API and reports counts per set. See "Live push via MCP" below.</li>
-<li><strong>Manual import</strong> (fallback) — open <code>tolstoy.life - design tokens</code><br />
-  in Penpot → Tokens panel → import → select<br />
-<code>website/tokens/penpot-tokens.dtcg.json</code>.</li>
-</ul>
-<p>Either way, themes (Light / Dark presets) must be set up by hand in the<br />
-Penpot UI — see "Themes" below.</p>
-<p>To regenerate only one artifact:</p>
-<pre><code class="language-bash">cd website
-npm run design:md      # only DESIGN.md
-node ./src/_config/setup/build-penpot-tokens.js   # only the DTCG file
-</code></pre>
-<h2>Sources of truth</h2>
+<p>No prefix on the footnote ID. No custom shortcode. Markdown-it handles<br />
+the rendering; Obsidian renders the same syntax natively in preview.</p>
+<p>One footnote per claim-cluster, not per word. A single sentence may<br />
+carry one footnote even when it asserts several facts, provided they<br />
+all come from the same source.</p>
+<hr />
+<h2>The licence tag rule</h2>
+<p>Every footnote ends with a parenthetical licence tag. This is what<br />
+makes the mechanism do double duty as copyright transparency.</p>
 <table>
 <thead>
 <tr>
-<th>File</th>
-<th>Becomes</th>
+<th>Tag</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>website/src/_data/designTokens/colors.json</code></td>
-<td><code>core/colors</code> set + <code>color.semantic.*</code> in <code>theme/light</code> + <code>theme/dark</code></td>
+<td><code>(PD)</code></td>
+<td>Public domain. No restrictions.</td>
 </tr>
 <tr>
-<td><code>website/src/_data/designTokens/fonts.json</code></td>
-<td><code>font.family.*</code> in <code>core/typography</code></td>
+<td><code>(CC BY-SA 4.0)</code></td>
+<td>Creative Commons Attribution-ShareAlike 4.0.</td>
 </tr>
 <tr>
-<td><code>website/src/_data/designTokens/textWeights.json</code></td>
-<td><code>font.weight.*</code> in <code>core/typography</code></td>
+<td><code>(CC BY 4.0)</code></td>
+<td>Creative Commons Attribution 4.0.</td>
 </tr>
 <tr>
-<td><code>website/src/_data/designTokens/textSizes.json</code></td>
-<td><code>font.size.*</code> in <code>core/typography</code></td>
+<td><code>(fair use)</code></td>
+<td>Used under fair use / fair dealing. Provide rationale on the source card.</td>
 </tr>
 <tr>
-<td><code>website/src/_data/designTokens/textLeading.json</code></td>
-<td><code>font.lineHeight.*</code> in <code>core/typography</code></td>
-</tr>
-<tr>
-<td><code>website/src/_data/designTokens/typography.json</code></td>
-<td><code>type.*</code> composite styles in <code>core/typography</code></td>
-</tr>
-<tr>
-<td><code>website/src/_data/designTokens/spacing.json</code></td>
-<td><code>space.*</code> in <code>core/spacing</code></td>
-</tr>
-<tr>
-<td><code>website/src/_data/designTokens/borderRadius.json</code></td>
-<td><code>radius.*</code> in <code>core/layout</code></td>
-</tr>
-<tr>
-<td><code>website/src/_data/designTokens/viewports.json</code></td>
-<td><code>breakpoint.*</code> in <code>core/layout</code></td>
-</tr>
-<tr>
-<td><code>website/src/_data/designTokens/semanticColors.json</code></td>
-<td><code>color.bg/text/headline/...</code> in <code>theme/light</code> + <code>theme/dark</code></td>
+<td><code>(restricted)</code></td>
+<td>Used by permission. Do not redistribute the source text.</td>
 </tr>
 </tbody>
 </table>
-<p>The JSON files are themselves the source of truth for the website. The<br />
-DTCG file is a derived artifact you regenerate any time the JSON changes.</p>
-<p><code>colors.json</code> is itself generated from <code>colorsBase.json</code> by<br />
-<code>npm run colors</code>, so if you edited <code>colorsBase.json</code> first, run that<br />
-before <code>penpot:tokens</code>.</p>
-<h2>Mapping rules</h2>
-<p>The build script (<code>website/src/_config/setup/build-penpot-tokens.js</code>)<br />
-applies these transformations:</p>
-<ul>
-<li><strong>JSON nesting → dot-separated token names.</strong> <code>gray.100</code> becomes<br />
-<code>color.gray.100</code>. Hyphens stay (<code>space.s-m</code>, <code>font.size.step-min-2</code>).</li>
-<li><strong>Fluid Utopia values become the max, in pixels.</strong> <code>{min: 10, max: 14}</code><br />
-  becomes <code>"14px"</code>. Spacing and font sizes both go through this.</li>
-<li><strong>Border radii keep their rem.</strong> Penpot accepts unit-suffixed strings,<br />
-  so <code>0.1875rem</code> stays <code>"0.1875rem"</code> and accessibility-relative sizing is<br />
-  preserved.</li>
-<li><strong>Viewports become <code>dimension</code> tokens with px.</strong> <code>640</code> → <code>"640px"</code>.</li>
-<li><strong>Light/dark colors are split.</strong> The <code>red</code>, <code>blue</code>, <code>green</code> colors in<br />
-<code>colors.json</code> have a primary value plus a <code>.subdued</code> variant. The<br />
-  primary values land in <code>theme/light</code>; the subdued values land in<br />
-<code>theme/dark</code>. They share the same token names (e.g.<br />
-<code>color.semantic.red</code>) so a shape bound to <code>color.semantic.red</code><br />
-  automatically follows whichever theme is active. The same theme-swap<br />
-  pattern is used for the semantic background/text/headline tokens<br />
-  defined in <code>semanticColors.json</code>, which mirror the <code>--color-*</code> CSS<br />
-  variables in <code>variables.css</code>.</li>
-<li><strong>Font families use the Penpot-recognized name.</strong> Penpot's font<br />
-  registry uses canonical names like <code>Source Serif 4</code> and <code>Source Sans 3</code>,<br />
-  not the CSS-side family + fallback stack. Each entry in <code>fonts.json</code><br />
-  carries an optional <code>penpot</code> field (e.g. <code>"penpot": "Source Serif 4"</code>);<br />
-  the build script prefers it and emits a single-element <code>fontFamilies</code><br />
-  value. The full CSS fallback stack stays untouched in <code>$value</code> for the<br />
-  website.</li>
-<li><strong>Typography composites bundle several atomic tokens.</strong> Each entry in<br />
-<code>typography.json</code> becomes a <code>type.*</code> token of Penpot's <code>typography</code><br />
-  type, with inner keys (<code>fontFamily</code>, <code>fontWeight</code>, <code>fontSize</code>,<br />
-<code>lineHeight</code>) referencing the atomic tokens via the <code>{token.path}</code><br />
-  syntax. Editing a font size in <code>textSizes.json</code> cascades through every<br />
-  type style automatically.</li>
-</ul>
-<h2>Sets and themes</h2>
-<p>Six sets are emitted, in this order (order matters — Penpot resolves<br />
-conflicts in favor of later sets):</p>
-<ol>
-<li><code>core/colors</code> (24 tokens) — gray, amber, and base palettes</li>
-<li><code>core/typography</code> (27 tokens) — families, weights, sizes, line<br />
-   heights, and <code>type.*</code> composite styles (body, heading.1–3,<br />
-   blockquote, citation, caption)</li>
-<li><code>core/spacing</code> (16 tokens) — fixed and fluid spacing steps</li>
-<li><code>core/layout</code> (7 tokens) — border radii and viewport breakpoints</li>
-<li><code>theme/light</code> (9 tokens) — semantic colors for light mode (accent<br />
-   reds/blues/greens plus bg/text/headline)</li>
-<li><code>theme/dark</code> (9 tokens) — same names with dark-mode values</li>
-</ol>
-<p>Two themes (Light, Dark) are also part of the design, but they have to<br />
-be created manually — see "Themes" below.</p>
-<h2>Live push via MCP (preferred)</h2>
-<p>When the Penpot MCP server is connected (see "MCP setup"), Claude can<br />
-write the catalog directly via <code>mcp__penpot__execute_code</code>. The walk is:</p>
-<ol>
-<li>Read <code>website/tokens/penpot-tokens.dtcg.json</code>.</li>
-<li>For each set in <code>$metadata.tokenSetOrder</code>:<br />
-   - <code>catalog.addSet({ name })</code> and <code>set.toggleActive()</code>.<br />
-   - For each leaf token: <code>set.addToken({ type, name, value })</code>.</li>
-<li>Deactivate <code>theme/dark</code> so the default catalog state is light-themed.</li>
-<li>Skip themes — they're created manually in the UI (see below).</li>
-</ol>
-<p>The DTCG file is already in the shape the API expects:</p>
-<ul>
-<li>spacing / dimension / borderRadius / fontSizes are strings with units</li>
-<li><code>fontFamilies</code> <code>$value</code> arrays are unwrapped to a single string at push time</li>
-<li><code>number</code>-type values (line heights) are stringified</li>
-<li>references use <code>{token.path}</code> syntax — the API resolves them natively</li>
-</ul>
-<p>After the push, ask Claude to verify counts (24 / 27 / 16 / 7 / 9 / 9 = 92).</p>
-<h2>Manual import (fallback)</h2>
-<p>If MCP isn't running, the Penpot UI imports the DTCG file directly:</p>
-<ol>
-<li>Open <code>tolstoy.life - design tokens</code> in Penpot.</li>
-<li>Tokens panel → import → select<br />
-<code>website/tokens/penpot-tokens.dtcg.json</code>.</li>
-<li>The importer creates sets and tokens. The <code>$themes</code> block in the<br />
-   DTCG file <em>should</em> auto-create the Light and Dark themes — but<br />
-   we've never confirmed it works, so verify after import.</li>
-</ol>
-<h2>Themes (manual — both paths)</h2>
-<p>The Penpot Plugin API rejects <code>theme.addSet(set)</code> with an opaque<br />
-validation error, so theme membership can't be bound programmatically.<br />
-Themes have to be created in the UI:</p>
-<ol>
-<li>Tokens panel → <strong>Themes</strong> tab → <strong>+ Theme</strong>.</li>
-<li>Name it <code>Light</code>. Check <code>core/colors</code>, <code>core/typography</code>,<br />
-<code>core/spacing</code>, <code>core/layout</code>, <code>theme/light</code>.</li>
-<li>Repeat for <code>Dark</code> with <code>theme/dark</code> instead of <code>theme/light</code>.</li>
-</ol>
-<p>Once both themes exist, toggling between them flips the <code>theme/*</code> set<br />
-activation, which swaps every semantic color (<code>bg</code>, <code>text</code>, <code>headline</code>,<br />
-<code>accent.*</code>) automatically.</p>
-<h2>Plugin API gotchas</h2>
-<p>For future sessions extending the live-push or doing other Plugin API<br />
-work — these will save hours:</p>
+<p>A footnote with no tag is a lint error. The tag is the contract: the<br />
+reader can see the copyright status of every fact without leaving the<br />
+page, and a downstream republisher can filter for compliance.</p>
+<hr />
+<h2>Toggle behaviour</h2>
+<p>Footnotes are <strong>off by default</strong>. The site is for reading; verification<br />
+is on demand.</p>
+<p>Two states, cycled by a small button in the page header:</p>
 <table>
 <thead>
 <tr>
-<th>Issue</th>
-<th>Fix</th>
+<th>State</th>
+<th>Prose</th>
+<th>Page footer</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>theme.addSet(set)</code> throws <code>Value not valid: Field message is invalid: .</code> and does not bind sets to themes</td>
-<td>Create themes manually in the UI (see "Themes")</td>
+<td>Off (default)</td>
+<td>Clean. No <code>[1]</code> markers visible.</td>
+<td>"Sources used on this page" summary block — one line per unique source, with licence tag.</td>
 </tr>
 <tr>
-<td><code>addTheme({group: "&lt;non-empty&gt;", ...})</code> throws the same opaque error <em>but actually creates the theme anyway</em> — partial success disguised as failure</td>
-<td>Use <code>{group: "", name}</code> only; if you've already tried other groups, check <code>catalog.themes</code> for stray partial creates and <code>theme.remove()</code> them</td>
-</tr>
-<tr>
-<td>The Penpot high-level overview documents <code>addTheme(group, name)</code> as two positional strings — it isn't</td>
-<td>Actual signature: <code>addTheme(arg: { group: string; name: string })</code> (single object)</td>
-</tr>
-<tr>
-<td>Activating both <code>theme/light</code> and <code>theme/dark</code> simultaneously makes same-named tokens (e.g. <code>color.bg</code>) resolve to the <em>later</em> set's value catalog-wide</td>
-<td>Default state after a fresh push: <code>theme/light</code> active, <code>theme/dark</code> inactive. Themes (Light/Dark) flip the activation later.</td>
-</tr>
-<tr>
-<td><code>fontFamilies</code> value: API expects scalar string; DTCG holds an array</td>
-<td>Unwrap <code>value[0]</code> at push time (live-push code already does this)</td>
-</tr>
-<tr>
-<td><code>number</code>-type values must be strings (<code>"1.4"</code> not <code>1.4</code>)</td>
-<td>DTCG already does this; just don't pass raw numbers if writing API calls by hand</td>
-</tr>
-<tr>
-<td>Composite <code>typography</code> value uses singular keys</td>
-<td><code>{fontFamily, fontWeight, fontSize, lineHeight}</code> — references via <code>{font.family.display}</code> work</td>
-</tr>
-<tr>
-<td><code>File.name</code> and <code>Library.name</code> are read-only getters</td>
-<td>Rename via Penpot UI; can't be set programmatically</td>
-</tr>
-<tr>
-<td>Spacing / dimension / borderRadius / fontSizes reject bare numbers</td>
-<td>Always pass strings with units: <code>"14px"</code>, <code>"0.1875rem"</code></td>
-</tr>
-<tr>
-<td><code>fontFamilies</code> rejects CSS fallback stacks</td>
-<td>Only the primary family, must match Penpot's font registry; query <code>penpot.fonts.all</code> for canonical names</td>
+<td>On</td>
+<td>Wikipedia-style <code>[1]</code> markers.</td>
+<td>Full "References" section with every footnote.</td>
 </tr>
 </tbody>
 </table>
-<h2>Re-running</h2>
-<p>JSON is always the source. To re-push:</p>
-<pre><code class="language-bash">cd website
-npm run colors           # only if colorsBase.json changed
-npm run penpot:tokens    # regenerates tokens/penpot-tokens.dtcg.json
-# Then either: live-push via MCP, or import in the Penpot UI
+<p>State persists in <code>localStorage</code> so a reader who turns it on stays in<br />
+that mode across the site.</p>
+<p>CSS does the swap. JavaScript is ~15 lines: cycle the<br />
+<code>data-sources="off|on"</code> attribute on <code>&lt;html&gt;</code> and persist it. No<br />
+framework, no dependency.</p>
+<p>The summary block (off-state footer) is auto-generated at build time<br />
+by collecting the unique sources referenced in the footnotes,<br />
+deduplicated and ordered by first appearance. It is not a frontmatter<br />
+field — there is nothing to maintain.</p>
+<hr />
+<h2>Source IDs and source cards</h2>
+<p>Footnote text uses plain prose. The structured registry lives in<br />
+<code>website/src/sources/</code> — one source card per major source, as<br />
+defined in <code>wiki-schema.md</code>. Footnotes can wikilink the source name<br />
+to its card:</p>
+<pre><code class="language-md">[^3]: [[Birukoff Biography]], vol. 1, p. 22. (PD)
 </code></pre>
-<p>The push is non-destructive in the JSON direction. On the Penpot side,<br />
-manual edits made through the UI will be overwritten on the next push,<br />
-since the build script regenerates the DTCG file from JSON every time.</p>
-<h2>Why MCP works for live push</h2>
-<p>The Penpot Plugin API is only callable from inside an in-browser plugin<br />
-connected to an open file. There is no Node-side API. The Penpot MCP<br />
-server bridges that gap: from the user's side it's a CLI endpoint; from<br />
-Penpot's side it's a connected plugin. The same DTCG file that the UI<br />
-importer reads can be walked through <code>mcp__penpot__execute_code</code> against<br />
-the live <code>tokens</code> catalog — no manual click-through.</p>
-<h2>MCP setup (one-time per machine)</h2>
-<p>The MCP server registration is checked in at <code>website/.mcp.json</code>. On a<br />
-fresh machine:</p>
-<ol>
-<li>From <code>website/</code>, run <code>npx @penpot/mcp@latest</code> and leave it running<br />
-   (use <code>@latest</code>, not <code>@beta</code> — <code>@beta</code> has had blocking bugs).</li>
-<li>Open <code>tolstoy.life - design tokens</code> at <a href="https://design.penpot.app">https://design.penpot.app</a>.</li>
-<li>Inside the workspace, <strong>Ctrl+Alt+P</strong> → if the Penpot MCP plugin is<br />
-   not listed, <strong>Load from URL</strong> with<br />
-<code>http://localhost:4400/manifest.json</code> (one-time).</li>
-<li>Click the plugin → <strong>Connect to MCP server</strong> → wait for the panel<br />
-   to show <strong>Connected</strong>.</li>
-<li>Restart Claude Code if <code>.mcp.json</code> was just added.</li>
-</ol>
-<p>Verify from the host with <code>claude mcp list</code> — should show<br />
-<code>penpot ✓ Connected</code>.</p>
-<p>The plugin connection drops on tab refresh, plugin panel close, file<br />
-navigation, or stopping the <code>npx</code> server. Recovery: re-open the plugin<br />
-panel and click <strong>Connect to MCP server</strong> until it says <strong>Connected</strong>.<br />
-The <code>npx</code> server itself doesn't need to be restarted unless you stopped<br />
-it.</p>
-<h2>Files</h2>
-<ul>
-<li><code>website/src/_config/setup/build-penpot-tokens.js</code> — the build script</li>
-<li><code>website/src/_data/designTokens/*.json</code> — sources</li>
-<li><code>website/tokens/penpot-tokens.dtcg.json</code> — generated artifact (committed<br />
-  so PR diffs show token changes)</li>
-<li><code>website/.mcp.json</code> — Penpot MCP server registration (committed,<br />
-  project scope)</li>
-<li><code>website/package.json</code> → <code>scripts.penpot:tokens</code></li>
-</ul>
+<p>This gives a reader who clicks through a stable destination<br />
+(the source card) that describes the source itself.</p>
+<p>A future lint step may enforce that every wikilinked source in a<br />
+footnote resolves to an existing source card. Not required for source<br />
+mode to ship.</p>
+<hr />
+<h2>Relationship to <code>fieldSources</code> frontmatter</h2>
+<p>Two parallel mechanisms, both kept:</p>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Where</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fieldSources:</code> frontmatter</td>
+<td>YAML</td>
+<td>Per-structured-field citation for dates, identifiers, etc. Machine-readable. Used by indexes, exports, and integrity checks.</td>
+</tr>
+<tr>
+<td><code>[^n]</code> prose footnotes</td>
+<td>body</td>
+<td>Per-prose-claim citation for narrative content. Human-readable. Surfaced through source mode.</td>
+</tr>
+</tbody>
+</table>
+<p>A page that has both is fully cited. A page with only <code>fieldSources</code><br />
+is structurally cited but the prose is uncited — acceptable for<br />
+<code>recordStatus: draft</code>, not acceptable for <code>recordStatus: verified</code>.</p>
+<hr />
+<h2>What source mode does not do</h2>
+<p>It does not assert that the page's prose is itself CC BY-SA. The<br />
+prose remains under the project's SDG dedication. The licence tag in<br />
+a footnote describes the <em>source</em> of the fact, not the <em>page that<br />
+cites it</em>. Facts are not copyrightable; citing a CC BY-SA source does<br />
+not propagate ShareAlike to the citing page. See <code>LICENSE</code> for the<br />
+boundary rules.</p>
+<p>It does not replace page-level attribution. The footer summary in the<br />
+off-state is the page-level attribution display — it satisfies the<br />
+attribution (BY) obligation regardless of whether a reader ever turns<br />
+footnotes on.</p>
 </main>
 <footer>tolstoy.life · public documentation</footer>
 
@@ -662,7 +533,7 @@ it.</p>
 
 <script>
 (function() {
-  const DOC_KEY = 'docs/design/penpot-tokens';
+  const DOC_KEY = 'docs/editorial/source-mode';
   const STORE_KEY = 'tolstoy_annotations';
 
   // ── Storage ──────────────────────────────────────────────────────────────

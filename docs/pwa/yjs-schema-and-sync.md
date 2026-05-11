@@ -7,6 +7,8 @@ status: draft
 tags: [architecture, yjs, crdt, sync, tolstoy-life]
 changelog:
   - 2026-04-24 — reconciled §2.3 / §8 item 1 contradiction (from the 2026-04-23 architecture review): `TextualBody.value` is a `Y.Text`, body items are `Y.Map`s. Rewrote §2.3 to walk through the silent-duplicate failure mode when plain objects are used; updated §2.2 example accordingly; tightened §8 item 1 wording.
+layer: reference
+lastUpdated: 2026-04-25
 ---
 
 # Tolstoy e-reader: Yjs schema and sync architecture

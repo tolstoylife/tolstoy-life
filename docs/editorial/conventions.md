@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-04-26
+tags: [editorial]
+---
+
 # Documentation conventions — tolstoy.life
 
 Last updated: 2026-04-26

@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-05-11
+tags: [research]
+---
+
 # PSS Tom number → local PDF file mapping
 
 Date: 2026-05-10

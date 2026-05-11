@@ -1,3 +1,9 @@
+---
+layer: blog
+date: 2026-04-15
+tags: [architecture]
+---
+
 # Deep Dive: True Scale of a Complete Tolstoy Resource
 
 Report: 2026-04-15  

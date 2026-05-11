@@ -1,3 +1,9 @@
+---
+layer: blog
+date: 2026-04-26
+tags: [design]
+---
+
 # Tolstoy Period Colours — Research & Proposal
 
 *Design system research. Phase 1: Four base colours for the four periods of Tolstoy's life.*

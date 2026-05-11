@@ -726,13 +726,15 @@ def md_to_html(md_path: Path) -> str:
 # ── Index builder ──────────────────────────────────────────────────────────────
 
 FOLDER_META = {
-    "architecture": ("Architecture", "System design, scalability, and operational context"),
-    "editorial":    ("Editorial",    "Project principles, voice, and style"),
-    "design":       ("Design",       "Visual identity, period colours, and typographic system"),
-    "pwa":          ("PWA",          "E-reader, local-first architecture, and tl pipeline"),
-    "_root":        ("Root",         "Top-level documents"),
+    "architecture":  ("Architecture",  "System design, scalability, and operational context"),
+    "editorial":     ("Editorial",     "Project principles, voice, and style"),
+    "design":        ("Design",        "Visual identity, period colours, and typographic system"),
+    "pwa":           ("PWA",           "E-reader, local-first architecture, and tl pipeline"),
+    "research":      ("Research",      "Primary-source surveys and reference material"),
+    "development":   ("Development",   "Implementation guides and feature recipes"),
+    "_root":         ("Root",          "Top-level documents"),
 }
-FOLDER_ORDER = ["architecture", "editorial", "design", "pwa", "_root"]
+FOLDER_ORDER = ["architecture", "editorial", "design", "pwa", "research", "development", "_root"]
 
 
 def _extract_lede_md(md_path: Path) -> str:

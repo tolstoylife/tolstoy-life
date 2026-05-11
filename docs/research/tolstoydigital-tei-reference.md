@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-05-10
+tags: [research]
+---
+
 # tolstoydigital TEI Reference Data
 
 Date: 2026-05-10

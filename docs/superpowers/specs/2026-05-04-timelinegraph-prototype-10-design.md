@@ -6,6 +6,8 @@ owner: Johan
 project: projects/timelinegraph/prototypes/10-split-view/
 supersedes: not the canonical spec; complements it as a prototype iteration
 parent-spec: 2026-04-29-timelinegraph-design.md
+layer: blog
+tags: [superpowers]
 ---
 
 # Prototype 10 — Split View Design

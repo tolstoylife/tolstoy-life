@@ -1,3 +1,9 @@
+---
+layer: blog
+date: 2026-04-22
+tags: [architecture]
+---
+
 # EPUB 3.3 & Accessibility 1.1 — W3C Spec Review
 *Reviewed: 2026-04-22 | Scope: tolstoy.life e-reader, `tl` toolset, distributed EPUBs*
 

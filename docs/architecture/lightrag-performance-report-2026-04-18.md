@@ -1,3 +1,9 @@
+---
+layer: blog
+date: 2026-04-18
+tags: [architecture]
+---
+
 # LightRAG Performance Report — Mac Mini M4 24GB
 
 Report: 2026-04-18

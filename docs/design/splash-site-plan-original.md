@@ -1,4 +1,11 @@
-# Splash site — plan
+---
+title: Splash site — plan (1)
+layer: blog
+date: 2026-05-09
+tags: [design]
+---
+
+# Splash site — plan (1)
 
 *Planning document for the tolstoy.life public splash site and documentation.*
 

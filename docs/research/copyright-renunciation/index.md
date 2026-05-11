@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-05-11
+tags: [research]
+---
+
 # Tolstoy on copyright and the renunciation of literary property
 
 Date: 2026-05-10

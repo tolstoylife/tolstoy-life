@@ -3,6 +3,9 @@ title: Source mode — implementation recipe
 lastUpdated: 2026-05-11
 changelog:
   - 2026-05-11 — initial recipe. Captures the implementation plan agreed during the LICENSE / source-mode design session. No code shipped yet.
+layer: blog
+date: 2026-05-11
+tags: [development]
 ---
 
 # Source mode — implementation recipe

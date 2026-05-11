@@ -1,3 +1,9 @@
+---
+layer: blog
+date: 2026-04-15
+tags: [architecture]
+---
+
 # Wiki Rewrite Workflow at Scale
 
 Report: 2026-04-15  

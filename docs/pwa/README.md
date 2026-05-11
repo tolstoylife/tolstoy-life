@@ -4,6 +4,8 @@ description: "Reading order and purpose of the PWA architecture documents. Start
 date: 2026-04-20
 status: draft
 tags: [index, tolstoy-life, pwa]
+layer: reference
+lastUpdated: 2026-04-25
 ---
 
 # Tolstoy e-reader PWA: document index

@@ -4,6 +4,8 @@ date: 2026-04-29
 status: approved (brainstorming complete; awaiting plan)
 owner: Johan
 project: projects/timelinegraph/
+layer: blog
+tags: [superpowers]
 ---
 
 # timelinegraph — Design Spec

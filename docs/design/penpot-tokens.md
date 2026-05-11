@@ -1,3 +1,9 @@
+---
+layer: reference
+lastUpdated: 2026-05-09
+tags: [design]
+---
+
 # Penpot tokens
 
 How the design tokens in `website/src/_data/designTokens/` are pushed

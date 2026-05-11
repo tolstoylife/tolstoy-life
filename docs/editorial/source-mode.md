@@ -3,6 +3,8 @@ title: Source mode — per-fact footnotes
 lastUpdated: 2026-05-11
 changelog:
   - 2026-05-11 — initial draft. Defines the markup, the licence-tag rule, the toggle behaviour, and the relationship to `fieldSources` frontmatter.
+layer: reference
+tags: [editorial]
 ---
 
 # Source mode — per-fact footnotes

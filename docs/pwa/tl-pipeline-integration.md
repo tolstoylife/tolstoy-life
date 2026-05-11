@@ -9,6 +9,8 @@ changelog:
   - 2026-04-24 — cascade-bug fix from 2026-04-23 architecture review: removed `wikiPreviewsUrl` from per-work manifests; tightened §3.2 hash-input definition; added §4.6 cross-reference isolation rule; updated §6.2 sketch with `HASH_EXCLUDE` filter and `resolve_content_date` placeholder (pending the stateful `contentDate` fix).
   - 2026-04-24 — added §6.4 documenting the wired-in deterministic-build CI check: `website/.github/scripts/check-determinism.mjs` + `website/.github/workflows/determinism.yml`. Runs on every PR to `main`.
   - 2026-04-24 — added §8.2 documenting the chapterUri validator wired into `website/.github/scripts/validate-frontmatter.mjs` (existing `validate.yml` workflow picks it up). No migration script needed — corpus has zero chapter files today; the rule is enforced prospectively from the first chapter file that lands.
+layer: reference
+lastUpdated: 2026-04-25
 ---
 
 # Tolstoy e-reader: tl pipeline integration

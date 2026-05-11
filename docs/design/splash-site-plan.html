@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Splash site — plan — tolstoy.life docs</title>
+<title>Splash site — plan (3) — tolstoy.life docs</title>
 <style>
 :root {
   --ink: #1e1a17;
@@ -363,17 +363,18 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 </div>
 <header class="doc-header">
   <p class="eyebrow">design</p>
-  <h1>Splash site — plan</h1>
-  <p class="meta">Last modified 9 May 2026 · <a href="/design/splash-site-plan.md">view source</a></p>
+  <h1>Splash site — plan (3)</h1>
+  <p class="meta">Last modified 11 May 2026 · <a href="/design/splash-site-plan.md">view source</a></p>
 </header>
 <main>
+<h1>Splash site — plan (3)</h1>
 <p><em>Planning document for the tolstoy.life public homepage and documentation.</em></p>
 <hr />
 <h2>Task order</h2>
 <p>Four sequenced tasks, in this order:</p>
 <ol>
 <li><strong>Design-system port + Penpot token sync</strong> — port JEDEE's evolved token pipeline (<code>semanticColors.json</code>, <code>typography.json</code>, <code>build-penpot-tokens.js</code>, <code>build-design-md.js</code>, <code>--color-accent-*</code> CSS layer, <code>themeColor-*</code> → <code>base-*</code> rename), then retoken with tolstoy.life's period palette, then run the pipeline and import into Penpot.</li>
-<li><strong>License finalisation + SDG graphic</strong> — tighten the LICENSE prose; integrate the illustrator's vectorized Soli Deo Gloria graphic (with and without caption) once delivered.</li>
+<li><strong>License finalisation + SDG graphic</strong> — tighten the LICENSE prose; integrate the illustrator's vectorized Soli Deo Gloria graphic (with and without caption) once delivered. <em>[Status 2026-05-11: LICENSE prose tightened — added licence-boundaries section, pinned CC BY-SA 4.0 for tolstoydigital data, cross-referenced the new source-mode spec. Source-mode editorial spec written at <code>docs/editorial/source-mode.md</code> and implementation recipe at <code>docs/development/source-mode-implementation.md</code>. SDG graphic still pending illustrator delivery.]</em></li>
 <li><strong>Splash homepage rebuild</strong> — replace <code>website/src/pages/index.njk</code> with the public homepage described below.</li>
 <li><strong>Documentation build pipeline</strong> — markdown → HTML via Eleventy, replacing the current ad-hoc HTML generator in <code>docs/</code>.</li>
 </ol>

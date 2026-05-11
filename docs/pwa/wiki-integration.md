@@ -4,6 +4,8 @@ description: "How the wiki layer joins the local-first PWA: download model, prev
 date: 2026-04-20
 status: draft
 tags: [architecture, wiki, pwa, contribution, tolstoy-life]
+layer: reference
+lastUpdated: 2026-04-25
 ---
 
 # Tolstoy e-reader: wiki integration

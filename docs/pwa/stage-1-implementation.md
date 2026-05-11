@@ -4,6 +4,7 @@ description: "Offline-first caching of individual works with deliberate user cho
 date: 2026-04-20
 status: draft
 tags: [implementation, stage-1, offline, pwa, tolstoy-life]
+layer: blog
 ---
 
 # Tolstoy e-reader: Stage 1 implementation plan
