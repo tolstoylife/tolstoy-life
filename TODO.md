@@ -120,13 +120,11 @@ Reframing `docs/` from a documentation hub into a dated build log, with content 
 - [x] **Phase 1 — annotate frontmatter on every `docs/*.md`** (commit `f9d53d31`). 28 files: 14 reference, 14 blog.
 - [x] **Phase 2 — rewrite `serve.py` INDEX** as chronological feed + reference appendix; drop `FEATURED` (commit `351bdb5c`).
 - [x] **Phase 3 step 1 — scaffold eleventy `notes` collection** (website `79d2540`, parent pointer `ab8833a4`). `notes.json` + inaugural entry + Notes top-nav.
+- [x] **Phase 3 step 2 — port 14 blog files** (website `3c748db`, parent `88e4d8dd`). YYYY-MM-DD-slug filenames, hand-written descriptions, normalized tags, `draft: false`. One file needed `templateEngineOverride: md` (source-mode-implementation — contains a `{%` Nunjucks reference in a table cell). Source files deleted from `docs/`.
 
 **Remaining:**
-- [ ] **Phase 3 step 2: port the 14 blog files** from `docs/` into `website/src/posts/notes/`. Each file needs frontmatter adapted (drop `layer:`, add `description:`, adjust `tags:`, set `draft: false`). Two open questions to decide before starting:
-  - **`description:` field** — auto-derive from each file's first paragraph (cheap, sometimes ugly) vs hand-write per file (slow, much better card display).
-  - **Permalink shape** — keep default `/notes/{{ title | slugify }}/` (works because titles are unique enough today) vs date-prefixed `/notes/YYYY-MM-DD-slug/` (scans more naturally for blog content; future-proof against title collisions).
 - [ ] **Phase 3 step 3: port the 14 reference files.** Notes is for dated entries, not evergreen reference. Three candidate destinations: (a) `wiki/` alongside Tolstoy content, (b) a new top-level collection (`reference/`, `engineering/`, `handbook/`), (c) defer the reference port indefinitely and keep `docs/` open as the reference-only viewer until the destination question is answered.
-- [ ] **Phase 4: drop generated `.html` siblings from git** once the layout is stable. `serve.py` regenerates them on demand; `INDEX.html` stays tracked because it's the entry point. Probably right after Phase 3 step 2 lands so the reference appendix in `serve.py` keeps working through step 3.
+- [ ] **Phase 4: drop generated `.html` siblings from git** once the layout is stable. `serve.py` regenerates them on demand; `INDEX.html` stays tracked because it's the entry point.
 
 ---
 
