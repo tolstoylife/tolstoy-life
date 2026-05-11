@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tolstoy on copyright and the renunciation of literary property — tolstoy.life docs</title>
+<style>
+:root {
+  --ink: #1e1a17;
+  --ink-soft: #4a4038;
+  --paper: #faf7f2;
+  --rule: #d9d1c5;
+  --accent: #6b4423;
+  --accent-soft: #8c6a4a;
+  --measure: 38rem;
+  --measure-wide: 52rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 150%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
+               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.site-header {
+  max-width: var(--measure-wide);
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-header a.home {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-style: italic;
+  white-space: nowrap;
+}
+.site-header a.home:hover { color: var(--accent); }
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
+
+header.doc-header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+header.doc-header .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.8rem;
+}
+header.doc-header h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+header.doc-header .meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+/* ── Typography ── */
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
+h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
+h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
+ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
+li { margin-bottom: 0.55rem; }
+li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+a { color: var(--accent); text-decoration: underline;
+    text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+blockquote {
+  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--accent-soft);
+  color: var(--ink-soft); font-style: italic;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+code, kbd, samp {
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88em;
+  background: rgba(107,68,35,0.07);
+  padding: 0.08em 0.34em;
+  border-radius: 2px;
+}
+pre {
+  background: rgba(107,68,35,0.05);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  margin: 0 0 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+
+table {
+  width: 100%; border-collapse: collapse;
+  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
+}
+th, td {
+  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  font-weight: 600; font-size: 0.82rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-soft); font-style: italic;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* ── Index page ── */
+.featured-section {
+  max-width: var(--measure-wide);
+  margin: 1rem auto 2.5rem;
+  padding: 0 1.5rem;
+}
+.featured-card {
+  display: block;
+  padding: 1.7rem 1.9rem;
+  background: rgba(107, 68, 35, 0.06);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.featured-card:hover {
+  border-color: var(--accent);
+  background: rgba(107, 68, 35, 0.10);
+  color: var(--ink);
+}
+.featured-card .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.7rem;
+}
+.featured-card .card-title {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.featured-card .card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.85rem;
+}
+.featured-card .card-lede {
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0 0 2.5rem;
+}
+.index-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: rgba(107,68,35,0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.index-card:hover {
+  border-color: var(--accent-soft);
+  background: rgba(107,68,35,0.07);
+  color: var(--ink);
+}
+.index-card .card-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.index-card .card-meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.index-card .card-lede {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 2.5rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── Annotations ── */
+mark.annotation {
+  background: rgba(107, 68, 35, 0.13);
+  border-bottom: 1.5px solid var(--accent-soft);
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 1px;
+}
+mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+
+#ann-popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--paper);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
+  padding: 0.9rem 1rem;
+  width: 22rem;
+  display: none;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+#ann-popover .ann-quote {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  border-left: 2px solid var(--accent-soft);
+  padding-left: 0.6rem;
+  line-height: 1.4;
+  max-height: 3.5rem;
+  overflow: hidden;
+}
+#ann-popover textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+  min-height: 4rem;
+  outline: none;
+}
+#ann-popover textarea:focus { border-color: var(--accent-soft); }
+#ann-popover .ann-actions {
+  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
+}
+#ann-popover button {
+  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
+  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink-soft);
+}
+#ann-popover button.primary {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
+#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
+
+#ann-tooltip {
+  position: fixed; z-index: 999;
+  background: var(--ink); color: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.85rem; line-height: 1.5;
+  padding: 0.6rem 0.85rem; border-radius: 3px;
+  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
+  pointer-events: none; display: none; white-space: pre-wrap;
+}
+
+#ann-bar {
+  position: fixed; bottom: 1.2rem; right: 1.4rem;
+  display: none; gap: 0.5rem; z-index: 998;
+}
+#ann-bar button {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
+  cursor: pointer; border: 1px solid var(--accent-soft);
+  background: var(--paper); color: var(--ink-soft);
+  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
+}
+#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
+#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
+#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="site-header">
+  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
+  
+        <span class="breadcrumb">
+          <a href="/INDEX.html">Index</a>
+          <span>›</span>
+          copyright-renunciation
+        </span>
+</div>
+<header class="doc-header">
+  <p class="eyebrow">copyright-renunciation</p>
+  <h1>Tolstoy on copyright and the renunciation of literary property</h1>
+  <p class="meta">Last modified 10 May 2026 · <a href="/research/copyright-renunciation/index.md">view source</a></p>
+</header>
+<main>
+<p>Date: 2026-05-10<br />
+Context: A survey of where Leo Tolstoy discusses copyright, ownership of his writings, and the free dissemination of texts across the 90-volume Jubilee Edition (PSS). The survey was prompted by the editorial need on tolstoy.life to ground its public-domain license — the <em>Soli Deo Gloria</em> dedication that gives all the site's text away — in Tolstoy's own words rather than in editorial framing alone.</p>
+<hr />
+<h2>1. Why this matters for tolstoy.life</h2>
+<p>The license under which everything tolstoy.life publishes is dedicated to the public domain. The dedication is informed by a conviction Tolstoy held and acted on across the last three decades of his life: that his writings should not be private property. The history of how he reached, declared, defended, and finally legally secured that conviction is itself substantial — and it sits in primary sources that are not always trivially accessible.</p>
+<p>This document is the result of one focused sweep across those sources, primarily the structured TEI/XML edition of the Jubilee Edition produced by the <em>Слово Толстого</em> (Word of Tolstoy) project at HSE Moscow. The findings are organised so that any future research session — by the project, by a contributor, or by anyone else — can pick up where this one stops.</p>
+<p>A companion file, <a href="../pss-volume-mapping.md">pss-volume-mapping.md</a>, resolves Tom-number citations in this document to the local PDF paths under <code>primary-sources/jubilee-edition/</code>.</p>
+<hr />
+<h2>2. The shape of the question in Tolstoy's life</h2>
+<p>The renunciation of literary property is not a single declaration. It is an evolving position that runs from the early 1880s to Tolstoy's death in 1910. Six staged moments form the spine.</p>
+<h3>2.1. 1883 — The philosophical groundwork</h3>
+<p>The diary entries from 1883 onward work out the underlying ethic: property is not in itself evil; <em>property defended by violence</em> is. From the diary entry of 1 January 1883 (PSS Tom 49, p. 59):</p>
+<blockquote>
+<p>Так на днях — собственность. Я всё не мог себе уяснить, что она. Собственность, как она теперь — зло. А собственность сама по себе — радость на то, что тем, что я сделал, добро. И мне стало ясно. Не было ложки, было полено, — я выдумал, потрудился и вырезал ложку. Какое же сомненье, что она моя? Как гнездо этой птицы ее гнездо. Она хочет им пользоваться, как хочет. Но собственность, ограждаемая насилием — городовым с пистолетом — это зло. Сделай ложку и ешь ею, но пока она другому не нужна.</p>
+<p><em>Property as it is now — is evil. Property in itself — is joy in the good one has made. There was no spoon, there was a piece of wood — I conceived it, I worked at it and carved a spoon. What doubt is there that it is mine? As the bird's nest is its nest. It wants to use it as it wishes. But property defended by violence — by the policeman with a pistol — that is evil. Make a spoon and eat with it, but only until another needs it.</em></p>
+</blockquote>
+<p>(Working English; full Russian extract: <a href="extracts/v49_059_059_1883_01_01.txt">extracts/v49_059_059_1883_01_01.txt</a>.)</p>
+<p>This is the conceptual foundation that the later, more practical statements rest on.</p>
+<h3>2.2. 1891 (16 September) — The public declaration</h3>
+<p>Open letter to the editors of <em>Russkie vedomosti</em> and <em>Novoye vremya</em>, published in both papers on 19 September 1891, renouncing the copyright on all Tolstoy's writings written from 1881 onward. PSS Tom 66, letter 36, pp. 47–48. Local PDF: <code>primary-sources/jubilee-edition/vol32/vol32.pdf</code>.</p>
+<p>The operative sentence:</p>
+<blockquote>
+<p>Предоставляю всем желающим право безвозмездно издавать в России и за границей, по-русски и в переводах, а равно и ставить на сценах все те из моих сочинений, которые были написаны мною с 1881 года и напечатаны в XII томе моих полных сочинений издания 1886 года, и в XIII томе, изданном в нынешнем 1891 году, равно и все мои неизданные в России и могущие вновь появиться после нынешнего дня сочинения.</p>
+<p><em>I grant to all who so wish the right to publish gratis, in Russia and abroad, in Russian and in translations, and likewise to perform on stage, all those of my writings which were written by me from 1881 onward…</em></p>
+</blockquote>
+<p>The English paraphrase that circulates in secondary literature — <em>"any of my works written after 1880"</em> — is slightly inaccurate. The Russian reads <em>"с 1881 года"</em>: from 1881 onward, <strong>inclusive of 1881</strong>. The earliest works covered by the renunciation include <em>A Confession</em> (1882) and the religious-philosophical writings of the early 1880s.</p>
+<p>Full extract: <a href="extracts/v66_036_RedaktoramgazetRusskievedomosti.txt">extracts/v66_036_RedaktoramgazetRusskievedomosti.txt</a>.</p>
+<h3>2.3. 1891 (July) — The household conflict, partly redacted</h3>
+<p>The 1891 declaration was published only after a protracted disagreement within Tolstoy's household. Sofya Andreyevna refused for years to assent. The diary entry of 22 July 1891 (PSS Tom 52, pp. 45–47) records the first major confrontation, but the most detailed description was physically removed from the diary before the modern edition could transcribe it. The TEI text marks this at the relevant point:</p>
+<blockquote>
+<p>Вчера уехал Гинзбург, и вчера же уехали Гельбиги. И вчера же был разговор с женой о напечатании письма в газетах об отказе от права авторской собственности. Трудно вспомнить, а главное, описать всё, что тут было:</p>
+<p><strong>[Вымарано 19 строк.]</strong></p>
+<p><em>Yesterday Gintsburg left, and yesterday too the Helbigs left. And yesterday too there was a conversation with my wife about printing in the newspapers the letter renouncing the right of literary property. It is difficult to recall, and chiefly to describe, everything that was said:</em></p>
+<p><strong>[19 lines erased.]</strong></p>
+</blockquote>
+<p>The editorial annotation <code>[Вымарано 19 строк]</code> records that nineteen lines of the manuscript page were deleted by Sofya Andreyevna at some point after the entry was written. The most direct family-conflict record on the very topic Tolstoy was preparing to make public was suppressed within the source itself. The fact of the redaction is preserved in the modern edition; the redacted text is not.</p>
+<p>Full extract: <a href="extracts/v52_045_047_1891_07_22.txt">extracts/v52_045_047_1891_07_22.txt</a>.</p>
+<h3>2.4. 1895 (27 March) — The will-as-diary-entry</h3>
+<p>PSS Tom 53, pp. 14–18; TEI id <code>v53_014_018_1895_03_27</code>. Local PDF: <code>primary-sources/jubilee-edition/vol19/vol19.pdf</code>. Of the materials this survey covers, this is the most plainly written first-person statement.</p>
+<p>The diary entry of 27 March 1895 was conceived by Tolstoy as a private will, framing his last wishes for his burial, his papers, and his writings. It precedes the six formal wills of 1909–1910 by fourteen years and stands as the personal-voice version of what the later legal documents codified. Point 4 is the relevant section here:</p>
+<blockquote>
+<p>4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак не завещаю. Сделаете это — хорошо. Хорошо будет это и для вас, не сделаете — это ваше дело. Значит, вы не могли этого сделать. То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни.</p>
+<p><em>4) I ask my heirs to hand over to the public the right of publication of my earlier works — the ten volumes and the</em> Azbuka <em>— that is, to renounce the copyright. But I only ask this and in no way bequeath it. If you do it — good. It will be good for you too. If you do not — that is your affair. It means you could not have done it.</em> That my writings have been sold during these last ten years was the heaviest thing in my life.</p>
+</blockquote>
+<p>The closing sentence — <em>То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни</em> — is the most plainly affecting line in the survey. It reads not as a public statement but as a confession to whoever reads the diary after his death.</p>
+<p>Full extract: <a href="extracts/v53_014_018_1895_03_27.txt">extracts/v53_014_018_1895_03_27.txt</a>. The printed page from the Jubilee Edition (PSS Tom 53, p. 16) is reproduced at <a href="extracts/pss-vol53-pages/page-054.png">extracts/pss-vol53-pages/page-054.png</a>.</p>
+<h3>2.5. 1909–1910 — Six successive formal wills</h3>
+<p>Tolstoy and V. G. Chertkov drew up six wills in eighteen months to find a legally binding form for the renunciation. The principal obstacle was that imperial Russian civil law did not allow bequeathing property "to the people"; only physical or juridical persons could be designated heirs. The successive drafts are recorded in PSS Tom 80 (1909 wills, including the fourth and fifth) and PSS Tom 82 (1910 sixth and final will, plus the Explanatory Note).</p>
+<p>The final formal will of 22 July 1910 was written in the woods near Yasnaya Polyana, away from the household, because the situation at home made open work on the document impossible.</p>
+<h3>2.6. 1910 (31 July) — The Explanatory Note to the Will</h3>
+<p>PSS Tom 82, pp. 227–231. TEI id <code>v82_305_Obyasnitelnayazapiskakzaveshhaniyu</code>. Local PDF: <code>primary-sources/jubilee-edition/vol58/vol58.pdf</code>.</p>
+<p>Drafted by V. G. Chertkov in the third person at Tolstoy's request and signed by him with a holograph closing paragraph. This is the most legally precise statement of the renunciation and the document that finally gave it binding form. The operative provision:</p>
+<blockquote>
+<p>1) Все его сочинения, литературные произведения и писания всякого рода, как уже где-либо напечатанные, так и еще не изданные, не составляли после его смерти ничьей частной собственности, а могли бы быть издаваемы и перепечатываемы всеми, кто этого захочет.</p>
+<p><em>1) All his compositions, literary works, and writings of every kind — both those already printed somewhere and those still unpublished — shall after his death constitute no one's private property, but may be published and reprinted by all who wish it.</em></p>
+</blockquote>
+<p>The Explanatory Note also contains a chronology of the six successive wills and the legal reasoning behind each — useful as a primary source for the textual-historical question of when and how the renunciation became binding.</p>
+<p>Full extract: <a href="extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt">extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt</a>.</p>
+<hr />
+<h2>3. Where the theme clusters in the Jubilee Edition</h2>
+<p>The keyword sweep that produced this survey hit roughly 60 letter files and 25 diary entries directly on the topic, plus a smaller number of pages in published works and notebooks. The map below points to clusters that reward further reading; the file-by-file list of every hit lives in the working notes for this survey under <code>projects/splash-tolstoy-quote/</code>.</p>
+<h3>Diaries</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>TEI id</th>
+<th>Material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1883-01-01</td>
+<td>v49_059_059_1883_01_01</td>
+<td>Philosophical groundwork on property</td>
+</tr>
+<tr>
+<td>1888-12-05</td>
+<td>v50_009_010_1888_12_05</td>
+<td>Property and economic structure (cheap bread, refusal of land ownership)</td>
+</tr>
+<tr>
+<td>1889-03-30</td>
+<td>v50_059_060_1889_03_30</td>
+<td>Christian life requires complete renunciation of property — written after a meeting with American visitors</td>
+</tr>
+<tr>
+<td>1890-03-17</td>
+<td>v51_027_029_1890_03_17</td>
+<td>The order of renunciation: first the desire that wants property, then the vanity that wants approval</td>
+</tr>
+<tr>
+<td>1891-07-22</td>
+<td>v52_045_047_1891_07_22</td>
+<td>First detailed diary account of the household conflict over the 1891 declaration. <strong>19 lines redacted.</strong></td>
+</tr>
+<tr>
+<td>1891-07-31 to 1891-08-13</td>
+<td>v52_047 to v52_050</td>
+<td>Continuing reflections through the standoff; the public declaration finally goes out on 16 September</td>
+</tr>
+<tr>
+<td><strong>1895-03-27</strong></td>
+<td><strong>v53_014_018_1895_03_27</strong></td>
+<td><strong>Will-as-diary-entry; most plainly written first-person statement in the survey</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A broader sweep across the 1888–1891 entries on the keyword <em>собственность</em> (property) returned approximately 25 entries. The material rewards a systematic reading of these years specifically.</p>
+<h3>Letters</h3>
+<table>
+<thead>
+<tr>
+<th>PSS Tom, letter id</th>
+<th>Addressee, date</th>
+<th>Material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tom 66, letter 036</td>
+<td>Editors of <em>Russkie vedomosti</em> / <em>Novoye vremya</em>, 1891-09-16</td>
+<td>The public declaration</td>
+</tr>
+<tr>
+<td>Tom 66, letter 253</td>
+<td>N. N. Strakhov, 1892-04-24</td>
+<td>Aftermath of the declaration</td>
+</tr>
+<tr>
+<td>Tom 63, letter 430</td>
+<td>P. I. Birjukov, 1885</td>
+<td>Earliest sustained discussion in the letters</td>
+</tr>
+<tr>
+<td>Tom 68, letter 043</td>
+<td>N. N. Gesyn</td>
+<td>Practical: gratis publishing arrangements</td>
+</tr>
+<tr>
+<td>Tom 72, letter 010</td>
+<td>Aylmer Maude, 1899-01-12</td>
+<td>Translation rights for <em>Resurrection</em>; correspondence with the principal English translator</td>
+</tr>
+<tr>
+<td>Tom 72, letter 075</td>
+<td>A. F. Marks, 1899</td>
+<td>The Niva publishing arrangement for <em>Resurrection</em> — the one work for which Tolstoy accepted payment, to fund Doukhobor emigration</td>
+</tr>
+<tr>
+<td>Tom 72, letters 389, 412</td>
+<td>A. C. Fifield, 1901–1902</td>
+<td>Correspondence with the English publisher who reprinted Tolstoy's late works for free distribution</td>
+</tr>
+<tr>
+<td>Tom 72, letter 403</td>
+<td>A. V. Yushko, 1901</td>
+<td>Permission grant</td>
+</tr>
+<tr>
+<td>Tom 73, letter 153</td>
+<td>Albert Langen, 1902</td>
+<td>German publisher correspondence</td>
+</tr>
+<tr>
+<td>Tom 75, letter 131</td>
+<td>Saratov Publishing Society, 1905</td>
+<td>Permission grant</td>
+</tr>
+<tr>
+<td>Tom 76, letter 107</td>
+<td>Albert Škarvan, 1907</td>
+<td>Slovak translator and disciple — likely the deepest doctrinal statement to a non-Russian correspondent</td>
+</tr>
+<tr>
+<td>Tom 77, letter 192</td>
+<td>P. A. Stolypin, 1907</td>
+<td>Letter to the Prime Minister referencing the renunciation</td>
+</tr>
+<tr>
+<td>Tom 78, letter 199</td>
+<td>P. A. Sergeenko, 1908</td>
+<td>Sergeenko later chronicled the will-drafting process</td>
+</tr>
+<tr>
+<td>Tom 80, letter 001</td>
+<td>F. A. Abramov, 1909</td>
+<td>Permission grant, late period</td>
+</tr>
+<tr>
+<td>Tom 80, letters 394–395</td>
+<td>The 1909 fourth and fifth wills</td>
+<td></td>
+</tr>
+<tr>
+<td>Tom 82, letter 287</td>
+<td>A. L. Tolstaya, 1910</td>
+<td>To his daughter Aleksandra — internal-family articulation of the bequest</td>
+</tr>
+<tr>
+<td>Tom 82, letter 305</td>
+<td>Explanatory Note to the Will, 1910-07-31</td>
+<td>The legal culmination</td>
+</tr>
+<tr>
+<td>Tom 83, 84, 85, 86, 87, 88, 89</td>
+<td>Various drafts and apparatus</td>
+<td>The editorial volumes contain working drafts and appendix material</td>
+</tr>
+</tbody>
+</table>
+<h3>Polemical works</h3>
+<table>
+<thead>
+<tr>
+<th>PSS Tom</th>
+<th>Work</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tom 8</td>
+<td><em>On the Publication of a New Journal</em></td>
+<td>Practical statement of editorial principle</td>
+</tr>
+<tr>
+<td>Tom 26</td>
+<td><em>On Life</em> — variant editions of last chapters</td>
+<td>Bears on what counts as "his" text vs free for adaptation</td>
+</tr>
+<tr>
+<td><strong>Tom 28</strong></td>
+<td><strong><em>Tsarstvo Bozhie vnutri vas</em> (<em>The Kingdom of God Is Within You</em>)</strong></td>
+<td>The major polemical work of the renunciation period. An English translation is held at <code>primary-sources/standard-ebooks/leo-tolstoy_the-kingdom-of-god-is-within-you_leo-wiener.epub</code></td>
+</tr>
+<tr>
+<td>Tom 5</td>
+<td>Early articles on Russian military criminal law and on peasant emancipation</td>
+<td>Foundation: property and law before 1880</td>
+</tr>
+<tr>
+<td>Tom 91</td>
+<td>Index volume</td>
+<td>Cross-reference all the above via <a href="http://index.tolstoy.ru/">index.tolstoy.ru</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Notebooks</h3>
+<table>
+<thead>
+<tr>
+<th>PSS Tom</th>
+<th>Material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tom 51 — Записная книжка №2, 1890</td>
+<td>Working notebook from the year before the declaration</td>
+</tr>
+<tr>
+<td>Tom 56 — Listy zapisnoj knizhki, 1908</td>
+<td>Late period</td>
+</tr>
+<tr>
+<td>Tom 58 — Listy iz zapisnoj knizhki, 1910</td>
+<td>Last year of life</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Material not covered by this survey</h2>
+<p>The survey was time-boxed and did not cover:</p>
+<ul>
+<li><strong>The Krug chteniya / Put' zhizni anthologies.</strong> Tolstoy's two anthology projects of the late period contain his curated thinking on possession, money, and labour. The keyword sweep returned a few hits but full coverage was out of scope.</li>
+<li><strong>The commentary apparatus</strong> (<code>texts/comments/</code>, 807 TEI files). The editorial commentary in PSS volumes is often as illuminating as the primary texts.</li>
+<li><strong>Incoming letters</strong> to Tolstoy. The TEI corpus appears to hold only Tolstoy's outgoing letters; the incoming correspondence — particularly from Chertkov and from Sofya Andreyevna — would round out the family-conflict picture.</li>
+<li><strong>Goldenweiser and Makovický conversation transcripts.</strong> The two doctors and disciples kept verbatim daily logs of conversations from the late years. Plain text is held at <code>primary-sources/tolstoydigital-TEI/texts_txt/Goldenweiser/</code> and <code>texts_txt/Makovitski/</code>. They almost certainly contain spoken statements on copyright.</li>
+</ul>
+<hr />
+<h2>5. The manuscript record</h2>
+<p>The original manuscripts of the diary entries and letters cited in this survey are held by the State Tolstoy Museum (Государственный музей-заповедник Л.Н. Толстого, GMT) in Moscow. The L. N. Tolstoy fond comprises 71 492 documents and is the world's largest collection of Tolstoy manuscript material; it is stored in the museum's "стальная комната" (steel room).</p>
+<p>A high-resolution facsimile of the 27 March 1895 diary page does not appear to be available on the open web at the time of writing. Two relevant digitisation projects exist, neither covering the manuscript pages themselves:</p>
+<ul>
+<li><em>Весь Толстой в один клик</em> (All Tolstoy in One Click), 2014. ABBYY OCR + crowdsourced proofreading, run by the Tolstoy Museum and Yasnaya Polyana with support from the Mellon Foundation and the British Council. Produced the digitised printed text now hosted at <a href="https://tolstoy.ru">tolstoy.ru</a>. The input was scans of the <strong>printed 90 volumes</strong>; the underlying handwritten manuscripts were not part of the project's scope.</li>
+<li>The State Tolstoy Museum's online collection at <a href="https://tolstoy-iss.kamiscloud.ru/">tolstoy-iss.kamiscloud.ru</a>, a curated exhibition browser. It is not a full archive and does not appear to expose individual diary pages by date.</li>
+</ul>
+<p>The state museum-fund catalogue <a href="https://web.goskatalog.ru/gk/">Госкаталог</a> catalogues museum holdings administratively but typically does not expose high-resolution image files of working manuscripts.</p>
+<p>The State Tolstoy Museum's website footer at the time of writing reads:</p>
+<blockquote>
+<p>Использование любых находящихся на сайте материалов без официального разрешения запрещено<br />
+© 2026 Государственный музей-заповедник Л.Н. Толстого. Все права защищены</p>
+<p><em>The use of any materials found on the site without official permission is prohibited. © 2026 State L.N. Tolstoy Museum-Reserve. All rights reserved.</em></p>
+</blockquote>
+<p>A digital photograph of the 1895 diary page at the resolution and licence required for a public-facing reference site would need to be requested from the museum's manuscripts department directly.</p>
+<hr />
+<h2>6. Method</h2>
+<ul>
+<li>The TEI corpus from <code>primary-sources/tolstoydigital-TEI/texts/</code> was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files, plus notes and Krug chteniya.</li>
+<li>A layered Russian keyword set was used, from high-confidence anchors (<code>авторск[ое]</code>, <code>литературн[ая собственность]</code>, <code>безвозмездн[о]</code>, <code>перепечат[ывать]</code>, <code>гонорар</code>, <code>после 1881</code>) to broader terms used in combination (<code>собственност[ь]</code>, <code>Чертков</code>).</li>
+<li>Every TEI filename encodes the PSS Tom number and, for diaries, the entry date (<code>vXX_NNN_..._YYYY_MM_DD.xml</code>). Every TEI file contains a <code>&lt;title type="bibl"&gt;</code> element giving the formal PSS citation. Both were preserved verbatim through the extraction so all citations in this document are anchored to their TEI source.</li>
+<li>A small lxml-based extractor (<code>outputs/extract_tei.py</code> during the session, not yet in <code>tools/</code>) resolves the heavy editorial markup in the TEI body — <code>&lt;choice&gt;/&lt;sic&gt;/&lt;corr&gt;</code> editorial-correction wrappers and <code>&lt;note&gt;</code> footnote bodies — to produce readable Russian prose for grep with context. The extracted text matches the printed PSS modulo the orthographic conventions of 1953 typesetting.</li>
+<li>The finalist passages were cross-checked against the printed PSS by extracting the relevant pages from the local PDFs at 220 dpi (<code>pdftoppm</code>). The 27 March 1895 entry was verified against PSS Tom 53 (= local file <code>vol19/vol19.pdf</code>), pages 14–18 of the printed book.</li>
+</ul>
+<p>The companion file <a href="../pss-volume-mapping.md">pss-volume-mapping.md</a> documents the local-file naming convention that made the cross-check non-trivial: PDFs are named in publication-order, not by Tom number.</p>
+<hr />
+<h2>7. References</h2>
+<p>Primary:</p>
+<ul>
+<li>Толстой Л. Н. <em>Полное собрание сочинений: в 90 тт.</em> — Москва: Гос. изд. «Художественная литература», 1928–1958. (PSS, the 90-volume Jubilee Edition. Local copies at <code>primary-sources/jubilee-edition/</code>.)</li>
+<li>tolstoydigital TEI corpus, <em>Слово Толстого</em> project, HSE Moscow. CC BY-SA. <a href="https://github.com/tolstoydigital/TEI">https://github.com/tolstoydigital/TEI</a>. Local copy at <code>primary-sources/tolstoydigital-TEI/</code>.</li>
+</ul>
+<p>Background:</p>
+<ul>
+<li>Orekhov, B. V. (2020). "Volume 91": an Electronic Index to the Complete Works of Leo Tolstoy. <em>Journal of Siberian Federal University. Humanities &amp; Social Sciences</em>, 13(12), 2049–2055. DOI: 10.17516/1997-1370-0703. Local copy at <code>primary-sources/jubilee-edition/91vol.pdf</code>.</li>
+<li><em>Tolstoy Digitized for Future Generations</em>. ABBYY blog, on the <em>Весь Толстой в один клик</em> project. <a href="https://www.abbyy.com/blog/tolstoy-digitized-for-future-generations/">https://www.abbyy.com/blog/tolstoy-digitized-for-future-generations/</a>.</li>
+<li>Tolstoy, Leo. <em>The Journal of Leo Tolstoi (First Volume — 1895–1899)</em>. Project Gutenberg. <a href="https://www.gutenberg.org/ebooks/46272">https://www.gutenberg.org/ebooks/46272</a>. (Older English translation, public domain. Quoted line is <strong>not</strong> in this edition.)</li>
+<li>Christian, R. F. (ed.). <em>Tolstoy's Diaries Volume II: 1895–1910</em>. Faber, 2010. (Modern English scholarly edition; not held locally.)</li>
+</ul>
+<p>Companion documents in this docs/ folder:</p>
+<ul>
+<li><a href="../pss-volume-mapping.md">pss-volume-mapping.md</a> — Tom number → local PDF file lookup.</li>
+<li><a href="../tolstoydigital-tei-reference.md">tolstoydigital-tei-reference.md</a> — Reference for the TEI corpus and its relationship to the Jubilee Edition.</li>
+</ul>
+<p>Working notes for this survey, including the unfiltered file-by-file hit list and the Johan-facing recommendations that prompted this public version, live at <code>projects/splash-tolstoy-quote/</code> in the research repository.</p>
+</main>
+<footer>tolstoy.life · public documentation</footer>
+
+<!-- Annotation UI -->
+<div id="ann-popover">
+  <div class="ann-quote" id="ann-quote"></div>
+  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <div class="ann-actions">
+    <button id="ann-cancel">Cancel</button>
+    <button class="primary" id="ann-save">Save</button>
+  </div>
+</div>
+<div id="ann-tooltip"></div>
+<div id="ann-bar">
+  <button id="ann-export">Copy annotations</button>
+  <button class="danger" id="ann-clear">Clear all</button>
+</div>
+
+<script>
+(function() {
+  const DOC_KEY = 'docs/research/copyright-renunciation/index';
+  const STORE_KEY = 'tolstoy_annotations';
+
+  // ── Storage ──────────────────────────────────────────────────────────────
+  function loadAll() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveAll(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+  function loadDoc() {
+    return loadAll()[DOC_KEY] || [];
+  }
+  function saveDoc(anns) {
+    const all = loadAll();
+    if (anns.length === 0) delete all[DOC_KEY];
+    else all[DOC_KEY] = anns;
+    saveAll(all);
+  }
+
+  // ── Fuzzy text anchor ────────────────────────────────────────────────────
+  function getContext(range) {
+    const selected = range.toString();
+    const container = range.commonAncestorContainer;
+    const full = (container.textContent || container.innerText || '');
+    const start = full.indexOf(selected);
+    if (start === -1) return null;
+    return {
+      text: selected,
+      before: full.slice(Math.max(0, start - 30), start),
+      after: full.slice(start + selected.length, start + selected.length + 30)
+    };
+  }
+
+  // ── Rendering ────────────────────────────────────────────────────────────
+  function findAndWrap(ann, index) {
+    const main = document.querySelector('main');
+    if (!main) return;
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const idx = node.textContent.indexOf(ann.anchor.text);
+      if (idx === -1) continue;
+      const before10 = ann.anchor.before.slice(-10);
+      const after10 = ann.anchor.after.slice(0, 10);
+      const nodeText = node.textContent;
+      const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
+                     || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
+      if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
+
+      const before = node.textContent.slice(0, idx);
+      const after = node.textContent.slice(idx + ann.anchor.text.length);
+      const mark = document.createElement('mark');
+      mark.className = 'annotation';
+      mark.dataset.index = index;
+      mark.textContent = ann.anchor.text;
+      const afterNode = document.createTextNode(after);
+      node.textContent = before;
+      node.parentNode.insertBefore(mark, node.nextSibling);
+      node.parentNode.insertBefore(afterNode, mark.nextSibling);
+      attachTooltip(mark, ann, index);
+      break;
+    }
+  }
+
+  function renderAll() {
+    document.querySelectorAll('mark.annotation').forEach(m => {
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    const anns = loadDoc();
+    anns.forEach((ann, i) => findAndWrap(ann, i));
+    updateBar();
+  }
+
+  // ── Tooltip ──────────────────────────────────────────────────────────────
+  const tooltip = document.getElementById('ann-tooltip');
+
+  function attachTooltip(mark, ann, index) {
+    mark.addEventListener('mouseenter', e => {
+      tooltip.textContent = ann.comment;
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    mark.addEventListener('mousemove', positionTooltip);
+    mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    mark.addEventListener('click', e => {
+      e.stopPropagation();
+      showDeleteConfirm(index, mark);
+    });
+  }
+
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // ── Delete confirm ────────────────────────────────────────────────────────
+  function showDeleteConfirm(index, mark) {
+    const anns = loadDoc();
+    const comment = anns[index] ? anns[index].comment : '';
+    if (confirm('Delete this annotation?\n\n"' + comment + '"')) {
+      anns.splice(index, 1);
+      saveDoc(anns);
+      renderAll();
+    }
+  }
+
+  // ── Popover ───────────────────────────────────────────────────────────────
+  const popover = document.getElementById('ann-popover');
+  const annText = document.getElementById('ann-text');
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+  let pendingRange = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
+
+  function hidePopover() {
+    popover.style.display = 'none';
+    annText.value = '';
+    pendingAnchor = null;
+    if (pendingRange) { window.getSelection().removeAllRanges(); pendingRange = null; }
+  }
+
+  function showPopover(x, y, anchor, range) {
+    pendingAnchor = anchor;
+    pendingRange = range;
+    annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
+    popover.style.display = 'block';
+    let px = x, py = y + 12;
+    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
+    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
+    setTimeout(() => annText.focus(), 50);
+  }
+
+  // ── Selection listener ────────────────────────────────────────────────────
+  document.addEventListener('mouseup', e => {
+    if (popover.contains(e.target)) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    const range = sel.getRangeAt(0);
+    if (!main.contains(range.commonAncestorContainer)) return;
+    const anchor = getContext(range);
+    if (!anchor) return;
+    showPopover(e.clientX, e.clientY, anchor, range);
+  });
+
+  document.addEventListener('mousedown', e => {
+    if (!popover.contains(e.target)) hidePopover();
+  });
+
+  // ── Export / clear bar ────────────────────────────────────────────────────
+  const bar = document.getElementById('ann-bar');
+
+  function updateBar() {
+    const anns = loadDoc();
+    bar.style.display = anns.length > 0 ? 'flex' : 'none';
+  }
+
+  document.getElementById('ann-export').addEventListener('click', () => {
+    const anns = loadDoc();
+    if (!anns.length) return;
+    const lines = ['# Annotations — ' + DOC_KEY, ''];
+    anns.forEach((a, i) => {
+      lines.push('## ' + (i+1) + '. ' + a.created.slice(0,10));
+      lines.push('> ' + a.anchor.text);
+      lines.push('');
+      lines.push(a.comment);
+      lines.push('');
+    });
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      const btn = document.getElementById('ann-export');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    });
+  });
+
+  document.getElementById('ann-clear').addEventListener('click', () => {
+    if (confirm('Delete all annotations on this page?')) {
+      saveDoc([]);
+      renderAll();
+    }
+  });
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  renderAll();
+})();
+</script>
+</body>
+</html>

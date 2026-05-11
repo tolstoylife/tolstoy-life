@@ -364,7 +364,7 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <header class="doc-header">
   <p class="eyebrow">design</p>
   <h1>Tolstoy Period Colours — Research & Proposal</h1>
-  <p class="meta">Last modified 19 April 2026 · <a href="/design/period-colours-research.md">view source</a></p>
+  <p class="meta">Last modified 9 May 2026 · <a href="/design/period-colours-research.md">view source</a></p>
 </header>
 <main>
 <p><em>Design system research. Phase 1: Four base colours for the four periods of Tolstoy's life.</em><br />
@@ -528,6 +528,104 @@ The late Tolstoy was excommunicated by the Holy Synod — he was considered dang
 </li>
 </ol>
 <hr />
+<h2>Decisions landed — 2026-05-09 (Task 1b)</h2>
+<p>Followed the 2026-04-19 proposal but with refinements drawn from <a href="period-colours-preview.html">period-colours-preview.html</a> and committed to <a href="../../website/src/_data/designTokens/colorsBase.json"><code>website/src/_data/designTokens/colorsBase.json</code></a> on the <code>port-jedee-design-system</code> branch (commit <code>9a9fe0d</code>). All four "Open Questions" above resolved as follows.</p>
+<h3>Period accents — final</h3>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Slot in <code>colorsBase.json</code></th>
+<th>Light theme</th>
+<th>Dark theme tint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I — Youth &amp; Formation</td>
+<td><code>light_dark[].Green</code></td>
+<td><code>#4A7C59</code></td>
+<td><code>#7DBF92</code></td>
+</tr>
+<tr>
+<td>II — Soldier &amp; Sinner</td>
+<td><code>light_dark[].Red</code></td>
+<td><code>#B83232</code></td>
+<td><code>#E06868</code></td>
+</tr>
+<tr>
+<td>III — The Great Works</td>
+<td><code>shades_vibrant[0]</code> (Amber, full ramp)</td>
+<td><code>#B8960A</code> (anchor) → <code>#a48200</code> (<code>amber-500</code>)</td>
+<td><code>#DDB840</code> (<code>amber-tint</code>)</td>
+</tr>
+<tr>
+<td>IV — The Prophet</td>
+<td><code>light_dark[].Blue</code></td>
+<td><code>#2362A0</code></td>
+<td><code>#5DA0DC</code></td>
+</tr>
+</tbody>
+</table>
+<p>Two divergences from the 2026-04-19 proposed palette:</p>
+<ul>
+<li><strong>Period III</strong>: was <code>#C8860A</code> ochre amber; is <code>#B8960A</code> (slightly more golden, leans towards but not into the metallic-gold <code>#D4A017</code> bound). Chosen by visual review in <a href="period-colours-preview.html">period-colours-preview.html</a>; harmonises with the warm parchment surface better than the ochre-amber starting point.</li>
+<li><strong>Period IV</strong>: was <code>#2B5F8E</code> Prussian; is <code>#2362A0</code> (brighter, more saturated). Same reason — preview-file refinement.</li>
+</ul>
+<p>Periods I and II committed at the proposed values unchanged.</p>
+<h3>Open Questions — answers</h3>
+<ol>
+<li><strong>Period II naming.</strong> Kept "Soldier &amp; Sinner" for now (Tolstoy's own framing in <em>A Confession</em>). Editorial-only — flag for revisit when the homepage/wiki copy actually surfaces it.</li>
+<li><strong>Gold vs Amber for Period III.</strong> Amber, but tilted gold-ward to <code>#B8960A</code>. Settles the ecclesiastical-gold ↔ secular-amber axis at a point closer to the canonical/Jubilee Edition reading without the metallic coldness of pure gold.</li>
+<li><strong>Forest vs spring green for Period I.</strong> Forest <code>#4A7C59</code> — kept as proposed.</li>
+<li><strong>Knowledge graph design.</strong> Out of scope for Task 1b. The timelinegraph prototype track (07–10) is the live answer; see <a href="../superpowers/specs/2026-04-29-timelinegraph-design.md"><code>docs/superpowers/specs/2026-04-29-timelinegraph-design.md</code></a> and the 2026-05-04 LOG entry.</li>
+</ol>
+<h3>Surfaces — final</h3>
+<p>The base ramp is now warm parchment-grey for light theme and slate charcoal for dark theme. Same four-stop ramp (<code>palette[]</code> in <code>colorsBase.json</code>) drives both:</p>
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Hex</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>base-darkest</code></td>
+<td><code>#272b30</code></td>
+<td>Dark theme page bg</td>
+</tr>
+<tr>
+<td><code>base-dark</code></td>
+<td><code>#30353c</code></td>
+<td>Dark theme card surface (lifted from bg)</td>
+</tr>
+<tr>
+<td><code>base-light</code></td>
+<td><code>#dcd9d0</code></td>
+<td>Light theme page bg</td>
+</tr>
+<tr>
+<td><code>base-lightest</code></td>
+<td><code>#e8e4db</code></td>
+<td>Light theme card surface (lifted from bg)</td>
+</tr>
+</tbody>
+</table>
+<p><code>semanticColors.json</code> rewires both <code>light.bg → {color.base.light}</code> and <code>dark.bg → {color.base.darkest}</code> so a single ramp owns surfaces. The previous asymmetric mapping (light from <code>base-*</code>, dark from <code>gray.*</code>) is gone.</p>
+<p><code>shades_neutral[].Gray</code> is now <code>#9ba3b4</code> (the preview file's <code>--theme-mid</code>) — a cool-grey complement used for text-accent, dividers, and tertiary surfaces. Pulling it out of the surface role keeps the warm parchment / slate charcoal axis clean.</p>
+<h3>Naming — Orange → Amber</h3>
+<p>The <code>shades_vibrant[]</code> slot was renamed <code>Orange</code> → <code>Amber</code>. CSS swept across 16 consumer files: <code>--color-orange-*</code> → <code>--color-amber-*</code> and <code>--color-accent-orange</code> → <code>--color-accent-amber</code>. <code>--color-accent-red</code> was added explicitly so all four periods have a semantic layer (the JEDEE original only carried orange + blue + green).</p>
+<h3>Dark-theme tints — design intent</h3>
+<p>The lighter per-period tints exist because the <code>light_dark</code> slots only generate a <code>subdued</code> sibling (–20% chroma, same lightness), which doesn't lift the colour for dark-bg legibility. Hardcoding the tints as <code>standalone</code> entries gives <code>--color-{red,blue,green}-tint</code> and <code>--color-amber-tint</code> as design tokens (not just CSS values) — they export to Penpot alongside the rest and stay editable from the JSON source.</p>
+<p>The four tints will likely be tuned in Penpot once the file imports; the values committed in 1b are the preview-file proposals, not final visual decisions.</p>
+<h3>What's next (per the splash-site plan)</h3>
+<ul>
+<li><strong>Task 1c</strong> — fonts (Source family stays JEDEE default; pick humanist sans-serif for site/wiki + book serif for ebook), and revisit the <code>base-*</code> ramp again if the warm parchment proves too warm or the slate charcoal proves too cool against actual prose.</li>
+<li><strong>Task 2</strong> — License + SDG graphic.</li>
+<li><strong>Task 3</strong> — splash homepage rebuild on top of the new tokens.</li>
+</ul>
 <h2>Sources</h2>
 <ul>
 <li><a href="https://russianicon.com/meaning-of-colors-in-eastern-orthodox-iconography/">Meaning of Colors in Eastern Orthodox Iconography</a></li>

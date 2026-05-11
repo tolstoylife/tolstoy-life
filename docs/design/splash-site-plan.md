@@ -9,7 +9,7 @@
 Four sequenced tasks, in this order:
 
 1. **Design-system port + Penpot token sync** — port JEDEE's evolved token pipeline (`semanticColors.json`, `typography.json`, `build-penpot-tokens.js`, `build-design-md.js`, `--color-accent-*` CSS layer, `themeColor-*` → `base-*` rename), then retoken with tolstoy.life's period palette, then run the pipeline and import into Penpot.
-2. **License finalisation + SDG graphic** — tighten the LICENSE prose; integrate the illustrator's vectorized Soli Deo Gloria graphic (with and without caption) once delivered.
+2. **License finalisation + SDG graphic** — tighten the LICENSE prose; integrate the illustrator's vectorized Soli Deo Gloria graphic (with and without caption) once delivered. *[Status 2026-05-11: LICENSE prose tightened — added licence-boundaries section, pinned CC BY-SA 4.0 for tolstoydigital data, cross-referenced the new source-mode spec. Source-mode editorial spec written at `docs/editorial/source-mode.md` and implementation recipe at `docs/development/source-mode-implementation.md`. SDG graphic still pending illustrator delivery.]*
 3. **Splash homepage rebuild** — replace `website/src/pages/index.njk` with the public homepage described below.
 4. **Documentation build pipeline** — markdown → HTML via Eleventy, replacing the current ad-hoc HTML generator in `docs/`.
 

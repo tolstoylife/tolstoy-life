@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Splash site — plan — tolstoy.life docs</title>
+<title>PSS Tom number → local PDF file mapping — tolstoy.life docs</title>
 <style>
 :root {
   --ink: #1e1a17;
@@ -358,151 +358,319 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <span class="breadcrumb">
           <a href="/INDEX.html">Index</a>
           <span>›</span>
-          design
+          research
         </span>
 </div>
 <header class="doc-header">
-  <p class="eyebrow">design</p>
-  <h1>Splash site — plan</h1>
-  <p class="meta">Last modified 9 May 2026 · <a href="/design/splash-site-plan-original.md">view source</a></p>
+  <p class="eyebrow">research</p>
+  <h1>PSS Tom number → local PDF file mapping</h1>
+  <p class="meta">Last modified 10 May 2026 · <a href="/research/pss-volume-mapping.md">view source</a></p>
 </header>
 <main>
-<p><em>Planning document for the tolstoy.life public splash site and documentation.</em></p>
-<p><em>Archived 2026-05-09: this is the pre-annotation version. Superseded by <code>splash-site-plan-revised.md</code> and the active plan at <code>docs/splash-site-plan.md</code>.</em></p>
+<p>Date: 2026-05-10<br />
+Context: The local copies of the Jubilee Edition (<em>Полное собрание сочинений</em>, PSS) at <code>primary-sources/jubilee-edition/volNN/volNN.pdf</code> are named in the <strong>chronological publication order of the 90-volume project (1928–1958)</strong>, not by Tom number. This document is the lookup table that resolves a Tom number cited in scholarly literature or in the tolstoydigital TEI corpus to the local PDF file that contains it.</p>
+<p>The TEI files in <code>primary-sources/tolstoydigital-TEI/texts/</code> use filenames of the form <code>vNN_NNN_*.xml</code> where <code>NN</code> is the <strong>Tom number</strong>. The local PDFs use <code>volNN</code> where <code>NN</code> is the <strong>publication-order index</strong>. They are not the same number.</p>
 <hr />
-<h2>Decisions made</h2>
-<h3>Tech stack</h3>
-<p>Rebuild the splash site using <strong>Eleventy Excellent</strong> — the same stack as the main tolstoy.life website. This replaces the current Astro installation. The motivation is consistency: one stack across all frontend work, with Every Layout, CUBE CSS, and the established design system already in place.</p>
-<h3>Repo structure</h3>
-<p>The splash page and docs section will live in <code>tolstoylife/website</code> — the same repo as the main tolstoy.life site. The separate <code>tolstoylife/splash</code> Astro repo is retired once the new homepage is live.</p>
-<p>This means the splash page becomes the homepage of <code>website/</code>, and the design is literally the alpha of the final site — same tokens, same Every Layout primitives, same CUBE CSS blocks. No migration step later, no design decisions to carry over.</p>
-<p>The <code>docs/</code> sync script still exists (docs originate in the Tolstoy research repo), but the destination is cleaner and the href rewriting simpler because it is one Eleventy build.</p>
-<h3>Draft content and collaborator access</h3>
-<p>Wiki pages under active development use Eleventy's <code>draft: true</code> frontmatter flag, which excludes them from production builds. Two Netlify deploys are configured from the same repo and branch:</p>
+<h2>How the mapping was built</h2>
+<p>For each <code>volNN/volNN.pdf</code> the auto-generated cover page from the <em>Весь Толстой в один клик</em> (All Tolstoy in One Click) digitisation project carries a header reading <code>Полное собрание сочинений. Том NN.</code> which gives the canonical Tom number. A bulk scan with <code>pdftotext -l 4</code> and a regex against this header produced 88 of 90 entries directly. Two volumes (vol33 and vol52) lacked the cover header on the first pages but were resolved from the body text of the editorial preface or front matter. One Tom (Tom 31) is still unresolved at the time of writing — see TODO at the end.</p>
+<hr />
+<h2>Lookup table</h2>
+<p>The 90-volume Jubilee Edition (PSS) is divided by the <a href="../../primary-sources/jubilee-edition/tolstoy-jubilee-edition-guide.pdf">tolstoy-jubilee-edition-guide.pdf</a> into three parts plus a supplementary volume:</p>
 <ul>
-<li><code>tolstoy.life</code> — production build, published content only</li>
-<li><code>preview.tolstoy.life</code> — separate Netlify site, all content including drafts, for collaborators. Password-protected if needed.</li>
+<li>Part 1 — Fiction and essays (Tom 1–45)</li>
+<li>Part 2 — Diaries and notebooks (Tom 46–57)</li>
+<li>Part 3 — Letters (Tom 58–89)</li>
+<li>Tom 90 — Miscellaneous and supplementary material</li>
+<li>Tom 91 — Indexes (1964 supplement)</li>
 </ul>
-<p>This keeps everything in one repo and one branch (<code>main</code>) with no branch management overhead.</p>
-<p><strong>AGENTS.md, CLAUDE.md, MANIFEST.md</strong> remain at the Tolstoy repo root as technical documentation, rendered natively by GitHub for collaborators and technical visitors.</p>
-<h3>Documentation aesthetic</h3>
-<p>One-column serif layout. No sidebar. No Docusaurus or Starlight — those carry a developer-product aesthetic that doesn't suit a literary research project. The existing DocsLayout style (paper/serif) is the right direction; carry it forward into the Eleventy rebuild.</p>
+<p>The local file numbering reflects publication-order, which loosely tracks Tom number for the main run and then jumps for the loose-end volumes published last.</p>
+<table>
+<thead>
+<tr>
+<th>Tom</th>
+<th>Local PDF</th>
+<th>Tom</th>
+<th>Local PDF</th>
+<th>Tom</th>
+<th>Local PDF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tom 1</td>
+<td>vol62</td>
+<td>Tom 32</td>
+<td>vol01</td>
+<td>Tom 63</td>
+<td>vol29</td>
+</tr>
+<tr>
+<td>Tom 2</td>
+<td>vol63</td>
+<td>Tom 33</td>
+<td>vol02</td>
+<td>Tom 64</td>
+<td>vol30</td>
+</tr>
+<tr>
+<td>Tom 3</td>
+<td>vol64</td>
+<td>Tom 34</td>
+<td>vol03</td>
+<td>Tom 65</td>
+<td>vol31</td>
+</tr>
+<tr>
+<td>Tom 4</td>
+<td>vol65</td>
+<td>Tom 35</td>
+<td>vol04</td>
+<td>Tom 66</td>
+<td>vol32</td>
+</tr>
+<tr>
+<td>Tom 5</td>
+<td>vol66</td>
+<td>Tom 36</td>
+<td>vol05</td>
+<td>Tom 67</td>
+<td>vol33</td>
+</tr>
+<tr>
+<td>Tom 6</td>
+<td>vol67</td>
+<td>Tom 37</td>
+<td>vol06</td>
+<td>Tom 68</td>
+<td>vol34</td>
+</tr>
+<tr>
+<td>Tom 7</td>
+<td>vol68</td>
+<td>Tom 38</td>
+<td>vol07</td>
+<td>Tom 69</td>
+<td>vol52</td>
+</tr>
+<tr>
+<td>Tom 8</td>
+<td>vol69</td>
+<td>Tom 39</td>
+<td>vol08</td>
+<td>Tom 70</td>
+<td>vol35</td>
+</tr>
+<tr>
+<td>Tom 9</td>
+<td>vol70</td>
+<td>Tom 40</td>
+<td>vol49</td>
+<td>Tom 71</td>
+<td>vol53</td>
+</tr>
+<tr>
+<td>Tom 10</td>
+<td>vol71</td>
+<td>Tom 41</td>
+<td>vol09</td>
+<td>Tom 72</td>
+<td>vol36</td>
+</tr>
+<tr>
+<td>Tom 11</td>
+<td>vol72</td>
+<td>Tom 42</td>
+<td>vol10</td>
+<td>Tom 73</td>
+<td>vol37</td>
+</tr>
+<tr>
+<td>Tom 12</td>
+<td>vol73</td>
+<td>Tom 43</td>
+<td>vol11</td>
+<td>Tom 74</td>
+<td>vol54</td>
+</tr>
+<tr>
+<td>Tom 13</td>
+<td>vol74</td>
+<td>Tom 44</td>
+<td>vol12</td>
+<td>Tom 75</td>
+<td>vol38</td>
+</tr>
+<tr>
+<td>Tom 14</td>
+<td>vol75</td>
+<td>Tom 45</td>
+<td>vol13</td>
+<td>Tom 76</td>
+<td>vol55</td>
+</tr>
+<tr>
+<td>Tom 15</td>
+<td>vol76</td>
+<td>Tom 46</td>
+<td>vol14</td>
+<td>Tom 77</td>
+<td>vol39</td>
+</tr>
+<tr>
+<td>Tom 16</td>
+<td>vol61</td>
+<td>Tom 47</td>
+<td>vol15</td>
+<td>Tom 78</td>
+<td>vol56</td>
+</tr>
+<tr>
+<td>Tom 17</td>
+<td>vol77</td>
+<td>Tom 48</td>
+<td>vol16</td>
+<td>Tom 79</td>
+<td>vol40</td>
+</tr>
+<tr>
+<td>Tom 18</td>
+<td>vol78</td>
+<td>Tom 49</td>
+<td>vol50</td>
+<td>Tom 80</td>
+<td>vol57</td>
+</tr>
+<tr>
+<td>Tom 19</td>
+<td>vol79</td>
+<td>Tom 50</td>
+<td>vol17</td>
+<td>Tom 81</td>
+<td>vol41</td>
+</tr>
+<tr>
+<td>Tom 20</td>
+<td>vol80</td>
+<td>Tom 51</td>
+<td>vol51</td>
+<td>Tom 82</td>
+<td>vol58</td>
+</tr>
+<tr>
+<td>Tom 21</td>
+<td>vol81</td>
+<td>Tom 52</td>
+<td>vol18</td>
+<td>Tom 83</td>
+<td>vol42</td>
+</tr>
+<tr>
+<td>Tom 22</td>
+<td>vol82</td>
+<td><strong>Tom 53</strong></td>
+<td><strong>vol19</strong></td>
+<td>Tom 84</td>
+<td>vol43</td>
+</tr>
+<tr>
+<td>Tom 23</td>
+<td>vol83</td>
+<td>Tom 54</td>
+<td>vol20</td>
+<td>Tom 85</td>
+<td>vol44</td>
+</tr>
+<tr>
+<td>Tom 24</td>
+<td>vol84</td>
+<td>Tom 55</td>
+<td>vol21</td>
+<td>Tom 86</td>
+<td>vol45</td>
+</tr>
+<tr>
+<td>Tom 25</td>
+<td>vol85</td>
+<td>Tom 56</td>
+<td>vol22</td>
+<td>Tom 87</td>
+<td>vol46</td>
+</tr>
+<tr>
+<td>Tom 26</td>
+<td>vol86</td>
+<td>Tom 57</td>
+<td>vol23</td>
+<td>Tom 88</td>
+<td>vol47</td>
+</tr>
+<tr>
+<td>Tom 27</td>
+<td>vol87</td>
+<td>Tom 58</td>
+<td>vol24</td>
+<td>Tom 89</td>
+<td>vol59</td>
+</tr>
+<tr>
+<td>Tom 28</td>
+<td>vol88</td>
+<td>Tom 59</td>
+<td>vol25</td>
+<td>Tom 90</td>
+<td>vol48</td>
+</tr>
+<tr>
+<td>Tom 29</td>
+<td>vol89</td>
+<td>Tom 60</td>
+<td>vol26</td>
+<td>Tom 91</td>
+<td>vol60</td>
+</tr>
+<tr>
+<td>Tom 30</td>
+<td>vol90</td>
+<td>Tom 61</td>
+<td>vol27</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(Tom 31 — see TODO)</td>
+<td></td>
+<td>Tom 62</td>
+<td>vol28</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The bolded row marks <strong>Tom 53 → vol19</strong>, the diaries 1895–1899 volume that contains the 27 March 1895 will-as-diary-entry referenced in <a href="copyright-renunciation/">the copyright-renunciation research</a>.</p>
 <hr />
-<h2>Audience</h2>
-<p>The splash site has two audiences:<br />
-1. <strong>Institutions</strong> (archives, libraries, cultural heritage organisations) who may be asked to provide source material. The site needs to communicate that this is a serious, methodologically sound, long-term research effort.<br />
-2. <strong>General public</strong> interested in Tolstoy or in how the project works. Technical content is welcome — no reason to shy away from it.</p>
+<h2>Examples of use</h2>
+<p>To find the printed page that corresponds to a TEI letter file:</p>
+<pre><code class="language-sh"># TEI: letters/v66_036_RedaktoramgazetRusskievedomosti.xml
+# bibl: ...Полное собрание сочинений: в 90 тт. Т. 66. ... С. 47–48.
+# Tom 66 → vol32
+
+pdftoppm -r 220 -f 50 -l 60 -png \
+  primary-sources/jubilee-edition/vol32/vol32.pdf \
+  /tmp/page
+# (The TEI bibl gives the printed page range — use it to find which PDF page to extract.)
+</code></pre>
+<p>To find which Tom a local file actually contains, inspect the auto-generated cover header:</p>
+<pre><code class="language-sh">pdftotext -l 2 primary-sources/jubilee-edition/vol19/vol19.pdf - | head
+# Полное собрание сочинений. Том 53.
+# Дневники и записные книжки 1895–1899
+</code></pre>
 <hr />
-<h2>Start page structure</h2>
-<p>The start page is a rework of MANIFEST.md into a public statement, not a one-to-one port.</p>
-<h3>1. Hero</h3>
+<h2>TODO</h2>
 <ul>
-<li>The decorative ornamental T (current placeholder logo, dark background)</li>
-<li>Tagline: <em>The life and works of Leo Tolstoy</em></li>
-<li>Countdown ticker directly below — counting down to <strong>9 September 2028</strong> (Tolstoy's 200th birth anniversary). Display: days, hours, minutes, seconds. Typographic treatment, not flashy.</li>
+<li><strong>Tom 31 unresolved.</strong> A first-pages scan of all 90 PDFs did not return a <code>Том 31</code> header. Two possibilities: (a) the local PDF for Tom 31 has a different cover format that the regex missed, (b) Tom 31 is held at a publication-order index whose first pages start with content rather than the standard cover. A targeted page-by-page scan or visual inspection would resolve it. Recorded here so it does not get lost.</li>
+<li><strong>Promote to a script.</strong> This mapping is currently a static markdown table. A small <code>tools/pss-volume.py</code> that takes a Tom number and returns the local PDF path (or vice versa) would make round-trip lookups trivial during research sessions. Generation script could re-derive the table from the cover headers each run, so the mapping stays correct if the local PDF set is replaced.</li>
+<li><strong>Verify Tom 47 attribution.</strong> The Jubilee Edition guide flags Tom 47 (diaries and notebooks) as the most extensively commented volume in the entire PSS — worth annotating that here when the script lands.</li>
 </ul>
-<p><em>Note: The illustrator may deliver a proper tolstoy.life logo. When it arrives, it replaces the decorative T.</em></p>
-<h3>2. Project statement</h3>
-<p>Three or four sentences drawn from MANIFEST "What this is". Keep the directness of the original — "It is not a Wikipedia mirror. It is not a popular biography." is strong enough to preserve almost verbatim.</p>
-<h3>3. Editorial focus</h3>
-<p>One short paragraph on the late period. This is what makes tolstoy.life distinct: treating Tolstoy's post-1878 religious, philosophical, and social writings with the same seriousness as the great novels. This signals scholarly intent to institutions.</p>
-<h3>4. Collaborate</h3>
-<p>A section pointing to the GitHub organisation.</p>
-<blockquote>
-<p><em>The project is built in the open. Contributions are welcome.</em><br />
-<a href="https://github.com/tolstoylife">Join us on GitHub →</a></p>
-</blockquote>
-<p>Institutions can also see exactly what is being built.</p>
-<h3>5. License — Soli Deo Gloria</h3>
-<p>The SDG section with:<br />
-- The illustrator's <strong>SDG lettering graphic</strong> as a logo (donated; arrives later — placeholder in the meantime)<br />
-- The Bach paragraph from the LICENSE file as the introduction to this section:</p>
-<blockquote>
-<p><em>Johann Sebastian Bach inscribed these words on his manuscripts to declare that his work belonged not to himself but to something greater. Leo Tolstoy held the same conviction…</em><br />
-- Brief statement of the public domain dedication<br />
-- Link to full LICENSE</p>
-</blockquote>
-<p><em>Note: The license text needs a little more work before finalising. See the LICENSE file in the Tolstoy repo root.</em></p>
-<h3>6. Documentation link</h3>
-<p>A quiet link into the <code>/docs</code> section.</p>
-<h3>7. Tolstoy quote</h3>
-<p>A direct quote from Tolstoy — from his diaries or letters — on copyright renunciation or the free flow of knowledge. Gives the page literary texture and grounds the SDG license in his own words rather than just editorial framing. Sits naturally as a bridge between sections, likely between the editorial focus and the license section. Source from the Jubilee Edition; needs dedicated research to find the right line.</p>
-<p><strong>This is a major research task.</strong> Tolstoy's views on copyright and private property — including his active efforts to renounce ownership of his own work — have been systematically under-represented and at times suppressed by the very institutions that hold and profit from his legacy. Web searches consistently fail to surface the primary source material. Finding the right quote requires working directly in the Jubilee Edition, not secondary sources.</p>
-<p><strong>Interim placeholder</strong> (widely documented, verifiable): his 1891 public notice in Russian newspapers — <em>"I give permission to all who wish it to reprint, without any payment, any of my works written after 1880."</em> Direct and plain. Usable as a placeholder until a stronger line is found.</p>
-<p><strong>The real prize</strong>: a diary or letter passage — likely mid-1890s — where he reflects on the absurdity of owning thoughts, or on knowledge as inherently common property. More literary, more personal, more resonant. If found and verified against the Jubilee Edition, this replaces the 1891 notice.</p>
-<h3>8. Sense of scale</h3>
-<p>One line near the top conveying the ambition in concrete terms. Something like: <em>"90 volumes in the Jubilee Edition. Over 50,000 surviving letters. One freely available reference work."</em> Makes the abstract claim tangible and implicitly explains why 2028 is the target. Institutions respond to numbers.</p>
-<h3>9. Live progress — recent commits</h3>
-<p>Instead of a manually-written status note, this section loads recent commits from the tolstoylife GitHub organisation via the public GitHub API (client-side JS, no authentication required). Displays the last 5–7 commits: date, repo name, and the first line of the commit message, each linking through to the commit on GitHub.</p>
-<p>This replaces vague "in active development" language with verifiable, live evidence of work. Institutions can click through and see the actual commits. Commit messages should stay meaningful — <code>fix typo</code> or <code>wip</code> would undermine rather than build credibility.</p>
-<p><strong>Technical approach:</strong> <code>fetch()</code> to <code>api.github.com/repos/tolstoylife/{repo}/commits</code> on page load, across a whitelist of repos. Graceful degradation: if JS is off or the fetch fails, the section simply does not render.</p>
-<h3>10. Mailing list signup</h3>
-<p>A simple "notify me when it launches" input for the general public and interested researchers. People who find tolstoy.life in 2026 currently have no way to be notified when the wiki opens — this closes that gap. Minimal: one email field, one submit button, no marketing language.</p>
-<p>Implementation TBD — options include a simple mailto form, Buttondown, or a similar low-friction newsletter tool appropriate for a non-commercial scholarly project.</p>
-<h3>11. Institutional contact</h3>
-<p>A plain contact line at the bottom of the page for archives and libraries considering contributing source material. Email is how institutions work. Even a simple <em>"For institutional enquiries: [email]"</em> closes a loop that is otherwise missing entirely.</p>
-<hr />
-<h2>Documentation section</h2>
-<ul>
-<li>Built from <code>docs/</code> in the Tolstoy repo, synced via the existing script</li>
-<li>One-column serif layout using Eleventy Excellent</li>
-<li>Public-facing but technically complete — no need to dumb down methodology or tooling details</li>
-<li>Structured to show institutions: scope, methodology, source authority hierarchy, draft/verified status system</li>
-</ul>
-<hr />
-<h2>Design system</h2>
-<p>The rebuild uses Eleventy Excellent with Every Layout and CUBE CSS — same as the main site. <code>website/</code> is currently a clone of the JEDEE design system (Johan's personal site), so the design tokens — colours, fonts, spacing — need to be replaced with tolstoy.life's own values before any serious CSS work begins.</p>
-<h3>Font direction</h3>
-<p>The site has two distinct reading contexts with different needs:</p>
-<ul>
-<li><strong>Website and wiki</strong> — modern feel, likely a humanist sans-serif. The wiki is a reference work, not a book: density, scannability, and clarity at small sizes matter more than literary warmth. A well-chosen sans-serif signals that this is a contemporary, maintained project.</li>
-<li><strong>E-reader / ebook</strong> — a proper book serif, optimised for long-form reading. This is where the traditional literary register belongs. Readers spending hours with a text expect book typography.</li>
-</ul>
-<p>Font choices to be decided before token updates. The token keys (<code>--font-base</code>, <code>--font-display</code>, <code>--font-mono</code>) stay the same; only the values change.</p>
-<h3>CSS organisation</h3>
-<p>CUBE CSS requires named, single-purpose files — no monolithic page stylesheets. New components for the splash page will be added as discrete blocks in <code>src/assets/css/global/blocks/</code>:</p>
-<ul>
-<li><code>hero.css</code> — full-bleed dark hero section</li>
-<li><code>commits-feed.css</code> — live GitHub commits list</li>
-<li><code>email-signup.css</code> — mailing list form</li>
-</ul>
-<p>Anything truly unique to the homepage layout (if anything) goes in <code>src/assets/css/local/homepage.css</code>. Design tokens must be in place before these files are written.</p>
-<h3>Penpot</h3>
-<p>The Penpot token pipeline is already built in the JEDEE codebase and carries over to <code>website/</code> unchanged. No MCP needed — the workflow is:</p>
-<ol>
-<li>Edit token JSON files in <code>src/_data/designTokens/</code></li>
-<li><code>npm run colors</code> — regenerates CSS custom properties (only needed if <code>colorsBase.json</code> changed)</li>
-<li><code>npm run penpot:tokens</code> — generates <code>tokens/penpot-tokens.dtcg.json</code> and regenerates <code>DESIGN.md</code></li>
-<li>Manual import in Penpot: Tokens panel → import → select the file</li>
-</ol>
-<p><code>DESIGN.md</code> is an AI-readable design system spec regenerated by the same script — it's the bridge between the token JSON files and what Claude reads when working on the design system. The token JSON files are always the source of truth; the DTCG file and <code>DESIGN.md</code> are derived artifacts.</p>
-<p>See <code>docs/design/penpot-tokens.md</code> for the full reference.</p>
-<hr />
-<h2>Pending before build</h2>
-<ul>
-<li><strong>Font selection</strong> — choose typefaces for (a) website/wiki: modern humanist sans-serif, and (b) e-reader: book serif. Update <code>designTokens/fonts.json</code> and run <code>npm run colors</code> once decided.</li>
-<li><strong>Design token replacement</strong> — replace JEDEE colour and font tokens with tolstoy.life values. Prerequisite for all CSS block work.</li>
-<li><strong>Penpot token sync</strong> — after font and colour decisions are made, run <code>npm run penpot:tokens</code> and import the resulting DTCG file into the tolstoy.life Penpot file. See <code>docs/penpot-tokens.md</code>.</li>
-<li><strong>Tolstoy quote research</strong> — dedicated research session in the Jubilee Edition. Do not attempt via web search. The 1891 newspaper notice serves as placeholder in the meantime.</li>
-<li><strong>tolstoy.life logo</strong> — hoping the illustrator will help. Until then, the decorative T stays.</li>
-<li><strong>SDG lettering graphic</strong> — donated by the illustrator, arriving later. Placeholder in the license section until delivered.</li>
-<li><strong>License finalisation</strong> — the LICENSE file in the repo root needs a little more work.</li>
-<li><strong>GitHub organisation URL</strong> — confirm the canonical URL for the collaboration CTA (currently assumed <code>github.com/tolstoylife</code>).</li>
-<li><strong>Move splash into <code>website/</code></strong> — the homepage of <code>tolstoylife/website</code> becomes the splash page. Retire the <code>tolstoylife/splash</code> Astro repo once the new homepage is live. The current Astro <code>DocsLayout.astro</code> CSS is the reference for the docs template styling.</li>
-<li><strong>Set up <code>preview.tolstoy.life</code></strong> — configure a second Netlify site from the same repo pointing at <code>tolstoylife/website</code>, with a build flag that includes <code>draft: true</code> pages. Password-protect if needed. This is the collaborator-facing deploy.</li>
-<li><strong>Mailing list tool</strong> — choose a newsletter/notification tool appropriate for a non-commercial scholarly project (e.g. Buttondown). Wire up the signup form in section 10.</li>
-<li><strong>Countdown degradation</strong> — JS countdown degrades gracefully to "Coming 2028" if JS is off or unavailable.</li>
-<li><strong>GitHub commits whitelist</strong> — decide which tolstoylife repos to include in the live progress feed.</li>
-</ul>
-<hr />
-<h2>Notes on the current splash site</h2>
-<p>The existing Astro splash site (<code>tolstoylife/splash</code>) has:<br />
-- A dark start page with the decorative T and "The life and works of Leo Tolstoy. Coming 2028."<br />
-- A working docs section with one-column paper/serif styling — this is the aesthetic reference to preserve in the rebuild<br />
-- A sync pipeline: <code>scripts/sync-docs.sh</code> copies <code>docs/**</code> from the Tolstoy repo, stripping frontmatter</p>
-<p>The "Coming 2028" line reads as both a statement of timeline and a reference to the bicentennial. This is intentional and worth keeping — the countdown ticker makes it explicit.</p>
-<hr />
-<p><em>Created: May 2026.</em></p>
 </main>
 <footer>tolstoy.life · public documentation</footer>
 
@@ -523,7 +691,7 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 
 <script>
 (function() {
-  const DOC_KEY = 'docs/design/splash-site-plan-original';
+  const DOC_KEY = 'docs/research/pss-volume-mapping';
   const STORE_KEY = 'tolstoy_annotations';
 
   // ── Storage ──────────────────────────────────────────────────────────────

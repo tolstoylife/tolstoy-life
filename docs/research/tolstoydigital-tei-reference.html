@@ -153,6 +153,105 @@ th {
   border-bottom: 1px solid var(--accent-soft);
 }
 
+/* ── Index page ── */
+.featured-section {
+  max-width: var(--measure-wide);
+  margin: 1rem auto 2.5rem;
+  padding: 0 1.5rem;
+}
+.featured-card {
+  display: block;
+  padding: 1.7rem 1.9rem;
+  background: rgba(107, 68, 35, 0.06);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.featured-card:hover {
+  border-color: var(--accent);
+  background: rgba(107, 68, 35, 0.10);
+  color: var(--ink);
+}
+.featured-card .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.7rem;
+}
+.featured-card .card-title {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.featured-card .card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.85rem;
+}
+.featured-card .card-lede {
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0 0 2.5rem;
+}
+.index-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: rgba(107,68,35,0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.index-card:hover {
+  border-color: var(--accent-soft);
+  background: rgba(107,68,35,0.07);
+  color: var(--ink);
+}
+.index-card .card-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.index-card .card-meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.index-card .card-lede {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 2.5rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
 footer {
   max-width: var(--measure);
   margin: 0 auto;
@@ -255,22 +354,22 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <body>
 <div class="site-header">
   <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
-  <span class="breadcrumb">
-    <a href="/INDEX.html">Index</a>
-    <span>›</span>
-    research
-  </span>
+  
+        <span class="breadcrumb">
+          <a href="/INDEX.html">Index</a>
+          <span>›</span>
+          research
+        </span>
 </div>
 <header class="doc-header">
   <p class="eyebrow">research</p>
   <h1>tolstoydigital TEI Reference Data</h1>
-  <p class="meta">10 May 2026 · <a href="/research/tolstoydigital-tei-reference.md">view source</a></p>
+  <p class="meta">Last modified 10 May 2026 · <a href="/research/tolstoydigital-tei-reference.md">view source</a></p>
 </header>
 <main>
-<p>Date: 2026-05-10<br>
+<p>Date: 2026-05-10<br />
 Context: Documentation of the tolstoydigital/TEI repository and its relationship to the 91st volume index of Tolstoy's Jubilee Edition. Covers what we have, what we don't, and how it relates to the tolstoy.life data pipeline.</p>
-<hr>
-
+<hr />
 <h2>1. The Jubilee Edition and the 91st volume</h2>
 <p>The Jubilee Edition (<em>Полное собрание сочинений</em>, 1928–1964) is the authoritative complete works of Leo Tolstoy, published in 90 volumes. A 91st volume was published in 1964 as a comprehensive index to the entire set. It contains:</p>
 <ul>
@@ -282,8 +381,7 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
 <p>The 91st volume is a navigation tool: it tells you that a given person or place appears on page X of volume Y of the print edition. It does not contain Tolstoy's texts themselves.</p>
 <p>A PDF guide to the Jubilee Edition is held at <code>primary-sources/jubilee-edition/tolstoy-jubilee-edition-guide.pdf</code>.</p>
 <p>The 91st volume index has also been digitised as a web application: <a href="http://index.tolstoy.ru/">index.tolstoy.ru</a>, with a project page at <a href="http://tolstoy.ru/projects/91-index/">tolstoy.ru/projects/91-index/</a>. The web app adds fuzzy search and network graph visualisation — co-occurrence of names on the same page becomes a graph edge, revealing Tolstoy's social network as documented in his own texts.</p>
-<hr>
-
+<hr />
 <h2>2. "All Tolstoy in One Click" — the digitisation project</h2>
 <p>The plain text corpus that underpins the tolstoydigital TEI repository was produced by a crowdsourcing project called <em>Весь Толстой в один клик</em> ("All Tolstoy in One Click"), completed in 2014.</p>
 <p><strong>The problem:</strong> The Jubilee Edition had only ever been printed in a run of 5,000 copies and never reprinted. By the early 2010s it was a bibliographic rarity, held mainly in private collections and specialist libraries.</p>
@@ -293,51 +391,113 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
 <p><strong>The chain to the TEI corpus:</strong> Jubilee Edition (print, 1928–1964) → crowdsourced OCR and proofreading (2014) → plain text on tolstoy.ru → TEI/XML encoding by the tolstoydigital team → <code>texts/</code> and <code>texts_txt/</code> in the GitHub repository.</p>
 <p>The <code>texts_txt/</code> folder in the tolstoydigital/TEI repo is essentially this digitised corpus in plain text form, making it the most directly usable asset for LightRAG ingestion.</p>
 <p><em>Further reading:</em> The project is documented in the Orekhov (2020) paper held at <code>primary-sources/jubilee-edition/91vol.pdf</code>, and in an <a href="https://www.abbyy.com/blog/tolstoy-digitized-for-future-generations/">ABBYY blog post</a>.</p>
-<hr>
-
+<hr />
 <h2>3. The tolstoydigital TEI repository</h2>
 <p>The repository <a href="https://github.com/tolstoydigital/TEI">github.com/tolstoydigital/TEI</a> is the output of the <em>Слово Толстого</em> (Word of Tolstoy) project, a digital humanities initiative by HSE (Higher School of Economics, Moscow). It contains the full 90-volume Jubilee Edition encoded in TEI/XML, plus structured reference data.</p>
-
 <h3>Repository structure</h3>
 <table>
-<thead><tr><th>Folder</th><th>Contents</th></tr></thead>
+<thead>
+<tr>
+<th>Folder</th>
+<th>Contents</th>
+</tr>
+</thead>
 <tbody>
-<tr><td><code>texts/</code></td><td>TEI/XML encoded texts — the full 90 volumes</td></tr>
-<tr><td><code>texts_txt/</code></td><td>Plain text versions of the same content</td></tr>
-<tr><td><code>texts_front/</code></td><td>Front matter for the volumes</td></tr>
-<tr><td><code>headers/</code></td><td>TEI headers</td></tr>
-<tr><td><code>reference/</code></td><td>Structured reference data (see below)</td></tr>
-<tr><td><code>tolstoy-bio/</code></td><td>Biographical text in TEI/XML</td></tr>
-<tr><td><code>tolstoy_bio_front/</code></td><td>Front matter for the biography</td></tr>
-<tr><td><code>images/</code></td><td>Images referenced in the texts</td></tr>
-<tr><td><code>audio/</code></td><td>Audio recordings</td></tr>
-<tr><td><code>utils/</code></td><td>Python utility scripts</td></tr>
+<tr>
+<td><code>texts/</code></td>
+<td>TEI/XML encoded texts — the full 90 volumes</td>
+</tr>
+<tr>
+<td><code>texts_txt/</code></td>
+<td>Plain text versions of the same content</td>
+</tr>
+<tr>
+<td><code>texts_front/</code></td>
+<td>Front matter for the volumes</td>
+</tr>
+<tr>
+<td><code>headers/</code></td>
+<td>TEI headers</td>
+</tr>
+<tr>
+<td><code>reference/</code></td>
+<td>Structured reference data (see below)</td>
+</tr>
+<tr>
+<td><code>tolstoy-bio/</code></td>
+<td>Biographical text in TEI/XML</td>
+</tr>
+<tr>
+<td><code>tolstoy_bio_front/</code></td>
+<td>Front matter for the biography</td>
+</tr>
+<tr>
+<td><code>images/</code></td>
+<td>Images referenced in the texts</td>
+</tr>
+<tr>
+<td><code>audio/</code></td>
+<td>Audio recordings</td>
+</tr>
+<tr>
+<td><code>utils/</code></td>
+<td>Python utility scripts</td>
+</tr>
 </tbody>
 </table>
 <p>1,232 commits as of May 2026. Companion scripts at <a href="https://github.com/Levabu/tolstoy_digital">github.com/Levabu/tolstoy_digital</a>. Licence: CC BY-SA (declared in XML headers; no separate licence file in the repository root).</p>
-
 <h3>What we currently hold</h3>
 <p>Only the <code>reference/</code> folder has been downloaded, stored at <code>primary-sources/tolstoydigital-TEI/reference/</code>. The full corpus of encoded texts (<code>texts/</code>, <code>texts_txt/</code>) has not been cloned.</p>
-<hr>
-
+<hr />
 <h2>4. The reference files</h2>
 <p>The nine XML files in <code>reference/</code> are structured entity data built to support the TEI encoding project. They are the machine-readable counterpart to the 91st volume index.</p>
 <table>
-<thead><tr><th>File</th><th>Contents</th></tr></thead>
+<thead>
+<tr>
+<th>File</th>
+<th>Contents</th>
+</tr>
+</thead>
 <tbody>
-<tr><td><code>personList.xml</code></td><td>3,113 persons with structured attributes and IDs</td></tr>
-<tr><td><code>locationList.xml</code></td><td>770 locations</td></tr>
-<tr><td><code>bibllist_works.xml</code></td><td>Catalogue of Tolstoy's works in the 90-volume edition</td></tr>
-<tr><td><code>bibllist_bio.xml</code></td><td>Biographical bibliography</td></tr>
-<tr><td><code>sourceList.xml</code></td><td>List of sources referenced in the edition</td></tr>
-<tr><td><code>taxonomy.xml</code></td><td>Classification taxonomy for the encoded texts</td></tr>
-<tr><td><code>taxonomy_front.xml</code></td><td>Taxonomy for front matter</td></tr>
-<tr><td><code>Dictionary.xml</code></td><td>Terminology dictionary</td></tr>
-<tr><td><code>listMedia.xml</code></td><td>Media asset list</td></tr>
+<tr>
+<td><code>personList.xml</code></td>
+<td>3,113 persons with structured attributes and IDs</td>
+</tr>
+<tr>
+<td><code>locationList.xml</code></td>
+<td>770 locations</td>
+</tr>
+<tr>
+<td><code>bibllist_works.xml</code></td>
+<td>Catalogue of Tolstoy's works in the 90-volume edition</td>
+</tr>
+<tr>
+<td><code>bibllist_bio.xml</code></td>
+<td>Biographical bibliography</td>
+</tr>
+<tr>
+<td><code>sourceList.xml</code></td>
+<td>List of sources referenced in the edition</td>
+</tr>
+<tr>
+<td><code>taxonomy.xml</code></td>
+<td>Classification taxonomy for the encoded texts</td>
+</tr>
+<tr>
+<td><code>taxonomy_front.xml</code></td>
+<td>Taxonomy for front matter</td>
+</tr>
+<tr>
+<td><code>Dictionary.xml</code></td>
+<td>Terminology dictionary</td>
+</tr>
+<tr>
+<td><code>listMedia.xml</code></td>
+<td>Media asset list</td>
+</tr>
 </tbody>
 </table>
 <p>An additional file <code>All_tags_in_Tolstoy_letters_and_diaries.xlsx</code> documents all TEI tags used in the letters and diaries corpus.</p>
-
 <h3>Relationship to the 91st volume</h3>
 <p>The 91st volume (1964) is the intellectual source: the tolstoydigital team used it as the foundation for their entity lists. The TEI reference files are not a direct digitisation of the print index — they are a richer, purpose-built dataset:</p>
 <ul>
@@ -348,26 +508,21 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
 <li>Additional files (<code>Dictionary.xml</code>, <code>taxonomy.xml</code>) that go beyond the scope of the 91st volume entirely</li>
 </ul>
 <p>The 91st volume answers "where in the 90 volumes is this person mentioned?" The TEI reference files answer "what is known about this person, and how are they connected to Tolstoy's texts and to each other?"</p>
-<hr>
-
+<hr />
 <h2>5. Relevance to tolstoy.life</h2>
-
 <h3>Current use</h3>
 <p>The reference files are the primary structured source for wiki entities. Person and location entries in <code>personList.xml</code> and <code>locationList.xml</code> directly inform wiki stubs in <code>website/src/wiki/</code>. The <code>bibllist_works.xml</code> catalogue underpins <code>website/src/works/</code>.</p>
-
 <h3>Planned use — full corpus</h3>
 <p>The <code>texts_txt/</code> folder (plain text versions of all 90 volumes) is the most immediately valuable undownloaded asset. These are the source texts that would be ingested into LightRAG for knowledge graph construction — far richer than the current 29-document vault.</p>
-
 <h3>Fork strategy</h3>
 <p>A fork of <code>tolstoydigital/TEI</code> to the <code>tolstoylife</code> GitHub organisation would serve two purposes: signal of intent (tolstoy.life is building on this data seriously), and a stable local reference point for the data the platform depends on. 13 forks already exist; the CC BY-SA licence explicitly permits this. Reaching out to the tolstoydigital team (Anastasia Bonch-Osmolovskaya, Fёkla Tolstaya, Boris Orekhov) to introduce the project is advisable before or alongside the fork.</p>
-<hr>
-
+<hr />
 <h2>6. Next steps</h2>
 <ul>
-<li>Fork <code>tolstoydigital/TEI</code> to <code>tolstoylife</code> org</li>
-<li>Full <code>git clone</code> of the fork into <code>primary-sources/tolstoydigital-TEI/</code></li>
-<li>Assess <code>texts_txt/</code> volume and structure for LightRAG ingestion planning</li>
-<li>Contact tolstoydigital team to introduce tolstoy.life</li>
+<li>[ ] Fork <code>tolstoydigital/TEI</code> to <code>tolstoylife</code> org</li>
+<li>[ ] Full <code>git clone</code> of the fork into <code>primary-sources/tolstoydigital-TEI/</code></li>
+<li>[ ] Assess <code>texts_txt/</code> volume and structure for LightRAG ingestion planning</li>
+<li>[ ] Contact tolstoydigital team to introduce tolstoy.life</li>
 </ul>
 </main>
 <footer>tolstoy.life · public documentation</footer>
@@ -389,15 +544,20 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
 
 <script>
 (function() {
-  const DOC_KEY = 'docs/architecture/tolstoydigital-tei-reference';
+  const DOC_KEY = 'docs/research/tolstoydigital-tei-reference';
   const STORE_KEY = 'tolstoy_annotations';
 
+  // ── Storage ──────────────────────────────────────────────────────────────
   function loadAll() {
     try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
     catch { return {}; }
   }
-  function saveAll(data) { localStorage.setItem(STORE_KEY, JSON.stringify(data)); }
-  function loadDoc() { return loadAll()[DOC_KEY] || []; }
+  function saveAll(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+  function loadDoc() {
+    return loadAll()[DOC_KEY] || [];
+  }
   function saveDoc(anns) {
     const all = loadAll();
     if (anns.length === 0) delete all[DOC_KEY];
@@ -405,6 +565,7 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
     saveAll(all);
   }
 
+  // ── Fuzzy text anchor ────────────────────────────────────────────────────
   function getContext(range) {
     const selected = range.toString();
     const container = range.commonAncestorContainer;
@@ -418,6 +579,7 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
     };
   }
 
+  // ── Rendering ────────────────────────────────────────────────────────────
   function findAndWrap(ann, index) {
     const main = document.querySelector('main');
     if (!main) return;
@@ -432,6 +594,7 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
       const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
                      || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
       if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
+
       const before = node.textContent.slice(0, idx);
       const after = node.textContent.slice(idx + ann.anchor.text.length);
       const mark = document.createElement('mark');
@@ -456,64 +619,89 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
     updateBar();
   }
 
+  // ── Tooltip ──────────────────────────────────────────────────────────────
   const tooltip = document.getElementById('ann-tooltip');
 
   function attachTooltip(mark, ann, index) {
     mark.addEventListener('mouseenter', e => {
       tooltip.textContent = ann.comment;
       tooltip.style.display = 'block';
-      tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top = (e.clientY + 12) + 'px';
+      positionTooltip(e);
     });
-    mark.addEventListener('mousemove', e => {
-      tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top = (e.clientY + 12) + 'px';
-    });
+    mark.addEventListener('mousemove', positionTooltip);
     mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
     mark.addEventListener('click', e => {
       e.stopPropagation();
-      showPopoverEdit(e.clientX, e.clientY, index);
+      showDeleteConfirm(index, mark);
     });
   }
 
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // ── Delete confirm ────────────────────────────────────────────────────────
+  function showDeleteConfirm(index, mark) {
+    const anns = loadDoc();
+    const comment = anns[index] ? anns[index].comment : '';
+    if (confirm('Delete this annotation?\n\n"' + comment + '"')) {
+      anns.splice(index, 1);
+      saveDoc(anns);
+      renderAll();
+    }
+  }
+
+  // ── Popover ───────────────────────────────────────────────────────────────
   const popover = document.getElementById('ann-popover');
-  const annQuote = document.getElementById('ann-quote');
   const annText = document.getElementById('ann-text');
-  let pendingAnchor = null, pendingRange = null, editingIndex = -1;
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+  let pendingRange = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
 
   function hidePopover() {
     popover.style.display = 'none';
     annText.value = '';
-    pendingAnchor = null; editingIndex = -1;
+    pendingAnchor = null;
     if (pendingRange) { window.getSelection().removeAllRanges(); pendingRange = null; }
   }
 
   function showPopover(x, y, anchor, range) {
-    pendingAnchor = anchor; pendingRange = range; editingIndex = -1;
+    pendingAnchor = anchor;
+    pendingRange = range;
     annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
     popover.style.display = 'block';
     let px = x, py = y + 12;
     if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
     if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
-    popover.style.left = px + 'px'; popover.style.top = py + 'px';
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
     setTimeout(() => annText.focus(), 50);
   }
 
-  function showPopoverEdit(x, y, index) {
-    const anns = loadDoc();
-    const ann = anns[index];
-    if (!ann) return;
-    editingIndex = index;
-    annQuote.textContent = '"' + ann.anchor.text.slice(0, 120) + (ann.anchor.text.length > 120 ? '…' : '') + '"';
-    annText.value = ann.comment;
-    popover.style.display = 'block';
-    let px = x, py = y + 12;
-    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
-    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
-    popover.style.left = px + 'px'; popover.style.top = py + 'px';
-    setTimeout(() => annText.focus(), 50);
-  }
-
+  // ── Selection listener ────────────────────────────────────────────────────
   document.addEventListener('mouseup', e => {
     if (popover.contains(e.target)) return;
     const sel = window.getSelection();
@@ -533,24 +721,9 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
     if (!popover.contains(e.target)) hidePopover();
   });
 
-  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
-
-  document.getElementById('ann-save').addEventListener('click', () => {
-    const comment = annText.value.trim();
-    if (!comment) return;
-    const anns = loadDoc();
-    if (editingIndex >= 0) {
-      anns[editingIndex].comment = comment;
-    } else {
-      if (!pendingAnchor) return;
-      anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
-    }
-    saveDoc(anns);
-    hidePopover();
-    renderAll();
-  });
-
+  // ── Export / clear bar ────────────────────────────────────────────────────
   const bar = document.getElementById('ann-bar');
+
   function updateBar() {
     const anns = loadDoc();
     bar.style.display = anns.length > 0 ? 'flex' : 'none';
@@ -582,6 +755,7 @@ Context: Documentation of the tolstoydigital/TEI repository and its relationship
     }
   });
 
+  // ── Init ──────────────────────────────────────────────────────────────────
   renderAll();
 })();
 </script>

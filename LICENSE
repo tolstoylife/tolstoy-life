@@ -35,6 +35,31 @@ first published in the 19th and early 20th centuries and are in the
 public domain worldwide. The contributors make no claim of copyright
 over these source texts.
 
+## Licence boundaries inside this repository
+
+Different parts of the repository carry different licences. The
+boundary is by directory, not by file mixing.
+
+**SDG (public-domain dedication):** all original work in
+`website/src/wiki/`, `website/src/sources/`, `website/src/letters/`,
+`docs/`, and any code, prose, design, or metadata authored by
+tolstoy.life contributors. Functionally equivalent to **CC0 1.0**
+(SPDX-Identifier: `CC0-1.0`).
+
+**CC BY-SA 4.0:** anything in `primary-sources/tolstoydigital-TEI/`
+and any file in `_generated/` whose header declares
+`licence: CC-BY-SA-4.0`. Republishing or re-encoding this material
+requires attribution and ShareAlike. SPDX-Identifier: `CC-BY-SA-4.0`.
+
+**Tolstoy's own writings:** public domain worldwide. No licence
+applies to his words themselves, regardless of which edition
+transcribed them.
+
+Facts derived from CC BY-SA sources are not themselves copyrightable
+and do not carry the ShareAlike obligation. Wiki pages that draw on
+such facts surface per-fact attribution through the source-mode
+footnotes documented in [`docs/editorial/source-mode.md`](docs/editorial/source-mode.md).
+
 ## Third-party sources and dependencies
 
 This project draws on data and tools from third parties. Their licences
@@ -43,10 +68,14 @@ dedication.
 
 **tolstoydigital TEI/XML** — person, location, and work reference data
 extracted from the [tolstoydigital](https://tolstoydigital.org/) TEI
-corpus is licensed under **CC BY-SA**. Attribution is required, and
-derivative works incorporating this data must carry the same licence.
-Wiki pages that draw on tolstoydigital data cite the source per the
-project's sourcing rules.
+corpus. The upstream `<availability>` block in every file declares
+"Creative Commons Attribution Share-Alike (cc by-sa)" without a
+version number. This project treats the upstream licence as
+**CC BY-SA 4.0** (SPDX: `CC-BY-SA-4.0`) unless tolstoydigital
+specifies otherwise. Attribution is required, and derivative works
+incorporating the encoded data or markup must carry the same licence.
+Wiki pages that draw on tolstoydigital data carry per-fact attribution
+in source-mode footnotes.
 
 **Standard Ebooks tools** — the ebook production toolchain in `tools/`
 is a fork of [Standard Ebooks](https://standardebooks.org/) and is

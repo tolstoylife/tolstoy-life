@@ -370,13 +370,14 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <p><em>Planning document for the tolstoy.life public homepage and documentation.</em></p>
 <hr />
 <h2>Task order</h2>
-<p>Three sequenced tasks, in this order:</p>
+<p>Four sequenced tasks, in this order:</p>
 <ol>
-<li><strong>Penpot token sync</strong> — finalise font and colour decisions, regenerate tokens, import into Penpot.</li>
+<li><strong>Design-system port + Penpot token sync</strong> — port JEDEE's evolved token pipeline (<code>semanticColors.json</code>, <code>typography.json</code>, <code>build-penpot-tokens.js</code>, <code>build-design-md.js</code>, <code>--color-accent-*</code> CSS layer, <code>themeColor-*</code> → <code>base-*</code> rename), then retoken with tolstoy.life's period palette, then run the pipeline and import into Penpot.</li>
 <li><strong>License finalisation + SDG graphic</strong> — tighten the LICENSE prose; integrate the illustrator's vectorized Soli Deo Gloria graphic (with and without caption) once delivered.</li>
 <li><strong>Splash homepage rebuild</strong> — replace <code>website/src/pages/index.njk</code> with the public homepage described below.</li>
+<li><strong>Documentation build pipeline</strong> — markdown → HTML via Eleventy, replacing the current ad-hoc HTML generator in <code>docs/</code>.</li>
 </ol>
-<p>Sections further down describe the content and structure of Task 3 in detail. Tasks 1 and 2 are prerequisites — no homepage CSS work begins before tokens and license land.</p>
+<p>Sections further down describe the content and structure of Task 3 in detail. Tasks 1 and 2 are prerequisites for Task 3 — no homepage CSS work begins before tokens and license land. Task 4 can run in parallel with Task 3 because it touches the build, not the design tokens.</p>
 <hr />
 <h2>Decisions made</h2>
 <h3>Tech stack</h3>
@@ -497,11 +498,114 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <hr />
 <h2>Pending before build</h2>
 <p>Ordered to match the task sequence at the top of this doc.</p>
-<p><strong>Task 1 — Penpot token sync (first):</strong></p>
+<p><strong>Task 1 — Design-system port + Penpot token sync (first):</strong></p>
+<p>JEDEE has evolved meaningfully since <code>website/</code> was forked from it: a new <code>semanticColors.json</code> powers Penpot's <code>theme/light</code> / <code>theme/dark</code> sets, a <code>typography.json</code> carries composite type styles, the build pipeline now emits <code>DESIGN.md</code>, and <code>variables.css</code> has a <code>--color-accent-*</code> semantic layer between palette ramps and components. The schema port lands first; only after the port does Tolstoy's period-palette retoning make sense.</p>
+<p><em>Step 1a — Port JEDEE design-system updates.</em> See the <strong>Files to port from JEDEE</strong> inventory below. Schema and pipeline only at this stage; <strong>colour values stay at JEDEE defaults during the port</strong> so the diff is purely structural and reviewable. Tolstoy-specific values land in step 1b.</p>
+<p><em>Step 1b — Apply the Tolstoy period palette.</em> Edit <code>colorsBase.json</code> to the four-period palette from <a href="docs/design/period-colours-research.md">docs/design/period-colours-research.md</a> (Green for Youth, Red for Soldier, Amber for Great Works, Blue for Prophet). Three open shade questions: amber vs gold for Period III, forest vs spring green for Period I, and whether the dark-theme amber accent reuses <code>amber-500</code> or steps lighter. Settle these as part of step 1b, not 1a.</p>
+<p><em>Step 1c — Font selection.</em> Choose typefaces for (a) website/wiki: humanist sans-serif, and (b) e-reader: book serif. Update <code>designTokens/fonts.json</code> and <code>typography.json</code> (composite type styles).</p>
+<p><em>Step 1d — Run the pipeline.</em> <code>npm run colors</code> (regenerates <code>colors.json</code>), then <code>npm run penpot:tokens</code> (regenerates <code>tokens/penpot-tokens.dtcg.json</code> and <code>DESIGN.md</code>).</p>
+<p><em>Step 1e — Penpot import.</em> Manual import of the DTCG file into the tolstoy.life Penpot file. Set theme set membership manually if Light/Dark themes import empty.</p>
+<h3>Files to port from JEDEE (Task 1a)</h3>
+<p>Source: <code>/Users/johanedlund/Projects/JEDEE</code>. Target: <code>/Volumes/Graugear/Tolstoy/website</code>. Categories:</p>
 <ul>
-<li><strong>Font selection</strong> — choose typefaces for (a) website/wiki: humanist sans-serif, and (b) e-reader: book serif. Update <code>designTokens/fonts.json</code>.</li>
-<li><strong>Design token replacement</strong> — replace JEDEE colour tokens with tolstoy.life values in <code>colorsBase.json</code> and run <code>npm run colors</code>. Prerequisite for all CSS block work.</li>
-<li><strong>Penpot token sync</strong> — run <code>npm run penpot:tokens</code> and import the resulting DTCG file into the tolstoy.life Penpot file.</li>
+<li><strong>Wholesale copy</strong> — files that don't exist in <code>website/</code> yet, or where the JEDEE version is the canonical design-system definition.</li>
+<li><strong>Merge</strong> — files that exist in both with project-specific local changes; port the JEDEE design-system parts, keep the Tolstoy parts.</li>
+<li><strong>Skip</strong> — JEDEE-specific (Strava, listening, reading, personal blog content) or Tolstoy-specific (wiki, works, schema). Not part of this port.</li>
+</ul>
+<h4>Wholesale copy</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>src/_data/designTokens/semanticColors.json</code></td>
+<td>Theme-aware bg/text/headline tokens. Drives Penpot <code>theme/light</code> and <code>theme/dark</code> sets. Currently absent from <code>website/</code>.</td>
+</tr>
+<tr>
+<td><code>src/_data/designTokens/typography.json</code></td>
+<td>Composite type styles (body, heading.1–3, blockquote, citation, caption) referenced by Penpot. Currently absent.</td>
+</tr>
+<tr>
+<td><code>src/_config/setup/build-penpot-tokens.js</code></td>
+<td>Generates <code>tokens/penpot-tokens.dtcg.json</code>. Currently absent — the <code>npm run penpot:tokens</code> script in the planned Step 1d points at this file.</td>
+</tr>
+<tr>
+<td><code>src/_config/setup/build-design-md.js</code></td>
+<td>Regenerates <code>DESIGN.md</code> (AI-readable design-system spec). Currently absent.</td>
+</tr>
+</tbody>
+</table>
+<h4>Merge — schema port only, no value changes during 1a</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>What to port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>src/_data/designTokens/colorsBase.json</code></td>
+<td>Rename <code>palette[]</code> slots <code>themeColor-Darkest/Dark/Mid/Light/Lightest</code> → <code>base-darkest/dark/light/lightest</code> (drop <code>Mid</code>). <strong>Keep all hex values untouched in 1a.</strong> Tolstoy palette values land in 1b.</td>
+</tr>
+<tr>
+<td><code>src/_data/designTokens/fonts.json</code></td>
+<td>Adopt JEDEE's structural shape (the <code>penpot:</code> field per family the build script expects). Values stay JEDEE's during 1a; Tolstoy fonts land in 1c.</td>
+</tr>
+<tr>
+<td><code>src/_config/setup/create-colors.js</code></td>
+<td>One-line comment update reflecting the <code>base-*</code> slot rename. Logic unchanged.</td>
+</tr>
+<tr>
+<td><code>src/_config/utils/dtcg-to-tailwind.js</code>, <code>src/_config/filters/dtcg-items.js</code>, <code>src/_config/filters.js</code>, <code>src/_config/collections.js</code></td>
+<td>Read the JEDEE versions; port the design-system filter/collection additions; preserve any Tolstoy additions.</td>
+</tr>
+<tr>
+<td><code>src/assets/css/global/base/variables.css</code></td>
+<td>Introduce the <code>--color-accent-*</code> semantic layer; rename <code>--color-themecolor-*</code> references → <code>--color-base-*</code>.</td>
+</tr>
+<tr>
+<td><code>src/assets/css/global/base/global-styles.css</code></td>
+<td>JEDEE migrated direct <code>--color-orange-500</code> references to <code>--color-accent-orange</code>. Port that style of indirection.</td>
+</tr>
+<tr>
+<td><code>src/assets/css/global/blocks/button.css</code>, <code>external-link.css</code>, <code>main-nav.css</code>, <code>prose.css</code>, <code>site-footer.css</code>, <code>site-logo.css</code></td>
+<td>Same pattern: replace direct ramp references with <code>--color-accent-*</code>.</td>
+</tr>
+<tr>
+<td><code>src/assets/css/local/custom-card.css</code>, <code>details.css</code>, <code>footnotes.css</code>, <code>forms.css</code>, <code>pagination.css</code></td>
+<td>Same accent-layer migration.</td>
+</tr>
+<tr>
+<td><code>src/_includes/scripts/details.js</code>, <code>theme-toggle.js</code>, <code>src/assets/scripts/bundle/details.js</code>, <code>theme-toggle.js</code></td>
+<td>Read both versions; port any design-system-touching JS changes.</td>
+</tr>
+<tr>
+<td><code>eleventy.config.js</code></td>
+<td>Surgically add the <code>design:md</code> build hook and any new filter/shortcode registrations the new pipeline needs. Keep all Tolstoy additions (interlinker, drafts, wiki/works collections).</td>
+</tr>
+<tr>
+<td><code>package.json</code></td>
+<td>Surgically add the new scripts (<code>penpot:tokens</code>, <code>design:md</code>) and any required deps. Do <strong>not</strong> wholesale-replace — the <code>name</code>, version, and Tolstoy-specific deps must stay.</td>
+</tr>
+</tbody>
+</table>
+<h4>Skip</h4>
+<ul>
+<li><strong>JEDEE-only:</strong> <code>src/_data/strava.js</code>, <code>src/_data/github.js</code>, <code>src/_layouts/{listening,reading}.njk</code>, <code>src/pages/{listening,reading,get-started}.{njk,md}</code>, <code>src/posts/{articles,docs,listening,notes,reading,watching}/</code>, <code>src/__ideas</code>, <code>src/_obsidian</code>, <code>src/_raw</code>, <code>_originals</code>, <code>_resources</code>, <code>LOG.md</code>, <code>TODO.md</code>, <code>AGENTS.md</code>, <code>tokens/penpot-tokens.dtcg.json</code> (Tolstoy will generate its own), <code>DESIGN.md</code> (likewise generated).</li>
+<li><strong>Tolstoy-only (already present, don't touch from JEDEE):</strong> <code>src/_layouts/{wiki,work}.njk</code>, <code>src/{wiki,works,sources,_design,_staging}/</code>, <code>schema/</code>, <code>.github/</code>, <code>src/pages/{works.njk,changelog.md}</code>.</li>
+<li><strong>Project-specific even though both repos have them:</strong> <code>CLAUDE.md</code>, <code>LICENSE</code>, <code>readme.md</code>, <code>src/_data/{meta.js,navigation.js,personal.yaml}</code>, <code>src/pages/{about.md,accessibility.md,privacy.md,sustainability.md,index.njk,articles.njk,notes.njk,styleguide.njk}</code>, <code>src/common/{feed-atom.njk,og-images.njk}</code>, <code>src/_includes/partials/backlinks.njk</code>, <code>src/_layouts/pageIndex.njk</code>, <code>.eleventyignore</code>, <code>.gitignore</code>, <code>.env</code>, <code>package-lock.json</code>. These have Tolstoy-tailored content; do not overwrite.</li>
+</ul>
+<h3>Verification after 1a</h3>
+<ul>
+<li><code>npm run build</code> — no broken token references; the build still produces output.</li>
+<li><code>npm run colors</code> — <code>colors.json</code> regenerates without errors; only renamed <code>base-*</code> keys appear (no <code>themecolor-*</code>).</li>
+<li><code>npm run penpot:tokens</code> — produces <code>tokens/penpot-tokens.dtcg.json</code> and refreshes <code>DESIGN.md</code>.</li>
+<li>Visual smoke test: <code>npm start</code>, load the homepage, confirm theme toggle and accent colours behave as expected (still JEDEE values; only the indirection layer has changed).</li>
 </ul>
 <p><strong>Task 2 — License + SDG (second):</strong></p>
 <ul>
@@ -518,6 +622,15 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <li><strong>Countdown degradation</strong> — JS countdown degrades gracefully to "Coming 2028" if JS is off or unavailable.</li>
 <li><strong>GitHub commits whitelist</strong> — decide which tolstoylife repos to include in the live progress feed (<code>@11ty/eleventy-fetch</code> reads this whitelist at build time).</li>
 <li><strong>GitHub organisation URL</strong> — confirm the canonical URL for the collaboration CTA (currently assumed <code>github.com/tolstoylife</code>).</li>
+</ul>
+<p><strong>Task 4 — Documentation build pipeline (Markdown → HTML via Eleventy):</strong></p>
+<p>The <code>docs/</code> folder currently mixes <code>.md</code> source files with <code>.html</code> artifacts generated by an ad-hoc tool (Obsidian export, Pandoc, or similar). The pipeline needs to be replaced so markdown stays the single source of truth, Eleventy is the only HTML generator, and rendered docs match the published site.</p>
+<ul>
+<li><strong>Identify and retire the current generator</strong> producing the stray <code>docs/**/*.html</code> files (e.g. <code>docs/INDEX.html</code>, <code>docs/design/penpot-tokens.html</code>, <code>docs/splash-site-plan.html</code>).</li>
+<li><strong>Pick the build location.</strong> Two viable approaches: (1) single Eleventy build in <code>website/</code> only, with docs synced in via the existing script — simplest, local preview means running <code>npm start</code> in <code>website/</code>; or (2) a small <code>eleventy.config.js</code> at the research-repo root for in-place doc preview, sharing a layout/CSS bridge with <code>website/</code>. Default recommendation: (1).</li>
+<li><strong>Shared template/CSS layer.</strong> Whichever wins, the layout and tokens come from <code>website/</code>'s design system. No drift between local doc preview and the published site.</li>
+<li><strong>Cleanup.</strong> Remove committed <code>docs/**/*.html</code> artifacts once the Eleventy pipeline lands; generated HTML lives in <code>website/dist/</code> (untracked) or is rebuilt on demand.</li>
+<li>This task can run in parallel with Task 3; it does not depend on Penpot tokens or the license rewrite.</li>
 </ul>
 <hr />
 <h2>Notes on the current splash site</h2>
