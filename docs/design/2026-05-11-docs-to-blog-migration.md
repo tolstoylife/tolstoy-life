@@ -100,9 +100,13 @@ Update `serve.py`:
   `FOLDER_ORDER` grouping with year-based grouping for the blog layer.
 - Render a small "Reference docs (pending port)" appendix below the
   blog feed.
-- Generate `rss.xml` from the blog entries.
 - Drop the `FEATURED` constant — in a chronological feed the top entry
   *is* the featured entry.
+
+No RSS generation here. `serve.py` is temporary scaffolding;
+eleventy-excellent at `website/` already handles RSS for content
+collections, so RSS lands free in Phase 3 when content moves to
+`website/src/notes/`.
 
 ### Phase 3 — port reference docs to website
 

@@ -47,9 +47,13 @@ SKIP_FILES = {"serve.py"}
 PASSTHROUGH_EXTENSIONS = {".html", ".pdf", ".pptx", ".mp3", ".jpg", ".png",
                            ".svg", ".yaml", ".yml", ".skill", ".json"}
 
-# Paths (relative to docs/) lifted to the top of INDEX as a featured card.
-# Featured entries are removed from their normal section grid to avoid duplication.
-FEATURED = ("architecture/architecture-review.html",)
+# Hand-authored HTML doesn't carry YAML frontmatter, so layer/date for
+# orphan HTML files is declared explicitly here. .md files use their own
+# frontmatter — see Phase 1 of the docs→dev-blog migration.
+HTML_META = {
+    "architecture/architecture-review.html":  {"layer": "blog", "date": "2026-05-09"},
+    "design/period-colours-preview.html":     {"layer": "blog", "date": "2026-04-26"},
+}
 
 # ── Design tokens ──────────────────────────────────────────────────────────────
 
@@ -299,6 +303,68 @@ th {
   margin: 2.5rem 0 0.8rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--rule);
+}
+
+/* ── Blog feed (dated entries) ── */
+.year-label {
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  font-weight: 400;
+  margin: 3rem 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: oldstyle-nums;
+}
+.post-list { list-style: none; padding: 0; margin: 0 0 2rem; }
+.post-entry { margin: 0; border-bottom: 1px solid var(--rule); }
+.post-entry:last-child { border-bottom: none; }
+.post-entry a {
+  display: block;
+  padding: 0.95rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.15s;
+}
+.post-entry a:hover { background: rgba(107, 68, 35, 0.04); }
+.post-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.post-entry time {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  flex: 0 0 6rem;
+}
+.post-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  flex: 1 1 auto;
+  line-height: 1.3;
+}
+.post-folder {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+}
+.post-lede {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0 7rem;
+  line-height: 1.5;
+}
+@media (max-width: 30rem) {
+  .post-entry time { flex-basis: 100%; }
+  .post-lede { margin-left: 0; }
 }
 
 footer {
@@ -819,52 +885,142 @@ def extract_lede(path: Path) -> str:
     return _extract_lede_html(path) if path.suffix == ".html" else _extract_lede_md(path)
 
 
+def _parse_frontmatter_md(path: Path) -> dict:
+    """Parse YAML-ish frontmatter, return a flat str→str dict.
+
+    Only handles scalar `key: value` lines. Multi-line values (lists,
+    blocks) are skipped — sufficient for layer/date/lastUpdated lookup.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except Exception:
+        return {}
+    if not text.startswith("---"):
+        return {}
+    end = text.find("---", 3)
+    if end == -1:
+        return {}
+    fm = {}
+    for line in text[3:end].splitlines():
+        m = re.match(r"^([a-zA-Z][a-zA-Z0-9_-]*):\s*(.*)$", line)
+        if m:
+            fm[m.group(1)] = m.group(2).strip().strip('"')
+    return fm
+
+
+def extract_meta(path: Path) -> dict:
+    """Return {title, lede, layer, date} for any docs file.
+
+    Files without an explicit layer default to `reference` — safer during
+    migration than defaulting to `blog`.
+    """
+    if path.suffix == ".html":
+        rel = str(path.relative_to(ROOT))
+        ext = HTML_META.get(rel, {})
+        return {
+            "title": _extract_title_html(path),
+            "lede": _extract_lede_html(path),
+            "layer": ext.get("layer", "reference"),
+            "date": ext.get("date", ""),
+        }
+    fm = _parse_frontmatter_md(path)
+    return {
+        "title": _extract_title_md(path),
+        "lede": _extract_lede_md(path),
+        "layer": fm.get("layer", "reference"),
+        "date": fm.get("date") or fm.get("lastUpdated") or "",
+    }
+
+
 def build_index(docs: dict) -> str:
-    featured_paths = [ROOT / rel for rel in FEATURED]
-    featured_set = {p.resolve() for p in featured_paths if p.exists()}
+    """Build INDEX.html as a chronological blog feed + reference appendix.
 
-    featured_html = ""
-    for path in featured_paths:
-        if not path.exists():
-            continue
-        title = extract_title(path)
-        lede = extract_lede(path)
-        mtime = datetime.fromtimestamp(path.stat().st_mtime).strftime("%-d %b %Y")
-        rel = path.relative_to(ROOT)
-        folder = rel.parts[0] if len(rel.parts) > 1 else "_root"
-        href = "/" + str(rel.with_suffix(".html"))
-        featured_html += f"""
-    <div class="featured-section">
-      <a class="featured-card" href="{href}">
-        <p class="eyebrow">Featured</p>
-        <div class="card-title">{title}</div>
-        <div class="card-meta">{folder} · {mtime}</div>
-        {"<p class='card-lede'>" + lede + "</p>" if lede else ""}
-      </a>
-    </div>"""
-
-    sections_html = ""
-    for folder in FOLDER_ORDER:
-        files = [f for f in docs.get(folder, []) if f.resolve() not in featured_set]
-        if not files:
-            continue
-        label, desc = FOLDER_META.get(folder, (folder.title(), ""))
-        cards = ""
-        for path in sorted(files, key=lambda p: p.stat().st_mtime, reverse=True):
-            title = extract_title(path)
-            lede = extract_lede(path)
-            mtime = datetime.fromtimestamp(path.stat().st_mtime).strftime("%-d %b %Y")
+    Phase 2 of the docs→dev-blog migration: entries with `layer: blog`
+    (md frontmatter or HTML_META) are sorted by `date:` and grouped by
+    year. Reference entries follow as a pending-port appendix.
+    """
+    entries = []
+    for folder, files in docs.items():
+        for path in files:
+            meta = extract_meta(path)
             rel = path.relative_to(ROOT)
-            href = "/" + str(rel.with_suffix(".html"))
-            cards += f"""
-      <a class="index-card" href="{href}">
-        <div class="card-title">{title}</div>
-        <div class="card-meta">{folder} · {mtime}</div>
-        {"<div class='card-lede'>" + lede + "</div>" if lede else ""}
-      </a>"""
+            mtime = datetime.fromtimestamp(path.stat().st_mtime)
+            entries.append({
+                "title": meta["title"],
+                "lede": meta["lede"],
+                "layer": meta["layer"],
+                "date": meta["date"],
+                "folder": "" if folder == "_root" else folder,
+                "href": "/" + str(rel.with_suffix(".html")),
+                "mtime": mtime,
+            })
 
-        sections_html += f"""
-    <p class="section-label">{label} — {desc}</p>
+    def fmt_date(s: str, fallback: datetime) -> str:
+        try:
+            return datetime.strptime(s, "%Y-%m-%d").strftime("%-d %b %Y")
+        except (ValueError, TypeError):
+            return fallback.strftime("%-d %b %Y")
+
+    def sort_key(e):
+        return e["date"] or e["mtime"].strftime("%Y-%m-%d")
+
+    blog = sorted(
+        [e for e in entries if e["layer"] == "blog"],
+        key=sort_key, reverse=True,
+    )
+    reference = sorted(
+        [e for e in entries if e["layer"] == "reference"],
+        key=lambda e: e["title"].lower(),
+    )
+
+    by_year: dict[str, list] = {}
+    for e in blog:
+        by_year.setdefault(sort_key(e)[:4], []).append(e)
+
+    blog_html = ""
+    for year in sorted(by_year.keys(), reverse=True):
+        posts = ""
+        for e in by_year[year]:
+            date_str = fmt_date(e["date"], e["mtime"])
+            folder_chip = (
+                f"<span class='post-folder'>{e['folder']}</span>"
+                if e["folder"] else ""
+            )
+            lede_html = (
+                f"<p class='post-lede'>{e['lede']}</p>" if e["lede"] else ""
+            )
+            posts += f"""
+        <li class="post-entry">
+          <a href="{e['href']}">
+            <div class="post-row">
+              <time>{date_str}</time>
+              <span class="post-title">{e['title']}</span>
+              {folder_chip}
+            </div>
+            {lede_html}
+          </a>
+        </li>"""
+        blog_html += f"""
+    <h2 class="year-label">{year}</h2>
+    <ul class="post-list">{posts}
+    </ul>"""
+
+    ref_html = ""
+    if reference:
+        cards = ""
+        for e in reference:
+            last = fmt_date(e["date"], e["mtime"])
+            lede_html = (
+                f"<div class='card-lede'>{e['lede']}</div>" if e["lede"] else ""
+            )
+            cards += f"""
+      <a class="index-card" href="{e['href']}">
+        <div class="card-title">{e['title']}</div>
+        <div class="card-meta">{e['folder']} · updated {last}</div>
+        {lede_html}
+      </a>"""
+        ref_html = f"""
+    <p class="section-label">Reference — pending port to website/src/notes/</p>
     <div class="index-grid">{cards}
     </div>"""
 
@@ -874,28 +1030,27 @@ def build_index(docs: dict) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>docs — tolstoy.life</title>
+<title>Notes — tolstoy.life</title>
 <style>{CSS}</style>
 </head>
 <body>
 <div class="site-header">
-  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
+  <a class="home" href="/INDEX.html">tolstoy.life / notes</a>
 </div>
 <header class="doc-header">
-  <p class="eyebrow">tolstoy.life</p>
-  <h1>Documentation</h1>
-  <p class="meta">Generated {now}</p>
+  <p class="eyebrow">tolstoy.life · build log</p>
+  <h1>Notes</h1>
+  <p class="meta">Dated entries from research and design · generated {now}</p>
 </header>
-{featured_html}
 <main>
   <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
-    Architecture, editorial principles, and technical specifications.
-    Tracked in git. Start a local server with <code>python3 serve.py</code>
-    from <code>docs/</code>.
+    A chronological log. Reference docs at the bottom will move to
+    <code>website/src/notes/</code> when the eleventy site ships.
   </p>
-  {sections_html}
+  {blog_html}
+  {ref_html}
 </main>
-<footer>tolstoy.life · public documentation</footer>
+<footer>tolstoy.life · public build log</footer>
 </body>
 </html>"""
 
