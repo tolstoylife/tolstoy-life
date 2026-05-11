@@ -1,0 +1,6 @@
+# serve.py regenerates .html from .md siblings on demand.
+# The three exceptions below are hand-authored entry points / orphans.
+*.html
+!/INDEX.html
+!/architecture/architecture-review.html
+!/design/period-colours-preview.html

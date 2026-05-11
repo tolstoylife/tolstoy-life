@@ -1020,7 +1020,7 @@ def build_index(docs: dict) -> str:
         {lede_html}
       </a>"""
         ref_html = f"""
-    <p class="section-label">Reference — pending port to website/src/notes/</p>
+    <p class="section-label">Reference — engineering specs and operational notes</p>
     <div class="index-grid">{cards}
     </div>"""
 
@@ -1044,8 +1044,9 @@ def build_index(docs: dict) -> str:
 </header>
 <main>
   <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
-    A chronological log. Reference docs at the bottom will move to
-    <code>website/src/notes/</code> when the eleventy site ships.
+    A chronological log of design and architecture work. Dated entries
+    are mirrored to <a href="https://tolstoy.life/notes/">tolstoy.life/notes/</a>.
+    Engineering specs and operational notes live below.
   </p>
   {blog_html}
   {ref_html}
