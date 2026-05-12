@@ -16,7 +16,7 @@ The question this file answers: when reality changes, what do you do to the doc 
 
 ## Two kinds of doc
 
-**Evergreen docs.** Design specifications, principles, operational references. They describe the *current* state and are expected to evolve. Examples: `editorial.md`, `internal-operations.md`, the PWA design specs (`local-first-architecture.md`, `wiki-integration.md`, `stage-1-implementation.md`, `tl-pipeline-integration.md`, `yjs-schema-and-sync.md`).
+**Evergreen docs.** Design specifications, principles, operational references. They describe the *current* state and are expected to evolve. Examples: `editorial.md`, `internal-operations.md`, the PWA design specs (`local-first-architecture.md`, `wiki-integration.md`, `tl-pipeline-integration.md`, `yjs-schema-and-sync.md`).
 
 **Dated reports.** Snapshot documents — research reports, session handoffs, audits, plans. The date in the filename or at the top is meaningful: it records what was known on that day. Examples: `architecture-review.html`, `lightrag-performance-report-2026-04-18.md`, `epub-a11y-w3c-review-2026-04-22.md`, `scalability-deep-dive-2026-04-15.md`.
 

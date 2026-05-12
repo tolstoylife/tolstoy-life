@@ -10,7 +10,7 @@ lastUpdated: 2026-04-25
 
 # Tolstoy e-reader: wiki integration
 
-This document specifies how the wiki layer (`website/src/wiki/`) participates in the local-first PWA. It sits alongside `local-first-architecture.md`, `stage-1-implementation.md`, `yjs-schema-and-sync.md`, and `tl-pipeline-integration.md`, and resolves three questions left open by them:
+This document specifies how the wiki layer (`website/src/wiki/`) participates in the local-first PWA. It sits alongside `local-first-architecture.md`, `yjs-schema-and-sync.md`, and `tl-pipeline-integration.md` (plus the historical `/notes/stage-1-implementation/`, ported from `docs/pwa/` on 2026-05-11), and resolves three questions left open by them:
 
 1. When a reader downloads a work for offline use, what happens to the wiki articles that work references?
 2. How does the wikilink modal preview load — instantly, online, or both?

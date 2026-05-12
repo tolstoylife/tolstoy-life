@@ -190,7 +190,7 @@ Tier-2 platform (per `~/Projects/PROJECT-TEMPLATE.md`): root surface files plus 
 ├── primary-sources/                       ← immutable binary sources, by provenance
 ├── projects/                              ← active production projects with own version control
 ├── website/                               ← PWA, e-reader, Obsidian vault (submodule)
-├── tools/                                 ← `tl` ebook build toolset (submodule)
+├── tools/                                 ← `tl` ebook build toolset (separately cloned, not a submodule)
 └── splash/                                ← pre-launch placeholder site
 ```
 
@@ -216,7 +216,7 @@ Sub-components (`website/`, `tools/`, `projects/*`) are independent and may have
 
 **CSS:** CUBE CSS layered on Every Layout, Tailwind as token compiler only (no utility classes in HTML). **JS:** vanilla, ES modules, progressive enhancement, no frameworks.
 
-**PWA architecture details:** see [docs/pwa/](./docs/pwa/) — `local-first-architecture.md`, `wiki-integration.md`, `stage-1-implementation.md`, `tl-pipeline-integration.md` (build artefact contracts: `works.json`, per-work `manifest.json`, hashed `wiki-previews-v<date>-<hash>.json`, deterministic versioning), `yjs-schema-and-sync.md` (Stage-4 CRDT). `docs/pwa/README.md` is the index.
+**PWA architecture details:** see [docs/pwa/](./docs/pwa/) — `local-first-architecture.md`, `wiki-integration.md`, `tl-pipeline-integration.md` (build artefact contracts: `works.json`, per-work `manifest.json`, hashed `wiki-previews-v<date>-<hash>.json`, deterministic versioning), `yjs-schema-and-sync.md` (Stage-4 CRDT). `docs/pwa/README.md` is the index. The historical `stage-1-implementation.md` was ported to the eleventy notes collection on 2026-05-11 and now lives at `/notes/stage-1-implementation/`.
 
 **Chapter URI convention:** every chapter in `website/src/works/.../text/*.md` declares `chapterUri: urn:tolstoy-life:<work>:<book-X-chapter-Y>` in frontmatter. Build fails if missing. URIs are stable across renumbering — annotations follow the URI, not the URL.
 
@@ -227,6 +227,8 @@ Sub-components (`website/`, `tools/`, `projects/*`) are independent and may have
 ## Tools (ebook toolset)
 
 `tools/` is a fork of the [Standard Ebooks toolset](https://github.com/standardebooks/tools), invoked via `tl` (renamed from `se` to coexist with upstream). Opinionated editorial pipeline producing distributable `.epub` files for the tolstoy.life imprint, sideloading, and the in-browser PWA reader.
+
+`tools/` is **not a submodule** — it's a standalone install. Clone separately from `git@github.com:tolstoylife/tools.git` (a `git clone --recurse-submodules` of this parent will not bring it in). Removed from `.gitmodules` on 2026-05-10 (`47a5eea0`).
 
 For commands, source-directory format, metadata sourcing, branding, and upstream-sync notes, see `tools/README.md` (or run `tl help` / `tl <command> --help`).
 

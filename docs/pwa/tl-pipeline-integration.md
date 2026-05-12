@@ -17,7 +17,7 @@ lastUpdated: 2026-04-25
 
 The PWA architecture depends on the `tl` build producing a few additional artifacts. This document specifies exactly what those are and how the existing pipeline extends to produce them, so that the web side and the EPUB side stay coherent.
 
-This is a sibling document to `stage-1-implementation.md` and `yjs-schema-and-sync.md` and will be fed into `/ultraplan` alongside them.
+This is a sibling document to `yjs-schema-and-sync.md` (and the historical `stage-1-implementation.md`, ported to `/notes/stage-1-implementation/` on 2026-05-11) and will be fed into `/ultraplan` alongside them.
 
 ## 1. What the pipeline already does
 
@@ -269,7 +269,7 @@ https://tolstoy.life/works.json
 
 The top-level `wikiPreviewsUrl` is the **sole** canonical pointer to the current wiki-previews bundle. The service worker reads `works.json` on startup to discover this URL and precaches the bundle. It is deliberately *not* duplicated in per-work manifests — doing so would cascade every wiki edit into every work's hash (see §4.6).
 
-`relatedWikiBytes` is the total size of the work's `relatedWiki` articles when fetched fresh — used by the storage panel and quota check (§9 of `stage-1-implementation.md`) to estimate combined download size.
+`relatedWikiBytes` is the total size of the work's `relatedWiki` articles when fetched fresh — used by the storage panel and quota check (§9 of `/notes/stage-1-implementation/`) to estimate combined download size.
 
 `priorVersions` lists the served prior versions (per the retention policy in §3.4).
 
