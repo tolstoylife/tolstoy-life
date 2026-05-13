@@ -21,7 +21,7 @@ The two labels do not stand symmetrically in Tolstoy's own writing.
 
 **«Христианский коммунизм»** does not appear in Tolstoy's own voice anywhere in the 90-volume Jubilee Edition. The phrase shows up twice in the corpus — once in a 1928–1958 editor's note characterising the Doukhobors of the Kars region, once in an editor's summary of a French-Russian correspondent's own pamphlet. Tolstoy himself never reaches for it. (File-by-file evidence behind both findings is preserved locally as working-zone byproducts under `_generated/research/christian-communism-socialism/` — `hits.md` and `negative-results.md` — gitignored, held locally only.)
 
-The Kata Dalström attribution is the local trigger for the question. Dalström (1858–1923) — Swedish socialist, party theorist of the SAP and later of the SKP — is reported to have visited Yasnaya Polyana in the late 1900s and to have characterised Tolstoy as a "Christian communist" («en kristen kommunist»). The visit and the quote, if they happened, would be recorded in Goldenweiser's conversation diary, in Makovický's *Yasnopolianskie zapiski*, in the Swedish socialist press, or in Dalström's own pamphlets — none of which are available locally in the TEI corpus. The attribution is therefore preserved here as a Johan-reported anecdote, the surface evidence for which is *outside* the source surface this survey was able to sweep.
+The local trigger for the survey was a remembered characterisation. The Swedish socialist Kata Dalström (1858–1923) — party theorist of the Social Democratic Workers' Party (SAP), who would in 1921 join the breakaway Swedish Communist Party (SKP) — published a pamphlet *Leo Tolstoj som kristen samhällsreformator* (Karlstad, 1908; the characterising sentence is on p. 5), cited here through a footnote in Ben Hellman's *Hemma hos Tolstoj*. The pamphlet's framing is *kristen samhällsreformator* — "Christian social reformer" — not *kristen kommunist*. In 1908 Dalström was still a social democrat; the "Christian communist" shorthand sometimes attached to Tolstoy in later commentary is not what the pamphlet itself prints. The pamphlet stands as a 1908 Swedish-socialist reception-layer datum: a contemporary characterisation by a major Swedish socialist of Tolstoy as a religiously-grounded social reformer, two years before his death.
 
 What this essay collects are the passages in which Tolstoy himself discussed the two doctrines — sometimes under the compound names, more often under the bare names *socialist* and *communist*, almost always against the foil of Christianity. All are from the prophet period (1881–1910), in chronological order. It does not adjudicate whether the labels are accurate. It documents what Tolstoy said about them.
 
@@ -233,7 +233,7 @@ The keyword sweep behind this survey returned 49 unique TEI files for the commun
 
 ## 5. Material not covered by this survey
 
-- **Kata Dalström's reported visit to Yasnaya Polyana** and her characterisation of Tolstoy as a "Christian communist." Not findable in the TEI corpus, which is outgoing-only on the Tolstoy side. The contemporary record would be in Goldenweiser's *Vblizi Tolstogo*, in Makovický's *Yasnopolianskie zapiski* (1904–1910), in the Swedish socialist press (*Social-Demokraten*, *Stormklockan*), or in Dalström's own pamphlets — none of which are held locally.
+- **Whether the 1908 Karlstad pamphlet rests on an actual Yasnaya Polyana visit, or is text-based commentary by Dalström at distance.** The pamphlet's content is cited here through Hellman's *Hemma hos Tolstoj* footnote; the in-person record (if any), Goldenweiser's *Vblizi Tolstogo*, Makovický's *Yasnopolianskie zapiski* (1904–1910), and the Swedish socialist press of the period are not held locally.
 - **The TEI `comments/` directory** (807 editorial-commentary files). The 1928–1958 PSS editors' framing of both labels is a separate, smaller study; the editors' use of «христианский коммунизм» for the Doukhobors and «христианский социализм» for the Western correspondents is itself a documentary record of how mid-Soviet Tolstoy scholarship handled the question.
 - **Goldenweiser's and Makovický's conversation transcripts.** Almost certainly contain spoken statements on socialism and Christian variants of it. The 1897-12-02 diary entry treated in the companion essay is *itself* a Makovický conversation; comparable spoken material on socialism / communism likely exists in the same source but was not swept here.
 - **Incoming letters.** TEI corpus is outgoing-only. Kata Dalström's letters, Gronlund's covering letter for *Our Destiny*, Schmitt's letters from Budapest, the in-bound side of the Davidson and Herron exchanges — none are available locally in TEI form.
@@ -286,7 +286,10 @@ Background — secondary scholarship:
 - Christian, R. F. (ed.). *Tolstoy's Diaries Volume II: 1895–1910.* Faber, 2010. Modern English scholarly edition; not held locally. Contains the diary entries of the late prophet period in English translation.
 - Christoyannopoulos, Alexandre. *Tolstoy's Political Thought.* Routledge, 2019. Modern scholarly survey of Tolstoy's relation to anarchism, socialism, and Christian-political doctrines. Not held locally.
 
-The Kata Dalström attribution that triggered this survey is not sourced in the present essay. If a future session can locate the contemporary record (Goldenweiser, Makovický, Swedish press, Dalström pamphlets), the citation belongs here.
+On the Dalström attribution:
+
+- Dalström, Kata. *Leo Tolstoj som kristen samhällsreformator.* Karlstad, 1908. Pamphlet; the characterising sentence cited above is on p. 5. Not held locally; cited through Hellman.
+- Hellman, Ben. *Hemma hos Tolstoj. Nordiska möten i liv och dikt.* Helsinki / Stockholm. (Date and exact publisher to confirm — Hellman is professor of Russian literature at the University of Helsinki; the book covers Scandinavian visitors to Tolstoy.) Not held locally.
 
 Companion documents:
 
