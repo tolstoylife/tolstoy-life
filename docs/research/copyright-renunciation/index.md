@@ -105,7 +105,7 @@ Full extract: [extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt](extracts
 
 ## 3. Where the theme clusters in the Jubilee Edition
 
-The keyword sweep that produced this survey hit roughly 60 letter files and 25 diary entries directly on the topic, plus a smaller number of pages in published works and notebooks. The map below points to clusters that reward further reading; the file-by-file list of every hit lives in the working notes for this survey under `projects/splash-tolstoy-quote/`.
+The keyword sweep that produced this survey hit roughly 60 letter files and 25 diary entries directly on the topic, plus a smaller number of pages in published works and notebooks. The map below points to clusters that reward further reading.
 
 ### Diaries
 
@@ -202,7 +202,7 @@ A digital photograph of the 1895 diary page at the resolution and licence requir
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files, plus notes and Krug chteniya.
 - A layered Russian keyword set was used, from high-confidence anchors (`авторск[ое]`, `литературн[ая собственность]`, `безвозмездн[о]`, `перепечат[ывать]`, `гонорар`, `после 1881`) to broader terms used in combination (`собственност[ь]`, `Чертков`).
 - Every TEI filename encodes the PSS Tom number and, for diaries, the entry date (`vXX_NNN_..._YYYY_MM_DD.xml`). Every TEI file contains a `<title type="bibl">` element giving the formal PSS citation. Both were preserved verbatim through the extraction so all citations in this document are anchored to their TEI source.
-- A small lxml-based extractor (`outputs/extract_tei.py` during the session, not yet in `tools/`) resolves the heavy editorial markup in the TEI body — `<choice>/<sic>/<corr>` editorial-correction wrappers and `<note>` footnote bodies — to produce readable Russian prose for grep with context. The extracted text matches the printed PSS modulo the orthographic conventions of 1953 typesetting.
+- A small lxml-based extractor — [`extract_tei.py`](extract_tei.py), held next to this document — resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected/expanded reading; `<note>` footnote bodies are stripped. The result is readable Russian prose suitable for grep with context, matching the printed PSS modulo the orthographic conventions of 1953 typesetting.
 - The finalist passages were cross-checked against the printed PSS by extracting the relevant pages from the local PDFs at 220 dpi (`pdftoppm`). The 27 March 1895 entry was verified against PSS Tom 53 (= local file `vol19/vol19.pdf`), pages 14–18 of the printed book.
 
 The companion file [pss-volume-mapping.md](../pss-volume-mapping.md) documents the local-file naming convention that made the cross-check non-trivial: PDFs are named in publication-order, not by Tom number.
@@ -223,9 +223,10 @@ Background:
 - Tolstoy, Leo. *The Journal of Leo Tolstoi (First Volume — 1895–1899)*. Project Gutenberg. <https://www.gutenberg.org/ebooks/46272>. (Older English translation, public domain. Quoted line is **not** in this edition.)
 - Christian, R. F. (ed.). *Tolstoy's Diaries Volume II: 1895–1910*. Faber, 2010. (Modern English scholarly edition; not held locally.)
 
-Companion documents in this docs/ folder:
+Companion documents:
 
+- [extract_tei.py](extract_tei.py) — the lxml-based TEI extractor used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
 
-Working notes for this survey, including the unfiltered file-by-file hit list and the Johan-facing recommendations that prompted this public version, live at `projects/splash-tolstoy-quote/` in the research repository.
+A dev-blog recap of the session that produced this survey is at [2026-05-10 — Tolstoy on copyright and the renunciation of literary property](https://tolstoy.life/notes/tolstoy-on-copyright-renunciation/).

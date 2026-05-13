@@ -42,6 +42,10 @@ Every factual claim requires a named primary source. Uncertain information is fl
 
 The code is open. The content is free. Contributions are welcome via GitHub. Tolstoy's writings are in the public domain — a status he anticipated and welcomed. In his later years he sought to renounce copyright on his work; the clearest renunciations cover his religious-moral writings, but his stated position pointed further: he wanted his work to belong to no one. This project honours that conviction.
 
+> All his compositions, literary works, and writings of every kind — both those already printed somewhere and those still unpublished — shall after his death constitute no one's private property, but may be published and reprinted by all who wish it.
+>
+> — Leo Tolstoy, *Explanatory Note to the Will*, 31 July 1910. PSS Tom 82, pp. 227–231. Survey of the surrounding corpus in [`docs/research/copyright-renunciation/`](docs/research/copyright-renunciation/index.md).
+
 ---
 
 ## What it is not
