@@ -134,6 +134,9 @@ Reframing `docs/` from a documentation hub into a dated build log, with content 
 
 ## Open questions (from log)
 
+### Byproduct-capture convention (2026-05-13)
+Proposal at `_generated/research/research-practices.md` awaits review. Four open questions in §7: (1) empty stubs at session start or only-as-content-appears (current proposal: only as content appears); (2) flag LightRAG indexing of `_generated/research/` as a Phase-3 follow-on or leave unsaid; (3) `docs/research/` directory name — keep or sweep later; (4) confirm forward-only, no retroactive recapture of the 2026-05-10 lost byproducts. When approved, the only mechanical change is: next time a research-style task session starts, create the scratchpad at `_generated/research/<topic>/` instead of `projects/<topic>/`. No tooling to build.
+
 ### Editorial — Tolstoy on property and copyright (2026-04-26)
 Hitta en direkt Tolstoy-källa som binder hans religiösa hållning till avstående av litterär egendom. Behövs för att stärka stycke 2 i `docs/editorial/editorial.md` (markerat med inline `<!-- JE: -->`). Kandidatkällor: *The Kingdom of God Is Within You*; brevet 1891 till *Russkie Vedomosti*; dagboksanteckningar från sent 1880-tal och framåt. När citatet hittas: lyft in det i editorial.md och ta bort hedge-formuleringen.
 
