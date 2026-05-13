@@ -50,7 +50,12 @@ def normalise_paragraph(p):
                 text.append(child.tail)
 
     walk(p)
-    return " ".join("".join(text).split())
+    out = " ".join("".join(text).split())
+    # Collapse space-before-punctuation produced by inline <title>/<emph> tails.
+    import re
+    out = re.sub(r"\s+([.,;:!?»])", r"\1", out)
+    out = re.sub(r"([«])\s+", r"\1", out)
+    return out
 
 
 def extract(path):
@@ -78,10 +83,20 @@ def extract(path):
     if body is None:
         return file_id, title_text, bibl_text, []
 
-    # Collect openers and paragraphs in document order
+    def inside_note(el):
+        cur = el.getparent()
+        while cur is not None and cur is not body:
+            if etree.QName(cur).localname in ("note", "noteGrp"):
+                return True
+            cur = cur.getparent()
+        return False
+
+    # Collect openers and paragraphs in document order; skip any wrapped in editorial <note>.
     for el in body.iter():
         tag = etree.QName(el).localname
         if tag in ("opener", "p", "closer", "head"):
+            if inside_note(el):
+                continue
             txt = normalise_paragraph(el)
             if txt:
                 paragraphs.append((tag, txt))

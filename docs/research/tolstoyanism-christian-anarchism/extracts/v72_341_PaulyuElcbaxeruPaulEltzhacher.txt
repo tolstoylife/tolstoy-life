@@ -2,13 +2,13 @@
 # id: v72_341_PaulyuElcbaxeruPaulEltzhacher
 # bibl: Толстой Л. Н. Письмо Паулю Эльцбахеру (Paul Eltzhacher), 1 августа 1900 г. // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 72. М.: Гос. изд. «Художественная литература», 1933. С. 424–426.
 
-[opener] * 341. Паулю Эльцбахеру (Paul Eltzbacher) .1900 г. Августа 1/13. Я. П.
+[opener] * 341. Паулю Эльцбахеру (Paul Eltzbacher).1900 г. Августа 1/13. Я. П.
 
 Verehrter Herr,
 
 Beide Exemplare Ihres Buches 1 habe ich bekommen, den letzten nur seit einigen Tagen. Ich danke herzlich für die Sendung. Bitte zu entshuldigen dass ich so lange nicht geschrieben habe; ich war krank und bin bis jetzt nicht wohl.
 
-Ihr Buch macht für den Anarchismus dasselbe, was vor 30 Jahren für den Sozialismus gemacht war; führt ihn ein in das Program der politischen Wissenschaften . Ihr Buch hat mir auserordentlich gefallen. Es ist rein objectiv, verständlich und — so viel ich urtheilen kann — sind im Buche die Quellen vortrefflich bearbeitet.
+Ihr Buch macht für den Anarchismus dasselbe, was vor 30 Jahren für den Sozialismus gemacht war; führt ihn ein in das Program der politischen Wissenschaften. Ihr Buch hat mir auserordentlich gefallen. Es ist rein objectiv, verständlich und — so viel ich urtheilen kann — sind im Buche die Quellen vortrefflich bearbeitet.
 
 Mir scheint nur, dass ich kein Anarchist bin im Sinne eines politischen Reformators. Im Register Ihres Buches beim Worte: «Zwang» sind verschiedene Seiten bei allen anderen angegeben, aber keine in meinen Schriften. Ist das nicht ein Beweis, dass die Lehre, die Sie mir zuschreiben, aber die eigentlich nur die Lehre Christi ist, keine politische aber eine religiöse Lehre ist? 2
 
@@ -28,11 +28,7 @@ Leo Tolstoy.
 
 С глубоким уважением ваш покорный слуга
 
-Лев Толстой .
+Лев Толстой.
 
 1900. 12 Августа
-
-Печатается по копировальной книге № 3, л. 53, хранящейся в ГТМ. Письмо плохо отпечаталось, и текст восстановлен рукой О. К. Толстой. Местонахождение автографа неизвестно. Дата Толстого нового стиля ошибочна. Основание датировки см. в прим. к письму № 338. Впервые опубликовано почти полностью в переводе на русский язык в заметке В. Г. Черткова «По поводу христианского анархизма», помещенной в книге «Что такое Анархизм?». Составлено А—м по Эльцбахеру и другим источникам. Изд. «Свободное слово», № 101, Christchurch, 1905.
-
-Ответ на письмо доктора Пауля Эльцбахера по поводу его книги «Анархизм», посланной Толстому ( см. письмо № 279 ). Эльцбахер писал 22 июля н. ст. 1900 г. (перевод с немецкого): «Глубокоуважаемый граф, после вашего письма, в котором вы сообщили, что посланная вам книга, вероятно, задержана в цензуре, я тотчас же попытался послать вам второй экземпляр и тогда же запросил вас, не можете ли вы указать мне, через кого я мог бы переслать ее. Теперь я не знаю, не пропала ли и вторая книга, не потерялось ли мое письмо или ваш ответ, или же вы просто не могли найти времени меня уведомить? Конечно, уважаемый граф, вы не истолкуете этот запрос в дурную сторону и поймете, что он вызван лишь искренним желанием узнать, дошла ли до вас книга, и услышать о ней ваше мнение».
 
