@@ -1127,6 +1127,16 @@ def build_all(verbose=True):
 # ── HTTP server ────────────────────────────────────────────────────────────────
 
 class Handler(http.server.SimpleHTTPRequestHandler):
+    # Default .txt to text/plain with no charset, which browsers then guess as
+    # Latin-1 / cp1252 and render UTF-8 prose (Cyrillic, French diacritics) as
+    # mojibake. Force UTF-8 for text/* responses.
+    extensions_map = {
+        **http.server.SimpleHTTPRequestHandler.extensions_map,
+        ".txt": "text/plain; charset=utf-8",
+        ".md": "text/plain; charset=utf-8",
+        ".py": "text/plain; charset=utf-8",
+    }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
