@@ -5,6 +5,7 @@ Usage:
   extract_tei.py <path-to-xml>            # prints full body text + metadata
   extract_tei.py <xml> <substring>        # prints paragraphs containing substring
 """
+import re
 import sys
 from lxml import etree
 
@@ -12,6 +13,8 @@ NS = {
     "t": "http://www.tei-c.org/ns/1.0",
     "xml": "http://www.w3.org/XML/1998/namespace",
 }
+
+SUPERSCRIPT = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
 
 
 def normalise_paragraph(p):
@@ -42,6 +45,29 @@ def normalise_paragraph(p):
             return
         if tag == "sic":
             return  # sibling of <corr>, already handled above
+        # Footnote anchors. Print PSS renders these as superscript digits bound
+        # to the preceding word. The TEI corpus uses two markups inconsistently:
+        #   <hi>1</hi>                     (Eltzbacher, Sacy letters)
+        #   <ref target="#note1">1</ref>   (Schmitt, Stakhovich, Germogen, …)
+        # Both, when digit-only, get the same superscript treatment.
+        is_hi_anchor = (
+            tag == "hi" and not node.get("style") and (node.text or "").strip().isdigit()
+        )
+        is_ref_anchor = (
+            tag == "ref"
+            and (node.get("target") or "").startswith("#note")
+            and (node.text or "").strip().isdigit()
+        )
+        if is_hi_anchor or is_ref_anchor:
+            t = node.text.strip()
+            # eat any trailing whitespace already in the buffer so the
+            # superscript binds to the preceding word
+            while text and text[-1] and text[-1][-1:].isspace():
+                text[-1] = text[-1].rstrip()
+                if not text[-1]:
+                    text.pop()
+            text.append(t.translate(SUPERSCRIPT))
+            return  # parent will handle node.tail
         if node.text:
             text.append(node.text)
         for child in node:
@@ -52,9 +78,13 @@ def normalise_paragraph(p):
     walk(p)
     out = " ".join("".join(text).split())
     # Collapse space-before-punctuation produced by inline <title>/<emph> tails.
-    import re
     out = re.sub(r"\s+([.,;:!?»])", r"\1", out)
     out = re.sub(r"([«])\s+", r"\1", out)
+    # Repair structural collisions where TEI markup eats a boundary character:
+    #   <name>(Paul Eltzbacher)</name>.1900 г.   →   "). 1900 г."
+    out = re.sub(r"\)\.(\d)", r"). \1", out)
+    #   ".1901г. Июля 28"   →   ". 1901 г. Июля 28"   (rare TEI source quirk)
+    out = re.sub(r"(\d{4})г\.", r"\1 г.", out)
     return out
 
 
