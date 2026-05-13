@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-05-12
+Last updated: 2026-05-13
 
 ---
 
@@ -134,9 +134,6 @@ Reframing `docs/` from a documentation hub into a dated build log, with content 
 
 ## Open questions (from log)
 
-### Byproduct-capture convention (2026-05-13)
-Proposal at `_generated/research/research-practices.md` awaits review. Four open questions in §7: (1) empty stubs at session start or only-as-content-appears (current proposal: only as content appears); (2) flag LightRAG indexing of `_generated/research/` as a Phase-3 follow-on or leave unsaid; (3) `docs/research/` directory name — keep or sweep later; (4) confirm forward-only, no retroactive recapture of the 2026-05-10 lost byproducts. When approved, the only mechanical change is: next time a research-style task session starts, create the scratchpad at `_generated/research/<topic>/` instead of `projects/<topic>/`. No tooling to build.
-
 ### Editorial — Tolstoy on property and copyright (2026-04-26)
 Hitta en direkt Tolstoy-källa som binder hans religiösa hållning till avstående av litterär egendom. Behövs för att stärka stycke 2 i `docs/editorial/editorial.md` (markerat med inline `<!-- JE: -->`). Kandidatkällor: *The Kingdom of God Is Within You*; brevet 1891 till *Russkie Vedomosti*; dagboksanteckningar från sent 1880-tal och framåt. När citatet hittas: lyft in det i editorial.md och ta bort hedge-formuleringen.
 
@@ -175,6 +172,7 @@ Se docs/editorial/editorial.md för projektets hållning till dessa frågor.
 
 ## Completed
 
+- ~~Byproduct-capture convention (proposal)~~ — Accepted 2026-05-13. Proposal at `_generated/research/research-practices.md` (status: `accepted`); all four §7 questions resolved on the recommended defaults. Mechanical change committed: the next research-style task session creates its scratchpad at `_generated/research/<topic>/`, not `projects/<topic>/`. No tooling built — convention only.
 - ~~Testa end-of-day-skillen~~ — Testad 2026-04-14. Triggar korrekt, flödet fungerar.
 - ~~Korrektur-app: pipeline-design~~ — Pipeline-workflow (typogrify → clean → semanticate som batch) designat och testat 2026-04-15. 30 Playwright-tester gröna. Appen byggs vidare av Johan (se prio 1).
 - ~~Skalbarhet-rapport~~ — Färdig 2026-04-15. Slutsats: Obsidian som redigeringsverktyg, LightRAG + Ollama som nödvändigt query-lager. LightRAG-setup nu aktiv prioritet (prio 2).
