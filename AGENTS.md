@@ -184,7 +184,7 @@ Tier-2 platform (per `~/Projects/PROJECT-TEMPLATE.md`): root surface files plus 
 ├── ROADMAP.md                             ← phase plan
 ├── MANIFEST.md · LICENSE                  ← public statement, public-domain dedication
 ├── docs/                                  ← tracked operational docs (architecture/, pwa/, editorial/, design/, development/, research/)
-├── _generated/                            ← UNTRACKED: session handoffs, rendered HTML, drafts, decks
+├── _generated/                            ← UNTRACKED: per-session artifact folders (see "Artifact conventions")
 ├── _resources/                            ← untracked workspace
 ├── lightrag/                              ← Layer 2: semantic search + KG (port 8420)
 ├── primary-sources/                       ← immutable binary sources, by provenance
@@ -195,6 +195,33 @@ Tier-2 platform (per `~/Projects/PROJECT-TEMPLATE.md`): root surface files plus 
 ```
 
 Sub-components (`website/`, `tools/`, `projects/*`) are independent and may have their own AGENTS.md / CLAUDE.md / README.md.
+
+---
+
+## Artifact conventions
+
+Working sessions that produce artifacts (reports, decks, snapshots, drafts, handoffs) write them under `_generated/`. Two rules.
+
+**1. Per-session folder.** Use an existing `_generated/` subdir — `sessions/`, `research/`, `editorial/`, `design/`, `PWA/`, `architecture/`, `project/`, `reports/`, `scripts/`, `sync-audit/`, `github-org-profile/`. Inside it, create a folder named `session-<topic>-YYYY-MM-DD/` where `<topic>` is 2–4 kebab-case words. If no existing subdir fits, ask before inventing a new one.
+
+Long-running multi-session research workspaces (e.g. `_generated/research/christian-communism-socialism/`) keep their topic-folder shape; the session-folder rule is for single-session output.
+
+**2. Default to self-contained HTML.** Renderable in a browser with no build step. Exceptions:
+
+- Pure data files (`.csv`, `.json`, `.yaml`, `.ndjson`).
+- Markdown when consumed by Obsidian, Eleventy, or a future Claude session (handoffs, prompts, working notes).
+- Other formats only when materially better — justify in the folder's `index.html` or a sibling notes file.
+
+### End-of-session deliverables
+
+Every session that produced artifacts decides whether to also publish:
+
+- **Dev-blog note** — markdown into `website/src/posts/notes/YYYY-MM-DD-<topic>.md`. Use when the session has a narrative: a decision, a problem solved, a milestone, a learning.
+- **Reference HTML** — into `docs/<subdir>/`. Use when the output is something future sessions will need to look up: a convention, a how-to, a spec, a snapshot.
+- **Both** — narrative-worthy *and* reference-worthy.
+- **Neither** — routine maintenance, in-progress work, exploration. The session folder under `_generated/` is enough.
+
+State the choice and the reasoning in the session summary.
 
 ---
 

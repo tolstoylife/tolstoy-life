@@ -52,7 +52,7 @@ Or, in HTML, an `<aside class="status-update">` with the same content. One bulle
 
 New deltas append to the same Status block over time. The body stays untouched.
 
-Examples in use: `_generated/sessions/tl-proofread-plan.md` (whole-doc supersession), `architecture-review.html` (per-finding follow-ups).
+Examples in use: `_generated/sessions/tl-proofread-plan.md` (whole-doc supersession; legacy flat layout — new sessions use the per-session-folder pattern in AGENTS.md → "Artifact conventions"), `architecture-review.html` (per-finding follow-ups).
 
 ---
 
