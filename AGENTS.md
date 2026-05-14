@@ -26,7 +26,9 @@ This project uses the **LLM Wiki** pattern: an AI assistant incrementally builds
 
    **Staging:** `website/src/_staging/` is a holding area for unverified clippings and extracted passages. It lives inside the vault directory (so materials can be wikilinked during review) but is excluded from git and the Eleventy build. Nothing in staging is used to write wiki content until human-verified.
 
-2. **The wiki** (`website/src/wiki/` + `website/src/works/` + `website/src/letters/` + `website/src/images/`) — a structured, interlinked collection of markdown files. Wiki articles cover people, places, events, concepts, translators, institutions, adaptations, critical works, and archival fonds. Work files hold the full bibliography with metadata and prose. Source texts live in `text/` subfolders with wikilinks woven in. Letters have their own section to keep `works/` focused on literary output. Image metadata stubs live in `images/`.
+2. **The wiki** (`website/src/wiki/` + `website/src/works/`) — a structured, interlinked collection of markdown files. Wiki articles cover people, places, events, concepts, translators, institutions, adaptations, critical works, and archival fonds. Work files hold the full bibliography with metadata and prose. Source texts live in `text/` subfolders with wikilinks woven in.
+
+   **Planned sections (not yet created):** `website/src/letters/` for correspondence (to keep `works/` focused on literary output) and `website/src/images/` for image metadata stubs. They appear in the architecture documents and will arrive in a later phase; tools that ingest the vault today should not expect content there.
 
 3. **The schema** (`website/schema/wiki-schema.md` + `website/schema/tolstoy-works-schema.md`) — conventions, controlled vocabularies, page templates, and workflow definitions. Evolved collaboratively.
 
@@ -42,8 +44,6 @@ website/src/_staging/                                (unverified clippings; not 
         └── Assistant writes/updates vault files directly
               ├── website/src/wiki/*.md               (people, places, events, concepts, …)
               ├── website/src/works/**/*.md           (work overviews + text chapters)
-              ├── website/src/letters/*.md            (correspondence)
-              ├── website/src/images/*.md             (image metadata stubs)
               ├── website/src/sources/*.md            (source card updates)
               ├── website/src/sources/index.md        (catalog of all pages)
               └── website/src/sources/log.md          (operation log)
@@ -146,7 +146,7 @@ All in `website/src/sources/` (excluded from Eleventy — never generates pages 
 
 ## Schema
 
-All work metadata follows `website/schema/tolstoy-works-schema.md` (v6). Wiki article metadata for all nine wiki types — person, place, event, concept, translator, institution, adaptation, criticalWork, archivalFond — follows `website/schema/wiki-schema.md` (v1.2). These are the single references for field names, types, controlled vocabulary values, and examples. Earlier type-specific schemas (`tolstoy-person-schema.md`, `tolstoy-place-schema.md`) were superseded by v1.1 and are archived under `website/schema/_archive/`.
+All work metadata follows `website/schema/tolstoy-works-schema.md` (v6). Wiki article metadata for all nine wiki types — person, place, event, concept, translator, institution, adaptation, criticalWork, archivalFond — follows `website/schema/wiki-schema.md` (v1.2). These are the single references for field names, types, controlled vocabulary values, and examples. `website/schema/sources.yaml` is the shared sources library — the canonical list of source `id` values that `fieldSources` blocks reference. Earlier type-specific schemas (`tolstoy-person-schema.md`, `tolstoy-place-schema.md`) were superseded by v1.1 and are archived under `website/schema/_archive/`.
 
 ### Key rules
 
@@ -185,7 +185,7 @@ Tier-2 platform (per `~/Projects/PROJECT-TEMPLATE.md`): root surface files plus 
 ├── MANIFEST.md · LICENSE                  ← public statement, public-domain dedication
 ├── docs/                                  ← tracked operational docs (architecture/, pwa/, editorial/, design/, development/, research/)
 ├── _generated/                            ← UNTRACKED: session handoffs, rendered HTML, drafts, decks
-├── _resources/ · _design/ · _docs/        ← untracked workspaces
+├── _resources/                            ← untracked workspace
 ├── lightrag/                              ← Layer 2: semantic search + KG (port 8420)
 ├── primary-sources/                       ← immutable binary sources, by provenance
 ├── projects/                              ← active production projects with own version control
@@ -200,11 +200,11 @@ Sub-components (`website/`, `tools/`, `projects/*`) are independent and may have
 
 ## Website (PWA, e-reader, vault)
 
-`website/src/` is the Obsidian vault root and the Eleventy input. Six core sections: **Wiki**, **Works**, **Letters**, **Images**, **My Library** (user-facing offline reading), **E-reader** — plus posts and pages.
+`website/src/` is the Obsidian vault root and the Eleventy input. **Live content sections:** Wiki and Works, plus the Posts collection (with sub-collections Notes, Reading, Listening) and a pages tree. **Planned future sections** — Letters, Images, My Library (user-facing offline reading), E-reader — have placeholders in the architecture documents but are not yet implemented.
 
 **Stack:** Eleventy (11ty) · Obsidian · Vanilla HTML/CSS/JS · Netlify deploys from committed `.md` files (no DB, no build-time network).
 
-**Vault is unified** — `wiki/`, `works/`, `letters/`, `images/`, source texts share one wikilink namespace. **There is no separate wiki article for a work** — the work's own file (`website/src/works/.../Anna Karenina.md`) is canonical for it.
+**Vault is unified** — `wiki/`, `works/`, and source texts share one wikilink namespace (with `letters/` and `images/` joining on the same wikilink basis when they land). **There is no separate wiki article for a work** — the work's own file (`website/src/works/.../Anna Karenina.md`) is canonical for it.
 
 **Filename convention:** human-readable title-case (`Anna Karenina.md`). Required for Obsidian wikilinks. Clean URLs handled by `permalink` derived from the `id` slug. Text landing files use em-dash (`Anna Karenina — Text.md`) to avoid wikilink collision with the overview file.
 
@@ -261,7 +261,7 @@ Current: **Phase 2** — wiki schema test run (5–10 well-covered entities) plu
 
 The platform spans four repos under the `tolstoylife` org:
 
-- **tolstoy.life** — parent repo (this directory). Tracks root surface files (`README`, `TODO`, `LOG`, `AGENTS`, `CLAUDE`, `ROADMAP`, `MANIFEST`, `LICENSE`), `docs/`, `lightrag/` code, and submodule pointers. Subprojects, binaries, `_generated/`, `_resources/`, `_design/`, and `_docs/` are excluded via `.gitignore` (local-only).
+- **tolstoy.life** — parent repo (this directory). Tracks root surface files (`README`, `TODO`, `LOG`, `AGENTS`, `CLAUDE`, `ROADMAP`, `MANIFEST`, `LICENSE`), `docs/`, `lightrag/` code, and submodule pointers. Subprojects, binaries, `_generated/`, and `_resources/` are excluded via `.gitignore` (local-only).
 - **website** — PWA, e-reader, vault. Submodule.
-- **tools** — `tl` ebook toolset. Submodule.
-- **splash** — pre-launch placeholder.
+- **tools** — `tl` ebook toolset. Separately cloned, not a submodule (clone from `git@github.com:tolstoylife/tools.git`).
+- **splash** — pre-launch placeholder. (Local `splash/` is currently a multi-framework evaluation workspace — see LOG.md 2026-05-12.)

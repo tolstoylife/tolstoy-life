@@ -3,7 +3,7 @@ splash/
 corpus/
 _generated/
 
-# tools/ is registered as a git submodule (https://github.com/tolstoylife/tools)
+# tools/ is a separately-cloned standalone repo (https://github.com/tolstoylife/tools); kept out of the parent
 tools
 
 # Production projects — each has its own git repo

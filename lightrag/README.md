@@ -1,6 +1,8 @@
 # LightRAG — Tolstoy Research Platform
 
-Local semantic search and knowledge graph over the Obsidian vault. Uses LightRAG with Ollama (Qwen2.5-14B) — fully local, no API costs.
+Local semantic search and knowledge graph over the Obsidian vault. Uses LightRAG with Ollama (Qwen2.5:7b + bge-m3) — fully local, no API costs.
+
+> **Previous setup.** Switched from Qwen2.5-14B + nomic-embed-text to Qwen2.5:7b + bge-m3 on 2026-04-25 (commit `9775cab5`). The 14B model does not fit alongside other macOS processes on 24 GB unified memory; bge-m3 (1024 dims) gives substantially better Russian retrieval than nomic-embed-text (768 dims).
 
 ## Prerequisites
 
@@ -9,8 +11,8 @@ Local semantic search and knowledge graph over the Obsidian vault. Uses LightRAG
 - Ollama installed and running (`ollama serve`)
 - Two Ollama models pulled:
   ```bash
-  ollama pull qwen2.5:14b
-  ollama pull nomic-embed-text
+  ollama pull qwen2.5:7b
+  ollama pull bge-m3
   ```
 
 ### Recommended Ollama settings (Mac)
@@ -24,7 +26,7 @@ export OLLAMA_MAX_LOADED_MODELS=1     # One model at a time — prevents memory 
 export OLLAMA_NUM_GPU=99              # Offload all layers to Metal GPU
 ```
 
-Restart your terminal after adding these. Memory budget: qwen2.5:14b uses ~10-12GB at 32K context, nomic-embed-text ~0.3GB. With `MAX_LOADED_MODELS=1` they swap rather than coexist, leaving ~8GB for macOS.
+Restart your terminal after adding these. With `OLLAMA_MAX_LOADED_MODELS=1` the LLM and embedding model swap rather than coexist. A 7B Q4_K_M LLM plus bge-m3 fits comfortably on the 24 GB Mac Mini M4; concrete footprint and throughput figures will be added once a post-2026-04-25 perf report exists.
 
 ## Installation
 
@@ -126,9 +128,8 @@ All LightRAG data (index, vectors, graph) is stored in `lightrag/data/`. This di
 
 ```
 website/src/wiki/*.md  ─┐
-website/src/works/*.md  ─┤  vault_reader.py  →  LightRAG  →  lightrag/data/
-website/src/letters/*.md ┤                        │
-website/src/images/*.md ─┘                        │
+website/src/works/*.md ─┴─ vault_reader.py  →  LightRAG  →  lightrag/data/
+                                                  │
                                                   ↓
                                           server.py :8420
                                               │
