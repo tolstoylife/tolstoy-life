@@ -30,8 +30,8 @@ The scripted pipeline (Layer 1) saves ~65% of token costs by pre-computing graph
 ## Hardware
 
 - **Primary machine:** Mac Mini, 24 GB unified memory
-- **LLM inference:** Qwen2.5-14B via Ollama (9–11 GB VRAM, ~20–25 tok/s, 128k context)
-- **Embedding model:** all-MiniLM-L6-v2 via Sentence-Transformers (22 MB, 384 dimensions)
+- **LLM inference:** Qwen2.5:7b via Ollama (32k context — bumped from default 8k for LightRAG entity extraction). VRAM and throughput figures pending a fresh perf report on the current model.
+- **Embedding model:** bge-m3 via Ollama (1024 dimensions, strong multilingual including Russian)
 
 ---
 
@@ -54,10 +54,9 @@ PostgreSQL with pgvector + AGE extension — one database covering all four laye
 
 ### Indexing times
 
-- **Full initial indexing (~26,500 files):** ~110 hours with Qwen2.5-14B (5 overnight runs)
-- **Full initial indexing with 7B model:** ~13 hours
+- **Full initial indexing (~26,500 files):** ~13 hours with Qwen2.5:7b (estimate; the earlier 14B run pre-2026-04-25 took ~110 hours across 5 overnight sessions and is the only measured figure to date — a fresh full run on the current model has not yet happened)
 - **Daily incremental sync (50 files):** ~8 minutes
-- **Embedding 5,000 docs:** 2.5–5 minutes on CPU
+- **Embedding 5,000 docs with bge-m3:** pending measurement (previous nomic-embed-text run was 2.5–5 minutes on CPU)
 
 ### Sync model
 
