@@ -272,7 +272,7 @@ For git-comfortable contributors:
 - **Wiki content PRs** (maintainer validation required): any PR touching wiki article prose or work metadata must cite the specific primary source for every claim.
 - **Text wikilink PRs** (open — no factual review): anyone may PR additions or corrections to `[[wikilinks]]` within source text files in `text/` subfolders. Targets must resolve to existing files.
 
-The contribution model relies on GitHub repo configuration outside markdown: `.github/ISSUE_TEMPLATE/`, `CODEOWNERS`, `.github/PULL_REQUEST_TEMPLATE.md`, branch protection on `main`, `.github/workflows/` (schema validation, wikilink resolution, dead-link checks, `relatedWiki` completeness). The PWA's "Improve this article" deep-link assumes these exist.
+The contribution model will rely on GitHub repo configuration outside markdown. In place: `.github/ISSUE_TEMPLATE/`. Pending: `CODEOWNERS`, `.github/PULL_REQUEST_TEMPLATE.md`, branch protection on `main`, `.github/workflows/` (schema validation, wikilink resolution, dead-link checks, `relatedWiki` completeness). The PWA's "Improve this article" deep-link assumes these exist by ship time.
 
 ---
 

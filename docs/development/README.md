@@ -36,11 +36,14 @@ to add or modify, and flags decisions left for implementation time.
 Recipes are written so a future session (or a contributor) can implement
 without re-litigating any settled question.
 
-Current recipes:
-
-- [`source-mode-implementation.md`](source-mode-implementation.md) — per-fact
-  footnotes + toggle, implementing the spec in
-  [`docs/editorial/source-mode.md`](../editorial/source-mode.md).
+Current recipes: none in this folder. The first recipe
+(`source-mode-implementation.md` — per-fact footnotes + toggle,
+implementing the spec in
+[`docs/editorial/source-mode.md`](../editorial/source-mode.md)) was
+ported into the eleventy notes collection during the 2026-05-11
+docs → dev-blog migration. New blog-style recipes go to
+`website/src/posts/notes/`; only structural docs (this README,
+forthcoming `frontend.md` / `backend.md` conventions) stay here.
 
 **Convention docs (not yet written).** A `frontend.md` and a `backend.md`
 will land here once enough features have shipped to document real

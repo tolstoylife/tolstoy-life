@@ -32,6 +32,14 @@ __scrap
 # macOS
 .DS_Store
 
+# Standard build/runtime/env patterns (kept here as a safety net even though
+# subprojects also ignore them — gitignore-audit.py expects these at root).
+node_modules
+_site
+dist
+.env
+.env.local
+
 # Temporary files
 *.tmp
 *.skill

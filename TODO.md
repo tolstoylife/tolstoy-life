@@ -14,10 +14,10 @@ Tre nya kommandon behöver byggas för att komplettera Phase A–C i Johan-workf
 - `tl lint-ocr` — detekterar och auto-fixar OCR-artefakter (saknade apostrofer, avstavningar, misreads, löpande sidhuvuden); stöd för bokspecifik `.tl-lint-ocr.yaml`
 - `tl detect-italics` — kursivigenkänning i två lägen: `--mode phrase-list` (kända titlar/fraser) och `--mode hocr` (Tesseract hOCR-konfidensbaserat); plus `tl ocr-confidence-report`
 
-**Referens:** `projects/birukoff-biography/` + `uploads/johan-workflow.md`
+**Referens:** `projects/birukoff-biography/` + `tools/_scratch/johan-workflow.md`
 
 ### 2. LightRAG + Ollama — kvarstående steg
-Grundinstallation klar (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operativt sedan 2026-04-25. Första ingestion av 29 filer OK (43 min, 192 noder, 196 kanter). Se `docs/architecture/lightrag-performance-report-2026-04-18.md`.
+Grundinstallation klar (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operativt sedan 2026-04-25. Första ingestion av 29 filer OK (43 min, 192 noder, 196 kanter). Se `website/src/posts/notes/2026-04-18-lightrag-performance-report.md`.
 
 **Kvarstående:**
 - ~~Byt embedding-modell till bge-m3 (1024d) för ryska+engelska~~ — Klart 2026-04-25 (commit `9775cab5`).
@@ -86,7 +86,7 @@ Revisionen är klar. Se `docs/architecture/architecture-review.html` (renderad r
 **Referens:** `docs/architecture/architecture-review.html` är den kanoniska renderingen; `_generated/PWA/handoff-2026-04-23.md` är orienteringsdokumentet för nästa session.
 
 ### 6. EPUB 3.3 & Accessibility 1.1 — compliance and wikilink strategy
-*From W3C spec review 2026-04-22. Full findings: `docs/architecture/epub-a11y-w3c-review-2026-04-22.md`*
+*From W3C spec review 2026-04-22. Full findings: `website/src/posts/notes/2026-04-22-epub-a11y-w3c-review.md`*
 
 EPUB Accessibility 1.1 is now a W3C Recommendation and mandatory for all EPUB 3.3 publications. Several gaps identified in the `tl` toolset and in how wikilinks are handled in distributed EPUBs.
 
@@ -100,7 +100,7 @@ EPUB Accessibility 1.1 is now a W3C Recommendation and mandatory for all EPUB 3.
 - [ ] **Document `doc-glossref` as canonical wikilink representation** in the Manual of Style skill (`skills/manual/`) — the pattern for how wikilinks appear in EPUB output vs. in the PWA
 
 ### 7. timelinegraph — execute the implementation plan
-*Spec: `docs/superpowers/specs/2026-04-29-timelinegraph-design.md` (`6ba0eec3`). Plan: `docs/superpowers/plans/2026-04-29-timelinegraph.md` (`7e987467`).*
+*Spec: `website/src/posts/notes/2026-04-29-timelinegraph-design.md` (`6ba0eec3`). Plan: `website/src/posts/notes/2026-04-29-timelinegraph-plan.md` (`7e987467`).*
 
 A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`), shipping privately first, surfaced on the landing page once the corpus passes ~200 nodes. Brainstormed, specced, and planned 2026-04-29; execution parked for a dedicated session.
 
@@ -108,10 +108,10 @@ A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`),
 
 **Hard gate:** Task 21 (deuteranopia validation — Johan eyes-on the red↔green period transition at 1851) must pass before Track 3 starts.
 
-**v1 launch criterion:** internal-tool gate per `projects/timelinegraph/QA.md`. Public landing-page placement is gated separately on corpus density (~200 nodes) + designer pass on cloud-type palette + Lighthouse / axe-core CI.
+**v1 launch criterion:** internal-tool gate per `projects/timelinegraph/QA.md` (planned, will live in the timelinegraph workspace). Public landing-page placement is gated separately on corpus density (~200 nodes) + designer pass on cloud-type palette + Lighthouse / axe-core CI.
 
 ### 8. docs/ → dev-blog migration ("Notes" on eleventy)
-*Plan + decisions: `docs/design/2026-05-11-docs-to-blog-migration.md`. Started 2026-05-11.*
+*Plan + decisions: `website/src/posts/notes/2026-05-11-docs-to-blog-migration.md` (the plan was itself ported in Phase 3 step 2). Started 2026-05-11.*
 
 Reframing `docs/` from a documentation hub into a dated build log, with content ported into the eleventy `notes` collection at `website/src/posts/notes/`. Phase 1–3.1 done in one session; remainder ports content and retires the temporary scaffolding.
 
