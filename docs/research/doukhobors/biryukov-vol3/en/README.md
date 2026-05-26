@@ -9,8 +9,9 @@ tags: [research, biryukov]
 This folder holds the English translation of Biryukov's *Biography of
 L. N. Tolstoy*, Volume III: one `chapter-NN.md` per Russian source file in
 [`../ru/`](../ru/). **[Chapter 18](chapter-18.md) is done as an approved quality
-sample** and is the worked reference for the conventions below. The remaining 21
-chapters are translated in batches (≈4 per session). See the
+sample** and is the worked reference for the conventions below. Chapters 18–22 are
+complete (Part IV — the Doukhobor part); the remaining 17 (Parts I–III) are
+translated in batches (≈4 per session). See the
 [volume index](../index.md) for chapter titles, word counts, and capture notes.
 
 ## Translation spec
@@ -30,6 +31,14 @@ Carry over the approach that worked for the Doukhobor sections
   bracketed "[… the source drops the opening of this sentence …]" notes used in
   the earlier Doukhobor-only translation should rarely be needed; add such a note
   only where a genuine gap remains, and flag any non-narrative cruft.
+- **Source fidelity for suspect readings.** Silently restore only *garbled /
+  nonsense* tokens to their obviously-intended word (e.g. *издержать* → "preserve",
+  *flans* → *flancs*, "Commonnal wealth" → "Commonwealth", Коппе → Coppée). But for
+  source values that are themselves *valid* yet probably mistaken — a real title, a
+  plausible numeral, a name — reproduce the source **literally** (e.g. Bjørnson's
+  «Король» → *The King*, not the conjectural *Beyond Human Power*; *Resurrection*
+  "chapters XXXIX and XI", not the conjectural XL). No conjectural substitution, and
+  no inline editorial bracket inside quotes.
 
 ## Suggested execution
 

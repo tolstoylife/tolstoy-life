@@ -28,7 +28,7 @@ chapters.
 | | |
 |---|---|
 | **Russian source** | All 22 chapters captured — **177,657 words**. ✓ |
-| **English translation** | Chapter 18 done as an approved sample; 21 to go (in [`en/`](en/)). |
+| **English translation** | Chs 18–22 done — Part IV complete; 17 to go (Parts I–III), in [`en/`](en/). |
 
 The translation is a substantial job (≈178k Russian words → ≈235k English) and is
 done in batches of ≈4 chapters per session; [chapter 18](en/chapter-18.md) is the
