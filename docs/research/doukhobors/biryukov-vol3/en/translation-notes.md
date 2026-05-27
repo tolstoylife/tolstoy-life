@@ -532,3 +532,87 @@ Session 3 (2026-05-27); chs 8–10 translated and independently verified (EN↔R
   For?"; «Значение русской революции»→"The Significance of the Russian Revolution";
   «Правительству, революционерам и народу»→"To the Government, the Revolutionaries, and the
   People."
+
+## Vol IV, Chapter 11 — two diary citations normalised to block quotes, the Baba-Bharaty name kept literal, the two "kill" titles
+
+- **Two set-off diary citations brought into block-quote form.** The 2 Feb one-liner
+  («читал превосходную книгу Baba-Bharaty Кришна») and the 17 March entry («За это время был
+  занят только с детками уроками…») are each their own paragraph in the source, introduced-and-
+  colon; rendered as `>` block quotes to match the chapter's April/June diary entries (the
+  introduce-and-colon trigger fires on set-off-in-source citations regardless of length). No
+  part-divider — Часть III opened at ch10.
+- **«Baba-Bharaty Кришна» → "the book Baba-Bharaty by Krishna" (literal).** The correspondent is
+  Baba Premananda Bharati; the source's spelling and word-order are reproduced rather than
+  normalised to "Baba Bharati" (valid-but-suspect name, Policy A; cf. ch1 "Kurti").
+- **Two distinct "kill" titles kept apart:** «Не убий никого» → "Kill No One" (the new 1907
+  article) vs «Не убий» → "Thou Shalt Not Kill" (the earlier commandment-titled pamphlet);
+  «"Руки вверх"» → "Hands Up" (a planned piece, literal title in quotes).
+- **Recognised work-titles → conventional English:** «Генри Джорджа "Общественные задачи"» →
+  Henry George's *Social Problems*; «Сенкевич»→"Sienkiewicz", «Семья Поланецких»→*The Połaniecki
+  Family*, «Без догмата»→*Without Dogma* (Polish ł kept).
+- **Names — standard/LoC:** «Гусев»→"Guseff" (the era's English spelling, kept throughout),
+  «Фельтен»→"Felten", «Буланже»→"Boulanger" (P. A. Boulanger, not the general),
+  «малеванцы»→"the Malevantsy" / «Малеванный»→"Malevanny", «короля Гумберта»→"King Humbert"
+  (Umberto I); «Лев Великий»→"Lev the Great" (Stasov's epithet, capitalised).
+- **French left inline, no gloss.** «tout le tremblement» and «ont le beau rôle» kept
+  untranslated in the body («role»→«rôle» garble-repair); Biryukov supplies no Russian gloss, so
+  no footnote. «Новое время» → *Novoye Vremya* (italic transliteration). No «Е. б. ж.» and no
+  source `(*)` markers in this chapter.
+
+## Vol IV, Chapter 12 — *I Cannot Be Silent* as the uniform title, the Shaw/Don-Juan footnote, a one-word OCR repair
+
+- **«Не могу молчать» → *I Cannot Be Silent*** in the H1 and all four body occurrences (Maude's
+  conventional title); no part-divider.
+- **The Bernard Shaw letter's footnote preserved as Biryukov's, not a net-new note.** The source
+  carries an English *Don Juan* quotation with an inline `(*)` and a Russian gloss; the gloss is
+  translated to English and kept as a `> (* … *)` line inside the block quote (mirrors ch9). The
+  Don-Juan lines, *The Revolutionist's Handbook*, "Bernard Shaw", "Interlude", "Scene in Hell"
+  were already English/foreign in the source and reproduced as-is.
+- **Foreign matter kept literal:** «"Un Athée"» → *Un Athée* (Victor Hugo, italic work-title,
+  source had quotes); `mens sana in corpore sano` left in Latin inside the diary quote (Tolstoy
+  paraphrases it in the next sentence).
+- **1 John 4:8,20** rendered in KJV phrasing with the source's parenthetical citation kept
+  literally: "(1 Epistle of John 4, 8, 20.)".
+- **OCR garble «властен» → "the authorities"** (intended «властей»), silent Policy-A repair.
+  **«господин редактор» → "Mr. Editor"** — the odd address kept literal (a letter drafted for
+  publication); **«"Комитет почина"» → "Initiative Committee"**.
+- **Names/titles — LoC + conventional:** Gusev, Stakhovich, Nazhivin, Bodyansky, Davydov,
+  Molochnikov, Shchurovsky, Dundukova-Korsakova, Berkengeim, Maude, Stolypin; «Русские
+  ведомости»→*Russkiye Vedomosti*, «Русь»→*Rus*, "Good Health" (English in source)→*Good Health*.
+  No «Е. б. ж.» triggered (the diary used the full phrasing).
+
+## Vol IV, Chapter 13 — the embedded greetings anthology (faithful-from-Russian, Johan-ratified), nested quotes, a kept orphan quote-mark
+
+- **`## Из океана приветствий Льву Толстому.` → `## From the Ocean of Greetings to Lev Tolstoy`**
+  — embedded primary document, one H2; no part-divider. The ~5,800-word anthology compiled by
+  I. I. Gorbunov-Posadov (≈60 greetings) sits inside the chapter; Biryukov introduces it ("we
+  quote here the essential part of his remarkable article") and resumes his own narration to
+  close after it.
+- **Anthology translated faithfully from the reproduced Russian — Johan-ratified, locked.**
+  Greetings clearly sent originally in English/French/German (the English admirers' address, the
+  Cincinnati telegram, the German and Australian addresses) are rendered from Biryukov's Russian,
+  **not** replaced with any original-language or published-English text — consistency with the
+  volume over hunting originals. Gorbunov-Posadov's connective prose is plain narration; each
+  greeting he introduces-and-colons is a `>` block quote.
+- **Quotes-within-a-quote use single quotes inside the outer block.** Greetings nested inside a
+  larger Gorbunov-Posadov / Khiryakov block quote are rendered `'…'` inside that outer `>` block
+  (they are not separately Biryukov-introduced citations); anthology-proper greetings are
+  top-level `>` blocks. Matches the source's nesting.
+- **A misplaced source quote-mark kept literally.** «из бесстрастных обычно "стен академии
+  несется» → "from the usually impassive "walls of the Academy there comes" — an orphan opening
+  quote reproduced as printed (cf. ch9 "a kept orphan close-quote", ch1's orphan `(*)`); Policy A
+  — reproduce the source defect, do not silently close or move it.
+- **Garble repairs (foreign names → standard form, no body gloss):** Loison→Loyson (Hyacinthe
+  Loyson), Готамы-Будды→Gautama Buddha, Suhrawardy, Naoshi Kato, Charles Sarolea, Paul
+  Margueritte, Lucy Mallory, Carus, Georges Borman, Elworthy, Meltzer; the English signatories
+  (Hardy, Meredith, Wells, Edward Carpenter, Mackenzie Wallace, Bernard Shaw, Frederic Harrison,
+  Kennan), Bjørnson, Hauptmann, Dušan (Makovický).
+- **Valid-but-suspect literals (Policy A):** "Fifth Battery of the 38th Artillery Brigade,
+  formerly the Twenty-Fourth"; «Г-ского уезда» → "G—— District" (the source's own redaction
+  kept); «сад "Фарс"» → the "Farce" garden; «мельхиоровый самовар» → "melchior samovar".
+- **Footnote and verse:** «le beau rôle» → inline `(*)` + `(* "the fine role." *)` — Biryukov's
+  only footnote here (rôle garble-repaired). The blind girl's verse is set as free, non-rhyming
+  English verse, one source line per `>` line in a single block. «свойство общечеловечности» →
+  "the quality of universal humanity" (kept literal, no amplification). Work-titles italicised:
+  *I Cannot Be Silent*, *The Circle of Reading*, *What I Believe*, *An International Almanac on
+  Tolstoy*.
