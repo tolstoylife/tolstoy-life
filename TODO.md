@@ -6,46 +6,36 @@ Last updated: 2026-05-27
 
 ## Active priorities
 
-### 1. `tl`-kommandon för ebook-produktionspipelinen
-Tre nya kommandon behöver byggas för att komplettera Phase A–C i Johan-workflow.md. Byggs i en sammanhållen session (alla tre parallellt). Birukoff-biografin är det tänkta första testet när kommandona är klara.
+### 1. LightRAG + Ollama — remaining steps
+Base installation done (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operational since 2026-04-25. First ingestion of 29 files OK (43 min, 192 nodes, 196 edges). See `website/src/posts/notes/2026-04-18-lightrag-performance-report.md`.
 
-**Kommandon att bygga:**
-- `tl convert-scans` — JP2 → JPEG + självständig `index.html` scan-browser för split-screen korrekturläsning
-- `tl lint-ocr` — detekterar och auto-fixar OCR-artefakter (saknade apostrofer, avstavningar, misreads, löpande sidhuvuden); stöd för bokspecifik `.tl-lint-ocr.yaml`
-- `tl detect-italics` — kursivigenkänning i två lägen: `--mode phrase-list` (kända titlar/fraser) och `--mode hocr` (Tesseract hOCR-konfidensbaserat); plus `tl ocr-confidence-report`
+**Remaining:**
+- ~~Switch embedding model to bge-m3 (1024d) for Russian + English~~ — Done 2026-04-25 (commit `9775cab5`).
+- Set up a nightly cron job for `sync.py`
+- Test incremental sync after wiki edits
+- ~~Commit the LightRAG scaffold (staged in git)~~ — Done 2026-04-25 (commit `9775cab5` carried the `config.py` + `requirements.txt` changes and the `diagnose.sh` + `start-ui.sh` helpers).
 
-**Referens:** `projects/birukoff-biography/` + `tools/_scratch/johan-workflow.md`
+### 2. GitHub Projects for the `projects/` folder
+Bethink Yourselves, the Birukoff biography, and Korrektur live in `projects/` but are excluded from the parent repo via `.gitignore`. Investigate how GitHub Projects can be used to track and organise these production projects — issues, boards, milestones. Decide whether each project should have its own repo under `tolstoylife/` or whether a shared project board is enough.
 
-### 2. LightRAG + Ollama — kvarstående steg
-Grundinstallation klar (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operativt sedan 2026-04-25. Första ingestion av 29 filer OK (43 min, 192 noder, 196 kanter). Se `website/src/posts/notes/2026-04-18-lightrag-performance-report.md`.
+### 3. TEI data ingestion (phase 3)
+3,113 persons and 770 locations in the tolstoydigital/TEI repo. Start with Tolstoy's closest circle and work outward in tiers. See the implementation plan in CLAUDE.md.
 
-**Kvarstående:**
-- ~~Byt embedding-modell till bge-m3 (1024d) för ryska+engelska~~ — Klart 2026-04-25 (commit `9775cab5`).
-- Sätt upp nattligt cron-job för `sync.py`
-- Testa inkrementell sync efter wiki-redigeringar
-- ~~Committa LightRAG-scaffolden (staged i git)~~ — Klart 2026-04-25 (commit `9775cab5` tog med `config.py` + `requirements.txt` ändringarna och `diagnose.sh` + `start-ui.sh` helpers).
+**Next batch:**
+- Create wiki pages for Ilya Lvovich Tolstoy and Mikhail Lvovich Tolstoy (missing from TEI — source: Birukoff)
+  - Birukoff source ready: all of Vol. III is now available in English (`docs/research/doukhobors/biryukov-vol3/en/`, all 22 chapters) — ready as a primary source for Birukoff-based wiki pages and wiki source ingestion.
+- Key locations: Moscow Khamovniki house, Optina Pustyn, Shamordino
+- Verify birth dates/places for existing children's pages (Sergei, Lev, Maria, Andrei)
+- Verify Alexandra Tolstaya's deathPlace (Valley Cottage, NY)
 
-### 3. GitHub Projects för `projects/`-mappen
-Bethink Yourselves, Birukoff-biografin och Korrektur ligger i `projects/` men är exkluderade från parent-repot via `.gitignore`. Undersök hur GitHub Projects kan användas för att tracka och organisera dessa produktionsprojekt — issues, boards, milestones. Kolla om varje projekt bör ha ett eget repo under `tolstoylife/` eller om ett gemensamt projekt-board räcker.
-
-### 4. TEI-data ingestion (fas 3)
-3 113 personer och 770 platser i tolstoydigital/TEI-repot. Börja med Tolstoys närmaste krets och arbeta utåt i tiers. Se implementationsplanen i CLAUDE.md.
-
-**Nästa batch:**
-- Skapa wiki-sidor för Ilya Lvovich Tolstoy och Mikhail Lvovich Tolstoy (saknas i TEI — källa: Birukoff)
-  - Birukoff-källan klar: hela Vol. III finns nu på engelska (`docs/research/doukhobors/biryukov-vol3/en/`, alla 22 kapitel) — redo som primärkälla för Birukoff-baserade wiki-sidor och wiki-källingestion.
-- Nyckelplatser: Moscow Khamovniki house, Optina Pustyn, Shamordino
-- Verifiera födelsedatum/-platser för befintliga barnsidor (Sergei, Lev, Maria, Andrei)
-- Verifiera Alexandra Tolstayas deathPlace (Valley Cottage, NY)
-
-### 5. PWA-arkitektur — follow-up efter 2026-04-23 review
-Revisionen är klar. Se `docs/architecture/architecture-review.html` (renderad rapport) och `_generated/PWA/handoff-2026-04-23.md` (handoff). Följande gaps behöver åtgärdas innan Stage 1 kan skeppas — grupperade per arbetsområde.
+### 4. PWA architecture — follow-up after the 2026-04-23 review
+The review is complete. See `docs/architecture/architecture-review.html` (rendered report) and `_generated/PWA/handoff-2026-04-23.md` (handoff). The following gaps need to be addressed before Stage 1 can ship — grouped by work area.
 
 **A. Blockers for Stage 1 (pipeline + spec fixes):**
 - [x] **Fix the wiki-previews/manifest cascade** (critical) — spec updated 2026-04-24 in `tl-pipeline-integration.md`: removed `wikiPreviewsUrl` from per-work manifests, added §4.6 cross-reference isolation rule, updated §3.2 hash-input definition and §6.2 sketch with `HASH_EXCLUDE` filter. Follow-up (separate task C3): align `wiki-integration.md` §2.2 nested `relatedWiki` shape with the flat-slug-array shape now canonical in §4.3.
 - [x] **Reconcile `yjs-schema-and-sync.md` §2.3 vs §8** — resolved 2026-04-24 in favour of §8's Y.Text decision. §2.3 rewritten to walk through the silent-duplicate failure mode with plain objects and show why Y.Map body items + Y.Text `value` fix it. §2.2 example updated, §8 item 1 wording tightened, `createTextualBody` factory specified, and a concurrent-edit regression test fixture is called out as required from the annotation-layer package's first commit. JSON-LD wire shape unchanged.
 - [x] **Publish deterministic-build CI test** — wired in 2026-04-24 at `website/.github/scripts/check-determinism.mjs` + `website/.github/workflows/determinism.yml`. Runs `npm run build` twice, hashes every file under `dist/`, exits non-zero on mismatch. Spec promoted to `tl-pipeline-integration.md` §6.4. **Known drifts:**
-  - ~~**`serviceworker.js`** — `CACHE_NAME = 'cache-{buildTime}'` uses build-time timestamp.~~ **Resolved 2026-05-12 (website `7ecdf4f`).** The whole eleventastic service worker (source, orphan include, base.njk registration, `buildTime` global) was deleted ahead of the eventual Workbox replacement, since the current implementation provides no benefit pre-Stage-1 and was the only thing keeping this CI check red. Local `check-determinism.mjs` run is ✓ green after removal. Workbox install is the natural follow-up (still pending — see 2026-05-12 LOG entry; surfaces in priority 5 subsection B as part of the Stage-1 PWA work).
+  - ~~**`serviceworker.js`** — `CACHE_NAME = 'cache-{buildTime}'` uses build-time timestamp.~~ **Resolved 2026-05-12 (website `7ecdf4f`).** The whole eleventastic service worker (source, orphan include, base.njk registration, `buildTime` global) was deleted ahead of the eventual Workbox replacement, since the current implementation provides no benefit pre-Stage-1 and was the only thing keeping this CI check red. Local `check-determinism.mjs` run is ✓ green after removal. Workbox install is the natural follow-up (still pending — see 2026-05-12 LOG entry; surfaces in priority 4 subsection B as part of the Stage-1 PWA work).
   - **`feed.xml`** — Atom `<updated>` field falls back to `new Date()` because `collections.posts` is empty. Partial fix applied (`src/common/feed-atom.njk` — moved `{% set postslist = collections.posts %}` above the `<feed>` element so it's defined before use; a genuine correctness bug that would have surfaced once posts existed). Full determinism fix shelved pending a product decision on whether the project has a blog section and what the project's public-timeline start date is — either would give a stable fallback. See 2026-04-24 LOG entry for the full analysis. **2026-05-12 note:** with the `serviceworker.js` drift gone, this is now the *only* remaining drift; resolving it flips the workflow to "ready to be required."
   
   Action before flipping this workflow to a *required* status check in branch protection: resolve the `feed.xml` drift (either by writing the first post — the `notes` collection is live as of 2026-05-11 and could supply `<updated>` once feed-atom is repointed at it — or by committing to a stable fallback date), then re-run `node .github/scripts/check-determinism.mjs` locally to confirm ✓. Until then: workflow runs on every PR as a visible-but-non-blocking check, catches any *new* non-determinism regressions elsewhere in the build.
@@ -84,9 +74,9 @@ Revisionen är klar. Se `docs/architecture/architecture-review.html` (renderad r
 - [ ] `history.replaceState` on `/pair` to mitigate iCloud Tabs fragment leak
 - [ ] Dormant-user heartbeat (keep relay room alive while paired devices are active)
 
-**Referens:** `docs/architecture/architecture-review.html` är den kanoniska renderingen; `_generated/PWA/handoff-2026-04-23.md` är orienteringsdokumentet för nästa session.
+**Reference:** `docs/architecture/architecture-review.html` is the canonical rendering; `_generated/PWA/handoff-2026-04-23.md` is the orientation document for the next session.
 
-### 6. EPUB 3.3 & Accessibility 1.1 — compliance and wikilink strategy
+### 5. EPUB 3.3 & Accessibility 1.1 — compliance and wikilink strategy
 *From W3C spec review 2026-04-22. Full findings: `website/src/posts/notes/2026-04-22-epub-a11y-w3c-review.md`*
 
 EPUB Accessibility 1.1 is now a W3C Recommendation and mandatory for all EPUB 3.3 publications. Several gaps identified in the `tl` toolset and in how wikilinks are handled in distributed EPUBs.
@@ -100,7 +90,7 @@ EPUB Accessibility 1.1 is now a W3C Recommendation and mandatory for all EPUB 3.
 - [ ] **Update chapter XHTML templates** to use `epub:type` + `role` pairs on all interactive reference elements — never `epub:type` alone. Key pairs: `noteref`/`doc-noteref`, `glossref`/`doc-glossref`, `footnote`/`doc-footnote`
 - [ ] **Document `doc-glossref` as canonical wikilink representation** in the Manual of Style skill (`skills/manual/`) — the pattern for how wikilinks appear in EPUB output vs. in the PWA
 
-### 7. timelinegraph — execute the implementation plan
+### 6. timelinegraph — execute the implementation plan
 *Spec: `website/src/posts/notes/2026-04-29-timelinegraph-design.md` (`6ba0eec3`). Plan: `website/src/posts/notes/2026-04-29-timelinegraph-plan.md` (`7e987467`).*
 
 A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`), shipping privately first, surfaced on the landing page once the corpus passes ~200 nodes. Brainstormed, specced, and planned 2026-04-29; execution parked for a dedicated session.
@@ -111,7 +101,7 @@ A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`),
 
 **v1 launch criterion:** internal-tool gate per `projects/timelinegraph/QA.md` (planned, will live in the timelinegraph workspace). Public landing-page placement is gated separately on corpus density (~200 nodes) + designer pass on cloud-type palette + Lighthouse / axe-core CI.
 
-### 8. docs/ → dev-blog migration ("Notes" on eleventy)
+### 7. docs/ → dev-blog migration ("Notes" on eleventy)
 *Plan + decisions: `website/src/posts/notes/2026-05-11-docs-to-blog-migration.md` (the plan was itself ported in Phase 3 step 2). Started 2026-05-11.*
 
 Reframing `docs/` from a documentation hub into a dated build log, with content ported into the eleventy `notes` collection at `website/src/posts/notes/`. Phase 1–3.1 done in one session; remainder ports content and retires the temporary scaffolding.
@@ -136,37 +126,37 @@ Reframing `docs/` from a documentation hub into a dated build log, with content 
 ## Open questions (from log)
 
 ### Editorial — Tolstoy on property and copyright (2026-04-26)
-Hitta en direkt Tolstoy-källa som binder hans religiösa hållning till avstående av litterär egendom. Behövs för att stärka stycke 2 i `docs/editorial/editorial.md` (markerat med inline `<!-- JE: -->`). Kandidatkällor: *The Kingdom of God Is Within You*; brevet 1891 till *Russkie Vedomosti*; dagboksanteckningar från sent 1880-tal och framåt. När citatet hittas: lyft in det i editorial.md och ta bort hedge-formuleringen.
+Find a direct Tolstoy source linking his religious position to the renunciation of literary property. Needed to strengthen paragraph 2 in `docs/editorial/editorial.md` (marked with an inline `<!-- JE: -->`). Candidate sources: *The Kingdom of God Is Within You*; the 1891 letter to *Russkie Vedomosti*; diary entries from the late 1880s onward. Once the quote is found: bring it into editorial.md and remove the hedge wording.
 
 ### Concept pages (2026-04-10)
-- "Tolstoyism"-avvisningsbrevet: vilken volym i Jubilee Edition? Mottagare? År?
-- *On Anarchy* (1900): Jubilee Edition vol. 34 eller annanstans? Hitta den ryska fulltexten.
-- Vilka specifika 1894-recensioner myntade "Christian anarchism"? Kolla Christoyannopoulos.
-- Ska Aylmer Maude få en egen personsida? Refereras i båda konceptsidorna men saknar wiki-entry.
+- The "Tolstoyism" rejection letter: which volume in the Jubilee Edition? Recipient? Year?
+- *On Anarchy* (1900): Jubilee Edition vol. 34 or elsewhere? Find the Russian full text.
+- Which specific 1894 reviews coined "Christian anarchism"? Check Christoyannopoulos.
+- Should Aylmer Maude get his own person page? Referenced in both concept pages but has no wiki entry.
 
 ### Bethink Yourselves (2026-04-07)
-- Första ryska publiceringsdatumet okänt — cirkulerade via Chertkovs London-kanaler.
-- Wikidata QID saknas.
-- Medöversättaren "I. F. M." oidentifierad — Isabel F. Mayo?
+- First Russian publication date unknown — circulated via Chertkov's London channels.
+- Wikidata QID missing.
+- Co-translator "I. F. M." unidentified — Isabel F. Mayo?
 
 ### TEI ingestion (2026-04-06–07)
-- Tatyana Tolstaya: gift Sukhótin — vilken namnform ska vara primärtitel? Bör vara konsekvent med citeringar.
-- Yasnaya Polyana: TEI anger "1847" för att Tolstoj ärvde godset — dubbelkolla mot Birukoff.
-- TEI-personbeskrivningar är enbart ryska — engelsk prosa syntetiserad men overifierad. Alla sidor har `recordStatus: draft`.
+- Tatyana Tolstaya: married name Sukhotin — which name form should be the primary title? Should be consistent with citations.
+- Yasnaya Polyana: TEI gives "1847" for when Tolstoy inherited the estate — double-check against Birukoff.
+- TEI person descriptions are Russian-only — English prose synthesised but unverified. All pages have `recordStatus: draft`.
 
 ---
 
 ## Brainstorming
 
-### Institutionsgranskning — stresstesta projektet
-Gå igenom projektet ur en kritisk akademisk institutions perspektiv. Identifiera svaga punkter innan de hittas utifrån. Fokusområden:
+### Institutional review — stress-test the project
+Go through the project from the perspective of a critical academic institution. Identify weak points before they're found from outside. Focus areas:
 
-- **Källkritik:** Är varje faktapåstående i wikin spårbart till en namngiven primärkälla? Finns det sidor med ogrundade påståenden?
-- **Upphovsrätt:** Finns det material i projektet som kan ifrågasättas juridiskt? Bilder, texter, skanningar — vad är public domain och vad är oklart?
-- **Akademisk trovärdighet:** Hur ser projektet ut för en forskare som granskar det? Vilka svagheter skulle de peka på?
-- **Tonläge:** Finns det formuleringar i wikin som kan uppfattas som ideologiska snarare än sakliga?
+- **Source criticism:** Is every factual claim in the wiki traceable to a named primary source? Are there pages with unsupported claims?
+- **Copyright:** Is there material in the project that could be challenged legally? Images, texts, scans — what is public domain and what is unclear?
+- **Academic credibility:** How does the project look to a researcher reviewing it? What weaknesses would they point to?
+- **Tone:** Are there formulations in the wiki that could be read as ideological rather than factual?
 
-Se docs/editorial/editorial.md för projektets hållning till dessa frågor.
+See docs/editorial/editorial.md for the project's stance on these questions.
 
 
 ---
@@ -174,18 +164,19 @@ Se docs/editorial/editorial.md för projektets hållning till dessa frågor.
 ## Completed
 
 - ~~Byproduct-capture convention (proposal)~~ — Accepted 2026-05-13. Proposal at `_generated/research/research-practices.md` (status: `accepted`); all four §7 questions resolved on the recommended defaults. Mechanical change committed: the next research-style task session creates its scratchpad at `_generated/research/<topic>/`, not `projects/<topic>/`. No tooling built — convention only.
-- ~~Testa end-of-day-skillen~~ — Testad 2026-04-14. Triggar korrekt, flödet fungerar.
-- ~~Korrektur-app: pipeline-design~~ — Pipeline-workflow (typogrify → clean → semanticate som batch) designat och testat 2026-04-15. 30 Playwright-tester gröna. Appen byggs vidare av Johan (se prio 1).
-- ~~Skalbarhet-rapport~~ — Färdig 2026-04-15. Slutsats: Obsidian som redigeringsverktyg, LightRAG + Ollama som nödvändigt query-lager. LightRAG-setup nu aktiv prioritet (prio 2).
-- ~~PRINCIPLES.md~~ — Skapad 2026-04-16. Redaktionell hållning, tonläge, förhållningssätt till institutioner, beredskap för kritik. *(2026-04-26: omstrukturerad till `docs/editorial/editorial.md` — public-statement-delar flyttade till MANIFEST.md, taktiska delar till `_generated/editorial/institutional-strategy.md`.)*
-- ~~LightRAG grundinstallation~~ — 2026-04-18. Qwen2.5:7b (14B passar inte 24 GB). Första ingestion OK. Prestandarapport i `_generated/`.
-- ~~Korrektur Slice 1.C~~ — 2026-04-18. Autosave, git checkpoint, search & replace. 19+59 tester gröna.
-- ~~Korrektur-appen~~ — Lagd på is 2026-04-22. Ersätts av macOS split-screen + git som checkpoint-system (se johan-workflow.md).
+- ~~`tl` commands for the ebook-production pipeline~~ — Shipped 2026-04-22 (`tools` commit `d47cbf08`): `convert-scans`, `lint-ocr`, `detect-italics`, and `ocr-confidence-report`, auto-registered via `se/commands/`. Completes Phase A–C of `tools/_scratch/johan-workflow.md`. `convert-scans`: JP2 → JPEG + a standalone `index.html` scan browser for split-screen proofreading. `lint-ocr`: detects and auto-fixes OCR artefacts (missing apostrophes, hyphenation, misreads, running headers); supports a book-specific `.tl-lint-ocr.yaml`. `detect-italics`: italic recognition in two modes (`--mode phrase-list` for known titles/phrases, `--mode hocr` for Tesseract hOCR confidence). The Birukoff biography is the intended first test. Ref: `projects/birukoff-biography/`.
+- ~~Test the end-of-day skill~~ — Tested 2026-04-14. Triggers correctly, the flow works.
+- ~~Korrektur app: pipeline design~~ — Pipeline workflow (typogrify → clean → semanticate as a batch) designed and tested 2026-04-15. 30 Playwright tests green. App development was folded into the `tl` ebook pipeline (now completed, above).
+- ~~Scalability report~~ — Done 2026-04-15. Conclusion: Obsidian as the editing tool, LightRAG + Ollama as the necessary query layer. LightRAG setup now an active priority (priority 1).
+- ~~PRINCIPLES.md~~ — Created 2026-04-16. Editorial stance, tone, posture toward institutions, readiness for criticism. *(2026-04-26: restructured into `docs/editorial/editorial.md` — public-statement parts moved to MANIFEST.md, tactical parts to `_generated/editorial/institutional-strategy.md`.)*
+- ~~LightRAG base installation~~ — 2026-04-18. Qwen2.5:7b (14B doesn't fit 24 GB). First ingestion OK. Performance report in `_generated/`.
+- ~~Korrektur Slice 1.C~~ — 2026-04-18. Autosave, git checkpoint, search & replace. 19+59 tests green.
+- ~~Korrektur app~~ — Put on ice 2026-04-22. Replaced by macOS split-screen + git as the checkpoint system (see johan-workflow.md).
 
 ---
 
 ## Deferred (low priority)
 
-- 15 works saknar `.data.yaml`-sidecar-filer (skapas när djup metadata finns tillgänglig)
-- De flesta works-sidor har minimal prosa — wikilink-densiteten ökar i takt med att prosa skrivs
-- Byta till PR-workflow (fas 6 i implementationsplanen — inte aktuellt under R&D-fasen)
+- 15 works lack `.data.yaml` sidecar files (created once deep metadata is available)
+- Most works pages have minimal prose — wikilink density increases as prose is written
+- Switch to a PR workflow (phase 6 in the implementation plan — not relevant during the R&D phase)
