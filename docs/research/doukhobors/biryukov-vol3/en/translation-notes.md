@@ -7,7 +7,7 @@ tags: [research, biryukov]
 # Translation notes — editorial judgment calls
 
 Editorial decisions made while translating Biryukov's *Biography of L. N.
-Tolstoy*, Volume III, into English (see [`README.md`](README.md) for the locked
+Tolstoy*, Volumes III and IV into English (see [`README.md`](README.md) for the locked
 conventions and the Policy-A source-fidelity rule). This file records calls
 where the source is ambiguous or suspect and a choice had to be made, so the
 reasoning stays traceable.
@@ -245,3 +245,99 @@ readability. (Recorded because the title recurs corpus-wide.)
   image — «она [торба] болтается перед ногами» ("it dangles before their feet"),
   where the dangling thing is the feed-bag (the faculty of thought), not a dog. The
   invented animal was removed.
+
+---
+
+# Volume IV
+
+Decisions from the Vol IV translation. The corpus-wide rules above carry over
+unchanged — Policy A, the introduce-and-colon block-quote trigger, *What Is Truth*
+with no "?", *Nikolai Palkin* with no gloss, and *What Then Must We Do?* as the
+uniform title. The volume's Russian source is the az.lib.ru capture (2003 OCR of
+the «Алгоритм» 2000 reprint); see the [Vol IV index](../../biryukov-vol4/index.md)
+for provenance and its note on the foreign-language OCR garble. Recorded per
+chapter; session 1 covered chapters 1–4.
+
+## Vol IV, Chapter 1 — the Sehnsucht orphan marker, French/German garble, literal suspect values
+
+- **«Sechnsucht» → "Sehnsucht," with a note-less `(*)` marker kept.** The German is
+  garble-repaired to "Sehnsucht" (longing). The source prints an inline `(*)` after
+  it with no matching `(* … *)` note — the volume's one orphan marker (the index
+  records "19 inline markers, one without a matching note in the source itself"). The
+  marker is reproduced bare; no note is invented (Policy A — reproduce the source;
+  cf. the ch.7 "dangling colon kept").
+- **French in the unsent letter to the Tsar.** «les grandes et les bonnes pensees
+  viennent du coeur» repaired to "les grandes et les bonnes pensées viennent du cœur"
+  (accents + ligature, garble-repair); Biryukov's Russian gloss rendered as the
+  English footnote "(* Great and good thoughts come from the heart. *)". «encombrant»
+  kept in the body with its English footnote "(* In the way, taking up unnecessary
+  room. *)". No in-body bracket gloss for either (cf. «trouble-fête», ch.1 above).
+- **«Курти» → "Kurti" (literal).** A first draft conjectured "Crosby" (Ernest Crosby);
+  reverted to the literal transliteration under Policy A (no conjectural name
+  substitution — cf. the «т. 11» and «Ч. Н. Д.» precedents). The probable Crosby
+  reading is recorded here, not in the text.
+- **«Parerga и Paralipomenon» (Schopenhauer).** The connective «и» is rendered "and";
+  "Paralipomenon" is kept literal rather than normalised to the standard
+  "Paralipomena" (valid-but-suspect title, Policy A). Recorded as residual.
+- **Matt. V, 23–24 in the Tsar letter.** Introduced with a colon, so set as a block
+  quote; the reference is kept literal.
+- Reproduced literally as Biryukov's own parentheticals (not editorial brackets):
+  "(three lines were not copied)" («(не скопированы три линейки)»); the Breslau
+  address "Fridrichstrasse, 75"; «Urchristenthums»; the Dutch journal *Vrede*
+  («Фреде»).
+
+## Vol IV, Chapter 2 — Synod-date gap, an institutional title, the pet-name register
+
+- **Synod-date discrepancy kept.** Biryukov's narration dates the *opredelenie*
+  "22 February" but its publication "24 February"; the two-day gap is reproduced
+  literally (Policy A — plausible dates, no conjectural reconciliation).
+- **«Церковные ведомости» → "*Church Gazette*."** The Synod's official organ is given
+  its descriptive English name (consistent with the spec's "standard English forms"
+  for institutions) rather than transliterated *Tserkovnye Vedomosti*. In ch.3 the
+  same word, used as a peasant correspondent's scornful epithet («в своих
+  "Ведомостях"»), is rendered generically as "*Gazette*" — no conjectured proper
+  title. (If a uniform house rule is wanted, both could move to a transliterated form.)
+- **«Лева» / «Левочка» kept distinct.** In the 18 Jan letter to Chertkov «Лева» (the
+  son, Lev Lvovich) → "Lyova"; in Sofya Andreyevna's letter «Левочка» (her pet-name
+  for Tolstoy) → "Lyovochka" — two referents, two transliterations.
+- **«сотские, десятские» → "the *sotskie*, the *desyatskie*"** and **«усиленная
+  охрана» → "the reinforced safeguard"** — the village-police offices and the 1881
+  emergency-regime term kept as literal transliterations / literal legal terms, no
+  coined gloss or modern paraphrase.
+- The appeal «Чего желает прежде всего большинство людей русского народа» → "What the
+  Russian People Desires Above All," reproduced both in narration and as the
+  document's own heading.
+
+## Vol IV, Chapter 3 — the "Petrograd" anachronism, faithful invective
+
+- **«Петроград» kept literal.** Biryukov's 1922 text calls the 1901 city "Petrograd";
+  the anachronism (it was St Petersburg in 1901) is reproduced under Policy A. House
+  note for the volume: keep Biryukov's retrospective city-naming as written.
+- **Abusive letter and biblical invective rendered faithfully, unsoftened** — the
+  «Звероподобному… скот» letter, and «Совет нечестивых» → "council of the wicked,"
+  «синедрион» → "Sanhedrin" — as primary-source artifacts.
+- **Two *Kreutzer Sonata* survey quotes kept inline despite a colon.** The RU runs
+  these two gymnasium-pupil quotations inside the prose paragraph rather than setting
+  them off; the EN follows the source's layout — the one place the
+  introduce-and-colon → block-quote heuristic yields to the source's actual setting.
+- **«А. Эндоуров» → "A. Endourov"** — kept in the working form the spec already uses
+  (the strict LoC form would be "Endurov").
+
+## Vol IV, Chapter 4 — Carmen Sylva's wrong name, Ruskin garble inside a quotation
+
+- **"the Romanian Queen Natalya" (literal).** «Румынская королева Наталья» is a
+  factual slip — the pen-name Carmen Sylva belonged to Queen Elisabeth of Romania,
+  not "Natalya" — but it is a valid-but-suspect real name, reproduced literally with
+  no bracket and no footnote (Policy A; cf. the Bjørnson «Король» → *The King*
+  precedent).
+- **"unto the Last" (literal, inside the quotation).** Tolstoy's letter to Maude
+  garbles Ruskin's *Unto This Last* as «"unto the Last"». Because it sits inside
+  Tolstoy's own verbatim letter — the strongest literal zone — it is kept literal
+  rather than repaired (cf. ch.11 "garbled English inside Tolstoy's own quotations
+  kept literal").
+- **OCR repairs (Policy A garble):** «ко Д. Н-чу» → "to L. N." (a stray «Д» for «Л»);
+  «strofant» → "strophanthus" (the cardiac drug); «denigrer» → *dénigrer* (accent
+  restored, the French gloss kept in the body).
+- **"Posha" vs "Pasha."** «Поша» (Biryukov's own nickname) → "Posha"; «Пашей» (his
+  wife Pavla) → "Pasha"; footnote "(* My wife, Pavla Nikolaevna, née Sharapova.
+  (P. B.) *)" — "(P. B.)" being Biryukov's initials.

@@ -31,7 +31,7 @@ a later, separate job; this capture is the working Russian text.
 | | |
 |---|---|
 | **Russian source** | All 19 chapters captured — **140,171 words**. ✓ |
-| **English translation** | Not started. |
+| **English translation** | Chapters 1–4 translated → [`en/`](en/) (Часть 1, chs 1–4 of 5). Chapters 5–19 not started. |
 
 At Vol. III's ≈1.32× expansion ratio, a full translation would run to roughly
 **185,000 English words**. Vol IV is about 21% shorter than Vol III's 177,657
