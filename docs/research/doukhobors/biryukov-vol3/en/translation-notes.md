@@ -105,3 +105,69 @@ literal reproduction of a valid-but-suspect source value over a conjectural
 common-noun gloss). The descriptive «осин» ("of aspens") is not separately
 transliterated; it is recorded here as the residual ambiguity. The first draft
 had read "the aspen ponds."
+
+## Chapter 1 — preface, the 51-source bibliography, and literal numerals
+
+The volume's structurally unusual opener (Biryukov's Author's Preface to Vol. III
++ a numbered 51-entry source bibliography + the `## Part I` divider + the chapter
+narrative, in that order). Calls in the Part-I / Part-II-tail batch (2026-05-27):
+
+- **«trouble fete» → *trouble-fête*, no reader gloss.** The dropped hyphen/accents
+  are repaired to the real French (garble under Policy A), but the word is kept in
+  the body without a bracketed gloss — Biryukov supplies none, and the README
+  forbids editorial brackets inside quotations. (Translator and reviewer concurred.)
+- **Bibliography entry 22: «т. 11» → "vol. 11" (literal).** A first draft silently
+  normalised Koni's *On Life's Path* «т. 11» to the probably-intended "vol. II";
+  reverted to the literal "vol. 11" under Policy A (reproduce plausible numerals
+  literally; no conjectural substitution — cf. the *Resurrection* "XXXIX and XI"
+  precedent). The likely "II" reading is recorded here, not in the text.
+- **Other bibliography entries reproduced literally** (valid-but-suspect real-world
+  strings, not nonsense garble): 30) "Staddling … James Clark et C№" (prob.
+  Stadling / Clarke & Co.); 31) "Cassel & C№" (prob. Cassell); 37/38/44) French
+  titles with dropped accents; 39) "Kuhne … Denkweis" (prob. Kühne / Denkweise);
+  40) "Luxembourg, Rosa … Nachlasz" (prob. Luxemburg / Nachlass); 41) "G-ie"
+  (= Cie); 42) "Esser" (?Essor); 51) "Tuckton House Tuckton" (repeated word kept).
+- **«сочинения неопровержимыми» → "the works … irrefutable" (plural).** A first
+  draft smoothed the plural to "the work"; restored to the literal plural.
+- **«Симурден» → *Cimourdain*** (Hugo, *Quatrevingt-treize*), and the stray «ј» in
+  «Библиографический указательј» dropped — garble-repairs under Policy A.
+- Matt 5:45, quoted inside Biryukov's own sentence (not introduced as verbatim
+  Tolstoy text), is rendered inline rather than as a block quote — per the ch.10
+  principle that block-quoting is triggered by the introduce-and-colon framing.
+
+## Chapter 7 — a mis-set narrative line, and a faithful dangling colon
+
+- **Quote-boundary fix.** Biryukov's own remark «Какой парадокс! И, однако, он в
+  него верил.» ("What a paradox! And yet he believed in it.") had been wrapped as
+  a block quote with an orphan opening quote mark; reset to plain narrative. That
+  orphan mark was the displaced *close* of Alexandra Andreyevna's preceding
+  reminiscence, which is now closed at its proper end; her second excerpt, split by
+  a `(* … *)` footnote, is treated as one quotation (no re-opening quote mark at
+  the resumption).
+- **Dangling colon kept.** The medicine letter to Chertkov ends in the source with
+  «…решение их в душе каждого:» — a trailing colon with no continuation before the
+  next paragraph. The RU capture itself dangles (verified), so the colon is
+  reproduced literally rather than "completed" (Policy A).
+- French OCR in Alexandra Andreyevna's quoted exchanges repaired to standard
+  accented French (garble-repair, as in ch.12): «suis»→*sois*, «par»→*pas*,
+  «та gloire»→*ma gloire*, «Nabuchodonsor»→*Nabuchodonosor*, and similar.
+
+## Chapter 8 — «Николай Палкин» house form, and the *vinovat* pun
+
+- **«Николай Палкин» → *Nikolai Palkin*, no gloss — applied corpus-wide.** A first
+  draft glossed Tolstoy's article as *Nikolai the Stick*. **Decision (Johan,
+  2026-05-27): use the standard transliterated title *Nikolai Palkin* everywhere,
+  with no descriptive gloss** — for fidelity (Policy A favours the title value),
+  for the conventional English title, and for consistency with the ch.5 index
+  entry "Palkin". The pre-existing occurrence in ch.14 (« "Nicholas Stick"
+  (*Nikolai Palkin*) ») was normalised to *Nikolai Palkin* to match.
+- **The «Виноват…/вино» pun — diminuendo + a translator's footnote.** Tolstoy opens
+  a letter «Виноват… винов… вино… вин…», trailing off from *vinovat* ("at fault")
+  through *vino* ("wine") to the bare letter *в*. Rendered as the English
+  diminuendo "Guilty… guilt… gui… gu… g…" (the *vino* layer cannot survive).
+  **Decision (Johan, 2026-05-27): add a `(* … *)` translator's footnote** flagging
+  the lost wordplay — the corpus's first *net-new* explanatory footnote (as
+  opposed to footnotes that reproduce Biryukov's own). Russian terms are
+  transliterated in it to keep the EN body Cyrillic-free.
+- The source's own initial-switch in the Rakhmanov memoir («матери М. Н.» … then
+  «матери П.») is reproduced literally, not normalised.
