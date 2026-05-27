@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-05-13
+Last updated: 2026-05-27
 
 ---
 
@@ -33,6 +33,7 @@ Bethink Yourselves, Birukoff-biografin och Korrektur ligger i `projects/` men ä
 
 **Nästa batch:**
 - Skapa wiki-sidor för Ilya Lvovich Tolstoy och Mikhail Lvovich Tolstoy (saknas i TEI — källa: Birukoff)
+  - Birukoff-källan klar: hela Vol. III finns nu på engelska (`docs/research/doukhobors/biryukov-vol3/en/`, alla 22 kapitel) — redo som primärkälla för Birukoff-baserade wiki-sidor och wiki-källingestion.
 - Nyckelplatser: Moscow Khamovniki house, Optina Pustyn, Shamordino
 - Verifiera födelsedatum/-platser för befintliga barnsidor (Sergei, Lev, Maria, Andrei)
 - Verifiera Alexandra Tolstayas deathPlace (Valley Cottage, NY)
