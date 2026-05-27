@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-05-10
+lastUpdated: 2026-05-26
 tags: [research]
 ---
 
@@ -71,7 +71,17 @@ The repository [github.com/tolstoydigital/TEI](https://github.com/tolstoydigital
 
 ### What we currently hold
 
-Only the `reference/` folder has been downloaded, stored at `primary-sources/tolstoydigital-TEI/reference/`. The full corpus of encoded texts (`texts/`, `texts_txt/`) has not been cloned.
+The full `tolstoydigital/TEI` repository has been cloned to `primary-sources/tolstoydigital-TEI/` (as of May 2026):
+
+| Folder | Contents | Scale (measured) |
+|---|---|---|
+| `reference/` | The nine structured-entity XML files (see §4) | — |
+| `texts/` | Full TEI-encoded Jubilee Edition — `works/` (767), `letters/`, `diaries/`, `notes/`, `krug_chtenija/`, `azbuka/`, `comments/` | ~16,600 XML · ~390 MB |
+| `texts_txt/` | Plain-text diary and witness corpora (Tolstoy's diaries; Goldenweiser, Gusev, Makovitski) | ~20,000 files · ~86 MB |
+| `texts_front/` | Volume front matter | ~310 MB |
+| `tolstoy-bio/` | TEI-encoded biographical/witness materials (Goldenweiser, Gusev, Makovitski; S. A. Tolstaya's diaries and letters) | ~200 MB |
+
+This lists the principal corpora; for the complete folder layout see the repository-structure table in §3.
 
 ---
 
@@ -115,7 +125,7 @@ The reference files are the primary structured source for wiki entities. Person 
 
 ### Planned use — full corpus
 
-The `texts_txt/` folder (plain text versions of all 90 volumes) is the most immediately valuable undownloaded asset. These are the source texts that would be ingested into LightRAG for knowledge graph construction — far richer than the current 29-document vault.
+The `texts/` (TEI/XML) and `texts_txt/` (plain text) corpora are now available locally — the raw material for source-ingestion into the wiki and, where useful, for LightRAG indexing (Layer 2). Far richer than the current 29-document vault.
 
 ### Fork strategy
 
@@ -125,7 +135,7 @@ A fork of `tolstoydigital/TEI` to the `tolstoylife` GitHub organisation would se
 
 ## 6. Next steps
 
-- [ ] Fork `tolstoydigital/TEI` to `tolstoylife` org
-- [ ] Full `git clone` of the fork into `primary-sources/tolstoydigital-TEI/`
-- [ ] Assess `texts_txt/` volume and structure for LightRAG ingestion planning
-- [ ] Contact tolstoydigital team to introduce tolstoy.life
+- [x] Full clone of `tolstoydigital/TEI` into `primary-sources/tolstoydigital-TEI/` (done, May 2026)
+- [ ] Fork `tolstoydigital/TEI` to the `tolstoylife` org (provenance + stable upstream)
+- [ ] Assess `texts_txt/` structure for LightRAG ingestion planning
+- [ ] Contact the tolstoydigital team to introduce tolstoy.life
