@@ -341,3 +341,83 @@ chapter; session 1 covered chapters 1–4.
 - **"Posha" vs "Pasha."** «Поша» (Biryukov's own nickname) → "Posha"; «Пашей» (his
   wife Pavla) → "Pasha"; footnote "(* My wife, Pavla Nikolaevna, née Sharapova.
   (P. B.) *)" — "(P. B.)" being Biryukov's initials.
+
+## Vol IV — quotation formatting standardised on `>` block quotes (whole volume)
+
+**Decision (Johan, 2026-05-27): the whole volume renders set-off, introduce-and-colon
+Tolstoy citations (letters, diary entries, reminiscences, embedded documents) as Markdown
+`>` block quotes** — the README rule and the approved gold-sample ch.18 style. Session 1
+applied it in chs 1–3 but drifted to plain quotation marks in ch.4; the session-2 drafts of
+chs 5 and 7 drifted the same way. All three were reformatted to `>` (a pure marker change,
+verified word-identical before/after); ch.6 was already in `>` style. Quotations woven
+inline in Biryukov's own sentence stay inline with `"…"`. (Recorded because it now governs
+the whole volume, including the not-yet-translated chs 8–19.)
+
+## Vol IV, Chapter 5 — the slurred prayer, a kept diary typo, and «Е. б. ж.»
+
+- **«помилос, помилос» → "lor a' mercy, lor a' mercy."** Tolstoy deliberately slurs «Господи
+  помилуй» to illustrate degraded folk pronunciation; rendered as an equivalent English
+  elision of "Lord have mercy" rather than corrected — the chapter's one sense-equivalent
+  creative rendering (the literal «помилуй» cannot carry the slur).
+- **"Gaspara" kept literal.** Inside the 23 Jan diary entry Tolstoy misspells Gaspra as
+  «Гаспара»; reproduced literally (quoted primary text, the strongest literal zone). The
+  narration's «Гаспра» is "Gaspra" throughout.
+- **«Е. б. ж.» → "If I live." (recommended corpus house rule).** Tolstoy's standing diary
+  abbreviation «Если буду жив» appears twice; a first draft invented English initials,
+  reverted to the plain "If I live." — the corpus has no precedent for an English initialism
+  and always spells the phrase out. **Recommended as a house rule (recurs in ch.18) —
+  pending Johan's confirmation.**
+- **Garble repairs (Policy A):** «Лев Николаевы»→"Lev Nikolaevich"; «со этом свидании»→"of
+  this meeting"; «говорил л кружках»→"spoke … of circles" («л»→«о»); «заметши»→"drowned out";
+  «предложи»→"proposed"; «Д. Н-ча»→"L. N." (stray «Д» for «Л», cf. the ch.4 precedent);
+  «шасла/изабелла»→*chasselas*/*isabella*. *chancelante* carries the source's own footnote
+  gloss.
+- **Valid-but-suspect kept literal:** «Летурно»→"Letourneau"; «Поленц»→"Polenz"; "320 grammes
+  of quinine"; "S. P. Polyakov". Transliterated terms kept (no English coinage): *shtundisty*,
+  *sotskie*/*desyatskie*, *vint*, *gorodki*, *calèche*, *palazzi*, *zemstvo*; «усиленная
+  охрана»→"the reinforced safeguard" (matching ch.2).
+
+## Vol IV, Chapter 6 — the Часть II divider, a literal «зрители», unified «К раб. нар.»
+
+- **`## Часть II …` → `## Part II. 1902–1905. The 75th Birthday. War. The Beginning of the
+  Revolution.`** — H2 part-opener, roman "Part II", en-dash year range (matching Part I and
+  Vol III's Part IV).
+- **«зрители Ясной Поляны» → "the spectators of Yasnaya Polyana" (literal).** Almost certainly
+  a slip for «жители» ("residents") in the household-fire passage, but «зрители» is a valid
+  word, so reproduced literally with no conjectural substitution (Policy A; cf. the Carmen
+  Sylva "Natalya" and Bjørnson «Король» precedents). Recorded as the residual oddity.
+- **«К раб. нар.» / «К рабочему народу» → *To the Working People* (unified).** The diary
+  abbreviation is rendered as the full recognisable title rather than an invented English
+  abbreviation; all occurrences unified.
+- **Garble repairs:** «скачал»→"said"; «возврашению»→"the returning"; the French proverb «le
+  mieux est l'ennemie du bien»→*l'ennemi* (gender fix); «Шкарван»→"Škarvan".
+- **Valid-but-suspect / transliteration kept literal:** «Мейвор»→"Mavor"; the German names
+  Pelizaeus / Witthorn / Loewenfeld / Diederichs; «Revue Blanche»; "article 166 of the German
+  penal code"; "No. 15". **Periodicals:** «Современник»→*The Contemporary*; «Образование»→
+  *Obrazovanie*; «Мир Божий»→*Mir Bozhy*; «Русск. вед.»→*Russkie Vedomosti*; «История моего
+  детства»→*The History of My Childhood* (the original 1852 serial title).
+- **Date split kept:** the press declaration's "13 Dec" header vs "9 Dec" signature is
+  reproduced as the source gives it, not reconciled.
+
+## Vol IV, Chapter 7 — garble repairs, two un-harmonised royal styles, a removed duplicate date
+
+- **Garble repairs (Policy A):** «Декрета»→"Descartes" (the cogito passage); «Map. 1, 24»→
+  "Mark 1:24" (Latin-glyph «Map» for «Мар.»; the verse confirms Mark); «отучилось»→"it
+  happened"; «Посте этого»→"After this"; «веши»→"things". By sense (not garble): «больней»→
+  "more painfully".
+- **Two descriptions of one woman kept distinct.** «герцогиня Луиза Тосканская» → "Duchess
+  Louisa of Tuscany" and «кронпринцесса саксонская Луиза» → "the Saxon Crown Princess Louisa"
+  are reproduced as the source's two differing styles for the same person, not harmonised
+  (Policy A; cf. ch.4 "Romanian Queen Natalya").
+- **Names:** «Гиацинт Луазон / отец Гиацинт»→"Hyacinthe Loyson / Father Loyson"; «Спир»→"Spir";
+  «Жирон»→"Giron"; «Брайан»→"Bryan"; «Гриневская»→"Grinevskaya"; «Поленц»→"Polenz"; «Трегубов»→
+  "Tregubov".
+- **Valid-but-suspect kept literal:** "North American Newspaper" (probably the Philadelphia
+  *North American*); "1 June 1904" (a 1904 Tregubov-strike date sitting inside the 1903
+  chapter, reproduced where the source places it); the article titles «Светлой жизни»→"The
+  Radiant Life" and «Великий старец»→"The Great Old Man".
+- **Duplicate date removed (verification fix).** A draft inserted a standalone date-stamp "28
+  August 1903." after the naive-correspondent letter, but the RU has «28 августа 1903 г.» only
+  as the opening of the birthday sentence (the letter carries no date-stamp); the spurious
+  line was deleted, leaving the date once, inline. Both of Biryukov's own `(* … *)` footnotes
+  preserved; no net-new translator footnote added.
