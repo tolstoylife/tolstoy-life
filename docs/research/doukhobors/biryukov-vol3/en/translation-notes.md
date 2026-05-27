@@ -616,3 +616,99 @@ Session 3 (2026-05-27); chs 8–10 translated and independently verified (EN↔R
   "the quality of universal humanity" (kept literal, no amplification). Work-titles italicised:
   *I Cannot Be Silent*, *The Circle of Reading*, *What I Believe*, *An International Almanac on
   Tolstoy*.
+
+## Vol IV, Chapter 14 — the Часть IV part-divider, two embedded primary documents, the Bahá/Báb identification, a kept orphan close-quote
+
+Session 5a (2026-05-27); chs 14–16 translated and independently verified (EN↔RU). Chapter 14
+opens Часть IV and carries three `## H2` sections.
+
+- **`## Часть IV. 1909 -1910 гг. Старость. Уход. Кончина` → `## Part IV. 1909–1910. Old Age. The
+  Departure. The End.`** — H2 part-opener, roman "Part IV", en-dash year range (no spaces),
+  matching the ch10 Часть III precedent and Parts I/II.
+- **Two embedded primary documents translated faithfully from Biryukov's reproduced Russian
+  (Johan-ratified, ch13 rule).** `## Приветствие отказавшимся от военной службы` → `## A Greeting
+  to Those Who Have Refused Military Service`; `## Нет худа без добра` → `## There Is No Evil
+  Without Some Good`. Both Tolstoy texts rendered from the Russian — no original-language /
+  published-English substitution; document bodies set as ordinary translated paragraphs under the
+  H2 (the ch13 anthology model). The two un-harmonised sign-off forms are preserved as the source
+  prints them: «Л. Толстой» → "L. Tolstoy." with "10 February 1909. Yasnaya Polyana." (date then
+  place); «Лев Толстой» → "Lev Tolstoy." with "Yasnaya Polyana, 6 February 1909." (place then date).
+- **«Багая / Баба / багаистов» → "Bahá / the Báb / Bahaists" — context-fixed referents, not
+  conjecture.** Inside the Vaisov conversation the RU itself disambiguates («в Персии -- бабисты,
+  или бабиды»; «Багай… был продолжателем Баба» = the Persian Bábí/Bahá'í succession), so the
+  founders are rendered in their standard-English diacritical forms. The sect-names «бабисты, или
+  бабиды» are kept as literal transliterations **"the Babists, or Babids"** — a deliberate register
+  split (literal sect-labels, standard founder-names) in one sentence, recorded for traceability.
+- **«Дьютур» → "Dyutur" (literal).** Muhammad's would-be assassin in an English-sourced anecdote —
+  a valid-but-suspect proper name kept literal, no conjectural identification (cf. «Курти»→"Kurti",
+  «Девит и Меконна»→"Devitt and McConna").
+- **Orphan close-quote kept on the Vaisov transcript.** Gusev's recorded L. N./Vaisov conversation
+  (introduced "вот как он передает ее:") is one `>` block opening bare (no opening quote, as the RU
+  prints it) and closing with a trailing `"` that has no matching open in the RU; reproduced as
+  printed (cf. ch9 orphan close-quote, ch7 dangling colon, ch1 orphan `(*)`). The numbered
+  Ramakrishna/Muhammad sayings and the «—» speaker-labelled dialogue stay inside that one parent
+  block (the introduce-and-colon trigger fires on the outer citation only — ch10 rule).
+- **Garble repairs (Policy A, nonsense tokens):** «окало»→"about" (около); «Па вопрос»→"To … question"
+  (На); «из та»→"of those" (тех). **Footnotes:** the source body has none (its single `(*)` is the
+  frontmatter capture-line boilerplate); none invented. Work-titles/periodicals: *The Circle of
+  Reading*, *Selected Passages from a Correspondence with Friends*, Gogol works in conventional
+  English (*Dead Souls*, *The Inspector-General*, …); *Russkoye Slovo*, *Zhizn* (Life), *Vekhi*
+  (Landmarks) with first-mention glosses. «Гусев» → "Gusev" (ch12–13 form).
+
+## Vol IV, Chapter 15 — the «42N» OCR degree-sign repair, two Biryukov footnotes, foreign phrases kept literal inside quotations
+
+No part-divider, no embedded document (H1 only). The chapter carries two of Biryukov's own
+footnotes; the digitizer's silently-applied typesetter-error correction (noted in the volume index)
+left no visible mark in the source.
+
+- **«жар доходил до 42N» → "the fever reaching 42°" (garble-repair).** The stray glyph «N» is a
+  nonsense OCR artifact for the degree sign «°» — not a valid value, so it falls in Policy A's
+  *silent garble-repair* lane, not the valid-but-suspect *keep-literal* lane (consistent with this
+  chapter's own «н»→"and" and «частые»→"part" repairs). It sits in Biryukov's own narration, not a
+  quotation. The translator's first pass kept "42N" literal; the **independent verifier flagged it
+  and recommended the repair**, which the orchestrator applied. (If maximum literalism for ambiguous
+  OCR glyphs is preferred, revert to "42N" — recorded as an open call for Johan.)
+- **Two Biryukov footnotes preserved** with inline `(*)` markers + English `(* … *)` notes: after
+  the title *Les essais optimistiques*, «"Оптимистические очерки"» → "(* Optimistic Essays. *)";
+  after *C'est le moment ou jamais*, «Теперь или никогда» → "(* Now or never. *)". Both Biryukov's
+  own notes, not net-new translator footnotes.
+- **Foreign phrases kept literal inside quotations (strongest literal zone, Policy A):** «Les essais
+  optimistiques» (standard *Essais optimistes*) and «C'est le moment ou jamais» (standard *où*) are
+  reproduced as the source prints them inside the cited text — no accent insertion, no
+  normalisation (cf. ch10 Kant title, ch3 Rousseau *Confession*).
+- **Garble repairs (Policy A):** «н»→"and"; «частые»→"part" (частью); two stray sentence-final commas
+  normalised to periods (typesetting artifacts, invisible — distinct from the meaningful ch7
+  dangling colon). **Names/units:** «Гусев» → "Gusev" throughout (the arrest subject; ch12–13 +
+  index form); «Душан» → "Dušan"; *Russkoye Slovo* (Russian Word), *Russkiye Vedomosti*; *versta*,
+  *sazhen* kept as transliterated units; "article 384" (Biryukov's own "or some other"); "the XI
+  All-Russian Forestry Congress" (roman numeral kept).
+
+## Vol IV, Chapter 16 — the «каюк» garble repair inside the Gandhi letter, "Iohannesburg" kept literal, an inline Psalm-22 verse
+
+The longest chapter in the batch (9,831 RU words → 13,057 EN, 1.328×); no part-divider, no embedded
+document, no footnotes in the source body.
+
+- **«в каюк бы то ни было случаях» → "in whatsoever cases" (silent garble-repair inside a
+  quotation).** «каюк» is nonsense garble for «каких»; the intended «каких» recurs cleanly elsewhere
+  in the chapter, so it is restored silently — no gloss, no bracket — inside Tolstoy's verbatim
+  Gandhi letter (garble-repair lane; cf. ch11 "garbled English inside Tolstoy's own quotations",
+  but here the token is nonsense, so the *sense* is recovered rather than the defect reproduced).
+- **«Iohannesburg» → "Iohannesburg" (literal).** A valid historical variant spelling, not nonsense,
+  so reproduced rather than normalised to "Johannesburg" (cf. Bjørnson «Король», Carmen Sylva
+  "Natalya", "Paralipomenon", "unto the Last").
+- **The Gandhi address as a bare two-line heading.** "Gandhi. Iohannesburg / Transvaal, S. Afr." is
+  set as two plain lines above the letter (the letter's `>` block opens after it), matching the RU's
+  layout; the sign-off "7 September 1910. Kochety." is likewise a bare trailing line — not mis-set as
+  a block quote, not dropped.
+- **«"И разделиша ризы его…"» → KJV "And they parted his garments, and for his vesture they did cast
+  lots" (inline).** The RU weaves the verse into Biryukov's own sentence, closed by «-- сказал
+  пророк», with no introduce-and-colon set-off, so it is rendered inline `"…"` (cf. ch1 Matt 5:45,
+  ch3 inline Scripture). KJV phrasing (Ps. 22:18 / John 19:24).
+- **«Map. Ал.» → "Mar. Al."** — the OCR Latin-glyph «Map» garble-repaired to «Мар.» and kept as the
+  source's literal abbreviation (Marya Alexandrovna Schmidt), not expanded.
+- ***modus vivendi*** kept inline italic, no gloss (ch11 precedent for untranslated set phrases the
+  source itself does not gloss). «скопец» → "the *skopets*" (italic, ch8 sect-term register).
+  **Names:** Chertkov, Korolenko, Bulgakov, Dušan (Makovitsky), Nazhivin, «Ревиля» → "Réville"
+  (Albert Réville). **Titles:** *For Every Day*, *The Path of Life*, *Every Quality Comes from Her*,
+  *From the Life of L. N. Tolstoy*; "An Everyday Occurrence" (Korolenko, roman in quotes);
+  *Indian Opinion* (Gandhi's journal).
