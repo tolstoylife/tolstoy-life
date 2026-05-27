@@ -26,6 +26,7 @@ __scrap
 # Local config
 .claude/
 .omc/
+.superpowers/
 .python-version
 .vault-nickname
 
