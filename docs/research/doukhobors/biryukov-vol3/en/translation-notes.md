@@ -421,3 +421,114 @@ the whole volume, including the not-yet-translated chs 8–19.)
   as the opening of the birthday sentence (the letter carries no date-stamp); the spurious
   line was deleted, leaving the date once, inline. Both of Biryukov's own `(* … *)` footnotes
   preserved; no net-new translator footnote added.
+
+## Vol IV, Chapter 8 — *Bethink Yourselves!*, the mural sect-list register, four garble-repairs
+
+Session 3 (2026-05-27); chs 8–10 translated and independently verified (EN↔RU).
+
+- **«Одумайтесь!» → *Bethink Yourselves!*** Tolstoy's 1904 anti-war article is given Aylmer
+  Maude's conventional English title (recurs four times, unified), not a literal "Come to Your
+  Senses!" — consistent with the corpus's use of recognised English work-titles (cf. *What Then
+  Must We Do?*). The verifier confirmed it sound. **Open for ratification as a house rule**
+  (alongside the existing open calls below).
+- **«В чем моя вера?» → *What Is My Faith?*, with the question mark kept.** A distinct work from
+  *What Is Truth* (the no-"?" rule is specific to the Ge painting); the RU prints the "?" here, so
+  it is retained.
+- **«духоборы» → *dukhobory* (lower-case italic) inside the Glinskaya-Pustyn mural sect-list.**
+  Inside a verbatim quoted letter, the monastery's painted list of nine sect-labels (*beguny,
+  molokane, dukhobory, skoptsy, khlysty, netovtsy, perekreshchentsy, pashkovtsy, shtundisty*) is
+  rendered in one consistent transliterated register; eight of the nine have no English exonym, so
+  capitalising only «духоборы» to the spec's "the Doukhobors" would falsely single out one painted
+  caption as a named group. The spec form **"Doukhobors" is kept where it is Biryukov's own
+  narration about the people** (the letter to the Grand Duke). The independent verifier confirmed
+  the register split is correct. Recorded as the one deliberate, scoped departure from the spec's
+  «духоборы»→"the Doukhobors" mapping.
+- **Garble-repairs (Policy A, nonsense tokens; all verifier-confirmed):** «пли»→"or" (for «или», in
+  the Garrison passage); «вображаемый»→"imaginary" (for «воображаемый» — the source's own corrected
+  form appears two lines later); «тон»→"that"/"one or the other race" (for «той»); «29 мр.»→"29
+  March" (abbreviation expanded from the surrounding dated diary entries).
+- **30 April diary list numerals reproduced literally as "1) 2) 5) 4) 5)".** The RU itself
+  mis-numbers the list (a "5)" where "3)" is expected, then a second "5)"); reproduced
+  numeral-for-numeral, no renumbering (Policy A; cf. the ch.11 out-of-order dates). Verifier
+  confirmed the defect is in the RU.
+- **Nested-quote fix (verification).** The Georges Bourdon *Figaro* block opened an outer `"` that
+  was left unclosed; the closing `"` was appended to match the RU's «убийство!"», restoring the
+  one-outer-pair rule.
+- **Periodicals (ch.6 house style):** «Русск. вед.»→*Russkie Vedomosti*; «Освобождение»→
+  *Osvobozhdenie*; «Новое время»/«Нов. вр.»→*Novoye Vremya*; «Наши дни»→*Nashi Dni*; «Express» kept
+  literal (valid-but-suspect, prob. *L'Express*); «Le Temps», «Figaro» kept as printed.
+- **Names — standard/LoC forms:** «Стессель»→"Stoessel" (the Port Arthur commander); «Жюль
+  Кларетти»→"Jules Claretie"; «Жорж Бурдон»→"Georges Bourdon"; «в Дальнем»→"at Dalny"; «Ганц»→"Ganz"
+  (valid-but-suspect, kept literal).
+- **Footnotes:** the chapter has none in the source — none preserved, none invented.
+
+## Vol IV, Chapter 9 — the Tocqueville garble, two valid-but-suspect names, a kept orphan close-quote
+
+- **Tocqueville French (garble-repair, Policy A).** «en detruisant en partie les institutions du
+  moyen age, en avait rendu cent fois plus odieux, ce qui en restait» → "en détruisant en partie
+  les institutions du moyen âge, on avait rendu cent fois plus odieux ce qui en restait" — accents
+  restored (*détruisant, âge*), the stray comma dropped, and the subjectless OCR «en avait» repaired
+  to the impersonal «on avait» (the gerund clause grammatically requires "on"; confirmed against
+  Tocqueville's *L'Ancien Régime* and Biryukov's own «сделали то, что…» gloss). Biryukov's `(*)`
+  marker + `(* … *)` Russian gloss preserved inside the block quote → "(* In destroying in part the
+  medieval institutions, they brought it about that what remained of them became a hundred times
+  worse. *)".
+- **«vous avez beau être grand Duc»** repaired (accent); Biryukov's gloss → "(* However much you
+  play the prince. *)". German «pflichtloser Genuss» kept literal, italic, no gloss (Biryukov gives
+  none).
+- **«Девит и Меконна» → "Devitt and McConna" (literal).** Almost certainly Michael Davitt + a
+  companion, but valid-but-suspect names are reproduced literally, no conjectural substitution (cf.
+  «Курти»→"Kurti", Carmen Sylva "Natalya", Bjørnson «Король»).
+- **«Эйнштейн, Ленорман» → "Einstein, Lenormand" (literal).** Kept as given; «Ленорман»→"Lenormand"
+  is a routine transliteration, not a substitution.
+- **«Наша жизнь» → *Nasha Zhizn* (Our Life)** — transliteration with a first-mention parenthetical
+  English gloss only (gloss-free on the second mention), matching the corpus's *Severny Vestnik*
+  (The Northern Herald) pattern. «Московских ведомостей»→*Moscow Gazette*; «Манчестер
+  гардиан»→*The Manchester Guardian*; «Фигаро»→*Le Figaro*; «Посредник»→*Posrednik*.
+- **«Изо Абе» → "Iso-Abe"** (the Japanese socialist editor Isoo Abe) — the source's two-word form
+  joined with a hyphen (English convention); verifier noted strict-literal spacing would be "Iso
+  Abe" (non-blocking).
+- **Orphan close-quote kept.** "…so to the same are the Russians called in 1905." carries a trailing
+  `"` with no opening in the RU (the displaced close of the preceding Tocqueville-diary entry);
+  reproduced literally (cf. ch.7 dangling colon, ch.1 Sehnsucht orphan marker).
+- **«Записано:» entry as a block quote** — introduced by a colon lead-in («…набрасывал их в
+  дневнике:»), so set off; its internal `"…"` and trailing orphan close-quote reproduced as the RU
+  has them.
+- **Titles (literal/italic):** «Силоамская башня»→*The Tower of Siloam*; «Единственное
+  средство»→*The Sole Means*; «Великий грех»→*The Great Sin*; «Конец века»→*The End of the Age*;
+  «Божеское и человеческое»→*The Divine and the Human*; «Зеленую палочку»→*The Green Stick*;
+  «Дубинушка»→'Dubinushka' (song, kept transliterated); «К рабочему народу»→*To the Working People*
+  (matching ch.6); «Одумайтесь!»→*Bethink Yourselves!* (matching ch.8). Both Biryukov footnotes
+  preserved; no net-new footnote.
+
+## Vol IV, Chapter 10 — the Часть III divider, the Kant title kept literal, Masha vs Maria Lvovna
+
+- **`## Часть III. 1906-1908. Дети. "Не могу молчать". Юбилей` → `## Part III. 1906–1908. The
+  Children. *I Cannot Be Silent*. The Jubilee.`** — H2 part-opener, roman "Part III", en-dash year
+  range, *Не могу молчать* → *I Cannot Be Silent* (italic work-title), matching Parts I/II and Vol
+  III's Part IV.
+- **Kant title kept literal: *Religion in Grenzen der blossen Vernunft*.** Inside Tolstoy's verbatim
+  diary (the strongest literal zone), the title is reproduced as the RU prints it — a real-but-
+  imperfect title (dropped «innerhalb der Grenzen», non-ß spelling) — rather than restored to the
+  bibliographically-correct form; valid-but-suspect, Policy A (cf. the ch.1 "Paralipomenon" call).
+  Biryukov's `(*)` marker + his own `(* … *)` gloss preserved → "(* "Religion within the Limits of
+  Pure Reason." *)" — Biryukov's gloss, not a net-new translator footnote.
+- **«Маша» kept distinct from "Maria Lvovna."** The RU itself alternates: Biryukov's formal framing
+  uses «Марья Львовна»→"Maria Lvovna"; Ilya Lvovich's reminiscence and Tolstoy's diary use the
+  pet-name «Маша»→"Masha". Both kept, mirroring the source's register-switching (Tolstoy's 28 Dec
+  diary entry even thematizes the name — "I do not want to call her Masha…").
+- **Names — standard/LoC:** «Шейерман»→"Sheyerman" («-ей-»→"-ey-"), «Гольденвейзер»→"Goldenweiser",
+  «Поль Сабатье»→"Paul Sabatier", «Снегирев»→"Snegirev", «Феноменов»→"Fenomenov", «Осип
+  Цыганов»→"Osip Tsyganov", «Абакумов»→"Abakumov".
+- **Valid-but-suspect / literal numerals (Policy A):** "840 desyatinas" (*desyatina* kept as a
+  transliterated land unit); «гласным»→"member of the zemstvo assembly"; «царству дураков»→"kingdom
+  of fools"; «четверть часа»→"fifteen minutes". All diary dates reproduced in source order (1/2/15
+  Sept; 26/29 Nov; 1/28 Dec).
+- **«Новости дня» → *Novosti Dnya* (News of the Day)** — transliteration + first-mention gloss in
+  Biryukov's narration (not inside a quote), matching the *Severny Vestnik* pattern.
+- **Dialogue kept as dialogue.** The Osip Tsyganov story and the operation-day account use the RU's
+  «—» reported-speech format *inside* their parent block quotes — em-dash dialogue, not separate `>`
+  citations (the introduce-and-colon trigger fires on the outer citation only). «За что?»→"What
+  For?"; «Значение русской революции»→"The Significance of the Russian Revolution";
+  «Правительству, революционерам и народу»→"To the Government, the Revolutionaries, and the
+  People."
