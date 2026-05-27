@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-05-26
+lastUpdated: 2026-05-27
 tags: [research, biryukov]
 ---
 
@@ -28,7 +28,7 @@ chapters.
 | | |
 |---|---|
 | **Russian source** | All 22 chapters captured — **177,657 words**. ✓ |
-| **English translation** | Chs 18–22 done — Part IV complete; 17 to go (Parts I–III), in [`en/`](en/). |
+| **English translation** | Chs 13–22 done — Parts III–IV complete; 12 to go (Parts I–II), in [`en/`](en/). |
 
 The translation is a substantial job (≈178k Russian words → ≈235k English) and is
 done in batches of ≈4 chapters per session; [chapter 18](en/chapter-18.md) is the
