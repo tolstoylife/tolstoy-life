@@ -171,3 +171,77 @@ narrative, in that order). Calls in the Part-I / Part-II-tail batch (2026-05-27)
   transliterated in it to keep the EN body Cyrillic-free.
 - The source's own initial-switch in the Rakhmanov memoir («матери М. Н.» … then
   «матери П.») is reproduced literally, not normalised.
+
+## Chapter 2 — the doubled title «Так что же нам делать?» / «Что же нам делать?»
+
+The volume's recurring book title appears in two Russian forms: the full
+«Так что же нам делать?» (H1 + narration) and a shorter colloquial «Что же нам
+делать?» — the latter inside two verbatim Tolstoy letters and as the second half
+of the doubled exclamation «"Так что же нам делать? Что же нам делать?"». Both are
+rendered uniformly as *What Then Must We Do?*: the «Так» ("so/then") is already
+carried idiomatically by "then," both forms map naturally onto the one English
+title, and a bare "What must we do?" would read to an English reader as a
+*different* work. **Decision (Johan, 2026-05-27): keep the uniform title and
+document the deliberate flattening here**, rather than vary the short form, for
+readability. (Recorded because the title recurs corpus-wide.)
+
+## Chapter 3 — a reversed proverb-title, a literal Rousseau title, a bracket-free gloss
+
+- **«Упустишь огонь — не погасишь» → "If You Let the Fire Slip, You Won't Put It
+  Out."** A first draft read "Let the Fire Go Out and You Cannot Put It Out," which
+  *reverses* the sense — the proverb is about a neglected/escaped spark becoming an
+  unquenchable blaze, not a fire dying out. Corrected to a literal rendering of
+  «упустишь… не погасишь». (The conventional published English title is "A Spark
+  Neglected Burns the House"; the literal form is kept, per the corpus's preference
+  for the source's own wording.)
+- **Rousseau «Confession» → *Confession* (literal singular).** Inside Tolstoy's
+  verbatim letter the source reads «"Emile" и "Confession"». A draft pluralised it
+  to the standard *Confessions*; reverted to the literal singular under Policy A — a
+  valid-but-suspect real title *inside a quotation*, the strongest literal zone (cf.
+  the ch.11 "garbled English inside Tolstoy's own quotations kept literal"). The
+  adjacent «Emile» → *Émile* is a clean accent garble-repair and stands.
+- **«посланничество» → "mission," no translator bracket.** A draft glossed it "the
+  doctrine of mission [*poslannichestvo*, 'being sent']." The bracket sat in
+  Biryukov's narration (not inside a quote, so not a strict README violation), but
+  it broke the corpus's consistent bracket-free discipline (cf. «trouble-fête»,
+  «соска», «Николай Палкин», all kept gloss-free). Recast in Biryukov's own voice as
+  "the doctrine of mission — of being sent"; the quoted sentences that follow gloss
+  the term in Tolstoy's own words.
+
+## Chapter 4 — name and number tensions in the source, preserved literally
+
+- **Zalyubovsky.** Biryukov's narration names the conscientious objector «Алексей
+  Петрович Залюбовский» ("Alexei Petrovich Zalyubovsky"); Tolstoy's quoted letter
+  names his correspondent «Анат. Петров. Залюбовского» ("Anat. Petrov.
+  Zalyubovsky"), the objector's *brother*. The two differing names are reproduced as
+  the source gives them, not harmonised (Policy A).
+- **"four days" vs "five days."** Tolstoy's quoted letter says Frey stayed four
+  days; Frey's own account says five. Both preserved, not reconciled.
+- **«индейцы» → "the Indians" (literal).** In the spiritualism postscript, amid
+  Schopenhauer, mystics and "Indian wisdom," the word most likely means Indian/Hindu
+  sages, but the source's own loose «индейцы» is reproduced literally rather than
+  disambiguated.
+
+## Chapter 5 — «Ч. Н. Д.» kept as literal initials
+
+- **«продолжение статьи Ч. Н. Д.» → "the continuation of the article *Ch. N. D.*"**
+  A first draft rendered the initials as *What Men Live By*, which is impossible:
+  that is a finished 1881 folk tale (not a «статья» being "continued" in 1886), and
+  its initials would be Ч.Л.Ж., not Ч.Н.Д. The initials, the "article" genre, and
+  the spring-1886 dating all converge on «Что [же] нам делать» = *What Then Must We
+  Do?*, the long article Tolstoy was then still expanding. **Decision (Johan,
+  2026-05-27): reproduce the bare initials literally as *Ch. N. D.*** — Policy A
+  forbids conjecturally substituting a title for a valid-but-suspect source value
+  (parallel to the ch.1 «т. 11» → "vol. 11" call). The near-certain *What Then Must
+  We Do?* reading is recorded here, not in the text.
+- Cross-chapter consistency note: «XII том» is spelled "the twelfth volume" in ch.5
+  but "volume XII" in ch.3; both acceptable, left as written.
+
+## Chapter 6 — the «писаной торбой» idiom, dog removed
+
+- **«как с писаной торбой» → "like a painted feed-bag."** A first draft read "like a
+  dog with a painted feed-bag," inserting a dog absent from the Russian idiom (which
+  means fussing over something worthless as if precious) and breaking Tolstoy's own
+  image — «она [торба] болтается перед ногами» ("it dangles before their feet"),
+  where the dangling thing is the feed-bag (the faculty of thought), not a dog. The
+  invented animal was removed.

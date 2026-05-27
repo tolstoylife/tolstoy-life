@@ -28,11 +28,11 @@ chapters.
 | | |
 |---|---|
 | **Russian source** | All 22 chapters captured — **177,657 words**. ✓ |
-| **English translation** | Chs 1, 7–22 done — Parts II–IV complete + Part I opener ch. 1; 5 to go — Part I chs 2–6, in [`en/`](en/). |
+| **English translation** | **All 22 chapters done** — Parts I–IV complete, in [`en/`](en/). ✓ |
 
-The translation is a substantial job (≈178k Russian words → ≈235k English) and is
-done in batches of ≈4 chapters per session; [chapter 18](en/chapter-18.md) is the
-approved quality sample and style reference.
+The translation was a substantial job (≈178k Russian words → ≈235k English),
+carried out in batches of ≈4 chapters per session; [chapter 18](en/chapter-18.md)
+is the approved quality sample and style reference.
 
 ## Source & method
 
@@ -103,7 +103,7 @@ work titles are italicised. Word counts are approximate.
 - [Tolstoy and the Doukhobors](../index.md) — the survey this capture supports.
 - [Biryukov, the Doukhobor sections (English)](../extracts/biryukov-biography-doukhobors-EN.md)
   — an earlier translation of only the Doukhobor passages of chs 18, 19, 21. The
-  forthcoming `en/` translation of the full chapters will supersede it.
+  full `en/` translation of these chapters now supersedes it.
 - [Biryukov, the Doukhobor chapters (Russian, flat capture)](../extracts/biryukov-biography-doukhobors-RU.txt)
   — the earlier single-file capture of chs 18/19/21, retained for provenance; the
   `ru/` files here are cleaner and more complete.

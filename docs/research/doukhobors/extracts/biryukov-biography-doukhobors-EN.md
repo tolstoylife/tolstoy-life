@@ -4,6 +4,13 @@ Source: tolstoy-lit.ru reproduction of Biryukov's «Биография Л. Н. �
 Public domain (P. I. Biryukov, 1860–1931). Translated for the tolstoy.life research platform, 2026-05-26.
 Russian source text: biryukov-biography-doukhobors-RU.txt (in this folder)
 
+> **Superseded.** This is an earlier translation of only the Doukhobor passages of
+> chapters 18, 19, and 21. The complete, reviewed English translation of those full
+> chapters now lives in [`../biryukov-vol3/en/`](../biryukov-vol3/en/) —
+> [chapter 18](../biryukov-vol3/en/chapter-18.md),
+> [chapter 19](../biryukov-vol3/en/chapter-19.md),
+> [chapter 21](../biryukov-vol3/en/chapter-21.md). This file is retained for provenance.
+
 ---
 
 ## Chapter 18 — The beginning of the Doukhobor movement

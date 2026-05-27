@@ -4,15 +4,15 @@ lastUpdated: 2026-05-27
 tags: [research, biryukov]
 ---
 
-# English translation — in progress
+# English translation — complete
 
-This folder holds the English translation of Biryukov's *Biography of
+This folder holds the complete English translation of Biryukov's *Biography of
 L. N. Tolstoy*, Volume III: one `chapter-NN.md` per Russian source file in
-[`../ru/`](../ru/). **[Chapter 18](chapter-18.md) is done as an approved quality
-sample** and is the worked reference for the conventions below. Chapters 1 and
-7–22 are complete (Parts II–IV, plus the Part I opener, ch. 1); the remaining 5 —
-Part I chs 2–6 — are translated in batches (≈4 per session). See the
-[volume index](../index.md) for chapter titles, word counts, and capture notes.
+[`../ru/`](../ru/). **All 22 chapters are translated** (Parts I–IV). **[Chapter
+18](chapter-18.md) is the approved quality sample** and the worked reference for
+the conventions below. See the [volume index](../index.md) for chapter titles,
+word counts, and capture notes, and [`translation-notes.md`](translation-notes.md)
+for the editorial ledger of non-obvious calls.
 
 ## Translation spec
 
