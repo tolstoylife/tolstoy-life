@@ -28,7 +28,7 @@ chapters.
 | | |
 |---|---|
 | **Russian source** | All 22 chapters captured — **177,657 words**. ✓ |
-| **English translation** | Chs 13–22 done — Parts III–IV complete; 12 to go (Parts I–II), in [`en/`](en/). |
+| **English translation** | Chs 9–22 done — Parts III–IV complete + Part II chs 9–12; 8 to go — Part I (chs 1–6) and Part II chs 7–8, in [`en/`](en/). |
 
 The translation is a substantial job (≈178k Russian words → ≈235k English) and is
 done in batches of ≈4 chapters per session; [chapter 18](en/chapter-18.md) is the
@@ -77,7 +77,7 @@ work titles are italicised. Word counts are approximate.
 8. [**Глава 8.** В Ясной Поляне за работой. В Москве. Новые друзья](ru/chapter-08.md) — At work in Yasnaya Polyana; in Moscow; new friends *(7,685 w)*
 9. [**Глава 9.** Новые шаги. Голос обличения. «Крейцерова соната»](ru/chapter-09.md) — New steps; the voice of denunciation; *The Kreutzer Sonata* *(9,318 w)*
 10. [**Глава 10.** Земледельческие общины](ru/chapter-10.md) — The agricultural communes *(4,615 w)*
-11. [**Глава 11.** 1890 год. Оптина пустынь. «Что есть истина». Молитва](ru/chapter-11.md) — 1890; Optina Pustyn; *What Is Truth?*; prayer *(11,055 w)*
+11. [**Глава 11.** 1890 год. Оптина пустынь. «Что есть истина». Молитва](ru/chapter-11.md) — 1890; Optina Pustyn; *What Is Truth*; prayer *(11,055 w)*
 12. [**Глава 12.** В семье. Гости. Отречение от литературных прав](ru/chapter-12.md) — In the family; guests; the renunciation of literary rights *(8,088 w)*
 
 ### Часть III — 1891–1895: The famine. The Kingdom of God.
