@@ -23,7 +23,7 @@ Bethink Yourselves, the Birukoff biography, and Korrektur live in `projects/` bu
 
 **Next batch:**
 - Create wiki pages for Ilya Lvovich Tolstoy and Mikhail Lvovich Tolstoy (missing from TEI — source: Birukoff)
-  - Birukoff source ready: all of Vol. III is now available in English (`docs/research/doukhobors/biryukov-vol3/en/`, all 22 chapters) — ready as a primary source for Birukoff-based wiki pages and wiki source ingestion.
+  - Birukoff source ready: all of Vol. III (`docs/research/doukhobors/biryukov-vol3/en/`, 22 chapters) and Vol. IV chs 1–16 (`docs/research/doukhobors/biryukov-vol4/en/`; chs 17–19 pending — see `_generated/sessions/2026-05-27-biryukov-vol4-session-5b-handoff.md`) are now available in English — ready as a primary source for Birukoff-based wiki pages and wiki source ingestion.
 - Key locations: Moscow Khamovniki house, Optina Pustyn, Shamordino
 - Verify birth dates/places for existing children's pages (Sergei, Lev, Maria, Andrei)
 - Verify Alexandra Tolstaya's deathPlace (Valley Cottage, NY)
