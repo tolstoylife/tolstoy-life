@@ -712,3 +712,217 @@ document, no footnotes in the source body.
   (Albert Réville). **Titles:** *For Every Day*, *The Path of Life*, *Every Quality Comes from Her*,
   *From the Life of L. N. Tolstoy*; "An Everyday Occurrence" (Korolenko, roman in quotes);
   *Indian Opinion* (Gandhi's journal).
+
+## Vol IV, Chapter 17 — two embedded testaments (first as H2, second as `>`), Biryukov's «(П. Б.)» footnote signature verified in source, S. A.'s antisemitic diary parenthetical kept literal
+
+Session 5b (2026-05-27); chs 17–19 translated and independently verified (EN↔RU). **This batch finishes
+Volume IV — and Biryukov's whole four-volume biography in English.** Chapter 17 carries one `## H2`
+(the secret will), no part-divider; ch18 and ch19 carry only their `# H1` (no part-divider, no
+embedded document, three real Biryukov `(*)` footnotes between the three chapters).
+
+- **`## ЗАВЕЩАНИЕ` → `## The Will`** — embedded primary document, one H2. The 18 September 1909
+  Krekshino testament rendered faithfully from Biryukov's reproduced Russian as ordinary translated
+  prose under the H2 (the ch13 / ch14 model — Johan-ratified, ledger-locked; re-ratified 2026-05-27
+  before dispatch). Body, "Krekshino, 18 September 1909" dateline, the witness-attestation block
+  (Goldenweiser, Sergeenko, Kalachev), and the "copied out by Alexandra Tolstaya" trailing line all
+  sit under the H2 with the document's own outer `"…"` quote pair preserved. The H2 section closes;
+  Goldenweiser's continuing reminiscence resumes as ordinary narration ("Al. Bor. Goldenweiser
+  continues his account:") and is then formatted as a `>` block.
+- **The second, formal 22 July 1910 testament rendered as a `>` block, not a second H2.** Biryukov
+  introduces it with the standard "we give here its text:" lead-in and the source itself prints it
+  as continuous prose (no second `## H2` — RU `grep -c '^## '` = 1). One outer `"…"` pair around the
+  whole multi-paragraph block.
+- **Biryukov's «(П. Б.)» footnote signature verified in source, not an interpolation.** RU L110–111
+  prints the note as «(* … к чистой, идеальной натуре Марьи Львовны Толстой. (П. Б.) *)»; the EN
+  preserves "(P. B.)" as Biryukov's signed initial pair (cf. the ch4 «(П. Б.)» → "(P. B.)"
+  precedent). Footnote sits as a `> (* … *)` line **inside** S. A.'s parent `>` block, matching the
+  ch9 / ch12 / ch15 in-block footnote pattern. The marker is placed after "broken nature" in S. A.'s
+  10 Oct 1902 diary entry, where she records taking Maria Lvovna's share in her own name; Biryukov
+  interrupts in his own voice to express moral indignation at those words.
+- **S. A.'s antisemitic diary parenthetical kept literal.** Inside her quoted diary she writes
+  «Маркса, Цетлина (евреев) и другие»; EN reproduces "(Jews)" inside her `>` block as primary-source
+  artifact, unsoftened (cf. ch3 «Звероподобному…скот» invective precedent — the strongest literal
+  zone, kept faithful).
+- **«Дионисиевич» → "Dionisievich"** (Anatoly Radynsky's unusual patronymic in the
+  witness-attestation block) kept literal — no LoC-normalisation to "Dionisovich" (cf. ch1 «т. 11»
+  / Bjørnson «Король» literal-keep precedents).
+- **«Засека» → "Zasek"** (state-forest name in the Krekshino visit narrative). Distinct from ch16's
+  «Заказ» → "Zakaz" (another Yasnaya wood); both forms preserved as the source uses them.
+- **«ремингтонной» → 'remingtonnaya'** (Alexandra Lvovna's typewriter-room nickname). Kept as a
+  transliterated household coinage in single quotes inside the parent `>` block; the RU itself uses
+  quotation marks («"ремингтонной"»). The "as it was called" gloss is built into Biryukov's
+  surrounding narration.
+- **«Свободный художник» → "Free Artist"** (Goldenweiser's Imperial-Academy diploma-conferred rank,
+  capitalised); **«Мещанин» / «мещанин» → "Townsman" / "townsman"** (Sergeenko and Kalachev's
+  imperial-Russian *meshchanin* estate; case-faithful to the RU's sentence-initial vs mid-sentence
+  forms).
+- **Tolstoy's "(22) twenty-second day" dictation slip preserved.** RU narrates Tolstoy writing
+  «дватцать» (with stray «т»), noticing the slip, and dictating «"22" двадцать второго дня»; the EN
+  reproduces the parenthetical "(22)" and the corrected "twenty-second day" exactly as the formal
+  testament prints them. The narration of the dictation scene also reproduces the source's typo
+  evidence (Tolstoy's "let them think that I was illiterate" remark).
+- **«plus royaliste que le roi»** kept inline italic, no gloss (Biryukov supplies none; ch11 / ch15
+  precedent for untranslated set phrases the source itself does not gloss).
+- **Strakhov's «"одной" и "все"» → 'one' and 'everything'** without bracketed gloss; the surrounding
+  context ("if I make it all out to you alone… I wish to give you everything") carries the sense
+  (Policy A — no editorial brackets inside quotes).
+- **Ratio 1.283× (below the 1.32–1.39× band) but no omissions on verifier spot-check.**
+  Attributable to the chapter's high share of legal-formula prose (two embedded testaments + the
+  formal explanatory note + witness blocks) and dense reported dialogue; both compress more tightly
+  into English than narrative does.
+
+## Vol IV, Chapter 18 — the farewell letter as one `>` block, the "9 October 1910" dateline kept literal (open call), «бате» → "Bate" + Biryukov's «(* В. Г. Черткову. *)» footnote, Tolstoy's last diary `Fais ce que doit, adv...`
+
+No part-divider, no embedded document. The chapter narrates the central event of the volume —
+Tolstoy's flight from Yasnaya Polyana on the night of 27/28 October 1910 with Dušan Makovitsky, his
+stops at Optina Pustyn and Shamordino, and the collapse on the train.
+
+- **The farewell letter to S. A. as a multi-paragraph `>` block with one outer `"…"` pair.** Opens
+  at "My departure will grieve you…", runs to "I have charged Sasha." with the "Lev Tolstoy."
+  signature inside the block and the "To gather my things and my manuscripts" postscript also inside
+  the closing `"…"` — exactly the RU's single-outer-pair layout.
+- **«бате» → "Bate" + Biryukov's «(* To V. G. Chertkov. *)»** footnote on Tolstoy's note from
+  Astapovo. The familiar/affectionate form (related to *батя*, "daddy/old man") is kept as a literal
+  transliteration; Biryukov's footnote does the disambiguation, so no in-body bracket gloss is
+  needed (cf. ch4 «Поша» → "Posha" + footnote precedent). The `(*)` marker and `(* … *)` note both
+  sit inside the letter's `>` block.
+- **«9 октября 1910 г. Оптина пустынь.» → "9 October 1910. Optina Pustyn." — kept literal (open
+  call for Johan).** The letter to Sasha from Optina carries the dateline "9 October" — factually
+  impossible, since Tolstoy left Yasnaya on the night of 27/28 October and reached Optina on
+  28 October (his diary and the farewell letter both confirm this). The RU print itself shows
+  «9 октября»; almost certainly an OCR / period-source corruption for «29 октября» (Sergeenko
+  leaves Optina with this letter for Sasha on 29 Oct). Kept literal under Policy A, parallel to the
+  ch2 "Synod-date discrepancy kept" precedent. If maximum literalism for ambiguous date glyphs is
+  preferred, this stands; if editorial correction is preferred, a square-bracketed "[29]" or
+  translator's footnote would be the way — not a silent substitution. **Pending Johan's call.**
+- **`Fais ce que doit, adv...`** in Tolstoy's last diary entry (3 November 1910, Astapovo), kept
+  literal with the OCR's «doit» (standard French is «dois») and the truncation `adv...`. Inside
+  Tolstoy's own diary — the strongest literal zone in the entire corpus. Silent French repair to
+  «dois» (parallel to ch1 / ch4 French garble-repairs) would erase OCR/source evidence at the most
+  sacred moment in the biography; explicitly NOT repaired here. Recorded for traceability.
+- **«хохла» → "the Little Russian"** (Tolstoy's 27 Oct diary reference to a Ukrainian friend's
+  letter to Chertkov). Period-appropriate term kept, not modernised to "Ukrainian" — inside
+  Tolstoy's own diary, literal zone.
+- **«N.» kept as "N."** in the 27 Oct diary («письмом к N. "О соц."» → "the letter to N. 'On Soc.,'"),
+  preserving Tolstoy's own source redaction (cf. ch13 «Г-ского» → "G——").
+- **«овсянку-геркулес» → "oatmeal-Hercules"** — the real period rolled-oats brand *Geraklis* kept
+  as a literal brand-name register (capital H), not modernised to "Quaker" or generic "oatmeal."
+- **Place names (LoC / standard):** Gorbachevo, Belyov, Shamordino (the convent — RU prints
+  «Шамардино» a-form throughout, EN uses the modern o-form "Shamordino" consistent with the volume
+  index gloss and with prior chapters), Optina Pustyn, Kozelsk, Novocherkassk, Krekshino, Astapovo,
+  Kozlova Zaseka.
+- **«Денисенко (дочери тети Маши)» — singular surname preserved.** A draft had pluralised "the
+  Denisenkos" to embrace both the daughter and her husband (named immediately after as "Ivan
+  Vasilyevich Denisenko"); reverted to singular "Denisenko (the daughter of Aunt Masha)" on
+  verifier recommendation, matching the RU's singular surname + singular kinship parenthetical
+  exactly.
+- **Tolstoy's farewell note to his sister and grand-niece** «"Милые друзья Машенька и Лизанька"» →
+  "Dear friends Mashenka and Lizanka" — pet forms kept inside Tolstoy's own letter; matches the
+  ch10 «Маша» / Maria Lvovna register-split rule (formal forms — Maria Nikolaevna, Elizaveta
+  Valeryanovna Obolenskaya — in Biryukov's framing; pet forms inside Tolstoy's own voice).
+- **Two un-harmonised dateline punctuations preserved.** The farewell-letter timestamp
+  "4 o'clock in the morning. 28 October 1910." uses periods (matching RU's «4 ч. утра. 28 октября
+  1910 г.»); the second timestamp "4 o'clock in the morning, Shamordino, 31 October 1910." uses
+  commas (matching RU's «4 часа утра, Шамардино, 31 октября 1910 г.»). Both reproduced as the
+  source punctuates.
+- **The Novikov reminiscence's structural break preserved.** The RU itself closes the `"…"` framing
+  at the dialogue line «-- А я у вас никогда не был в деревне?"» and continues Novikov's narration
+  outside the quotes; the EN reproduces this structural break literally rather than smoothing it.
+- **Sergei Lvovich's narration boundary preserved.** The first `>` block closes at "…living in
+  seclusion."; Sergei Lvovich's continuation resumes as ordinary narration with the em-dash
+  interruption "— Sergei Lvovich continues his account, —", mirroring the RU's switch from quoted
+  to paraphrased framing.
+- **Ratio 1.308× (just below the 1.32–1.39× band) but no omissions on verifier spot-check.**
+  Attributable to the unusually compact diary entries this chapter is dense with (e.g. five short
+  pre-departure entries at 16, 21, 25, 26, 27–28 October).
+
+## Vol IV, Chapter 19 — the «l'ennemi du bien» literal-zone call (vs ch6 narration garble-repair), a stray «ц» orphan dropped, the closing signature of the four-volume biography
+
+The final chapter of Volume IV — and of Biryukov's whole four-volume biography. No part-divider, no
+embedded document. The death narrative at Astapovo: Tolstoy collapses at the station after leaving
+Shamordino, is brought to stationmaster Ozolin's house, and dies on 7 November 1910.
+
+- **«"le mieux est l'ennemi du bien" (*)» kept literal inside Tatyana Lvovna's letter (no repair);
+  Biryukov's «(* "Лучшее -- враг хорошего". *)» → `(* "The best is the enemy of the good." *)`.**
+  The marker sits inside Tatyana's 5 November letter to her husband, on the line where Tolstoy
+  pushes her hand away from a coffee cup. The RU prints clean, standard, correctly-accented French
+  (`l'ennemi`, masculine, agreeing with `mieux`) — no garble. The footnote pair sits inside the
+  parent `>` block as `> '…'` + `> (* … *)`. **Deliberate contrast with the ch6 ledger entry**
+  (where «le mieux est l'ennemie du bien» in Biryukov's *narration* was garble-repaired to
+  «l'ennemi» on a gender fix): same proverb, different zone, different RU surface form, different
+  call. Inside quotation = strongest literal zone (cf. ch10 Kant, ch3 Rousseau, ch15
+  foreign-phrases). No repair warranted here.
+- **Stray «ц» orphan glyph at RU L818 dropped silently** (between Varsonofy's letter and Alexandra's
+  "I no longer replied"). A single Cyrillic letter alone on a line is nonsense, not a valid token;
+  falls in the silent-repair lane (cf. ch15 «42N» → "42°"; ch1 «Библиографический указательј»
+  tail-glyph dropped). No content omitted — the EN closes Varsonofy's letter cleanly and resumes
+  Alexandra's narration on the next paragraph.
+- **«авантажна» → "*avantageuse*"** (italic French) in Tatyana's letter, where she quotes Tolstoy's
+  compliment «как ты нарядна и авантажна». Tolstoy uses the Gallicism deliberately as a
+  register-shift; rendered in italic French to mark it (cf. ch12 *modus vivendi* / Latin-italic
+  precedent for untranslated foreign-register tokens inside a Russian-narrated quotation).
+- **«Ив. Ив.» (Gorbunov-Posadov) and «Ив. Ив. Озолин» kept as abbreviated initials**, not expanded
+  — matches the ch5 «Мар. Ал.» → "Mar. Al." precedent for source-abbreviated initials in narration.
+- **«"Фролова" (мой псевдоним)» → "Frolova" (my pseudonym).** Alexandra Lvovna's telegram pseudonym
+  kept literal; the parenthetical is the source's own (her gloss inside her account), not editorial.
+- **Tolstoy's letter dateline «1 ноября. 10. Астапово.» → "1 November. 10. Astapovo."** — the
+  "10." (a numeral fragment in the source, likely a "10 o'clock" notation in the original autograph)
+  reproduced literally as a valid-but-suspect token (parallel to the ch18 "9 October" call).
+- **Four *Circle of Reading* entries for 28 October (Marcus Aurelius / Kant / Schiller / anonymous)
+  set as four per-unit `>` blocks under a single composite intro** («Вот главные мысли в "Круге
+  чтения" от 28 октября:»). Judgment call — a single composite `>` block with paragraph breaks
+  would also be defensible; the per-unit framing privileges each attributed entry as its own
+  citation. Recorded as the editorial choice; non-controversial.
+- **Deathbed dialogue and labelled-speech kept inside parent `>` blocks** (the introduce-and-colon
+  trigger fires on the OUTER citation only — ch10 / ch14 rule). Alexandra Lvovna's "— Well, Sasha?"
+  / "— Yes, well — it is not good." / "— Do not lose heart…" sits inside her running `>` account;
+  Chertkov's L. N. / «Я.» labelled-speech delirium ("L. N. Well, do read, please. / I. He, L. N.,
+  has written nothing down…") sits inside his parent `>` block as labelled speech.
+- **Nikitin's "moisten your lips" episode kept as plain narration, NOT a `>` block.** The RU
+  narrates it directly («Врач Д. В. Никитин рассказывает в своих записках, что…») with embedded
+  `"…"` direct speech but NO introduce-and-colon trigger; rendered inline per the ch10 trigger rule.
+- **«Телятенки» → "Telyatinki"** (silent normalisation to the historically standard form,
+  consistent with prior chapters and the volume index). The RU spelling is the source's
+  idiosyncratic *Telyatenki*; the corpus's standing convention uses *Telyatinki*. Recorded as a
+  corpus-level transliteration call.
+- **«тяжко дышать» → "Hard to breathe"** (terse, no padded "It is") — preserves the register of
+  Tolstoy's final hours speech.
+- **«Шамардино» → "Shamordino"** consistent with the chapter-18 and chapter-16 forms (RU prints
+  the a-form throughout; EN uses the modern o-form, consistent with the volume index).
+- **Closing signature of the four-volume biography preserved.** RU L1090–1101: «Лев Николаевич
+  оставил нам неисчислимое наследие. … Кто жаждет, иди и пей. Этими словами я кончаю свою 20-летнюю
+  работу. Друг мой, великий учитель, прими мой смиренный труд и дай мне единение с тобой в духе
+  истины! П. Бирюков. 15 декабря 1922 года.» → faithfully rendered, with "P. Biryukov." on the
+  same line as the dedication (matching the RU's surface layout) and "15 December 1922." on its own
+  line. The standalone John 7:37 echo ("He who thirsts, let him come and drink.") sits as its own
+  paragraph per the RU; the "20-year labor" coda is preserved verbatim. The biography is complete.
+- **Ratio 1.327× (inside the 1.32–1.39× band).** No omissions on verifier spot-check. The chapter
+  is quote-dense (207 `>` lines, the highest in the volume).
+
+---
+
+# Volume IV — complete
+
+With session 5b's commit, **all 19 chapters of Biryukov's *Biography of L. N. Tolstoy*, Volume IV
+(1900–1910)** are translated into English. Combined with Volume III's 22 chapters (translated in
+earlier sessions of this project), the English translation of **Biryukov's complete four-volume
+biography** is held end-to-end by this repository.
+
+Combined corpus: Vol III (177,657 RU → ≈234,500 EN) + Vol IV (140,171 RU → ≈186,200 EN) ≈ **421k
+EN words** across 41 chapters. Mean expansion ratio ≈1.32×.
+
+Five Vol IV sessions (all 2026-05-27):
+
+| session | chapters | notes |
+|---|---|---|
+| 1 | chs 1–4 | opens Часть I; chapter 1 includes Biryukov's preface + 51-entry bibliography |
+| 2 | chs 5–7 | covers the Crimean illness through the 1903 jubilee; closes Часть I, opens Часть II |
+| 3 | chs 8–10 | the Russo-Japanese War, the 1905 revolution; closes Часть II, opens Часть III |
+| 4 / 5 | chs 11–13 | the land question through the 1908 jubilee; chapter 13 embeds the «Океан приветствий» greetings anthology under the first ch-13 `## H2` |
+| 5a | chs 14–16 | opens Часть IV; chapter 14 carries the part-divider H2 and two embedded primary documents |
+| 5b | chs 17–19 | closes Часть IV and the biography; chapter 17 embeds Tolstoy's secret will under an H2; chapter 19 closes with Biryukov's 15 December 1922 dedication signature |
+
+The proven workflow held across all five — per-chapter `oh-my-claudecode:executor` (opus)
+translators dispatched in parallel foreground, followed by per-chapter `oh-my-claudecode:verifier`
+(opus, read-only) EN↔RU verification, with the orchestrator applying flagged fixes and maintaining
+this ledger + the volume index as single-writer.

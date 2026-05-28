@@ -31,11 +31,13 @@ a later, separate job; this capture is the working Russian text.
 | | |
 |---|---|
 | **Russian source** | All 19 chapters captured — **140,171 words**. ✓ |
-| **English translation** | Chapters 1–16 translated → [`en/`](en/) (Часть I–III complete; Часть IV chs 14–16 done). Chapters 17–19 (rest of Часть IV) not started. |
+| **English translation** | All 19 chapters translated → [`en/`](en/) — Parts I–IV complete. ✓ |
 
-At Vol. III's ≈1.32× expansion ratio, a full translation would run to roughly
-**185,000 English words**. Vol IV is about 21% shorter than Vol III's 177,657
-Russian words.
+The full English translation runs to **≈186,200 English words** (≈1.33× the
+Russian — chapter-by-chapter ratios 1.27–1.39). Vol IV is about 21% shorter
+than Vol III's 177,657 Russian words. See [`en/README.md`](en/README.md) for
+the translation landing page and [`../biryukov-vol3/en/translation-notes.md`](../biryukov-vol3/en/translation-notes.md)
+for the editorial ledger covering both volumes.
 
 ## Source & method
 

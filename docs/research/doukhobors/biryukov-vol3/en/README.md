@@ -14,6 +14,20 @@ the conventions below. See the [volume index](../index.md) for chapter titles,
 word counts, and capture notes, and [`translation-notes.md`](translation-notes.md)
 for the editorial ledger of non-obvious calls.
 
+## Known limitation: source completeness
+
+This translation was made from a `tolstoy-lit.ru` capture of the Russian text.
+When Volume IV was later captured from `az.lib.ru` (May 2026), the latter source
+was noted to carry **~4.5% more text** — specifically the author's asterisk
+footnotes and embedded primary documents, which the `tolstoy-lit.ru`
+reproduction *"renders thinly or drops"* (see the [Vol IV index](../../biryukov-vol4/index.md)
+on the source choice). The Volume III translation here is therefore complete
+with respect to its `tolstoy-lit.ru` source, but does not yet incorporate
+material that only `az.lib.ru` carries. A recapture + targeted-patch session is
+planned (see project [`TODO.md`](../../../../TODO.md) section 8). For citation
+against the printed biography, cross-check a passage against `az.lib.ru`,
+`ru.wikisource.org`, or a scan of the 1922 print volume.
+
 ## Translation spec
 
 Carry over the approach that worked for the Doukhobor sections
