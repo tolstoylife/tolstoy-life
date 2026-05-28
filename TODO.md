@@ -132,11 +132,22 @@ Re-translating the whole volume is wrong (waste — the matching 95.5% would re-
 - [ ] **Step 2 — full RU recapture from `az.lib.ru`** (1 session if probe confirms the gap). Capture all 22 chapters in the Vol IV style (single-file decode, windows-1251 → UTF-8, footnotes preserved as `(*)` / `(* … *)`, part-dividers + embedded-document H2s). Preserve the current `ru/` capture as record-of-translated-from until step 3 settles.
 - [ ] **Step 3 — targeted EN patches** (1–2 sessions, depending on gap size). Per chapter: diff old RU vs new RU; translate only the missing fragments via the proven per-chapter `executor` + `verifier` workflow; slot patches into the existing EN at the right paragraphs; append `## Vol III, Chapter N — patches from az.lib.ru recapture` blocks to the editorial ledger documenting what was added and where.
 
-**Total cost:** ~3–4 sessions vs the **22 sessions** a full re-translation would take.
+**Total cost:** ~3–4 sessions vs the **~5–6 sessions** a full re-translation would take (Vol III's documented budget is ≈30k RU words ≈ 4 chapters/session × 22 chapters). The cost ratio is thin enough that the case rests less on cost than on not re-rolling ≈240k words of sound English and ~50 documented editorial decisions, plus register continuity with Vol IV.
 
 **Chapters that currently show 0 Biryukov footnotes** (likeliest sites of the gap): ch08, ch10, ch13, ch17, ch18, ch19, ch22.
 
 **Reference:** the Vol IV [index](docs/research/doukhobors/biryukov-vol4/index.md) documents the `az.lib.ru` advantage; the editorial ledger (`docs/research/doukhobors/biryukov-vol3/en/translation-notes.md`, the `# Volume IV` section) documents what `az.lib.ru`-captured material looks like in practice; the `vol3/en/README.md` carries the public Known-limitation note.
+
+---
+
+### 9. Vol I and Vol II — audit source-completeness against `az.lib.ru`
+*Surfaced 2026-05-28 while sizing §8. Both Vol I and Vol II were captured from `tolstoy-lit.ru` — the same source whose hex-encoded-JS interpolations silently drop Biryukov's asterisk footnotes and embedded primary documents in Vol III. The §8 audit method (footnote-pair count per chapter to find zero-footnote chapters as likely gap sites, then RU↔RU diff against an `az.lib.ru` recapture) applies directly.*
+
+Pre-condition: §8 Step 1 (the ch18 probe) completes first, so the recapture-and-patch method is proven on one volume before scaling to two more.
+
+Action once §8's Step 1 lands: count current footnote pairs per chapter in Vol I and Vol II, identify zero-footnote chapters as likely gap sites, and confirm `az.lib.ru` carries both volumes. Vol IV's URL is `http://az.lib.ru/b/birjukow_p_i/text_1922_tolstoy06.shtml`; whether Vol I/II live at lower-numbered analogues at the same path is the first thing to check, before committing to recapture sizing. If the gap is real on either volume, repeat §8's three-step plan per volume.
+
+Not sized — sizing waits on §8's outcome and the Vol I/II URL check.
 
 ---
 
