@@ -73,7 +73,7 @@ Johan re-framed the deliverable at session 2 open. The previous deliverable shap
 
 Decisions captured:
 
-- **Scanning plan.** Johan to V850 full-scan Andra delen first (decided this turn). The 51 iPhone photos already cover textual-transcription needs; V850 scans give archive-grade text and OCR substrate. Further scans of the two Första delen häften are a likely follow-up but not committed.
+- **Scanning plan.** Johan to V850 full-scan Andra delen first (decided this turn). The 51 iPhone photos already cover textual-transcription needs; V850 scans give archive-grade text and OCR substrate. Further scans of the two Första delen häften are a likely follow-up but not committed. *(Reversed 2026-05-28 at session 3 close — see session 3 entry below: full workflow re-costed at 30–40 h, scan is parked.)*
 - **Yellow-highlighted IMG_0605 passage:** Johan's own marking, not a textual signal. Disregard as a transcription priority.
 - **Norstedt 1906/1909 Swedish edition is not rare on the second-hand market.** Johan acquired his copies that way; the witness value is functional (cross-check) not bibliographic-scarcity.
 - **All §6 / §7 framing accepted** for inclusion in the working-zone `index.md`.
@@ -82,13 +82,32 @@ Edits this turn (all to `_generated/research/biryukov-biography-editions/index.m
 
 1. **§0 framing:** explicit statement that all four volumes are complete authorial work, Birukoff lived nine more years after Vol IV without revising.
 2. **§1.4 (Vol IV):** added explicit completion status — 15 December 1922 foreword, project's English translation done at commit `b90cb207`, no source revision implied by this research project.
-3. **§2.1 (Swedish):** added availability note (non-rare on Swedish second-hand market, Johan's V850 scan of Andra delen queued).
+3. **§2.1 (Swedish):** added availability note (non-rare on Swedish second-hand market, Johan's V850 scan of Andra delen queued). *(Note revised at session 3 close — scan now parked, see below.)*
 4. **§3.4 → §3.5 split.** §3.4 stays as the per-volume scope-and-chronology bullet list; new §3.5 ("The Slutord forward-flag: Vol III was memoir-inflected by design") folds in the 27 August 1908 closing statement, with implications: Vol III's "different character" was planned in 1908 (Tolstoy still alive); the 1915 "raw form" admission therefore reads as a confession of editorial incompleteness, not of evidentiary weakness; Aldanov's qualified verdict on Vol III is consistent with the work still being authoritative; "Truth and love" is Birukoff's only on-the-record methodological statement across all three volumes. The original §3.5 ("Open §3 work") renumbered to §3.6.
 5. **New §6 ("Censorship and translation validity"):** four-layer table (tsarist censorship, S.A.T. deference, émigré-press freedom, modern-reprint and OCR noise) with cross-check witnesses for each; explicit Scenario A vs. B for the Swedish edition's position (identical-manuscript-and-censorship vs. fuller-Swedish-manuscript); Cassell 1911 status as simultaneously translation, condensation, and original supplement; four standard footnote types for the project's English citation practice (source-of-record, censorship cross-check, validity cross-check, honesty footnote).
 6. **New §7 ("Roadmap: a suitable English Birukoff for the LLM-wiki vault"):** eight-phase ladder (Vol IV translation done, Vol III translation done with chs 1–18 gap, this research project in progress, Vol III gap-recapture, Vol I/II RU audit, Vol I/II English translation, Swedish cross-check pass, vault ingestion); sequencing and parallelism notes; open questions that gate phases vs. parking-lot questions; budget summary (≈ 50–80 sessions for the new English translation effort, 3–6 months at one session per working day for the full ladder).
 
 Headings now run §0, §1.1–1.8, §2.1–2.5, §3.1–3.6, §4, §5, §6.1–6.4, §7.1–7.4. Source-list and Related sections preserved at the end.
 
-**Next:** bring the whole document (§5 verdict + the new §3.5 / §6 / §7 material) back to Johan for the sign-off checkpoint. Only then is promotion to `docs/research/biryukov-biography-editions/index.md` legitimate. Johan's V850 scan of Andra delen will produce its own follow-up extracts (under `extracts/swedish-andra-delen-v850/` probably) once it lands; the Scenario A/B disambiguation in §6.2 is the highest single research yield from it.
+**Next:** bring the whole document (§5 verdict + the new §3.5 / §6 / §7 material) back to Johan for the sign-off checkpoint. Only then is promotion to `docs/research/biryukov-biography-editions/index.md` legitimate. *(See session 3 close: scan plan reversed; Phase 7 / §6.2 disambiguation now blocked on Swedish text capture by a route other than the V850 full scan.)*
+
+---
+
+## 2026-05-28 — session 3 close: V850 scan of Andra delen deferred
+
+Late in the session Johan reversed the scan commitment from session 2.
+
+- **Decision.** Andra delen will *not* be V850-scanned at this time.
+- **Reason — corrected time estimate.** The session-3 handoff arrived at "~3 hours of scanner-active time across 2–3 sessions" — that figure covered only the scanner operating. Full workflow including post-production (Photoshop deskew / levels / dust pass, spread-to-singles split, Tesseract Swedish OCR with the ~5–10% pre-1906-orthography manual-correction pass, file organisation and metadata) lands at an estimated **30–40 hours** end to end. The earlier 3 h figure was therefore mis-leading as a planning number; the real cost is an order of magnitude higher.
+- **Downstream impact.**
+  - **§2.1 availability note** rewritten to flag the deferral and the corrected cost.
+  - **§6.2 Scenario A vs B** marked as blocked on Swedish text capture (the disambiguation does not become wrong, only unreachable until text is in hand by some route).
+  - **§7 Phase 7** Swedish cross-check pass: source column now flags "capture route TBD; V850 full scan deferred", and the §7.2 sequencing note that Phase 7 begins "once the V850 scan is in hand" is corrected to "once a clean Andra delen Swedish text is in hand."
+  - **TODO.md** §8 and §9 unaffected (they were never premised on the Swedish scan).
+  - **LOG.md** session-3 closing entry corrected: the recommended-workflow paragraph now records the deferral and the 30–40 h figure.
+  - **`extracts/swedish-andra-delen-v850/` directory** (proposed under `_generated/...`) does **not** get created. The session-3 handoff's full settings + naming-convention block remains a usable blueprint if the scan is later un-parked, but is no longer an active work item.
+- **What the 51 iPhone photos still cover.** Textual transcription for sample-scale work (Slutord, title page, any other page Johan re-photographs for a specific question). They do not cover a passage-level Swedish ↔ Russian diff at Vol II's full length; that's the part Phase 7 needs and that's the part now waiting on text capture.
+
+**No new commit this turn.** Edits to this session-log, `index.md` (4 spots), and LOG.md (the existing session-3 entry's last paragraph) made directly; HTML rebuild via `docs/serve.py --build-only` to follow.
 
 ---

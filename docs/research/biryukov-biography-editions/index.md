@@ -50,6 +50,8 @@ Per Mark Aldanov's 1921 review of the Berlin Ladyzhnikov reissue (*Соврем�
 
 > *"В берлинское издание биографии Толстого включена новая глава, не печатавшаяся при жизни Софьи Андреевны: предшествовавший женитьбе Льва Николаевича его роман и переписка с одной светской барышней, фамилию которой г. Бирюков не считает удобным назвать. Эта глава книги представляет совершенно исключительный психологический интерес… В остальном, если память мне не изменяет, берлинское издание не отличается от первого, русского."*
 
+Working English: "The Berlin edition of Tolstoy's biography includes a new chapter, not printed during Sofya Andreyevna's lifetime: Lev Nikolayevich's pre-marital romance and correspondence with a certain society young lady, whose surname Mr. Birukoff does not consider it expedient to name. This chapter of the book is of quite exceptional psychological interest… For the rest, if memory does not deceive me, the Berlin edition does not differ from the first, Russian one."
+
 The Berlin 1921 reissue therefore = first-edition Vols I–III + **one new chapter on Tolstoy's pre-marriage romance with an unnamed society lady**, suppressed in Birukoff's lifetime out of deference to S. A. Tolstaya (died 4 November 1919). All other textual content is identical to the first edition. Birukoff was alive (Geneva) and the chapter is his — a held-back authorial composition released after S. A. Tolstaya's death.
 
 Aldanov's "if memory serves" is a mild hedge; otherwise unambiguous testimony from a Russian émigré literary critic who knew both texts.
@@ -59,7 +61,7 @@ Aldanov's "if memory serves" is a mild hedge; otherwise unambiguous testimony fr
 The 1915 first edition is the authorial last word for Vol III. Evidence:
 
 - The Vol III preface itself (transcribed in [`extracts/az-lib-vol3-front-matter.md`](extracts/az-lib-vol3-front-matter.md)) is a two-layer text — Layer 1 written from С. Ивановское on 24 July 1909 with Tolstoy alive and the work conceived as three volumes; Layer 2 written from Onex près Genève on 1 November 1915 with Tolstoy dead, recording the explicit decision to expand to four volumes with *Resurrection* (1899) as the Vol III/IV boundary.
-- The "raw form" admission — *"собранный мною, координированный и комментированный материал преподносится читателю почти в сыром виде. На более тщательную обработку его у меня не хватило сил. Пусть сделают это другие"* — is in the 1915 preface's Layer 2. **It applies specifically to Vol III, not to Vols I–II.**
+- The "raw form" admission — *"собранный мною, координированный и комментированный материал преподносится читателю почти в сыром виде. На более тщательную обработку его у меня не хватило сил. Пусть сделают это другие"* (working English: "the material I have collected, coordinated and annotated is presented to the reader in almost raw form. I had not the strength for a more thorough working-through of it. Let others do this.") — is in the 1915 preface's Layer 2. **It applies specifically to Vol III, not to Vols I–II.**
 - The 1921 Berlin Ladyzhnikov reissue, per Aldanov, **did not revise Vol III**. Birukoff did not return to the text.
 - Birukoff died 10 October 1931 in Geneva. No post-1915 Vol III revision is known.
 
@@ -126,7 +128,9 @@ The Andra delen's Slutord dating (27 August 1908) corresponds exactly to the con
 
 **Pending photographs from Johan** (specified at session open): title-page versos of all three books (for publication years and printer information), title pages of Första delen 1 & 2, prefaces of all three volumes (Birukoff's, Nordenström's, or publisher's), tables of contents, colophons.
 
-**Availability note.** The Norstedt 1906/1909 edition is not rare on the Swedish second-hand market (per Johan, who acquired his three books from such a source); the edition is historically significant but is not a scarce-witness situation. The project's interest in Johan's copies is functional — as a textual cross-check, not as a unique artefact. A V850 600 dpi full scan of Andra delen is queued (decided at session 2 open, 2026-05-28); a parallel scan of the two Första delen häften is a likely follow-up.
+**Availability note.** The Norstedt 1906/1909 edition is not rare on the Swedish second-hand market (per Johan, who acquired his three books from such a source); the edition is historically significant but is not a scarce-witness situation. The project's interest in Johan's copies is functional — as a textual cross-check, not as a unique artefact.
+
+**Scan plan — deferred 2026-05-28 (session 3).** A V850 600 dpi full scan of Andra delen was committed to at session 2 open; on re-costing it is **not on the active plan**, at least not now. The original "~3 hours" figure was scanner-active time only; full workflow — scanner operation + Photoshop deskew/levels/dust pass + spread-to-singles split + Tesseract OCR with pre-1906-orthography correction — lands at **30–40 hours** end to end. The 51 iPhone photos already cover textual-transcription needs for any near-term cross-check work; full V850 capture (Andra delen first, then the Första delen häften) is parked until a project phase pulls archive-grade text or OCR substrate onto the critical path. See §6.2 and §7 for the downstream phases this defers.
 
 ### 2.2. German — Eugen Diederichs, Jena
 
@@ -162,7 +166,7 @@ Pending. French, Italian, Czech, Polish — to be checked against national-libra
 
 The Russian Vol I preface (*Предисловие к первому изданию*) reproduces two crucial documents that establish the project's authorisation chain:
 
-- **S. A. Tolstaya's letter of 19 July 1901**, in which she explicitly invites Birukoff to take up the biography and authorises him to put questions to Tolstoy directly: *"...сам бы Лев Николаевич мог бы еще ответить вам на многое, что вы запросите мне; только надо спешить. Чуть-чуть не угасла всем нам дорогая жизнь."* Context: Tolstoy had just survived a severe illness; the urgency of "only one must hurry" is the family's reading of his mortality.
+- **S. A. Tolstaya's letter of 19 July 1901**, in which she explicitly invites Birukoff to take up the biography and authorises him to put questions to Tolstoy directly: *"...сам бы Лев Николаевич мог бы еще ответить вам на многое, что вы запросите мне; только надо спешить. Чуть-чуть не угасла всем нам дорогая жизнь."* (Working English: "…Lev Nikolayevich himself could still answer you on much of what you would ask me; only one must hurry. The life dear to all of us was very nearly extinguished.") Context: Tolstoy had just survived a severe illness; the urgency of "only one must hurry" is the family's reading of his mortality.
 - **Tolstoy's own letter of 2 December 1901**: *"Очень рад позировать вам и буду категорически отвечать на ваши вопросы."* ("Very glad to pose for you and will answer your questions categorically.") This is the documentary base for the Swedish title-page claim and the Cassell 1911 Publishers' Note.
 
 ### 3.2. Conceptual collaboration: the seven-year-period scheme
@@ -170,6 +174,8 @@ The Russian Vol I preface (*Предисловие к первому издан�
 The seven-year-period structure used to organise Tolstoy's life across the biography was **Tolstoy's own idea**, communicated to Birukoff in conversation:
 
 > *"Это деление я слышал от самого Льва Николаевича, который когда-то в разговоре при мне высказал мысль, что ему кажется, что, соответственно семилетним периодам физической жизни человека, признаваемым некоторыми физиологами, можно установить и семилетние периоды в развитии духовной жизни человека..."*
+
+Working English: "I heard this division from Lev Nikolayevich himself, who once, in conversation in my presence, expressed the thought that, in his view, corresponding to the seven-year periods in the physical life of a person recognised by certain physiologists, one might also establish seven-year periods in the development of a person's spiritual life…"
 
 This is conceptual collaboration, not just fact-checking. Tolstoy supplied an organising frame for the biography.
 
@@ -269,12 +275,12 @@ The Norstedt 1906/1909 Swedish edition sits across the first two layers, with im
 - It is a translation made contemporaneously with the Russian original.
 - Birukoff's name appears as author (not as Russian-language source) on the title page; the title page also claims *"granskade af Leo Tolstoj"* (reviewed by Tolstoy).
 
-Two possibilities follow, and only the Swedish full scan can disambiguate:
+Two possibilities follow, and only a full Swedish text capture can disambiguate:
 
 - **Scenario A — Identical manuscript, identical censorship.** Birukoff fed Nordenström a single manuscript and accepted the same Russian-censor clearance for both editions. In this scenario the Swedish is a witness to the censored Russian, not to a pre-censored original. Most likely on prior, but unverified.
 - **Scenario B — Fuller Swedish manuscript.** Birukoff fed Nordenström a fuller Russian manuscript before Posrednik's censorship pass, and the Swedish preserves material the Russian had to drop. Possible; would be visible as Swedish passages without a Russian counterpart at the post-1906 textual surface, particularly around Tolstoy's late religious writings and the Doukhobor / excommunication material.
 
-Resolving A vs. B is the **highest single research yield from Johan's V850 scan of Andra delen** — that volume covers Tolstoy 1862–1884, including the religious crisis that became the censor's primary concern. A passage-level Swedish ↔ Russian diff on the post-1880 chapters of Andra delen will surface any Scenario B material. If the Swedish exceeds the Russian by more than ~5% in those chapters, it is Scenario B; otherwise A.
+Resolving A vs. B remains the **highest single research yield from a full pass on Andra delen** — that volume covers Tolstoy 1862–1884, including the religious crisis that became the censor's primary concern. A passage-level Swedish ↔ Russian diff on the post-1880 chapters of Andra delen would surface any Scenario B material; if the Swedish exceeds the Russian by more than ~5% in those chapters, it is Scenario B, otherwise A. **Currently blocked on text capture:** the V850 scan was deferred at session 3 close (see §2.1) once the full workflow was re-costed at 30–40 h; until that capture happens — or another route to a clean Andra delen text surfaces — Scenario A/B stays open. The 51 iPhone photos cover spot checks but not a passage-level diff.
 
 The Swedish edition also sits across the **translation-validity layer**, separate from the censorship layers. Nordenström's translation choices — what he abridged, what he paraphrased, what he transliterated, where he chose to gloss — are unstudied. The *"granskade af Leo Tolstoj"* claim refers to Tolstoy reviewing the Russian source manuscript, not (necessarily) the Swedish target text. Tolstoy's own command of Swedish was not strong; he could not have reviewed Nordenström's Swedish in detail. The authorisation chain therefore documents Russian-source authority, not Swedish-translation authority.
 
@@ -315,14 +321,14 @@ The end goal — stated by Johan at session 2 open, 2026-05-28 — is a complete
 | 4 | Vol III gap-recapture (ch 18 + audit) | **Blocked on (3)** | az.lib.ru `text_1905_tolstoy05.shtml` | TODO §8 Step 1 (probe), Step 2 (full RU recapture). ~5–6 translation-cadence sessions per prior log corrections |
 | 5 | Vol I/II Russian audit + recapture | **Blocked on (3)** | az.lib.ru `text_1905_tolstoy01.shtml`–`04.shtml` (four files) | TODO §9. Comparable to Vol IV's recapture work — call it 4–6 sessions |
 | 6 | Vol I/II English translation | **Not started** | Output of (5) | Largest single piece of work. Vols I–II together are ~2× Vol III's chapter count; budget ≈ 30–50 translation sessions at the Vol III cadence |
-| 7 | Swedish cross-check pass | **Queued on (6)**; can begin earlier where scans exist | Johan's V850 scan of Andra delen (2026-05-28 onward), then Första delen häften | Validity check (§6.2), censorship probe (§6.1), Aldanov-reconciliation residual (§1.6). 5–10 episodic sessions |
+| 7 | Swedish cross-check pass | **Queued on (6)**; also blocked on Swedish text capture | Andra delen, then Första delen häften — capture route TBD; V850 full scan deferred 2026-05-28 at ~30–40 h post-production cost (see §2.1) | Validity check (§6.2), censorship probe (§6.1), Aldanov-reconciliation residual (§1.6). 5–10 episodic sessions once text is in hand |
 | 8 | Vault ingestion | **Not started** | Output of (6), with cross-check footnotes from (7) | LLM Wiki ingestion method (source-ingestion not mechanical bulk; see project memory note `feedback_llm_wiki_ingestion`) |
 
 ### 7.2. Sequencing and parallelism
 
 - **Phases 4 and 5 can run in parallel.** Different Russian source files, different volume scopes, no shared state.
 - **Phase 6 can begin chapter-by-chapter as soon as Phase 5 has produced a clean RU recapture for the corresponding chapter.** Does not need to wait for the full audit.
-- **Phase 7 begins once the Andra delen V850 scan is in hand.** Independent of Phase 6 progress; can produce its own report well before the full English Vols I–II exist.
+- **Phase 7 begins once a clean Andra delen Swedish text is in hand.** Independent of Phase 6 progress; can produce its own report well before the full English Vols I–II exist. The V850 full-scan route was deferred at session 3 (see §2.1); Phase 7's start now waits on either re-greenlighting that scan or finding an alternative capture (existing digital surrogate, partial-scope scan of just the post-1880 chapters, etc.).
 - **Phase 8 (vault ingestion) runs concurrently with Phase 6 once the first chapters of English Vols I–II surface.** The vault doesn't need the whole biography to begin growing.
 
 ### 7.3. Open questions that gate phases

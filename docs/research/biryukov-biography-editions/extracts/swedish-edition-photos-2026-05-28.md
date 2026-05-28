@@ -53,6 +53,12 @@ The Swedish Andra delen was therefore printed in **1909** — one year after Bir
 > Kap. XXI. **Slutord.** Leo Tolstoj blir bekant med V. G. Tschertkoff. Konstnären N. N. Ge. Dennes porträtt af Tolstoj. Återresa till Jasnaja Poljana. Tolstoj förstamar under hösten 1884 på N. N. Ges landtegendom. Tolstojs första besök hos grefvinnan Sofia Andreevnas protester. Mitt första besök hos Leo Tolstoj. Dennes bref från Jasnaja Poljana. **Slutord** ... 442
 > **Bibliografiskt material** ... 454
 
+Working English for the chapter titles and Kap. XXI sub-heads:
+
+- **Kap. XX. *»Hvari består min tro?»*** = "What does my faith consist in?" — the Swedish chapter title for Tolstoy's 1884 treatise *В чём моя вера?* / *What I Believe* (the Aylmer Maude English title). The Swedish *Hvari består* is a slightly more literal rendering than the Russian *В чём моя вера?*'s "What is my faith in?"
+- **Kap. XXI. *Slutord*** = "Closing word" / "Afterword." The chapter-title-as-summary sub-heads, in order: "Leo Tolstoy becomes acquainted with V. G. Chertkov. The artist N. N. Ge. The latter's portrait of Tolstoy. Return journey to Yasnaya Polyana. Tolstoy stays with N. N. Ge on the latter's country estate in autumn 1884. Tolstoy's first attempts [at applying his new principles to property]; Countess Sofia Andreyevna's protests. My first visit to Leo Tolstoy. The latter's letter from Yasnaya Polyana. Closing word." (The Swedish text reads "förstamar" — likely a typesetter's mis-spacing of *försök* or *försämrar*; from context most plausibly "förstamar" → "tries / first attempts.")
+- **Bibliografiskt material** = "Bibliographic material" (the back-matter apparatus, p. 454+).
+
 So Kap. XXI is *titled* "Slutord" but is a **substantive narrative chapter** running pp. 442–453, covering Tolstoy's life through November–December 1884: meeting Chertkov, the Ge portrait, the return to Yasnaya Polyana, the autumn 1884 stay at Ge's country estate, Tolstoy's first attempt at applying his new principles to property, Sofya Andreyevna's protests, Birukoff's first visit to Tolstoy, and the closing 8 December 1884 sledge-ride letter to S. A. Tolstaya. The "Slutord" word appears both as the chapter title and as the page header of p. 453 where Birukoff's authorial sign-off lives.
 
 Bibliografiskt material (Bibliography) follows from p. 454 to p. 463 (and probably further; index ends at 463 in the sample).

@@ -8,7 +8,7 @@
 
 ## Transcription (verbatim, with line breaks following the printed page)
 
-The transcription opens mid-paragraph (the paragraph began on p. 452 or earlier). Photographic readability is good except near the gutter, where letters at the start of some lines are softened by the binding curl; readings in such places are marked **[?]** where uncertain.
+The transcription opens mid-paragraph (the paragraph began on p. 452 or earlier). Photographic readability is good except near the gutter, where letters at the start of some lines are softened by the binding curl; readings in such places were originally marked **[?]** where uncertain. The single gutter-uncertain line ("kommer del III [??]tt i litterärt hänseende") was confirmed by Johan on 2026-05-28 to read *"att i litterärt hänseende"* — the two-character unclear position is the Swedish particle *att* ("to" / infinitive marker, here standing as the future-tense complement of *kommer*). Updated in this revision; the transcription block and the prose-quote below now read *att* in place of *[??]tt*.
 
 ```
                                               SLUTORD.                  453
@@ -50,7 +50,7 @@ gelserna i Leo Tolstojs lif, i hvilka det förunnats äfven
 mig att taga en stor och verksam del.
 
       På grund af dessa omständigheter kommer del III
-[??]tt i litterärt hänseende få en något afvikande karaktär.
+att i litterärt hänseende få en något afvikande karaktär.
 Men för denna lefnadstecknings samtliga trenne delar
 skall och måste samma grundval alltid vara gällande:
 Sanning och kärlek till honom, hvars lifsgärning jag
@@ -69,7 +69,15 @@ skildrar.
 
 ### The embedded letter (8 December 1884)
 
-The block in guillemets (`»…«*`) is **a letter from Birukoff to S. A. Tolstoj (Sofya Andreyevna Tolstaya)**, dated *Den 8 december 1884*, recounting a sledge ride home through fresh snow with a friend ("min kära Mischa"), contrasted with the train journey that preceded it — a smoking lady in jewellery, a doctor defending capital punishment, an unconscious drunken woman, a man with a bottle, a student, a rude conductor. The arrival in the silent winter night, with Orion and Sirius above the forest, becomes the closing image: snow, fresh air, good horse, good Mischa, and the good God. The footnote `*S. A. Tolstojs arkiv` ("S. A. Tolstoj's archive") identifies the source as Sofya Andreyevna's papers — meaning the letter was preserved in her archive, not Birukoff's.
+The block in guillemets (`»…«*`) is **a letter from Birukoff to S. A. Tolstoj (Sofya Andreyevna Tolstaya)**, dated *Den 8 december 1884*. Working English translation of the verbatim Swedish:
+
+> "8 December 1884.
+>
+> Yesterday, when I sat down in the sleigh and drove through the half-aln-deep [≈ 30 cm], loose, newly-fallen snow in the silent winter night, with the star-strewn sky overhead and my dear Mischa at my side, I felt an indescribably enrapturing feeling. I came straight out of the railway carriage, where I had kept company with a smoking lady decked out in bracelets, with a doctor who tirelessly proved the necessity of capital punishment, with a drunken woman lying senseless on the bench — a hideous creature, wrapped in a torn cloak — , then with a gentleman who in the depths of his travelling-bag harboured his friend the bottle, with a student in pince-nez, and with a conductor who gave me a shove in the back because I was dressed in a half-fur coat. — And after all this, Orion and Sirius up above the forest, the down-soft, soundless snow, the fresh air, my good horse, my good Mischa, and — the good God."
+>
+> \* S. A. Tolstoj's archive.
+
+The letter recounts a sledge ride home through fresh snow with a friend ("min kära Mischa"), contrasted with the train journey that preceded it — a smoking lady in jewellery, a doctor defending capital punishment, an unconscious drunken woman, a man with a bottle, a student, a rude conductor. The arrival in the silent winter night, with Orion and Sirius above the forest, becomes the closing image: snow, fresh air, good horse, good Mischa, and the good God. The footnote `*S. A. Tolstojs arkiv` ("S. A. Tolstoj's archive") identifies the source as Sofya Andreyevna's papers — meaning the letter was preserved in her archive, not Birukoff's.
 
 The choice of this letter as the closing image of *Andra delen* is deliberate: Birukoff identifies the moment (8 December 1884) as the one when his relationship to Tolstoy turned from disciple-to-distant-master into close friendship. The biography's first two volumes therefore *close* exactly where Birukoff's personal involvement *opens*.
 
@@ -83,7 +91,7 @@ After the letter:
 
 And the forward-flag to Volume III:
 
-> *"Och härmed afslutar jag nu denna del af Leo Tolstojs lefnadssaga. För den följande, tredje delen af biografien komma äfven mina egna personliga minnen att ligga till grund, kompletterade och jämförda med annat biografiskt material och berörande de viktigaste tilldragelserna i Leo Tolstojs lif, i hvilka det förunnats äfven mig att taga en stor och verksam del. På grund af dessa omständigheter kommer del III [??]tt i litterärt hänseende få en något afvikande karaktär."*
+> *"Och härmed afslutar jag nu denna del af Leo Tolstojs lefnadssaga. För den följande, tredje delen af biografien komma äfven mina egna personliga minnen att ligga till grund, kompletterade och jämförda med annat biografiskt material och berörande de viktigaste tilldragelserna i Leo Tolstojs lif, i hvilka det förunnats äfven mig att taga en stor och verksam del. På grund af dessa omständigheter kommer del III att i litterärt hänseende få en något afvikande karaktär."*
 
 (*"And with this I now close this part of Leo Tolstoy's life-saga. For the following, third part of the biography my own personal memories will also lie at the foundation, supplemented and compared with other biographical material and touching on the most important events in Leo Tolstoy's life, in which it has been granted to me also to take a great and active part. On account of these circumstances Vol III will, from a literary standpoint, take on a somewhat differing character."*)
 
