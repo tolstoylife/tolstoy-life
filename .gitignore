@@ -23,8 +23,9 @@ __scrap
 # Obsidian internals
 .obsidian/
 
-# Local config
-.claude/
+# Local config — .claude/skills/ is excepted (project skills are shared assets)
+.claude/*
+!.claude/skills
 .omc/
 .superpowers/
 .python-version
