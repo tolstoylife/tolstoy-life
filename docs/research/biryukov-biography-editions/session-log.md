@@ -111,3 +111,78 @@ Late in the session Johan reversed the scan commitment from session 2.
 **No new commit this turn.** Edits to this session-log, `index.md` (4 spots), and LOG.md (the existing session-3 entry's last paragraph) made directly; HTML rebuild via `docs/serve.py --build-only` to follow.
 
 ---
+
+## 2026-05-29 — sign-off + Phase 7 path + Glava 10 batching
+
+Johan worked through the four next-steps blocks the previous session had queued for him.
+
+### Sign-off pass on the editions document
+
+All four review blocks cleared on first read:
+- **§5 verdict per volume** (per-volume disposition: az.lib.ru authoritative for III and IV; az.lib.ru working source for I–II with Aldanov reconciliation (3) flagged but not blocking; Swedish as cross-check, not replacement).
+- **§3.5 Slutord reframing** (1915 "raw form" admission = editorial incompleteness, not evidentiary weakness, because the design was announced in the 1908 Slutord with Tolstoy alive).
+- **§6.4 four footnote types** (source-of-record / censorship cross-check / validity cross-check / honesty footnote — to become standard in `translation-notes.md` files going forward).
+- **§7 budget** (50–80 new translation-cadence sessions; 3–6 calendar months at one session/day).
+
+Frontmatter flipped: `layer: draft` → `layer: reference`, `status: in-progress` → `status: settled`, `lastUpdated: 2026-05-28` → `2026-05-29`. Hedge wording softened in §0, §3, §3.6, §4, §5, §7.1 intro, §7.1 phase-3 table row, and §7.3 sign-off block. Grep-verified no stale "draft / reserved for human checkpoint / in progress" refs remain in the editorial surface (only substantive uses of "drafted" referring to Birukoff drafting his volumes in exile).
+
+### Phase 7 path now that V850 is deferred
+
+Decision: **digital-surrogate hunt first** (Project Runeberg, Litteraturbanken, Libris, Swedish second-hand digital stores) — 1–2 h catalogue probing. If it surfaces a usable Swedish digital surrogate of Andra delen, Phase 7 unblocks for free. If not, accept Phase 7 starts late; the partial-scope V850 scan (post-1880 chapters only, ~8–10 h end-to-end) stays as fallback only if Scenario A/B (§6.2) becomes a real downstream question.
+
+Recorded in §7.2 of the index.
+
+### Glava 10 / Aldanov reconciliation residual
+
+Decision: **batch with the Phase 7 catalogue probe.** Same kind of motion (search Staatsbibliothek zu Berlin / DNB / archive.org Russian émigré collections / RGB-RNB for a 1921 Berlin Ladyzhnikov scan). One session, two open items closed; the Berlin 1921 hunt could surface useful side-evidence for §1's other open questions (1923 reissue, 1922–24 4-vol set, Diederichs German source-edition).
+
+Recorded in §7.2 alongside the Phase 7 sequencing.
+
+### Downstream unblocks
+
+- **TODO §8 Step 1** (ch18 RU↔RU probe) unblocked. No source change required; az.lib.ru `text_1905_tolstoy05.shtml` is confirmed authoritative.
+- **TODO §9** (Vol I/II audit) unblocked. az.lib.ru `text_1905_tolstoy01.shtml`–`04.shtml` is the working source; Aldanov reconciliation (3) flagged as known-open, not blocking.
+
+### Memory + commit
+
+Memory written: `project_birukoff_editions_verdict.md` (new) + MEMORY.md index entry. Captures the per-volume verdict + the location of the long form, so future sessions don't re-derive.
+
+**Commit held** at Johan's request — changes staged in working tree but uncommitted, to bundle with whatever else lands later in the session or at end-of-day. The Phase 7 / Glava 10 catalogue-probing session is the natural next executable piece if Johan wants to keep going.
+
+---
+
+## 2026-05-29 — session 4: catalogue probe (Phase 7 + Glava 10 batched)
+
+Johan picked path A from the post-sign-off handoff: the batched Phase 7 Swedish digital-surrogate hunt + the §1.6 Berlin 1921 Russian-scan hunt. Lean-execution mode. Scope discipline: locate-and-confirm, not capture-and-diff.
+
+### Russian side — Berlin 1921 fully located, two new editions surfaced
+
+- **All three Berlin 1921 Ladyzhnikov volumes** are OCR'd PDFs on vtoraya-literatura.com — publ-5548 (Vol I, 576 pp), publ-5598 (Vol II, 680 pp), publ-5599 (Vol III, 616 pp). Page counts vs. Egorov's lot 192 photographs (572 + 675 + 611 pp) drift by +4 / +5 / +5 pp, consistent across all three — front-matter / title-leaf counting variance, same edition with high confidence. Total ~109 MB; electronic editions by Andrey Nikitin-Perensky and Stanislav Lvovskiy.
+- **1911 Moscow Кушнерёв second edition Vol I** at imwerden.de/publ-18037 — 544 pp, OCR PDF 24.86 MB, scan prepared by Алексей Балакин (acquisition 2026-01-24). Pre-S. A. Tolstaya death (1919), suppression layer still applies. Adds a third witness to the §1.6 Aldanov reconciliation probe.
+- **1923 Moscow + Petrograd Госиздат third edition Vol I** at prlib.ru/item/1163574 — XX + 243 pp + 18 plates, «Издание 3-е, исправленное и дополненное». Anomalously small page count (vs. 576 pp Berlin 1921 Vol I) suggests partial-scope or split-volume; disambiguation against the actual title page is pending. Probable referent of the rumoured "1923 Berlin reissue" (§1.8) — misattribution candidate.
+
+### Swedish side — clean negative at standard digital archives
+
+No digital surrogate of *Hans lif och hans verk* at Project Runeberg, Litteraturbanken, Libris/KB, HathiTrust, archive.org, or Bokbörsen/hstrom. **Phase 7 stays parked** on Johan's physical books or the partial-scope V850 scan if/when Scenario A/B (§6.2) becomes a real downstream question. Remaining surrogate routes (Lund / Stockholm / Uppsala university digital collections, KB digitisation-on-demand) are out of scope for a 1–2 h probe and not on the critical path.
+
+### Side refinements
+
+- **§1.7** — two independent digital surrogates of the 2000 Алгоритм print: az.lib.ru (Adamenko 2003) and imwerden.de/publ-16339 (Nikitin-Perensky + Lvovskiy). Either can serve as an OCR-noise cross-check.
+- **§2.1** — Erik Nordenström identified as artillery captain via Litteraturbanken's Rydström article. The "highly questionable 1910 translation" mentioned in passing in the same article concerns Gogol's *Döda själar*, **not** Birukoff — quality judgement does not transfer.
+- **§1.1** — Swedish Norstedt edition year range locked to 1906–1909 (Erik Oskarsson Antikvariat Lund snippet).
+
+### Plan deviations from session open
+
+- Plan expected a 1–2 hit Berlin 1921 catalogue probe. Reality: full three-volume set located on a single archive, PLUS two unknown editions (1911 Кушнерёв, 1923 Госиздат) surfaced. Catalogue space is materially bigger than the §1.1 table reflected; positive plan-deviation.
+- Plan expected an uncertain-yield Swedish surrogate hunt. Reality: clean negative at all easy targets. Phase 7 disposition firmed up.
+- Plan said "no PDF downloads, locate-only." Held — no PDFs downloaded; the chapter-level Glava 10 diff is parked as a focused 1-session next-executable.
+
+### Writeup
+
+- New extract file: [`extracts/digital-surrogate-hunt-2026-05-29.md`](extracts/digital-surrogate-hunt-2026-05-29.md) — full probe transcript, URL table, negative-result table, next-session executable.
+- `index.md` updates: §1.1 (table gains 1911 + 1923 rows, +5pp / Berlin URL annotations, "candidate-for-retirement" wording on the rumoured 1923 Berlin reissue, second-digital-surrogate note on the OCR row); §1.6 (Aldanov-reconciliation update note); §1.7 (two independent digital surrogates); §1.8 (Aldanov question marked executable; 1923 Berlin question downgraded; new questions on 1911 Кушнерёв Vol II/III and 1923 Госиздат scope); §2.1 (Nordenström translator profile); §7.2 (Phase 7 path / outcome / parking language); Sources list expanded with five new entries.
+- Frontmatter `lastUpdated: 2026-05-29` unchanged (already from session 3).
+
+**Commit still held** at Johan's request. The working tree now bundles session 3's sign-off + session 4's catalogue-probe edits in one atomic commit, to land when Johan calls it.
+
+---

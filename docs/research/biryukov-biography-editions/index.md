@@ -1,13 +1,13 @@
 ---
-layer: draft
-lastUpdated: 2026-05-28
-status: in-progress
+layer: reference
+lastUpdated: 2026-05-29
+status: settled
 tags: [research, biryukov, editions]
 ---
 
 # Birukoff's biography of Tolstoy — editions, translations, and a preferred-edition verdict
 
-*Draft. Working zone (gitignored). Promoted to `docs/research/biryukov-biography-editions/index.md` when the §5 verdict and §§1–4 evidence are settled.*
+*Reference document. The §5 verdict was signed off by Johan on 2026-05-29 after session 3 close. Further §1 / §2 catalogue work refines the surrounding evidence as it surfaces, without re-opening the verdict.*
 
 ---
 
@@ -19,13 +19,13 @@ The Tolstoy Research Platform's existing Vol III and Vol IV English translations
 
 > Which edition of Birukoff's biography should the project's citations and translations be grounded in, and why?
 
-This document is the evidence base for that answer. As §§1–4 fill out, the §5 verdict sharpens; the current state (2026-05-28) is summarised at the top of §5.
+This document is the evidence base for that answer. The §5 verdict was settled at sign-off 2026-05-29; further §1 / §2 catalogue work refines the surrounding evidence without re-opening the per-volume disposition.
 
 ---
 
 ## 1. Russian editions
 
-*Sources cross-referenced so far: az.lib.ru author index, the az.lib.ru Vol III file front-matter, Russian Wikipedia, Egorov's auction lot 192, Mark Aldanov's 1921 review in* Современные записки*. RGB / RNB direct catalogue confirmation still pending.*
+*Sources cross-referenced so far: az.lib.ru author index, the az.lib.ru Vol III file front-matter, Russian Wikipedia, Egorov's auction lot 192, Mark Aldanov's 1921 review in* Современные записки*, plus (added 2026-05-29 catalogue probe) vtoraya-literatura.com, imwerden.de, and the Russian Presidential Library catalogue. RGB / RNB direct catalogue confirmation still pending. Full probe transcript: [`extracts/digital-surrogate-hunt-2026-05-29.md`](extracts/digital-surrogate-hunt-2026-05-29.md).*
 
 ### 1.1. The publication trail at a glance
 
@@ -33,15 +33,17 @@ This document is the evidence base for that answer. As §§1–4 fill out, the �
 |---|---|---|---|---|---|
 | First edition, Vol I | 1906 (or 1905?) | 1 vol in 2 parts | Moscow | Posrednik (probably) | conventional bibliography says 1906; az.lib.ru and Russian Wikipedia list 1905. Open |
 | First edition, Vol II | 1908 (or 1905?) | 1 vol in 2 parts | Moscow | Posrednik (probably) | same open question |
+| **Second edition, Vol I** | **1911** | **1 vol, 544 pp** | **Moscow** | **Кушнерёв** | **OCR PDF at [imwerden.de/publ-18037](https://imwerden.de/publ-18037), 24.86 MB. Surfaced 2026-05-29. Pre-S. A. Tolstaya death; suppression layer still applies** |
 | Condensed *Краткая биография* | 1908 | 1 vol | Moscow | unknown | per Russian Wikipedia |
 | Condensed *Краткая биография*, 2nd ed | 1912 | 1 vol | Moscow | unknown | per Russian Wikipedia |
 | First edition, Vol III | 1915 | 1 vol | Onex près Genève / printer? | unknown — émigré press? | preface dated 1 Nov 1915 from Onex |
-| Berlin reissue, Vols I–III | 1921 | 3 vols (572 + 675 + 611 pp) | Berlin | И. П. Ладыжников | confirmed by Egorov's lot 192, reviewed by Aldanov 1921 |
+| Berlin reissue, Vols I–III | 1921 | 3 vols (572 + 675 + 611 pp per Egorov; 576 + 680 + 616 pp per the OCR PDFs at vtoraya-literatura.com — same edition, +4/+5/+5 pp front-matter / title-leaf variance) | Berlin | И. П. Ладыжников | confirmed by Egorov's lot 192, reviewed by Aldanov 1921, OCR PDFs at [vtoraya-literatura.com publ-5548 / 5598 / 5599](https://vtoraya-literatura.com/author-168) (surfaced 2026-05-29) |
 | First edition, Vol IV | 1922 | 1 vol | Berlin | Ладыжников (assumed) | dedication 15 Dec 1922 |
-| Possible 1923 Berlin Vols I–III reissue | 1923 | ? | Berlin | ? | one search hit, **unverified** |
+| **Third edition, Vol I** | **1923** | **1 vol, XX + 243 pp + 18 plates** | **Moscow + Petrograd** | **Государственное издательство (Госиздат)** | **«Издание 3-е, исправленное и дополненное». Catalogued at [Russian Presidential Library item 1163574](https://www.prlib.ru/item/1163574); physical at Ural Federal University. Surfaced 2026-05-29. 243-pp count is anomalously small vs. Berlin 1921 Vol I (576 pp) — likely partial-scope or split-volume; disambiguation against the title-page surface pending** |
+| Possible 1923 Berlin Vols I–III reissue | 1923 | ? | Berlin | ? | one search hit, **candidate-for-retirement**: likely a misattribution of the 1923 Госиздат Moscow+Petrograd 3rd ed row above |
 | Possible 1922–24 4-vol Berlin set | 1922–24 | 4 vols | Berlin | ? | one search hit, **unverified** |
 | Modern reprint | 2000 | 2 books in «Гений в искусстве» series | Moscow | Алгоритм | source-edition statement **unread**; is the determining document for the §5 verdict on Vols I–II |
-| OCR | 2003 | digital | — | Адаменко Виталий | OCR of the 2000 Алгоритм reprint, deposited on az.lib.ru |
+| OCR | 2003 | digital | — | Адаменко Виталий | OCR of the 2000 Алгоритм reprint, deposited on az.lib.ru. A second independent electronic edition of the same 2000 print, by Andrey Nikitin-Perensky and Stanislav Lvovskiy, is at [imwerden.de/publ-16339](https://imwerden.de/publ-16339) (Book II = Vols III+IV; surfaced 2026-05-29) |
 | Modern Russian ebook | various | — | — | Litres, DirectMedia | descendants of the 2000 Алгоритм edition, likely |
 
 ### 1.2. The single decisive textual change
@@ -89,7 +91,9 @@ The az.lib.ru chapter contradicts Aldanov in one specific way: he reports Biruko
 
 Reconciliation (3) is the only one that leaves a real textual gap. Settling it requires either a Berlin 1921 scan (via a German national library or a Russian émigré archive) or scholarly secondary literature on the differences. **Not blocking for the §5 verdict** — see §5.
 
-### 1.7. The «Алгоритм 2000» two-book division
+**Update 2026-05-29.** The settling-by-scan path is now executable. The 2026-05-29 catalogue probe ([extract](extracts/digital-surrogate-hunt-2026-05-29.md)) located the **1921 Berlin Ladyzhnikov Vol I** as an OCR'd PDF at [vtoraya-literatura.com/publ-5548](https://vtoraya-literatura.com/publ-5548) (576 pp), and a **third witness** — the **1911 Moscow Кушнерёв second edition Vol I** — at [imwerden.de/publ-18037](https://imwerden.de/publ-18037) (544 pp). The 1911 Кушнерёв edition is pre-S. A. Tolstaya death (1919), so the suppression layer still applies; if Глава 10 with the Arsenyeva material is already in the 1911 Кушнерёв the gap pattern is reconciliation (3), and if it is absent or differently shaped the pattern is reconciliation (1) or (2). A focused 1-session chapter-level diff against az.lib.ru's existing capture is now the executable next move; remains not blocking on the §5 verdict.
+
+### 1.7. The «Алгоритм 2000» two-book division and its two independent digital surrogates
 
 The OCR'er Adamenko digitised the Алгоритм 2000 reprint as a two-book set:
 - **Book 1 ("книга первая")** = Russian Vols I–II (parts 1+2 of each). OCR'd 3 October – 24 December 2002.
@@ -97,14 +101,18 @@ The OCR'er Adamenko digitised the Алгоритм 2000 reprint as a two-book se
 
 Both books OCR'd by Vitaly Adamenko, both deposited on az.lib.ru. The az.lib.ru file numbering (`tolstoy01`–`tolstoy06`) maps cleanly to the source physical structure.
 
+A **second independent electronic edition of the same Алгоритм 2000 print** exists at [imwerden.de/publ-16339](https://imwerden.de/publ-16339) — Book II (Vols III+IV), 658 pp, OCR PDF 33.4 MB, electronic edition prepared by Andrey Nikitin-Perensky and Stanislav Lvovskiy (ISBN 5-888-78017-0 = the Алгоритм 2000 print-run ISBN). Surfaced 2026-05-29 in the catalogue probe. The two digital descendants (az.lib.ru / Adamenko 2003 and imwerden / Nikitin-Perensky + Lvovskiy) are independent OCR passes of the same physical print run; either can serve as a cross-check on OCR noise in the other.
+
 ### 1.8. Open §1 questions (revised)
 
 - **What year was the Russian Vol I first edition?** Conventional bibliography says 1906; az.lib.ru and Russian Wikipedia say 1905. Either a 1905 Posrednik serialisation preceded the 1906 book, or the secondary sources are wrong. RGB / RNB catalogue check needed.
 - **Where was Vol III printed in 1915?** The Onex près Genève signature is Birukoff's place of writing, not necessarily the print location. RGB catalogue should resolve this.
-- **Did Berlin 1921 add a chapter on a different woman (Tyutcheva, Behrs, or another) beyond the Arsenyeva chapter?** Aldanov contradiction reconciliation (3). Berlin 1921 scan needed.
-- **Is there a 1923 Berlin Russian-language reissue separate from the 1921 Ladyzhnikov reissue?** One web search hit alluded to it. WorldCat and German national-library catalogues should resolve.
-- **Was there a 1922–24 four-volume Berlin set** (i.e. did Ladyzhnikov reissue Vols I–III in 1922/23 to match the new Vol IV)? Same.
+- **Did Berlin 1921 add a chapter on a different woman (Tyutcheva, Behrs, or another) beyond the Arsenyeva chapter?** Aldanov contradiction reconciliation (3). **Now executable** — the 1921 Berlin Vol I scan was located 2026-05-29 ([vtoraya-literatura.com/publ-5548](https://vtoraya-literatura.com/publ-5548), 576 pp) and a third witness (1911 Кушнерёв 2nd ed Vol I, 544 pp, [imwerden.de/publ-18037](https://imwerden.de/publ-18037)) is also available; see §1.6 update and the probe extract.
+- **Is there a 1923 Berlin Russian-language reissue separate from the 1921 Ladyzhnikov reissue?** **Candidate-for-retirement.** The 2026-05-29 probe located a **1923 Госиздат Moscow + Petrograd 3rd edition Vol I** (243 pp, [prlib.ru/item/1163574](https://www.prlib.ru/item/1163574)) which is the more likely referent of the original "1923 Berlin reissue" web search hit. One final WorldCat / German-national-library check to rule out a parallel 1923 Berlin event would close the question.
+- **Was there a 1922–24 four-volume Berlin set** (i.e. did Ladyzhnikov reissue Vols I–III in 1922/23 to match the new Vol IV)? Same; no evidence surfaced 2026-05-29 either way.
 - **What does the 2000 «Алгоритм» reprint editor's introduction say** about source-edition? Now slightly less critical (we know it contains the Arsenyeva chapter), but still worth checking for completeness.
+- **Does Кушнерёв's 1911 second edition extend to Vols II / III as well?** New question opened 2026-05-29. imwerden has only the 1911 Vol I; whether a 1911 Vol II followed and whether the 1915 Vol III was first-edition-only is open.
+- **What is the 1923 Госиздат edition's scope?** New question opened 2026-05-29. 243 pp is anomalously small for a full Vol I (vs. 576 pp Berlin 1921); the volume is likely partial-scope or part of a multi-physical-volume Soviet reprint where "Vol 1" = one tom only. The actual title page should disambiguate.
 
 ---
 
@@ -125,6 +133,8 @@ The Andra delen's Slutord dating (27 August 1908) corresponds exactly to the con
 **Authorisation scope.** *"Granskade af Leo Tolstoj"* on the title page is a strong claim, but its scope (the Russian source, the Swedish translation, or both) is not specified on the title page alone. Resolution depends on:
 - The preface of any of the three books — to be transcribed once Johan photographs them.
 - Tolstoy's own correspondence and diary entries on the Birukoff project and on Nordenström's translation (§3 work).
+
+**Translator profile (added 2026-05-29).** Litteraturbanken's Svenskt översättarlexikon does not maintain a dedicated article on Erik Nordenström, but identifies him in passing (in [the article on translator Sören Rydström](https://litteraturbanken.se/översättarlexikon/artiklar/Sören_Rydström)) as **"artillerikaptenen Erik Gustaf Nordenström"** — i.e. an artillery captain by profession, translating Russian on the side. The same passing reference assesses Nordenström's *1910* translation as «högst diskutabla» ("highly questionable"), but the work judged there is **Gogol's *Döda själar*, not Birukoff's Tolstoy biography** — the quality verdict does not transfer to the Norstedt Birukoff edition. The biographical fact (his profession) is the only datum the lexikon yields.
 
 **Pending photographs from Johan** (specified at session open): title-page versos of all three books (for publication years and printer information), title pages of Första delen 1 & 2, prefaces of all three volumes (Birukoff's, Nordenström's, or publisher's), tables of contents, colophons.
 
@@ -160,7 +170,7 @@ Pending. French, Italian, Czech, Polish — to be checked against national-libra
 
 ## 3. Tolstoy's review involvement
 
-*Reserved for human checkpoint before final drafting. Significant evidence already captured from the Vol I part 1 preface; see [`extracts/az-lib-vol1-roman-chapter-probe.md`](extracts/az-lib-vol1-roman-chapter-probe.md) §"Independent finding".*
+*Documentary base settled at sign-off 2026-05-29; further sourcing (PSS tom 55–58 diaries, tom 73–75 letters, Yasnaya Polyana visitor records) is parking-lot work, not blocking. Vol I part 1 preface evidence captured in [`extracts/az-lib-vol1-roman-chapter-probe.md`](extracts/az-lib-vol1-roman-chapter-probe.md) §"Independent finding".*
 
 ### 3.1. Authorisation: documentary base
 
@@ -216,13 +226,13 @@ The work to do before promoting §3 into the polished `docs/research/` essay:
 - Birukoff's own prefaces in Russian Vol II (parts 1+2) and Swedish equivalents (once photographed) — to confirm whether the Vol I authorisation chain was repeated.
 - The Cassell 1911 Publishers' Note + Birukoff's English prefatory note (already partially captured; full transcription pending).
 
-*Reserved for human checkpoint before final drafting.*
+*The items above are parking-lot, not blocking.*
 
 ---
 
 ## 4. Per-edition quality
 
-*In progress. The provisional summary, by source we already know something about:*
+*Provisional summary, by source. Refines as further catalogue work surfaces; does not gate the §5 verdict, which is settled.*
 
 | Source | Strengths | Weaknesses | Provenance gap |
 |---|---|---|---|
@@ -238,7 +248,7 @@ The work to do before promoting §3 into the polished `docs/research/` essay:
 
 ## 5. Preferred-edition verdict
 
-*Draft state — verdict reserved for human checkpoint before promotion. Brought to Johan at the end of this session.*
+*Signed off by Johan on 2026-05-29 after session 3 close. TODO §8 Step 1 (ch18 RU↔RU probe) and §9 (Vol I/II audit) unblocked.*
 
 The verdict splits cleanly per volume:
 
@@ -309,7 +319,7 @@ These four footnote types should be standard in the editorial-ledger files (`doc
 
 ## 7. Roadmap: a suitable English Birukoff for the LLM-wiki vault
 
-The end goal — stated by Johan at session 2 open, 2026-05-28 — is a complete English-language Birukoff biography ready for ingestion into the Tolstoy Research Platform vault (`website/src/wiki/`). The work breaks into eight phases, of which two are complete and one (this research project) is in progress pending §5 verdict sign-off.
+The end goal — stated by Johan at session 2 open, 2026-05-28 — is a complete English-language Birukoff biography ready for ingestion into the Tolstoy Research Platform vault (`website/src/wiki/`). The work breaks into eight phases. As of sign-off (2026-05-29), three are complete (Vol IV translation, Vol III translation, this editions research); four are unblocked but not started (gap-recapture, Vol I/II RU audit, Vol I/II EN translation, vault ingestion); one (Swedish cross-check) is queued behind a digital-surrogate hunt.
 
 ### 7.1. Phase ladder
 
@@ -317,9 +327,9 @@ The end goal — stated by Johan at session 2 open, 2026-05-28 — is a complete
 |---|---|---|---|---|
 | 1 | Vol IV English translation (chs 1–19) | **Done**, 2026-05-27 (commit `b90cb207`) | az.lib.ru `text_1922_tolstoy06.shtml` | Editorial ledger: `docs/research/doukhobors/biryukov-vol4/en/translation-notes.md` |
 | 2 | Vol III English translation (chs 1–17, partial) | **Done**, multiple sessions through 2026-05-27 | tolstoy-lit.ru → az.lib.ru `text_1905_tolstoy05.shtml` | ~4.5% material gap at ch 18 (TODO §8 Step 2) |
-| 3 | Editions and translations research (this project) | **In progress** | This document | Sign-off + promotion to `docs/research/biryukov-biography-editions/` pending |
-| 4 | Vol III gap-recapture (ch 18 + audit) | **Blocked on (3)** | az.lib.ru `text_1905_tolstoy05.shtml` | TODO §8 Step 1 (probe), Step 2 (full RU recapture). ~5–6 translation-cadence sessions per prior log corrections |
-| 5 | Vol I/II Russian audit + recapture | **Blocked on (3)** | az.lib.ru `text_1905_tolstoy01.shtml`–`04.shtml` (four files) | TODO §9. Comparable to Vol IV's recapture work — call it 4–6 sessions |
+| 3 | Editions and translations research (this project) | **Done**, signed off 2026-05-29 | This document | Frontmatter `layer: reference`; further §1/§2 catalogue work refines surrounding evidence without re-opening the §5 verdict |
+| 4 | Vol III gap-recapture (ch 18 + audit) | **Unblocked, not started** | az.lib.ru `text_1905_tolstoy05.shtml` | TODO §8 Step 1 (probe), Step 2 (full RU recapture). ~5–6 translation-cadence sessions per prior log corrections |
+| 5 | Vol I/II Russian audit + recapture | **Unblocked, not started** | az.lib.ru `text_1905_tolstoy01.shtml`–`04.shtml` (four files) | TODO §9. Comparable to Vol IV's recapture work — call it 4–6 sessions |
 | 6 | Vol I/II English translation | **Not started** | Output of (5) | Largest single piece of work. Vols I–II together are ~2× Vol III's chapter count; budget ≈ 30–50 translation sessions at the Vol III cadence |
 | 7 | Swedish cross-check pass | **Queued on (6)**; also blocked on Swedish text capture | Andra delen, then Första delen häften — capture route TBD; V850 full scan deferred 2026-05-28 at ~30–40 h post-production cost (see §2.1) | Validity check (§6.2), censorship probe (§6.1), Aldanov-reconciliation residual (§1.6). 5–10 episodic sessions once text is in hand |
 | 8 | Vault ingestion | **Not started** | Output of (6), with cross-check footnotes from (7) | LLM Wiki ingestion method (source-ingestion not mechanical bulk; see project memory note `feedback_llm_wiki_ingestion`) |
@@ -328,15 +338,17 @@ The end goal — stated by Johan at session 2 open, 2026-05-28 — is a complete
 
 - **Phases 4 and 5 can run in parallel.** Different Russian source files, different volume scopes, no shared state.
 - **Phase 6 can begin chapter-by-chapter as soon as Phase 5 has produced a clean RU recapture for the corresponding chapter.** Does not need to wait for the full audit.
-- **Phase 7 begins once a clean Andra delen Swedish text is in hand.** Independent of Phase 6 progress; can produce its own report well before the full English Vols I–II exist. The V850 full-scan route was deferred at session 3 (see §2.1); Phase 7's start now waits on either re-greenlighting that scan or finding an alternative capture (existing digital surrogate, partial-scope scan of just the post-1880 chapters, etc.).
+- **Phase 7 begins once a clean Andra delen Swedish text is in hand.** Independent of Phase 6 progress; can produce its own report well before the full English Vols I–II exist. The V850 full-scan route was deferred at session 3 (see §2.1). The agreed first move was a short **digital-surrogate-hunt session** — Project Runeberg, Litteraturbanken, Libris, Swedish second-hand digital stores — batched with the Berlin 1921 Russian-scan hunt for the §1.6 Aldanov reconciliation (3). **Run 2026-05-29; transcript at [`extracts/digital-surrogate-hunt-2026-05-29.md`](extracts/digital-surrogate-hunt-2026-05-29.md).** Outcome:
+  - **Russian (§1.6) — fully unblocked.** All three Berlin 1921 Ladyzhnikov volumes located as OCR'd PDFs on vtoraya-literatura.com (Vols I/II/III at publ-5548/5598/5599; 576+680+616 pp; ~109 MB total). Plus two previously-unknown Russian editions surfaced and added to §1.1 (1911 Кушнерёв 2nd ed Vol I; 1923 Госиздат 3rd ed Vol I). Aldanov reconciliation diff is now a 1-session next-executable, independent of Phase 7's Swedish question.
+  - **Swedish (Phase 7) — clean negative at the cheap-probe layer.** Project Runeberg, Litteraturbanken, Libris/KB digital, HathiTrust, archive.org, Bokbörsen/hstrom all return no digital surrogate of *Hans lif och hans verk*. Phase 7 **stays parked** on Johan's physical books or the partial-scope V850 scan (~8–10 h end-to-end) if/when Scenario A/B (§6.2) becomes a real downstream question. Remaining surrogate routes (Lund / Stockholm / Uppsala university digital collections, KB digitisation-on-demand request) are out of scope for a 1–2 h probe and not on the critical path.
 - **Phase 8 (vault ingestion) runs concurrently with Phase 6 once the first chapters of English Vols I–II surface.** The vault doesn't need the whole biography to begin growing.
 
 ### 7.3. Open questions that gate phases
 
-Sign-off questions for Johan (must clear before Phases 4 and 5 unblock):
+Sign-off questions for Johan — **all cleared 2026-05-29**:
 
-- **§5 verdict per volume** (the original session-1 ask, drafted, ready for checkpoint).
-- **This document as a whole** for promotion to `docs/research/biryukov-biography-editions/`.
+- **§5 verdict per volume** (signed off; Phases 4 and 5 unblocked).
+- **This document as a whole** (already promoted to `docs/research/biryukov-biography-editions/` at session 3 close; frontmatter flipped from `layer: draft` to `layer: reference` at sign-off).
 
 Research questions that sharpen the picture but do not block any phase (parking lot):
 
@@ -378,6 +390,11 @@ Total new English translation effort beyond what's already done: ≈ 50–80 ses
 - Biriukov, Pavel Ivanovich. *The Life of Tolstoy*. London: Cassell, 1911. Internet Archive identifier `lifeoftolstoy00biriuoft`, OpenLibrary OL7137103M.
 - Biriukov, Pavel Ivanovich. *Tolstoi's leven: Zijne persoonlijke herinneringen, brieven en aanteekeningen 1828–1863.* Trans. Emma B. van der Wijk. Project Gutenberg ebook 20128 (released 18 December 2006).
 - Egorov's auction lot 192. *Бирюков П.И. Л.Н. Толстой. Биография. [В 3 т.]. Т. 1–3. Берлин: Изд-во И.П. Ладыжникова, 1921.* https://egorovs.art/auction112/lot192.
+- Birukoff, Pavel Ivanovich. *Л. Н. Толстой: Биография. Том 1 / Том 2 / Том 3.* Berlin: Издательство И. П. Ладыжникова, 1921. OCR PDFs at vtoraya-literatura.com (electronic editions by Andrey Nikitin-Perensky and Stanislav Lvovskiy): [publ-5548](https://vtoraya-literatura.com/publ-5548) (Vol I, 576 pp), [publ-5598](https://vtoraya-literatura.com/publ-5598) (Vol II, 680 pp), [publ-5599](https://vtoraya-literatura.com/publ-5599) (Vol III, 616 pp). Located 2026-05-29.
+- Birukoff, Pavel Ivanovich. *Лев Николаевич Толстой. Биография. 2-е изд. Том 1.* Moscow: Кушнерёв, 1911. 544 pp. OCR PDF at [imwerden.de/publ-18037](https://imwerden.de/publ-18037) (scan prepared by Алексей Балакин). Located 2026-05-29.
+- Birukoff, Pavel Ivanovich. *Биография Льва Николаевича Толстого. Том 1. Издание 3-е, исправленное и дополненное.* Moscow + Petrograd: Государственное издательство, 1923. XX + 243 pp + 18 plates. Catalogued at the Russian Presidential Library, item [1163574](https://www.prlib.ru/item/1163574); physical book held at Ural Federal University. Located 2026-05-29.
+- Birukoff, Pavel Ivanovich. *Биография Л. Н. Толстого: Книга II (Тома 3 и 4).* Moscow: Алгоритм, 2000 (Гений в искусстве). 658 pp, ISBN 5-888-78017-0. Electronic edition by Andrey Nikitin-Perensky and Stanislav Lvovskiy at [imwerden.de/publ-16339](https://imwerden.de/publ-16339) — a second independent digital surrogate of the same Алгоритм 2000 print alongside az.lib.ru's Adamenko 2003 OCR. Located 2026-05-29.
+- Svenskt översättarlexikon. Article "Sören Rydström" (Litteraturbanken). https://litteraturbanken.se/översättarlexikon/artiklar/Sören_Rydström. Identifies Erik Gustaf Nordenström as artillery captain by profession.
 - Wikisource. *Author:Paul_Birukoff* and *The Life of Tolstoy* / *Leo Tolstoy: His Life and Work*.
 - Russian Wikipedia. *Бирюков, Павел Иванович.*
 
