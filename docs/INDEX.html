@@ -119,6 +119,20 @@ blockquote {
 }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
+figure { margin: 1.8rem 0; }
+main img {
+  max-width: 100%; height: auto; display: block;
+  margin: 1.8rem auto 0.5rem;
+  border: 1px solid var(--rule); border-radius: 2px;
+  background: #fff;
+}
+/* An italic line immediately after an image reads as its caption. */
+main img + em, figcaption {
+  display: block; font-size: 0.82rem; color: var(--ink-soft);
+  font-style: italic; text-align: center; margin: 0 auto 1.4rem;
+  max-width: var(--measure);
+}
+
 code, kbd, samp {
   font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.88em;
@@ -420,7 +434,7 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <header class="doc-header">
   <p class="eyebrow">tolstoy.life · build log</p>
   <h1>Notes</h1>
-  <p class="meta">Dated entries from research and design · generated 14 May 2026, 22:25</p>
+  <p class="meta">Dated entries from research and design · generated 29 May 2026, 17:29</p>
 </header>
 <main>
   <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
@@ -455,10 +469,55 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
   
     <p class="section-label">Reference — engineering specs and operational notes</p>
     <div class="index-grid">
+      <a class="index-card" href="/research/crisis/index.html">
+        <div class="card-title">"Crisis": how Tolstoy named — and did not name — his transformation of 1879–1882</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        <div class='card-lede'>Context: A focused corpus dive into the word *crisis* (Russian кризис) and its near-neighbours across the local Tolstoy corpus (the *Слово Т…</div>
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/aldanov-1921-review-berlin-ladyzhnikov.html">
+        <div class="card-title">Aldanov on the 1921 Berlin Ladyzhnikov edition (Vols I–III)</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/az-lib-vol1-roman-chapter-probe.html">
+        <div class="card-title">az.lib.ru Vol I — "Глава 10. Роман" probe (and Vol I OCR provenance)</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/az-lib-vol3-front-matter.html">
+        <div class="card-title">az.lib.ru — Vol III front-matter and two-layer preface</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/index.html">
+        <div class="card-title">Birukoff's biography of Tolstoy — editions, translations, and a preferred-edition verdict</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/superpowers/plans/2026-05-29-corpus-dive.html">
+        <div class="card-title">corpus-dive Skill Implementation Plan</div>
+        <div class="card-meta">superpowers · updated 29 May 2026</div>
+        <div class='card-lede'>**Goal:** Build the `corpus-dive` skill — a repeatable primary-source research method that turns one theme into a cited `index.md`, a machin…</div>
+      </a>
+      <a class="index-card" href="/superpowers/specs/2026-05-29-corpus-dive-design.html">
+        <div class="card-title">Design — `corpus-dive` skill</div>
+        <div class="card-meta">superpowers · updated 29 May 2026</div>
+        <div class='card-lede'>A repeatable primary-source research method for the Tolstoy Research Platform. Given one</div>
+      </a>
       <a class="index-card" href="/development/README.html">
         <div class="card-title">Development — tolstoy.life</div>
         <div class="card-meta">development · updated 11 May 2026</div>
         <div class='card-lede'>How the site is built. Implementation guides, conventions, and feature</div>
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/digital-surrogate-hunt-2026-05-29.html">
+        <div class="card-title">Digital-surrogate hunt — catalogue probe, 2026-05-29</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/lib/README.html">
+        <div class="card-title">docs/research/lib — shared research tooling</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        <div class='card-lede'>Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.</div>
       </a>
       <a class="index-card" href="/editorial/conventions.html">
         <div class="card-title">Documentation conventions — tolstoy.life</div>
@@ -470,10 +529,40 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-meta">editorial · updated 26 Apr 2026</div>
         <div class='card-lede'>This file describes how content for tolstoy.life is written: voice, what is included, what is excluded, and how to handle outside scrutiny. …</div>
       </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/README.html">
+        <div class="card-title">English translation — complete</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>This folder holds the complete English translation of Biryukov's *Biography of</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/README.html">
+        <div class="card-title">English translation — complete</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/handoff-2026-05-28.html">
+        <div class="card-title">Handoff — Biryukov biography: editions, translations, and a preferred-edition verdict</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
       <a class="index-card" href="/architecture/internal-operations.html">
         <div class="card-title">Internal Operations — Tolstoy Research Platform</div>
         <div class="card-meta">architecture · updated 25 Apr 2026</div>
         <div class='card-lede'>Cost estimates, hardware specifications, and capacity planning details. Supplements `AGENTS.md` with operational context for anyone implemen…</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/index.html">
+        <div class="card-title">P. I. Biryukov, *Biography of L. N. Tolstoy* — Volume III</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>A complete capture of the Russian text of **Volume III** of Pavel Ivanovich</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/index.html">
+        <div class="card-title">P. I. Biryukov, *Biography of L. N. Tolstoy* — Volume IV</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/extracts/biryukov-biography-doukhobors-EN.html">
+        <div class="card-title">P. I. Biryukov, *Biography of L. N. Tolstoy*, Vol. III — the Doukhobor sections (English translation)</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>Source: tolstoy-lit.ru reproduction of Biryukov's «Биография Л. Н. Толстого», Vol. III, chapters 18, 19, 21.</div>
       </a>
       <a class="index-card" href="/design/penpot-tokens.html">
         <div class="card-title">Penpot tokens</div>
@@ -485,10 +574,35 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-meta">research · updated 11 May 2026</div>
         <div class='card-lede'>Context: The local copies of the Jubilee Edition (*Полное собрание сочинений*, PSS) at `primary-sources/jubilee-edition/volNN/volNN.pdf` are…</div>
       </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/session-log.html">
+        <div class="card-title">Session log — Biryukov biography editions</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
       <a class="index-card" href="/editorial/source-mode.html">
         <div class="card-title">Source mode — per-fact footnotes</div>
         <div class="card-meta">editorial · updated 11 May 2026</div>
         <div class='card-lede'>How wiki and works pages cite their sources. Two requirements meet in one</div>
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/swedish-edition-photos-2026-05-28.html">
+        <div class="card-title">Swedish edition — 51-photo batch supplied by Johan, 2026-05-28</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/swedish-andra-delen-slutord-p453.html">
+        <div class="card-title">Swedish edition — Andra delen, Slutord, p. 453 (transcription)</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/biryukov-biography-editions/extracts/swedish-andra-delen-titlepage.html">
+        <div class="card-title">Swedish edition — Andra delen, title page (transcription)</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/index.html">
+        <div class="card-title">Tolstoy and the Doukhobors</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>Context: A survey of where Leo Tolstoy speaks about the Doukhobors — the pacifist Christian sect of the Transcaucasus whose mass refusal of …</div>
       </a>
       <a class="index-card" href="/pwa/README.html">
         <div class="card-title">Tolstoy e-reader PWA: document index</div>
@@ -527,13 +641,428 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
       </a>
       <a class="index-card" href="/research/copyright-renunciation/index.html">
         <div class="card-title">Tolstoy on copyright and the renunciation of literary property</div>
-        <div class="card-meta">research · updated 11 May 2026</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
         <div class='card-lede'>Context: A survey of where Leo Tolstoy discusses copyright, ownership of his writings, and the free dissemination of texts across the 90-vol…</div>
       </a>
       <a class="index-card" href="/research/tolstoydigital-tei-reference.html">
         <div class="card-title">tolstoydigital TEI Reference Data</div>
-        <div class="card-meta">research · updated 10 May 2026</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
         <div class='card-lede'>Context: Documentation of the tolstoydigital/TEI repository and its relationship to the 91st volume index of Tolstoy's Jubilee Edition. Cove…</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/translation-notes.html">
+        <div class="card-title">Translation notes — editorial judgment calls</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>Editorial decisions made while translating Biryukov's *Biography of L. N.</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-01.html">
+        <div class="card-title">Volume III, Chapter 1. The Events of 1884. Popular Literature</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-1.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-10.html">
+        <div class="card-title">Volume III, Chapter 10. The Agricultural Communes</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-10.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-11.html">
+        <div class="card-title">Volume III, Chapter 11. 1890. Optina Pustyn. *What Is Truth*. Prayer</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-11.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-12.html">
+        <div class="card-title">Volume III, Chapter 12. In the Family. Guests. The Renunciation of Literary Rights</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-12.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-13.html">
+        <div class="card-title">Volume III, Chapter 13. The Beginning of the Work Among the Famine-Stricken</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-13.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-14.html">
+        <div class="card-title">Volume III, Chapter 14. 1892. The Continuation of Lev Nikolaevich's Work Among the Famine-Stricken</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-14.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-15.html">
+        <div class="card-title">Volume III, Chapter 15. The Second Famine Winter. *The Kingdom of God Is Within You*</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-15.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-16.html">
+        <div class="card-title">Volume III, Chapter 16. The End of the Famine Relief. *Posrednik* in Moscow</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-16.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-17.html">
+        <div class="card-title">Volume III, Chapter 17. Khilkov. Drozhzhin. *The Crucifixion*</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-17.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-18.html">
+        <div class="card-title">Volume III, Chapter 18. The Death of Vanechka. *Master and Man*. The Beginning of the Doukhobor Movement</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-18.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-19.html">
+        <div class="card-title">Volume III, Chapter 19. Three Deaths. The Coronation. Our Exile</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-19.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-02.html">
+        <div class="card-title">Volume III, Chapter 2. *What Then Must We Do?*</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-2.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-20.html">
+        <div class="card-title">Volume III, Chapter 20. The Molokans. *What Is Art?*</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-20.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-21.html">
+        <div class="card-title">Volume III, Chapter 21. The Doukhobors. Famine Again. *The Christian Teaching*</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-21.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-22.html">
+        <div class="card-title">Volume III, Chapter 22. The Hague Conference. *Resurrection*</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-22.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-03.html">
+        <div class="card-title">Volume III, Chapter 3. The Burden of Life. A Sense of Mission. The Land Question</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-3.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-04.html">
+        <div class="card-title">Volume III, Chapter 4. The Religion of Humanity. At Yasnaya Polyana. Correspondence</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-4.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-05.html">
+        <div class="card-title">Volume III, Chapter 5. Bondarev. Palkin. Déroulède</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-5.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-06.html">
+        <div class="card-title">Volume III, Chapter 6. *The Power of Darkness*. The Calendar. Correspondence with Friends</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-6.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-07.html">
+        <div class="card-title">Volume III, Chapter 7. *On Life*. New Visitors. Correspondence</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-7.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-08.html">
+        <div class="card-title">Volume III, Chapter 8. At Work in Yasnaya Polyana. In Moscow. New Friends</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-8.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/en/chapter-09.html">
+        <div class="card-title">Volume III, Chapter 9. New Steps. The Voice of Denunciation. *The Kreutzer Sonata*</div>
+        <div class="card-meta">research · updated 27 May 2026</div>
+        <div class='card-lede'>**Source:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-9.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-01.html">
+        <div class="card-title">Volume IV, Chapter 1. 1900. The Transvaal War. The Doukhobors</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-10.html">
+        <div class="card-title">Volume IV, Chapter 10. 1906. Sofya Andreyevna's Illness. The Death of Maria Lvovna</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-11.html">
+        <div class="card-title">Volume IV, Chapter 11. 1907. Lessons with the Children. The Land Question</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-12.html">
+        <div class="card-title">Volume IV, Chapter 12. 1908. *I Cannot Be Silent*</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-13.html">
+        <div class="card-title">Volume IV, Chapter 13. 1908 (continued). The Jubilee</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-14.html">
+        <div class="card-title">Volume IV, Chapter 14. 1909. Visitors. The Persecution of His Friends</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-15.html">
+        <div class="card-title">Volume IV, Chapter 15. 1909 (continued). Henry George. Stockholm. N. N. Gusev</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-16.html">
+        <div class="card-title">Volume IV, Chapter 16. 1910. The Tragedy of Life at Yasnaya Polyana</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-17.html">
+        <div class="card-title">Volume IV, Chapter 17. 1909–1910. The Will</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-18.html">
+        <div class="card-title">Volume IV, Chapter 18. 1910. The Departure</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-19.html">
+        <div class="card-title">Volume IV, Chapter 19. 1910. Illness and Death</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-02.html">
+        <div class="card-title">Volume IV, Chapter 2. 1901. The Excommunication</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-03.html">
+        <div class="card-title">Volume IV, Chapter 3. Expressions of Sympathy on the Occasion of the Excommunication</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-04.html">
+        <div class="card-title">Volume IV, Chapter 4. 1901 (continued). A Plan for a Free School. Illness</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-05.html">
+        <div class="card-title">Volume IV, Chapter 5. 1901–1902. The Crimea</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-06.html">
+        <div class="card-title">Volume IV, Chapter 6. 1902. Illness. The 50th Anniversary of His Literary Work</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-07.html">
+        <div class="card-title">Volume IV, Chapter 7. 1903. The Diary. The 75th Birthday. Letters</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-08.html">
+        <div class="card-title">Volume IV, Chapter 8. 1904. The Russo-Japanese War</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/en/chapter-09.html">
+        <div class="card-title">Volume IV, Chapter 9. 1905. The Revolutionary Movement. *The Circle of Reading*</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-01.html">
+        <div class="card-title">Том III, Глава 1. События 1884 г. Народная литература</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-1.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-10.html">
+        <div class="card-title">Том III, Глава 10. Земледельческие общины</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-10.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-11.html">
+        <div class="card-title">Том III, Глава 11. 1890 год. Оптина пустынь. "Что есть истина". Молитва</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-11.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-12.html">
+        <div class="card-title">Том III, Глава 12. В семье. Гости. Отречение от литературных прав</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-12.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-13.html">
+        <div class="card-title">Том III, Глава 13. Начало деятельности среди голодающих</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-13.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-14.html">
+        <div class="card-title">Том III, Глава 14. 1892 год. Продолжение деятельности Льва Николаевича среди голодающих</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-14.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-15.html">
+        <div class="card-title">Том III, Глава 15. Вторая голодная зима. Царство Божие</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-15.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-16.html">
+        <div class="card-title">Том III, Глава 16. Окончание кормления голодающих. "Посредник" в Москве</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-16.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-17.html">
+        <div class="card-title">Том III, Глава 17. Хилков. Дрожжин. "Распятие"</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-17.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-18.html">
+        <div class="card-title">Том III, Глава 18. Смерть Вани. "Хозяин и работник". Начало духоборческого движения</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-18.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-19.html">
+        <div class="card-title">Том III, Глава 19. Три смерти. Коронация. Наша ссылка</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-19.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-02.html">
+        <div class="card-title">Том III, Глава 2. "Так что же нам делать?"</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-2.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-20.html">
+        <div class="card-title">Том III, Глава 20. Молокане. "Что такое искусство?"</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-20.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-21.html">
+        <div class="card-title">Том III, Глава 21. Духоборы. Опять голод. Христианское учение</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-21.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-22.html">
+        <div class="card-title">Том III, Глава 22. Конференция в Гааге. "Воскресение"</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-22.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-03.html">
+        <div class="card-title">Том III, Глава 3. Бремя жизни. Посланничество. Земельный вопрос</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-3.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-04.html">
+        <div class="card-title">Том III, Глава 4. Религия человечества. В Ясной Поляне. Переписка</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-4.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-05.html">
+        <div class="card-title">Том III, Глава 5. Бондарев. Палкин. Дерулед</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-5.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-06.html">
+        <div class="card-title">Том III, Глава 6. "Власть тьмы". Календарь. Переписка с друзьями</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-6.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-07.html">
+        <div class="card-title">Том III, Глава 7. "О жизни". Новые посетители. Переписка</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-7.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-08.html">
+        <div class="card-title">Том III, Глава 8. В Ясной Поляне за работой. В Москве. Новые друзья</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-8.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol3/ru/chapter-09.html">
+        <div class="card-title">Том III, Глава 9. Новые шаги. Голос обличения. "Крейцерова соната"</div>
+        <div class="card-meta">research · updated 26 May 2026</div>
+        <div class='card-lede'>**Источник:** https://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-3-9.htm</div>
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-01.html">
+        <div class="card-title">Том IV, Глава 1. 1900 г. Трансваальская война. Духоборы</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-10.html">
+        <div class="card-title">Том IV, Глава 10. 1906 год. Болезнь Софьи Андреевны. Смерть Марьи Львовны</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-11.html">
+        <div class="card-title">Том IV, Глава 11. 1907 г. Занятия с детьми. Земельный вопрос</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-12.html">
+        <div class="card-title">Том IV, Глава 12. 1908 г. "Не могу молчать"</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-13.html">
+        <div class="card-title">Том IV, Глава 13. 1908 г. (продолжение). Юбилей</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-14.html">
+        <div class="card-title">Том IV, Глава 14. 1909 г. Посетители. Преследование друзей</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-15.html">
+        <div class="card-title">Том IV, Глава 15. 1909 год (продолжение). Генри Джордж. Стокгольм. Н. Н. Гусев</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-16.html">
+        <div class="card-title">Том IV, Глава 16. 1910 год. Трагедия яснополянской жизни</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-17.html">
+        <div class="card-title">Том IV, Глава 17. 1909-1910 гг. Завещание</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-18.html">
+        <div class="card-title">Том IV, Глава 18. 1910 г. Уход</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-19.html">
+        <div class="card-title">Том IV, Глава 19. 1910 г. Болезнь и кончина</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-02.html">
+        <div class="card-title">Том IV, Глава 2. 1901 год. Отлучение</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-03.html">
+        <div class="card-title">Том IV, Глава 3. Выражения сочувствия по случаю отлучения</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-04.html">
+        <div class="card-title">Том IV, Глава 4. 1901 г. (продолжение). Проект свободной школы. Болезнь</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-05.html">
+        <div class="card-title">Том IV, Глава 5. 1901-1902. Крым</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-06.html">
+        <div class="card-title">Том IV, Глава 6. 1902 г. Болезнь. 50-летие литературной деятельности</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-07.html">
+        <div class="card-title">Том IV, Глава 7. 1903 г. Дневник. 75-летие. Письма</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-08.html">
+        <div class="card-title">Том IV, Глава 8. 1904 г. Русско-японская война</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
+      </a>
+      <a class="index-card" href="/research/doukhobors/biryukov-vol4/ru/chapter-09.html">
+        <div class="card-title">Том IV, Глава 9. 1905 г. Революционное движение. "Круг чтения"</div>
+        <div class="card-meta">research · updated 29 May 2026</div>
+        
       </a>
     </div>
 </main>

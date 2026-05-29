@@ -172,6 +172,20 @@ blockquote {
 }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
+figure { margin: 1.8rem 0; }
+main img {
+  max-width: 100%; height: auto; display: block;
+  margin: 1.8rem auto 0.5rem;
+  border: 1px solid var(--rule); border-radius: 2px;
+  background: #fff;
+}
+/* An italic line immediately after an image reads as its caption. */
+main img + em, figcaption {
+  display: block; font-size: 0.82rem; color: var(--ink-soft);
+  font-style: italic; text-align: center; margin: 0 auto 1.4rem;
+  max-width: var(--measure);
+}
+
 code, kbd, samp {
   font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.88em;

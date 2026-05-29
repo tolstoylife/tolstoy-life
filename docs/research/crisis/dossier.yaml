@@ -1,0 +1,417 @@
+# Machine-readable dossier for the "crisis" corpus dive (index.md).
+# Produced 2026-05-29 by a corpus-dive run (slug: crisis). The hand-written index.md is the
+# authoritative narrative; this file is the ingestion-ready citation/entity/visuals ledger.
+topic:
+  slug: crisis
+  title: "Crisis: how Tolstoy named — and did not name — his transformation of 1879–1882"
+  question: >-
+    Did Tolstoy frame his late-1870s/early-1880s religious transformation as a "crisis" (кризис),
+    or is "crisis" a label applied from outside (editorial apparatus, biography) — as with the
+    term "Tolstoyanism"? Which words does he actually use for it across the corpus?
+  date: 2026-05-29
+  period: prophet
+  corpusSurface: [works, letters, diaries, notes, commentary]
+  dateRange: "1879–1894 (keystone texts 1879–1884; lexical-usage letters 1894)"
+
+# Layer 1 — flat citation ledger. Every quoteRu is byte-faithful from the clean extract named in
+# `extract` (verified against the source PDF where `facsimile` is set). quoteEn is working English.
+# Ids suffix the TEI id when one file yields several cited passages. PSS Tom -> local PDF via
+# pss-volume-mapping.md (NB: vol83 = Tom 23, NOT vol23).
+evidence:
+  - id: ispoved_p40_perevorot
+    teiId: v23_001_059_Ispoved
+    genre: work
+    pssTom: 23
+    pages: "40"
+    date: 1882
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol83/vol83.pdf
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: >-
+      Я жил так года два, и со мной случился переворот, который давно готовился во мне и задатки
+      которого всегда были во мне. Со мной случилось то, что жизнь нашего круга — богатых, ученых —
+      не только опротивела мне, но потеряла всякий смысл.
+    quoteEn: >-
+      I lived like that for a couple of years, and there occurred in me an upheaval [переворот] that
+      had long been preparing within me, and whose seeds had always been in me. What happened to me
+      was that the life of our circle — the rich, the learned — not only grew repugnant to me, but
+      lost all meaning. (working English)
+    significance: >-
+      The keystone. In the work where Tolstoy narrates the transformation, the word is "переворот"
+      (upheaval), never "кризис"; and he denies a sudden rupture — it "had long been preparing" and
+      "its seeds had always been in me". Verified verbatim against PSS Tom 23 p.40 (vol83, phys p.78).
+    facsimile: extracts/pss-tom23-page-040-perevorot.png
+
+  - id: ispoved_p46_undatable
+    teiId: v23_001_059_Ispoved
+    genre: work
+    pssTom: 23
+    pages: "46"
+    date: 1882
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol83/vol83.pdf
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: >-
+      И я спасся от самоубийства. Когда и как совершился во мне этот переворот, я не мог бы сказать.
+      […] так же постепенно, незаметно возвратилась ко мне эта сила жизни. И странно, что та сила
+      жизни, которая возвратилась ко мне, была не новая, а самая старая, — та самая, которая влекла
+      меня на первых порах моей жизни.
+    quoteEn: >-
+      And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could
+      not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is
+      strange that the force of life which returned to me was not a new one, but the very oldest —
+      the same that had drawn me in the first days of my life. (working English)
+    significance: >-
+      The transformation stated as explicitly un-datable ("when and how … I could not say") and as a
+      return to something old rather than the arrival of something new — the strongest textual
+      counter to reading it as a dated "crisis".
+    facsimile: null
+
+  - id: ispoved_p10_ostanovka
+    teiId: v23_001_059_Ispoved
+    genre: work
+    pssTom: 23
+    pages: "10"
+    date: 1882
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol83/vol83.pdf
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: >-
+      Так я жил, но пять лет тому назад со мною стало случаться что-то очень странное: на меня стали
+      находить минуты сначала недоумения, остановки жизни, как будто я не знал, как мне жить, что мне
+      делать, и я терялся и впадал в уныние. […] Эти остановки жизни выражались всегда одинаковыми
+      вопросами: Зачем? Ну, а потом?
+    quoteEn: >-
+      So I lived, but five years ago something very strange began to happen to me: at first there
+      came over me moments of bewilderment, of life coming to a stop, as though I did not know how to
+      live or what to do, and I lost my footing and fell into dejection. […] These stoppages of life
+      always expressed themselves in the same questions: Why? And then what? (working English)
+    significance: >-
+      Tolstoy's own image for the episode — "остановка жизни" (the arrest of life) — alongside
+      отчаяние (despair, 16×) and the lost "смысл жизни" (meaning of life, 22×). Narrative and
+      figurative, never the clinical noun "crisis".
+    facsimile: null
+
+  - id: vchem_moya_vera_opening
+    teiId: v23_304_465_V_chem_moja_vera
+    genre: work
+    pssTom: 23
+    pages: "304"
+    date: 1884
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol83/vol83.pdf
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: >-
+      Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась […] Со мной
+      случилось то, что случается с человеком, который вышел за делом и вдруг дорогой решил, что дело
+      это ему совсем не нужно,— и повернул домой.
+    quoteEn: >-
+      Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What
+      happened to me was what happens to a man who goes out on some errand and then suddenly decides
+      on the way that the errand is of no use to him at all — and turns back home. (working English)
+    significance: >-
+      The companion account, told as the turn toward faith. The word is "переменилась" (changed),
+      not "кризис". Note the tension with A Confession: here the change is "вдруг" (sudden), there it
+      "had long been preparing" — two framings, neither a "crisis".
+    facsimile: null
+
+  - id: v67_083_H_N_Straxovu
+    teiId: v67_083_H_N_Straxovu
+    genre: letter
+    pssTom: 67
+    pages: "84"
+    date: 1894-03-16
+    addressee: "N. N. Strakhov"
+    localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
+    extract: extracts/v67_083_H_N_Straxovu.txt
+    quoteRu: >-
+      Вы знаете, что Марья Петровна Фет при смерти — крупозное воспаление легких. До сих пор нет
+      кризиса, и шансов смерти, говорят, больше, чем жизни.
+    quoteEn: >-
+      You know that Marya Petrovna Fet is dying — lobar pneumonia. So far there is no crisis, and the
+      chances of death, they say, are greater than of life. (working English)
+    significance: >-
+      Tolstoy's own use of "кризис" in body text — the *medical* sense, the turning-point of a
+      pneumonia. Evidence that for him the word is clinical, not a term for spiritual transformation.
+    facsimile: null
+
+  - id: v67_214_L_F_Annenkovoj
+    teiId: v67_214_L_F_Annenkovoj
+    genre: letter
+    pssTom: 67
+    pages: "213–214"
+    date: 1894-09-04
+    addressee: "L. F. Annenkova"
+    localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
+    extract: extracts/v67_214_L_F_Annenkovoj.txt
+    quoteRu: >-
+      …я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь… то каждый, проходя
+      эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать,
+      что то же было и с другими.
+    quoteEn: >-
+      …I, fortunately, have never known this despair since I was born anew… so that everyone, passing
+      through these ages, these crises, would not take fright, but would wait for the next state,
+      knowing that the same was so for others. (working English)
+    significance: >-
+      The other clean body-text "кризис": plural ("эти кризисы"), one of the universal "spiritual
+      ages" everyone passes through — the opposite of a single great crisis. In the same breath
+      Tolstoy describes his own change as "родился вновь" (born anew), not a crisis.
+    facsimile: null
+
+  - id: pss85_apparatus_krizis_vozzrenij
+    teiId: v85_059_a10_11
+    genre: commentary
+    pssTom: 85
+    pages: "193–196 (editorial note)"
+    date: 1885
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol44/vol44.pdf
+    extract: extracts/v85_059_a10_11.txt   # body extract; phrase is in the apparatus (--notes=force)
+    quoteRu: >-
+      …21 мая 1883 г. Толстой, пережив уже кризис своих воззрений и отстраняясь от всяких дел
+      материального характера, выдал ей нотариально засвидетельствованную доверенность…
+    quoteEn: >-
+      …on 21 May 1883 Tolstoy, having already lived through the crisis of his views and withdrawing
+      from all affairs of a material character, issued her a notarised power of attorney… (working
+      English; EDITORIAL voice — Jubilee Edition apparatus, not Tolstoy)
+    significance: >-
+      The "crisis" label in the corpus is supplied by the editors, not Tolstoy: "кризис своих
+      воззрений". Sits inside the editorial apparatus (recovered with extract_tei.py --notes=force),
+      so attributed to the PSS editors, not to Tolstoy's hand.
+    facsimile: null
+
+# Layer 2 — ingestion routing map (feeds the wiki). vaultStatus checked against website/src/wiki/
+# and website/src/works/. wikiType ∈ the 9 wiki types (website/schema/wiki-schema.md); the two
+# works use tolstoy-works-schema.md (not a wiki type) and are flagged below. sources from sources.yaml.
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy.md"
+    vaultStatus: exists
+    role: "subject of the dive; author of the keystone confessional works"
+    sources: [jubilee-edition]
+    evidenceRefs: [ispoved_p40_perevorot, ispoved_p46_undatable, ispoved_p10_ostanovka, vchem_moya_vera_opening, v67_083_H_N_Straxovu, v67_214_L_F_Annenkovoj]
+
+  - name: "the religious transformation of 1879–1882 (Tolstoy's 'crisis'/'conversion')"
+    wikiType: concept
+    wikilinkTarget: "Tolstoys religious conversion.md"
+    vaultStatus: missing
+    role: "the event this dive is about; candidate concept page — should foreground Tolstoy's own vocabulary (переворот / остановка жизни) over the received 'crisis' label"
+    sources: [jubilee-edition]
+    evidenceRefs: [ispoved_p40_perevorot, ispoved_p46_undatable, vchem_moya_vera_opening]
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov.md"
+    vaultStatus: missing
+    role: "philosopher, close correspondent; recipient of the 'medical кризис' letter (1894); accompanied Tolstoy to Optina Pustyn, 1881"
+    sources: [jubilee-edition]
+    evidenceRefs: [v67_083_H_N_Straxovu]
+
+  - name: "L. F. Annenkova"
+    wikiType: person
+    wikilinkTarget: "Leonila Annenkova.md"
+    vaultStatus: missing
+    role: "correspondent; recipient of the 'эти кризисы / родился вновь' letter (1894)"
+    sources: [jubilee-edition]
+    evidenceRefs: [v67_214_L_F_Annenkovoj]
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov.md"
+    vaultStatus: exists
+    role: "disciple/correspondent from 1883; the PSS Tom 85 apparatus that carries the editors' 'кризис своих воззрений' annotates the Chertkov letters"
+    sources: [jubilee-edition]
+    evidenceRefs: [pss85_apparatus_krizis_vozzrenij]
+
+  - name: "Pavel Birukoff"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff.md"
+    vaultStatus: exists
+    role: "biographer; the framing source is his Swedish ed. (Leo Tolstoj: Hans liv och verk) Book IV «Kritisk period» ch.14 «Krisen» p.262 — names the chapter 'crisis' while reporting Tolstoy's denial of one (user-provided photograph)"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+
+  # The two keystone WORKS — tracked here for the work-order; they use tolstoy-works-schema.md,
+  # not one of the 9 wiki types (so wikiType is given as "work" and flagged, not a wiki type).
+  - name: "A Confession (Исповедь)"
+    wikiType: work
+    wikilinkTarget: "Confession.md"
+    vaultStatus: exists
+    role: "the keystone text; the dive's central vocabulary (переворот, остановка жизни) lives here"
+    sources: [jubilee-edition]
+    evidenceRefs: [ispoved_p40_perevorot, ispoved_p46_undatable, ispoved_p10_ostanovka]
+    note: "work page (website/src/works/non-fiction/personal-papers/confession/Confession.md, id: confession); uses tolstoy-works-schema.md, not the wiki-schema 9 types"
+
+  - name: "What I Believe (В чём моя вера?)"
+    wikiType: work
+    wikilinkTarget: null
+    vaultStatus: missing
+    role: "companion confessional work; 'жизнь моя вдруг переменилась'"
+    sources: [jubilee-edition]
+    evidenceRefs: [vchem_moya_vera_opening]
+    note: "no work page located; uses tolstoy-works-schema.md"
+
+# Layer 3 — visual & archival materials map. Two channels: facsimiles we render ourselves from local
+# PSS PDFs go in extracts/ (PD, committed); third-party images we fetch go in visuals/ (git-ignored
+# local cache — localPath set, NOT redistributed by the repo). `licence`/`usable` describe PUBLICATION
+# rights (the gate for putting an image on website/src/), independent of the local download.
+visuals:
+  - id: pss-tom23-p40-perevorot
+    type: manuscript-facsimile
+    subject: "PSS Tom 23, p. 40 — the «случился переворот» passage of A Confession"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ispoved_p40_perevorot
+    holding: "local Jubilee Edition PDF (vol83 = Tom 23)"
+    archiveId: "vol83 phys p.78 = printed p.40"
+    access: open
+    rights: "Tolstoy's text PD (author d.1910); Jubilee Edition typesetting held locally as a primary source"
+    licence: PD
+    usable: true
+    url: null
+    localPath: docs/research/crisis/extracts/pss-tom23-page-040-perevorot.png
+    note: "Rendered at 200 dpi with pdftoppm; used to verify the keystone TEI extract byte-for-byte."
+
+  - id: kramskoy-tolstoy-1873
+    type: portrait
+    subject: "Portrait of Leo Tolstoy (oil), Ivan Kramskoy, 1873"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "State Tretyakov Gallery, Moscow"
+    archiveId: null
+    access: open
+    rights: "Painting PD (Kramskoy d.1887); 2D-PD reproduction also PD per Commons policy. Confirmed PD-Art / PD-old-100-expired via Commons API."
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Leo_Tolstoy,_1873.jpg"
+    localPath: docs/research/crisis/visuals/kramskoy-tolstoy-1873.jpg
+    note: "Pre-crisis baseline likeness (Anna Karenina years). Fetched (800px) into the git-ignored visuals/ cache and embedded in index.md §2. PD — publishable to website/src if wanted."
+
+  - id: tolstoy-photographs-1878-1885
+    type: photograph
+    subject: "Photographic portraits of Tolstoy, c. 1878–1885 (crisis years)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons — Category:Photographs of Leo Tolstoy (63 files, per-year subcats)"
+    archiveId: null
+    access: open
+    rights: "Pre-1885 Russian studio photographs almost all PD by age — per-file check required"
+    licence: unknown
+    usable: false
+    url: "https://commons.wikimedia.org/wiki/Category:Photographs_of_Leo_Tolstoy"
+    localPath: null
+    note: "Konstantin Shapiro's 1880s studio portraits are the standard crisis-era likenesses. Drill into year subcats, confirm PD per file, then download the best one."
+
+  - id: chertkov-by-kramskoy-1881
+    type: portrait
+    subject: "Portrait of V. G. Chertkov, Ivan Kramskoy, 1881"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (Category:Vladimir Chertkov)"
+    archiveId: null
+    access: open
+    rights: "Painting by Kramskoy (d.1887) PD; file-page licence to confirm"
+    licence: unknown
+    usable: false
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Kramskoy.jpg"
+    localPath: null
+    note: "Dated 1881, squarely in the window. Verify file-page licence (expect PD-art); if PD/CC, download."
+
+  - id: strakhov-portrait
+    type: portrait
+    subject: "Portrait/photograph of N. N. Strakhov"
+    relatedEntity: "N. N. Strakhov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (Category:Nikolay Strakhov)"
+    archiveId: null
+    access: open
+    rights: "Strakhov d.1896; image dated 1885. Confirmed Public domain via Commons API."
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Nikolay_Strakhov.jpg"
+    localPath: docs/research/crisis/visuals/strakhov-1885.jpg
+    note: "1885 likeness of the 'medical кризис' correspondent. Fetched (600px) into the git-ignored visuals/ cache and embedded in index.md §2.5. PD."
+
+  - id: ispoved-manuscript-facsimile
+    type: manuscript-facsimile
+    subject: "Manuscript / draft page of Исповедь (A Confession)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ispoved_p40_perevorot
+    holding: "State Museum of L. N. Tolstoy (GMT), manuscript dept"
+    archiveId: null
+    access: request
+    rights: "Tolstoy's holograph PD by age; museum facsimile scans rights-reserved by GMT"
+    licence: rights-reserved
+    usable: false
+    url: "https://tolstoy-iss.kamiscloud.ru"
+    localPath: null
+    note: "No openly-licensed manuscript-page image located. Request from GMT for any public use; do not download."
+
+  - id: tolstoydigital-timeline-images
+    type: photograph
+    subject: "Tolstoy Digital timeline cards (work on A Confession #175; banning of A Confession #192; Optina Pustyn with Strakhov #166; first acquaintance with Chertkov #198)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ispoved_p40_perevorot
+    holding: "local: primary-sources/tolstoydigital-TEI/images/timeline_tolstoy_life/"
+    archiveId: "175_…Ispovedju.jpg; 192_Zapreshhenie_Ispovedi.jpg; 166_…Strahovym.jpg; 198_…Chertkovym.jpg"
+    access: open
+    rights: "no per-image licence in the repo; underlying images likely PD historical photos but provenance unconfirmed"
+    licence: unknown
+    usable: false
+    url: "https://github.com/Levabu/tolstoy_digital"
+    localPath: null
+    note: "Held on disk in the immutable primary-sources zone but flagged unknown-licence; not redistributable until per-image provenance is confirmed."
+
+# Corrections to received framing.
+contradictions:
+  - claim: "Tolstoy underwent a 'crisis' (a sudden, datable spiritual rupture) c.1876–1880 — the standard biographical framing, incl. Birukoff's chapter title 'The Crisis'."
+    correction: >-
+      In his own confessional works Tolstoy calls it a "переворот" that "had long been preparing" with
+      "seeds always in me" (A Confession, PSS 23 p.40) and that he "could not say when and how" it took
+      place (p.46); he never uses "кризис" of it. He uses "кризис" only medically (Strakhov, 1894) or
+      as a plural, universal life-stage (Annenkova, 1894). "Crisis" is the apparatus's and biography's
+      word, not the subject's.
+    evidenceRef: ispoved_p40_perevorot
+
+notCovered:
+  - "Full triage of переворот (172 files) and перелом (62) across the works — only the A Confession occurrences run to ground"
+  - "Exhaustive пробуждение / возрождение sweep (checked only in the keystone texts)"
+  - "Crisis-years diaries (Toms 48–49, 1878–1884) beyond a vocabulary probe — no кризис/перелом/переворот for the transformation, but the ~1881 diary resumption and faith/despair entries not deep-read"
+  - "Secondary literature on the conversion debate (primary-source dive); Eikhenbaum, Tolstoy in the Seventies is the background entry point"
+
+needsReview:
+  - item: "кризис hit in the V. I. Alekseev letter (PSS Tom 65) — '…переживаешь тяжелое время, кризис…' about a sexual life-period"
+    phase: extract
+    why: >-
+      Absent from the body extract and from --notes=force recovery → sits in a regular editorial
+      footnote (<note resp='volume_editor'>). Voice (Tolstoy quoted vs. editor) unsettled, so excluded
+      from the index's prose. Resolve by reading PSS Tom 65 (vol… per pss-volume-mapping.md) around the note.
+  - item: "Keystone PDF cross-check used vol83 (= PSS Tom 23), confirmed by title page; offset +38 (phys 78 = printed p.40)"
+    phase: verify
+    status: resolved
+    why: >-
+      The local jubilee-edition folder names are NOT PSS Tom numbers (verified: vol22→T56, vol23→T57,
+      vol24→T58, vol49→T40, vol57→T80, vol83→T23). Always resolve via pss-volume-mapping.md. Flagged so
+      future dives don't render the wrong volume (an earlier render of 'vol23.pdf' returned Tom 57 diaries).
+  - item: "Two works listed as entities with wikiType: work"
+    phase: synthesize
+    why: >-
+      Works use tolstoy-works-schema.md, not the 9 wiki types. Listed for the work-order convenience and
+      flagged; an ingestion step should route them to the works pipeline, not the wiki pipeline.
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts (inline grep sweep, 492 candidate hits) — authoritative for verbatim Russian"
+  - "primary-sources/jubilee-edition PDFs (pdftoppm cross-check; vol83 = Tom 23 keystone verified)"
+  - "Wikimedia Commons (PD imagery located at category level; individual file pages not resolved this session)"
+  - "State Tolstoy Museum — tolstoy-iss.kamiscloud.ru (rights-reserved; not queried in depth)"
+  - "Local Tolstoy Digital timeline images (unknown licence)"
+
+references:
+  primary:
+    - "Толстой Л. Н. Исповедь; В чём моя вера?; Моя жизнь // ПСС в 90 тт. Т. 23. М.: Худож. лит., 1957. (local: primary-sources/jubilee-edition/vol83/)"
+    - "Толстой Л. Н. Письма Н. Н. Страхову (16.03.1894) и Л. Ф. Анненковой (04.09.1894) // ПСС. Т. 67. (local: vol33)"
+    - "Editorial apparatus, ПСС Т. 85 (the «кризис своих воззрений» note). (local: vol44)"
+    - "tolstoydigital TEI corpus (Слово Толстого / HSE Moscow), CC BY-SA. (local: primary-sources/tolstoydigital-TEI/)"
+  background:
+    - "Birukoff (Бирюков) P. I. Leo Tolstoj: Hans liv och verk (Swedish ed.), Book IV «Kritisk period», ch.14 «Krisen», p.262 — framing source, user-provided photograph. NB the local archive-org file leotolstoyhislif00biriiala is Vol I (childhood–youth) of a different edition and lacks this chapter; see docs/research/biryukov-biography-editions/."
+    - "Eikhenbaum B. Lev Tolstoy: Tolstoy in the Seventies. (sources.yaml: eikhenbaum-tolstoy-70s)"

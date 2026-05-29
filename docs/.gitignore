@@ -4,3 +4,12 @@
 !/INDEX.html
 !/architecture/architecture-review.html
 !/design/period-colours-preview.html
+
+# Research-dive visual caches. Third-party images (portraits, photographs)
+# fetched for local viewing — PD or not — live here and are NOT committed, so
+# the public repo never redistributes rights-reserved material. Provenance and
+# licence for each file are recorded in the dive's dossier.yaml; the publication
+# gate lives at website/src/ (the actually-published surface), not at download.
+# Facsimiles we render ourselves from local PSS PDFs (PD: Tolstoy's own text)
+# go in <slug>/extracts/ instead, which IS committed.
+research/*/visuals/

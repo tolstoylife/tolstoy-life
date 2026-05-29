@@ -1,6 +1,6 @@
 ---
 name: corpus-dive
-description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md, a machine-readable dossier.yaml (evidence + entity + visuals layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
+description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
 argument-hint: "<theme or research question> [--auto] [--confirm-scope] [--model <tier>]"
 triggers:
   - "corpus dive"
@@ -29,7 +29,7 @@ Parse `{{ARGUMENTS}}`:
 
 - **READ freely:** `primary-sources/**` (TEI corpus + PSS PDFs); anywhere under `website/` (read-only).
 - **WRITE only to:** `docs/research/<slug>/` (and everything under it — `extracts/`, `visuals/`,
-  `dossier.yaml`, `index.md`, `run-report.md`, `session-log.md`), `docs/research/lib/`,
+  `dossier.yaml`, `index.md`, `index.html`, `run-report.md`, `session-log.md`), `docs/research/lib/`,
   `docs/research/_batch-<date>.md`, and `website/src/posts/notes/`.
 - **NEVER write/modify:** `primary-sources/**`, or anything under `website/` except
   `website/src/posts/notes/`. **No vault writes** — ingestion is a separate human step.
@@ -52,7 +52,7 @@ Delegate sub-steps to subagents with the right tier (Agent tool `model` param). 
 
 | Phase / task | Tier |
 |---|---|
-| Grep sweep, `extract_tei.py`, `pdftoppm`, file/vault checks, dedup, image download | no-model / haiku |
+| Grep sweep, `extract_tei.py`, `pdftoppm`, `serve.py --build-only` (HTML), file/vault checks, dedup, image download | no-model / haiku |
 | Candidate-hit relevance triage; visual-archive web triage | sonnet |
 | Scoping contract | sonnet/opus |
 | Working-English translations · synthesis (index.md + dossier) · verify pass | opus |
@@ -97,13 +97,26 @@ Check, in order: local `primary-sources/`; State Tolstoy Museum collection
 (tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru); **Wikimedia Commons** (many
 late-period Tolstoy photographs are PD, including Chertkov's own); tolstoy.ru; émigré scan
 archives (vtoraya-literatura.com, imwerden.de). For each item record provenance, holding,
-access, rights, `licence`, and `usable`. **Download into `docs/research/<slug>/visuals/` ONLY when
-the licence verifiably permits redistribution in a public repo** (PD / CC0 / CC-BY / CC-BY-SA) —
-record `licence` + source `url`. Everything else is **mapped, never copied** (`localPath: null`).
-Never download rights-reserved or unknown-rights material into the public repo. If web tools are
+access, rights, `licence`, and `usable`.
+
+**Two image channels (the rights gate is at *publication*, not download):**
+- `docs/research/<slug>/visuals/` is **git-ignored** (a local research cache — see `docs/.gitignore`).
+  Download freely into it for local viewing and embedding — PD *or* rights-uncertain — since the
+  public repo never redistributes it. Always record `licence` + source `url` + `usable` in the
+  dossier anyway: that metadata is the gate for the *separate* step of publishing an image to
+  `website/src/` (the actually-public surface). Never put a rights-reserved/unknown image into
+  `website/src/` without cleared rights.
+- `docs/research/<slug>/extracts/` **is committed** — put only PD material there: facsimiles you
+  render yourself from the local PSS PDFs (`pdftoppm`), which are PD (Tolstoy's own text).
+
+Robust Commons fetch: resolve the real `File:` page (don't guess filenames) — the Commons API
+`generator=search`/`categorymembers` + `prop=imageinfo&iiprop=url|extmetadata` returns the direct
+URL *and* the licence in one call; download via `Special:FilePath/<file>?width=N`. Embed fetched
+images in `index.md` with a `<figure><img src="visuals/…"><figcaption>…</figcaption></figure>`
+block (raw HTML passes through; serve.py styles `main img`/`figcaption`). If web tools are
 unavailable (headless), degrade gracefully: document provenance, download nothing.
 
-## Phase 3 — Synthesize the three outputs
+## Phase 3 — Synthesize the outputs
 
 1. **`docs/research/<slug>/index.md`** — frontmatter `layer: reference`. Spine: *Why this matters
    → The shape of the question* (staged; each stage a verbatim RU quote + working-EN translation +
@@ -137,13 +150,21 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
 3. **`website/src/posts/notes/<YYYY-MM-DD>-<slug>.md`** — frontmatter `title` / `description` / `date` /
    `tags` / `draft: true`. A short recap in the project voice (simple, factual, minimal editorial),
    linking to `index.md`. Stays `draft: true` until the user publishes.
+4. **`docs/research/<slug>/index.html`** — generated from `index.md`, never hand-written. The docs
+   tree has one canonical generator: `python3 docs/serve.py --build-only` converts every
+   `docs/**/*.md` to a sibling `.html` (house CSS, breadcrumb header, per-document annotation UI) and
+   rebuilds `docs/INDEX.html` so the new dive is listed. Run it after `index.md` is final. The `.html`
+   files are **git-ignored** (`docs/.gitignore`: `*.html`) and regenerated on demand — so `index.md`
+   is the sole source of record: don't hand-edit or commit the HTML, just re-run `serve.py` after edits.
 
 ## Phase 4 — Verify (separate pass; never self-approve)
 
 Dispatch a **verifier subagent (opus)** in a fresh context. It checks: a sample of citations
 re-derived from TEI/PDF for **byte-fidelity**; every `index.md` claim is source-anchored; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
-editorializing voice; **no rights-reserved image was downloaded into `visuals/`**. Iterate until
+editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
+rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
+git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier). Iterate until
 the verdict is clean; in `--auto`, if it cannot converge after a few iterations, record the open
 items in `needsReview` and conclude the run rather than blocking indefinitely.
 
