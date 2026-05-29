@@ -1,0 +1,333 @@
+# Machine-readable dossier for the copyright-renunciation survey (index.md).
+# Added 2026-05-29 by a corpus-dive acceptance run (slug copyright-renunciation-and-literary-property),
+# whose findings independently reproduced this survey's; the evidence/entity/visuals layers were ported
+# here as an enrichment. The hand-built index.md remains the authoritative narrative.
+topic:
+  slug: copyright-renunciation
+  title: "Tolstoy on copyright and the renunciation of literary property"
+  question: >-
+    Where across the local corpus (tolstoydigital TEI + Jubilee Edition PDFs) does Tolstoy
+    discuss copyright, ownership of his writings, and the renunciation of literary property,
+    and how does that position develop from the early 1880s to his death?
+  date: 2026-05-29
+  period: prophet
+  corpusSurface: [diaries, letters, works, notebooks]
+  dateRange: "1881–1910"
+
+# Layer 1 — flat citation ledger. Every quoteRu is byte-faithful from the clean extract named in
+# `extract`. quoteEn is working English (labelled). PSS Tom -> local PDF via pss-volume-mapping.md.
+# This ledger anchors the keystone moments of index.md; the fuller letter/diary clusters index.md
+# tabulates are listed under notCovered (surfaced, not yet entered as evidence rows).
+evidence:
+  - id: v49_059_059_1883_01_01
+    genre: diary
+    pssTom: 49
+    pages: "59"
+    date: 1883-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol50/vol50.pdf
+    extract: extracts/v49_059_059_1883_01_01.txt
+    quoteRu: >-
+      Собственность, как она теперь — зло. А собственность сама по себе — радость на то, что тем,
+      что я сделал, добро. […] Но собственность, ограждаемая насилием — городовым с пистолетом —
+      это зло. Сделай ложку и ешь ею, но пока она другому не нужна.
+    quoteEn: >-
+      Property as it is now — is evil. Property in itself — is joy in the good one has made. […] But
+      property defended by violence — by the policeman with a pistol — that is evil. Make a spoon
+      and eat with it, but only until another needs it. (working English)
+    significance: >-
+      The philosophical groundwork: property is not in itself evil, property defended by violence is.
+      The conceptual foundation the later, practical renunciation statements rest on.
+    facsimile: null
+
+  - id: v66_036_RedaktoramgazetRusskievedomosti
+    genre: letter
+    pssTom: 66
+    pages: "47–48"
+    date: 1891-09-16
+    addressee: "Editors of Russkie vedomosti and Novoye vremya"
+    localPdf: primary-sources/jubilee-edition/vol32/vol32.pdf
+    extract: extracts/v66_036_RedaktoramgazetRusskievedomosti.txt
+    quoteRu: >-
+      Предоставляю всем желающим право безвозмездно издавать в России и за границей, по-русски и
+      в переводах, а равно и ставить на сценах все те из моих сочинений, которые были написаны
+      мною с 1881 года и напечатаны в XII томе моих полных сочинений издания 1886 года, и в XIII
+      томе, изданном в нынешнем 1891 году, равно и все мои неизданные в России и могущие вновь
+      появиться после нынешнего дня сочинения.
+    quoteEn: >-
+      I grant to all who so wish the right to publish gratis, in Russia and abroad, in Russian and
+      in translations, and likewise to perform on stage, all those of my writings which were
+      written by me from 1881 onward and printed in vol. XII of my complete works of the 1886
+      edition, and in vol. XIII, published in this present year 1891, and likewise all my works
+      unpublished in Russia and any that may newly appear after the present day. (working English)
+    significance: >-
+      The public declaration renouncing copyright on all writings from 1881 onward (dated 16 September
+      1891 in-corpus; the papers printed it days later). Source of the «с 1881 года» reading
+      (see contradictions).
+    facsimile: null
+
+  - id: v52_045_047_1891_07_22
+    genre: diary
+    pssTom: 52
+    pages: "45–47"
+    date: 1891-07-22
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol18/vol18.pdf
+    extract: extracts/v52_045_047_1891_07_22.txt
+    quoteRu: >-
+      И вчера же был разговор с женой о напечатании письма в газетах об отказе от права авторской
+      собственности. Трудно вспомнить, а главное, описать всё, что тут было: [Вымарано 19 строк.]
+    quoteEn: >-
+      And yesterday too there was a conversation with my wife about printing in the newspapers the
+      letter renouncing the right of literary property. It is difficult to recall, and chiefly to
+      describe, everything that was said: [19 lines erased.] (working English)
+    significance: >-
+      First detailed diary account of the household conflict over the 1891 declaration. The editorial
+      marker [Вымарано 19 строк] preserves the fact that nineteen manuscript lines were deleted (by
+      S. A. Tolstaya) — the source records the redaction without the redacted text.
+    facsimile: null
+
+  - id: v53_014_018_1895_03_27
+    genre: diary
+    pssTom: 53
+    pages: "14–18"
+    date: 1895-03-27
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: extracts/v53_014_018_1895_03_27.txt
+    quoteRu: >-
+      4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников
+      передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак
+      не завещаю. […] То, что сочинения мои продавались эти последние 10 лет, было самым
+      тяжелым для меня делом в жизни.
+    quoteEn: >-
+      4) I ask my heirs to hand over to the public the right of publication of my earlier works
+      — the ten volumes and the Azbuka — that is, to renounce the copyright. But I only ask this
+      and in no way bequeath it. […] That my writings have been sold during these last ten years
+      was the heaviest thing in my life. (working English)
+    significance: >-
+      Will-as-diary-entry; the most plainly written first-person statement of the renunciation.
+      Precedes the six formal wills of 1909–1910 by fourteen years.
+    facsimile: extracts/pss-vol53-pages/page-054.png
+
+  - id: v63_430_P_I_Biryukovu
+    genre: letter
+    pssTom: 63
+    pages: "295–298"
+    date: 1885-10-19
+    addressee: "P. I. Birukoff"
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_430_P_I_Biryukovu.txt
+    quoteRu: null   # extract is pre-reform orthography and renders roughly; not quoted verbatim
+    quoteEn: null
+    significance: >-
+      Earliest sustained discussion of free publication in the letters (the Posrednik / cheap-edition
+      circle). Cited by id and PSS pages; not quoted verbatim because the clean extract of this
+      early-volume pre-reform text renders unreliably (see needsReview).
+    facsimile: null
+
+  - id: v82_305_Obyasnitelnayazapiskakzaveshhaniyu
+    genre: commentary
+    pssTom: 82
+    pages: "227–231"
+    date: 1910-07-31
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol58/vol58.pdf
+    extract: extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt
+    quoteRu: null   # operative text not present in clean extract — see needsReview (extractor gap)
+    quoteEn: null
+    significance: >-
+      The Explanatory Note to the final will (31 July 1910), drafted by V. G. Chertkov at Tolstoy's
+      request — the legally precise statement that finally gave the renunciation binding form. The
+      operative provision is present in the raw TEI and in PSS Tom 82 pp.227–231 but is encoded as
+      commentary apparatus, so the canonical extractor returns only the opener (see needsReview).
+    facsimile: null
+
+# Layer 2 — ingestion routing map (feeds the wiki). vaultStatus checked against website/src/wiki/
+# and website/src/works/. wikiType ∈ the 9 types (website/schema/wiki-schema.md). sources ids from
+# website/schema/sources.yaml.
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy.md"
+    vaultStatus: exists
+    role: "author renouncing copyright; subject of the dive"
+    sources: [jubilee-edition]
+    evidenceRefs: [v49_059_059_1883_01_01, v53_014_018_1895_03_27, v66_036_RedaktoramgazetRusskievedomosti, v52_045_047_1891_07_22]
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov.md"
+    vaultStatus: exists
+    role: "co-drafter of the six wills; drafted the 1910 Explanatory Note; held Tolstoy's post-1881 rights"
+    sources: [jubilee-edition]
+    evidenceRefs: [v82_305_Obyasnitelnayazapiskakzaveshhaniyu]
+
+  - name: "Sophia Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya.md"
+    vaultStatus: exists
+    role: "opposed the 1891 renunciation; redacted 19 lines of the 22 July 1891 diary entry"
+    sources: [jubilee-edition, sophia-diary]
+    evidenceRefs: [v52_045_047_1891_07_22]
+
+  - name: "Alexandra Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Alexandra Tolstaya.md"
+    vaultStatus: exists
+    role: "daughter; designated heir in the final will arrangements"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+
+  - name: "Pavel Birukoff"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff.md"   # vault uses the settled "Birukoff" spelling (TEI id transliterates "Biryukov")
+    vaultStatus: exists
+    role: "correspondent in the earliest sustained free-publication discussion (1885); later biographer"
+    sources: [jubilee-edition]
+    evidenceRefs: [v63_430_P_I_Biryukovu]
+
+  - name: "Aylmer Maude"
+    wikiType: person      # person with a translator role (per wiki-schema note on translator vs person)
+    wikilinkTarget: "Aylmer Maude.md"
+    vaultStatus: missing
+    role: "English translator/biographer; correspondent on free translation rights"
+    sources: [maude-biography-vol1, maude-biography-vol2]
+    evidenceRefs: []
+
+  - name: "State Tolstoy Museum (GMT)"
+    wikiType: institution
+    wikilinkTarget: "State Tolstoy Museum.md"
+    vaultStatus: missing
+    role: "holds the diary and letter manuscripts cited here (manuscript fond, the 'steel room')"
+    sources: [tolstoy-museum-moscow]
+    evidenceRefs: [v53_014_018_1895_03_27]
+
+# Layer 3 — visual & archival materials map (feeds the future images/ section). Items with
+# usable:true and an open licence MAY be downloaded; here they are MAPPED ONLY (localPath: null).
+# The rights-reserved manuscript is never downloaded.
+visuals:
+  - id: diary-1895-03-27-ms
+    type: manuscript-facsimile
+    subject: "Diary page, 27 March 1895 (the will-as-diary-entry)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: v53_014_018_1895_03_27
+    holding: "State Tolstoy Museum (GMT), Moscow — manuscript fond ('steel room')"
+    archiveId: null
+    access: request-required
+    rights: >-
+      © Государственный музей-заповедник Л.Н. Толстого. Все права защищены. Использование любых
+      находящихся на сайте материалов без официального разрешения запрещено.
+    licence: rights-reserved
+    usable: false
+    url: null
+    localPath: null
+    note: >-
+      Tolstoy's handwriting is PD (author d.1910), but a museum-made photographic reproduction is
+      treated under Russian law as a new protected photograph; no CC/open pathway exists. Must be
+      requested from GMT's manuscript department for any public-facing use.
+
+  - id: tolstoy-by-chertkov-1906
+    type: photograph
+    subject: "Leo Tolstoy, 1906 (photograph by V. G. Chertkov)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (from State Museum of L.N. Tolstoy)"
+    archiveId: "0003600097"
+    access: open-web
+    rights: "PD — author (Chertkov) d.1936; life+70 expired 2006; PD-RusEmpire also applies"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Лев_Толстой_(Чертков,_1906)_-_0003600097.jpg"
+    localPath: null
+    note: "By Chertkov, who held Tolstoy's post-1881 rights — directly on-theme. Download permitted; mapped only."
+
+  - id: chertkov-and-tolstoy-1909
+    type: photograph
+    subject: "Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: null
+    access: open-web
+    rights: "PD — PD-RusEmpire (pub. before 1917) and PD-US (pre-1931); PD-Russia-expired also applies"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_%26_Tolstoy_(cropped).jpg"
+    localPath: null
+    note: "The two protagonists of the renunciation, final year. Download permitted; mapped only."
+
+  - id: chertkov-portrait-1883
+    type: portrait
+    subject: "V. G. Chertkov, 1883 (photograph by A. F. Eichenvald)"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (from tolstoy.ru archive)"
+    archiveId: null
+    access: open-web
+    rights: "PD — PD-US (pre-1931) and PD-RusEmpire (pub. before 1917)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg"
+    localPath: null
+    note: "Portrait of the co-protagonist, taken the year he entered Tolstoy's circle. Download permitted; mapped only."
+
+  - id: tolstoy-museum-digital-collection
+    type: graphic
+    subject: "State Tolstoy Museum digital collection (manuscripts, photographs, portraits)"
+    relatedEntity: "State Tolstoy Museum (GMT)"
+    relatedEvidence: null
+    holding: "State Museum of L.N. Tolstoy — KamisCloud platform"
+    archiveId: null
+    access: open-web
+    rights: "© Государственный музей Л.Н. Толстого. Все права защищены (all rights reserved)"
+    licence: rights-reserved
+    usable: false
+    url: "https://tolstoy-iss.kamiscloud.ru/"
+    localPath: null
+    note: "Objects viewable online; no open licence stated. Reproduction requires museum permission."
+
+# Corrections to claims in secondary literature / the vault.
+contradictions:
+  - claim: "'any of my works written after 1880' (secondary-literature paraphrase of the 1891 declaration)"
+    correction: "The Russian reads «с 1881 года» — from 1881 onward, inclusive of 1881 (not 'after 1880')."
+    evidenceRef: v66_036_RedaktoramgazetRusskievedomosti
+
+# Resume queue for a later session. These are surfaced by index.md / the sweep but not yet entered
+# as evidence rows above.
+notCovered:
+  - "The 1888–1891 собственность diary cluster (~25 entries) beyond the 1883 groundwork row"
+  - "The 1909–1910 six formal wills in full (Tom 80 drafts; Tom 82 final) beyond the Explanatory Note"
+  - "The full letter cluster on gratis publishing (Maude, Marks/Niva, Fifield, Langen, Škarvan, Abramov, Yushko, Strakhov) — tabulated in index.md §3, not yet entered as evidence rows"
+  - "Krug chteniya / Put' zhizni anthologies; Goldenweiser / Makovický conversation transcripts"
+  - "Commentary apparatus (texts/comments/) and incoming letters to Tolstoy"
+
+# Deferred human-judgment / defects to surface.
+needsReview:
+  - item: "extract_tei.py returns only the opener for v82_305 (Explanatory Note to the Will)"
+    phase: extract
+    why: >-
+      The operative provision is present in the raw TEI (26.9 KB) and in PSS Tom 82 pp.227–231, but is
+      encoded inside <note type="comments"> apparatus, which the canonical extractor strips by design.
+      Result: the body silently vanishes from clean output. A fuller extract or the PDF page is needed
+      before quoting the Explanatory Note verbatim. Candidate fix for docs/research/lib/extract_tei.py.
+  - item: "v63_430 (Birukoff, 1885) clean extract renders unreliably"
+    phase: extract
+    why: >-
+      Early-volume pre-reform orthography; the extractor output is garbled in places. Cited by id/pages
+      only; verify against PSS Tom 63 pp.295–298 (vol29) before any verbatim quotation.
+
+# Honest record of where we looked (incl. dead ends).
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (sweep surface) + primary-sources/jubilee-edition PDFs (pdftoppm cross-check)"
+  - "Wikimedia Commons (PD imagery located)"
+  - "State Tolstoy Museum — tolstoymuseum.ru + tolstoy-iss.kamiscloud.ru (rights-reserved)"
+  - "tolstoy.ru / 'Весь Толстой в один клик' (rights-reserved on images)"
+  - "Goskatalog (web.goskatalog.ru) — login-gated / timed out; not searchable"
+
+references:
+  primary:
+    - "Толстой Л. Н. ПСС в 90 тт. Тт. 49, 52, 53, 63, 66, 82. М.: Худож. лит., 1934–1956. (local: primary-sources/jubilee-edition/)"
+    - "tolstoydigital TEI corpus, Слово Толстого / HSE Moscow, CC BY-SA. (local: primary-sources/tolstoydigital-TEI/)"
+  background:
+    - "Maude, Aylmer. The Life of Tolstoy. (sources.yaml: maude-biography-vol1/2)"
