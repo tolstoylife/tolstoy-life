@@ -13,9 +13,9 @@ own findings against the received view, fills knowledge gaps, and records a *sec
 top of the primary evidence. Supersedes nothing in the skill's primary-source pipeline — it is
 purely additive.
 
-> **Context.** This replaces the (now-shelved) nightly-runner direction: dives stay
-> human-present and interactive, so web tools are available again. See the orphaned
-> `2026-05-29-nightly-corpus-dive-design.md` for the abandoned automation path.
+> **Context.** This replaces the (now-shelved) nightly-runner direction: a `launchd`
+> nightly-runner was designed and permission-de-risked on 2026-05-29, then deliberately
+> shelved so dives stay human-present and interactive (web tools available again).
 
 ## Why
 
