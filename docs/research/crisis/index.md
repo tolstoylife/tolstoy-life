@@ -153,7 +153,21 @@ Frequencies are file-counts from the modern-orthography TEI body (16,573 files).
 
 ---
 
-## 4. Material not covered
+## 4. Scholarly context
+
+In the reference literature and in popular biography, the transformation of 1879–1882 is almost always called Tolstoy's "spiritual crisis" or his "conversion". The modern *Encyclopædia Britannica* files the period under a section headed "Conversion and religious beliefs"; the *Encyclopedia of Philosophy* calls it his "spiritual crisis", "dramatically described in *My Confession*" and then "resolved"; English Wikipedia opens with "a profound moral crisis, followed by … an equally profound spiritual awakening". The chapter-title convention that prompted this dive is not Birukoff's alone — Aylmer Maude, Tolstoy's own translator and a major source of his English-language reception, titled his approach chapter "Nearing the Crisis" (1908), and A. N. Wilson (1988) frames the episode as a "religious conversion". On its face the received view is settled, and it runs against this dive's finding that Tolstoy avoided the word.
+
+Specialist scholarship, however, largely **confirms** the dive's deeper claim. A long current of academic work holds that the change was gradual and continuous, not a sudden, datable rupture. Richard Gustafson's *Leo Tolstoy: Resident and Stranger* (1986) argues that "the man is not two, but one", reading the religious thought as present across the whole career rather than installed by a crisis. Inessa Medzhibovskaya subtitles her monograph *A Biography of a Long Conversion, 1845–1887* (2008) and describes the change as "a search for a new outlook rather than a crisis-begotten tragic moment". Donna Orwin's *Tolstoy's Art and Thought, 1847–1880* (1993) traces the long philosophical trajectory across the decades before the change. R. F. Christian, introducing *Tolstoy's Letters* (1978), set out to "dispose of the persistent fallacy" that the conversion was a "sudden *volte-face*"; Aileen Kelly (1978) reads it as a culmination of longstanding tensions rather than a sudden break. Even biographers who keep the word register the build-up: Rosamund Bartlett (2010) argues for Tolstoy's life as "an organic whole" and rejects the two-halves story, and Ernest Simmons (1946) calls *A Confession* the tale of a crisis "the ingredients of which had been fermenting in the man since his youth". This is the position of §2.1–2.2 — a переворот that "had long been preparing", whose date Tolstoy "could not say".
+
+What the scholarship does **not** do is engage the lexical evidence. None of the works surveyed notes that Tolstoy's own word was *переворот*, that *кризис* never appears in *A Confession*, or that when he did use *кризис* it was medical or plural (§2.5). The continuity is argued from the shape of the life and the letters, not from the vocabulary. The word-level finding of this dive is in that sense its own contribution: it supplies textual grounding for what specialist scholars had argued thematically.
+
+One outside detail corroborates the dive's own evidence. Tolstoy's daughter Tatyana recorded that "what is termed Tolstoy's conversion or religious crisis" was something "he himself called … his second birth" (*Tolstoy Remembered*, 1977) — close to the self-description the dive found in the 1894 letter to Annenkova, «родился вновь» (born anew, §2.5). The quotation reaches us second-hand and is held for verification against the book.
+
+The one scholar who rejected the "crisis" label outright did so on grounds opposite to Tolstoy's. Boris Eikhenbaum — whose *Tolstoy in the Seventies* is the background entry point named below — argued that Tolstoy's "crises" were driven by his search for new artistic form, not by spiritual upheaval. He agrees the dramatic "crisis" reading overstates the case, but dissolves the episode into literary development rather than crediting Tolstoy's own account of it. The "crisis" is contested within the scholarship as well — from a different direction than Tolstoy's own.
+
+---
+
+## 5. Material not covered
 
 - The full triage of **переворот** (172 files) and **перелом** (62) across the *works* — mostly political/narrative senses; only the *A Confession* occurrences were run to ground.
 - An exhaustive **пробуждение / возрождение** sweep (checked only in the keystone texts).
@@ -163,7 +177,7 @@ Frequencies are file-counts from the modern-orthography TEI body (16,573 files).
 
 ---
 
-## 5. Visual & manuscript record
+## 6. Visual & manuscript record
 
 Images in this dive sit in two places. **Facsimiles we render ourselves** from the local Jubilee Edition (public domain — Tolstoy's own text) live in `extracts/` and are committed. **Third-party images** (portraits, photographs) we fetch live in `visuals/`, which is **git-ignored** — a local research cache, not redistributed by the public repo. Provenance, source URL, and licence for every item are recorded in `dossier.yaml`; the gate on putting any image on the public website (`website/src/`) is rights, checked there, not here. (Because `visuals/` is git-ignored, the two portraits below render in a local working copy but not on a fresh clone until re-fetched — run `python3 docs/fetch_visuals.py` from the repo root to repopulate every dive's `visuals/` from the dossier URLs (or `python3 docs/fetch_visuals.py crisis` for just this one); the keystone facsimile, being in `extracts/`, is always present.)
 
@@ -184,7 +198,7 @@ Full provenance and rights for every item are in `dossier.yaml` (`visuals:`).
 
 ---
 
-## 6. Method
+## 7. Method
 
 - **Question (Phase 0 contract):** does Tolstoy frame his 1879–1882 transformation as a "crisis" (кризис), or is that a label from the apparatus and biography? Focused, single session; post-1880 "Prophet" period first-class, with the autobiographical works as keystone.
 - **Keywords (Russian, modern orthography lead):** anchors кризис / перелом / переворот; combinable пробуждение, возрождение, «остановка жизни», отчаяние, «смысл жизни»; pre-reform variants (кризисъ etc.) found in only ~5 files. Bare `остановка` dropped (boilerplate); `обращение` demoted (518 files, too polysemous).
@@ -194,7 +208,7 @@ Full provenance and rights for every item are in `dossier.yaml` (`visuals:`).
 
 ---
 
-## 7. References
+## 8. References
 
 **Primary**
 - Толстой Л. Н. *Исповедь*; *В чём моя вера?*; *Моя жизнь* // ПСС в 90 тт. Т. 23. М.: Худож. лит., 1957. (local: `primary-sources/jubilee-edition/vol83/`)
@@ -203,8 +217,29 @@ Full provenance and rights for every item are in `dossier.yaml` (`visuals:`).
 - tolstoydigital TEI corpus (*Слово Толстого* / HSE Moscow), CC BY-SA. (local: `primary-sources/tolstoydigital-TEI/`)
 
 **Background**
+
+*Framing source*
 - Birukoff (Бирюков) P. I. *Leo Tolstoj: Hans liv och verk* (Swedish ed.), Book IV «Kritisk period», ch. 14 «Krisen», p. 262 — **the framing source**, provided by the user as a photograph this session. NB: the local English archive-org file `primary-sources/archive-org/leotolstoyhislif00biriiala/` is **Vol I** (childhood–youth) of a different edition and does **not** contain this chapter; do not cite it for the "Crisis" framing. See also [biryukov-biography-editions](../biryukov-biography-editions/index.md) for the edition map.
-- Eikhenbaum B. *Lev Tolstoy: Tolstoy in the Seventies* (sources.yaml: `eikhenbaum-tolstoy-70s`).
+
+*Scholarship on the transformation* (Phase 3 secondary layer; English-first, prototype-light rigor — attributed, not byte-verified)
+- Gustafson, Richard F. *Leo Tolstoy: Resident and Stranger: A Study in Fiction and Theology*. Princeton University Press, 1986 — the continuity thesis ("the man is not two, but one").
+- Medzhibovskaya, Inessa. *Tolstoy and the Religious Culture of His Time: A Biography of a Long Conversion, 1845–1887*. Lanham, MD: Lexington Books, 2008 — describes the change as "a search for a new outlook rather than a crisis-begotten tragic moment".
+- Orwin, Donna Tussing. *Tolstoy's Art and Thought, 1847–1880*. Princeton University Press, 1993 — a gradual philosophical trajectory toward the "religious conversion of 1880".
+- Christian, R. F. (ed., trans.). *Tolstoy's Letters*, 2 vols. London: Athlone Press, 1978 — editor's introduction sets out to "dispose of the persistent fallacy" of a "sudden *volte-face*" (quoted via Kelly 1978).
+- Kelly, Aileen. "Tolstoy in Doubt." *The New York Review of Books*, 29 June 1978. <https://www.nybooks.com/articles/1978/06/29/tolstoy-in-doubt/> — reads the change as a culmination of longstanding tensions, not a sudden break.
+- Eikhenbaum, Boris. *Tolstoi in the Seventies* (Eng. trans., Ardis, 1982) and the essay «О кризисах Толстого» / "On Tolstoy's Crises" (1920) — questions the "crisis" reading, relocating its driver to artistic form (sources.yaml: `eikhenbaum-tolstoy-70s`).
+
+*Biographies*
+- Maude, Aylmer. *The Life of Tolstoy*, 2 vols. London: Constable, 1908–10 — approach chapter titled "Nearing the Crisis". <https://www.gutenberg.org/files/52242/52242-h/52242-h.htm>
+- Wilson, A. N. *Tolstoy*. London: Hamish Hamilton, 1988 — frames the episode as a "religious conversion".
+- Bartlett, Rosamund. *Tolstoy: A Russian Life*. London: Profile Books, 2010 — uses "spiritual crisis" but argues for the life as "an organic whole".
+- Simmons, Ernest J. *Leo Tolstoy*. Boston: Little, Brown, 1946 — *A Confession* the tale of a crisis "the ingredients of which had been fermenting in the man since his youth".
+- Tolstaya (Sukhotina-Tolstaya), Tatyana. *Tolstoy Remembered*. Trans. Derek Coltman. New York: McGraw-Hill, 1977, p. 19 — records that Tolstoy "called it his second birth" (quotation reaches us second-hand; held in `needsReview` for verification).
+
+*Reference works* (accessed May 2026)
+- *Encyclopædia Britannica*, "Leo Tolstoy" — period filed under the section "Conversion and religious beliefs". <https://www.britannica.com/biography/Leo-Tolstoy>
+- *Encyclopedia of Philosophy*, "Tolstoy, Lev (Leo) Nikolaevich" (via Encyclopedia.com) — "spiritual crisis … resolved". <https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tolstoy-lev-leo-nikolaevich-1828-1910>
+- English Wikipedia, "Leo Tolstoy" — "a profound moral crisis, followed by … an equally profound spiritual awakening". <https://en.wikipedia.org/wiki/Leo_Tolstoy>
 
 ---
 
