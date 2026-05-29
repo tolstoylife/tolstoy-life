@@ -84,5 +84,18 @@ from outside. Carry it into ingestion **as an attributed reading**, never as Tol
   "vegetarian" is accurate and "vegan" would be the anachronistic *hardening* — distortion in
   reverse. Accuracy over received framing, both ways; final term choice is Johan's.
 
+- **Framing by ordering — baseline vs. deviation.** Beyond word-choice, *sequence* encodes a
+  judgment. "Tolstoy was a huntsman who later became a vegetarian" frames the hunting as the
+  authentic baseline and the conviction as a later deviation; foregrounding the arrived-at ethical
+  position would honour where he ended up. *Checked (Claude):* the English Wikipedia article carried
+  only a single decontextualised "believed in vegetarianism, like Gandhi" sentence from ≤2010 until
+  2023, and **no hunting content at all** before the April-2023 restructure — which introduced both
+  the ethical "why" *and* the huntsman→vegetarian baseline→deviation arc. So that framing is a 2023
+  editorial choice, not old. Note that it **inverts Tolstoy's own sense of his authentic self**: in
+  *A Confession* the переворот is a *return* to "the very oldest" force in him (§2.2) — by his own
+  logic the ethical conviction is the recovered self and the hunting the corrected deviation, the
+  reverse of the received order. For ingestion: watch the *ordering* a source imposes, not only its
+  words.
+
 - **On Aufhebung:** Johan's interest is the *word's* double sense (abolish + lift up / *upphäva*),
   not the Hegel–Marx lineage — Tolstoy dismissed Hegel. Carry it as an image, not a school.
