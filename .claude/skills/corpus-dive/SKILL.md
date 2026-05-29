@@ -1,6 +1,6 @@
 ---
 name: corpus-dive
-description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
+description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals + scholarship layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
 argument-hint: "<theme or research question> [--auto] [--confirm-scope] [--model <tier>]"
 triggers:
   - "corpus dive"
@@ -54,8 +54,9 @@ Delegate sub-steps to subagents with the right tier (Agent tool `model` param). 
 |---|---|
 | Grep sweep, `extract_tei.py`, `pdftoppm`, `serve.py --build-only` (HTML), file/vault checks, dedup, image download | no-model / haiku |
 | Candidate-hit relevance triage; visual-archive web triage | sonnet |
+| Scholarship + gap-filling web search & relevance triage; factual lookups | sonnet / haiku |
 | Scoping contract | sonnet/opus |
-| Working-English translations · synthesis (index.md + dossier) · verify pass | opus |
+| Working-English translations · synthesis (index.md + dossier) · scholarship triangulation · verify pass | opus |
 
 **Escalate-on-low-confidence:** if a cheaper-tier subagent returns low confidence / high
 ambiguity, re-run that step on opus. Escalating the model buys quality, not a fabrication licence —
@@ -69,7 +70,7 @@ Draft a **scoping contract**: (1) restate the precise question; (2) corpus surfa
 high-confidence anchors → broader combinable terms, with orthographic / pre-reform variants;
 (4) stop-condition / time-box; (5) sweep mode — inline (narrow) vs fan-out (broad).
 Interactive: show the contract and confirm. `--auto`: record the scope contract (written in full to
-`docs/research/<slug>/run-report.md` at Phase 5) and proceed.
+`docs/research/<slug>/run-report.md` at Phase 6) and proceed.
 
 ## Phase 1 — Sweep (scale-aware)
 
@@ -102,7 +103,9 @@ access, rights, `licence`, and `usable`.
 **Two image channels (the rights gate is at *publication*, not download):**
 - `docs/research/<slug>/visuals/` is **git-ignored** (a local research cache — see `docs/.gitignore`).
   Download freely into it for local viewing and embedding — PD *or* rights-uncertain — since the
-  public repo never redistributes it. Always record `licence` + source `url` + `usable` in the
+  public repo never redistributes it. On a fresh clone the cache is empty — `python3
+  docs/fetch_visuals.py [slug]` repopulates it from the dossier `url:` fields. Always record
+  `licence` + source `url` + `usable` in the
   dossier anyway: that metadata is the gate for the *separate* step of publishing an image to
   `website/src/` (the actually-public surface). Never put a rights-reserved/unknown image into
   `website/src/` without cleared rights.
@@ -116,12 +119,48 @@ images in `index.md` with a `<figure><img src="visuals/…"><figcaption>…</fig
 block (raw HTML passes through; serve.py styles `main img`/`figcaption`). If web tools are
 unavailable (headless), degrade gracefully: document provenance, download nothing.
 
-## Phase 3 — Synthesize the outputs
+## Phase 3 — Scholarly context & gap-filling
+
+After the primary evidence is locked (Phase 2), add a *secondary* layer: web-search conventional
+Tolstoy scholarship + related facts, triangulate the dive's findings against the received view, and
+fill knowledge gaps. **Research-prototype rigor:** primary-source citations stay byte-faithful;
+secondary/scholarly claims are drafted from knowledge + web and **footnoted only when there is a
+clear source**, with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
+
+1. **Assemble claims & gaps.** List the dive's main findings from the evidence ledger. Collect the
+   open gaps from the dossier: `needsReview` items, `notCovered` candidates worth a quick check,
+   entities with `vaultStatus: missing | stub`, and factual unknowns (identities, dates, event
+   context) flagged during extraction.
+2. **Web sweep — scholarship + related facts.** Scholarship scope is **English-first** (major
+   biographers + academic Tolstoy studies), Russian-language when authoritative or decisive. Two
+   intents: (a) the **received view** on the theme and on the specific findings — key voices, the
+   consensus, whether mainstream work addresses them; (b) **gap-filling facts** to resolve the
+   assembled unknowns + related context the corpus lacked. Capture each source as
+   `author, year, work/title, url`. Lightweight fan-out (the search-and-triage shape of the
+   `deep-research` skill) — **not** its full adversarial harness. Distinct from Phase 2's
+   *visual-materials* sweep (images), which is unchanged.
+3. **Triangulate.** Classify each major finding against the conventional view: `confirms`
+   (scholarship agrees), `complicates` (nuance / partial), `contradicts` (the primary source pushes
+   back on the received narrative — the high-value case). Each entry ties to its primary
+   `evidenceRef` and, *where there is a clear source*, a footnoted secondary citation.
+4. **Completeness loop (bounded, once).** Ask what scholars treat as central that the corpus sweep
+   missed. If a real gap emerges (a key text, letter, episode, sub-theme), loop back for **one**
+   targeted Phase 1→2 mini sweep+extract for it, then return. A gap that can't be resolved in-scope
+   → `notCovered` / `needsReview`. Run the loop once, not open-endedly.
+
+Writes the dossier `scholarship:` block (see Synthesize), adds secondary sources to
+`references.background`, and updates `notCovered` / `needsReview` / `entities`. The "Scholarly
+context" prose section of `index.md` is composed in Synthesize.
+
+## Phase 4 — Synthesize the outputs
 
 1. **`docs/research/<slug>/index.md`** — frontmatter `layer: reference`. Spine: *Why this matters
    → The shape of the question* (staged; each stage a verbatim RU quote + working-EN translation +
    TEI id / PSS Tom + pages) *→ Where the theme clusters* (tables by genre, incl. a Letters table:
-   Tom / letter id / date / addressee / one-line material) *→ Material not covered → Visual &
+   Tom / letter id / date / addressee / one-line material) *→ Scholarly context* (the received
+   scholarly view, and where the corpus evidence confirms / complicates / contradicts it —
+   **attribute, don't assert**: "Bartlett (2010) describes… ; the diary shows…"; footnote clear
+   secondary sources) *→ Material not covered → Visual &
    manuscript record* (photos/portraits, manuscript facsimiles, illustrations/paintings/maps, each
    with provenance + access + rights; and what is not openly available + where to request it) *→
    Method* (the Phase 0 contract, updated with what actually happened) *→ References*. Close with
@@ -137,7 +176,11 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
    visuals:         # → images section
      - { id, type, subject, relatedEntity, relatedEvidence, holding, archiveId, access,
          rights, licence, usable, url, localPath, note }
-   contradictions:  - { claim, correction, evidenceRef }
+   scholarship:                 # secondary layer — conventional scholarship (Phase 3)
+     summary:                   # short prose: the received view on this theme (English-first)
+     triangulation:             # one entry per major finding vs scholarship
+       - { evidenceRef, conventionalView, relation, source }
+   contradictions:  - { claim, correction, evidenceRef }   # intra-corpus (primary-vs-primary) only — distinct from scholarship
    notCovered:      [ … ]
    needsReview:     - { item, phase, why }   # deferred human-judgment (autonomous never blocks)
    archivesConsulted: [ … ]
@@ -147,6 +190,8 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
    - `vaultStatus` ∈ exists | stub | missing — check `website/src/wiki/` and `website/src/works/`.
    - `sources` ids come from `website/schema/sources.yaml`.
    - `licence` ∈ PD | CC0 | CC-BY | CC-BY-SA | rights-reserved | unknown.
+   - `relation` ∈ confirms | complicates | contradicts — scholarship triangulation; clear secondary
+     sources also go in `references.background` (`source` omitted when there is no clear one).
 3. **`website/src/posts/notes/<YYYY-MM-DD>-<slug>.md`** — frontmatter `title` / `description` / `date` /
    `tags` / `draft: true`. A short recap in the project voice (simple, factual, minimal editorial),
    linking to `index.md`. Stays `draft: true` until the user publishes.
@@ -157,10 +202,13 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
    files are **git-ignored** (`docs/.gitignore`: `*.html`) and regenerated on demand — so `index.md`
    is the sole source of record: don't hand-edit or commit the HTML, just re-run `serve.py` after edits.
 
-## Phase 4 — Verify (separate pass; never self-approve)
+## Phase 5 — Verify (separate pass; never self-approve)
 
 Dispatch a **verifier subagent (opus)** in a fresh context. It checks: a sample of citations
-re-derived from TEI/PDF for **byte-fidelity**; every `index.md` claim is source-anchored; dossier
+re-derived from TEI/PDF for **byte-fidelity**; every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
+*attributed* (not asserted) and a footnote names a real source wherever one is claimed — no
+byte-fidelity is demanded on secondary sources (prototype rigor); `scholarship.triangulation`
+entries reference valid `evidenceRef`s**; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
 editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
 rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
@@ -168,7 +216,7 @@ git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier).
 the verdict is clean; in `--auto`, if it cannot converge after a few iterations, record the open
 items in `needsReview` and conclude the run rather than blocking indefinitely.
 
-## Phase 5 — Handoff
+## Phase 6 — Handoff
 
 Produce a summary: what was covered, the `notCovered` queue, the **entity work-order** (which wiki
 pages this dive feeds), the **visuals work-order** (images/facsimiles to acquire or request), and
