@@ -234,7 +234,7 @@ The manuscripts of the diary entries and letters cited here are held by the Stat
 
 - The TEI corpus at `primary-sources/tolstoydigital-TEI/texts/` was the primary search surface (9,087 letters, 4,584 diaries, 767 works, plus notes, commentary, and Krug chteniya), with the witness corpora in `texts_txt/` (Gusev, Makovitski, Goldenweiser).
 - A single high-precision Russian stem — **духобор** — anchored the sweep (it covers духоборы, духоборцы, духоборческий, …). Addressee buckets for the letters were read off the TEI filenames, which encode the addressee; significance was judged by reading the candidates.
-- The same lxml extractor used for the copyright survey — [`extract_tei.py`](extract_tei.py), held next to this document — resolves the editorial markup (`<choice>/<sic>/<corr>` in favour of the corrected reading; `<note>` bodies stripped). It must be run with UTF-8 I/O (`python3 extract_tei.py <file.xml> [needle]`); piping Cyrillic to a file under a C locale silently produces empty output.
+- The same lxml extractor used for the copyright survey — [`extract_tei.py`](../lib/extract_tei.py), the shared copy in `docs/research/lib/` — resolves the editorial markup (`<choice>/<sic>/<corr>` in favour of the corrected reading; `<note>` bodies stripped). It must be run with UTF-8 I/O (`python3 extract_tei.py <file.xml> [needle]`); piping Cyrillic to a file under a C locale silently produces empty output.
 - One caveat surfaced: the extractor renders some 1933-typeset volumes (notably the 1900 Canada letter in PSS Tom 72) with heavy lacunae, where the TEI carries `<gap>` markers or dense apparatus. Such passages are summarised from the editorial record, not quoted.
 - The marquee articles (PSS Toms 31, 37, 39) extracted cleanly and were read in full; their key passages are translated above. The Biryukov biography, absent locally, was retrieved from a public-domain web reproduction and translated in a dedicated pass.
 - Conventional scholarship was gathered from the web and is **summarised and cited**, not reproduced.
@@ -260,7 +260,7 @@ Background (summarised, not reproduced):
 
 Companion documents:
 
-- [extract_tei.py](extract_tei.py) — the TEI extractor (shared with the copyright survey).
+- [extract_tei.py](../lib/extract_tei.py) — the shared TEI extractor in `docs/research/lib/` (used across the surveys).
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — the TEI corpus and its relation to the Jubilee Edition.
 - [copyright-renunciation/index.md](../copyright-renunciation/index.md) — the companion survey; meets this one at the 1898 *Resurrection* exception.

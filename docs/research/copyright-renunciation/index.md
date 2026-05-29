@@ -214,7 +214,7 @@ The full visual map — provenance, access, rights, and licence for each item, i
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files, plus notes and Krug chteniya.
 - A layered Russian keyword set was used, from high-confidence anchors (`авторск[ое]`, `литературн[ая собственность]`, `безвозмездн[о]`, `перепечат[ывать]`, `гонорар`, `после 1881`) to broader terms used in combination (`собственност[ь]`, `Чертков`).
 - Every TEI filename encodes the PSS Tom number and, for diaries, the entry date (`vXX_NNN_..._YYYY_MM_DD.xml`). Every TEI file contains a `<title type="bibl">` element giving the formal PSS citation. Both were preserved verbatim through the extraction so all citations in this document are anchored to their TEI source.
-- A small lxml-based extractor — [`extract_tei.py`](extract_tei.py), held next to this document — resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected/expanded reading; `<note>` footnote bodies are stripped. The result is readable Russian prose suitable for grep with context, matching the printed PSS modulo the orthographic conventions of 1953 typesetting.
+- A small lxml-based extractor — [`extract_tei.py`](../lib/extract_tei.py), the shared copy in `docs/research/lib/` — resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected/expanded reading; `<note>` footnote bodies are stripped. The result is readable Russian prose suitable for grep with context, matching the printed PSS modulo the orthographic conventions of 1953 typesetting.
 - The finalist passages were cross-checked against the printed PSS by extracting the relevant pages from the local PDFs at 220 dpi (`pdftoppm`). The 27 March 1895 entry was verified against PSS Tom 53 (= local file `vol19/vol19.pdf`), pages 14–18 of the printed book.
 
 The companion file [pss-volume-mapping.md](../pss-volume-mapping.md) documents the local-file naming convention that made the cross-check non-trivial: PDFs are named in publication-order, not by Tom number.
@@ -237,7 +237,7 @@ Background:
 
 Companion documents:
 
-- [extract_tei.py](extract_tei.py) — the lxml-based TEI extractor used to produce the readable Russian prose quoted in this document.
+- [extract_tei.py](../lib/extract_tei.py) — the shared lxml-based TEI extractor (in `docs/research/lib/`) used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
 - [dossier.yaml](dossier.yaml) — machine-readable dossier (evidence ledger, entity routing map, visuals map) for this survey; ingestion-ready, added 2026-05-29.

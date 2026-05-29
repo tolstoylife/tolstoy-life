@@ -255,7 +255,7 @@ The keyword sweep behind this survey returned 49 unique TEI files for the commun
   - The self-rejection forms `я не социалист` / `я не коммунист` / `не есмь социалист` / `не есмь коммунист` (one file, fictional dialogue in play variants; discarded).
 - A discrimination step was added to the keyword sweep: a hit on a TEI file is *not* an LT-voice attestation if it falls inside a `<note resp="volume_editor">` editorial-commentary block. This cut the «христианский социализм» list from 15 hits to 3 LT-voice files and the «христианский коммунизм» list from 2 hits to 0 LT-voice files.
 - Every TEI filename encodes the PSS Tom number and, for diaries, the entry date (`vXX_NNN_..._YYYY_MM_DD.xml`). Every TEI file contains a `<title type="bibl">` element giving the formal PSS citation. Both were preserved verbatim through the extraction so all citations in this document are anchored to their TEI source.
-- The lxml-based extractor at [`extract_tei.py`](extract_tei.py) — copied unchanged from the companion tolstoyanism research — resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected reading; `<note>` footnote bodies are stripped; footnote anchors are rendered as superscripts.
+- The shared lxml-based extractor [`extract_tei.py`](../lib/extract_tei.py), in `docs/research/lib/`, resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected reading; `<note>` footnote bodies are stripped; footnote anchors are rendered as superscripts.
 - Three finalist passages were cross-checked against the printed PSS by extracting the relevant pages from the local PDFs at 220 dpi (`pdftoppm`):
   - The 27 August 1889 diary entry against PSS Tom 50 (= local file `vol17/vol17.pdf`), printed page 128.
   - The *Konets veka* "ever-growing enslavement" passage against PSS Tom 36 (= `vol05/vol05.pdf`), printed page near 259.
@@ -293,7 +293,7 @@ On the Dalström attribution:
 
 Companion documents:
 
-- [extract_tei.py](extract_tei.py) — the lxml-based TEI extractor used to produce the readable Russian prose quoted in this document.
+- [extract_tei.py](../lib/extract_tei.py) — the shared lxml-based TEI extractor (in `docs/research/lib/`) used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
 - [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) — companion essay on the other two doxographic labels. Uses the same method and the same extractor.

@@ -26,13 +26,12 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
 - **`corpus-dive-queue.sh`** — overnight queue runner for `corpus-dive`. Spawns a fresh `claude -p` session per theme; skips blank lines and `#` comments; writes a batch summary to `docs/research/_batch-YYYY-MM-DD.md`. Pass `--skip-permissions` to append `--dangerously-skip-permissions` to each invocation (opt-in, OFF by default; required for truly unattended runs). Use `--dry-run` to print commands without executing. Usage: `corpus-dive-queue.sh --themes <file> [--model <tier>] [--skip-permissions] [--dry-run]`.
   Headless invocation probe (2026-05-29): `claude -p "/corpus-dive <theme> --auto" --model haiku` — skill IS found and triggered, arg-parsing works (EXIT=0, stub OK line printed), but the run pauses for interactive write-permission confirmation before creating any file. Without `--skip-permissions` (or a `.claude/settings.json` allow-list), real runs will stall.
 
-## Forked copies (kept byte-identical; structural dedup still pending)
+## Single source of truth (forks removed)
 
-Four dives carry their own `extract_tei.py` predating this canonical copy:
-`copyright-renunciation/`, `christian-communism-socialism/`, `doukhobors/`,
-`tolstoyanism-christian-anarchism/`. They are byte-identical to this copy and are
-re-synced whenever the canonical extractor changes (the note-body recovery above was
-copied into all four), so the fix is live wherever the dives actually run.
-Replacing the four forks with a reference to this single canonical copy — so there is
-nothing left to sync — remains a separate cleanup task
-(see `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`, §17).
+This is the **only** copy of `extract_tei.py`. Four dives
+(`copyright-renunciation/`, `christian-communism-socialism/`, `doukhobors/`,
+`tolstoyanism-christian-anarchism/`) used to carry byte-identical forks that had to be
+re-synced by hand on every change; those forks were deleted and each dive's `index.md`
+now links to this copy via a relative path (`../lib/extract_tei.py`). New dives should
+reference this file rather than copying it. (Resolves the §17 cleanup in
+`docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.)

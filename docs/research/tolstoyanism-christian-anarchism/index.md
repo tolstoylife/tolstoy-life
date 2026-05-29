@@ -173,7 +173,7 @@ A full genealogy of the phrase in Russian and English usage, and the question of
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files.
 - A two-family Russian keyword set was used: `толстовств` + `толстовц` for the Tolstoyism family (43 unique files), and `анархизм` + `анархист` + `анархия` declensions for the anarchism family (~110 unique files). The compound phrase `христианский анарх[*]` (with all five case-inflected adjective forms) returned 3 files; only one (the Sacy letter) carries the phrase in Tolstoy's own voice. The adjacent "so-called Tolstoyans" / "they call me X" verbal frames returned zero hits — Tolstoy's refusal of the labels never takes that verbal shape. The unique-attestation searches `я не анархист` and `никакого толстовств` each returned exactly one file, both of which are finalists in this survey.
 - Every TEI filename encodes the PSS Tom number and, for diaries, the entry date (`vXX_NNN_..._YYYY_MM_DD.xml`). Every TEI file contains a `<title type="bibl">` element giving the formal PSS citation. Both were preserved verbatim through the extraction so all citations in this document are anchored to their TEI source.
-- The lxml-based extractor at [`extract_tei.py`](extract_tei.py) — copied unchanged from the copyright-renunciation research — resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected/expanded reading; `<note>` footnote bodies are stripped. The result is readable Russian prose suitable for grep with context, matching the printed PSS modulo the orthographic conventions of 1928–1958 typesetting.
+- The shared lxml-based extractor [`extract_tei.py`](../lib/extract_tei.py), in `docs/research/lib/`, resolves the heavy editorial markup in the TEI body. The `<choice>/<sic>/<corr>` editorial-correction wrappers are resolved in favour of the corrected/expanded reading; `<note>` footnote bodies are stripped. The result is readable Russian prose suitable for grep with context, matching the printed PSS modulo the orthographic conventions of 1928–1958 typesetting.
 - The three finalist passages were cross-checked against the printed PSS by extracting the relevant pages from the local PDFs at 220 dpi (`pdftoppm`):
   - The 1897-12-02 diary entry against PSS Tom 53 (= local file `vol19/vol19.pdf`), pages 167–168.
   - The Eltzbacher letter against PSS Tom 72 (= `vol36/vol36.pdf`), pages 424–426.
@@ -199,7 +199,7 @@ Background:
 
 Companion documents:
 
-- [extract_tei.py](extract_tei.py) — the lxml-based TEI extractor used to produce the readable Russian prose quoted in this document.
+- [extract_tei.py](../lib/extract_tei.py) — the shared lxml-based TEI extractor (in `docs/research/lib/`) used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
 - [copyright-renunciation/index.md](../copyright-renunciation/index.md) — sibling research essay on a related theme (the renunciation of literary property). Uses the same method and the same extractor.

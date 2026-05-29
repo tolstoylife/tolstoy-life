@@ -299,8 +299,8 @@ found and why it matters — linking to the `index.md` artifact. Mirrors the exi
 ## 10. Skill mechanics
 
 - **Canonical extractor:** the skill references one shared `docs/research/lib/extract_tei.py`
-  instead of forking a copy per dive (the current state — all four TEI dives carry their own
-  copy — is drift waiting to happen).
+  instead of forking a copy per dive. (Done — the four per-dive forks were removed and each
+  dive's `index.md` now links to the shared copy via `../lib/extract_tei.py`.)
 - **Skill file:** `.claude/skills/corpus-dive/SKILL.md` (project-scoped, version-controlled; the
   `.claude/skills/` directory does not yet exist and is created by this work).
 - **Triggers:** "corpus dive", "corpus-dive", "research X across the corpus / PSS / TEI".
@@ -443,7 +443,7 @@ moments, same TEI ids, same corrected "с 1881 года" reading) — a useful a
 
 - A cross-dossier aggregator (harvest every `dossier.yaml` into a combined index) once several
   dives exist.
-- Reconciling the four forked `extract_tei.py` copies against the new canonical one.
+- ~~Reconciling the four forked `extract_tei.py` copies against the new canonical one.~~ Done: forks removed; dives link to `docs/research/lib/extract_tei.py`.
 - Wiring the `visuals` layer into the planned `website/src/images/` section when it lands.
 
 ---
@@ -451,7 +451,7 @@ moments, same TEI ids, same corrected "с 1881 года" reading) — a useful a
 ## 18. Reference prototypes
 
 - `docs/research/copyright-renunciation/` — the reference implementation (index.md, extracts/,
-  extract_tei.py, the §5 manuscript record).
+  the §5 manuscript record; the extractor is the shared `docs/research/lib/extract_tei.py`).
 - `docs/research/biryukov-biography-editions/` — the multi-session shape (session-log + handoff).
 - `docs/research/{christian-communism-socialism,doukhobors,tolstoyanism-christian-anarchism}/` —
   further worked examples of the same spine.
