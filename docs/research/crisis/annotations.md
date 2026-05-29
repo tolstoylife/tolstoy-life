@@ -63,16 +63,26 @@ from outside. Carry it into ingestion **as an attributed reading**, never as Tol
   its rule. It fits Tolstoy's late life literally — excommunicated by the Holy Synod (1901), at odds
   with both Church and State. A frame for the concept page, attributed.
 
-- **Words as a weapon — keep the "why".** Johan's caution: secondary sources can soften Tolstoy's
-  radicalism by word-choice — e.g. noting he gave up hunting without the *reason* (the ethical /
-  religious turn). Whatever term is used, keep the motive. (He suspects the English Wikipedia
-  "Hunting" section was edited this way — checkable against its page history; not yet verified.)
-  *Corpus note on the term itself (Claude):* Tolstoy's own word is **вегетарианство** (139 TEI files;
-  his essay «Первая ступень» / *The First Step*, 1892). "веган" occurs **0 times**, and "vegan" was
-  coined in 1944 — 34 years after his death; he ate dairy and eggs. So for *this* term the accurate
-  label is "vegetarian"; "vegan" would be an anachronistic *hardening* — the same kind of word-
-  distortion in reverse. The principle (accuracy over received framing) cuts both ways; the final
-  term choice is Johan's.
+- **Words as a weapon — keep the "why".** Johan's caution: word-choice can soften Tolstoy's
+  radicalism — e.g. noting he gave up hunting without the *reason* (the ethical / religious turn).
+  Keep the motive.
+  **Primary-source anchor (Tolstoy documents exactly this mechanism, in his own voice):** the
+  *Preface to the English edition of «Что такое искусство?»* (PSS Tom 30, pp. 204–206; TEI
+  `v30_204_206`) protests that the Russian censor softened him word by word — «всегда»→«иногда»
+  (always→sometimes), «все»→«некоторые» (all→some), «дворцы»→«палаты» (palaces→chambers),
+  «патриотизм»→«лжепатриотизм» (patriotism→*false*-patriotism) — **cut his reasons while leaving the
+  bald assertions** («причины… пропущены, а ни на чем не основанные утверждения оставлены»), and even
+  inverted his meaning (Christ going to the cross «за исповедуемую им истину» / "for the truth he
+  professed" rewritten as «за род человеческий», foisting the atonement dogma on him). His phrase:
+  expressions «изменявшие смысл и приписывающие мне то, чего я не мог желать сказать» (altering the
+  meaning and attributing to me what I could not have wished to say). This is the mechanism to watch
+  for when ingesting *any* secondary framing of Tolstoy.
+  *Checked (Claude):* the English Wikipedia "Hunting"/"Vegetarianism" subsections actually **keep**
+  the ethical/spiritual "why" (added in 2023, not trimmed), so that specific suspicion isn't borne
+  out — though the principle holds. On the diet term: Tolstoy's word is **вегетарианство** (139 TEI
+  files; «Первая ступень», 1892); "веган" never occurs and is a 1944 coinage (he ate dairy/eggs), so
+  "vegetarian" is accurate and "vegan" would be the anachronistic *hardening* — distortion in
+  reverse. Accuracy over received framing, both ways; final term choice is Johan's.
 
 - **On Aufhebung:** Johan's interest is the *word's* double sense (abolish + lift up / *upphäva*),
   not the Hegel–Marx lineage — Tolstoy dismissed Hegel. Carry it as an image, not a school.
