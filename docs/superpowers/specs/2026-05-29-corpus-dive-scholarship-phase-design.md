@@ -46,7 +46,9 @@ dossier (`notCovered`, `needsReview`, `entities` with `vaultStatus`).
 1. **Assemble claims & gaps.** List the dive's main findings/assertions from the extracted
    evidence. Collect the open gaps from the dossier: `needsReview` items, `notCovered`
    candidates worth a quick check, entities with `vaultStatus: missing | stub`, and factual
-   unknowns (identities, dates, event context) flagged during extraction.
+   unknowns (identities, dates, event context) flagged during extraction. *(Enriching a completed
+   dive: the locked `index.md` + `evidence` ledger are the Phase 2 inputs — there is no live Phase 2
+   handoff.)*
 2. **Web sweep — scholarship + related facts.** English-first (major biographers + academic
    Tolstoy studies), Russian when authoritative/decisive. Two intents:
    - **Scholarship**: the received view on the theme and on the specific findings — who the key
@@ -59,26 +61,30 @@ dossier (`notCovered`, `needsReview`, `entities` with `vaultStatus`).
 3. **Triangulate.** For each major finding, classify it against the conventional view:
    - `confirms` — scholarship agrees;
    - `complicates` — adds nuance / partial agreement;
-   - `contradicts` — the primary source pushes back on the received narrative (**the high-value
-     case**).
-   Each entry ties to its primary `evidenceRef`, and — *where there is a clear source* — a
-   footnoted secondary citation.
+   - `contradicts` — the primary source pushes back on the received narrative;
+   - `extends` — scholarship does not reach this; the corpus supplies primary grounding for a point
+     scholars argued only thematically, or addresses one the literature leaves open.
+   `contradicts` and `extends` are the **high-value cases**. Each entry ties to its primary
+   `evidenceRef`, and — *where there is a clear source* — an inline-attributed secondary citation (a
+   References-list entry; serve.py renders no Markdown footnotes — see Open questions, resolved).
 4. **Completeness loop (bounded).** Ask: what do scholars treat as central to this theme that the
    corpus sweep didn't surface? If a real gap emerges (a key text, letter, episode, sub-theme),
    loop back for **one bounded** targeted Phase 1→2 mini sweep+extract for it, then return. A gap
-   that can't be resolved in-scope → `notCovered` / `needsReview`. The loop runs **once** per
-   dive, not open-endedly.
+   that can't be resolved in-scope — or one central in the scholarship but *outside the dive's
+   declared scope* (e.g. wrong period) — goes to `notCovered` with a pointer, not a forced loop.
+   The loop runs **once** per dive, not open-endedly.
 
 ## Ripple changes
 
 ### index.md
 New section **"Scholarly context"**, placed after *"Where the theme clusters"* and before
 *"Material not covered"*. It states the received scholarly view on the theme, then names exactly
-where the corpus evidence **confirms / complicates / contradicts** it. Discipline:
+where the corpus evidence **confirms / complicates / contradicts / extends** it. Discipline:
 - Platform voice — simple, factual, **minimal editorial**.
 - **Attribute, don't assert**: "Bartlett (2010) describes… ; the diary entry of 4 May 1898 shows…"
-- Markdown footnotes for clear secondary sources (serve.py renders `index.md` → HTML; footnote
-  rendering to be confirmed at implementation — see Open questions).
+- **Inline attribution + a References-list entry** for clear secondary sources — *not* Markdown
+  `[^n]` footnotes: serve.py's markdown build has no `footnotes` extension, so `[^n]` renders as
+  literal text (resolved 2026-05-29 — see Open questions). Inline `<url>` autolinks render fine.
 - Working-English translations stay labelled, as elsewhere.
 
 ### dossier.yaml
@@ -89,7 +95,7 @@ scholarship:
   triangulation:      # one entry per major finding compared to scholarship
     - evidenceRef:     # id from the evidence ledger
       conventionalView: # what mainstream scholarship holds on this point
-      relation:        # confirms | complicates | contradicts
+      relation:        # confirms | complicates | contradicts | extends
       source:          # author, year, work, url — when there is a clear one (else omitted)
 ```
 - Secondary sources also accumulate in the existing `references.background`.
@@ -98,10 +104,10 @@ scholarship:
 - `notCovered` / `needsReview` / `entities` are updated as gaps are filled or newly surfaced.
 
 ### Verify phase (light — prototype rigor)
-The verifier additionally checks: scholarly claims are *attributed* (not asserted as fact);
-footnotes name a real source wherever one is claimed; the "Scholarly context" section holds the
-minimal-editorial voice; `scholarship.triangulation` entries reference valid `evidenceRef`s.
-It does **not** demand byte-fidelity on secondary sources.
+The verifier additionally checks: scholarly claims are *attributed* (not asserted as fact); a named
+source / References-list entry backs every claim; the "Scholarly context" section holds the
+minimal-editorial voice; `scholarship.triangulation` entries reference valid `evidenceRef`s and use
+a valid `relation`. It does **not** demand byte-fidelity on secondary sources.
 
 ### Model routing (add rows to the routing table)
 | Phase / task | Tier |
@@ -121,11 +127,13 @@ It does **not** demand byte-fidelity on secondary sources.
 - No wiki-grade source quoting — these are research prototypes.
 - No change to the primary-source pipeline (Sweep / Extract / byte-fidelity).
 
-## Open questions to settle at implementation (not blockers)
-1. **Footnote rendering** — confirm `docs/serve.py` renders Markdown footnotes in `index.md → .html`;
-   if not, fall back to an inline `[source: …]` convention or a References-list anchor.
+## Open questions — resolved at implementation
+1. **Footnote rendering — RESOLVED (2026-05-29).** `docs/serve.py` configures python-markdown with
+   `tables, fenced_code, nl2br, sane_lists, attr_list` — **no `footnotes` extension**, so `[^n]`
+   renders as literal text. Convention: **inline attribution + a References-list entry**; inline
+   `<url>` autolinks render fine. (Enabling the `footnotes` extension was considered and declined —
+   it would change the shared generator for all `docs/**`.)
 2. **Phase renumbering** — mechanical; update every in-doc "Phase N" cross-reference when the new
    phase is inserted.
-3. **Existing dives** — whether to backfill a "Scholarly context" section into the already-written
-   dives (`copyright-renunciation/`, `crisis/`) is a separate, later call; this spec only changes
-   the skill going forward.
+3. **Existing dives — `crisis/` enriched 2026-05-29** (first dogfood of this phase; commit
+   `07344883`). `copyright-renunciation/` not yet backfilled — still a later call.

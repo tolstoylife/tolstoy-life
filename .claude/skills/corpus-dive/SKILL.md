@@ -124,8 +124,9 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
 After the primary evidence is locked (Phase 2), add a *secondary* layer: web-search conventional
 Tolstoy scholarship + related facts, triangulate the dive's findings against the received view, and
 fill knowledge gaps. **Research-prototype rigor:** primary-source citations stay byte-faithful;
-secondary/scholarly claims are drafted from knowledge + web and **footnoted only when there is a
-clear source**, with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
+secondary/scholarly claims are drafted from knowledge + web and **cited only when there is a clear
+source** (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
+`[^n]` footnotes), with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
 
 1. **Assemble claims & gaps.** List the dive's main findings from the evidence ledger. Collect the
    open gaps from the dossier: `needsReview` items, `notCovered` candidates worth a quick check,
@@ -141,12 +142,17 @@ clear source**, with genuine uncertainty sent to `needsReview`. No adversarial c
    *visual-materials* sweep (images), which is unchanged.
 3. **Triangulate.** Classify each major finding against the conventional view: `confirms`
    (scholarship agrees), `complicates` (nuance / partial), `contradicts` (the primary source pushes
-   back on the received narrative — the high-value case). Each entry ties to its primary
-   `evidenceRef` and, *where there is a clear source*, a footnoted secondary citation.
+   back on the received narrative), `extends` (scholarship does not reach this — the corpus supplies
+   primary grounding for a point scholars argued only thematically, or addresses one the literature
+   leaves open). `contradicts` and `extends` are the high-value cases. Each entry ties to its primary
+   `evidenceRef` and, *where there is a clear source*, an inline-attributed secondary citation (a
+   References-list entry — not a `[^n]` footnote).
 4. **Completeness loop (bounded, once).** Ask what scholars treat as central that the corpus sweep
    missed. If a real gap emerges (a key text, letter, episode, sub-theme), loop back for **one**
    targeted Phase 1→2 mini sweep+extract for it, then return. A gap that can't be resolved in-scope
-   → `notCovered` / `needsReview`. Run the loop once, not open-endedly.
+   — or one that is central in the scholarship but lies *outside the dive's declared scope* (e.g.
+   wrong period) — goes to `notCovered` with a pointer, **not** a forced loop. Run the loop once,
+   not open-endedly.
 
 Writes the dossier `scholarship:` block (see Synthesize), adds secondary sources to
 `references.background`, and updates `notCovered` / `needsReview` / `entities`. The "Scholarly
@@ -158,9 +164,9 @@ context" prose section of `index.md` is composed in Synthesize.
    → The shape of the question* (staged; each stage a verbatim RU quote + working-EN translation +
    TEI id / PSS Tom + pages) *→ Where the theme clusters* (tables by genre, incl. a Letters table:
    Tom / letter id / date / addressee / one-line material) *→ Scholarly context* (the received
-   scholarly view, and where the corpus evidence confirms / complicates / contradicts it —
-   **attribute, don't assert**: "Bartlett (2010) describes… ; the diary shows…"; footnote clear
-   secondary sources) *→ Material not covered → Visual &
+   scholarly view, and where the corpus evidence confirms / complicates / contradicts / extends it —
+   **attribute, don't assert**: "Bartlett (2010) describes… ; the diary shows…"; cite clear secondary
+   sources inline + in References — serve.py renders no `[^n]` footnotes) *→ Material not covered → Visual &
    manuscript record* (photos/portraits, manuscript facsimiles, illustrations/paintings/maps, each
    with provenance + access + rights; and what is not openly available + where to request it) *→
    Method* (the Phase 0 contract, updated with what actually happened) *→ References*. Close with
@@ -190,8 +196,9 @@ context" prose section of `index.md` is composed in Synthesize.
    - `vaultStatus` ∈ exists | stub | missing — check `website/src/wiki/` and `website/src/works/`.
    - `sources` ids come from `website/schema/sources.yaml`.
    - `licence` ∈ PD | CC0 | CC-BY | CC-BY-SA | rights-reserved | unknown.
-   - `relation` ∈ confirms | complicates | contradicts — scholarship triangulation; clear secondary
-     sources also go in `references.background` (`source` omitted when there is no clear one).
+   - `relation` ∈ confirms | complicates | contradicts | extends — scholarship triangulation
+     (`extends` = the corpus reaches below the scholarship's resolution); clear secondary sources
+     also go in `references.background` (`source` omitted when there is no clear one).
 3. **`website/src/posts/notes/<YYYY-MM-DD>-<slug>.md`** — frontmatter `title` / `description` / `date` /
    `tags` / `draft: true`. A short recap in the project voice (simple, factual, minimal editorial),
    linking to `index.md`. Stays `draft: true` until the user publishes.
@@ -206,9 +213,9 @@ context" prose section of `index.md` is composed in Synthesize.
 
 Dispatch a **verifier subagent (opus)** in a fresh context. It checks: a sample of citations
 re-derived from TEI/PDF for **byte-fidelity**; every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
-*attributed* (not asserted) and a footnote names a real source wherever one is claimed — no
+*attributed* (not asserted) and a named source / References-list entry backs every claim — no
 byte-fidelity is demanded on secondary sources (prototype rigor); `scholarship.triangulation`
-entries reference valid `evidenceRef`s**; dossier
+entries reference valid `evidenceRef`s and use a valid `relation`**; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
 editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
 rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
@@ -231,6 +238,12 @@ A broad theme may exceed one session. At the start of any dive, if `docs/researc
 already exists, **resume** from its `session-log.md` and the dossier's `notCovered` queue rather
 than re-sweeping. For such dives, keep an append-only `docs/research/<slug>/session-log.md`
 (what each session covered) and treat `notCovered` as the resume queue.
+
+**Resuming a *completed* dive to add Phase 3** (enrich, not re-sweep): when the primary layer is
+already locked, the existing `index.md` narrative + the dossier `evidence` ledger **are** the
+Phase 2 inputs Phase 3 reads — there is no live Phase 2 handoff. Leave the primary evidence and
+voice untouched; add only the `scholarship:` block, the "Scholarly context" section, and the
+secondary references, then re-verify.
 
 ## Voice & language
 
