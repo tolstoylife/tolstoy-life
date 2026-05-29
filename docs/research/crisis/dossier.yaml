@@ -199,6 +199,10 @@ entities:
     role: "the event this dive is about; candidate concept page — should foreground Tolstoy's own vocabulary (переворот / остановка жизни) over the received 'crisis' label"
     sources: [jubilee-edition]
     evidenceRefs: [ispoved_p40_perevorot, ispoved_p46_undatable, vchem_moya_vera_opening]
+    note: >-
+      Reader guidance for ingestion in annotations.md — the rebirth vocabulary (родился вновь /
+      "second birth" / Воскресение) and the Aufhebung / переворот-as-overturning resonance, the
+      latter as an attributed later-reader lens (Tolstoy himself rejected Hegel).
 
   - name: "N. N. Strakhov"
     wikiType: person
