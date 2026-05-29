@@ -2,8 +2,24 @@
 """Extract plain prose from a tolstoydigital-TEI XML file.
 
 Usage:
-  extract_tei.py <path-to-xml>            # prints full body text + metadata
+  extract_tei.py <xml>                    # prints full body text + metadata
   extract_tei.py <xml> <substring>        # prints paragraphs containing substring
+  extract_tei.py <xml> [--notes=MODE]     # control note-encoded-body recovery
+
+Most documents carry their text in <p> body elements, with <note>/<noteGrp>
+holding editorial footnotes that are stripped. A handful of PSS letters and
+documents instead encode the document's own text inside <noteGrp type="comments">
+apparatus (the body has no <p> at all). For those, --notes recovers that text:
+
+  --notes=auto  (default)  recover note-encoded text only when the body has no
+                           real <p>/<closer> prose — surgical, never pollutes a
+                           normal extraction with its footnotes.
+  --notes=off              legacy behaviour: never recover; strip all notes.
+  --notes=force            also dump <noteGrp type="comments"> apparatus after a
+                           normal body (for inspecting the editorial commentary).
+
+Recovered paragraphs are tagged [note] and flagged by a banner — they mix the
+document's own text with editorial commentary, so verify against the source PDF.
 """
 import re
 import sys
@@ -88,7 +104,34 @@ def normalise_paragraph(p):
     return out
 
 
-def extract(path):
+def recover_note_body(body):
+    """Recover paragraphs from <noteGrp type="comments"> apparatus that carries the
+    document's own text.
+
+    A few PSS documents (e.g. the 1910 Explanatory Note to Tolstoy's will, v82_305)
+    encode their whole body inside <noteGrp type="comments"> rather than in <p>. The
+    body-bearing notes are the <note type="comments"> children of the noteGrp; genuine
+    footnotes nested deeper (e.g. <note resp="volume_editor" xml:id="note1">, the
+    referenced editorial note) carry no type="comments" and are skipped — both because
+    we only descend into the direct children here, and because normalise_paragraph()
+    drops any <note> it walks into. Returns [(\"note\", text), ...] in document order.
+    """
+    recovered = []
+    # Snapshot the noteGrps first: normalise_paragraph() below mutates note subtrees
+    # (it clears nested <note>s), so we must not be lazily iterating the tree as we go.
+    notegrps = list(body.iter("{http://www.tei-c.org/ns/1.0}noteGrp"))
+    for notegrp in notegrps:
+        if notegrp.get("type") != "comments":
+            continue
+        for note in notegrp.findall("t:note[@type='comments']", NS):
+            for p in note.findall("t:p", NS):
+                txt = normalise_paragraph(p)
+                if txt:
+                    recovered.append(("note", txt))
+    return recovered
+
+
+def extract(path, notes_mode="auto"):
     tree = etree.parse(path)
     root = tree.getroot()
 
@@ -111,7 +154,7 @@ def extract(path):
     paragraphs = []
     body = root.find(".//t:body", NS)
     if body is None:
-        return file_id, title_text, bibl_text, []
+        return file_id, title_text, bibl_text, [], 0
 
     def inside_note(el):
         cur = el.getparent()
@@ -130,20 +173,48 @@ def extract(path):
             txt = normalise_paragraph(el)
             if txt:
                 paragraphs.append((tag, txt))
-    return file_id, title_text, bibl_text, paragraphs
+
+    # Note-encoded-body recovery. In "auto" we only reach into the comments
+    # apparatus when the body carries no real prose, so a normal extraction can
+    # never be polluted with its footnotes; "force" always appends it.
+    has_real_body = any(tag in ("p", "closer") for tag, _ in paragraphs)
+    recovered = 0
+    if notes_mode == "force" or (notes_mode == "auto" and not has_real_body):
+        note_paras = recover_note_body(body)
+        paragraphs.extend(note_paras)
+        recovered = len(note_paras)
+    return file_id, title_text, bibl_text, paragraphs, recovered
 
 
 def main():
-    if len(sys.argv) < 2:
+    notes_mode = "auto"
+    positional = []
+    for arg in sys.argv[1:]:
+        if arg.startswith("--notes="):
+            notes_mode = arg.split("=", 1)[1]
+        elif arg == "--no-notes":
+            notes_mode = "off"
+        else:
+            positional.append(arg)
+    if not positional:
         print(__doc__, file=sys.stderr)
         sys.exit(1)
-    path = sys.argv[1]
-    needle = sys.argv[2] if len(sys.argv) > 2 else None
+    if notes_mode not in ("auto", "off", "force"):
+        print(f"invalid --notes mode: {notes_mode!r} (use auto|off|force)", file=sys.stderr)
+        sys.exit(2)
+    path = positional[0]
+    needle = positional[1] if len(positional) > 1 else None
 
-    file_id, title, bibl, paragraphs = extract(path)
+    file_id, title, bibl, paragraphs, recovered = extract(path, notes_mode)
     print(f"# {title}")
     print(f"# id: {file_id}")
     print(f"# bibl: {bibl}")
+    if recovered:
+        print(
+            f'# note-body: recovered {recovered} paragraph(s) from '
+            f'<noteGrp type="comments"> apparatus — mixes document text with '
+            f"editorial commentary; verify against the source PDF."
+        )
     print()
     for tag, txt in paragraphs:
         if needle and needle.lower() not in txt.lower():

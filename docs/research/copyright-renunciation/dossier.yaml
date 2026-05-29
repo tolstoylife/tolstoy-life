@@ -134,13 +134,21 @@ evidence:
     addressee: null
     localPdf: primary-sources/jubilee-edition/vol58/vol58.pdf
     extract: extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt
-    quoteRu: null   # operative text not present in clean extract — see needsReview (extractor gap)
-    quoteEn: null
+    quoteRu: >-
+      1) Все его сочинения, литературные произведения и писания всякого рода, как уже где-либо
+      напечатанные, так и еще не изданные, не составляли после его смерти ничьей частной
+      собственности, а могли бы быть издаваемы и перепечатываемы всеми, кто этого захочет.
+    quoteEn: >-
+      (working English) 1) That all his compositions, literary works and writings of every kind,
+      whether already published anywhere or not yet issued, should after his death be no one's
+      private property, but might be published and reprinted by anyone who wishes.
     significance: >-
       The Explanatory Note to the final will (31 July 1910), drafted by V. G. Chertkov at Tolstoy's
       request — the legally precise statement that finally gave the renunciation binding form. The
-      operative provision is present in the raw TEI and in PSS Tom 82 pp.227–231 but is encoded as
-      commentary apparatus, so the canonical extractor returns only the opener (see needsReview).
+      operative provision is encoded as <noteGrp type="comments"> apparatus rather than <p> body, so
+      the extractor formerly returned only the opener; extract_tei.py --notes=auto now recovers it
+      (see needsReview, resolved). The recovered extract mixes the document's own text with the PSS
+      editors' commentary — verify any verbatim quotation against PSS Tom 82 pp.227–231.
     facsimile: null
 
 # Layer 2 — ingestion routing map (feeds the wiki). vaultStatus checked against website/src/wiki/
@@ -304,13 +312,19 @@ notCovered:
 
 # Deferred human-judgment / defects to surface.
 needsReview:
-  - item: "extract_tei.py returns only the opener for v82_305 (Explanatory Note to the Will)"
+  - item: "extract_tei.py returned only the opener for v82_305 (Explanatory Note to the Will)"
     phase: extract
+    status: resolved
     why: >-
       The operative provision is present in the raw TEI (26.9 KB) and in PSS Tom 82 pp.227–231, but is
-      encoded inside <note type="comments"> apparatus, which the canonical extractor strips by design.
-      Result: the body silently vanishes from clean output. A fuller extract or the PDF page is needed
-      before quoting the Explanatory Note verbatim. Candidate fix for docs/research/lib/extract_tei.py.
+      encoded inside <noteGrp type="comments"> apparatus rather than <p> body, which the extractor
+      stripped by design. Result: the body silently vanished from clean output.
+    resolution: >-
+      Fixed in docs/research/lib/extract_tei.py (note-encoded-body recovery, --notes=auto, default on).
+      The extract is regenerated and quoteRu/quoteEn are now filled. Recovery fires only for documents
+      with no real <p> body (3 files corpus-wide), so normal extractions are unaffected. The recovered
+      text mixes the document with the PSS editors' commentary — still verify verbatim quotation
+      against PSS Tom 82 pp.227–231 (the localPdf points at vol58, not the Tom 82 page range).
   - item: "v63_430 (Birukoff, 1885) clean extract renders unreliably"
     phase: extract
     why: >-
