@@ -223,6 +223,15 @@ Every session that produced artifacts decides whether to also publish:
 
 State the choice and the reasoning in the session summary.
 
+### The `corpus-dive` skill
+
+`/corpus-dive <theme>` automates primary-source research: a layered Russian keyword sweep over the
+TEI corpus + Jubilee Edition PDFs, producing a tracked `docs/research/<topic>/` reference artifact
+(`index.md` + machine-readable `dossier.yaml` + `extracts/`) plus a draft dev-blog note —
+ingestion-ready, modeled on the existing `docs/research/` dives. Runs unattended with `--auto`;
+batch overnight via `docs/research/lib/corpus-dive-queue.sh`. Canonical TEI extractor:
+`docs/research/lib/extract_tei.py`. Design: `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.
+
 ---
 
 ## Website (PWA, e-reader, vault)
