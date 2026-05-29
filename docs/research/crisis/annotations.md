@@ -47,3 +47,32 @@ from outside. Carry it into ingestion **as an attributed reading**, never as Tol
 - **The transformation concept page** (`Tolstoys religious conversion.md`) should foreground
   Tolstoy's own vocabulary (*переворот*, *остановка жизни*) and may *note* the Aufhebung /
   resurrection readings as later lenses — attributed, not asserted.
+
+## Further guidance (Johan, 2026-05-29) — a life of changing views
+
+- **Tolstoy held different views across his life.** The transformation developed from childhood and
+  *finalised* in *A Confession*; much of what he believed growing up "vanished when he became a
+  follower of Christ." For ingestion: don't flatten Tolstoy into one static doctrine — date his
+  positions and mark the pre/post-transformation break. (Sits in productive tension with the
+  continuity thesis in [`index.md`](index.md) §4: Gustafson's "the man is not two, but one" is about
+  the underlying *search* — it shouldn't be read as "his views never changed", because they did.)
+
+- **The outsider frame (John 15:19–20).** "Because you are not of the world … therefore the world
+  hates you." Johan reads the convert's position through it: you know the mainstream from inside but
+  the new place barely, and you remain an outsider because you know how well the mainstream guards
+  its rule. It fits Tolstoy's late life literally — excommunicated by the Holy Synod (1901), at odds
+  with both Church and State. A frame for the concept page, attributed.
+
+- **Words as a weapon — keep the "why".** Johan's caution: secondary sources can soften Tolstoy's
+  radicalism by word-choice — e.g. noting he gave up hunting without the *reason* (the ethical /
+  religious turn). Whatever term is used, keep the motive. (He suspects the English Wikipedia
+  "Hunting" section was edited this way — checkable against its page history; not yet verified.)
+  *Corpus note on the term itself (Claude):* Tolstoy's own word is **вегетарианство** (139 TEI files;
+  his essay «Первая ступень» / *The First Step*, 1892). "веган" occurs **0 times**, and "vegan" was
+  coined in 1944 — 34 years after his death; he ate dairy and eggs. So for *this* term the accurate
+  label is "vegetarian"; "vegan" would be an anachronistic *hardening* — the same kind of word-
+  distortion in reverse. The principle (accuracy over received framing) cuts both ways; the final
+  term choice is Johan's.
+
+- **On Aufhebung:** Johan's interest is the *word's* double sense (abolish + lift up / *upphäva*),
+  not the Hegel–Marx lineage — Tolstoy dismissed Hegel. Carry it as an image, not a school.
