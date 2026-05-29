@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-05-11
+lastUpdated: 2026-05-29
 tags: [research]
 ---
 
@@ -195,6 +195,18 @@ The State Tolstoy Museum's website footer at the time of writing reads:
 
 A digital photograph of the 1895 diary page at the resolution and licence required for a public-facing reference site would need to be requested from the museum's manuscripts department directly.
 
+### Openly-licensed period imagery
+
+The manuscripts are rights-reserved, but much of the photographic record of Tolstoy's last decades is in the public domain — including photographs by V. G. Chertkov, the chief photographer of Tolstoy's final years and the co-protagonist of the renunciation. Three usable examples (public domain on Wikimedia Commons; file pages and licence tags verified 2026-05-29):
+
+| Subject | Author, year | Licence | Source |
+| --- | --- | --- | --- |
+| Leo Tolstoy | V. G. Chertkov, 1906 | Public domain (PD-old-70-expired) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%B2_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%28%D0%A7%D0%B5%D1%80%D1%82%D0%BA%D0%BE%D0%B2%2C_1906%29_-_0003600097.jpg) |
+| Tolstoy and Chertkov, Yasnaya Polyana | V. G. Chertkov, 29 March 1909 | Public domain (PD-RusEmpire) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chertkov_%26_Tolstoy_%28cropped%29.jpg) |
+| V. G. Chertkov | A. F. Eichenvald, 1883 | Public domain (PD-RusEmpire) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg) |
+
+The full visual map — provenance, access, rights, and licence for each item, including the rights-reserved manuscript above — is in the companion [dossier.yaml](dossier.yaml).
+
 ---
 
 ## 6. Method
@@ -228,5 +240,6 @@ Companion documents:
 - [extract_tei.py](extract_tei.py) — the lxml-based TEI extractor used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
+- [dossier.yaml](dossier.yaml) — machine-readable dossier (evidence ledger, entity routing map, visuals map) for this survey; ingestion-ready, added 2026-05-29.
 
 A dev-blog recap of the session that produced this survey is at [2026-05-10 — Tolstoy on copyright and the renunciation of literary property](https://tolstoy.life/notes/tolstoy-on-copyright-renunciation/).
