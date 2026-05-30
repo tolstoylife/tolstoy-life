@@ -1,0 +1,463 @@
+# Machine-readable dossier for the Tolstoyism dive (index.md).
+# Built 2026-05-30 by corpus-dive (slug: tolstoyanism), resuming a paused
+# session. Every evidence[].quoteRu is sliced verbatim from the named extract
+# (scripted, not hand-typed) and gated by verify_quotes.py. See session-log.md.
+
+topic:
+  slug: tolstoyanism
+  title: Tolstoy on "Tolstoyism" (Толстовство)
+  question: >-
+    Where across the local corpus (tolstoydigital TEI + Jubilee Edition PDFs) does Tolstoy himself
+    use the label «толстовство» (Tolstoyism) and «толстовцы» (the Tolstoyans / the movement) —
+    and what does his own voice do with them, given that the terms circulate overwhelmingly as
+    something said about him rather than by him?
+  date: '2026-05-30'
+  period: prophet
+  corpusSurface:
+  - diaries
+  - letters
+  - works
+  - commentary
+  dateRange: 1894–1909
+evidence:
+- id: v53_167_169_denial
+  genre: diary
+  pssTom: 53
+  pages: 167–169
+  date: '1897-12-02'
+  addressee: diary (recording a conversation with Dušan Makovický)
+  localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+  extract: extracts/v53_167_169_1897_12_02.txt
+  quoteRu: >-
+    Я рад был случаю сказать ему и уяснить себе, что говорить о толстовстве, искать моего руководительства,
+    спрашивать моего решения вопросов — большая и грубая ошибка. — Никакого толстовства и моего
+    учения не было и нет, есть одно вечное, всеобщее, всемирное учение истины, для меня, для нас
+    особенно ясно выраженное в евангелиях.
+  quoteEn: >-
+    I was glad of the chance to tell him, and to clarify for myself, that to speak of Tolstoyism,
+    to seek my guidance, to ask me to decide questions — is a great and crude error. There was
+    and is no Tolstoyism and no teaching of mine; there is one eternal, universal, world-wide
+    teaching of truth, which for me, for us, is especially clearly expressed in the Gospels. (working
+    English)
+  significance: >-
+    THE KEYSTONE. The plainest disavowal of the label in the whole corpus, set down the evening
+    of the conversation with the Slovak disciple Makovický (who in 1910 would be the physician
+    at Tolstoy's deathbed). The «уяснить себе» — 'to clarify for myself' — is load-bearing: the
+    exchange was only the occasion; the denial is a private formulation he gives himself. Page
+    facsimile rendered from the local PD PSS PDF. (Reused from the legacy combined dive; re-confirmed
+    body-voice here.)
+  facsimile: extracts/pss-pages/tom53-1897-12-02-205.png
+- id: v67_231_movement_disowned
+  genre: letter
+  pssTom: 67
+  pages: 225–227
+  date: '1894-09-22'
+  addressee: V. N. Mac-Gahan (Varvara Nikolaevna Mac-Gahan)
+  localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
+  extract: extracts/v67_231_V_N_Mak_Gaxan.txt
+  quoteRu: >-
+    Вы вот пишете о «толстовцах» и других моих последователях, о движении, поднятом моей проповедью,
+    и о том, почему толстовцы проявляют мало рвения к пропаганде мыслей, которые осчастливят человечество;
+    а я не знаю не только каких-либо других последователей, но и толстовцев
+  quoteEn: >-
+    You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching,
+    and about why the Tolstoyans show so little zeal in propagating the ideas that would make
+    mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)
+  significance: >-
+    NEW (not in the legacy combined dive) — and the fullest disowning of the MOVEMENT, not just
+    the label. Replying to a journalist who wrote of 'the Tolstoyans' and 'the movement raised
+    by my preaching,' Tolstoy denies knowing any such followers or movement at all. The earliest
+    of the four (1894).
+  facsimile: null
+- id: v67_231_nothing_there
+  genre: letter
+  pssTom: 67
+  pages: 225–227
+  date: '1894-09-22'
+  addressee: V. N. Mac-Gahan (Varvara Nikolaevna Mac-Gahan)
+  localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
+  extract: extracts/v67_231_V_N_Mak_Gaxan.txt
+  quoteRu: >-
+    А о толстовцах, движении и т. п. я ничего не знаю, или даже знаю, что этого ничего нет.
+  quoteEn: >-
+    As for Tolstoyans, a movement, and so forth — I know nothing of it, or rather I know that
+    there is no such thing. (working English)
+  significance: >-
+    The punch-line of the same 1894 letter: not merely 'I am not the leader,' but 'there is no
+    such thing.' The blunt restatement that makes Mac-Gahan the sharpest movement-denial in the
+    four.
+  facsimile: null
+- id: v77_001_ridicule
+  genre: letter
+  pssTom: 77
+  pages: 5–6
+  date: '1907-01-01'
+  addressee: M. A. Stakhovich (Mikhail Aleksandrovich Stakhovich)
+  localPdf: primary-sources/jubilee-edition/vol39/vol39.pdf
+  extract: extracts/v77_001_M_A_Staxovichu.txt
+  quoteRu: сказал бы, не есть мяса, если бы не боялся ridicul’a⁴ толстовства
+  quoteEn: >-
+    [I] would say, eat no meat — were I not afraid of the ridicule of Tolstoyism. (working English)
+  significance: >-
+    The label as a RIDICULE he flinches from. Listing the simple abstentions that open the soul,
+    Tolstoy stops short of prescribing vegetarianism for fear of the «ridicul'a толстовства» —
+    the ridicule attached to the name. The single place where the label's social weight visibly
+    constrains his own counsel. (Reused from the legacy dive.) NOTE: the superscript «⁴» in the
+    quoteRu is the PSS editorial footnote marker carried through the TEI extract, not Tolstoy's
+    text.
+  facsimile: null
+- id: v80_068_some_tolstoyans
+  genre: letter
+  pssTom: 80
+  pages: 50–53
+  date: '1909-08-04'
+  addressee: I. Ivanov
+  localPdf: primary-sources/jubilee-edition/vol57/vol57.pdf
+  extract: extracts/v80_068_I_Ivanovu.txt
+  quoteRu: >-
+    православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь,
+    во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и
+    сам Толстой
+  quoteEn: >-
+    [you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the
+    Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some
+    sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)
+  significance: >-
+    NEW (not in the legacy combined dive) — the wry late note (1909). Against a correspondent's
+    premise that 'the Orthodox dislike the Tolstoyans and the Tolstoyans the Orthodox,' Tolstoy
+    faults the very premise: that one 'acknowledges some sort of Tolstoyans (каких-то толстовцев)'
+    at all — capped by the pun «хотя я и сам Толстой» ('though I myself am a Tolstoy / Tolstoyan').
+  facsimile: null
+entities:
+- name: Leo Tolstoy
+  wikiType: person
+  wikilinkTarget: Leo Tolstoy
+  vaultStatus: exists
+  role: The author disowning the label and the movement named after him.
+  sources:
+  - jubilee-edition
+  evidenceRefs:
+  - v53_167_169_denial
+  - v67_231_movement_disowned
+  - v80_068_some_tolstoyans
+  ingestionPriority: 1
+- name: Tolstoyanism
+  wikiType: concept
+  wikilinkTarget: Tolstoyanism
+  vaultStatus: exists
+  role: >-
+    The central concept — both the label «толстовство» and the «толстовцы» movement. The existing
+    vault page (recordStatus: draft) carries a <!-- NEEDS PRIMARY SOURCE --> block flagging the
+    exact 'great and gross error' rejection this dive now anchors; the page also MISATTRIBUTES
+    it to 'a letter to an adherent' when it is the 1897-12-02 diary entry (re Makovický). This
+    dive's evidence ledger resolves both gaps.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v53_167_169_denial
+  - v67_231_movement_disowned
+  - v67_231_nothing_there
+  - v77_001_ridicule
+  - v80_068_some_tolstoyans
+  ingestionPriority: 1
+- name: Dušan Makovický
+  wikiType: person
+  wikilinkTarget: Dushan Makovicky
+  vaultStatus: missing
+  role: >-
+    Slovak doctor and disciple; his 1897 question (how to act as Tolstoy's 'representative in
+    Hungary') is the occasion of the keystone denial. Personal physician at Yasnaya Polyana from
+    1904; the only doctor at Tolstoy's deathbed (Astapovo, 1910); compiler of the Yasnopolianskie
+    zapiski.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v53_167_169_denial
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+- name: Varvara Nikolaevna Mac-Gahan
+  wikiType: person
+  wikilinkTarget: Varvara Mac-Gahan
+  vaultStatus: missing
+  role: >-
+    Russian-American journalist (1850–1904), widow of war correspondent Januarius MacGahan; addressee
+    of the 1894 letter. Her writing about 'the Tolstoyans' and 'the movement' is what Tolstoy
+    answers by denying both exist.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v67_231_movement_disowned
+  - v67_231_nothing_there
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+- name: Mikhail Aleksandrovich Stakhovich
+  wikiType: person
+  wikilinkTarget: Mikhail Stakhovich
+  vaultStatus: missing
+  role: >-
+    Oryol marshal of the nobility, Duma politician and friend of the Tolstoy family; addressee
+    of the 1907 New-Year letter in which the 'ridicule of Tolstoyism' appears.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v77_001_ridicule
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+- name: Vladimir Chertkov
+  wikiType: person
+  wikilinkTarget: Vladimir Chertkov
+  vaultStatus: exists
+  role: >-
+    Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser,
+    dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between
+    Tolstoy's 'there is no such thing' and Chertkov's institution-building is the dive's central
+    tension.
+  sources:
+  - jubilee-edition
+  evidenceRefs: []
+  ingestionPriority: 2
+  dependsOn:
+  - Tolstoyanism
+- name: I. Ivanov
+  wikiType: person
+  wikilinkTarget: I. Ivanov
+  vaultStatus: missing
+  role: >-
+    Obscure 1909 correspondent (addressed via his nephew); identity beyond the PSS header unresolved
+    — see needsReview. Addressee of the 'some sort of Tolstoyans' letter.
+  sources:
+  - jubilee-edition
+  evidenceRefs:
+  - v80_068_some_tolstoyans
+  ingestionPriority: 3
+  dependsOn:
+  - Leo Tolstoy
+- name: Henry George
+  wikiType: person
+  wikilinkTarget: Henry George
+  vaultStatus: missing
+  role: >-
+    Tangential: the Mac-Gahan letter's long second half praises George's single-tax economics
+    (the 'multiplication table' analogy). Mentioned, not part of the толстовство theme — low ingestion
+    priority.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v67_231_movement_disowned
+  ingestionPriority: 3
+  dependsOn: []
+visuals:
+- id: facsimile-1897-denial
+  type: facsimile
+  subject: >-
+    PSS Tom 53 — the 2 December 1897 diary page carrying the Tolstoyism denial (rendered from
+    the local PD PSS PDF)
+  relatedEntity: Tolstoyanism
+  relatedEvidence: v53_167_169_denial
+  holding: Jubilee Edition (PSS), local copy vol19
+  archiveId: PSS Tom 53, pp. 167–169 (PDF page 205)
+  access: open
+  rights: public domain (Tolstoy's own text)
+  licence: PD
+  usable: true
+  url: null
+  localPath: extracts/pss-pages/tom53-1897-12-02-205.png
+  note: >-
+    Rendered at 220 dpi with pdftoppm; committed because it is a PD facsimile of Tolstoy's own
+    diary text.
+- id: tolstoy-1908
+  type: photograph
+  subject: Leo Tolstoy at Yasnaya Polyana, colour photograph, 1908
+  relatedEntity: Leo Tolstoy
+  relatedEvidence: null
+  holding: Wikimedia Commons (Sergei Prokudin-Gorsky, 23 May 1908)
+  archiveId: File:L.N.Tolstoy Prokudin-Gorsky.jpg
+  access: open
+  rights: public domain
+  licence: PD
+  usable: true
+  url: https://upload.wikimedia.org/wikipedia/commons/c/c6/L.N.Tolstoy_Prokudin-Gorsky.jpg
+  localPath: visuals/commons-tolstoy-prokudin-gorsky-1908.jpg
+  note: >-
+    The first colour photographic portrait made in Russia; Tolstoy aged 79, the year before the
+    Ivanov letter.
+- id: chertkov-repin
+  type: portrait
+  subject: Vladimir Chertkov, portrait by Ilya Repin, 1890s
+  relatedEntity: Vladimir Chertkov
+  relatedEvidence: null
+  holding: Wikimedia Commons (Ilya Repin)
+  archiveId: File:Repin Vladimir Chertkov.jpg
+  access: open
+  rights: public domain
+  licence: PD
+  usable: true
+  url: https://upload.wikimedia.org/wikipedia/commons/8/80/Repin_Vladimir_Chertkov.jpg
+  localPath: visuals/commons-chertkov-portrait-repin.jpg
+  note: >-
+    The organiser of the movement Tolstoy disowned — the human face of the dive's central tension.
+scholarship:
+  summary: >-
+    The conventional scholarly view holds that Tolstoy sincerely and repeatedly disowned 'Tolstoyism'
+    — insisting he had founded no doctrine, only restated the Gospel — while an organised, international
+    movement nonetheless formed around his writings: vegetarian colonies in Russia and England
+    (Purleigh, Whiteway), Gandhi's Tolstoy Farm in South Africa, conscientious objection, and
+    a publishing network centred on Chertkov's Free Age Press. Charlotte Alston's Tolstoy and
+    His Disciples (2013) is the first full history of that movement; Aylmer Maude (himself a former
+    Purleigh participant who broke with the doctrinaire disciples) and Rosamund Bartlett (2010)
+    narrate the household tension — Sofia Andreyevna's nickname «тёмные», 'the dark ones,' for
+    the disciples, and Chertkov's contested influence. Scholars also note that «толстовство» circulated
+    largely as an EXTERNAL label — in the press, church and police registers, often pejoratively
+    — rather than as a self-designation; Alston is the standard cite for the movement's identity
+    forming partly against that label. The corpus sweep behind this dive quantifies that point:
+    of 44 files where the term appears, only 4 carry it in Tolstoy's own body voice.
+  triangulation:
+  - evidenceRef: v53_167_169_denial
+    conventionalView: >-
+      Every major biographer (Maude, Bartlett) and the movement's historian (Alston) records that
+      Tolstoy rejected the label, calling 'Tolstoyism' no teaching of his but the Gospel's. The
+      1897 diary is the primary anchor most often paraphrased.
+    relation: confirms
+    source: >-
+      Maude, The Life of Tolstoy (1908–1910); Alston, Tolstoy and His Disciples (2013)
+  - evidenceRef: v67_231_nothing_there
+    conventionalView: >-
+      Scholarship treats the disavowal thematically and dates the movement's self-consciousness
+      to the mid-1880s–1890s; the blunt 1894 'there is no such thing' to a journalist is rarely
+      cited and earlier than the usual examples.
+    relation: extends
+    source: null
+  - evidenceRef: v80_068_some_tolstoyans
+    conventionalView: >-
+      The wry 1909 formulation — faulting the premise that 'some sort of Tolstoyans' even exist,
+      with the «хотя я и сам Толстой» pun — is not part of the standard quotation set; the corpus
+      supplies it.
+    relation: extends
+    source: null
+  - evidenceRef: v77_001_ridicule
+    conventionalView: >-
+      The received picture is a clean rejection of the label. The Stakhovich letter complicates
+      it: the label has real SOCIAL force — its 'ridicule' actually deflects Tolstoy from prescribing
+      vegetarianism — even as it has no doctrinal reality for him.
+    relation: complicates
+    source: null
+  - evidenceRef: v67_231_movement_disowned
+    conventionalView: >-
+      Scholars describe «толстовство» as a largely external, often pejorative label (press, church,
+      police). The sweep grounds the claim quantitatively: 44 candidate files, only 4 in Tolstoy's
+      own voice — the term is overwhelmingly said about him, not by him.
+    relation: extends
+    source: Alston, Tolstoy and His Disciples (2013)
+contradictions:
+- claim: >-
+    Tolstoy flatly denies that any 'Tolstoyism' or 'Tolstoyans' exist (v53 1897, v67 1894, v80
+    1909): «никакого толстовства… не было и нет»; «этого ничего нет».
+  correction: >-
+    Yet in the 1907 Stakhovich letter (v77) he speaks of «ridicul'a толстовства» — the 'ridicule
+    of Tolstoyism' — as a real social force strong enough to deflect his own counsel. Not a true
+    contradiction but a register difference: the label has no doctrinal reality for him and undeniable
+    social reality around him.
+  evidenceRef: v77_001_ridicule
+notCovered:
+- >-
+  The «тёмные» ('dark ones') — Sofia Andreyevna's nickname for the disciples — was NOT in the
+  keyword sweep (a different term). A тёмн* pass would be high-noise (тёмн- = 'dark' in every
+  ordinary sense); left as a targeted follow-up if the household-tension angle is pursued.
+- >-
+  The ~40 note-only files where «толстовцы/толстовство» is the 1928–1958 editors' or third parties'
+  word (e.g. Prugavin's «О Льве Толстом и о толстовцах», Korolenko) — the RECEPTION record. Surfaced
+  as the central finding (term said about him), not entered as Tolstoy-voice evidence; a separate
+  reception study could mine them.
+- >-
+  Incoming letters (Mac-Gahan's, Ivanov's, the journalists Tolstoy answers) — the TEI corpus holds
+  only outgoing letters.
+- >-
+  The Goldenweiser / Makovický conversation transcripts (Yasnopolianskie zapiski, 1904–1910) —
+  almost certainly carry further spoken disownings; not swept.
+- >-
+  Christian-anarchism material (Eltzbacher, Sacy, «христианский анархизм») — deliberately deferred
+  to dive #2; the legacy combined dive docs/research/tolstoyanism-christian-anarchism/ holds those
+  extracts.
+- >-
+  The movement's external history — colonies (Purleigh, Whiteway), Gandhi's Tolstoy Farm, the
+  fate after 1917 — lies outside Tolstoy's own corpus; Alston (2013) is the route.
+needsReview:
+- item: >-
+    PDF cross-check beyond the keystone. All four Toms map to held local PDFs (53→vol19, 67→vol33,
+    77→vol39, 80→vol57); only the keystone (v53) page is rendered. The byte-fidelity of v67/v77/v80
+    rests on the TEI extract + verify_quotes; a printed-PSS cross-check is available but not yet
+    run.
+  phase: 2
+  why: >-
+    verify_quotes guarantees quoteRu↔extract fidelity, but a PDF spot-check is the belt-and-braces
+    the keystone got and the other three did not.
+- item: >-
+    The v77 quoteRu carries an editorial footnote superscript «⁴» («ridicul'a⁴ толстовства») from
+    the TEI apparatus.
+  phase: 2
+  why: >-
+    Confirm against the printed PSS (vol39) that «⁴» is an apparatus marker, not part of Tolstoy's
+    text, before any verbatim re-use strips or keeps it.
+- item: >-
+    I. Ivanov (addressee of the 1909 letter, via his nephew) is unidentified beyond the PSS header.
+  phase: 3
+  why: >-
+    Identity/dates unresolved; a wiki person page (ingestionPriority 3) cannot be written until
+    the correspondent is identified — check the PSS Tom 80 editorial note.
+- item: >-
+    Candidate count drift: session 1 reported 43 files for «толстовц|толстовств»; the clean re-sweep
+    gives 44.
+  phase: 1
+  why: >-
+    The extra file is note-only and does not change the result (still exactly 4 body-voice finalists);
+    the precise 43-vs-44 diff was not pinned. Use 44.
+archivesConsulted:
+- >-
+  tolstoydigital TEI corpus (primary search surface): primary-sources/tolstoydigital-TEI/texts/{letters,diaries,works}
+  — 44 candidate files, 4 body-voice finalists.
+- >-
+  Jubilee Edition (PSS) local PDFs: Toms 53/67/77/80 → vol19/vol33/vol39/vol57; keystone facsimile
+  rendered from vol19.
+- >-
+  Wikimedia Commons (light visual sweep, PD portraits): late-Tolstoy (Prokudin-Gorsky 1908) and
+  Chertkov (Repin).
+- >-
+  Web scholarship sweep (Phase 3): Alston 2013; Maude 1908–1910; Bartlett 2010; Christoyannopoulos
+  2010; Prugavin 1911 (confirmation only).
+references:
+  primary:
+  - >-
+    Толстой Л. Н. Полное собрание сочинений: в 90 тт. — М.: Гос. изд. «Художественная литература»,
+    1928–1958 (PSS, Jubilee Edition; local copies at primary-sources/jubilee-edition/). Tolstoyism-term
+    files concentrated in Toms 53 (diary), 67, 77, 80 (letters).
+  - >-
+    tolstoydigital TEI corpus, Слово Толстого project, HSE Moscow. CC BY-SA. https://github.com/tolstoydigital/TEI
+    (local copy at primary-sources/tolstoydigital-TEI/).
+  background:
+  - >-
+    Alston, Charlotte. Tolstoy and His Disciples: The History of a Radical International Movement.
+    London: I.B. Tauris, 2013 — the first full scholarly history of the толстовцы movement (colonies,
+    publishing, conscientious objection, Chertkov); standard cite for the label as external/oppositional.
+  - >-
+    Maude, Aylmer. The Life of Tolstoy. 2 vols (First Fifty Years 1908; Later Years 1910). London:
+    Constable — contemporary biography by a former Purleigh participant who broke with the doctrinaire
+    disciples; treats the label and the household tension first-hand.
+  - >-
+    Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile Books, 2010 — narrates Chertkov's
+    contested influence and Sofia Andreyevna's «тёмные» ('the dark ones').
+  - >-
+    Christoyannopoulos, Alexandre. Christian Anarchism: A Political Commentary on the Gospel.
+    Exeter: Imprint Academic, 2010 — systematic study with Tolstoy central; more relevant to the
+    sibling Christian-anarchism dive.
+  - >-
+    Prugavin, A. S. О Льве Толстом и о толстовцах. Moscow: published by the author, 1911 — contemporary
+    documentary collection (essays, memoirs, official materials); an example of the external-reception
+    literature the note-only files cite.
