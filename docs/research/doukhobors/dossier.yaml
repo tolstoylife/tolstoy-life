@@ -351,7 +351,7 @@ entities:
     sources: [jubilee-edition]
     evidenceRefs: [v39_192_196_resurrection_of_christ]
 
-  - name: "Pavel Biryukov"
+  - name: "Pavel Birukoff"
     wikiType: person
     wikilinkTarget: "Pavel Birukoff"
     vaultStatus: exists
@@ -368,7 +368,7 @@ entities:
     evidenceRefs: [v39_192_196_resurrection_of_christ, v68_229_verigin_word_vs_book]
 
   - name: "Aylmer Maude"
-    wikiType: translator
+    wikiType: person      # notable in own right; type:person + translator role (wiki-schema note names Maude)
     wikilinkTarget: "Aylmer Maude"
     vaultStatus: missing
     role: "Helped organise the emigration and its funding; later Tolstoy's English translator and biographer; wrote A Peculiar People (1904)."

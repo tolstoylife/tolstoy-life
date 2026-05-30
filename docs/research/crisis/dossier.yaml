@@ -249,7 +249,7 @@ entities:
 
   - name: "What I Believe (В чём моя вера?)"
     wikiType: work
-    wikilinkTarget: null
+    wikilinkTarget: "What I Believe"
     vaultStatus: missing
     role: "companion confessional work; 'жизнь моя вдруг переменилась'"
     sources: [jubilee-edition]

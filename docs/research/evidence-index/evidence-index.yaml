@@ -7,21 +7,46 @@
 meta:
   generator: build_evidence_index.py
   builtFrom:
+  - christian
   - christian-anarchism
   - copyright-renunciation
   - crisis
   - doukhobors
+  - jubilee-edition-tei-corpus
   - tolstoyanism
-  diveCount: 5
-  entityCount: 41
-  evidenceRowCount: 41
-  visualCount: 46
+  diveCount: 7
+  entityCount: 59
+  evidenceRowCount: 80
+  visualCount: 57
   byVaultStatus:
-    exists: 7
+    exists: 8
     stub: 3
-    missing: 31
+    missing: 48
   lastUpdated: '2026-05-30'
 entities:
+- key: abbyy
+  displayTitle: ABBYY
+  names:
+  - ABBYY
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 3
+  dependsOn:
+  - «весь-толстой-в-один-клик»-all-tolstoy-in-one-click
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: software company; donated FineReader OCR and ran the recognition pass for «Весь Толстой в один клик»
+  evidenceCount: 0
+  evidence: []
+  visuals: []
 - key: alexandra-tolstaya
   displayTitle: Alexandra Tolstaya
   names:
@@ -34,16 +59,118 @@ entities:
   wordCount: 161
   dossierVaultStatus:
     copyright-renunciation: exists
-  ingestionPriority: null
+    jubilee-edition-tei-corpus: exists
+  ingestionPriority: 2
   dependsOn: []
   dives:
   - copyright-renunciation
+  - jubilee-edition-tei-corpus
   sources:
   - jubilee-edition
   rolesByDive:
     copyright-renunciation: daughter; designated heir in the final will arrangements
+    jubilee-edition-tei-corpus: Tolstoy's daughter and designated manuscript heir; original Jubilee Edition editorial-board member (before her emigration)
   evidenceCount: 0
   evidence: []
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: alexandra-tolstaya-photo
+    type: portrait
+    subject: A. L. Tolstaya, daughter and editorial-board member
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Alexandra_Lvovna_Tolstaya.jpg
+    localPath: docs/research/jubilee-edition-tei-corpus/visuals/commons-alexandra-tolstaya.jpg
+    alsoInDives: []
+- key: all-tolstoy-in-one-click
+  displayTitle: All Tolstoy in One Click
+  names:
+  - «Весь Толстой в один клик» (All Tolstoy in One Click)
+  wikiType: event
+  wikiTypeVariants:
+  - event
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 2
+  dependsOn:
+  - fyokla-tolstaya
+  - the-jubilee-edition-полное-собрание-сочинений
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - jubilee-edition
+  rolesByDive:
+    jubilee-edition-tei-corpus: 2013–2014 crowdsourced OCR+proofreading of the 90 volumes (ABBYY FineReader; ~3,249 volunteers, 49 countries; 46,820 pages); produced the free e-texts on tolstoy.ru
+  evidenceCount: 2
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-provenance-note
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Публикуемые документы был получены с сайта tolstoy.ru в формате html, переведены в формат TEI. Исправлены некоторые ошибки распознавания. Тексты, написанные в дореформенной орфографии, сопоставлены с их версиями в современной орфографии.
+    quoteEn: The published documents were obtained from the site tolstoy.ru in html format and converted to TEI. Some recognition (OCR) errors were corrected. Texts written in pre-reform orthography were collated with their modern-orthography versions. (working English)
+    significance: The data chain in the corpus's own words. Note the source typo "был" (for "были"), identical in every file — a fingerprint of the shared header template, not a per-file error.
+  - dive: jubilee-edition-tei-corpus
+    id: pss-rgb-provenance
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 53
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-cover-headers.txt
+    facsimile: null
+    quoteRu: Подготовлено на основе электронной копии 53-го тома Полного собрания сочинений Л. Н. Толстого, предоставленной Российской государственной библиотекой
+    quoteEn: Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)
+    significance: 'The digitisation''s scan source: the Russian State Library (РГБ) provided the electronic copies that the crowdsourcing project proofread. Maps to the sources.yaml id rgb-tolstoy-fond.'
+  visuals: []
+- key: anastasia-bonch-osmolovskaya
+  displayTitle: Anastasia Bonch-Osmolovskaya
+  names:
+  - Anastasia Bonch-Osmolovskaya
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: HSE linguist; co-founder/lead of Tolstoy Digital; principal author of the 'Tolstoy semanticized' (2019) methodology
+  evidenceCount: 1
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-leadership-credit
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+    quoteEn: Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+    significance: The TEI respStmt credits the four project leads under "Идея, постановка задач, руководство". Same four names in every file; the keystone for the entity map of the digital project.
   visuals: []
 - key: aylmer-maude
   displayTitle: Aylmer Maude
@@ -52,7 +179,6 @@ entities:
   wikiType: person
   wikiTypeVariants:
   - person
-  - translator
   vaultStatus: missing
   vaultPath: null
   wordCount: null
@@ -83,6 +209,42 @@ entities:
     url: https://upload.wikimedia.org/wikipedia/commons/4/41/Aylmer_Maude_%281858-1938%29.jpg
     localPath: docs/research/doukhobors/visuals/commons-aylmer-maude-portrait-1919.jpg
     alsoInDives: []
+- key: boris-orekhov
+  displayTitle: Boris Orekhov
+  names:
+  - Boris Orekhov
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: HSE; technology lead of Tolstoy Digital; author of the '91st volume' (2020) paper on index.tolstoy.ru
+  evidenceCount: 1
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-leadership-credit
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+    quoteEn: Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+    significance: The TEI respStmt credits the four project leads under "Идея, постановка задач, руководство". Same four names in every file; the keystone for the entity map of the digital project.
+  visuals: []
 - key: christian-anarchism
   displayTitle: Christian Anarchism
   names:
@@ -264,6 +426,56 @@ entities:
     quoteRu: После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли
     quoteEn: After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them. (working English)
     significance: THE KEYSTONE CITATION. The Burning of Arms — the coordinated mass renunciation of weapons that began the whole affair. Page facsimile rendered from the local PSS PDF.
+  visuals: []
+- key: dmitry-khilkov
+  displayTitle: Dmitry Khilkov
+  names:
+  - Dmitry Khilkov
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: Correspondent (former officer, Tolstoyan) to whom Tolstoy explains one cannot 'be' a Christian
+  evidenceCount: 2
+  evidence:
+  - dive: christian
+    id: khilkov_1890_cannot_be
+    genre: letter
+    teiId: null
+    pssTom: 65
+    pages: 76–78
+    date: '1890-04-09'
+    addressee: D. A. Khilkov
+    localPdf: null
+    extract: docs/research/christian/extracts/v65_064_D_A_Xilkovu.txt
+    facsimile: null
+    quoteRu: И потому христианином нельзя быть так же, как можно быть евреем, магометанином, церковником. Нельзя сказать про себя или про другого, что я или он христианин, потому что нет таких поступков, которыми бы я себя отличил от других как христианин. Еврей обрезался, соблюл субботу, магометанин помолился 5 раз, отдал десятину бедным, церковник окрестился, поговел; но христианину нечего такого сделать.
+    quoteEn: And so one cannot BE a Christian the way one can be a Jew, a Mohammedan, a churchman. One cannot say of oneself or of another that I or he is a Christian, because there are no acts by which I might mark myself off from others as a Christian. (working English)
+    significance: 'The conceptual core of Tolstoy''s refusal of the label: Christianity, unlike confessional identities marked by defining acts (circumcision, prayer, baptism), is an ideal/direction, not a status one can claim.'
+  - dive: christian
+    id: khilkov_1890_soul_christian
+    genre: letter
+    teiId: null
+    pssTom: 65
+    pages: 76–78
+    date: '1890-04-09'
+    addressee: D. A. Khilkov
+    localPdf: null
+    extract: docs/research/christian/extracts/v65_064_D_A_Xilkovu.txt
+    facsimile: null
+    quoteRu: Но и тут нельзя про себя сказать, что я христианин больше, чем не христианин, — татарин, поп и т. п. Как сказал какой-то писатель, «душа человека христианка».
+    quoteEn: But even here one cannot say of oneself that I am more a Christian than a non-Christian — a Tatar, a priest, and so on. As some writer said, 'the soul of man is a Christian.' (working English)
+    significance: Tolstoy will not rank himself as 'a Christian' over others; he relocates Christianity to a universal disposition of the soul rather than a possessed identity.
   visuals: []
 - key: doukhobor-emigration-to-canada
   displayTitle: Doukhobor Emigration to Canada
@@ -642,6 +854,43 @@ entities:
     url: https://upload.wikimedia.org/wikipedia/commons/2/20/Schmitt_Jen%C5%91.jpg
     localPath: docs/research/christian-anarchism/visuals/commons-schmitt-jeno-portrait.jpg
     alsoInDives: []
+- key: excommunication-of-leo-tolstoy
+  displayTitle: Excommunication of Leo Tolstoy
+  names:
+  - 1901 Holy Synod excommunication of Tolstoy
+  wikiType: event
+  wikiTypeVariants:
+  - event
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 1
+  dependsOn:
+  - true-vs-church-christianity
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: The Synod edict of 20–22 Feb 1901 and Tolstoy's public Reply (Tom 34) — the capstone of the self-attestation question
+  evidenceCount: 1
+  evidence:
+  - dive: christian
+    id: synod_1901_renounced_to_serve
+    genre: work
+    teiId: null
+    pssTom: 34
+    pages: 245–253
+    date: '1901-04-04'
+    addressee: null
+    localPdf: null
+    extract: docs/research/christian/extracts/v34_245_253_Otvet_Sinodu.txt
+    facsimile: null
+    quoteRu: То, что я отрекся от церкви, называющей себя православной, это совершенно справедливо. Но отрекся я от нее не потому, что я восстал на господа, а напротив, только потому, что всеми силами души желал служить ему.
+    quoteEn: That I have renounced the church that calls itself Orthodox is perfectly true. But I renounced it not because I rose up against the Lord, but, on the contrary, only because with all the strength of my soul I wished to serve him. (working English)
+    significance: 'The public capstone — his reply to the Synod''s excommunication: renunciation of the church is framed as fidelity to God, the institutional bond severed in the name of the thing the institution claims.'
+  visuals: []
 - key: felix-ortt
   displayTitle: Felix Ortt
   names:
@@ -667,6 +916,52 @@ entities:
   evidenceCount: 0
   evidence: []
   visuals: []
+- key: fyokla-tolstaya
+  displayTitle: Fyokla Tolstaya
+  names:
+  - Fyokla Tolstaya
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: Tolstoy's great-great-granddaughter; initiator of «Весь Толстой в один клик» and a leader of Tolstoy Digital
+  evidenceCount: 1
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-leadership-credit
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+    quoteEn: Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+    significance: The TEI respStmt credits the four project leads under "Идея, постановка задач, руководство". Same four names in every file; the keystone for the entity map of the digital project.
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: fyokla-tolstaya-photo
+    type: photograph
+    subject: Fyokla Tolstaya, initiator of «Весь Толстой в один клик»
+    relatedEvidence: null
+    licence: CC-BY-SA
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Tolstaya,_Fyokla_-NF_20181129_fRF01.jpg
+    localPath: docs/research/jubilee-edition-tei-corpus/visuals/commons-fyokla-tolstaya.jpg
+    alsoInDives: []
 - key: gabriel-sacy
   displayTitle: Gabriel Sacy
   names:
@@ -842,6 +1137,43 @@ entities:
     quoteEn: You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)
     significance: NEW (not in the legacy combined dive) — and the fullest disowning of the MOVEMENT, not just the label. Replying to a journalist who wrote of 'the Tolstoyans' and 'the movement raised by my preaching,' Tolstoy denies knowing any such followers or movement at all. The earliest of the four (1894).
   visuals: []
+- key: higher-school-of-economics
+  displayTitle: Higher School of Economics
+  names:
+  - Higher School of Economics (HSE)
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 3
+  dependsOn:
+  - tolstoy-digital-/-«слово-толстого»
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: Moscow university; home of the digital-humanities group behind Tolstoy Digital
+  evidenceCount: 1
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-funder-slovo
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Проект «Слово Толстого»
+    quoteEn: The "Word of Tolstoy" project. (working English)
+    significance: The funder/project named in every header; publisher orgName adds "Tolstoy Digital, DH CLOUD, Научно-образовательный союз «Родное Слово»".
+  visuals: []
 - key: i-ivanov
   displayTitle: I. Ivanov
   names:
@@ -879,6 +1211,42 @@ entities:
     quoteRu: православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь, во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и сам Толстой
     quoteEn: '[you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)'
     significance: 'NEW (not in the legacy combined dive) — the wry late note (1909). Against a correspondent''s premise that ''the Orthodox dislike the Tolstoyans and the Tolstoyans the Orthodox,'' Tolstoy faults the very premise: that one ''acknowledges some sort of Tolstoyans (каких-то толстовцев)'' at all — capped by the pun «хотя я и сам Толстой» (''though I myself am a Tolstoy / Tolstoyan'').'
+  visuals: []
+- key: ivan-nazhivin
+  displayTitle: Ivan Nazhivin
+  names:
+  - Ivan Nazhivin
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: Writer; recipient of the true-vs-social-religion definition
+  evidenceCount: 1
+  evidence:
+  - dive: christian
+    id: nazhivin_1904_true_vs_social
+    genre: letter
+    teiId: null
+    pssTom: 75
+    pages: 60–62
+    date: '1904-03-17'
+    addressee: I. F. Nazhivin
+    localPdf: null
+    extract: docs/research/christian/extracts/v75_076_I_F_Nazhivinu.txt
+    facsimile: null
+    quoteRu: Христианство, истинное христианство, по моему мнению, тем и отличается от религий, которые можно называть общественными, как католичество, православие, магометанство, я думаю даже конфуцианство, что оно обращается к душе каждого отдельного человека, для каждого отдельного человека разрешает его вопрос жизни, указывает ему его назначение, состоящее в исполнении воли бога, в слиянии с ней своей воли, в служении для бога богу и людям и тем дает ему спокойствие и благо.
+    quoteEn: Christianity, true Christianity, in my opinion, differs from the religions one may call social — such as Catholicism, Orthodoxy, Mohammedanism, and I think even Confucianism — in that it addresses the soul of each individual person. (working English)
+    significance: 'The true-vs-church (here: vs ''social'' confessional) distinction stated as a definition; ''true Christianity'' is the inward, individual address, not the institutional religion.'
   visuals: []
 - key: ivan-tregubov
   displayTitle: Ivan Tregubov
@@ -1009,6 +1377,184 @@ entities:
     quoteEn: the socialist, communist and anarchist theories are brought in to corroborate the Christian truth, which forms its chief part. (working English)
     significance: 'How Tolstoy ranks the relation. Praising Davidson''s The Gospel of the Poor, he approves the order of subordination: the political theories (socialist, communist, anarchist) serve to corroborate the Christian truth — not the reverse. The same hierarchy the Eltzbacher and Sacy letters state for ''anarchism'' six years later.'
   visuals: []
+- key: john-van-der-veer
+  displayTitle: John Van der Veer
+  names:
+  - John Van der Veer
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: Dutch conscientious objector; Tolstoy tells him he 'cannot but be' a Christian
+  evidenceCount: 2
+  evidence:
+  - dive: christian
+    id: vanduyl_1896_two_senses
+    genre: letter
+    teiId: null
+    pssTom: 69
+    pages: 122–124
+    date: '1896-08-23'
+    addressee: G. F. Van Duyl
+    localPdf: null
+    extract: docs/research/christian/extracts/v69_101_VanDejlyuVanDuylG_F.txt
+    facsimile: null
+    quoteRu: До сих пор все отказы от военной службы бывали основаны на мотивах, вытекающих из религиозных верований, и правительства объясняли их как последствия сектантского фанатизма, тогда как отказ Вандервера, который даже не называет себя христианином (вероятно, в том смысле, который церкви обычно придают этому слову, в сущности же я считаю его более христианином, чем все епископы, которые будут осуждать его поступок), не дает правительству никакой возможности объяснить его поступок, как исключение, и ясно обнаруживает противоречие между христианством, к которому причисляют себя правительства, и существующим порядком, который они поддерживают постоянными армиями, не имеющими другого назначения, кроме насилия и убийства.
+    quoteEn: '...Van der Veer, who does not even call himself a Christian (probably in the sense the churches usually give the word, though in essence I consider him more of a Christian than all the bishops who will condemn his act)... (working English)'
+    significance: 'The explicit two-senses split: the church sense of ''Christian'' (which the conscientious objector rejects) vs the essential sense (which Tolstoy affirms of him).'
+  - dive: christian
+    id: vanderveer_1896_cannot_not_be
+    genre: letter
+    teiId: null
+    pssTom: 69
+    pages: 124–127
+    date: '1896-08-23'
+    addressee: John Van der Veer
+    localPdf: null
+    extract: docs/research/christian/extracts/v69_102_DzhonuVanderVeruVanderVeerJohn.txt
+    facsimile: null
+    quoteRu: Дорогой друг, Называю вас так, потому что, прочитав ваше письмо к командиру полка,³ По этому письму я вижу, что ваше понимание жизни и наших обязанностей к богу и ближнему тождественно с моим. Вы говорите в вашем письме, что вы не христианин; но вы не можете не быть таковым, так как поступок ваш мог вытечь только из христианского начала, заключающегося в признании цели своего существования не в благе своей личности, но в осуществлении истины и общего блага, иначе говоря — в осуществлении воли божьей и установлении его царства на земле.
+    quoteEn: You say in your letter that you are not a Christian; but you cannot but be one, since your act could only have flowed from the Christian principle. (working English)
+    significance: Tolstoy bestows the label on a man who refuses it, redefining 'Christian' by deed rather than self-ascription — the mirror image of declining it for himself.
+  visuals: []
+- key: jubilee-edition
+  displayTitle: Jubilee Edition
+  names:
+  - The Jubilee Edition (Полное собрание сочинений)
+  wikiType: concept
+  wikiTypeVariants:
+  - concept
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 1
+  dependsOn:
+  - vladimir-chertkov
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - jubilee-edition
+  rolesByDive:
+    jubilee-edition-tei-corpus: the 90-volume complete works (1928–1958) + 1964 index volume; the platform's base text for all Russian-language citation
+  evidenceCount: 6
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-bibl-citation-format
+    genre: tei-metadata
+    teiId: null
+    pssTom: 1
+    pages: 3–95
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: 'Толстой Л. Н. Детство // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 1. М.: Гос. изд. «Художественная литература», 1935.'
+    quoteEn: 'Tolstoy L. N. Childhood // Tolstoy L. N. Complete Collected Works: in 90 vols. Vol. 1. Moscow: State Publishing House "Khudozhestvennaya Literatura", 1935. (working English)'
+    significance: Every TEI file carries a title[@type="bibl"] giving the canonical PSS citation — Tom, publisher, year, page range. This is the join key from the digital corpus back to the printed Jubilee Edition (and to pss-volume-mapping for the local PDF).
+  - dive: jubilee-edition-tei-corpus
+    id: pss-reproduction-notice
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: iv
+    date: '1935-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-004.png
+    quoteRu: Перепечатка разрешается безвозмездно
+    quoteEn: Reprinting is permitted gratis [free of charge]. (Followed by "Reproduction libre pour tous les pays.") (working English)
+    significance: The printed edition's OWN free-reproduction notice — the textual root of why the corpus is openly reusable, and a direct echo of Tolstoy's renunciation of copyright (see the copyright-renunciation dive). PD facsimile rendered from the local PDF.
+  - dive: jubilee-edition-tei-corpus
+    id: pss-state-commission
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: v
+    date: '1928-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-005.png
+    quoteRu: непосредственную работу по редактированию тому другу покойного писателя, которого он сам выбрал для этой цели
+    quoteEn: …the direct work of editing to that friend of the deceased writer whom he himself chose for this purpose… (i.e. V. G. Chertkov). (working English)
+    significance: 'From "ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ" (From the State Editorial Commission): the Soviet government''s own statement that it entrusted the edition to the friend Tolstoy himself chose — Chertkov as editor-in-chief, in the edition''s front matter. PD facsimile.'
+  - dive: jubilee-edition-tei-corpus
+    id: pss-chertkov-everything
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: vi
+    date: '1928-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-006.png
+    quoteRu: нам в настоящем издании приходится именно в таком полном виде воспроизводить решительно все, написанное Толстым.
+    quoteEn: …in the present edition we have to reproduce, in exactly such complete form, absolutely everything written by Tolstoy. (working English)
+    significance: Chertkov's statement of the edition's maximalist completeness principle — print everything, including private letters, diaries, and drafts — the textual-ethics foundation of the 90 volumes. PD facsimile.
+  - dive: jubilee-edition-tei-corpus
+    id: pss-cover-tom53
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 53
+    pages: null
+    date: '1953-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-cover-headers.txt
+    facsimile: null
+    quoteRu: Полное собрание сочинений. Том 53.
+    quoteEn: Complete Collected Works. Volume 53. (the auto-generated cover header). (working English)
+    significance: The "Весь Толстой в один клик" cover header that names the canonical Tom number — the anchor for pss-volume-mapping (local PDFs are numbered by publication order, not Tom). Tom 53 = local vol19, imprint "Государственное издательство «Художественная литература», 1953".
+  - dive: jubilee-edition-tei-corpus
+    id: pss-cover-tom91-index
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 91
+    pages: null
+    date: '1964-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol60/vol60.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-cover-headers.txt
+    facsimile: null
+    quoteRu: Полное собрание сочинений. Том 91.
+    quoteEn: Complete Collected Works. Volume 91 — "Указатели" (Indexes). (working English)
+    significance: 'The 1964 supplementary index volume (local vol60): alphabetical indexes of works, addressees, and >16,000 proper names + a chronological index. The intellectual source of the personList authority file and the index.tolstoy.ru web app.'
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: pss-reproduction-notice-facsimile
+    type: print-facsimile
+    subject: PSS Tom 1 — the free-reproduction notice («Перепечатка разрешается безвозмездно»)
+    relatedEvidence: pss-reproduction-notice
+    licence: PD
+    usable: true
+    url: null
+    localPath: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-004.png
+    alsoInDives: []
+  - dive: jubilee-edition-tei-corpus
+    id: pss-state-commission-facsimile
+    type: print-facsimile
+    subject: PSS Tom 1 — «ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ» (State Editorial Commission)
+    relatedEvidence: pss-state-commission
+    licence: PD
+    usable: true
+    url: null
+    localPath: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-005.png
+    alsoInDives: []
 - key: leo-tolstoy
   displayTitle: Leo Tolstoy
   names:
@@ -1471,6 +2017,42 @@ entities:
     url: https://upload.wikimedia.org/wikipedia/commons/a/af/Sulergitski_L_A_1910x.jpg
     localPath: docs/research/doukhobors/visuals/commons-sulerzhitsky-portrait-1910.jpg
     alsoInDives: []
+- key: marian-zdziechowski
+  displayTitle: Marian Zdziechowski
+  names:
+  - Iezhi (Marian) Zdziechowski
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: Polish scholar; recipient of 'I try to be a Christian'
+  evidenceCount: 1
+  evidence:
+  - dive: christian
+    id: zdziechowski_1895_i_try
+    genre: letter
+    teiId: null
+    pssTom: 68
+    pages: 165–173
+    date: '1895-09-10'
+    addressee: M. E. Zdziechowski
+    localPdf: null
+    extract: docs/research/christian/extracts/v68_159_M_E_Zdzexovskomu.txt
+    facsimile: null
+    quoteRu: ⁹ В данном случае, например, я, не будучи поляком, поспорю с каждым поляком в степени отвращения, негодования к тем диким и глупым мерам русских правительственных лиц, которые употребляются против веры и языка поляков; поспорю, и в желании противодействовать этим мерам, и не потому, что я люблю католичество больше, чем другие веры, или польский язык больше, чем другие языки, а потому, что я стараюсь быть христианином. И потому, для того чтобы ничего подобного не было ни в Польше, ни в Эльзасе, ни в Чехии, нужно не распространение патриотизма, а распространение истинного христианства.
+    quoteEn: '...not because I love Catholicism more than other faiths, or the Polish language more than other languages, but because I try to be a Christian. And therefore... what is needed is the spread of true Christianity. (working English)'
+    significance: 'The affirming pole: he does claim Christianity — as striving (''I try to be''), not as achieved identity. Guards against flattening him into pure refusal.'
+  visuals: []
 - key: mikhail-stakhovich
   displayTitle: Mikhail Stakhovich
   names:
@@ -1561,6 +2143,72 @@ entities:
     quoteEn: 'it is long, long since high time: first, to review and abolish the laws now existing on persecution for faith; second, to stop all prosecutions for departure from the state-accepted confession; third, to release all those imprisoned and exiled under the former laws for offences against faith; and fourth, not to punish as a crime the disagreement of religious conscience with the demands of the state. (working English)'
     significance: 'AUTHORITIES THREAD. Tolstoy''s four concrete demands to the Tsar on religious persecution, the Doukhobors as the emblem. NOTE: the final letter''s TEI is heavily lacunose; this byte-faithful span is from the legible pre-reform first-redaction draft in the same file.'
   visuals: []
+- key: nikolai-gudzy
+  displayTitle: Nikolai Gudzy
+  names:
+  - Nikolai K. Gudzy
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - jubilee-edition
+  rolesByDive:
+    jubilee-edition-tei-corpus: textologist on the Jubilee Edition editorial board (later committee)
+  evidenceCount: 0
+  evidence: []
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: nikolai-gudzy-portrait
+    type: portrait
+    subject: N. K. Gudzy (textologist, board member)
+    relatedEvidence: null
+    licence: unknown
+    usable: false
+    url: null
+    localPath: null
+    alsoInDives: []
+- key: nikolai-gusev
+  displayTitle: Nikolai Gusev
+  names:
+  - Nikolai N. Gusev
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - jubilee-edition
+  rolesByDive:
+    jubilee-edition-tei-corpus: Tolstoy's secretary; Jubilee Edition editorial-board member; author of the Летопись (chronicle) that forms a witness corpus in the TEI set
+  evidenceCount: 0
+  evidence: []
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: nikolai-gusev-portrait
+    type: portrait
+    subject: N. N. Gusev (secretary, board member)
+    relatedEvidence: null
+    licence: unknown
+    usable: false
+    url: null
+    localPath: null
+    alsoInDives: []
 - key: nikolai-strakhov
   displayTitle: Nikolai Strakhov
   names:
@@ -1737,7 +2385,6 @@ entities:
   displayTitle: Pavel Birukoff
   names:
   - Pavel Birukoff
-  - Pavel Biryukov
   wikiType: person
   wikiTypeVariants:
   - person
@@ -1804,17 +2451,7 @@ entities:
     quoteRu: Сколько бы ни набрасывали на горящую кучу хвороста дров, думая этим затушить огонь, — огонь, непотухающий огонь истины, только на время приглохнет, но разгорится еще сильнее и сожжет всё то, что наложено на него.
     quoteEn: However much firewood is thrown onto the burning heap of brush in the hope of putting the fire out, the fire — the unquenchable fire of truth — will only die down for a time, then blaze up the more strongly and burn everything that has been piled upon it. (working English)
     significance: 'The doctrinal companion to the factual letter, and the image that recurs across all his Doukhobor writing: the state cannot win — repression spreads the example. Biryukov wrote the article; Tolstoy the afterword.'
-  visuals:
-  - dive: doukhobors
-    id: biryukov-portrait
-    type: photograph
-    subject: Pavel Ivanovich Biryukov, c.1913
-    relatedEvidence: v39_099_105_unquenchable_fire
-    licence: PD
-    usable: true
-    url: https://upload.wikimedia.org/wikipedia/commons/7/71/Pavel_Biryukov.jpg
-    localPath: docs/research/doukhobors/visuals/commons-biryukov-portrait.jpg
-    alsoInDives: []
+  visuals: []
 - key: pyotr-verigin
   displayTitle: Pyotr Verigin
   names:
@@ -1910,6 +2547,43 @@ entities:
   evidenceCount: 0
   evidence: []
   visuals: []
+- key: russian-state-library
+  displayTitle: Russian State Library
+  names:
+  - Russian State Library (РГБ)
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - rgb-tolstoy-fond
+  rolesByDive:
+    jubilee-edition-tei-corpus: provided the electronic scans of the 90 volumes that the crowdsourcing project proofread
+  evidenceCount: 1
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: pss-rgb-provenance
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 53
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-cover-headers.txt
+    facsimile: null
+    quoteRu: Подготовлено на основе электронной копии 53-го тома Полного собрания сочинений Л. Н. Толстого, предоставленной Российской государственной библиотекой
+    quoteEn: Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)
+    significance: 'The digitisation''s scan source: the Russian State Library (РГБ) provided the electronic copies that the crowdsourcing project proofread. Maps to the sources.yaml id rgb-tolstoy-fond.'
+  visuals: []
 - key: sergei-tolstoy
   displayTitle: Sergei Tolstoy
   names:
@@ -1998,6 +2672,7 @@ entities:
   displayTitle: State Tolstoy Museum
   names:
   - State Tolstoy Museum (GMT)
+  - State Museum of L. N. Tolstoy (GMT)
   wikiType: institution
   wikiTypeVariants:
   - institution
@@ -2006,15 +2681,18 @@ entities:
   wordCount: null
   dossierVaultStatus:
     copyright-renunciation: missing
-  ingestionPriority: null
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 2
   dependsOn: []
   dives:
   - copyright-renunciation
+  - jubilee-edition-tei-corpus
   sources:
   - tolstoy-museum-moscow
   rolesByDive:
     copyright-renunciation: holds the diary and letter manuscripts cited here (manuscript fond, the 'steel room')
-  evidenceCount: 1
+    jubilee-edition-tei-corpus: Moscow museum (Prechistenka 11); co-initiator of the digitisation; holds the editorial archive and the photo collection catalogued in listMedia.xml
+  evidenceCount: 2
   evidence:
   - dive: copyright-renunciation
     id: v53_014_018_1895_03_27
@@ -2030,6 +2708,20 @@ entities:
     quoteRu: '4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак не завещаю. […] То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни.'
     quoteEn: 4) I ask my heirs to hand over to the public the right of publication of my earlier works — the ten volumes and the Azbuka — that is, to renounce the copyright. But I only ask this and in no way bequeath it. […] That my writings have been sold during these last ten years was the heaviest thing in my life. (working English)
     significance: Will-as-diary-entry; the most plainly written first-person statement of the renunciation. Precedes the six formal wills of 1909–1910 by fourteen years.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-listmedia-record
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/listMedia.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/listmedia-sample.txt
+    facsimile: null
+    quoteRu: Государственный музей Л. Н. Толстого
+    quoteEn: State Museum of L. N. Tolstoy (the holding repository on a media record). (working English)
+    significance: listMedia.xml (26.8 MB) catalogues museum photographs/media — each <figure> with graphic url, repository + museum catalogue idnos, figDesc, photographer, and an event (place + date). The data behind the "Tolstoy social network" photo project.
   visuals:
   - dive: copyright-renunciation
     id: tolstoy-museum-digital-collection
@@ -2040,6 +2732,16 @@ entities:
     usable: false
     url: https://tolstoy-iss.kamiscloud.ru/
     localPath: null
+    alsoInDives: []
+  - dive: jubilee-edition-tei-corpus
+    id: tolstoy-museum-moscow
+    type: photograph
+    subject: State L. N. Tolstoy Museum, Prechistenka 11, Moscow (facade)
+    relatedEvidence: null
+    licence: CC-BY-SA
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Prechistenka_tolstoy_museum_facade.jpg
+    localPath: docs/research/jubilee-edition-tei-corpus/visuals/commons-tolstoy-museum-moscow-facade.jpg
     alsoInDives: []
 - key: the-burning-of-arms
   displayTitle: The Burning of Arms
@@ -2111,6 +2813,123 @@ entities:
   evidenceCount: 0
   evidence: []
   visuals: []
+- key: tolstoy-digital
+  displayTitle: Tolstoy Digital
+  names:
+  - Tolstoy Digital / «Слово Толстого»
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: missing
+  ingestionPriority: 1
+  dependsOn:
+  - the-jubilee-edition-полное-собрание-сочинений
+  dives:
+  - jubilee-edition-tei-corpus
+  sources: []
+  rolesByDive:
+    jubilee-edition-tei-corpus: HSE digital-humanities project that TEI-encoded the 90 volumes (2015–2022) and added the semantic layers; source of the local corpus
+  evidenceCount: 6
+  evidence:
+  - dive: jubilee-edition-tei-corpus
+    id: tei-funder-slovo
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Проект «Слово Толстого»
+    quoteEn: The "Word of Tolstoy" project. (working English)
+    significance: The funder/project named in every header; publisher orgName adds "Tolstoy Digital, DH CLOUD, Научно-образовательный союз «Родное Слово»".
+  - dive: jubilee-edition-tei-corpus
+    id: tei-leadership-credit
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+    quoteEn: Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+    significance: The TEI respStmt credits the four project leads under "Идея, постановка задач, руководство". Same four names in every file; the keystone for the entity map of the digital project.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-licence-ccbysa
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Тексты и метатекстовая разметка доступны для свободного использования и распространения по лицензии Creative Commons Attribution Share-Alike (cc by-sa)
+    quoteEn: The texts and the metatextual markup are available for free use and distribution under the Creative Commons Attribution Share-Alike (cc by-sa) licence. (working English)
+    significance: The CC BY-SA grant lives in the TEI header's <availability>, NOT as a repo-level LICENSE file (GitHub's API reports the repo licence as None). The grant is real but header-scoped — relevant for any downstream reuse claim.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-personlist-record
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/personList.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/personlist-sample.txt
+    facsimile: null
+    quoteRu: Крупный российский промышленник, археолог-любитель, автор сочинений.
+    quoteEn: '"A major Russian industrialist, amateur archaeologist, author of works." (description of S. S. Abamelek-Lazarev, person id 15). (working English)'
+    significance: personList.xml is the authority file of 3,113 persons — each <person id="N"> with structured names, birth/death events, occupation/era/country catRefs, descriptions, and the linking id that every body <name type="person" ref="N"> points to.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-provenance-note
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/tei-header-works.txt
+    facsimile: null
+    quoteRu: Публикуемые документы был получены с сайта tolstoy.ru в формате html, переведены в формат TEI. Исправлены некоторые ошибки распознавания. Тексты, написанные в дореформенной орфографии, сопоставлены с их версиями в современной орфографии.
+    quoteEn: The published documents were obtained from the site tolstoy.ru in html format and converted to TEI. Some recognition (OCR) errors were corrected. Texts written in pre-reform orthography were collated with their modern-orthography versions. (working English)
+    significance: The data chain in the corpus's own words. Note the source typo "был" (for "были"), identical in every file — a fingerprint of the shared header template, not a per-file error.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-taxonomy
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/taxonomy.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/taxonomy-sample.txt
+    facsimile: null
+    quoteRu: Религия и философия
+    quoteEn: '"Religion and philosophy" — one topic category. (working English)'
+    significance: 'taxonomy.xml is the 125-category controlled vocabulary xi:include''d by every text via <catRef>: type (works/letters/diaries/notes/comments), genre (роман/повесть/рассказ/трактат…), sphere (fiction/non-fiction), topic, published/finished status, plus person and photo facets.'
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: index-tolstoy-ru-screenshot
+    type: screenshot
+    subject: index.tolstoy.ru — the '91st volume' web app
+    relatedEvidence: pss-cover-tom91-index
+    licence: rights-reserved
+    usable: false
+    url: https://index.tolstoy.ru/
+    localPath: null
+    alsoInDives: []
 - key: tolstoyanism
   displayTitle: Tolstoyanism
   names:
@@ -2280,6 +3099,98 @@ entities:
     quoteEn: And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)
     significance: The transformation stated as explicitly un-datable ("when and how … I could not say") and as a return to something old rather than the arrival of something new — the strongest textual counter to reading it as a dated "crisis".
   visuals: []
+- key: true-christianity-tolstoy
+  displayTitle: True Christianity (Tolstoy)
+  names:
+  - true vs church Christianity
+  wikiType: concept
+  wikiTypeVariants:
+  - concept
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    christian: missing
+  ingestionPriority: 1
+  dependsOn: []
+  dives:
+  - christian
+  sources: []
+  rolesByDive:
+    christian: 'Tolstoy''s governing distinction: истинное христианство (inward, universal) vs церковное христианство (''the greatest enemy of Christ'')'
+  evidenceCount: 5
+  evidence:
+  - dive: christian
+    id: diary_1890_mutual_exclusion
+    genre: diary
+    teiId: null
+    pssTom: 51
+    pages: '71'
+    date: '1890-08-03'
+    addressee: null
+    localPdf: null
+    extract: docs/research/christian/extracts/v51_071_071_1890_08_03.txt
+    facsimile: null
+    quoteRu: Православие и христианство имеют общего только название. Если церковники христиане, то я не христианин, и наоборот.
+    quoteEn: Orthodoxy and Christianity have only the name in common. If churchmen are Christians, then I am not a Christian, and vice versa. (working English)
+    significance: 'The epigram of the whole dive: the church-label and Tolstoy''s Christianity are mutually exclusive, stated in the privacy of the diary.'
+  - dive: christian
+    id: diary_1897_strength_not_weakness
+    genre: diary
+    teiId: null
+    pssTom: 53
+    pages: 159–160
+    date: '1897-11-10'
+    addressee: null
+    localPdf: null
+    extract: docs/research/christian/extracts/v53_159_160_1897_11_10.txt
+    facsimile: null
+    quoteRu: 'Как раз напротив: истинное христианство прежде всего требует высшее сознание своего достоинства, страшную силу и непоколебимость.'
+    quoteEn: 'The most ordinary judgement of Christianity, especially among the new Nietzschean reasoners, is that Christianity is renunciation of one''s dignity, weakness, submission. On the contrary: true Christianity first of all requires the highest consciousness of one''s dignity, terrible strength and steadfastness. (working English)'
+    significance: Defends 'true Christianity' as strength against the contemporary (Nietzschean) caricature — the positive content he keeps after discarding the church-label.
+  - dive: christian
+    id: vyazemsky_1901_church_enemy
+    genre: letter
+    teiId: null
+    pssTom: 73
+    pages: 23–25
+    date: '1901-01-28'
+    addressee: K. A. Vyazemsky
+    localPdf: null
+    extract: docs/research/christian/extracts/v73_015_K_A_Vyazemskomu.txt
+    facsimile: null
+    quoteRu: Чем больше я живу, чем более приближаюсь к смерти, тем более убеждаюсь в том, что церковное христианство есть величайший враг Христа, его учения и блага людей.
+    quoteEn: The more I live, the closer I come to death, the more convinced I am that church Christianity is the greatest enemy of Christ, of his teaching, and of the good of men. (working English)
+    significance: 'Written weeks before the Synod''s February 1901 edict: church-Christianity is set against Christ himself — the polarity that lets Tolstoy reject the church-label while keeping Christ.'
+  - dive: christian
+    id: nazhivin_1904_true_vs_social
+    genre: letter
+    teiId: null
+    pssTom: 75
+    pages: 60–62
+    date: '1904-03-17'
+    addressee: I. F. Nazhivin
+    localPdf: null
+    extract: docs/research/christian/extracts/v75_076_I_F_Nazhivinu.txt
+    facsimile: null
+    quoteRu: Христианство, истинное христианство, по моему мнению, тем и отличается от религий, которые можно называть общественными, как католичество, православие, магометанство, я думаю даже конфуцианство, что оно обращается к душе каждого отдельного человека, для каждого отдельного человека разрешает его вопрос жизни, указывает ему его назначение, состоящее в исполнении воли бога, в слиянии с ней своей воли, в служении для бога богу и людям и тем дает ему спокойствие и благо.
+    quoteEn: Christianity, true Christianity, in my opinion, differs from the religions one may call social — such as Catholicism, Orthodoxy, Mohammedanism, and I think even Confucianism — in that it addresses the soul of each individual person. (working English)
+    significance: 'The true-vs-church (here: vs ''social'' confessional) distinction stated as a definition; ''true Christianity'' is the inward, individual address, not the institutional religion.'
+  - dive: christian
+    id: rukavishnikov_1909_perennial
+    genre: letter
+    teiId: null
+    pssTom: 79
+    pages: 53–59
+    date: '1909-01-29'
+    addressee: N. A. Rukavishnikov
+    localPdf: null
+    extract: docs/research/christian/extracts/v79_055_N_A_Rukavishnikovu.txt
+    facsimile: null
+    quoteRu: 'Христианство же в его истинном значении я считаю не то, которое мне таковым кажется, но то, которое одинаково признавалось и признается всеми величайшими мыслителями мира до и после Христа. Истинное христианство это не есть какое-либо отдельное от других, исключительное учение, а есть наиболее полное и ясное для нашего времени выражение вечных, божеских истин, одинаково признаваемых всеми великими религиозными учениями мира: браминизмом, буддизмом, конфуцианством, маздеизмом, таосизмом, магометанством и другими.'
+    quoteEn: 'True Christianity is not some separate, exclusive teaching, but the fullest and clearest expression for our time of the eternal, divine truths equally acknowledged by all the great religious teachings of the world: Brahminism, Buddhism, Confucianism, Mazdeism, Taoism, Mohammedanism and others. (working English)'
+    significance: '''True Christianity'' redefined as one flowering of a single perennial truth shared across the world''s religions — Christianity as expression, not proprietary creed.'
+  visuals: []
 - key: varvara-mac-gahan
   displayTitle: Varvara Mac-Gahan
   names:
@@ -2348,8 +3259,9 @@ entities:
     copyright-renunciation: exists
     crisis: exists
     doukhobors: exists
+    jubilee-edition-tei-corpus: exists
     tolstoyanism: exists
-  ingestionPriority: 2
+  ingestionPriority: 1
   dependsOn:
   - christian-anarchism
   - tolstoyanism
@@ -2358,6 +3270,7 @@ entities:
   - copyright-renunciation
   - crisis
   - doukhobors
+  - jubilee-edition-tei-corpus
   - tolstoyanism
   sources:
   - jubilee-edition
@@ -2366,8 +3279,9 @@ entities:
     copyright-renunciation: co-drafter of the six wills; drafted the 1910 Explanatory Note; held Tolstoy's post-1881 rights
     crisis: disciple/correspondent from 1883; the PSS Tom 85 apparatus that carries the editors' 'кризис своих воззрений' annotates the Chertkov letters
     doukhobors: Co-author of «Help!»; expelled to England 1897, where he became the organising hub of the relief effort.
+    jubilee-edition-tei-corpus: editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project
     tolstoyanism: 'Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser, dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between Tolstoy''s ''there is no such thing'' and Chertkov''s institution-building is the dive''s central tension.'
-  evidenceCount: 3
+  evidenceCount: 7
   evidence:
   - dive: copyright-renunciation
     id: v82_305_Obyasnitelnayazapiskakzaveshhaniyu
@@ -2411,6 +3325,62 @@ entities:
     quoteRu: Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.
     quoteEn: 'Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)'
     significance: The most exalted of all his Doukhobor statements. The afterword to the appeal «Help!», co-signed by Chertkov, Biryukov and Tregubov, who were exiled for it.
+  - dive: jubilee-edition-tei-corpus
+    id: tei-locationlist-record
+    genre: tei-metadata
+    teiId: null
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/locationList.xml
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/locationlist-sample.txt
+    facsimile: null
+    quoteRu: В 1910 году Толстой приехал в усадьбу Отрадное, где снимал дачу его друг, сподвижник и редактор В. Г. Чертков.
+    quoteEn: In 1910 Tolstoy came to the Otradnoye estate, where his friend, associate and editor V. G. Chertkov was renting a dacha. (working English)
+    significance: locationList.xml is 385 places, each <place xml:id="slug"> with <geo> coordinates and a prose description. Place links use a string xml:id (asymmetric with person numeric ids).
+  - dive: jubilee-edition-tei-corpus
+    id: pss-state-commission
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: v
+    date: '1928-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-005.png
+    quoteRu: непосредственную работу по редактированию тому другу покойного писателя, которого он сам выбрал для этой цели
+    quoteEn: …the direct work of editing to that friend of the deceased writer whom he himself chose for this purpose… (i.e. V. G. Chertkov). (working English)
+    significance: 'From "ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ" (From the State Editorial Commission): the Soviet government''s own statement that it entrusted the edition to the friend Tolstoy himself chose — Chertkov as editor-in-chief, in the edition''s front matter. PD facsimile.'
+  - dive: jubilee-edition-tei-corpus
+    id: pss-chertkov-everything
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: vi
+    date: '1928-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-006.png
+    quoteRu: нам в настоящем издании приходится именно в таком полном виде воспроизводить решительно все, написанное Толстым.
+    quoteEn: …in the present edition we have to reproduce, in exactly such complete form, absolutely everything written by Tolstoy. (working English)
+    significance: Chertkov's statement of the edition's maximalist completeness principle — print everything, including private letters, diaries, and drafts — the textual-ethics foundation of the 90 volumes. PD facsimile.
+  - dive: jubilee-edition-tei-corpus
+    id: pss-chertkov-foreword-will
+    genre: print-frontmatter
+    teiId: null
+    pssTom: 1
+    pages: vi
+    date: '1928-01-01'
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-frontmatter.txt
+    facsimile: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-006.png
+    quoteRu: Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.
+    quoteEn: This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)
+    significance: 'From "ОТ ГЛАВНОГО РЕДАКТОРА" (From the Editor-in-Chief), Chertkov''s own foreword: Tolstoy asked him to review and publish the unpublished manuscripts, confirmed in the 31 July 1910 testamentary disposition — the exact document the copyright-renunciation dive centres on. PD facsimile.'
   visuals:
   - dive: christian-anarchism
     id: chertkov-portrait
@@ -2464,8 +3434,28 @@ entities:
     url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Chertkov_%26_Tolstoy_%28cropped%29.jpg
     localPath: docs/research/doukhobors/visuals/commons-chertkov-tolstoy-1909.jpg
     alsoInDives: []
-- key: what-i-believe-в-чём-моя-вера
-  displayTitle: What I Believe (В чём моя вера?)
+  - dive: jubilee-edition-tei-corpus
+    id: chertkov-by-repin
+    type: portrait
+    subject: V. G. Chertkov, editor-in-chief of the Jubilee Edition
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Chertkov_by_Repin.jpg
+    localPath: docs/research/jubilee-edition-tei-corpus/visuals/commons-chertkov-portrait-repin.jpg
+    alsoInDives: []
+  - dive: jubilee-edition-tei-corpus
+    id: pss-chertkov-foreword-facsimile
+    type: print-facsimile
+    subject: PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword)
+    relatedEvidence: pss-chertkov-foreword-will
+    licence: PD
+    usable: true
+    url: null
+    localPath: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-006.png
+    alsoInDives: []
+- key: what-i-believe
+  displayTitle: What I Believe
   names:
   - What I Believe (В чём моя вера?)
   wikiType: work
@@ -2501,29 +3491,58 @@ entities:
     quoteEn: Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What happened to me was what happens to a man who goes out on some errand and then suddenly decides on the way that the errand is of no use to him at all — and turns back home. (working English)
     significance: 'The companion account, told as the turn toward faith. The word is "переменилась" (changed), not "кризис". Note the tension with A Confession: here the change is "вдруг" (sudden), there it "had long been preparing" — two framings, neither a "crisis".'
   visuals: []
+- key: yasnaya-polyana
+  displayTitle: Yasnaya Polyana
+  names:
+  - Yasnaya Polyana
+  wikiType: place
+  wikiTypeVariants:
+  - place
+  vaultStatus: exists
+  vaultPath: website/src/wiki/Yasnaya Polyana.md
+  wordCount: 236
+  dossierVaultStatus:
+    jubilee-edition-tei-corpus: exists
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - jubilee-edition-tei-corpus
+  sources:
+  - yasnaya-polyana-archive
+  rolesByDive:
+    jubilee-edition-tei-corpus: Tolstoy's estate; co-initiator of the digitisation; the place from which most of the edition's manuscript base originates
+  evidenceCount: 0
+  evidence: []
+  visuals:
+  - dive: jubilee-edition-tei-corpus
+    id: yasnaya-polyana-house
+    type: photograph
+    subject: Yasnaya Polyana — Tolstoy's main house (source of the manuscript base)
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Yasnaya_Polyana_main_building.jpg
+    localPath: docs/research/jubilee-edition-tei-corpus/visuals/commons-yasnaya-polyana-main-building.jpg
+    alsoInDives: []
 lint:
   unresolvedEvidenceRefs: []
   nameConflicts:
-  - key: pavel-birukoff
+  - key: state-tolstoy-museum
     names:
-    - Pavel Birukoff
-    - Pavel Biryukov
+    - State Museum of L. N. Tolstoy (GMT)
+    - State Tolstoy Museum (GMT)
     dives:
     - copyright-renunciation
-    - crisis
-    - doukhobors
-  wikiTypeConflicts:
-  - key: aylmer-maude
-    wikiTypes:
-    - person
-    - translator
-    dives:
-    - copyright-renunciation
-    - doukhobors
+    - jubilee-edition-tei-corpus
+  wikiTypeConflicts: []
   entitiesWithZeroEvidence:
+  - key: abbyy
+    dives:
+    - jubilee-edition-tei-corpus
   - key: alexandra-tolstaya
     dives:
     - copyright-renunciation
+    - jubilee-edition-tei-corpus
   - key: aylmer-maude
     dives:
     - copyright-renunciation
@@ -2537,6 +3556,12 @@ lint:
   - key: leopold-sulerzhitsky
     dives:
     - doukhobors
+  - key: nikolai-gudzy
+    dives:
+    - jubilee-edition-tei-corpus
+  - key: nikolai-gusev
+    dives:
+    - jubilee-edition-tei-corpus
   - key: resurrection
     dives:
     - doukhobors
@@ -2549,13 +3574,14 @@ lint:
   - key: the-kingdom-of-god-is-within-you
     dives:
     - doukhobors
-  missingWikilinkTarget:
-  - name: What I Believe (В чём моя вера?)
-    dive: crisis
+  - key: yasnaya-polyana
+    dives:
+    - jubilee-edition-tei-corpus
+  missingWikilinkTarget: []
   worksRoutedNotWiki:
   - key: confession
     wikiType: work
-  - key: what-i-believe-в-чём-моя-вера
+  - key: what-i-believe
     wikiType: work
   vaultStatusDrift:
   - key: confession

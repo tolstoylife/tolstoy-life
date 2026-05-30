@@ -10,9 +10,9 @@ Generated aggregate of every corpus-dive dossier, keyed by entity. It collates t
 
 ## 1. At a glance
 
-- 5 dives · 41 distinct entities · 41 evidence rows · 46 visuals
-- By vault status: 7 exists · 3 stub · 31 missing
-- 4 entities recur across ≥2 dives
+- 7 dives · 59 distinct entities · 80 evidence rows · 57 visuals
+- By vault status: 8 exists · 3 stub · 48 missing
+- 6 entities recur across ≥2 dives
 
 ## 2. Ingestion work-order
 
@@ -20,17 +20,32 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 
 | Entity | Type | Status | Dives | #Ev | Depends on |
 |---|---|---|---|---|---|
+| Jubilee Edition | concept | missing | jubilee-edition-tei-corpus | 6 | vladimir-chertkov |
+| Tolstoy Digital | institution | missing | jubilee-edition-tei-corpus | 6 | the-jubilee-edition-полное-собрание-сочинений |
+| True Christianity (Tolstoy) | concept | missing | christian | 5 | — |
+| Excommunication of Leo Tolstoy | event | missing | christian | 1 | true-vs-church-christianity |
 | Paul Eltzbacher | person | missing | christian-anarchism | 3 | leo-tolstoy |
+| All Tolstoy in One Click | event | missing | jubilee-edition-tei-corpus | 2 | fyokla-tolstaya, the-jubilee-edition-полное-собрание-сочинений |
+| Dmitry Khilkov | person | missing | christian | 2 | — |
 | Gabriel Sacy | person | missing | christian-anarchism | 2 | christian-anarchism, leo-tolstoy |
+| State Tolstoy Museum | institution | missing | copyright-renunciation, jubilee-edition-tei-corpus | 2 | — |
 | Varvara Mac-Gahan | person | missing | tolstoyanism | 2 | leo-tolstoy |
+| Anastasia Bonch-Osmolovskaya | person | missing | jubilee-edition-tei-corpus | 1 | — |
 | Dushan Makovicky | person | missing | tolstoyanism | 1 | leo-tolstoy |
 | Eugen Heinrich Schmitt | person | missing | christian-anarchism | 1 | christian-anarchism, leo-tolstoy |
+| Fyokla Tolstaya | person | missing | jubilee-edition-tei-corpus | 1 | — |
 | Mikhail Stakhovich | person | missing | tolstoyanism | 1 | leo-tolstoy |
 | Non-resistance | concept | missing | christian-anarchism | 1 | christian-anarchism |
+| John Van der Veer | person | missing | christian | 2 | — |
+| Boris Orekhov | person | missing | jubilee-edition-tei-corpus | 1 | — |
 | Henry George | person | missing | tolstoyanism | 1 | — |
+| Higher School of Economics | institution | missing | jubilee-edition-tei-corpus | 1 | tolstoy-digital-/-«слово-толстого» |
 | I. Ivanov | person | missing | tolstoyanism | 1 | leo-tolstoy |
+| Ivan Nazhivin | person | missing | christian | 1 | — |
 | John Coleman Kenworthy | person | missing | christian-anarchism | 1 | christian-anarchism |
 | John Morrison Davidson | person | missing | christian-anarchism | 1 | christian-anarchism |
+| Marian Zdziechowski | person | missing | christian | 1 | — |
+| Russian State Library | institution | missing | jubilee-edition-tei-corpus | 1 | — |
 | Confession | work | stub | crisis | 3 | — |
 | Tolstoys religious conversion | concept | missing | crisis | 3 | — |
 | Doukhobor Emigration to Canada | event | missing | doukhobors | 2 | — |
@@ -43,13 +58,46 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Help (Pomogite) | criticalWork | missing | doukhobors | 1 | — |
 | Leonila Annenkova | person | missing | crisis | 1 | — |
 | Nikolai Strakhov | person | missing | crisis | 1 | — |
-| State Tolstoy Museum | institution | missing | copyright-renunciation | 1 | — |
 | The Burning of Arms | event | missing | doukhobors | 1 | — |
-| What I Believe (В чём моя вера?) | work | missing | crisis | 1 | — |
+| What I Believe | work | missing | crisis | 1 | — |
 
-9 entities are named across the dives but carry no evidence rows yet (research gaps, not ready to ingest): Alexandra Tolstaya, Aylmer Maude, Ernest Howard Crosby, Felix Ortt, Leopold Sulerzhitsky, Resurrection, Sergei Tolstoy, Society of Friends, The Kingdom of God Is Within You.
+13 entities are named across the dives but carry no evidence rows yet (research gaps, not ready to ingest): ABBYY, Alexandra Tolstaya, Aylmer Maude, Ernest Howard Crosby, Felix Ortt, Leopold Sulerzhitsky, Nikolai Gudzy, Nikolai Gusev, Resurrection, Sergei Tolstoy, Society of Friends, The Kingdom of God Is Within You, Yasnaya Polyana.
 
 ## 3. Collated citations, by entity
+
+### All Tolstoy in One Click
+
+event · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: 2013–2014 crowdsourced OCR+proofreading of the 90 volumes (ABBYY FineReader; ~3,249 volunteers, 49 countries; 46,820 pages); produced the free e-texts on tolstoy.ru
+
+> Публикуемые документы был получены с сайта tolstoy.ru в формате html, переведены в формат TEI. Исправлены некоторые ошибки распознавания. Тексты, написанные в дореформенной орфографии, сопоставлены с их версиями в современной орфографии.
+> The published documents were obtained from the site tolstoy.ru in html format and converted to TEI. Some recognition (OCR) errors were corrected. Texts written in pre-reform orthography were collated with their modern-orthography versions. (working English)
+> — jubilee-edition-tei-corpus
+
+> Подготовлено на основе электронной копии 53-го тома Полного собрания сочинений Л. Н. Толстого, предоставленной Российской государственной библиотекой
+> Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)
+> — PSS Tom 53 · jubilee-edition-tei-corpus
+
+### Anastasia Bonch-Osmolovskaya
+
+person · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: HSE linguist; co-founder/lead of Tolstoy Digital; principal author of the 'Tolstoy semanticized' (2019) methodology
+
+> Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+> Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+> — jubilee-edition-tei-corpus
+
+### Boris Orekhov
+
+person · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: HSE; technology lead of Tolstoy Digital; author of the '91st volume' (2020) paper on index.tolstoy.ru
+
+> Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+> Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+> — jubilee-edition-tei-corpus
 
 ### Christian Anarchism
 
@@ -100,6 +148,20 @@ _doukhobors_: Exiled prince whose reports first brought the atrocity news to Tol
 > После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли
 > After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them. (working English)
 > — PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14
+
+### Dmitry Khilkov
+
+person · missing · dives: christian
+
+_christian_: Correspondent (former officer, Tolstoyan) to whom Tolstoy explains one cannot 'be' a Christian
+
+> И потому христианином нельзя быть так же, как можно быть евреем, магометанином, церковником. Нельзя сказать про себя или про другого, что я или он христианин, потому что нет таких поступков, которыми бы я себя отличил от других как христианин. Еврей обрезался, соблюл субботу, магометанин помолился 5 раз, отдал десятину бедным, церковник окрестился, поговел; но христианину нечего такого сделать.
+> And so one cannot BE a Christian the way one can be a Jew, a Mohammedan, a churchman. One cannot say of oneself or of another that I or he is a Christian, because there are no acts by which I might mark myself off from others as a Christian. (working English)
+> — PSS Tom 65, pp. 76–78 · christian · 1890-04-09
+
+> Но и тут нельзя про себя сказать, что я христианин больше, чем не христианин, — татарин, поп и т. п. Как сказал какой-то писатель, «душа человека христианка».
+> But even here one cannot say of oneself that I am more a Christian than a non-Christian — a Tatar, a priest, and so on. As some writer said, 'the soul of man is a Christian.' (working English)
+> — PSS Tom 65, pp. 76–78 · christian · 1890-04-09
 
 ### Doukhobor Emigration to Canada
 
@@ -155,6 +217,28 @@ _christian-anarchism_: Hungarian philosopher (1851–1916), editor of the Religi
 
 Visuals: 1 (1 usable) — Eugen Heinrich Schmitt (Jenő Schmitt), portrait [PD]
 
+### Excommunication of Leo Tolstoy
+
+event · missing · dives: christian
+
+_christian_: The Synod edict of 20–22 Feb 1901 and Tolstoy's public Reply (Tom 34) — the capstone of the self-attestation question
+
+> То, что я отрекся от церкви, называющей себя православной, это совершенно справедливо. Но отрекся я от нее не потому, что я восстал на господа, а напротив, только потому, что всеми силами души желал служить ему.
+> That I have renounced the church that calls itself Orthodox is perfectly true. But I renounced it not because I rose up against the Lord, but, on the contrary, only because with all the strength of my soul I wished to serve him. (working English)
+> — PSS Tom 34, pp. 245–253 · christian · 1901-04-04
+
+### Fyokla Tolstaya
+
+person · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: Tolstoy's great-great-granddaughter; initiator of «Весь Толстой в один клик» and a leader of Tolstoy Digital
+
+> Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+> Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+> — jubilee-edition-tei-corpus
+
+Visuals: 1 (1 usable) — Fyokla Tolstaya, initiator of «Весь Толстой в один клик» [CC-BY-SA]
+
 ### Gabriel Sacy
 
 person · missing · dives: christian-anarchism
@@ -201,6 +285,16 @@ _tolstoyanism_: Tangential: the Mac-Gahan letter's long second half praises Geor
 > You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)
 > — PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22
 
+### Higher School of Economics
+
+institution · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: Moscow university; home of the digital-humanities group behind Tolstoy Digital
+
+> Проект «Слово Толстого»
+> The "Word of Tolstoy" project. (working English)
+> — jubilee-edition-tei-corpus
+
 ### I. Ivanov
 
 person · missing · dives: tolstoyanism
@@ -210,6 +304,16 @@ _tolstoyanism_: Obscure 1909 correspondent (addressed via his nephew); identity 
 > православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь, во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и сам Толстой
 > [you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)
 > — PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04
+
+### Ivan Nazhivin
+
+person · missing · dives: christian
+
+_christian_: Writer; recipient of the true-vs-social-religion definition
+
+> Христианство, истинное христианство, по моему мнению, тем и отличается от религий, которые можно называть общественными, как католичество, православие, магометанство, я думаю даже конфуцианство, что оно обращается к душе каждого отдельного человека, для каждого отдельного человека разрешает его вопрос жизни, указывает ему его назначение, состоящее в исполнении воли бога, в слиянии с ней своей воли, в служении для бога богу и людям и тем дает ему спокойствие и благо.
+> Christianity, true Christianity, in my opinion, differs from the religions one may call social — such as Catholicism, Orthodoxy, Mohammedanism, and I think even Confucianism — in that it addresses the soul of each individual person. (working English)
+> — PSS Tom 75, pp. 60–62 · christian · 1904-03-17
 
 ### Ivan Tregubov
 
@@ -244,6 +348,52 @@ _christian-anarchism_: John Morrison Davidson (1843–1916), Scottish radical jo
 > социалистическая, коммунистическая и анархическая теории приводятся в подкрепление христианской истины, которая составляет ее главную часть.
 > the socialist, communist and anarchist theories are brought in to corroborate the Christian truth, which forms its chief part. (working English)
 > — PSS Tom 67, pp. 178–180 · christian-anarchism · 1894-07-23
+
+### John Van der Veer
+
+person · missing · dives: christian
+
+_christian_: Dutch conscientious objector; Tolstoy tells him he 'cannot but be' a Christian
+
+> До сих пор все отказы от военной службы бывали основаны на мотивах, вытекающих из религиозных верований, и правительства объясняли их как последствия сектантского фанатизма, тогда как отказ Вандервера, который даже не называет себя христианином (вероятно, в том смысле, который церкви обычно придают этому слову, в сущности же я считаю его более христианином, чем все епископы, которые будут осуждать его поступок), не дает правительству никакой возможности объяснить его поступок, как исключение, и ясно обнаруживает противоречие между христианством, к которому причисляют себя правительства, и существующим порядком, который они поддерживают постоянными армиями, не имеющими другого назначения, кроме насилия и убийства.
+> ...Van der Veer, who does not even call himself a Christian (probably in the sense the churches usually give the word, though in essence I consider him more of a Christian than all the bishops who will condemn his act)... (working English)
+> — PSS Tom 69, pp. 122–124 · christian · 1896-08-23
+
+> Дорогой друг, Называю вас так, потому что, прочитав ваше письмо к командиру полка,³ По этому письму я вижу, что ваше понимание жизни и наших обязанностей к богу и ближнему тождественно с моим. Вы говорите в вашем письме, что вы не христианин; но вы не можете не быть таковым, так как поступок ваш мог вытечь только из христианского начала, заключающегося в признании цели своего существования не в благе своей личности, но в осуществлении истины и общего блага, иначе говоря — в осуществлении воли божьей и установлении его царства на земле.
+> You say in your letter that you are not a Christian; but you cannot but be one, since your act could only have flowed from the Christian principle. (working English)
+> — PSS Tom 69, pp. 124–127 · christian · 1896-08-23
+
+### Jubilee Edition
+
+concept · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: the 90-volume complete works (1928–1958) + 1964 index volume; the platform's base text for all Russian-language citation
+
+> Толстой Л. Н. Детство // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 1. М.: Гос. изд. «Художественная литература», 1935.
+> Tolstoy L. N. Childhood // Tolstoy L. N. Complete Collected Works: in 90 vols. Vol. 1. Moscow: State Publishing House "Khudozhestvennaya Literatura", 1935. (working English)
+> — PSS Tom 1, pp. 3–95 · jubilee-edition-tei-corpus
+
+> Перепечатка разрешается безвозмездно
+> Reprinting is permitted gratis [free of charge]. (Followed by "Reproduction libre pour tous les pays.") (working English)
+> — PSS Tom 1, pp. iv · jubilee-edition-tei-corpus · 1935-01-01
+
+> непосредственную работу по редактированию тому другу покойного писателя, которого он сам выбрал для этой цели
+> …the direct work of editing to that friend of the deceased writer whom he himself chose for this purpose… (i.e. V. G. Chertkov). (working English)
+> — PSS Tom 1, pp. v · jubilee-edition-tei-corpus · 1928-01-01
+
+> нам в настоящем издании приходится именно в таком полном виде воспроизводить решительно все, написанное Толстым.
+> …in the present edition we have to reproduce, in exactly such complete form, absolutely everything written by Tolstoy. (working English)
+> — PSS Tom 1, pp. vi · jubilee-edition-tei-corpus · 1928-01-01
+
+> Полное собрание сочинений. Том 53.
+> Complete Collected Works. Volume 53. (the auto-generated cover header). (working English)
+> — PSS Tom 53 · jubilee-edition-tei-corpus · 1953-01-01
+
+> Полное собрание сочинений. Том 91.
+> Complete Collected Works. Volume 91 — "Указатели" (Indexes). (working English)
+> — PSS Tom 91 · jubilee-edition-tei-corpus · 1964-01-01
+
+Visuals: 2 (2 usable) — PSS Tom 1 — the free-reproduction notice («Перепечатка разрешается безвозмездно») [PD], PSS Tom 1 — «ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ» (State Editorial Commission) [PD]
 
 ### Leo Tolstoy
 
@@ -343,6 +493,16 @@ _crisis_: correspondent; recipient of the 'эти кризисы / родилс�
 > …I, fortunately, have never known this despair since I was born anew… so that everyone, passing through these ages, these crises, would not take fright, but would wait for the next state, knowing that the same was so for others. (working English)
 > — PSS Tom 67, pp. 213–214 · TEI v67_214_L_F_Annenkovoj · crisis · 1894-09-04
 
+### Marian Zdziechowski
+
+person · missing · dives: christian
+
+_christian_: Polish scholar; recipient of 'I try to be a Christian'
+
+> ⁹ В данном случае, например, я, не будучи поляком, поспорю с каждым поляком в степени отвращения, негодования к тем диким и глупым мерам русских правительственных лиц, которые употребляются против веры и языка поляков; поспорю, и в желании противодействовать этим мерам, и не потому, что я люблю католичество больше, чем другие веры, или польский язык больше, чем другие языки, а потому, что я стараюсь быть христианином. И потому, для того чтобы ничего подобного не было ни в Польше, ни в Эльзасе, ни в Чехии, нужно не распространение патриотизма, а распространение истинного христианства.
+> ...not because I love Catholicism more than other faiths, or the Polish language more than other languages, but because I try to be a Christian. And therefore... what is needed is the spread of true Christianity. (working English)
+> — PSS Tom 68, pp. 165–173 · christian · 1895-09-10
+
 ### Mikhail Stakhovich
 
 person · missing · dives: tolstoyanism
@@ -411,7 +571,7 @@ Visuals: 2 (2 usable) — Paul Eltzbacher, photographic portrait [PD], PSS Tom 7
 
 ### Pavel Birukoff
 
-person · exists · dives: copyright-renunciation, crisis, doukhobors · names: Pavel Birukoff / Pavel Biryukov
+person · exists · dives: copyright-renunciation, crisis, doukhobors
 
 _copyright-renunciation_: correspondent in the earliest sustained free-publication discussion (1885); later biographer
 _crisis_: biographer; the framing source is his Swedish ed. (Leo Tolstoj: Hans liv och verk) Book IV «Kritisk period» ch.14 «Krisen» p.262 — names the chapter 'crisis' while reporting Tolstoy's denial of one (user-provided photograph)
@@ -426,8 +586,6 @@ _doukhobors_: Sent to the Caucasus 1895 to verify the facts; wrote the article T
 > Сколько бы ни набрасывали на горящую кучу хвороста дров, думая этим затушить огонь, — огонь, непотухающий огонь истины, только на время приглохнет, но разгорится еще сильнее и сожжет всё то, что наложено на него.
 > However much firewood is thrown onto the burning heap of brush in the hope of putting the fire out, the fire — the unquenchable fire of truth — will only die down for a time, then blaze up the more strongly and burn everything that has been piled upon it. (working English)
 > — PSS Tom 39, pp. 99–105 · doukhobors · 1895-10-01
-
-Visuals: 1 (1 usable) — Pavel Ivanovich Biryukov, c.1913 [PD]
 
 ### Pyotr Verigin
 
@@ -445,6 +603,16 @@ _doukhobors_: Doukhobor leader; exiled to Arkhangelsk then Siberia; from exile u
 
 Visuals: 2 (2 usable) — Pyotr Verigin in British Columbia, 1907 [PD], Pyotr Verigin, portrait, 1922 [PD]
 
+### Russian State Library
+
+institution · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: provided the electronic scans of the 90 volumes that the crowdsourcing project proofread
+
+> Подготовлено на основе электронной копии 53-го тома Полного собрания сочинений Л. Н. Толстого, предоставленной Российской государственной библиотекой
+> Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)
+> — PSS Tom 53 · jubilee-edition-tei-corpus
+
 ### Sophia Tolstaya
 
 person · exists · dives: copyright-renunciation
@@ -457,15 +625,20 @@ _copyright-renunciation_: opposed the 1891 renunciation; redacted 19 lines of th
 
 ### State Tolstoy Museum
 
-institution · missing · dives: copyright-renunciation
+institution · missing · dives: copyright-renunciation, jubilee-edition-tei-corpus · names: State Tolstoy Museum (GMT) / State Museum of L. N. Tolstoy (GMT)
 
 _copyright-renunciation_: holds the diary and letter manuscripts cited here (manuscript fond, the 'steel room')
+_jubilee-edition-tei-corpus_: Moscow museum (Prechistenka 11); co-initiator of the digitisation; holds the editorial archive and the photo collection catalogued in listMedia.xml
 
 > 4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак не завещаю. […] То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни.
 > 4) I ask my heirs to hand over to the public the right of publication of my earlier works — the ten volumes and the Azbuka — that is, to renounce the copyright. But I only ask this and in no way bequeath it. […] That my writings have been sold during these last ten years was the heaviest thing in my life. (working English)
 > — PSS Tom 53, pp. 14–18 · copyright-renunciation · 1895-03-27
 
-Visuals: 1 (0 usable) — State Tolstoy Museum digital collection (manuscripts, photographs, portraits) [rights-reserved]
+> Государственный музей Л. Н. Толстого
+> State Museum of L. N. Tolstoy (the holding repository on a media record). (working English)
+> — jubilee-edition-tei-corpus
+
+Visuals: 2 (1 usable) — State Tolstoy Museum digital collection (manuscripts, photographs, portraits) [rights-reserved], State L. N. Tolstoy Museum, Prechistenka 11, Moscow (facade) [CC-BY-SA]
 
 ### The Burning of Arms
 
@@ -478,6 +651,38 @@ _doukhobors_: The coordinated mass destruction of weapons by ~7,000 Doukhobors, 
 > — PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14
 
 Visuals: 1 (1 usable) — PSS Tom 39 p.209 — the Burning of Arms paragraph (rendered from the local PD PSS PDF) [PD]
+
+### Tolstoy Digital
+
+institution · missing · dives: jubilee-edition-tei-corpus
+
+_jubilee-edition-tei-corpus_: HSE digital-humanities project that TEI-encoded the 90 volumes (2015–2022) and added the semantic layers; source of the local corpus
+
+> Проект «Слово Толстого»
+> The "Word of Tolstoy" project. (working English)
+> — jubilee-edition-tei-corpus
+
+> Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+> Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+> — jubilee-edition-tei-corpus
+
+> Тексты и метатекстовая разметка доступны для свободного использования и распространения по лицензии Creative Commons Attribution Share-Alike (cc by-sa)
+> The texts and the metatextual markup are available for free use and distribution under the Creative Commons Attribution Share-Alike (cc by-sa) licence. (working English)
+> — jubilee-edition-tei-corpus
+
+> Крупный российский промышленник, археолог-любитель, автор сочинений.
+> "A major Russian industrialist, amateur archaeologist, author of works." (description of S. S. Abamelek-Lazarev, person id 15). (working English)
+> — jubilee-edition-tei-corpus
+
+> Публикуемые документы был получены с сайта tolstoy.ru в формате html, переведены в формат TEI. Исправлены некоторые ошибки распознавания. Тексты, написанные в дореформенной орфографии, сопоставлены с их версиями в современной орфографии.
+> The published documents were obtained from the site tolstoy.ru in html format and converted to TEI. Some recognition (OCR) errors were corrected. Texts written in pre-reform orthography were collated with their modern-orthography versions. (working English)
+> — jubilee-edition-tei-corpus
+
+> Религия и философия
+> "Religion and philosophy" — one topic category. (working English)
+> — jubilee-edition-tei-corpus
+
+Visuals: 1 (0 usable) — index.tolstoy.ru — the '91st volume' web app [rights-reserved]
 
 ### Tolstoyanism
 
@@ -525,6 +730,32 @@ _crisis_: the event this dive is about; candidate concept page — should foregr
 > And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)
 > — PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882
 
+### True Christianity (Tolstoy)
+
+concept · missing · dives: christian
+
+_christian_: Tolstoy's governing distinction: истинное христианство (inward, universal) vs церковное христианство ('the greatest enemy of Christ')
+
+> Православие и христианство имеют общего только название. Если церковники христиане, то я не христианин, и наоборот.
+> Orthodoxy and Christianity have only the name in common. If churchmen are Christians, then I am not a Christian, and vice versa. (working English)
+> — PSS Tom 51, pp. 71 · christian · 1890-08-03
+
+> Как раз напротив: истинное христианство прежде всего требует высшее сознание своего достоинства, страшную силу и непоколебимость.
+> The most ordinary judgement of Christianity, especially among the new Nietzschean reasoners, is that Christianity is renunciation of one's dignity, weakness, submission. On the contrary: true Christianity first of all requires the highest consciousness of one's dignity, terrible strength and steadfastness. (working English)
+> — PSS Tom 53, pp. 159–160 · christian · 1897-11-10
+
+> Чем больше я живу, чем более приближаюсь к смерти, тем более убеждаюсь в том, что церковное христианство есть величайший враг Христа, его учения и блага людей.
+> The more I live, the closer I come to death, the more convinced I am that church Christianity is the greatest enemy of Christ, of his teaching, and of the good of men. (working English)
+> — PSS Tom 73, pp. 23–25 · christian · 1901-01-28
+
+> Христианство, истинное христианство, по моему мнению, тем и отличается от религий, которые можно называть общественными, как католичество, православие, магометанство, я думаю даже конфуцианство, что оно обращается к душе каждого отдельного человека, для каждого отдельного человека разрешает его вопрос жизни, указывает ему его назначение, состоящее в исполнении воли бога, в слиянии с ней своей воли, в служении для бога богу и людям и тем дает ему спокойствие и благо.
+> Christianity, true Christianity, in my opinion, differs from the religions one may call social — such as Catholicism, Orthodoxy, Mohammedanism, and I think even Confucianism — in that it addresses the soul of each individual person. (working English)
+> — PSS Tom 75, pp. 60–62 · christian · 1904-03-17
+
+> Христианство же в его истинном значении я считаю не то, которое мне таковым кажется, но то, которое одинаково признавалось и признается всеми величайшими мыслителями мира до и после Христа. Истинное христианство это не есть какое-либо отдельное от других, исключительное учение, а есть наиболее полное и ясное для нашего времени выражение вечных, божеских истин, одинаково признаваемых всеми великими религиозными учениями мира: браминизмом, буддизмом, конфуцианством, маздеизмом, таосизмом, магометанством и другими.
+> True Christianity is not some separate, exclusive teaching, but the fullest and clearest expression for our time of the eternal, divine truths equally acknowledged by all the great religious teachings of the world: Brahminism, Buddhism, Confucianism, Mazdeism, Taoism, Mohammedanism and others. (working English)
+> — PSS Tom 79, pp. 53–59 · christian · 1909-01-29
+
 ### Varvara Mac-Gahan
 
 person · missing · dives: tolstoyanism
@@ -541,12 +772,13 @@ _tolstoyanism_: Russian-American journalist (1850–1904), widow of war correspo
 
 ### Vladimir Chertkov
 
-person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoyanism
+person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, jubilee-edition-tei-corpus, tolstoyanism
 
 _christian-anarchism_: Tolstoy's closest disciple and publisher; gave «христианский анархизм» programmatic Russian form in the 1905 booklet O khristianskom anarkhizme (Svobodnoe Slovo), the in-circle frame the Sacy phrase points to. The 1905 booklet is not held locally.
 _copyright-renunciation_: co-drafter of the six wills; drafted the 1910 Explanatory Note; held Tolstoy's post-1881 rights
 _crisis_: disciple/correspondent from 1883; the PSS Tom 85 apparatus that carries the editors' 'кризис своих воззрений' annotates the Chertkov letters
 _doukhobors_: Co-author of «Help!»; expelled to England 1897, where he became the organising hub of the relief effort.
+_jubilee-edition-tei-corpus_: editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project
 _tolstoyanism_: Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser, dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between Tolstoy's 'there is no such thing' and Chertkov's institution-building is the dive's central tension.
 
 > 1) Все его сочинения, литературные произведения и писания всякого рода, как уже где-либо напечатанные, так и еще не изданные, не составляли после его смерти ничьей частной собственности, а могли бы быть издаваемы и перепечатываемы всеми, кто этого захочет.
@@ -561,9 +793,25 @@ _tolstoyanism_: Not named in the four quotes, but the focal point of the ambival
 > Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)
 > — PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26
 
-Visuals: 5 (4 usable) — Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], V. G. Chertkov, 1883 (photograph by A. F. Eichenvald) [PD], Portrait of V. G. Chertkov, Ivan Kramskoy, 1881 [unknown], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD]
+> В 1910 году Толстой приехал в усадьбу Отрадное, где снимал дачу его друг, сподвижник и редактор В. Г. Чертков.
+> In 1910 Tolstoy came to the Otradnoye estate, where his friend, associate and editor V. G. Chertkov was renting a dacha. (working English)
+> — jubilee-edition-tei-corpus
 
-### What I Believe (В чём моя вера?)
+> непосредственную работу по редактированию тому другу покойного писателя, которого он сам выбрал для этой цели
+> …the direct work of editing to that friend of the deceased writer whom he himself chose for this purpose… (i.e. V. G. Chertkov). (working English)
+> — PSS Tom 1, pp. v · jubilee-edition-tei-corpus · 1928-01-01
+
+> нам в настоящем издании приходится именно в таком полном виде воспроизводить решительно все, написанное Толстым.
+> …in the present edition we have to reproduce, in exactly such complete form, absolutely everything written by Tolstoy. (working English)
+> — PSS Tom 1, pp. vi · jubilee-edition-tei-corpus · 1928-01-01
+
+> Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.
+> This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)
+> — PSS Tom 1, pp. vi · jubilee-edition-tei-corpus · 1928-01-01
+
+Visuals: 7 (6 usable) — Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], V. G. Chertkov, 1883 (photograph by A. F. Eichenvald) [PD], Portrait of V. G. Chertkov, Ivan Kramskoy, 1881 [unknown], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD], V. G. Chertkov, editor-in-chief of the Jubilee Edition [PD], PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword) [PD]
+
+### What I Believe
 
 work · missing · dives: crisis
 
@@ -581,37 +829,41 @@ _crisis_: companion confessional work; 'жизнь моя вдруг перем�
 
 **Name conflicts (same key, multiple spellings)** (1)
 
-- pavel-birukoff: Pavel Birukoff / Pavel Biryukov (copyright-renunciation, crisis, doukhobors)
+- state-tolstoy-museum: State Museum of L. N. Tolstoy (GMT) / State Tolstoy Museum (GMT) (copyright-renunciation, jubilee-edition-tei-corpus)
 
-**wikiType conflicts** (1)
+**wikiType conflicts** (0)
 
-- aylmer-maude: person / translator
+- none
 
 **Works routed to works/ (not a wiki type)** (2)
 
 - confession (work)
-- what-i-believe-в-чём-моя-вера (work)
+- what-i-believe (work)
 
 **vaultStatus drift (dossier vs live)** (2)
 
 - confession: dossier ['exists'] → live stub
 - the-kingdom-of-god-is-within-you: dossier ['exists'] → live stub
 
-**Entities with zero evidence** (9)
+**Entities with zero evidence** (13)
 
-- alexandra-tolstaya (copyright-renunciation)
+- abbyy (jubilee-edition-tei-corpus)
+- alexandra-tolstaya (copyright-renunciation, jubilee-edition-tei-corpus)
 - aylmer-maude (copyright-renunciation, doukhobors)
 - ernest-howard-crosby (christian-anarchism)
 - felix-ortt (christian-anarchism)
 - leopold-sulerzhitsky (doukhobors)
+- nikolai-gudzy (jubilee-edition-tei-corpus)
+- nikolai-gusev (jubilee-edition-tei-corpus)
 - resurrection (doukhobors)
 - sergei-tolstoy (doukhobors)
 - society-of-friends (doukhobors)
 - the-kingdom-of-god-is-within-you (doukhobors)
+- yasnaya-polyana (jubilee-edition-tei-corpus)
 
-**Missing wikilinkTarget** (1)
+**Missing wikilinkTarget** (0)
 
-- What I Believe (В чём моя вера?) (crisis)
+- none
 
 **Slug ≠ page id** (0)
 
