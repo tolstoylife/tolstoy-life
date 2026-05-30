@@ -1,0 +1,381 @@
+topic:
+  slug: christian
+  title: '"What kind of Christian did Tolstoy call himself?" — the label in his own reply'
+  question: When asked whether he was a Christian, what did Tolstoy reply — did he claim the bare label, or qualify/reframe it because the word is so tied to the churches?
+  date: '2026-05-30'
+  period: Prophet period (post-1880)
+  corpusSurface: letters (reply contexts, first-class) + the 1901 Synod reply (work) + diaries; doctrinal keystone works read as works
+  dateRange: 1889–1910
+evidence:
+- id: khilkov_1890_cannot_be
+  genre: letter
+  pssTom: 65
+  pages: 76–78
+  date: '1890-04-09'
+  addressee: D. A. Khilkov
+  localPdf: null
+  extract: extracts/v65_064_D_A_Xilkovu.txt
+  quoteRu: И потому христианином нельзя быть так же, как можно быть евреем, магометанином, церковником. Нельзя сказать про себя или про другого, что я или он христианин, потому что нет таких поступков, которыми бы я себя отличил от других как христианин. Еврей обрезался, соблюл субботу, магометанин помолился 5 раз, отдал десятину бедным, церковник окрестился, поговел; но христианину нечего такого сделать.
+  quoteEn: And so one cannot BE a Christian the way one can be a Jew, a Mohammedan, a churchman. One cannot say of oneself or of another that I or he is a Christian, because there are no acts by which I might mark myself off from others as a Christian. (working English)
+  significance: 'The conceptual core of Tolstoy''s refusal of the label: Christianity, unlike confessional identities marked by defining acts (circumcision, prayer, baptism), is an ideal/direction, not a status one can claim.'
+  facsimile: null
+- id: khilkov_1890_soul_christian
+  genre: letter
+  pssTom: 65
+  pages: 76–78
+  date: '1890-04-09'
+  addressee: D. A. Khilkov
+  localPdf: null
+  extract: extracts/v65_064_D_A_Xilkovu.txt
+  quoteRu: Но и тут нельзя про себя сказать, что я христианин больше, чем не христианин, — татарин, поп и т. п. Как сказал какой-то писатель, «душа человека христианка».
+  quoteEn: But even here one cannot say of oneself that I am more a Christian than a non-Christian — a Tatar, a priest, and so on. As some writer said, 'the soul of man is a Christian.' (working English)
+  significance: Tolstoy will not rank himself as 'a Christian' over others; he relocates Christianity to a universal disposition of the soul rather than a possessed identity.
+  facsimile: null
+- id: das_sharma_1903_not_in_accepted_sense
+  genre: letter
+  pssTom: 74
+  pages: 210–211
+  date: '1903-10-22'
+  addressee: P. M. Das Sharma
+  localPdf: null
+  extract: extracts/v74_283_P_M_DasSHarmaP_M_DassSharma.txt
+  quoteRu: Милостивый государь, 1) Я не христианин в общепринятом смысле этого слова.
+  quoteEn: 1) I am not a Christian in the generally accepted sense of the word. (working English)
+  significance: 'The cleanest one-line reply to the direct question: he declines the bare label precisely in its conventional (church) sense.'
+  facsimile: null
+- id: vyazemsky_1901_church_enemy
+  genre: letter
+  pssTom: 73
+  pages: 23–25
+  date: '1901-01-28'
+  addressee: K. A. Vyazemsky
+  localPdf: null
+  extract: extracts/v73_015_K_A_Vyazemskomu.txt
+  quoteRu: Чем больше я живу, чем более приближаюсь к смерти, тем более убеждаюсь в том, что церковное христианство есть величайший враг Христа, его учения и блага людей.
+  quoteEn: The more I live, the closer I come to death, the more convinced I am that church Christianity is the greatest enemy of Christ, of his teaching, and of the good of men. (working English)
+  significance: 'Written weeks before the Synod''s February 1901 edict: church-Christianity is set against Christ himself — the polarity that lets Tolstoy reject the church-label while keeping Christ.'
+  facsimile: null
+- id: gets_1898_indifferent_name
+  genre: letter
+  pssTom: 71
+  pages: 377–379
+  date: '1898-06-14'
+  addressee: F. B. Gets
+  localPdf: null
+  extract: extracts/v71_156_F_B_Gecu.txt
+  quoteRu: Я так мало приписываю значения словам, именам, что мне совершенно всё равно, как называть то жизнепонимание, которое я разделяю с многими и основы которого я нашел в евангелии. Пускай это будет новое еврейство, очищенный истолкованный талмуд, а церковное христианство будет называться язычеством, каким я и считаю его, но для того, чтобы называть это жизнепонимание, которое мне дорого и которым я живу, новым еврейством или талмудом, мне нужно, чтобы я нашел это жизнепонимание ясно и стройно выраженным в еврейской книге, так же или более ясно и стройно, чем в евангелиях.
+  quoteEn: I attach so little significance to words, to names, that it is completely all the same to me what one calls the understanding of life that I share with many... let church Christianity be called paganism, which is what I consider it. (working English)
+  significance: Indifference to the label itself; the church-coded word can be discarded without loss because what matters is the way of life, not the name.
+  facsimile: null
+- id: nazhivin_1904_true_vs_social
+  genre: letter
+  pssTom: 75
+  pages: 60–62
+  date: '1904-03-17'
+  addressee: I. F. Nazhivin
+  localPdf: null
+  extract: extracts/v75_076_I_F_Nazhivinu.txt
+  quoteRu: Христианство, истинное христианство, по моему мнению, тем и отличается от религий, которые можно называть общественными, как католичество, православие, магометанство, я думаю даже конфуцианство, что оно обращается к душе каждого отдельного человека, для каждого отдельного человека разрешает его вопрос жизни, указывает ему его назначение, состоящее в исполнении воли бога, в слиянии с ней своей воли, в служении для бога богу и людям и тем дает ему спокойствие и благо.
+  quoteEn: Christianity, true Christianity, in my opinion, differs from the religions one may call social — such as Catholicism, Orthodoxy, Mohammedanism, and I think even Confucianism — in that it addresses the soul of each individual person. (working English)
+  significance: 'The true-vs-church (here: vs ''social'' confessional) distinction stated as a definition; ''true Christianity'' is the inward, individual address, not the institutional religion.'
+  facsimile: null
+- id: rukavishnikov_1909_perennial
+  genre: letter
+  pssTom: 79
+  pages: 53–59
+  date: '1909-01-29'
+  addressee: N. A. Rukavishnikov
+  localPdf: null
+  extract: extracts/v79_055_N_A_Rukavishnikovu.txt
+  quoteRu: 'Христианство же в его истинном значении я считаю не то, которое мне таковым кажется, но то, которое одинаково признавалось и признается всеми величайшими мыслителями мира до и после Христа. Истинное христианство это не есть какое-либо отдельное от других, исключительное учение, а есть наиболее полное и ясное для нашего времени выражение вечных, божеских истин, одинаково признаваемых всеми великими религиозными учениями мира: браминизмом, буддизмом, конфуцианством, маздеизмом, таосизмом, магометанством и другими.'
+  quoteEn: 'True Christianity is not some separate, exclusive teaching, but the fullest and clearest expression for our time of the eternal, divine truths equally acknowledged by all the great religious teachings of the world: Brahminism, Buddhism, Confucianism, Mazdeism, Taoism, Mohammedanism and others. (working English)'
+  significance: '''True Christianity'' redefined as one flowering of a single perennial truth shared across the world''s religions — Christianity as expression, not proprietary creed.'
+  facsimile: null
+- id: vanderveer_1896_cannot_not_be
+  genre: letter
+  pssTom: 69
+  pages: 124–127
+  date: '1896-08-23'
+  addressee: John Van der Veer
+  localPdf: null
+  extract: extracts/v69_102_DzhonuVanderVeruVanderVeerJohn.txt
+  quoteRu: Дорогой друг, Называю вас так, потому что, прочитав ваше письмо к командиру полка,³ По этому письму я вижу, что ваше понимание жизни и наших обязанностей к богу и ближнему тождественно с моим. Вы говорите в вашем письме, что вы не христианин; но вы не можете не быть таковым, так как поступок ваш мог вытечь только из христианского начала, заключающегося в признании цели своего существования не в благе своей личности, но в осуществлении истины и общего блага, иначе говоря — в осуществлении воли божьей и установлении его царства на земле.
+  quoteEn: You say in your letter that you are not a Christian; but you cannot but be one, since your act could only have flowed from the Christian principle. (working English)
+  significance: Tolstoy bestows the label on a man who refuses it, redefining 'Christian' by deed rather than self-ascription — the mirror image of declining it for himself.
+  facsimile: null
+- id: vanduyl_1896_two_senses
+  genre: letter
+  pssTom: 69
+  pages: 122–124
+  date: '1896-08-23'
+  addressee: G. F. Van Duyl
+  localPdf: null
+  extract: extracts/v69_101_VanDejlyuVanDuylG_F.txt
+  quoteRu: До сих пор все отказы от военной службы бывали основаны на мотивах, вытекающих из религиозных верований, и правительства объясняли их как последствия сектантского фанатизма, тогда как отказ Вандервера, который даже не называет себя христианином (вероятно, в том смысле, который церкви обычно придают этому слову, в сущности же я считаю его более христианином, чем все епископы, которые будут осуждать его поступок), не дает правительству никакой возможности объяснить его поступок, как исключение, и ясно обнаруживает противоречие между христианством, к которому причисляют себя правительства, и существующим порядком, который они поддерживают постоянными армиями, не имеющими другого назначения, кроме насилия и убийства.
+  quoteEn: '...Van der Veer, who does not even call himself a Christian (probably in the sense the churches usually give the word, though in essence I consider him more of a Christian than all the bishops who will condemn his act)... (working English)'
+  significance: 'The explicit two-senses split: the church sense of ''Christian'' (which the conscientious objector rejects) vs the essential sense (which Tolstoy affirms of him).'
+  facsimile: null
+- id: zdziechowski_1895_i_try
+  genre: letter
+  pssTom: 68
+  pages: 165–173
+  date: '1895-09-10'
+  addressee: M. E. Zdziechowski
+  localPdf: null
+  extract: extracts/v68_159_M_E_Zdzexovskomu.txt
+  quoteRu: ⁹ В данном случае, например, я, не будучи поляком, поспорю с каждым поляком в степени отвращения, негодования к тем диким и глупым мерам русских правительственных лиц, которые употребляются против веры и языка поляков; поспорю, и в желании противодействовать этим мерам, и не потому, что я люблю католичество больше, чем другие веры, или польский язык больше, чем другие языки, а потому, что я стараюсь быть христианином. И потому, для того чтобы ничего подобного не было ни в Польше, ни в Эльзасе, ни в Чехии, нужно не распространение патриотизма, а распространение истинного христианства.
+  quoteEn: '...not because I love Catholicism more than other faiths, or the Polish language more than other languages, but because I try to be a Christian. And therefore... what is needed is the spread of true Christianity. (working English)'
+  significance: 'The affirming pole: he does claim Christianity — as striving (''I try to be''), not as achieved identity. Guards against flattening him into pure refusal.'
+  facsimile: null
+- id: alekhin_1891_not_proclaim
+  genre: letter
+  pssTom: 65
+  pages: 296–300
+  date: '1891-05-14'
+  addressee: A. V. Alekhin
+  localPdf: null
+  extract: extracts/v65_306_A_V_Alexinu.txt
+  quoteRu: И не забудьте, что истинные христиане таковы, что они не идут на площади, провозглашая себя христианами, а сидят незаметными во внешних проявлениях и потому неизвестными своим современникам, по своим углам.
+  quoteEn: '...true Christians are such that they do not go out into the squares proclaiming themselves Christians, but sit unnoticed in their corners. (working English)'
+  significance: Self-proclamation as 'Christian' is itself un-Christian; the true Christian is unselfconscious — another reason Tolstoy avoids claiming the badge.
+  facsimile: null
+- id: murtazin_1910_worker_of_god
+  genre: letter
+  pssTom: 81
+  pages: 17–19
+  date: '1910-01-05'
+  addressee: M. F. Murtazin
+  localPdf: null
+  extract: extracts/v81_011_M_F_Murtazinu.txt
+  quoteRu: Дало мне спокойствие, уверенность и благо признание того, что я не христианин, не русский, не дворянин, не член своего семейства, не Лев Николаевич Толстой, а работник божий, посланный в мир для исполнения в нем, в тот короткий срок жизни, который предназначен мне, дела пославшего меня.
+  quoteEn: What gave me peace, certainty and good was the recognition that I am not a Christian, not a Russian, not a nobleman, not a member of my family, not Lev Nikolaevich Tolstoy, but a worker of God, sent into the world. (working English)
+  significance: The late dissolution (1910) of every identity-label, 'Christian' included, into 'a worker of God' — the furthest reach of the reframe.
+  facsimile: null
+- id: silaev_1907_follower
+  genre: letter
+  pssTom: 77
+  pages: 175–176
+  date: '1907-08-08'
+  addressee: A. Ya. Silaev
+  localPdf: null
+  extract: extracts/v77_199_A_YA_Silaevu.txt
+  quoteRu: 'Последователю Христа для того, чтобы исполнить его закон и волю бога, не нужно избирать то или другое место. Жить по-христиански: любить ближнего, прощать обиды, с кротостью переносить всякие невзгоды и гонения можно во всяком месте.'
+  quoteEn: For a follower of Christ, to fulfil his law and the will of God, there is no need to choose one place or another. One can live in a Christian way — love one's neighbour, forgive offences, bear all hardships and persecutions with meekness — in any place. (working English)
+  significance: 'The reframe vocabulary in his own voice: ''follower of Christ'' (posledovatel Khrista) rather than the church-coded noun ''Christian.'''
+  facsimile: null
+- id: diary_1890_mutual_exclusion
+  genre: diary
+  pssTom: 51
+  pages: '71'
+  date: '1890-08-03'
+  addressee: null
+  localPdf: null
+  extract: extracts/v51_071_071_1890_08_03.txt
+  quoteRu: Православие и христианство имеют общего только название. Если церковники христиане, то я не христианин, и наоборот.
+  quoteEn: Orthodoxy and Christianity have only the name in common. If churchmen are Christians, then I am not a Christian, and vice versa. (working English)
+  significance: 'The epigram of the whole dive: the church-label and Tolstoy''s Christianity are mutually exclusive, stated in the privacy of the diary.'
+  facsimile: null
+- id: diary_1889_only_nonresistant
+  genre: diary
+  pssTom: 50
+  pages: 103–104
+  date: '1889-07-04'
+  addressee: null
+  localPdf: null
+  extract: extracts/v50_103_104_1889_07_04.txt
+  quoteRu: Был разговор с А. М. Кузминским о христианстве. Я сказал, что христиане только те, которые кротки, смиренны, терпеливы, как Христос, т. е. non resistant.¹ которые не признают этого, признают по вере убийство, казни, суды, не имеют права называть себя христианами.
+  quoteEn: There was a conversation with A. M. Kuzminsky about Christianity. I said that Christians are only those who are meek, humble, patient, like Christ — i.e. non-resistant; that those who do not acknowledge this... have no right to call themselves Christians. (working English)
+  significance: 'A recorded conversational reply (the dive''s exact frame): asked about Christianity, he restricts the name to the non-resistant and denies it to the rest.'
+  facsimile: null
+- id: diary_1897_strength_not_weakness
+  genre: diary
+  pssTom: 53
+  pages: 159–160
+  date: '1897-11-10'
+  addressee: null
+  localPdf: null
+  extract: extracts/v53_159_160_1897_11_10.txt
+  quoteRu: 'Как раз напротив: истинное христианство прежде всего требует высшее сознание своего достоинства, страшную силу и непоколебимость.'
+  quoteEn: 'The most ordinary judgement of Christianity, especially among the new Nietzschean reasoners, is that Christianity is renunciation of one''s dignity, weakness, submission. On the contrary: true Christianity first of all requires the highest consciousness of one''s dignity, terrible strength and steadfastness. (working English)'
+  significance: Defends 'true Christianity' as strength against the contemporary (Nietzschean) caricature — the positive content he keeps after discarding the church-label.
+  facsimile: null
+- id: synod_1901_renounced_to_serve
+  genre: work
+  pssTom: 34
+  pages: 245–253
+  date: '1901-04-04'
+  addressee: null
+  localPdf: null
+  extract: extracts/v34_245_253_Otvet_Sinodu.txt
+  quoteRu: То, что я отрекся от церкви, называющей себя православной, это совершенно справедливо. Но отрекся я от нее не потому, что я восстал на господа, а напротив, только потому, что всеми силами души желал служить ему.
+  quoteEn: That I have renounced the church that calls itself Orthodox is perfectly true. But I renounced it not because I rose up against the Lord, but, on the contrary, only because with all the strength of my soul I wished to serve him. (working English)
+  significance: 'The public capstone — his reply to the Synod''s excommunication: renunciation of the church is framed as fidelity to God, the institutional bond severed in the name of the thing the institution claims.'
+  facsimile: null
+- id: synod_1901_professes
+  genre: work
+  pssTom: 34
+  pages: 245–253
+  date: '1901-04-04'
+  addressee: null
+  localPdf: null
+  extract: extracts/v34_245_253_Otvet_Sinodu.txt
+  quoteRu: И до сих пор истина совпадает для меня с христианством, как я его понимаю. И я исповедую это христианство; и в той мере, в какой исповедую его, спокойно и радостно живу и спокойно и радостно приближаюсь к смерти.
+  quoteEn: And to this day truth coincides for me with Christianity as I understand it. And I profess this Christianity; and to the degree that I profess it, I live calmly and joyfully, and calmly and joyfully draw near to death. (working English)
+  significance: 'The other half of the Synod reply, against flattening him into mere refusal: having renounced the Church, he still openly PROFESSES ''this Christianity'' — his redefined, truth-identified version — as the thing he lives and dies by.'
+  facsimile: null
+entities:
+- name: Dmitry Khilkov
+  wikiType: person
+  wikilinkTarget: Dmitry Khilkov
+  vaultStatus: missing
+  role: Correspondent (former officer, Tolstoyan) to whom Tolstoy explains one cannot 'be' a Christian
+  sources: []
+  evidenceRefs:
+  - khilkov_1890_cannot_be
+  - khilkov_1890_soul_christian
+  ingestionPriority: 2
+  dependsOn: []
+- name: 1901 Holy Synod excommunication of Tolstoy
+  wikiType: event
+  wikilinkTarget: Excommunication of Leo Tolstoy
+  vaultStatus: missing
+  role: The Synod edict of 20–22 Feb 1901 and Tolstoy's public Reply (Tom 34) — the capstone of the self-attestation question
+  sources: []
+  evidenceRefs:
+  - synod_1901_renounced_to_serve
+  ingestionPriority: 1
+  dependsOn:
+  - true vs church Christianity
+- name: true vs church Christianity
+  wikiType: concept
+  wikilinkTarget: True Christianity (Tolstoy)
+  vaultStatus: missing
+  role: 'Tolstoy''s governing distinction: истинное христианство (inward, universal) vs церковное христианство (''the greatest enemy of Christ'')'
+  sources: []
+  evidenceRefs:
+  - vyazemsky_1901_church_enemy
+  - nazhivin_1904_true_vs_social
+  - rukavishnikov_1909_perennial
+  - diary_1890_mutual_exclusion
+  - diary_1897_strength_not_weakness
+  ingestionPriority: 1
+  dependsOn: []
+- name: John Van der Veer
+  wikiType: person
+  wikilinkTarget: John Van der Veer
+  vaultStatus: missing
+  role: Dutch conscientious objector; Tolstoy tells him he 'cannot but be' a Christian
+  sources: []
+  evidenceRefs:
+  - vanderveer_1896_cannot_not_be
+  - vanduyl_1896_two_senses
+  ingestionPriority: 3
+  dependsOn: []
+- name: Iezhi (Marian) Zdziechowski
+  wikiType: person
+  wikilinkTarget: Marian Zdziechowski
+  vaultStatus: missing
+  role: Polish scholar; recipient of 'I try to be a Christian'
+  sources: []
+  evidenceRefs:
+  - zdziechowski_1895_i_try
+  ingestionPriority: 3
+  dependsOn: []
+- name: Ivan Nazhivin
+  wikiType: person
+  wikilinkTarget: Ivan Nazhivin
+  vaultStatus: missing
+  role: Writer; recipient of the true-vs-social-religion definition
+  sources: []
+  evidenceRefs:
+  - nazhivin_1904_true_vs_social
+  ingestionPriority: 3
+  dependsOn: []
+scholarship:
+  summary: 'Scholarship treats Tolstoy as a ''heterodox'' or ''unorthodox'' Christian who, after the crisis of 1878-1880, reinterpreted Christianity rationally and ethically around the Sermon on the Mount, universal love, and non-resistance; ''Christian anarchist'' is the standard label even though Tolstoy adopted none. The literature focuses overwhelmingly on what he REJECTED (Trinity, Christ''s divinity, miracles, sacraments, Church authority) rather than on his positive, explicit refusal of the bare word ''Christian'' in its church sense. The 1901 excommunication and his April reply are universally cited, but scholars quote the climax (''I profess this Christianity'') while rarely foregrounding the conditional ''as I understand it'' that governs it. His perennialism (the Krug chteniya drawing Buddha, Confucius and Marcus Aurelius alongside the Gospels) is acknowledged by specialists (Moulin 2017) but stays peripheral to the biographies. The dive''s contribution is granular: it maps the REPLY itself across many correspondents - the argumentative moves Tolstoy made when the word was put to him directly - which the secondary literature, classifying his theology from the outside, largely skips.'
+  triangulation:
+  - evidenceRef: das_sharma_1903_not_in_accepted_sense
+    conventionalView: 'Biographers classify Tolstoy as a heterodox Christian from the outside (Wilson reportedly: ''he was never really a Christian'' by orthodox standards), inferring his distance from the label from his theology rather than quoting him decline the word in his own correspondence.'
+    relation: extends
+    source: A. N. Wilson, Tolstoy, 1988
+  - evidenceRef: khilkov_1890_cannot_be
+    conventionalView: No standard source works through Tolstoy's argument that Christianity is structurally unlike Judaism or Islam - no outward defining act, hence an ideal rather than a possessed identity; scholars note his 'way of life not a creed' but not this specific reason the label is inherently inapt.
+    relation: extends
+  - evidenceRef: gets_1898_indifferent_name
+    conventionalView: The received view stresses Tolstoy's hostility to institutional labels (he resisted 'Tolstoyan' too) and his universalism, implicitly confirming indifference to denominational names; but no major source foregrounds the pragmatic 'it is all the same to me what one calls it' stance as a distinct position.
+    relation: confirms
+    source: Daniel Moulin, 'Tolstoy, Universalism and the World Religions', 2017
+  - evidenceRef: murtazin_1910_worker_of_god
+    conventionalView: Movement literature describes Tolstoyans as 'followers of Christ's teaching' rather than institutional Christians, echoing his framing; but the dissolution of social-identity labels into 'a worker of God' goes beyond what biographies register, which stop at his rejection of church Christianity.
+    relation: extends
+    source: Tolstoyan movement (Wikipedia); JSTOR Daily, 'Tolstoy's Christian Anarchism'
+  - evidenceRef: rukavishnikov_1909_perennial
+    conventionalView: 'Widely confirmed: scholarship agrees Tolstoy redefined ''true Christianity'' as the universal ethical kernel shared across traditions; Moulin (2017) documents his interfaith and Unitarian connections, and ''I try to be a Christian'' sits naturally within this view.'
+    relation: confirms
+    source: Daniel Moulin, 'Tolstoy, Universalism and the World Religions', 2017
+  - evidenceRef: vyazemsky_1901_church_enemy
+    conventionalView: 'Fully corroborated: every standard account (Maude, Wilson, Bartlett, Simmons) documents Tolstoy''s view that institutional Christianity inverted Christ''s teaching; the ''greatest enemy of Christ'' formula is stronger than most scholars quote but expresses the standard position.'
+    relation: confirms
+    source: Aylmer Maude, The Life of Tolstoy, 1930; A. N. Wilson, Tolstoy, 1988
+  - evidenceRef: synod_1901_professes
+    conventionalView: The April 1901 reply is universally cited and the climax 'I profess this Christianity' is read as his claiming the name under qualification; careful readers note 'as I understand it', but it is rarely foregrounded as the crux - that 'truth coincides FOR ME with Christianity' is a conditional, perspectival claim, not a bare assertion of Christian identity.
+    relation: complicates
+    source: Tolstoy, My Reply to the Synod (Wikisource); Pal Kolsto, Heretical Orthodoxy (Cambridge UP)
+contradictions: []
+notCovered:
+- The doctrinal keystone WORKS themselves (What I Believe / V chem moja vera, Tom 23; The Kingdom of God, Tom 28; Christian Teaching, Tom 39; Confession, Tom 23) — read as works, not quote-mined here; they are the systematic statement behind the letters' replies.
+- The full text and reception of the 1901 Synod edict and Tolstoy's reply (only the renunciation passage is cited here).
+- Reception/label-from-others angle ('godless', 'antichrist'; the Church's voice) — deferred; this dive is his own reply, not reception.
+- The ~55 body-voice letters beyond the cited finalists (the candidate ledger), available for a deeper pass.
+- 'Systematic scholarly treatment of Tolstoy''s REPLIES to direct ''are you a Christian?'' questions: the sweep found none in English-language scholarship - the cited letters (Das Sharma, Khilkov, Gets, Murtazin, Rukavishnikov, Zdziechowski, Van der Veer, Vyazemsky) are in the PSS but not indexed in the biographical literature. The dive''s ''extends'' findings rest here.'
+needsReview:
+- item: localPdf paths for each pssTom not yet mapped (PSS PDF folder names are not Tom numbers)
+  phase: '2'
+  why: Need docs/research/pss-volume-mapping.md confirmation before asserting any localPdf; left null.
+- item: No facsimile rendered yet for the Synod-reply keystone passage
+  phase: '2'
+  why: Keystone facsimile (pdftoppm @220dpi) pending PSS Tom 34 PDF availability check.
+- item: Chapter-level claims from Wilson (1988), Bartlett (2010), Simmons (1946) on the label question were not page-verified (sources not directly accessible in the web sweep); attributions are at summary level.
+  phase: '3'
+  why: Secondary sources behind paywalls/abstracts; prototype rigor allows attributed-not-asserted, gap flagged.
+archivesConsulted:
+- primary-sources/tolstoydigital-TEI (letters, diaries, works)
+references:
+  primary: []
+  background:
+  - author: Maude, Aylmer
+    year: 1930
+    title: The Life of Tolstoy (2 vols.)
+    url: https://archive.org/details/lifeoftolstoy01mauduoft
+  - author: Wilson, A. N.
+    year: 1988
+    title: Tolstoy
+    url: https://www.goodreads.com/book/show/127966.Tolstoy
+  - author: Bartlett, Rosamund
+    year: 2010
+    title: 'Tolstoy: A Russian Life'
+    url: https://www.goodreads.com/book/show/8205861-tolstoy
+  - author: Simmons, Ernest J.
+    year: 1946
+    title: Leo Tolstoy
+    url: https://archive.org/details/leotolstoy0000simm
+  - author: Moulin, Daniel
+    year: 2017
+    title: Tolstoy, Universalism and the World Religions (Journal of Ecclesiastical History)
+    url: https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/abs/tolstoy-universalism-and-the-world-religions/BFDA558CFA56DE5BF7E188117204B481
+  - author: Kolsto, Pal
+    year: null
+    title: The Excommunication and Its Aftermath (in Heretical Orthodoxy, Cambridge UP)
+    url: https://www.cambridge.org/core/books/abs/heretical-orthodoxy/excommunication-and-its-aftermath/1963274B8A24191B74662479234339D9
+  - author: Townsend, James
+    year: null
+    title: 'Grace in the Arts: The Theology of Leo Tolstoy'
+    url: https://faithalone.org/journal-articles/grace-in-the-arts-the-theology-of-leo-tolstoy/
+  - author: Tolstoy, Leo
+    year: 1901
+    title: My Reply to the Synod (Wikisource English translation)
+    url: https://en.wikisource.org/wiki/My_Reply_to_the_Synod
+  - author: JSTOR Daily
+    year: null
+    title: Tolstoy's Christian Anarchism
+    url: https://daily.jstor.org/tolstoys-christian-anarchism/
