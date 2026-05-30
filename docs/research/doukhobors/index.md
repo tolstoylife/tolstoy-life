@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-05-26
+lastUpdated: 2026-05-30
 tags: [research]
 ---
 
@@ -44,6 +44,11 @@ Tolstoy's fullest narration of the event is in the open letter of 2/14 August 18
 > После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли, показав этим, что не только некоторые лица из их общины, но все они отказываются от защиты своей собственности и самих себя оружием.
 
 > *After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them — showing thereby that not merely certain individuals of their community but all of them renounce the defence of their property and of themselves by arms.*
+
+<figure>
+<img src="extracts/v39_209_215_p209_facsimile.png" alt="Facsimile of PSS Tom 39, page 209 — the Burning of Arms paragraph in Tolstoy's open letter">
+<figcaption>The keystone passage as printed in the Jubilee Edition: PSS Tom 39, p. 209 (local vol. 8), the account of the Burning of Arms, rendered at 220 dpi from the public-domain PSS volume.</figcaption>
+</figure>
 
 The same letter records the scene at Kars, where the authorities tried to break the resisters with a mock execution:
 
@@ -112,6 +117,34 @@ Tolstoy's part was organisational as much as financial. The letters of 1898–99
 Once the Doukhobors were safe, Tolstoy's tone changed. The **letter to the Doukhobors in Canada of 15/27 February 1900** (PSS Tom 72, pp. 305–316) — the longest single Doukhobor item in the corpus — is a sharp doctrinal rebuke. Reports had reached him that the community was reverting to private property and individual self-interest, and that its members were beginning to make a cult of Verigin's person. Tolstoy warns that one cannot keep the refusal of military service while accepting property, since property rests on the same violence: *one cannot serve both God and property.* (The TEI extract of this 1933-volume letter is badly lacunose and is therefore not reproduced verbatim here; it is summarised from the editorial record.)
 
 The later record shows the relationship inverting and cooling. Verigin was released from exile in 1902 and emigrated to Canada; his delegation visited Tolstoy's circle in December 1906, where Makovitski recorded Tolstoy telling them they were "the happiest people in the world — freed from the sin of owning land," and warning them against English-style schooling and against the worship of any leader. By 1907 the Canadian Doukhobors were donating to Russian famine relief — the flow of help reversed — and Tolstoy had abandoned a planned essay about them. In the last month of his life (Makovitski, 24 October 1910) he grouped them with other sects vulnerable to the idolatry of a leader. Letters to Nicholas II continued to cite their fate as the emblem of religious persecution (2 April 1898, PSS Tom 71, letter 107; 7 December 1900, PSS Tom 72, letter 426).
+
+### 2.8. How the state handled it
+
+Tolstoy's writing is also the fullest contemporary catalogue of *how the Russian state met the Doukhobors* — the thread that runs through every document above, gathered here. In the open letter to the foreign press of 19 March / 1 April 1898 (PSS Tom 71, letter 81) he sets the empire's response against the two milder precedents he knew — the Mennonites' alternative labour service, the Austrian Nazarenes' imprisonment — and names the Russian choice as a third, older way: to punish not only the men who refuse but their families.
+
+> Но нынешнее русское правительство употребило против духоборов еще третий, казалось бы оставленный в наше время, выход из этого противоречия. Оно, кроме того, что подвергает самым тяжелым страданиям самих отказывающихся, заставляет еще систематически страдать отцов, матерей, детей отказывающихся, вероятно с тем, чтобы пытками этих невинных семей поколебать решимость несогласных их членов.
+
+> *But the present Russian government has used against the Doukhobors a third way out of this contradiction, one seemingly abandoned in our time. Besides subjecting the refusers themselves to the heaviest sufferings, it forces the fathers, mothers, and children of the refusers to suffer systematically as well — probably so as to shake the resolve of the dissenting members by the torture of these innocent families.* (working English)
+
+In the article *Two Wars* (1898) the same charge becomes an inventory of instruments — the single most concentrated primary catalogue of the state's means:
+
+> Русское государство выставило против духоборов все те орудия, которыми оно может бороться. Орудия эти: полицейские меры арестов, непозволения выезда из места жительства, запрещение общения друг с другом, перехватывание писем, шпионство, запрещение печатания в газетах сведений о всем, касающемся духоборов, клевета на них, печатаемая в журналах, подкупы, сечения, тюрьмы, ссылки, разорение семей.
+
+> *The Russian state brought against the Doukhobors every weapon it can fight with. These weapons are: police measures of arrest, prohibition of travel from one's place of residence, the banning of communication with one another, the interception of letters, espionage, the suppression of newspaper reports of anything touching the Doukhobors, slander printed against them in the journals, bribery, floggings, prisons, exiles, the ruin of families.* (working English)
+
+The sharp end of it is in the 1895 letter already quoted (§2.2): the Cossack charge that killed four at the burning pyre, the floggings of reservists in the disciplinary battalions, and the mock execution staged at Kars — gallows built, shrouds sewn, then taken off again when the men would not yield. When Tolstoy turned from the press to the throne, he moved from witness to demand. The petition he drafted in the Doukhobors' own name (2 April 1898, Tom 71, letter 107) asks one thing only:
+
+> И потому, если мы не можем исполнять того, без чего нас нельзя терпеть в государстве, мы просим одно: отпустите нас.
+
+> *And so, if we cannot fulfil that without which we cannot be tolerated in the state, we ask one thing only: let us go.* (working English)
+
+His second letter to Nicholas II (7 December 1900, Tom 72, letter 426) goes further, setting out four concrete demands on the law of religious persecution. The final text survives only as a lacunose digital transcription; the legible pre-reform first-redaction draft preserves the demands cleanly:
+
+> уже давнымъ давно пора: во-первыхъ, пересмотрѣть и уничтожить существующіе теперь законы о гоненіяхъ за вѣру; во-вторыхъ, прекратить всѣ преслѣдованія за отступленія отъ принятаго государствомъ исповѣданія; въ-третьихъ, освободить всѣхъ на основаніи прежнихъ законовъ заключенныхъ и изгнанныхъ за преступленіе противъ вѣры, и въ-четвертыхъ, не казнить, какъ преступленіе, несогласіе религіозной совѣсти съ требованіями государства…
+
+> *…it is long, long since high time: first, to review and abolish the laws now existing on persecution for faith; second, to stop all prosecutions for departure from the state-accepted confession; third, to release all those imprisoned and exiled under the former laws for offences against faith; and fourth, not to punish as a crime the disagreement of religious conscience with the demands of the state…* (working English)
+
+The emigration the state finally permitted in 1898 was, on Tolstoy's reading, not clemency but exhaustion: permission to leave was granted (through the Dowager Empress Maria Feodorovna's intercession) only after the community had been so ruined it could barely afford to go, and on terms — passports at their own cost, a signed undertaking never to return — that Prince Golitsyn, the Caucasus viceroy, set as conditions of release rather than of welcome.
 
 ---
 
@@ -224,9 +257,142 @@ What the conventional scholarship adds that the primary corpus does not is the *
 
 ---
 
-## 7. The manuscript record
+## 7. Visual & manuscript record
+
+A visual sweep accompanies this survey. The images below are a **local research cache**: the files live in `visuals/`, which is git-ignored, so the public repository never redistributes them — on a fresh clone they are repopulated on demand with `python3 docs/fetch_visuals.py doukhobors`, which reads the `url:` and `licence:` fields recorded for every item in [dossier.yaml](dossier.yaml). Provenance and rights for each picture are in that file; the captions below give the short form. Most are public domain; a few (the Cyprus camp, the two steamers, the rail and quarantine scenes — held by the BC Archives and reached via doukhobor.org) carry **unconfirmed rights** and are marked accordingly, and the one Maude portrait is CC BY-SA. The publication gate is `website/src/`, not this cache: nothing here should be moved into the public site without clearing its rights first.
+
+The one image rendered from a source we hold ourselves — the Burning of Arms page of PSS Tom 39 — is in `extracts/` (committed, because it is a public-domain facsimile of Tolstoy's own text) and is reproduced in §2.2 above.
+
+### The Caucasus and the community, before the crisis
+
+<figure>
+<img src="visuals/commons-doukhobor-women-1887-serena.jpg" alt="Engraving of Doukhobor women in Caucasian dress, 1887">
+<figcaption>Doukhobor women in the Caucasus, 1887 — engraving from Carla Serena's travelogue <em>Schetsen Uit Den Kaukasus</em>. A rare "before the crisis" image. Public domain (Wikimedia Commons / Project Gutenberg).</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-gorelovka-sketch-1893.gif" alt="Sketch of the Doukhobor village of Gorelovka, 1893">
+<figcaption>The Doukhobor village of Gorelovka, Tiflis province, sketched by H. F. B. Lynch in 1893 — the spiritual centre of the Caucasus community, near where the Burning of Arms took place two years later. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-sirotski-dom-gorelovka.jpg" alt="The Sirotski Dom (Orphan's House) at Gorelovka">
+<figcaption>The <em>Sirotski Dom</em> (Orphan's House) at Gorelovka, Georgia — the community's headquarters, built 1847 (photographed 2008). Public domain.</figcaption>
+</figure>
+
+### Tolstoy and the relief circle
+
+<figure>
+<img src="visuals/commons-tolstoy-portrait-1895.jpg" alt="Photograph of Leo Tolstoy, 1895">
+<figcaption>Leo Tolstoy in 1895 — the year of the Burning of Arms. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-chertkov-portrait-repin.jpg" alt="Ilya Repin's portrait of Vladimir Chertkov">
+<figcaption>Vladimir Chertkov, by Ilya Repin (1890s). Co-author of «Help!»; expelled to England in 1897, where he became the organising hub of the relief effort. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-biryukov-portrait.jpg" alt="Photograph of Pavel Biryukov">
+<figcaption>Pavel Ivanovich Biryukov — sent to the Caucasus in 1895 to verify the facts, co-signer of «Help!», exiled for it, and later Tolstoy's biographer. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-sulerzhitsky-portrait-1910.jpg" alt="Photograph of Leopold Sulerzhitsky">
+<figcaption>Leopold Sulerzhitsky (c.1910), who accompanied the emigration voyages as Tolstoy's personal representative. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-aylmer-maude-portrait-1919.jpg" alt="Photograph of Aylmer Maude, 1919">
+<figcaption>Aylmer Maude (1919), who helped organise the emigration and its funding and wrote the principal English account, <em>A Peculiar People</em> (1904). CC BY-SA 4.0 (Lafayette studio) — attribution required if republished.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-chertkov-tolstoy-1909.jpg" alt="Tolstoy and Chertkov at Yasnaya Polyana, 1909">
+<figcaption>Tolstoy and Chertkov at Yasnaya Polyana, 1909, after Chertkov's return from English exile. Public domain.</figcaption>
+</figure>
+
+### Pyotr Verigin
+
+<figure>
+<img src="visuals/commons-verigin-portrait-1907.jpg" alt="Photograph of Pyotr Verigin in British Columbia, 1907">
+<figcaption>Pyotr Vasilevich Verigin in Canada, 1907 — five years after his release from Siberian exile. The leader to whom Tolstoy's first Doukhobor letter (1895) was addressed. Public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-verigin-portrait-1922.jpg" alt="Portrait of Pyotr Verigin, 1922">
+<figcaption>Verigin in 1922, two years before his death in the 1924 train explosion. Public domain.</figcaption>
+</figure>
+
+### The emigration: Cyprus, the ships, the landing
+
+<figure>
+<img src="visuals/canada-cyprus-athalassa-farm.jpg" alt="The Athalassa farm in Cyprus, temporary Doukhobor camp">
+<figcaption>Athalassa farm, Cyprus — the temporary refuge of ~1,100 Doukhobors in 1898–99, where the climate killed roughly a tenth before the survivors were moved on. BC Archives via doukhobor.org; <strong>rights unconfirmed</strong>.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/canada-ship-lake-huron.jpg" alt="The steamer SS Lake Huron">
+<figcaption>SS <em>Lake Huron</em>, the Beaver Line steamer that carried Doukhobors from Batum, December 1898. doukhobor.org; <strong>rights unconfirmed</strong> (pre-1901 original, likely PD-Canada).</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/canada-ship-lake-superior.jpg" alt="The steamer SS Lake Superior">
+<figcaption>SS <em>Lake Superior</em>, which carried Doukhobors from Batum in April 1899. doukhobor.org; <strong>rights unconfirmed</strong>.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/canada-grosse-ile-pier-1899.jpg" alt="The pier at Grosse Île quarantine station, 1899">
+<figcaption>The pier at the Grosse Île quarantine station, Quebec, where the Doukhobors aboard the <em>Lake Huron</em> disembarked in 1899. Library and Archives Canada (PA-046795); public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/canada-quebec-immigration-buildings.jpg" alt="Immigration buildings at Quebec City, c.1899">
+<figcaption>Immigration buildings by the railway at Quebec City (c.1899), where the Doukhobors boarded trains for the west. Library and Archives Canada (C-061968); public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/canada-railroad-westward-1899.gif" alt="Doukhobors travelling west by rail, 1899">
+<figcaption>Doukhobors travelling by rail to western Canada, 1899 — the last stage from ship to prairie. BC Archives via doukhobor.org; <strong>rights unconfirmed</strong>.</figcaption>
+</figure>
+
+### The Canadian settlement
+
+<figure>
+<img src="visuals/commons-doukhobor-camp-yorkton-1899.jpg" alt="Doukhobor tent camp near Yorkton, 1899">
+<figcaption>Doukhobor encampment before arriving at Yorkton, 1899. CC0 (Wikimedia Commons).</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-doukhobor-women-plough-full.jpg" alt="Doukhobor women pulling a plough on the prairie, c.1899">
+<figcaption>Doukhobor women harnessed to a plough, Thunder Hill Colony, c.1899 — the most reproduced image of the settlement, the women breaking sod while the men were away on railway work. Library and Archives Canada (C-000681); public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-doukhobor-women-winnowing.jpg" alt="Doukhobor women winnowing grain, 1899">
+<figcaption>Doukhobor women winnowing grain, Saskatchewan, 1899. Library and Archives Canada (C-008891); public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-doukhobor-village-vosnesenya.jpg" alt="The Doukhobor village of Vosnesenya">
+<figcaption>The Doukhobor village of Vosnesenya, Thunder Hill Colony (c.1900) — its layout copied from the Caucasian pattern. Library and Archives Canada (C-000683); public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-doukhobor-pilgrims-at-prayer.jpg" alt="Doukhobor pilgrims at prayer on the prairie, 1902">
+<figcaption>Doukhobor pilgrims at prayer near Yorkton, 1902 — the open-air psalm-singing carried from the Caucasus. Thomas Veitch Simpson, British Library Canadian Copyright Collection; public domain.</figcaption>
+</figure>
+
+<figure>
+<img src="visuals/commons-doukhobor-movements-map-1898-1913.jpg" alt="Map of Doukhobor movements in western Canada, 1898–1913">
+<figcaption>Map of the Doukhobors' movements in western Canada, 1898–1913 — the Saskatchewan/Assiniboia settlement blocks and the later move to British Columbia. Koozma J. Tarasoff (1982); public domain.</figcaption>
+</figure>
+
+### The manuscript record, and what is not openly available
 
 The manuscripts of the diary entries and letters cited here are held by the State Tolstoy Museum (GMT) in Moscow, within the L. N. Tolstoy fond — the same archive described in the [copyright survey, §5](../copyright-renunciation/index.md). Verigin's ~22 letters to Tolstoy are held there. The relief campaign's documentary record is split: the Russian side in the GMT and the former Chertkov archive; the English side (the Society of Friends' Doukhobor Relief Committee, Bellows's correspondence) in Quaker collections in Britain; and the Canadian record in Saskatchewan and British Columbia archives and in the Doukhobor heritage collections curated at doukhobor.org. No single archive holds the whole affair.
+
+The gap in the visual record is the **Russian-held material**. The State Tolstoy Museum's digital portal (KAMIS) and the union catalogue Goskatalog could not be reached in this sweep, so no manuscript facsimiles of the keystone texts, and no Russian-held portraits of Verigin in exile or of the Caucasus persecution, were obtained. These — together with hi-res versions of the GMT holdings — are the items to request directly; they are logged in the dossier's `needsReview`/`archivesConsulted`.
 
 ---
 
@@ -238,6 +404,8 @@ The manuscripts of the diary entries and letters cited here are held by the Stat
 - One caveat surfaced: the extractor renders some 1933-typeset volumes (notably the 1900 Canada letter in PSS Tom 72) with heavy lacunae, where the TEI carries `<gap>` markers or dense apparatus. Such passages are summarised from the editorial record, not quoted.
 - The marquee articles (PSS Toms 31, 37, 39) extracted cleanly and were read in full; their key passages are translated above. The Biryukov biography, absent locally, was retrieved from a public-domain web reproduction and translated in a dedicated pass.
 - Conventional scholarship was gathered from the web and is **summarised and cited**, not reproduced.
+- This survey was re-run on 2026-05-30 as a structured corpus-dive to add the three coordinated outputs the original lacked: a machine-readable [dossier.yaml](dossier.yaml) (evidence + entity + visuals + scholarship layers), a visual-materials sweep (Wikimedia Commons, Library and Archives Canada, the British Library's Canadian Copyright Collection, BC Archives via doukhobor.org), and the draft dev-blog note linked below. The 2026-05-26 narrative and its byte-faithful quotations were left intact; the §2.8 authorities thread and the §7 visual record are the additions.
+- The visual sweep ran as three parallel channels (Commons; Canadian/emigration; Russian holdings). The Russian-museum channel (GMT/KAMIS, Goskatalog) returned nothing reachable headless; that gap is recorded in the dossier.
 
 ---
 
@@ -264,3 +432,9 @@ Companion documents:
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — the TEI corpus and its relation to the Jubilee Edition.
 - [copyright-renunciation/index.md](../copyright-renunciation/index.md) — the companion survey; meets this one at the 1898 *Resurrection* exception.
+- [dossier.yaml](dossier.yaml) — the machine-readable layer (evidence ledger, entity work-order, visuals manifest with rights, scholarship triangulation) generated by the 2026-05-30 corpus-dive.
+- [biryukov-vol3/](biryukov-vol3/) — the full Russian capture and English translation of Biryukov's biography, Vol. III (Doukhobor chapters 18, 19, 21).
+
+---
+
+*A short recap of this survey is drafted as a dev-blog note at `website/src/posts/notes/2026-05-30-doukhobors.md` (currently `draft: true`).*
