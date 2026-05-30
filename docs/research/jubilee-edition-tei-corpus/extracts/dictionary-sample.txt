@@ -1,0 +1,17 @@
+Dictionary.xml — one <word> record (rare/archaic-term glossary)
+
+<word xml:id="svara">
+        <title>свара</title>
+        <note>СВА́РА — раздор, ссора; шумная перебранка, брань, ругань.</note>
+        <catRef target="topic_slovar" ana="#abstract"/>
+        <image url=""/>
+        <related_item>
+            <ref>v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij</ref>
+            <year>1880-1881</year>
+            <title>Соединение и перевод четырех Евангелий</title>
+            <note volume="24" page="202">
+                Кротость рождает мир и укрощает гневливость и свары.
+            </note>
+        </related_item>
+    </word>
+    

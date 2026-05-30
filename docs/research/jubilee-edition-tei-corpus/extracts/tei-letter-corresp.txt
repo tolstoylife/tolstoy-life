@@ -1,0 +1,23 @@
+TEI LETTER ANATOMY — v59_004_T_A_Ergolskoj.xml
+
+title[@type=bibl]:
+Толстой Л. Н. Письмо Т. А. Ергольской, 25 августа 1845 г. // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 59. М.: Гос. изд. «Художественная литература», 1935. С. 10–15.
+
+correspDesc (machine-readable sender/recipient):
+<correspDesc xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <correspAction type="sending">
+     <persName ref="13883">
+      Л. Н. Толстой
+     </persName>
+     <placeName>
+      Казань
+     </placeName>
+     <date when="1845-08-25"/>
+    </correspAction>
+    <correspAction type="receiving">
+     <persName ref="4947">
+      Ергольская Татьяна Александровна
+     </persName>
+    </correspAction>
+   </correspDesc>
+   

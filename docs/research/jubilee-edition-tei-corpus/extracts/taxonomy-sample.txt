@@ -1,0 +1,9 @@
+TAXONOMY SAMPLE — primary-sources/tolstoydigital-TEI/reference/taxonomy.xml (125 categories)
+
+  #works: произведения
+  #novel: Роман
+  #traktat: Трактат
+  #philosophy_religion: Религия и философия
+  #letters: Письма
+  #diaries: Дневники
+  #comments: комментарии

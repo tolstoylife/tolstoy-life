@@ -1,0 +1,30 @@
+personList.xml — one <person> record (of 3,113)
+
+<person xmlns="http://www.tei-c.org/ns/1.0" id="15">
+                <persName type="main" ref="Q7449866">
+                    Абамелек-Лазарев Семен Семенович
+                    <forename sort="2">Семен</forename>
+                    <forename sort="3" type="patronym">Семенович</forename>
+                    <forename sort="1">Абамелек</forename>
+                </persName>
+                <persName type="latin"/>
+                <genName type="born"/>
+                <addName type="nick"/>
+                <addName type="note"/>
+                <event type="born" when="1857-11-12"/>
+                <event type="died" when="1916-09-19"/>
+                <event type="life_period">1857–1916</event>
+                <note type="description">Крупный российский промышленник, археолог-любитель, автор сочинений.</note>
+                <note type="description2"/>
+                <note type="90v_comment">Богатый помещик и владелец заводов на Урале.</note>
+                <catRef target="time" ana="#time_contemp"/>
+                <catRef target="country" ana="#compatriot"/>
+                <catRef target="occupation" ana="#work_business"/>
+                <catRef target="occupation" ana="#work_soldier"/>
+                <catRef target="occupation" ana="#work_science"/>
+                <catRef target="correspondent" ana="#correspondent"/>
+                <image url="/storage/app/media/Persons/15.png"/>
+                <note type="entities_number_in_texts"/>
+                <note type="entities_number_in_comments"/>
+            </person>
+            

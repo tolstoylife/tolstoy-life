@@ -6,6 +6,8 @@ tags: [research]
 
 # PSS Tom number → local PDF file mapping
 
+> Companion to the [Jubilee Edition + tolstoydigital TEI corpus](jubilee-edition-tei-corpus/) reference dive, which tells the edition's history and the structure of the collections. This file remains the canonical Tom-number ↔ local-PDF resolver.
+
 Date: 2026-05-10
 Context: The local copies of the Jubilee Edition (*Полное собрание сочинений*, PSS) at `primary-sources/jubilee-edition/volNN/volNN.pdf` are named in the **chronological publication order of the 90-volume project (1928–1958)**, not by Tom number. This document is the lookup table that resolves a Tom number cited in scholarly literature or in the tolstoydigital TEI corpus to the local PDF file that contains it.
 

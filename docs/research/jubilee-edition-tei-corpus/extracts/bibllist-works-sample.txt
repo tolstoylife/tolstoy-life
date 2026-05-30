@@ -1,0 +1,10 @@
+bibllist_works.xml — one <relatedItem> (work catalogue entry)
+
+<relatedItem xmlns="http://www.tei-c.org/ns/1.0">
+                    <ref ana="#nonfiction_front #nonfiction_front_np #statja_front #philosophy_religion_front #philosophy_religion_front_np #main #not_finished #not_publ">v24_941_969_Abrege_de_lEvangile</ref>
+                    <title>Abrégé de l'Evangile</title>
+                    <title type="bibl">Толстой Л. Н. Abrégé de l’Evangile // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 24. М.: Гос. изд. «Художественная литература», 1957. С. 941–969.</title>
+                    <date when="1884" type="action">1884</date>
+                    <volume>24</volume>
+                </relatedItem>
+                

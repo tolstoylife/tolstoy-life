@@ -1,0 +1,825 @@
+# Machine-readable dossier for the Jubilee-Edition + tolstoydigital-TEI corpus dive (index.md).
+# Built 2026-05-30. This is an ATYPICAL dive: the "evidence" rows cite the corpus and edition
+# *metadata* themselves (TEI headers, the printed front matter, the reference files) rather than
+# thematic prose from Tolstoy. Every quoteRu is byte-faithful from the named `extract` file
+# (verify_quotes.py gate). Consolidates + supersedes the two loose docs tolstoydigital-tei-reference.md
+# and pss-volume-mapping.md.
+topic:
+  slug: jubilee-edition-tei-corpus
+  title: "The Jubilee Edition and the tolstoydigital TEI/XML corpus"
+  question: >-
+    What are the Jubilee Edition (Полное собрание сочинений, 90 vols 1928–1958 + the 1964 index
+    volume) and the tolstoydigital TEI/XML corpus that digitises it — their history, the people and
+    institutions behind them, their editorial principles, the structure of the collections, and what
+    tolstoy.life holds locally?
+  date: 2026-05-30
+  period: null            # meta/reference dive — not period-bound
+  corpusSurface: [edition-metadata, tei-headers, reference-files, print-front-matter]
+  dateRange: "1928–2022"  # print edition (1928–1958/64) through the TEI encoding (2015–2022)
+
+# Layer 1 — flat citation ledger. For this meta-dive, quoteRu is verbatim corpus/edition metadata
+# (not Tolstoy's prose). quoteEn is working English (labelled) where the source is prose; for bare
+# metadata strings it is a short gloss. Facsimiles are PD pages rendered from the local PSS PDFs.
+evidence:
+  # ---- A. The tolstoydigital TEI/XML digital corpus ----
+  - id: tei-bibl-citation-format
+    genre: tei-metadata
+    pssTom: 1
+    pages: "3–95"
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: extracts/tei-header-works.txt
+    quoteRu: >-
+      Толстой Л. Н. Детство // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 1. М.: Гос. изд. «Художественная литература», 1935.
+    quoteEn: >-
+      Tolstoy L. N. Childhood // Tolstoy L. N. Complete Collected Works: in 90 vols. Vol. 1. Moscow: State Publishing House "Khudozhestvennaya Literatura", 1935. (working English)
+    significance: >-
+      Every TEI file carries a title[@type="bibl"] giving the canonical PSS citation — Tom, publisher,
+      year, page range. This is the join key from the digital corpus back to the printed Jubilee
+      Edition (and to pss-volume-mapping for the local PDF).
+    facsimile: null
+
+  - id: tei-licence-ccbysa
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: extracts/tei-header-works.txt
+    quoteRu: >-
+      Тексты и метатекстовая разметка доступны для свободного использования и распространения по лицензии Creative Commons Attribution Share-Alike (cc by-sa)
+    quoteEn: >-
+      The texts and the metatextual markup are available for free use and distribution under the Creative Commons Attribution Share-Alike (cc by-sa) licence. (working English)
+    significance: >-
+      The CC BY-SA grant lives in the TEI header's <availability>, NOT as a repo-level LICENSE file
+      (GitHub's API reports the repo licence as None). The grant is real but header-scoped — relevant
+      for any downstream reuse claim.
+    facsimile: null
+
+  - id: tei-provenance-note
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: extracts/tei-header-works.txt
+    quoteRu: >-
+      Публикуемые документы был получены с сайта tolstoy.ru в формате html, переведены в формат TEI. Исправлены некоторые ошибки распознавания. Тексты, написанные в дореформенной орфографии, сопоставлены с их версиями в современной орфографии.
+    quoteEn: >-
+      The published documents were obtained from the site tolstoy.ru in html format and converted to TEI. Some recognition (OCR) errors were corrected. Texts written in pre-reform orthography were collated with their modern-orthography versions. (working English)
+    significance: >-
+      The data chain in the corpus's own words. Note the source typo "был" (for "были"), identical in
+      every file — a fingerprint of the shared header template, not a per-file error.
+    facsimile: null
+
+  - id: tei-leadership-credit
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: extracts/tei-header-works.txt
+    quoteRu: >-
+      Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский
+    quoteEn: >-
+      Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)
+    significance: >-
+      The TEI respStmt credits the four project leads under "Идея, постановка задач, руководство".
+      Same four names in every file; the keystone for the entity map of the digital project.
+    facsimile: null
+
+  - id: tei-funder-slovo
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/texts/works/v01_003_095_Detstvo.xml
+    extract: extracts/tei-header-works.txt
+    quoteRu: >-
+      Проект «Слово Толстого»
+    quoteEn: >-
+      The "Word of Tolstoy" project. (working English)
+    significance: >-
+      The funder/project named in every header; publisher orgName adds "Tolstoy Digital, DH CLOUD,
+      Научно-образовательный союз «Родное Слово»".
+    facsimile: null
+
+  - id: tei-letter-corresp
+    genre: tei-metadata
+    pssTom: 59
+    pages: "10–15"
+    date: 1845-08-25
+    addressee: "T. A. Ergolskaya"
+    localPdf: primary-sources/tolstoydigital-TEI/texts/letters/v59_004_T_A_Ergolskoj.xml
+    extract: extracts/tei-letter-corresp.txt
+    quoteRu: >-
+      Ергольская Татьяна Александровна
+    quoteEn: >-
+      Ergolskaya Tatyana Alexandrovna (the machine-readable recipient). (working English)
+    significance: >-
+      Letters carry a <correspDesc> with <correspAction type="sending"/"receiving"> persName ref="…"
+      IDs (sender, place, date, recipient) — the corpus's machine-readable correspondence graph, keyed
+      to personList ids.
+    facsimile: null
+
+  - id: tei-taxonomy
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/taxonomy.xml
+    extract: extracts/taxonomy-sample.txt
+    quoteRu: >-
+      Религия и философия
+    quoteEn: >-
+      "Religion and philosophy" — one topic category. (working English)
+    significance: >-
+      taxonomy.xml is the 125-category controlled vocabulary xi:include'd by every text via <catRef>:
+      type (works/letters/diaries/notes/comments), genre (роман/повесть/рассказ/трактат…), sphere
+      (fiction/non-fiction), topic, published/finished status, plus person and photo facets.
+    facsimile: null
+
+  - id: tei-personlist-record
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/personList.xml
+    extract: extracts/personlist-sample.txt
+    quoteRu: >-
+      Крупный российский промышленник, археолог-любитель, автор сочинений.
+    quoteEn: >-
+      "A major Russian industrialist, amateur archaeologist, author of works." (description of S. S. Abamelek-Lazarev, person id 15). (working English)
+    significance: >-
+      personList.xml is the authority file of 3,113 persons — each <person id="N"> with structured
+      names, birth/death events, occupation/era/country catRefs, descriptions, and the linking id that
+      every body <name type="person" ref="N"> points to.
+    facsimile: null
+
+  - id: tei-personlist-wikidata
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/personList.xml
+    extract: extracts/personlist-sample.txt
+    quoteRu: >-
+      Q7449866
+    quoteEn: >-
+      Wikidata Q-id on persName type="main" — the schema's one external authority anchor. (working English)
+    significance: >-
+      The persName[@type="main"]/@ref is a Wikidata Q-id: the corpus's single external-authority
+      linkage per person, a bridge for the wiki's own identifier fields (viaf/lccn/bnf/wikidata).
+    facsimile: null
+
+  - id: tei-locationlist-record
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/locationList.xml
+    extract: extracts/locationlist-sample.txt
+    quoteRu: >-
+      В 1910 году Толстой приехал в усадьбу Отрадное, где снимал дачу его друг, сподвижник и редактор В. Г. Чертков.
+    quoteEn: >-
+      In 1910 Tolstoy came to the Otradnoye estate, where his friend, associate and editor V. G. Chertkov was renting a dacha. (working English)
+    significance: >-
+      locationList.xml is 385 places, each <place xml:id="slug"> with <geo> coordinates and a prose
+      description. Place links use a string xml:id (asymmetric with person numeric ids).
+    facsimile: null
+
+  - id: tei-bibllist-works-record
+    genre: tei-metadata
+    pssTom: 24
+    pages: "941–969"
+    date: 1884-01-01
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/bibllist_works.xml
+    extract: extracts/bibllist-works-sample.txt
+    quoteRu: >-
+      Полное собрание сочинений: в 90 тт. Т. 24.
+    quoteEn: >-
+      Complete Collected Works: in 90 vols. Vol. 24 (the catalogue entry for "Abrégé de l'Evangile"). (working English)
+    significance: >-
+      bibllist_works.xml is the master catalogue of the works, one <relatedItem> per text mapping the
+      file-stem → titles → PSS bibl → date → volume, with front-taxonomy class tags. Underpins
+      website/src/works/.
+    facsimile: null
+
+  - id: tei-dictionary-record
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/Dictionary.xml
+    extract: extracts/dictionary-sample.txt
+    quoteRu: >-
+      раздор, ссора; шумная перебранка, брань, ругань.
+    quoteEn: >-
+      "discord, quarrel; noisy squabble, abuse, swearing." (gloss of the archaic word «свара»). (working English)
+    significance: >-
+      Dictionary.xml is a glossary of rare/archaic Tolstoy vocabulary, each <word> with a definition
+      and cited PSS attestations — surfaced on slovotolstogo.ru. NB the file carries non-NCName xml:id
+      values (e.g. obinujas'), so it needs a recovering XML parser.
+    facsimile: null
+
+  - id: tei-listmedia-record
+    genre: tei-metadata
+    pssTom: null
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/tolstoydigital-TEI/reference/listMedia.xml
+    extract: extracts/listmedia-sample.txt
+    quoteRu: >-
+      Государственный музей Л. Н. Толстого
+    quoteEn: >-
+      State Museum of L. N. Tolstoy (the holding repository on a media record). (working English)
+    significance: >-
+      listMedia.xml (26.8 MB) catalogues museum photographs/media — each <figure> with graphic url,
+      repository + museum catalogue idnos, figDesc, photographer, and an event (place + date). The
+      data behind the "Tolstoy social network" photo project.
+    facsimile: null
+
+  # ---- B. The printed Jubilee Edition (PD facsimiles + front matter) ----
+  - id: pss-cover-tom53
+    genre: print-frontmatter
+    pssTom: 53
+    pages: null
+    date: 1953-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: extracts/pss-cover-headers.txt
+    quoteRu: >-
+      Полное собрание сочинений. Том 53.
+    quoteEn: >-
+      Complete Collected Works. Volume 53. (the auto-generated cover header). (working English)
+    significance: >-
+      The "Весь Толстой в один клик" cover header that names the canonical Tom number — the anchor for
+      pss-volume-mapping (local PDFs are numbered by publication order, not Tom). Tom 53 = local vol19,
+      imprint "Государственное издательство «Художественная литература», 1953".
+    facsimile: null
+
+  - id: pss-cover-tom91-index
+    genre: print-frontmatter
+    pssTom: 91
+    pages: null
+    date: 1964-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol60/vol60.pdf
+    extract: extracts/pss-cover-headers.txt
+    quoteRu: >-
+      Полное собрание сочинений. Том 91.
+    quoteEn: >-
+      Complete Collected Works. Volume 91 — "Указатели" (Indexes). (working English)
+    significance: >-
+      The 1964 supplementary index volume (local vol60): alphabetical indexes of works, addressees, and
+      >16,000 proper names + a chronological index. The intellectual source of the personList authority
+      file and the index.tolstoy.ru web app.
+    facsimile: null
+
+  - id: pss-rgb-provenance
+    genre: print-frontmatter
+    pssTom: 53
+    pages: null
+    date: null
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol19/vol19.pdf
+    extract: extracts/pss-cover-headers.txt
+    quoteRu: >-
+      Подготовлено на основе электронной копии 53-го тома Полного собрания сочинений Л. Н. Толстого, предоставленной Российской государственной библиотекой
+    quoteEn: >-
+      Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)
+    significance: >-
+      The digitisation's scan source: the Russian State Library (РГБ) provided the electronic copies
+      that the crowdsourcing project proofread. Maps to the sources.yaml id rgb-tolstoy-fond.
+    facsimile: null
+
+  - id: pss-reproduction-notice
+    genre: print-frontmatter
+    pssTom: 1
+    pages: "iv"
+    date: 1935-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/pss-vol62-frontmatter.txt
+    quoteRu: >-
+      Перепечатка разрешается безвозмездно
+    quoteEn: >-
+      Reprinting is permitted gratis [free of charge]. (Followed by "Reproduction libre pour tous les pays.") (working English)
+    significance: >-
+      The printed edition's OWN free-reproduction notice — the textual root of why the corpus is openly
+      reusable, and a direct echo of Tolstoy's renunciation of copyright (see the copyright-renunciation
+      dive). PD facsimile rendered from the local PDF.
+    facsimile: extracts/pss-vol62-pages/page-004.png
+
+  - id: pss-state-commission
+    genre: print-frontmatter
+    pssTom: 1
+    pages: "v"
+    date: 1928-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/pss-vol62-frontmatter.txt
+    quoteRu: >-
+      непосредственную работу по редактированию тому другу покойного писателя, которого он сам выбрал для этой цели
+    quoteEn: >-
+      …the direct work of editing to that friend of the deceased writer whom he himself chose for this purpose… (i.e. V. G. Chertkov). (working English)
+    significance: >-
+      From "ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ" (From the State Editorial Commission): the Soviet
+      government's own statement that it entrusted the edition to the friend Tolstoy himself chose —
+      Chertkov as editor-in-chief, in the edition's front matter. PD facsimile.
+    facsimile: extracts/pss-vol62-pages/page-005.png
+
+  - id: pss-commission-omissions
+    genre: print-frontmatter
+    pssTom: 1
+    pages: "v"
+    date: 1928-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/pss-vol62-frontmatter.txt
+    quoteRu: >-
+      Редакция не может не иметь права делать такого рода пропуски
+    quoteEn: >-
+      The editorial board cannot but have the right to make omissions of this kind… (working English)
+    significance: >-
+      The same State-Commission preface reserves a right of omission (for documents touching living
+      persons, or a word/phrase) — the Soviet-era editorial constraint stated openly in the edition's
+      own front matter. PD facsimile.
+    facsimile: extracts/pss-vol62-pages/page-005.png
+
+  - id: pss-chertkov-foreword-will
+    genre: print-frontmatter
+    pssTom: 1
+    pages: "vi"
+    date: 1928-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/pss-vol62-frontmatter.txt
+    quoteRu: >-
+      Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.
+    quoteEn: >-
+      This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)
+    significance: >-
+      From "ОТ ГЛАВНОГО РЕДАКТОРА" (From the Editor-in-Chief), Chertkov's own foreword: Tolstoy asked him
+      to review and publish the unpublished manuscripts, confirmed in the 31 July 1910 testamentary
+      disposition — the exact document the copyright-renunciation dive centres on. PD facsimile.
+    facsimile: extracts/pss-vol62-pages/page-006.png
+
+  - id: pss-chertkov-everything
+    genre: print-frontmatter
+    pssTom: 1
+    pages: "vi"
+    date: 1928-01-01
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/pss-vol62-frontmatter.txt
+    quoteRu: >-
+      нам в настоящем издании приходится именно в таком полном виде воспроизводить решительно все, написанное Толстым.
+    quoteEn: >-
+      …in the present edition we have to reproduce, in exactly such complete form, absolutely everything written by Tolstoy. (working English)
+    significance: >-
+      Chertkov's statement of the edition's maximalist completeness principle — print everything,
+      including private letters, diaries, and drafts — the textual-ethics foundation of the 90 volumes.
+      PD facsimile.
+    facsimile: extracts/pss-vol62-pages/page-006.png
+
+# Layer 2 — ingestion routing map (feeds the wiki). vaultStatus checked against website/src/wiki/ and
+# website/src/works/. wikiType ∈ the 9 types (website/schema/wiki-schema.md). sources ids from
+# website/schema/sources.yaml. ingestionPriority 1=central, 2=supporting, 3=peripheral.
+entities:
+  - name: "The Jubilee Edition (Полное собрание сочинений)"
+    wikiType: concept            # no native "edition" type — see needsReview
+    wikilinkTarget: "Jubilee Edition.md"
+    vaultStatus: missing
+    role: "the 90-volume complete works (1928–1958) + 1964 index volume; the platform's base text for all Russian-language citation"
+    sources: [jubilee-edition]
+    evidenceRefs: [pss-cover-tom53, pss-cover-tom91-index, pss-reproduction-notice, pss-state-commission, pss-chertkov-everything, tei-bibl-citation-format]
+    ingestionPriority: 1
+    dependsOn: ["Vladimir Chertkov"]
+
+  - name: "Tolstoy Digital / «Слово Толстого»"
+    wikiType: institution        # institutionType: literary-society / other (a DH project)
+    wikilinkTarget: "Tolstoy Digital.md"
+    vaultStatus: missing
+    role: "HSE digital-humanities project that TEI-encoded the 90 volumes (2015–2022) and added the semantic layers; source of the local corpus"
+    sources: []                  # no sources.yaml id yet — see needsReview
+    evidenceRefs: [tei-leadership-credit, tei-funder-slovo, tei-licence-ccbysa, tei-provenance-note, tei-taxonomy, tei-personlist-record]
+    ingestionPriority: 1
+    dependsOn: ["The Jubilee Edition (Полное собрание сочинений)"]
+
+  - name: "«Весь Толстой в один клик» (All Tolstoy in One Click)"
+    wikiType: event
+    wikilinkTarget: "All Tolstoy in One Click.md"
+    vaultStatus: missing
+    role: "2013–2014 crowdsourced OCR+proofreading of the 90 volumes (ABBYY FineReader; ~3,249 volunteers, 49 countries; 46,820 pages); produced the free e-texts on tolstoy.ru"
+    sources: [jubilee-edition]
+    evidenceRefs: [pss-rgb-provenance, tei-provenance-note]
+    ingestionPriority: 2
+    dependsOn: ["The Jubilee Edition (Полное собрание сочинений)", "Fyokla Tolstaya"]
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov.md"
+    vaultStatus: exists
+    role: "editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project"
+    sources: [jubilee-edition]
+    evidenceRefs: [pss-state-commission, pss-chertkov-foreword-will, pss-chertkov-everything, tei-locationlist-record]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "Fyokla Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Fyokla Tolstaya.md"
+    vaultStatus: missing
+    role: "Tolstoy's great-great-granddaughter; initiator of «Весь Толстой в один клик» and a leader of Tolstoy Digital"
+    sources: []
+    evidenceRefs: [tei-leadership-credit]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Anastasia Bonch-Osmolovskaya"
+    wikiType: person
+    wikilinkTarget: "Anastasia Bonch-Osmolovskaya.md"
+    vaultStatus: missing
+    role: "HSE linguist; co-founder/lead of Tolstoy Digital; principal author of the 'Tolstoy semanticized' (2019) methodology"
+    sources: []
+    evidenceRefs: [tei-leadership-credit]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Boris Orekhov"
+    wikiType: person
+    wikilinkTarget: "Boris Orekhov.md"
+    vaultStatus: missing
+    role: "HSE; technology lead of Tolstoy Digital; author of the '91st volume' (2020) paper on index.tolstoy.ru"
+    sources: []
+    evidenceRefs: [tei-leadership-credit]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Nikolai N. Gusev"
+    wikiType: person
+    wikilinkTarget: "Nikolai Gusev.md"
+    vaultStatus: missing
+    role: "Tolstoy's secretary; Jubilee Edition editorial-board member; author of the Летопись (chronicle) that forms a witness corpus in the TEI set"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Nikolai K. Gudzy"
+    wikiType: person
+    wikilinkTarget: "Nikolai Gudzy.md"
+    vaultStatus: missing
+    role: "textologist on the Jubilee Edition editorial board (later committee)"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Alexandra Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Alexandra Tolstaya.md"
+    vaultStatus: exists
+    role: "Tolstoy's daughter and designated manuscript heir; original Jubilee Edition editorial-board member (before her emigration)"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "State Museum of L. N. Tolstoy (GMT)"
+    wikiType: institution        # institutionType: museum
+    wikilinkTarget: "State Tolstoy Museum.md"
+    vaultStatus: missing
+    role: "Moscow museum (Prechistenka 11); co-initiator of the digitisation; holds the editorial archive and the photo collection catalogued in listMedia.xml"
+    sources: [tolstoy-museum-moscow]
+    evidenceRefs: [tei-listmedia-record]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Higher School of Economics (HSE)"
+    wikiType: institution        # institutionType: university
+    wikilinkTarget: "Higher School of Economics.md"
+    vaultStatus: missing
+    role: "Moscow university; home of the digital-humanities group behind Tolstoy Digital"
+    sources: []
+    evidenceRefs: [tei-funder-slovo]
+    ingestionPriority: 3
+    dependsOn: ["Tolstoy Digital / «Слово Толстого»"]
+
+  - name: "ABBYY"
+    wikiType: institution        # institutionType: other (software company)
+    wikilinkTarget: "ABBYY.md"
+    vaultStatus: missing
+    role: "software company; donated FineReader OCR and ran the recognition pass for «Весь Толстой в один клик»"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["«Весь Толстой в один клик» (All Tolstoy in One Click)"]
+
+  - name: "Russian State Library (РГБ)"
+    wikiType: institution        # institutionType: archive / library
+    wikilinkTarget: "Russian State Library.md"
+    vaultStatus: missing
+    role: "provided the electronic scans of the 90 volumes that the crowdsourcing project proofread"
+    sources: [rgb-tolstoy-fond]
+    evidenceRefs: [pss-rgb-provenance]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana.md"
+    vaultStatus: exists
+    role: "Tolstoy's estate; co-initiator of the digitisation; the place from which most of the edition's manuscript base originates"
+    sources: [yasnaya-polyana-archive]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+# Layer 3 — visual & archival materials. Downloaded items live in the git-ignored visuals/ cache
+# (PD/CC only); facsimiles live in the committed extracts/ (PD, rendered from the local PSS PDFs).
+# Licences verified against the Commons File: pages via the API (2026-05-30).
+visuals:
+  - id: chertkov-by-repin
+    type: portrait
+    subject: "V. G. Chertkov, editor-in-chief of the Jubilee Edition"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: "File:Chertkov by Repin.jpg"
+    access: open-web
+    rights: "PD — Ilya Repin (d. 1930), c. 1890; life+70 expired"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Repin.jpg"
+    localPath: "visuals/commons-chertkov-portrait-repin.jpg"
+    note: "Oil portrait by Ilya Repin, c. 1890. The keystone likeness of the editor-in-chief. PD."
+
+  - id: alexandra-tolstaya-photo
+    type: portrait
+    subject: "A. L. Tolstaya, daughter and editorial-board member"
+    relatedEntity: "Alexandra Tolstaya"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: "File:Alexandra Lvovna Tolstaya.jpg"
+    access: open-web
+    rights: "PD — unknown author, c. 1905; PD-Russia/PD-old"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Alexandra_Lvovna_Tolstaya.jpg"
+    localPath: "visuals/commons-alexandra-tolstaya.jpg"
+    note: "Photograph c. 1905–1910. PD by age."
+
+  - id: yasnaya-polyana-house
+    type: photograph
+    subject: "Yasnaya Polyana — Tolstoy's main house (source of the manuscript base)"
+    relatedEntity: "Yasnaya Polyana"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: "File:Yasnaya Polyana main building.jpg"
+    access: open-web
+    rights: "PD — unknown author, early 20th c. (archival photograph)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Yasnaya_Polyana_main_building.jpg"
+    localPath: "visuals/commons-yasnaya-polyana-main-building.jpg"
+    note: "Early-20th-c. archival photograph of the main house. PD by age."
+
+  - id: tolstoy-museum-moscow
+    type: photograph
+    subject: "State L. N. Tolstoy Museum, Prechistenka 11, Moscow (facade)"
+    relatedEntity: "State Museum of L. N. Tolstoy (GMT)"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: "File:Prechistenka tolstoy museum facade.jpg"
+    access: open-web
+    rights: "CC BY-SA 2.5 — © NVO, 2007 (attribution required on publication)"
+    licence: CC-BY-SA
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Prechistenka_tolstoy_museum_facade.jpg"
+    localPath: "visuals/commons-tolstoy-museum-moscow-facade.jpg"
+    note: "Facade photo by Commons user NVO, 18 Mar 2007. CC BY-SA 2.5 — credit NVO if published."
+
+  - id: fyokla-tolstaya-photo
+    type: photograph
+    subject: "Fyokla Tolstaya, initiator of «Весь Толстой в один клик»"
+    relatedEntity: "Fyokla Tolstaya"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tolstaya, Fyokla -NF 20181129 fRF01.jpg"
+    access: open-web
+    rights: "CC BY-SA 4.0 — © Rodrigo Fernández, 2018 (attribution required on publication)"
+    licence: CC-BY-SA
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstaya,_Fyokla_-NF_20181129_fRF01.jpg"
+    localPath: "visuals/commons-fyokla-tolstaya.jpg"
+    note: "Portrait by Rodrigo Fernández (Commons), 2018. CC BY-SA 4.0 — credit Rodrigo Fernández if published."
+
+  - id: pss-reproduction-notice-facsimile
+    type: print-facsimile
+    subject: "PSS Tom 1 — the free-reproduction notice («Перепечатка разрешается безвозмездно»)"
+    relatedEntity: "The Jubilee Edition (Полное собрание сочинений)"
+    relatedEvidence: pss-reproduction-notice
+    holding: "Local PSS PDF (primary-sources/jubilee-edition/vol62), rendered @220dpi"
+    archiveId: null
+    access: local
+    rights: "PD — printed 1935; the edition itself permits free reprinting"
+    licence: PD
+    usable: true
+    url: null
+    localPath: "extracts/pss-vol62-pages/page-004.png"
+    note: "Committed to extracts/ (PD facsimile rendered from the local PSS PDF)."
+
+  - id: pss-state-commission-facsimile
+    type: print-facsimile
+    subject: "PSS Tom 1 — «ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ» (State Editorial Commission)"
+    relatedEntity: "The Jubilee Edition (Полное собрание сочинений)"
+    relatedEvidence: pss-state-commission
+    holding: "Local PSS PDF (primary-sources/jubilee-edition/vol62), rendered @220dpi"
+    archiveId: null
+    access: local
+    rights: "PD — printed 1935"
+    licence: PD
+    usable: true
+    url: null
+    localPath: "extracts/pss-vol62-pages/page-005.png"
+    note: "Committed to extracts/. The Soviet government's preface entrusting the edition to Chertkov."
+
+  - id: pss-chertkov-foreword-facsimile
+    type: print-facsimile
+    subject: "PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword)"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: pss-chertkov-foreword-will
+    holding: "Local PSS PDF (primary-sources/jubilee-edition/vol62), rendered @220dpi"
+    archiveId: null
+    access: local
+    rights: "PD — printed 1935; Chertkov d. 1936, text life+70 expired"
+    licence: PD
+    usable: true
+    url: null
+    localPath: "extracts/pss-vol62-pages/page-006.png"
+    note: "Committed to extracts/. Chertkov's foreword citing Tolstoy's 31 July 1910 testamentary request."
+
+  - id: nikolai-gusev-portrait
+    type: portrait
+    subject: "N. N. Gusev (secretary, board member)"
+    relatedEntity: "Nikolai N. Gusev"
+    relatedEvidence: null
+    holding: null
+    archiveId: null
+    access: unavailable
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: null
+    localPath: null
+    note: "No image on Wikimedia Commons (no category, no search hits). Next step: GMT or RGALI."
+
+  - id: nikolai-gudzy-portrait
+    type: portrait
+    subject: "N. K. Gudzy (textologist, board member)"
+    relatedEntity: "Nikolai K. Gudzy"
+    relatedEvidence: null
+    holding: null
+    archiveId: null
+    access: unavailable
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: null
+    localPath: null
+    note: "No image on Wikimedia Commons (category absent, File:Gudzy.jpg is a dead link)."
+
+  - id: index-tolstoy-ru-screenshot
+    type: screenshot
+    subject: "index.tolstoy.ru — the '91st volume' web app"
+    relatedEntity: "Tolstoy Digital / «Слово Толстого»"
+    relatedEvidence: pss-cover-tom91-index
+    holding: "live web application"
+    archiveId: null
+    access: open-web
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: false
+    url: "https://index.tolstoy.ru/"
+    localPath: null
+    note: "Record only. Digitised 1964 index with fuzzy search + name co-occurrence network graph. A screenshot would be rights-uncertain; not captured."
+
+# Layer — secondary scholarship (Phase 3). English-first; Russian where authoritative.
+scholarship:
+  summary: >-
+    There is little dedicated English-language scholarship on the Jubilee Edition as an object; the
+    fullest account is the Russian documentary history L. A. Osterman, «Сражение за Толстого» (2000),
+    and the Cambridge "Tolstoy in Context" chapter on the Complete Works (2022). On the digital side,
+    the Tolstoy Digital team has published a substantial DH record (Bonch-Osmolovskaya et al., Journal
+    of Web Semantics 2019; Orekhov 2020; DH conference papers). The received view: the 90-volume
+    edition is "the most complete and professionally executed extant edition of Tolstoy" (Cambridge,
+    2022), founded on a maximalist completeness principle, but shaped by Soviet-era editorial framing;
+    the digital corpus is celebrated as a model of semantic scholarly editing of a literary heritage.
+  triangulation:
+    - evidenceRef: pss-state-commission
+      conventionalView: >-
+        English secondary accounts compress the edition's authorisation to "Lenin's affidavit (1918)"
+        and "Stalin's state decree" (Cambridge, 2022).
+      relation: complicates
+      source: "Osterman, L. A. «Сражение за Толстого». Moscow: Monolit, 2000."
+    - evidenceRef: pss-commission-omissions
+      conventionalView: >-
+        The edition is widely described as complete and authoritative, with Soviet-era ideological
+        framing noted as a caveat.
+      relation: extends
+      source: "Osterman, L. A. «Сражение за Толстого» (2000); Tolstoy in Context, ch. 34 (Cambridge, 2022)."
+    - evidenceRef: pss-chertkov-everything
+      conventionalView: >-
+        Scholars describe the edition's completeness principle thematically.
+      relation: confirms
+      source: "Tolstoy in Context, ch. 34 (Cambridge, 2022)."
+    - evidenceRef: tei-licence-ccbysa
+      conventionalView: >-
+        The corpus is commonly described as openly licensed CC BY-SA.
+      relation: complicates
+      source: "github.com/tolstoydigital/TEI (header <availability>; repo API licence: None)."
+    - evidenceRef: tei-personlist-record
+      conventionalView: >-
+        Tolstoy Digital is presented as a semantic edition with named-entity and relation layers.
+      relation: confirms
+      source: "Bonch-Osmolovskaya, A. et al. 'Tolstoy semanticized.' Journal of Web Semantics 59 (2019)."
+
+# Intra-corpus corrections (primary-vs-primary / vs the project's own loose docs). Distinct from scholarship.
+contradictions:
+  - claim: "The edition is the '91-volume' Jubilee Edition / spans 1928–1964 (loose project usage)."
+    correction: >-
+      The edition proper is 90 volumes published 1928–1958; the 1964 «Том 91» is a separate
+      supplementary index volume. The two existing project docs use both "1928–1964" and "1928–1958";
+      the precise statement is 90 vols 1928–1958 + a 1964 index. Per-volume publication years on the
+      covers confirm the run (e.g. Tom 1 = 1935, Tom 53 = 1953, Tom 91 = 1964).
+    evidenceRef: pss-cover-tom91-index
+  - claim: "tolstoydigital-tei-reference.md: 'the texts/ holds ~16,600 XML'."
+    correction: >-
+      Measured locally, texts/ holds 16,573 XML files (works 767, letters 9,087, diaries 4,584, notes
+      100, krug_chtenija 444, azbuka 784, comments 807), mirrored 1:1 by texts_front/.
+    evidenceRef: tei-taxonomy
+
+notCovered:
+  - "The 100-volume academic PSS (IMLI/Gorky Institute, 2000– ) — the modern successor edition; only contextually mentioned, not held locally."
+  - "Per-volume editorial apparatus depth comparison (Tom 13 minimal vs Tom 47 maximal) beyond the headline."
+  - "The witness corpora (Goldenweiser, Gusev's Летопись, Makovitski, S. A. Tolstaya) as content — inventoried structurally only."
+  - "Wikidata reconciliation of the 3,113 personList ids against the vault's person identifiers (a separate ingestion task)."
+  - "The full DH bibliography beyond the load-bearing papers (DH2014/2016/2018/2023 abstracts)."
+  - "Tom 31 → local-PDF resolution (still open in pss-volume-mapping); not re-attempted here."
+
+needsReview:
+  - item: "No native wiki type for 'edition'."
+    phase: synthesis
+    why: >-
+      The Jubilee Edition and the TEI corpus are routed as wikiType concept / institution, but neither
+      fits an edition cleanly. Consider whether the wiki schema needs an 'edition' type, or whether
+      concept is the settled home.
+  - item: "tolstoydigital TEI corpus is not a registered source in sources.yaml."
+    phase: synthesis
+    why: >-
+      The corpus underpins nearly all the platform's structured data but has no sources.yaml id. Adding
+      a `tolstoydigital-tei` (database/primary) source id would let entity rows cite it.
+  - item: "Dictionary.xml and listMedia.xml are not strictly well-formed."
+    phase: extract
+    why: >-
+      They carry non-NCName xml:id values (e.g. obinujas'), so a strict XML parser fails; a recovering
+      parser is required. Note for any future ingestion tooling.
+  - item: "'5,000 copies' vs '10,000' print run."
+    phase: scholarship
+    why: >-
+      Per Osterman (2000) the run was originally 5,000, raised to 10,000 by a Sovnarkom resolution of
+      8 Aug 1934, with per-volume variation. The two existing project docs and most popular accounts
+      cite only 5,000. State as 'originally 5,000, later raised to 10,000'.
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/ (full local clone — texts, reference files, headers, witness corpora; structural inspection)"
+  - "primary-sources/jubilee-edition/ (90 local PSS PDFs + guide + 91vol.pdf; pdftotext + pdftoppm)"
+  - "github.com/tolstoydigital/TEI (header credits, licence, reference layout) + the now-dead github.com/Levabu/tolstoy_digital (404)"
+  - "Wikimedia Commons (PD/CC portraits + places; licences verified via the API)"
+  - "Web scholarship: Osterman (2000, kulichki.com); Tolstoy in Context ch. 34 (Cambridge 2022); Orekhov 2020; Bonch-Osmolovskaya et al. (dblp/JWS/CEUR); Russia Beyond; readingtolstoy.ru; sysblok.ru"
+
+references:
+  primary:
+    - "Толстой Л. Н. Полное собрание сочинений: в 90 тт. М.–Л.: Гос. изд. «Художественная литература», 1928–1958; Том 91 (Указатели), 1964. (local: primary-sources/jubilee-edition/)"
+    - "tolstoydigital TEI/XML corpus — Tolstoy Digital / «Слово Толстого» / HSE, CC BY-SA (header-scoped). github.com/tolstoydigital/TEI (local: primary-sources/tolstoydigital-TEI/)"
+  background:
+    - "Osterman, L. A. «Сражение за Толстого». Moscow: Monolit, 2000. — documentary history of the edition (decrees, board, print run, censorship)."
+    - "«Tolstoy's Complete Works», ch. 34 in Tolstoy in Context (ed. Donskov/Berman), Cambridge UP, 2022."
+    - "Orekhov, B. V. ''Volume 91': an Electronic Index to the Complete Works of Leo Tolstoy.' J. Sib. Fed. Univ. Humanit. Soc. Sci. 13(12), 2020, 2049–2055. DOI 10.17516/1997-1370-0703. (local: primary-sources/jubilee-edition/91vol.pdf)"
+    - "Bonch-Osmolovskaya, A.; Skorinkin, D.; Pavlova, I.; Kolbasov, M.; Orekhov, B. 'Tolstoy semanticized: Constructing a digital edition for knowledge discovery.' Journal of Web Semantics 59 (2019). DOI 10.1016/j.websem.2018.12.001."
+    - "Bonch-Osmolovskaya, A. 'Digital Edition of Leo Tolstoy Works.' J. Sib. Fed. Univ. Humanit. Soc. Sci. 9(7), 2016, 1605–1614."
+    - "ABBYY / Russia Beyond (2013–2014) and readingtolstoy.ru — «Весь Толстой в один клик» project documentation."

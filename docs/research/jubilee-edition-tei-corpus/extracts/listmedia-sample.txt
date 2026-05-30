@@ -1,0 +1,29 @@
+listMedia.xml — one <figure> record (museum photo catalogue)
+
+<figure xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fig_00127552">
+          <graphic url="X46/00127552"/>
+          <repository>
+            <orgName>Государственный музей Л. Н. Толстого</orgName>
+            <idno type="museum_catalog">ГМТ КП-5750/130</idno>
+            <idno type="museum_id">Ф-12597</idno>
+          </repository>
+          <figDesc>8,5х5,0</figDesc>
+          <title type="source">Граф П.П.Шувалов. Камергер Двора Его Величества.</title>
+          <title type="tolstoydigital">Граф П.П.Шувалов. Камергер Двора Его Величества.</title>
+          <catRef ana="" target=""/>
+          <note type="category" source="tolstoymuseum">Разные лица (персоналии).</note>
+          <respStmt>
+            <resp>Автор фотографии</resp>
+            <name type="person" ref="">Деньер Андрей Иванович</name>
+          </respStmt>
+          <respStmt>
+            <resp>Фотостудия</resp>
+            <name type="org"/>
+          </respStmt>
+          <event>
+            <placeName ref=""/>
+            <date type="source">Начало 1860-х гг.</date>
+            <date from="1860-01-01" to="1864-01-01" calendar="FALSE" period="yearly">начало 1860-х</date>
+          </event>
+        </figure>
+      
