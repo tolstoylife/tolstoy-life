@@ -39,6 +39,8 @@ __scrap
 node_modules
 _site
 dist
+__pycache__/
+*.pyc
 .env
 .env.local
 
