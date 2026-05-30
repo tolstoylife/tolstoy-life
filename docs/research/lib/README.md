@@ -29,6 +29,21 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
   diverging word. Requires `PyYAML`. Usage: `python3 docs/research/lib/verify_quotes.py
   docs/research/<slug>/dossier.yaml [--quiet]`. Exit 0 = PASS, 1 = FAIL (mismatch or missing
   facsimile), 2 = usage/parse error.
+- **`build_evidence_index.py`** — cross-dive aggregator. Walks every `docs/research/*/dossier.yaml`
+  and emits an entity-keyed evidence index so wiki ingestion reuses verified research instead of
+  re-collating it across dives (the same entity recurs in many dives — Chertkov in all five). For
+  each entity (keyed by the slug of `wikilinkTarget`, == the eventual wiki/works slug) it resolves
+  that dive's `evidenceRefs` to full evidence rows qualified by dive, collates and de-dupes visuals
+  (by `url`, so the same image cached under different per-dive paths merges with an `alsoInDives`
+  list), unions sources, and **re-derives `vaultStatus` live** against `website/src/wiki/` and
+  `website/src/works/` (stub = prose body < 60 words, or a `draft` < 120). Writes
+  `docs/research/evidence-index/evidence-index.yaml` (machine) + `index.md` (human; renders to
+  `index.html` via `serve.py --build-only`). A `lint` block flags unresolved `evidenceRefs`,
+  name/`wikiType` conflicts (e.g. Birukoff/Biryukov, Maude person/translator), works-routed-not-wiki,
+  vaultStatus drift, and zero-evidence research gaps. Output is deterministic (byte-identical on
+  rebuild). Requires `PyYAML`. Usage: `python3 docs/research/lib/build_evidence_index.py [--check]
+  [--quiet] [--research-dir PATH]`. Exit 0 = built (or `--check` clean), 1 = `--check` found broken
+  links (unresolved refs), 2 = usage/parse error.
 - **`test-verify-quotes.sh`** — regression check for the above: asserts a clean quote passes, a
   tampered body fails, a boundary-ellipsis excerpt passes, a valid internal `[...]` elision passes,
   and a corruption hidden behind an elision still fails. Run: `bash test-verify-quotes.sh` (prints `PASS`).
