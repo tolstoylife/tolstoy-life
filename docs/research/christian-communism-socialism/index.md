@@ -7,11 +7,22 @@ tags: [research]
 # Tolstoy on "Christian socialism" and "Christian communism"
 
 Date: 2026-05-13
+
 Context: A survey of where Leo Tolstoy himself discusses the two doctrinal labels — *Christian socialism* («христианский социализм») and *Christian communism* («христианский коммунизм») — across the 90-volume Jubilee Edition (PSS). The survey is a companion to [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) and uses the same method. It was prompted by the editorial need on tolstoy.life to ground any use of either label on the site in Tolstoy's own words rather than in third-party framing, and by the specific anecdote that the Swedish socialist Kata Dalström characterised Tolstoy as a "Christian communist."
 
 ---
 
-## 1. Why this matters for tolstoy.life
+## 1. Key findings
+
+- **The two labels stand asymmetrically in the corpus.** The phrase «христианский социализм» appears in Tolstoy's own voice only three times (1889–1890), all *descriptive / bibliographic* — naming the American papers *Dawn* and *Nationalist*, and a conversation with Yanzhul — never as a self-application. «христианский коммунизм» appears **zero** times in his own voice anywhere in the 90-volume PSS; its only two corpus hits are 1928–1958 editors' notes.
+- **His position is stable across 1889–1910:** the doctrines' *diagnosis* of capitalist society is correct; the *means* they propose (organised violence, state coercion) only reproduce the disease — "slavery in its primal form." What they leave out is the rejection of violence on which Christian non-resistance turns.
+- **Eight primary-voice moments trace the arc** — from the 1889 diary "germ" ("the anarchists are entirely right, only not in their violence") through *The Slavery of Our Time* (1900), *To Political Activists* (1903) and *The End of the Century* (1905), to *The Law of Violence and the Law of Love* (1908) — which places socialism, communism and anarchism *inside* Christianity as "one-sided manifestations" of the violence-denying Christian consciousness — and the 1910 letter to Gandhi.
+- **The local trigger corrects a received label.** Kata Dalström's 1908 Karlstad pamphlet actually prints *kristen samhällsreformator* — "Christian social reformer," not *kristen kommunist*; the "Christian communist" shorthand sometimes attached to Tolstoy is later commentary, not what the pamphlet prints.
+- **For the vault.** Any use of either label on the site should be marked external: Tolstoy never called himself a Christian socialist or a Christian communist. Ingestion is a separate, human step.
+
+---
+
+## 2. Why this matters for tolstoy.life
 
 Twentieth-century commentary placed Tolstoy in four doxographic boxes by turn — Tolstoyan, Christian anarchist, Christian socialist, Christian communist. The first two are surveyed in the companion essay. This one takes the second pair.
 
@@ -29,11 +40,11 @@ A companion file, [pss-volume-mapping.md](../pss-volume-mapping.md), resolves To
 
 ---
 
-## 2. The shape of the question in Tolstoy's life
+## 3. The shape of the question in Tolstoy's life
 
 Eight primary-voice moments form the spine. The arc runs from 1889 to 1910 and tracks a stable position: the diagnosis the doctrines make of capitalist society is correct; the means they propose to remedy it (organised violence, legal coercion) reproduce the disease in a new form; what they leave out is the rejection of violence on which Christian non-resistance turns.
 
-### 2.1. 1889 (14 January) — The germ
+### 3.1. 1889 (14 January) — The germ
 
 Diary entry of 14 January 1889 at Moscow (PSS Tom 50, p. 22). Tolstoy had spent the day reading a book on American socialism — the two parties, "international and socialist" — and recorded in one sentence the structural reaction that would hold for the next twenty-one years:
 
@@ -45,7 +56,7 @@ The germ. The structure — "right in diagnosis, wrong in means" — that the ma
 
 Full extract: [extracts/v50_022_022_1889_01_14.txt](extracts/v50_022_022_1889_01_14.txt).
 
-### 2.2. 1889 (27 August) — Reading the Christian-socialist papers
+### 3.2. 1889 (27 August) — Reading the Christian-socialist papers
 
 Diary entry of 27 August 1889 at Yasnaya Polyana (PSS Tom 50, pp. 128–129). Tolstoy had begun to receive the American Christian-socialist press: *Dawn* (Boston, ed. W. D. P. Bliss, 1889–1896) and *Nationalist* (Boston, the Bellamy-Nationalist organ, 1889–1891). The 27 August entry sets out for the first time the doctrinal reaction:
 
@@ -65,7 +76,7 @@ A 6–9 March 1890 letter to P. I. Birjukov (Tom 65, letter 31, p. 42) lists Tol
 
 These three are the only places in the entire 90-volume PSS where the compound phrase «христианский социализм» appears in Tolstoy's own voice. All three are bibliographic / descriptive. None is a self-application.
 
-### 2.3. 1894 (23–24 July) — The programmatic statement to Davidson
+### 3.3. 1894 (23–24 July) — The programmatic statement to Davidson
 
 Letter to John Morrison Davidson, written in English and Russian from Yasnaya Polyana (PSS Tom 67, letter 179, pp. 178–180). Davidson (1843–1916), Scottish journalist and Christian socialist, had sent Tolstoy two of his books: *The Old Order and the New: From Individualism to Collectivism* (London, 1892) and *The Gospel of the Poor* (London, 1893). Tolstoy's reply, in his own English original and his own Russian translation:
 
@@ -79,7 +90,7 @@ The letter is also a tactical document. Tolstoy treats Davidson as a "labourer o
 
 Full extract (English + Russian, both in Tolstoy's hand): [extracts/v67_179_DzhonuMorrisonuDavidsonu.txt](extracts/v67_179_DzhonuMorrisonuDavidsonu.txt).
 
-### 2.4. 1900 — *The Slavery of Our Time*
+### 3.4. 1900 — *The Slavery of Our Time*
 
 *Rabstvo nashego vremeni* (PSS Tom 34, pp. 144–199), written 1900, published in Christchurch the same year. The first sustained book-length critique of socialism in the late corpus. Section VI is titled "Несостоятельность социалистического идеала" — *The Untenability of the Socialist Ideal.*
 
@@ -99,7 +110,7 @@ This is the structural critique the 1889 diary paragraphs had compressed into a 
 
 Full extract (filtered to socialist-passages): [extracts/v34_144_199_Rabstvo_nashego_vremeni.txt](extracts/v34_144_199_Rabstvo_nashego_vremeni.txt).
 
-### 2.5. 1903 — *To Political Activists*
+### 3.5. 1903 — *To Political Activists*
 
 *K politicheskim deyatelyam* (PSS Tom 35, pp. 199–215), written 1903. Direct address to the Russian revolutionary movement — explicitly the revolutionary-socialists (the SR party had been founded the year before) and the political opposition more broadly. The pivot:
 
@@ -111,7 +122,7 @@ The two-clause argument compressed into one sentence: (1) the means are immoral;
 
 Full extract: [extracts/v35_199_215_K_politicheskim_dejateljam.txt](extracts/v35_199_215_K_politicheskim_dejateljam.txt).
 
-### 2.6. 1905 — *The End of the Century*
+### 3.6. 1905 — *The End of the Century*
 
 *Konets veka* (PSS Tom 36, pp. 231–277), written 1905 in the wake of the first Russian Revolution. The bluntest single sentence on socialism anywhere in the corpus:
 
@@ -129,7 +140,7 @@ The post-1905 frame is the new element: Tolstoy is now writing against an actual
 
 Full extract: [extracts/v36_231_277_Konets_veka.txt](extracts/v36_231_277_Konets_veka.txt).
 
-### 2.7. 1908 — *The Law of Violence and the Law of Love*
+### 3.7. 1908 — *The Law of Violence and the Law of Love*
 
 *Zakon nasiliya i zakon ljubvi* (PSS Tom 37, pp. 149–221), written 1908. The most generous late formulation. The three movements are placed *inside* Christianity, not outside it:
 
@@ -155,7 +166,7 @@ Cross-checked against the printed PSS: [extracts/pss-pages/tom37-1908-zakon-nasi
 
 Full extract: [extracts/v37_149_221_Zakon_nasilija_i_zakon_ljubvi.txt](extracts/v37_149_221_Zakon_nasilija_i_zakon_ljubvi.txt).
 
-### 2.8. 1910 (7 September) — Letter to Gandhi
+### 3.8. 1910 (7 September) — Letter to Gandhi
 
 Letter to M. K. Gandhi, written in Russian from Kochety (PSS Tom 82, letter 178, pp. 137–140). Tolstoy's last sustained reply to Gandhi, written six weeks before his death:
 
@@ -169,7 +180,7 @@ Full extract: [extracts/v82_178_GandiGandhi.txt](extracts/v82_178_GandiGandhi.tx
 
 ---
 
-## 3. The non-attestation of «христианский коммунизм»
+## 4. The non-attestation of «христианский коммунизм»
 
 The compound phrase «христианский коммунизм» (with all five case-inflected adjective forms) returns two unique TEI files in the entire corpus — letters/v72_008_Kn_D_A_Xilkovu.xml and letters/v78_025_ZimakoZimaco.xml. Both hits are inside `<note resp="volume_editor">` editorial-commentary blocks, written by the PSS editorial team between 1928 and 1958:
 
@@ -184,7 +195,7 @@ The substance the label might have named — common ownership grounded in the go
 
 ---
 
-## 4. Where the theme clusters in the Jubilee Edition
+## 5. Where the theme clusters in the Jubilee Edition
 
 The keyword sweep behind this survey returned 49 unique TEI files for the communism family («коммунизм» + «коммунист» + «коммуни») and 279 unique files for the socialism family («социализм» + «социалист» + «социал-демократ»). The compound «христианский социализм» returns 15 unique files, of which three are LT-voice; the compound «христианский коммунизм» returns 2 unique files, of which zero are LT-voice. The full file-by-file hit list is preserved locally under `_generated/research/christian-communism-socialism/` (working-zone byproduct, not published) for the next session.
 
@@ -231,7 +242,7 @@ The keyword sweep behind this survey returned 49 unique TEI files for the commun
 
 ---
 
-## 5. Material not covered by this survey
+## 6. Material not covered by this survey
 
 - **Whether the 1908 Karlstad pamphlet rests on an actual Yasnaya Polyana visit, or is text-based commentary by Dalström at distance.** The pamphlet's content is cited here through Hellman's *Hemma hos Tolstoj* footnote; the in-person record (if any), Goldenweiser's *Vblizi Tolstogo*, Makovický's *Yasnopolianskie zapiski* (1904–1910), and the Swedish socialist press of the period are not held locally.
 - **The TEI `comments/` directory** (807 editorial-commentary files). The 1928–1958 PSS editors' framing of both labels is a separate, smaller study; the editors' use of «христианский коммунизм» for the Doukhobors and «христианский социализм» for the Western correspondents is itself a documentary record of how mid-Soviet Tolstoy scholarship handled the question.
@@ -244,7 +255,7 @@ The keyword sweep behind this survey returned 49 unique TEI files for the commun
 
 ---
 
-## 6. Method
+## 7. Method
 
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files.
 - Two keyword families plus three compound forms were swept:
@@ -266,7 +277,7 @@ The companion file [pss-volume-mapping.md](../pss-volume-mapping.md) documents t
 
 ---
 
-## 7. References
+## 8. References
 
 Primary:
 

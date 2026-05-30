@@ -7,11 +7,23 @@ tags: [research]
 # Tolstoy on copyright and the renunciation of literary property
 
 Date: 2026-05-10
+
 Context: A survey of where Leo Tolstoy discusses copyright, ownership of his writings, and the free dissemination of texts across the 90-volume Jubilee Edition (PSS). The survey was prompted by the editorial need on tolstoy.life to ground its public-domain license — the *Soli Deo Gloria* dedication that gives all the site's text away — in Tolstoy's own words rather than in editorial framing alone.
 
 ---
 
-## 1. Why this matters for tolstoy.life
+## 1. Key findings
+
+- **Not one declaration but an evolving position, c. 1881–1910.** Six staged moments form the spine: the 1883 diary groundwork, the 1891 public declaration, the 1891 redacted household conflict, the 1895 will-as-diary-entry, the six successive formal wills of 1909–1910, and the 1910 Explanatory Note to the Will.
+- **The conceptual core (1883):** property is not in itself evil; *property defended by violence* — "by the policeman with a pistol" — is. "Make a spoon and eat with it, but only until another needs it."
+- **The 1891 open letter renounces copyright on everything written «с 1881 года»** — from 1881 *inclusive*; the secondary-literature paraphrase "after 1880" is slightly inaccurate. The renunciation therefore covers *A Confession* (1882) and the religious-philosophical writings of the early 1880s.
+- **The most personal line is the 1895 diary-will:** that his writings had been sold over the last ten years «было самым тяжелым для меня делом в жизни» — the heaviest thing in his life — reading not as a public statement but as a confession to whoever opens the diary after his death.
+- **The binding legal form was hard-won.** Imperial civil law allowed no bequest "to the people," so six wills were drafted across eighteen months; the 1910 Explanatory Note (drafted by Chertkov, signed by Tolstoy) finally gave the renunciation binding form. The household cost is visible in the source itself — the 1891 diary's fullest account of the conflict survives only as «[Вымарано 19 строк]», nineteen lines erased by Sofya Andreyevna.
+- **For the vault.** Grounds tolstoy.life's public-domain dedication (*Soli Deo Gloria*) in Tolstoy's own words rather than editorial framing, and seeds the wiki pages on the wills, on Chertkov, and on the household conflict. Ingestion is a separate, human step.
+
+---
+
+## 2. Why this matters for tolstoy.life
 
 The license under which everything tolstoy.life publishes is dedicated to the public domain. The dedication is informed by a conviction Tolstoy held and acted on across the last three decades of his life: that his writings should not be private property. The history of how he reached, declared, defended, and finally legally secured that conviction is itself substantial — and it sits in primary sources that are not always trivially accessible.
 
@@ -21,11 +33,11 @@ A companion file, [pss-volume-mapping.md](../pss-volume-mapping.md), resolves To
 
 ---
 
-## 2. The shape of the question in Tolstoy's life
+## 3. The shape of the question in Tolstoy's life
 
 The renunciation of literary property is not a single declaration. It is an evolving position that runs from the early 1880s to Tolstoy's death in 1910. Six staged moments form the spine.
 
-### 2.1. 1883 — The philosophical groundwork
+### 3.1. 1883 — The philosophical groundwork
 
 The diary entries from 1883 onward work out the underlying ethic: property is not in itself evil; *property defended by violence* is. From the diary entry of 1 January 1883 (PSS Tom 49, p. 59):
 
@@ -37,7 +49,7 @@ The diary entries from 1883 onward work out the underlying ethic: property is no
 
 This is the conceptual foundation that the later, more practical statements rest on.
 
-### 2.2. 1891 (16 September) — The public declaration
+### 3.2. 1891 (16 September) — The public declaration
 
 Open letter to the editors of *Russkie vedomosti* and *Novoye vremya*, published in both papers on 19 September 1891, renouncing the copyright on all Tolstoy's writings written from 1881 onward. PSS Tom 66, letter 36, pp. 47–48. Local PDF: `primary-sources/jubilee-edition/vol32/vol32.pdf`.
 
@@ -51,7 +63,7 @@ The English paraphrase that circulates in secondary literature — *"any of my w
 
 Full extract: [extracts/v66_036_RedaktoramgazetRusskievedomosti.txt](extracts/v66_036_RedaktoramgazetRusskievedomosti.txt).
 
-### 2.3. 1891 (July) — The household conflict, partly redacted
+### 3.3. 1891 (July) — The household conflict, partly redacted
 
 The 1891 declaration was published only after a protracted disagreement within Tolstoy's household. Sofya Andreyevna refused for years to assent. The diary entry of 22 July 1891 (PSS Tom 52, pp. 45–47) records the first major confrontation, but the most detailed description was physically removed from the diary before the modern edition could transcribe it. The TEI text marks this at the relevant point:
 
@@ -67,7 +79,7 @@ The editorial annotation `[Вымарано 19 строк]` records that ninetee
 
 Full extract: [extracts/v52_045_047_1891_07_22.txt](extracts/v52_045_047_1891_07_22.txt).
 
-### 2.4. 1895 (27 March) — The will-as-diary-entry
+### 3.4. 1895 (27 March) — The will-as-diary-entry
 
 PSS Tom 53, pp. 14–18; TEI id `v53_014_018_1895_03_27`. Local PDF: `primary-sources/jubilee-edition/vol19/vol19.pdf`. Of the materials this survey covers, this is the most plainly written first-person statement.
 
@@ -81,13 +93,13 @@ The closing sentence — *То, что сочинения мои продава�
 
 Full extract: [extracts/v53_014_018_1895_03_27.txt](extracts/v53_014_018_1895_03_27.txt). The printed page from the Jubilee Edition (PSS Tom 53, p. 16) is reproduced at [extracts/pss-vol53-pages/page-054.png](extracts/pss-vol53-pages/page-054.png).
 
-### 2.5. 1909–1910 — Six successive formal wills
+### 3.5. 1909–1910 — Six successive formal wills
 
 Tolstoy and V. G. Chertkov drew up six wills in eighteen months to find a legally binding form for the renunciation. The principal obstacle was that imperial Russian civil law did not allow bequeathing property "to the people"; only physical or juridical persons could be designated heirs. The successive drafts are recorded in PSS Tom 80 (1909 wills, including the fourth and fifth) and PSS Tom 82 (1910 sixth and final will, plus the Explanatory Note).
 
 The final formal will of 22 July 1910 was written in the woods near Yasnaya Polyana, away from the household, because the situation at home made open work on the document impossible.
 
-### 2.6. 1910 (31 July) — The Explanatory Note to the Will
+### 3.6. 1910 (31 July) — The Explanatory Note to the Will
 
 PSS Tom 82, pp. 227–231. TEI id `v82_305_Obyasnitelnayazapiskakzaveshhaniyu`. Local PDF: `primary-sources/jubilee-edition/vol58/vol58.pdf`.
 
@@ -103,7 +115,7 @@ Full extract: [extracts/v82_305_Obyasnitelnayazapiskakzaveshhaniyu.txt](extracts
 
 ---
 
-## 3. Where the theme clusters in the Jubilee Edition
+## 4. Where the theme clusters in the Jubilee Edition
 
 The keyword sweep that produced this survey hit roughly 60 letter files and 25 diary entries directly on the topic, plus a smaller number of pages in published works and notebooks. The map below points to clusters that reward further reading.
 
@@ -164,7 +176,7 @@ A broader sweep across the 1888–1891 entries on the keyword *собствен�
 
 ---
 
-## 4. Material not covered by this survey
+## 5. Material not covered by this survey
 
 The survey was time-boxed and did not cover:
 
@@ -175,7 +187,7 @@ The survey was time-boxed and did not cover:
 
 ---
 
-## 5. The manuscript record
+## 6. The manuscript record
 
 The original manuscripts of the diary entries and letters cited in this survey are held by the State Tolstoy Museum (Государственный музей-заповедник Л.Н. Толстого, GMT) in Moscow. The L. N. Tolstoy fond comprises 71 492 documents and is the world's largest collection of Tolstoy manuscript material; it is stored in the museum's "стальная комната" (steel room).
 
@@ -188,8 +200,7 @@ The state museum-fund catalogue [Госкаталог](https://web.goskatalog.ru
 
 The State Tolstoy Museum's website footer at the time of writing reads:
 
-> Использование любых находящихся на сайте материалов без официального разрешения запрещено
-> © 2026 Государственный музей-заповедник Л.Н. Толстого. Все права защищены
+> Использование любых находящихся на сайте материалов без официального разрешения запрещено © 2026 Государственный музей-заповедник Л.Н. Толстого. Все права защищены
 
 > *The use of any materials found on the site without official permission is prohibited. © 2026 State L.N. Tolstoy Museum-Reserve. All rights reserved.*
 
@@ -209,7 +220,7 @@ The full visual map — provenance, access, rights, and licence for each item, i
 
 ---
 
-## 6. Method
+## 7. Method
 
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files, plus notes and Krug chteniya.
 - A layered Russian keyword set was used, from high-confidence anchors (`авторск[ое]`, `литературн[ая собственность]`, `безвозмездн[о]`, `перепечат[ывать]`, `гонорар`, `после 1881`) to broader terms used in combination (`собственност[ь]`, `Чертков`).
@@ -221,7 +232,7 @@ The companion file [pss-volume-mapping.md](../pss-volume-mapping.md) documents t
 
 ---
 
-## 7. References
+## 8. References
 
 Primary:
 

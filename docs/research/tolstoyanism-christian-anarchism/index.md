@@ -7,11 +7,23 @@ tags: [research]
 # Tolstoy on "Tolstoyism" and "Christian anarchism"
 
 Date: 2026-05-13
+
 Context: A survey of where Leo Tolstoy himself discusses the two labels most often attached to his late thought — *Tolstoyism* («толстовство») and *Christian anarchism* («христианский анархизм») — across the 90-volume Jubilee Edition (PSS). The survey was prompted by the editorial need on tolstoy.life to ground any use of either label on the site in Tolstoy's own words rather than in third-party framing.
 
 ---
 
-## 1. Why this matters for tolstoy.life
+## 1. Key findings
+
+- **A combined survey of two labels.** This is the original combined dive; its *Tolstoyism* half has since been superseded by the dedicated [tolstoyanism](../tolstoyanism/index.md) dive. Both labels are things said *about* Tolstoy that he repeatedly refused — the personal label, the political label, the school — while affirming the underlying substance under a different name: Christ's teaching, the Gospel.
+- **Tolstoyism — the keystone is the 2 December 1897 diary** (to Makovický): «Никакого толстовства и моего учения не было и нет» — the plainest denial of the label in the corpus, and the unique self-rejection of «толстовство».
+- **Christian anarchism — two moves.** The 1900 Eltzbacher letter rejects "anarchist" as a *political* label while accepting the substance as a *religious* teaching, turning Eltzbacher's own index — which cites no Tolstoy page under «насилие» (violence) — into the evidence. The 1901 Sacy letter is the **only** place in the 90-volume PSS where Tolstoy uses «христианский анархизм» in his own voice, and even there as "Babism has much in common with Christian anarchism" — one step short of self-application.
+- **The 1894 diary "seed"** answers the Englishman's "how to be without government" structurally — six years before Eltzbacher made the question public — by reframing it: the only question open to a person is whether to subordinate conscience to the state, not what political order to build.
+- **The phrase «христианский анархизм» was not Tolstoy's coinage** but a term-of-art already circulating among his correspondents (Schmitt, Kenworthy, Crosby, Ortt), given programmatic Russian form by Chertkov's 1905 *O khristianskom anarkhizme*.
+- **For the vault.** Grounds the Tolstoyism and Christian-anarchism pages; note the Tolstoyism half is now carried by the newer dedicated dive. Ingestion is a separate, human step.
+
+---
+
+## 2. Why this matters for tolstoy.life
 
 Any reader who arrives at Tolstoy through twentieth-century commentary encounters him already labeled. *Tolstoyism* circulates as the name of a movement; *Christian anarchism* as the name of a doctrine; *Tolstoyan* as the name of a follower. Tolstoy himself dealt with all three labels in the last two decades of his life. The dealing was not casual: it was an explicit, repeated effort to refuse the personal label, the political label, and the school, while affirming the underlying substance under a different name.
 
@@ -21,11 +33,11 @@ A companion file, [pss-volume-mapping.md](../pss-volume-mapping.md), resolves To
 
 ---
 
-## 2. The shape of the question in Tolstoy's life
+## 3. The shape of the question in Tolstoy's life
 
 Three primary-voice moments form the spine. They are bracketed by a fourth, earlier moment that records the seed.
 
-### 2.1. 1894 (10 September) — The seed
+### 3.1. 1894 (10 September) — The seed
 
 Diary entry of 10 September 1894 (PSS Tom 52, pp. 138–140). The opening lines record what Tolstoy was thinking about on waking:
 
@@ -39,7 +51,7 @@ This is the structural-philosophical answer to "are you an anarchist" — given 
 
 Full extract: [extracts/v52_138_140_1894_09_10.txt](extracts/v52_138_140_1894_09_10.txt).
 
-### 2.2. 1897 (2 December) — The denial of Tolstoyism
+### 3.2. 1897 (2 December) — The denial of Tolstoyism
 
 Diary entry of 2 December 1897 at Yasnaya Polyana (PSS Tom 53, pp. 167–169). Conversation with Dušan Makovický — the Slovak doctor and disciple who would, in 1910, be the only physician at Tolstoy's deathbed at Astapovo. Makovický asked how he should act, having "involuntarily become Tolstoy's representative in Hungary." Tolstoy's reply, as he recorded it that evening:
 
@@ -53,7 +65,7 @@ The river image follows. Once a swimmer reaches the central current, there is no
 
 This is the most plainly written denial of "Tolstoyism" in the corpus. The "to clarify *for myself*" is load-bearing: the conversation was the occasion, but the formulation was a private clarification Tolstoy gave himself, set down the same day.
 
-### 2.3. 1900 (1/13 August) — The rejection of "anarchist" as political
+### 3.3. 1900 (1/13 August) — The rejection of "anarchist" as political
 
 Letter to Paul Eltzbacher, written in German from Yasnaya Polyana (PSS Tom 72, letter 341, pp. 424–426). Eltzbacher (1868–1928), Berlin legal scholar, had published *Der Anarchismus* (Berlin: Guttentag, 1900), a systematic study that classified seven thinkers as the principal expositors of anarchism: Godwin, Proudhon, Stirner, Bakunin, Kropotkin, Tucker, and Tolstoy. He had sent Tolstoy two copies. Tolstoy's reply opens with praise — Eltzbacher's book does for anarchism what was done thirty years earlier for socialism, brings it into the programme of political science, is purely objective, well-sourced — and then turns:
 
@@ -65,7 +77,7 @@ The move is characteristic: a qualified denial that refuses the political label 
 
 Full extract (German + Russian, both in Tolstoy's hand): [extracts/v72_341_PaulyuElcbaxeruPaulEltzhacher.txt](extracts/v72_341_PaulyuElcbaxeruPaulEltzhacher.txt). Printed page reproduced at [extracts/pss-pages/tom72-eltzbacher-442.png](extracts/pss-pages/tom72-eltzbacher-442.png).
 
-### 2.4. 1901 (28 July / 10 August) — The unique self-attestation
+### 3.4. 1901 (28 July / 10 August) — The unique self-attestation
 
 Letter to Gabriel Sacy, written in French from Yasnaya Polyana (PSS Tom 73, letter 126, pp. 109–110). Sacy was head of the personnel desk at the Ministry of Finance in Cairo and a Bábí — an adherent of the mid-nineteenth-century Persian messianic movement that would split shortly afterwards into Bábí and Baháʼí branches. He had written defending the idea of messianism. Tolstoy replies that Babism, as a moral and humanitarian doctrine, has a great future in the East. Then:
 
@@ -85,7 +97,7 @@ Full extract (French + Russian, both in Tolstoy's hand): [extracts/v73_126_Gabri
 
 ---
 
-## 3. Where the theme clusters in the Jubilee Edition
+## 4. Where the theme clusters in the Jubilee Edition
 
 The keyword sweep behind this survey returned 43 unique TEI files for the Tolstoyism family («толстовств» + «толстовц») and approximately 110 unique files for the anarchism family («анархизм» + «анархист» + «анархия»). The map below points to the clusters that reward further reading. The full file-by-file hit list is preserved locally under `_generated/research/tolstoyanism-christian-anarchism/` (working-zone byproduct, not published) for the next session.
 
@@ -150,7 +162,7 @@ The keyword sweep behind this survey returned 43 unique TEI files for the Tolsto
 
 ---
 
-## 4. Material not covered by this survey
+## 5. Material not covered by this survey
 
 - **The TEI `comments/` directory** (807 editorial-commentary files). The 1928–1958 PSS editors' framing of both labels is a separate, smaller study.
 - **The Goldenweiser and Makovický conversation transcripts.** The 1897-12-02 diary is *itself* a Makovický conversation. The *Yasnopolianskie zapiski* (1904–1910) almost certainly contain further spoken statements but were not swept here.
@@ -160,7 +172,7 @@ The keyword sweep behind this survey returned 43 unique TEI files for the Tolsto
 
 ---
 
-## 5. The genealogy of the phrase «христианский анархизм»
+## 6. The genealogy of the phrase «христианский анархизм»
 
 The Sacy letter shows the phrase already in Tolstoy's working vocabulary by 1901. The phrase was not Tolstoy's coinage; it was a term-of-art that had emerged among his correspondents — Schmitt, Kenworthy, Davidson, Crosby, Ortt — through the 1890s. By 1905, V. G. Chertkov had given it programmatic form in the booklet *O khristianskom anarkhizme*, published in Christchurch by *Свободное слово* press as № 101 of the series. The booklet is referenced in the editorial apparatus to the Eltzbacher letter (PSS Tom 72, comment to letter 341) as the prior place of partial publication of that very letter — the editorial chain from Tolstoy's correspondence to Chertkov's framing is therefore documentary, not merely thematic.
 
@@ -168,7 +180,7 @@ A full genealogy of the phrase in Russian and English usage, and the question of
 
 ---
 
-## 6. Method
+## 7. Method
 
 - The TEI corpus from `primary-sources/tolstoydigital-TEI/texts/` was used as the primary search surface: 9 087 letter files, 4 584 diary files, 767 published-works files.
 - A two-family Russian keyword set was used: `толстовств` + `толстовц` for the Tolstoyism family (43 unique files), and `анархизм` + `анархист` + `анархия` declensions for the anarchism family (~110 unique files). The compound phrase `христианский анарх[*]` (with all five case-inflected adjective forms) returned 3 files; only one (the Sacy letter) carries the phrase in Tolstoy's own voice. The adjacent "so-called Tolstoyans" / "they call me X" verbal frames returned zero hits — Tolstoy's refusal of the labels never takes that verbal shape. The unique-attestation searches `я не анархист` and `никакого толстовств` each returned exactly one file, both of which are finalists in this survey.
@@ -184,7 +196,7 @@ The companion file [pss-volume-mapping.md](../pss-volume-mapping.md) documents t
 
 ---
 
-## 7. References
+## 8. References
 
 Primary:
 

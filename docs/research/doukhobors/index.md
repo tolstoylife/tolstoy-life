@@ -7,13 +7,26 @@ tags: [research]
 # Tolstoy and the Doukhobors
 
 Date: 2026-05-26
+
 Context: A survey of where Leo Tolstoy speaks about the Doukhobors — the pacifist Christian sect of the Transcaucasus whose mass refusal of military service in 1895 he made into the central public cause of his late life — across the 90-volume Jubilee Edition (PSS) and the structured TEI/XML corpus derived from it. The survey traces the conversation with the authorities, the letters to the Doukhobors themselves and to their leader Pyotr Verigin, the letters to sympathisers and helpers (Quakers, Aylmer Maude, Chertkov), the polemical articles, and the relief and emigration campaign that ended with ~7,400 Doukhobors resettled in Canada. It pays particular attention to whether — and how — P. I. Biryukov's authorised biography of Tolstoy treats the affair, and compares the primary record with the conventional scholarship available on the web.
 
 It follows the method and house style of the companion survey [Tolstoy on copyright and the renunciation of literary property](../copyright-renunciation/index.md). The two topics meet at one decisive point: in 1898 Tolstoy broke his 1891 renunciation of copyright on exactly one work — *Resurrection* — in order to give its proceeds to the Doukhobor emigration. The Doukhobor cause is the reason the copyright renunciation has an exception.
 
 ---
 
-## 1. Why this matters for tolstoy.life
+## 1. Key findings
+
+- **The largest sustained piece of *practical* moral action in Tolstoy's life.** The Doukhobor affair is where his doctrine of non-resistance stopped being a body of writing and became an organised rescue — some **~7,400** Doukhobors resettled in Canada in 1899, after the 1895 Burning of Arms and the state's reprisals.
+- **The spine of the record:** the 1895 Burning of Arms and the open letter to the foreign press; the afterwords (to Biryukov's "Persecution of Christians" article and to the appeal «Помогите!» / "Help!"); the correspondence with the exiled leader Pyotr Verigin and with the relief circle (Chertkov, Biryukov, Tregubov, Maude, Sulerzhitsky); and the 1898–99 emigration logistics.
+- **The copyright link.** In 1898 Tolstoy broke his 1891 copyright renunciation for exactly one work — *Resurrection* — to fund the emigration. The Doukhobor cause is the reason that renunciation has an exception.
+- **The popular shorthand is true in spirit but loose in fact.** "Tolstoy sold *Resurrection* to pay the passage" overstates the proportion: his *Resurrection*-derived contribution (~30,000 roubles, "about half" the committee's fund) was one of three comparable streams, alongside the English Quakers and the Doukhobors' own pooled savings.
+- **The primary record is harder than the heroic narrative.** It preserves Tolstoy's own misgiving that money may have been the wrong instrument, the 1900 letter to Canada that reads as a doctrinal *rebuke* rather than a celebration, and his late warnings against property and the cult of Verigin. His writing is also the fullest contemporary catalogue of *how the Russian state* met the sect.
+- **On Biryukov.** The Jubilee Edition does not contain his biography, but it carries Tolstoy's afterword to Biryukov's 1895 article; Biryukov treats the Doukhobors substantially in Volume III (chapters 18, 19, 21), translated alongside this dive.
+- **For the vault.** Anchors the non-resistance, refusal-of-military-service, and copyright-renunciation pages, and the Chertkov / Biryukov / Maude / Verigin circle. Ingestion is a separate, human step.
+
+---
+
+## 2. Why this matters for tolstoy.life
 
 The Doukhobor affair is the largest sustained piece of *practical* moral action in Tolstoy's life — the place where his doctrine of non-resistance stopped being a body of writing and became an organised rescue of several thousand people. It draws together threads that the wiki tracks separately: non-resistance and refusal of military service; the renunciation of property and of copyright; the circle of disciples (Chertkov, Biryukov, Tregubov, Maude, Sulerzhitsky) who carried the work; the conflict with the church and the state; and Tolstoy's relations with the English Quakers and the wider international peace movement.
 
@@ -23,9 +36,9 @@ It is also a topic where the popular narrative ("Tolstoy wrote *Resurrection* to
 
 ---
 
-## 2. The shape of the question in Tolstoy's life
+## 3. The shape of the question in Tolstoy's life
 
-### 2.1. The Doukhobors before 1895 — who they were
+### 3.1. The Doukhobors before 1895 — who they were
 
 The Doukhobors were a Russian peasant sect, rationalist and anti-clerical, that rejected the Orthodox church, icons, the priesthood, oaths, and the authority of the state over conscience. Persecuted and exiled to the Transcaucasus early in the nineteenth century, they had prospered there as a sober, literate, communal people — by the 1890s about 20,000 in the Tiflis, Kars and Elisavetpol provinces. Tolstoy gives this background himself, in the open letter of August 1895 (PSS Tom 39, pp. 209–215):
 
@@ -35,7 +48,7 @@ The Doukhobors were a Russian peasant sect, rationalist and anti-clerical, that 
 
 The revival came after the death of their leader Lukerya Kalmykova; the young Pyotr Verigin, chosen to head the community, refused to be bought by the elders who had been mismanaging its common funds, was denounced as a rebel, and was exiled without trial — first to Arkhangelsk province, then deeper into Siberia. From exile Verigin urged the community back to a literal Christianity: no oaths, no military service, no killing.
 
-### 2.2. The Burning of Arms — 28–29 June 1895 (OS)
+### 3.2. The Burning of Arms — 28–29 June 1895 (OS)
 
 On the night of 28–29 June 1895 (OS) — timed to St Peter's Day — the Verigin party, some 7,000 people, gathered every weapon they owned, heaped it on kerosene-soaked pyres in three districts of the Transcaucasus, set it alight, and sang psalms through the night. It was a deliberate, coordinated renunciation of arms by a whole community. The state answered with Cossacks, floggings, the billeting of troops on the villages, and the dispersal of some 4,000 people, without land, into Georgian villages where many died over the following years.
 
@@ -58,7 +71,7 @@ The same letter records the scene at Kars, where the authorities tried to break 
 
 Full extract: [extracts/v39_209_215_Pismo_v_inostrannye_gazety_po_povodu_gonenij_na_kavkazskih_duhoborov.txt](extracts/v39_209_215_Pismo_v_inostrannye_gazety_po_povodu_gonenij_na_kavkazskih_duhoborov.txt).
 
-### 2.3. 1895 — Tolstoy takes up the cause
+### 3.3. 1895 — Tolstoy takes up the cause
 
 News reached Tolstoy through the exiled Prince D. A. Khilkov. The diary for 5 August 1895 (NS) records that he has drafted a letter to the English papers and is awaiting Biryukov's return from the Caucasus, where he had been sent to verify the facts (PSS Tom 53). Two documents follow within weeks.
 
@@ -78,11 +91,11 @@ News reached Tolstoy through the exiled Prince D. A. Khilkov. The diary for 5 Au
 
 > *One more small effort, and the Galilean will conquer — not in the terrible sense in which the pagan emperor [Julian] ascribed victory to him, but in the true sense in which he said of himself that he had overcome the world.*
 
-This is the article by Biryukov to which Tolstoy attached his afterword — the first of two points at which Biryukov's name is woven directly into the Jubilee Edition's Doukhobor texts (see §4). Full extracts: [afterword to Biryukov's article](extracts/v39_099_105_Posleslovie_k_state_P_I_Birjukova_Gonenie_na_hristian_v_Rossii_v_1895_g.txt); the foreign-papers letter, above.
+This is the article by Biryukov to which Tolstoy attached his afterword — the first of two points at which Biryukov's name is woven directly into the Jubilee Edition's Doukhobor texts (see §5). Full extracts: [afterword to Biryukov's article](extracts/v39_099_105_Posleslovie_k_state_P_I_Birjukova_Gonenie_na_hristian_v_Rossii_v_1895_g.txt); the foreign-papers letter, above.
 
 Tolstoy also opened a correspondence with Verigin himself. The **first letter to Verigin** (21 November 1895; PSS Tom 68, letter 229, pp. 262–266), prompted by a letter Verigin had sent to Tregubov, is a meditation on Verigin's claim that the living spoken word is superior to the dead book — Tolstoy, the writer, half-agreeing and half-defending the printed word as the one weapon the friends of truth cannot leave to its enemies. It opens "Дорогой брат!" ("Dear brother!") and closes "Братски обнимаю вас" ("I embrace you as a brother"). Full extract: [extracts/v68_229_P_V_Veriginu.txt](extracts/v68_229_P_V_Veriginu.txt).
 
-### 2.4. 1896 — "Help!" and the exile of the three
+### 3.4. 1896 — "Help!" and the exile of the three
 
 In 1896 three of Tolstoy's closest disciples — V. G. Chertkov, P. I. Biryukov, and I. M. Tregubov — compiled and signed the appeal **«Помогите!»** ("Help!"), a documented account of the persecution addressed to Russian and international society. Tolstoy wrote the afterword (14/26 December 1896; PSS Tom 39, pp. 192–196). It is the most exalted of all his Doukhobor statements — the place where he names them not as a sect but as the seed of Christianity itself:
 
@@ -92,7 +105,7 @@ In 1896 three of Tolstoy's closest disciples — V. G. Chertkov, P. I. Biryukov,
 
 The state's answer fell on the authors, not on Tolstoy: Biryukov and Tregubov were exiled to the Baltic provinces, and Chertkov was given the choice between internal exile and expulsion abroad. He chose England — from where, with freedom to publish and organise, he became the hub of the relief effort. Full extract: [extracts/v39_192_196_Posleslovie_k_vozzvaniju_Pomogite.txt](extracts/v39_192_196_Posleslovie_k_vozzvaniju_Pomogite.txt).
 
-### 2.5. 1897–1898 — the campaign, and the decision to sell *Resurrection*
+### 3.5. 1897–1898 — the campaign, and the decision to sell *Resurrection*
 
 By 1897 Tolstoy had concluded that the community could not survive in Russia and that emigration was the only escape. The diary tracks the shift from protest to logistics: on 5 January 1897 he reads N. Nakashidze's account of the Doukhobor self-governing assembly at Gori and calls it "a model of the possibility of governance without violence" (PSS Tom 53).
 
@@ -104,21 +117,21 @@ Two articles of 1898 carry the public argument. **"Two Wars"** (Две войн�
 
 **"Carthago delenda est"** (1898; PSS Tom 39, pp. 197–205) extends the case against military service. Full extracts: [Two Wars](extracts/v31_097_101_Dve_vojny.txt); [Carthago delenda est](extracts/v39_197_205_Carthago_delenda_est.txt).
 
-The financial turn is recorded in the diary for **17 July 1898** (PSS Tom 53): the decision to give his novels *Resurrection* and *Father Sergius* to the press, with the proceeds going to the Doukhobor emigration. This is the single exception to the 1891 copyright renunciation — see the [copyright survey, §3 (letters table, Tom 72)](../copyright-renunciation/index.md) — and it is documented in the editorial history of *Resurrection* in PSS Tom 33 (pp. 329–422). On 2 November 1898 the diary notes: "the sale of the novel and the receipt of 12,000 [roubles] which I gave to the Doukhobors."
+The financial turn is recorded in the diary for **17 July 1898** (PSS Tom 53): the decision to give his novels *Resurrection* and *Father Sergius* to the press, with the proceeds going to the Doukhobor emigration. This is the single exception to the 1891 copyright renunciation — see the [copyright survey, §4 (letters table, Tom 72)](../copyright-renunciation/index.md) — and it is documented in the editorial history of *Resurrection* in PSS Tom 33 (pp. 329–422). On 2 November 1898 the diary notes: "the sale of the novel and the receipt of 12,000 [roubles] which I gave to the Doukhobors."
 
-### 2.6. 1898–1899 — the emigration to Canada
+### 3.6. 1898–1899 — the emigration to Canada
 
 A first party of about 1,100 was sent to Cyprus in late 1898 as a temporary refuge; the climate killed roughly a tenth of them, and the survivors were moved on. After negotiations — assisted by Peter Kropotkin and the Toronto economist James Mavor — secured homestead land in the North-West Territories (Saskatchewan/Assiniboia) and exemption from military service, the main emigration ran from January to June 1899. About 7,400 Doukhobors crossed on the chartered steamers *Lake Huron* and *Lake Superior* from Batum and from Cyprus — the largest single group of immigrants to reach North America to that date.
 
-Tolstoy's part was organisational as much as financial. The letters of 1898–99 (see the table in §3) show him canvassing destinations (Texas, Cyprus, Manchuria, Turkestan), petitioning Prince Golitsyn for permission for the Tolstoyan organiser L. A. Sulerzhitsky to travel to Batum, and offering his own son Sergei in Sulerzhitsky's place when permission was refused. Sergei Lvovich Tolstoy accompanied the second and third ships; Sulerzhitsky the first and fourth; Aylmer Maude and the English Quakers handled negotiation and reception. The English translator and biographer Aylmer Maude later wrote the principal contemporary English account, *A Peculiar People: The Doukhobórs* (1904).
+Tolstoy's part was organisational as much as financial. The letters of 1898–99 (see the table in §4) show him canvassing destinations (Texas, Cyprus, Manchuria, Turkestan), petitioning Prince Golitsyn for permission for the Tolstoyan organiser L. A. Sulerzhitsky to travel to Batum, and offering his own son Sergei in Sulerzhitsky's place when permission was refused. Sergei Lvovich Tolstoy accompanied the second and third ships; Sulerzhitsky the first and fourth; Aylmer Maude and the English Quakers handled negotiation and reception. The English translator and biographer Aylmer Maude later wrote the principal contemporary English account, *A Peculiar People: The Doukhobórs* (1904).
 
-### 2.7. 1900–1910 — the aftermath
+### 3.7. 1900–1910 — the aftermath
 
 Once the Doukhobors were safe, Tolstoy's tone changed. The **letter to the Doukhobors in Canada of 15/27 February 1900** (PSS Tom 72, pp. 305–316) — the longest single Doukhobor item in the corpus — is a sharp doctrinal rebuke. Reports had reached him that the community was reverting to private property and individual self-interest, and that its members were beginning to make a cult of Verigin's person. Tolstoy warns that one cannot keep the refusal of military service while accepting property, since property rests on the same violence: *one cannot serve both God and property.* (The TEI extract of this 1933-volume letter is badly lacunose and is therefore not reproduced verbatim here; it is summarised from the editorial record.)
 
 The later record shows the relationship inverting and cooling. Verigin was released from exile in 1902 and emigrated to Canada; his delegation visited Tolstoy's circle in December 1906, where Makovitski recorded Tolstoy telling them they were "the happiest people in the world — freed from the sin of owning land," and warning them against English-style schooling and against the worship of any leader. By 1907 the Canadian Doukhobors were donating to Russian famine relief — the flow of help reversed — and Tolstoy had abandoned a planned essay about them. In the last month of his life (Makovitski, 24 October 1910) he grouped them with other sects vulnerable to the idolatry of a leader. Letters to Nicholas II continued to cite their fate as the emblem of religious persecution (2 April 1898, PSS Tom 71, letter 107; 7 December 1900, PSS Tom 72, letter 426).
 
-### 2.8. How the state handled it
+### 3.8. How the state handled it
 
 Tolstoy's writing is also the fullest contemporary catalogue of *how the Russian state met the Doukhobors* — the thread that runs through every document above, gathered here. In the open letter to the foreign press of 19 March / 1 April 1898 (PSS Tom 71, letter 81) he sets the empire's response against the two milder precedents he knew — the Mennonites' alternative labour service, the Austrian Nazarenes' imprisonment — and names the Russian choice as a third, older way: to punish not only the men who refuse but their families.
 
@@ -132,7 +145,7 @@ In the article *Two Wars* (1898) the same charge becomes an inventory of instrum
 
 > *The Russian state brought against the Doukhobors every weapon it can fight with. These weapons are: police measures of arrest, prohibition of travel from one's place of residence, the banning of communication with one another, the interception of letters, espionage, the suppression of newspaper reports of anything touching the Doukhobors, slander printed against them in the journals, bribery, floggings, prisons, exiles, the ruin of families.* (working English)
 
-The sharp end of it is in the 1895 letter already quoted (§2.2): the Cossack charge that killed four at the burning pyre, the floggings of reservists in the disciplinary battalions, and the mock execution staged at Kars — gallows built, shrouds sewn, then taken off again when the men would not yield. When Tolstoy turned from the press to the throne, he moved from witness to demand. The petition he drafted in the Doukhobors' own name (2 April 1898, Tom 71, letter 107) asks one thing only:
+The sharp end of it is in the 1895 letter already quoted (§3.2): the Cossack charge that killed four at the burning pyre, the floggings of reservists in the disciplinary battalions, and the mock execution staged at Kars — gallows built, shrouds sewn, then taken off again when the men would not yield. When Tolstoy turned from the press to the throne, he moved from witness to demand. The petition he drafted in the Doukhobors' own name (2 April 1898, Tom 71, letter 107) asks one thing only:
 
 > И потому, если мы не можем исполнять того, без чего нас нельзя терпеть в государстве, мы просим одно: отпустите нас.
 
@@ -148,7 +161,7 @@ The emigration the state finally permitted in 1898 was, on Tolstoy's reading, no
 
 ---
 
-## 3. Where the theme clusters in the Jubilee Edition
+## 4. Where the theme clusters in the Jubilee Edition
 
 The keyword sweep on the stem *духобор* returned **538 letter files, 28 diary files, 22 published-works files, 34 commentary files, and 5 notebook files** in the TEI corpus, plus dense coverage in the witness materials (Gusev's chronicle, 110 files; Makovitski's notes, 99). The maps below point to the clusters that reward reading.
 
@@ -211,11 +224,11 @@ The PSS commentary (`texts/comments/`) supplies the dating and provenance: v39_2
 
 ---
 
-## 4. The Biryukov biography on the Doukhobors
+## 5. The Biryukov biography on the Doukhobors
 
 The project's source hierarchy ranks the Biryukov biography third in authority, after Tolstoy's own works and his diaries and letters (see [AGENTS.md](../../../AGENTS.md), "Content and accuracy standards"). It is worth being precise about what is, and is not, in the Jubilee Edition.
 
-**The Jubilee Edition does not contain Biryukov's biography.** The 90 volumes are Tolstoy's own works, letters, and diaries. P. I. Biryukov's *Биография Л. Н. Толстого* is a separate four-volume work (1906–1923). What the Jubilee Edition *does* contain is Tolstoy's **afterword to Biryukov's 1895 article** "The Persecution of Christians in Russia in 1895" (PSS Tom 39, pp. 99–105; §2.3 above) — Biryukov wrote the documentary article, Tolstoy the afterword — and the editorial commentary that frames it. Biryukov's name is therefore present in the Jubilee Edition's Doukhobor record, but as the author of a source-article and as a member of the relief circle, not as a biographer.
+**The Jubilee Edition does not contain Biryukov's biography.** The 90 volumes are Tolstoy's own works, letters, and diaries. P. I. Biryukov's *Биография Л. Н. Толстого* is a separate four-volume work (1906–1923). What the Jubilee Edition *does* contain is Tolstoy's **afterword to Biryukov's 1895 article** "The Persecution of Christians in Russia in 1895" (PSS Tom 39, pp. 99–105; §3.3 above) — Biryukov wrote the documentary article, Tolstoy the afterword — and the editorial commentary that frames it. Biryukov's name is therefore present in the Jubilee Edition's Doukhobor record, but as the author of a source-article and as a member of the relief circle, not as a biographer.
 
 **Biryukov's biography does treat the Doukhobors — substantially — in Volume III.** The Doukhobor narrative runs through three chapters:
 
@@ -233,7 +246,7 @@ Because the biography is not held locally, its Russian text was retrieved from a
 
 ---
 
-## 5. The primary record vs the conventional narrative
+## 6. The primary record vs the conventional narrative
 
 The conventional account — encyclopaedias, the Doukhobor heritage sites, Maude, and the modern scholarship of Woodcock & Avakumovic and Andrew Donskov — agrees with the primary record on the spine of the story. Three points are worth flagging where popular versions drift.
 
@@ -247,7 +260,7 @@ What the conventional scholarship adds that the primary corpus does not is the *
 
 ---
 
-## 6. Material not covered by this survey
+## 7. Material not covered by this survey
 
 - **The 538 letters in full.** This survey extracted ~20 and tabled ~30; the rest — especially the ~116 letters to Chertkov (PSS Toms 85–89), the operational core of the relief — were sampled, not read through.
 - **Incoming letters.** The TEI corpus holds Tolstoy's outgoing letters. Verigin's surviving letters to Tolstoy (~22, in the State Tolstoy Museum) and Chertkov's are the other side of the conversation; Donskov's edition of the Tolstoy–Verigin correspondence is the scholarly route to them.
@@ -257,11 +270,11 @@ What the conventional scholarship adds that the primary corpus does not is the *
 
 ---
 
-## 7. Visual & manuscript record
+## 8. Visual & manuscript record
 
 A visual sweep accompanies this survey. The images below are a **local research cache**: the files live in `visuals/`, which is git-ignored, so the public repository never redistributes them — on a fresh clone they are repopulated on demand with `python3 docs/fetch_visuals.py doukhobors`, which reads the `url:` and `licence:` fields recorded for every item in [dossier.yaml](dossier.yaml). Provenance and rights for each picture are in that file; the captions below give the short form. Most are public domain; a few (the Cyprus camp, the two steamers, the rail and quarantine scenes — held by the BC Archives and reached via doukhobor.org) carry **unconfirmed rights** and are marked accordingly, and the one Maude portrait is CC BY-SA. The publication gate is `website/src/`, not this cache: nothing here should be moved into the public site without clearing its rights first.
 
-The one image rendered from a source we hold ourselves — the Burning of Arms page of PSS Tom 39 — is in `extracts/` (committed, because it is a public-domain facsimile of Tolstoy's own text) and is reproduced in §2.2 above.
+The one image rendered from a source we hold ourselves — the Burning of Arms page of PSS Tom 39 — is in `extracts/` (committed, because it is a public-domain facsimile of Tolstoy's own text) and is reproduced in §3.2 above.
 
 ### The Caucasus and the community, before the crisis
 
@@ -390,13 +403,13 @@ The one image rendered from a source we hold ourselves — the Burning of Arms p
 
 ### The manuscript record, and what is not openly available
 
-The manuscripts of the diary entries and letters cited here are held by the State Tolstoy Museum (GMT) in Moscow, within the L. N. Tolstoy fond — the same archive described in the [copyright survey, §5](../copyright-renunciation/index.md). Verigin's ~22 letters to Tolstoy are held there. The relief campaign's documentary record is split: the Russian side in the GMT and the former Chertkov archive; the English side (the Society of Friends' Doukhobor Relief Committee, Bellows's correspondence) in Quaker collections in Britain; and the Canadian record in Saskatchewan and British Columbia archives and in the Doukhobor heritage collections curated at doukhobor.org. No single archive holds the whole affair.
+The manuscripts of the diary entries and letters cited here are held by the State Tolstoy Museum (GMT) in Moscow, within the L. N. Tolstoy fond — the same archive described in the [copyright survey, §6](../copyright-renunciation/index.md). Verigin's ~22 letters to Tolstoy are held there. The relief campaign's documentary record is split: the Russian side in the GMT and the former Chertkov archive; the English side (the Society of Friends' Doukhobor Relief Committee, Bellows's correspondence) in Quaker collections in Britain; and the Canadian record in Saskatchewan and British Columbia archives and in the Doukhobor heritage collections curated at doukhobor.org. No single archive holds the whole affair.
 
 The gap in the visual record is the **Russian-held material**. The State Tolstoy Museum's digital portal (KAMIS) and the union catalogue Goskatalog could not be reached in this sweep, so no manuscript facsimiles of the keystone texts, and no Russian-held portraits of Verigin in exile or of the Caucasus persecution, were obtained. These — together with hi-res versions of the GMT holdings — are the items to request directly; they are logged in the dossier's `needsReview`/`archivesConsulted`.
 
 ---
 
-## 8. Method
+## 9. Method
 
 - The TEI corpus at `primary-sources/tolstoydigital-TEI/texts/` was the primary search surface (9,087 letters, 4,584 diaries, 767 works, plus notes, commentary, and Krug chteniya), with the witness corpora in `texts_txt/` (Gusev, Makovitski, Goldenweiser).
 - A single high-precision Russian stem — **духобор** — anchored the sweep (it covers духоборы, духоборцы, духоборческий, …). Addressee buckets for the letters were read off the TEI filenames, which encode the addressee; significance was judged by reading the candidates.
@@ -404,12 +417,12 @@ The gap in the visual record is the **Russian-held material**. The State Tolstoy
 - One caveat surfaced: the extractor renders some 1933-typeset volumes (notably the 1900 Canada letter in PSS Tom 72) with heavy lacunae, where the TEI carries `<gap>` markers or dense apparatus. Such passages are summarised from the editorial record, not quoted.
 - The marquee articles (PSS Toms 31, 37, 39) extracted cleanly and were read in full; their key passages are translated above. The Biryukov biography, absent locally, was retrieved from a public-domain web reproduction and translated in a dedicated pass.
 - Conventional scholarship was gathered from the web and is **summarised and cited**, not reproduced.
-- This survey was re-run on 2026-05-30 as a structured corpus-dive to add the three coordinated outputs the original lacked: a machine-readable [dossier.yaml](dossier.yaml) (evidence + entity + visuals + scholarship layers), a visual-materials sweep (Wikimedia Commons, Library and Archives Canada, the British Library's Canadian Copyright Collection, BC Archives via doukhobor.org), and the draft dev-blog note linked below. The 2026-05-26 narrative and its byte-faithful quotations were left intact; the §2.8 authorities thread and the §7 visual record are the additions.
+- This survey was re-run on 2026-05-30 as a structured corpus-dive to add the three coordinated outputs the original lacked: a machine-readable [dossier.yaml](dossier.yaml) (evidence + entity + visuals + scholarship layers), a visual-materials sweep (Wikimedia Commons, Library and Archives Canada, the British Library's Canadian Copyright Collection, BC Archives via doukhobor.org), and the draft dev-blog note linked below. The 2026-05-26 narrative and its byte-faithful quotations were left intact; the §3.8 authorities thread and the §8 visual record are the additions.
 - The visual sweep ran as three parallel channels (Commons; Canadian/emigration; Russian holdings). The Russian-museum channel (GMT/KAMIS, Goskatalog) returned nothing reachable headless; that gap is recorded in the dossier.
 
 ---
 
-## 9. References
+## 10. References
 
 Primary:
 

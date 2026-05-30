@@ -180,7 +180,7 @@ context" prose section of `index.md` is composed in Synthesize.
 
 ## Phase 4 — Synthesize the outputs
 
-1. **`docs/research/<slug>/index.md`** — frontmatter `layer: reference`. Spine: *Why this matters
+1. **`docs/research/<slug>/index.md`** — frontmatter `layer: reference`. Spine: *Key findings* (the first section — a tight bulleted exec-summary of the dive's own conclusions, reusing its own figures; no new claims) *→ Why this matters
    → The shape of the question* (staged; each stage a verbatim RU quote + working-EN translation +
    TEI id / PSS Tom + pages) *→ Where the theme clusters* (tables by genre, incl. a Letters table:
    Tom / letter id / date / addressee / one-line material) *→ Scholarly context* (the received
@@ -304,3 +304,10 @@ no Phase-3 handoff — the *whole structured apparatus* is being added under a f
 `index.md` and the note in English; cited foreign titles kept verbatim; working-English
 translations labelled; minimal editorial. Interactive → escalate genuine editorial judgment to the
 user; `--auto` → defer to `needsReview`.
+
+**Unwrapped prose (nl2br).** serve.py renders Markdown with the `nl2br` extension, so every source
+newline *inside* a block becomes a literal `<br>` in the HTML — a hard-wrapped paragraph renders as a
+ragged column of `<br>`s. Write each paragraph, blockquote, and list-item as **one source line** (do
+not hard-wrap); make the `Date:` / `Context:` preamble two separate paragraphs (blank line between);
+keep a blank line before every list (and after a bold/italic label that precedes one). Headings,
+frontmatter, tables, fenced code, and raw `<figure>` HTML are unaffected.
