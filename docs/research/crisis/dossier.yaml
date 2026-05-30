@@ -145,7 +145,7 @@ evidence:
     localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
     extract: extracts/v67_214_L_F_Annenkovoj.txt
     quoteRu: >-
-      …я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь… то каждый, проходя
+      …я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь […] то каждый, проходя
       эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать,
       что то же было и с другими.
     quoteEn: >-
@@ -166,14 +166,14 @@ evidence:
     date: 1885
     addressee: null
     localPdf: primary-sources/jubilee-edition/vol44/vol44.pdf
-    extract: extracts/v85_059_a10_11.txt   # body extract; phrase is in the apparatus (--notes=force)
+    extract: extracts/v85_059_a10_11.txt   # apparatus extract (extract_tei.py --notes=force; mixes body + editorial commentary — phrase cross-checked vs PSS Tom 85 PDF p.194)
     quoteRu: >-
       …21 мая 1883 г. Толстой, пережив уже кризис своих воззрений и отстраняясь от всяких дел
       материального характера, выдал ей нотариально засвидетельствованную доверенность…
     quoteEn: >-
       …on 21 May 1883 Tolstoy, having already lived through the crisis of his views and withdrawing
       from all affairs of a material character, issued her a notarised power of attorney… (working
-      English; EDITORIAL voice — Jubilee Edition apparatus, not Tolstoy)
+      English) — EDITORIAL voice: Jubilee Edition apparatus, not Tolstoy.
     significance: >-
       The "crisis" label in the corpus is supplied by the editors, not Tolstoy: "кризис своих
       воззрений". Sits inside the editorial apparatus (recovered with extract_tei.py --notes=force),

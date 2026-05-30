@@ -102,7 +102,7 @@ Tolstoy did use кризис — but, in the body text of his letters, never abo
   Here кризис is the clinical term — the turning-point of a fever.
 
 - **Developmental, plural, universal.** To L. F. Annenkova, 4 September 1894 (PSS Tom 67, pp. 213–214):
-  > …я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь… то каждый, проходя эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать, что то же было и с другими.
+  > …я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь […] то каждый, проходя эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать, что то же было и с другими.
 
   > *…I, fortunately, have never known this despair since I was born anew… so that everyone, passing through these ages, these crises, would not take fright, but would wait for the next state, knowing that the same was so for others.* (working English)
 
