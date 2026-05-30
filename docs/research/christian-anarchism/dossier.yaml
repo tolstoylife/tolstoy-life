@@ -1,0 +1,427 @@
+# Machine-readable dossier for the Christian-anarchism dive (index.md).
+# Built 2026-05-30 by corpus-dive (slug: christian-anarchism) as dive #2 of three
+# (tolstoyanism -> christian-anarchism -> christian), splitting the legacy combined dive
+# docs/research/tolstoyanism-christian-anarchism/. Every evidence[].quoteRu is sliced
+# verbatim from the named extract (scripted, fail-loud anchors), gated by verify_quotes.py.
+
+topic:
+  slug: christian-anarchism
+  title: Tolstoy and "Christian anarchism"
+  question: Where, and in what voice, does Tolstoy engage the label «христианский анархизм» / 'anarchist' across the local corpus — given that Eltzbacher (1900) canonised him as an anarchist, that he refused the political label while affirming the religious substance, and that he used «христианский анархизм» in his own voice exactly once (to Sacy, 1901)?
+  date: '2026-05-30'
+  period: prophet
+  corpusSurface:
+  - diaries
+  - letters
+  - works
+  dateRange: 1894–1901
+evidence:
+- id: v52_seed_opener
+  genre: diary
+  pssTom: 52
+  pages: 138–140
+  date: '1894-09-10'
+  addressee: diary (Yasnaya Polyana)
+  localPdf: primary-sources/jubilee-edition/vol18/vol18.pdf
+  extract: extracts/v52_138_140_1894_09_10.txt
+  quoteRu: Вчера утром, проснувшись, думал об ответе об анархизме, как быть без правительства, англичанину.
+  quoteEn: Yesterday morning, on waking, I was thinking about the answer about anarchism, how to be without government, to the Englishman. (working English)
+  significance: THE SEED. The opening line of the 10 Sept 1894 diary records the question Tolstoy was turning over — 'how to be without government' — put to him by an Englishman, six years before Eltzbacher's Der Anarchismus (1900) made the question public.
+  facsimile: null
+- id: v52_seed_reframing
+  genre: diary
+  pssTom: 52
+  pages: 138–140
+  date: '1894-09-10'
+  addressee: diary (Yasnaya Polyana)
+  localPdf: primary-sources/jubilee-edition/vol18/vol18.pdf
+  extract: extracts/v52_138_140_1894_09_10.txt
+  quoteRu: 'Ответ не может быть дан на вопрос, потому что он дурно поставлен. Вопрос не в том — устроить государство: по нынешнему, или по новому. Я и никто из нас не приставлен к решению этого вопроса.'
+  quoteEn: The answer cannot be given to the question, because it is badly posed. The question is not whether to arrange the state in the present way or in a new way. Neither I nor any of us is appointed to the solving of that question. (working English)
+  significance: 'The structural move that defines Tolstoy''s ''anarchism'': the question ''how to organise a stateless society'' is rejected as wrongly posed. No one is appointed to redesign the state; that is not the question a person can answer.'
+  facsimile: null
+- id: v52_seed_dilemma
+  genre: diary
+  pssTom: 52
+  pages: 138–140
+  date: '1894-09-10'
+  addressee: diary (Yasnaya Polyana)
+  localPdf: primary-sources/jubilee-edition/vol18/vol18.pdf
+  extract: extracts/v52_138_140_1894_09_10.txt
+  quoteRu: подчинить ли свою совесть делам, совершающимся вокруг меня, признать ли себя солидарным с правительством, которое вешает заблудших людей, гонит на убийство солдат, развращает опиумом и водкой народ и т. п., или подчинить свои дела совести, т. е. не участвовать в правительстве, дела которого противны моему сознанию?
+  quoteEn: '[the only question is] whether to subordinate my conscience to the deeds being done around me — to acknowledge myself in solidarity with a government that hangs erring men, drives soldiers to murder, debauches the people with opium and vodka, and so on — or to subordinate my deeds to my conscience, that is, not to take part in a government whose deeds are repugnant to my consciousness. (working English)'
+  significance: 'The real question, in Tolstoy''s reframing: not what order to build, but whether to lend one''s conscience to a violent state or withdraw it. The Christian-anarchist answer is individual and religious (refusal of participation), not a political programme.'
+  facsimile: null
+- id: v72_eltzbacher_praise_ru
+  genre: letter
+  pssTom: 72
+  pages: 424–426
+  date: '1900-08-01'
+  addressee: Paul Eltzbacher
+  localPdf: primary-sources/jubilee-edition/vol36/vol36.pdf
+  extract: extracts/v72_341_PaulyuElcbaxeruPaulEltzhacher.txt
+  quoteRu: 'Ваша книга делает для анархизма то, что 30 лет назад было сделано для социализма: вводит его в программу политических наук. Ваша книга мне чрезвычайно понравилась. Она совершенно объективна, понятна, и, насколько я могу судить, источники в ней отлично использованы.'
+  quoteEn: 'Your book does for anarchism what was done thirty years ago for socialism: it brings it into the programme of the political sciences. Your book pleased me exceedingly. It is entirely objective, intelligible, and — so far as I can judge — the sources in it are excellently handled. (working English)'
+  significance: The praise that sets up the refusal. Tolstoy genuinely admires Eltzbacher's Der Anarchismus (1900), which classified him as one of seven principal anarchist thinkers (with Godwin, Proudhon, Stirner, Bakunin, Kropotkin, Tucker) — making the qualified denial that follows all the sharper.
+  facsimile: null
+- id: v72_eltzbacher_reject_ru
+  genre: letter
+  pssTom: 72
+  pages: 424–426
+  date: '1900-08-01'
+  addressee: Paul Eltzbacher
+  localPdf: primary-sources/jubilee-edition/vol36/vol36.pdf
+  extract: extracts/v72_341_PaulyuElcbaxeruPaulEltzhacher.txt
+  quoteRu: Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?
+  quoteEn: It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)
+  significance: 'THE REJECTION (political). The classic double move: refuse the label (''not an anarchist in the sense of a political reformer''), affirm the substance, re-name it Christ''s teaching. The index argument is the proof — Eltzbacher''s own book has no Tolstoy reference under ''violence'', because Tolstoy wrote on non-resistance as religion, never on violence as politics. (PSS Tom 72 p.442 facsimile.)'
+  facsimile: extracts/pss-pages/tom72-eltzbacher-442.png
+- id: v72_eltzbacher_reject_de
+  genre: letter
+  pssTom: 72
+  pages: 424–426
+  date: '1900-08-01'
+  addressee: Paul Eltzbacher
+  localPdf: primary-sources/jubilee-edition/vol36/vol36.pdf
+  extract: extracts/v72_341_PaulyuElcbaxeruPaulEltzhacher.txt
+  quoteRu: 'Mir scheint nur, dass ich kein Anarchist bin im Sinne eines politischen Reformators. Im Register Ihres Buches beim Worte: «Zwang» sind verschiedene Seiten bei allen anderen angegeben, aber keine in meinen Schriften. Ist das nicht ein Beweis, dass die Lehre, die Sie mir zuschreiben, aber die eigentlich nur die Lehre Christi ist, keine politische aber eine religiöse Lehre ist?'
+  quoteEn: '[Tolstoy''s German original of the same passage] It seems to me only that I am not an anarchist in the sense of a political reformer. In the register of your book under the word ''Zwang'' [coercion] various pages are given for all the others, but none in my writings. Is this not a proof that the teaching you ascribe to me, but which is really only the teaching of Christ, is not a political but a religious teaching? (working English)'
+  significance: Tolstoy's own German original of the rejection (the letter is bilingual, German then his Russian). 'quoteRu' here holds the German as it stands in Tolstoy's hand. Note the German index word is «Zwang» (coercion); the Russian renders it «насилие» (violence).
+  facsimile: null
+- id: v73_sacy_ru
+  genre: letter
+  pssTom: 73
+  pages: 109–110
+  date: '1901-07-28'
+  addressee: Gabriel Sacy
+  localPdf: primary-sources/jubilee-edition/vol37/vol37.pdf
+  extract: extracts/v73_126_GabrielyuSasiGabrielSacy.txt
+  quoteRu: я все-таки думаю, что бабизм, как нравственное и гуманитарное учение, имеет большое будущее в восточном мире. Имея много общего с христианским анархизмом, он должен рано или поздно с ним слиться.
+  quoteEn: I still think that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world. Having much in common with Christian anarchism, it must sooner or later merge with it. (working English)
+  significance: THE UNIQUE SELF-ATTESTATION. The only place in the entire 90-volume Jubilee Edition where Tolstoy uses «христианский анархизм» in his own voice. Even here it is third-person — Babism 'has much in common with Christian anarchism' — naming it as an existing body of doctrine, one step short of 'I am a Christian anarchist'. (PSS Tom 73 p.154 facsimile.)
+  facsimile: extracts/pss-pages/tom73-sacy-154.png
+- id: v73_sacy_fr
+  genre: letter
+  pssTom: 73
+  pages: 109–110
+  date: '1901-07-28'
+  addressee: Gabriel Sacy
+  localPdf: primary-sources/jubilee-edition/vol37/vol37.pdf
+  extract: extracts/v73_126_GabrielyuSasiGabrielSacy.txt
+  quoteRu: je crois tout de même que le Babisme comme doctrine morale et humanitaire a un grand avenir dans le monde oriental ayant beaucoup de rapports avec l’anarchisme chrétien et tôt ou tard doit s’unir à lui.
+  quoteEn: '[Tolstoy''s French original] ...I still believe that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world, having much in common with Christian anarchism (l''anarchisme chrétien) and sooner or later must unite with it. (working English)'
+  significance: Tolstoy's own French original of the Sacy attestation (the letter is bilingual, French then his Russian). The phrase in his French hand is «l'anarchisme chrétien». 'quoteRu' here holds the French as it stands in the letter.
+  facsimile: null
+- id: v67_davidson_corroborate
+  genre: letter
+  pssTom: 67
+  pages: 178–180
+  date: '1894-07-23'
+  addressee: John Morrison Davidson
+  localPdf: primary-sources/jubilee-edition/vol33/vol33.pdf
+  extract: extracts/v67_179_DzhonuMorrisonuDavidsonu.txt
+  quoteRu: социалистическая, коммунистическая и анархическая теории приводятся в подкрепление христианской истины, которая составляет ее главную часть.
+  quoteEn: the socialist, communist and anarchist theories are brought in to corroborate the Christian truth, which forms its chief part. (working English)
+  significance: 'How Tolstoy ranks the relation. Praising Davidson''s The Gospel of the Poor, he approves the order of subordination: the political theories (socialist, communist, anarchist) serve to corroborate the Christian truth — not the reverse. The same hierarchy the Eltzbacher and Sacy letters state for ''anarchism'' six years later.'
+  facsimile: null
+- id: v68_schmitt_gods_work
+  genre: letter
+  pssTom: 68
+  pages: 26–28
+  date: '1895-02-01'
+  addressee: Eugen Heinrich Schmitt
+  localPdf: primary-sources/jubilee-edition/vol34/vol34.pdf
+  extract: extracts/v68_024_E_G_SHmitu.txt
+  quoteRu: Ваше дело, наше дело, т. е. божье дело, у вас делает успехи.
+  quoteEn: Your work, our work, that is, God's work, is making progress with you. (working English)
+  significance: The foreign Christian-anarchist correspondence in one phrase. Writing to the Hungarian Schmitt — one of the circle (with Kenworthy, Davidson, Crosby, Ortt) among whom «христианский анархизм» circulated as a term of art — Tolstoy frames the shared cause as 'God's work', the religious register in which he always kept it.
+  facsimile: null
+entities:
+- name: Leo Tolstoy
+  wikiType: person
+  wikilinkTarget: Leo Tolstoy
+  vaultStatus: exists
+  role: The author refusing the political label 'anarchist' while affirming the religious substance, and the sole user of «христианский анархизм» in his own voice (once).
+  sources:
+  - jubilee-edition
+  evidenceRefs:
+  - v52_seed_reframing
+  - v72_eltzbacher_reject_ru
+  - v73_sacy_ru
+  ingestionPriority: 1
+- name: Christian anarchism
+  wikiType: concept
+  wikilinkTarget: Christian Anarchism
+  vaultStatus: exists
+  role: 'The central concept. The vault page (recordStatus: draft) carries a <!-- NEEDS PRIMARY SOURCE --> block for exactly Tolstoy''s rejection of the political label — which the Eltzbacher letter here anchors — and lacks the unique Sacy self-attestation and the phrase-genealogy this dive supplies.'
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v52_seed_reframing
+  - v72_eltzbacher_reject_ru
+  - v73_sacy_ru
+  - v67_davidson_corroborate
+  ingestionPriority: 1
+- name: Non-resistance to evil by force
+  wikiType: concept
+  wikilinkTarget: Non-resistance
+  vaultStatus: missing
+  role: 'The religious substance Tolstoy affirms in place of the political label. The Eltzbacher index argument turns on it: Eltzbacher''s book has no Tolstoy reference under ''violence'' because Tolstoy treated the matter as non-resistance (religion), not violence (politics).'
+  sources:
+  - jubilee-edition
+  evidenceRefs:
+  - v72_eltzbacher_reject_ru
+  ingestionPriority: 2
+  dependsOn:
+  - Christian anarchism
+- name: Paul Eltzbacher
+  wikiType: person
+  wikilinkTarget: Paul Eltzbacher
+  vaultStatus: missing
+  role: Berlin legal scholar (1868–1928); his Der Anarchismus (1900) classified Tolstoy as one of seven principal anarchist thinkers. Addressee of the 1900 letter; his index is the evidence Tolstoy turns against the classification.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v72_eltzbacher_praise_ru
+  - v72_eltzbacher_reject_ru
+  - v72_eltzbacher_reject_de
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+- name: Gabriel Sacy
+  wikiType: person
+  wikilinkTarget: Gabriel Sacy
+  vaultStatus: missing
+  role: Gabriel Sacy (1858–1903), Syrian-born head of the personnel office at the Egyptian Ministry of Finance, Cairo; a Bábí moving toward the Baháʼí branch. His letter on messianism draws the reply that contains Tolstoy's unique self-voiced «христианский анархизм». (The PSS calls him «бабист»; see needsReview for the Bábí/Baháʼí nuance.)
+  sources:
+  - jubilee-edition
+  evidenceRefs:
+  - v73_sacy_ru
+  - v73_sacy_fr
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+  - Christian anarchism
+- name: Vladimir Chertkov
+  wikiType: person
+  wikilinkTarget: Vladimir Chertkov
+  vaultStatus: exists
+  role: Tolstoy's closest disciple and publisher; gave «христианский анархизм» programmatic Russian form in the 1905 booklet O khristianskom anarkhizme (Svobodnoe Slovo), the in-circle frame the Sacy phrase points to. The 1905 booklet is not held locally.
+  sources:
+  - jubilee-edition
+  evidenceRefs: []
+  ingestionPriority: 2
+  dependsOn:
+  - Christian anarchism
+- name: Eugen Heinrich Schmitt
+  wikiType: person
+  wikilinkTarget: Eugen Heinrich Schmitt
+  vaultStatus: missing
+  role: Hungarian philosopher (1851–1916), editor of the Religion des Geistes circle in Budapest; a principal node of the foreign Christian-anarchist correspondence. Addressee of the 1895 'God's work' letter.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v68_schmitt_gods_work
+  ingestionPriority: 2
+  dependsOn:
+  - Leo Tolstoy
+  - Christian anarchism
+- name: John Coleman Kenworthy
+  wikiType: person
+  wikilinkTarget: John Coleman Kenworthy
+  vaultStatus: missing
+  role: John Coleman Kenworthy (1861–1948), English founder of the Brotherhood Church, Croydon (from 1894); visited Yasnaya Polyana in 1896 and held UK rights to Tolstoy's works. A node of the 1890s Christian-anarchist circle; named in the Schmitt correspondence.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v68_schmitt_gods_work
+  ingestionPriority: 3
+  dependsOn:
+  - Christian anarchism
+- name: John Morrison Davidson
+  wikiType: person
+  wikilinkTarget: John Morrison Davidson
+  vaultStatus: missing
+  role: John Morrison Davidson (1843–1916), Scottish radical journalist and barrister; author of The Old Order and the New, The Gospel of the Poor and Anarchist Socialism v. State Socialism. Tolstoy praises him in 1894 for subordinating socialist/communist/anarchist theory to Christian truth.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs:
+  - v67_davidson_corroborate
+  ingestionPriority: 3
+  dependsOn:
+  - Christian anarchism
+- name: Ernest Howard Crosby
+  wikiType: person
+  wikilinkTarget: Ernest Howard Crosby
+  vaultStatus: missing
+  role: American Tolstoyan, poet and reformer in New York; node of the circle through whom 'Christian anarchism' circulated as a term of art. Mentioned in the genealogy, not separately quoted here.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs: []
+  ingestionPriority: 3
+  dependsOn:
+  - Christian anarchism
+- name: Felix Ortt
+  wikiType: person
+  wikilinkTarget: Felix Ortt
+  vaultStatus: missing
+  role: Felix Ortt (1866–1959), Dutch engineer and Christian-anarchist; author of Christelijk anarchisme (1898) and co-founder of a Christian-anarchist commune near Blaricum. Correspondent (Tom 72, letter 396, 1900) in the same circle. Mentioned in the genealogy, not separately quoted here.
+  sources:
+  - jubilee-edition
+  - wikidata
+  evidenceRefs: []
+  ingestionPriority: 3
+  dependsOn:
+  - Christian anarchism
+visuals:
+- id: facsimile-eltzbacher
+  type: facsimile
+  subject: PSS Tom 72 p.442 — the Eltzbacher letter, the «я не анархист в смысле политического реформатора» passage (rendered from the local PD PSS PDF)
+  relatedEntity: Paul Eltzbacher
+  relatedEvidence: v72_eltzbacher_reject_ru
+  holding: Jubilee Edition (PSS), local copy vol36
+  archiveId: PSS Tom 72, pp. 424–426 (page 442 image)
+  access: open
+  rights: public domain (Tolstoy's own text)
+  licence: PD
+  usable: true
+  url: null
+  localPath: extracts/pss-pages/tom72-eltzbacher-442.png
+  note: Rendered at 220 dpi with pdftoppm; committed because it is a PD facsimile of Tolstoy's own letter. Pages 441 and 443 are also held alongside.
+- id: facsimile-sacy
+  type: facsimile
+  subject: PSS Tom 73 p.154 — the Sacy letter, the «христианским анархизмом» passage (rendered from the local PD PSS PDF)
+  relatedEntity: Gabriel Sacy
+  relatedEvidence: v73_sacy_ru
+  holding: Jubilee Edition (PSS), local copy vol37
+  archiveId: PSS Tom 73, pp. 109–110 (page 154 image)
+  access: open
+  rights: public domain (Tolstoy's own text)
+  licence: PD
+  usable: true
+  url: null
+  localPath: extracts/pss-pages/tom73-sacy-154.png
+  note: Rendered at 220 dpi with pdftoppm; committed (PD facsimile of Tolstoy's own letter). Page 153 also held alongside.
+- id: eltzbacher-portrait
+  type: portrait
+  subject: Paul Eltzbacher, photographic portrait
+  relatedEntity: Paul Eltzbacher
+  relatedEvidence: v72_eltzbacher_reject_ru
+  holding: Wikimedia Commons
+  archiveId: File:Paul Eltzbacher.jpg
+  access: open
+  rights: public domain
+  licence: PD
+  usable: true
+  url: https://upload.wikimedia.org/wikipedia/commons/9/99/Paul_Eltzbacher.jpg
+  localPath: visuals/commons-eltzbacher-portrait.jpg
+  note: The legal scholar who classified Tolstoy as an anarchist. Downloaded into the git-ignored visuals/ cache.
+- id: schmitt-portrait
+  type: portrait
+  subject: Eugen Heinrich Schmitt (Jenő Schmitt), portrait
+  relatedEntity: Eugen Heinrich Schmitt
+  relatedEvidence: v68_schmitt_gods_work
+  holding: Wikimedia Commons
+  archiveId: File:Schmitt Jenő.jpg
+  access: open
+  rights: public domain
+  licence: PD
+  usable: true
+  url: https://upload.wikimedia.org/wikipedia/commons/2/20/Schmitt_Jen%C5%91.jpg
+  localPath: visuals/commons-schmitt-jeno-portrait.jpg
+  note: The Hungarian node of the Christian-anarchist correspondence. Git-ignored cache.
+- id: chertkov-portrait
+  type: portrait
+  subject: Vladimir Chertkov, portrait by Ilya Repin (1890s)
+  relatedEntity: Vladimir Chertkov
+  relatedEvidence: null
+  holding: Wikimedia Commons
+  archiveId: File:Repin Vladimir Chertkov.jpg
+  access: open
+  rights: public domain
+  licence: PD
+  usable: true
+  url: https://upload.wikimedia.org/wikipedia/commons/8/80/Repin_Vladimir_Chertkov.jpg
+  localPath: visuals/commons-chertkov-portrait-repin.jpg
+  note: Gave «христианский анархизм» programmatic Russian form (1905). Git-ignored cache; same image used in the tolstoyanism dive.
+scholarship:
+  summary: 'Modern scholarship makes Tolstoy the founding and most influential figure of ''Christian anarchism'' (or ''Christian anarcho-pacifism''), while generally noting — usually in passing — that he avoided the label. The classification goes back to the document at the centre of this dive: Eltzbacher''s Der Anarchismus (1900) canonised him as one of seven anarchist ''sages'', and that canon held in the general histories (Marshall, Demanding the Impossible, 1992). Brian Morris and Peter Marshall both explain the refusal by the label''s association with political violence; Alexandre Christoyannopoulos (Christian Anarchism, Imprint Academic, 2010) is the fullest treatment and is explicit that the label is the scholarship''s, not Tolstoy''s. What the literature does not engage at the textual level — and what this dive supplies — is the specific evidence: the Eltzbacher index argument, the unique Sacy attestation, and the genealogy of the phrase in the correspondent circle (Schmitt''s Ohne Staat journal, Kenworthy''s Brotherhood Church) rather than in any Tolstoy coinage. The widely-repeated claim that reviewers of The Kingdom of God Is Within You coined the term in 1894 is uncited and could not be verified.'
+  triangulation:
+  - evidenceRef: v72_eltzbacher_reject_ru
+    conventionalView: 'The standard account explains Tolstoy''s refusal of ''anarchist'' by the label''s association with political violence (Marshall: he ''did not publicly call himself an anarchist because of that title''s associations with violence'').'
+    relation: complicates
+    source: Marshall, Demanding the Impossible (1992); Morris, 'Tolstoy and Anarchism' (The Anarchist Library)
+  - evidenceRef: v73_sacy_ru
+    conventionalView: Scholarship calls Tolstoy a Christian anarchist without examining whether or how he used the phrase himself; the coinage is usually credited vaguely to 1894 reviewers of The Kingdom of God Is Within You.
+    relation: extends
+    source: null
+  - evidenceRef: v52_seed_reframing
+    conventionalView: Tolstoy's anti-state position is dated to The Kingdom of God Is Within You (1893) and the 1900s essays; the 1894 diary reframing of the 'how to be without government' question is not singled out.
+    relation: extends
+    source: null
+  - evidenceRef: v68_schmitt_gods_work
+    conventionalView: The term is often credited to 1894 reviewers (uncited) or treated as flowing from Tolstoy; Alston maps the international network as a consequence of his teaching rather than as the term's source.
+    relation: complicates
+    source: Alston, Tolstoy and His Disciples (2013); the «coined by reviewers» claim is uncited
+  - evidenceRef: v67_davidson_corroborate
+    conventionalView: Tolstoy is read as subordinating socialist/communist/anarchist theory to the Gospel.
+    relation: confirms
+    source: Christoyannopoulos, Christian Anarchism (2010)
+contradictions:
+- claim: Tolstoy is one of the seven principal anarchists (Eltzbacher 1900) and is routinely called a 'Christian anarchist'.
+  correction: In his own letter to Eltzbacher (1900) he refuses the label «в смысле политического реформатора» — as a political reformer — and re-files the teaching as religious. The one time he uses «христианский анархизм» himself (Sacy, 1901) it is third-person, about Babism's affinity, not self-application. Not a contradiction in the corpus so much as a gap between the external label and his own voice.
+  evidenceRef: v72_eltzbacher_reject_ru
+notCovered:
+- Chertkov's 1905 booklet O khristianskom anarkhizme — the in-circle programmatic frame the Sacy phrase points to; not held locally.
+- Incoming letters (Eltzbacher's, Sacy's, Schmitt's to Tolstoy) — the TEI corpus holds only outgoing letters.
+- The Kingdom of God Is Within You (PSS Tom 28) — the doctrinal work Eltzbacher classified from; a Tolstoy WORK (handled in works/, not a wiki entity), referenced here but not re-extracted.
+- 'On Anarchy / «Об анархии» and the 1900s political essays (Tom 34–38: The Slavery of Our Time, To Political Activists, etc.) — the broader anti-state corpus beyond the label question; left to a state/non-resistance dive.'
+- The Goldenweiser / Makovický conversation transcripts — spoken-voice remarks, not swept.
+- 'Eltzbacher back-correspondence: no 1910 2nd edition exists (the catalogued 2. Auflage is the posthumous 1987 Roemheld ed.); PSS Tom 72 prints Eltzbacher''s reply. Resolved negative result — do not re-chase.'
+- '''Thirty years earlier for socialism'' (Eltzbacher letter opening) — a generic gesture to German academic socialism c.1870; do not identify a specific 1870 work.'
+needsReview:
+- item: 'Gabriel Sacy (1858–1903): Syrian-born; head of the personnel office at the Egyptian Ministry of Finance, Cairo; wrote Du Règne de Dieu et de l''Agneau connu sous le nom de Bábysme (Cairo, 1902). The PSS calls him «бабист» (Bábí), but the Baháʼí record (Adib Masumian) shows him moving toward the Baháʼí branch under Abu''l-Faḍl Gulpáygání by ~1900.'
+  phase: 3
+  why: Identity now sufficient for a stub (resolved via Phase-3 sweep); the Bábí-vs-Baháʼí nuance matters for reading the letter and should be carried into any wiki page.
+- item: Gabriel Sacy portrait — no image on Wikimedia Commons (search returns only the unrelated orientalist Silvestre de Sacy). No portrait obtained.
+  phase: 2
+  why: Visual record for Sacy is empty; would need an Egyptian/Russian archive request if a portrait is wanted.
+- item: 'Christoyannopoulos citation — Christian Anarchism (Imprint Academic, 2010) is firm. The companion Tolstoy''s Political Thought (Routledge, BASEES) has an unsettled year: the vault page cites 2009, a Routledge catalogue page returned 2013, and the original hardback may differ. Cited without year until confirmed.'
+  phase: 3
+  why: Avoid asserting a wrong publication year for a secondary source; confirm against the book itself before ingestion.
+- item: Chertkov 1905 Christchurch booklet title — cited by the PSS Tom 72 apparatus (and the legacy/dive-#1 surveys) as «О христианском анархизме»; a Russian-anarchism bibliography lists a 1905 Christchurch Chertkov title «Против власти» (Against Authority).
+  phase: 3
+  why: Confirm whether these are the same pamphlet under different titles or two distinct publications before any catalogue entry.
+- item: The claim that 'Christian anarchism' was coined by reviewers of The Kingdom of God Is Within You in 1894 — made on the vault page website/src/wiki/Christian Anarchism.md and repeated widely on the web — is uncited and could not be verified in the Phase-3 sweep.
+  phase: 3
+  why: 'Flag when ingesting the vault page: its own <!-- NEEDS PRIMARY SOURCE --> note for this claim is justified — the dive could not source it either. The corpus supports a circle-of-correspondents genealogy instead.'
+- item: PDF cross-check beyond the two committed facsimiles.
+  phase: 2
+  why: The Eltzbacher (Tom 72) and Sacy (Tom 73) pages are rendered and committed; the seed (Tom 52), Davidson (Tom 67) and Schmitt (Tom 68) quotes rest on the TEI extract + verify_quotes, not a printed-PSS spot-check.
+- item: PSS Tom → local PDF mapping for vol18/33/34/36/37 (localPdf fields).
+  phase: 2
+  why: Tom 72→vol36 and 73→vol37 are confirmed in the legacy method note; Tom 52→vol18, 67→vol33, 68→vol34 are inferred from the publication-order convention and should be confirmed against pss-volume-mapping.md before the localPdf paths are relied on.
+archivesConsulted:
+- tolstoydigital TEI corpus (primary search surface), via the legacy combined dive's locked extracts — docs/research/tolstoyanism-christian-anarchism/extracts/.
+- 'Jubilee Edition (PSS) local PDFs: Toms 72/73 → vol36/vol37; facsimiles rendered (Eltzbacher p.442, Sacy p.154).'
+- 'Wikimedia Commons (light visual sweep, PD portraits): Paul Eltzbacher, Eugen Heinrich Schmitt (Jenő Schmitt), Vladimir Chertkov (Repin). Gabriel Sacy: no portrait found.'
+- 'Web scholarship sweep (Phase 3, sonnet subagent): Christoyannopoulos 2010 (Christian Anarchism); Alston 2013/2014; Marshall 1992; Morris (Tolstoy and Anarchism); Hopton 2000; Eltzbacher 1900 / Byington trans. 1908; SEP ''Anarchism''. Identity sources: Wikipedia/ÖBL/Baháʼí-Library for Eltzbacher, Sacy, Schmitt, Ortt, Kenworthy, Davidson.'
+references:
+  primary:
+  - 'Толстой Л. Н. Полное собрание сочинений: в 90 тт. — М.: Гос. изд. «Художественная литература», 1928–1958 (PSS, Jubilee Edition; local copies at primary-sources/jubilee-edition/). Christian-anarchism material concentrated in Toms 52 (diary), 67, 68, 72, 73 (letters), 28 (The Kingdom of God Is Within You).'
+  - tolstoydigital TEI corpus, Слово Толстого project, HSE Moscow. CC BY-SA. https://github.com/tolstoydigital/TEI (local copy at primary-sources/tolstoydigital-TEI/).
+  background:
+  - 'Eltzbacher, Paul. Der Anarchismus. Berlin: J. Guttentag, 1900 — the book that classified Tolstoy among the seven principal anarchists and prompted the 1900 letter. English trans. Steven T. Byington, Anarchism: Exponents of the Anarchistic Philosophy (New York: Benjamin R. Tucker, 1908).'
+  - 'Christoyannopoulos, Alexandre. Christian Anarchism: A Political Commentary on the Gospel. Exeter: Imprint Academic, 2010 — the fullest treatment; explicit that the label is the scholarship''s, not Tolstoy''s.'
+  - 'Christoyannopoulos, Alexandre. Tolstoy''s Political Thought: Christian Anarcho-Pacifist Iconoclasm Then and Now. London: Routledge (BASEES series) — systematises Tolstoy''s political thought under the label. [Publication year unsettled — see needsReview.]'
+  - 'Alston, Charlotte. Tolstoy and His Disciples: The History of a Radical International Movement. London: I.B. Tauris, 2013 — maps the international circle (Schmitt, Kenworthy, Crosby, Ortt) in which the phrase circulated.'
+  - 'Marshall, Peter. Demanding the Impossible: A History of Anarchism. London: HarperCollins, 1992 — ch. ''Leo Tolstoy: The Count of Peace''; the standard general history, states Tolstoy ''did not publicly call himself an anarchist because of that title''s associations with violence''.'
+  - Morris, Brian. 'Tolstoy and Anarchism' (The Anarchist Library) — characterises Tolstoy's thought as 'a religious form of anarchism' and gives the violence-association explanation of his refusal.
+  - 'Hopton, Terry. ''Tolstoy, God and Anarchism.'' Anarchist Studies 8, no. 1 (2000): 27–52 — locates Tolstoy''s thought within the anarchist tradition.'
+  - 'Chertkov, V. G. O khristianskom anarkhizme. Christchurch: Свободное слово, 1905 — the in-circle programmatic statement that gave «христианский анархизм» consolidated Russian form (so titled in the PSS Tom 72 apparatus; possibly the same pamphlet listed elsewhere as Protiv vlasti — see needsReview). Not held locally.'
