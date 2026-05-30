@@ -18,6 +18,20 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
     with editorial commentary, so verify against the source PDF. `--notes=off` forces the legacy
     strip-everything behaviour; `--notes=force` additionally dumps the comments apparatus after a
     normal body (for reading the editorial commentary).
+- **`verify_quotes.py`** — mechanical byte-fidelity gate for a dive's dossier. Loads every
+  `evidence[].quoteRu`, opens the named `extract` file, and asserts the (whitespace-normalised)
+  quote appears **verbatim** in it — turning Phase 5's core credibility check into one deterministic
+  command instead of an LLM judgement call. Also checks declared `facsimile:` files exist and warns
+  (soft) when a `quoteEn` lacks the `(working English)` label. Honours author elision marks:
+  leading/trailing ellipsis (mid-sentence excerpt, bare or bracketed) is stripped before matching;
+  an internal `[…]`/`[...]` splits the quote into fragments that must each appear, in order — but a
+  bare internal `…` stays literal (it can be Tolstoy's own). A mismatch report names the exact
+  diverging word. Requires `PyYAML`. Usage: `python3 docs/research/lib/verify_quotes.py
+  docs/research/<slug>/dossier.yaml [--quiet]`. Exit 0 = PASS, 1 = FAIL (mismatch or missing
+  facsimile), 2 = usage/parse error.
+- **`test-verify-quotes.sh`** — regression check for the above: asserts a clean quote passes, a
+  tampered body fails, a boundary-ellipsis excerpt passes, a valid internal `[...]` elision passes,
+  and a corruption hidden behind an elision still fails. Run: `bash test-verify-quotes.sh` (prints `PASS`).
 - **`test-extract-tei.sh`** — regression check for the above: asserts `v82_305` recovers the
   operative will provision and the recovery banner, that its nested volume-editor footnote stays
   stripped, and that a normal letter (`v78_170`) keeps its body while its editorial apparatus is

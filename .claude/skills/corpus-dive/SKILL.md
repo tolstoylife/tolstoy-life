@@ -52,7 +52,7 @@ Delegate sub-steps to subagents with the right tier (Agent tool `model` param). 
 
 | Phase / task | Tier |
 |---|---|
-| Grep sweep, `extract_tei.py`, `pdftoppm`, `serve.py --build-only` (HTML), file/vault checks, dedup, image download | no-model / haiku |
+| Grep sweep, `extract_tei.py`, `verify_quotes.py`, `pdftoppm`, `serve.py --build-only` (HTML), file/vault checks, dedup, image download | no-model / haiku |
 | Candidate-hit relevance triage; visual-archive web triage | sonnet |
 | Scholarship + gap-filling web search & relevance triage; factual lookups | sonnet / haiku |
 | Scoping contract | sonnet/opus |
@@ -71,6 +71,12 @@ high-confidence anchors → broader combinable terms, with orthographic / pre-re
 (4) stop-condition / time-box; (5) sweep mode — inline (narrow) vs fan-out (broad).
 Interactive: show the contract and confirm. `--auto`: record the scope contract (written in full to
 `docs/research/<slug>/run-report.md` at Phase 6) and proceed.
+
+**Don't let the gate become a wall.** If the user's framing already answers the scope (they named the
+angle, period, or emphasis), confirm the contract in prose and proceed — don't re-block on
+`AskUserQuestion`. Use the picker only for genuinely open scope choices, and if the question UI
+misfires or returns duplicate/empty answers, fall back to the framing the user already gave rather
+than re-firing it. The contract still gets written down; it just isn't gated behind a flaky picker.
 
 ## Phase 1 — Sweep (scale-aware)
 
@@ -99,6 +105,20 @@ Check, in order: local `primary-sources/`; State Tolstoy Museum collection
 late-period Tolstoy photographs are PD, including Chertkov's own); tolstoy.ru; émigré scan
 archives (vtoraya-literatura.com, imwerden.de). For each item record provenance, holding,
 access, rights, `licence`, and `usable`.
+
+**Intensity (scale to the Phase-0 scope, like the text sweep).** *Light* — find the keystone image
+plus a handful per major entity, single channel (usually Commons); the default for a narrow theme.
+*Heavy* (when the scope asks for "a lot of visuals" or a broad relationship) — fan out one subagent
+per source channel, each told to *err toward more*, then dedup. Record the chosen intensity in the
+Method section / run-report.
+
+**Dedup contract (when fanning out).** Give each channel a **non-overlapping territory** so they
+don't re-fetch the same picture — e.g. by *holding* (Commons vs Canadian archives vs Russian
+museums) and by *subject area*, and tell each channel which subjects another owns. Filename prefixes
+(`commons-`, `canada-`, `russia-`) prevent path collisions but **not content duplication**; so after
+the channels return, run a **dedup-by-subject pass in the main context** before writing the dossier
+`visuals` block — one canonical entry per distinct image, noting cross-channel overlap rather than
+listing the same photo twice. (A heavy sweep can easily land 2× the files for 1× the subjects.)
 
 **Two image channels (the rights gate is at *publication*, not download):**
 - `docs/research/<slug>/visuals/` is **git-ignored** (a local research cache — see `docs/.gitignore`).
@@ -178,7 +198,8 @@ context" prose section of `index.md` is composed in Synthesize.
      - { id, genre, pssTom, pages, date, addressee, localPdf, extract, quoteRu, quoteEn,
          significance, facsimile }
    entities:        # ingestion routing map → wiki
-     - { name, wikiType, wikilinkTarget, vaultStatus, role, sources, evidenceRefs }
+     - { name, wikiType, wikilinkTarget, vaultStatus, role, sources, evidenceRefs,
+         ingestionPriority, dependsOn }   # last two optional — turn the map into a plan
    visuals:         # → images section
      - { id, type, subject, relatedEntity, relatedEvidence, holding, archiveId, access,
          rights, licence, usable, url, localPath, note }
@@ -199,6 +220,12 @@ context" prose section of `index.md` is composed in Synthesize.
    - `relation` ∈ confirms | complicates | contradicts | extends — scholarship triangulation
      (`extends` = the corpus reaches below the scholarship's resolution); clear secondary sources
      also go in `references.background` (`source` omitted when there is no clear one).
+   - `ingestionPriority` (optional) ∈ 1 | 2 | 3 — the order the wiki pages should be written:
+     **1** = central, write first (the entities the dive is *about*); **2** = supporting; **3** =
+     peripheral / mentioned. `dependsOn` (optional) lists the `name`s of entities that should exist
+     first (e.g. an `event` page reads better once its key `person`/`concept` pages exist). Together
+     they turn the flat routing map into a sequenced ingestion plan; the Phase-6 entity work-order
+     should present the `missing`/`stub` entities in priority-then-dependency order.
 3. **`website/src/posts/notes/<YYYY-MM-DD>-<slug>.md`** — frontmatter `title` / `description` / `date` /
    `tags` / `draft: true`. A short recap in the project voice (simple, factual, minimal editorial),
    linking to `index.md`. Stays `draft: true` until the user publishes.
@@ -211,8 +238,16 @@ context" prose section of `index.md` is composed in Synthesize.
 
 ## Phase 5 — Verify (separate pass; never self-approve)
 
-Dispatch a **verifier subagent (opus)** in a fresh context. It checks: a sample of citations
-re-derived from TEI/PDF for **byte-fidelity**; every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
+**First, run the mechanical gate:** `python3 docs/research/lib/verify_quotes.py
+docs/research/<slug>/dossier.yaml`. It asserts every `evidence[].quoteRu` appears verbatim in its
+named `extract` file (and that declared `facsimile:` files exist). This must exit 0 (PASS) before
+the human-judgement verifier runs — it turns byte-fidelity from a sampled LLM check into a complete
+deterministic one. Fix any mismatch (or, if the divergence is a genuine source variant, re-extract)
+until it passes.
+
+Then dispatch a **verifier subagent (opus)** in a fresh context for the judgement-level checks the
+script cannot make. It checks: a sample of citations re-derived from TEI/PDF for **byte-fidelity**
+(belt-and-braces on top of `verify_quotes.py`); every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
 *attributed* (not asserted) and a named source / References-list entry backs every claim — no
 byte-fidelity is demanded on secondary sources (prototype rigor); `scholarship.triangulation`
 entries reference valid `evidenceRef`s and use a valid `relation`**; dossier
@@ -226,8 +261,9 @@ items in `needsReview` and conclude the run rather than blocking indefinitely.
 ## Phase 6 — Handoff
 
 Produce a summary: what was covered, the `notCovered` queue, the **entity work-order** (which wiki
-pages this dive feeds), the **visuals work-order** (images/facsimiles to acquire or request), and
-the draft note path. Remind that wiki ingestion is a separate, human-in-the-loop step — the
+pages this dive feeds — present the `missing`/`stub` entities in `ingestionPriority`-then-`dependsOn`
+order so it reads as a plan, not a flat list), the **visuals work-order** (images/facsimiles to
+acquire or request), and the draft note path. Remind that wiki ingestion is a separate, human-in-the-loop step — the
 dossier is the pointer, not the writer. **Interactive:** print it. **`--auto`:** write it to
 `docs/research/<slug>/run-report.md` (scope contract, coverage, `notCovered`, `needsReview`,
 models used + rough cost note, output paths).
@@ -244,6 +280,24 @@ already locked, the existing `index.md` narrative + the dossier `evidence` ledge
 Phase 2 inputs Phase 3 reads — there is no live Phase 2 handoff. Leave the primary evidence and
 voice untouched; add only the `scholarship:` block, the "Scholarly context" section, and the
 secondary references, then re-verify.
+
+**Retrofitting a pre-corpus-dive survey** (the `index.md` predates this skill — e.g. an early
+`docs/research/<slug>/` written in the hand-authored copyright-renunciation style, with `extracts/`
+but **no `dossier.yaml`**): treat the existing prose as **locked Phase-2 output**, not raw material.
+Do **not** re-sweep, re-translate, or rewrite the narrative — its quotes are already byte-faithful
+and its voice is already settled. Instead:
+1. **Back-fill the structured layers from what's there.** Build `dossier.yaml` by reading the
+   existing `extracts/` and the narrative's citations into `evidence` rows (run `verify_quotes.py`
+   to confirm each `quoteRu` you transcribe is verbatim), then derive `entities`, `scholarship`,
+   `contradictions`, `notCovered`, `needsReview` from the prose.
+2. **Add only what the original lacked** — typically the visuals sweep (+ the "Visual & manuscript
+   record" section), the dossier, and the draft note. Make targeted *additive* edits to `index.md`
+   (a new section, embedded figures, dossier/note pointers); do not touch the frozen quotes.
+3. **Re-derive evidence from the existing extract files, don't re-translate** — if a working-English
+   line already exists in the prose, port it; only translate text the original never rendered.
+4. Bump `lastUpdated`, add a `session-log.md` entry recording the retrofit, then run Phase 5.
+This is distinct from the two resume modes above: there is no `notCovered` queue to resume from and
+no Phase-3 handoff — the *whole structured apparatus* is being added under a finished narrative.
 
 ## Voice & language
 
