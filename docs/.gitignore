@@ -1,9 +1,12 @@
 # serve.py regenerates .html from .md siblings on demand.
-# The three exceptions below are hand-authored entry points / orphans.
+# The exceptions below are committed for direct viewing without a build step:
+# hand-authored entry points / orphans, plus the generated cross-dive evidence
+# index (regenerate it with build_evidence_index.py, then serve.py --build-only).
 *.html
 !/INDEX.html
 !/architecture/architecture-review.html
 !/design/period-colours-preview.html
+!/research/evidence-index/index.html
 
 # Research-dive visual caches. Third-party images (portraits, photographs)
 # fetched for local viewing — PD or not — live here and are NOT committed, so

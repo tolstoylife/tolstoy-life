@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-dive evidence index — tolstoy.life docs</title>
+<style>
+:root {
+  --ink: #1e1a17;
+  --ink-soft: #4a4038;
+  --paper: #faf7f2;
+  --rule: #d9d1c5;
+  --accent: #6b4423;
+  --accent-soft: #8c6a4a;
+  --measure: 38rem;
+  --measure-wide: 52rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 150%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
+               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.site-header {
+  max-width: var(--measure-wide);
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-header a.home {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-style: italic;
+  white-space: nowrap;
+}
+.site-header a.home:hover { color: var(--accent); }
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
+
+header.doc-header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+header.doc-header .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.8rem;
+}
+header.doc-header h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+header.doc-header .meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0;
+  font-variant-numeric: oldstyle-nums;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+/* ── Typography ── */
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
+h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
+h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
+ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
+li { margin-bottom: 0.55rem; }
+li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+a { color: var(--accent); text-decoration: underline;
+    text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+blockquote {
+  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--accent-soft);
+  color: var(--ink-soft); font-style: italic;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+figure { margin: 1.8rem 0; }
+main img {
+  max-width: 100%; height: auto; display: block;
+  margin: 1.8rem auto 0.5rem;
+  border: 1px solid var(--rule); border-radius: 2px;
+  background: #fff;
+}
+/* An italic line immediately after an image reads as its caption. */
+main img + em, figcaption {
+  display: block; font-size: 0.82rem; color: var(--ink-soft);
+  font-style: italic; text-align: center; margin: 0 auto 1.4rem;
+  max-width: var(--measure);
+}
+
+code, kbd, samp {
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88em;
+  background: rgba(107,68,35,0.07);
+  padding: 0.08em 0.34em;
+  border-radius: 2px;
+}
+pre {
+  background: rgba(107,68,35,0.05);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  margin: 0 0 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+
+table {
+  width: 100%; border-collapse: collapse;
+  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
+}
+th, td {
+  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  font-weight: 600; font-size: 0.82rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-soft); font-style: italic;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* ── Index page ── */
+.featured-section {
+  max-width: var(--measure-wide);
+  margin: 1rem auto 2.5rem;
+  padding: 0 1.5rem;
+}
+.featured-card {
+  display: block;
+  padding: 1.7rem 1.9rem;
+  background: rgba(107, 68, 35, 0.06);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.featured-card:hover {
+  border-color: var(--accent);
+  background: rgba(107, 68, 35, 0.10);
+  color: var(--ink);
+}
+.featured-card .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 0 0 0.7rem;
+}
+.featured-card .card-title {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+.featured-card .card-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.85rem;
+}
+.featured-card .card-lede {
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0 0 2.5rem;
+}
+.index-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: rgba(107,68,35,0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.index-card:hover {
+  border-color: var(--accent-soft);
+  background: rgba(107,68,35,0.07);
+  color: var(--ink);
+}
+.index-card .card-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.index-card .card-meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.index-card .card-lede {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  margin: 2.5rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ── Blog feed (dated entries) ── */
+.year-label {
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+  font-weight: 400;
+  margin: 3rem 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: oldstyle-nums;
+}
+.post-list { list-style: none; padding: 0; margin: 0 0 2rem; }
+.post-entry { margin: 0; border-bottom: 1px solid var(--rule); }
+.post-entry:last-child { border-bottom: none; }
+.post-entry a {
+  display: block;
+  padding: 0.95rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.15s;
+}
+.post-entry a:hover { background: rgba(107, 68, 35, 0.04); }
+.post-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.post-entry time {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  flex: 0 0 6rem;
+}
+.post-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  flex: 1 1 auto;
+  line-height: 1.3;
+}
+.post-folder {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  font-style: italic;
+}
+.post-lede {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0 7rem;
+  line-height: 1.5;
+}
+@media (max-width: 30rem) {
+  .post-entry time { flex-basis: 100%; }
+  .post-lede { margin-left: 0; }
+}
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── Annotations ── */
+mark.annotation {
+  background: rgba(107, 68, 35, 0.13);
+  border-bottom: 1.5px solid var(--accent-soft);
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 1px;
+}
+mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+
+#ann-popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--paper);
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
+  padding: 0.9rem 1rem;
+  width: 22rem;
+  display: none;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+#ann-popover .ann-quote {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  border-left: 2px solid var(--accent-soft);
+  padding-left: 0.6rem;
+  line-height: 1.4;
+  max-height: 3.5rem;
+  overflow: hidden;
+}
+#ann-popover textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+  min-height: 4rem;
+  outline: none;
+}
+#ann-popover textarea:focus { border-color: var(--accent-soft); }
+#ann-popover .ann-actions {
+  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
+}
+#ann-popover button {
+  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
+  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink-soft);
+}
+#ann-popover button.primary {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
+#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
+
+#ann-tooltip {
+  position: fixed; z-index: 999;
+  background: var(--ink); color: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.85rem; line-height: 1.5;
+  padding: 0.6rem 0.85rem; border-radius: 3px;
+  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
+  pointer-events: none; display: none; white-space: pre-wrap;
+}
+
+#ann-bar {
+  position: fixed; bottom: 1.2rem; right: 1.4rem;
+  display: none; gap: 0.5rem; z-index: 998;
+}
+#ann-bar button {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
+  cursor: pointer; border: 1px solid var(--accent-soft);
+  background: var(--paper); color: var(--ink-soft);
+  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
+}
+#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
+#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
+#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="site-header">
+  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
+  
+        <span class="breadcrumb">
+          <a href="/INDEX.html">Index</a>
+          <span>›</span>
+          evidence-index
+        </span>
+</div>
+<header class="doc-header">
+  <p class="eyebrow">evidence-index</p>
+  <h1>Cross-dive evidence index</h1>
+  <p class="meta">Last modified 30 May 2026 · <a href="/research/evidence-index/index.md">view source</a></p>
+</header>
+<main>
+<p>Generated aggregate of every corpus-dive dossier, keyed by entity. It collates the verified primary-source citations already gathered across all dives so wiki ingestion reuses them instead of re-collating by hand. Generated — do not hand-edit; regenerate with <code>python3 docs/research/lib/build_evidence_index.py</code>. Writing the wiki pages remains a separate, human-in-the-loop step.</p>
+<h2>1. At a glance</h2>
+<ul>
+<li>5 dives · 41 distinct entities · 41 evidence rows · 46 visuals</li>
+<li>By vault status: 7 exists · 3 stub · 31 missing</li>
+<li>4 entities recur across ≥2 dives</li>
+</ul>
+<h2>2. Ingestion work-order</h2>
+<p>Entities not yet written (or only stubbed) that already have verified evidence, ranked by ingestion priority then evidence count. These are ready to write — the citations are collated in §3.</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Type</th>
+<th>Status</th>
+<th>Dives</th>
+<th>#Ev</th>
+<th>Depends on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paul Eltzbacher</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>3</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Gabriel Sacy</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>2</td>
+<td>christian-anarchism, leo-tolstoy</td>
+</tr>
+<tr>
+<td>Varvara Mac-Gahan</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoyanism</td>
+<td>2</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Dushan Makovicky</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoyanism</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Eugen Heinrich Schmitt</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>1</td>
+<td>christian-anarchism, leo-tolstoy</td>
+</tr>
+<tr>
+<td>Mikhail Stakhovich</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoyanism</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Non-resistance</td>
+<td>concept</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>1</td>
+<td>christian-anarchism</td>
+</tr>
+<tr>
+<td>Henry George</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoyanism</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>I. Ivanov</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoyanism</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>John Coleman Kenworthy</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>1</td>
+<td>christian-anarchism</td>
+</tr>
+<tr>
+<td>John Morrison Davidson</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism</td>
+<td>1</td>
+<td>christian-anarchism</td>
+</tr>
+<tr>
+<td>Confession</td>
+<td>work</td>
+<td>stub</td>
+<td>crisis</td>
+<td>3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Tolstoys religious conversion</td>
+<td>concept</td>
+<td>missing</td>
+<td>crisis</td>
+<td>3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Doukhobor Emigration to Canada</td>
+<td>event</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Doukhobors</td>
+<td>concept</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ivan Tregubov</td>
+<td>person</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nicholas II</td>
+<td>person</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pyotr Verigin</td>
+<td>person</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dmitri Khilkov</td>
+<td>person</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Grigory Golitsyn</td>
+<td>person</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Help (Pomogite)</td>
+<td>criticalWork</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Leonila Annenkova</td>
+<td>person</td>
+<td>missing</td>
+<td>crisis</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nikolai Strakhov</td>
+<td>person</td>
+<td>missing</td>
+<td>crisis</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>State Tolstoy Museum</td>
+<td>institution</td>
+<td>missing</td>
+<td>copyright-renunciation</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The Burning of Arms</td>
+<td>event</td>
+<td>missing</td>
+<td>doukhobors</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>What I Believe (В чём моя вера?)</td>
+<td>work</td>
+<td>missing</td>
+<td>crisis</td>
+<td>1</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>9 entities are named across the dives but carry no evidence rows yet (research gaps, not ready to ingest): Alexandra Tolstaya, Aylmer Maude, Ernest Howard Crosby, Felix Ortt, Leopold Sulerzhitsky, Resurrection, Sergei Tolstoy, Society of Friends, The Kingdom of God Is Within You.</p>
+<h2>3. Collated citations, by entity</h2>
+<h3>Christian Anarchism</h3>
+<p>concept · exists · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: The central concept. The vault page (recordStatus: draft) carries a <!-- NEEDS PRIMARY SOURCE --> block for exactly Tolstoy's rejection of the political label — which the Eltzbacher letter here anchors — and lacks the unique Sacy self-attestation and the phrase-genealogy this dive supplies.</p>
+<blockquote>
+<p>Ответ не может быть дан на вопрос, потому что он дурно поставлен. Вопрос не в том — устроить государство: по нынешнему, или по новому. Я и никто из нас не приставлен к решению этого вопроса.<br />
+The answer cannot be given to the question, because it is badly posed. The question is not whether to arrange the state in the present way or in a new way. Neither I nor any of us is appointed to the solving of that question. (working English)<br />
+— PSS Tom 52, pp. 138–140 · christian-anarchism · 1894-09-10</p>
+<p>социалистическая, коммунистическая и анархическая теории приводятся в подкрепление христианской истины, которая составляет ее главную часть.<br />
+the socialist, communist and anarchist theories are brought in to corroborate the Christian truth, which forms its chief part. (working English)<br />
+— PSS Tom 67, pp. 178–180 · christian-anarchism · 1894-07-23</p>
+<p>Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?<br />
+It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+<p>я все-таки думаю, что бабизм, как нравственное и гуманитарное учение, имеет большое будущее в восточном мире. Имея много общего с христианским анархизмом, он должен рано или поздно с ним слиться.<br />
+I still think that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world. Having much in common with Christian anarchism, it must sooner or later merge with it. (working English)<br />
+— PSS Tom 73, pp. 109–110 · christian-anarchism · 1901-07-28</p>
+</blockquote>
+<h3>Confession</h3>
+<p>work · stub · dives: crisis</p>
+<p><em>crisis</em>: the keystone text; the dive's central vocabulary (переворот, остановка жизни) lives here</p>
+<blockquote>
+<p>Так я жил, но пять лет тому назад со мною стало случаться что-то очень странное: на меня стали находить минуты сначала недоумения, остановки жизни, как будто я не знал, как мне жить, что мне делать, и я терялся и впадал в уныние. […] Эти остановки жизни выражались всегда одинаковыми вопросами: Зачем? Ну, а потом?<br />
+So I lived, but five years ago something very strange began to happen to me: at first there came over me moments of bewilderment, of life coming to a stop, as though I did not know how to live or what to do, and I lost my footing and fell into dejection. […] These stoppages of life always expressed themselves in the same questions: Why? And then what? (working English)<br />
+— PSS Tom 23, pp. 10 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>Я жил так года два, и со мной случился переворот, который давно готовился во мне и задатки которого всегда были во мне. Со мной случилось то, что жизнь нашего круга — богатых, ученых — не только опротивела мне, но потеряла всякий смысл.<br />
+I lived like that for a couple of years, and there occurred in me an upheaval [переворот] that had long been preparing within me, and whose seeds had always been in me. What happened to me was that the life of our circle — the rich, the learned — not only grew repugnant to me, but lost all meaning. (working English)<br />
+— PSS Tom 23, pp. 40 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>И я спасся от самоубийства. Когда и как совершился во мне этот переворот, я не мог бы сказать. […] так же постепенно, незаметно возвратилась ко мне эта сила жизни. И странно, что та сила жизни, которая возвратилась ко мне, была не новая, а самая старая, — та самая, которая влекла меня на первых порах моей жизни.<br />
+And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)<br />
+— PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+</blockquote>
+<h3>Dmitri Khilkov</h3>
+<p>person · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: Exiled prince whose reports first brought the atrocity news to Tolstoy; the named eyewitness source of the 1895 open letter.</p>
+<blockquote>
+<p>После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли<br />
+After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them. (working English)<br />
+— PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
+</blockquote>
+<h3>Doukhobor Emigration to Canada</h3>
+<p>event · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: The 1898–99 exodus of ~7,400 to Saskatchewan/Assiniboia via Cyprus and Batum on the Lake Huron and Lake Superior.</p>
+<blockquote>
+<p>Но нынешнее русское правительство употребило против духоборов еще третий, казалось бы оставленный в наше время, выход из этого противоречия. Оно, кроме того, что подвергает самым тяжелым страданиям самих отказывающихся, заставляет еще систематически страдать отцов, матерей, детей отказывающихся, вероятно с тем, чтобы пытками этих невинных семей поколебать решимость несогласных их членов.<br />
+But the present Russian government has used against the Doukhobors a third way out of this contradiction, one seemingly abandoned in our time. Besides subjecting the refusers themselves to the heaviest sufferings, it forces the fathers, mothers, and children of the refusers to suffer systematically as well — probably so as to shake the resolve of the dissenting members by the torture of these innocent families. (working English)<br />
+— PSS Tom 71, pp. 322–327 · doukhobors · 1898-03-19</p>
+<p>И потому, если мы не можем исполнять того, без чего нас нельзя терпеть в государстве, мы просим одно: отпустите нас.<br />
+And so, if we cannot fulfil that without which we cannot be tolerated in the state, we ask one thing only: let us go. (working English)<br />
+— PSS Tom 71, pp. 345–348 · doukhobors · 1898-04-02</p>
+</blockquote>
+<p>Visuals: 9 (4 usable) — Doukhobor camp before arriving at Yorkton, 1899 [CC0], Athalassa farm, Cyprus — the temporary Doukhobor camp, 1898–99 [unknown], Pier at Grosse Île quarantine station, Quebec, where Doukhobors disembarked, 1899 [PD], Geographic movements of the Doukhobors in western Canada, 1898–1913 [PD], Immigration buildings by the railway, Quebec City, c.1899 [PD], Doukhobors travelling by rail to western Canada, 1899 [unknown], Doukhobors on the deck of SS Lake Huron, 1899 [unknown], SS Lake Huron, the Beaver Line steamer that carried Doukhobors from Batum, Dec 1898 [unknown], SS Lake Superior, the Beaver Line steamer that carried Doukhobors from Batum, Apr 1899 [unknown]</p>
+<h3>Doukhobors</h3>
+<p>concept · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: The pacifist Christian sect at the centre of the affair; ~20,000 in the Transcaucasus, ~7,400 emigrated to Canada in 1899.</p>
+<blockquote>
+<p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
+Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
+— PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+<p>С духоборцами случилось то, что обыкновенно случается с замыкающимися в самих себя и вследствие того процветающими религиозными общинами: материальное благосостояние их увеличивается, но религиозное сознание понижается.<br />
+What happened with the Doukhobors is what usually happens with religious communities that close in upon themselves and prosper as a result: their material well-being increases, but their religious consciousness declines. (working English)<br />
+— PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
+</blockquote>
+<p>Visuals: 7 (7 usable) — Sketch of the Doukhobor village Gorelovka, Tiflis province, 1893 [PD], Sirotski Dom (Orphan's House), Doukhobor spiritual complex, Gorelovka, Georgia (building of 1847) [PD], Doukhobor women in the Caucasus, 1887 (travelogue engraving) [PD], Doukhobor pilgrims at prayer near Yorkton, 1902 [PD], Doukhobor village of Vosnesenya, Thunder Hill Colony, c.1900 [PD], Doukhobor women pulling a plough, Thunder Hill Colony, c.1899 (the iconic image) [PD], Doukhobor women winnowing grain, Saskatchewan, 1899 [PD]</p>
+<h3>Dushan Makovicky</h3>
+<p>person · missing · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: Slovak doctor and disciple; his 1897 question (how to act as Tolstoy's 'representative in Hungary') is the occasion of the keystone denial. Personal physician at Yasnaya Polyana from 1904; the only doctor at Tolstoy's deathbed (Astapovo, 1910); compiler of the Yasnopolianskie zapiski.</p>
+<blockquote>
+<p>Я рад был случаю сказать ему и уяснить себе, что говорить о толстовстве, искать моего руководительства, спрашивать моего решения вопросов — большая и грубая ошибка. — Никакого толстовства и моего учения не было и нет, есть одно вечное, всеобщее, всемирное учение истины, для меня, для нас особенно ясно выраженное в евангелиях.<br />
+I was glad of the chance to tell him, and to clarify for myself, that to speak of Tolstoyism, to seek my guidance, to ask me to decide questions — is a great and crude error. There was and is no Tolstoyism and no teaching of mine; there is one eternal, universal, world-wide teaching of truth, which for me, for us, is especially clearly expressed in the Gospels. (working English)<br />
+— PSS Tom 53, pp. 167–169 · tolstoyanism · 1897-12-02</p>
+</blockquote>
+<h3>Eugen Heinrich Schmitt</h3>
+<p>person · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: Hungarian philosopher (1851–1916), editor of the Religion des Geistes circle in Budapest; a principal node of the foreign Christian-anarchist correspondence. Addressee of the 1895 'God's work' letter.</p>
+<blockquote>
+<p>Ваше дело, наше дело, т. е. божье дело, у вас делает успехи.<br />
+Your work, our work, that is, God's work, is making progress with you. (working English)<br />
+— PSS Tom 68, pp. 26–28 · christian-anarchism · 1895-02-01</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Eugen Heinrich Schmitt (Jenő Schmitt), portrait [PD]</p>
+<h3>Gabriel Sacy</h3>
+<p>person · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: Gabriel Sacy (1858–1903), Syrian-born head of the personnel office at the Egyptian Ministry of Finance, Cairo; a Bábí moving toward the Baháʼí branch. His letter on messianism draws the reply that contains Tolstoy's unique self-voiced «христианский анархизм». (The PSS calls him «бабист»; see needsReview for the Bábí/Baháʼí nuance.)</p>
+<blockquote>
+<p>je crois tout de même que le Babisme comme doctrine morale et humanitaire a un grand avenir dans le monde oriental ayant beaucoup de rapports avec l’anarchisme chrétien et tôt ou tard doit s’unir à lui.<br />
+[Tolstoy's French original] ...I still believe that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world, having much in common with Christian anarchism (l'anarchisme chrétien) and sooner or later must unite with it. (working English)<br />
+— PSS Tom 73, pp. 109–110 · christian-anarchism · 1901-07-28</p>
+<p>я все-таки думаю, что бабизм, как нравственное и гуманитарное учение, имеет большое будущее в восточном мире. Имея много общего с христианским анархизмом, он должен рано или поздно с ним слиться.<br />
+I still think that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world. Having much in common with Christian anarchism, it must sooner or later merge with it. (working English)<br />
+— PSS Tom 73, pp. 109–110 · christian-anarchism · 1901-07-28</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — PSS Tom 73 p.154 — the Sacy letter, the «христианским анархизмом» passage (rendered from the local PD PSS PDF) [PD]</p>
+<h3>Grigory Golitsyn</h3>
+<p>person · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: Caucasus viceroy who set the emigration conditions (own cost, no return) and to whom Tolstoy petitioned for Sulerzhitsky's travel permit.</p>
+<blockquote>
+<p>Но нынешнее русское правительство употребило против духоборов еще третий, казалось бы оставленный в наше время, выход из этого противоречия. Оно, кроме того, что подвергает самым тяжелым страданиям самих отказывающихся, заставляет еще систематически страдать отцов, матерей, детей отказывающихся, вероятно с тем, чтобы пытками этих невинных семей поколебать решимость несогласных их членов.<br />
+But the present Russian government has used against the Doukhobors a third way out of this contradiction, one seemingly abandoned in our time. Besides subjecting the refusers themselves to the heaviest sufferings, it forces the fathers, mothers, and children of the refusers to suffer systematically as well — probably so as to shake the resolve of the dissenting members by the torture of these innocent families. (working English)<br />
+— PSS Tom 71, pp. 322–327 · doukhobors · 1898-03-19</p>
+</blockquote>
+<h3>Help (Pomogite)</h3>
+<p>criticalWork · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: The 1896 documentary appeal by Chertkov, Biryukov and Tregubov, with Tolstoy's afterword; its authors were exiled.</p>
+<blockquote>
+<p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
+Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
+— PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+</blockquote>
+<h3>Henry George</h3>
+<p>person · missing · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: Tangential: the Mac-Gahan letter's long second half praises George's single-tax economics (the 'multiplication table' analogy). Mentioned, not part of the толстовство theme — low ingestion priority.</p>
+<blockquote>
+<p>Вы вот пишете о «толстовцах» и других моих последователях, о движении, поднятом моей проповедью, и о том, почему толстовцы проявляют мало рвения к пропаганде мыслей, которые осчастливят человечество; а я не знаю не только каких-либо других последователей, но и толстовцев<br />
+You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+</blockquote>
+<h3>I. Ivanov</h3>
+<p>person · missing · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: Obscure 1909 correspondent (addressed via his nephew); identity beyond the PSS header unresolved — see needsReview. Addressee of the 'some sort of Tolstoyans' letter.</p>
+<blockquote>
+<p>православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь, во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и сам Толстой<br />
+[you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)<br />
+— PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04</p>
+</blockquote>
+<h3>Ivan Tregubov</h3>
+<p>person · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: Co-author of «Help!»; exiled to the Baltic provinces. Verigin's letter reached Tolstoy through him.</p>
+<blockquote>
+<p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
+Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
+— PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+<p>теперь же нельзя предоставлять одним врагам это могущественное орудие для обмана, и не пользоваться книгой или письмом для передачи своих мыслей и восприятия мыслей других людей<br />
+but now one cannot leave this mighty instrument of deception to the enemies alone, and not make use of the book or the letter to convey one's own thoughts and to receive the thoughts of others. (working English)<br />
+— PSS Tom 68, pp. 262–266 · doukhobors · 1895-11-21</p>
+</blockquote>
+<h3>John Coleman Kenworthy</h3>
+<p>person · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: John Coleman Kenworthy (1861–1948), English founder of the Brotherhood Church, Croydon (from 1894); visited Yasnaya Polyana in 1896 and held UK rights to Tolstoy's works. A node of the 1890s Christian-anarchist circle; named in the Schmitt correspondence.</p>
+<blockquote>
+<p>Ваше дело, наше дело, т. е. божье дело, у вас делает успехи.<br />
+Your work, our work, that is, God's work, is making progress with you. (working English)<br />
+— PSS Tom 68, pp. 26–28 · christian-anarchism · 1895-02-01</p>
+</blockquote>
+<h3>John Morrison Davidson</h3>
+<p>person · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: John Morrison Davidson (1843–1916), Scottish radical journalist and barrister; author of The Old Order and the New, The Gospel of the Poor and Anarchist Socialism v. State Socialism. Tolstoy praises him in 1894 for subordinating socialist/communist/anarchist theory to Christian truth.</p>
+<blockquote>
+<p>социалистическая, коммунистическая и анархическая теории приводятся в подкрепление христианской истины, которая составляет ее главную часть.<br />
+the socialist, communist and anarchist theories are brought in to corroborate the Christian truth, which forms its chief part. (working English)<br />
+— PSS Tom 67, pp. 178–180 · christian-anarchism · 1894-07-23</p>
+</blockquote>
+<h3>Leo Tolstoy</h3>
+<p>person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoyanism</p>
+<p><em>christian-anarchism</em>: The author refusing the political label 'anarchist' while affirming the religious substance, and the sole user of «христианский анархизм» in his own voice (once).<br />
+<em>copyright-renunciation</em>: author renouncing copyright; subject of the dive<br />
+<em>crisis</em>: subject of the dive; author of the keystone confessional works<br />
+<em>doukhobors</em>: Author of the public appeals, organiser and partial funder of the relief and emigration.<br />
+<em>tolstoyanism</em>: The author disowning the label and the movement named after him.</p>
+<blockquote>
+<p>Ответ не может быть дан на вопрос, потому что он дурно поставлен. Вопрос не в том — устроить государство: по нынешнему, или по новому. Я и никто из нас не приставлен к решению этого вопроса.<br />
+The answer cannot be given to the question, because it is badly posed. The question is not whether to arrange the state in the present way or in a new way. Neither I nor any of us is appointed to the solving of that question. (working English)<br />
+— PSS Tom 52, pp. 138–140 · christian-anarchism · 1894-09-10</p>
+<p>Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?<br />
+It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+<p>я все-таки думаю, что бабизм, как нравственное и гуманитарное учение, имеет большое будущее в восточном мире. Имея много общего с христианским анархизмом, он должен рано или поздно с ним слиться.<br />
+I still think that Babism, as a moral and humanitarian doctrine, has a great future in the eastern world. Having much in common with Christian anarchism, it must sooner or later merge with it. (working English)<br />
+— PSS Tom 73, pp. 109–110 · christian-anarchism · 1901-07-28</p>
+<p>Собственность, как она теперь — зло. А собственность сама по себе — радость на то, что тем, что я сделал, добро. […] Но собственность, ограждаемая насилием — городовым с пистолетом — это зло. Сделай ложку и ешь ею, но пока она другому не нужна.<br />
+Property as it is now — is evil. Property in itself — is joy in the good one has made. […] But property defended by violence — by the policeman with a pistol — that is evil. Make a spoon and eat with it, but only until another needs it. (working English)<br />
+— PSS Tom 49, pp. 59 · copyright-renunciation · 1883-01-01</p>
+<p>И вчера же был разговор с женой о напечатании письма в газетах об отказе от права авторской собственности. Трудно вспомнить, а главное, описать всё, что тут было: [Вымарано 19 строк.]<br />
+And yesterday too there was a conversation with my wife about printing in the newspapers the letter renouncing the right of literary property. It is difficult to recall, and chiefly to describe, everything that was said: [19 lines erased.] (working English)<br />
+— PSS Tom 52, pp. 45–47 · copyright-renunciation · 1891-07-22</p>
+<p>4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак не завещаю. […] То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни.<br />
+4) I ask my heirs to hand over to the public the right of publication of my earlier works — the ten volumes and the Azbuka — that is, to renounce the copyright. But I only ask this and in no way bequeath it. […] That my writings have been sold during these last ten years was the heaviest thing in my life. (working English)<br />
+— PSS Tom 53, pp. 14–18 · copyright-renunciation · 1895-03-27</p>
+<p>Предоставляю всем желающим право безвозмездно издавать в России и за границей, по-русски и в переводах, а равно и ставить на сценах все те из моих сочинений, которые были написаны мною с 1881 года и напечатаны в XII томе моих полных сочинений издания 1886 года, и в XIII томе, изданном в нынешнем 1891 году, равно и все мои неизданные в России и могущие вновь появиться после нынешнего дня сочинения.<br />
+I grant to all who so wish the right to publish gratis, in Russia and abroad, in Russian and in translations, and likewise to perform on stage, all those of my writings which were written by me from 1881 onward and printed in vol. XII of my complete works of the 1886 edition, and in vol. XIII, published in this present year 1891, and likewise all my works unpublished in Russia and any that may newly appear after the present day. (working English)<br />
+— PSS Tom 66, pp. 47–48 · copyright-renunciation · 1891-09-16</p>
+<p>Так я жил, но пять лет тому назад со мною стало случаться что-то очень странное: на меня стали находить минуты сначала недоумения, остановки жизни, как будто я не знал, как мне жить, что мне делать, и я терялся и впадал в уныние. […] Эти остановки жизни выражались всегда одинаковыми вопросами: Зачем? Ну, а потом?<br />
+So I lived, but five years ago something very strange began to happen to me: at first there came over me moments of bewilderment, of life coming to a stop, as though I did not know how to live or what to do, and I lost my footing and fell into dejection. […] These stoppages of life always expressed themselves in the same questions: Why? And then what? (working English)<br />
+— PSS Tom 23, pp. 10 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась […] Со мной случилось то, что случается с человеком, который вышел за делом и вдруг дорогой решил, что дело это ему совсем не нужно,— и повернул домой.<br />
+Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What happened to me was what happens to a man who goes out on some errand and then suddenly decides on the way that the errand is of no use to him at all — and turns back home. (working English)<br />
+— PSS Tom 23, pp. 304 · TEI v23_304_465_V_chem_moja_vera · crisis · 1884</p>
+<p>Я жил так года два, и со мной случился переворот, который давно готовился во мне и задатки которого всегда были во мне. Со мной случилось то, что жизнь нашего круга — богатых, ученых — не только опротивела мне, но потеряла всякий смысл.<br />
+I lived like that for a couple of years, and there occurred in me an upheaval [переворот] that had long been preparing within me, and whose seeds had always been in me. What happened to me was that the life of our circle — the rich, the learned — not only grew repugnant to me, but lost all meaning. (working English)<br />
+— PSS Tom 23, pp. 40 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>И я спасся от самоубийства. Когда и как совершился во мне этот переворот, я не мог бы сказать. […] так же постепенно, незаметно возвратилась ко мне эта сила жизни. И странно, что та сила жизни, которая возвратилась ко мне, была не новая, а самая старая, — та самая, которая влекла меня на первых порах моей жизни.<br />
+And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)<br />
+— PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>…я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь […] то каждый, проходя эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать, что то же было и с другими.<br />
+…I, fortunately, have never known this despair since I was born anew… so that everyone, passing through these ages, these crises, would not take fright, but would wait for the next state, knowing that the same was so for others. (working English)<br />
+— PSS Tom 67, pp. 213–214 · TEI v67_214_L_F_Annenkovoj · crisis · 1894-09-04</p>
+<p>Вы знаете, что Марья Петровна Фет при смерти — крупозное воспаление легких. До сих пор нет кризиса, и шансов смерти, говорят, больше, чем жизни.<br />
+You know that Marya Petrovna Fet is dying — lobar pneumonia. So far there is no crisis, and the chances of death, they say, are greater than of life. (working English)<br />
+— PSS Tom 67, pp. 84 · TEI v67_083_H_N_Straxovu · crisis · 1894-03-16</p>
+<p>Русское государство выставило против духоборов все те орудия, которыми оно может бороться. Орудия эти: полицейские меры арестов, непозволения выезда из места жительства, запрещение общения друг с другом, перехватывание писем, шпионство, запрещение печатания в газетах сведений о всем, касающемся духоборов, клевета на них, печатаемая в журналах, подкупы, сечения, тюрьмы, ссылки, разорение семей.<br />
+The Russian state brought against the Doukhobors every weapon it can fight with. These weapons are: police measures of arrest, prohibition of travel from one's place of residence, the banning of communication with one another, the interception of letters, espionage, the suppression of newspaper reports of anything touching the Doukhobors, slander printed against them in the journals, bribery, floggings, prisons, exiles, the ruin of families. (working English)<br />
+— PSS Tom 31, pp. 97–101 · doukhobors · 1898-08-15</p>
+<p>После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли<br />
+After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them. (working English)<br />
+— PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
+<p>Но нынешнее русское правительство употребило против духоборов еще третий, казалось бы оставленный в наше время, выход из этого противоречия. Оно, кроме того, что подвергает самым тяжелым страданиям самих отказывающихся, заставляет еще систематически страдать отцов, матерей, детей отказывающихся, вероятно с тем, чтобы пытками этих невинных семей поколебать решимость несогласных их членов.<br />
+But the present Russian government has used against the Doukhobors a third way out of this contradiction, one seemingly abandoned in our time. Besides subjecting the refusers themselves to the heaviest sufferings, it forces the fathers, mothers, and children of the refusers to suffer systematically as well — probably so as to shake the resolve of the dissenting members by the torture of these innocent families. (working English)<br />
+— PSS Tom 71, pp. 322–327 · doukhobors · 1898-03-19</p>
+<p>Я рад был случаю сказать ему и уяснить себе, что говорить о толстовстве, искать моего руководительства, спрашивать моего решения вопросов — большая и грубая ошибка. — Никакого толстовства и моего учения не было и нет, есть одно вечное, всеобщее, всемирное учение истины, для меня, для нас особенно ясно выраженное в евангелиях.<br />
+I was glad of the chance to tell him, and to clarify for myself, that to speak of Tolstoyism, to seek my guidance, to ask me to decide questions — is a great and crude error. There was and is no Tolstoyism and no teaching of mine; there is one eternal, universal, world-wide teaching of truth, which for me, for us, is especially clearly expressed in the Gospels. (working English)<br />
+— PSS Tom 53, pp. 167–169 · tolstoyanism · 1897-12-02</p>
+<p>Вы вот пишете о «толстовцах» и других моих последователях, о движении, поднятом моей проповедью, и о том, почему толстовцы проявляют мало рвения к пропаганде мыслей, которые осчастливят человечество; а я не знаю не только каких-либо других последователей, но и толстовцев<br />
+You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+<p>православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь, во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и сам Толстой<br />
+[you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)<br />
+— PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04</p>
+</blockquote>
+<p>Visuals: 9 (5 usable) — Diary page, 27 March 1895 (the will-as-diary-entry) [rights-reserved], Leo Tolstoy, 1906 (photograph by V. G. Chertkov) [PD], Manuscript / draft page of Исповедь (A Confession) [rights-reserved], Portrait of Leo Tolstoy (oil), Ivan Kramskoy, 1873 [PD], PSS Tom 23, p. 40 — the «случился переворот» passage of A Confession [PD], Photographic portraits of Tolstoy, c. 1878–1885 (crisis years) [unknown], Tolstoy Digital timeline cards (work on A Confession #175; banning of A Confession #192; Optina Pustyn with Strakhov #166; first acquaintance with Chertkov #198) [unknown], Leo Tolstoy, 1895 — the year of the Burning of Arms [PD], Leo Tolstoy at Yasnaya Polyana, colour photograph, 1908 [PD]</p>
+<h3>Leonila Annenkova</h3>
+<p>person · missing · dives: crisis</p>
+<p><em>crisis</em>: correspondent; recipient of the 'эти кризисы / родился вновь' letter (1894)</p>
+<blockquote>
+<p>…я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь […] то каждый, проходя эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать, что то же было и с другими.<br />
+…I, fortunately, have never known this despair since I was born anew… so that everyone, passing through these ages, these crises, would not take fright, but would wait for the next state, knowing that the same was so for others. (working English)<br />
+— PSS Tom 67, pp. 213–214 · TEI v67_214_L_F_Annenkovoj · crisis · 1894-09-04</p>
+</blockquote>
+<h3>Mikhail Stakhovich</h3>
+<p>person · missing · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: Oryol marshal of the nobility, Duma politician and friend of the Tolstoy family; addressee of the 1907 New-Year letter in which the 'ridicule of Tolstoyism' appears.</p>
+<blockquote>
+<p>сказал бы, не есть мяса, если бы не боялся ridicul’a⁴ толстовства<br />
+[I] would say, eat no meat — were I not afraid of the ridicule of Tolstoyism. (working English)<br />
+— PSS Tom 77, pp. 5–6 · tolstoyanism · 1907-01-01</p>
+</blockquote>
+<h3>Nicholas II</h3>
+<p>person · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: Addressee of two petitions citing the Doukhobors as the emblem of religious persecution (1898, 1900).</p>
+<blockquote>
+<p>И потому, если мы не можем исполнять того, без чего нас нельзя терпеть в государстве, мы просим одно: отпустите нас.<br />
+And so, if we cannot fulfil that without which we cannot be tolerated in the state, we ask one thing only: let us go. (working English)<br />
+— PSS Tom 71, pp. 345–348 · doukhobors · 1898-04-02</p>
+<p>уже давнымъ давно пора: во-первыхъ, пересмотрѣть и уничтожить существующіе теперь законы о гоненіяхъ за вѣру; во-вторыхъ, прекратить всѣ преслѣдованія за отступленія отъ принятаго государствомъ исповѣданія; въ-третьихъ, освободить всѣхъ на основаніи прежнихъ законовъ заключенныхъ и изгнанныхъ за преступленіе противъ вѣры, и въ-четвертыхъ, не казнить, какъ преступленіе, несогласіе религіозной совѣсти съ требованіями государства<br />
+it is long, long since high time: first, to review and abolish the laws now existing on persecution for faith; second, to stop all prosecutions for departure from the state-accepted confession; third, to release all those imprisoned and exiled under the former laws for offences against faith; and fourth, not to punish as a crime the disagreement of religious conscience with the demands of the state. (working English)<br />
+— PSS Tom 72, pp. 514–521 · doukhobors · 1900-12-07</p>
+</blockquote>
+<h3>Nikolai Strakhov</h3>
+<p>person · missing · dives: crisis</p>
+<p><em>crisis</em>: philosopher, close correspondent; recipient of the 'medical кризис' letter (1894); accompanied Tolstoy to Optina Pustyn, 1881</p>
+<blockquote>
+<p>Вы знаете, что Марья Петровна Фет при смерти — крупозное воспаление легких. До сих пор нет кризиса, и шансов смерти, говорят, больше, чем жизни.<br />
+You know that Marya Petrovna Fet is dying — lobar pneumonia. So far there is no crisis, and the chances of death, they say, are greater than of life. (working English)<br />
+— PSS Tom 67, pp. 84 · TEI v67_083_H_N_Straxovu · crisis · 1894-03-16</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Portrait/photograph of N. N. Strakhov [PD]</p>
+<h3>Non-resistance</h3>
+<p>concept · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: The religious substance Tolstoy affirms in place of the political label. The Eltzbacher index argument turns on it: Eltzbacher's book has no Tolstoy reference under 'violence' because Tolstoy treated the matter as non-resistance (religion), not violence (politics).</p>
+<blockquote>
+<p>Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?<br />
+It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+</blockquote>
+<h3>Paul Eltzbacher</h3>
+<p>person · missing · dives: christian-anarchism</p>
+<p><em>christian-anarchism</em>: Berlin legal scholar (1868–1928); his Der Anarchismus (1900) classified Tolstoy as one of seven principal anarchist thinkers. Addressee of the 1900 letter; his index is the evidence Tolstoy turns against the classification.</p>
+<blockquote>
+<p>Ваша книга делает для анархизма то, что 30 лет назад было сделано для социализма: вводит его в программу политических наук. Ваша книга мне чрезвычайно понравилась. Она совершенно объективна, понятна, и, насколько я могу судить, источники в ней отлично использованы.<br />
+Your book does for anarchism what was done thirty years ago for socialism: it brings it into the programme of the political sciences. Your book pleased me exceedingly. It is entirely objective, intelligible, and — so far as I can judge — the sources in it are excellently handled. (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+<p>Mir scheint nur, dass ich kein Anarchist bin im Sinne eines politischen Reformators. Im Register Ihres Buches beim Worte: «Zwang» sind verschiedene Seiten bei allen anderen angegeben, aber keine in meinen Schriften. Ist das nicht ein Beweis, dass die Lehre, die Sie mir zuschreiben, aber die eigentlich nur die Lehre Christi ist, keine politische aber eine religiöse Lehre ist?<br />
+[Tolstoy's German original of the same passage] It seems to me only that I am not an anarchist in the sense of a political reformer. In the register of your book under the word 'Zwang' [coercion] various pages are given for all the others, but none in my writings. Is this not a proof that the teaching you ascribe to me, but which is really only the teaching of Christ, is not a political but a religious teaching? (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+<p>Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?<br />
+It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)<br />
+— PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Paul Eltzbacher, photographic portrait [PD], PSS Tom 72 p.442 — the Eltzbacher letter, the «я не анархист в смысле политического реформатора» passage (rendered from the local PD PSS PDF) [PD]</p>
+<h3>Pavel Birukoff</h3>
+<p>person · exists · dives: copyright-renunciation, crisis, doukhobors · names: Pavel Birukoff / Pavel Biryukov</p>
+<p><em>copyright-renunciation</em>: correspondent in the earliest sustained free-publication discussion (1885); later biographer<br />
+<em>crisis</em>: biographer; the framing source is his Swedish ed. (Leo Tolstoj: Hans liv och verk) Book IV «Kritisk period» ch.14 «Krisen» p.262 — names the chapter 'crisis' while reporting Tolstoy's denial of one (user-provided photograph)<br />
+<em>doukhobors</em>: Sent to the Caucasus 1895 to verify the facts; wrote the article Tolstoy afterworded; co-signed «Help!» and was exiled. Tolstoy's biographer.</p>
+<ul>
+<li>PSS Tom 63, pp. 295–298 · copyright-renunciation · 1885-10-19 — Earliest sustained discussion of free publication in the letters (the Posrednik / cheap-edition circle). Cited by id and PSS pages; not quoted verbatim because the clean extract of this early-volume pre-reform text renders unreliably (see needsReview).</li>
+</ul>
+<blockquote>
+<p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
+Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
+— PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+<p>Сколько бы ни набрасывали на горящую кучу хвороста дров, думая этим затушить огонь, — огонь, непотухающий огонь истины, только на время приглохнет, но разгорится еще сильнее и сожжет всё то, что наложено на него.<br />
+However much firewood is thrown onto the burning heap of brush in the hope of putting the fire out, the fire — the unquenchable fire of truth — will only die down for a time, then blaze up the more strongly and burn everything that has been piled upon it. (working English)<br />
+— PSS Tom 39, pp. 99–105 · doukhobors · 1895-10-01</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Pavel Ivanovich Biryukov, c.1913 [PD]</p>
+<h3>Pyotr Verigin</h3>
+<p>person · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: Doukhobor leader; exiled to Arkhangelsk then Siberia; from exile urged literal Christianity. Emigrated to Canada 1902.</p>
+<blockquote>
+<p>С духоборцами случилось то, что обыкновенно случается с замыкающимися в самих себя и вследствие того процветающими религиозными общинами: материальное благосостояние их увеличивается, но религиозное сознание понижается.<br />
+What happened with the Doukhobors is what usually happens with religious communities that close in upon themselves and prosper as a result: their material well-being increases, but their religious consciousness declines. (working English)<br />
+— PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
+<p>теперь же нельзя предоставлять одним врагам это могущественное орудие для обмана, и не пользоваться книгой или письмом для передачи своих мыслей и восприятия мыслей других людей<br />
+but now one cannot leave this mighty instrument of deception to the enemies alone, and not make use of the book or the letter to convey one's own thoughts and to receive the thoughts of others. (working English)<br />
+— PSS Tom 68, pp. 262–266 · doukhobors · 1895-11-21</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Pyotr Verigin in British Columbia, 1907 [PD], Pyotr Verigin, portrait, 1922 [PD]</p>
+<h3>Sophia Tolstaya</h3>
+<p>person · exists · dives: copyright-renunciation</p>
+<p><em>copyright-renunciation</em>: opposed the 1891 renunciation; redacted 19 lines of the 22 July 1891 diary entry</p>
+<blockquote>
+<p>И вчера же был разговор с женой о напечатании письма в газетах об отказе от права авторской собственности. Трудно вспомнить, а главное, описать всё, что тут было: [Вымарано 19 строк.]<br />
+And yesterday too there was a conversation with my wife about printing in the newspapers the letter renouncing the right of literary property. It is difficult to recall, and chiefly to describe, everything that was said: [19 lines erased.] (working English)<br />
+— PSS Tom 52, pp. 45–47 · copyright-renunciation · 1891-07-22</p>
+</blockquote>
+<h3>State Tolstoy Museum</h3>
+<p>institution · missing · dives: copyright-renunciation</p>
+<p><em>copyright-renunciation</em>: holds the diary and letter manuscripts cited here (manuscript fond, the 'steel room')</p>
+<blockquote>
+<p>4) Право на издание моих сочинений прежних: десяти томов и азбуки прошу моих наследников передать обществу, т. е. отказаться от авторского права. Но только прошу об этом и никак не завещаю. […] То, что сочинения мои продавались эти последние 10 лет, было самым тяжелым для меня делом в жизни.<br />
+4) I ask my heirs to hand over to the public the right of publication of my earlier works — the ten volumes and the Azbuka — that is, to renounce the copyright. But I only ask this and in no way bequeath it. […] That my writings have been sold during these last ten years was the heaviest thing in my life. (working English)<br />
+— PSS Tom 53, pp. 14–18 · copyright-renunciation · 1895-03-27</p>
+</blockquote>
+<p>Visuals: 1 (0 usable) — State Tolstoy Museum digital collection (manuscripts, photographs, portraits) [rights-reserved]</p>
+<h3>The Burning of Arms</h3>
+<p>event · missing · dives: doukhobors</p>
+<p><em>doukhobors</em>: The coordinated mass destruction of weapons by ~7,000 Doukhobors, night of 28–29 June 1895 (OS); the catalysing event.</p>
+<blockquote>
+<p>После этого, 28 июня 1895 года, духоборцы, живущие в Ахалкалакском уезде Тифлисской губернии, снесли в одну кучу в поле, около села Спасского, всё свое имевшееся у них оружие и, обложив его дровами и углем и облив керосином, сожгли<br />
+After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district of the Tiflis province carried all the weapons they had into a single heap in a field near the village of Spasskoye and, having piled wood and coal upon them and doused them with kerosene, burned them. (working English)<br />
+— PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — PSS Tom 39 p.209 — the Burning of Arms paragraph (rendered from the local PD PSS PDF) [PD]</p>
+<h3>Tolstoyanism</h3>
+<p>concept · exists · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: The central concept — both the label «толстовство» and the «толстовцы» movement. The existing vault page (recordStatus: draft) carries a <!-- NEEDS PRIMARY SOURCE --> block flagging the exact 'great and gross error' rejection this dive now anchors; the page also MISATTRIBUTES it to 'a letter to an adherent' when it is the 1897-12-02 diary entry (re Makovický). This dive's evidence ledger resolves both gaps.</p>
+<blockquote>
+<p>Я рад был случаю сказать ему и уяснить себе, что говорить о толстовстве, искать моего руководительства, спрашивать моего решения вопросов — большая и грубая ошибка. — Никакого толстовства и моего учения не было и нет, есть одно вечное, всеобщее, всемирное учение истины, для меня, для нас особенно ясно выраженное в евангелиях.<br />
+I was glad of the chance to tell him, and to clarify for myself, that to speak of Tolstoyism, to seek my guidance, to ask me to decide questions — is a great and crude error. There was and is no Tolstoyism and no teaching of mine; there is one eternal, universal, world-wide teaching of truth, which for me, for us, is especially clearly expressed in the Gospels. (working English)<br />
+— PSS Tom 53, pp. 167–169 · tolstoyanism · 1897-12-02</p>
+<p>Вы вот пишете о «толстовцах» и других моих последователях, о движении, поднятом моей проповедью, и о том, почему толстовцы проявляют мало рвения к пропаганде мыслей, которые осчастливят человечество; а я не знаю не только каких-либо других последователей, но и толстовцев<br />
+You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+<p>А о толстовцах, движении и т. п. я ничего не знаю, или даже знаю, что этого ничего нет.<br />
+As for Tolstoyans, a movement, and so forth — I know nothing of it, or rather I know that there is no such thing. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+<p>сказал бы, не есть мяса, если бы не боялся ridicul’a⁴ толстовства<br />
+[I] would say, eat no meat — were I not afraid of the ridicule of Tolstoyism. (working English)<br />
+— PSS Tom 77, pp. 5–6 · tolstoyanism · 1907-01-01</p>
+<p>православные не любят толстовцев, а толстовцы не любят православных. В этом вы, я думаю, ошибаетесь, во-первых, в том, что признаете каких-то толстовцев. Что же до меня касается, то хотя я и сам Толстой<br />
+[you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)<br />
+— PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — PSS Tom 53 — the 2 December 1897 diary page carrying the Tolstoyism denial (rendered from the local PD PSS PDF) [PD]</p>
+<h3>Tolstoys religious conversion</h3>
+<p>concept · missing · dives: crisis</p>
+<p><em>crisis</em>: the event this dive is about; candidate concept page — should foreground Tolstoy's own vocabulary (переворот / остановка жизни) over the received 'crisis' label</p>
+<blockquote>
+<p>Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась […] Со мной случилось то, что случается с человеком, который вышел за делом и вдруг дорогой решил, что дело это ему совсем не нужно,— и повернул домой.<br />
+Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What happened to me was what happens to a man who goes out on some errand and then suddenly decides on the way that the errand is of no use to him at all — and turns back home. (working English)<br />
+— PSS Tom 23, pp. 304 · TEI v23_304_465_V_chem_moja_vera · crisis · 1884</p>
+<p>Я жил так года два, и со мной случился переворот, который давно готовился во мне и задатки которого всегда были во мне. Со мной случилось то, что жизнь нашего круга — богатых, ученых — не только опротивела мне, но потеряла всякий смысл.<br />
+I lived like that for a couple of years, and there occurred in me an upheaval [переворот] that had long been preparing within me, and whose seeds had always been in me. What happened to me was that the life of our circle — the rich, the learned — not only grew repugnant to me, but lost all meaning. (working English)<br />
+— PSS Tom 23, pp. 40 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>И я спасся от самоубийства. Когда и как совершился во мне этот переворот, я не мог бы сказать. […] так же постепенно, незаметно возвратилась ко мне эта сила жизни. И странно, что та сила жизни, которая возвратилась ко мне, была не новая, а самая старая, — та самая, которая влекла меня на первых порах моей жизни.<br />
+And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)<br />
+— PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+</blockquote>
+<h3>Varvara Mac-Gahan</h3>
+<p>person · missing · dives: tolstoyanism</p>
+<p><em>tolstoyanism</em>: Russian-American journalist (1850–1904), widow of war correspondent Januarius MacGahan; addressee of the 1894 letter. Her writing about 'the Tolstoyans' and 'the movement' is what Tolstoy answers by denying both exist.</p>
+<blockquote>
+<p>Вы вот пишете о «толстовцах» и других моих последователях, о движении, поднятом моей проповедью, и о том, почему толстовцы проявляют мало рвения к пропаганде мыслей, которые осчастливят человечество; а я не знаю не только каких-либо других последователей, но и толстовцев<br />
+You write about 'the Tolstoyans' and my other followers, about the movement raised by my preaching, and about why the Tolstoyans show so little zeal in propagating the ideas that would make mankind happy; but I know of no other followers, nor of any Tolstoyans. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+<p>А о толстовцах, движении и т. п. я ничего не знаю, или даже знаю, что этого ничего нет.<br />
+As for Tolstoyans, a movement, and so forth — I know nothing of it, or rather I know that there is no such thing. (working English)<br />
+— PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
+</blockquote>
+<h3>Vladimir Chertkov</h3>
+<p>person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoyanism</p>
+<p><em>christian-anarchism</em>: Tolstoy's closest disciple and publisher; gave «христианский анархизм» programmatic Russian form in the 1905 booklet O khristianskom anarkhizme (Svobodnoe Slovo), the in-circle frame the Sacy phrase points to. The 1905 booklet is not held locally.<br />
+<em>copyright-renunciation</em>: co-drafter of the six wills; drafted the 1910 Explanatory Note; held Tolstoy's post-1881 rights<br />
+<em>crisis</em>: disciple/correspondent from 1883; the PSS Tom 85 apparatus that carries the editors' 'кризис своих воззрений' annotates the Chertkov letters<br />
+<em>doukhobors</em>: Co-author of «Help!»; expelled to England 1897, where he became the organising hub of the relief effort.<br />
+<em>tolstoyanism</em>: Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser, dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between Tolstoy's 'there is no such thing' and Chertkov's institution-building is the dive's central tension.</p>
+<blockquote>
+<p>1) Все его сочинения, литературные произведения и писания всякого рода, как уже где-либо напечатанные, так и еще не изданные, не составляли после его смерти ничьей частной собственности, а могли бы быть издаваемы и перепечатываемы всеми, кто этого захочет.<br />
+(working English) 1) That all his compositions, literary works and writings of every kind, whether already published anywhere or not yet issued, should after his death be no one's private property, but might be published and reprinted by anyone who wishes.<br />
+— PSS Tom 82, pp. 227–231 · copyright-renunciation · 1910-07-31</p>
+<p>…21 мая 1883 г. Толстой, пережив уже кризис своих воззрений и отстраняясь от всяких дел материального характера, выдал ей нотариально засвидетельствованную доверенность…<br />
+…on 21 May 1883 Tolstoy, having already lived through the crisis of his views and withdrawing from all affairs of a material character, issued her a notarised power of attorney… (working English) — EDITORIAL voice: Jubilee Edition apparatus, not Tolstoy.<br />
+— PSS Tom 85, pp. 193–196 (editorial note) · TEI v85_059_a10_11 · crisis · 1885</p>
+<p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
+Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
+— PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+</blockquote>
+<p>Visuals: 5 (4 usable) — Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], V. G. Chertkov, 1883 (photograph by A. F. Eichenvald) [PD], Portrait of V. G. Chertkov, Ivan Kramskoy, 1881 [unknown], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD]</p>
+<h3>What I Believe (В чём моя вера?)</h3>
+<p>work · missing · dives: crisis</p>
+<p><em>crisis</em>: companion confessional work; 'жизнь моя вдруг переменилась'</p>
+<blockquote>
+<p>Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась […] Со мной случилось то, что случается с человеком, который вышел за делом и вдруг дорогой решил, что дело это ему совсем не нужно,— и повернул домой.<br />
+Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What happened to me was what happens to a man who goes out on some errand and then suddenly decides on the way that the errand is of no use to him at all — and turns back home. (working English)<br />
+— PSS Tom 23, pp. 304 · TEI v23_304_465_V_chem_moja_vera · crisis · 1884</p>
+</blockquote>
+<h2>4. Integrity report</h2>
+<p><strong>Unresolved evidenceRefs</strong> (0)</p>
+<ul>
+<li>none</li>
+</ul>
+<p><strong>Name conflicts (same key, multiple spellings)</strong> (1)</p>
+<ul>
+<li>pavel-birukoff: Pavel Birukoff / Pavel Biryukov (copyright-renunciation, crisis, doukhobors)</li>
+</ul>
+<p><strong>wikiType conflicts</strong> (1)</p>
+<ul>
+<li>aylmer-maude: person / translator</li>
+</ul>
+<p><strong>Works routed to works/ (not a wiki type)</strong> (2)</p>
+<ul>
+<li>confession (work)</li>
+<li>what-i-believe-в-чём-моя-вера (work)</li>
+</ul>
+<p><strong>vaultStatus drift (dossier vs live)</strong> (2)</p>
+<ul>
+<li>confession: dossier ['exists'] → live stub</li>
+<li>the-kingdom-of-god-is-within-you: dossier ['exists'] → live stub</li>
+</ul>
+<p><strong>Entities with zero evidence</strong> (9)</p>
+<ul>
+<li>alexandra-tolstaya (copyright-renunciation)</li>
+<li>aylmer-maude (copyright-renunciation, doukhobors)</li>
+<li>ernest-howard-crosby (christian-anarchism)</li>
+<li>felix-ortt (christian-anarchism)</li>
+<li>leopold-sulerzhitsky (doukhobors)</li>
+<li>resurrection (doukhobors)</li>
+<li>sergei-tolstoy (doukhobors)</li>
+<li>society-of-friends (doukhobors)</li>
+<li>the-kingdom-of-god-is-within-you (doukhobors)</li>
+</ul>
+<p><strong>Missing wikilinkTarget</strong> (1)</p>
+<ul>
+<li>What I Believe (В чём моя вера?) (crisis)</li>
+</ul>
+<p><strong>Slug ≠ page id</strong> (0)</p>
+<ul>
+<li>none</li>
+</ul>
+<h2>5. Method</h2>
+<p>Built by <code>docs/research/lib/build_evidence_index.py</code>, which walks every <code>docs/research/*/dossier.yaml</code>. Entity key = slug of <code>wikilinkTarget</code> (<code>.md</code> stripped), equal to the eventual wiki/works slug. Each entity's <code>evidenceRefs</code> are resolved against its own dive's <code>evidence[]</code>; visuals are attached by <code>relatedEntity</code> and deduped across dives. <code>vaultStatus</code> is re-derived live against <code>website/src/wiki/</code> and <code>website/src/works/</code> (stub = prose body &lt; 60 words, or a <code>draft</code> with &lt; 120). Output is deterministic. Regenerate: <code>python3 docs/research/lib/build_evidence_index.py</code>.</p>
+</main>
+<footer>tolstoy.life · public documentation</footer>
+
+<!-- Annotation UI -->
+<div id="ann-popover">
+  <div class="ann-quote" id="ann-quote"></div>
+  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <div class="ann-actions">
+    <button id="ann-cancel">Cancel</button>
+    <button class="primary" id="ann-save">Save</button>
+  </div>
+</div>
+<div id="ann-tooltip"></div>
+<div id="ann-bar">
+  <button id="ann-export">Copy annotations</button>
+  <button class="danger" id="ann-clear">Clear all</button>
+</div>
+
+<script>
+(function() {
+  const DOC_KEY = 'docs/research/evidence-index/index';
+  const STORE_KEY = 'tolstoy_annotations';
+
+  // ── Storage ──────────────────────────────────────────────────────────────
+  function loadAll() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveAll(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+  function loadDoc() {
+    return loadAll()[DOC_KEY] || [];
+  }
+  function saveDoc(anns) {
+    const all = loadAll();
+    if (anns.length === 0) delete all[DOC_KEY];
+    else all[DOC_KEY] = anns;
+    saveAll(all);
+  }
+
+  // ── Fuzzy text anchor ────────────────────────────────────────────────────
+  function getContext(range) {
+    const selected = range.toString();
+    const container = range.commonAncestorContainer;
+    const full = (container.textContent || container.innerText || '');
+    const start = full.indexOf(selected);
+    if (start === -1) return null;
+    return {
+      text: selected,
+      before: full.slice(Math.max(0, start - 30), start),
+      after: full.slice(start + selected.length, start + selected.length + 30)
+    };
+  }
+
+  // ── Rendering ────────────────────────────────────────────────────────────
+  function findAndWrap(ann, index) {
+    const main = document.querySelector('main');
+    if (!main) return;
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const idx = node.textContent.indexOf(ann.anchor.text);
+      if (idx === -1) continue;
+      const before10 = ann.anchor.before.slice(-10);
+      const after10 = ann.anchor.after.slice(0, 10);
+      const nodeText = node.textContent;
+      const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
+                     || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
+      if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
+
+      const before = node.textContent.slice(0, idx);
+      const after = node.textContent.slice(idx + ann.anchor.text.length);
+      const mark = document.createElement('mark');
+      mark.className = 'annotation';
+      mark.dataset.index = index;
+      mark.textContent = ann.anchor.text;
+      const afterNode = document.createTextNode(after);
+      node.textContent = before;
+      node.parentNode.insertBefore(mark, node.nextSibling);
+      node.parentNode.insertBefore(afterNode, mark.nextSibling);
+      attachTooltip(mark, ann, index);
+      break;
+    }
+  }
+
+  function renderAll() {
+    document.querySelectorAll('mark.annotation').forEach(m => {
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    const anns = loadDoc();
+    anns.forEach((ann, i) => findAndWrap(ann, i));
+    updateBar();
+  }
+
+  // ── Tooltip ──────────────────────────────────────────────────────────────
+  const tooltip = document.getElementById('ann-tooltip');
+
+  function attachTooltip(mark, ann, index) {
+    mark.addEventListener('mouseenter', e => {
+      tooltip.textContent = ann.comment;
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    mark.addEventListener('mousemove', positionTooltip);
+    mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    mark.addEventListener('click', e => {
+      e.stopPropagation();
+      showDeleteConfirm(index, mark);
+    });
+  }
+
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // ── Delete confirm ────────────────────────────────────────────────────────
+  function showDeleteConfirm(index, mark) {
+    const anns = loadDoc();
+    const comment = anns[index] ? anns[index].comment : '';
+    if (confirm('Delete this annotation?\n\n"' + comment + '"')) {
+      anns.splice(index, 1);
+      saveDoc(anns);
+      renderAll();
+    }
+  }
+
+  // ── Popover ───────────────────────────────────────────────────────────────
+  const popover = document.getElementById('ann-popover');
+  const annText = document.getElementById('ann-text');
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+  let pendingRange = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push({ anchor: pendingAnchor, comment, created: new Date().toISOString() });
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
+
+  function hidePopover() {
+    popover.style.display = 'none';
+    annText.value = '';
+    pendingAnchor = null;
+    if (pendingRange) { window.getSelection().removeAllRanges(); pendingRange = null; }
+  }
+
+  function showPopover(x, y, anchor, range) {
+    pendingAnchor = anchor;
+    pendingRange = range;
+    annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
+    popover.style.display = 'block';
+    let px = x, py = y + 12;
+    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
+    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
+    setTimeout(() => annText.focus(), 50);
+  }
+
+  // ── Selection listener ────────────────────────────────────────────────────
+  document.addEventListener('mouseup', e => {
+    if (popover.contains(e.target)) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    const range = sel.getRangeAt(0);
+    if (!main.contains(range.commonAncestorContainer)) return;
+    const anchor = getContext(range);
+    if (!anchor) return;
+    showPopover(e.clientX, e.clientY, anchor, range);
+  });
+
+  document.addEventListener('mousedown', e => {
+    if (!popover.contains(e.target)) hidePopover();
+  });
+
+  // ── Export / clear bar ────────────────────────────────────────────────────
+  const bar = document.getElementById('ann-bar');
+
+  function updateBar() {
+    const anns = loadDoc();
+    bar.style.display = anns.length > 0 ? 'flex' : 'none';
+  }
+
+  document.getElementById('ann-export').addEventListener('click', () => {
+    const anns = loadDoc();
+    if (!anns.length) return;
+    const lines = ['# Annotations — ' + DOC_KEY, ''];
+    anns.forEach((a, i) => {
+      lines.push('## ' + (i+1) + '. ' + a.created.slice(0,10));
+      lines.push('> ' + a.anchor.text);
+      lines.push('');
+      lines.push(a.comment);
+      lines.push('');
+    });
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      const btn = document.getElementById('ann-export');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    });
+  });
+
+  document.getElementById('ann-clear').addEventListener('click', () => {
+    if (confirm('Delete all annotations on this page?')) {
+      saveDoc([]);
+      renderAll();
+    }
+  });
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  renderAll();
+})();
+</script>
+</body>
+</html>
