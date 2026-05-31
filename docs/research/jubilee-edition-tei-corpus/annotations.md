@@ -46,6 +46,13 @@ Follow-ups:
 - **Photo:** the most apt visual is a Free Age Press title page bearing «No Rights Reserved» (PD, pre-1923; downloadable from archive.org, e.g. `slaveryourtimes00tolsiala`). The cached Repin portrait of Chertkov works as the "who".
 - ⚠ **Verify** the exact prospectus wording against a clean scan before quoting it verbatim on the site (sources so far are OCR). Sources: archive.org (`slaveryourtimes00tolsiala`, `pamphletstransl00tolsgoog`), marxists.org *Letters to Friends*, Wikisource *Letter to the Free Age Press*.
 
+**Verified 2026-05-31 (clean-scan check).** The ⚠ above is now resolved for the title mark and prospectus line; corrections noted:
+- Title-page mark is **`(NO RIGHTS RESERVED)`** — parentheses, small caps — *not* the mixed-case "No Rights Reserved" of the OCR. Confirmed on two clean 1900 FAP title pages: *The Slavery of Our Times* (tr. Maude; archive.org `slaveryourtimes00tolsiala`, p. n8) and *Letters to Friends on the Personal Christian Life* (`pamphletstransl00tolsgoog`, p. n11). Quote the parenthesised all-caps form when reproducing the printed mark.
+- Prospectus sentence confirmed **verbatim**: *"As it is Tolstoy's desire that his books shall not be copyrighted, our editions will, whenever possible, be free to the world."* (FAP publisher's statement on an interior leaf; OCR layer, consistent across sources).
+- Tolstoy's letter to the FAP (Moscow, 24 Dec 1900) confirmed: *"…absolutely free to all who may wish to make use of it"*, and a second quotable phrase *"…the announcement on your translations that no rights are reserved."* (Wikisource transcription; punctuation not yet scan-verified — for philological certainty cross-check Maude, *Essays and Letters*, OUP 1911, archive.org `essaysletters00tols`).
+- **Site visual (PD):** the 1900 first-edition title page bearing the mark — `slaveryourtimes00tolsiala`, p. n8. Bonus primary source on the same item: the FAP catalogue leaf (p. n5).
+- **Net:** the title-page mark and the prospectus line are safe to quote verbatim; only the letter's exact punctuation remains transcription-level.
+
 ### B2. Are the genres notes / krug_chtenija / azbuka / comments in the schema?
 
 Against the genre breakdown (notes 100 · krug_chtenija 444 · azbuka 784 · comments 807).
@@ -53,6 +60,8 @@ Against the genre breakdown (notes 100 · krug_chtenija 444 · azbuka 784 · com
 Follow-up: check whether `website/src/works/` and the works content model accommodate these. Note distinctions: *Круг чтения* and *Азбука* are anthology/primer **works**; *notes* are notebooks; **comments are the PSS editorial apparatus, not Tolstoy works** — likely should NOT be modelled as works. The TEI taxonomy types all four (`#notes`, `#krug_chtenija`, `#azbuka`/`#included`, `#comments`).
 
 **Resolved 2026-05-31:** checked. *Азбука* already exists as a work (`src/works/fiction/childrens-literature/ABC Book.md`) but was shoe-horned into `genre: fragment` — no native primer value existed. *Круг чтения* is not yet a work. The works `genre` controlled list (`tolstoy-works-schema.md` v7 + the validator enum) gained `primer` (Азбука, Новая азбука) and `anthology` (Круг чтения, Путь жизни, На каждый день). *comments* confirmed **not** works (editorial apparatus) — not modelled. *notes* (notebooks) left unmodelled for now: closest existing genre is `diary`; no `notebook` value added pending a concrete need. **Open follow-up:** migrating the existing `ABC Book.md` from `genre: fragment` → `primer` is a vault-content edit (a "generated" work file; needs the read-discuss-write protocol) and was *not* done here.
+
+**Done 2026-05-31:** applied after read-discuss-write — `genre: primer` in `website/src/works/fiction/childrens-literature/abc-book/ABC Book.md`. A full survey confirmed it is the *only* one of the 15 work records affected (the other two `genre: fragment` works — *Севастопольские рассказы* and *Декабристы* — are genuine sketches/fragments and stay). `recordStatus: draft` left untouched; the frontmatter validator passes (15 works pages valid). Committed in the `website` submodule.
 
 ### B3. The 100-volume academic PSS (IMLI, 2000– ) — need more info
 
@@ -66,3 +75,10 @@ Follow-up: research the in-progress IMLI edition — scope, volumes published to
 - **Principles / de-Sovietisation** — texts re-verified against autographs, authorized copies, and first editions; previously unpublished fragments restored; dedicated Editions-&-Variants and unfinished-works series (the "creative laboratory"); fuller modern commentary, free of the Jubilee Edition's Soviet-era framing and its reserved "right of omission".
 - **Relation to the Jubilee Edition** — the scholarly successor; supersedes its textual choices, but the 90-vol edition remains the only *complete* edition and the citation standard until the 100-vol finishes (decades off at current pace).
 - **Digital availability** — mostly print; imwerden.de hosts Vol. 1 (2000) as PDF; no comprehensive free digital corpus (the platform's local corpus remains the 90-vol Jubilee). Resolves the first `notCovered` item. Sources: imli.ru, old.imli.ru/tolstoy/Ptushkina.php, labirint (Vol. 11), Cambridge *Tolstoy in Context* ch. 34, Russia Beyond.
+
+**Pinned 2026-05-31 (catalogue check).** Published-volume count tightened from "a dozen-plus" to **9 physical volumes/books** as of mid-2026, confirmed across three independent lists (imwerden.de catalogue, Russian Wikipedia bibliography, Labirint):
+- *Художественные произведения* (Literary Works) — **6** of ~18: Тт. 1 (2000), 2 (2002), 3 (2007), 4 (2001), 9 (2014), 11 (2020).
+- *Редакции и варианты* (Editions & Variants, dual-numbered) — **3** of ~17: Том 1 (=19, 2000), Том 4 (=21, 2002), Том 8 кн. 1 (=25.1; *Война и мир*, ред. 1873, кн. 1; 2003).
+- Letters / Diaries & Notebooks / journalistic / religious-philosophical series — **0**.
+- **Latest confirmed:** Том 11, *Анна Каренина* (части 1–4), Наука, 2020. Nothing published after 2020 appears in any source; IMLI staff pages list Тт. 12–13 as "in preparation".
+- **Most authoritative public list:** imwerden.de `multi-volume-set-1000033` (holds the scans; IMLI's own old.imli.ru pages time out, «Наука» / RSL catalogues not directly reachable). **Caveat:** a post-2020 volume could exist unlisted — defensible range 9–11, but 9 is the only positively evidenced figure. The verified `index.md` / `dossier.yaml` are left as-is (frozen snapshot); this correction lives here.
