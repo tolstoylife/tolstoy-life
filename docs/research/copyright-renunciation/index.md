@@ -252,5 +252,8 @@ Companion documents:
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
 - [dossier.yaml](dossier.yaml) — machine-readable dossier (evidence ledger, entity routing map, visuals map) for this survey; ingestion-ready, added 2026-05-29.
+- [doukhobors](../doukhobors/index.html) — the Doukhobor relief campaign, the one cause for which Tolstoy broke this renunciation (*Resurrection*, 1898).
+- [biryukov-sofia-relationship](../biryukov-sofia-relationship/index.html) — the 1895 diary-will and the household conflict over the diaries, read through Biryukov and Sofia.
+- [crisis](../crisis/index.html) — the 1879–1882 transformation behind the post-1881 renunciation.
 
 A dev-blog recap of the session that produced this survey is at [2026-05-10 — Tolstoy on copyright and the renunciation of literary property](https://tolstoy.life/notes/tolstoy-on-copyright-renunciation/).

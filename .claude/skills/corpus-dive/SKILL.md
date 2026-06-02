@@ -202,6 +202,16 @@ context" prose section of `index.md` is composed in Synthesize.
    with provenance + access + rights; and what is not openly available + where to request it) *→
    Method* (the Phase 0 contract, updated with what actually happened) *→ References*. Close with
    a link to the dev-blog note.
+   **Cross-link contested labels (don't scrub).** Wherever a contested mainstream label appears —
+   most often in *Scholarly context*, but anywhere it surfaces — link its first prominent occurrence
+   to the project's dedicated dive on that term (`../<slug>/index.html`, the rendered sibling; a bare
+   `.md` link serves as raw text). The link keeps the label visible as the *mainstream's* word while
+   pointing at the dive that interrogates it — it does **not** license asserting the badge as fact in
+   the dive's own voice (that is Phase 3's "ground in the project before the mainstream" rule, which
+   this complements). Interlink sibling dives the same way, via a short *Links* line in Method.
+   Worked example: `biryukov-sofia-relationship` §5 (the `tolstoyanism` link) + §8 (sibling links);
+   memory `corpus-dive-ground-in-primary-not-mainstream`. Never link `tolstoyanism-christian-anarchism`
+   as authoritative — it is the superseded combined survey.
 2. **`docs/research/<slug>/dossier.yaml`** — schema:
    ```yaml
    topic: { slug, title, question, date, period, corpusSurface, dateRange }

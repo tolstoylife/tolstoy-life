@@ -8,7 +8,7 @@ tags: [research]
 
 Date: 2026-05-13
 
-Context: A survey of where Leo Tolstoy himself discusses the two doctrinal labels — *Christian socialism* («христианский социализм») and *Christian communism* («христианский коммунизм») — across the 90-volume Jubilee Edition (PSS). The survey is a companion to [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) and uses the same method. It was prompted by the editorial need on tolstoy.life to ground any use of either label on the site in Tolstoy's own words rather than in third-party framing, and by the specific anecdote that the Swedish socialist Kata Dalström characterised Tolstoy as a "Christian communist."
+Context: A survey of where Leo Tolstoy himself discusses the two doctrinal labels — *Christian socialism* («христианский социализм») and *Christian communism* («христианский коммунизм») — across the 90-volume Jubilee Edition (PSS). The survey is a companion to the label dives — [tolstoyanism](../tolstoyanism/index.html) and [christian-anarchism](../christian-anarchism/index.html) (the dedicated successors of the original combined [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html) survey) — and uses the same method. It was prompted by the editorial need on tolstoy.life to ground any use of either label on the site in Tolstoy's own words rather than in third-party framing, and by the specific anecdote that the Swedish socialist Kata Dalström characterised Tolstoy as a "Christian communist."
 
 ---
 
@@ -24,7 +24,7 @@ Context: A survey of where Leo Tolstoy himself discusses the two doctrinal label
 
 ## 2. Why this matters for tolstoy.life
 
-Twentieth-century commentary placed Tolstoy in four doxographic boxes by turn — Tolstoyan, Christian anarchist, Christian socialist, Christian communist. The first two are surveyed in the companion essay. This one takes the second pair.
+Twentieth-century commentary placed Tolstoy in four doxographic boxes by turn — [Tolstoyan](../tolstoyanism/index.html), [Christian anarchist](../christian-anarchism/index.html), Christian socialist, Christian communist. The first two are surveyed in their own dedicated dives. This one takes the second pair.
 
 The two labels do not stand symmetrically in Tolstoy's own writing.
 
@@ -189,7 +189,7 @@ The compound phrase «христианский коммунизм» (with all fi
 
 Tolstoy in both letters answers the correspondent's questions on his own terms; the compound phrase is not in either letter body. The two adjacent compounds — «христианин-коммунист» and «коммунист-христианин» — return zero hits in either direction.
 
-The structural parallel to the companion essay is exact, but stronger. There, the compound «христианский анархизм» has *one* LT-voice attestation in the corpus (the 1901 Sacy letter, where Tolstoy says Babism "has much in common with Christian anarchism" — the only place in his written voice anywhere where he names the doctrine in his own words). Here, the count for «христианский коммунизм» is *zero*. Whatever doctrinal content the Tolstoyan circle (Chertkov) and contemporary observers (Kata Dalström, the post-revolutionary Bolsheviks) projected into the phrase, Tolstoy never reached for it himself.
+The structural parallel to the [christian-anarchism](../christian-anarchism/index.html) dive is exact, but stronger. There, the compound «христианский анархизм» has *one* LT-voice attestation in the corpus (the 1901 Sacy letter, where Tolstoy says Babism "has much in common with Christian anarchism" — the only place in his written voice anywhere where he names the doctrine in his own words). Here, the count for «христианский коммунизм» is *zero*. Whatever doctrinal content the [Tolstoyan](../tolstoyanism/index.html) circle (Chertkov) and contemporary observers (Kata Dalström, the post-revolutionary Bolsheviks) projected into the phrase, Tolstoy never reached for it himself.
 
 The substance the label might have named — common ownership grounded in the gospel — Tolstoy worked out under different headings: as the *Doukhobor land community* in the 1898–1899 correspondence on the Canadian migration, as *brotherhood* and *non-resistance* in the polemical essays, as the rejection of property in *Tak chto zhe nam delat?* (Tom 25, 1886). None of these uses the compound «христианский коммунизм».
 
@@ -307,5 +307,5 @@ Companion documents:
 - [extract_tei.py](../lib/extract_tei.py) — the shared lxml-based TEI extractor (in `docs/research/lib/`) used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
-- [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) — companion essay on the other two doxographic labels. Uses the same method and the same extractor.
-- [copyright-renunciation/index.md](../copyright-renunciation/index.md) — sibling research essay on a related theme (the renunciation of literary property).
+- [tolstoyanism](../tolstoyanism/index.html) and [christian-anarchism](../christian-anarchism/index.html) — the dedicated dives on the other two doxographic labels (the split successors of the original combined [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html) survey). Same method and extractor.
+- [copyright-renunciation](../copyright-renunciation/index.html) — sibling research essay on a related theme (the renunciation of literary property).

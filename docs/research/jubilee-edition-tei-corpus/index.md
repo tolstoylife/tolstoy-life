@@ -62,13 +62,13 @@ The edition's own front matter says this plainly. The State Editorial Commission
 
 ### 3.3. Chertkov and the editorial board
 
-The friend was **Vladimir Grigoryevich Chertkov** (1854–1936), Tolstoy's closest disciple and the keeper of his manuscripts, who served as **editor-in-chief (главный редактор)**. His own foreword to Tom 1 grounds the edition in Tolstoy's last wishes:
+The friend was **Vladimir Grigoryevich Chertkov** (1854–1936), Tolstoy's closest [disciple](../tolstoyanism/index.html) and the keeper of his manuscripts, who served as **editor-in-chief (главный редактор)**. His own foreword to Tom 1 grounds the edition in Tolstoy's last wishes:
 
 > Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.
 
 > *This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910.* (working English)
 
-That is the very document the platform's [copyright-renunciation dive](../copyright-renunciation/) centres on — the edition descends directly from Tolstoy's renunciation of literary property. Chertkov died in 1936, mid-project; the work passed to N. S. Rodionov. The editorial board of Tolstoy scholars included **N. N. Gusev** (Tolstoy's secretary), **A. E. Gruzinsky**, **N. K. Gudzy**, **M. A. Tsyavlovsky**, **N. K. Piksanov**, and **A. L. Tolstaya** (Tolstoy's daughter and manuscript heir, before her emigration).
+That is the very document the platform's [copyright-renunciation dive](../copyright-renunciation/index.html) centres on — the edition descends directly from Tolstoy's renunciation of literary property. Chertkov died in 1936, mid-project; the work passed to N. S. Rodionov. The editorial board of Tolstoy scholars included **N. N. Gusev** (Tolstoy's secretary), **A. E. Gruzinsky**, **N. K. Gudzy**, **M. A. Tsyavlovsky**, **N. K. Piksanov**, and **A. L. Tolstaya** (Tolstoy's daughter and manuscript heir, before her emigration).
 
 <figure>
 <img src="visuals/commons-chertkov-portrait-repin.jpg" alt="Portrait of V. G. Chertkov by Ilya Repin, c. 1890">

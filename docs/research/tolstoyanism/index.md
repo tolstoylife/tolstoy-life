@@ -10,7 +10,7 @@ Date: 2026-05-30
 
 Context: A narrow primary-source dive into where Leo Tolstoy himself uses the label *Tolstoyism* («толстовство») and the word for its followers/movement, *the Tolstoyans* («толстовцы»), across the local corpus — the tolstoydigital TEI texts and the Jubilee Edition (PSS) PDFs. It documents what his own voice does with the terms. It does not adjudicate whether the label is fair.
 
-This is the first of three planned separate dives that split an earlier combined survey, [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.md): here *Tolstoyism*; next *Christian anarchism* (Eltzbacher, Sacy, «христианский анархизм»); then *Christian*. The Christian-anarchism material is deliberately **left for dive #2** — it is not treated below.
+This is the first of three separate dives that split an earlier combined survey, [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html): here *Tolstoyism*; then *Christian anarchism* ([christian-anarchism](../christian-anarchism/index.html); Eltzbacher, Sacy, «христианский анархизм»); then *Christian* ([christian](../christian/index.html)). The Christian-anarchism material is deliberately **left for dive #2** — it is not treated below.
 
 ---
 
@@ -116,7 +116,7 @@ The corpus **extends** it in two ways. First, the 1894 Mac-Gahan letter (§3.1) 
 
 And it **complicates** the tidy "he simply rejected it" in one place. The 1907 Stakhovich letter (§3.3) shows the label with real social force: its *ridicule* actually deflects Tolstoy from prescribing vegetarianism. The name had no doctrinal reality for him and undeniable social reality around him — both at once.
 
-(Alexandre Christoyannopoulos's *Christian Anarchism*, 2010, sits with the sibling dive #2, not here.)
+(Alexandre Christoyannopoulos's *Christian Anarchism*, 2010, sits with the [sibling dive #2](../christian-anarchism/index.html), not here.)
 
 ---
 
@@ -183,7 +183,9 @@ The dive is text-first; the visual record is light (single channel — Wikimedia
 
 - [dossier.yaml](dossier.yaml) — the machine-readable evidence / entity / visuals / scholarship ledger behind this index.
 - [extract_tei.py](../lib/extract_tei.py), [verify_quotes.py](../lib/verify_quotes.py) — the shared TEI extractor and the byte-fidelity gate.
-- [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) — the legacy combined survey this dive supersedes for the *Tolstoyism* half.
+- [christian-anarchism](../christian-anarchism/index.html) — dive #2 (*Christian anarchism*).
+- [christian](../christian/index.html) — dive #3 (*Christian*).
+- [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html) — the legacy combined survey this dive supersedes for the *Tolstoyism* half.
 
 ---
 
