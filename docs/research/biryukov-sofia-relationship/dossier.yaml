@@ -256,6 +256,7 @@ entities:
     wikilinkTarget: "Sophia Tolstaya"
     vaultStatus: exists
     role: "Dedicatee of Vol II; archive-keeper; vetoed the Arsenyeva letters; seized the 1910 diary. (Vault file spells the name 'Sophia Tolstaya'.)"
+    note: "Reader guidance for ingestion in annotations.md — read the mainstream Sofia-centred framing (Popoff; The Last Station) as contrast, not authority; ground in the words of Tolstoy/Biryukov/Chertkov and the project's prior dives (tolstoyanism, crisis)."
     sources: []
     evidenceRefs: [dedication-1908, arsenyeva-sofia-veto-1905, sofia-loves-you-1897, sofia-crisis-1910, sonya-reads-diary-1897, diary-seized-1910]
     ingestionPriority: 1
@@ -263,7 +264,7 @@ entities:
     wikiType: person
     wikilinkTarget: "Vladimir Chertkov"
     vaultStatus: exists
-    role: "Tolstoyan leader; named diary-executor in the 1895 testament; Sofia's antagonist in the 1910 will crisis; first (censored) publisher of the diaries (1916)"
+    role: "Editor and close associate of Tolstoy, entrusted with his manuscripts and diaries; named diary-executor in the 1895 testament; on the opposing side of Sofia in the 1910 will crisis; first (censored) publisher of the diaries (1916)"
     sources: []
     evidenceRefs: [testament-1895-diaries-clause, sofia-crisis-1910, will-invalid-senile-1910]
     ingestionPriority: 2
@@ -306,9 +307,10 @@ scholarship:
   summary: >
     The conventional view treats Biryukov's biography as the "voluminous and reverential" authorized
     life (Bartlett 2010) and the 1910 catastrophe as "fundamentally about the struggle for control of
-    his diaries" between Sofia and the Chertkov/Alexandra side (Meek, LRB 2010). The dive mostly
-    confirms and extends this, with one correction to the reader's premise about Sofia removing
-    will-lines.
+    his diaries" between Sofia and the Chertkov/Alexandra side (Meek, LRB 2010). The dominant popular
+    framing (Popoff; The Last Station) is Sofia-centred and is read here as contrast, not baseline:
+    the dive's spine is the primary record (Tolstoy/Biryukov/Chertkov), against which the standard
+    "Sofia removed the will-lines" premise does not hold. See annotations.md for the reader's steer.
   triangulation:
     - evidenceRef: dedication-1908
       conventionalView: "The biography is reverential; Biryukov used Sofia's archive and thanked her."
