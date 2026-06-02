@@ -148,6 +148,17 @@ secondary/scholarly claims are drafted from knowledge + web and **cited only whe
 source** (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
 `[^n]` footnotes), with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
 
+**Ground in the project before the mainstream.** The dive's spine is the primary record — the words
+of Tolstoy and the people he trusted (Biryukov, Chertkov) — and the project's **own prior dives**
+(scan `docs/research/` for the relevant ones, e.g. `tolstoyanism`, `crisis`). Mainstream and academic
+scholarship is a **contrast to read critically**, never a baseline the dive "confirms": treat it with
+skepticism, attribute it, and watch for the subtle framing/word-choice that softens or inverts
+Tolstoy's message — the Sofia-centred "moralistic dogmatist who tried to impoverish his family" frame
+(Popoff; *The Last Station*) is the worked example. Don't let contested movement-labels ("Tolstoyan")
+or villain framings ("Chertkov the antagonist") stick in the dive's own voice; attribute them to the
+outside. §5 "Scholarly context" is a divergence map, not corroboration. (Memory:
+`corpus-dive-ground-in-primary-not-mainstream`.)
+
 1. **Assemble claims & gaps.** List the dive's main findings from the evidence ledger. Collect the
    open gaps from the dossier: `needsReview` items, `notCovered` candidates worth a quick check,
    entities with `vaultStatus: missing | stub`, and factual unknowns (identities, dates, event
