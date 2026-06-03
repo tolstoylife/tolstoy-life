@@ -157,6 +157,41 @@ And as early as 1858, the artist in *Albert* is consumed by "the sacred fire we 
 > *«Он, как соломинка, сгорел весь от того священного огня, которому мы все служим»*
 > "He, like a wisp of straw, burned up entirely in that sacred fire which we all serve" (working English) — *Albert*, Tom 5
 
+The same images recur across the later fiction. In *The Death of Ivan Ilyich* (1886) the dying man names life as light and death as its loss:
+
+> *«То свет был, а теперь мрак.»*
+> "Once there was light, and now there is darkness." (working English) — *The Death of Ivan Ilyich*, Tom 26
+
+In the folk-tale *What Men Live By* (1881) the angel emits a visible light at the moment he understands:
+
+> *«И видят хозяева, что от Михайлы свет идет.»*
+> "And the masters see that light comes from Mikhaila." (working English) — *What Men Live By*, Tom 25
+
+In *Father Sergius* the "burning lamp" of holiness dims the more it is performed for people — the light = truth equation turned into a moral danger:
+
+> *«он был светильник горящий … потухание божеского света истины, горящего в нем.»*
+> "he was a burning lamp … the dying-out of the divine light of truth burning within him." (working English) — *Father Sergius*, Tom 31
+
+And in *Walk in the Light While There Is Light* — whose title is John 12:35 — faith is a fire kept alive by adding fuel:
+
+> *«как огонь никогда не потухнет, когда на него подкладывают дрова. В этом-то и вера.»*
+> "as a fire never goes out when wood is laid on it. That is exactly what faith is." (working English) — *Ходите в свете, пока есть свет*, Tom 26
+
+### 8 — In the daily-wisdom anthologies
+
+In *On Every Day* (На каждый день, 1909–10) the credo's fire returns as a maxim on truth — the exact sibling of *What I Believe*'s "a fire that is only a fire when it burns":
+
+> *«бывает огонь только тогда, когда он жжет, так и истина не бывает немножко истина, немножко ложь, а всегда истина»*
+> "fire is fire only when it burns, and so truth is never a little truth, a little falsehood, but is always truth." (working English) — *На каждый день*, Tom 44
+
+The same anthology argues human equality through the unity of fire, and states the light-of-reason equation plainly:
+
+> *«огонь в печи, на пожаре, в свече неравны между собою. В каждом человеке живет дух Божий.»*
+> "fire in a stove, in a conflagration, in a candle [are not] unequal to one another. In every person lives the spirit of God." (working English) — *На каждый день*, Tom 44
+
+> *«Нет в человеке ничего драгоценнее, нужнее ему света разума.»*
+> "There is nothing in a person more precious, more needful to him, than the light of reason." (working English) — *На каждый день*, Tom 43
+
 ## Where the theme clusters
 
 **By genre** (the densest sources):
@@ -168,7 +203,8 @@ And as early as 1858, the artist in *Albert* is consumed by "the sacred fire we 
 | Polemic | *Critique of Dogmatic Theology* (23) | the eternal-hell-fire doctrine quoted and refuted |
 | Letters (1880s–1910) | a tight disciple circle; peaks 1889–1900 and 1904–07 | "kindle the fire in yourself"; scattered fires; the world already burning |
 | Diaries (1880–1910) | richest 1895–98 | the inner fire of conscience; sin as quenching the light |
-| Fiction | *Anna Karenina* (19), *War and Peace* (9, 12), *Albert* (5), *Death of Ivan Ilyich* (26) | the candle/light of a life; death as light or its extinction |
+| Fiction | *Anna Karenina* (19), *War and Peace* (9, 12), *Albert* (5), *Death of Ivan Ilyich* (26), *What Men Live By* (25), *Father Sergius* (31), *Walk in the Light* (26) | the candle/light of a life; the divine light from within; death as light or its extinction |
+| Daily-wisdom anthologies | *Circle of Reading* (41–42), *On Every Day* (43–44) | the credo recast as maxims: truth-is-fire, one fire in all people, the light of reason |
 
 **The gospel divergence** (the special-attention centrepiece) — Tolstoy's renderings beside the standard (Synodal / Church-Slavonic) text:
 
@@ -182,6 +218,17 @@ And as early as 1858, the artist in *Albert* is consumed by "the sacred fire we 
 | Luke 12:49 | "I came to cast fire on the earth …" | kept; commentary makes it the spark of conscience | judgment-fire → kindled conscience |
 | Luke 12:50 | "I have a baptism to be baptised with" | *«Есть перерождение, через которое я должен пройти»* | fiery baptism → inner rebirth |
 
+**The full harmony vs the condensed Gospel.** Tolstoy made more than one redaction, and Luke 12:49 fares differently in each. Only the full harmony keeps the verse's first-person yearning and amplifies it; the condensed *Gospel in Brief* — and its English and French versions — cut the longing and fold the fire straight into the prophecy of discord.
+
+| Redaction | Luke 12:49 rendering | What happens to the fire |
+|---|---|---|
+| Synodal (standard) | *«Огонь пришел Я низвести на землю, и как желал бы, чтобы он уже возгорелся!»* | fire cast down + the personal yearning, both kept |
+| Full harmony (Tom 24) | *«Я пришел сбросить огонь на землю. И как желаю, чтобы он разгорелся»* + the commentary on the spark of God-consciousness | yearning kept and **amplified** into the unquenchable inner spark |
+| Gospel in Brief (Tom 24) | *«Учение мое, как огонь, запалит мир»* | "I" → "my teaching"; metaphor → simile; **yearning gone**; fire = coming discord |
+| Abrégé (French) | *«Mon enseignement est comme le feu jeté dans le monde. Il fera beaucoup de ravages…»* | yearning gone; adds the harsher "great damage" before it envelops all |
+
+The English Maude translation of the *Gospel in Brief* follows the condensed Russian exactly — "My teaching, like fire, will kindle the world. And from it strife must arise" — so the abridgement, not the translator, drops the longing. Both the systematic hell-fire excisions (§2) and this preserved-and-amplified Luke 12:49 live in the **full** harmony; the condensation already simplifies them away.
+
 **Letters** (the fire/light correspondence):
 
 | Tom | Date | Addressee | The image |
@@ -194,7 +241,7 @@ And as early as 1858, the artist in *Albert* is consumed by "the sacred fire we 
 | 73 | 1902 | Nicholas II | "from darkness to light" as the law of history |
 | 75 | 1904 | A. I. Turchaninov | "kindle the fire in yourself; others ignite of themselves" |
 | 81 | 1910 | V. G. Korolenko | the ideal "blazes ever brighter" — a final-year letter |
-| 85 | 1886 | S. A. Tolstaya | "amid the darkness sparks are now catching fire" |
+| 85 | 1886 | V. G. Chertkov | "amid the darkness sparks are now catching fire" |
 | 88 | 1904 | (draftees, via Chertkov) | the conscript's doubt as "a spark of that fire" |
 
 ## Scholarly context
@@ -223,10 +270,9 @@ The caveat: in the Gospel, Tolstoy is *removing* the fire of hell and judgment i
 
 ## Material not covered
 
-- The daily-wisdom anthologies — *Круг чтения* (Tom 41–43) and *На каждый день* (Tom 43–44) — hold many more fire/light aphorisms; only a sample was entered (e.g. Tom 44's *«бывает огонь только тогда, когда он жжет, так и истина»*).
-- A fuller fiction pass: *Resurrection*, *Father Sergius* (the *«светильник горящий»* whose divine light dims when he performs for people — verified, not entered), *What Men Live By* (*«от Михайлы свет идет»*), *Hodite v svete poka est svet* (whose very title is John 12:35), *The Death of Ivan Ilyich* (*«То свет был, а теперь мрак»* — verified, not entered).
-- The candle / spark / lamp side-imagery was de-scoped by agreement to the fire-and-light axis, so *«Свечка»* (The Candle) and the *искра Божия* threads are touched only where they intersect the fire.
-- The full harmony vs the condensed *Gospel in Brief* vs the French *Abrégé* and English *Gospel in Brief* — a cross-language comparison of the fire/light renderings was not pursued. (Note: the systematic hell-fire excisions live in the **full** harmony, Tom 24, which this dive used — the condensed *Gospel in Brief* already drops the commentary where they are most visible.)
+- *Круг чтения* proper (Tom 41–42, 444 daily files) was swept in the follow-up: fire-terms appear in roughly 34 of those files and a light-of-reason/truth fusion in about 17, but the hits are sparse and scattered. The four richest daily-wisdom maxims — all from the denser *На каждый день* (Tom 43–44) — were entered (§8); a full *Круг чтения* pass remains.
+- *Master and Man* and a complete reading of *Resurrection* remain. *Resurrection* and *Hadji Murat* were spot-checked in the follow-up and yielded only literal or incidental fire (sunburn, lighting a pipe), so neither produced an evidence row.
+- The candle / spark / lamp side-imagery stays de-scoped to the fire-and-light axis, so *«Свечка»* (The Candle) and the *искра Божия* threads are touched only where they intersect the fire (the *Father Sergius* "burning lamp" and the *На каждый день* "fire… in a candle" cross that line only because the light-of-truth / one-fire point is what carries them).
 
 ## Visual & manuscript record
 
@@ -251,13 +297,15 @@ The caveat: in the Gospel, Tolstoy is *removing* the fire of hell and judgment i
 
 Scope (confirmed with the reader before the sweep): the **fire + light axis** (candle/spark/lamp side-imagery de-scoped), gospel texts first-class, post-1880 default with letters and diaries first-class, plus an interpretive emblem reading for the logo question. Sweep mode: fan-out — five parallel read-only subagents over non-overlapping territory (gospel zone Tom 23–24; late works 25–45; letters; diaries; early fiction + *Круг чтения*), deduplicated centrally. Finalists were extracted with `extract_tei.py`, every quotation checked byte-for-byte against its extract by `verify_quotes.py` (51/51 verbatim), and the two keystone facsimiles rendered at 220 dpi from the public-domain Jubilee Edition PDFs (Tom 23, Tom 24). Scholarship was a separate, lighter web sweep, attributed and triangulated, never used as a baseline to confirm. A human-judgment verifier pass ran in a fresh context.
 
-Two fidelity notes carried into `needsReview`: (1) the *Bethink Yourselves!* coda translation variant noted above; (2) a handful of pre-1918-orthography letters/diaries (Tom 72, 85, 54, 53) where `extract_tei.py` drops pre-reform word-pairs — the quoted fragments here are clean and verbatim, but the **full** sentences should be PDF-collated before any wiki ingestion.
+**Follow-up sweep (2026-06-03).** A second session extended the dive additively (the original evidence and voice were left untouched): the daily-wisdom anthologies were swept (four *На каждый день* maxims entered, §8); the fuller fiction pass was completed (*The Death of Ivan Ilyich*, *What Men Live By*, *Father Sergius*, *Walk in the Light* entered; *Resurrection* and *Hadji Murat* spot-checked clean); the cross-language Luke 12:49 comparison was added (full harmony vs the condensed *Gospel in Brief*, the Maude English, and the French *Abrégé*); and the pre-reform / extractor-degraded entries were PDF-collated. The ledger now holds 61 byte-verified rows (`verify_quotes.py`: 61/61).
+
+Two fidelity notes carried into `needsReview`: (1) the *Bethink Yourselves!* coda translation variant noted above; (2) the pre-1918-orthography letters/diaries (Tom 72, 85, 54, 53), where `extract_tei.py` drops pre-reform word-pairs, were PDF-collated against the Jubilee Edition print in the follow-up. The quoted fragments stay verbatim against the TEI extracts (so `verify_quotes` is green) and the print readings are recorded in `needsReview` for ingestion. The collation also corrected a misattribution — the 1886 Tom-85 letter is to **V. G. Chertkov**, not S. A. Tolstaya (Tom 85 is the Chertkov correspondence) — and recovered a dropped word in two entries (the print reads «Я **ихъ** вижу и радуюсь» and «душа **человѣка** есть божеская искра»).
 
 Links: sibling dives — [the Doukhobors](../doukhobors/index.html), [the crisis](../crisis/index.html) (the conversion behind *Confession* and *What I Believe*), [Christian anarchism](../christian-anarchism/index.html), [the "Tolstoyan" label](../tolstoyanism/index.html), and [Biryukov & the biography](../biryukov-sofia-relationship/index.html).
 
 ## References
 
-**Primary** — L. N. Tolstoy, *Полное собрание сочинений* (Jubilee Edition, 90 vols): *Соединение и перевод четырёх Евангелий* and *Краткое изложение Евангелия* (Tom 24); *Исповедь*, *Исследование догматического богословия*, *В чём моя вера?* (Tom 23); *О жизни* (Tom 26); *Царство Божие внутри вас* (Tom 28); *Что такое религия* (Tom 35); *Одумайтесь!* (Tom 36); *Закон насилия и закон любви* (Tom 37); *Круг чтения* (Tom 41), *На каждый день* (Tom 44); *Путь жизни* (Tom 45); *Война и мир* (Tom 9, 12), *Анна Каренина* (Tom 19), *Альберт* (Tom 5), *Смерть Ивана Ильича* (Tom 26); Letters (Tom 64, 68, 70, 72, 73, 75, 81, 85, 88); Diaries (Tom 49, 51, 53, 54).
+**Primary** — L. N. Tolstoy, *Полное собрание сочинений* (Jubilee Edition, 90 vols): *Соединение и перевод четырёх Евангелий*, *Краткое изложение Евангелия* and *Abrégé de l'Évangile* (Tom 24); *Исповедь*, *Исследование догматического богословия*, *В чём моя вера?* (Tom 23); *О жизни* (Tom 26); *Царство Божие внутри вас* (Tom 28); *Что такое религия* (Tom 35); *Одумайтесь!* (Tom 36); *Закон насилия и закон любви* (Tom 37); *Круг чтения* (Tom 41), *На каждый день* (Tom 43–44); *Путь жизни* (Tom 45); *Война и мир* (Tom 9, 12), *Анна Каренина* (Tom 19), *Альберт* (Tom 5), *Смерть Ивана Ильича* (Tom 26), *Чем люди живы* (Tom 25), *Отец Сергий* (Tom 31), *Ходите в свете, пока есть свет* (Tom 26); Letters (Tom 64, 68, 70, 72, 73, 75, 81, 85, 88); Diaries (Tom 49, 51, 53, 54). Cross-language: *The Gospels in Brief*, trans. Aylmer Maude (Internet Archive, PD).
 
 **Background** — David Matual, *Tolstoy's Translation of the Gospels: A Critical Study* (Edwin Mellen, 1992); Richard F. Gustafson, *Leo Tolstoy: Resident and Stranger* (Princeton, 1986); Inessa Medzhibovskaya, *Tolstoy and the Religious Culture of His Time* (Lexington, 2008); Rosamund Bartlett, *Tolstoy: A Russian Life* (2010); A. N. Wilson, *Tolstoy* (1988); Donna Orwin, *Tolstoy's Art and Thought, 1847–1880* (Princeton, 1993); Christian Bartolf & Dietmar Miething, "Flame of Truth: the global significance of Doukhobor Pacifism," *Russian Journal of Church History* (2023); Caleb Thompson, "Wittgenstein, Tolstoy and the Meaning of Life," *Philosophical Investigations* (1997); Leo Tolstoy, *The Gospel in Brief*, trans. Aylmer Maude (1921) and trans. Dustin Condren (HarperCollins, 2011).
 

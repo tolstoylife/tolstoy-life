@@ -225,6 +225,48 @@ evidence:
       is collapsed into a single identity: reason = life = light, opposed to the darkness of the flesh.
     facsimile: null
 
+  - id: brief-luke12-49
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      Лук. XII, 49. Учение мое, как огонь, запалит мир.
+    quoteEn: >-
+      Luke XII, 49. My teaching, like fire, will set the world ablaze. (working English)
+    significance: >-
+      The CONDENSED Gospel in Brief collapses Luke 12:49: the first-person yearning ("how I wish it
+      were kindled") is gone, "I" becomes "my teaching", the metaphor becomes a simile, and the verse
+      is folded straight into the prophecy of discord (раздор). Set against the full harmony
+      (harm-luke12-49), where Tolstoy keeps «и как желаю» and amplifies it into the spark of
+      God-consciousness, the abridgement loses the inner longing. The same compression appears in the
+      English (Maude) and French (abrege-luke12-49) condensations. See the cross-language comparison.
+    facsimile: null
+
+  - id: abrege-luke12-49
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "941–969"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_941_969_Abrege_de_lEvangile.txt
+    quoteRu: >-
+      Mon enseignement est comme le feu jeté dans le monde. Il fera beaucoup de ravages
+    quoteEn: >-
+      My teaching is like fire thrown into the world. It will do great damage [before it sets all men ablaze]. (working English) — source text is French
+    significance: >-
+      The French Abrégé de l'Évangile (Tolstoy's own condensed redaction) renders Luke 12:49 like the
+      condensed Russian — no first-person yearning, fire as a simile for the teaching — but adds a
+      harsher note the Russian omits: the fire «fera beaucoup de ravages» (will do great damage)
+      before it envelops all humanity. Across all three languages the condensation subordinates the
+      verse to the division-of-households sequence; only the full harmony keeps the longing. The
+      quoteRu field holds French here (the evidence is cross-language); byte-verified against the extract.
+    facsimile: null
+
   # ===== B. THE CREDO + RELIGIOUS PROSE ===========================================
 
   - id: vera-credo
@@ -709,7 +751,7 @@ evidence:
   - id: letter-yushko-1900
     genre: letters
     pssTom: 72
-    pages: "403"
+    pages: "490–492"
     date: 1900-10-19
     addressee: A. V. Yushko
     localPdf: primary-sources/jubilee-edition/vol36/vol36.pdf
@@ -775,12 +817,12 @@ evidence:
       (via Chertkov), 1904 — showing the metaphor moving between public essay and private exhortation.
     facsimile: null
 
-  - id: letter-sofia-1886
+  - id: letter-chertkov-1886
     genre: letters
     pssTom: 85
-    pages: "125"
+    pages: "421–426"
     date: 1886
-    addressee: S. A. Tolstaya
+    addressee: V. G. Chertkov
     localPdf: primary-sources/jubilee-edition/vol44/vol44.pdf
     extract: extracts/v85_125_a17_18.txt
     quoteRu: >-
@@ -788,9 +830,11 @@ evidence:
     quoteEn: >-
       amid the darkness sparks are now catching fire. I see them and rejoice. (working English)
     significance: >-
-      To his wife, in the domestic register: "amid the darkness sparks are now catching fire." Both
-      axes in one line. (The surrounding letter is extractor-degraded; this fragment is clean — see
-      needsReview.)
+      To V. G. Chertkov — PSS Tom 85 is the Chertkov correspondence (this row was earlier mislabelled
+      a letter to S. A. Tolstaya; corrected on PDF-collation). "Amid the darkness sparks are now
+      catching fire" — both axes in one line. PDF-collated (vol44, printed p.421): the print reads
+      «То тамъ, то здѣсь среди тьмы теперь загораются искры. Я ихъ вижу и радуюсь» — the TEI extract
+      drops «тамъ… здѣсь» and «ихъ» (the working English's "I see them" already restores the «ихъ»).
     facsimile: null
 
   # ===== F. THE METAPHOR IN THE DIARIES ===========================================
@@ -862,6 +906,8 @@ evidence:
     significance: >-
       The soul as a divine spark that IS truth; the spiritual task is only to clear away what darkens
       it. (The surrounding entry is extractor-degraded; this clause is clean — see needsReview.)
+      PDF-collated (vol20, printed p.194): the print reads «потому что душа человѣка есть божеская
+      искра, сама истина» — the TEI extract drops «человѣка» (the soul OF MAN).
     facsimile: null
 
   # ===== G. THE METAPHOR IN THE FICTION + CIRCLE OF READING ========================
@@ -935,6 +981,153 @@ evidence:
       consciousness — inner illumination ranked above all external learning.
     facsimile: null
 
+  - id: ivan-ilyich-light-darkness
+    genre: fiction
+    pssTom: 26
+    pages: "61–113"
+    date: 1886
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol86/vol86.pdf
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: >-
+      То свет был, а теперь мрак.
+    quoteEn: >-
+      Once there was light, and now there is darkness. (working English)
+    significance: >-
+      The Death of Ivan Ilyich. At the moment Ivan Ilyich admits he is dying, life is light and death
+      its extinction: «То свет был, а теперь мрак» — once light, now darkness. The light axis in the
+      fiction, on the threshold of the religious turn.
+    facsimile: null
+
+  - id: father-sergius-light-dimming
+    genre: fiction
+    pssTom: 31
+    pages: "5–46"
+    date: 1898
+    addressee: null
+    localPdf: null
+    extract: extracts/v31_005_046_Otets_Sergij.txt
+    quoteRu: >-
+      Он думал о том, что он был светильник горящий, и чем больше он чувствовал это, тем больше он чувствовал ослабление, потухание божеского света истины, горящего в нем.
+    quoteEn: >-
+      He thought that he was a burning lamp, and the more he felt this, the more he felt the weakening, the dying-out of the divine light of truth burning within him. (working English)
+    significance: >-
+      Father Sergius. The «светильник горящий» (burning lamp, John 5:35) whose «божеский свет истины»
+      — the divine light of truth — dims the more he performs his holiness for people. The light =
+      truth equation dramatized as a moral danger. NOTE: Tom 31 has no resolved Tom→local-PDF mapping
+      (the open TODO in pss-volume-mapping.md), so localPdf is null — quote is from the TEI extract only.
+    facsimile: null
+
+  - id: what-men-live-by-light
+    genre: fiction
+    pssTom: 25
+    pages: "7–25"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_007_025_Chem_ljudi_zhivy.txt
+    quoteRu: >-
+      И видят хозяева, что от Михайлы свет идет.
+    quoteEn: >-
+      And the masters see that light comes from Mikhaila. (working English)
+    significance: >-
+      What Men Live By. When the angel Mikhaila grasps the third truth his disguise falls away and
+      "light comes from him" — divine light as the visible sign of understanding. The folk-tale
+      register of the same light-from-within Tolstoy theorizes in the treatises.
+    facsimile: null
+
+  - id: hodite-fire-wood
+    genre: fiction
+    pssTom: 26
+    pages: "250–301"
+    date: 1887
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol86/vol86.pdf
+    extract: extracts/v26_250_301_Hodite_v_svete_poka_est_svet.txt
+    quoteRu: >-
+      как огонь никогда не потухнет, когда на него подкладывают дрова. В этом-то и вера.
+    quoteEn: >-
+      as a fire never goes out when wood is laid on it. That is exactly what faith is. (working English)
+    significance: >-
+      Walk in the Light While There Is Light (Ходите в свете, пока есть свет — the title itself is
+      John 12:35). Pamphilius answers that the Christians' way never weakens but grows stronger «как
+      огонь никогда не потухнет, когда на него подкладывают дрова» — as a fire never goes out when wood
+      is laid on it. Fire as the self-sustaining life of conscience; the story's frame is the light of
+      John's Gospel.
+    facsimile: null
+
+  - id: nakazhdyj-truth-is-fire
+    genre: krug_chtenija
+    pssTom: 44
+    pages: "3–390"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol12/vol12.pdf
+    extract: extracts/v44_003_390_Na_kazhdyj_den_Chast_vtoraja.txt
+    quoteRu: >-
+      Как огонь не бывает немножко горячий, немножко холодный, а бывает огонь только тогда, когда он жжет, так и истина не бывает немножко истина, немножко ложь, а всегда истина
+    quoteEn: >-
+      As fire is never a little hot, a little cold, but is fire only when it burns, so truth is never a little truth, a little falsehood, but is always truth. (working English)
+    significance: >-
+      On Every Day (На каждый день). The credo's fire-image recast as a maxim on truth: fire is only
+      fire when it burns, and truth only truth when it shows what is — the exact sibling of the What I
+      Believe credo (vera-credo), rewritten for the daily-reading anthology.
+    facsimile: null
+
+  - id: nakazhdyj-one-fire
+    genre: krug_chtenija
+    pssTom: 44
+    pages: "3–390"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol12/vol12.pdf
+    extract: extracts/v44_003_390_Na_kazhdyj_den_Chast_vtoraja.txt
+    quoteRu: >-
+      огонь в печи, на пожаре, в свече неравны между собою. В каждом человеке живет дух Божий.
+    quoteEn: >-
+      fire in a stove, in a conflagration, in a candle [are not] unequal to one another. In every person lives the spirit of God. (working English)
+    significance: >-
+      On Every Day. Human equality argued through the unity of fire: to call people unequal is to call
+      the fire in a stove, a bonfire and a candle unequal — it is one fire, the spirit of God, more or
+      less kindled in each. The fire metaphor doing ethical-political work.
+    facsimile: null
+
+  - id: nakazhdyj-brushwood
+    genre: krug_chtenija
+    pssTom: 44
+    pages: "3–390"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol12/vol12.pdf
+    extract: extracts/v44_003_390_Na_kazhdyj_den_Chast_vtoraja.txt
+    quoteRu: >-
+      истина христианства, как огонь в костре, который, заглушенный на время наваленным сырым хворостом, уже высушил сырые прутья, начинает охватывать их и выбиваться наружу.
+    quoteEn: >-
+      the truth of Christianity, like a fire in a bonfire which, smothered for a time by piled-on damp brushwood, has already dried the wet twigs and begins to catch them and break out. (working English)
+    significance: >-
+      On Every Day. The same image as zakon-dry-wood (Law of Violence): church distortion is wet
+      brushwood smothering the fire of Christianity, which dries the twigs and breaks out anyway — the
+      truth's irrepressibility, in the anthology's compressed register.
+    facsimile: null
+
+  - id: nakazhdyj-light-of-reason
+    genre: krug_chtenija
+    pssTom: 43
+    pages: "3–361"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol11/vol11.pdf
+    extract: extracts/v43_003_361_Na_kazhdyj_den_Chast_pervaja.txt
+    quoteRu: >-
+      Нет в человеке ничего драгоценнее, нужнее ему света разума.
+    quoteEn: >-
+      There is nothing in a person more precious, more needful to him, than the light of reason. (working English)
+    significance: >-
+      On Every Day, part 1. The light-of-reason equation stated as a maxim — nothing is more precious
+      than свет разума — set just before Tolstoy's attack on intoxicants as the deliberate dimming of
+      that light. The light axis (vera-light-is-reason, ozhizni-svet-solntsa-razuma) in didactic form.
+    facsimile: null
+
 # ---------------------------------------------------------------------------------------------
 # Layer 2 — entities (ingestion routing map → vault). ingestionPriority: 1 central, 2 supporting,
 # 3 peripheral. vaultStatus checked against website/src/works/ and website/src/wiki/ on 2026-06-03.
@@ -947,7 +1140,7 @@ entities:
     vaultStatus: missing
     role: "The text where Tolstoy rewrites the Bible's fire/light language; the special-attention source"
     sources: []
-    evidenceRefs: [harm-light-is-reason, harm-john1-logos, harm-john1-5, harm-luke12-49, harm-luke12-49-commentary, harm-luke12-50, harm-matt3-11, harm-matt25-41, harm-gehenna-gloss, brief-light-truth, brief-life-is-light]
+    evidenceRefs: [harm-light-is-reason, harm-john1-logos, harm-john1-5, harm-luke12-49, harm-luke12-49-commentary, harm-luke12-50, harm-matt3-11, harm-matt25-41, harm-gehenna-gloss, brief-light-truth, brief-life-is-light, brief-luke12-49, abrege-luke12-49]
     ingestionPriority: 1
     dependsOn: []
 
@@ -1060,6 +1253,56 @@ entities:
     evidenceRefs: [vera-credo]
     ingestionPriority: 3
     dependsOn: []
+
+  - name: "On Every Day (На каждый день)"
+    wikiType: work
+    wikilinkTarget: "Na kazhdyj den"
+    vaultStatus: missing
+    role: "The daily-wisdom anthology (1906–10) that recasts the fire/light credo as maxims (truth-is-fire, one-fire-equality, light of reason)"
+    sources: []
+    evidenceRefs: [nakazhdyj-truth-is-fire, nakazhdyj-one-fire, nakazhdyj-brushwood, nakazhdyj-light-of-reason]
+    ingestionPriority: 2
+    dependsOn: ["Fire of conscience (the Luke 12:49 motif)", "Light of reason (свет разума)"]
+
+  - name: "The Death of Ivan Ilyich (Смерть Ивана Ильича)"
+    wikiType: work
+    wikilinkTarget: "Smert Ivana Ilicha"
+    vaultStatus: missing
+    role: "Fiction: life as light, death as its extinction («То свет был, а теперь мрак»)"
+    sources: []
+    evidenceRefs: [ivan-ilyich-light-darkness]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "What Men Live By (Чем люди живы)"
+    wikiType: work
+    wikilinkTarget: "Chem ljudi zhivy"
+    vaultStatus: missing
+    role: "Folk-tale: the angel emits divine light when he understands («от Михайлы свет идет»)"
+    sources: []
+    evidenceRefs: [what-men-live-by-light]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Father Sergius (Отец Сергий)"
+    wikiType: work
+    wikilinkTarget: "Otets Sergij"
+    vaultStatus: missing
+    role: "Fiction: the burning lamp whose «божеский свет истины» dims when holiness is performed for people"
+    sources: []
+    evidenceRefs: [father-sergius-light-dimming]
+    ingestionPriority: 3
+    dependsOn: ["Light of reason (свет разума)"]
+
+  - name: "Walk in the Light While There Is Light (Ходите в свете, пока есть свет)"
+    wikiType: work
+    wikilinkTarget: "Hodite v svete poka est svet"
+    vaultStatus: missing
+    role: "Fiction whose title is John 12:35; faith as a fire kept alive by adding wood"
+    sources: []
+    evidenceRefs: [hodite-fire-wood]
+    ingestionPriority: 3
+    dependsOn: ["Fire of conscience (the Luke 12:49 motif)"]
 
 # ---------------------------------------------------------------------------------------------
 # Layer 3 — visuals. visuals/ is git-ignored (local cache); extracts/ is committed (PD only).
@@ -1187,6 +1430,10 @@ scholarship:
       conventionalView: "What I Believe is recognized as central, but the fire+light credo at its close is not cited or analysed in the accessible scholarship — a sharp gap in a widely-read text."
       relation: extends
       source: "(no accessible secondary source treats the passage)"
+    - evidenceRef: brief-luke12-49
+      conventionalView: "Scholarship treats The Gospel in Brief as a condensation of the full harmony (Matual 1992) but does not compare the Luke 12:49 fire rendering across redactions."
+      relation: extends
+      source: "Matual, Tolstoy's Translation of the Gospels (1992); collated here against the full harmony, the Maude English, and the French Abrégé"
 
 # ---------------------------------------------------------------------------------------------
 # Intra-corpus contradictions (primary-vs-primary) — distinct from scholarship.
@@ -1208,19 +1455,29 @@ contradictions:
 
 # ---------------------------------------------------------------------------------------------
 notCovered:
-  - "Tom 44 (На каждый день) and Tom 43-44 (Круг чтения full year) — the daily-wisdom anthologies hold many more fire/light aphorisms (e.g. v44 'бывает огонь только тогда, когда он жжет, так и истина'); only a sample entered."
-  - "Fiction beyond the sampled keystones: Resurrection (Воскресение), Father Sergius (light-of-truth crisis, sampled but not entered), Ходите в свете, пока есть свет (the title itself is John 12:35), What Men Live By ('от Михайлы свет идет'), Master and Man — a fuller fiction pass remains."
-  - "Death of Ivan Ilyich 'то свет был, а теперь мрак' (Tom 26) — verified, strong, not entered as a row to keep the fiction set tight."
-  - "The spark/искра side-imagery and candle/lamp/светильник imagery were de-scoped per the agreed 'fire + light axis' (candle/spark/lamp side-imagery excluded), so 'Свечка' (The Candle, Tom 25) and искра-Божия threads are only touched where they intersect the fire."
-  - "The French Abrégé de l'Évangile (Tom 24) and the English The Gospel in Brief (1896 Free Age Press) — translation-comparison across languages not pursued."
+  - "Круг чтения proper (Tom 41–42, 444 daily files) — the 2026-06-03 follow-up swept it: ~34 files carry a fire-term and ~17 a light-of-reason/truth fusion, but the hits are sparse and scattered and were NOT exhaustively entered. The four richest daily-wisdom maxims, all from the denser На каждый день (Tom 43–44), were entered (nakazhdyj-*). A full Круг чтения pass remains."
+  - "Master and Man (Хозяин и работник) and a full reading of Resurrection (Воскресение) remain. The follow-up spot-checked Resurrection and Hadji Murat and found only literal/incidental fire (sunburn 'загорелый', lighting a pipe, 'свечу зажги') — no keystone-grade fire/light metaphor — so neither yielded an evidence row."
+  - "The spark/искра side-imagery and candle/lamp/светильник imagery remain de-scoped per the agreed 'fire + light axis', so 'Свечка' (The Candle, Tom 25) and искра-Божия threads are only touched where they intersect the fire (the entered Father Sergius 'светильник горящий' and На каждый день 'огонь… в свече' rows cross that line only because the light-of-truth / one-fire point is central, not the lamp itself)."
 
 needsReview:
   - item: "Bethink Yourselves coda translation variant: RU 'не будем противиться, а будем служить ему' vs the Swedish edition's 'let us not extinguish it, but spread and sustain it'."
     phase: 2
     why: "Determine whether the Swedish translator paraphrased or worked from a different redaction; affects how the keystone is quoted on the public site."
-  - item: "Pre-reform / extractor-degraded entries: letter-yushko-1900 (Tom 72, pre-reform orthography preserved), letter-sofia-1886 (Tom 85), diary-1903-divine-spark (Tom 54), and the 1896 diary 'блюдение огня' passage (Tom 53, lacuna)."
+  - item: "Pre-reform / extractor-degraded entries — PDF-COLLATED 2026-06-03. quoteRu fields are kept verbatim against the TEI extracts (so verify_quotes stays green); the print readings below are the ingestion-grade text. extract_tei.py drops pre-reform <choice> word-pairs (known gap), so for wiki ingestion use the PSS print, not the TEI fragment."
     phase: 2
-    why: "extract_tei.py drops pre-reform <choice> word-pairs (known gap). The quoted fragments are clean and verbatim, but the FULL sentences must be PDF-collated against vol36/vol44/vol20/vol19 before wiki ingestion."
+    why: >-
+      (1) letter-yushko-1900 (Tom 72 → local vol36.pdf, printed p.490) — the quoted pre-reform sentence «Всѣ мы
+      разбросаны, какъ огни, кот[орые] зажигаютъ степь…» is already the COMPLETE, verbatim sentence;
+      dossier page corrected 403→490–492. (2) letter-chertkov-1886 (Tom 85 → local vol44.pdf, printed p.421) — print reads
+      «То тамъ, то здѣсь среди тьмы теперь загораются искры. Я ихъ вижу и радуюсь»; the TEI extract
+      drops «тамъ… здѣсь» and «ихъ»; addressee corrected S. A. Tolstaya → V. G. Chertkov (Tom 85 is the
+      Chertkov correspondence). (3) diary-1903-divine-spark (Tom 54 → local vol20.pdf, printed p.194) — print «…потому что
+      душа человѣка есть божеская искра, сама истина»; the TEI drops «человѣка». (4) The 1896 «блюдение
+      огня» entry (Tom 53 → local vol19.pdf, printed p.121) — the TEI extract garbles it; the print has a clean, strong
+      fire passage: «…можно сравнить с блюдением огня, данного с неба и зажженного. Дело мое только в
+      том, чтобы блюсти и разжигать в себе этот огонь, не тратя материала этого огня…» — a good
+      candidate for a future ingestion row (not entered here, since it is not byte-verifiable against
+      the degraded TEI extract; the figure also reads the soul as a heaven-given fire to be tended)."
   - item: "No openly-licensed image of the Doukhobor Burning of Arms (1895)."
     phase: 2
     why: "Thematically central but unavailable PD; would need a Doukhobor Heritage / Tarasoff-estate request, or use the PD Christian Martyrdom in Russia pamphlet."
@@ -1234,11 +1491,13 @@ archivesConsulted:
   - "Wikimedia Commons (late-period Tolstoy photographs, Ge portrait, Moscow-fire paintings) — PD verified via extmetadata"
   - "Doukhobor Heritage (doukhobor.org), Library and Archives Canada — Burning of Arms image search (no PD image found)"
   - "Internet Archive — The Four Gospels Harmonized and Translated (1898) and Christian Martyrdom in Russia (PD)"
+  - "2026-06-03 follow-up: krug_chtenija/ (444 daily files, Tom 41–42) + works/ На каждый день (Tom 43–44) anthology sweep; works/v24_941_969_Abrege_de_lEvangile.xml (French); local archive-org The Gospels in Brief (Maude, PD); Resurrection + Hadji Murat fiction spot-check"
 
 references:
   primary:
     - "Л. Н. Толстой, Соединение и перевод четырёх Евангелий (ПСС Т. 24)"
-    - "Л. Н. Толстой, Краткое изложение Евангелия (ПСС Т. 24)"
+    - "Л. Н. Толстой, Краткое изложение Евангелия (ПСС Т. 24); Abrégé de l'Évangile (French, ПСС Т. 24)"
+    - "Л. Н. Толстой, На каждый день, ч. 1–2 (ПСС Т. 43–44); Смерть Ивана Ильича (Т. 26); Чем люди живы (Т. 25); Отец Сергий (Т. 31); Ходите в свете, пока есть свет (Т. 26)"
     - "Л. Н. Толстой, В чём моя вера? (ПСС Т. 23)"
     - "Л. Н. Толстой, Исповедь; Исследование догматического богословия (ПСС Т. 23)"
     - "Л. Н. Толстой, Царство Божие внутри вас (ПСС Т. 28); Одумайтесь! (ПСС Т. 36)"
