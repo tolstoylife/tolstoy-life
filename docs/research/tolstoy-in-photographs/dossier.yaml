@@ -1,0 +1,842 @@
+topic:
+  slug: tolstoy-in-photographs
+  title: "Tolstoy in photographs: the photographic record of Tolstoy and his circle, 1856–1910"
+  question: >-
+    How were Tolstoy, his family and circle, and his places photographed — when was each
+    major photograph actually taken, do high-quality versions survive, are they public-domain
+    or institution-controlled, and how did Tolstoy himself behave while being photographed,
+    in his own letters and diaries?
+  date: 2026-06-03
+  period: "1856–1910 (post-1880 first-class)"
+  corpusSurface: "letters (Toms 59–90, first-class), diaries (Toms 46–58), with What Is Art? and prefaces as context"
+  dateRange: "1850-12-26 … 1910-09-25"
+
+evidence:
+  # ---------------- LETTERS ----------------
+  - id: v61_444_M_N_Tolstoj
+    genre: letter
+    pssTom: 61
+    pages: "372–374"
+    date: "1856-04-14"
+    addressee: "M. N. Tolstaya (sister)"
+    localPdf: primary-sources/jubilee-edition/vol61/vol61.pdf
+    extract: extracts/v61_444_M_N_Tolstoj.txt
+    quoteRu: "по моему предложению, все литераторы сделали фотографическую группу"
+    quoteEn: "at my proposal, all the literary men had a photographic group made (working English)"
+    significance: >-
+      Tolstoy states HE proposed the famous 1856 St-Petersburg group photograph of the
+      Sovremennik writers (Turgenev, Grigorovich, Druzhinin, Goncharov, Ostrovsky and himself),
+      and promises to send his sister a copy. The earliest photographic event in the corpus, and
+      a corpus-grounded correction to popular sources that credit the idea to Sofia (married only
+      1862). Photographer was S. L. Levitsky.
+    facsimile: null
+  - id: v62_490_A_S_Suvorinu
+    genre: letter
+    pssTom: 62
+    pages: "472"
+    date: "1879-02-13"
+    addressee: "A. S. Suvorin"
+    localPdf: primary-sources/jubilee-edition/vol62/vol62.pdf
+    extract: extracts/v62_490_A_S_Suvorinu.txt
+    quoteRu: "Даю свое согласие на то, чтобы П. М. Третьяков"
+    quoteEn: "I give my consent that P. M. Tretyakov [permit a photographic copy to be made…] (working English)"
+    significance: >-
+      A consent-form letter; the clean body opens only as quoted. PSS apparatus (Tom 62) records
+      that the consent is to PHOTOGRAPH the Kramskoy oil portrait in the Tretyakov collection — a
+      work-around because Tolstoy had declined to sit for his own photograph. An early instance of
+      photographic reluctance; the photographic specifics live in the editorial note (attributed,
+      not quoted as Tolstoy's verbatim words).
+    facsimile: null
+  - id: v67_250_S_I_Plaksinu
+    genre: letter
+    pssTom: 67
+    pages: "244"
+    date: "1894-10-17"
+    addressee: "S. I. Plaksin"
+    localPdf: primary-sources/jubilee-edition/vol67/vol67.pdf
+    extract: extracts/v67_250_S_I_Plaksinu.txt
+    quoteRu: "в письме вашем конверт для фотографической карточки. Если дело в карточке, то я очень рад"
+    quoteEn: "in your letter an envelope for a photographic card. If it is the card you want, I am very glad (working English)"
+    significance: >-
+      Tolstoy readily agrees to send a фотографическая карточка for a calendar, while refusing the
+      requested article — the pragmatic, willing register of card-sending, set against his refusals
+      of sittings.
+    facsimile: null
+  - id: v69_135_a
+    genre: letter
+    pssTom: 69
+    pages: "161"
+    date: "1896-10-10"
+    addressee: "T. L. Tolstaya (daughter Tanya)"
+    localPdf: primary-sources/jubilee-edition/vol69/vol69.pdf
+    extract: extracts/v69_135_a.txt
+    quoteRu: "Мама целый день занимается фотографией. Она сняла несколько раз Козловку и группу нас всех."
+    quoteEn: "Mama spends the whole day on photography. She photographed Kozlovka [station] several times, and a group of all of us. (working English)"
+    significance: >-
+      A dated record (10–11 Oct 1896) of Sofia Andreevna photographing at Yasnaya Polyana — the
+      station at Kozlovka and a family group — in Tolstoy's own hand. Grounds the scholarly picture
+      of Sofia as a prolific domestic photographer (~1,000 photographs from the late 1880s).
+    facsimile: null
+  - id: v76_113_T_A_Kuzminskoj
+    genre: letter
+    pssTom: 76
+    pages: "80"
+    date: "1906-01-11"
+    addressee: "T. A. Kuzminskaya (Sofia's sister)"
+    localPdf: primary-sources/jubilee-edition/vol76/vol76.pdf
+    extract: extracts/v76_113_T_A_Kuzminskoj.txt
+    quoteRu: "я нашел, что неприятно посылать открытую карточку с портретом. Вложил в конверт"
+    quoteEn: "I found it unpleasant to send an open card bearing a portrait. I put it in an envelope (working English)"
+    significance: >-
+      A precise behaviour note: Tolstoy intercepts a postcard Sofia had prepared bearing his own
+      portrait and, finding it distasteful to send his face openly, encloses it in an envelope. A
+      small, dated act of resistance to the circulation of his image.
+    facsimile: null
+  - id: v78_067_T_L_Suxotiioi
+    genre: letter
+    pssTom: 78
+    pages: "79–80"
+    date: "1908-03-10"
+    addressee: "T. L. Sukhotina (daughter Tanya)"
+    localPdf: primary-sources/jubilee-edition/vol78/vol78.pdf
+    extract: extracts/v78_067_T_L_Suxotiioi.txt
+    quoteRu: "карточки подписанные прилагаю"
+    quoteEn: "I enclose the signed cards (working English)"
+    significance: >-
+      In the jubilee run-up Tolstoy signs and sends portrait cards on his daughter's commission —
+      the same letter speaks of "the noise being made around my signboard" (шум … вокруг моей
+      вывески). Cooperation and distaste in one breath.
+    facsimile: null
+  - id: v78_213_V_A_Molochnikovu
+    genre: letter
+    pssTom: 78
+    pages: "191"
+    date: "1908-07-23"
+    addressee: "V. A. Molochnikov"
+    localPdf: primary-sources/jubilee-edition/vol78/vol78.pdf
+    extract: extracts/v78_213_V_A_Molochnikovu.txt
+    quoteRu: "Не прислал до сих пор карточки потому, что забыл, а забыл потому, что не могу приписать этому значения"
+    quoteEn: "I have not sent the card until now because I forgot, and I forgot because I cannot attach any importance to it (working English)"
+    significance: >-
+      The clearest single statement of Tolstoy's indifference to his own photographic image, dated
+      to his 80th-jubilee year. A keystone behaviour quote.
+    facsimile: null
+  - id: v84_645_a12
+    genre: letter
+    pssTom: 84
+    pages: "246–247"
+    date: "1895-11-12"
+    addressee: "S. A. Tolstaya (wife)"
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v84_645_a12.txt
+    quoteRu: "Смотрел фотографию семьи: как Андрюша похож был на Ваничку."
+    quoteEn: "I looked at the family photograph: how like Vanichka Andryusha was. (working English)"
+    significance: >-
+      Tolstoy reading a family photograph emotionally — the resemblance of his son Andryusha to
+      little Vanichka (who would die in Feb 1895). The photograph as private memory, not public icon.
+    facsimile: null
+  - id: v84_705_a30
+    genre: letter
+    pssTom: 84
+    pages: "309–310"
+    date: "1898-04-30"
+    addressee: "S. A. Tolstaya (wife)"
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v84_705_a30.txt
+    quoteRu: "Миша обещал мне сходить в фотографию на Тверской, подле Филиппова, и спросить у ретушера Краснова"
+    quoteEn: "Misha promised to go to the photographer's on Tverskaya, next to Filippov's, and ask the retoucher Krasnov (working English)"
+    significance: >-
+      Names a concrete Moscow photographic studio (Tverskaya St, next to Filippov's bakery) and a
+      named retoucher, Krasnov — the everyday infrastructure of portrait photography around the
+      Khamovniki household.
+    facsimile: null
+  - id: v84_805_a30
+    genre: letter
+    pssTom: 84
+    pages: "382"
+    date: "1908-03-30"
+    addressee: "S. A. Tolstaya (wife)"
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v84_805_a30.txt
+    quoteRu: "Прости, что не сам решил, а утруждаю тебя."
+    quoteEn: "Forgive me for not deciding myself but troubling you (working English)"
+    significance: >-
+      The covering note with which Tolstoy forwards Prokudin-Gorsky's proposal to come and make a
+      colour photograph to Sofia, leaving the decision to her. The photographic content (Prokudin's
+      name, "приехать снимать цветную фотографию", and the visit of 23 May 1908 OS) is in the PSS
+      apparatus (attributed, not quoted as Tolstoy's verbatim words).
+    facsimile: null
+  - id: v89_767_a26
+    genre: letter
+    pssTom: 89
+    pages: "46–48"
+    date: "1906-10-26"
+    addressee: "V. G. Chertkov"
+    localPdf: primary-sources/jubilee-edition/vol89/vol89.pdf
+    extract: extracts/v89_767_a26.txt
+    quoteRu: "Вы не можете представить себе, какой вред мне делают похвалы при моем тщеславии. Это пьянство."
+    quoteEn: "You cannot imagine what harm praise does me, given my vanity. It is drunkenness. (working English)"
+    significance: >-
+      Not a photograph per se, but the moral core of the image-cult theme in Tolstoy's own words —
+      the harm of being celebrated, addressed to the very man (Chertkov) who was systematically
+      photographing him for the public.
+    facsimile: null
+  - id: v89_852_sentyabrya26
+    genre: letter
+    pssTom: 89
+    pages: "143–146"
+    date: "1909-09-26"
+    addressee: "V. G. Chertkov"
+    localPdf: primary-sources/jubilee-edition/vol89/vol89.pdf
+    extract: extracts/v89_852_sentyabrya26.txt
+    quoteRu: "Фотографии Тапселя превосходны — нас с детьми."
+    quoteEn: "Tapsell's photographs are superb — of us with the children. (working English)"
+    significance: >-
+      Tolstoy praises photographs by Thomas Tapsell, the English photographer Chertkov brought from
+      England, showing Tolstoy with his grandchildren at Krekshino (PSS note: 18 Sept 1909). The same
+      letter notes "the cinematograph men were at our place" and his departure "came out splendidly"
+      — willing approval of Chertkov's controlled, sympathetic photography.
+    facsimile: null
+  - id: v89_852_kinematograf
+    genre: letter
+    pssTom: 89
+    pages: "143–146"
+    date: "1909-09-26"
+    addressee: "V. G. Chertkov"
+    localPdf: primary-sources/jubilee-edition/vol89/vol89.pdf
+    extract: extracts/v89_852_sentyabrya26.txt
+    quoteRu: "Кинематографщики были у нас и показывали всему народу, и наш отъезд вышел превосходно"
+    quoteEn: "The cinematograph men were at our place and showed [the film] to all the people, and our departure came out splendidly (working English)"
+    significance: >-
+      Tolstoy's own register of the moving-image record — approving when it is Chertkov's friendly
+      circle, contrasted with the diary's distaste for the press photographers who "pursued" him.
+    facsimile: null
+  # ---------------- DIARIES ----------------
+  - id: v50_030_030_1889_01_28
+    genre: diary
+    pssTom: 50
+    pages: "30"
+    date: "1889-01-28"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol50/vol50.pdf
+    extract: extracts/v50_030_030_1889_01_28.txt
+    quoteRu: "Потом к Покровскому отдать ему свои карточки. И было ужасно стыдно."
+    quoteEn: "Then to Pokrovsky to give him my [photo] cards. And it was terribly shameful. (working English)"
+    significance: >-
+      The shame register, precisely dated: handing out his own portrait cards felt "terribly
+      shameful". The earliest diary instance of the discomfort that recurs to 1910.
+    facsimile: null
+  - id: v52_019_020_1891_03_13
+    genre: diary
+    pssTom: 52
+    pages: "19–20"
+    date: "1891-03-13"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol52/vol52.pdf
+    extract: extracts/v52_019_020_1891_03_13.txt
+    quoteRu: "она разложила карточки всех детей, кроме Ванички, и гордится и любуется. Трогательно."
+    quoteEn: "she laid out the cards of all the children except Vanichka, and takes pride and delight in them. Touching. (working English)"
+    significance: >-
+      Sofia Andreevna's tender relation to the family photographs, seen by Tolstoy with affection —
+      the domestic, album side of the photographic record (cf. Reischl's Sofia/Chertkov contrast).
+    facsimile: null
+  - id: v53_002_002_1895_01_03
+    genre: diary
+    pssTom: 53
+    pages: "2"
+    date: "1895-01-03"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol53/vol53.pdf
+    extract: extracts/v53_002_002_1895_01_03.txt
+    quoteRu: "История с фотографией очень грустная. Все они оскорблены. Я написал письмо Черткову."
+    quoteEn: "The story with the photograph is very sad. They are all offended. I wrote a letter to Chertkov. (working English)"
+    significance: >-
+      Tolstoy's own verdict on the Dec-1894 group-photo affair (he was photographed with Chertkov
+      and four Tolstoyans in Moscow; Sofia seized and destroyed the negatives). The keystone of the
+      image-control struggle, in his hand. The vivid destruction detail (Sofia cutting his face from
+      the negatives with a diamond earring) is from Sofia's own account quoted in the PSS apparatus —
+      attributed, not Tolstoy's words.
+    facsimile: null
+  - id: v57_050_051_1909_04_19
+    genre: diary
+    pssTom: 57
+    pages: "50–51"
+    date: "1909-04-19"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol57/vol57.pdf
+    extract: extracts/v57_050_051_1909_04_19.txt
+    quoteRu: "проявление тщеславия при показывании карточки с картиной обо мне"
+    quoteEn: "a show of vanity in displaying the card with the picture about me (working English)"
+    significance: >-
+      Tolstoy reproaches himself with vanity over a card reproducing a picture of himself — the
+      self-critical underside of the cult of his image.
+    facsimile: null
+  - id: v57_079_079_1909_06_05
+    genre: diary
+    pssTom: 57
+    pages: "79"
+    date: "1909-06-05"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol57/vol57.pdf
+    extract: extracts/v57_079_079_1909_06_05.txt
+    quoteRu: "Приехал сын Джорджа с фотографом."
+    quoteEn: "Henry George's son arrived with a photographer. (working English)"
+    significance: >-
+      A dated, matter-of-fact visit (Henry George Jr.) with a photographer in tow — the ordinary
+      cadence of being photographed in the last years.
+    facsimile: null
+  - id: v57_141_142_1909_09_17
+    genre: diary
+    pssTom: 57
+    pages: "141–142"
+    date: "1909-09-17"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol57/vol57.pdf
+    extract: extracts/v57_141_142_1909_09_17.txt
+    quoteRu: "Неприятно и то, что вызывает сознание себя не божественного, а пакостного Льва Николаевича."
+    quoteEn: "Unpleasant, too, in that it arouses the consciousness of oneself as not the divine but the vile Lev Nikolaevich. (working English)"
+    significance: >-
+      The dive's most powerful behaviour quote: meeting a photographer and a cinematograph operator
+      makes Tolstoy feel like "the vile Lev Nikolaevich". The corpus supplies the subjective
+      vocabulary that scholarship records only behaviourally.
+    facsimile: null
+  - id: v57_142_143_1909_09_18
+    genre: diary
+    pssTom: 57
+    pages: "142–143"
+    date: "1909-09-18"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol57/vol57.pdf
+    extract: extracts/v57_142_143_1909_09_18.txt
+    quoteRu: "Кинематографщик и фотографы преследовали."
+    quoteEn: "The cinematograph man and photographers pursued [me]. (working English)"
+    significance: >-
+      The press camera as pursuit — the same Moscow trip where being recognised and greeted "arouses
+      a bad feeling of self-importance" (вызывает дурное чувство самомнения).
+    facsimile: null
+  - id: v56_130_132_1908_05_29
+    genre: diary
+    pssTom: 56
+    pages: "130–132"
+    date: "1908-05-29"
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol56/vol56.pdf
+    extract: extracts/v56_130_132_1908_05_29.txt
+    quoteRu: "Были еще фотографы"
+    quoteEn: "There were also photographers [present] (working English)"
+    significance: >-
+      Late-May 1908, days after Prokudin-Gorsky's colour session — "there were also photographers".
+      The digital text of this entry is OCR-corrupted (names dropped); quoted minimally and flagged
+      for PDF collation before ingestion.
+    facsimile: null
+
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "subject — the most-photographed Russian of his age; ambivalent sitter and occasional initiator"
+    sources: [jubilee-edition]
+    evidenceRefs: [v61_444_M_N_Tolstoj, v78_213_V_A_Molochnikovu, v57_141_142_1909_09_17]
+    ingestionPriority: 1
+  - name: "Sofia Andreevna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "prolific domestic photographer (~1,000 photos from late 1880s); destroyed the Dec-1894 negatives"
+    sources: [jubilee-edition]
+    evidenceRefs: [v69_135_a, v52_019_020_1891_03_13, v53_002_002_1895_01_03]
+    ingestionPriority: 1
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "built the largest photographic archive of Tolstoy; brought the photographer Tapsell; the public/prophet image-maker"
+    sources: [jubilee-edition]
+    evidenceRefs: [v53_002_002_1895_01_03, v89_767_a26, v89_852_sentyabrya26]
+    ingestionPriority: 1
+  - name: "Sergei Prokudin-Gorsky"
+    wikiType: person
+    wikilinkTarget: "Sergei Prokudin-Gorsky"
+    vaultStatus: missing
+    role: "made the only colour photograph of Tolstoy, Yasnaya Polyana, 23 May 1908 (OS)"
+    sources: [jubilee-edition]
+    evidenceRefs: [v84_805_a30]
+    ingestionPriority: 1
+    dependsOn: ["Leo Tolstoy"]
+  - name: "Karl Bulla"
+    wikiType: person
+    wikilinkTarget: "Karl Bulla"
+    vaultStatus: missing
+    role: "press photographer; the 1908 80th-jubilee portrait series at Yasnaya Polyana"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Leo Tolstoy"]
+  - name: "Sergei Levitsky"
+    wikiType: person
+    wikilinkTarget: "Sergei Levitsky"
+    vaultStatus: missing
+    role: "photographer of the 1856 Sovremennik writers' group portrait and an 1856 solo officer portrait"
+    sources: [jubilee-edition]
+    evidenceRefs: [v61_444_M_N_Tolstoj]
+    ingestionPriority: 2
+    dependsOn: ["Leo Tolstoy"]
+  - name: "Thomas Tapsell"
+    wikiType: person
+    wikilinkTarget: "Thomas Tapsell"
+    vaultStatus: missing
+    role: "English photographer brought by Chertkov; Krekshino 1909 photographs of Tolstoy with grandchildren; negatives at Leeds Russian Archive"
+    sources: [jubilee-edition]
+    evidenceRefs: [v89_852_sentyabrya26]
+    ingestionPriority: 2
+    dependsOn: ["Vladimir Chertkov"]
+  - name: "Aleksandr Drankov"
+    wikiType: person
+    wikilinkTarget: "Aleksandr Drankov"
+    vaultStatus: missing
+    role: "filmed Tolstoy's 80th jubilee (1908) with a hidden camera after being refused; early newsreel pioneer"
+    sources: []
+    evidenceRefs: [v57_141_142_1909_09_17]
+    ingestionPriority: 3
+    dependsOn: ["Leo Tolstoy"]
+  - name: "V. A. Molochnikov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Molochnikov"
+    vaultStatus: missing
+    role: "Tolstoyan correspondent; addressee of the 'cannot attach importance to it' card letter (1908)"
+    sources: [jubilee-edition]
+    evidenceRefs: [v78_213_V_A_Molochnikovu]
+    ingestionPriority: 3
+    dependsOn: ["Leo Tolstoy"]
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "principal photographic location; an estate 'фотография' (photo room) attested by 1862; the 1908 sessions"
+    sources: [jubilee-edition]
+    evidenceRefs: [v69_135_a, v89_852_sentyabrya26]
+    ingestionPriority: 2
+  - name: "Krekshino"
+    wikiType: place
+    wikilinkTarget: "Krekshino"
+    vaultStatus: missing
+    role: "Pashkov estate; site of Tapsell's Sept-1909 photographs of Tolstoy and grandchildren and of the filmed departure"
+    sources: [jubilee-edition]
+    evidenceRefs: [v89_852_sentyabrya26]
+    ingestionPriority: 3
+  - name: "Astapovo"
+    wikiType: place
+    wikilinkTarget: "Astapovo"
+    vaultStatus: exists
+    role: "station where Tolstoy died (7 Nov 1910 OS); the most heavily photographed/filmed event of his life"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "State Museum of L. N. Tolstoy (Moscow)"
+    wikiType: institution
+    wikilinkTarget: "State Museum of Leo Tolstoy"
+    vaultStatus: missing
+    role: "largest holder of Tolstoy photographs (~12,000 of him); holds the Chertkov print series"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Chertkov–Tapsell photographic fond (Leeds Russian Archive LRA/MS 1381)"
+    wikiType: archival-fond
+    wikilinkTarget: "Leeds Russian Archive Chertkov Tapsell fond"
+    vaultStatus: missing
+    role: "Tuckton House / Free Age Press negatives and prints, incl. Tapsell's 1908 Yasnaya Polyana series"
+    sources: []
+    evidenceRefs: [v89_852_sentyabrya26]
+    ingestionPriority: 3
+  - name: "Karl Bulla negative collection (TsGAKFFD St Petersburg)"
+    wikiType: archival-fond
+    wikilinkTarget: "TsGAKFFD Bulla collection"
+    vaultStatus: missing
+    role: "glass negatives of the 1908 Tolstoy jubilee series; access-controlled"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Prokudin-Gorsky Collection (Library of Congress)"
+    wikiType: archival-fond
+    wikilinkTarget: "Prokudin-Gorsky Collection Library of Congress"
+    vaultStatus: missing
+    role: "high-resolution master of the 1908 colour Tolstoy portrait; 'no known restrictions on publication'"
+    sources: []
+    evidenceRefs: [v84_805_a30]
+    ingestionPriority: 3
+
+visuals:
+  - id: prokudin-tolstoy-1908
+    type: "photograph (colour)"
+    subject: "Tolstoy seated at Yasnaya Polyana — the only colour photograph of him"
+    relatedEntity: "Sergei Prokudin-Gorsky"
+    relatedEvidence: v84_805_a30
+    holding: "Library of Congress, Prokudin-Gorsky Collection (master); Commons mirror via State Tolstoy Museum digital catalogue"
+    archiveId: "LC-DIG-prokc-21885 (colour composite; cite as known — LoC not reachable to confirm)"
+    access: "online; LoC master hi-res; Commons copy 2167×3000"
+    rights: "Library of Congress: 'no known restrictions on publication'"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+    localPath: visuals/loc-prokudin-tolstoy-1908.jpg
+    note: "Date 23 May 1908 (OS) / 5 June (NS); a three-frame colour-separation composite. The keystone image."
+  - id: levitsky-sovremennik-1856
+    type: photograph
+    subject: "Sovremennik writers group: Goncharov, Turgenev, Tolstoy (in uniform), Grigorovich, Druzhinin, Ostrovsky"
+    relatedEntity: "Sergei Levitsky"
+    relatedEvidence: v61_444_M_N_Tolstoj
+    holding: "Wikimedia Commons; original State Museum of L. N. Tolstoy"
+    archiveId: null
+    access: "online 2500×2436"
+    rights: "Public domain (Levitsky d. 1898)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Russian_writers_by_Levitsky_1856.jpg"
+    localPath: visuals/commons-levitsky-sovremennik-1856.jpg
+    note: "The photograph Tolstoy says he proposed (15 Feb 1856)."
+  - id: early-1856-officer
+    type: photograph
+    subject: "Tolstoy as a young army officer (solo)"
+    relatedEntity: "Sergei Levitsky"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (book scan)"
+    archiveId: null
+    access: "online 1135×1506"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:1856._Л.Н.Толстой.jpg"
+    localPath: visuals/early-1856-officer-levitsky.jpg
+    note: "The youngest readily-available solo photographic portrait on Commons."
+  - id: early-1862-portrait
+    type: photograph
+    subject: "Tolstoy, wedding-period portrait (married Sept 1862)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; from Gallery of Russian Writers, 1901"
+    archiveId: null
+    access: "online 1630×2220"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:GRW237_Tolstoi_1862.jpg"
+    localPath: visuals/early-1862-portrait.jpg
+    note: "Genuine 1862 photographic portrait."
+  - id: sass-tolstoy-1880s
+    type: photograph
+    subject: "Tolstoy standing portrait in heavy coat, mid-career"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons (Sass studio, Moscow)"
+    archiveId: null
+    access: "online 2467×3362"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy,_portrait.jpg"
+    localPath: visuals/commons-sass-tolstoy-1880s.jpg
+    note: "c.1880–1886, before the long-beard phase."
+  - id: taylor-tolstoy-1897
+    type: photograph
+    subject: "Tolstoy seated formal portrait"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; original Library of Congress (37767u)"
+    archiveId: "LC 37767u"
+    access: "online 2156×2614"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    localPath: visuals/commons-taylor-tolstoy-1897.jpg
+    note: "Attributed to F. W. Taylor, 1897."
+  - id: scherer-nabholz-1901
+    type: photograph
+    subject: "Tolstoy studio portrait, full-length seated"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: v84_705_a30
+    holding: "Wikimedia Commons (Scherer & Nabholz, Moscow)"
+    archiveId: null
+    access: "online 1989×3072"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_Scherer_%26_Nabholz,_1901.jpg"
+    localPath: visuals/commons-scherer-nabholz-1901.jpg
+    note: "Scherer & Nabholz documented Tolstoy over ~25 years; cf. the Tverskaya-studio letter (1898)."
+  - id: bulla-tolstoy-1908
+    type: photograph
+    subject: "Tolstoy full-length standing portrait, 80th-jubilee series"
+    relatedEntity: "Karl Bulla"
+    relatedEvidence: v78_067_T_L_Suxotinoj
+    holding: "Wikimedia Commons; original State Museum of L. N. Tolstoy; negatives TsGAKFFD SPb"
+    archiveId: null
+    access: "online 2239×3000"
+    rights: "Public domain (Bulla d. 1929)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Bulla_Tolstoy.jpg"
+    localPath: visuals/commons-bulla-tolstoy-1908.jpg
+    note: "The glass negatives of the jubilee series are access-controlled at TsGAKFFD St Petersburg."
+  - id: bulla-tolstoy-horseback-1908
+    type: photograph
+    subject: "Tolstoy riding his horse Delir"
+    relatedEntity: "Karl Bulla"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; original tolstoymuseum.ru"
+    archiveId: null
+    access: "online 951×1280"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_riding_a_horse_(K._Bulla,_1908).jpg"
+    localPath: visuals/commons-bulla-tolstoy-horseback-1908.jpg
+    note: "1908."
+  - id: chertkov-tolstoy-granddaughter-1910
+    type: photograph
+    subject: "Tolstoy with granddaughter"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: v89_767_a26
+    holding: "Wikimedia Commons (via Christie's)"
+    archiveId: null
+    access: "online 2466×3200"
+    rights: "Public domain (Chertkov d. 1936)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_with_Granddaughter_by_Vladimir_Chertkov,_1910.jpg"
+    localPath: visuals/commons-chertkov-tolstoy-granddaughter-1910.jpg
+    note: "Example of Chertkov's intimate late portraits."
+  - id: chertkov-tolstoy-makovitsky
+    type: photograph
+    subject: "Tolstoy with his physician Dushan Makovitsky"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: null
+    access: "online 996×1280"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Dushan_Makovitsky.JPG"
+    localPath: visuals/commons-chertkov-tolstoy-makovitsky.jpg
+    note: "Chertkov photograph of the daily circle."
+  - id: tolstoy-gorky-yasnaya-1900
+    type: photograph
+    subject: "Tolstoy and Maxim Gorky at Yasnaya Polyana"
+    relatedEntity: "Sofia Andreevna Tolstaya"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: null
+    access: "online 2200×3156"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:1900_yasnaya_polyana-gorky_and_tolstoy.jpg"
+    localPath: visuals/commons-tolstoy-gorky-yasnaya-1900.jpg
+    note: "Attributed to Sofia Andreevna as photographer, 1900."
+  - id: tolstoy-chekhov
+    type: photograph
+    subject: "Tolstoy and Anton Chekhov (group, outdoor)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons"
+    archiveId: null
+    access: "online 3185×2022"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Anton_Chekhov.jpg"
+    localPath: visuals/commons-tolstoy-chekhov.jpg
+    note: "Likely Gaspra/Crimea 1901–02."
+  - id: tolstoy-sofia-yasnaya
+    type: photograph
+    subject: "Tolstoy and Sofia Andreevna at Yasnaya Polyana"
+    relatedEntity: "Sofia Andreevna Tolstaya"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; The American Review of Reviews, 1910"
+    archiveId: null
+    access: "online 2010×2480"
+    rights: "Public domain (c.1890 origin)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_and_his_wife_at_Yasnaya_Polyana_(The_American_Review_of_Reviews,_1910).jpg"
+    localPath: visuals/commons-tolstoy-sofia-yasnaya.jpg
+    note: "One of the few confirmed couple photographs on Commons."
+  - id: savelyev-tolstoy-library-1910
+    type: photograph
+    subject: "Tolstoy at the opening of the Savelyev library"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; russiainphoto.ru"
+    archiveId: null
+    access: "online 605×800"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Lev_Tolstoy_at_the_opening_of_the_library_Savelyev_1910.jpg"
+    localPath: visuals/commons-savelyev-tolstoy-library-1910.jpg
+    note: "31 Jan 1910 — among the last dateable photos before his departure."
+  - id: tolstoy-krekshino-1909
+    type: photograph
+    subject: "Tolstoy near Krekshino"
+    relatedEntity: "Thomas Tapsell"
+    relatedEvidence: v89_852_sentyabrya26
+    holding: "Wikimedia Commons (feb-web.ru)"
+    archiveId: null
+    access: "online 800×472 (low)"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_in_neighbourhood_of_Krekshino.jpg"
+    localPath: visuals/commons-tolstoy-krekshino-1909.jpg
+    note: "Commons dates it 5 Sept 1909; the PSS note dates the grandchildren photo 18 Sept — verify which frame."
+  - id: tolstoy-sofya-sep1910
+    type: photograph
+    subject: "Tolstoy and Sofya at Yasnaya Polyana, weeks before his flight"
+    relatedEntity: "Sofia Andreevna Tolstaya"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; from Biryukov's Life of Tolstoy"
+    archiveId: null
+    access: "online 1009×1652"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_and_wife_1910.jpg"
+    localPath: visuals/death-tolstoy-sofya-sep1910.jpg
+    note: "Attributed to Valentin Bulgakov, 23 Sept 1910 — among the last of the couple."
+  - id: death-statu-mortis-1910
+    type: photograph
+    subject: "Tolstoy on his deathbed, Astapovo station-master's house"
+    relatedEntity: "Astapovo"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; original Kozlova Zaseka Museum"
+    archiveId: null
+    access: "online 2752×1872 master"
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_in_statu_mortis.jpg"
+    localPath: visuals/death-statu-mortis-1910.jpg
+    note: "Death = 7 Nov 1910 OS / 20 Nov NS."
+  - id: death-met-funeral-album
+    type: "photograph (series, 6)"
+    subject: "Funeral and burial at Yasnaya Polyana: Astapovo station, cortège, peasants' deputation, wreath carts, the prepared grave, lowering the coffin"
+    relatedEntity: "Astapovo"
+    relatedEvidence: null
+    holding: "Wikimedia Commons; donated by The Metropolitan Museum of Art"
+    archiveId: "MET DP237973–DP238938"
+    access: "online; Commons masters 4000px"
+    rights: "CC0 (MET public-domain dedication)"
+    licence: CC0
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:The_Lowering_of_the_Coffin_into_the_Grave_with_Kneeling_Mourners_MET_DP237973.jpg"
+    localPath: "visuals/death-met-*.jpg (6 files)"
+    note: "A coherent CC0 funeral sequence; the coffin-lowering is dated 9 Nov 1910 OS (burial day)."
+  - id: moving-image-record
+    type: "film (newsreel) — documented, not downloaded"
+    subject: "Drankov's 1908 hidden-camera jubilee footage; Pathé/Mundviller 1909 station departure; the 1910 death-and-funeral newsreels"
+    relatedEntity: "Aleksandr Drankov"
+    relatedEvidence: v89_852_kinematograf
+    holding: "Russian State Documentary Film & Photo Archive (RGAKFD), Krasnogorsk; sold via net-film.ru; some on Commons/YouTube"
+    archiveId: null
+    access: "partial online (e.g. Commons File:Leo_Tolstoy-1908.webm); commercial licensors for the rest"
+    rights: "underlying 1908–1910 material PD; per-clip rights asserted by licensors"
+    licence: unknown
+    usable: false
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy-1908.webm"
+    localPath: null
+    note: "Tolstoy was among the first world figures captured on film; the 1910 funeral newsreel screenings drew crowds and were banned in some cities (attributed, secondary)."
+
+scholarship:
+  summary: >-
+    The dominant English-language frame is Katherine M. H. Reischl's Photographic Literacy (Cornell
+    UP, 2018), whose Tolstoy chapter ("Tolstoy in the Age of His Technological Reproducibility")
+    argues a "crisis of authorship": Tolstoy was simultaneously a photographic subject shaped by
+    others and an occasional agent of his own image, but mass reproduction dissociated his likeness
+    from his person, and he lost control of it — the dispute settled, after his death, in Chertkov's
+    favour, so his image "passed into the property of the public sphere". Scholarship frames two
+    competing photographic projects: Sofia Andreevna's domestic, family-album photography (~1,000
+    photographs from the late 1880s; Bendavid-Val 2007) and Chertkov's public, prophet-among-peasants
+    image-making. Tolstoy's reluctance is acknowledged behaviourally (the Bioscope's account of
+    cameramen at the gates; Drankov's hidden-camera 1908 filming), but the popular Sofia-as-jealous-
+    antagonist framing (Popoff; The Last Station) is a contested, attributed position, not a baseline.
+  triangulation:
+    - evidenceRef: v61_444_M_N_Tolstoj
+      conventionalView: "Some popular sources credit the 1856 group photo's initiative to Sofia (impossible — she married Tolstoy only in 1862)."
+      relation: contradicts
+      source: "Moscow MAMM / rbth.com (popular, internally incoherent)"
+    - evidenceRef: v57_141_142_1909_09_17
+      conventionalView: "Scholarship records Tolstoy's reluctance behaviourally (pursued by cameramen) but does not quote his subjective vocabulary."
+      relation: extends
+      source: "Reischl 2018; The Bioscope 2009"
+    - evidenceRef: v53_002_002_1895_01_03
+      conventionalView: "English scholarship treats the Sofia/Chertkov image conflict only generically; the Dec-1894 negative-destruction episode is largely absent from it."
+      relation: extends
+      source: "Reischl 2018 (generic); Russian-language notices"
+    - evidenceRef: v78_213_V_A_Molochnikovu
+      conventionalView: "Reischl frames Tolstoy's discomfort as commodification anxiety; this precise 'no importance' statement is not cited in English scholarship."
+      relation: extends
+      source: "Reischl 2018; Reischl 2012 (JGO)"
+    - evidenceRef: v89_852_sentyabrya26
+      conventionalView: "Tapsell is unidentified in English scholarship; Chertkov's role as the public image-maker is acknowledged."
+      relation: extends
+      source: "Reischl 2018; Leeds Russian Archive LRA/MS 1381 (finding aid)"
+    - evidenceRef: v89_767_a26
+      conventionalView: "Reischl: mass reproduction inflated celebrity and wounded Tolstoy's moral self-image."
+      relation: confirms
+      source: "Reischl 2018"
+
+contradictions:
+  - claim: "Sofia Andreevna was simply a supportive family photographer of Tolstoy."
+    correction: >-
+      The corpus shows her also as the destroyer of photographic evidence — she seized and destroyed
+      the Dec-1894 negatives of Tolstoy with the Tolstoyans (diary v53_002, with the PSS apparatus
+      quoting her own account). Both registers — tender album-keeper (v52_019) and image-controller —
+      are hers.
+    evidenceRef: v53_002_002_1895_01_03
+
+notCovered:
+  - "Sofia Andreevna's own photographic albums in full — held at Yasnaya Polyana / State Tolstoy Museum; her diaries (not in this PSS-letters/diaries corpus) document her practice in detail (Bendavid-Val 2007)."
+  - "The c.1849 (Shenfeldt, St Petersburg) and c.1854 (Mazer, Moscow) daguerreotypes — the earliest images of Tolstoy; documented in secondary sources, not located on Commons; request from the State Tolstoy Museum / the MET (a c.1853 sixth-plate daguerreotype)."
+  - "The full Chertkov negative archive (Lenin Library / RGALI fond 552; State Tolstoy Museum prints) — only a handful are on Commons."
+  - "The 1908 Drankov footage and 1910 funeral newsreels as moving images — documented here but not retrievable as files; RGAKFD Krasnogorsk / net-film.ru."
+  - "Karcточка-only references in 70+ letters that are visiting-cards/postcards, not photographs — excluded after sense-checking."
+
+needsReview:
+  - item: "The 1908 diary entry v56_130_132 ('Были еще фотографы…') is OCR-corrupted in the digital text — names of the photographers are dropped; PDF-collate vol56 before ingestion."
+    phase: 2
+    why: "Late-period diary OCR damage (cf. the project's extract_tei pre-reform gap)."
+  - item: "No PSS facsimile rendered for the keystone (v57_141_142, 1909-09-17): vol57's PDF text layer is an unreliable single-blob OCR that matches every page, so the printed page could not be byte-located for pdftoppm. The TEI extract is clean and verify_quotes-checked; a facsimile can be added later."
+    phase: 2
+    why: "PDF page-locating unreliable for vol57; facsimile optional for a research prototype."
+  - item: "Prokudin-Gorsky date: 23 May 1908 OS / 5 June NS is consistent across secondary sources but no peer-reviewed OS/NS discussion was retrieved; LoC repro number LC-DIG-prokc-21885 cited as known (LoC Cloudflare-blocked)."
+    phase: 3
+    why: "Confirm against LoC catalogue from an unblocked path before asserting the repro number."
+  - item: "Thomas Tapsell is named in the PSS apparatus and his negatives are at Leeds (LRA/MS 1381), but he is unidentified in English scholarship — biographical details (dates, training) need the Leeds finding aid / Russian museum catalogues."
+    phase: 3
+    why: "Entity detail for the wiki page is thin."
+
+archivesConsulted:
+  - "Wikimedia Commons (API imageinfo+extmetadata; 32 PD/CC0 files cached)"
+  - "Library of Congress, Prokudin-Gorsky Collection (Cloudflare-blocked; facts cited as known)"
+  - "State Museum of L. N. Tolstoy / KAMIS portal (tolstoy-iss.kamiscloud.ru)"
+  - "Goskatalog (web.goskatalog.ru)"
+  - "Yasnaya Polyana Museum-Estate (ypmuseum.ru)"
+  - "TsGAKFFD St Petersburg (Bulla negatives)"
+  - "Leeds Russian Archive (Chertkov/Tapsell fond LRA/MS 1381)"
+  - "RGALI fond 552 (Chertkov); RGAKFD Krasnogorsk (film)"
+  - "russiainphoto.ru (MAMM/MDF)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, Полное собрание сочинений (Jubilee Edition): Tom 61 (1856 letters); Tom 62 (1879); Tom 67 (1894); Tom 69 (1896); Tom 76 (1906); Tom 78 (1908); Tom 84 (letters to S. A. Tolstaya); Tom 89 (letters to Chertkov); Toms 50, 52, 53, 56, 57 (diaries)."
+  background:
+    - "Reischl, Katherine M. H. 2018. Photographic Literacy: Cameras in the Hands of Russian Authors. Cornell UP. (Ch. 1 on Tolstoy.)"
+    - "Reischl, Katherine M. H. 2012. 'Photography and the Crisis of Authorship: Tolstoy and the Popular Photographic Press.' Jahrbücher für Geschichte Osteuropas 60:4."
+    - "Bendavid-Val, Leah (ed.). 2007. Song Without Words: The Photographs & Diaries of Countess Sophia Tolstoy. National Geographic."
+    - "Bartlett, Rosamund. 2011. Tolstoy: A Russian Life. Houghton Mifflin Harcourt."
+    - "Popoff, Alexandra. 2014. Tolstoy's False Disciple: The Untold Story of Leo Tolstoy and Vladimir Chertkov. Pegasus. (Contested 'Chertkov as antagonist' pole.)"
+    - "'Pen and Pictures no. 7 — Leo Tolstoy.' The Bioscope, 22 Feb 2009."
+    - "'The Only Color Picture of Tolstoy…' Open Culture, Sept 2023."
+    - "Wikipedia, 'Aleksandr Drankov' (Drankov hidden-camera 1908; Jan-1910 screening)."
