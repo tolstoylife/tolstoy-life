@@ -1,0 +1,30 @@
+# English-source passages for the gospel-translation dive.
+# Transcribed faithfully from the rendered PAGE IMAGES (not the OCR) of the
+# public-domain volume:
+#   The Four Gospels Harmonised and Translated by Leo Tolstoy, In Three Parts.
+#   Part I — Croydon: The Brotherhood Publishing Company; London: Walter Scott Ltd., 1895.
+#   Part II — same publishers, 1896. (Part III was never published.)
+# Local source: primary-sources/archive-org/The four gospels harmonized and translated/
+# These transcriptions are the text-of-record for the dive's English-language
+# primary quotes; the committed facsimiles (extracts/facsimile-english-*.png)
+# are the images they are drawn from.
+
+[AUTOGRAPH IMPRIMATUR — Tolstoy's handwritten certification, Part I front matter, facing the title page; the title page advertises it as "With Facsimile of Count Tolstoy's Autograph Imprimatur"]
+
+Conformably with my declaration in the London Daily Chronicle of August 30, 1894, I hereby certify that this rendering of my work, The Four Gospels Harmonised and Translated, has been made by a competent translator and with my consent. — Leo Tolstoy. October 19/31, 1894.
+
+[TRANSLATOR'S NOTE — Part I; signed only "The Translator", dated September 21, 1894; the translator is never named in the volume]
+
+It is at Count Tolstoy's express wish that I have undertaken the translation of his book on the Gospels. Though written nearly eighteen years ago, about the same time as his Confession, which may be regarded as an introduction to the present work, it was published for the first time this autumn. Unfortunately, owing to the impossibility of its being published in Russia, the Genevan edition is disfigured by numerous typographical mistakes. I have taken the greatest pains to avoid errors of this kind, and to provide the English reader with a faithful and trustworthy rendering of the Russian original. — The Translator. September 21, 1894.
+
+[TITLE PAGE — Part I]
+
+The Four Gospels Harmonised and Translated by Leo Tolstoy. In Three Parts. Translated from the original manuscript into English at the request of the author. Part I. With Facsimile of Count Tolstoy's Autograph Imprimatur. Croydon: The Brotherhood Publishing Company. London: Walter Scott Ltd. 1895.
+
+[FROM THE DAILY CHRONICLE OF AUGUST 30, 1894 — Tolstoy's letter to the Editor, reproduced in the front matter]
+
+The right of translation I freely accord, without exception, to everyone who would like to undertake the trouble of translating. But being eager to have my ideas spread, I also wish them to be correctly interpreted.
+
+[FROM THE DAILY CHRONICLE OF AUGUST 31, 1894 — editorial notice, front matter]
+
+One of the ablest of English scholars in Russia is at present engaged, with the Count's express sanction and under his superintendence, in rendering into English from the Russian MS. a work which the Count regards as of great importance.
