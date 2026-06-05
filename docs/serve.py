@@ -506,13 +506,22 @@ def md_to_html(md_path: Path) -> str:
                     frontmatter[k.strip()] = v.strip().strip('"')
             text = text[end+3:].strip()
 
-    # Extract title from first # heading if not in frontmatter
+    # Title: prefer frontmatter, else the first body "# " heading.
     title = frontmatter.get("title", "")
     if not title:
         m = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
         title = m.group(1).strip() if m else md_path.stem.replace("-", " ").title()
         if m:
             text = text[:m.start()] + text[m.end():]
+    else:
+        # The body conventionally still opens with an H1 repeating the title.
+        # serve.py renders the title itself in the doc-header below, so a
+        # leading body H1 that duplicates it would render twice. Strip the
+        # duplicate — but only when it matches the title, so a genuinely
+        # different leading heading is left alone.
+        m = re.match(r"#\s+(.+?)\s*(?:\n|$)", text)
+        if m and m.group(1).strip() == title.strip():
+            text = text[m.end():].lstrip("\n")
 
     # Extract lede
     lede = frontmatter.get("description", "")
