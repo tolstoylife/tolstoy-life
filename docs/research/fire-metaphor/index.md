@@ -5,8 +5,6 @@ tags: [research]
 title: "Fire and light in Tolstoy: the metaphor, and his rewriting of the Gospels"
 ---
 
-# Fire and light in Tolstoy: the metaphor, and his rewriting of the Gospels
-
 A corpus-dive across the local Tolstoy corpus (tolstoydigital TEI + the 90-volume Jubilee Edition) on a single image-cluster: **fire**, and the **light** axis next to it. The occasion is practical — fire is being considered as an emblem for tolstoy.life — but the question is textual: where, and how, does Tolstoy use fire and light, and what does he do to the Bible's own fire-and-light language when he translates the four Gospels himself?
 
 The two starting points the reader supplied both hold. *Bethink Yourselves!* (1904) closes on Luke 12:49; the second volume of Biryukov's biography closes on the *«Я верю»* credo from *What I Believe* — and that credo turns out to fuse **both** axes in one sentence.
