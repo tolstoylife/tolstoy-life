@@ -79,6 +79,16 @@ Delegate sub-steps to subagents with the right tier (Agent tool `model` param). 
 ambiguity, re-run that step on opus. Escalating the model buys quality, not a fabrication licence —
 findings still unresolved after escalation go to `needsReview`, never into the prose unanchored.
 
+**Subagent I/O — write to a file, return a line.** Subagent final messages can be truncated by the
+harness to a terse stub ("Complete.") that drops the whole deliverable. So every dispatched
+sub-step (sweep, deep-read, commentary mine, scholarship, visuals channel, verifier) must **write
+its structured deliverable to a named file** under `docs/research/<slug>/` (e.g.
+`extracts/_sweep_<area>.md`, `extracts/_deepread.md`, `_verifier-report.md`) and **return only a
+confirmation line** (path + count/verdict); read the files back in the main context. If a subagent
+already ran and returned only a stub, re-dispatch it (SendMessage) asking it to persist its
+in-context work to a file. Remove purely-intermediate working files before the Phase-6 commit (keep
+`extracts/` PD-only).
+
 ## Phase 0 — Scope (front-gate)
 
 Draft a **scoping contract**: (1) restate the precise question; (2) corpus surface — genres
@@ -137,7 +147,11 @@ runs alongside the always-on post-1880 letter pass and feeds the Genesis section
   This supersedes the per-dive `_reg_extract.py` helper.
 - Cross-check finalists against the printed PSS PDF (`pdftoppm` @ 220 dpi); if the PDF for the
   relevant Tom is not held locally, note the gap in `needsReview` and proceed. For the **single
-  keystone citation**, save the page image to `extracts/`.
+  keystone citation**, save the page image to `extracts/`. Caution: the local
+  `primary-sources/archive-org/.../Complete Works/<N>.pdf` set is **Leo Wiener's English edition**
+  (Boston 1904), *not* the Russian PSS — its volume numbers don't map to PSS Toms (*A Confession* is
+  Wiener vol. XIII, not 23). A page from it is a PD *English* facsimile; a Russian first-edition or
+  manuscript facsimile needs another source (GTM / RGB / émigré scans), usually `needsReview`.
 - Produce **working-English** translations, explicitly labelled "(working English)".
 - Run the **visual-materials sweep** (below) in parallel.
 
@@ -228,6 +242,13 @@ outside. §5 "Scholarly context" is a divergence map, not corroboration. (Memory
    wrong period) — goes to `notCovered` with a pointer, **not** a forced loop. Run the loop once,
    not open-endedly.
 
+**Reception pass (work dives).** For a work whose public/Church reception matters, run a dedicated
+light reception pass here, not just incidental mentions: name the contemporary critics and the
+clerical / Synod / press reaction (corpus commentary first, then targeted scholarship), each
+attributed. If reception is genuinely thin or out-of-scope, mark the `Reception & afterlife` surface
+`partial` / `not-covered` honestly — but don't let it default to `partial` for want of a deliberate
+look.
+
 Writes the dossier `scholarship:` block (see Synthesize), adds secondary sources to
 `references.background`, and updates `notCovered` / `needsReview` / `entities`. The "Scholarly
 context" prose section of `index.md` is composed in Synthesize.
@@ -309,6 +330,11 @@ context" prose section of `index.md` is composed in Synthesize.
    - `workRecord.fields[].field` mirrors a `works/` frontmatter key (no new schema — it reflects
      `website/schema/` + the record itself). The dive never writes `works/`; it *proposes*.
      `confidence` ∈ high | medium | low. For a date-typed `field` *X*, `oldStyle` carries the Julian-calendar value and `approximate: true` the circa flag — these map to the record's **separate sibling keys** `*X*OldStyle` and `*X*Approximate` (e.g. `dateWritingStartedOldStyle` / `dateWritingStartedApproximate`, which the `works/` schema stores as their own flat frontmatter fields); here they ride as sub-flags on the one date entry, not standalone `field` entries.
+     **Shape the `value` to the works schema, not to convenience:** list-typed fields are object
+     arrays in `tolstoy-works-schema.md`, so propose them as such — `titleAlternatives` as
+     `{title, type, language}`, `bans` as `{banningAuthority, authorityType, jurisdiction, scope,
+     banDate}`, `relatedWorks` as `{id, relationshipType}` — so a human can apply the proposal
+     verbatim. Check the live record's existing field shapes before proposing.
    - `coverage[].status` ∈ covered | partial | not-covered — the structured surface map the
      "Material not covered" section is derived from and that multi-session resume reads first.
    - `ingestionPriority` (optional) ∈ 1 | 2 | 3 — the order the wiki pages should be written:
