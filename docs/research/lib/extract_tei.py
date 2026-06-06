@@ -82,10 +82,13 @@ def normalise_paragraph(p, choice_mode="legacy"):
                 elif choice_mode == "both":
                     if reg is not None:
                         walk(reg)
-                    if orig is not None:
-                        text.append(" [")
+                        if orig is not None:
+                            text.append(" [")
+                            walk(orig)
+                            text.append("]")
+                    elif orig is not None:
+                        # Degenerate: no <reg>; emit orig unbracketed (same as --choice=orig).
                         walk(orig)
-                        text.append("]")
                 # choice_mode == "legacy": drop (preserve historical behaviour)
                 return
             return
@@ -216,7 +219,8 @@ def extract(path, notes_mode="auto", choice_mode="legacy"):
     prereform_pairs = sum(
         1
         for ch in body.iter("{http://www.tei-c.org/ns/1.0}choice")
-        if ch.find("t:reg", NS) is not None and ch.find("t:corr", NS) is None
+        if (ch.find("t:reg", NS) is not None or ch.find("t:orig", NS) is not None)
+        and ch.find("t:corr", NS) is None
     )
     return file_id, title_text, bibl_text, paragraphs, recovered, prereform_pairs
 

@@ -71,4 +71,11 @@ LEGERR="$(python3 "$EXTRACT" "$FIX" 2>&1 >/dev/null)"
 printf '%s\n' "$LEGERR" | grep -qi 'choice=reg' \
   || { echo "FAIL: legacy mode dropped pre-reform pairs without nudging about --choice=reg"; exit 1; }
 
+# both mode emits reg reading AND orig reading in brackets
+BOTHOUT="$(python3 "$EXTRACT" "$FIX" --choice=both)"
+printf '%s\n' "$BOTHOUT" | grep -q 'старого' \
+  || { echo "FAIL: --choice=both missing <reg> reading (старого)"; exit 1; }
+printf '%s\n' "$BOTHOUT" | grep -q 'стараго' \
+  || { echo "FAIL: --choice=both missing <orig> reading (стараго)"; exit 1; }
+
 echo "PASS"
