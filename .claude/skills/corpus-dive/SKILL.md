@@ -308,7 +308,7 @@ context" prose section of `index.md` is composed in Synthesize.
      also go in `references.background` (`source` omitted when there is no clear one).
    - `workRecord.fields[].field` mirrors a `works/` frontmatter key (no new schema — it reflects
      `website/schema/` + the record itself). The dive never writes `works/`; it *proposes*.
-     `confidence` ∈ high | medium | low. `oldStyle: true` marks a Julian-calendar date; `approximate: true` marks a circa date — both are sub-flags on a date-typed `field` entry, not standalone fields.
+     `confidence` ∈ high | medium | low. For a date-typed `field` *X*, `oldStyle` carries the Julian-calendar value and `approximate: true` the circa flag — these map to the record's **separate sibling keys** `*X*OldStyle` and `*X*Approximate` (e.g. `dateWritingStartedOldStyle` / `dateWritingStartedApproximate`, which the `works/` schema stores as their own flat frontmatter fields); here they ride as sub-flags on the one date entry, not standalone `field` entries.
    - `coverage[].status` ∈ covered | partial | not-covered — the structured surface map the
      "Material not covered" section is derived from and that multi-session resume reads first.
    - `ingestionPriority` (optional) ∈ 1 | 2 | 3 — the order the wiki pages should be written:
