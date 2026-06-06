@@ -1,0 +1,779 @@
+# The Kingdom of God Is Within You («Царство Божие внутри вас») — corpus-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify: python3 docs/research/lib/verify_quotes.py docs/research/1890-1893-the-kingdom-of-god-is-within-you/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+# Genesis / publication / censorship facts are drawn from the PSS Tom 28 commentary
+# (N. K. Gudzy, "История писания и печатания") and attributed in the prose; they are NOT
+# byte-checked evidence rows (the commentary is editorial apparatus, not public-domain Tolstoy text).
+
+topic:
+  slug: 1890-1893-the-kingdom-of-god-is-within-you
+  title: "The Kingdom of God Is Within You (Царство Божие внутри вас)"
+  question: >-
+    Document The Kingdom of God Is Within You as a work across the local Tolstoy corpus —
+    the great non-resistance / anti-state synthesis of the Prophet period and the last and
+    largest of the four religious treatises. Its genesis as a preface to translations of
+    Adin Ballou's Catechism of Non-Resistance and W. L. Garrison's Declaration of Sentiments
+    (begun 8 July 1890) that grew, over nearly three years, into a 293-page treatise; its
+    composition tracked week by week in the 1890-93 diaries and letters, with the people
+    around it (Chertkov, Strakhov, Biryukov, the daughters M. L. and T. L. Tolstaya as
+    copyists, E. I. Popov); what the work argues (Christianity not as a mystical teaching but
+    as a new understanding of life — новое жизнепонимание; non-resistance to evil by force as
+    the chief departure the churches made from Christ; the state as organised violence whose
+    army faces inward; universal military conscription as the last limit of the contradiction;
+    the four means by which state violence sustains itself — intimidation, bribery,
+    hypnotization, the soldiery; public opinion as the engine of change; freedom as the
+    recognition of truth, and the refusal to lie as the one free act; "the Kingdom of God is
+    within you"); the four title-changes and the Strakhov-prompted split of chapter VIII; the
+    9 September 1892 Uzlovaya punitive-train encounter that reshaped the conclusion; its
+    publication abroad (French first, Paris 1893; the first-printed Russian and the German,
+    Berlin/Deubner and Stuttgart, January 1894; two English translations 1894) and the
+    censorship and smuggling that followed (banned, then flooding into Russia in hectograph;
+    first legally printed in Russia 1906); and its reception — the Russian censors and Stasov
+    and Repin, then its single greatest afterlife, the young M. K. Gandhi — grounded in
+    Tolstoy's own words, the Jubilee-Edition apparatus, the composition-window diaries and
+    letters, and the project's prior dives.
+  date: "2026-06-06"
+  period: "Prophet period (post-1880); composition July 1890 – May 1893 (Old Style)"
+  corpusSurface: "PSS Tom 28 (work «Царство божие внутри вас» pp. 1–293; Оглавление pp. 294–306; Варианты pp. 309–330; commentary pp. 333–381: История писания, текстологические примечания, описание рукописей); composition-window diaries Toms 51–52 (1890–93); letters Toms 65–66 and the Chertkov letters Tom 87"
+  dateRange: "1890 (genesis: preface to Ballou's Catechism, 8 July) – 1906 (first legal Russian printing); first publication abroad French 1893 (Le salut est en vous, Paris) and original Russian + German January 1894 (Berlin/Deubner, Stuttgart)"
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory. Quotes are pre-reform-resolved (--choice=reg).
+evidence:
+
+  # — The work's own text: «Царство божие внутри вас», PSS Tom 28, pp. 1–293 —
+  - id: kgd-text-01
+    genre: work
+    pssTom: 28
+    pages: "5 (эпиграф)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Познаете истину, и истина освободит вас"
+    quoteEn: "(working English) You shall know the truth, and the truth shall make you free (John 8:32)."
+    significance: "The first of the book's three epigraphs (with Mt. 10:28 and 1 Cor. 7:23), and its key: the book is about a truth that frees, and about the refusal to lie that is, in the conclusion, the one free act."
+
+  - id: kgd-text-02
+    genre: work
+    pssTom: 28
+    pages: "5 (Вступление)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "В числе многих отступлений этого учения от учения Христа я указывал на главное отступление, именно — на непризнание заповеди непротивления злу насилием"
+    quoteEn: "(working English) Among the many departures of this [church] teaching from the teaching of Christ, I pointed to the chief departure — namely, the non-recognition of the commandment of non-resistance to evil by force."
+    significance: "The premise, stated at the opening: the book is the sequel to What I Believe (1884), and non-resistance to evil by force is the единственное / главное отступление on which Tolstoy says the churches betrayed Christ. The whole argument unfolds from this."
+
+  - id: kgd-text-03
+    genre: work
+    pssTom: 28
+    pages: "~67 (гл. V)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "необходимо установить новое жизнепонимание, из которого и вытекла бы и деятельность, соответствующая тому новому состоянию, в которое оно вступило или вступает."
+    quoteEn: "(working English) it is necessary to establish a new understanding of life, from which would also flow the activity corresponding to the new condition into which [humanity] has entered or is entering."
+    significance: "The subtitle made argument: humanity must adopt a new жизнепонимание as a grown man outgrows a child's understanding. Christianity is that new understanding of life — not a mysticism (the subtitle: «не как мистическое учение, а как новое жизнепонимание»)."
+
+  - id: kgd-text-04
+    genre: work
+    pssTom: 28
+    pages: "~65 (гл. IV)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Человек божеского жизнепонимания признает жизнь уже не в своей личности и не в совокупности личностей (в семье, роде, народе, отечестве или государстве), а в источнике вечной, неумирающей жизни — в боге"
+    quoteEn: "(working English) The man of the divine understanding of life finds life no longer in his own personality, nor in the aggregate of personalities (the family, clan, people, fatherland, or state), but in the source of eternal, undying life — in God."
+    significance: "The third of the three understandings of life (the personal-animal, the social-pagan, the divine-Christian). Because the Christian locates life in God and not in the state, no claim of the state can override the law of God — the hinge from the metaphysics of On Life to the politics of this book."
+
+  - id: kgd-text-05
+    genre: work
+    pssTom: 28
+    pages: "~152 (гл. VII)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "войска нужны прежде всего правительствам для обороны себя от своих подавленных и приведенных в рабство подданных."
+    quoteEn: "(working English) armies are needed by governments first of all to defend themselves from their own oppressed and enslaved subjects."
+    significance: "The keystone of the state analysis (ch. VII): the army is aimed less at foreign enemies than at the governed population. Universal military conscription is therefore the last limit of the contradiction in the social understanding of life."
+
+  - id: kgd-text-06
+    genre: work
+    pssTom: 28
+    pages: "~163 (гл. VIII)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Устрашение, подкуп, гипнотизация приводят людей к тому, что они идут в солдаты"
+    quoteEn: "(working English) Intimidation, bribery, and hypnotization bring men to become soldiers"
+    significance: "The closed ring of the four means by which state violence sustains itself (ch. VIII): intimidation, bribery, hypnotization, and the soldiery the first three produce — which in turn gives the power to execute, plunder, hypnotize and recruit. «Круг замкнут, и вырваться из него силой нет никакой возможности.»"
+
+  - id: kgd-text-07
+    genre: work
+    pssTom: 28
+    pages: "~284 (гл. XII, 5)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Истинную жизнь, по христианскому учению, имеет только тот, кто перенес свою жизнь в ту область, в которой она свободна, — в область причин, т. е. познания и признания открывающейся истины"
+    quoteEn: "(working English) True life, according to the Christian teaching, is had only by the one who has carried his life into the realm in which it is free — into the realm of causes, that is, of the knowing and recognition of the opening truth."
+    significance: "The doctrine of freedom (ch. XII.5): a person is not free in his acts, which have causes, but is free in whether he recognizes a truth — and recognition is itself the cause of acts. The metaphysical ground of the exit from state violence: not revolution, but the recognition and profession of truth."
+
+  - id: kgd-text-08
+    genre: work
+    pssTom: 28
+    pages: "~285 (гл. XII, 5)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Царство божие усилием берется, и только делающие усилие восхищают его"
+    quoteEn: "(working English) The Kingdom of God is taken by effort, and only those who make the effort seize it."
+    significance: "The title-phrase as imperative: the Kingdom of God is not a future order to be built but a thing taken now, by the inner effort of renouncing concern for external change and recognizing the truth. (After Mt. 11:12.)"
+
+  - id: kgd-text-09
+    genre: work
+    pssTom: 28
+    pages: "~290 (гл. XII, 6)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Одно, только одно дело, в котором ты свободен и всемогущ, дано тебе в жизни, все остальные вне твоей власти. Дело это в том, чтобы познавать истину и исповедовать ее."
+    quoteEn: "(working English) One thing, only one thing, in which you are free and all-powerful, is given you in life; all the rest is beyond your power. That one thing is to know the truth and to profess it."
+    significance: "The climax of the book's long direct address to the reader («Кто бы ты ни был…»): every social position — landowner, judge, emperor, soldier — is reduced to a single demand, to recognize and profess the truth. The one free act."
+
+  - id: kgd-text-10
+    genre: work
+    pssTom: 28
+    pages: "~288 (гл. XII, 6)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Ведь это так просто и ясно, если бы только мы лицемерием не затемняли себе несомненно открытую нам истину."
+    quoteEn: "(working English) It is all so simple and clear, if only we did not, by hypocrisy, darken for ourselves the truth that has unquestionably been opened to us."
+    significance: "Hypocrisy (лицемерие) is the conclusion's central diagnosis: the thing that holds the violent order up is not ignorance or malice but the pretence of not seeing a truth one knows. The 'scientific theory of hypocrisy' has replaced the religious one (ch. XII.4)."
+
+  - id: kgd-text-11
+    genre: work
+    pssTom: 28
+    pages: "~288 (гл. XII, 6)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Одумайтесь, люди, и веруйте в Евангелие, в учение о благе."
+    quoteEn: "(working English) Bethink yourselves, people, and believe in the Gospel, in the teaching of the good."
+    significance: "The conclusion's title and refrain — «Покайтесь, потому что Царствие Божие близко, при дверях» (Repent, for the Kingdom of God is at hand) — μετανοειτε read as 'bethink yourselves'. The same call Tolstoy will title a later anti-war tract «Одумайтесь!» (1904)."
+
+  - id: kgd-text-12
+    genre: work
+    pssTom: 28
+    pages: "293 (конец)"
+    date: "1890–1893"
+    extract: extracts/v28_001_293_Tsarstvo_bozhie_vnutri_vas.txt
+    quoteRu: "Ибо вот: царствие божие внутрь вас есть»."
+    quoteEn: "(working English) For behold: the Kingdom of God is within you."
+    significance: "The book's last line, Luke 17:21 — the source of the title. The Kingdom is not 'here' or 'there', not a coming external order, but within: the inner recognition of truth from which the transformation of the outer order follows."
+
+  # — Composition-window diaries: PSS Toms 51–52 (1890–93) —
+  - id: kgd-diary-01
+    genre: diary
+    pssTom: 51
+    pages: "60"
+    date: "1890-07-08 (OS)"
+    extract: extracts/v51_060_060_1890_07_08.txt
+    quoteRu: "Написал предисловие к катехизису Балу."
+    quoteEn: "(working English) Wrote a preface to Ballou's catechism."
+    significance: "The genesis day: the first recorded work on what became The Kingdom of God Is Within You — a preface to the translation of Adin Ballou's Catechism of Non-Resistance. The book began as this preface and grew, over three years, into the treatise."
+
+  - id: kgd-diary-02
+    genre: diary
+    pssTom: 51
+    pages: "68–69"
+    date: "1890-07-28 (OS)"
+    extract: extracts/v51_068_069_1890_07_28.txt
+    quoteRu: "Поправил перевод Гарисона и Балу и написал краткое предисловие, так, чтобы в таком виде можно было передать людям."
+    quoteEn: "(working English) Corrected the translation of Garrison and Ballou and wrote a short preface, so that in this form it could be given to people."
+    significance: "Three weeks in: the preface to the Garrison Declaration and the Ballou Catechism is taking shape. On the same day Tolstoy told Chertkov it was 'growing into a large and very necessary article about the deception of the church' (PSS Tom 87, per the commentary)."
+
+  - id: kgd-diary-03
+    genre: diary
+    pssTom: 52
+    pages: "69"
+    date: "1892-08-06 (OS)"
+    extract: extracts/v52_069_069_1892_08_06.txt
+    quoteRu: "8-ая глава кончена, но над 9-й и 10-й все вожусь. И начинаю думать, что толкусь на месте."
+    quoteEn: "(working English) The eighth chapter is finished, but I'm still struggling with the ninth and tenth. And I'm beginning to think I'm marking time."
+    significance: "The grind of the middle chapters, mid-composition (and amid the famine-relief work): the overgrown eighth chapter, split on Strakhov's advice into VIII–X, cost Tolstoy enormous effort. E. I. Popov was living at Yasnaya Polyana as copyist, waiting."
+
+  - id: kgd-diary-04
+    genre: diary
+    pssTom: 52
+    pages: "78"
+    date: "1893-05-14 (OS)"
+    extract: extracts/v52_078_078_1893_05_14.txt
+    quoteRu: "Вчера отослал совсем."
+    quoteEn: "(working English) Yesterday I sent it off for good."
+    significance: "The completion. The same entry records only relief — «Я свободен» (I am free) — and that illness had pushed him to stop. Tolstoy fixed 14 May 1893 (OS), Yasnaya Polyana, as the day the work was finished; the foreign editions print that date. (The full line: «Вчера отослал совсем. […] Я свободен.»)"
+
+  # — Composition letter: PSS Tom 87 (letters to V. G. Chertkov) —
+  - id: kgd-let-01
+    genre: letter
+    pssTom: 87
+    pages: "117"
+    date: "1891-12-14 (OS)"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v87_304_CHertkovu_1891_12_14.txt
+    quoteRu: "Смягчать, оговариваясь нельзя. Это нарушает весь тон, а тон выражает чувство, а чувство заражает"
+    quoteEn: "(working English) To soften, with qualifications, is impossible. It destroys the whole tone, and the tone expresses the feeling, and the feeling infects [the reader]."
+    significance: "Tolstoy's refusal, mid-composition, of Chertkov's wish to soften the book's attacks on the church and state. The clearest statement of how he wanted the book read: its uncompromising tone is the carrier of the feeling, and the feeling — sometimes of indignation — does more than argument. He accepted only minor prudential corrections later (the Uzlovaya passage)."
+
+# ── Entities (ingestion routing map → wiki) ─────────────────────────────────
+# vaultStatus checked against website/src/wiki/ on 2026-06-06.
+entities:
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-text-02, kgd-diary-01, kgd-diary-04]
+    ingestionPriority: 1
+
+  - name: "Non-resistance to evil by force (непротивление злу насилием)"
+    wikiType: concept
+    wikilinkTarget: "Non-resistance to evil by force"
+    vaultStatus: missing
+    role: "The book's spine: the commandment (Mt. 5:39) Tolstoy calls the 'chief departure' the churches made from Christ. Not a personal ethic only but the point on which true Christianity and the state are incompatible — refusing it makes a Christian unable to serve in army, court, or police. The doctrine is mapped thematically in the christian-anarchism dive; this is its keystone in the work."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-text-02, kgd-text-06]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "Cross-links to the existing Christian Anarchism.md page and the christian-anarchism dive; a dedicated concept page would carry the work-grounded definition."
+
+  - name: "Christianity as a new understanding of life (новое жизнепонимание)"
+    wikiType: concept
+    wikilinkTarget: "New understanding of life (Tolstoy)"
+    vaultStatus: missing
+    role: "The book's subtitle and thesis: Christianity is not a mystical teaching but a жизнепонимание — a practical understanding of life — the third and highest of the three (personal-animal, social-pagan, divine-Christian). Locating life in God, not the state, is what makes participation in state violence impossible."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-text-03, kgd-text-04]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "The state as organised violence and the four means (критика государства)"
+    wikiType: concept
+    wikilinkTarget: "Critique of the state (Tolstoy)"
+    vaultStatus: missing
+    role: "The book's political analysis: power is the capacity for violence; the army defends the government against its own subjects; universal military conscription is the last limit of the contradiction; and state violence is held in a closed ring of four means — intimidation, bribery, hypnotization, and the soldiery these produce. The exit is public opinion and individual refusal, not revolution."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-text-05, kgd-text-06, kgd-text-07]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "Non-resistance to evil by force (непротивление злу насилием)"]
+
+  - name: "M. K. Gandhi"
+    wikiType: person
+    wikilinkTarget: "Mahatma Gandhi"
+    vaultStatus: missing
+    role: "Mohandas Karamchand Gandhi (1869–1948). The single most important afterlife of the book: he read it in 1894 in South Africa and called it, in his Autobiography, a book that 'overwhelmed' him and 'left an abiding impression,' ranking it among the three decisive modern influences on his life. From that reading grew Tolstoy's 1908 'A Letter to a Hindu', the 1909–10 Tolstoy–Gandhi correspondence, and Gandhi's Tolstoy Farm (1910)."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "The reception headline; not in the corpus (attributed to Gandhi's Autobiography + scholarship). The 1909–10 correspondence is in PSS Toms 80–82, outside this dive's window. No wiki page exists — high-priority addition."
+
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple and chief organizer of the composition: the manuscript passed through him for copying and distribution to the translators; he supplied source-books, sent emissaries (M. N. Chistyakov, E. P. Sokolov) for the chapters, and repeatedly urged Tolstoy to soften the attacks on church and state. Later, from England, he published the uncut text (Svobodnoe Slovo, 1898/1902)."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-let-01]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "This dive adds Kingdom-specific roles (the softening dispute; the relay to translators; the émigré publication) to the existing page."
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Philosopher and critic (1828–1896); a close interlocutor of the composition — he translated Ballou's Catechism, brought Tolstoy the printed sheets of Chelčický's Net of Faith and told him of Gottfried Arnold's history of the heresies (both used in the book), advised splitting the overgrown chapter VIII, and reported the foreign censorship's verdict on the French edition."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Also proposed (missing) in the On Life, What I Believe and What Then Must We Do? dives — overdue independently."
+
+  - name: "P. I. Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Tolstoy's biographer and Posrednik associate; copyist and famine-relief manager at Begichevka, present for Tolstoy's 9 September 1892 arrival after the Uzlovaya encounter (which his Biografiya describes); thought the rewritten conclusion (ch. XII) was really a separate work."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "EXISTS in the vault as `Pavel Birukoff.md` (the project's 'Birukoff' transliteration; id pavel-birukoff) — link there, do NOT create a duplicate 'Biryukov' page. This dive supplies Kingdom-specific roles."
+
+  - name: "Adin Ballou"
+    wikiType: person
+    wikilinkTarget: "Adin Ballou"
+    vaultStatus: missing
+    role: "American Universalist minister and non-resistance theorist (1803–1890); his Catechism of Non-Resistance and Christian Non-Resistance are the texts whose preface began the book. Tolstoy resurrects his work in chapter I; Ballou died in 1890 as the book was beginning. A small Commons portrait is cached."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-diary-01, kgd-diary-02]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy", "Non-resistance to evil by force (непротивление злу насилием)"]
+
+  - name: "William Lloyd Garrison"
+    wikiType: person
+    wikilinkTarget: "William Lloyd Garrison"
+    vaultStatus: missing
+    role: "American abolitionist (1805–1879); his 1838 Declaration of Sentiments of the New England Non-Resistance Society, sent to Tolstoy by his son after reading What I Believe, is the other text the book's preface introduced. Chapter I opens with the Declaration's history. A Commons portrait is cached."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-diary-02]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy", "Non-resistance to evil by force (непротивление злу насилием)"]
+
+  - name: "Universal military conscription (всеобщая воинская повинность)"
+    wikiType: concept
+    wikilinkTarget: "Universal military conscription (Tolstoy)"
+    vaultStatus: missing
+    role: "The book's pivotal political target (ch. VII): conscription is not an accident of European politics but the last limit of the contradiction in the social understanding of life — the state's demand that every man renounce conscience and prepare to kill on command. The point at which a Christian must choose between the law of God and the law of violence."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-text-05]
+    ingestionPriority: 2
+    dependsOn: ["The state as organised violence and the four means (критика государства)"]
+
+  - name: "The Uzlovaya punitive-train encounter (9 September 1892)"
+    wikiType: event
+    wikilinkTarget: "Uzlovaya encounter 1892"
+    vaultStatus: missing
+    role: "On 9 September 1892, travelling to his famine kitchens, Tolstoy's train met at Uzlovaya station a special train carrying a punitive detachment under the Tula governor N. A. Zinoviev — soldiers sent to flog the peasants of Bobriki. The encounter — 'the impression of Uzlovaya was terrible' — made Tolstoy rewrite the conclusion (ch. XII), the chance sight becoming its opening scene."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Documented in the PSS Tom 28 commentary (citing Tolstoy's diary, T. L. Tolstaya's letter, and Biryukov's Biografiya); not in a byte-faithful extract here."
+
+  - name: "E. I. Popov"
+    wikiType: person
+    wikilinkTarget: "Evgeny Popov"
+    vaultStatus: missing
+    role: "Evgeny Ivanovich Popov, Tolstoyan and copyist through the last stage of the composition (1892–93); compiled the chapter conspectus (the Oglavlenie) that was sent to the translators."
+    sources: [jubilee-edition]
+    evidenceRefs: [kgd-diary-03]
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "M. L. Tolstaya (Maria Lvovna)"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: "Tolstoy's daughter (1871–1906); a principal copyist of the treatise, whose hand dates many of the early manuscripts and obloжки. She also relayed the manuscript and letters to Chertkov on her father's behalf."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+    note: "vaultStatus exists CONFIRMED (Phase-5 verifier): `Maria Tolstaya.md` is the daughter Maria Lvovna (1871–1906, relationToTolstoy: daughter), the copyist — not Tolstoy's sister Maria Nikolaevna. Link there."
+
+  - name: "T. L. Tolstaya (Tatyana Lvovna)"
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: "Tolstoy's daughter (1864–1950); a copyist of the treatise and a correspondent of Chertkov about it; she described the 9 September 1892 Uzlovaya encounter in a letter to her mother."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "S. A. Tolstaya (Sofia Andreyevna)"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; a copyist of the conclusion (her hand on the fourth copy), anxious about the danger the book posed; in 1911 she was the editor who first printed the treatise within a Russian collected edition (12th ed., uncut)."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "I. D. Halpérine-Kaminsky"
+    wikiType: person
+    wikilinkTarget: "Ilya Halperine-Kaminsky"
+    vaultStatus: missing
+    role: "Translator of the first published edition: the French Le salut est en vous (Paris: Perrin, October 1893), the work's first appearance in any language. Received the first eleven chapters via the painter N. A. Kasatkin in April 1893."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Constance Garnett"
+    wikiType: person
+    wikilinkTarget: "Constance Garnett"
+    vaultStatus: missing
+    role: "English translator; her The Kingdom of God Is Within You (London: Heinemann, 1894) is one of the two 1894 English versions (the other A. Delano's). Tolstoy later thanked her for her 'beautiful translation'."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Pyotr Chelčický"
+    wikiType: person
+    wikilinkTarget: "Petr Chelcicky"
+    vaultStatus: missing
+    role: "Czech 15th-century religious writer (c.1390–c.1460), author of The Net of Faith (Сеть веры), which Strakhov brought Tolstoy in printed sheets in 1889. Tolstoy treats it in chapter I as 'one of the rare books surviving the bonfires that expose official Christianity.'"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "August Deubner"
+    wikiType: person
+    wikilinkTarget: "August Deubner"
+    vaultStatus: missing
+    role: "Berlin publisher of the first-printed (первопечатный) Russian edition of «Царство божие внутри вас» (January 1894), titled «Единственное, авторомъ разрѣшенное изданіе» — though it carried censorship cuts and many misprints."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    note: "Peripheral; the title-page of this edition is the keystone visual artefact (vis-kgd-titlepage)."
+
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "Where most of the treatise was written (1890–93); Tolstoy dated the completion 'Yasnaya Polyana, 14 May 1893'. Composition also continued at Begichevka (Ryazan, the famine-relief base) and in Moscow."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [kgd-diary-04]
+    ingestionPriority: 3
+
+# ── Visual & manuscript record (Phase-2 sweep, medium intensity) ────────────
+# visuals/ is git-ignored (local cache); repopulate with: python3 docs/fetch_visuals.py 1890-1893-the-kingdom-of-god-is-within-you
+visuals:
+  - id: vis-kgd-tolstoy-1892
+    type: photograph
+    subject: "Leo Tolstoy, 1892"
+    relatedEntity: "Lev Tolstoy"
+    relatedEvidence: [kgd-diary-03]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Lev Nikolayevich Tolstoy 1892.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lev%20Nikolayevich%20Tolstoy%201892.jpg?width=900"
+    localPath: visuals/commons-tolstoy-1892.jpg
+    note: "KEYSTONE portrait. Tolstoy in 1892, in the peasant blouse of the Prophet years — the composition window, when he was writing the treatise and running famine kitchens."
+  - id: vis-kgd-titlepage
+    type: title-page
+    subject: "«Царство Божіе внутри васъ… Часть I. Единственное, авторомъ разрѣшенное изданіе» — Berlin: August Deubner, 1894 (first-printed Russian edition)"
+    relatedEntity: "August Deubner"
+    relatedEvidence: [kgd-text-12]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Lev tolstoi carstvo bozhie vnutri vas.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lev%20tolstoi%20carstvo%20bozhie%20vnutri%20vas.jpg?width=900"
+    localPath: visuals/commons-kingdom-titlepage.jpg
+    note: "KEYSTONE artefact. The первопечатный Russian edition title page (Berlin, Deubner, 1894), confirming the commentary's account of the first-printed Russian text."
+  - id: vis-kgd-chertkov
+    type: portrait
+    subject: "V. G. Chertkov"
+    relatedEntity: "V. G. Chertkov"
+    relatedEvidence: [kgd-let-01]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Chertkov by Kramskoy.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chertkov%20by%20Kramskoy.jpg?width=900"
+    localPath: visuals/commons-chertkov.jpg
+    note: "The chief correspondent of the composition; later the émigré publisher of the uncut book."
+  - id: vis-kgd-gandhi-1906
+    type: photograph
+    subject: "M. K. Gandhi, London 1906"
+    relatedEntity: "M. K. Gandhi"
+    relatedEvidence: []
+    holding: "Wikimedia Commons"
+    archiveId: "File:Gandhi London 1906.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi%20London%201906.jpg?width=900"
+    localPath: visuals/commons-gandhi-1906.jpg
+    note: "The reception headline. Gandhi read the book in 1894 and called it, in his Autobiography, a book that 'overwhelmed' him."
+  - id: vis-kgd-garrison
+    type: portrait
+    subject: "William Lloyd Garrison"
+    relatedEntity: "William Lloyd Garrison"
+    relatedEvidence: [kgd-diary-02]
+    holding: "Wikimedia Commons"
+    archiveId: "File:William Lloyd Garrison portrait.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Lloyd%20Garrison%20portrait.jpg?width=900"
+    localPath: visuals/commons-garrison.jpg
+    note: "The American abolitionist whose 1838 Declaration of Sentiments opens chapter I."
+  - id: vis-kgd-ballou
+    type: portrait
+    subject: "Adin Ballou"
+    relatedEntity: "Adin Ballou"
+    relatedEvidence: [kgd-diary-01]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Adin Ballou.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Adin%20Ballou.jpg"
+    localPath: visuals/commons-ballou.jpg
+    note: "The non-resistance theorist whose Catechism the book's first preface introduced. Commons original is low-resolution (~6 KB); dossier-only."
+  - id: vis-kgd-famine-1891
+    type: photograph
+    subject: "Tolstoy organising famine relief, 1891"
+    relatedEntity: "Lev Tolstoy"
+    relatedEvidence: [kgd-diary-03]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tolstoy organising famine relief in Samara, 1891.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tolstoy%20organising%20famine%20relief%20in%20Samara,%201891.jpg?width=900"
+    localPath: visuals/commons-tolstoy-famine-1891.jpg
+    note: "The famine-relief work (1891–92) that interrupted and fed the book's conclusion (the Uzlovaya encounter)."
+  - id: vis-kgd-lesalut-titlepage
+    type: title-page
+    subject: "Le salut est en vous (Paris: Perrin, 1893) — the first published edition (French)"
+    relatedEntity: "I. D. Halpérine-Kaminsky"
+    relatedEvidence: []
+    holding: "Gallica / Internet Archive (not retrieved)"
+    archiveId: ""
+    access: "not retrieved"
+    rights: PD
+    licence: PD
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO ACQUIRE: the title page of the first published edition (French, Paris 1893). The work is digitized (Gallica/IA); a clean title-page scan was not retrieved in this sweep (the Commons djvu is a blank binding)."
+  - id: vis-kgd-manuscript
+    type: manuscript
+    subject: "Draft manuscripts of «Царство божие внутри вас» (AЧ 19–35)"
+    relatedEntity: "M. L. Tolstaya (Maria Lvovna)"
+    relatedEvidence: []
+    holding: "State Museum of Leo Tolstoy, Moscow"
+    archiveId: "AЧ 19–35 (per PSS Tom 28 «Описание рукописей»)"
+    access: "not found openly"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: a manuscript facsimile (the dozens of drafts in the daughters' and copyists' hands, dated 1890–93). Held at GMT, Moscow; not on Commons or IA."
+
+# ── Scholarship (secondary layer — Phase 3) ─────────────────────────────────
+scholarship:
+  summary: >-
+    English-language scholarship treats The Kingdom of God Is Within You as the systematic
+    statement of Tolstoy's religio-political thought — the founding text of what is usually
+    called his Christian anarcho-pacifism — and as the culmination of decades of thinking
+    that issued in his theory of nonviolence (Alexandre Christoyannopoulos, Christian
+    Anarchism, 2010, and Tolstoy's Political Thought; the Harvard Davis Center's account of
+    Tolstoy's nonviolence). The substance is uncontested: the book subordinates political
+    theory to the Gospel, opens with W. L. Garrison's New England Non-Resistance Society and
+    Adin Ballou, and argues non-resistance as central to the Christian conception of life.
+    Its afterlife is the headline of the reception: Gandhi read it in 1894 and wrote in his
+    Autobiography that it 'overwhelmed' him and 'left an abiding impression,' ranking it with
+    Ruskin's Unto This Last and the poet Raychandbhai among the three decisive modern
+    influences on his life — a line that runs Garrison/Ballou → Tolstoy → Gandhi → the
+    twentieth-century practice of nonviolent resistance (and, through Gandhi, to M. L. King).
+    What the corpus adds is at two points the biographical literature passes over quickly:
+    the genesis (the preface-to-Ballou origin, the four titles, the Strakhov-prompted split
+    of chapter VIII, the Uzlovaya rewrite of the conclusion), traceable week by week in the
+    1890–93 diaries; and the precise publication sequence, where the PSS apparatus corrects
+    the received summary that the book was 'first published in Germany in 1894' — the French
+    Le salut est en vous came first (Paris, 1893), and the original Russian and German
+    editions of 1894 came from Berlin (Deubner) and Stuttgart, not the Leipzig venue the
+    works record currently carries.
+  triangulation:
+    - evidenceRef: kgd-text-02
+      conventionalView: "The Kingdom of God Is Within You is the founding statement of Tolstoy's Christian anarcho-pacifism, subordinating political theory to the Gospel's commandment of non-resistance."
+      relation: confirms
+      source: "Christoyannopoulos, Christian Anarchism (Imprint Academic, 2010) and Tolstoy's Political Thought (Routledge); Harvard Davis Center, 'Beyond War and Peace: Tolstoy's Theory of Nonviolence'. The primary text states exactly this hierarchy (non-resistance as the 'chief departure' the churches made from Christ)."
+    - evidenceRef: kgd-diary-01
+      conventionalView: "The book is the culmination of some thirty years of Tolstoy's thinking on Christianity and nonviolence."
+      relation: extends
+      source: "general reference accounts (e.g. the standard encyclopaedic summary). The corpus supplies the concrete genesis the summary compresses: the book began on 8 July 1890 as a preface to Ballou's Catechism and grew, traceably in the diaries, into the treatise — an origin more specific and more accidental than 'thirty years of thinking' implies."
+    - evidenceRef: kgd-text-12
+      conventionalView: "The Kingdom of God Is Within You was first published in Germany in 1894 after being banned in Russia."
+      relation: complicates
+      source: "popular and reference summaries (and, in substance, the works record's firstPublishedVenue 'Wilhelm Friedrich Verlag, Leipzig'). The PSS Tom 28 commentary shows the French Le salut est en vous appeared first (Paris: Perrin, October 1893); the original Russian (Berlin: Deubner) and the German (Stuttgart: Deutsche Verlags-Anstalt) came in January 1894 — 'first in Germany 1894' flattens the sequence and misnames the venue."
+    - evidenceRef: kgd-text-03
+      conventionalView: "Tolstoy's late religion is a form of Christian mysticism."
+      relation: contradicts
+      source: "popular framing; the book's own subtitle — «не как мистическое учение, а как новое жизнепонимание» (not as a mystical teaching but as a new understanding of life) — explicitly rejects it, as the On Life dive found in the philosophical book."
+    - evidenceRef: kgd-let-01
+      conventionalView: "Chertkov shaped and softened Tolstoy's late religious writing."
+      relation: complicates
+      source: "the 'Chertkov as controlling editor' frame (cf. the Sofia-centred biography; christian-anarchism, biryukov-sofia-relationship). The corpus shows Chertkov pressing for softenings and Tolstoy refusing the principle outright ('to soften, with qualifications, is impossible'); Chertkov's influence on this book was organizational (copying, relay to translators, later publication), not a softening of its content."
+
+# ── Work-record proposal (READ-ONLY to works/; human ingestion applies) ──────
+# A record already EXISTS: website/src/works/non-fiction/treatises/the-kingdom-of-god-is-within-you/
+# These are evidence-anchored CORRECTIONS / refinements to existing fields, not a from-scratch fill.
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/the-kingdom-of-god-is-within-you/The Kingdom of God Is Within You.md"
+  workId: "the-kingdom-of-god-is-within-you"
+  fields:
+    - field: dateWritingStarted
+      value: "1890"
+      oldStyle: "1890"
+      approximate: true
+      evidenceRefs: [kgd-diary-01]
+      source: jubilee-edition
+      confidence: high
+      note: "Confirms the existing value. The preface to Ballou's Catechism was begun 8 July 1890 (OS); the treatise proper from 16 November 1890. Commentary: 'about three years, from July 1890.'"
+    - field: dateWritingCompleted
+      value: "1893-05"
+      oldStyle: "1893-05"
+      approximate: false
+      evidenceRefs: [kgd-diary-04]
+      source: jubilee-edition
+      confidence: high
+      note: "CORRECTION: the record's dateWritingCompletedOldStyle is currently '1893-04', which appears to be an error — Tolstoy dated the completion 14 May 1893 (OS), Yasnaya Polyana (diary, and the date printed in the foreign editions). The OS month is May, not April. Exact OS day: 1893-05-14."
+    - field: firstPublishedVenue
+      value: "Le salut est en vous, Paris: Perrin, 1893 (French — first published edition) / «Царство Божие внутри вас», Berlin: August Deubner, January 1894 (first-printed Russian)"
+      evidenceRefs: [kgd-text-12]
+      source: jubilee-edition
+      confidence: medium
+      note: "CORRECTION: the record currently reads 'Wilhelm Friedrich Verlag, Leipzig', which the PSS Tom 28 commentary does not support. Per the commentary, first publication anywhere = French Le salut est en vous (Paris: Perrin, October 1893); first-printed original Russian = Berlin, August Deubner (Jan 1894); first German = Stuttgart, Deutsche Verlags-Anstalt (Jan 1894). Human to choose which event firstPublishedVenue carries and correct the value — see needsReview."
+    - field: dateFirstPublished
+      value: "1893"
+      oldStyle: "1893"
+      approximate: false
+      evidenceRefs: [kgd-text-12]
+      source: jubilee-edition
+      confidence: medium
+      note: "CORRECTION candidate: the record reads '1894'. First publication in ANY language was the French (Paris, 1893). If the field carries 'first publication anywhere', it is 1893; if it carries 'first edition in the original Russian', it is January 1894 (Berlin). Human decision — see needsReview."
+    - field: dateFirstPublishedInRussia
+      value: "1906"
+      oldStyle: "1906"
+      approximate: false
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Confirms the existing value. First legal printing in Russia: July 1906, «Русское свободное слово» (Полное собрание сочинений, запрещенных русской цензурой, тт. I–II), uncut. Propose filling firstPublishedInRussiaVenue accordingly (currently empty)."
+    - field: titleAlternatives
+      value: "add: [{title: 'О непротивлении злу, о церкви и об общей воинской повинности', type: working-title, language: ru}, {title: 'Учение Христа и общая воинская повинность', type: working-title, language: ru}, {title: 'Le salut est en vous', type: translation, language: fr}, {title: 'The Kingdom of God Is Within You', type: translation, language: en}]"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "The record already has the German and French descriptive translation titles. Add the two principal draft titles (the long first title; the third title kept long in the manuscripts) and the ACTUAL published French title (Le salut est en vous — 'Salvation is within you', which differs from a literal rendering). Shape per the works schema's titleAlternatives object array; check the live record's existing shape before applying."
+    - field: bans
+      value: "refine ban #1: banningAuthority 'Main Administration for Press Affairs' (Feoktistov circular No. 2829, 18 May 1894); the foreign-publications censorship refused entry to the French edition in 1893; circulation banned, lifted ~1905–06 (first legal Russian printing July 1906)"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "The PSS Tom 28 commentary documents SECULAR censorship: the foreign-publications censorship banned the imported French edition (1893, 'the most harmful book it ever had to ban'), and Feoktistov's secret circular (18 May 1894, No. 2829) ordered surveillance of printers and typewriter owners. The record's ban #2 (Holy Synod, complete-ban) is NOT documented in this commentary — verify or reclassify (see needsReview)."
+    - field: transcriptions
+      value: "principal copyists were M. L. Tolstaya and T. L. Tolstaya (daughters), with S. A. Tolstaya, L. F. Annenkova and E. I. Popov also copying"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "CORRECTION: the record's single transcription (sophia-tolstaya, 'Transcriber needs verification') understates the copying. The commentary's «Описание рукописей» names M. L. Tolstaya and T. L. Tolstaya as the principal copyists (their hands date the early manuscripts), with S. A. Tolstaya (the conclusion), L. F. Annenkova, and E. I. Popov (last stage; compiled the Oglavlenie)."
+    - field: authoringLocations
+      value: "add: Begichevka (Ryazan province — famine-relief base) and Moscow, alongside the existing Yasnaya Polyana"
+      evidenceRefs: [kgd-diary-03, kgd-diary-04]
+      source: jubilee-edition
+      confidence: high
+      note: "The record has Yasnaya Polyana (1890–93). The commentary and diaries place substantial composition at Begichevka (during the 1891–92 famine relief) and in Moscow (winters). Completion was at Yasnaya Polyana (14 May 1893)."
+    - field: relatedWorks
+      value: "add Prophet-period siblings: [{id: confession, relationshipType: companion}, {id: what-i-believe, relationshipType: sequel-to}, {id: what-then-must-we-do, relationshipType: companion}, {id: on-life, relationshipType: companion}]"
+      evidenceRefs: [kgd-text-02]
+      source: jubilee-edition
+      confidence: medium
+      note: "The record already lists what-i-believe (companion) and the-law-of-violence-and-the-law-of-love (companion). The book is explicitly the SEQUEL to What I Believe (it answers its critics in chs. I–II). NB: of the sibling work records, only Confession.md currently exists in website/src/works; what-i-believe / what-then-must-we-do / on-life records are not yet created (the dives propose them). Apply ids when the records exist."
+    - field: excommunicationRelated
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: low
+      note: "Keeps the existing value, but on the 'related' (climate) reading only: the 1901 Holy Synod edict of separation named no specific works; The Kingdom of God Is Within You is among the anti-church writings that fed the hostility, not a work the Synod directly banned. Same caution as the On Life dive — see needsReview."
+
+# ── Coverage ledger (surfaces × status) ─────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Preface-to-Ballou origin, the four titles, the chapter-VIII split, the Uzlovaya rewrite, and the circle of copyists — from the commentary + byte-checked diaries/letter."
+  - surface: "What the work says"
+    status: covered
+    note: "The twelve chapters mapped from Tolstoy's own table of contents; keystone passages byte-checked from the work's TEI."
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "The Varianty (pp. 309–330) and the abandoned Afterword are summarized from the commentary, not collated; the manuscript history (AЧ 19–35) is used but not reproduced."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "The relay abroad, the French-first 1893 sequence, the Berlin/Deubner first Russian and Stuttgart German of 1894, the two English translations, the censorship cuts and Feoktistov circular, and the 1906 first legal Russian printing — all from the commentary."
+  - surface: "Reception & afterlife (Russian society + Gandhi)"
+    status: covered
+    note: "Russian reception (censors; Stasov; Repin) from the commentary; Gandhi as the headline from his Autobiography + scholarship. M. L. King only sketched as the further lineage."
+  - surface: "Reception (Church / Synod)"
+    status: partial
+    note: "The book's tie to the 1901 Synod edict is one of climate, not a documented direct ban; left honestly partial (see needsReview)."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "Cross-linked to the four prior Prophet-period dives and the christian-anarchism / tolstoyanism doctrine dives."
+  - surface: "The author's later verdict"
+    status: partial
+    note: "Relief at completion ('I am free') and the defense of the uncompromising tone; no later retrospective beyond completion in this window."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Keystone portrait + first-edition title page + key entities cached (PD); manuscript facsimile and the French/German title pages flagged to acquire."
+
+# ── Intra-corpus contradictions (primary-vs-primary) ────────────────────────
+contradictions: []
+
+# ── Not covered (free-text overflow / resume queue) ─────────────────────────
+notCovered:
+  - "The Varianty (PSS Tom 28, pp. 309–330) and the abandoned Послесловие fragments — not collated."
+  - "The full manuscript history (Описание рукописей, pp. 373–381; AЧ 19–35) — used for chronology/copyists, not reproduced."
+  - "The church-history sources Tolstoy read for chapter III (Smirnov, Hausrath, Pressensé, de Broglie, Arnold, Ivantsov-Platonov) — named, not pursued."
+  - "Incoming letters (to Tolstoy) — the TEI corpus holds only outgoing letters."
+  - "The 1908 'A Letter to a Hindu' and the 1909–10 Tolstoy–Gandhi correspondence (PSS Toms 80–82) — the afterlife, outside this dive's 1890–93 window; a candidate for a dedicated dive."
+  - "The Russian PSS Tom 28 facsimile — not held locally (the local Complete Works PDFs are Wiener's 1904 English edition)."
+
+# ── needsReview (deferred human judgment; autonomous run never blocks) ───────
+needsReview:
+  - item: "firstPublishedVenue / dateFirstPublished — the record's 'Wilhelm Friedrich Verlag, Leipzig' / 1894 is not supported by the PSS Tom 28 commentary, which gives French first (Perrin, Paris, Oct 1893), then first-printed Russian (Berlin, Deubner, Jan 1894) and German (Stuttgart, Deutsche Verlags-Anstalt, Jan 1894). Decide which event the fields carry and correct the venue."
+    phase: 3
+    why: "Corrects a likely factual error in the live works record; needs a human to choose the field's semantics (first-anywhere vs first-in-original-Russian)."
+  - item: "bans[] Holy Synod complete-ban — not documented in the PSS Tom 28 commentary, which records secular censorship only (foreign-publications ban 1893; Feoktistov / Main Administration for Press Affairs circular 18 May 1894 No. 2829). Verify the Synod-specific ban of this book or reclassify."
+    phase: 3
+    why: "The record asserts a Holy-Synod ban the corpus apparatus does not corroborate."
+  - item: "excommunicationRelated (record: true) — the 1901 Synod edict named no works; this is a tie of climate, not a direct ban. Keep true on the 'related' reading, or qualify (same as the On Life dive)."
+    phase: 4
+    why: "Boundary case in the controlled field; the dive cannot resolve it from this corpus."
+  - item: "dateWritingCompletedOldStyle (record: '1893-04') appears to be an error — completion was 14 May 1893 (OS). Propose '1893-05'."
+    phase: 4
+    why: "Likely Old-Style/New-Style slip in the live record."
+  - item: "Maria Tolstaya.md — RESOLVED (Phase-5 verifier): the page is the daughter Maria Lvovna (1871–1906, relationToTolstoy: daughter), the copyist. Safe to link M. L. Tolstaya there; no action needed."
+    phase: 4
+    why: "Was an ambiguous wiki page name (daughter Maria Lvovna vs sister Maria Nikolaevna); confirmed as the daughter, kept for the ingestion audit trail."
+  - item: "Genesis / publication / censorship facts and the Stasov/Repin reception are drawn from the PSS Tom 28 commentary (N. K. Gudzy), not byte-extracted PD text — attribute, do not byte-claim."
+    phase: 2
+    why: "The commentary is editorial apparatus, not public-domain Tolstoy text."
+  - item: "Gandhi reception is from Gandhi's Autobiography + scholarship, not the corpus; the 1909–10 correspondence is in Toms 80–82, outside this window."
+    phase: 3
+    why: "Secondary, attributed; flagged so ingestion does not treat it as corpus-grounded."
+
+# ── Archives consulted ──────────────────────────────────────────────────────
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ (PSS Tom 28: work, Оглавление, Варианты)"
+  - "primary-sources/tolstoydigital-TEI/texts/comments/ (PSS Tom 28: История писания, текстологические примечания, описание рукописей — N. K. Gudzy)"
+  - "primary-sources/tolstoydigital-TEI/texts/diaries/ (PSS Toms 51–52, 1890–93)"
+  - "primary-sources/tolstoydigital-TEI/texts/letters/ (PSS Tom 87, letters to Chertkov)"
+  - "Wikimedia Commons (visual sweep; all PD)"
+  - "Web: Gandhi's Autobiography reception; Christoyannopoulos; Harvard Davis Center (scholarship triangulation)"
+  - "website/src/wiki/ and website/src/works/ (vault-status and work-record checks, 2026-06-06)"
+
+# ── References ──────────────────────────────────────────────────────────────
+references:
+  primary:
+    - "Толстой Л. Н. Царство божие внутри вас, или Христианство не как мистическое учение, а как новое жизнепонимание // ПСС в 90 тт. Т. 28. М.: ГИХЛ, 1957. С. 1–293 (work), 294–306 (Оглавление), 309–330 (Варианты)."
+    - "Гудзий Н. К. «Царство божие внутри вас». История писания и печатания // ПСС Т. 28, с. 333–381 (editorial commentary; attributed, not byte-claimed)."
+    - "Толстой Л. Н. Дневники 1890–1893 // ПСС Тт. 51–52; Письма // ПСС Тт. 65–66, 87. tolstoydigital TEI corpus (Слово Толстого, HSE Moscow), CC BY-SA."
+  background:
+    - "Gandhi, M. K. An Autobiography, or The Story of My Experiments with Truth (1927–29) — the 1894 reading: the book 'overwhelmed' him and 'left an abiding impression'."
+    - "Christoyannopoulos, Alexandre. Christian Anarchism: A Political Commentary on the Gospel. Exeter: Imprint Academic, 2010; and Tolstoy's Political Thought. London: Routledge."
+    - "Harvard Davis Center, 'Beyond War and Peace: Tolstoy's Theory of Nonviolence'."
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile, 2010 — the famine relief and the publication abroad."
+    - "The Kingdom of God Is Within You — English: trans. Constance Garnett (Heinemann, 1894); trans. Aline Delano (Walter Scott, 1894). French: Le salut est en vous, trans. I. D. Halpérine-Kaminsky (Paris: Perrin, 1893)."
