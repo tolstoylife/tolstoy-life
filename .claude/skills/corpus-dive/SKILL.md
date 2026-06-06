@@ -337,10 +337,14 @@ entries reference valid `evidenceRef`s and use a valid `relation`**; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
 editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
 rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
-git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier). For **work dives** it additionally checks: `workRecord` proposals are evidence-anchored (no
+git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier).
+
+For **work dives** it additionally checks: `workRecord` proposals are evidence-anchored (no
 fabricated dates/venues) and their `field` names match the `works/` record schema; the
 `coverage` ledger is honest (no `covered` the evidence shows is really `partial`); and the
-standing spine sections obey the bare-voice / attribute-don't-assert rules. Iterate until
+standing spine sections obey the bare-voice / attribute-don't-assert rules.
+
+Iterate until
 the verdict is clean; in `--auto`, if it cannot converge after a few iterations, record the open
 items in `needsReview` and conclude the run rather than blocking indefinitely.
 
