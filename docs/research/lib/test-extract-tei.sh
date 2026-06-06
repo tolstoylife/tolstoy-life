@@ -43,4 +43,32 @@ fi
 printf '%s\n' "$OUT2" | grep -q 'Давно уже получил ваше письмо' \
   || { echo "FAIL: normal letter body went missing"; exit 1; }
 
+# --- 6. Pre-reform <choice><orig>/<reg> resolution (the --choice flag) ---
+FIX="$HERE/test-fixtures/prereform-choice.xml"
+
+# reg mode resolves to the regularized (modern) reading and does NOT leak orig
+REGOUT="$(python3 "$EXTRACT" "$FIX" --choice=reg)"
+printf '%s\n' "$REGOUT" | grep -q 'старого' \
+  || { echo "FAIL: --choice=reg did not resolve <reg> (старого missing)"; exit 1; }
+printf '%s\n' "$REGOUT" | grep -q 'нового' \
+  || { echo "FAIL: --choice=reg did not resolve the second <reg> (нового missing)"; exit 1; }
+if printf '%s\n' "$REGOUT" | grep -q 'стараго'; then
+  echo "FAIL: --choice=reg leaked the <orig> reading (стараго)"; exit 1
+fi
+
+# orig mode resolves to the pre-reform reading
+ORIGOUT="$(python3 "$EXTRACT" "$FIX" --choice=orig)"
+printf '%s\n' "$ORIGOUT" | grep -q 'стараго' \
+  || { echo "FAIL: --choice=orig did not resolve <orig> (стараго missing)"; exit 1; }
+
+# legacy default stays backward-compatible: it DROPS the pair (neither reading appears) ...
+LEGOUT="$(python3 "$EXTRACT" "$FIX" 2>/dev/null)"
+if printf '%s\n' "$LEGOUT" | grep -Eq 'старого|стараго'; then
+  echo "FAIL: legacy default unexpectedly kept a pre-reform <choice> reading"; exit 1
+fi
+# ... but it must NOT be silent — a stderr nudge points at --choice=reg
+LEGERR="$(python3 "$EXTRACT" "$FIX" 2>&1 >/dev/null)"
+printf '%s\n' "$LEGERR" | grep -qi 'choice=reg' \
+  || { echo "FAIL: legacy mode dropped pre-reform pairs without nudging about --choice=reg"; exit 1; }
+
 echo "PASS"
