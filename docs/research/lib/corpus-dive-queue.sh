@@ -8,7 +8,7 @@
 #
 # themes file: one theme per line; blank lines and lines starting with # are ignored.
 #
-# --skip-permissions appends Claude's `--dangerously-skip-permissions` to each invocation so the
+# --skip-permissions appends Claude's `--allow-dangerously-skip-permissions` to each invocation so the
 #   run does not stall on write-permission prompts. REQUIRED for true unattended/overnight use
 #   (or configure a .claude/settings.json allow-list instead). It disables ALL permission prompts
 #   for that headless process — use deliberately.
@@ -48,7 +48,7 @@ while IFS= read -r line || [ -n "$line" ]; do
 
   cmd_args=(-p "/corpus-dive $theme --auto")
   if [ -n "$MODEL" ]; then cmd_args+=(--model "$MODEL"); fi
-  if [ "$SKIP_PERMS" -eq 1 ]; then cmd_args+=(--dangerously-skip-permissions); fi
+  if [ "$SKIP_PERMS" -eq 1 ]; then cmd_args+=(--allow-dangerously-skip-permissions); fi
 
   if [ "$DRY_RUN" -eq 1 ]; then
     printf 'claude'; printf ' %q' "${cmd_args[@]}"; printf '\n'
