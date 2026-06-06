@@ -3,7 +3,7 @@
 Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
 
 - **`extract_tei.py`** — resolves tolstoydigital-TEI editorial markup into grep-able Russian
-  prose. Usage: `python3 extract_tei.py <path-to-xml> [substring] [--notes=auto|off|force]`.
+  prose. Usage: `python3 extract_tei.py <path-to-xml> [substring] [--notes=auto|off|force] [--choice=legacy|reg|orig|both]`.
   Requires `lxml`. This is the canonical copy; dives reference it rather than forking it.
   - **Note-encoded body recovery.** Most documents carry their text in `<p>` body elements,
     with `<note>`/`<noteGrp>` holding footnotes that are stripped. A handful of PSS documents
@@ -18,6 +18,17 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
     with editorial commentary, so verify against the source PDF. `--notes=off` forces the legacy
     strip-everything behaviour; `--notes=force` additionally dumps the comments apparatus after a
     normal body (for reading the editorial commentary).
+  - **Pre-reform orthography (`--choice`).** Pre-1918 texts encode old/new spelling as
+    `<choice><orig>стараго</orig><reg>старого</reg></choice>`. The default `legacy` mode
+    **drops** these pairs (the historical gap that gutted Tom 58 / 1880-era diaries and
+    letters) — but now prints a `# warning:` to stderr naming the count so a run is never
+    silently gutted. `--choice=reg` resolves to the modern-orthography `<reg>` reading and
+    is **recommended for every Prophet-period (pre-1918) extraction**; `--choice=orig`
+    keeps the pre-reform reading; `--choice=both` emits `reg [orig]` for collation.
+    Editorial `<sic>/<corr>` pairs are always resolved to `<corr>`, independent of this
+    flag. This supersedes the per-dive `_reg_extract.py` helper (e.g.
+    `lords-prayer/extracts/_reg_extract.py`), which is left in place only as that dive's
+    provenance record.
 - **`verify_quotes.py`** — mechanical byte-fidelity gate for a dive's dossier. Loads every
   `evidence[].quoteRu`, opens the named `extract` file, and asserts the (whitespace-normalised)
   quote appears **verbatim** in it — turning Phase 5's core credibility check into one deterministic
