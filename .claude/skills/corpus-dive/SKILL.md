@@ -44,16 +44,23 @@ Parse `{{ARGUMENTS}}`:
   `--confirm-scope` adds exactly one approval (the contract) before detaching. An autonomous run
   must never publish: the note is always written with `draft: true` (never flipped to published),
   no vault writes, licence-gated downloads only.
+
 For **work dives**, `--auto` is the preferred way to run a dive while the reader is away: the
 composition/interlocutor sweep, the `workRecord:` fill, the standing sections, and the
 `coverage:` ledger all run with no human in the loop; any uncertain field, attribution, or
-judgment call goes to `needsReview`, never into the prose. The post-pilot **evaluation gate is
-not run live under `--auto`** — the dive instead writes a **self-assessment** of its checks
-(did the interlocutor sweep yield people; is the Russian society/church reception covered; is
-the `workRecord` fill accurate + provenanced; is `coverage` honest; did `--choice=reg` extract
-cleanly; did the spine stay bare) into `run-report.md`, each self-scored, with concerns routed
-to `needsReview`. The human retrospective is deferred to the reader's return; the
-self-assessment never blocks the run.
+judgment call goes to `needsReview`, never into the prose.
+
+The post-pilot **evaluation gate is not run live under `--auto`** — the dive instead records a
+**self-assessment** of its checks (written into `run-report.md` at Phase 6 handoff), each
+self-scored, with concerns routed to `needsReview`:
+- Did the interlocutor sweep yield people?
+- Is the Russian society/church reception covered?
+- Is the `workRecord` fill accurate and provenanced?
+- Is `coverage` honest (no `covered` that is really `partial`)?
+- Did `--choice=reg` extract cleanly?
+- Did the spine stay bare?
+
+The human retrospective is deferred to the reader's return; the self-assessment never blocks the run.
 
 ## Model routing
 
@@ -282,7 +289,8 @@ context" prose section of `index.md` is composed in Synthesize.
      recordPath:    # path to the works/<…>/<Title>.md record
      workId:        # the record's id field
      fields:        # one entry per field the dive can source; omit fields it cannot determine
-       - { field, value, oldStyle, approximate, evidenceRefs, source, confidence, note }
+       - { field, value, evidenceRefs, source, confidence, note,
+          oldStyle, approximate }   # oldStyle/approximate: sub-flags on date-typed entries only
    coverage:        # surfaces × status — derives index.md "Material not covered"; resume reads this
      - { surface, status, note }   # status ∈ covered | partial | not-covered
    contradictions:  - { claim, correction, evidenceRef }   # intra-corpus (primary-vs-primary) only — distinct from scholarship
@@ -300,7 +308,7 @@ context" prose section of `index.md` is composed in Synthesize.
      also go in `references.background` (`source` omitted when there is no clear one).
    - `workRecord.fields[].field` mirrors a `works/` frontmatter key (no new schema — it reflects
      `website/schema/` + the record itself). The dive never writes `works/`; it *proposes*.
-     `confidence` ∈ high | medium | low. `oldStyle`/`approximate` mirror the record's date fields.
+     `confidence` ∈ high | medium | low. `oldStyle: true` marks a Julian-calendar date; `approximate: true` marks a circa date — both are sub-flags on a date-typed `field` entry, not standalone fields.
    - `coverage[].status` ∈ covered | partial | not-covered — the structured surface map the
      "Material not covered" section is derived from and that multi-session resume reads first.
    - `ingestionPriority` (optional) ∈ 1 | 2 | 3 — the order the wiki pages should be written:
