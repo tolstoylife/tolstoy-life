@@ -1,7 +1,7 @@
 # Run report — A Confession (Исповедь) work-dive
 
 **Mode:** autonomous (`--auto`), run **deep / multi-pass** with a **heavy** visual fan-out.
-**Date:** 2026-06-06 · **Slug:** `a-confession` · **Work id:** `confession`
+**Date:** 2026-06-06 · **Slug:** `1879-1882-a-confession` · **Work id:** `confession`
 **Scope approved once upfront** (the reader chose Heavy visuals + Go-deep), then detached.
 
 ## Phase 0 — scope contract (as run)
@@ -18,7 +18,7 @@
 
 ## Verification (Phase 5)
 
-- **Mechanical gate:** `verify_quotes.py docs/research/a-confession/dossier.yaml` → **27/27 quotes verbatim, 0 label warnings — PASS.**
+- **Mechanical gate:** `verify_quotes.py docs/research/1879-1882-a-confession/dossier.yaml` → **27/27 quotes verbatim, 0 label warnings — PASS.**
 - **Cross-dive aggregation:** `build_evidence_index.py --check` → **exit 0** (0 unresolved refs; entities register cleanly).
 - **Render:** `serve.py --build-only` → `index.html` (48 KB) + `INDEX.html` rebuilt, exit 0.
 - **Independent verifier (opus, fresh context):** verdict **CLEAN-WITH-MINORS, no must-fix.** Confirmed primary-anchored claims, attributed secondary, valid triangulation refs, accurate `vaultStatus`, the cousin/daughter A. A. Tolstaya distinction, rights hygiene (visuals git-ignored; only PD in `extracts/`; nothing in `website/src/`), honest coverage, evidence-anchored dates. Only minor: `workRecord` value *shapes* (flat vs object arrays) to reshape at human ingestion — already in `needsReview`.
@@ -34,11 +34,11 @@
 
 ## Outputs
 
-- `docs/research/a-confession/index.md` (+ git-ignored `index.html`)
-- `docs/research/a-confession/dossier.yaml` (evidence ×27, entities ×24, scholarship, workRecord, coverage, visuals, needsReview)
-- `docs/research/a-confession/extracts/` — 18 byte-faithful `.txt` extracts + 1 PD facsimile (`v13_MyConfession_opening_facsimile-019.jpg`, English Wiener 1904)
-- `docs/research/a-confession/visuals/` — 27 PD images cached (git-ignored; repopulate with `fetch_visuals.py a-confession`)
-- `docs/research/a-confession/session-log.md`, `run-report.md`
+- `docs/research/1879-1882-a-confession/index.md` (+ git-ignored `index.html`)
+- `docs/research/1879-1882-a-confession/dossier.yaml` (evidence ×27, entities ×24, scholarship, workRecord, coverage, visuals, needsReview)
+- `docs/research/1879-1882-a-confession/extracts/` — 18 byte-faithful `.txt` extracts + 1 PD facsimile (`v13_MyConfession_opening_facsimile-019.jpg`, English Wiener 1904)
+- `docs/research/1879-1882-a-confession/visuals/` — 27 PD images cached (git-ignored; repopulate with `fetch_visuals.py 1879-1882-a-confession`)
+- `docs/research/1879-1882-a-confession/session-log.md`, `run-report.md`
 - `website/src/posts/notes/2026-06-06-a-confession.md` (`draft: true`)
 
 ## For the reader's return (deferred, with Johan)

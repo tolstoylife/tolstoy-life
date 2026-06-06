@@ -1,10 +1,10 @@
 # A Confession (Исповедь) — corpus-dive dossier
 # Machine-readable companion to index.md. Primary evidence is byte-faithful
-# (verify with: python3 docs/research/lib/verify_quotes.py docs/research/a-confession/dossier.yaml).
+# (verify with: python3 docs/research/lib/verify_quotes.py docs/research/1879-1882-a-confession/dossier.yaml).
 # Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
 
 topic:
-  slug: a-confession
+  slug: 1879-1882-a-confession
   title: "A Confession (Исповедь)"
   question: >-
     Document A Confession as a work across the local Tolstoy corpus — its

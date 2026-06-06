@@ -440,15 +440,15 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <header class="doc-header">
   <p class="eyebrow">evidence-index</p>
   <h1>Cross-dive evidence index</h1>
-  <p class="meta">Last modified 31 May 2026 · <a href="/research/evidence-index/index.md">view source</a></p>
+  <p class="meta">Last modified 6 June 2026 · <a href="/research/evidence-index/index.md">view source</a></p>
 </header>
 <main>
 <p>Generated aggregate of every corpus-dive dossier, keyed by entity. It collates the verified primary-source citations already gathered across all dives so wiki ingestion reuses them instead of re-collating by hand. Generated — do not hand-edit; regenerate with <code>python3 docs/research/lib/build_evidence_index.py</code>. Writing the wiki pages remains a separate, human-in-the-loop step.</p>
 <h2>1. At a glance</h2>
 <ul>
-<li>7 dives · 59 distinct entities · 80 evidence rows · 57 visuals</li>
-<li>By vault status: 8 exists · 3 stub · 48 missing</li>
-<li>6 entities recur across ≥2 dives</li>
+<li>14 dives · 132 distinct entities · 281 evidence rows · 153 visuals</li>
+<li>By vault status: 10 exists · 4 stub · 118 missing</li>
+<li>18 entities recur across ≥2 dives</li>
 </ul>
 <h2>2. Ingestion work-order</h2>
 <p>Entities not yet written (or only stubbed) that already have verified evidence, ranked by ingestion priority then evidence count. These are ready to write — the citations are collated in §3.</p>
@@ -465,12 +465,68 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 </thead>
 <tbody>
 <tr>
-<td>Jubilee Edition</td>
+<td>Soedinenie i perevod chetyrekh Evangelij</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor, gospel-translation, lords-prayer</td>
+<td>31</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Fire of conscience</td>
 <td>concept</td>
 <td>missing</td>
-<td>jubilee-edition-tei-corpus</td>
+<td>fire-metaphor</td>
+<td>12</td>
+<td>light-of-reason-свет-разума</td>
+</tr>
+<tr>
+<td>Kratkoe izlozhenie Evangelija</td>
+<td>work</td>
+<td>missing</td>
+<td>gospel-translation, lords-prayer</td>
+<td>11</td>
+<td>union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий</td>
+</tr>
+<tr>
+<td>Nikolai Strakhov</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession, crisis, gospel-translation, lords-prayer</td>
+<td>11</td>
+<td>lev-tolstoy</td>
+</tr>
+<tr>
+<td>Nikolai Ge</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>9</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ilya Repin</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>6</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Jubilee Edition</td>
+<td>edition</td>
+<td>missing</td>
+<td>gospel-translation, jubilee-edition-tei-corpus</td>
 <td>6</td>
 <td>vladimir-chertkov</td>
+</tr>
+<tr>
+<td>Otche nash (Tolstoy)</td>
+<td>concept</td>
+<td>missing</td>
+<td>lords-prayer</td>
+<td>6</td>
+<td>the-gospel-in-brief-краткое-изложение-евангелия, union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий</td>
 </tr>
 <tr>
 <td>Tolstoy Digital</td>
@@ -489,12 +545,76 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
+<td>V chem moja vera</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor, gospel-translation</td>
+<td>5</td>
+<td>union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий</td>
+</tr>
+<tr>
+<td>Ivan Kramskoy</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Light of reason</td>
+<td>concept</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Spiritual crisis (perevorot)</td>
+<td>concept</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>3</td>
+<td>lev-tolstoy</td>
+</tr>
+<tr>
 <td>Excommunication of Leo Tolstoy</td>
 <td>event</td>
 <td>missing</td>
 <td>christian</td>
 <td>1</td>
 <td>true-vs-church-christianity</td>
+</tr>
+<tr>
+<td>Sergei Prokudin-Gorsky</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Confession</td>
+<td>work</td>
+<td>stub</td>
+<td>crisis, fire-metaphor, gospel-translation</td>
+<td>6</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Na kazhdyj den</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>4</td>
+<td>fire-of-conscience-the-luke-1249-motif, light-of-reason-свет-разума</td>
+</tr>
+<tr>
+<td>Four Gospels Harmonised and Translated (1895)</td>
+<td>edition</td>
+<td>missing</td>
+<td>gospel-translation</td>
+<td>3</td>
+<td>union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий</td>
 </tr>
 <tr>
 <td>Paul Eltzbacher</td>
@@ -505,12 +625,44 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>leo-tolstoy</td>
 </tr>
 <tr>
+<td>Put zhizni</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>3</td>
+<td>fire-of-conscience-the-luke-1249-motif</td>
+</tr>
+<tr>
+<td>Valeria Arsenyeva</td>
+<td>person</td>
+<td>missing</td>
+<td>biryukov-sofia-relationship</td>
+<td>3</td>
+<td>pavel-biryukov, sofia-tolstaya</td>
+</tr>
+<tr>
 <td>All Tolstoy in One Click</td>
 <td>event</td>
 <td>missing</td>
 <td>jubilee-edition-tei-corpus</td>
 <td>2</td>
 <td>fyokla-tolstaya, the-jubilee-edition-полное-собрание-сочинений</td>
+</tr>
+<tr>
+<td>Biography of Leo Tolstoy (Biryukov)</td>
+<td>criticalWork</td>
+<td>missing</td>
+<td>biryukov-sofia-relationship</td>
+<td>2</td>
+<td>pavel-biryukov</td>
+</tr>
+<tr>
+<td>Burning of Arms</td>
+<td>event</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>2</td>
+<td>fire-of-conscience-the-luke-1249-motif</td>
 </tr>
 <tr>
 <td>Dmitry Khilkov</td>
@@ -529,10 +681,58 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>christian-anarchism, leo-tolstoy</td>
 </tr>
 <tr>
+<td>Ilya Ginzburg</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nikolai Fedorov</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>2</td>
+<td>lev-tolstoy</td>
+</tr>
+<tr>
+<td>O zhizni</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>2</td>
+<td>light-of-reason-свет-разума</td>
+</tr>
+<tr>
+<td>razumenie</td>
+<td>concept</td>
+<td>missing</td>
+<td>lords-prayer</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
 <td>State Tolstoy Museum</td>
 <td>institution</td>
 <td>missing</td>
 <td>copyright-renunciation, jubilee-edition-tei-corpus</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>State Tretyakov Gallery</td>
+<td>institution</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The Kingdom of God Is Within You</td>
+<td>criticalWork</td>
+<td>stub</td>
+<td>doukhobors, fire-metaphor</td>
 <td>2</td>
 <td>—</td>
 </tr>
@@ -543,6 +743,30 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>tolstoyanism</td>
 <td>2</td>
 <td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Vasily Sutaev</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Afanasy Fet</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Alexandra Andreyevna Tolstaya</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>lev-tolstoy</td>
 </tr>
 <tr>
 <td>Anastasia Bonch-Osmolovskaya</td>
@@ -577,12 +801,60 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
+<td>Issledovanie dogmaticheskogo bogoslovija</td>
+<td>work</td>
+<td>missing</td>
+<td>gospel-translation</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Leonid Pasternak</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Mikhail Elpidin</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession, gospel-translation</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
 <td>Mikhail Stakhovich</td>
 <td>person</td>
 <td>missing</td>
 <td>tolstoyanism</td>
 <td>1</td>
 <td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Most Holy Synod</td>
+<td>institution</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nikolai Orlov (painter)</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nikolai Yaroshenko</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>1</td>
+<td>—</td>
 </tr>
 <tr>
 <td>Non-resistance</td>
@@ -593,6 +865,46 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>christian-anarchism</td>
 </tr>
 <tr>
+<td>Pavel Tretyakov</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Sergei Levitsky</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Thomas Tapsell</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>vladimir-chertkov</td>
+</tr>
+<tr>
+<td>Constantin von Tischendorf</td>
+<td>person</td>
+<td>missing</td>
+<td>lords-prayer</td>
+<td>2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>John Coleman Kenworthy</td>
+<td>person</td>
+<td>missing</td>
+<td>christian-anarchism, gospel-translation</td>
+<td>2</td>
+<td>christian-anarchism, the-four-gospels-harmonised-and-translated-brotherhood-/-walter-scott-1895–96</td>
+</tr>
+<tr>
 <td>John Van der Veer</td>
 <td>person</td>
 <td>missing</td>
@@ -601,10 +913,42 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
+<td>Abrege de l'Evangile</td>
+<td>work</td>
+<td>missing</td>
+<td>lords-prayer</td>
+<td>1</td>
+<td>the-gospel-in-brief-краткое-изложение-евангелия</td>
+</tr>
+<tr>
+<td>Aleksandr Drankov</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
 <td>Boris Orekhov</td>
 <td>person</td>
 <td>missing</td>
 <td>jubilee-edition-tei-corpus</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Chem ljudi zhivy</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Excommunication of Tolstoy</td>
+<td>event</td>
+<td>missing</td>
+<td>gospel-translation</td>
 <td>1</td>
 <td>—</td>
 </tr>
@@ -625,12 +969,28 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>tolstoy-digital-/-«слово-толстого»</td>
 </tr>
 <tr>
+<td>Hodite v svete poka est svet</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>1</td>
+<td>fire-of-conscience-the-luke-1249-motif</td>
+</tr>
+<tr>
 <td>I. Ivanov</td>
 <td>person</td>
 <td>missing</td>
 <td>tolstoyanism</td>
 <td>1</td>
 <td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Ivan Ivakin</td>
+<td>person</td>
+<td>missing</td>
+<td>gospel-translation</td>
+<td>1</td>
+<td>—</td>
 </tr>
 <tr>
 <td>Ivan Nazhivin</td>
@@ -641,7 +1001,7 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
-<td>John Coleman Kenworthy</td>
+<td>John Morrison Davidson</td>
 <td>person</td>
 <td>missing</td>
 <td>christian-anarchism</td>
@@ -649,12 +1009,20 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>christian-anarchism</td>
 </tr>
 <tr>
-<td>John Morrison Davidson</td>
-<td>person</td>
+<td>Krekshino</td>
+<td>place</td>
 <td>missing</td>
-<td>christian-anarchism</td>
+<td>tolstoy-in-photographs</td>
 <td>1</td>
-<td>christian-anarchism</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Leeds Russian Archive Chertkov Tapsell fond</td>
+<td>archival-fond</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>—</td>
 </tr>
 <tr>
 <td>Marian Zdziechowski</td>
@@ -665,6 +1033,54 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
+<td>Mikhail Engelhardt</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Optina Pustyn</td>
+<td>place</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Otets Sergij</td>
+<td>work</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>1</td>
+<td>light-of-reason-свет-разума</td>
+</tr>
+<tr>
+<td>Pavel Biryukov</td>
+<td>person</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Prokudin-Gorsky Collection Library of Congress</td>
+<td>archival-fond</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rumyantsev Museum</td>
+<td>place</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>n-f-fedorov</td>
+</tr>
+<tr>
 <td>Russian State Library</td>
 <td>institution</td>
 <td>missing</td>
@@ -673,11 +1089,35 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
-<td>Confession</td>
+<td>Smert Ivana Ilicha</td>
 <td>work</td>
-<td>stub</td>
-<td>crisis</td>
-<td>3</td>
+<td>missing</td>
+<td>fire-metaphor</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Vasily Alekseev</td>
+<td>person</td>
+<td>missing</td>
+<td>1879-1882-a-confession</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Vladimir Molochnikov</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-photographs</td>
+<td>1</td>
+<td>leo-tolstoy</td>
+</tr>
+<tr>
+<td>Vladimir Stasov</td>
+<td>person</td>
+<td>missing</td>
+<td>tolstoy-in-art</td>
+<td>1</td>
 <td>—</td>
 </tr>
 <tr>
@@ -761,14 +1201,6 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <td>—</td>
 </tr>
 <tr>
-<td>Nikolai Strakhov</td>
-<td>person</td>
-<td>missing</td>
-<td>crisis</td>
-<td>1</td>
-<td>—</td>
-</tr>
-<tr>
 <td>The Burning of Arms</td>
 <td>event</td>
 <td>missing</td>
@@ -786,8 +1218,42 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 </tr>
 </tbody>
 </table>
-<p>13 entities are named across the dives but carry no evidence rows yet (research gaps, not ready to ingest): ABBYY, Alexandra Tolstaya, Aylmer Maude, Ernest Howard Crosby, Felix Ortt, Leopold Sulerzhitsky, Nikolai Gudzy, Nikolai Gusev, Resurrection, Sergei Tolstoy, Society of Friends, The Kingdom of God Is Within You, Yasnaya Polyana.</p>
+<p>30 entities are named across the dives but carry no evidence rows yet (research gaps, not ready to ingest): ABBYY, Aksinya Bazykina, Alexandra Tolstaya, Astapovo, Aylmer Maude, Ernest Howard Crosby, Felix Ortt, Ivan Turgenev, Jan Styka, Karl Bulla, Konstantin Pobedonostsev, Leo Wiener, Leonid Urusov, Leopold Sulerzhitsky, Mikhail Nesterov, Naum Aronson, Nikolai Gudzy, Nikolai Gusev, Paolo Trubetskoy, Peredvizhniki, Resurrection, Russkaya Mysl (journal), Sergei Tolstoy, Sergei Yuryev, Society of Friends, State Museum of Leo Tolstoy, State Russian Museum, Tatyana Tolstaya, TsGAKFFD Bulla collection, Valentin Serov.</p>
 <h2>3. Collated citations, by entity</h2>
+<h3>Abrege de l'Evangile</h3>
+<p>work · missing · dives: lords-prayer</p>
+<p><em>lords-prayer</em>: Tolstoy's own French condensation; carries Version D — the prayer as anti-petitionary section-headings. Cross-linked by the fire-metaphor dive too.</p>
+<blockquote>
+<p>La prière ne peut pas consister dans les demandes que nous faisons à Dieu. Notre Père connaît tous nos besoins avant même que nous ne les ayons formulés.<br />
+Prayer cannot consist in the requests we make to God. Our Father knows all our needs even before we have formulated them. (working English, from Tolstoy's French — Abrégé de l'Évangile)<br />
+— PSS Tom 24, pp. 941–969 · lords-prayer · 1881-1883</p>
+</blockquote>
+<h3>Afanasy Fet</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Poet and neighbour; correspondent and pessimist foil during the crisis.</p>
+<blockquote>
+<p>Я очень занят. Из занятия моего ничего не выйдет, кроме моего удовлетворения, но все-таки очень занят.<br />
+(working English) I am very busy. Nothing will come of my occupation except my own satisfaction, but I am very busy all the same.<br />
+— PSS Tom 62, pp. 503–504 · 1879-1882-a-confession · 1879-11-22 (OS)</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — A. A. Fet (Repin, 1882) [PD]</p>
+<h3>Aleksandr Drankov</h3>
+<p>person · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: filmed Tolstoy's 80th jubilee (1908) with a hidden camera after being refused; early newsreel pioneer</p>
+<blockquote>
+<p>Неприятно и то, что вызывает сознание себя не божественного, а пакостного Льва Николаевича.<br />
+Unpleasant, too, in that it arouses the consciousness of oneself as not the divine but the vile Lev Nikolaevich. (working English)<br />
+— PSS Tom 57, pp. 141–142 · tolstoy-in-photographs · 1909-09-17</p>
+</blockquote>
+<p>Visuals: 1 (0 usable) — Drankov's 1908 hidden-camera jubilee footage; Pathé/Mundviller 1909 station departure; the 1910 death-and-funeral newsreels [unknown]</p>
+<h3>Alexandra Andreyevna Tolstaya</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Lady-in-waiting and Orthodox interlocutor; the believer Tolstoy argued his new faith against; recipient of two key (unsent) confessional letters.</p>
+<blockquote>
+<p>Обличаемые спрятались за цензуру и штыки<br />
+(working English) Those exposed have hidden behind censorship and bayonets.<br />
+— PSS Tom 63, pp. 90–91 · 1879-1882-a-confession · 1882-03-03 (OS, unsent)</p>
+</blockquote>
 <h3>All Tolstoy in One Click</h3>
 <p>event · missing · dives: jubilee-edition-tei-corpus</p>
 <p><em>jubilee-edition-tei-corpus</em>: 2013–2014 crowdsourced OCR+proofreading of the 90 volumes (ABBYY FineReader; ~3,249 volunteers, 49 countries; 46,820 pages); produced the free e-texts on tolstoy.ru</p>
@@ -807,6 +1273,32 @@ Prepared on the basis of an electronic copy of volume 53 of the Complete Collect
 Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)<br />
 — jubilee-edition-tei-corpus</p>
 </blockquote>
+<h3>Bethink Yourselves!</h3>
+<p>work · exists · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: The 1904 anti-war essay closing on the Luke 12:49 keystone the user cited</p>
+<blockquote>
+<p>Чего желал Христос, совершается. Огонь возгорается. Не будем же противиться, а будем служить ему.<br />
+What Christ wished for is coming to pass. The fire is blazing up. Let us then not resist it, but serve it. (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+<p>Христос, тогда еще, в свое время томился ожиданием и говорил: «Огонь пришел низвесть я на землю, и как желал бы, чтобы он возгорелся». (Лука XII, 49.)<br />
+Christ, even then, in his time, was in anguish of expectation and said: "Fire I came to cast upon the earth, and how I would wish that it were kindled." (Luke XII, 49.) (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+<p>это искра того огня, который Христос низвел на землю и который начинает возгораться.<br />
+this is a spark of that fire which Christ brought down to the earth and which is beginning to blaze up. (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+</blockquote>
+<h3>Biography of Leo Tolstoy (Biryukov)</h3>
+<p>criticalWork · missing · dives: biryukov-sofia-relationship</p>
+<p><em>biryukov-sofia-relationship</em>: The four-volume authorized biography; Vol II (1908) carries the dedication; editions settled in the biryukov-biography-editions dive</p>
+<blockquote>
+<p>Ni har ock afvärjt mycken ofärd från hans hufvud.<br />
+You have also averted much misfortune from his head. (working English) — source language Swedish.<br />
+— Vol II front matter · biryukov-sofia-relationship · 1908-01-11</p>
+<p>S. A. Tolstojs arkiv.<br />
+The archive of S. A. Tolstaya. (working English) — footnote sourcing the volume's closing quotation; documentary sign of Sofia's cooperation.<br />
+— Vol II p. 453 · biryukov-sofia-relationship · 1908-08-27</p>
+</blockquote>
+<p>Visuals: 4 (4 usable) — Biryukov biography Tom 1, 1911 Moscow (Kushnerov) cover [PD], Biryukov biography Tom 1, 1921 Berlin (Ladyzhnikov) cover [PD], Tolstoy youth (1848), biography plate [PD], The four Tolstoy brothers, biography plate [PD]</p>
 <h3>Boris Orekhov</h3>
 <p>person · missing · dives: jubilee-edition-tei-corpus</p>
 <p><em>jubilee-edition-tei-corpus</em>: HSE; technology lead of Tolstoy Digital; author of the '91st volume' (2020) paper on index.tolstoy.ru</p>
@@ -814,6 +1306,26 @@ Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsk
 <p>Анастасия Бонч-Осмоловская, Фёкла Толстая, Борис Орехов, Тимофей Лукашевский<br />
 Anastasia Bonch-Osmolovskaya, Fyokla Tolstaya, Boris Orekhov, Timofey Lukashevsky (under "Idea, task-setting, leadership"). (working English)<br />
 — jubilee-edition-tei-corpus</p>
+</blockquote>
+<h3>Burning of Arms</h3>
+<p>event · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: The literal fire that became the emblem of conscientious refusal Tolstoy championed; the metaphor made historical fact</p>
+<blockquote>
+<p>это искра того огня, который Христос низвел на землю и который начинает возгораться.<br />
+this is a spark of that fire which Christ brought down to the earth and which is beginning to blaze up. (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+<p>это искра того огня, который Христос низвел на землю и который начинает возгораться.<br />
+this is a spark of that fire which Christ brought down to the earth and which is beginning to blaze up. (working English)<br />
+— PSS Tom 88, pp. 718 · fire-metaphor · 1904-05-08</p>
+</blockquote>
+<p>Visuals: 1 (0 usable) — The Doukhobor Burning of Arms, 1895 (the literal fire of conscientious refusal) [unknown]</p>
+<h3>Chem ljudi zhivy</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Folk-tale: the angel emits divine light when he understands («от Михайлы свет идет»)</p>
+<blockquote>
+<p>И видят хозяева, что от Михайлы свет идет.<br />
+And the masters see that light comes from Mikhaila. (working English)<br />
+— PSS Tom 25, pp. 7–25 · fire-metaphor · 1881</p>
 </blockquote>
 <h3>Christian Anarchism</h3>
 <p>concept · exists · dives: christian-anarchism</p>
@@ -833,8 +1345,10 @@ I still think that Babism, as a moral and humanitarian doctrine, has a great fut
 — PSS Tom 73, pp. 109–110 · christian-anarchism · 1901-07-28</p>
 </blockquote>
 <h3>Confession</h3>
-<p>work · stub · dives: crisis</p>
-<p><em>crisis</em>: the keystone text; the dive's central vocabulary (переворот, остановка жизни) lives here</p>
+<p>work · stub · dives: crisis, fire-metaphor, gospel-translation · names: A Confession (Исповедь) / Confession (Исповедь)</p>
+<p><em>crisis</em>: the keystone text; the dive's central vocabulary (переворот, остановка жизни) lives here<br />
+<em>fire-metaphor</em>: The light of reason in autobiographical form; the crisis source<br />
+<em>gospel-translation</em>: Project part 1 — the autobiographical account of the crisis; the translator's note calls it 'an introduction to the present work'</p>
 <blockquote>
 <p>Так я жил, но пять лет тому назад со мною стало случаться что-то очень странное: на меня стали находить минуты сначала недоумения, остановки жизни, как будто я не знал, как мне жить, что мне делать, и я терялся и впадал в уныние. […] Эти остановки жизни выражались всегда одинаковыми вопросами: Зачем? Ну, а потом?<br />
 So I lived, but five years ago something very strange began to happen to me: at first there came over me moments of bewilderment, of life coming to a stop, as though I did not know how to live or what to do, and I lost my footing and fell into dejection. […] These stoppages of life always expressed themselves in the same questions: Why? And then what? (working English)<br />
@@ -845,6 +1359,26 @@ I lived like that for a couple of years, and there occurred in me an upheaval [�
 <p>И я спасся от самоубийства. Когда и как совершился во мне этот переворот, я не мог бы сказать. […] так же постепенно, незаметно возвратилась ко мне эта сила жизни. И странно, что та сила жизни, которая возвратилась ко мне, была не новая, а самая старая, — та самая, которая влекла меня на первых порах моей жизни.<br />
 And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)<br />
 — PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882</p>
+<p>что люди более возлюбили тьму, нежели свет, потому что дела их были злы. Ибо всякий, делающий худые дела, ненавидит свет и не идет к свету, чтобы не обличились дела его.<br />
+that people loved the darkness more than the light, because their deeds were evil. For everyone who does wicked deeds hates the light and does not come to the light, lest his deeds be exposed. (working English)<br />
+— PSS Tom 23, pp. 1–59 · fire-metaphor · 1882</p>
+<p>И перед светом разума всё прежнее объяснение разлетелось прахом.<br />
+And before the light of reason all the former explanation scattered to dust. (working English)<br />
+— PSS Tom 23, pp. 1–59 · fire-metaphor · 1882</p>
+<p>Я был приведен к христианству не богословскими, не историческими исследованиями, а тем, что пятидесяти лет от роду [...] я пришел в отчаяние и хотел убить себя [...] И я стал изучать христианство<br />
+I was brought to Christianity not by theological or historical investigations, but by the fact that, at fifty years of age […] I fell into despair and wanted to kill myself […] And I began to study Christianity. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+</blockquote>
+<h3>Constantin von Tischendorf</h3>
+<p>person · missing · dives: lords-prayer</p>
+<p><em>lords-prayer</em>: His critical Greek New Testament is the text Tolstoy worked from and cites by name in the Luke footnote; Strakhov sent it to him in 1880.</p>
+<blockquote>
+<p>слова: да сойдет дух твой в нас и очистит нас встречаются в цитатах древних церковных писателей.<br />
+the words 'may thy spirit descend into us and cleanse us' are found in citations of ancient church writers. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Очень благодарен вам за Тишендорфское евангелие.<br />
+I am very grateful to you for the Tischendorf gospel. (working English)<br />
+— PSS Tom 63, pp. 21–22 · lords-prayer · 1880-09-01</p>
 </blockquote>
 <h3>Dmitri Khilkov</h3>
 <p>person · missing · dives: doukhobors</p>
@@ -914,6 +1448,67 @@ Your work, our work, that is, God's work, is making progress with you. (working 
 That I have renounced the church that calls itself Orthodox is perfectly true. But I renounced it not because I rose up against the Lord, but, on the contrary, only because with all the strength of my soul I wished to serve him. (working English)<br />
 — PSS Tom 34, pp. 245–253 · christian · 1901-04-04</p>
 </blockquote>
+<h3>Excommunication of Tolstoy</h3>
+<p>event · missing · dives: gospel-translation</p>
+<p><em>gospel-translation</em>: The Holy Synod's 1901 decree — the institutional bookend of the religious project the gospel translation began</p>
+<blockquote>
+<p>В православном вероучении я нашел изложение самых непонятных, кощунственных и безнравственных положений, не только не допускаемых разумом, но совершенно непостижимых и противных нравственности, и — никакого учения о жизни и о смысле ее.<br />
+In the Orthodox creed I found an exposition of the most incomprehensible, blasphemous and immoral propositions — not only inadmissible to reason but utterly incomprehensible and contrary to morality — and no teaching whatever about life or its meaning. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+</blockquote>
+<h3>Fire of conscience</h3>
+<p>concept · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: The unifying fire metaphor: Christ's fire as the kindling, contagious, unquenchable conscience</p>
+<blockquote>
+<p>Но мир горит уж 1800 лет, горит с тех пор, как Христос сказал: я огонь низвел на землю; и как томлюсь, пока он не разгорится, — и будет гореть, пока не спасутся люди.<br />
+But the world has been burning for 1800 years now, burning ever since Christ said: I brought fire down to the earth; and how I am in anguish until it blazes up — and it will burn until people are saved. (working English)<br />
+— PSS Tom 23, pp. 304–465 · fire-metaphor · 1884</p>
+<p>что этот талант есть огонь, который только тогда огонь, когда он жжет. Я верю, что я — Ниневия по отношению к другим Ионам, от которых я узнал и узнаю истину, но что и я Иона по отношению к другим ниневитянам, которым я должен передать истину.<br />
+that this talent is a fire which is only a fire when it burns. I believe that I am a Nineveh in relation to other Jonahs, from whom I have learned and learn the truth, but that I too am a Jonah in relation to other Ninevites, to whom I must pass the truth on. (working English)<br />
+— PSS Tom 23, pp. 461 · fire-metaphor · 1884</p>
+<p>Я пришел сбросить огонь на землю. И как желаю, чтобы он разгорелся.<br />
+I came to cast fire upon the earth. And how I wish that it would blaze up. (working English)<br />
+— PSS Tom 24, pp. 292 · fire-metaphor · 1880-1881</p>
+<p>он знал, что его учение — не учение, но искра, которая зажигает сознание Бога в сердцах людей и, раз загоревшись, не может потухнуть.<br />
+he knew that his teaching was not a doctrine but a spark that kindles the consciousness of God in people's hearts and, once lit, cannot go out. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>«Огонь принес я на землю, — сказал Христос, — и как томлюсь, когда он возгорится».<br />
+"Fire I brought to the earth," said Christ, "and how I am in anguish for it to blaze up." (working English)<br />
+— PSS Tom 28, pp. 1–293 · fire-metaphor · 1893</p>
+<p>Чего желал Христос, совершается. Огонь возгорается. Не будем же противиться, а будем служить ему.<br />
+What Christ wished for is coming to pass. The fire is blazing up. Let us then not resist it, but serve it. (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+<p>Христос, тогда еще, в свое время томился ожиданием и говорил: «Огонь пришел низвесть я на землю, и как желал бы, чтобы он возгорелся». (Лука XII, 49.)<br />
+Christ, even then, in his time, was in anguish of expectation and said: "Fire I came to cast upon the earth, and how I would wish that it were kindled." (Luke XII, 49.) (working English)<br />
+— PSS Tom 36, pp. 100–148 · fire-metaphor · 1904</p>
+<p>«Огонь пришел я низвесть на землю: и как желал бы, чтобы он уже возгорелся» (Луки XII, 49). Но почему же огонь этот так медленно разгорается?<br />
+"Fire I came to cast upon the earth: and how I would wish that it were already kindled" (Luke XII, 49). But why does this fire blaze up so slowly? (working English)<br />
+— PSS Tom 45, pp. 13–496 · fire-metaphor · 1910</p>
+<p>Мир зажжен Христом и горит. Если каждый из нас сознает то, что он горит, не препятствует, а радуется и содействует своему горению, то это всё, что нужно.<br />
+The world is set alight by Christ and is burning. If each of us is conscious that he is burning, does not hinder it, but rejoices and assists his own burning, then that is all that is needed. (working English)<br />
+— PSS Tom 64, pp. 387 · fire-metaphor · 1889-06-18</p>
+<p>Я думаю, что время это пришло, и что мир уже горит, и дело наше только в том, чтоб гореть и, по возможности, соединяться с другими горящими точками, и это я намерен делать весь остаток моей жизни.<br />
+I think that this time has come, and that the world is already burning, and that our task is only to burn and, as far as possible, to unite with other burning points — and this I intend to do for the whole remainder of my life. (working English)<br />
+— PSS Tom 64, pp. 391 · fire-metaphor · 1889-06-22</p>
+<p>Огонь принес я на землю, сказал Христос, и он разгорается и в нас и в наших плотских и духовных детях; только бы нам тихо сгореть в нем, а что он зажигает других, это не может быть иначе.<br />
+Fire I brought to the earth, said Christ, and it is blazing up both in us and in our children of flesh and of spirit; only let us quietly burn up in it — and that it sets others alight, this cannot be otherwise. (working English)<br />
+— PSS Tom 70, pp. 30 · fire-metaphor · 1897-02-22</p>
+<p>Наше дело только в том, чтобы в себе разжечь огонь: гореть самому, и тогда окружающие нас сами собой будут согреваться и зажигаться.<br />
+Our task is only to kindle the fire in ourselves: to burn oneself, and then those around us will of their own accord be warmed and set alight. (working English)<br />
+— PSS Tom 75, pp. 90 · fire-metaphor · 1904-04-15</p>
+</blockquote>
+<h3>Four Gospels Harmonised and Translated (1895)</h3>
+<p>edition · missing · dives: gospel-translation</p>
+<p><em>gospel-translation</em>: The first English translation of the harmony — anonymous, from the Geneva text, authorized by Tolstoy's imprimatur; Parts I–II only, Part III never published</p>
+<blockquote>
+<p>The right of translation I freely accord, without exception, to everyone who would like to undertake the trouble of translating. But being eager to have my ideas spread, I also wish them to be correctly interpreted.<br />
+— gospel-translation · 1894-08-30</p>
+<p>I hereby certify that this rendering of my work, The Four Gospels Harmonised and Translated, has been made by a competent translator and with my consent. — Leo Tolstoy. October 19/31, 1894.<br />
+— gospel-translation · 1894-10</p>
+<p>It is at Count Tolstoy's express wish that I have undertaken the translation of his book on the Gospels. [...] owing to the impossibility of its being published in Russia, the Genevan edition is disfigured by numerous typographical mistakes.<br />
+— gospel-translation · 1894-09-21</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Tolstoy's autograph imprimatur authorizing the English translation (1894) [PD], Title page: 'In Three Parts … at the request of the author', Brotherhood Publishing Co. / Walter Scott, 1895 [PD]</p>
 <h3>Fyokla Tolstaya</h3>
 <p>person · missing · dives: jubilee-edition-tei-corpus</p>
 <p><em>jubilee-edition-tei-corpus</em>: Tolstoy's great-great-granddaughter; initiator of «Весь Толстой в один клик» and a leader of Tolstoy Digital</p>
@@ -967,6 +1562,14 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 The "Word of Tolstoy" project. (working English)<br />
 — jubilee-edition-tei-corpus</p>
 </blockquote>
+<h3>Hodite v svete poka est svet</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Fiction whose title is John 12:35; faith as a fire kept alive by adding wood</p>
+<blockquote>
+<p>как огонь никогда не потухнет, когда на него подкладывают дрова. В этом-то и вера.<br />
+as a fire never goes out when wood is laid on it. That is exactly what faith is. (working English)<br />
+— PSS Tom 26, pp. 250–301 · fire-metaphor · 1887</p>
+</blockquote>
 <h3>I. Ivanov</h3>
 <p>person · missing · dives: tolstoyanism</p>
 <p><em>tolstoyanism</em>: Obscure 1909 correspondent (addressed via his nephew); identity beyond the PSS header unresolved — see needsReview. Addressee of the 'some sort of Tolstoyans' letter.</p>
@@ -975,6 +1578,76 @@ The "Word of Tolstoy" project. (working English)<br />
 [you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)<br />
 — PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04</p>
 </blockquote>
+<h3>Ilya Ginzburg</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Sculptor; statuette 'Tolstoy at work' (1891) and a bust; GMT holds 51 of his Tolstoy works</p>
+<blockquote>
+<p>Приехал Репин и Гинзбург. За это время они меня лепят и пишут, а я написал статью об обжорстве и много подвинулся в большой статье.<br />
+Repin and Ginzburg have arrived. During this time they sculpt and paint me, while I have written an article on gluttony and made much progress on the big article. (working English)<br />
+— PSS Tom 52, pp. 44 · tolstoy-in-art · 1891-07-13</p>
+<p>Бюст сделал большой Гинцбург, нехорош. Репинский похож, но, не для того, чтобы вам сказать приятное, а потому, что так есть, ваш лучше всех.<br />
+Ginzburg has made a large bust [of me], not good. Repin's is a likeness, but — not to flatter you, but because it is so — yours is the best of all. (working English)<br />
+— PSS Tom 66, pp. 24–25 · tolstoy-in-art · 1891-07-30</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Tolstoy at Work (statuette) [CC0]</p>
+<h3>Ilya Repin</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Painter; the most prolific depicter of Tolstoy (~12 portraits, 25 drawings, 3 busts, 1883–1910); disagreed with Tolstoy's art theory</p>
+<blockquote>
+<p>Дома Репин. С ним очень хорошо говорил, за работой.<br />
+At home — Repin. Talked with him very well, while he was at work. (working English)<br />
+— PSS Tom 49, pp. 77 · tolstoy-in-art · 1883-04-03</p>
+<p>Картина Репина невозможна — всё выдумано. Ге хорош очень.<br />
+Repin's picture is impossible — it is all made up. Ge is very good. (working English)<br />
+— PSS Tom 50, pp. 67–68 · tolstoy-in-art · 1889-04-15</p>
+<p>Приехал Репин и Гинзбург. За это время они меня лепят и пишут, а я написал статью об обжорстве и много подвинулся в большой статье.<br />
+Repin and Ginzburg have arrived. During this time they sculpt and paint me, while I have written an article on gluttony and made much progress on the big article. (working English)<br />
+— PSS Tom 52, pp. 44 · tolstoy-in-art · 1891-07-13</p>
+<p>Был Репин, уехал нынче.<br />
+Repin was here; he left today. (working English)<br />
+— PSS Tom 52, pp. 63 · tolstoy-in-art · 1892-02-24</p>
+<p>Портрет Репина уложен и завтра отсылается.<br />
+Repin's portrait is packed and is being sent off tomorrow. (working English)<br />
+— PSS Tom 64, pp. 66–67 · tolstoy-in-art · 1887-09-08</p>
+<p>Если моя книга помогла уяснить вопросы искусства такому художнику, как Репин, то труд ее писания не пропал даром.<br />
+If my book helped to clarify questions of art for an artist such as Repin, then the labour of writing it was not in vain. (working English)<br />
+— PSS Tom 71, pp. 334–335 · tolstoy-in-art · 1898-03-24</p>
+</blockquote>
+<p>Visuals: 6 (6 usable) — Portrait of Tolstoy [PD], Tolstoy Barefoot [PD], Tolstoy Resting in the Forest [PD], Tolstoy in the Pink Armchair [PD], Tolstoy Ploughing (Пахарь) [PD], Tolstoy in his Study [PD]</p>
+<h3>Issledovanie dogmaticheskogo bogoslovija</h3>
+<p>work · missing · dives: gospel-translation</p>
+<p><em>gospel-translation</em>: Project part 2 — the polemical demolition of Orthodox dogma that cleared the ground for the harmony</p>
+<blockquote>
+<p>кощунственные сочинения Вольтера, Юма, но никогда я не испытывал того несомненного убеждения в полном безверии человека, как то, которое я испытывал относительно составителей катехизисов и богословии<br />
+the blasphemous writings of Voltaire and Hume — yet never did I feel such a certain conviction of a man's complete unbelief as the one I felt regarding the composers of catechisms and theologies. (working English)<br />
+— PSS Tom 23, pp. 60–303 · gospel-translation · 1880</p>
+</blockquote>
+<h3>Ivan Ivakin</h3>
+<p>person · missing · dives: gospel-translation</p>
+<p><em>gospel-translation</em>: Tolstoy's Greek tutor at Yasnaya Polyana during the gospel work (per secondary literature — unconfirmed)</p>
+<blockquote>
+<p>Читал я по-гречески, на том языке, на котором оно есть у нас, и переводил так, как указывал смысл и лексиконы<br />
+I read in Greek, the language in which we have it, and translated as the sense and the lexicons indicated. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+</blockquote>
+<h3>Ivan Kramskoy</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Painter; made the two 1873 portraits of Tolstoy; model for Mikhailov in Anna Karenina; praised in What Is Art?</p>
+<blockquote>
+<p>Портрет с пятого сеанса поразил всех, в особенности Вронского, не только сходством, но и особенною красотою. Странно было, как мог Михайлов найти ту ее особенную красоту.<br />
+The portrait, after the fifth sitting, struck everyone, Vronsky especially, not only by its likeness but by a particular beauty. It was strange how Mikhailov could have found that particular beauty of hers. (working English)<br />
+— PSS Tom 19, pp. Part 5, ch. IX–XIII · tolstoy-in-art · 1875-1876</p>
+<p>Таков рисунок Крамского, стоящий многих его картин [...] Образцами же в области живописи произведений, вызывающих негодование, ужас пред нарушением любви к Богу и ближнему, могут служить картина Ге — суд<br />
+Such is Kramskoy's drawing, worth many of his paintings [...] As models in painting of works that arouse indignation and horror at the violation of love of God and neighbour, Ge's picture 'The Judgement' can serve. (working English)<br />
+— PSS Tom 30, pp. 27–203 (here ~p.150) · tolstoy-in-art · 1897</p>
+<p>У меня каждый день, вот уже с неделю, живописец Крамской [...] делает мой портрет в Третьяковскую галлерею, и я сижу и болтаю с ним и из Петербургской стараюсь обращать его в крещеную веру.<br />
+Every day now, for a week already, the painter Kramskoy has been making my portrait for the Tretyakov gallery, and I sit and chat with him and try to convert him from the Petersburg faith to the baptized one. (working English)<br />
+— PSS Tom 62, pp. 48–49 · tolstoy-in-art · 1873-09-23</p>
+<p>Он теперь кончает оба портрета и ездит каждый день, и мешает мне заниматься. Я же во время сидений обращаю его из петербургской в христианскую веру и, кажется, успешно.<br />
+He is now finishing both portraits and comes every day, keeping me from my work. During the sittings I am converting him from the Petersburg to the Christian faith — successfully, it seems. (working English)<br />
+— PSS Tom 62, pp. 49–51 · tolstoy-in-art · 1873-09-23</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Portrait of L. N. Tolstoy [PD], Portrait of Tolstoy (family version) [PD]</p>
 <h3>Ivan Nazhivin</h3>
 <p>person · missing · dives: christian</p>
 <p><em>christian</em>: Writer; recipient of the true-vs-social-religion definition</p>
@@ -995,12 +1668,15 @@ but now one cannot leave this mighty instrument of deception to the enemies alon
 — PSS Tom 68, pp. 262–266 · doukhobors · 1895-11-21</p>
 </blockquote>
 <h3>John Coleman Kenworthy</h3>
-<p>person · missing · dives: christian-anarchism</p>
-<p><em>christian-anarchism</em>: John Coleman Kenworthy (1861–1948), English founder of the Brotherhood Church, Croydon (from 1894); visited Yasnaya Polyana in 1896 and held UK rights to Tolstoy's works. A node of the 1890s Christian-anarchist circle; named in the Schmitt correspondence.</p>
+<p>person · missing · dives: christian-anarchism, gospel-translation</p>
+<p><em>christian-anarchism</em>: John Coleman Kenworthy (1861–1948), English founder of the Brotherhood Church, Croydon (from 1894); visited Yasnaya Polyana in 1896 and held UK rights to Tolstoy's works. A node of the 1890s Christian-anarchist circle; named in the Schmitt correspondence.<br />
+<em>gospel-translation</em>: Leader of the Croydon Brotherhood Church; attributed (secondary sources, unconfirmed) as the anonymous translator of the 1895–96 edition</p>
 <blockquote>
 <p>Ваше дело, наше дело, т. е. божье дело, у вас делает успехи.<br />
 Your work, our work, that is, God's work, is making progress with you. (working English)<br />
 — PSS Tom 68, pp. 26–28 · christian-anarchism · 1895-02-01</p>
+<p>It is at Count Tolstoy's express wish that I have undertaken the translation of his book on the Gospels. [...] owing to the impossibility of its being published in Russia, the Genevan edition is disfigured by numerous typographical mistakes.<br />
+— gospel-translation · 1894-09-21</p>
 </blockquote>
 <h3>John Morrison Davidson</h3>
 <p>person · missing · dives: christian-anarchism</p>
@@ -1022,8 +1698,9 @@ You say in your letter that you are not a Christian; but you cannot but be one, 
 — PSS Tom 69, pp. 124–127 · christian · 1896-08-23</p>
 </blockquote>
 <h3>Jubilee Edition</h3>
-<p>concept · missing · dives: jubilee-edition-tei-corpus</p>
-<p><em>jubilee-edition-tei-corpus</em>: the 90-volume complete works (1928–1958) + 1964 index volume; the platform's base text for all Russian-language citation</p>
+<p>edition · missing · dives: gospel-translation, jubilee-edition-tei-corpus · names: Jubilee Edition (Полное собрание сочинений) / The Jubilee Edition (Полное собрание сочинений)</p>
+<p><em>gospel-translation</em>: The 90-vol PSS; Tom 24 (1957) is the first legal Russian publication of the full harmony. Fully mapped in the sibling jubilee-edition-tei-corpus dive<br />
+<em>jubilee-edition-tei-corpus</em>: the 90-volume complete works (1928–1958) + 1964 index volume; the platform's base text for all Russian-language citation</p>
 <blockquote>
 <p>Толстой Л. Н. Детство // Толстой Л. Н. Полное собрание сочинений: в 90 тт. Т. 1. М.: Гос. изд. «Художественная литература», 1935.<br />
 Tolstoy L. N. Childhood // Tolstoy L. N. Complete Collected Works: in 90 vols. Vol. 1. Moscow: State Publishing House "Khudozhestvennaya Literatura", 1935. (working English)<br />
@@ -1045,14 +1722,90 @@ Complete Collected Works. Volume 91 — "Указатели" (Indexes). (working
 — PSS Tom 91 · jubilee-edition-tei-corpus · 1964-01-01</p>
 </blockquote>
 <p>Visuals: 2 (2 usable) — PSS Tom 1 — the free-reproduction notice («Перепечатка разрешается безвозмездно») [PD], PSS Tom 1 — «ОТ ГОСУДАРСТВЕННОЙ РЕДАКЦИОННОЙ КОМИССИИ» (State Editorial Commission) [PD]</p>
+<h3>Kratkoe izlozhenie Evangelija</h3>
+<p>work · missing · dives: gospel-translation, lords-prayer</p>
+<p><em>gospel-translation</em>: The condensed redaction of the harmony; its preface narrates the crisis, the method, the 12-chapter structure and the four-part plan<br />
+<em>lords-prayer</em>: The condensed redaction — holds Version C (the twelve-fold correspondence in its preface and the recitable prayer in its body). The base text for the Swedish rendering.</p>
+<blockquote>
+<p>Разделение Евангелия на 12 или на 6 глав (соединяя по две главы в одну) вытекло само собою из смысла учения.<br />
+The division of the Gospel into 12 chapters (or into 6, joining two chapters into one) emerged of itself from the meaning of the teaching. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>разночтений евангельских книг насчитывают до пятидесяти тысяч.<br />
+the variant readings of the Gospel books are counted at up to fifty thousand. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>Я был приведен к христианству не богословскими, не историческими исследованиями, а тем, что пятидесяти лет от роду [...] я пришел в отчаяние и хотел убить себя [...] И я стал изучать христианство<br />
+I was brought to Christianity not by theological or historical investigations, but by the fact that, at fifty years of age […] I fell into despair and wanted to kill myself […] And I began to study Christianity. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>перевод четырех Евангелий и соединение их в одно.<br />
+the translation of the four Gospels and their combination into one. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>так называемая молитва господня есть не что иное, как в самой сжатой форме выраженное всё учение Иисуса в том самом порядке, в котором были расположены мною главы, и что каждое выражение молитвы соответствует смыслу и порядку глав.<br />
+the so-called Lord's Prayer is nothing other than the whole teaching of Jesus expressed in the most condensed form, in the very order in which I had arranged the chapters, and each phrase of the prayer corresponds to the sense and order of the chapters. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>нашел незаконно соединенную с ним грязь и тину, которая одна заслоняла для меня его чистоту; рядом с высоким христианским учением я нашел связанное с ним чуждое ему безобразное учение еврейское и церковное.<br />
+I found, illegitimately joined to it, mud and silt which alone obscured its purity for me; beside the lofty Christian teaching I found bound up with it an alien, ugly Jewish and ecclesiastical teaching. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+<p>Окончив свою работу, я к удивлению и радости своей нашел, что так называемая молитва господня есть не что иное, как в самой сжатой форме выраженное всё учение Иисуса в том самом порядке, в котором были расположены мною главы, и что каждое выражение молитвы соответствует смыслу и порядку глав.<br />
+On finishing my work I found, to my surprise and joy, that the so-called Lord's Prayer is nothing other than the whole teaching of Jesus expressed in the most condensed form, in the very order in which I had arranged the chapters, and that each phrase of the prayer corresponds to the sense and order of the chapters. (working English)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>А будет твоя власть, и сила, и разум.<br />
+But there will be thy power, and strength, and reason. (working English) — Tolstoy's meaning for the doxology (phrase 12 of 12)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>Человек — сын Бога.<br />
+Man is the son of God. (working English) — Tolstoy's meaning for "Отче наш" (phrase 1 of 12)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>Молитесь только так: Отец наш безначальный и бесконечный, как небо! Пусть будет свято только твое существо. Пусть будет власть только твоя, так, чтобы воля твоя совершалась безначально и бесконечно на земле. Дай мне пищу жизни в настоящем. Ошибки мои прежние загладь и сотри так же, как и я заглаживаю и стираю все ошибки братьев моих, чтобы я не попал в соблазн, избавился от зла. Потому что твоя власть и сила и твое решение.<br />
+Pray only thus: Our Father, without beginning and without end, like the sky! May thy being alone be holy. May power alone be thine, so that thy will be done, without beginning and without end, on earth. Give me the food of life in the present. My former mistakes, efface and wipe them out, just as I efface and wipe out all the mistakes of my brothers, so that I may not fall into temptation, and may be delivered from evil. Because thine is the power and the strength and thine the decision. (working English)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>Ни молиться, ни поститься не нужно. Молиться не нужно потому, что отец знает всё, что людям нужно.<br />
+Neither to pray nor to fast is needed. To pray is not needed, because the Father knows everything that people need. (working English)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+</blockquote>
+<h3>Krekshino</h3>
+<p>place · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: Pashkov estate; site of Tapsell's Sept-1909 photographs of Tolstoy and grandchildren and of the filmed departure</p>
+<blockquote>
+<p>Фотографии Тапселя превосходны — нас с детьми.<br />
+Tapsell's photographs are superb — of us with the children. (working English)<br />
+— PSS Tom 89, pp. 143–146 · tolstoy-in-photographs · 1909-09-26</p>
+</blockquote>
+<h3>Leeds Russian Archive Chertkov Tapsell fond</h3>
+<p>archival-fond · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: Tuckton House / Free Age Press negatives and prints, incl. Tapsell's 1908 Yasnaya Polyana series</p>
+<blockquote>
+<p>Фотографии Тапселя превосходны — нас с детьми.<br />
+Tapsell's photographs are superb — of us with the children. (working English)<br />
+— PSS Tom 89, pp. 143–146 · tolstoy-in-photographs · 1909-09-26</p>
+</blockquote>
 <h3>Leo Tolstoy</h3>
-<p>person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoyanism</p>
-<p><em>christian-anarchism</em>: The author refusing the political label 'anarchist' while affirming the religious substance, and the sole user of «христианский анархизм» in his own voice (once).<br />
+<p>person · exists · dives: 1879-1882-a-confession, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoy-in-photographs, tolstoyanism · names: Lev Tolstoy / Leo Tolstoy</p>
+<p><em>1879-1882-a-confession</em>: Author.<br />
+<em>biryukov-sofia-relationship</em>: Subject; author of the letters, diaries, and testament<br />
+<em>christian-anarchism</em>: The author refusing the political label 'anarchist' while affirming the religious substance, and the sole user of «христианский анархизм» in his own voice (once).<br />
 <em>copyright-renunciation</em>: author renouncing copyright; subject of the dive<br />
 <em>crisis</em>: subject of the dive; author of the keystone confessional works<br />
 <em>doukhobors</em>: Author of the public appeals, organiser and partial funder of the relief and emigration.<br />
+<em>tolstoy-in-photographs</em>: subject — the most-photographed Russian of his age; ambivalent sitter and occasional initiator<br />
 <em>tolstoyanism</em>: The author disowning the label and the movement named after him.</p>
 <blockquote>
+<p>Я был крещен и воспитан в православной христианской вере. Меня учили ей и с детства и во всё время моего отрочества и юности. Но когда я 18-ти лет вышел со второго курса университета, я не верил уже ни во что из того, чему меня учили.<br />
+(working English) I was baptized and brought up in the Orthodox Christian faith. I was taught it from childhood and throughout my boyhood and youth. But when, at eighteen, I left the second year of university, I no longer believed in anything I had been taught.<br />
+— PSS Tom 23, pp. 1 (ch. I) · 1879-1882-a-confession · 1879–1882</p>
+<p>Начал писать «свою жизнь».<br />
+(working English) Began to write 'my life'.<br />
+— PSS Tom 48, pp. 69–70 · 1879-1882-a-confession · 1878-05-22 (OS)</p>
+<p>Разум мне ничего не говорит и не может сказать на три вопроса, которые легко выразить одним: что я такое?<br />
+(working English) Reason tells me nothing, and can say nothing, to the three questions that may easily be put as one: what am I?<br />
+— PSS Tom 62, pp. 379–383 · 1879-1882-a-confession · 1878-01-27 (OS)</p>
+<p>не будет тайн для одного, а тайны для двух, она будет всё читать.<br />
+there will be no secrets for one, but secrets for two; she will read everything. (working English)<br />
+— PSS Tom 48, pp. 45 · biryukov-sofia-relationship · 1862-09-15</p>
+<p>отказаться от авторского права.<br />
+to renounce the author's right. (working English)<br />
+— PSS Tom 53, pp. 14-18 · biryukov-sofia-relationship · 1895-03-27</p>
+<p>это была Арсеньева Валерия. Она теперь жива, за Волковым была, живет в Париже.<br />
+that was Arsenyeva, Valeria. She is alive now, was married to Volkov, lives in Paris. (working English)<br />
+— PSS Tom 74, pp. 319 · biryukov-sofia-relationship · 1903-11-27</p>
 <p>Ответ не может быть дан на вопрос, потому что он дурно поставлен. Вопрос не в том — устроить государство: по нынешнему, или по новому. Я и никто из нас не приставлен к решению этого вопроса.<br />
 The answer cannot be given to the question, because it is badly posed. The question is not whether to arrange the state in the present way or in a new way. Neither I nor any of us is appointed to the solving of that question. (working English)<br />
 — PSS Tom 52, pp. 138–140 · christian-anarchism · 1894-09-10</p>
@@ -1101,6 +1854,15 @@ After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district o
 <p>Но нынешнее русское правительство употребило против духоборов еще третий, казалось бы оставленный в наше время, выход из этого противоречия. Оно, кроме того, что подвергает самым тяжелым страданиям самих отказывающихся, заставляет еще систематически страдать отцов, матерей, детей отказывающихся, вероятно с тем, чтобы пытками этих невинных семей поколебать решимость несогласных их членов.<br />
 But the present Russian government has used against the Doukhobors a third way out of this contradiction, one seemingly abandoned in our time. Besides subjecting the refusers themselves to the heaviest sufferings, it forces the fathers, mothers, and children of the refusers to suffer systematically as well — probably so as to shake the resolve of the dissenting members by the torture of these innocent families. (working English)<br />
 — PSS Tom 71, pp. 322–327 · doukhobors · 1898-03-19</p>
+<p>Неприятно и то, что вызывает сознание себя не божественного, а пакостного Льва Николаевича.<br />
+Unpleasant, too, in that it arouses the consciousness of oneself as not the divine but the vile Lev Nikolaevich. (working English)<br />
+— PSS Tom 57, pp. 141–142 · tolstoy-in-photographs · 1909-09-17</p>
+<p>по моему предложению, все литераторы сделали фотографическую группу<br />
+at my proposal, all the literary men had a photographic group made (working English)<br />
+— PSS Tom 61, pp. 372–374 · tolstoy-in-photographs · 1856-04-14</p>
+<p>Не прислал до сих пор карточки потому, что забыл, а забыл потому, что не могу приписать этому значения<br />
+I have not sent the card until now because I forgot, and I forgot because I cannot attach any importance to it (working English)<br />
+— PSS Tom 78, pp. 191 · tolstoy-in-photographs · 1908-07-23</p>
 <p>Я рад был случаю сказать ему и уяснить себе, что говорить о толстовстве, искать моего руководительства, спрашивать моего решения вопросов — большая и грубая ошибка. — Никакого толстовства и моего учения не было и нет, есть одно вечное, всеобщее, всемирное учение истины, для меня, для нас особенно ясно выраженное в евангелиях.<br />
 I was glad of the chance to tell him, and to clarify for myself, that to speak of Tolstoyism, to seek my guidance, to ask me to decide questions — is a great and crude error. There was and is no Tolstoyism and no teaching of mine; there is one eternal, universal, world-wide teaching of truth, which for me, for us, is especially clearly expressed in the Gospels. (working English)<br />
 — PSS Tom 53, pp. 167–169 · tolstoyanism · 1897-12-02</p>
@@ -1111,7 +1873,16 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 [you say that] the Orthodox do not love the Tolstoyans, and the Tolstoyans do not love the Orthodox. In this, I think, you are mistaken — first of all, in that you acknowledge some sort of Tolstoyans. As for myself, though I am Tolstoy myself… (working English)<br />
 — PSS Tom 80, pp. 50–53 · tolstoyanism · 1909-08-04</p>
 </blockquote>
-<p>Visuals: 9 (5 usable) — Diary page, 27 March 1895 (the will-as-diary-entry) [rights-reserved], Leo Tolstoy, 1906 (photograph by V. G. Chertkov) [PD], Manuscript / draft page of Исповедь (A Confession) [rights-reserved], Portrait of Leo Tolstoy (oil), Ivan Kramskoy, 1873 [PD], PSS Tom 23, p. 40 — the «случился переворот» passage of A Confession [PD], Photographic portraits of Tolstoy, c. 1878–1885 (crisis years) [unknown], Tolstoy Digital timeline cards (work on A Confession #175; banning of A Confession #192; Optina Pustyn with Strakhov #166; first acquaintance with Chertkov #198) [unknown], Leo Tolstoy, 1895 — the year of the Burning of Arms [PD], Leo Tolstoy at Yasnaya Polyana, colour photograph, 1908 [PD]</p>
+<p>Visuals: 22 (18 usable) — Portrait of Lev Tolstoy (Kramskoy, 1873) [PD], Portrait of Lev Tolstoy (Repin, 1887) [PD], Tolstoy, half-length (Sass studio, c.1880–1886) [PD], Tolstoy mowing (Repin sketch, 1880–1881) [PD], 1895 testament, PSS Tom 53 [PD], Diary for myself alone, Oct 1910, PSS Tom 58 [PD], Yasnaya Polyana main house [PD], Diary page, 27 March 1895 (the will-as-diary-entry) [rights-reserved], Leo Tolstoy, 1906 (photograph by V. G. Chertkov) [PD], Manuscript / draft page of Исповедь (A Confession) [rights-reserved], Portrait of Leo Tolstoy (oil), Ivan Kramskoy, 1873 [PD], PSS Tom 23, p. 40 — the «случился переворот» passage of A Confession [PD], Photographic portraits of Tolstoy, c. 1878–1885 (crisis years) [unknown], Tolstoy Digital timeline cards (work on A Confession #175; banning of A Confession #192; Optina Pustyn with Strakhov #166; first acquaintance with Chertkov #198) [unknown], Leo Tolstoy, 1895 — the year of the Burning of Arms [PD], Leo Tolstoy at Yasnaya Polyana, colour photograph, 1908 [PD], Tolstoy, wedding-period portrait (married Sept 1862) [PD], Tolstoy standing portrait in heavy coat, mid-career [PD], Tolstoy at the opening of the Savelyev library [PD], Tolstoy studio portrait, full-length seated [PD], Tolstoy seated formal portrait [PD], Tolstoy and Anton Chekhov (group, outdoor) [PD]</p>
+<h3>Leonid Pasternak</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Painter; illustrated Resurrection (1898–99); many Tolstoy drawings</p>
+<blockquote>
+<p>Но вообще прекрасный, как все ваши рисунки, и я вам благодарен за них.<br />
+But on the whole splendid, like all your drawings, and I am grateful to you for them. (working English)<br />
+— PSS Tom 75, pp. 186–187 · tolstoy-in-art · 1904-11-22</p>
+</blockquote>
+<p>Visuals: 3 (3 usable) — Illustrations for Resurrection [PD], Tolstoy, Solovyov and Fyodorov [PD], Tolstoy reading by a lamp [PD]</p>
 <h3>Leonila Annenkova</h3>
 <p>person · missing · dives: crisis</p>
 <p><em>crisis</em>: correspondent; recipient of the 'эти кризисы / родился вновь' letter (1894)</p>
@@ -1119,6 +1890,23 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 <p>…я, к счастию, этого отчаяния никогда не знал с тех пор, как родился вновь […] то каждый, проходя эти возрасты, эти кризисы, не будет пугаться, а будет ждать следующего состояния, будет знать, что то же было и с другими.<br />
 …I, fortunately, have never known this despair since I was born anew… so that everyone, passing through these ages, these crises, would not take fright, but would wait for the next state, knowing that the same was so for others. (working English)<br />
 — PSS Tom 67, pp. 213–214 · TEI v67_214_L_F_Annenkovoj · crisis · 1894-09-04</p>
+</blockquote>
+<h3>Light of reason</h3>
+<p>concept · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Tolstoy's signature equation light = reason (разумение); the spine of the light axis</p>
+<blockquote>
+<p>И перед светом разума всё прежнее объяснение разлетелось прахом.<br />
+And before the light of reason all the former explanation scattered to dust. (working English)<br />
+— PSS Tom 23, pp. 1–59 · fire-metaphor · 1882</p>
+<p>в человеке живет божественный свет, сошедший с неба, и свет этот есть разум, — и что ему одному надо служить и в нем одном искать благо.<br />
+in man there lives a divine light, come down from heaven, and this light is reason — and that it alone must be served and in it alone must good be sought. (working English)<br />
+— PSS Tom 23, pp. 304–465 · fire-metaphor · 1884</p>
+<p>9) Φῶς — свет — по всем контекстам означает истинное разумение жизни.<br />
+9) Φῶς — light — in all contexts means the true reason/understanding of life. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>свет солнца разума есть только незначущая случайность, сентиментальные, мистические слова.<br />
+the light of the sun of reason is only an insignificant accident — sentimental, mystical words — so it appears to those not yet awake to it. (working English)<br />
+— PSS Tom 26, pp. 313–442 · fire-metaphor · 1887</p>
 </blockquote>
 <h3>Marian Zdziechowski</h3>
 <p>person · missing · dives: christian</p>
@@ -1128,6 +1916,23 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 ...not because I love Catholicism more than other faiths, or the Polish language more than other languages, but because I try to be a Christian. And therefore... what is needed is the spread of true Christianity. (working English)<br />
 — PSS Tom 68, pp. 165–173 · christian · 1895-09-10</p>
 </blockquote>
+<h3>Mikhail Elpidin</h3>
+<p>person · missing · dives: 1879-1882-a-confession, gospel-translation · names: M. K. Elpidin / Mikhail Elpidin (М. К. Эльпидин)</p>
+<p><em>1879-1882-a-confession</em>: Émigré publisher in Geneva; the first separate edition of «Исповедь» (1884), where the title first appears in print.<br />
+<em>gospel-translation</em>: Geneva émigré publisher; the censored full harmony first appeared abroad through this network (1892–94, per scholarship — confirm)</p>
+<blockquote>
+<p>It is at Count Tolstoy's express wish that I have undertaken the translation of his book on the Gospels. [...] owing to the impossibility of its being published in Russia, the Genevan edition is disfigured by numerous typographical mistakes.<br />
+— gospel-translation · 1894-09-21</p>
+</blockquote>
+<p>Visuals: 1 (0 usable) — The censored Geneva (Elpidin) first edition of the Russian harmony [unknown]</p>
+<h3>Mikhail Engelhardt</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Young radical and addressee of Tolstoy's longest epistolary statement of the new doctrine (the 'five commandments' letter).</p>
+<blockquote>
+<p>значение его в том, чтобы найти смысл жизни в этом мире. Исполнение пяти заповедей дает этот смысл.<br />
+(working English) its significance is in finding the meaning of life in this world. Fulfilment of the five commandments gives that meaning.<br />
+— PSS Tom 63, pp. 112–128 · 1879-1882-a-confession · 1882-12 (OS)</p>
+</blockquote>
 <h3>Mikhail Stakhovich</h3>
 <p>person · missing · dives: tolstoyanism</p>
 <p><em>tolstoyanism</em>: Oryol marshal of the nobility, Duma politician and friend of the Tolstoy family; addressee of the 1907 New-Year letter in which the 'ridicule of Tolstoyism' appears.</p>
@@ -1135,6 +1940,31 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 <p>сказал бы, не есть мяса, если бы не боялся ridicul’a⁴ толстовства<br />
 [I] would say, eat no meat — were I not afraid of the ridicule of Tolstoyism. (working English)<br />
 — PSS Tom 77, pp. 5–6 · tolstoyanism · 1907-01-01</p>
+</blockquote>
+<h3>Most Holy Synod</h3>
+<p>institution · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: The governing body of the Russian Orthodox Church; its spiritual censorship banned the work (1882); its 1901 edict declared Tolstoy fallen away from the Church (naming no works).</p>
+<blockquote>
+<p>И русские стали во имя христианской любви убивать своих братьев.<br />
+(working English) And Russians began, in the name of Christian love, to kill their brothers.<br />
+— PSS Tom 23, pp. ch. XV · 1879-1882-a-confession · 1879–1882</p>
+</blockquote>
+<h3>Na kazhdyj den</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: The daily-wisdom anthology (1906–10) that recasts the fire/light credo as maxims (truth-is-fire, one-fire-equality, light of reason)</p>
+<blockquote>
+<p>Нет в человеке ничего драгоценнее, нужнее ему света разума.<br />
+There is nothing in a person more precious, more needful to him, than the light of reason. (working English)<br />
+— PSS Tom 43, pp. 3–361 · fire-metaphor · 1909</p>
+<p>истина христианства, как огонь в костре, который, заглушенный на время наваленным сырым хворостом, уже высушил сырые прутья, начинает охватывать их и выбиваться наружу.<br />
+the truth of Christianity, like a fire in a bonfire which, smothered for a time by piled-on damp brushwood, has already dried the wet twigs and begins to catch them and break out. (working English)<br />
+— PSS Tom 44, pp. 3–390 · fire-metaphor · 1909</p>
+<p>огонь в печи, на пожаре, в свече неравны между собою. В каждом человеке живет дух Божий.<br />
+fire in a stove, in a conflagration, in a candle [are not] unequal to one another. In every person lives the spirit of God. (working English)<br />
+— PSS Tom 44, pp. 3–390 · fire-metaphor · 1909</p>
+<p>Как огонь не бывает немножко горячий, немножко холодный, а бывает огонь только тогда, когда он жжет, так и истина не бывает немножко истина, немножко ложь, а всегда истина<br />
+As fire is never a little hot, a little cold, but is fire only when it burns, so truth is never a little truth, a little falsehood, but is always truth. (working English)<br />
+— PSS Tom 44, pp. 3–390 · fire-metaphor · 1909</p>
 </blockquote>
 <h3>Nicholas II</h3>
 <p>person · missing · dives: doukhobors</p>
@@ -1147,15 +1977,111 @@ And so, if we cannot fulfil that without which we cannot be tolerated in the sta
 it is long, long since high time: first, to review and abolish the laws now existing on persecution for faith; second, to stop all prosecutions for departure from the state-accepted confession; third, to release all those imprisoned and exiled under the former laws for offences against faith; and fourth, not to punish as a crime the disagreement of religious conscience with the demands of the state. (working English)<br />
 — PSS Tom 72, pp. 514–521 · doukhobors · 1900-12-07</p>
 </blockquote>
-<h3>Nikolai Strakhov</h3>
-<p>person · missing · dives: crisis</p>
-<p><em>crisis</em>: philosopher, close correspondent; recipient of the 'medical кризис' letter (1894); accompanied Tolstoy to Optina Pustyn, 1881</p>
+<h3>Nikolai Fedorov</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Librarian of the Rumyantsev Museum and philosopher of the 'Common Task'; an early reader of the gospel synthesis; Tolstoy called him «святой».</p>
 <blockquote>
+<p>Прошел месяц — самый мучительный в моей жизни. Переезд в Москву.<br />
+(working English) A month has passed — the most agonizing of my life. The move to Moscow.<br />
+— PSS Tom 49, pp. 58 · 1879-1882-a-confession · 1881-10-05 (OS)</p>
+<p>Мне очень тяжело в Москве.<br />
+(working English) Things are very hard for me in Moscow.<br />
+— PSS Tom 63, pp. 80–83 · 1879-1882-a-confession · 1881-11 (OS)</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — N. F. Fedorov (pastel by L. Pasternak, pre-1903) [PD]</p>
+<h3>Nikolai Ge</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Painter and sculptor; Tolstoy's closest artist friend (1882–94); made the 1884 portrait and a bust; his late religious canvases were shaped in dialogue with Tolstoy</p>
+<blockquote>
+<p>Таков рисунок Крамского, стоящий многих его картин [...] Образцами же в области живописи произведений, вызывающих негодование, ужас пред нарушением любви к Богу и ближнему, могут служить картина Ге — суд<br />
+Such is Kramskoy's drawing, worth many of his paintings [...] As models in painting of works that arouse indignation and horror at the violation of love of God and neighbour, Ge's picture 'The Judgement' can serve. (working English)<br />
+— PSS Tom 30, pp. 27–203 (here ~p.150) · tolstoy-in-art · 1897</p>
+<p>Картина Репина невозможна — всё выдумано. Ге хорош очень.<br />
+Repin's picture is impossible — it is all made up. Ge is very good. (working English)<br />
+— PSS Tom 50, pp. 67–68 · tolstoy-in-art · 1889-04-15</p>
+<p>Приехал Ге старший, привез рисунок картины — очень хорошо.<br />
+Ge the elder arrived, brought a drawing of the picture — very good. (working English)<br />
+— PSS Tom 51, pp. 15 · tolstoy-in-art · 1890-01-28</p>
+<p>Ге всё лепит.<br />
+Ge keeps sculpting. (working English)<br />
+— PSS Tom 51, pp. 95–96 · tolstoy-in-art · 1890-10-23</p>
+<p>которая хороша не потому, что я ее люблю, а всем хороша будет, потому что очень задушевна.<br />
+...which is good not because I love it but because it will be good for everyone, since it is very heartfelt. (working English)<br />
+— PSS Tom 64, pp. 217–218 · tolstoy-in-art · 1889-01-31</p>
+<p>Я знал эскиз, слышал про картину, но когда увидал, я умилился. Картина делает то, что нужно — раскрывает целый мир той жизни Христа, вне знакомых моментов, и показывает его там таким, каким каждый может себе его представить по своей духовной силе.<br />
+I knew the sketch, had heard about the picture, but when I saw it I was moved to tenderness. The picture does what is needed — it opens up a whole world of that life of Christ, outside the familiar moments, and shows him as each may picture him by his own spiritual strength. (working English)<br />
+— PSS Tom 64, pp. 248–250 · tolstoy-in-art · 1889-04-21</p>
+<p>Бюст сделал большой Гинцбург, нехорош. Репинский похож, но, не для того, чтобы вам сказать приятное, а потому, что так есть, ваш лучше всех.<br />
+Ginzburg has made a large bust [of me], not good. Repin's is a likeness, but — not to flatter you, but because it is so — yours is the best of all. (working English)<br />
+— PSS Tom 66, pp. 24–25 · tolstoy-in-art · 1891-07-30</p>
+<p>«Повинен смерти» необходимо переписать Христа: сделать его с простым, добрым лицом и с выражением сострадания<br />
+['Guilty of Death'] — Christ must be repainted: make him with a simple, kind face and an expression of compassion. (working English)<br />
+— PSS Tom 66, pp. 258–259 · tolstoy-in-art · 1892-09-22</p>
+<p>Я нынче зимою был три раза в вашей галлерее и всякий раз невольно останавливался перед «Что есть истина»<br />
+This winter I was three times in your gallery and each time involuntarily stopped before 'What Is Truth?'. (working English)<br />
+— PSS Tom 67, pp. 153–155 · tolstoy-in-art · 1894-06-14</p>
+</blockquote>
+<p>Visuals: 4 (4 usable) — Bust of Tolstoy [PD], Portrait of Sofia Andreevna Tolstaya [PD], Portrait of Tolstoy at his desk [PD], What Is Truth? (Christ and Pilate) [PD]</p>
+<h3>Nikolai Orlov (painter)</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Peasant-genre painter; Tolstoy's self-declared 'favourite artist'; Tolstoy wrote the preface to his album Russian Peasants (1909)</p>
+<blockquote>
+<p>Орлов мой любимый художник, а любимый он мой художник потому, что предмет его картин — мой любимый предмет.<br />
+Orlov is my favourite artist, and my favourite because the subject of his pictures is my favourite subject. (working English)<br />
+— PSS Tom 37, pp. 273–277 · tolstoy-in-art · 1908</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Russian Peasants (album) — peasant-genre scenes [PD]</p>
+<h3>Nikolai Strakhov</h3>
+<p>person · missing · dives: 1879-1882-a-confession, crisis, gospel-translation, lords-prayer · names: N. N. Strakhov / Nikolai Strakhov</p>
+<p><em>1879-1882-a-confession</em>: Philosopher and critic; Tolstoy's chief correspondent through the composition and first reader; accompanied him to Optina Pustyn.<br />
+<em>crisis</em>: philosopher, close correspondent; recipient of the 'medical кризис' letter (1894); accompanied Tolstoy to Optina Pustyn, 1881<br />
+<em>gospel-translation</em>: Tolstoy's confidant and critical interlocutor during the gospel years; the addressee who hears the work described as consuming and unpublishable<br />
+<em>lords-prayer</em>: The confidant who hears the composition-year reactions and supplies the Tischendorf Greek NT — the philological instrument of the translation. Already mapped by the parent dive.</p>
+<blockquote>
+<p>Разум мне ничего не говорит и не может сказать на три вопроса, которые легко выразить одним: что я такое?<br />
+(working English) Reason tells me nothing, and can say nothing, to the three questions that may easily be put as one: what am I?<br />
+— PSS Tom 62, pp. 379–383 · 1879-1882-a-confession · 1878-01-27 (OS)</p>
+<p>Я очень занят, но не скажу, что пишу<br />
+(working English) I am very busy, but I will not say what I am writing.<br />
+— PSS Tom 62, pp. 500–501 · 1879-1882-a-confession · 1879-11-01 (OS)</p>
+<p>Я очень занят работой для себя, которой никогда не напечатаю<br />
+(working English) I am very busy with work for myself, which I will never print.<br />
+— PSS Tom 62, pp. 501–503 · 1879-1882-a-confession · 1879-11-19 (OS, unsent)</p>
+<p>Из большего сочинения, которое я после вас и кончил, и еще раз все прошел, я сделал еще из Евангелия извлечение без примечаний<br />
+(working English) Out of the larger work, which I finished after seeing you and have gone through once more, I have made besides an extract from the Gospel without notes.<br />
+— PSS Tom 63, pp. 71–73 · 1879-1882-a-confession · 1881-07-01/08 (OS)</p>
 <p>Вы знаете, что Марья Петровна Фет при смерти — крупозное воспаление легких. До сих пор нет кризиса, и шансов смерти, говорят, больше, чем жизни.<br />
 You know that Marya Petrovna Fet is dying — lobar pneumonia. So far there is no crisis, and the chances of death, they say, are greater than of life. (working English)<br />
 — PSS Tom 67, pp. 84 · TEI v67_083_H_N_Straxovu · crisis · 1894-03-16</p>
+<p>работаю очень много и страстно, хотя ничего не пишу.<br />
+I work very much and passionately, though I write nothing. (working English)<br />
+— PSS Tom 62, pp. 471–472 · gospel-translation · 1879-02-13</p>
+<p>занят работой для себя, которой никогда не напечатаю.<br />
+I am occupied with work for myself, which I shall never print. (working English)<br />
+— PSS Tom 62, pp. 501–503 · gospel-translation · 1879-11</p>
+<p>Бумаги измарал много с большим напряжением и не скажу радостью, но с уверенностью, что это так нужно.<br />
+I have covered much paper, with great strain and — I will not say joy, but — with the conviction that it is necessary. (working English)<br />
+— PSS Tom 63, pp. 12–13 · lords-prayer · 1880-02-29</p>
+<p>Я все работаю и не могу оторваться и часто счастлив своей работой, но очень часто слабею головой.<br />
+I keep working and cannot tear myself away, and am often happy in my work, but very often my head grows weak. (working English)<br />
+— PSS Tom 63, pp. 15–16 · lords-prayer · 1880-03-23</p>
+<p>Очень благодарен вам за Тишендорфское евангелие.<br />
+I am very grateful to you for the Tischendorf gospel. (working English)<br />
+— PSS Tom 63, pp. 21–22 · lords-prayer · 1880-09-01</p>
+<p>Из большего сочинения, которое я после вас и кончил, и еще раз все прошел, я сделал еще из Евангелия извлечение без примечаний, но с коротким предисловием<br />
+Out of the larger work, which I have finished since you were here and gone through once more, I have made an extract from the Gospel, without notes but with a short preface… (working English)<br />
+— PSS Tom 63, pp. 71–73 · lords-prayer · 1881-07-01</p>
 </blockquote>
-<p>Visuals: 1 (1 usable) — Portrait/photograph of N. N. Strakhov [PD]</p>
+<p>Visuals: 2 (2 usable) — N. N. Strakhov [PD], Portrait/photograph of N. N. Strakhov [PD]</p>
+<h3>Nikolai Yaroshenko</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Painter; portrait of Tolstoy 1894</p>
+<blockquote>
+<p>Провожали нас Соловьев и Ярошенко, с которым приятно сблизился.<br />
+Solovyov and Yaroshenko saw us off — Yaroshenko, with whom I have grown pleasantly close. (working English)<br />
+— PSS Tom 52, pp. 116–117 · tolstoy-in-art · 1894-05-03</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Portrait of Tolstoy [PD]</p>
 <h3>Non-resistance</h3>
 <p>concept · missing · dives: christian-anarchism</p>
 <p><em>christian-anarchism</em>: The religious substance Tolstoy affirms in place of the political label. The Eltzbacher index argument turns on it: Eltzbacher's book has no Tolstoy reference under 'violence' because Tolstoy treated the matter as non-resistance (religion), not violence (politics).</p>
@@ -1163,6 +2089,56 @@ You know that Marya Petrovna Fet is dying — lobar pneumonia. So far there is n
 <p>Мне кажется только, что я не анархист в смысле политического реформатора. В оглавлении вашей книги под словом «насилие» сделаны указания на разные страницы из других сочинений, но ни одной ссылки на мои. Не доказательство ли это того, что то учение, которое вы мне приписываете и которое, в сущности, есть не что иное, как учение Христа, вовсе не политическое, а религиозное учение?<br />
 It seems to me only that I am not an anarchist in the sense of a political reformer. In the index of your book under the word 'violence' references are made to various pages of the other writers, but not one to mine. Is this not proof that the teaching which you ascribe to me, and which is, in essence, nothing other than the teaching of Christ, is not a political but a religious teaching? (working English)<br />
 — PSS Tom 72, pp. 424–426 · christian-anarchism · 1900-08-01</p>
+</blockquote>
+<h3>O zhizni</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Fire/light fused as the continuous life-force; 'the sun of reason'</p>
+<blockquote>
+<p>Я видел свет от горевшей передо мной травы. Трава эта потухла, но свет только усилился: я не вижу причины этого света, не знаю, чтò горит, но могу заключить, что тот же огонь, который сжег эту траву, жжет теперь дальний лес, или что-то такое, чего я не могу видеть.<br />
+I saw the light from the grass that burned before me. That grass went out, but the light only grew stronger: I do not see the cause of this light, I do not know what is burning, but I can conclude that the same fire that burned this grass is now burning the distant forest, or something of the kind that I cannot see. (working English)<br />
+— PSS Tom 26, pp. 313–442 · fire-metaphor · 1887</p>
+<p>свет солнца разума есть только незначущая случайность, сентиментальные, мистические слова.<br />
+the light of the sun of reason is only an insignificant accident — sentimental, mystical words — so it appears to those not yet awake to it. (working English)<br />
+— PSS Tom 26, pp. 313–442 · fire-metaphor · 1887</p>
+</blockquote>
+<h3>Optina Pustyn</h3>
+<p>place · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: The monastery Tolstoy visited (with Strakhov) in summer 1881 as the work neared its finished form.</p>
+<blockquote>
+<p>Из большего сочинения, которое я после вас и кончил, и еще раз все прошел, я сделал еще из Евангелия извлечение без примечаний<br />
+(working English) Out of the larger work, which I finished after seeing you and have gone through once more, I have made besides an extract from the Gospel without notes.<br />
+— PSS Tom 63, pp. 71–73 · 1879-1882-a-confession · 1881-07-01/08 (OS)</p>
+</blockquote>
+<h3>Otche nash (Tolstoy)</h3>
+<p>concept · missing · dives: lords-prayer</p>
+<p><em>lords-prayer</em>: The subject of this dive: Tolstoy's family of renderings of the Lord's Prayer, his anti-petitionary reading, and the glory→reason / kingdom→spirit substitutions. A concept page anchored in the two works.</p>
+<blockquote>
+<p>Так вот как молитесь: Отец! Чтобы было твое царство. Пусть будет твоя воля в тебе и во мне.<br />
+So pray thus: Father! That thy kingdom be. May thy will be in thee and in me. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>И Иисус сказал им: когда молитесь, говорите: Отец! да будешь ты свят в нас, да объявится царство твое, т. е. да будет воля твоя; да сойдет в нас дух твой и очистит нас.<br />
+And Jesus said to them: when you pray, say: Father! mayest thou be holy in us, may thy kingdom be made manifest, that is, may thy will be done; may thy spirit descend into us and cleanse us. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Как еще яснее сказать, что не нужно молиться?<br />
+How could it be said more plainly that one must not pray? (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Окончив свою работу, я к удивлению и радости своей нашел, что так называемая молитва господня есть не что иное, как в самой сжатой форме выраженное всё учение Иисуса в том самом порядке, в котором были расположены мною главы, и что каждое выражение молитвы соответствует смыслу и порядку глав.<br />
+On finishing my work I found, to my surprise and joy, that the so-called Lord's Prayer is nothing other than the whole teaching of Jesus expressed in the most condensed form, in the very order in which I had arranged the chapters, and that each phrase of the prayer corresponds to the sense and order of the chapters. (working English)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>А будет твоя власть, и сила, и разум.<br />
+But there will be thy power, and strength, and reason. (working English) — Tolstoy's meaning for the doxology (phrase 12 of 12)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+<p>Молитесь только так: Отец наш безначальный и бесконечный, как небо! Пусть будет свято только твое существо. Пусть будет власть только твоя, так, чтобы воля твоя совершалась безначально и бесконечно на земле. Дай мне пищу жизни в настоящем. Ошибки мои прежние загладь и сотри так же, как и я заглаживаю и стираю все ошибки братьев моих, чтобы я не попал в соблазн, избавился от зла. Потому что твоя власть и сила и твое решение.<br />
+Pray only thus: Our Father, without beginning and without end, like the sky! May thy being alone be holy. May power alone be thine, so that thy will be done, without beginning and without end, on earth. Give me the food of life in the present. My former mistakes, efface and wipe them out, just as I efface and wipe out all the mistakes of my brothers, so that I may not fall into temptation, and may be delivered from evil. Because thine is the power and the strength and thine the decision. (working English)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+</blockquote>
+<h3>Otets Sergij</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Fiction: the burning lamp whose «божеский свет истины» dims when holiness is performed for people</p>
+<blockquote>
+<p>Он думал о том, что он был светильник горящий, и чем больше он чувствовал это, тем больше он чувствовал ослабление, потухание божеского света истины, горящего в нем.<br />
+He thought that he was a burning lamp, and the more he felt this, the more he felt the weakening, the dying-out of the divine light of truth burning within him. (working English)<br />
+— PSS Tom 31, pp. 5–46 · fire-metaphor · 1898</p>
 </blockquote>
 <h3>Paul Eltzbacher</h3>
 <p>person · missing · dives: christian-anarchism</p>
@@ -1180,10 +2156,29 @@ It seems to me only that I am not an anarchist in the sense of a political refor
 </blockquote>
 <p>Visuals: 2 (2 usable) — Paul Eltzbacher, photographic portrait [PD], PSS Tom 72 p.442 — the Eltzbacher letter, the «я не анархист в смысле политического реформатора» passage (rendered from the local PD PSS PDF) [PD]</p>
 <h3>Pavel Birukoff</h3>
-<p>person · exists · dives: copyright-renunciation, crisis, doukhobors</p>
-<p><em>copyright-renunciation</em>: correspondent in the earliest sustained free-publication discussion (1885); later biographer<br />
+<p>person · exists · dives: 1879-1882-a-confession, biryukov-sofia-relationship, copyright-renunciation, crisis, doukhobors · names: Pavel Biryukov / Pavel Birukoff</p>
+<p><em>1879-1882-a-confession</em>: Biographer; the standard authorised Life is a key secondary anchor for the composition story.<br />
+<em>biryukov-sofia-relationship</em>: Tolstoy's disciple and authorized biographer; subject of the dive. (Vault file spells the name 'Pavel Birukoff'.)<br />
+<em>copyright-renunciation</em>: correspondent in the earliest sustained free-publication discussion (1885); later biographer<br />
 <em>crisis</em>: biographer; the framing source is his Swedish ed. (Leo Tolstoj: Hans liv och verk) Book IV «Kritisk period» ch.14 «Krisen» p.262 — names the chapter 'crisis' while reporting Tolstoy's denial of one (user-provided photograph)<br />
 <em>doukhobors</em>: Sent to the Caucasus 1895 to verify the facts; wrote the article Tolstoy afterworded; co-signed «Help!» and was exiled. Tolstoy's biographer.</p>
+<blockquote>
+<p>Ni har ock afvärjt mycken ofärd från hans hufvud.<br />
+You have also averted much misfortune from his head. (working English) — source language Swedish.<br />
+— Vol II front matter · biryukov-sofia-relationship · 1908-01-11</p>
+<p>S. A. Tolstojs arkiv.<br />
+The archive of S. A. Tolstaya. (working English) — footnote sourcing the volume's closing quotation; documentary sign of Sofia's cooperation.<br />
+— Vol II p. 453 · biryukov-sofia-relationship · 1908-08-27</p>
+<p>правдивее даже, чем Руссо<br />
+more truthful even than Rousseau. (working English)<br />
+— PSS Tom 73, pp. 315 · biryukov-sofia-relationship · 1902-08-20</p>
+<p>это была Арсеньева Валерия. Она теперь жива, за Волковым была, живет в Париже.<br />
+that was Arsenyeva, Valeria. She is alive now, was married to Volkov, lives in Paris. (working English)<br />
+— PSS Tom 74, pp. 319 · biryukov-sofia-relationship · 1903-11-27</p>
+<p>Неужели только биография?<br />
+Surely not just for the biography? (working English)<br />
+— PSS Tom 82, pp. 172 · biryukov-sofia-relationship · 1910-09-01</p>
+</blockquote>
 <ul>
 <li>PSS Tom 63, pp. 295–298 · copyright-renunciation · 1885-10-19 — Earliest sustained discussion of free publication in the letters (the Posrednik / cheap-edition circle). Cited by id and PSS pages; not quoted verbatim because the clean extract of this early-volume pre-reform text renders unreliably (see needsReview).</li>
 </ul>
@@ -1194,6 +2189,45 @@ Among the Doukhobors — or rather the universal Christian brotherhood, as they 
 <p>Сколько бы ни набрасывали на горящую кучу хвороста дров, думая этим затушить огонь, — огонь, непотухающий огонь истины, только на время приглохнет, но разгорится еще сильнее и сожжет всё то, что наложено на него.<br />
 However much firewood is thrown onto the burning heap of brush in the hope of putting the fire out, the fire — the unquenchable fire of truth — will only die down for a time, then blaze up the more strongly and burn everything that has been piled upon it. (working English)<br />
 — PSS Tom 39, pp. 99–105 · doukhobors · 1895-10-01</p>
+</blockquote>
+<p>Visuals: 4 (3 usable) — Maria (Masha) Lvovna Tolstaya, by P. Biryukov, Yasnaya Polyana 1895 [PD], Pavel Biryukov (1916) [PD], Pavel Biryukov [PD], Pavel Biryukov [unknown]</p>
+<h3>Pavel Biryukov</h3>
+<p>person · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Biographer who closed vol. II of his Tolstoy biography on the fire+light credo</p>
+<blockquote>
+<p>что этот талант есть огонь, который только тогда огонь, когда он жжет. Я верю, что я — Ниневия по отношению к другим Ионам, от которых я узнал и узнаю истину, но что и я Иона по отношению к другим ниневитянам, которым я должен передать истину.<br />
+that this talent is a fire which is only a fire when it burns. I believe that I am a Nineveh in relation to other Jonahs, from whom I have learned and learn the truth, but that I too am a Jonah in relation to other Ninevites, to whom I must pass the truth on. (working English)<br />
+— PSS Tom 23, pp. 461 · fire-metaphor · 1884</p>
+</blockquote>
+<h3>Pavel Tretyakov</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Collector; commissioned the 1873 Kramskoy portrait; recipient of Tolstoy's 1894 plea to acquire Ge's estate</p>
+<blockquote>
+<p>Я нынче зимою был три раза в вашей галлерее и всякий раз невольно останавливался перед «Что есть истина»<br />
+This winter I was three times in your gallery and each time involuntarily stopped before 'What Is Truth?'. (working English)<br />
+— PSS Tom 67, pp. 153–155 · tolstoy-in-art · 1894-06-14</p>
+</blockquote>
+<h3>Prokudin-Gorsky Collection Library of Congress</h3>
+<p>archival-fond · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: high-resolution master of the 1908 colour Tolstoy portrait; 'no known restrictions on publication'</p>
+<blockquote>
+<p>Прости, что не сам решил, а утруждаю тебя.<br />
+Forgive me for not deciding myself but troubling you (working English)<br />
+— PSS Tom 84, pp. 382 · tolstoy-in-photographs · 1908-03-30</p>
+</blockquote>
+<h3>Put zhizni</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: His last book; the keystone returns; the candle/divine-fire aphorisms</p>
+<blockquote>
+<p>Как свеча не может гореть без огня, так человек не может жить без духовной силы.<br />
+As a candle cannot burn without fire, so a person cannot live without spiritual force. (working English)<br />
+— PSS Tom 45, pp. 13–496 · fire-metaphor · 1910</p>
+<p>Если я растоплюсь на божьем огне, то бог оттиснет на мне свой образ.<br />
+If I am melted in God's fire, then God will stamp his image upon me. (working English)<br />
+— PSS Tom 45, pp. 13–496 · fire-metaphor · 1910</p>
+<p>«Огонь пришел я низвесть на землю: и как желал бы, чтобы он уже возгорелся» (Луки XII, 49). Но почему же огонь этот так медленно разгорается?<br />
+"Fire I came to cast upon the earth: and how I would wish that it were already kindled" (Luke XII, 49). But why does this fire blaze up so slowly? (working English)<br />
+— PSS Tom 45, pp. 13–496 · fire-metaphor · 1910</p>
 </blockquote>
 <h3>Pyotr Verigin</h3>
 <p>person · missing · dives: doukhobors</p>
@@ -1207,6 +2241,25 @@ but now one cannot leave this mighty instrument of deception to the enemies alon
 — PSS Tom 68, pp. 262–266 · doukhobors · 1895-11-21</p>
 </blockquote>
 <p>Visuals: 2 (2 usable) — Pyotr Verigin in British Columbia, 1907 [PD], Pyotr Verigin, portrait, 1922 [PD]</p>
+<h3>razumenie</h3>
+<p>concept · missing · dives: lords-prayer</p>
+<p><em>lords-prayer</em>: Tolstoy's keyword: glory→разум in the prayer's close, and разумение as the creditor in the debt gloss. The same concept the sibling fire-metaphor dive tracks (John 1 Logos → разумение).</p>
+<blockquote>
+<p>Мы обязаны жизнью разумению, а не отдаем ему всю свою плотскую жизнь, и потому мы должники неоплатные.<br />
+We owe our life to reason, yet do not give over to it our whole fleshly life, and so we are debtors who can never pay. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>А будет твоя власть, и сила, и разум.<br />
+But there will be thy power, and strength, and reason. (working English) — Tolstoy's meaning for the doxology (phrase 12 of 12)<br />
+— PSS Tom 24, pp. 801–938 · lords-prayer · 1881</p>
+</blockquote>
+<h3>Rumyantsev Museum</h3>
+<p>place · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Where Tolstoy read and met Fedorov while wrestling with the questions that became A Confession.</p>
+<blockquote>
+<p>Мне очень тяжело в Москве.<br />
+(working English) Things are very hard for me in Moscow.<br />
+— PSS Tom 63, pp. 80–83 · 1879-1882-a-confession · 1881-11 (OS)</p>
+</blockquote>
 <h3>Russian State Library</h3>
 <p>institution · missing · dives: jubilee-edition-tei-corpus</p>
 <p><em>jubilee-edition-tei-corpus</em>: provided the electronic scans of the 90 volumes that the crowdsourcing project proofread</p>
@@ -1215,13 +2268,207 @@ but now one cannot leave this mighty instrument of deception to the enemies alon
 Prepared on the basis of an electronic copy of volume 53 of the Complete Collected Works of L. N. Tolstoy, provided by the Russian State Library. (working English)<br />
 — PSS Tom 53 · jubilee-edition-tei-corpus</p>
 </blockquote>
-<h3>Sophia Tolstaya</h3>
-<p>person · exists · dives: copyright-renunciation</p>
-<p><em>copyright-renunciation</em>: opposed the 1891 renunciation; redacted 19 lines of the 22 July 1891 diary entry</p>
+<h3>Sergei Levitsky</h3>
+<p>person · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: photographer of the 1856 Sovremennik writers' group portrait and an 1856 solo officer portrait</p>
 <blockquote>
+<p>по моему предложению, все литераторы сделали фотографическую группу<br />
+at my proposal, all the literary men had a photographic group made (working English)<br />
+— PSS Tom 61, pp. 372–374 · tolstoy-in-photographs · 1856-04-14</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Tolstoy as a young army officer (solo) [PD], Sovremennik writers group: Goncharov, Turgenev, Tolstoy (in uniform), Grigorovich, Druzhinin, Ostrovsky [PD]</p>
+<h3>Sergei Prokudin-Gorsky</h3>
+<p>person · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: made the only colour photograph of Tolstoy, Yasnaya Polyana, 23 May 1908 (OS)</p>
+<blockquote>
+<p>Прости, что не сам решил, а утруждаю тебя.<br />
+Forgive me for not deciding myself but troubling you (working English)<br />
+— PSS Tom 84, pp. 382 · tolstoy-in-photographs · 1908-03-30</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Tolstoy seated at Yasnaya Polyana — the only colour photograph of him [PD]</p>
+<h3>Smert Ivana Ilicha</h3>
+<p>work · missing · dives: fire-metaphor</p>
+<p><em>fire-metaphor</em>: Fiction: life as light, death as its extinction («То свет был, а теперь мрак»)</p>
+<blockquote>
+<p>То свет был, а теперь мрак.<br />
+Once there was light, and now there is darkness. (working English)<br />
+— PSS Tom 26, pp. 61–113 · fire-metaphor · 1886</p>
+</blockquote>
+<h3>Soedinenie i perevod chetyrekh Evangelij</h3>
+<p>work · missing · dives: fire-metaphor, gospel-translation, lords-prayer · names: The Gospel in Brief / The Four Gospels Harmonized (Соединение и перевод четырёх Евангелий) / Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)</p>
+<p><em>fire-metaphor</em>: The text where Tolstoy rewrites the Bible's fire/light language; the special-attention source<br />
+<em>gospel-translation</em>: The full harmony itself — the work this dive is about; composed 1880–81, first legal Russian printing 1957 (PSS Tom 24)<br />
+<em>lords-prayer</em>: The full harmony — holds Version A (Matthew) and Version B (Luke) of the prayer plus the anti-petitionary commentary. Owned by the parent gospel-translation dive; here it is the source of the prayer renderings.</p>
+<blockquote>
+<p>Я пришел сбросить огонь на землю. И как желаю, чтобы он разгорелся.<br />
+I came to cast fire upon the earth. And how I wish that it would blaze up. (working English)<br />
+— PSS Tom 24, pp. 292 · fire-metaphor · 1880-1881</p>
+<p>Есть перерождение, через которое я должен пройти, и я томлюсь, пока оно не совершится.<br />
+There is a rebirth through which I must pass, and I am in anguish until it is accomplished. (working English)<br />
+— PSS Tom 24, pp. 292 · fire-metaphor · 1880-1881</p>
+<p>была долина, в которой, принося жертву Молоху, жгли людей. В геенну отдать — значить сжечь.<br />
+was a valley in which, offering sacrifice to Moloch, they burned people. To give over to Gehenna means to burn. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>Так же как свет в темноте светит, и темнота его не поглощает.<br />
+Just as light shines in the darkness, and the darkness does not swallow it. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>И разумение-то жизни стало Бог.<br />
+And the reason/understanding of life became God. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>9) Φῶς — свет — по всем контекстам означает истинное разумение жизни.<br />
+9) Φῶς — light — in all contexts means the true reason/understanding of life. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>он знал, что его учение — не учение, но искра, которая зажигает сознание Бога в сердцах людей и, раз загоревшись, не может потухнуть.<br />
+he knew that his teaching was not a doctrine but a spark that kindles the consciousness of God in people's hearts and, once lit, cannot go out. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>Тогда скажет тем, которые налево: идите от меня прочь вы, нелюбимые, в тьму внешнюю,<br />
+Then he will say to those on the left: go away from me, you unloved ones, into the outer darkness, (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>Он говорил: очищаю вас водой, но после меня тот, кто сильнее меня, очистит вас духом. Когда он придет, он очистит вас, как хозяин очищает гумно свое: пшеницу соберет, а мякину сожжет.<br />
+He said: I cleanse you with water, but after me the one stronger than me will cleanse you with spirit. When he comes, he will cleanse you as a master cleanses his threshing-floor: the wheat he will gather, and the chaff he will burn up. (working English)<br />
+— PSS Tom 24, pp. 7–798 · fire-metaphor · 1880-1881</p>
+<p>Кто пойдет за мной, тот не будет во тьме, а у того будет жизнь. Жизнь и свет одно и то же.<br />
+Whoever follows me will not be in darkness, but will have life. Life and light are one and the same. (working English)<br />
+— PSS Tom 24, pp. 801–938 · fire-metaphor · 1881</p>
+<p>Разумение — это свет истины. А свет светит в темноте, и темнота не может погасить его.<br />
+Reason/understanding is the light of truth. And the light shines in the darkness, and the darkness cannot extinguish it. (working English)<br />
+— PSS Tom 24, pp. 801–938 · fire-metaphor · 1881</p>
+<p>Лук. XII, 49. Учение мое, как огонь, запалит мир.<br />
+Luke XII, 49. My teaching, like fire, will set the world ablaze. (working English)<br />
+— PSS Tom 24, pp. 801–938 · fire-metaphor · 1881</p>
+<p>Mon enseignement est comme le feu jeté dans le monde. Il fera beaucoup de ravages<br />
+My teaching is like fire thrown into the world. It will do great damage [before it sets all men ablaze]. (working English) — source text is French<br />
+— PSS Tom 24, pp. 941–969 · fire-metaphor · 1880-1881</p>
+<p>учение истинное представляет как бы круг, которого все части одинаково определяют значение друг друга и для изучения которого безразлично начинание изучения с одного или другого места.<br />
+the true teaching presents itself as a kind of circle, all of whose parts equally define one another's meaning, and for the study of which it is a matter of indifference where one begins. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>я неизбежно был приведен к необходимости свести четыре Евангелия в одно, так как все они излагают, хотя и разноречиво, одни и те же события и одно и то же учение.<br />
+I was inevitably led to the necessity of bringing the four Gospels together into one, since all of them set out, however divergently, the same events and the same teaching. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>Читал я по-гречески, на том языке, на котором оно есть у нас, и переводил так, как указывал смысл и лексиконы<br />
+I read in Greek, the language in which we have it, and translated as the sense and the lexicons indicated. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>Попыток соединения Евангелий в одно было много, но те все, которые я знаю, — Arnolde, de Vence, Фаррара, Рейса, Гречулевича, — все они берут исторические основы соединения, и все они безуспешны<br />
+There have been many attempts to combine the Gospels into one, but all those I know — Arnolde, de Vence, Farrar, Reuss, Grechulevich — all take historical bases for the combination, and all are unsuccessful. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>В православном вероучении я нашел изложение самых непонятных, кощунственных и безнравственных положений, не только не допускаемых разумом, но совершенно непостижимых и противных нравственности, и — никакого учения о жизни и о смысле ее.<br />
+In the Orthodox creed I found an exposition of the most incomprehensible, blasphemous and immoral propositions — not only inadmissible to reason but utterly incomprehensible and contrary to morality — and no teaching whatever about life or its meaning. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>искусственные и, вероятно, неправильные филологические разъяснения, которые не только не усиливают убедительность общего смысла, но должны ослаблять ее.<br />
+artificial and probably incorrect philological explanations, which not only fail to strengthen the persuasiveness of the general sense but must weaken it. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1902</p>
+<p>обратился к изучению Евангелий.<br />
+I turned to the study of the Gospels. (working English)<br />
+— PSS Tom 24, pp. 7–798 · gospel-translation · 1880-1881</p>
+<p>неверно переведено: «насущный» — хлеб на этот день; слово это значит: необходимый.<br />
+…wrongly translated 'daily' — bread for this day; this word means: necessary. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>И прости нам наши вины за то, что мы прощаем всякому, кто виноват перед нами.<br />
+And forgive us our faults because we forgive everyone who is at fault before us. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>«Как на небе и на земле» я перевожу: «в тебе и во мне».<br />
+'As in heaven and on earth' I translate: 'in thee and in me'. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Так вот как молитесь: Отец! Чтобы было твое царство. Пусть будет твоя воля в тебе и во мне.<br />
+So pray thus: Father! That thy kingdom be. May thy will be in thee and in me. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Дай нам питание духа, то, которое дает жизнь.<br />
+Give us the nourishment of the spirit, that which gives life. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Мы обязаны жизнью разумению, а не отдаем ему всю свою плотскую жизнь, и потому мы должники неоплатные.<br />
+We owe our life to reason, yet do not give over to it our whole fleshly life, and so we are debtors who can never pay. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>И не взыскивай с нас всё, чем мы должны, потому что и мы не взыскиваем с тех, что нам должны. И не считайся с нами.<br />
+And do not exact from us all that we owe, because we too do not exact from those who owe us. And do not reckon with us. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>И Иисус сказал им: когда молитесь, говорите: Отец! да будешь ты свят в нас, да объявится царство твое, т. е. да будет воля твоя; да сойдет в нас дух твой и очистит нас.<br />
+And Jesus said to them: when you pray, say: Father! mayest thou be holy in us, may thy kingdom be made manifest, that is, may thy will be done; may thy spirit descend into us and cleanse us. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>слова: да сойдет дух твой в нас и очистит нас встречаются в цитатах древних церковных писателей.<br />
+the words 'may thy spirit descend into us and cleanse us' are found in citations of ancient church writers. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Вся молитва должна состоять в желании царства Божия и в исполнении его правил, а все правила в том, чтобы не считать никого виновным, а всех любить и прощать.<br />
+The whole prayer must consist in the desire for God's kingdom and in the fulfilment of its rules, and all the rules are: to hold no one guilty, but to love and forgive everyone. (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+<p>Как еще яснее сказать, что не нужно молиться?<br />
+How could it be said more plainly that one must not pray? (working English)<br />
+— PSS Tom 24, pp. 7–798 · lords-prayer · 1880-1881</p>
+</blockquote>
+<p>Visuals: 2 (2 usable) — Gospel harmony, Luke 12:49-50 — Tolstoy's translation beside the standard text (PSS Tom 24, printed p.292) [PD], Leo Tolstoy, half-length portrait, 1880 — the year he began the harmony [PD]</p>
+<h3>Sophia Tolstaya</h3>
+<p>person · exists · dives: 1879-1882-a-confession, biryukov-sofia-relationship, copyright-renunciation, gospel-translation, tolstoy-in-photographs · names: S. A. Tolstaya (Sofia Andreyevna) / Sofia Tolstaya / Sophia Tolstaya / Sofia Andreevna Tolstaya</p>
+<p><em>1879-1882-a-confession</em>: Wife; copyist of several manuscripts; diarist of the crisis; sought to publish the work in her collected editions (1885, 1911).<br />
+<em>biryukov-sofia-relationship</em>: Dedicatee of Vol II; archive-keeper; vetoed the Arsenyeva letters; seized the 1910 diary. (Vault file spells the name 'Sophia Tolstaya'.)<br />
+<em>copyright-renunciation</em>: opposed the 1891 renunciation; redacted 19 lines of the 22 July 1891 diary entry<br />
+<em>gospel-translation</em>: Tolstoy's wife; her diaries are the primary witness to the work's domestic strain. The dive's evidence COMPLICATES the 'domestic-tragedy' frame (she names the cause yet accepts it as God's will)<br />
+<em>tolstoy-in-photographs</em>: prolific domestic photographer (~1,000 photos from late 1880s); destroyed the Dec-1894 negatives</p>
+<blockquote>
+<p>Прошел месяц — самый мучительный в моей жизни. Переезд в Москву.<br />
+(working English) A month has passed — the most agonizing of my life. The move to Moscow.<br />
+— PSS Tom 49, pp. 58 · 1879-1882-a-confession · 1881-10-05 (OS)</p>
+<p>Ni har ock afvärjt mycken ofärd från hans hufvud.<br />
+You have also averted much misfortune from his head. (working English) — source language Swedish.<br />
+— Vol II front matter · biryukov-sofia-relationship · 1908-01-11</p>
+<p>Соня без меня читала этот дневник, и ее очень огорчило то, что из него могут потом заключить о том, что она была нехорошей женой.<br />
+Sonya read this diary while I was away, and it grieved her greatly that from it people might later conclude she had been a bad wife. (working English)<br />
+— PSS Tom 53, pp. 132 · biryukov-sofia-relationship · 1897-02-04</p>
+<p>нашла и унесла мой дневник маленький.<br />
+[she] found and carried off my little diary. (working English) — reconstructed from TEI reg, cross-checked vs facsimile.<br />
+— PSS Tom 58, pp. 141 · biryukov-sofia-relationship · 1910-10-13</p>
+<p>Софья Андреевна всё так же любит вас, чему я очень радуюсь.<br />
+Sofia Andreevna loves you just as before, at which I greatly rejoice. (working English)<br />
+— PSS Tom 70, pp. 57 · biryukov-sofia-relationship · 1897-03-12</p>
+<p>протестовала против писем Арсеньевой.<br />
+[Sofia Andreevna] protested against the Arsenyeva letters. (working English)<br />
+— PSS Tom 76, pp. 65 · biryukov-sofia-relationship · 1905-10-18</p>
+<p>почти душевно больна — ненависть к Черткову, ревность к нему, и мне очень трудно.<br />
+almost mentally ill — hatred of Chertkov, jealousy of him, and it is very hard for me. (working English)<br />
+— PSS Tom 82, pp. 95 · biryukov-sofia-relationship · 1910-07-19</p>
 <p>И вчера же был разговор с женой о напечатании письма в газетах об отказе от права авторской собственности. Трудно вспомнить, а главное, описать всё, что тут было: [Вымарано 19 строк.]<br />
 And yesterday too there was a conversation with my wife about printing in the newspapers the letter renouncing the right of literary property. It is difficult to recall, and chiefly to describe, everything that was said: [19 lines erased.] (working English)<br />
 — PSS Tom 52, pp. 45–47 · copyright-renunciation · 1891-07-22</p>
+<p>Чувствую себя работающей машиной, хотелось бы жизни немного для себя, да нет ее.<br />
+I feel like a working machine; I would like a little life for myself, but there is none. (working English)<br />
+— gospel-translation · 1878-11-10</p>
+<p>он вял, молчалив и сосредоточен. Все читает.<br />
+he is listless, silent and absorbed. He keeps reading. (working English)<br />
+— gospel-translation · 1878-10-18</p>
+<p>Он много пишет о религиозном.<br />
+He writes a great deal about the religious. (working English)<br />
+— gospel-translation · 1879-12-18</p>
+<p>его христианское настроение слишком не уживается с условиями роскоши, тунеядства, борьбы городской жизни.<br />
+his Christian mood is too incompatible with the conditions of luxury, idleness and the struggle of city life. (working English)<br />
+— gospel-translation · 1882-02-28</p>
+<p>Он сегодня громко вскрикнул, что самая страстная мысль его о том, чтоб уйти от семьи. [...] Он проникся христианством и мыслями о самосовершенствованье. Я ревную его...<br />
+Today he cried out aloud that his most passionate thought is to leave the family. […] He has become imbued with Christianity and with thoughts of self-perfection. I am jealous of it… (working English)<br />
+— gospel-translation · 1882-08-26</p>
+<p>эта работа нескончаемая, потому что не может быть напечатана.<br />
+this work is endless, because it cannot be printed. (working English)<br />
+— gospel-translation · 1883-03-05</p>
+<p>она разложила карточки всех детей, кроме Ванички, и гордится и любуется. Трогательно.<br />
+she laid out the cards of all the children except Vanichka, and takes pride and delight in them. Touching. (working English)<br />
+— PSS Tom 52, pp. 19–20 · tolstoy-in-photographs · 1891-03-13</p>
+<p>История с фотографией очень грустная. Все они оскорблены. Я написал письмо Черткову.<br />
+The story with the photograph is very sad. They are all offended. I wrote a letter to Chertkov. (working English)<br />
+— PSS Tom 53, pp. 2 · tolstoy-in-photographs · 1895-01-03</p>
+<p>Мама целый день занимается фотографией. Она сняла несколько раз Козловку и группу нас всех.<br />
+Mama spends the whole day on photography. She photographed Kozlovka [station] several times, and a group of all of us. (working English)<br />
+— PSS Tom 69, pp. 161 · tolstoy-in-photographs · 1896-10-10</p>
+</blockquote>
+<p>Visuals: 11 (11 usable) — Sofia Andreevna Tolstaya, 1908 [PD], Sofia Tolstaya (formal portrait) [PD], Sofia Tolstaya (oil, N. Ge 1886) [PD], Leo and Sofia Tolstoy, 1910 [PD], Leo and Sofia Tolstoy, 19 Sept 1910 [PD], Sofia Andreevna Tolstaya, photograph c.1875 (the 'before') [PD], The Tolstoy family — Nikolai Ge, 1886 [PD], Tolstoy with his wife, a son, and a dog at Yasnaya Polyana, c.1880s [PD], Tolstoy and Maxim Gorky at Yasnaya Polyana [PD], Tolstoy and Sofia Andreevna at Yasnaya Polyana [PD], Tolstoy and Sofya at Yasnaya Polyana, weeks before his flight [PD]</p>
+<h3>Spiritual crisis (perevorot)</h3>
+<p>concept · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: The transformation A Confession narrates; Tolstoy's own word was «переворот», not 'crisis'/'conversion'.</p>
+<blockquote>
+<p>Эти остановки жизни выражались всегда одинаковыми вопросами: Зачем? Ну, а потом?<br />
+(working English) These stoppages of life always expressed themselves in the same questions: Why? And then what?<br />
+— PSS Tom 23, pp. ch. III · 1879-1882-a-confession · 1879–1882</p>
+<p>Жизнь моя остановилась. Я мог дышать, есть, пить, спать, и не мог не дышать, не есть, не пить, не спать; но жизни не было, потому что не было таких желаний, удовлетворение которых я находил бы разумным.<br />
+(working English) My life came to a stop. I could breathe, eat, drink, sleep, and could not help breathing, eating, drinking, sleeping; but there was no life, because there were no desires whose satisfaction I found reasonable.<br />
+— PSS Tom 23, pp. ch. IV · 1879-1882-a-confession · 1879–1882</p>
+<p>перемена, о которой я говорю в «Исповеди», произошла не сразу, но что те же идеи, которые яснее выражены в моих последних произведениях, находятся в зародыше в более ранних.<br />
+(working English) the change I speak of in The Confession did not happen all at once, but the same ideas, expressed more clearly in my later works, are present in embryo in the earlier ones.<br />
+— PSS Tom 66, pp. 188–189 · 1879-1882-a-confession · 1892-04-01 (OS)</p>
 </blockquote>
 <h3>State Tolstoy Museum</h3>
 <p>institution · missing · dives: copyright-renunciation, jubilee-edition-tei-corpus · names: State Tolstoy Museum (GMT) / State Museum of L. N. Tolstoy (GMT)</p>
@@ -1236,6 +2483,17 @@ State Museum of L. N. Tolstoy (the holding repository on a media record). (worki
 — jubilee-edition-tei-corpus</p>
 </blockquote>
 <p>Visuals: 2 (1 usable) — State Tolstoy Museum digital collection (manuscripts, photographs, portraits) [rights-reserved], State L. N. Tolstoy Museum, Prechistenka 11, Moscow (facade) [CC-BY-SA]</p>
+<h3>State Tretyakov Gallery</h3>
+<p>institution · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Holds the Kramskoy 1873, Ge 1884, Ge 'What Is Truth?' 1890, Repin 1887/1887-ploughing/1891-forest portraits</p>
+<blockquote>
+<p>У меня каждый день, вот уже с неделю, живописец Крамской [...] делает мой портрет в Третьяковскую галлерею, и я сижу и болтаю с ним и из Петербургской стараюсь обращать его в крещеную веру.<br />
+Every day now, for a week already, the painter Kramskoy has been making my portrait for the Tretyakov gallery, and I sit and chat with him and try to convert him from the Petersburg faith to the baptized one. (working English)<br />
+— PSS Tom 62, pp. 48–49 · tolstoy-in-art · 1873-09-23</p>
+<p>Я нынче зимою был три раза в вашей галлерее и всякий раз невольно останавливался перед «Что есть истина»<br />
+This winter I was three times in your gallery and each time involuntarily stopped before 'What Is Truth?'. (working English)<br />
+— PSS Tom 67, pp. 153–155 · tolstoy-in-art · 1894-06-14</p>
+</blockquote>
 <h3>The Burning of Arms</h3>
 <p>event · missing · dives: doukhobors</p>
 <p><em>doukhobors</em>: The coordinated mass destruction of weapons by ~7,000 Doukhobors, night of 28–29 June 1895 (OS); the catalysing event.</p>
@@ -1245,6 +2503,27 @@ After this, on 28 June 1895, the Doukhobors living in the Akhalkalaki district o
 — PSS Tom 39, pp. 209–215 · doukhobors · 1895-08-14</p>
 </blockquote>
 <p>Visuals: 1 (1 usable) — PSS Tom 39 p.209 — the Burning of Arms paragraph (rendered from the local PD PSS PDF) [PD]</p>
+<h3>The Kingdom of God Is Within You</h3>
+<p>criticalWork · stub · dives: doukhobors, fire-metaphor · names: The Kingdom of God Is Within You / The Kingdom of God Is Within You (Царство Божие внутри вас)</p>
+<p><em>doukhobors</em>: The 1893 doctrinal foundation: refusal of military service, the position the Doukhobors enacted.<br />
+<em>fire-metaphor</em>: Takes Luke 12:49 as the motif of the spreading new consciousness</p>
+<blockquote>
+<p>Только что он затушит пожар в одном месте, загорается в двух других; только что он уступает огню, отломает то, что загорелось, от большого здания, — загорается с двух концов и это здание.<br />
+No sooner does he put out the fire in one place than it flares up in two others; no sooner does he yield to the fire and break off what has caught from the large building than that building too catches at both ends. (working English)<br />
+— PSS Tom 28, pp. 1–293 · fire-metaphor · 1893</p>
+<p>«Огонь принес я на землю, — сказал Христос, — и как томлюсь, когда он возгорится».<br />
+"Fire I brought to the earth," said Christ, "and how I am in anguish for it to blaze up." (working English)<br />
+— PSS Tom 28, pp. 1–293 · fire-metaphor · 1893</p>
+</blockquote>
+<h3>Thomas Tapsell</h3>
+<p>person · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: English photographer brought by Chertkov; Krekshino 1909 photographs of Tolstoy with grandchildren; negatives at Leeds Russian Archive</p>
+<blockquote>
+<p>Фотографии Тапселя превосходны — нас с детьми.<br />
+Tapsell's photographs are superb — of us with the children. (working English)<br />
+— PSS Tom 89, pp. 143–146 · tolstoy-in-photographs · 1909-09-26</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Tolstoy near Krekshino [PD]</p>
 <h3>Tolstoy Digital</h3>
 <p>institution · missing · dives: jubilee-edition-tei-corpus</p>
 <p><em>jubilee-edition-tei-corpus</em>: HSE digital-humanities project that TEI-encoded the 90 volumes (2015–2022) and added the semantic layers; source of the local corpus</p>
@@ -1324,6 +2603,42 @@ Christianity, true Christianity, in my opinion, differs from the religions one m
 True Christianity is not some separate, exclusive teaching, but the fullest and clearest expression for our time of the eternal, divine truths equally acknowledged by all the great religious teachings of the world: Brahminism, Buddhism, Confucianism, Mazdeism, Taoism, Mohammedanism and others. (working English)<br />
 — PSS Tom 79, pp. 53–59 · christian · 1909-01-29</p>
 </blockquote>
+<h3>V chem moja vera</h3>
+<p>work · missing · dives: fire-metaphor, gospel-translation</p>
+<p><em>fire-metaphor</em>: Source of the fire+light credo quoted at the close of Biryukov vol. II<br />
+<em>gospel-translation</em>: Project part 4 — the positive exposition of the recovered teaching (also the fire+light credo of the sibling fire-metaphor dive)</p>
+<blockquote>
+<p>в человеке живет божественный свет, сошедший с неба, и свет этот есть разум, — и что ему одному надо служить и в нем одном искать благо.<br />
+in man there lives a divine light, come down from heaven, and this light is reason — and that it alone must be served and in it alone must good be sought. (working English)<br />
+— PSS Tom 23, pp. 304–465 · fire-metaphor · 1884</p>
+<p>Но мир горит уж 1800 лет, горит с тех пор, как Христос сказал: я огонь низвел на землю; и как томлюсь, пока он не разгорится, — и будет гореть, пока не спасутся люди.<br />
+But the world has been burning for 1800 years now, burning ever since Christ said: I brought fire down to the earth; and how I am in anguish until it blazes up — and it will burn until people are saved. (working English)<br />
+— PSS Tom 23, pp. 304–465 · fire-metaphor · 1884</p>
+<p>что этот талант есть огонь, который только тогда огонь, когда он жжет. Я верю, что я — Ниневия по отношению к другим Ионам, от которых я узнал и узнаю истину, но что и я Иона по отношению к другим ниневитянам, которым я должен передать истину.<br />
+that this talent is a fire which is only a fire when it burns. I believe that I am a Nineveh in relation to other Jonahs, from whom I have learned and learn the truth, but that I too am a Jonah in relation to other Ninevites, to whom I must pass the truth on. (working English)<br />
+— PSS Tom 23, pp. 461 · fire-metaphor · 1884</p>
+<p>Я верю, что единственный смысл моей жизни — в том, чтобы жить в том свете, который есть во мне, и ставить его не под спуд, но высоко перед людьми, так, чтобы люди видели его.<br />
+I believe that the only meaning of my life is to live by the light that is in me, and to set it not under a bushel but high before people, so that people may see it. (working English)<br />
+— PSS Tom 23, pp. 461 · fire-metaphor · 1884</p>
+<p>перевод четырех Евангелий и соединение их в одно.<br />
+the translation of the four Gospels and their combination into one. (working English)<br />
+— PSS Tom 24, pp. 801–938 · gospel-translation · 1881</p>
+</blockquote>
+<p>Visuals: 3 (3 usable) — The 'Я верю' credo — 'a fire which is only a fire when it burns' + 'live by the light in me' (PSS Tom 23, printed p.461) [PD], Tolstoy writing — Nikolai Ge's 1884 portrait, painted while Tolstoy drafted What I Believe [PD], Tolstoy at Yasnaya Polyana, 1908 — first colour photo-portrait in Russia (seated + head crop) [PD]</p>
+<h3>Valeria Arsenyeva</h3>
+<p>person · missing · dives: biryukov-sofia-relationship</p>
+<p><em>biryukov-sofia-relationship</em>: Tolstoy's near-fiancée of 1856–57; the withheld lover; the suppressed-chapter subject (basis of Family Happiness)</p>
+<blockquote>
+<p>это была Арсеньева Валерия. Она теперь жива, за Волковым была, живет в Париже.<br />
+that was Arsenyeva, Valeria. She is alive now, was married to Volkov, lives in Paris. (working English)<br />
+— PSS Tom 74, pp. 319 · biryukov-sofia-relationship · 1903-11-27</p>
+<p>есть целая пачка моих писем к ней.<br />
+there is a whole packet of my letters to her. (working English)<br />
+— PSS Tom 74, pp. 319 · biryukov-sofia-relationship · 1903-11-27</p>
+<p>протестовала против писем Арсеньевой.<br />
+[Sofia Andreevna] protested against the Arsenyeva letters. (working English)<br />
+— PSS Tom 76, pp. 65 · biryukov-sofia-relationship · 1905-10-18</p>
+</blockquote>
 <h3>Varvara Mac-Gahan</h3>
 <p>person · missing · dives: tolstoyanism</p>
 <p><em>tolstoyanism</em>: Russian-American journalist (1850–1904), widow of war correspondent Januarius MacGahan; addressee of the 1894 letter. Her writing about 'the Tolstoyans' and 'the movement' is what Tolstoy answers by denying both exist.</p>
@@ -1335,15 +2650,53 @@ You write about 'the Tolstoyans' and my other followers, about the movement rais
 As for Tolstoyans, a movement, and so forth — I know nothing of it, or rather I know that there is no such thing. (working English)<br />
 — PSS Tom 67, pp. 225–227 · tolstoyanism · 1894-09-22</p>
 </blockquote>
+<h3>Vasily Alekseev</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: The children's tutor and early convert; recipient of the 1881 circle letter; credited as the first educated man to confirm Tolstoy's new faith.</p>
+<blockquote>
+<p>Мне очень тяжело в Москве.<br />
+(working English) Things are very hard for me in Moscow.<br />
+— PSS Tom 63, pp. 80–83 · 1879-1882-a-confession · 1881-11 (OS)</p>
+</blockquote>
+<h3>Vasily Sutaev</h3>
+<p>person · missing · dives: 1879-1882-a-confession</p>
+<p><em>1879-1882-a-confession</em>: Peasant sectarian from Tver; an exemplar of the simple living faith Tolstoy sought; visited 1881.</p>
+<blockquote>
+<p>Прошел месяц — самый мучительный в моей жизни. Переезд в Москву.<br />
+(working English) A month has passed — the most agonizing of my life. The move to Moscow.<br />
+— PSS Tom 49, pp. 58 · 1879-1882-a-confession · 1881-10-05 (OS)</p>
+<p>Мне очень тяжело в Москве.<br />
+(working English) Things are very hard for me in Moscow.<br />
+— PSS Tom 63, pp. 80–83 · 1879-1882-a-confession · 1881-11 (OS)</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — V. K. Sutaev (Y. Steinberg, 1885) [PD]</p>
 <h3>Vladimir Chertkov</h3>
-<p>person · exists · dives: christian-anarchism, copyright-renunciation, crisis, doukhobors, jubilee-edition-tei-corpus, tolstoyanism</p>
-<p><em>christian-anarchism</em>: Tolstoy's closest disciple and publisher; gave «христианский анархизм» programmatic Russian form in the 1905 booklet O khristianskom anarkhizme (Svobodnoe Slovo), the in-circle frame the Sacy phrase points to. The 1905 booklet is not held locally.<br />
+<p>person · exists · dives: 1879-1882-a-confession, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism · names: V. G. Chertkov / Vladimir Chertkov</p>
+<p><em>1879-1882-a-confession</em>: Disciple and publisher; the «Свободное слово» (Christchurch, 1901) edition; the agent for distributing the suppressed text.<br />
+<em>biryukov-sofia-relationship</em>: Editor and close associate of Tolstoy, entrusted with his manuscripts and diaries; named diary-executor in the 1895 testament; on the opposing side of Sofia in the 1910 will crisis; first (censored) publisher of the diaries (1916)<br />
+<em>christian-anarchism</em>: Tolstoy's closest disciple and publisher; gave «христианский анархизм» programmatic Russian form in the 1905 booklet O khristianskom anarkhizme (Svobodnoe Slovo), the in-circle frame the Sacy phrase points to. The 1905 booklet is not held locally.<br />
 <em>copyright-renunciation</em>: co-drafter of the six wills; drafted the 1910 Explanatory Note; held Tolstoy's post-1881 rights<br />
 <em>crisis</em>: disciple/correspondent from 1883; the PSS Tom 85 apparatus that carries the editors' 'кризис своих воззрений' annotates the Chertkov letters<br />
 <em>doukhobors</em>: Co-author of «Help!»; expelled to England 1897, where he became the organising hub of the relief effort.<br />
+<em>fire-metaphor</em>: Closest disciple; conduit for the 1904 soldiers' letter; co-author of the Doukhobor record<br />
+<em>gospel-translation</em>: Later custodian/publisher of the banned works; his Croydon/Free Age circle stands behind the first English translation<br />
 <em>jubilee-edition-tei-corpus</em>: editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project<br />
+<em>tolstoy-in-art</em>: Disciple; ran the late photographic documentation of Tolstoy; party to the conflict over Tolstoy's portraits/image<br />
+<em>tolstoy-in-photographs</em>: built the largest photographic archive of Tolstoy; brought the photographer Tapsell; the public/prophet image-maker<br />
 <em>tolstoyanism</em>: Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser, dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between Tolstoy's 'there is no such thing' and Chertkov's institution-building is the dive's central tension.</p>
 <blockquote>
+<p>Обличаемые спрятались за цензуру и штыки<br />
+(working English) Those exposed have hidden behind censorship and bayonets.<br />
+— PSS Tom 63, pp. 90–91 · 1879-1882-a-confession · 1882-03-03 (OS, unsent)</p>
+<p>Чертков обещал мне еще при жизни моей сделать это.<br />
+Chertkov promised me, while I am still alive, to do this [destroy/prune the diaries]. (working English)<br />
+— PSS Tom 53, pp. 14-18 · biryukov-sofia-relationship · 1895-03-27</p>
+<p>завещание, если есть таковое.<br />
+[to make my will invalid,] if such a will exists. (working English) — reconstructed from TEI reg, cross-checked vs facsimile.<br />
+— PSS Tom 58, pp. 137 · biryukov-sofia-relationship · 1910-09-16</p>
+<p>почти душевно больна — ненависть к Черткову, ревность к нему, и мне очень трудно.<br />
+almost mentally ill — hatred of Chertkov, jealousy of him, and it is very hard for me. (working English)<br />
+— PSS Tom 82, pp. 95 · biryukov-sofia-relationship · 1910-07-19</p>
 <p>1) Все его сочинения, литературные произведения и писания всякого рода, как уже где-либо напечатанные, так и еще не изданные, не составляли после его смерти ничьей частной собственности, а могли бы быть издаваемы и перепечатываемы всеми, кто этого захочет.<br />
 (working English) 1) That all his compositions, literary works and writings of every kind, whether already published anywhere or not yet issued, should after his death be no one's private property, but might be published and reprinted by anyone who wishes.<br />
 — PSS Tom 82, pp. 227–231 · copyright-renunciation · 1910-07-31</p>
@@ -1353,6 +2706,9 @@ As for Tolstoyans, a movement, and so forth — I know nothing of it, or rather 
 <p>Среди духоборов, или, скорее, христианского всемирного братства, как они теперь называют себя, происходит ведь не что-нибудь новое, а только произрастание того семени, которое посеяно Христом 1800 лет тому назад, — воскресение самого Христа.<br />
 Among the Doukhobors — or rather the universal Christian brotherhood, as they now call themselves — what is taking place is nothing new, but only the sprouting of that seed which was sown by Christ 1,800 years ago: the resurrection of Christ himself. (working English)<br />
 — PSS Tom 39, pp. 192–196 · doukhobors · 1896-12-26</p>
+<p>это искра того огня, который Христос низвел на землю и который начинает возгораться.<br />
+this is a spark of that fire which Christ brought down to the earth and which is beginning to blaze up. (working English)<br />
+— PSS Tom 88, pp. 718 · fire-metaphor · 1904-05-08</p>
 <p>В 1910 году Толстой приехал в усадьбу Отрадное, где снимал дачу его друг, сподвижник и редактор В. Г. Чертков.<br />
 In 1910 Tolstoy came to the Otradnoye estate, where his friend, associate and editor V. G. Chertkov was renting a dacha. (working English)<br />
 — jubilee-edition-tei-corpus</p>
@@ -1365,8 +2721,36 @@ In 1910 Tolstoy came to the Otradnoye estate, where his friend, associate and ed
 <p>Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.<br />
 This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)<br />
 — PSS Tom 1, pp. vi · jubilee-edition-tei-corpus · 1928-01-01</p>
+<p>Был здесь Чертков. Вышло очень неприятное столкновение из-за портрета. Как всегда, Соня поступила решительно, но необдуманно и нехорошо.<br />
+Chertkov was here. A very unpleasant clash arose over a portrait. As always, Sonya acted decisively but rashly and badly. (working English)<br />
+— PSS Tom 52, pp. 157–159 · tolstoy-in-art · 1894-12-31</p>
+<p>История с фотографией очень грустная. Все они оскорблены. Я написал письмо Черткову.<br />
+The story with the photograph is very sad. They are all offended. I wrote a letter to Chertkov. (working English)<br />
+— PSS Tom 53, pp. 2 · tolstoy-in-photographs · 1895-01-03</p>
+<p>Фотографии Тапселя превосходны — нас с детьми.<br />
+Tapsell's photographs are superb — of us with the children. (working English)<br />
+— PSS Tom 89, pp. 143–146 · tolstoy-in-photographs · 1909-09-26</p>
+<p>Вы не можете представить себе, какой вред мне делают похвалы при моем тщеславии. Это пьянство.<br />
+You cannot imagine what harm praise does me, given my vanity. It is drunkenness. (working English)<br />
+— PSS Tom 89, pp. 46–48 · tolstoy-in-photographs · 1906-10-26</p>
 </blockquote>
-<p>Visuals: 7 (6 usable) — Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], V. G. Chertkov, 1883 (photograph by A. F. Eichenvald) [PD], Portrait of V. G. Chertkov, Ivan Kramskoy, 1881 [unknown], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD], V. G. Chertkov, editor-in-chief of the Jubilee Edition [PD], PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword) [PD]</p>
+<p>Visuals: 11 (10 usable) — V. G. Chertkov (Repin, c.1890) [PD], Vladimir Chertkov (1883) [PD], Chertkov with Tolstoy, Yasnaya Polyana 1909 [PD], Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], Portrait of V. G. Chertkov, Ivan Kramskoy, 1881 [unknown], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD], Tolstoy with his granddaughter, photographed by Vladimir Chertkov, 1910 (final year) [PD], V. G. Chertkov, editor-in-chief of the Jubilee Edition [PD], PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword) [PD], Tolstoy with his physician Dushan Makovitsky [PD]</p>
+<h3>Vladimir Molochnikov</h3>
+<p>person · missing · dives: tolstoy-in-photographs</p>
+<p><em>tolstoy-in-photographs</em>: Tolstoyan correspondent; addressee of the 'cannot attach importance to it' card letter (1908)</p>
+<blockquote>
+<p>Не прислал до сих пор карточки потому, что забыл, а забыл потому, что не могу приписать этому значения<br />
+I have not sent the card until now because I forgot, and I forgot because I cannot attach any importance to it (working English)<br />
+— PSS Tom 78, pp. 191 · tolstoy-in-photographs · 1908-07-23</p>
+</blockquote>
+<h3>Vladimir Stasov</h3>
+<p>person · missing · dives: tolstoy-in-art</p>
+<p><em>tolstoy-in-art</em>: Critic; mediated the Repin–Tolstoy relationship; recipient of the 1887 'portrait shipped' note</p>
+<blockquote>
+<p>Портрет Репина уложен и завтра отсылается.<br />
+Repin's portrait is packed and is being sent off tomorrow. (working English)<br />
+— PSS Tom 64, pp. 66–67 · tolstoy-in-art · 1887-09-08</p>
+</blockquote>
 <h3>What I Believe</h3>
 <p>work · missing · dives: crisis</p>
 <p><em>crisis</em>: companion confessional work; 'жизнь моя вдруг переменилась'</p>
@@ -1375,44 +2759,114 @@ This same wish he then confirmed in writing in his testamentary disposition of 3
 Five years ago I came to believe in Christ's teaching — and my life suddenly changed […] What happened to me was what happens to a man who goes out on some errand and then suddenly decides on the way that the errand is of no use to him at all — and turns back home. (working English)<br />
 — PSS Tom 23, pp. 304 · TEI v23_304_465_V_chem_moja_vera · crisis · 1884</p>
 </blockquote>
+<h3>Yasnaya Polyana</h3>
+<p>place · exists · dives: jubilee-edition-tei-corpus, tolstoy-in-art, tolstoy-in-photographs</p>
+<p><em>jubilee-edition-tei-corpus</em>: Tolstoy's estate; co-initiator of the digitisation; the place from which most of the edition's manuscript base originates<br />
+<em>tolstoy-in-art</em>: The estate where most sittings happened (Kramskoy 1873, Repin 1887/1891, Ginzburg 1891, Nesterov, Aronson, Trubetskoy); holds the family version of the 1873 Kramskoy portrait<br />
+<em>tolstoy-in-photographs</em>: principal photographic location; an estate 'фотография' (photo room) attested by 1862; the 1908 sessions</p>
+<blockquote>
+<p>Приехал Репин и Гинзбург. За это время они меня лепят и пишут, а я написал статью об обжорстве и много подвинулся в большой статье.<br />
+Repin and Ginzburg have arrived. During this time they sculpt and paint me, while I have written an article on gluttony and made much progress on the big article. (working English)<br />
+— PSS Tom 52, pp. 44 · tolstoy-in-art · 1891-07-13</p>
+<p>У меня каждый день, вот уже с неделю, живописец Крамской [...] делает мой портрет в Третьяковскую галлерею, и я сижу и болтаю с ним и из Петербургской стараюсь обращать его в крещеную веру.<br />
+Every day now, for a week already, the painter Kramskoy has been making my portrait for the Tretyakov gallery, and I sit and chat with him and try to convert him from the Petersburg faith to the baptized one. (working English)<br />
+— PSS Tom 62, pp. 48–49 · tolstoy-in-art · 1873-09-23</p>
+<p>Мама целый день занимается фотографией. Она сняла несколько раз Козловку и группу нас всех.<br />
+Mama spends the whole day on photography. She photographed Kozlovka [station] several times, and a group of all of us. (working English)<br />
+— PSS Tom 69, pp. 161 · tolstoy-in-photographs · 1896-10-10</p>
+<p>Фотографии Тапселя превосходны — нас с детьми.<br />
+Tapsell's photographs are superb — of us with the children. (working English)<br />
+— PSS Tom 89, pp. 143–146 · tolstoy-in-photographs · 1909-09-26</p>
+</blockquote>
+<p>Visuals: 1 (1 usable) — Yasnaya Polyana — Tolstoy's main house (source of the manuscript base) [PD]</p>
 <h2>4. Integrity report</h2>
 <p><strong>Unresolved evidenceRefs</strong> (0)</p>
 <ul>
 <li>none</li>
 </ul>
-<p><strong>Name conflicts (same key, multiple spellings)</strong> (1)</p>
+<p><strong>Name conflicts (same key, multiple spellings)</strong> (12)</p>
 <ul>
+<li>confession: A Confession (Исповедь) / Confession (Исповедь) (crisis, fire-metaphor, gospel-translation)</li>
+<li>jubilee-edition: Jubilee Edition (Полное собрание сочинений) / The Jubilee Edition (Полное собрание сочинений) (gospel-translation, jubilee-edition-tei-corpus)</li>
+<li>leo-tolstoy: Leo Tolstoy / Lev Tolstoy (1879-1882-a-confession, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoy-in-photographs, tolstoyanism)</li>
+<li>mikhail-elpidin: M. K. Elpidin / Mikhail Elpidin (М. К. Эльпидин) (1879-1882-a-confession, gospel-translation)</li>
+<li>nikolai-strakhov: N. N. Strakhov / Nikolai Strakhov (1879-1882-a-confession, crisis, gospel-translation, lords-prayer)</li>
+<li>pavel-birukoff: Pavel Birukoff / Pavel Biryukov (1879-1882-a-confession, biryukov-sofia-relationship, copyright-renunciation, crisis, doukhobors)</li>
+<li>soedinenie-i-perevod-chetyrekh-evangelij: The Gospel in Brief / The Four Gospels Harmonized (Соединение и перевод четырёх Евангелий) / Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий) (fire-metaphor, gospel-translation, lords-prayer)</li>
+<li>sophia-tolstaya: S. A. Tolstaya (Sofia Andreyevna) / Sofia Andreevna Tolstaya / Sofia Tolstaya / Sophia Tolstaya (1879-1882-a-confession, biryukov-sofia-relationship, copyright-renunciation, gospel-translation, tolstoy-in-photographs)</li>
+<li>state-museum-of-leo-tolstoy: State Museum of L. N. Tolstoy (GMT) / State Museum of L. N. Tolstoy (Moscow) (tolstoy-in-art, tolstoy-in-photographs)</li>
 <li>state-tolstoy-museum: State Museum of L. N. Tolstoy (GMT) / State Tolstoy Museum (GMT) (copyright-renunciation, jubilee-edition-tei-corpus)</li>
+<li>the-kingdom-of-god-is-within-you: The Kingdom of God Is Within You / The Kingdom of God Is Within You (Царство Божие внутри вас) (doukhobors, fire-metaphor)</li>
+<li>vladimir-chertkov: V. G. Chertkov / Vladimir Chertkov (1879-1882-a-confession, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism)</li>
 </ul>
-<p><strong>wikiType conflicts</strong> (0)</p>
+<p><strong>wikiType conflicts</strong> (3)</p>
 <ul>
-<li>none</li>
+<li>jubilee-edition: concept / edition</li>
+<li>mikhail-elpidin: institution / person</li>
+<li>the-kingdom-of-god-is-within-you: criticalWork / work</li>
 </ul>
-<p><strong>Works routed to works/ (not a wiki type)</strong> (2)</p>
+<p><strong>Works routed to works/ (not a wiki type)</strong> (21)</p>
 <ul>
+<li>abrege-de-levangile (work)</li>
+<li>bethink-yourselves (work)</li>
+<li>chem-ljudi-zhivy (work)</li>
 <li>confession (work)</li>
+<li>four-gospels-harmonised-and-translated-1895 (edition)</li>
+<li>hodite-v-svete-poka-est-svet (work)</li>
+<li>issledovanie-dogmaticheskogo-bogoslovija (work)</li>
+<li>jubilee-edition (edition)</li>
+<li>kratkoe-izlozhenie-evangelija (work)</li>
+<li>leeds-russian-archive-chertkov-tapsell-fond (archival-fond)</li>
+<li>na-kazhdyj-den (work)</li>
+<li>o-zhizni (work)</li>
+<li>otets-sergij (work)</li>
+<li>prokudin-gorsky-collection-library-of-congress (archival-fond)</li>
+<li>put-zhizni (work)</li>
+<li>smert-ivana-ilicha (work)</li>
+<li>soedinenie-i-perevod-chetyrekh-evangelij (work)</li>
+<li>the-kingdom-of-god-is-within-you (work)</li>
+<li>tsgakffd-bulla-collection (archival-fond)</li>
+<li>v-chem-moja-vera (work)</li>
 <li>what-i-believe (work)</li>
 </ul>
-<p><strong>vaultStatus drift (dossier vs live)</strong> (2)</p>
+<p><strong>vaultStatus drift (dossier vs live)</strong> (3)</p>
 <ul>
 <li>confession: dossier ['exists'] → live stub</li>
+<li>tatyana-tolstaya: dossier ['exists'] → live stub</li>
 <li>the-kingdom-of-god-is-within-you: dossier ['exists'] → live stub</li>
 </ul>
-<p><strong>Entities with zero evidence</strong> (13)</p>
+<p><strong>Entities with zero evidence</strong> (30)</p>
 <ul>
 <li>abbyy (jubilee-edition-tei-corpus)</li>
+<li>aksinya-bazykina (biryukov-sofia-relationship)</li>
 <li>alexandra-tolstaya (copyright-renunciation, jubilee-edition-tei-corpus)</li>
-<li>aylmer-maude (copyright-renunciation, doukhobors)</li>
+<li>astapovo (tolstoy-in-photographs)</li>
+<li>aylmer-maude (copyright-renunciation, doukhobors, gospel-translation)</li>
 <li>ernest-howard-crosby (christian-anarchism)</li>
 <li>felix-ortt (christian-anarchism)</li>
+<li>ivan-turgenev (1879-1882-a-confession)</li>
+<li>jan-styka (tolstoy-in-art)</li>
+<li>karl-bulla (tolstoy-in-photographs)</li>
+<li>konstantin-pobedonostsev (1879-1882-a-confession)</li>
+<li>leo-wiener (gospel-translation)</li>
+<li>leonid-urusov (1879-1882-a-confession)</li>
 <li>leopold-sulerzhitsky (doukhobors)</li>
+<li>mikhail-nesterov (tolstoy-in-art)</li>
+<li>naum-aronson (tolstoy-in-art)</li>
 <li>nikolai-gudzy (jubilee-edition-tei-corpus)</li>
 <li>nikolai-gusev (jubilee-edition-tei-corpus)</li>
+<li>paolo-trubetskoy (tolstoy-in-art)</li>
+<li>peredvizhniki (tolstoy-in-art)</li>
 <li>resurrection (doukhobors)</li>
+<li>russkaya-mysl-journal (1879-1882-a-confession)</li>
 <li>sergei-tolstoy (doukhobors)</li>
+<li>sergei-yuryev (1879-1882-a-confession)</li>
 <li>society-of-friends (doukhobors)</li>
-<li>the-kingdom-of-god-is-within-you (doukhobors)</li>
-<li>yasnaya-polyana (jubilee-edition-tei-corpus)</li>
+<li>state-museum-of-leo-tolstoy (tolstoy-in-art, tolstoy-in-photographs)</li>
+<li>state-russian-museum (tolstoy-in-art)</li>
+<li>tatyana-tolstaya (tolstoy-in-art)</li>
+<li>tsgakffd-bulla-collection (tolstoy-in-photographs)</li>
+<li>valentin-serov (tolstoy-in-art)</li>
 </ul>
 <p><strong>Missing wikilinkTarget</strong> (0)</p>
 <ul>

@@ -24,6 +24,7 @@ Parse `{{ARGUMENTS}}`:
 - **`--confirm-scope`** — in `--auto`, approve the auto-drafted scope once, then detach.
 - **`--model <tier>`** — informational (the CLI already set the baseline); record the effective tier in the run-report.
 - **slug** = kebab-case of the theme (lowercase, non-alphanumeric → `-`).
+  - **Work dives** (subject is a single work — the dive carries a `workRecord:` block) prefix the slug with the composition window: `<startYear>[-<endYear>]-<slug>` (e.g. `1879-1882-a-confession`). Use the **composition** window, not first-publication, and a **range** whenever the work was written across years or its window overlaps neighbouring works (the Prophet-period canon overlaps heavily). This sorts work dives together and chronologically in `docs/research/`. Theme/reference dives stay bare. The slug is the identity key — it must equal the folder name and the dossier `topic.slug`.
 
 ## Hard boundaries
 
