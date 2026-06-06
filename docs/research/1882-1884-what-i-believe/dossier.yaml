@@ -1,0 +1,905 @@
+# What I Believe (В чём моя вера?) — corpus-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify with: python3 docs/research/lib/verify_quotes.py docs/research/1882-1884-what-i-believe/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+# NOTE: diary/letter evidence (believe-diary-*, believe-let-*), the visuals block, and the
+# scholarship block are folded in after the Phase-1 sweeps + Phase-3 pass.
+
+topic:
+  slug: 1882-1884-what-i-believe
+  title: "What I Believe (В чём моя вера?)"
+  question: >-
+    Document What I Believe as a work across the local Tolstoy corpus — its
+    genesis out of the Engelhardt letter and the unfinished 1881 "Записки
+    христианина"; what the text argues (the «не противься злому» key, the
+    Sermon on the Mount read as five binding commandments, the rejection of
+    courts, oaths, war and the state); its redactions and title history; its
+    1884 printing, ban and dispersal; its translation lineage and Church
+    reception; and its place as the doctrinal sequel to A Confession in the
+    Prophet-period project — grounded in Tolstoy's own words, the Jubilee-
+    Edition apparatus, the composition-window diaries and letters, and the
+    project's prior dives.
+  date: "2026-06-06"
+  period: "Prophet period (post-1880); composition 1882–1884 (Old Style); written mostly 1883, completed Jan 1884"
+  corpusSurface: "PSS Tom 23 (work pp. 304–465; plans & variants p. 512; commentary by V. F. Savodnik pp. 548–560); diaries Tom 49 (1883); letters Tom 63 (1882–84); echo Tom 26 (О верах, 1886)"
+  dateRange: "1882 (Engelhardt letter, genesis) – 1906 (first legal Russian printing); émigré full text Geneva/Elpidine 1880s–1900; translation lineage from 1885"
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory.
+evidence:
+
+  # — The work's own text: PSS Tom 23, pp. 304–465 —
+  - id: believe-text-01
+    genre: work
+    pssTom: 23
+    pages: "304 (opening)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Я прожил на свете 55 лет и, за исключением 14 или 15 детских, 35 лет я прожил нигилистом в настоящем значении этого слова, то есть не социалистом и революционером, как обыкновенно понимают это слово, а нигилистом в смысле отсутствия всякой веры."
+    quoteEn: "(working English) I have lived 55 years in the world and, apart from the 14 or 15 of childhood, I lived 35 years a nihilist in the real sense of the word — not a socialist and revolutionary, as the word is usually understood, but a nihilist in the sense of the absence of any faith."
+    significance: "The opening: the autobiographical frame and the internal age-marker (55 → 1883) that dates the writing. Picks up exactly where A Confession leaves off."
+
+  - id: believe-text-02
+    genre: work
+    pssTom: 23
+    pages: "304 (opening)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась: мне перестало хотеться того, чего прежде хотелось, и стало хотеться того, чего прежде не хотелось."
+    quoteEn: "(working English) Five years ago I came to believe in Christ's teaching — and my life suddenly changed: I ceased to want what I had wanted before, and began to want what I had not wanted before."
+    significance: "The bridge from A Confession (which the A-Confession dive cites as the doctrinal sequel's opening). 'Five years ago' → the 1878 crisis onset."
+
+  - id: believe-text-03
+    genre: work
+    pssTom: 23
+    pages: "ch. I (the larger works)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "О том, почему я прежде не понимал учения Христа и как и почему я понял его, я написал два большие сочинения: Критику догматического богословия и новый перевод и соединение четырех Евангелий с объяснениями."
+    quoteEn: "(working English) On why I did not understand Christ's teaching before, and how and why I came to understand it, I have written two large works: the Critique of Dogmatic Theology and a new translation and harmony of the four Gospels with explanations."
+    significance: "Tolstoy names the two preceding panels of the project from within this one — explicitly places What I Believe third in the sequence."
+
+  - id: believe-text-04
+    genre: work
+    pssTom: 23
+    pages: "ch. I (the key)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Я понял в первый раз, что центр тяжести всей мысли в словах: «не противься злу», а что последующее есть только разъяснение первого положения."
+    quoteEn: "(working English) I understood for the first time that the centre of gravity of the whole thought lies in the words 'resist not evil,' and that what follows is only an elucidation of that first proposition."
+    significance: "The keystone of the book: Matthew V:39 read literally. «Не противься злу» is 'the key that opened everything' for Tolstoy."
+
+  - id: believe-text-05
+    genre: work
+    pssTom: 23
+    pages: "ch. II"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Не противься злому — значит не противься злому никогда, т. е. никогда не делай насилия, т. е. такого поступка, который всегда противоположен любви."
+    quoteEn: "(working English) Resist not evil — means resist not evil ever, that is, never do violence, that is, never do an act that is always the opposite of love."
+    significance: "The literal reading spelled out: non-resistance = a total renunciation of violence (насилие). The doctrine the censor would call subversive of the state."
+
+  - id: believe-text-06
+    genre: work
+    pssTom: 23
+    pages: "ch. III"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Личная моя жизнь переплетена с общей государственной, а государственная требует от меня нехристианской деятельности, прямо противной заповеди Христа."
+    quoteEn: "(working English) My personal life is interwoven with the common life of the state, and the state demands of me un-Christian activity directly contrary to Christ's commandment."
+    significance: "The pivot from personal salvation to politics: non-resistance is not a private counsel but a verdict on courts, army, the state. The grenadier and the rabbi anecdotes dramatize it."
+
+  - id: believe-text-07
+    genre: work
+    pssTom: 23
+    pages: "ch. VI (the five commandments)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "И вот эти пять заповедей его действительно дают этот мир людям. Все пять заповедей имеют только одну эту цель — мира между людьми."
+    quoteEn: "(working English) And these five commandments of his do really give people this peace. All five commandments have only this one aim — peace among people."
+    significance: "The doctrinal core: the Sermon on the Mount distilled to five binding commandments (be not angry; no lust/divorce; swear no oaths; resist not evil; love all without national distinction). Their single aim is peace."
+
+  - id: believe-text-08
+    genre: work
+    pssTom: 23
+    pages: "ch. VI (first commandment)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "И вот вместо туманных, подлежащих толкованиям и произволу, неопределенных и неважных выражений открылась мне с стиха 21—28 простая, ясная и определенная первая заповедь Христа: живи в мире со всеми людьми, никогда своего гнева на людей не считай справедливым."
+    quoteEn: "(working English) And so, instead of vague, arbitrarily interpretable, indefinite and unimportant expressions, there opened to me from verses 21–28 the simple, clear and definite first commandment of Christ: live in peace with all people, never consider your anger at people just."
+    significance: "The first commandment, and Tolstoy's textual argument that the word «напрасно» ('without cause', Matt 5:22) is a corrupting interpolation that guts the commandment."
+
+  - id: believe-text-09
+    genre: work
+    pssTom: 23
+    pages: "ch. VI (third commandment)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Ведь если учение Христа в том, чтобы исполнять всегда волю бога, то как же может человек клясться, что он будет исполнять волю человека?"
+    quoteEn: "(working English) For if Christ's teaching is to do always the will of God, then how can a person swear that he will do the will of a man?"
+    significance: "The third commandment — swear no oaths — and its political edge: the oath of allegiance is the mechanism by which men make themselves instruments of state violence. Recapitulated in ch. XII as the third 'snare'."
+
+  - id: believe-text-10
+    genre: work
+    pssTom: 23
+    pages: "ch. VIII / XII (the credo)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Я верю в учение Христа, и вот в чем моя вера."
+    quoteEn: "(working English) I believe in Christ's teaching, and this is what my faith consists in."
+    significance: "The opening line of the concluding chapter XII — the 'Я верю…' credo that answers the book's title and recapitulates the five commandments as five 'snares' (соблазны) renounced."
+
+  - id: believe-text-11
+    genre: work
+    pssTom: 23
+    pages: "ch. XII (close)"
+    date: "1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Не бойся, малое стадо, ибо отец ваш благоволил дать вам царство (Лук. XII, 32)."
+    quoteEn: "(working English) Fear not, little flock, for it is your Father's good pleasure to give you the kingdom (Luke XII, 32)."
+    significance: "The final words of the book — the 'true church' is the community of those who do the commandments, not those who say 'Lord, Lord.' Followed by the colophon «Москва. 22 января 1884 г.»"
+
+  - id: believe-text-12
+    genre: work
+    pssTom: 23
+    pages: "ch. I"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Работа эта продолжается уже шестой год. Каждый год, каждый месяц я нахожу новые и новые уяснения и подтверждения основной мысли, исправляю вкравшиеся в мою работу, от поспешности и увлеченья, ошибки, исправляю их и дополняю то, что сделано."
+    quoteEn: "(working English) This work has been going on for a sixth year now. Every year, every month I find new clarifications and confirmations of the basic thought, correct the errors that crept into my work from haste and enthusiasm, correct them and supplement what has been done."
+    significance: "Tolstoy's self-description of the project's pace from inside the work — 'a sixth year' (counting from ~1878), the strain and ongoing correction that the diaries and letters of 1883 corroborate."
+
+  # — Composition-window diaries: PSS Tom 49 (1883) —
+  - id: believe-diary-01
+    genre: diary
+    pssTom: 49
+    pages: "64–65"
+    date: "1883-03-09 (OS)"
+    extract: extracts/v49_1883_03_09.txt
+    quoteRu: "Письмо Черткова — вызывает написать о заповедях для народа. Кажется, что надо. Это захватило меня, но не знаю."
+    quoteEn: "(working English) A letter from Chertkov — urges me to write about the commandments for the people. It seems I must. It has seized me, but I don't know."
+    significance: "The proximate catalyst of the project: V. G. Chertkov's letter of 9 March 1883 turns the long-gestating gospel work toward 'the commandments for the people' — the Sermon-on-the-Mount scaffold of What I Believe. Complicates the commentary's Engelhardt-only genesis."
+
+  - id: believe-diary-02
+    genre: diary
+    pssTom: 49
+    pages: "88"
+    date: "1883-04-28 (OS)"
+    extract: extracts/v49_1883_04_28.txt
+    quoteRu: "Утром опять попытался. И решительно — не могу продолжать свою статью. Тонкости, и потому будет ложь."
+    quoteEn: "(working English) In the morning I tried again. And decisively — I cannot continue my article. Subtleties, and therefore it will be a lie."
+    significance: "The composition strain from inside the writing year: the work stalls on its own over-subtlety. The criterion 'тонкости — потому будет ложь' is the one driving his repeated rewrites of the chapters on oaths and courts."
+
+  - id: believe-diary-03
+    genre: diary
+    pssTom: 49
+    pages: "86"
+    date: "1883-04-23 (OS)"
+    extract: extracts/v49_1883_04_23.txt
+    quoteRu: "Как не противиться злу? Всё то же. Хочется знать истину и осуждать других, но делать ее не хочется."
+    quoteEn: "(working English) How not to resist evil? Always the same. One wants to know the truth and to judge others, but not to do it."
+    significance: "The book's central doctrine as a live struggle in his own conduct — «не противься злому» is not yet a settled position but a daily difficulty during composition."
+
+  # — Composition-window letters: PSS Tom 63 (1882–84). Body text recovered via --notes=auto. —
+  - id: believe-let-01
+    genre: letter
+    pssTom: 63
+    pages: "112–128"
+    date: "1882-12-20 – 1883-01-20 (OS)"
+    addressee: "M. A. Engelhardt"
+    extract: extracts/v63_140.txt
+    quoteRu: "1) Не сердись; 2) Не блядуй; 3) Не клянись; 4) Не судись и 5) Не воюй. Воть в чем для меня сущность учения Христа."
+    quoteEn: "(working English) 1) Do not be angry; 2) Do not fornicate; 3) Do not swear oaths; 4) Do not go to law; 5) Do not make war. That is the essence of Christ's teaching for me."
+    significance: "The doctrinal seed of the whole book, stated outright a year before it was finished — the five commandments as Tolstoy's own distillation of the Sermon on the Mount. The unsent reply to Engelhardt that the commentary identifies as the genesis."
+
+  - id: believe-let-02
+    genre: letter
+    pssTom: 63
+    pages: "112–128"
+    date: "1882-12-20 – 1883-01-20 (OS)"
+    addressee: "M. A. Engelhardt"
+    extract: extracts/v63_140.txt
+    quoteRu: "коротенькая 3-я заповедь ( Матф. 5, 38, 39) не противиться злу, т. е. злом не отвечать на зло — есть не скажу главное, но есть смыкающее звено всего учения"
+    quoteEn: "(working English) the brief third commandment (Matt. 5:38, 39) — resist not evil, i.e. do not answer evil with evil — is, I won't say the main thing, but the linking link of the whole teaching."
+    significance: "Non-resistance as «смыкающее звено всего учения» — the architectural claim the finished book makes in ch. I ('the centre of gravity'). The letter pre-states the book's thesis."
+
+  - id: believe-let-03
+    genre: letter
+    pssTom: 63
+    pages: "149–152"
+    date: "1884-01-10 (OS)"
+    addressee: "A. N. Pypin"
+    extract: extracts/v63_184.txt
+    quoteRu: "Не могу себе представить, чтò сделает цензура. Пропустить нельзя. Не пропустить тоже, мне кажется, в их видах нельзя."
+    quoteEn: "(working English) I cannot imagine what the censorship will do. To pass it is impossible. Not to pass it, it seems to me, is also against their interest."
+    significance: "Written the day Tolstoy delivered the last sheets to the printer (the completion date). The censorship double-bind stated precisely, weeks before the 14 Feb 1884 ban."
+
+  - id: believe-let-04
+    genre: letter
+    pssTom: 63
+    pages: "155–157"
+    date: "1884-02-19 (OS)"
+    addressee: "A. S. Buturlin"
+    extract: extracts/v63_199.txt
+    quoteRu: "Она вышла и запрещена; но не сожжена, а увезена в Петербург, где, сколько мне известно, те, которые запретили ее, разбирают ее по экземплярам и читают. И то хорошо. У меня есть и будут рукописные экземпляры — плачу я за переписку по 15 р."
+    quoteEn: "(working English) It came out and was banned; but not burned — taken to Petersburg, where, as far as I know, those who banned it are sharing the copies among themselves and reading it. That is something at least. I have and will have manuscript copies — I pay 15 rubles for the copying."
+    significance: "The ban from Tolstoy's own hand the day after the seizure: not burned but confiscated, read by the very censors, and routed around through paid manuscript copies — the suppression that failed."
+
+  - id: believe-let-05
+    genre: letter
+    pssTom: 63
+    pages: "159–161"
+    date: "1884-03-02 (OS)"
+    addressee: "N. N. Ge (the painter)"
+    extract: extracts/v63_202.txt
+    quoteRu: "мы переживаем не период проповеди Христа, не период воскресения, a период распинания."
+    quoteEn: "(working English) we are living through not the period of Christ's preaching, not the period of resurrection, but the period of crucifixion."
+    significance: "Tolstoy's own image for the moment after the ban, answering a drawing by the painter N. N. Ge — the suppressed book as a crucifixion the teaching will survive."
+
+  - id: believe-let-06
+    genre: letter
+    pssTom: 63
+    pages: "200–202"
+    date: "1884 (OS; exact date undetermined)"
+    addressee: "Countess A. A. Tolstaya"
+    extract: extracts/v63_291.txt
+    quoteRu: "Весь смысл моих писаний тот, что я высказываю свою, свою личную веру и нетолько не говорю, что помимо моей веры нет спасения, но признаю, что всякая вера хороша, если она искренна, и непременно соединяет нас в делах любви."
+    quoteEn: "(working English) The whole meaning of my writings is that I express my own, my personal faith — and not only do I not say that outside my faith there is no salvation, but I acknowledge that every faith is good if it is sincere, and surely unites us in works of love."
+    significance: "Tolstoy's self-definition at the height of the controversy, to his devout Orthodox cousin: the title's question («в чём моя вера?») answered as a confession of personal, not dogmatic, faith — against the charge of «учительствование» (preaching at others)."
+
+  - id: believe-let-07
+    genre: letter
+    pssTom: 63
+    pages: "200–202"
+    date: "1884 (OS; exact date undetermined)"
+    addressee: "Countess A. A. Tolstaya"
+    extract: extracts/v63_291.txt
+    quoteRu: "Одни — либералы и естетики считают меня сумашедшим или слабоумным в роде Гоголя; другие — революционеры, радикалы считают меня мистиком, болтуном; правительственные люди считают меня зловредным революционером; православные считают меня диаволом."
+    quoteEn: "(working English) Some — liberals and aesthetes — think me mad or feeble-minded like Gogol; others — revolutionaries, radicals — think me a mystic, a windbag; government people think me a noxious revolutionary; the Orthodox think me the devil."
+    significance: "The reception of What I Believe in one sentence — refused from every quarter at once. A primary-source map of the book's isolation, in Tolstoy's own catalogue."
+
+  - id: believe-let-08
+    genre: letter
+    pssTom: 63
+    pages: "454–455"
+    date: "1883-12 / 1884-01 (OS)"
+    addressee: "Kushnerev printing house"
+    extract: extracts/v63_607.txt
+    quoteRu: "Прошу все верстать. Все лежит по порядку. Первые 9 гранок вы прислали мне не исправив."
+    quoteEn: "(working English) Please make up everything into pages. Everything is laid out in order. The first 9 galleys you sent me without correcting."
+    significance: "The production note to the printer that set the suppressed first edition — the work physically in type in Dec 1883/Jan 1884, corroborating the commentary's galley chronology."
+
+  - id: believe-let-09
+    genre: letter
+    pssTom: 63
+    pages: "175–176"
+    date: "1884-06-06 (OS)"
+    addressee: "an unknown rifle-ensign (reader)"
+    extract: extracts/v63_229.txt
+    quoteRu: "это не мои (Льва Николаевича) мысли, а это истина Божеская, которая лежит в сердце вашем, в моем, в сердце всех людей."
+    quoteEn: "(working English) these are not my (Lev Nikolaevich's) thoughts, but God's truth, which lies in your heart, in mine, in the hearts of all people."
+    significance: "Early reception in the manuscript channel: a serving military officer, changed by reading the banned book, writes to Tolstoy about his service — and Tolstoy refuses the role of life-planner, pointing him to the truth in his own conscience. Evidence the text was reaching soldiers by mid-1884."
+
+# ── Entities (ingestion routing map → wiki) ─────────────────────────────────
+entities:
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-text-01, believe-text-02, believe-text-10]
+    ingestionPriority: 1
+
+  - name: "Non-resistance to evil (непротивление злу насилием)"
+    wikiType: concept
+    wikilinkTarget: "Non-resistance to evil"
+    vaultStatus: missing
+    role: "The book's keystone doctrine — Matthew V:39 read literally; «не противься злу» as a binding law forbidding all violence, and the root of Tolstoy's rejection of courts, army and state."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-text-04, believe-text-05]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "Foundational for the existing Christian Anarchism page; link there, don't duplicate the politics."
+
+  - name: "The five commandments of the Sermon on the Mount"
+    wikiType: concept
+    wikilinkTarget: "The five commandments (Sermon on the Mount)"
+    vaultStatus: missing
+    role: "Tolstoy's distillation of Matthew V into five binding commandments: be not angry; no lust/divorce; swear no oaths; resist not evil; love all without national distinction. The doctrinal scaffold of What I Believe."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-text-07, believe-text-08, believe-text-09]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "Non-resistance to evil (непротивление злу насилием)"]
+
+  - name: "Christian anarchism"
+    wikiType: concept
+    wikilinkTarget: "Christian Anarchism"
+    vaultStatus: exists
+    role: "The political teaching for which What I Believe is the foundational text (rejection of courts, oaths, military service, the state). Attribute the LABEL to its later users; the work itself argues from the Gospel."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-text-06, believe-text-09]
+    ingestionPriority: 2
+    dependsOn: ["Non-resistance to evil (непротивление злу насилием)"]
+
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Guards-officer turned disciple; his letter of 9 March 1883 ('write about the commandments for the people') is the proximate catalyst, and he is Tolstoy's most sustained correspondent through the 1883 writing year. The Posrednik impulse ('explain the Gospel to the people first') runs straight into the book."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-diary-01]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "The first Tolstoy↔Chertkov correspondence (1883) lives in PSS Tom 85, not swept here; the 1883 diary documents it. No 1883 Yasnaya visit in the diary corpus (the famous first visit falls after 13 Sep 1883)."
+
+  - name: "M. A. Engelhardt"
+    wikiType: person
+    wikilinkTarget: "Mikhail Engelhardt"
+    vaultStatus: missing
+    role: "Young correspondent whose Dec 1882/Jan 1883 letter ('what to do? how to realize the gospel teaching?') triggered the work; he also forwarded the Aksakov–Engelhardt correspondence Tolstoy cites in ch. IV. Tolstoy's long reply (PSS Tom 63 letter no. 140, v63_140) states the five commandments outright and seeds the genesis."
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [believe-let-01, believe-let-02]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "N. N. Ge (the painter)"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ge"
+    vaultStatus: missing
+    role: "Painter and close disciple; visited Yasnaya in late July 1883 and read the Gospel (Matthew 24) with Tolstoy as the book was finishing; the recipient of the 'period of crucifixion' letter after the ban."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-let-05]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "A. A. Tolstaya (Alexandrine, the cousin, 1817–1904)"
+    wikiType: person
+    wikilinkTarget: "Alexandra Andreyevna Tolstaya"
+    vaultStatus: missing
+    role: "Lady-in-waiting and devout Orthodox interlocutor; the believer Tolstoy argues his faith against. The 1884 letters to her are the book's clearest self-definition ('my personal faith') and its sharpest reception map ('the Orthodox think me the devil')."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-let-06, believe-let-07]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "DISTINCT from the existing wiki page 'Alexandra Tolstaya' (= the daughter Alexandra Lvovna, 1884–1979). Do NOT conflate; a new page is needed. Same person as the A-Confession dive's A. A. Tolstaya."
+
+  - name: "A. S. Buturlin"
+    wikiType: person
+    wikilinkTarget: "Alexander Buturlin"
+    vaultStatus: missing
+    role: "Reader and new 1884 correspondent; recipient of Tolstoy's clearest account of the ban and the paid manuscript-copy distribution network."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-let-04]
+    ingestionPriority: 3
+
+  - name: "A. N. Pypin"
+    wikiType: person
+    wikilinkTarget: "Alexander Pypin"
+    vaultStatus: missing
+    role: "Literary historian; the correspondent to whom Tolstoy reported delivering the last sheets to the printer (10 Jan 1884) and stated the censorship double-bind."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [believe-let-03]
+    ingestionPriority: 3
+
+  - name: "S. A. Minor (rabbi Solomon Minor)"
+    wikiType: person
+    wikilinkTarget: "Solomon Minor"
+    vaultStatus: missing
+    role: "Moscow rabbi (1826–1900) with whom Tolstoy studied Hebrew and read the Bible; the «еврейский раввин» of ch. II who asks whether Christians actually turn the other cheek."
+    sources: [jubilee-edition]
+    evidenceRefs: [believe-text-06]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "I. S. Aksakov"
+    wikiType: person
+    wikilinkTarget: "Ivan Aksakov"
+    vaultStatus: missing
+    role: "Slavophile editor (1823–1886); the «православный славянофил» in ch. IV whose Nov–Dec 1882 polemical correspondence with Engelhardt (war vs revolution, both invoking Christ) Tolstoy uses as a foil for non-resistance."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "V. K. Sutaev (and son I. V. Sutaev)"
+    wikiType: person
+    wikilinkTarget: "Vasily Sutaev"
+    vaultStatus: missing
+    role: "Tver peasant sectarian Tolstoy revered as a living exemplar of the gospel of love; his son Ivan refused military service in 1877 and was imprisoned — the peasant conscientious objector behind ch. on non-resistance."
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+    note: "Same V. K. Sutaev as the A-Confession dive; here the son's draft refusal is the salient fact."
+
+  - name: "A. M. Kuzminsky"
+    wikiType: person
+    wikilinkTarget: "Alexander Kuzminsky"
+    vaultStatus: missing
+    role: "Prosecutor (1843–1917), married to S. A. Tolstaya's sister T. A. Bers; one of the «приятели, прокуроры, судьи» of ch. III whom Tolstoy teased with «не судите». Knew the work in its first redaction."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "N. V. Davydov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Davydov"
+    vaultStatus: missing
+    role: "Prosecutor of the Tula District Court (1848–1920), Tolstoy's friend; the other prosecutor-foil of the «не судите» chapter."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "L. D. Urusov"
+    wikiType: person
+    wikilinkTarget: "Leonid Urusov"
+    vaultStatus: missing
+    role: "Tula vice-governor and friend; first translator of the work — the French «Ma religion» (Paris 1885), reviewed and hand-corrected by Tolstoy; met E.-M. de Vogüé in Paris over it."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Philosopher and critic; chief correspondent through composition ('Я всё переделываю, поправляю свое писанье', 2 Sept 1883); deposited manuscript no. 7 in the Imperial Public Library in 1884."
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "S. A. Tolstaya (Sofia Andreyevna)"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; one of four copyists of the typesetting manuscript; her 1883 letters to T. A. Kuzminskaya are the running chronicle of the writing ('Левочка всё пишет свои евангельские сочинения')."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "K. P. Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: "Ober-Procurator of the Holy Synod; the institutional shadow over the ban — S. A. Tolstaya feared 'Победоносцев со своей бестактностью и педантизмом опять запретит'."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "E. M. Feoktistov"
+    wikiType: person
+    wikilinkTarget: "Evgeny Feoktistov"
+    vaultStatus: missing
+    role: "Head of the Main Directorate for Press Affairs who ordered the 'unconditional ban' (14 Feb 1884) on receiving the secular and spiritual censors' reports."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "M. K. Elpidine"
+    wikiType: person
+    wikilinkTarget: "Mikhail Elpidine"
+    vaultStatus: missing
+    role: "Geneva émigré publisher; issued the first full Russian text of В чём моя вера? (n.d.; 2nd ed. 1888; further eds 1892, 1900) after the Russian printing was banned."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "Holy Synod (spiritual censorship)"
+    wikiType: institution
+    wikilinkTarget: "Most Holy Synod"
+    vaultStatus: missing
+    role: "Through the Moscow Spiritual Censorship Committee (Archpriest M. Bogolyubsky's report) the Church judged the book to destroy 'the structure and tranquillity of church and state' — the ecclesiastical half of the 1884 ban."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "Russkaya Mysl (журнал «Русская мысль»)"
+    wikiType: institution
+    wikilinkTarget: "Russkaya Mysl (journal)"
+    vaultStatus: missing
+    role: "Moscow journal (editor S. A. Yuryev, publisher V. M. Lavrov) to which the manuscript was given in Sept 1883; the plan to print it there was dropped for the work's size, and a 50-copy separate edition was tried instead."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "Where much of the 1883 drafting and proof-correction was done (alternating with Moscow); a draft was written on the back of a Tula court summons to jury duty served there."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+# ── Visual & manuscript record (Phase-2 sweep, medium intensity) ────────────
+# visuals/ is git-ignored (local cache); repopulate with: python3 docs/fetch_visuals.py 1882-1884-what-i-believe
+visuals:
+  - id: vis-ge-tolstoy-1884
+    type: portrait
+    subject: "Leo Tolstoy writing at his desk"
+    relatedEntity: "Lev Tolstoy; N. N. Ge (artist)"
+    relatedEvidence: [believe-let-05]
+    holding: "State Tretyakov Gallery, Moscow"
+    archiveId: "File:Nikolay_Ge_-_Léon_Tolstoï._1884.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Nikolay_Ge_-_L%C3%A9on_Tolsto%C3%AF._1884.jpg"
+    localPath: visuals/commons-ge-tolstoy-writing-1884.jpg
+    note: "KEYSTONE. Painted by Ge in 1884, the year the work was suppressed — an exact composition-window image of Tolstoy at work."
+  - id: vis-tolstoy-photo-1880-86
+    type: photograph
+    subject: "Leo Tolstoy, half-length"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Library of Congress Prints & Photographs (cph.3c28302)"
+    archiveId: "File:Leo_Tolstoy,_portrait.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leo_Tolstoy%2C_portrait.jpg"
+    localPath: visuals/commons-tolstoy-portrait-sass-1880-1886.jpg
+    note: "LoC-dated 1880–1886; high-res. Within the composition window."
+  - id: vis-tolstoy-photo-1885
+    type: photograph
+    subject: "Leo Tolstoy, arms crossed (Scherer & Nabholz studio)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Лев_Толстой_(Шерер_и_Набгольц,_1885)_(cropped).jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/7/72/%D0%9B%D0%B5%D0%B2_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%28%D0%A8%D0%B5%D1%80%D0%B5%D1%80_%D0%B8_%D0%9D%D0%B0%D0%B1%D0%B3%D0%BE%D0%BB%D1%8C%D1%86%2C_1885%29_%28cropped%29.jpg"
+    localPath: visuals/commons-tolstoy-scherer-nabholz-1885.jpg
+    note: "1885; low resolution, identification only."
+  - id: vis-french-ma-religion-1885
+    type: title-page
+    subject: "Ma religion (trans. L. D. Urusov), Librairie Fischbacher, Paris, 1885 — first public appearance in any language"
+    relatedEntity: "L. D. Urusov (translator)"
+    relatedEvidence: []
+    holding: "Google Books (KcUnAAAAYAAJ); full text at fr.wikisource.org"
+    archiveId: "Google Books KcUnAAAAYAAJ"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://books.google.com/books/content?id=KcUnAAAAYAAJ&printsec=frontcover&img=1&zoom=3&edge=curl"
+    localPath: visuals/emigre-ma-religion-1885-paris-fischbacher-cover.png
+    note: "The first printed publication of the work in any language — the editorial origin-point of Western reception."
+  - id: vis-english-stock-1885
+    type: title-page
+    subject: "What I Believe (trans. Constantine Popoff), E. Stock, London, 1885 — first English edition"
+    relatedEntity: "Constantine Popoff (translator)"
+    holding: "Internet Archive (whatibelieve00tolsuoft, Univ. of Toronto copy)"
+    archiveId: "archive.org whatibelieve00tolsuoft"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://iiif.archive.org/iiif/whatibelieve00tolsuoft%240003/full/600,/0/default.jpg"
+    localPath: visuals/emigre-what-i-believe-1885-london-stock-p0003-titlepage.jpg
+    note: "Cover (p0001) also held locally. Per the visual sweep, the English was made via the French Urusov text — attribute, verify."
+  - id: vis-american-crowell-1885
+    type: title-page
+    subject: "My Religion (trans. Huntington Smith), T. Y. Crowell, New York, 1885 — first American edition"
+    relatedEntity: "Huntington Smith (translator)"
+    holding: "Internet Archive / Library of Congress (myreligion01tols)"
+    archiveId: "archive.org myreligion01tols"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://iiif.archive.org/iiif/myreligion01tols%240003/full/600,/0/default.jpg"
+    localPath: visuals/emigre-my-religion-1885-ny-crowell-p0003.jpg
+    note: "Title 'My Religion' (the standard English alternative). Cover (p0001) also held locally."
+  - id: vis-chertkov-kramskoy-1881
+    type: portrait
+    subject: "V. G. Chertkov (Kramskoy, 1881)"
+    relatedEntity: "V. G. Chertkov"
+    relatedEvidence: [believe-diary-01]
+    holding: "Leo Tolstoy State Museum, Moscow"
+    archiveId: "File:Chertkov_by_Kramskoy.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/49/Chertkov_by_Kramskoy.jpg"
+    localPath: visuals/commons-chertkov-kramskoy-1881.jpg
+    note: "Painted 1881, two years before the 1883 correspondence that catalysed the book."
+  - id: vis-strakhov-1885
+    type: photograph
+    subject: "N. N. Strakhov (1885)"
+    relatedEntity: "N. N. Strakhov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Nikolay_Strakhov.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Nikolay_Strakhov.jpg"
+    localPath: visuals/commons-strakhov-portrait-1885.jpg
+    note: "Low resolution; identification only."
+  - id: vis-aa-tolstaya-1860s
+    type: photograph
+    subject: "Countess A. A. Tolstaya (1817–1904), the cousin / Orthodox interlocutor"
+    relatedEntity: "A. A. Tolstaya (Alexandrine, the cousin)"
+    relatedEvidence: [believe-let-06, believe-let-07]
+    holding: "Wikimedia Commons"
+    archiveId: "File:A.A.Tolstay.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/8/85/A.A.Tolstay.jpg"
+    localPath: visuals/commons-tolstaya-alexandra-andreevna-1860s.jpg
+    note: "1860s portrait. DISTINCT from the daughter Alexandra Lvovna (existing wiki page)."
+  - id: vis-ge-selfportrait-1892
+    type: portrait
+    subject: "N. N. Ge, self-portrait (1892)"
+    relatedEntity: "N. N. Ge (the painter)"
+    holding: "Kyiv National Art Gallery"
+    archiveId: "File:Nikolay_Ge_selfportrait.jpeg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Nikolay_Ge_selfportrait.jpeg"
+    localPath: visuals/commons-ge-selfportrait-1892.jpg
+    note: "The painter of the keystone Tolstoy portrait."
+  - id: vis-moscow-first-1884
+    type: title-page
+    subject: "В чём моя вера?, Moscow (Kushnerev), 1884 — the suppressed first printing (~50 copies)"
+    relatedEntity: "Russkaya Mysl / Kushnerev"
+    holding: "State Museum of L. N. Tolstoy, Moscow (holds a photocopy of the first printed edition)"
+    archiveId: ""
+    access: "physical only; no open scan located"
+    rights: PD
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "Not digitized openly; request from ГМТ. The actual first edition object."
+  - id: vis-geneva-elpidine
+    type: title-page
+    subject: "В чём моя вера?, Genève, M. Elpidine — first complete Russian edition (undated; 2nd ed. 1888)"
+    relatedEntity: "M. K. Elpidine"
+    holding: "Bibliothèque de Genève / Hoover Institution Elpidine collection (probable)"
+    archiveId: ""
+    access: "not digitized openly in this sweep"
+    rights: PD
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "No open scan found (imwerden / archive.org / gallica negative). Try BGE, vtoraya-literatura.com, Hoover."
+  - id: vis-manuscript
+    type: manuscript-facsimile
+    subject: "Autograph manuscript(s) of В чём моя вера?, 1882–84 (20 witnesses in the apparatus)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "ОР РГБ / ГМТ (manuscript no. 7 entered the Imperial Public Library via Strakhov, 1884)"
+    archiveId: ""
+    access: "physical archives only; no open facsimile located"
+    rights: PD
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "Described in PSS Tom 23 commentary; no open facsimile image found."
+
+# ── Scholarship (secondary layer — Phase 3) ─────────────────────────────────
+scholarship:
+  summary: >-
+    English-language biography treats What I Believe (often as "My Religion") as the
+    systematic sequel to A Confession — the place where non-resistance hardens from
+    experience into doctrine — and the Maude translation (1921) packages the two as a
+    unit. Two scholarly axes matter for this dive. (1) Continuity vs. break: Simmons's
+    and Wilson's "two Tolstoys" / crisis-break frame subordinates the work as a symptom
+    of the rupture; Medzhibovskaya's "long conversion" (2008) and Gustafson's coherence
+    thesis (1986) instead read it as the systematic statement the long arc arrives at —
+    the readings closest to the corpus. (2) The non-resistance ethic: Christoyannopoulos,
+    Stepanova and D'Amato take it as a coherent programme; Wilson frames it as "a counsel
+    of craziness," a critical inversion the corpus answers (the book argues *against* the
+    impracticality objection, not toward it). The "Christian anarchism" label is the
+    scholars' taxonomy (Christoyannopoulos), to be attributed, not adopted. On reception,
+    the censorship chain and church-refutation literature are PSS-documented; the 1901
+    Synod edict names no individual works (Kolstø 2022 the authoritative recent account).
+  triangulation:
+    - evidenceRef: believe-text-03
+      conventionalView: "What I Believe is the systematic sequel to A Confession and part of the religious-period sequence; the two are read as a unit."
+      relation: confirms
+      source: "Maude, A Confession and What I Believe (Oxford, 1921); Simmons, Leo Tolstoy II (1946)"
+    - evidenceRef: believe-text-04
+      conventionalView: "Non-resistance (Matt 5:38–42) is the pivot of Tolstoy's religious-political teaching and of his place in the Christian-anarchist tradition."
+      relation: extends
+      source: "Christoyannopoulos, 'Tolstoy the Peculiar Christian Anarchist' (2008) & Christian Anarchism (2010); Stepanova (2020); D'Amato (2015)"
+    - evidenceRef: believe-text-08
+      conventionalView: "The five commandments are recognized as Tolstoy's doctrinal core, but the textual-critical argument that «напрасно» (Matt 5:22) is a corrupting interpolation is generally not developed at the corpus's level of precision."
+      relation: extends
+      source: "Christoyannopoulos, Christian Anarchism (2010)"
+    - evidenceRef: believe-let-01
+      conventionalView: "The work is presented as arising from the gospel study of 1879–82; standard biographies do not identify the Dec-1882 Engelhardt letter and Chertkov's 9 Mar 1883 prompting as the two precise anchors of its genesis."
+      relation: extends
+      source: "Simmons, Leo Tolstoy II (1946); Bartlett, Tolstoy: A Russian Life (2011)"
+    - evidenceRef: believe-let-04
+      conventionalView: "Scholarship notes the 1884 ban and the Geneva publication, but the tidy 'suppressed → Geneva' story elides the documented dispersal of the seized edition into the libraries of the officials who banned it."
+      relation: complicates
+      source: "Bartlett, Tolstoy (2011); Simmons, Leo Tolstoy II (1946); cf. Bakhmetyev's account in PSS Tom 23 apparatus"
+
+# ── Work-record proposal (READ-ONLY to works/; human ingestion applies) ──────
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/what-i-believe/What I Believe.md   # PROPOSED — no record exists yet; folder is a suggestion (cf. Confession under personal-papers)"
+  workId: "what-i-believe"
+  fields:
+    - field: titleRu
+      value: "В чём моя вера?"
+      evidenceRefs: [believe-text-01]
+      source: jubilee-edition
+      confidence: high
+    - field: titleEn
+      value: "What I Believe"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Title used in the 1885 English 'Christ's Christianity'. The French/standard alternative is 'My Religion' (Ma religion)."
+    - field: titleAlternatives
+      value: "[{title: 'My Religion', type: translated-title, language: en}, {title: 'Ma religion', type: translated-title, language: fr}, {title: 'Worin besteht mein Glaube?', type: translated-title, language: de}]"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Working-title history (proposed as notes, not titleAlternatives): «Как мне открылось учение Христа» → «Как мне открылся смысл учения Христа» → «В чём христианское учение» → «В чём моя вера?»"
+    - field: genre
+      value: "essay   # religious-philosophical treatise; mirror the Confession record's controlled value"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+    - field: dateWritingStarted
+      value: "1883"
+      oldStyle: "1883"
+      approximate: true
+      evidenceRefs: [believe-text-01]
+      source: jubilee-edition
+      confidence: medium
+      note: "Genesis in the Engelhardt letter Dec 1882/Jan 1883 and the reused 1881 «Записки христианина»; sustained drafting from the first months of 1883 (Savodnik). Slug window 1882–1884 takes the genesis year."
+    - field: dateWritingCompleted
+      value: "1884-01-22"
+      oldStyle: "1884-01-22"
+      approximate: false
+      evidenceRefs: [believe-text-11]
+      source: jubilee-edition
+      confidence: high
+      note: "Colophon «Москва. 22 января 1884 г.» on the work. The commentary's last working date is 10 Jan 1884 (last copy to the printer, letter to Pypin); the 22 Jan date is the text's own."
+    - field: dateFirstPublished
+      value: "1884"
+      approximate: false
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Printed Moscow 1884 (Kushnerev), ~50 copies — but seized before public release. First public/legal appearance in print was the French 'Ma religion' (Paris 1885); full Russian text first in Geneva (Elpidine). Human to decide which date the field should carry."
+    - field: firstPublishedVenue
+      value: "separate edition, Moscow (typ. Kushnerev), 1884 — suppressed"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Abroad from 1885 and in Russia from 1906 — all within Tolstoy's lifetime."
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "First legal Russian printing 1906 (Всемирный вестник no. 1; Posrednik), within his lifetime."
+    - field: dateFirstPublishedInRussia
+      value: "1906"
+      approximate: false
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+    - field: bans
+      value: "[{banningAuthority: 'Main Directorate for Press Affairs (Glavnoe upravlenie po delam pechati)', authorityType: imperial-state, jurisdiction: 'Russian Empire', scope: complete-ban, banDate: '1884-02-26', banDateOldStyle: '1884-02-14', banLiftedDate: '1906', notes: '≈50 copies printed (Kushnerev, Moscow); Feoktistov ordered unconditional prohibition (№ 785) 14 Feb 1884 OS; 39 copies seized at Kushnerev 18 Feb 1884 OS — not destroyed but confiscated to Petersburg and dispersed. First legal Russian printing 1906.'}]"
+      evidenceRefs: [believe-let-04]
+      source: jubilee-edition
+      confidence: high
+      note: "Schema-clean values (authorityType ∈ imperial-state; scope ∈ complete-ban; banDate NS, banDateOldStyle OS). Chain: V. Fyodorov's secular report 14 Jan 1884 + Moscow Spiritual Censorship Committee (Bogolyubsky, art. 239) → Feoktistov's order 14 Feb → seizure 18 Feb 1884 (all OS)."
+    - field: censoredVersionExists
+      value: "false"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "Unlike A Confession (Russkaya Mysl proofs with churchly footnotes), В чём моя вера? was banned outright; circulated in manuscript/hectograph/lithograph copies and abroad uncensored."
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Manuscript, hectographed and lithographed copies; Tolstoy distributed manuscript copies himself (paid 15 rubles per copy)."
+    - field: excommunicationRelated
+      value: "false   # PROPOSE false; route to needsReview"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: low
+      note: "The 1901 Synod edict names no individual works; the doctrine of What I Believe is central to the conflict but the field should not assert a direct tie. See needsReview."
+    - field: "identifiers.jubileeEdition.volumes"
+      value: "23"
+      evidenceRefs: [believe-text-01]
+      source: jubilee-edition
+      confidence: high
+      note: "PSS Tom 23, pp. 304–465 (text); 512 (plans & variants); 548–560 (commentary)."
+
+# ── Coverage ledger (surfaces × status) ─────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Doubly grounded: the Dec-1882 Engelhardt letter states the five commandments; Chertkov's 9 Mar 1883 letter is the catalyst; the 1883 diary tracks the strain; completion 10/22 Jan 1884. Commentary chronology (conclusion drafted 4×; proofs Oct–Nov 1883; lost suitcase) corroborates."
+  - surface: "What the work says"
+    status: covered
+    note: "Deep structural read of all 12 chapters; keystone passages (the «не противься злу» key, five commandments, courts/oaths/state, the credo) extracted byte-faithful."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "20 manuscripts + galley history enumerated in the apparatus; title evolution and the reused 1881 «Записки христианина» documented."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "1884 Moscow printing + ban + non-burning/dispersal; Geneva/Elpidine full Russian; French 1885 (Urusov), German 1885 (Behr), English 1885 (Christ's Christianity); legal Russia 1906."
+  - surface: "Reception & afterlife (Russian society + Church)"
+    status: covered
+    note: "Dedicated Phase-3 pass: the full censorship chain (Fyodorov→Bogolyubsky→Feoktistov, art. 239), the church-refutation literature (Gusev 1886, Orfano 1887, Karyshev 1891), John of Kronstadt, the Pobedonostsev 1884-vs-1901 distinction, and the cautious 1901-edict reading (Kolstø 2022). Refutation texts named, not read in original."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "Third panel after A Confession + the Gospel works; foundational for Christian anarchism. Cross-links to sibling dives."
+  - surface: "The author's later verdict"
+    status: not-covered
+    note: "Tolstoy's later judgments on В чём моя вера? not yet extracted; candidate for the echo sweep / a later session."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Medium sweep: 11 PD images cached (keystone = Ge's 1884 Tolstoy-writing portrait; the 1885 French/English title pages; the circle). Not openly available: the 1884 Moscow first printing, the Geneva/Elpidine Russian edition, and the manuscripts (held at GMT/RGB)."
+
+contradictions: []
+
+notCovered:
+  - "О верах (Tom 26, 1886 fragment) — peripheral echo, not deep-read."
+  - "The Geneva/Elpidine first-edition year — genuinely open: undated title page; the dated 1888 ed. is the SECOND printing, and the Maude/Open-Library 'first printed in Geneva 1888' conflates the two. Do not resolve as 1888."
+  - "Tolstoy's later (post-1884) verdict on the work; the Dec-1884 turn to «Так что же нам делать?» is the nearest corpus marker — no dedicated dive yet, and the doctrinal continuity between the two books is underread in scholarship."
+  - "Full reading of the church-writers' refutations (Gusev 1886; Orfano 1887; Karyshev 1891) — named, not read in original."
+  - "The de Vogüé connection: his April-1884 contact with the translator Urusov (PSS apparatus) predates Le roman russe (1886) by two years; not traced in the French-reception scholarship."
+  - "First Tolstoy↔Chertkov correspondence of 1883 (PSS Tom 85) — not swept; the relationship is documented here from the 1883 diary."
+
+needsReview:
+  - item: "excommunicationRelated field value for What I Believe."
+    phase: "4 (workRecord)"
+    why: "The 1901 Synod edict names no individual works; the doctrine of В чём моя вера? is central to the church conflict but a direct tie should not be asserted. Proposed false."
+  - item: "dateFirstPublished — which event the field should carry (suppressed 1884 Moscow printing vs first public French 1885 vs first full Russian Geneva/Elpidine)."
+    phase: "4 (workRecord)"
+    why: "The 1884 print run existed but was seized; conventions differ on whether a suppressed printing counts as 'first published'."
+  - item: "Proposed works/ folder for the new record (treatises vs personal-papers)."
+    phase: "4 (workRecord)"
+    why: "Confession sits under personal-papers; В чём моя вера? is a doctrinal treatise. Human ingestion decision."
+  - item: "Identity/parsing of 'Маракуев Амфилохий, председатель цензурного комитета' in S. A. Tolstaya's 29 Jan 1884 letter."
+    phase: "3 (reception)"
+    why: "The commentary phrasing is ambiguous (bookseller V. N. Marakuev relaying Archimandrite Amfilokhy's favorable reading?); confirm before naming in prose."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (PSS Tom 23 work/variants/commentary; Tom 49 diaries 1883; Tom 63 letters; Tom 26 О верах)"
+  - "Wikimedia Commons (author portraits/photographs; the circle); Internet Archive (1885 English editions); Google Books / fr.wikisource (1885 French Ma religion)"
+  - "Negative for open scans: imwerden.de, gallica.bnf.fr, tolstoy-iss.kamiscloud.ru (1884 Moscow first printing; Geneva/Elpidine Russian edition; manuscripts)"
+
+references:
+  primary:
+    - "L. N. Tolstoy, «В чём моя вера?», PSS (Jubilee Edition) Tom 23, pp. 304–465 (text); 512 (plans & variants); 548–560 (commentary by V. F. Savodnik)."
+    - "tolstoydigital-TEI corpus: diaries Tom 49 (1883); letters Tom 63 (1882–84); «О верах» Tom 26."
+  background:
+    - "Aylmer Maude, The Life of Tolstoy (Oxford, 1908–10), and the Maude translation A Confession and What I Believe (Oxford World's Classics, 1921)."
+    - "Ernest J. Simmons, Leo Tolstoy, 2 vols (Boston, 1946) — vol. II covers 1880–1910."
+    - "A. N. Wilson, Tolstoy: A Biography (1988) — the 'counsel of craziness' framing of non-resistance."
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2011)."
+    - "Inessa Medzhibovskaya, Tolstoy and the Religious Culture of His Time: A Biography of a Long Conversion, 1845–1887 (Lexington, 2008); ed., Tolstoy and His Problems (Northwestern, 2019)."
+    - "Richard F. Gustafson, Leo Tolstoy: Resident and Stranger (Princeton, 1986) — the coherence thesis against 'two Tolstoys'."
+    - "Alexandre Christoyannopoulos, 'Tolstoy the Peculiar Christian Anarchist' (Politics and Religion 1.3, 2008) and Christian Anarchism: A Political Commentary on the Gospel (Imprint Academic, 2010)."
+    - "Elena Stepanova, 'Leo Tolstoy's Faith' (State, Religion and Church 7.2, 2020); David S. D'Amato, 'Tolstoy's Christian Non-Resistance' (Libertarianism.org, 2015)."
+    - "Pål Kolstø, Heretical Orthodoxy: Lev Tolstoi and the Russian Orthodox Church (Cambridge, 2022) — the recent authoritative account of the 1901 excommunication."
+    - "Church-refutation literature (named in PSS Tom 23 apparatus, p. 557): A. F. Gusev, Православное обозрение 1886–90; A. Orfano, 1887/1890; I. A. Karyshev, 1891."
+    - "E.-M. de Vogüé, Le roman russe (Paris, 1886); the April-1884 Urusov contact is recorded in the PSS apparatus."
