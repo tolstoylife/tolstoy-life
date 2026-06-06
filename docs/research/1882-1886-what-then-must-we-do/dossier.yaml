@@ -1,0 +1,909 @@
+# What Then Must We Do? (Так что же нам делать?) — corpus-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify with: python3 docs/research/lib/verify_quotes.py docs/research/1882-1886-what-then-must-we-do/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+# NOTE: diary/letter evidence (wtmwd-diary-*, wtmwd-let-*), the visuals block, and the
+# scholarship block are folded in after the Phase-1 sweeps + Phase-3 pass.
+
+topic:
+  slug: 1882-1886-what-then-must-we-do
+  title: "What Then Must We Do? (Так что же нам делать?)"
+  question: >-
+    Document What Then Must We Do? as a work across the local Tolstoy corpus —
+    its genesis in the January 1882 Moscow census and the «О переписи в Москве»
+    appeal; what the text argues (the failure of charity; «I sit on a man's
+    back»; money as a bloodless modern form of slavery rooted in state coercion;
+    the critique of political economy's three factors and of the «scientific»
+    organic division of labour as a fiction dressing the seizure of others'
+    labour — «захват чужого труда»; the positive doctrine of bread-labour drawn
+    from the peasant T. M. Bondarev and the sectarian V. K. Sutaev; and the
+    contested final chapter assigning the world's salvation to self-sacrificing
+    mothers); its long stop-start composition 1882–1886; its serialization-refusal,
+    censorship cuts and dispersed publication; and its place as the economic and
+    social application of the What I Believe ethic — grounded in Tolstoy's own
+    words, the Jubilee-Edition apparatus, the composition-window diaries and
+    letters, and the project's prior dives.
+  date: "2026-06-06"
+  period: "Prophet period (post-1880); composition 1882–1886 (Old Style); begun early 1882, written mostly 1884–86"
+  corpusSurface: "PSS Tom 25 (work pp. 182–411; first printed variant of ch. XVII pp. 503–507; variants pp. 614–652; commentary pp. 740–839); forerunner «О переписи в Москве» pp. 173–181; diaries Tom 49 (1882–87, sparse for the writing window); letters Tom 63 (1880–86) and Tom 64 (1887–89)"
+  dateRange: "1882 (Moscow census, genesis) – 1906 (Bondarev full text / late legal printings); first cut Russian fragments 1885, first cut full Russian text 1886 (5th ed., vol. 12); first fuller text abroad 1886 (Geneva/Elpidine); first complete text 1902 (Chertkov, Christchurch)"
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory.
+evidence:
+
+  # — The forerunner appeal: «О переписи в Москве», PSS Tom 25, pp. 173–181 —
+  - id: wtmwd-perepis-01
+    genre: work
+    pssTom: 25
+    pages: "173–181"
+    date: "1882-01 (OS)"
+    extract: extracts/v25_173_181_O_perepisi.txt
+    quoteRu: "Деньги сами по себе зло. И потому кто дает деньги, тот дает зло."
+    quoteEn: "(working English) Money is in itself an evil. And therefore he who gives money gives evil."
+    significance: "The proto-thesis, in the January 1882 census appeal that immediately precedes the book: money itself is an evil, so charity-by-money cannot be 'doing good.' The kernel of the money critique the treatise will build out."
+
+  - id: wtmwd-perepis-02
+    genre: work
+    pssTom: 25
+    pages: "181 (close)"
+    date: "1882-01 (OS)"
+    extract: extracts/v25_173_181_O_perepisi.txt
+    quoteRu: "Приди один человек в сумерки к Ляпинскому ночлежному дому, когда 1000 человек раздетых и голодных ждут на морозе впуска в дом, и постарайся этот один человек помочь им, и у него сердце обольется кровью, и он с отчаянием и злобой на людей убежит оттуда; а придите на эту тысячу человек еще тысяча человек с желанием помочь, и дело окажется легким и радостным."
+    quoteEn: "(working English) Let one person come at dusk to the Lyapinsky night-shelter, when a thousand undressed and hungry people wait in the frost for admission, and let that one try to help them, and his heart will pour out blood, and he will run away in despair and anger at people; but let another thousand come to that thousand with the wish to help, and the task will prove light and joyful."
+    significance: "The Lyapinsky night-shelter — the scene that crystallized the book's opening crisis — already named in the appeal, with its closing call «Дружней, братцы, разом!» (All together, brothers, at once!)."
+
+  # — The work's own text: PSS Tom 25, pp. 182–411 —
+  - id: wtmwd-text-01
+    genre: work
+    pssTom: 25
+    pages: "182 (ch. I)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "Я всю жизнь прожил не в городе. Когда я в 1881 году переехал на житье в Москву, меня удивила городская бедность."
+    quoteEn: "(working English) I lived my whole life away from the city. When in 1881 I moved to Moscow to live, the city poverty astonished me."
+    significance: "The opening: the autobiographical frame. Tolstoy's 1881 move to Moscow and the shock of urban poverty — a poverty unlike the village poverty he knew — that sets the book in motion."
+
+  - id: wtmwd-text-02
+    genre: work
+    pssTom: 25
+    pages: "ch. II (the Lyapinsky house)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "есть преступление, не один раз совершенное, но постоянно совершающееся, и что я, с своей роскошью, не только попуститель, но прямой участник его."
+    quoteEn: "(working English) [it] is a crime, committed not once but constantly committed, and that I, with my luxury, am not only its condoner but its direct participant."
+    significance: "After the Lyapinsky-house visit: Tolstoy likens his luxury beside the starving thousands to having once watched a guillotine execution in Paris — complicity in a crime constantly committed. The personal guilt the book turns into a structural argument."
+
+  - id: wtmwd-text-03
+    genre: work
+    pssTom: 25
+    pages: "ch. XVI (the keystone)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "Я сижу на шее у человека, задавил его и требую, чтобы он вез меня, и, не слезая о него, уверяю себя и других, что я очень жалею и хочу облегчить его положение всеми возможными средствами, но только не тем, чтобы слезть с него."
+    quoteEn: "(working English) I sit on a man's back, choking him and making him carry me, and yet assure myself and others that I am very sorry for him and wish to ease his lot by every possible means — except by getting off his back."
+    significance: "THE keystone of the book. Charity is impossible because the rich man's means are taken from the very people he means to help — the famous image of the rider who will do anything for the man he rides except dismount. Drafted first in a 5–7 Sep 1884 letter to Chertkov."
+
+  - id: wtmwd-text-04
+    genre: work
+    pssTom: 25
+    pages: "ch. XVI–XVII (the turn to money)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "И я почувствовал, что в деньгах, в самых деньгах, в обладании ими есть что-то гадкое, безнравственное, что самые деньги и то, что я имею их, есть одна из главных причин тех зол, которые я видел перед собой, и я спросил себя: что такое деньги?"
+    quoteEn: "(working English) And I felt that in money, in money itself, in the possession of it, there is something vile and immoral — that money itself, and my having it, is one of the chief causes of the evils I saw before me — and I asked myself: what is money?"
+    significance: "The pivot from the failed-charity narrative to the theoretical core. The realization that money itself is the problem opens ch. XVII («Деньги! Что ж такое деньги?») and the critique of political economy."
+
+  - id: wtmwd-text-05
+    genre: work
+    pssTom: 25
+    pages: "ch. XX (money as slavery)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "Говорить о том, что деньги не производят порабощения — это всё равно, что было бы говорить полстолетия тому назад, что крепостное право не производит порабощения."
+    quoteEn: "(working English) To say that money does not produce enslavement is exactly like saying, half a century ago, that serfdom does not produce enslavement."
+    significance: "The conclusion of the money chapters (illustrated at length by the Fiji-islands parable of taxation): money is a bloodless modern form of slavery, structurally identical to serfdom because it is backed by the state's coercive demand for taxes."
+
+  - id: wtmwd-text-06
+    genre: work
+    pssTom: 25
+    pages: "ch. XXXII (division of labour)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "а будет, как оно и есть, один только захват чужого труда сильным; тот самый захват чужого труда сильным, который прежде богословы называли божеским назначением, потом философы — необходимыми формами жизни, а теперь научная наука называет органическим разделением труда."
+    quoteEn: "(working English) it will be, as it really is, simply the seizure of another's labour by the strong — that very seizure of another's labour by the strong which theologians once called a divine ordinance, then philosophers called necessary forms of life, and which scientific science now calls the organic division of labour."
+    significance: "The hinge of the science critique: the «scientific» (Comte/Spencer) organic theory of the division of labour is the modern priestly dressing for «захват чужого труда» — the seizure of others' labour — succeeding theology and philosophy in the same office."
+
+  - id: wtmwd-text-07
+    genre: work
+    pssTom: 25
+    pages: "ch. XXVIII (science as the new priesthood)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "в толпе же ходят принимаемые на веру выводы о том, что разделение труда есть закон, утвержденный наукой, и что так и надо: одним умирать с голода и работать, а другим вечно праздновать, и что эта-то самая гибель одних и празднование других и есть несомненный закон жизни человечества, которому должно подчиняться."
+    quoteEn: "(working English) and among the crowd circulate, taken on faith, the conclusions that the division of labour is a law affirmed by science, and that this is how it must be: that some are to die of hunger and toil while others feast forever, and that this very perishing of some and feasting of others is the indubitable law of human life, to which one must submit."
+    significance: "Tolstoy's charge that 'scientific science' has taken over from the church the function of sanctifying inequality — beliefs 'taken on faith' from the new priesthood of learning."
+
+  - id: wtmwd-text-08
+    genre: work
+    pssTom: 25
+    pages: "ch. XXXVIII (bread-labour / Bondarev)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "В Библии сказано, как закон человека: «в поте лица снеси хлеб, и в муках родиши чада». Мужик Бондарев, написавший об этом статью, осветил для меня мудрость этого изречения."
+    quoteEn: "(working English) In the Bible it is said, as a law for man: «in the sweat of thy face shalt thou eat bread, and in pain shalt thou bear children». The peasant Bondarev, who wrote an article about this, illuminated for me the wisdom of this saying."
+    significance: "The acknowledgement of the source of the bread-labour doctrine: the Siberian exile peasant T. M. Bondarev, whose «Торжество земледельца» Tolstoy read in 1885 and championed. Note the saying pairs the man's law (labour) and the woman's law (childbearing) — the hinge into the final chapter."
+
+  - id: wtmwd-text-09
+    genre: work
+    pssTom: 25
+    pages: "ch. XXXVIII (the three answers)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "исполнять тот вечный, несомненный закон человека — трудом всего существа своего, не стыдясь никакого труда, бороться с природою для поддержания жизни своей и других людей."
+    quoteEn: "(working English) to fulfil that eternal, indubitable law of man — to struggle with nature, with the labour of one's whole being, ashamed of no labour, for the support of one's own life and the lives of others."
+    significance: "The third and decisive of the book's three answers to its title question (after: do not lie to yourself; renounce your supposed privilege and own your guilt). The positive doctrine — bread-labour as the eternal law of man."
+
+  - id: wtmwd-text-10
+    genre: work
+    pssTom: 25
+    pages: "ch. XL (the final chapter on women)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "Так называемый женский вопрос возник и мог возникнуть только среди мужчин, отступивших от закона настоящего труда."
+    quoteEn: "(working English) The so-called woman question arose and could only have arisen among men who have fallen away from the law of real labour."
+    significance: "The contested final chapter: as the man's law is labour, the woman's law is childbearing; Tolstoy reads the 'woman question' as a symptom of men's abandonment of real labour, and assigns the world's salvation to self-sacrificing mothers. The book's most reactionary-on-gender turn; to be presented factually and read critically."
+
+  - id: wtmwd-text-11
+    genre: work
+    pssTom: 25
+    pages: "ch. XL (close)"
+    date: "1882–1886"
+    extract: extracts/v25_182_411_Tak_chto_zhe.txt
+    quoteRu: "Да, женщины-матери, в ваших руках, больше чем в чьих-нибудь других, спасение мира!"
+    quoteEn: "(working English) Yes, women-mothers, in your hands, more than in anyone else's, lies the salvation of the world!"
+    significance: "The final words of the book — salvation placed in the hands of mothers who knowingly submit to the 'law' of childbearing and self-sacrifice. The closing note that the standard scholarship reads as Tolstoy's retrograde gender doctrine."
+
+  # — Composition-window diaries: PSS Tom 49 (1882–86; sparse) —
+  - id: wtmwd-diary-01
+    genre: diary
+    pssTom: 49
+    pages: "59"
+    date: "1883-01-01 (OS)"
+    extract: extracts/v49_059_059_1883_01_01.txt
+    quoteRu: "Но собственность, ограждаемая насилием — городовым с пистолетом — это зло."
+    quoteEn: "(working English) But property guarded by violence — by a policeman with a pistol — is an evil."
+    significance: "The conceptual seed of the property/money argument, in the diary: Tolstoy distinguishes natural property (the spoon he carves) from property enforced by state violence — the distinction that structures the book's money chapters. Falls in the What I Believe writing year but is squarely WTMWD's theme."
+
+  - id: wtmwd-diary-02
+    genre: diary
+    pssTom: 49
+    pages: "122–123"
+    date: "1884 (OS; aggregate, undated)"
+    extract: extracts/v49_122_123_1884.txt
+    quoteRu: "Цель одна — счастье, свое и семьи — зная, что счастье это в том, чтобы довольствоваться малым и делать добро другим."
+    quoteEn: "(working English) The single aim — the happiness of oneself and one's family — knowing that this happiness lies in being content with little and doing good to others."
+    significance: "The most direct compositional document in the diary record: Tolstoy's private estate-reform plan (hand the land to the peasants, reduce the household, teach the children manual labour alongside study, Sunday dinners for the poor) — working out privately what the book argues publicly in its bread-labour conclusion."
+
+  - id: wtmwd-diary-03
+    genre: diary
+    pssTom: 49
+    pages: "110"
+    date: "1883-07-06 (OS)"
+    extract: extracts/v49_110_110_1883_07_06.txt
+    quoteRu: "В банках чистенькие, щелкают счетами и моча о губку, считают, постукивая, бумажки; а по дороге бабы навивают, мужики косят, скородят. Нищие и странники слабые, голодные идут."
+    quoteEn: "(working English) In the banks, clean people click their abacuses and, wetting their fingers on a sponge, count the banknotes, tapping; while along the road women bind sheaves, men mow and harrow. Beggars and wanderers, weak and hungry, walk by."
+    significance: "The visual and moral architecture of the division-of-labour critique, caught in the diary: idle money-counters set against labouring peasants set against starving wanderers."
+
+  # — Composition-window & reception letters: PSS Tom 63 (1880–86), Tom 64 (1887–89) —
+  - id: wtmwd-let-01
+    genre: letter
+    pssTom: 63
+    pages: "193–196"
+    date: "1884-12 (OS)"
+    addressee: "V. I. Alekseev"
+    extract: extracts/v63_286.txt
+    quoteRu: "Я теперь печатаю статью (ее не пропустят ) о собственности"
+    quoteEn: "(working English) I am now printing an article (it will not be passed) about property"
+    significance: "The documentary bridge from What I Believe into this book, surfaced last session. December 1884: Tolstoy is sending the manuscript to the Russkaya Mysl printer, foreseeing the ban. The «статья о собственности» is What Then Must We Do?."
+
+  - id: wtmwd-let-02
+    genre: letter
+    pssTom: 63
+    pages: "193–196"
+    date: "1884-12 (OS)"
+    addressee: "V. I. Alekseev"
+    extract: extracts/v63_286.txt
+    quoteRu: "Собственность есть самый прочный и страшный соблазн — я постоянно о нем думаю и борюсь с его хитростями."
+    quoteEn: "(working English) Property is the most durable and terrible temptation — I think about it constantly and struggle with its cunning."
+    significance: "The same December 1884 letter to Alekseev states the book's property ethic in private: property as the most stubborn 'snare', Sutaev's radical position (no locks, no «мое и твое»), and the self-deception of denying property in theory while keeping its convenient forms."
+
+  - id: wtmwd-let-03
+    genre: letter
+    pssTom: 63
+    pages: "332–335"
+    date: "1886-03 (OS; 1–20 March)"
+    addressee: "T. M. Bondarev"
+    extract: extracts/v63_486.txt
+    quoteRu: "упомянул о том, что я почерпнул это не от ученых и мудрых мира сего, но от крестьянина Т. М. Бондарева."
+    quoteEn: "(working English) [in the book I am writing on this same subject] I mentioned that I drew this not from the learned and wise of this world, but from the peasant T. M. Bondarev."
+    significance: "Tolstoy's own confirmation, March 1886, that the book was still in progress and that it credits Bondarev by name as the source of its bread-labour doctrine — the educated world's wisdom set below a Siberian peasant's."
+
+  - id: wtmwd-let-04
+    genre: letter
+    pssTom: 63
+    pages: "332–335"
+    date: "1886-03 (OS; 1–20 March)"
+    addressee: "T. M. Bondarev"
+    extract: extracts/v63_486.txt
+    quoteRu: "Книжки мои не пропускают и жгут, и правительство считает меня врагом своим."
+    quoteEn: "(working English) My little books are not passed and are burned, and the government considers me its enemy."
+    significance: "The suppression from Tolstoy's own hand, in the same 1886 letter: for five years everything he writes on these matters is banned and burned. The censorship context in which the book could appear only in cut and dispersed forms."
+
+  - id: wtmwd-let-05
+    genre: letter
+    pssTom: 63
+    pages: "220–222"
+    date: "1885-03-31 (OS)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v63_337.txt
+    quoteRu: "Ведь я не дорожу тем, чтò есть моего в этой статье, […] тем, чтò в ней есть божеского, и мне радостно видеть, что я не так еще попортил его, чтобы нельзя было узнать."
+    quoteEn: "(working English) For I do not value what is mine in this article, but what is God's in it, and I am glad to see that I have not yet spoiled it so far that it cannot be recognized."
+    significance: "Early reception, March 1885: Strakhov had read the article (then being suppressed at Russkaya Mysl) and praised it while disagreeing with its conclusions. Tolstoy's reply — he holds not his own words but the divine truth in them — and the letter names Henry George, Theodore Parker and Giordano Bruno as his current reading."
+
+# ── Entities (ingestion routing map → wiki) ─────────────────────────────────
+entities:
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-01, wtmwd-text-03, wtmwd-text-09]
+    ingestionPriority: 1
+
+  - name: "Bread-labour (хлебный труд)"
+    wikiType: concept
+    wikilinkTarget: "Bread labour"
+    vaultStatus: missing
+    role: "The book's positive doctrine: every person must do physical labour to win their own bread; specialization is a sacrifice, not a privilege. Drawn explicitly from Bondarev and Sutaev; the foundation of the later Tolstoyan colonies."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-08, wtmwd-text-09, wtmwd-diary-02]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "T. M. Bondarev"]
+
+  - name: "Money as a form of violence (деньги как форма насилия)"
+    wikiType: concept
+    wikilinkTarget: "Money as violence"
+    vaultStatus: missing
+    role: "The book's central economic argument: money is a bloodless modern form of slavery, structurally identical to serfdom because it rests on the state's coercive demand for taxes (the Fiji-islands parable). Political economy's 'three factors' obscure this."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-04, wtmwd-text-05, wtmwd-perepis-01, wtmwd-diary-01]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "Critique of the division of labour (захват чужого труда)"
+    wikiType: concept
+    wikilinkTarget: "Division of labour (Tolstoy's critique)"
+    vaultStatus: missing
+    role: "Tolstoy's charge that the 'scientific' (Comte/Spencer) organic theory of the division of labour is a fiction dressing up «захват чужого труда» — the seizure of others' labour — with science taking over the church's old office of sanctifying inequality."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-06, wtmwd-text-07, wtmwd-diary-03]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "1882 Moscow census"
+    wikiType: event
+    wikilinkTarget: "Moscow census of 1882"
+    vaultStatus: missing
+    role: "The generative event: the first systematic municipal census of Moscow (January 1882; ~2,000 volunteer census-takers). Tolstoy volunteered for the Khamovniki ward (the Rzhanov house), confronted the urban poor, and tried — and failed — to turn the census into a charitable encounter. Chapters I–XI are its memory."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-perepis-01, wtmwd-perepis-02, wtmwd-text-01]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "The book's forerunner essay «О переписи в Москве» (Tom 25, pp. 173–181) is the census appeal; per the scholarship sweep it was printed in Sovremennye Izvestiya on 20 Jan 1882, three days before the census (attribute to scholarship, not the PSS bibl)."
+
+  - name: "T. M. Bondarev"
+    wikiType: person
+    wikilinkTarget: "Timofei Bondarev"
+    vaultStatus: missing
+    role: "Siberian exile peasant (3 Apr 1820 – 3 Nov 1898), a Subbotnik sentenced to life exile on the Yenisey; author of «Торжество земледельца, или Трудолюбие и тунеядство» (The Triumph of the Farmer). His bread-labour treatise reached Tolstoy in July 1885 and is credited by name in the book; Tolstoy championed its publication for the rest of Bondarev's life."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-08, wtmwd-let-03, wtmwd-let-04]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "V. K. Sutaev"
+    wikiType: person
+    wikilinkTarget: "Vasily Sutaev"
+    vaultStatus: missing
+    role: "Tver peasant sectarian whose communitarian Christianity (no private property, no courts, no locks, love as the only law) Tolstoy revered as a living exemplar; ch. XIV records his method of 'sorting the poor by oneself.' His radical position on property is integrated into the December 1884 Alekseev letter."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-let-02]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Same V. K. Sutaev as the What I Believe and A Confession dives; here the bread-labour / no-property exemplar is the salient role. Dates unresolved in English sources."
+
+  - name: "V. I. Alekseev"
+    wikiType: person
+    wikilinkTarget: "Vasily Alekseev"
+    vaultStatus: missing
+    role: "Tutor to the Tolstoy children and Tolstoy's closest interlocutor on property and labour; addressee of the December 1884 bridge letter («Я теперь печатаю статью… о собственности») and of the rich late-1880s letters on the Tolstoyan communes. The sounding-board in whom Tolstoy tested the book's argument."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-let-01, wtmwd-let-02]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "Birth/death dates not resolved in this sweep; check the State Tolstoy Museum / Biryukov plates (no Commons portrait found)."
+
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple and chief correspondent through the 1884–86 composition; the «I sit on a man's back» passage was first drafted in a 5–7 Sep 1884 letter to him. Reported on the Russkaya Mysl ban (Feb 1885) and the Russkoe Bogatstvo cuts; later the Posrednik/Свободное слово publisher of the work."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-03]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "S. A. Tolstaya (Sofia Andreyevna)"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; copyist of the typesetting manuscript; preparer of the 5th edition (vol. 12) that carried the first cut full Russian text, and the petitioner who went to Petersburg to plead with the censorship for it. Also the one who objected to the book's critical naming of family members and obtained the removal of those personal instances."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 1
+    note: "The apparatus documents the family conflict over THIS book — she objected to the named family episodes (ball, cigarette-rolling), not the argument; Tolstoy conceded the personal forms and held the thought, while she simultaneously petitioned to print it. This complicates the Sofia-centred 'impoverishing his family' frame. See needsReview (the late-Jan-1885 letter to her is in Tom 83, not independently extracted)."
+
+  - name: "Henry George"
+    wikiType: person
+    wikilinkTarget: "Henry George"
+    vaultStatus: missing
+    role: "American political economist; his Progress and Poverty, read by Tolstoy in early 1885, reinforced the book's economic argument ('destroys the cobwebs of Spencer–Mill political economy'). Influence is on the reinforcement phase (1885–86), not the 1882 genesis; Tolstoy first wrote to George in 1889."
+    sources: [jubilee-edition]
+    evidenceRefs: [wtmwd-let-05]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Philosopher and critic; an early reader of the article who praised it while disagreeing with its conclusions (the 31 Mar 1885 exchange). A recurring composition-window correspondent."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-let-05]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Also missing/proposed in the What I Believe dive."
+
+  - name: "G. A. Rusanov"
+    wikiType: person
+    wikilinkTarget: "Gavriil Rusanov"
+    vaultStatus: missing
+    role: "Tolstoyan and jurist; an early careful reader of the work (the copy in his archive became the basis of Biryukov's later edition). Correspondent in the composition and reception window."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "K. D. Kavelin"
+    wikiType: person
+    wikilinkTarget: "Konstantin Kavelin"
+    vaultStatus: missing
+    role: "Liberal jurist and historian; the 1882 letter to him (against the juridical basis of property — property as a фикция) is an early clash that shaped the book's money and property chapters."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "S. A. Yuryev"
+    wikiType: person
+    wikilinkTarget: "Sergei Yuryev"
+    vaultStatus: missing
+    role: "Editor of Russkaya Mysl, to whom Tolstoy gave the manuscript (April 1884) for the January 1885 issue; twenty chapters were set before the Petersburg censorship refused serialization."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "L. E. Obolensky"
+    wikiType: person
+    wikilinkTarget: "Leonid Obolensky"
+    vaultStatus: missing
+    role: "Editor of Russkoe Bogatstvo, the journal of liberal sympathy that printed the heavily-cut fragments of the work in 1885 («Жизнь в городе», «Из воспоминаний о переписи», «Деревня и город»)."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "A. M. Ivantsov-Platonov"
+    wikiType: person
+    wikilinkTarget: "Aleksandr Ivantsov-Platonov"
+    vaultStatus: missing
+    role: "Liberal archpriest and spiritual censor sympathetic to Tolstoy; to get the work into the 5th edition he supplied neutralizing footnotes («Примечания читавшего») and proposed cuts — which Pobedonostsev judged only made it worse."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "K. P. Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: "Ober-Procurator of the Holy Synod; his 16 Dec 1885 letter to S. A. Tolstaya refused the uncut vol. 12 — «нет никакой надежды, чтобы они были пропущены… книга, которая произведет вредное действие на умы»."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    note: "Same K. P. Pobedonostsev as the What I Believe dive (the institutional shadow over both books)."
+
+  - name: "E. M. Feoktistov"
+    wikiType: person
+    wikilinkTarget: "Evgeny Feoktistov"
+    vaultStatus: missing
+    role: "Head of the Main Directorate for Press Affairs who referred the religious-philosophical contents of vol. 12 to the Synod censorship (Nov 1885). Same official who ordered the What I Believe ban in 1884."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "M. K. Elpidine"
+    wikiType: person
+    wikilinkTarget: "Mikhail Elpidine"
+    vaultStatus: missing
+    role: "Geneva émigré publisher; issued the first fuller text abroad as «Какова моя жизнь?» (1886, also in his journal Общее дело), then «Деньги» (1887) and «Что же нам делать?» (not before 1889), and a corrected second edition (1901)."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    note: "Same M. K. Elpidine as the What I Believe dive."
+
+  - name: "P. I. Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Biryukov"
+    vaultStatus: missing
+    role: "Tolstoy's biographer and Posrednik associate; circulated the work and later edited the Sytin Полное собрание (1912–13) in which it appeared (from the Rusanov archive copy)."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    note: "Central to this project's source-of-record (the Biryukov biography). A wiki page is overdue independently of this dive."
+
+  - name: "Isabel F. Hapgood"
+    wikiType: person
+    wikilinkTarget: "Isabel Hapgood"
+    vaultStatus: missing
+    role: "American translator; her What to Do? (Crowell, New York, 1887) was the first English version — from a censored text obtained via a Geneva firm; completed in Boston, 1 Sep 1887."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Lyapinsky house (Ляпинский дом)"
+    wikiType: place
+    wikilinkTarget: "Lyapinsky house"
+    vaultStatus: missing
+    role: "Free night-shelter (ночлежный дом) in central Moscow named for the Lyapin brothers; the scene of a thousand homeless waiting in the frost that crystallized the book's opening crisis (ch. II and the census appeal)."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-perepis-02, wtmwd-text-02]
+    ingestionPriority: 2
+    dependsOn: ["1882 Moscow census"]
+
+  - name: "Rzhanov house (Ржанова крепость)"
+    wikiType: place
+    wikilinkTarget: "Rzhanov house"
+    vaultStatus: missing
+    role: "Tenement complex near Smolensky Market in the Khamovniki ward — Tolstoy's assigned census district, 'a den of the most terrible poverty and vice' (chs. IV ff.). Distinct from the Khitrovka doss-house district, which the book also passes through (ch. II, Хитров рынок)."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-text-01]
+    ingestionPriority: 2
+    dependsOn: ["1882 Moscow census"]
+
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "Where the stop-start composition alternated with Moscow; the estate whose income the 1884 diary plan proposes to hand to the peasants."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [wtmwd-diary-02]
+    ingestionPriority: 3
+
+# ── Visual & manuscript record (Phase-2 sweep, medium intensity) ────────────
+# visuals/ is git-ignored (local cache); repopulate with: python3 docs/fetch_visuals.py 1882-1886-what-then-must-we-do
+visuals:
+  - id: vis-repin-ploughing-1887
+    type: painting
+    subject: "Leo Tolstoy ploughing (Л. Н. Толстой на пашне)"
+    relatedEntity: "Lev Tolstoy; Ilya Repin (artist)"
+    relatedEvidence: [wtmwd-text-08, wtmwd-text-09]
+    holding: "State Russian Museum, St Petersburg"
+    archiveId: "File:Tolstoy ploughing.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tolstoy_ploughing.jpg"
+    localPath: visuals/commons-repin-tolstoy-ploughing-1887.jpg
+    note: "KEYSTONE. Repin, 1887 — the visual emblem of the bread-labour doctrine the book founds. Painted the year AFTER completion, not during composition — a thematic emblem, not a composition-window document (flag the gap)."
+  - id: vis-ge-tolstoy-1884
+    type: portrait
+    subject: "Leo Tolstoy"
+    relatedEntity: "Lev Tolstoy; N. N. Ge (artist)"
+    holding: "State Tretyakov Gallery (original in the Russian museum system)"
+    archiveId: "File:Nikolay_Ge_-_Léon_Tolstoï._1884.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Nikolay_Ge_-_L%C3%A9on_Tolsto%C3%AF._1884.jpg"
+    localPath: visuals/commons-ge-tolstoy-portrait-1884.jpg
+    note: "Painted 1884 — directly inside the composition window. The same Ge portrait used as a keystone candidate by the What I Believe dive."
+  - id: vis-tolstoy-photo-1880
+    type: photograph
+    subject: "Count Leo Tolstoy, half-length"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Library of Congress (LCCN 99615676)"
+    archiveId: "File:Count_Leo_Tolstoy,_half-length_portrait,_facing_right_LCCN99615676.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Count_Leo_Tolstoy%2C_half-length_portrait%2C_facing_right_LCCN99615676.jpg"
+    localPath: visuals/commons-tolstoy-lccn-portrait-1880.jpg
+    note: "Cabinet card ca. 1880 — just before the January 1882 census that triggered the book."
+  - id: vis-makovsky-nochlezhniki-1889
+    type: painting
+    subject: "Night Lodgers (Ночлежники) — interior of a Moscow free night-shelter"
+    relatedEntity: "Lyapinsky house (Ляпинский дом); V. E. Makovsky (artist)"
+    relatedEvidence: [wtmwd-perepis-02, wtmwd-text-02]
+    holding: "Wikimedia Commons (original location unconfirmed)"
+    archiveId: "File:Ночлежники._1889_год._В._Е._Маковский.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/62/%D0%9D%D0%BE%D1%87%D0%BB%D0%B5%D0%B6%D0%BD%D0%B8%D0%BA%D0%B8._1889_%D0%B3%D0%BE%D0%B4._%D0%92._%D0%95._%D0%9C%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg"
+    localPath: visuals/commons-makovsky-nochlezniki-1889.jpg
+    note: "Vladimir Makovsky, 1889 — a Moscow night-shelter interior, the institution type of the Lyapinsky/Rzhanov houses Tolstoy entered. Best available substitute for a direct Lyapinsky-house image (none found openly)."
+  - id: vis-chertkov-1883
+    type: portrait
+    subject: "V. G. Chertkov"
+    relatedEntity: "V. G. Chertkov"
+    relatedEvidence: [wtmwd-text-03]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Vladimir_Chertkov.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/63/Vladimir_Chertkov.jpg"
+    localPath: visuals/commons-chertkov-portrait-1883.jpg
+    note: "A. F. Eichenwald, 1883 — the year Chertkov entered Tolstoy's circle; recipient of the letter that first drafted the keystone passage."
+  - id: vis-repin-tolstoy-seated-1887
+    type: portrait
+    subject: "Leo Tolstoy (seated)"
+    relatedEntity: "Lev Tolstoy; Ilya Repin (artist)"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ilya_Efimovich_Repin_%281844-1930%29_-_Portrait_of_Leo_Tolstoy_%281887%29.jpg"
+    localPath: visuals/commons-repin-tolstoy-seated-portrait-1887.jpg
+    note: "Repin's 1887 seated portrait — the bearded Tolstoy of the treatise period."
+  - id: vis-chertkov-tolstoy-1909
+    type: photograph
+    subject: "Tolstoy and Chertkov, Yasnaya Polyana, 1909"
+    relatedEntity: "Lev Tolstoy; V. G. Chertkov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Chertkov&Tolstoy.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Chertkov%26Tolstoy.jpg"
+    localPath: visuals/commons-chertkov-and-tolstoy-1909.jpg
+    note: "Late (1909) context image of the collaboration; supplementary."
+  - id: vis-hapgood-whattodo-1887
+    type: title-page
+    subject: "What to Do? Thoughts evoked by the census of Moscow (Hapgood trans., 1887) — first English edition"
+    relatedEntity: "Isabel F. Hapgood (translator)"
+    holding: "Internet Archive (whattodothoughts00tols)"
+    archiveId: "archive.org whattodothoughts00tols"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://archive.org/services/img/whattodothoughts00tols"
+    localPath: visuals/archive-what-to-do-hapgood-1887-cover.jpg
+    note: "First English translation (Crowell, New York, 1887) — from a censored text via a Geneva firm. Thumbnail only; full title-page scan at archive.org/details/whattodothoughts00tols. The standard later title (Maude 1925) is What Then Must We Do?."
+  - id: vis-alekseev-portrait
+    type: portrait
+    subject: "V. I. Alekseev"
+    relatedEntity: "V. I. Alekseev"
+    holding: "not located openly"
+    archiveId: ""
+    access: "not found on Commons"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: State Tolstoy Museum photo archive; Biryukov biography plates."
+  - id: vis-bondarev-portrait
+    type: portrait
+    subject: "T. M. Bondarev"
+    relatedEntity: "T. M. Bondarev"
+    holding: "not located openly"
+    archiveId: ""
+    access: "not found on Commons"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: Siberian regional archives; possible frontispiece in the 1890 English Labour: The Divine Command (IA labordivinecomma00tolsrich)."
+  - id: vis-sutaev-portrait
+    type: portrait
+    subject: "V. K. Sutaev"
+    relatedEntity: "V. K. Sutaev"
+    holding: "not located openly"
+    archiveId: ""
+    access: "not found on Commons"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: Tretyakov Gallery (Repin painted Sutaev at Tolstoy's request); a study by Tatyana Tolstaya hung in Tolstoy's study."
+  - id: vis-lyapinsky-house
+    type: photograph
+    subject: "The Lyapinsky free night-shelter, Moscow"
+    relatedEntity: "Lyapinsky house (Ляпинский дом)"
+    holding: "not located openly"
+    archiveId: ""
+    access: "not found on Commons"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: Moscow Multimedia Art Museum (MAMM) 19th-c. photography; Moskovsky Listok illustrated supplements ca. 1882. The Makovsky painting (above) is the substitute."
+
+# ── Scholarship (secondary layer — Phase 3) ─────────────────────────────────
+scholarship:
+  summary: >-
+    English-language scholarship treats What Then Must We Do? as the document of
+    Tolstoy's turn from art to social prophecy — a powerful eyewitness account of
+    the 1882 Moscow census slums (Lyapinsky, Rzhanov) converted into a wholesale
+    attack on charity, property, money and the division of labour, ending in a
+    bread-labour doctrine drawn from the peasant Bondarev and reinforced by Henry
+    George. Standard biography (Simmons 1946; Bartlett 2011; Maude, who also
+    translated it as What Then Must We Do?, Oxford 1925) registers the census
+    trigger, the rejection of charity, and the famous «get off his back» image.
+    But the precision of the primary argument — money as a bloodless form of
+    slavery enabled specifically by the state's fiscal coercion (the Fiji
+    parable), and the «scientific» Spencer/organic division-of-labour theory as a
+    fiction dressing «захват чужого труда» — is largely undeveloped in the
+    secondary literature. The censorship mechanics (Pobedonostsev's refusal,
+    Ivantsov-Platonov's neutralizing notes, S. A. Tolstaya's simultaneous
+    concession-and-petition) are noted only in passing. The final chapter on women
+    is consistently flagged as retrograde and absorbed into the Sofia-centred
+    «guilt-ridden patriarch» frame (Popoff; The Last Station), rather than read
+    against the primary family-conflict record. The newest scholarship (Nicolosi
+    2024, Russian Review) reads the slum chapters as a deliberate intervention in
+    Russian slum-literature, individualizing the poor against the period's
+    degeneration-discourse — an angle the biographical and economic traditions had
+    not developed.
+  triangulation:
+    - evidenceRef: wtmwd-text-01
+      conventionalView: "The book issues from the January 1882 Moscow census; the essay «О переписи в Москве» is its first textual fruit."
+      relation: confirms
+      source: "Simmons, Leo Tolstoy (1946); Bartlett, Tolstoy: A Russian Life (2011); Maude introduction (1925)"
+    - evidenceRef: wtmwd-text-05
+      conventionalView: "Tolstoy rejects charity and condemns money-possession as immoral; popular reception cites the «get off his back» image and the evil of money."
+      relation: complicates
+      source: "general reception (Goodreads aggregate; Maude trans.); the fiscal-coercion-as-slavery mechanism (the Fiji parable's point) is not developed in the secondary literature found"
+    - evidenceRef: wtmwd-text-06
+      conventionalView: "Tolstoy attacks the division of labour and 'science' as a justification for idleness."
+      relation: extends
+      source: "Goodreads/quotations; the Comte/Spencer organic-theory axis as the church's successor in sanctifying inequality is not unpacked in the English-language scholarship found"
+    - evidenceRef: wtmwd-text-08
+      conventionalView: "The bread-labour doctrine derives from the peasant Bondarev (manuscript reached Tolstoy July 1885; he championed its publication)."
+      relation: confirms
+      source: "Wikipedia/Bondarev; Donskov, Tolstoy in Conversation with Four Peasant Sectarian Writers (2019); Gandhi & Peace Studies"
+    - evidenceRef: wtmwd-let-02
+      conventionalView: "Bondarev is the acknowledged peasant source; Sutaev's parallel role (no-property, no-locks) in the book's property argument is much sparser in scholarship."
+      relation: extends
+      source: "Donskov 2019 (covers Bondarev, not Sutaev); the December 1884 Alekseev letter integrating Sutaev's position is not cited in any secondary source found"
+    - evidenceRef: wtmwd-let-05
+      conventionalView: "Henry George's Progress and Poverty influenced Tolstoy's economic thought."
+      relation: complicates
+      source: "Progress and Poverty Institute; George (read early 1885) is reinforcement of the 1885–86 phase, not the 1882 genesis; first Tolstoy→George letter is 1889"
+    - evidenceRef: wtmwd-text-10
+      conventionalView: "The final chapter's gender doctrine is retrograde — an idealization of maternal domesticity that condemns the 'woman question.'"
+      relation: complicates
+      source: "Cruise, in Orwin ed. The Cambridge Companion to Tolstoy (2002); Lounsbery, 'The Woman Question,' Tolstoy in Context (2022); the primary family-conflict record (PSS apparatus) — S. A. Tolstaya objected to the NAMING of family, not the argument, and petitioned to print the book — is not registered in scholarship and complicates the Sofia-centred frame"
+
+# ── Work-record proposal (READ-ONLY to works/; human ingestion applies) ──────
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/what-then-must-we-do/What Then Must We Do.md   # PROPOSED — no record exists yet; treatises/ is the natural home (cf. the What I Believe proposal). Folder is a human decision."
+  workId: "what-then-must-we-do"
+  fields:
+    - field: titleRu
+      value: "Так что же нам делать?"
+      evidenceRefs: [wtmwd-text-01]
+      source: jubilee-edition
+      confidence: high
+    - field: titleEn
+      value: "What Then Must We Do?"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Standard scholarly English title (Maude, Oxford 1925). The first English edition (Hapgood, 1887) used 'What to Do?'; Wiener (1904) used 'What Is to Be Done?'."
+    - field: titleAlternatives
+      value: "[{title: 'What to Do?', type: translation, language: en}, {title: 'What Is to Be Done?', type: translation, language: en}, {title: 'Какова моя жизнь?', type: variant, language: ru}]"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Hapgood 1887 'What to Do? Thoughts evoked by the census of Moscow'; Wiener 1904 'What Is to Be Done?'; Maude 1925 'What Then Must We Do?'. The Geneva/Elpidine first fuller text (1886) bore the variant Russian title «Какова моя жизнь?»."
+    - field: genre
+      value: "essay   # religious-philosophical / social treatise; mirror the controlled value used for Confession & the What I Believe proposal"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+    - field: dateWritingStarted
+      value: "1882"
+      oldStyle: "1882"
+      approximate: true
+      evidenceRefs: [wtmwd-perepis-01]
+      source: jubilee-edition
+      confidence: medium
+      note: "Begun early 1882, right after the January 1882 census and «О переписи в Москве» (S. A. Tolstaya's note on the 4 Feb 1882 letter). NOT 1884, despite the dating in lifetime collected editions. The slug window 1882–1886 takes the genesis year."
+    - field: dateWritingCompleted
+      value: "1886"
+      oldStyle: "1886"
+      approximate: true
+      evidenceRefs: [wtmwd-let-03]
+      source: jubilee-edition
+      confidence: medium
+      note: "Still in progress March 1886 (letter to Bondarev); the 5th-edition vol. 12 carrying the work was out by 10 April 1886. The work was finished/printed in cut form by spring 1886; the complete text was settled only later (Chertkov 1902)."
+    - field: dateFirstPublished
+      value: "1885"
+      approximate: true
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "First (cut) appearance: fragments in Russkoe Bogatstvo, 1885 («Жизнь в городе» March–April; «Из воспоминаний о переписи» Sept–Oct; «Деревня и город» Dec). Serialization at Russkaya Mysl (Jan 1885) was refused by the censor. First cut FULL text: 5th ed. of the collected works, vol. 12, out 10 April 1886. First fuller text abroad: «Какова моя жизнь?», Geneva (Elpidine), 1886. First COMPLETE text: Chertkov, Свободное слово, Christchurch, 1902. Human to decide which event the field carries."
+    - field: firstPublishedVenue
+      value: "Русское богатство (fragments, 1885, censored); then vol. 12 of the 5th collected edition (1886, censored)"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Russkaya Mysl set 20 chapters for Jan 1885 but serialization was refused. Venue type: journal (fragments) / book (collected works)."
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Fragments 1885; cut full text 1886; abroad from 1886; complete text 1902 — all within Tolstoy's lifetime."
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "In censored/cut form from 1885–86 (Russkoe Bogatstvo; 5th-ed. vol. 12). A complete uncensored Russian text inside Russia came only after 1905."
+    - field: dateFirstPublishedInRussia
+      value: "1885"
+      approximate: true
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "Cut fragments in Russkoe Bogatstvo, 1885 (the first legal Russian appearance, in part); the cut full text in vol. 12, 1886."
+    - field: bans
+      value: "[{banningAuthority: 'Moscow/St Petersburg censorship (via Glavnoe upravlenie po delam pechati)', authorityType: imperial-state, jurisdiction: 'Russian Empire', scope: serialization-refused, banDate: '1885', banDateApproximate: true, notes: 'Serialization in Russkaya Mysl (20 chapters set for the Jan 1885 issue) refused by the Petersburg censorship; Tolstoy to Urusov ~19 Jan 1885: «Статья моя запрещена».'}, {banningAuthority: 'Moscow/St Petersburg censorship', authorityType: imperial-state, jurisdiction: 'Russian Empire', scope: passages-cut, banDate: '1885', banDateApproximate: true, notes: 'Fragments passed in Russkoe Bogatstvo (1885) and the full text in the 5th-ed. vol. 12 (1886) only with heavy cuts; whole money chapters (XVII–XXI) excised from the collected-works text.'}, {banningAuthority: 'Holy Synod (via Ober-Procurator K. P. Pobedonostsev)', authorityType: holy-synod, jurisdiction: 'Russian Empire', scope: pre-publication-rejected, banDate: '1885-12-28', banDateOldStyle: '1885-12-16', banDateApproximate: false, notes: 'Pobedonostsev refused the uncut vol. 12 (letter to S. A. Tolstaya, 16 Dec 1885 OS), forcing publication in cut form.'}]"
+      evidenceRefs: [wtmwd-let-04]
+      source: jubilee-edition
+      confidence: high
+      note: "Schema-clean: authorityType ∈ imperial-state | holy-synod; scope ∈ serialization-refused | passages-cut | pre-publication-rejected. UNLIKE What I Believe, this work was not subject to a clean complete-ban + seizure — it was refused serialization and passed only cut. Three distinct events; banDate NS with banDateOldStyle for the Pobedonostsev refusal. Other banDates are year-approximate."
+    - field: censoredVersionExists
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "The 5th-ed. vol. 12 (1886) and the Russkoe Bogatstvo fragments are censored versions; the uncensored full text appeared abroad (Geneva 1886; Chertkov/Christchurch 1902). The textually authoritative base per the PSS editors is the 5th ed. (1886), supplemented from the corrected proofs."
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: [wtmwd-let-04]
+      source: jubilee-edition
+      confidence: high
+      note: "Circulated in manuscript and copy (Tolstoy: «Книжки мои не пропускают и жгут»); the Rusanov-archive copy later seeded Biryukov's edition."
+    - field: excommunicationRelated
+      value: "false   # PROPOSE false; route to needsReview"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: low
+      note: "The 1901 Synod edict names no individual works. This work's anti-property/anti-state doctrine is part of the broader teaching condemned, but a direct tie should not be asserted. See needsReview."
+    - field: relatedWorks
+      value: "[{id: what-i-believe, relationshipType: sequel}, {id: confession, relationshipType: sequel}]"
+      evidenceRefs: [wtmwd-let-01]
+      source: jubilee-edition
+      confidence: medium
+      note: "The economic/social application of the What I Believe ethic (the Dec-1884 Alekseev bridge marks the turn from one to the other). relationshipType ∈ the controlled set; 'sequel' is the closest fit. Both target ids assume the proposed records exist."
+    - field: "identifiers.jubileeEdition.volumes"
+      value: "25"
+      evidenceRefs: [wtmwd-text-01]
+      source: jubilee-edition
+      confidence: high
+      note: "PSS Tom 25, pp. 182–411 (text); 503–507 (first printed variant of ch. XVII); 614–652 (variants); 740–839 (commentary). Forerunner «О переписи в Москве» pp. 173–181."
+
+# ── Coverage ledger (surfaces × status) ─────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Triply grounded: the Jan-1882 census + «О переписи в Москве»; the 1 Jan 1883 property/violence diary entry and the 1884 estate-reform plan; the Dec-1884 Alekseev bridge and the 1885–86 Bondarev letters. Composition chronology 1882→1886 reconstructed from the apparatus (begun early 1882, not 1884; stop-start; intensive Dec 1884; finishing Jan 1885 and into 1886)."
+  - surface: "What the work says"
+    status: covered
+    note: "Deep structural read of all 40 chapters; keystone passages (failed charity / «I sit on his back»; money as slavery + the Fiji parable; the science / division-of-labour critique; the three answers and bread-labour / Bondarev; the final chapter on women) extracted byte-faithful."
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "The apparatus's complex redaction history (the «О помощи при переписи» first draft; the Russkaya Mysl vs Russkoe Bogatstvo vs 5th-ed. recensions; the first printed variant of ch. XVII; the Henry-George/Spencer reworking of the money and science chapters; the 1901 corrected ch. XL) is summarized from the commentary, not exhaustively collated. The 765 KB variants file (Tom 25 pp. 614–652) was not deep-read."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Serialization refused (Russkaya Mysl, Jan 1885); cut fragments (Russkoe Bogatstvo, 1885); cut full text (5th ed. vol. 12, 10 Apr 1886) after Pobedonostsev's Synod refusal + Ivantsov-Platonov's notes; fuller text abroad (Geneva/Elpidine «Какова моя жизнь?» 1886; «Деньги» 1887; «Что же нам делать?» ≥1889); complete text (Chertkov, Christchurch, 1902). English: Hapgood 1887 → Wiener 1904 → Maude 1925."
+  - surface: "Reception & afterlife (Russian society + Church)"
+    status: partial
+    note: "Composition-window reception grounded in letters (Strakhov agreed-diagnosis-disagreed-conclusion; Rusanov; the doctor-enthusiast 'new era' in the text itself) and the censorship verdicts (Pobedonostsev). The wider critical/press reception and the work's influence on the Tolstoyan colonies are sketched (Alekseev/Sibiryakov, the Alekhin commune in the 1889 letter) but not fully swept. The Synod/excommunication tie is left to needsReview."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "The economic/social application of the What I Believe ethic; fourth Prophet-period panel after A Confession, the Gospel works, and What I Believe. Cross-links to sibling dives and forward into the economic cluster (copyright-renunciation, christian-communism-socialism, doukhobors)."
+  - surface: "The author's later verdict"
+    status: not-covered
+    note: "Tolstoy's later (post-1886) explicit judgments on the book itself not extracted; the 1889 Alekseev letter on the Alekhin commune shows where the bread-labour argument went in practice, but is not a verdict on the text."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Medium sweep: 8 PD images cached (keystone = Repin's 1887 Tolstoy ploughing; the 1884 Ge portrait; the Makovsky night-shelter; the 1887 Hapgood first English edition). Not openly available: portraits of Alekseev, Bondarev, Sutaev, and a Lyapinsky-house photograph (all logged to request)."
+
+contradictions:
+  - claim: "Lifetime Russian collected editions dated the work «1884–1885»."
+    correction: "The PSS apparatus shows it was begun in early 1882 (right after the census), per S. A. Tolstaya's note on the 4 Feb 1882 letter and the «О помощи при переписи» first draft; the 1884 dating reflects the resumption, not the start."
+    evidenceRef: wtmwd-perepis-01
+
+notCovered:
+  - "The 765 KB variants file (Tom 25 pp. 614–652) and the full redaction collation — summarized from the commentary, not deep-read."
+  - "The «Деньги» (1887) and «Что же нам делать?» (≥1889) Elpidine émigré printings, and the 1901 corrected ch. XL — named from the apparatus, not seen."
+  - "The wider contemporary critical/press reception (named critics, reviews) beyond the letter-network and censorship verdicts."
+  - "Tolstoy's later explicit verdict on the work; «О жизни» (1887) is the philosophical successor but was not swept here."
+  - "The full Bondarev and Sutaev correspondence (and Bondarev's «Торжество земледельца» text itself) — the relationship is documented here from the 1885–86 letters and the book's acknowledgement, not the peasant texts."
+  - "The de-facto dating of the «О переписи в Москве» printing (Sovremennye Izvestiya, 20 Jan 1882) rests on the scholarship sweep, not the PSS bibl — confirm before asserting as primary."
+
+needsReview:
+  - item: "excommunicationRelated field value for What Then Must We Do?."
+    phase: "4 (workRecord)"
+    why: "The 1901 Synod edict names no individual works; the doctrine is part of the broader condemned teaching but a direct tie should not be asserted. Proposed false."
+  - item: "dateFirstPublished — which event the field should carry (refused Russkaya Mysl serialization Jan 1885 / cut fragments Russkoe Bogatstvo 1885 / cut full text 5th-ed. vol. 12 1886 / fuller text Geneva 1886 / complete text Christchurch 1902)."
+    phase: "4 (workRecord)"
+    why: "No clean 'first publication': the work appeared in cut and dispersed forms over 1885–1902. Convention needed for a work that was never cleanly banned but never cleanly published whole in its time."
+  - item: "Proposed works/ folder (treatises) and exact filename for the new record."
+    phase: "4 (workRecord)"
+    why: "treatises/ is the natural home; human ingestion decision (cf. the What I Believe folder question)."
+  - item: "Cross-dive diary ambiguity: the Tom 25 commentary places a «не могу продолжать свою статью. Тонкости, и потому будет ложь» stall-entry at 28 April 1884 for THIS book, but the What I Believe dive cited an identically-worded 28 April 1883 entry (v49_1883_04_28) for THAT book; the corpus has only the 1883 file."
+    phase: "1 (sweep) / 2 (extract)"
+    why: "The two near-contemporaneous books shared a single strained writing period; the diary line should not be attributed to this work without resolving the year. Not cited in this dive's evidence."
+  - item: "The family-conflict primary quotes (S. A. Tolstaya's note + Tolstoy's late-Jan-1885 apology «каюсь в них… отстаиваю самую мысль») are cited via the PSS Tom 25 apparatus, not from the primary letter (Tom 83, letters to S. A. Tolstaya — not independently extracted)."
+    phase: "3 (reception)"
+    why: "The finding is well-attested in the apparatus but the underlying letter was not byte-extracted; flag before treating the quote as primary-verified."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (PSS Tom 25 work / ch.-XVII variant / commentary + «О переписи в Москве»; Tom 49 diaries 1882–87; Tom 63 + Tom 64 letters)"
+  - "Wikimedia Commons (Repin ploughing + seated portraits; Ge 1884; LoC 1880 photo; Makovsky night-shelter; Chertkov); Internet Archive (1887 Hapgood What to Do?)"
+  - "Web scholarship sweep: Simmons 1946; Bartlett 2011; Maude trans. 1925; Donskov 2019; Cruise 2002; Lounsbery 2022; Nicolosi 2024; Progress and Poverty Institute; Wikipedia (Bondarev, Khitrovka, Hapgood)"
+  - "Not located openly: portraits of Alekseev, Bondarev, Sutaev; a Lyapinsky-house photograph; the Geneva/Elpidine «Какова моя жизнь?» title page"
+
+references:
+  primary:
+    - "L. N. Tolstoy, «Так что же нам делать?», PSS (Jubilee Edition) Tom 25, pp. 182–411 (text); 503–507 (first printed variant of ch. XVII); 614–652 (variants); 740–839 (commentary)."
+    - "L. N. Tolstoy, «О переписи в Москве», PSS Tom 25, pp. 173–181 (the census appeal / forerunner)."
+    - "tolstoydigital-TEI corpus: diaries Tom 49 (1882–87); letters Tom 63 (1880–86, incl. Alekseev no. 286, Bondarev no. 486, Strakhov no. 337) and Tom 64 (1887–89)."
+  background:
+    - "Aylmer Maude & Louise Maude (trans.), What Then Must We Do? (Oxford, The World's Classics No. 281, 1925; rev. 1935) — the standard English translation and title."
+    - "Isabel F. Hapgood (trans.), What to Do? Thoughts Evoked by the Census of Moscow (Crowell, New York, 1887) — first English edition, from a censored text."
+    - "Ernest J. Simmons, Leo Tolstoy (Boston, 1946)."
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2011)."
+    - "Inessa Medzhibovskaya, Tolstoy and the Religious Culture of His Time: A Biography of a Long Conversion, 1845–1887 (Lexington, 2008)."
+    - "Andrew Donskov, Leo Tolstoy in Conversation with Four Peasant Sectarian Writers: The Complete Correspondence (Ottawa, 2019) — incl. Bondarev."
+    - "Edwina Cruise, 'Women, Sexuality, and the Family in Tolstoy,' in D. T. Orwin (ed.), The Cambridge Companion to Tolstoy (Cambridge, 2002), 191–205."
+    - "Anne Lounsbery, 'The Woman Question,' in Tolstoy in Context (Cambridge, 2022)."
+    - "Riccardo Nicolosi, 'Slum Bodies: Leo Tolstoy's What Should We Do Then?, the Moscow Poor, and Late Nineteenth-Century Russian Slum Literature,' The Russian Review 83 (2024): 348–361 (DOI 10.1111/russ.12646)."
+    - "T. M. Bondarev, «Торжество земледельца, или Трудолюбие и тунеядство» (The Triumph of the Farmer); Henry George, Progress and Poverty (1879) — read by Tolstoy early 1885."
