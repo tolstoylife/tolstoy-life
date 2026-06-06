@@ -41,9 +41,22 @@ preserving the bare-dive voice the reader annotations defend.
 pages), and more *measurable thoroughness* (a coverage ledger instead of a prose
 afterthought).
 
+**Auto-mode first (run while the reader is away).** Each dive must be runnable **unattended
+via `--auto`** — the reader wants to start a dive and step away from the computer. This
+reverses the earlier "runs stay interactive" stance (memory `corpus-dive-human-present`): the
+existing `--auto` invariants stand (never call `AskUserQuestion`; defer every human-judgment
+call to `needsReview`; honor the time-box; save incrementally; note stays `draft: true`; no
+vault writes; `run-report.md` written), and **all four new levers must obey them** — the
+composition/interlocutor sweep, the `workRecord:` fill, the `coverage:` ledger, and the
+standing sections all run without a human in the loop, and anything genuinely uncertain goes
+to `needsReview`, never into the prose unanchored. The **evaluation gate becomes
+auto-friendly** (§4): under `--auto` the six checks are *self-assessed* into `run-report.md`
+and the human retrospective is deferred to the reader's return — it never blocks the run.
+
 **Non-goals (unchanged from the original):** no vault/`works/` writes; no cross-dossier
-aggregator; no overnight batch queue (per the *human-present* memory, runs stay interactive —
-the canon is worked one at a time, not fired unattended).
+aggregator. The multi-theme **overnight queue orchestration** stays optional/out-of-scope
+(the canon is worked one work at a time); but a *single* dive running unattended end-to-end
+**is** a goal now.
 
 ---
 
@@ -283,6 +296,13 @@ Output of the gate: a brief findings note + any adjustments to the skill, plus t
 `annotations.md` steer on the A-Confession dive (the usual ingestion-guidance loop). Only
 after that does the canon proceed. The gate is a checkpoint, not a deliverable to
 over-engineer — keep it to what changes the next dive.
+
+**Under `--auto` (reader away):** the dive cannot hold a live retrospective, so it writes the
+six checks as a **self-assessment block in `run-report.md`** (each check self-scored, with any
+concern routed to `needsReview`), and the **human gate is deferred** — the reader runs it
+asynchronously on return, reads the self-assessment + `needsReview`, leaves `annotations.md`,
+and only then greenlights the next work. The self-assessment never blocks or gates the
+unattended run; it is the artifact the deferred human gate consumes.
 
 ---
 

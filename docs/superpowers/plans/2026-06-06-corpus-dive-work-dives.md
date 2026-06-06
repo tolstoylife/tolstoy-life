@@ -569,10 +569,31 @@ In `## Multi-session dives`, first paragraph, change `**resume** from its \`sess
 **resume** from its `session-log.md`, the dossier's `coverage:` ledger (the structured surface map — read this first), and the `notCovered` queue (free-text overflow) rather than re-sweeping.
 ```
 
-- [ ] **Step 4: Verify and commit**
+- [ ] **Step 4: Make the new work-dive features auto-mode-safe**
 
-Run: `grep -c "work-record work-order\|coverage ledger\|coverage. ledger" .claude/skills/corpus-dive/SKILL.md`
-Expected: `2` or more.
+The reader wants to run dives unattended (`--auto`). The new features must obey the existing `--auto` invariants (never call `AskUserQuestion`; defer human-judgment to `needsReview`; honor the time-box; note stays `draft: true`; write `run-report.md`). Two edits:
+
+(a) In the `## Mode` section, immediately after the `**Autonomous (\`--auto\`):**` paragraph, append:
+
+```markdown
+For **work dives**, `--auto` is the preferred way to run a dive while the reader is away: the
+composition/interlocutor sweep, the `workRecord:` fill, the standing sections, and the
+`coverage:` ledger all run with no human in the loop; any uncertain field, attribution, or
+judgment call goes to `needsReview`, never into the prose. The post-pilot **evaluation gate is
+not run live under `--auto`** — the dive instead writes a **self-assessment** of its checks
+(did the interlocutor sweep yield people; is the Russian society/church reception covered; is
+the `workRecord` fill accurate + provenanced; is `coverage` honest; did `--choice=reg` extract
+cleanly; did the spine stay bare) into `run-report.md`, each self-scored, with concerns routed
+to `needsReview`. The human retrospective is deferred to the reader's return; the
+self-assessment never blocks the run.
+```
+
+(b) In `## Phase 6 — Handoff`, in the `**\`--auto\`:**` branch (the parenthetical listing the `run-report.md` contents), add `the **evaluation self-assessment** (work dives)` to that list.
+
+- [ ] **Step 5: Verify and commit**
+
+Run: `grep -c "work-record work-order\|coverage ledger\|coverage. ledger\|self-assessment" .claude/skills/corpus-dive/SKILL.md`
+Expected: `3` or more.
 
 ```bash
 git add .claude/skills/corpus-dive/SKILL.md
@@ -590,9 +611,11 @@ standard for pre-1918 extraction; verifier + handoff + resume updates."
 
 ### Task C1: Run the dive
 
-- [ ] **Step 1: Invoke the refined skill, interactively**
+- [ ] **Step 1: Launch the dive unattended (`--auto`)**
 
-Run `/corpus-dive A Confession (Исповедь)` (slug `a-confession`; work id `confession`; PSS Tom 23). At Phase 0, confirm the work-subject scope contract: PSS Tom 23; redactions of Исповедь; composition window ≈1879–1882; record path `website/src/works/non-fiction/personal-papers/confession/Confession.md`. Let it run all six phases, using `extract_tei.py --choice=reg` for extraction.
+Run `/corpus-dive A Confession (Исповедь) --auto` (slug `a-confession`; work id `confession`; PSS Tom 23) so it runs end-to-end with the reader away. The scope contract is auto-derived (PSS Tom 23; redactions of Исповедь; composition window ≈1879–1882; record path `website/src/works/non-fiction/personal-papers/confession/Confession.md`) and written to `run-report.md`; use `--confirm-scope` instead if the reader wants to approve that contract once before detaching. The dive uses `extract_tei.py --choice=reg`, defers every human-judgment call to `needsReview`, and keeps the note `draft: true`.
+
+Launch mechanism (so harness permission prompts don't stall an away run) is per the reader's choice — the headless queue runner (`docs/research/lib/corpus-dive-queue.sh`, which spawns `claude -p "/corpus-dive … --auto"`), a project `.claude/settings.json` allow-list for the dive's write paths + tools, or running this session in accept-edits mode. Resolve this before walking away.
 
 Expected outputs in `docs/research/a-confession/`: `index.md` (with the work-dive standing sections, evidence-scaled), `dossier.yaml` (with `workRecord:` + `coverage:` blocks populated), `extracts/`, `visuals/` (only if an open-licensed image was found), and a `draft: true` dev-blog note under `website/src/posts/notes/`.
 
@@ -635,14 +658,19 @@ Expected: `docs/research/a-confession/index.html` generated and `docs/INDEX.html
 
 ---
 
-### Task C5: Evaluation gate (the pilot retrospective)
+### Task C5: Evaluation gate (deferred — self-assessment + reader retrospective)
 
-- [ ] **Step 1: Run the six-point check with the reader**
+- [ ] **Step 1: Confirm the dive self-assessed the six checks into `run-report.md`**
 
-Per spec §4 "Evaluation gate," produce a brief findings note covering: (1) did the composition-years sweep surface *the people around the work* as usable `person` entities, not just Tolstoy's reactions? (2) is the Russian society & church reception genuinely covered and source-confirmed? (3) did `workRecord:` populate `Confession.md`'s empty fields with provenance + confidence, accurate against the schema? (4) does the `coverage` ledger read honestly and work as a resume queue? (5) did `--choice=reg` extract cleanly with verify_quotes passing? (6) did the richer spine stay *bare* and evidence-scaled?
-Expected: a short note + any skill adjustments folded back into `SKILL.md`/`extract_tei.py` **before** the canon proceeds.
+Because the run is unattended, the gate is not live. Confirm the dive wrote a self-assessment block to `docs/research/a-confession/run-report.md` self-scoring: (1) did the composition-years sweep surface *the people around the work* as usable `person` entities, not just Tolstoy's reactions? (2) is the Russian society & church reception genuinely covered and source-confirmed? (3) did `workRecord:` populate `Confession.md`'s empty fields with provenance + confidence, accurate against the schema? (4) does the `coverage` ledger read honestly and work as a resume queue? (5) did `--choice=reg` extract cleanly with verify_quotes passing? (6) did the richer spine stay *bare* and evidence-scaled? Any concern must appear in `needsReview`.
+Run: `grep -ci "self-assessment\|evaluation" docs/research/a-confession/run-report.md`
+Expected: ≥ 1 (the self-assessment block is present).
 
-- [ ] **Step 2: Capture the reader's steer**
+- [ ] **Step 2: Deferred human gate (on the reader's return)**
+
+When the reader is back: they read the `run-report.md` self-assessment + `needsReview`, then any skill adjustments are folded back into `SKILL.md`/`extract_tei.py` **before the canon proceeds**. This is the human checkpoint, run asynchronously — it never blocked the unattended dive.
+
+- [ ] **Step 3: Capture the reader's steer**
 
 If the reader annotates the dive, save the interpretive steer to `docs/research/a-confession/annotations.md` (per the dive-annotations→ingestion convention) — guidance for later wiki ingestion, kept out of the bare dive.
 
