@@ -51,18 +51,32 @@ the canon is worked one at a time, not fired unattended).
 
 ### Lever 1 — Richer standing spine
 
-**Phase 1 — add a composition-years witness sweep.** Once the work's writing window is
-known (from the `works/` record + the scope contract), the dive **always** sweeps that
-window's diaries + letters for genesis and reaction, standardizing what `lords-prayer` §6
-("Reactions while he worked") did by hand. This runs alongside the always-on post-1880
-letter pass.
+**Phase 1 — add a composition-years witness sweep (high priority).** Once the work's
+writing window is known (from the `works/` record + the scope contract), the dive **always**
+sweeps that window's diaries + letters, standardizing what `lords-prayer` §6 ("Reactions
+while he worked") did by hand. This is a first-class surface, not an optional extra. It
+captures two things, not one:
+
+- **Tolstoy's own genesis & reaction** — the strain, urgency, and self-understanding while
+  writing (the lords-prayer §6 register).
+- **The people around the work** — whom Tolstoy **met, corresponded with, and talked to**
+  during the writing: visitors to Yasnaya Polyana / Moscow, key correspondents, conversation
+  partners, named readers of drafts. Each surfaces as a `person` entity in the dossier's
+  routing map (with `ingestionPriority`), feeding both the Genesis section and the wiki's
+  person universe. Diaries name visits and conversations; letters name the correspondence
+  network — sweep both for *people*, not only for the work's themes.
+
+This runs alongside the always-on post-1880 letter pass.
 
 **Phase 4 — standing `index.md` sections.** When the subject is a work, the synthesis carries
 the following sections, **each present only when the corpus supports it** (omit-if-empty;
 the omission is logged in the coverage ledger, §Lever 4):
 
 1. **Genesis & composition** — how/when/why the work was written, reconstructed from the
-   composition-year diaries + letters.
+   composition-year diaries + letters, **including the people around the work**: whom
+   Tolstoy met, corresponded with, and talked to while writing (visitors, key
+   correspondents, conversation partners, named draft-readers). Names the human network of
+   the writing period, each person carried into the dossier `entities` for the wiki.
 2. **What the work says** — a structural map of the text itself: keystone passages
    chapter-by-chapter, read from the work's **own** TEI (the work is read deeply as the
    primary source, not merely grepped for mentions). For a work dive this is the spine's
@@ -73,8 +87,13 @@ the omission is logged in the coverage ledger, §Lever 4):
 4. **Publication, censorship & translation** — first publication, ban, foreign first
    edition, Russian first legal printing, and the translation lineage (gospel §6–7
    formalized).
-5. **Reception & afterlife** — contemporary reception, influence, excommunication links,
-   controversy.
+5. **Reception & afterlife — the Russian society & church reaction first (high priority).**
+   How Russian society and the Orthodox Church responded to the writing: the critical and
+   public debate, the censorship apparatus, the reaction of clergy and the Holy Synod, and
+   the 1901 excommunication where the work bears on it — then the wider influence and
+   afterlife (foreign reception, later editions, downstream movements). Lead with the
+   Russian reaction; the church/state response is a named, always-checked concern, not a
+   sub-bullet of "controversy."
 6. **Place in the cluster** — map the work to its sibling works (the tetralogy framing) and
    to the project's prior dives, via the existing cross-link discipline.
 7. **The author's later verdict** — a standing micro-beat: Tolstoy's own later judgment on
@@ -163,6 +182,12 @@ coverage:                         # surfaces × status — derives index.md "Mat
     note: "1880 diary sparse; leans on letters"
   - surface: "Composition-year letters (Tom 63)"
     status: covered
+  - surface: "Interlocutors & circle during composition (who he met/talked to)"
+    status: partial
+    note: "diaries name visitors; correspondence network mapped to entities"
+  - surface: "Russian society & church reception"
+    status: not-covered
+    note: "critical/public debate, censorship, Synod, excommunication links"
   - surface: "Reception-period letters"
     status: not-covered
     note: "deferred to a later pass"
@@ -175,9 +200,10 @@ coverage:                         # surfaces × status — derives index.md "Mat
 ```
 
 The standard surface checklist for a work dive: **each redaction of the work**;
-**composition-year diaries**; **composition-year letters**; **reception-period letters**;
-**witness diaries** (S. A. Tolstaya et al.); **secondary scholarship**; **visual &
-manuscript record**. The `index.md` "Material not covered" section is **derived** from the
+**composition-year diaries**; **composition-year letters**; **interlocutors & circle during
+composition** (whom he met/talked to); **Russian society & church reception**;
+**reception-period letters**; **witness diaries** (S. A. Tolstaya et al.); **secondary
+scholarship**; **visual & manuscript record**. The `index.md` "Material not covered" section is **derived** from the
 `partial`/`not-covered` rows (the prose stays, but it is now backed by the structured
 ledger). Multi-session resume reads `coverage` first; the existing free-text `notCovered`
 list is kept as overflow for items that don't map to a standard surface.
@@ -213,11 +239,15 @@ list is kept as overflow for items that don't map to a standard surface.
 After editing `SKILL.md` + `extract_tei.py`, run `/corpus-dive` on **A Confession** (Исповедь,
 PSS Tom 23; dive slug `a-confession`; work id `confession`). It exercises every lever:
 
-- composition-years sweep (≈1879–1882);
+- composition-years sweep (≈1879–1882) — Tolstoy's own reactions **and** the people around
+  the work: whom he met, corresponded with, and talked to while writing (surfaced as
+  `person` entities);
 - redaction & textual history of Исповедь (its multiple redactions);
 - publication/censorship (banned in Russia; first published abroad — Geneva/Elpidin, 1884;
   legally in Russia 1906) — to be confirmed against the corpus + a light scholarship sweep,
   not asserted from memory;
+- **Russian society & church reception** — the critical/public response and the Orthodox
+  Church's reaction (censorship, clergy, the Synod), confirmed rather than assumed;
 - the `workRecord:` field-fill against the empty `Confession.md`;
 - the `coverage:` ledger.
 
