@@ -257,6 +257,33 @@ Output: `docs/research/a-confession/` (`index.md`, `dossier.yaml` with `workReco
 `draft: true` dev-blog note). This is also the live proof that the new spine degrades
 correctly and the extractor flag works on a real 1880s text.
 
+### Evaluation gate (after A Confession, before the rest of the canon)
+
+The *A Confession* dive is a pilot, not just a first deliverable: before rolling the refined
+skill forward to *What I Believe* and the rest of §5, hold a short **evaluation /
+retrospective** with the reader. It checks whether the four levers actually delivered and
+feeds any fixes back into `SKILL.md` / `extract_tei.py` first — so a flaw is corrected once,
+not repeated across a dozen dives. The evaluation asks, concretely:
+
+- **Composition-years + interlocutors** — did the sweep surface *the people around the work*
+  (visitors, correspondents, conversation partners), each as a usable `person` entity, and
+  not just Tolstoy's own reactions?
+- **Russian society & church reception** — is that reaction genuinely covered, led-with, and
+  corpus/source-confirmed rather than assumed?
+- **Work-record field-fill** — did `workRecord:` populate the empty `Confession.md` fields
+  with provenance + confidence, and are the proposals accurate against the record schema?
+- **Coverage ledger** — does it read honestly (no `covered` that is really `partial`), and
+  is it usable as a resume queue?
+- **Extractor** — did `--choice=reg` extract the 1880s text cleanly, with `verify_quotes.py`
+  passing on the result?
+- **Voice & length** — did the richer spine stay *bare* and evidence-scaled, or did standing
+  sections get padded where the corpus was thin?
+
+Output of the gate: a brief findings note + any adjustments to the skill, plus the reader's
+`annotations.md` steer on the A-Confession dive (the usual ingestion-guidance loop). Only
+after that does the canon proceed. The gate is a checkpoint, not a deliverable to
+over-engineer — keep it to what changes the next dive.
+
 ---
 
 ## 5. The Prophet-period canon (reference checklist)
