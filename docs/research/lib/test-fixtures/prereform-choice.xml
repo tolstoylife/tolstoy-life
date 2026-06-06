@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title type="main">Pre-reform choice fixture</title></titleStmt>
+      <publicationStmt><p>test fixture</p></publicationStmt>
+      <sourceDesc><p>synthetic — for test-extract-tei.sh</p></sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>Молитва <choice><orig>стараго</orig><reg>старого</reg></choice> образца и <choice><orig>новаго</orig><reg>нового</reg></choice> завета.</p>
+    </body>
+  </text>
+</TEI>
