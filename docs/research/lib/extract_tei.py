@@ -53,8 +53,14 @@ def normalise_paragraph(p, choice_mode="legacy"):
         # When we hit <choice> we'll process its children explicitly and skip recursion.
         # Easier approach: only collect text from <corr>, skip <sic>; skip <note> bodies entirely.
         if tag == "note":
-            # Skip note text — these are footnote bodies, not Tolstoy's prose.
+            # Skip note text — these are footnote bodies, not Tolstoy's prose —
+            # but PRESERVE the note's .tail: the prose that follows a footnote
+            # anchor is Tolstoy's own, and lxml's .clear() would wipe it (the
+            # cause of silently-dropped sentences after inline notes in letters,
+            # diaries, and the works themselves).
+            tail = node.tail
             node.clear()  # destructive but we don't reuse the tree
+            node.tail = tail
             continue
 
     # Re-iterate cleanly: prefer <corr> over <sic>, drop <note>.
