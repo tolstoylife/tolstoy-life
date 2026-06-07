@@ -183,8 +183,8 @@ evidence:
   addressee: null
   localPdf: null
   extract: extracts/v50_103_104_1889_07_04.txt
-  quoteRu: Был разговор с А. М. Кузминским о христианстве. Я сказал, что христиане только те, которые кротки, смиренны, терпеливы, как Христос, т. е. non resistant.¹ которые не признают этого, признают по вере убийство, казни, суды, не имеют права называть себя христианами.
-  quoteEn: There was a conversation with A. M. Kuzminsky about Christianity. I said that Christians are only those who are meek, humble, patient, like Christ — i.e. non-resistant; that those who do not acknowledge this... have no right to call themselves Christians. (working English)
+  quoteRu: Был разговор с А. М. Кузминским о христианстве. Я сказал, что христиане только те, которые кротки, смиренны, терпеливы, как Христос, т. е. non resistant.¹ А что те, которые не признают этого, признают по вере убийство, казни, суды, не имеют права называть себя христианами.
+  quoteEn: There was a conversation with A. M. Kuzminsky about Christianity. I said that Christians are only those who are meek, humble, patient, like Christ — i.e. non-resistant. And those who do not acknowledge this... have no right to call themselves Christians. (working English)
   significance: 'A recorded conversational reply (the dive''s exact frame): asked about Christianity, he restricts the name to the non-resistant and denies it to the rest.'
   facsimile: null
 - id: diary_1897_strength_not_weakness
