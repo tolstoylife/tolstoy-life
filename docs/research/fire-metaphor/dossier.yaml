@@ -900,14 +900,15 @@ evidence:
     localPdf: primary-sources/jubilee-edition/vol20/vol20.pdf
     extract: extracts/v54_193_196_1903_11_14.txt
     quoteRu: >-
-      душа есть божеская искра, сама истина.
+      душа человека есть божеская искра, сама истина.
     quoteEn: >-
-      the soul is a divine spark, the truth itself. (working English)
+      the soul of man is a divine spark, the truth itself. (working English)
     significance: >-
       The soul as a divine spark that IS truth; the spiritual task is only to clear away what darkens
-      it. (The surrounding entry is extractor-degraded; this clause is clean — see needsReview.)
-      PDF-collated (vol20, printed p.194): the print reads «потому что душа человѣка есть божеская
-      искра, сама истина» — the TEI extract drops «человѣка» (the soul OF MAN).
+      it. PDF-collated (vol20, printed p.194): the print reads «потому что душа человѣка есть божеская
+      искра, сама истина». «человѣка» (the soul OF MAN) is a pre-reform <choice> pair the older
+      extractor dropped; it is now resolved to modern «человека» by extract_tei.py --choice=reg, so
+      quoteRu carries it verbatim.
     facsimile: null
 
   # ===== G. THE METAPHOR IN THE FICTION + CIRCLE OF READING ========================
@@ -1472,7 +1473,7 @@ needsReview:
       «То тамъ, то здѣсь среди тьмы теперь загораются искры. Я ихъ вижу и радуюсь»; the TEI extract
       drops «тамъ… здѣсь» and «ихъ»; addressee corrected S. A. Tolstaya → V. G. Chertkov (Tom 85 is the
       Chertkov correspondence). (3) diary-1903-divine-spark (Tom 54 → local vol20.pdf, printed p.194) — print «…потому что
-      душа человѣка есть божеская искра, сама истина»; the TEI drops «человѣка». (4) The 1896 «блюдение
+      душа человѣка есть божеская искра, сама истина»; «человѣка» (a pre-reform <choice> pair the old extractor dropped) is now resolved by --choice=reg, so quoteRu carries «человека» — RESOLVED. (4) The 1896 «блюдение
       огня» entry (Tom 53 → local vol19.pdf, printed p.121) — the TEI extract garbles it; the print has a clean, strong
       fire passage: «…можно сравнить с блюдением огня, данного с неба и зажженного. Дело мое только в
       том, чтобы блюсти и разжигать в себе этот огонь, не тратя материала этого огня…» — a good
