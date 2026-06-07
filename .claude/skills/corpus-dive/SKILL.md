@@ -16,6 +16,28 @@ Primary-source research on **one theme** across the local Tolstoy corpus. Produc
 coordinated, ingestion-ready outputs. Modeled on `docs/research/copyright-renunciation/`.
 Full design + rationale: `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.
 
+**The dive prepares the material; it never populates the vault.** Everything below gathers, cites,
+and structures evidence into `docs/research/<slug>/` — including the dossier's `entities` routing
+map and its `workRecord` proposals, which scope the wiki pages and works records this research
+*should* become. But the dive stops at the dossier: it never creates `website/src/wiki/**`
+pages or `website/src/works/**` records from that material. Turning the dossier into vault pages is
+a separate, later, human-in-the-loop step — the **LLM wiki ingestion method** — which reads the
+finished dive and writes the pages itself. So keep gathering and scoping everything; the dossier is
+the *plan and the pointer*, ingestion is the *writer*. Proposing a page is not creating it.
+
+## Phases at a glance
+
+| Phase | Produces |
+|---|---|
+| 0 · Scope | the scoping contract — question, corpus surface, keyword set, time-box |
+| 1 · Sweep | ranked candidate hits (TEI id + snippet + why-relevant) |
+| 2 · Extract & verify | verbatim extracts, working-EN translations, the visual-materials sweep |
+| 3 · Scholarly context | the `scholarship` layer + one bounded gap-fill loop |
+| 4 · Synthesize | `index.md`, `dossier.yaml`, the draft note, rendered `index.html` |
+| 5 · Verify | a clean verifier verdict (separate pass; never self-approve) |
+| 6 · Research handoff | the work-orders + coverage summary (`run-report.md` under `--auto`) |
+| 7 · Compact session | a `handoff`-skill document for the next agent |
+
 ## Arguments
 
 Parse `{{ARGUMENTS}}`:
@@ -33,13 +55,16 @@ Parse `{{ARGUMENTS}}`:
   `dossier.yaml`, `index.md`, `index.html`, `run-report.md`, `session-log.md`), `docs/research/lib/`,
   `docs/research/_batch-<date>.md`, and `website/src/posts/notes/`.
 - **NEVER write/modify:** `primary-sources/**`, or anything under `website/` except
-  `website/src/posts/notes/`. **No vault writes** — ingestion is a separate human step.
+  `website/src/posts/notes/`. **No vault writes** — the dive never creates `website/src/wiki/**`
+  pages or `website/src/works/**` records, even when the dossier has fully scoped them. That
+  creation belongs to the separate LLM wiki ingestion method (see the intro); building the
+  `entities` / `workRecord` dossier layers is *planning the pages*, never *writing them*.
 
 ## Mode
 
 - **Interactive (default):** confirm the scoping contract at Phase 0; escalate genuine editorial
   judgment to the user.
-- **Autonomous (`--auto`):** auto-derive the scope and proceed; **never call `AskUserQuestion`**;
+- **Autonomous (`--auto`):** auto-derive the scope and proceed; never call `AskUserQuestion`;
   any decision needing a human goes to the dossier's `needsReview` and the run is not blocked;
   honor the time-box; save progress incrementally; terminate cleanly; write `run-report.md`.
   `--confirm-scope` adds exactly one approval (the contract) before detaching. An autonomous run
@@ -51,8 +76,8 @@ composition/interlocutor sweep, the `workRecord:` fill, the standing sections, a
 `coverage:` ledger all run with no human in the loop; any uncertain field, attribution, or
 judgment call goes to `needsReview`, never into the prose.
 
-The post-pilot **evaluation gate is not run live under `--auto`** — the dive instead records a
-**self-assessment** of its checks (written into `run-report.md` at Phase 6 handoff), each
+The post-pilot evaluation gate is not run live under `--auto` — the dive instead records a
+self-assessment of its checks (written into `run-report.md` at Phase 6 handoff), each
 self-scored, with concerns routed to `needsReview`:
 - Did the interlocutor sweep yield people?
 - Is the Russian society/church reception covered?
@@ -82,10 +107,10 @@ findings still unresolved after escalation go to `needsReview`, never into the p
 
 **Subagent I/O — write to a file, return a line.** Subagent final messages can be truncated by the
 harness to a terse stub ("Complete.") that drops the whole deliverable. So every dispatched
-sub-step (sweep, deep-read, commentary mine, scholarship, visuals channel, verifier) must **write
-its structured deliverable to a named file** under `docs/research/<slug>/` (e.g.
-`extracts/_sweep_<area>.md`, `extracts/_deepread.md`, `_verifier-report.md`) and **return only a
-confirmation line** (path + count/verdict); read the files back in the main context. If a subagent
+sub-step (sweep, deep-read, commentary mine, scholarship, visuals channel, verifier) must write
+its structured deliverable to a named file under `docs/research/<slug>/` (e.g.
+`extracts/_sweep_<area>.md`, `extracts/_deepread.md`, `_verifier-report.md`) and return only a
+confirmation line (path + count/verdict); read the files back in the main context. If a subagent
 already ran and returned only a stub, re-dispatch it (SendMessage) asking it to persist its
 in-context work to a file. Remove purely-intermediate working files before the Phase-6 commit (keep
 `extracts/` PD-only).
@@ -93,8 +118,8 @@ in-context work to a file. Remove purely-intermediate working files before the P
 ## Phase 0 — Scope (front-gate)
 
 Draft a **scoping contract**: (1) restate the precise question; (2) corpus surface — genres
-(diaries / letters / works / notebooks / commentary) + date-range, **defaulting to the post-1880
-"Prophet" period with letters/correspondence first-class**; (3) layered **Russian** keyword set —
+(diaries / letters / works / notebooks / commentary) + date-range, defaulting to the post-1880
+"Prophet" period with letters/correspondence first-class; (3) layered Russian keyword set —
 high-confidence anchors → broader combinable terms, with orthographic / pre-reform variants;
 (4) stop-condition / time-box; (5) sweep mode — inline (narrow) vs fan-out (broad).
 Interactive: show the contract and confirm. `--auto`: record the scope contract (written in full to
@@ -107,8 +132,8 @@ misfires or returns duplicate/empty answers, fall back to the framing the user a
 than re-firing it. The contract still gets written down; it just isn't gated behind a flaky picker.
 
 **Work-subject dives.** When the subject is a *single work* (not a scattered theme), the
-scope contract additionally pins: the **PSS Tom(s)** holding the work and each of its
-**redactions**; the **composition window** (writing start→finish, from the `works/` record +
+scope contract additionally pins: the PSS Tom(s) holding the work and each of its
+redactions; the composition window (writing start→finish, from the `works/` record +
 corpus); and the path to the work's `works/` record. These drive the composition-years sweep
 (Phase 1), the deep read (Phase 2), the standing spine (Phase 4), and the `workRecord:` fill
 (dossier). Everything below degrades gracefully for a pure theme: a spine section with no
@@ -119,15 +144,15 @@ evidence is dropped and logged in the `coverage` ledger.
 - **Inline:** grep `primary-sources/tolstoydigital-TEI/texts/` with the keyword set; capture
   candidate hits with their TEI id (the filename encodes Tom — the PSS volume number — and, for
   diaries, the entry date).
-- **Fan-out (broad themes):** partition the corpus — diaries by decade, **letters by Tom-range
-  with a dedicated Prophet-period pass**, works — and dispatch parallel subagents that each return
+- **Fan-out (broad themes):** partition the corpus — diaries by decade, letters by Tom-range
+  with a dedicated Prophet-period pass, works — and dispatch parallel subagents that each return
   structured candidate hits (TEI id, snippet, why-relevant). Dedupe/rank in the main context.
-- A **post-1880 letter pass always runs**, regardless of mode.
+- A post-1880 letter pass always runs, regardless of mode.
 
 **Composition-years witness sweep (high priority — work dives).** Once the writing window is
-known, always sweep that window's diaries + letters for two things, not one: (1) **Tolstoy's
-own genesis & reaction** — the strain, urgency, and self-understanding while writing; (2) **the
-people around the work** — whom he met, corresponded with, and talked to during composition
+known, always sweep that window's diaries + letters for two things, not one: (1) Tolstoy's
+own genesis & reaction — the strain, urgency, and self-understanding while writing; (2) the
+people around the work — whom he met, corresponded with, and talked to during composition
 (visitors, key correspondents, conversation partners, named draft-readers). Diaries name the
 visits and conversations; letters name the correspondence network — sweep both for *people*,
 surfacing each as a `person` entity (with `ingestionPriority`) in the dossier routing map. This
@@ -141,25 +166,25 @@ runs alongside the always-on post-1880 letter pass and feeds the Genesis section
   in the holding Tom(s) as the primary source: a structural pass for the keystone passages,
   chapter by chapter, not only a grep for theme hits. This is the raw material for the *What the
   work says* section.
-- **Pre-reform orthography:** run `extract_tei.py` with **`--choice=reg`** on any pre-1918 text
+- **Pre-reform orthography:** run `extract_tei.py` with `--choice=reg` on any pre-1918 text
   (every Prophet-period work qualifies) — it resolves `<choice><orig>/<reg>` spelling pairs to
   modern orthography. Without the flag the legacy default drops those pairs and guts the text (it
   now warns on stderr). Use `--choice=orig`/`both` only for deliberate orthographic collation.
   This supersedes the per-dive `_reg_extract.py` helper.
 - Cross-check finalists against the printed PSS PDF (`pdftoppm` @ 220 dpi); if the PDF for the
-  relevant Tom is not held locally, note the gap in `needsReview` and proceed. For the **single
-  keystone citation**, save the page image to `extracts/`. Caution: the local
+  relevant Tom is not held locally, note the gap in `needsReview` and proceed. For the single
+  keystone citation, save the page image to `extracts/`. Caution: the local
   `primary-sources/archive-org/.../Complete Works/<N>.pdf` set is **Leo Wiener's English edition**
   (Boston 1904), *not* the Russian PSS — its volume numbers don't map to PSS Toms (*A Confession* is
   Wiener vol. XIII, not 23). A page from it is a PD *English* facsimile; a Russian first-edition or
   manuscript facsimile needs another source (GTM / RGB / émigré scans), usually `needsReview`.
-- Produce **working-English** translations, explicitly labelled "(working English)".
+- Produce working-English translations, explicitly labelled "(working English)".
 - Run the **visual-materials sweep** (below) in parallel.
 
 ### Visual-materials sweep
 
 Check, in order: local `primary-sources/`; State Tolstoy Museum collection
-(tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru); **Wikimedia Commons** (many
+(tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru); Wikimedia Commons (many
 late-period Tolstoy photographs are PD, including Chertkov's own); tolstoy.ru; émigré scan
 archives (vtoraya-literatura.com, imwerden.de). For each item record provenance, holding,
 access, rights, `licence`, and `usable`.
@@ -170,11 +195,11 @@ plus a handful per major entity, single channel (usually Commons); the default f
 per source channel, each told to *err toward more*, then dedup. Record the chosen intensity in the
 Method section / run-report.
 
-**Dedup contract (when fanning out).** Give each channel a **non-overlapping territory** so they
+**Dedup contract (when fanning out).** Give each channel a non-overlapping territory so they
 don't re-fetch the same picture — e.g. by *holding* (Commons vs Canadian archives vs Russian
 museums) and by *subject area*, and tell each channel which subjects another owns. Filename prefixes
-(`commons-`, `canada-`, `russia-`) prevent path collisions but **not content duplication**; so after
-the channels return, run a **dedup-by-subject pass in the main context** before writing the dossier
+(`commons-`, `canada-`, `russia-`) prevent path collisions but not content duplication; so after
+the channels return, run a dedup-by-subject pass in the main context before writing the dossier
 `visuals` block — one canonical entry per distinct image, noting cross-channel overlap rather than
 listing the same photo twice. (A heavy sweep can easily land 2× the files for 1× the subjects.)
 
@@ -202,14 +227,14 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
 After the primary evidence is locked (Phase 2), add a *secondary* layer: web-search conventional
 Tolstoy scholarship + related facts, triangulate the dive's findings against the received view, and
 fill knowledge gaps. **Research-prototype rigor:** primary-source citations stay byte-faithful;
-secondary/scholarly claims are drafted from knowledge + web and **cited only when there is a clear
-source** (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
+secondary/scholarly claims are drafted from knowledge + web and cited only when there is a clear
+source (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
 `[^n]` footnotes), with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
 
 **Ground in the project before the mainstream.** The dive's spine is the primary record — the words
-of Tolstoy and the people he trusted (Biryukov, Chertkov) — and the project's **own prior dives**
+of Tolstoy and the people he trusted (Biryukov, Chertkov) — and the project's own prior dives
 (scan `docs/research/` for the relevant ones, e.g. `tolstoyanism`, `crisis`). Mainstream and academic
-scholarship is a **contrast to read critically**, never a baseline the dive "confirms": treat it with
+scholarship is a contrast to read critically, never a baseline the dive "confirms": treat it with
 skepticism, attribute it, and watch for the subtle framing/word-choice that softens or inverts
 Tolstoy's message — the Sofia-centred "moralistic dogmatist who tried to impoverish his family" frame
 (Popoff; *The Last Station*) is the worked example. Don't let contested movement-labels ("Tolstoyan")
@@ -297,7 +322,7 @@ context" prose section of `index.md` is composed in Synthesize.
    evidence:        # flat citation ledger
      - { id, genre, pssTom, pages, date, addressee, localPdf, extract, quoteRu, quoteEn,
          significance, facsimile }
-   entities:        # ingestion routing map → wiki
+   entities:        # ingestion routing map → wiki (a plan for the ingestion method to act on later; the dive writes no pages)
      - { name, wikiType, wikilinkTarget, vaultStatus, role, sources, evidenceRefs,
          ingestionPriority, dependsOn }   # last two optional — turn the map into a plan
    visuals:         # → images section
@@ -364,14 +389,14 @@ deterministic one. Fix any mismatch (or, if the divergence is a genuine source v
 until it passes.
 
 Then dispatch a **verifier subagent (opus)** in a fresh context for the judgement-level checks the
-script cannot make. It checks: a sample of citations re-derived from TEI/PDF for **byte-fidelity**
-(belt-and-braces on top of `verify_quotes.py`); every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
-*attributed* (not asserted) and a named source / References-list entry backs every claim — no
-byte-fidelity is demanded on secondary sources (prototype rigor); `scholarship.triangulation`
-entries reference valid `evidenceRef`s and use a valid `relation`**; dossier
+script cannot make. It checks: a sample of citations re-derived from TEI/PDF for byte-fidelity
+(belt-and-braces on top of `verify_quotes.py`); every primary `index.md` claim is source-anchored;
+scholarly/secondary claims are *attributed* (not asserted) and a named source / References-list
+entry backs every claim — no byte-fidelity is demanded on secondary sources (prototype rigor);
+`scholarship.triangulation` entries reference valid `evidenceRef`s and use a valid `relation`; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
-editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
-rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
+editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and no
+rights-reserved/unknown image was committed or placed in `website/src/` (downloads into the
 git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier).
 
 For **work dives** it additionally checks: `workRecord` proposals are evidence-anchored (no
@@ -383,7 +408,7 @@ Iterate until
 the verdict is clean; in `--auto`, if it cannot converge after a few iterations, record the open
 items in `needsReview` and conclude the run rather than blocking indefinitely.
 
-## Phase 6 — Handoff
+## Phase 6 — Research handoff
 
 Produce a summary: what was covered, the `notCovered` queue, the **entity work-order** (which wiki
 pages this dive feeds — present the `missing`/`stub` entities in `ingestionPriority`-then-`dependsOn`
@@ -392,6 +417,20 @@ acquire or request), the **work-record work-order** (the `workRecord` proposed f
 dossier is the pointer, not the writer. **Interactive:** print it. **`--auto`:** write it to
 `docs/research/<slug>/run-report.md` (scope contract, coverage, `notCovered`, `needsReview`,
 models used + rough cost note, output paths, the **evaluation self-assessment** (work dives)).
+
+## Phase 7 — Compact the session (`handoff` skill)
+
+As the **final step of every dive**, invoke the native `handoff` skill to compact the whole session
+into a handoff document. This is deliberately separate from Phase 6: Phase 6 hands off the
+*research* (the work-orders, coverage ledger, and `notCovered` queue — what the later ingestion step
+consumes), whereas the `handoff` skill hands off the *session* (the conversation state, the
+decisions made, and the open threads — what a fresh agent needs to resume without re-reading the
+transcript). The two are complementary, not redundant: one points at the artifacts on disk, the
+other carries the context that lives only in this conversation.
+
+Run it in both modes. Under `--auto` it complements `run-report.md` (the report is the durable
+record; the handoff is the resume primer) rather than replacing it. This is the dive's last action —
+everything else is finished before the session is compacted.
 
 ## Multi-session dives
 
