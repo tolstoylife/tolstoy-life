@@ -1,0 +1,1022 @@
+topic:
+  slug: 1900-the-slavery-of-our-times
+  title: "The Slavery of Our Times (Рабство нашего времени)"
+  question: >-
+    Read Tolstoy's 1900 economic/social treatise as a single work: its argument
+    (modern wage labour is a new form of slavery, continuous with serfdom and
+    chattel slavery — "one chain is released only when another holds firm"; the
+    three causes are landlessness, taxes, and manufactured needs; slavery rests
+    on laws, laws on organized violence, violence on government; the remedy is
+    each person's withdrawal from participation in government violence); its
+    genesis at the Moscow–Kazan goods station, redactions, ban and translation
+    lineage, reception, and place in the late anti-state / economic cluster.
+  date: "2026-06-07"
+  period: "Prophet period (post-1880)"
+  corpusSurface: "works (PSS Tom 34: work pp.144–199, variants pp.491–502; Tom 90 variants pp.169–173) + editorial history (Tom 34 pp.563–567) + composition-window diary (Tom 54, 1900) + letters (Toms 72, 88) + the La Boétie Circle-of-Reading intertext (Toms 41, 42); light visuals sweep"
+  dateRange: "composition 1899-12-27 (OS, first sketch «Самый дешевый товар») → 1900-07-30 (OS, sent to Chertkov); afterword + epigraphs ~Aug, corrections Sept 1900. First publication 1900 (England); full Russian publication 1917"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE — flat citation ledger. quoteRu is byte-faithful to the named extract
+# (verify_quotes.py asserts this). quoteEn is a labelled working translation.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ---- Epigraphs (PSS Tom 34 pp.144–145) ----
+  - id: W1
+    genre: works
+    pssTom: 34
+    pages: "144 (epigraph)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Система, по которой действуют все народы мира, основана на самом грубом обмане, на самом глубоком невежестве или на соединении обоих"
+    quoteEn: "(working English) The system on which all the peoples of the world act is founded on the grossest deception, on the deepest ignorance, or on a combination of the two."
+    significance: "The Robert Owen epigraph (taken, Tolstoy told Maude, from Morrison Davidson, The Annals of Toil, 1899); sets the frame that the existing economic order is a system that can only produce evil."
+    facsimile: ""
+  - id: W2
+    genre: works
+    pssTom: 34
+    pages: "145 (epigraph)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "не работа разделена, но люди разделены на частицы людей, разломлены на маленькие кусочки, на крошки"
+    quoteEn: "(working English) it is not labour that is divided, but men — divided into fragments of men, broken into small pieces, into crumbs."
+    significance: "The Ruskin epigraph (Stones of Venice), the division-of-labour passage; the keynote that the wrong is the breaking-up of the human being, not merely low pay or long hours."
+    facsimile: ""
+
+  # ---- Introduction (signed 28 June 1900) ----
+  - id: W3
+    genre: works
+    pssTom: 34
+    pages: "146 (Introduction)"
+    date: "1900-06-28 (OS, signed)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Почти пятнадцать лет тому назад перепись населения в Москве вызвала во мне ряд мыслей и чувств, которые я, как умел, выразил в книге, озаглавленной: «Что же нам делать?»"
+    quoteEn: "(working English) Almost fifteen years ago the Moscow census aroused in me a series of thoughts and feelings which I expressed, as best I could, in a book entitled What Then Must We Do?"
+    significance: "The work declares itself a continuation of the 1882–86 What Then Must We Do? — the same answers, reached by new arguments. (The editors corrected Tolstoy's draft '10 years' to 'fifteen.')"
+    facsimile: ""
+  - id: W4
+    genre: works
+    pssTom: 34
+    pages: "146 (Introduction)"
+    date: "1900-06-28 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Основная мысль, как той книги, так и этой статьи, — отрицание насилия."
+    quoteEn: "(working English) The basic thought, both of that book and of this article, is the negation of violence."
+    significance: "The work's own statement of its thesis — non-resistance / the negation of violence — grounded, the Introduction says, in the Gospel (the «око за око» epigraph)."
+    facsimile: ""
+
+  # ---- I–II: the reportage and society's indifference ----
+  - id: W5
+    genre: works
+    pssTom: 34
+    pages: "150 (ch. I)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "за деньги, дающие только пропитание, люди, считающиеся свободными, находят нужным отдаваться в такую работу, в которую во времена крепостного права ни один самый жестокий рабовладелец не послал бы своих рабов"
+    quoteEn: "(working English) for money that gives only subsistence, men considered free find it necessary to give themselves up to work to which, in the time of serfdom, no cruellest slaveholder would have sent his slaves."
+    significance: "The keystone of the opening reportage on the Moscow–Kazan goods-station loaders (36–37-hour shifts): wage 'freedom' is harder than serfdom. He adds that no cab-owner would so use a horse, which costs money."
+    facsimile: ""
+  - id: W6
+    genre: works
+    pssTom: 34
+    pages: "152 (ch. II)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Что же за удивительное затмение находит на нас, как только дело касается тех миллионов рабочих, которые со всех сторон медленно и часто мучительно убиваются на тех работах, которыми мы пользуемся для своих удобств и удовольствий?"
+    quoteEn: "(working English) What strange eclipse comes over us the moment it concerns those millions of workers who, on all sides, are slowly and often painfully killed at the labour we use for our comforts and pleasures?"
+    significance: "The 'astonishing eclipse' (удивительное затмение) of the educated conscience — humane to animals, indifferent to the workers dying for our convenience (the silk factory of 3,000 women opposite his house; English life expectancy 55 vs 29 for unhealthy trades)."
+    facsimile: ""
+
+  # ---- III–V: justification by 'science'; the Marx expropriation quote ----
+  - id: W7
+    genre: works
+    pssTom: 34
+    pages: "154 (ch. III)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Новые объяснения эти явились в виде науки — политической экономии, которая утверждает, что она нашла законы, по которым распределяются между людьми труд и пользование его произведениями."
+    quoteEn: "(working English) These new explanations appeared in the form of a science — political economy — which asserts that it has discovered the laws by which labour and the enjoyment of its products are distributed among men."
+    significance: "The structural move of the work: political economy now does what theology once did — supplies a 'law' (supply and demand, capital, rent, wages) that lets one class live calmly off another."
+    facsimile: ""
+  - id: W8
+    genre: works
+    pssTom: 34
+    pages: "157–158 (ch. IV)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Сельское население сначала насильственно обезземеливали, говорит К. Маркс, изгоняли и доводили до бродяжничества, а затем, в силу жестоких законов, его пытали, клеймили каленым железом, наказывали плетьми, с целью подчинить требованиям наемного труда."
+    quoteEn: "(working English) The rural population was first forcibly deprived of its land, Marx says, driven out and reduced to vagrancy, and then, by cruel laws, tortured, branded with hot iron, and flogged, in order to subject it to the demands of wage labour."
+    significance: "The one Marx citation kept in the final text (Capital vol. I, ch. XXIV, on the enclosure and bloody-vagrancy laws). Tolstoy read Capital (annotated Russian copy in the Yasnaya Polyana library); he uses Marx's history but rejects the Marxist remedy."
+    facsimile: ""
+
+  # ---- VI–VII: the untenability of the socialist ideal; culture or freedom ----
+  - id: W9
+    genre: works
+    pssTom: 34
+    pages: "166 (ch. VI)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Очевидно, всем будет приятнее заниматься сенокосом или рисованием, чем быть кочегаром или очистителем клоаков."
+    quoteEn: "(working English) Obviously everyone will find it pleasanter to mow hay or draw than to be a stoker or a cleaner of cesspits."
+    significance: "Ch. VI ('The Untenability of the Socialist Ideal') — who, in a free society without compulsion, will do the foul work? In the Free Word edition the Chertkovs altered «сенокосом» to «науками» (sciences); the PSS restores Tolstoy's «сенокосом» (hay-mowing). See [christian-communism-socialism] for the section's socialist-critique core (do not duplicate)."
+    facsimile: ""
+  - id: W10
+    genre: works
+    pssTom: 34
+    pages: "172 (ch. VII)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "пропади они пропадом, и не только они, но и железные дороги и все фабричные ситцы и сукна в мире, если для их производства нужно, чтобы 99/100 людей были в рабстве и тысячами погибали на работах, нужных для производства этих предметов"
+    quoteEn: "(working English) let them perish — and not only they, but the railways and all the factory cottons and cloths in the world — if their production requires that 99/100ths of men be in slavery and perish by the thousand at the labour needed to produce these objects."
+    significance: "Ch. VII ('Culture or Freedom?') — the keystone choice: not fiat cultura — pereat justitia but fiat justitia — pereat cultura. Yet, he adds, useful culture will not perish: freed of slavery, technique can be turned to not destroying lives."
+    facsimile: ""
+
+  # ---- VIII: slavery exists among us ----
+  - id: W11
+    genre: works
+    pssTom: 34
+    pages: "176 (ch. VIII)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "все люди нашего времени разделяются на рабов и господ — так же определенно, как, несмотря на сумерки, разделяются сутки на день и ночь"
+    quoteEn: "(working English) all men of our time are divided into slaves and masters — as definitely as, despite the twilight, the day is divided into day and night."
+    significance: "Ch. VIII — slavery exists among us, unrecognised as serfdom was at the end of the 18th century. The stranger-from-another-country device divides society into a small clean-handed leisured class and the labouring mass."
+    facsimile: ""
+  - id: W12
+    genre: works
+    pssTom: 34
+    pages: "180 (ch. VIII)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Одно средство порабощения отменяется только тогда, когда другое уже заменило его."
+    quoteEn: "(working English) One means of enslavement is abolished only when another has already replaced it."
+    significance: "The structural thesis (also the genesis-diary insight, D2): emancipation from serfdom and chattel slavery only swapped an old form of slavery for a firmer, money form — abolished once landlessness and taxes held the people fast."
+    facsimile: ""
+
+  # ---- IX: the three causes — land, taxes, manufactured needs (Henry George) ----
+  - id: W13
+    genre: works
+    pssTom: 34
+    pages: "182 (ch. IX)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Можно себе представить по проекту Генри Джорджа освобождение земли от права личной собственности и потому уничтожение первой из причин, загоняющих людей в рабство — недостатка земли."
+    quoteEn: "(working English) One can imagine, by Henry George's project, the freeing of the land from the right of private property, and thus the abolition of the first of the causes driving men into slavery — the lack of land."
+    significance: "Ch. IX names the three causes of slavery — landlessness, taxes, and the manufactured 'needs' of luxury. Henry George could remove the first; but the third — the seductions of new needs — is, he says, the firmest and most ineradicable."
+    facsimile: ""
+  - id: W14
+    genre: works
+    pssTom: 34
+    pages: "183 (ch. IX)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "условие это составляет самую твердую, неустранимую причину рабства"
+    quoteEn: "(working English) this condition [the manufactured needs of luxury] constitutes the firmest, most ineradicable cause of slavery."
+    significance: "Why neither Henry George's land reform nor the abolition of taxes can free the worker: the appetite for new needs, caught from the rich, re-sells his freedom. The most original of the three causes, and the one 'science' does not recognise."
+    facsimile: ""
+
+  # ---- X–XI: the three laws; reform only moves the chains ----
+  - id: W15
+    genre: works
+    pssTom: 34
+    pages: "190 (ch. XI)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Происходит нечто подобное тому, что делает тюремщик, перекладывая цепи пленника с шеи на руки, с рук на ноги, или снимая их, но утверждая запоры и решетки."
+    quoteEn: "(working English) Something happens like what a jailer does, shifting a prisoner's chains from neck to hands, from hands to feet, or removing them but strengthening the bolts and bars."
+    significance: "Ch. XI — every reform (abolishing taxes, George's land-rent, the socialists' socialisation of the means of production) merely replaces one slavery-making law with another. The socialists' project must add a law compelling labour — 'slavery in its primal form' (cross-link [christian-communism-socialism] for that passage)."
+    facsimile: ""
+
+  # ---- XII–XIII: laws = organized violence; government ----
+  - id: W16
+    genre: works
+    pssTom: 34
+    pages: "194 (ch. XII)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Узаконения — это правила, устанавливаемые людьми, распоряжающимися организованным насилием, за неисполнение которых неисполняющие подвергаются побоям, лишению свободы и даже убийству."
+    quoteEn: "(working English) Laws are rules established by people who command organized violence, for the non-fulfilment of which the non-fulfillers are subjected to beatings, deprivation of freedom, and even killing."
+    significance: "Ch. XII — Tolstoy's definition of law, stripped of the jurists' fog. Laws are not the will of the people but the will of whoever commands organized violence."
+    facsimile: ""
+  - id: W17
+    genre: works
+    pssTom: 34
+    pages: "197 (ch. XIII)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Но организованное насилие есть правительство."
+    quoteEn: "(working English) But organized violence is government."
+    significance: "Ch. XIII completes the chain: misery → slavery → laws → organized violence → government. The brick-column image answers 'can we live without government?' — that a structure collapses at a touch proves it badly built, not necessary."
+    facsimile: ""
+
+  # ---- XIV: how to destroy governments — exposing the deception (the disciplined army) ----
+  - id: W18
+    genre: works
+    pssTom: 34
+    pages: "197 (ch. XIV)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Дисциплина есть уничтожение разума и свободы в человеке и не может иметь другой цели, как только приготовление к совершению таких злодеяний, которых не может совершить ни один человек в нормальном состоянии."
+    quoteEn: "(working English) Discipline is the destruction of reason and freedom in man, and can have no other aim than the preparation for crimes which no man in a normal state could commit."
+    significance: "Ch. XIV — the few rule the many not by force but by deception (обман), of which the disciplined army is the core. Governments are destroyed not by violence (which only installs a new government) but by exposing this deception — refusing soldiers and taxes."
+    facsimile: ""
+  - id: W19
+    genre: works
+    pssTom: 34
+    pages: "198 (ch. XIV)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "что же такое государство, как не такое же разбойническое учреждение"
+    quoteEn: "(working English) what is the state, then, if not just such a robber institution?"
+    significance: "Following Eugen Schmitt's Ohne Staat article and the Calabrian-robber analogy: the state is a brigand institution, only more complex and more immoral — the more one shares in its organized deception, the more one is rewarded."
+    facsimile: ""
+
+  # ---- XV + Afterword: what each person must do ----
+  - id: W20
+    genre: works
+    pssTom: 34
+    pages: "199 (ch. XV)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "если человек — всё равно раб он или рабовладелец — точно хочет улучшить не одно свое положение, а положение людей, то должен сам не делать дурного, которое производит рабство его и его братьев"
+    quoteEn: "(working English) if a man — whether slave or slaveholder — truly wishes to improve not his own position alone but the position of all, he must himself stop doing the evil that produces the slavery of himself and his brothers."
+    significance: "Ch. XV — the remedy is not to design society for the slaves (the propertied class's reflex) but for each person to stop doing the evil: refuse government office, voluntary taxes, and the state's protection of property."
+    facsimile: ""
+  - id: W21
+    genre: works
+    pssTom: 34
+    pages: "199 (ch. XV)"
+    date: "1900"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "У меня одна жизнь. Зачем же я в этой короткой моей жизни, поступая противно голоса совести, стану участником ваших гадких дел? — Не хочу и не буду."
+    quoteEn: "(working English) I have one life. Why, in this short life of mine, acting against the voice of conscience, should I become a participant in your vile deeds? — I will not, and I shall not."
+    significance: "The voice of the honest man of our time — the conscientious refusal that closes the argument; the 'highest and incontestable judge,' the voice of conscience, confirms what the general reasoning reaches."
+    facsimile: ""
+  - id: W22
+    genre: works
+    pssTom: 34
+    pages: "199 (Afterword)"
+    date: "1900-08 (afterword added ~9 Aug, OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_144_199_Rabstvo_nashego_vremeni.txt
+    quoteRu: "для избавления людей от дурного устройства общества есть только одно средство — воздержание от насилия, причины бедствий, — от личного насилия, от проповеди насилия, от всякого оправдания насилия"
+    quoteEn: "(working English) to free men from the bad ordering of society there is only one means — abstention from violence, the cause of the calamities — from personal violence, from the preaching of violence, from any justification of violence."
+    significance: "The Afterword answers the charge that this is 'the old preaching of non-doing': as an alcoholic's only cure is abstinence, society's only cure is abstinence from violence; the social remedy coincides with each person's moral law."
+    facsimile: ""
+
+  # ---- Genesis: composition-window diary (Tom 54, 1900) ----
+  - id: D1
+    genre: diary
+    pssTom: 54
+    pages: "7–8"
+    date: "1900-01-08 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v54_007_008_1900_01_08.txt
+    quoteRu: "Нынче подвинулся к окончанию."
+    quoteEn: "(working English) Today I moved on toward finishing it. [of 'the article on the 36-hour day']"
+    significance: "Earliest composition-window diary note: he is correcting 'the article on the 36-hour day' (an early working name) and thinks it near done — the first of several premature 'finished' judgments."
+    facsimile: ""
+  - id: D2
+    genre: diary
+    pssTom: 54
+    pages: "10–11"
+    date: "1900-03-13 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v54_010_015_1900_03_13.txt
+    quoteRu: "Невольничество отменяется, когда утверждается крепостное право. Крепостное право отменяется, когда земля отнята и подати установлены; теперь освобождают от податей, когда орудия труда отняты."
+    quoteEn: "(working English) Chattel slavery is abolished when serfdom is established. Serfdom is abolished when the land has been taken and taxes set; now they free men from taxes, once the tools of labour have been taken."
+    significance: "The keystone genesis entry — the chain-of-slavery argument in nucleus, two months before the chapters take shape. The 'one chain released only when another holds firm' that becomes the spine of chapters VIII–XI (and W12)."
+    facsimile: ""
+  - id: D3
+    genre: diary
+    pssTom: 54
+    pages: "24"
+    date: "1900-05-02 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v54_024_025_1900_05_02.txt
+    quoteRu: "Все время был занят двумя статьями. И хочется думать, что кончил."
+    quoteEn: "(working English) The whole time I was occupied with two articles. And I want to think I have finished."
+    significance: "Premature completion (the 'two articles' are Slavery and a parallel patriotism piece). Three days later (D4) he reopens it; the oscillation recurs into July."
+    facsimile: ""
+  - id: D4
+    genre: diary
+    pssTom: 54
+    pages: "25–26"
+    date: "1900-05-05 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v54_025_026_1900_05_05.txt
+    quoteRu: "Обдумал Новое рабство сначала и нынче много изменил и улучшил."
+    quoteEn: "(working English) I thought New Slavery over from the beginning, and today changed and improved much."
+    significance: "Records a working title, «Новое рабство» (New Slavery) — one stage in the title evolution — and another from-the-start rethinking, at Pirogovo."
+    facsimile: ""
+  - id: D5
+    genre: diary
+    pssTom: 54
+    pages: "28"
+    date: "1900-07-12 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v54_028_032_1900_07_12.txt
+    quoteRu: "Два раза думал, что готово. Теперь 3 й раз думаю это."
+    quoteEn: "(working English) Twice I thought it was ready. Now I think so a third time. [of 'The Slavery of Our Times']"
+    significance: "Still writing it daily in July; the title is now «Рабство нашего времени». The third 'ready' — he sent it to Chertkov only on 30 July, and added the afterword and epigraphs in August."
+    facsimile: ""
+
+  # ---- Genesis: composition-window letters (Toms 88, 72) ----
+  - id: L1
+    genre: letter
+    pssTom: 88
+    pages: "188–189"
+    date: "1900-01-02 (OS; editorial history dates it 31 Dec 1899)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v88_581_V_G_Chertkovu_dek31-jan2.txt
+    quoteRu: "рассказал мне, что там грузчики работают 36 часов сряду. Я ездил туда и видел этих людей и эту работу и хочется рассказать то, что довелось думать об этом."
+    quoteEn: "(working English) [Afanasy ... now a weigher on the Kazan railway] told me that the loaders there work 36 hours at a stretch. I went there and saw these people and this work, and I want to tell what I came to think about it."
+    significance: "The genesis statement to Chertkov: the former Yasnaya Polyana servant Afanasy Ageev (weigher at the Moscow–Kazan goods station) reported the 36-hour shifts; Tolstoy visited (26 Dec 1899 OS) and resolved to write. The TEI dates this letter 2 Jan 1900; the editorial history (and PSS apparatus) cites it as 31 Dec 1899."
+    facsimile: ""
+  - id: L2
+    genre: letter
+    pssTom: 72
+    pages: "289–291"
+    date: "1900-01-27 (OS)"
+    addressee: "Aylmer Maude"
+    localPdf: ""
+    extract: extracts/v72_235_EjlmeruMooduAylmerMaude.txt
+    quoteRu: "Пришлите мне, пожалуйста, книжку: The effects of the factory system, Allen Clarke, London"
+    quoteEn: "(working English) Please send me the book: The Effects of the Factory System, Allen Clarke, London."
+    significance: "Tolstoy asks his English translator Aylmer Maude for factory-condition books — Allen Clarke's The Effects of the Factory System; Maude also sent George Haw's No Room to Live (London 1900). The same letter calls it 'an article on the workers' question' that he hopes says 'something new.'"
+    facsimile: ""
+  - id: L3
+    genre: letter
+    pssTom: 72
+    pages: "407–409"
+    date: "1900-07-11 (OS)"
+    addressee: "M. L. Obolenskaya"
+    localPdf: ""
+    extract: extracts/v72_327_M_L_Obolenskoj.txt
+    quoteRu: "Я все переделывал свою статью, которую думал, что кончил. И теперь еще поправляю и все делаю ее ядовитее и ядовитее."
+    quoteEn: "(working English) I kept reworking my article, which I thought I had finished. And I am still correcting it, and making it more and more venomous."
+    significance: "To his daughter M. L. Obolenskaya: the late drafts deliberately sharpened the attack on contemporary bourgeois governments (chs. XII–XIV) — 'more and more venomous.'"
+    facsimile: ""
+
+  # ---- Redactions: variants (Tom 90 first draft; Tom 34 chapter variants) ----
+  - id: V1
+    genre: works
+    pssTom: 90
+    pages: "169–173 (variants)"
+    date: "1899-12 / 1900-01 (first draft)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v90_169_173_Rabstvo_nashego_vremeni_Varianty.txt
+    quoteRu: "Никита! — сказал, не отвечая мне, Агеев, обращаясь к высокому красивому человеку в оборванной поддевке, который вышел из будки."
+    quoteEn: "(working English) 'Nikita!' said Ageev, not answering me, turning to a tall handsome man in a tattered coat who had come out of the hut."
+    significance: "The first draft «Самый дешевый товар» (The Cheapest Commodity, PSS Tom 90) names the weigher — Ageev; the final text anonymises him to 'a weigher I know' (the worker Nikita's name survives), the same de-naming/universalising revision seen in the Ivan Ilyich and Christianity and Patriotism dives."
+    facsimile: ""
+  - id: V2
+    genre: works
+    pssTom: 34
+    pages: "491–502 (variants)"
+    date: "1900 (рук. №86)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_491_502_Varianty_Rabstvo_nashego_vremeni.txt
+    quoteRu: "С развитием капиталистического производства во время промышленного периода общественное мнение Европы потеряло последний остаток стыда и совести."
+    quoteEn: "(working English) With the development of capitalist production during the manufacturing period, the public opinion of Europe lost the last remnant of shame and conscience. [Tolstoy's rendering of Marx, given in German in the draft]"
+    significance: "A cut draft (рук. №86) quotes Marx (Capital) a second time, in the original German with Tolstoy's Russian — direct evidence of his reading of Capital; only the expropriation/vagrancy passage (W8) survives in the final text."
+    facsimile: ""
+  - id: V3
+    genre: works
+    pssTom: 34
+    pages: "491–502 (variants)"
+    date: "1900 (рук. №28)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v34_491_502_Varianty_Rabstvo_nashego_vremeni.txt
+    quoteRu: "Причина рабства лежит не в собственности, а в ограждении насилием того, что считается собственностью."
+    quoteEn: "(working English) The cause of slavery lies not in property but in the guarding by violence of what is considered property."
+    significance: "A cut chapter-X draft distinguishing natural ('free') property from the violently-guarded kind, and (elsewhere in the same variant) invoking Proudhon's «la propriété c'est le vol» — refined in the final text into the laws-and-violence argument of chs. X–XII."
+    facsimile: ""
+
+  # ---- Intertext: La Boétie, Discourse on Voluntary Servitude (Tolstoy's translation) ----
+  - id: LB1
+    genre: works
+    pssTom: 41
+    pages: "426–434 (Circle of Reading)"
+    date: "1904–1905 (curated); read 1884"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v41_426_434_Dobrovolnoe_rabstvo.txt
+    quoteRu: "первая причина добровольного рабства есть привычка"
+    quoteEn: "(working English) the first cause of voluntary servitude is habit."
+    significance: "La Boétie's Discourse on Voluntary Servitude, in Tolstoy's own translation for the Circle of Reading: habit makes a people forget freedom; the few hold the many through a pyramid of complicity (6 → 600 → 6,000). A thematic companion to Slavery's third cause (manufactured needs) and the deception-pyramid of ch. XIV — though curated in 1904–05, after the 1900 work."
+    facsimile: ""
+  - id: LB2
+    genre: comment
+    pssTom: 42
+    pages: "613"
+    date: "1957 (apparatus); events 1884, 1904–05"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v42_613_613_Dobrovolnoe_rabstvo_La_Boeti.txt
+    quoteRu: "Так как сочинение Ла Боэти не было в то время переведено на русский язык, Толстой сам перевел эти выдержки."
+    quoteEn: "(working English) Since La Boétie's work had not at that time been translated into Russian, Tolstoy himself translated these excerpts."
+    significance: "Provenance (editor's note): Tolstoy met La Boétie's text c.1884 reading Montaigne's Essais, and translated the Circle-of-Reading excerpts himself — so the resonance with Slavery is a long-held affinity, not a borrowing; the curation post-dates the 1900 work."
+    facsimile: ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map → wiki. A plan for the (separate) ingestion
+# step; the dive writes no vault pages. vaultStatus checked against website/src.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "The Slavery of Our Times (work)"
+    wikiType: work
+    wikilinkTarget: "The Slavery of Our Times"
+    vaultStatus: missing
+    role: "The work itself — handled by the proposed workRecord (new works/ record), not a wiki page"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W4, W5, W17]
+    ingestionPriority: 1
+  - name: "Wage slavery (Tolstoy's concept)"
+    wikiType: concept
+    wikilinkTarget: "Wage Slavery"
+    vaultStatus: missing
+    role: "The central concept: modern wage labour as a new, firmer form of slavery, continuous with serfdom and chattel slavery; rests on laws → organized violence → government"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W5, W11, W12, W16, W17, D2]
+    ingestionPriority: 1
+    dependsOn: ["The Slavery of Our Times (work)"]
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author of the treatise"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W3, W4, D2, L1]
+    ingestionPriority: 3
+  - name: "Afanasy Ageev"
+    wikiType: person
+    wikilinkTarget: "Afanasy Ageev"
+    vaultStatus: missing
+    role: "Former Yasnaya Polyana servant, weigher at the Moscow–Kazan goods station; the informant whose report of the 36-hour shifts triggered the work (named Ageev in the first draft, anonymised in the final text)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L1, V1]
+    ingestionPriority: 2
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "Tolstoy's English friend, biographer and translator; supplied the factory-condition books (Clarke, Haw) and translated the work as The Slavery of Our Times (1900)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L2, W1]
+    ingestionPriority: 2
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Recipient of the genesis letter; published the work through the Free Word press (England, 1900); he and A. K. Chertkova edited chapter XIV"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L1]
+    ingestionPriority: 3
+  - name: "Maria Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: "Daughter (M. L. Obolenskaya); composition-window correspondent — recipient of the 'more and more venomous' letter (11 Jul 1900)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L3]
+    ingestionPriority: 3
+  - name: "Henry George"
+    wikiType: person
+    wikilinkTarget: "Henry George"
+    vaultStatus: missing
+    role: "American political economist; his land-value-tax project is endorsed in ch. IX as removing the first cause of slavery (landlessness), though Tolstoy rejects the single-tax as itself a residual slavery (ch. XI)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W13]
+    ingestionPriority: 2
+    dependsOn: ["Wage slavery (Tolstoy's concept)"]
+  - name: "Karl Marx"
+    wikiType: person
+    wikilinkTarget: "Karl Marx"
+    vaultStatus: missing
+    role: "Quoted (Capital vol. I, ch. XXIV) on the violent expropriation of the rural population; Tolstoy read Capital (annotated YP-library copy) but rejects the Marxist socialist solution"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W8, V2]
+    ingestionPriority: 2
+  - name: "Robert Owen"
+    wikiType: person
+    wikilinkTarget: "Robert Owen"
+    vaultStatus: missing
+    role: "Welsh social reformer; the first epigraph (via Morrison Davidson, The Annals of Toil, 1899)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W1]
+    ingestionPriority: 2
+  - name: "John Ruskin"
+    wikiType: person
+    wikilinkTarget: "John Ruskin"
+    vaultStatus: missing
+    role: "English critic; the second epigraph (Stones of Venice, the division-of-labour passage)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W2]
+    ingestionPriority: 2
+  - name: "Étienne de La Boétie"
+    wikiType: person
+    wikilinkTarget: "Etienne de La Boetie"
+    vaultStatus: missing
+    role: "16th-century French author of the Discourse on Voluntary Servitude, which Tolstoy translated for the Circle of Reading — a thematic companion to the work's argument on consent and deception"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [LB1, LB2]
+    ingestionPriority: 3
+  - name: "Eugen Heinrich Schmitt"
+    wikiType: person
+    wikilinkTarget: "Eugen Schmitt"
+    vaultStatus: missing
+    role: "Hungarian Christian-anarchist; his Budapest paper Ohne Staat (the Calabrian-robber analogy: the state as a brigand institution) is quoted in ch. XIV"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W19]
+    ingestionPriority: 3
+  - name: "Free Word Press (Svobodnoe Slovo)"
+    wikiType: institution
+    wikilinkTarget: "Svobodnoe Slovo"
+    vaultStatus: missing
+    role: "Chertkov's émigré publishing house in England; first publisher of the work (1900)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Allen Clarke"
+    wikiType: person
+    wikilinkTarget: "Allen Clarke"
+    vaultStatus: missing
+    role: "English author of The Effects of the Factory System (1899), the book Tolstoy asked Maude to send"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L2]
+    ingestionPriority: 3
+  - name: "V. V. Baryatinsky"
+    wikiType: person
+    wikilinkTarget: "Vladimir Baryatinsky"
+    vaultStatus: missing
+    role: "Editor of Severny Kurier, which set the first chapters in March 1900 but was blocked from printing them by the Interior Minister's threat to close the paper"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — from the light visuals sweep (Phase 2). Filled from extracts/_visuals.md.
+# visuals/ is git-ignored (local cache); licence + url gate any later publication.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: tolstoy-1900-kazakov
+    type: portrait
+    subject: "Leo Tolstoy (I. S. Kazakov, oil, 1900, Odessa)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [W4]
+    holding: "Odessa Art Museum (Ж-397)"
+    archiveId: "File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg"
+    access: open
+    rights: "Public domain (painting 1900; photographer unknown)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg"
+    localPath: visuals/commons-tolstoy-1900-kazakov.jpg
+    note: "KEYSTONE — painted in 1900, the year of composition. The closest dated portrait to the work."
+  - id: robert-owen
+    type: portrait
+    subject: "Robert Owen (1771–1858), social reformer — first epigraph author"
+    relatedEntity: "Robert Owen"
+    relatedEvidence: [W1]
+    holding: "Wellcome Collection / National Museum Wales"
+    archiveId: "File:Portrait_of_Robert_Owen_(1293554).jpg"
+    access: open
+    rights: "CC0 (Wellcome Collection)"
+    licence: CC0
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Portrait_of_Robert_Owen_(1293554).jpg"
+    localPath: visuals/commons-robert-owen.jpg
+    note: "The Owen epigraph reached Tolstoy via Morrison Davidson's Annals of Toil (1899)."
+  - id: john-ruskin-1882
+    type: portrait
+    subject: "John Ruskin (1819–1900), critic — second epigraph author"
+    relatedEntity: "John Ruskin"
+    relatedEvidence: [W2]
+    holding: "public domain (H. R. Barraud, 1882)"
+    archiveId: "File:John_Ruskin,_1882.jpg"
+    access: open
+    rights: "Public domain (photograph 1882, published 1900)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:John_Ruskin,_1882.jpg"
+    localPath: visuals/commons-john-ruskin-1882.jpg
+    note: "Barraud photograph, 1882; published in the collected Works in 1900, the year of the treatise."
+  - id: karl-marx
+    type: portrait
+    subject: "Karl Marx (1818–1883) — quoted in the work (Tolstoy read Capital)"
+    relatedEntity: "Karl Marx"
+    relatedEvidence: [W8, V2]
+    holding: "public domain (J. J. E. Mayall, c.1875)"
+    archiveId: "File:Karl_Marx_001.jpg"
+    access: open
+    rights: "Public domain (photograph before 1875)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Karl_Marx_001.jpg"
+    localPath: visuals/commons-karl-marx.jpg
+    note: "Mayall cabinet portrait, c.1875."
+  - id: henry-george
+    type: portrait
+    subject: "Henry George (1839–1897), land-tax reformer — endorsed in ch. IX"
+    relatedEntity: "Henry George"
+    relatedEvidence: [W13]
+    holding: "public domain (unknown author, 1865)"
+    archiveId: "File:Henry_George.jpg"
+    access: open
+    rights: "Public domain (1865)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Henry_George.jpg"
+    localPath: visuals/commons-henry-george.jpg
+    note: "The work is the documented trough in Tolstoy's Georgism (Wenzer 1997): it credits George's land project yet rejects the single-tax/rent as a residual slavery (ch. XI)."
+  - id: aylmer-maude
+    type: portrait
+    subject: "Aylmer Maude (1858–1938), translator + book-supplier"
+    relatedEntity: "Aylmer Maude"
+    relatedEvidence: [L2]
+    holding: "Victoria and Albert Museum (Lafayette, 1919)"
+    archiveId: "File:Aylmer_Maude_(1858-1938).jpg"
+    access: open
+    rights: "CC BY-SA 4.0 (Lafayette / V&A) — attribution required"
+    licence: CC-BY-SA
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Aylmer_Maude_(1858-1938).jpg"
+    localPath: visuals/commons-aylmer-maude.jpg
+    note: "Translated the work as The Slavery of Our Times (Free Age Press, 1900); supplied Clarke and Haw. CC BY-SA — publication needs the Lafayette/V&A credit."
+  - id: la-boetie-montaigne-engraving
+    type: engraving
+    subject: "Montaigne and La Boétie (period engraving)"
+    relatedEntity: "Étienne de La Boétie"
+    relatedEvidence: [LB1]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Gravure_de_Montaigne_et_de_la_Boétie.jpg"
+    access: open
+    rights: "CC BY-SA 4.0 (2020 photograph of a period engraving)"
+    licence: CC-BY-SA
+    usable: unknown
+    url: "https://commons.wikimedia.org/wiki/File:Gravure_de_Montaigne_et_de_la_Bo%C3%A9tie.jpg"
+    localPath: ""
+    note: "Identified but not downloaded (Commons rate-limit HTTP 429 during the sweep). Fetch via docs/fetch_visuals.py if wanted; the modern photograph's CC BY-SA needs crediting at publication. See needsReview."
+  - id: russian-loaders-photo
+    type: photograph
+    subject: "Russian railway/dock loaders c.1890–1905 (the work's opening scene)"
+    relatedEntity: "Wage slavery (Tolstoy's concept)"
+    relatedEvidence: [W5]
+    holding: "not found on Commons"
+    archiveId: ""
+    access: not-found
+    rights: unknown
+    licence: unknown
+    usable: unknown
+    url: ""
+    localPath: ""
+    note: "No PD photograph of Russian railway/freight loaders (грузчики) located on Commons. A period image would illustrate chapters I–II; a targeted archive search (Goskatalog / Prokudin-Gorsky) is recommended (needsReview)."
+  - id: free-word-1900-title-page
+    type: title-page
+    subject: "Svobodnoe Slovo (Free Word) 1900 first edition title page"
+    relatedEntity: "Free Word Press (Svobodnoe Slovo)"
+    relatedEvidence: []
+    holding: "not found on Commons"
+    archiveId: ""
+    access: not-found
+    rights: unknown
+    licence: unknown
+    usable: unknown
+    url: ""
+    localPath: ""
+    note: "The Russian first edition (Free Word) and Maude's English first edition (Free Age Press, Maldon, 1900) are not on Commons; archive.org / imwerden.de / vtoraya-literatura.com recommended (needsReview)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3), filled from extracts/_scholarship.md.
+# Attribute, don't assert; ground in primary + prior dives first.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    Scholarship treats The Slavery of Our Times thinly next to Tolstoy's fiction and even next to
+    What Then Must We Do? (1886): major anglophone biographers (Maude, Simmons, Wilson, Bartlett)
+    acknowledge it as the sequel to Tolstoy's earlier political economy but rarely analyse its
+    argument, filing it with his late pamphlet production — diagnosis accurate, the individual-
+    non-participation remedy dismissed as earnest but inoperative. The one specialist axis is
+    Georgist: Wenzer (1997) documents that this work is the single place Tolstoy "comes out against
+    George's economics," an anomalous trough between Resurrection's Georgist peak (1899) and The
+    Great Sin (1905). The Marx reading is attested by a Soviet record (Breitburg, Звенья V, 1935)
+    confirming the annotated Yasnaya Polyana copy of Capital, but is not followed up in anglophone
+    scholarship. Maude's own 1900 framing (and his 1902 essay) is the primary lifetime reading;
+    contested labels — "utopian," "a crank," "impractical" — are reported here as the mainstream's
+    words about Tolstoy's economic thought in general, never asserted.
+  triangulation:
+    - evidenceRef: D2
+      conventionalView: "Biographers note the serfdom/slavery parallel as a rhetorical device (Maude frames the work via non-resistance; Simmons calls it a 'trenchant sequel' to What Then Must We Do?), but do not analyse the chain-of-causation argument — that each emancipation (chattel→serfdom→tax-and-land→means-of-production) is a managed substitution — on its own terms."
+      relation: extends
+      source: "Maude, intro to The Slavery of Our Times (Free Age Press, 1900); Simmons, Leo Tolstoy (1946) ch. 13."
+    - evidenceRef: W13
+      conventionalView: "Henry George scholarship (Wenzer 1997) records that this is the one work where Tolstoy 'comes out against George's economics' — privately calling George 'a concession, a weakness' (via Axelrod) — an anomaly between Resurrection (1899) and The Great Sin (1905); but it documents the fact of rejection, not Tolstoy's internal anti-compulsion argument (obligatory rent is still a legal compulsion backed by violence)."
+      relation: complicates
+      source: "Wenzer, 'Tolstoy's Georgist Spiritual Political Economy (1897–1910)', Pennsylvania History 64 (1997)."
+    - evidenceRef: W17
+      conventionalView: "That government-backed laws create the condition for wage servitude — the chain misery→slavery→laws→organized violence→government — is captured by Maude's framing and by Christoyannopoulos's 'Economic enslavement' subsection; it is the work's recognised central contribution."
+      relation: confirms
+      source: "Maude (1900); Christoyannopoulos, Tolstoy's Political Thought (Routledge, 2012) [subsection content unverified]."
+    - evidenceRef: W8
+      conventionalView: "That Tolstoy read and annotated Capital is recorded by Breitburg (1935) and the PSS note; but no accessible scholarship analyses the rhetorical move by which Tolstoy uses Marx's own history of expropriation (Capital I ch. XXIV) to ground his argument and then turns it against Marx's socialist solution."
+      relation: extends
+      source: "Breitburg, 'Лев Толстой за чтением «Капитала» Маркса', Звенья V (1935); PSS T.34 note pp.157–158."
+    - evidenceRef: W1
+      conventionalView: "No anglophone scholarship comments on the epigraph sources; the PSS apparatus alone establishes the Owen epigraph's conduit (Morrison Davidson, Annals of Toil, 1899, via Tolstoy's 25 Aug 1900 letter to Maude) and the Ruskin source (Stones of Venice II.iv), both added after the main text was sent to Chertkov."
+      relation: extends
+      source: "PSS T.34 history (Opulsky), pp.563–567 — primary apparatus, not secondary scholarship."
+    - evidenceRef: L1
+      conventionalView: "The publication/ban sequence (Free Word 1900; Severny Kurier blocked; excerpts; 1911 seizure; 1917 full Russian) is the PSS record. On the church: the 1901 excommunication did NOT cite this work — its grounds were doctrinal (sacraments, Resurrection's satire of church ritual), confirming the work is not implicated in the decree."
+      relation: confirms
+      source: "PSS T.34 history; Wikisource, Decree of Excommunication (1901); Free Age Press bibliographic records."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORD — proposed fills for a NEW works/ record (none exists). READ-ONLY
+# to works/; a human applies these during ingestion. Model: bethink-yourselves.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/the-slavery-of-our-times/The Slavery of Our Times.md"
+  workId: "the-slavery-of-our-times"
+  fields:
+    - field: titleEn
+      value: "The Slavery of Our Times"
+      evidenceRefs: []
+      source: "Aylmer Maude's 1900 English translation title"
+      confidence: high
+      note: "Variant 'The Slavery of Our Time' (singular) is also current — see titleAlternatives."
+    - field: titleRu
+      value: "Рабство нашего времени"
+      evidenceRefs: [W17]
+      source: "PSS Tom 34 p.144 (title)"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - { title: "The Slavery of Our Time", type: variant, language: en }
+        - { title: "Самый дешевый товар", type: working, language: ru }
+        - { title: "Денежное рабство", type: working, language: ru }
+        - { title: "Насилие и рабство", type: working, language: ru }
+        - { title: "Новое рабство", type: working, language: ru }
+      evidenceRefs: [D4, V1]
+      source: "PSS Tom 34 История писания (рук. titles); the title evolved Самый дешевый товар → Денежное рабство → Насилие и рабство → Новое рабство → Рабство нашего времени"
+      confidence: high
+    - field: mainCategory
+      value: "Non-Fiction"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+    - field: subcategory
+      value: "Treatises"
+      evidenceRefs: []
+      source: "book-length systematic argument (15 chapters + intro + afterword), modelled on the-kingdom-of-god-is-within-you"
+      confidence: medium
+      note: "PSS describes it as «статья» (article); it could alternatively be filed under Essays and Criticism (as Christianity and Patriotism is). Treatises chosen for its book length and systematic structure — confirm at ingestion."
+    - field: genre
+      value: "treatise"
+      evidenceRefs: []
+      source: "PSS «статья»; book-length systematic treatise"
+      confidence: medium
+    - field: language
+      value: "ru"
+      evidenceRefs: []
+      source: "composed in Russian"
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [D5]
+      source: "sent to Chertkov 30 July 1900 (OS); afterword and epigraphs added ~9 Aug; final corrections Sept 1900"
+      confidence: high
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: "first published 1900 (Free Word, England); Tolstoy d. 1910"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: "false"
+      evidenceRefs: []
+      source: "PSS history: banned; only excerpts appeared in Russia in his lifetime (Русские ведомости №245, 1900; Неделя appendix 1906; 1911 collected-works printing confiscated). Full Russian publication 1917"
+      confidence: high
+      note: "Excerpts circulated; the full text was not legally published in Russia until 1917 (after his death). Set 'false' for the full work; note the excerpts."
+    - field: dateWritingStarted
+      value: "1900-01-08"
+      oldStyle: "1899-12-27"
+      approximate: false
+      evidenceRefs: [L1, D1]
+      source: "PSS history: first sketch «Самый дешевый товар» begun 27 Dec 1899 (OS), the day after the 26 Dec goods-station visit; OS+12 = NS 8 Jan 1900"
+      confidence: high
+    - field: dateWritingCompleted
+      value: "1900-08-12"
+      oldStyle: "1900-07-30"
+      approximate: true
+      evidenceRefs: [D5, L3]
+      source: "PSS history: sent to Chertkov 30 July 1900 (OS); OS+13 = NS 12 Aug 1900"
+      confidence: medium
+      note: "Composition tail is fuzzy: afterword + epigraphs added ~9 Aug 1900, final corrections (ch. XIV) into September. The 30 July send-date is taken as completion; approximate:true marks the tail."
+    - field: dateFirstPublished
+      value: "1900"
+      approximate: true
+      evidenceRefs: []
+      source: "PSS history: first published by Svobodnoe Slovo (Free Word), England, 1900"
+      confidence: high
+    - field: firstPublishedVenue
+      value: "Svobodnoe Slovo (Free Word), England"
+      evidenceRefs: []
+      source: "PSS Tom 34 history"
+      confidence: high
+      note: "Reprinted 1901 in Berlin in two editions (Caspari; Hugo Steinitz). English: Aylmer Maude's translation, The Slavery of Our Times, 1900."
+    - field: firstPublishedVenueType
+      value: "publisher"
+      evidenceRefs: []
+      source: "Chertkov's émigré book/pamphlet press"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1917"
+      approximate: true
+      evidenceRefs: []
+      source: "PSS history: full Russian publication 1917 (Единение + Посредник)"
+      confidence: high
+      note: "Earlier Russian appearances were partial/blocked: Северный курьер set the first chapters (March 1900) but was blocked; excerpts in Русские ведомости (1900); first part in the Неделя appendix (1906); 1911 S. A. Tolstaya collected-works printing confiscated by Moscow court order 19 Apr 1911."
+    - field: firstPublishedInRussiaVenue
+      value: "Edinenie (Единение) / Posrednik (Посредник)"
+      evidenceRefs: []
+      source: "PSS Tom 34 history (1917)"
+      confidence: high
+    - field: authoringLocations
+      value:
+        - { country: Russia, city: "Moscow" }
+        - { country: Russia, region: "Tula Oblast", estate: "Yasnaya Polyana", coordinates: { lat: 54.0667, lon: 37.5167 } }
+        - { country: Russia, region: "Tula Oblast", estate: "Pirogovo" }
+      evidenceRefs: [D4, D5]
+      source: "Begun and largely worked in Moscow; рук. №34 and №43 signed «Пирогово» (the 5 May 1900 diary is at Pirogovo); the 12 July 1900 diary at Yasnaya Polyana"
+      confidence: high
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: []
+      source: "PSS history: banned in Russia; circulated via émigré editions and excerpts until 1917"
+      confidence: high
+    - field: censoredVersionExists
+      value: "true"
+      evidenceRefs: []
+      source: "PSS history: the Free Word edition itself carried the Chertkovs' stylistic/semantic edits (e.g. сенокосом→науками in ch. VI), removed in the PSS except where Tolstoy sanctioned them"
+      confidence: high
+      note: "Distinct from state censorship: this is the editorial alteration by the Chertkovs at Free Word. State censorship: banned in Russia, the 1911 collected-works printing confiscated."
+    - field: censorshipNotes
+      value: "Banned in Russia. Severny Kurier set the first chapters (March 1900) but its editor V. V. Baryatinsky was warned by the Interior Minister that the paper would be closed if it printed them. Only excerpts appeared (Русские ведомости №245, 1900; Неделя appendix, 1906). Included in S. A. Tolstaya's 1911 collected works (part 16) but confiscated by Moscow court order, 19 April 1911. Full Russian publication only 1917 (Единение, Посредник)."
+      evidenceRefs: []
+      source: "PSS Tom 34, История писания и печатания (Opulsky)"
+      confidence: high
+    - field: bans
+      value:
+        - { banningAuthority: "Moscow Court of Justice (Московская судебная палата)", authorityType: "imperial-state", jurisdiction: "Russia", scope: "complete-ban", banDate: "1911-04-19" }
+      evidenceRefs: []
+      source: "PSS Tom 34 history: the 1911 S. A. Tolstaya collected-works printing was confiscated by Moscow court order, 19 Apr 1911"
+      confidence: medium
+      note: "The work was effectively banned from first publication (1900); the 19 Apr 1911 confiscation is the one dated authority-action in the corpus history. The original 1900 administrative ban (Severny Kurier suppression) has no exact decree date in the corpus."
+    - field: excommunicationRelated
+      value: "false"
+      evidenceRefs: []
+      source: "The 1901 Holy Synod decree cited Resurrection and Tolstoy's religious-doctrinal writings, not this economic treatise (Phase-3 confirmation)"
+      confidence: high
+      note: "Do not present the 1901 excommunication as targeting this work; it is part of the broader heterodox corpus but is not named in the decree."
+    - field: relatedWorks
+      value:
+        - { id: "the-kingdom-of-god-is-within-you", relationshipType: companion }
+      evidenceRefs: [W3, W4]
+      source: "Non-resistance / anti-state cluster. The work explicitly continues What Then Must We Do? (1886) and shares the non-resistance ground of The Kingdom of God Is Within You (1893)"
+      confidence: high
+      note: "What Then Must We Do? and Christianity and Patriotism are companions to add once their works/ records exist (the dives exist; records unverified — see needsReview). «Неужели это так надо?» (1900) is a direct companion (the 'старичок из 1001 ночи' passage was moved there from ch. XIV)."
+    - field: themes
+      value: ["slavery", "wage labour", "political economy", "the State", "non-resistance", "land question", "taxation", "socialism", "non-participation", "conscience", "Christianity"]
+      evidenceRefs: [W5, W13, W16, W20]
+      source: "derived from the work text"
+      confidence: high
+    - field: epigraph
+      value: "Three groups of epigraphs: Gospel passages on non-resistance and common ownership (Matt. v.38–41; Luke vi.30–31; Acts ii.44; Matt. xxvi.52); Robert Owen (via Morrison Davidson, The Annals of Toil, 1899); and Ruskin (Stones of Venice)."
+      evidenceRefs: [W1, W2]
+      source: "PSS Tom 34 pp.144–145"
+      confidence: high
+    - field: identifiers.jubileeEdition
+      value: { volumes: "34", notes: "Work at Tom 34 pp.144–199; variants pp.491–502; История писания и печатания (Opulsky) pp.563–567. First-draft variant «Самый дешевый товар» at Tom 90 pp.169–173. 1,889 manuscript leaves, redactions №1–144, 20 galley proofs." }
+      evidenceRefs: [W17]
+      source: "PSS Tom 34 / Tom 90"
+      confidence: high
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "What the work says (structural map of all 15 chapters + intro + afterword)", status: covered, note: "Full structural read of v34_144_199 (586 lines)." }
+  - { surface: "Genesis & composition (diary + letters)", status: covered, note: "Diary Tom 54 (5 entries: 8 Jan, 13 Mar, 2 May, 5 May, 12 Jul 1900) + letters Tom 88 (Chertkov genesis) and Tom 72 (Maude, Obolenskaya), plus the PSS editorial history (Opulsky)." }
+  - { surface: "Redactions & textual history", status: covered, note: "PSS history (1,889 leaves, 144 redactions, title evolution, the Chertkov ch. XIV editing) + both variant sets (Tom 34 chapter variants; Tom 90 first draft «Самый дешевый товар» with the Ageev naming)." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "Free Word 1900; Berlin 1901 (Caspari, Steinitz); Maude's English; Severny Kurier suppression; excerpts; 1911 confiscation; 1917 full Russian. Maude title confirmed via Phase 3." }
+  - { surface: "Reception & afterlife (Russian society + church)", status: partial, note: "PSS gives the censorship/circulation record; contemporary critical and church reception filled from the Phase-3 scholarship pass (the 1901 excommunication does NOT cite this work)." }
+  - { surface: "Scholarly context (triangulation vs received view)", status: covered, note: "Filled from Phase-3 _scholarship.md (Marx-vs-Tolstoy, Henry George/Georgism, the economist-as-naïve framing to attribute)." }
+  - { surface: "Place in the cluster (sibling works + prior dives)", status: covered, note: "What Then Must We Do? (predecessor), The Kingdom of God, Christianity and Patriotism, «Неужели это так надо?», the christian-communism-socialism theme dive (already covers §VI — cross-linked, not repeated), christian-anarchism (mainstream label)." }
+  - { surface: "The author's later verdict", status: partial, note: "The composition-window diary shows the recurring 'finished/not-finished' ambivalence and the deliberate sharpening ('venomous'); a settled post-1900 verdict not separately swept — flag." }
+  - { surface: "Visual & manuscript record", status: partial, note: "Light Commons sweep (filled from _visuals.md); the 1,889 manuscript leaves held at GMT/RGB, no facsimile rendered; the Free Word 1900 first edition likely needs an émigré-archive search (needsReview)." }
+  - { surface: "workRecord (new record proposal)", status: covered, note: "Full field set proposed; subcategory (Treatises vs Essays) and bans banDate flagged medium-confidence." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRADICTIONS — intra-corpus (primary-vs-primary) only.
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: "The editorial history (Opulsky) dates the genesis Chertkov letter — the Afanasy / 36-hours report — to 31 December 1899 (PSS Tom 88)."
+    correction: "The tolstoydigital TEI carries that passage in the letter dated 2 January 1900 (v88_581, PSS Tom 88 pp.188–189), which opens «Написал вам... вчера словечко» (i.e. a continuation of a New-Year note). The apparatus's 31 Dec 1899 attribution and the TEI's 2 Jan 1900 dating differ by the year boundary."
+    evidenceRef: L1
+  - claim: "The editorial history quotes the genesis letter as «...рассказывал мне, что там грузчики работают 36 часов сряду»."
+    correction: "The letter text reads «...рассказал мне, что там грузчики работают 36 часов сряду» (perfective рассказал, not imperfective рассказывал) — a minor divergence between the apparatus's paraphrase and the letter."
+    evidenceRef: L1
+
+# ─────────────────────────────────────────────────────────────────────────────
+notCovered:
+  - "The full redaction-by-redaction collation of the 144 manuscripts (1,889 leaves, 20 galley proofs) — only the title evolution, the Chertkov ch. XIV editing, and a sample of chapter variants are taken from the apparatus and the two variant sets."
+  - "The printed PSS Tom 34 PDF was not cross-checked page-by-page (not confirmed held locally) — extraction relied on the tolstoydigital TEI; flagged in needsReview."
+  - "«Неужели это так надо?» (Is It Really Necessary?, 1900) — the direct companion piece to which the «старичок из 1001 ночи» passage was moved — is cross-linked, not dived."
+  - "The full socialist-critique reading of ch. VI is deliberately NOT repeated here: it is covered by the christian-communism-socialism theme dive (cross-linked)."
+  - "The detailed translation history beyond Maude's 1900 English and the 1901 Berlin reprints (later editions, other languages)."
+
+needsReview:
+  - { item: "Cross-check the W-series quotes against the printed PSS Tom 34 PDF (pp.144–199) — confirm the PDF is held locally; extraction used the TEI only.", phase: 2, why: "Belt-and-braces byte-fidelity on the printed edition." }
+  - { item: "Confirm the works/ subcategory: Treatises (chosen, modelled on the-kingdom-of-god) vs Essays and Criticism (as Christianity and Patriotism). PSS calls it «статья».", phase: 4, why: "Categorisation affects recordPath; flagged medium-confidence." }
+  - { item: "Verify whether works/ records exist for What Then Must We Do? and Christianity and Patriotism before adding them as relatedWorks companions.", phase: 4, why: "relatedWorks needs valid works/ ids; the dives exist but the records were not confirmed." }
+  - { item: "Locate a PD scan of the Free Word (Svobodnoe Slovo) 1900 first edition, or the Maude 1900 English first edition, title page (imwerden.de / vtoraya-literatura.com / archive.org).", phase: 2, why: "Visuals sweep is Commons-only; the first editions are unlikely to be on Commons." }
+  - { item: "Sweep post-1900 diaries/letters for Tolstoy's settled later verdict on the work.", phase: 1, why: "The author's-later-verdict surface is only partial." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (works Tom 34 + variants; Tom 90 variants; diaries Tom 54; letters Toms 72, 88; Circle of Reading Tom 41; comments Toms 34, 42)"
+  - "Wikimedia Commons (visuals)"
+
+references:
+  primary:
+    - "Л. Н. Толстой. Рабство нашего времени. ПСС, Т. 34, с. 144–199. М.: ГИХЛ, 1952."
+    - "Л. Н. Толстой. Рабство нашего времени. Варианты. ПСС, Т. 34, с. 491–502; Т. 90, с. 169–173 («Самый дешевый товар»)."
+    - "А. И. Опульский. «Рабство нашего времени». История писания и печатания и описание рукописей. ПСС, Т. 34, с. 563–567."
+    - "Л. Н. Толстой. Дневник 1900 г. ПСС, Т. 54 (записи 8 янв., 13 марта, 2 мая, 5 мая, 12 июля)."
+    - "Л. Н. Толстой. Письма 1900 г. ПСС, Тт. 72, 88 (В. Г. Черткову, Э. Мооду, М. Л. Оболенской)."
+    - "Этьен де Ла Боэти. Добровольное рабство (пер. Л. Н. Толстого). Круг чтения, ПСС, Т. 41, с. 426–434; комментарий Т. 42, с. 613."
+  background:
+    - "Maude, Aylmer (trans., intro.). The Slavery of Our Times. Free Age Press, Maldon, Essex, 1900. marxists.org/archive/tolstoy/1900/slavery-of-our-times.html"
+    - "Maude, Aylmer. 'Tolstoy's Teaching' (intro. to The Slavery of Our Times), in Tolstoy and His Problems. Grant Richards, 1902. archive.org/details/cu31924027487317"
+    - "Wenzer, Kenneth C. 'Tolstoy's Georgist Spiritual Political Economy (1897–1910): Anarchism and Land Reform.' Pennsylvania History 64 (1997). ditext.com/wenzer/tolstoy.html — the specialist study of the Georgist trough this work represents."
+    - "Christoyannopoulos, Alexandre. Tolstoy's Political Thought: Christian Anarcho-Pacifist Iconoclasm Then and Now. Routledge/BASEES, 2012 (subsection 'Economic enslavement') — UNVERIFIED at subsection level."
+    - "Simmons, Ernest J. Leo Tolstoy. Little, Brown, 1946 (ch. 13). ourcivilisation.com/smartboard/shop/smmnsej/tolstoy/chap13.htm"
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. Profile Books, 2010 ('utopian' — via Literary Review, not page-checked)."
+    - "Wilson, A. N. Tolstoy. W. W. Norton, 1988 (didactic commentary on Tolstoy's critique of private property — via publisher description, not page-checked)."
+    - "Брейтбург С. М. «Лев Толстой за чтением «Капитала» Маркса» // Звенья V (1935), с. 732–741 — cited in the PSS apparatus; not independently web-verifiable."
+    - "Volkov (or sim.). 'Henry George's Reforms as Economic Impetus for Lev Tolstoy's Moral Doctrine.' Russian Studies in Philosophy 59:5 (2021), doi:10.1080/10611967.2021.2010424 — abstract only (paywalled)."
+    - "Davidson, John Morrison. The Annals of Toil. London, 1899 (the source of the Owen epigraph, p.451)."
+    - "Clarke, Allen. The Effects of the Factory System. London, 1899; Haw, George. No Room to Live. London, 1900 — the factory-condition books Maude supplied."
+    - "Wikisource. Decree of Excommunication of Leo Tolstoy (1901) — does NOT cite this work."
+    - "Коган-Бернштейн Ф. А. «Л. Н. Толстой и Ла Боэси» // Ла Боэси, Рассуждение о добровольном рабстве (АН СССР, 1952), с. 94–110 — not held; the primary study of the Tolstoy–La Boétie link."
