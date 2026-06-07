@@ -1,0 +1,790 @@
+# What Is Art? («Что такое искусство?») — corpus work-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify: python3 docs/research/lib/verify_quotes.py docs/research/1897-1898-what-is-art/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+# Genesis / publication / censorship facts are drawn from the PSS Tom 30 commentary
+# (N. K. Gudzy, history of writing & printing) and attributed in the prose; they are
+# NOT byte-checked evidence rows (the commentary is editorial apparatus). The author's
+# self-condemnation footnote, stripped by extract_tei.py, was recovered byte-faithfully
+# with extracts/_recover_notes.py into extracts/v30_027_203_notes.txt.
+
+topic:
+  slug: 1897-1898-what-is-art
+  title: "What Is Art? (Что такое искусство?)"
+  question: >-
+    Document What Is Art? as a work across the local Tolstoy corpus: its definition of
+    art as the "infection" (заражение) / transmission of feeling and its rejection of
+    beauty (красота) as the criterion; the religious-consciousness criterion of good
+    art and the "counterfeits" (подделки) that produce bad art; the verdicts on Wagner,
+    Beethoven, the Decadents, and on Tolstoy's own novels; the survey-and-demolition of
+    Western aesthetics (Baumgarten → Kant → the empiricists) read as a concept/philosopher
+    juxtaposition; the long gestation (art-essays 1882–1896, the 1894 Maupassant preface)
+    and the agonised 1897 composition witnessed in the diaries and letters and its people
+    (Stasov, Grot, Maude, Chertkov, Lazursky); the two-stage censorship (Grot's softening
+    + the spiritual censor's cuts and the inserted redemption dogma) told in Tolstoy's own
+    preface to the English edition; and the publication lineage (censored Russian serial
+    1897–98; Maude's English 1898 as the first complete text) — grounded in Tolstoy's own
+    words, the Jubilee-Edition apparatus, and the project's sibling dives.
+  date: "2026-06-07"
+  period: "Prophet period (post-1880); treatise composed Jan 1897 – Feb 1898 (Old Style); gestation from 1882"
+  corpusSurface: "PSS Tom 30 (treatise pp. 27–203; English-edition preface pp. 204–206; Maupassant preface pp. 3–24; precursor art-essays 1882–1896; variants; Gudzy's commentary pp. 487–582). Composition-window diaries Tom 53 (1896–1898), letters Toms 69–71, and Tolstoy–Chertkov letters Tom 88."
+  dateRange: "1882 (first art-essay) – 1913 (Biryukov's PSS ed.); treatise 1897–1898; first complete text = Maude's English, 1898."
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory.
+evidence:
+
+  # — The treatise: definition, beauty, the criterion —
+  - id: wia-def-v
+    genre: work
+    pssTom: 30
+    pages: "Ch V (pp. 27–203)"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Искусство есть деятельность человеческая, состоящая в том, что один человек сознательно известными внешними знаками передает другим испытываемые им чувства, а другие люди заражаются этими чувствами и переживают их."
+    quoteEn: "(working English) Art is a human activity consisting in this, that one person consciously, by certain external signs, transmits to others feelings he has lived through, and other people are infected by these feelings and also experience them."
+    significance: "The load-bearing definition of the treatise — art relocated from beauty/pleasure to the transmission of feeling, with заражение (infection) as its mechanism (Ch V)."
+
+  - id: wia-beauty-vi
+    genre: work
+    pssTom: 30
+    pages: "Ch VI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Красота же, если мы не довольствуемся словами, а говорим о том, что понимаем, — красота есть не что иное, как то, что нам нравится."
+    quoteEn: "(working English) Beauty, if we are not satisfied with words but speak of what we understand — beauty is nothing other than what pleases us."
+    significance: "Tolstoy defines beauty downward to mere pleasure precisely so he can reject it as art's criterion — the dive's rhetorical pivot."
+
+  - id: wia-infectiousness-xv
+    genre: work
+    pssTom: 30
+    pages: "Ch XV"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Признак, выделяющий настоящее искусство от поддельного, есть один несомненный — заразительность искусства."
+    quoteEn: "(working English) The one indubitable sign distinguishing real art from counterfeit is the infectiousness of art."
+    significance: "The practical test (заразительность) that recasts the Ch V definition and governs the good-art analysis of Ch XVI."
+
+  - id: wia-sincerity-xv
+    genre: work
+    pssTom: 30
+    pages: "Ch XV"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Более же всего увеличивается степень заразительности искусства степенью искренности художника."
+    quoteEn: "(working English) Most of all the degree of infectiousness of art is increased by the degree of the artist's sincerity."
+    significance: "Sincerity — the strongest of the three conditions of infection — does the polemical work against Wagner and the Decadents: they write for effect, not from felt experience."
+
+  - id: wia-counterfeits-xi
+    genre: work
+    pssTom: 30
+    pages: "Ch XI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Приемы эти следующие: 1) заимствование, 2) подражательность, 3) поразительность и 4) занимательность."
+    quoteEn: "(working English) These techniques are the following: (1) borrowing, (2) imitativeness, (3) strikingness [/effect], and (4) interest [/diversion]."
+    significance: "The four-device recipe by which talent fabricates the semblance of art without feeling — the diagnostic applied to Wagner in Ch XIII."
+
+  - id: wia-religious-criterion-xvi
+    genre: work
+    pssTom: 30
+    pages: "Ch XVI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Религиозное сознание нашего времени в самом общем практическом приложении его есть сознание того, что наше благо, и материальное и духовное, и отдельное и общее, и временное и вечное, заключается в братской жизни всех людей, в любовном единении нашем между собой."
+    quoteEn: "(working English) The religious consciousness of our time, in its most general practical application, is the consciousness that our good — material and spiritual, individual and common, temporal and eternal — lies in the brotherly life of all people, in our loving union with one another."
+    significance: "The criterion of good art: the brotherhood-of-all religious consciousness — the same one grounded in What I Believe and The Kingdom of God (Ch XVI)."
+
+  - id: wia-twokinds-xvi
+    genre: work
+    pssTom: 30
+    pages: "Ch XVI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "И потому христианское искусство нашего времени может быть и есть двух родов: 1) искусство, передающее чувства, вытекающие из религиозного сознания положения человека в мире, по отношению к Богу и ближнему, — искусство религиозное, и 2) искусство, передающее самые простые житейские чувства, такие, которые доступны всем людям всего мира, — искусство всемирное."
+    quoteEn: "(working English) And therefore the Christian art of our time can be and is of two kinds: (1) art transmitting feelings flowing from the religious consciousness of man's position in the world, in relation to God and neighbour — religious art; and (2) art transmitting the very simplest feelings of everyday life, such as are accessible to all people of the whole world — universal art."
+    significance: "The two kinds of good art — religious and universal — the constructive core of Ch XVI."
+
+  - id: wia-wagner-xiii
+    genre: work
+    pssTom: 30
+    pages: "Ch XIII"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Вагнер с большим умением воспользовался всеми, долгой практикой ложного искусства выработанными, средствами подделки под искусство и составил образцовое поддельное произведение искусства."
+    quoteEn: "(working English) Wagner, with great skill, made use of all the means of counterfeiting art worked out by the long practice of false art, and composed a model counterfeit work of art."
+    significance: "Wagner's Ring enthroned as the exemplary counterfeit — proof-by-instance of the four-device recipe (Ch XIII)."
+
+  - id: wia-decadents-x
+    genre: work
+    pssTom: 30
+    pages: "Ch X"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Бодлер и Верлен придумывают новую форму, при этом подновляя ее еще неупотребительными до сих пор порнографическими подробностями."
+    quoteEn: "(working English) Baudelaire and Verlaine invent a new form, freshening it up with pornographic details not used until now."
+    significance: "The Decadents as Tolstoy's case-study in the upper-class drift to deliberate obscurity (Ch X)."
+
+  - id: wia-beethoven-xvi
+    genre: work
+    pssTom: 30
+    pages: "Ch XVI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "«Как, девятая симфония принадлежит к дурному роду искусства?!» слышу я возмущенные голоса. «Без всякого сомнения», отвечаю я."
+    quoteEn: "(working English) \"What, the Ninth Symphony belongs to the bad kind of art?!\" I hear indignant voices. \"Without any doubt,\" I answer."
+    significance: "The most-cited verdict in the book — the canonical masterpiece fails the universality test because it unites only the specially trained (Ch XVI)."
+
+  - id: wia-goodart-xvi
+    genre: work
+    pssTom: 30
+    pages: "Ch XVI"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "в области словесности я указал бы на «Разбойников» Шиллера"
+    quoteEn: "(working English) in the domain of literature I would point to Schiller's Die Räuber [The Robbers]"
+    significance: "Opening of Tolstoy's positive canon of religious art (Schiller, Hugo, Dickens, Uncle Tom's Cabin, Dostoevsky's House of the Dead, George Eliot) — strikingly narrow (Ch XVI)."
+
+  - id: wia-selfcondemn-xvi
+    genre: work
+    pssTom: 30
+    pages: "Ch XVI (footnote)"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_notes.txt
+    quoteRu: "При этом еще должен заметить, что свои художественные произведения я причисляю к области дурного искусства, за исключением рассказа «Бог правду видит», желающего принадлежать к первому роду, и «Кавказского пленника», принадлежащего ко второму."
+    quoteEn: "(working English) I must also note that I assign my own artistic works to the domain of bad art, with the exception of the story God Sees the Truth [But Waits], which wishes to belong to the first kind, and A Prisoner of the Caucasus, which belongs to the second."
+    significance: "The famous self-condemnation — an authorial footnote stripped by extract_tei.py, recovered byte-faithfully into v30_027_203_notes.txt. Tolstoy turns the criterion on his own novels."
+
+  # — The concept/philosopher map: flattening exhibits —
+  - id: wia-kant-iii
+    genre: work
+    pssTom: 30
+    pages: "Ch III"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "способность суждения (Urtheilskraft), которая составляет суждения без понятий и производит удовольствие без желания"
+    quoteEn: "(working English) the faculty of judgement (Urtheilskraft), which forms judgements without concepts and produces pleasure without desire"
+    significance: "Tolstoy renders Kant's disinterested-pleasure formula accurately, then (Ch IV) re-reads 'pleasure without desire' as merely 'what pleases us' — flattening the autonomy thesis into hedonism."
+
+  - id: wia-guyau-iii
+    genre: work
+    pssTom: 30
+    pages: "Ch III"
+    date: "1897–1898"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Искусство же есть выражение жизни разумной и сознательной"
+    quoteEn: "(working English) Art is the expression of rational and conscious life"
+    significance: "Guyau — 'art raises man from personal to universal life by shared feeling' — is essentially Tolstoy's own заражение thesis; yet Tolstoy files his nearest unacknowledged predecessor under the discredited beauty-as-pleasure camp (Ch III)."
+
+  # — The English-edition preface: the censorship keystone —
+  - id: wia-pref-trueform
+    genre: work
+    pssTom: 30
+    pages: "pp. 204–206 (preface to the English edition)"
+    date: "1898-03-17"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "Книга эта моя «Что такое искусство?» выходит теперь в первый раз в ее настоящем виде."
+    quoteEn: "(working English) This book of mine, What Is Art?, now comes out for the first time in its true form."
+    significance: "The keystone: Tolstoy declares the English edition authoritative because every Russian edition was mangled by the censor."
+
+  - id: wia-pref-grot
+    genre: work
+    pssTom: 30
+    pages: "pp. 204–206"
+    date: "1898-03-17"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "Сначала Грот смягчал мои выражения, иногда ослабляя их, напр. заменял слова «всегда» — словами «иногда»; слова «все» — словами «некоторые»; слово «церковное» — словом «католическое»; слово «богородица» — словом «мадонна»; слово «патриотизм» — словом «лжепатриотизм»; слово «дворцы» — словом «палаты» и т. п."
+    quoteEn: "(working English) At first Grot softened my expressions, sometimes weakening them — e.g. he replaced 'always' with 'sometimes'; 'all' with 'some'; 'ecclesiastical' with 'Catholic'; 'the Mother of God' with 'the Madonna'; 'patriotism' with 'false patriotism'; 'palaces' with 'mansions,' and so on."
+    significance: "Stage one of the mangling — Grot's lexical softening to pass the secular censor."
+
+  - id: wia-pref-censor-redemption
+    genre: work
+    pssTom: 30
+    pages: "pp. 204–206"
+    date: "1898-03-17"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "там, где я говорю о Христе, шедшем на крест за исповедуемую им истину, цензор вычеркнул это и поставил «за род человеческий», т. е. приписал мне таким образом утверждение догмата искупления, который я считаю одним из самых неверных и вредных церковных догматов."
+    quoteEn: "(working English) where I speak of Christ going to the cross for the truth he professed, the censor struck this out and put 'for the human race' — thus ascribing to me an affirmation of the dogma of redemption, which I consider one of the most false and harmful of the church's dogmas."
+    significance: "Stage two — the spiritual censor cuts and inserts the redemption dogma Tolstoy rejected, putting an alien doctrine in his mouth."
+
+  - id: wia-pref-moral
+    genre: work
+    pssTom: 30
+    pages: "pp. 204–206"
+    date: "1898-03-17"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "всякий компромисс с учреждением, не согласным с вашей совестью — компромисс, который делается обыкновенно в виду общей пользы, неизбежно затягивает вас, вместо пользы, не только в признание законности отвергаемого вами учреждения, но и в участие в том вреде, который производит это учреждение."
+    quoteEn: "(working English) any compromise with an institution not in accord with your conscience — a compromise usually made for the sake of the common good — inevitably drags you, instead of into benefit, not only into recognising the legitimacy of the institution you reject but into participation in the harm it produces."
+    significance: "Tolstoy frames the whole censorship episode as a moral exhibit, not a literary grievance — the through-line to his non-resistance to institutions."
+
+  # — The Maupassant preface (1894): the precursor criterion —
+  - id: wia-maupassant-3conditions
+    genre: work
+    pssTom: 30
+    pages: "pp. 3–24 (Preface to Maupassant, 1894)"
+    date: "1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "Из этих трех условий: 1) правильного, т. е. нравственного, отношения автора к предмету, 2) ясности изложения или красоты формы, что одно и то же, и 3) искренности, т. е. непритворного чувства любви или ненависти к тому, что изображает художник, из этих трех условий Мопассан обладал только двумя последними и был совершенно лишен первого."
+    quoteEn: "(working English) Of these three conditions — (1) a correct, i.e. moral, relation of the author to his subject, (2) clarity of exposition, or beauty of form, which is the same thing, and (3) sincerity, i.e. an unfeigned feeling of love or hatred for what the artist depicts — of these three conditions Maupassant possessed only the last two and was entirely without the first."
+    significance: "The 1894 precursor criterion (moral relation + beauty of form + sincerity); the treatise drops 'beauty of form' and relocates the centre to infection (заражение). The textual-history pivot."
+
+  # — Genesis & strain (composition-window diaries & letters) —
+  - id: wia-genesis-jan1897
+    genre: letter
+    pssTom: 88
+    pages: "letter to V. G. Chertkov, 12 Jan 1897"
+    date: "1897-01-12"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v88_431_yanvarya12.txt
+    quoteRu: "Пишу об искусстве, […] но эта работа отчасти, особенно теперь, ученая и не захватывающая, а на другие работы нет энергии."
+    quoteEn: "(working English) I am writing about art, but this work is partly — especially now — scholarly and not engaging, and I have no energy for other work."
+    significance: "To his most intimate correspondent, Tolstoy confesses at the outset that the treatise is not the creative work that sustains him."
+
+  - id: wia-genesis-jul1897
+    genre: letter
+    pssTom: 88
+    pages: "letter to V. G. Chertkov, 12 Jul 1897"
+    date: "1897-07-12"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v88_455_iyulya12.txt
+    quoteRu: "чаще кажется, что ничтожно, что я не имею права свои последние силы класть на такое неважное дело"
+    quoteEn: "(working English) more often it seems trivial, that I have no right to lay my last strength on such an unimportant matter"
+    significance: "The treatise holds him against his own judgement of its worth — the double bind of the gestation."
+
+  - id: wia-genesis-prostitution
+    genre: diary
+    pssTom: 53
+    pages: "diary, 19 Feb 1898"
+    date: "1898-02-19"
+    extract: extracts/v53_182_184_1898_02_19.txt
+    quoteRu: "Наше искусство с поставкой потех для богатых классов не только похоже на проституцию, но есть не что иное, как проституция."
+    quoteEn: "(working English) Our art, in supplying entertainment for the wealthy classes, is not merely similar to prostitution — it is nothing other than prostitution."
+    significance: "The rawest formulation of the treatise's thesis first surfaces in a diary note at the final, painful proof-stage; added to Ch XVIII."
+
+  - id: wia-stasov-books
+    genre: letter
+    pssTom: 70
+    pages: "letter to V. V. Stasov, 3 Sep 1897"
+    date: "1897-09-03"
+    addressee: "V. V. Stasov"
+    extract: extracts/v70_157_V_V_Stasovu.txt
+    quoteRu: "Больше мне ничего не нужно. И так совестно, что держу еще ваши книги."
+    quoteEn: "(working English) I need nothing more. And I feel so ashamed at still holding your books."
+    significance: "Stasov supplied the aesthetics bibliography Tolstoy then demolishes; the borrowed books are still in his hands in August 1897."
+
+# ── Entities (ingestion routing map → wiki / works) ─────────────────────────
+# A plan for the LLM wiki-ingestion method to act on later. The dive writes no pages.
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author of What Is Art?"
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-def-v, wia-selfcondemn-xvi, wia-genesis-jan1897]
+    ingestionPriority: 1
+
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "English translator of What Is Art?; his 1898 translation was the first complete, uncensored text; later Tolstoy's biographer. Use type: person with a translator role (schema note)."
+    sources: [jubilee-edition, maude-biography-vol1, maude-biography-vol2]
+    evidenceRefs: [wia-pref-trueform, wia-genesis-jul1897]
+    ingestionPriority: 1
+    dependsOn: ["What Is Art? (work)"]
+
+  - name: "Nikolai Yakovlevich Grot"
+    wikiType: person
+    wikilinkTarget: "Nikolai Grot"
+    vaultStatus: missing
+    role: "Editor of «Вопросы философии и психологии»; published the censored Russian serial of the treatise; softened wordings to pass the secular censor."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-pref-grot]
+    ingestionPriority: 1
+
+  - name: "Vladimir Vasilyevich Stasov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Stasov"
+    vaultStatus: missing
+    role: "Critic at the St Petersburg Public Library; supplied Tolstoy the aesthetics bibliography (and the Decadent journal «Pan») that the treatise demolishes; disagreed with Tolstoy on aesthetics."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-stasov-books]
+    ingestionPriority: 1
+
+  - name: "Vladimir Grigoryevich Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Tolstoy's closest collaborator; in English exile from 1897; the abroad-publishing channel that made the complete uncensored text possible; recipient of the composition letters and the draft censorship preface."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-genesis-jan1897, wia-genesis-jul1897]
+    ingestionPriority: 2
+
+  - name: "Pavel Ivanovich Birukoff"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Correspondent during composition (the 11 Jan 1897 report of starting the treatise); editor of the 1913 Sytin PSS edition of the treatise."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Vladimir Fyodorovich Lazursky"
+    wikiType: person
+    wikilinkTarget: "Vladimir Lazursky"
+    vaultStatus: missing
+    role: "Checked Tolstoy's summaries of the aestheticians (Baumgarten to the present) against their source texts, at Tolstoy's request, so the survey could not be faulted for misquotation."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "Nikolai Nikolayevich Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Earlier art-and-philosophy interlocutor; died January 1896, weeks before the writing window opens; a Jan 1896 letter shows the anti-Shakespeare strand already active."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "Sergei Ivanovich Taneyev"
+    wikiType: person
+    wikilinkTarget: "Sergei Taneyev"
+    vaultStatus: missing
+    role: "Composer present at Yasnaya Polyana 1895–96 (the music-as-art context). CAUTION: he appears only once in passing in this corpus window; the «А. С. Танеев» letters are to a court official, not the composer — the dive does not assert a treatise tie."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "art as infection (заражение)"
+    wikiType: concept
+    wikilinkTarget: "Art as infection"
+    vaultStatus: missing
+    role: "Tolstoy's central positive criterion: art is the transmission of felt feeling, the receiver being 'infected' by it. The communication/expression theory of art."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-def-v, wia-infectiousness-xv, wia-sincerity-xv]
+    ingestionPriority: 1
+
+  - name: "religious consciousness (as art-criterion)"
+    wikiType: concept
+    wikilinkTarget: "Religious consciousness"
+    vaultStatus: missing
+    role: "The criterion of GOOD art: feelings flowing from the highest religious consciousness of the age (brotherhood and loving union of all people). Links the aesthetics to What I Believe / The Kingdom of God."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-religious-criterion-xvi, wia-twokinds-xvi]
+    ingestionPriority: 2
+    dependsOn: ["art as infection (заражение)"]
+
+  - name: "the critique of beauty (красота)"
+    wikiType: concept
+    wikilinkTarget: "Critique of beauty"
+    vaultStatus: missing
+    role: "Tolstoy's rejection of beauty/pleasure as the criterion of art — the negative move that clears the ground for the infection definition."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-beauty-vi, wia-kant-iii]
+    ingestionPriority: 2
+
+  - name: "counterfeits of art (подделки)"
+    wikiType: concept
+    wikilinkTarget: "Counterfeits of art"
+    vaultStatus: missing
+    role: "The four devices — borrowing, imitation, strikingness, interest — that simulate art without feeling; the negative counterpart of the infection criterion."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-counterfeits-xi, wia-wagner-xiii]
+    ingestionPriority: 3
+    dependsOn: ["art as infection (заражение)"]
+
+  - name: "Voprosy filosofii i psikhologii"
+    wikiType: institution
+    wikilinkTarget: "Voprosy filosofii i psikhologii"
+    vaultStatus: missing
+    role: "Moscow philosophy journal (ed. N. Ya. Grot) that published the first, censored Russian serial of the treatise (1897–1898)."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-pref-grot]
+    ingestionPriority: 2
+
+  - name: "Brotherhood Publishing Company"
+    wikiType: institution
+    wikilinkTarget: "Brotherhood Publishing Company"
+    vaultStatus: missing
+    role: "London publisher (linked to the journal «The New Order») that issued Maude's English translation in three instalments (1898) — the first complete text."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-pref-trueform]
+    ingestionPriority: 3
+    dependsOn: ["Aylmer Maude"]
+
+  - name: "Immanuel Kant"
+    wikiType: person
+    wikilinkTarget: "Immanuel Kant"
+    vaultStatus: missing
+    role: "Most-cited authority in the treatise's aesthetics survey; Tolstoy renders his disinterested-pleasure formula and then flattens it into hedonism. (One of the ~17 thinkers in the concept/philosopher map; see extracts/_concept_map.md for the full cast.)"
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-kant-iii]
+    ingestionPriority: 3
+
+  - name: "Richard Wagner"
+    wikiType: person
+    wikilinkTarget: "Richard Wagner"
+    vaultStatus: missing
+    role: "The treatise's exemplary 'counterfeit' artist; his Ring is the model bad-art exhibit (Ch XIII)."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-wagner-xiii]
+    ingestionPriority: 3
+
+  - name: "What Is Art? (work)"
+    wikiType: work
+    wikilinkTarget: "What Is Art?"
+    vaultStatus: stub
+    role: "The work itself — record exists as an empty stub; this dive's workRecord proposes the fills."
+    sources: [jubilee-edition]
+    evidenceRefs: [wia-def-v, wia-pref-trueform]
+    ingestionPriority: 1
+
+# ── Visual materials ────────────────────────────────────────────────────────
+# visuals/ is git-ignored (local cache); licence recorded for the separate publish step.
+visuals:
+  - id: tolstoy-1897-loc
+    type: photograph
+    subject: "Leo Tolstoy, aged 69 (1897), within the writing window"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: wia-def-v
+    holding: "U.S. Library of Congress, Prints & Photographs Division (LCCN 2014645312)"
+    access: open
+    rights: "PD (LOC, no copyright claimed)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897_LCCN2014645312.jpg"
+    localPath: visuals/commons-tolstoy-1897.jpg
+    note: "Dive keystone image; embedded in index.md."
+
+  - id: stasov-repin-1889
+    type: portrait
+    subject: "Vladimir Stasov (Repin's 1889 oil portrait)"
+    relatedEntity: "Vladimir Vasilyevich Stasov"
+    relatedEvidence: wia-stasov-books
+    holding: "image via Wikimedia Commons (Repin, d. 1930)"
+    access: open
+    rights: "PD (author died >70 years ago)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Stasov_by_Repin_1889.jpg"
+    localPath: visuals/commons-stasov-repin-1889.jpg
+    note: "The critic who supplied Tolstoy's aesthetics bibliography."
+
+  - id: grot-nikolai
+    type: photograph
+    subject: "Nikolai Grot (1852–1899), philosopher-editor"
+    relatedEntity: "Nikolai Yakovlevich Grot"
+    relatedEvidence: wia-pref-grot
+    holding: "Runivers digital archive via Wikimedia Commons"
+    access: open
+    rights: "PD (studio + subject long deceased)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Nikolay_Grot.jpg"
+    localPath: visuals/commons-grot.jpg
+    note: "Editor of the censored journal serial."
+
+  - id: taneyev-sergei
+    type: photograph
+    subject: "Sergei Taneyev (1856–1915), composer"
+    relatedEntity: "Sergei Ivanovich Taneyev"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    access: open
+    rights: "PD (Commons assertion; record lacks machine-readable author)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Taneyev.jpg"
+    localPath: visuals/commons-taneyev.jpg
+    note: "Verify author/source before any external publication."
+
+  - id: chertkov-vladimir
+    type: photograph
+    subject: "Vladimir Chertkov (photographed 1883)"
+    relatedEntity: "Vladimir Grigoryevich Chertkov"
+    relatedEvidence: wia-genesis-jul1897
+    holding: "tolstoy.ru photo archive via Wikimedia Commons"
+    access: open
+    rights: "PD (photographer + subject deceased >70 years)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg"
+    localPath: visuals/commons-chertkov.jpg
+    note: "1883 image; ~15 years before the treatise. No closer Commons portrait found in a light sweep."
+
+  - id: maude-aylmer
+    type: photograph
+    subject: "Aylmer Maude (1858–1938), English translator"
+    relatedEntity: "Aylmer Maude"
+    relatedEvidence: wia-pref-trueform
+    holding: "Victoria and Albert Museum, Lafayette archive (1919)"
+    access: open
+    rights: "CC BY-SA 4.0 — not PD; requires attribution"
+    licence: CC-BY-SA
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Aylmer_Maude_(1858-1938).jpg"
+    localPath: ""
+    note: "Recorded, not downloaded (licence-restricted; URL sufficient for reference)."
+
+  - id: what-is-art-1899-en
+    type: facsimile
+    subject: "What Is Art? — 1899 Maude English edition (Walter Scott, London)"
+    relatedEntity: "What Is Art? (work)"
+    relatedEvidence: wia-pref-trueform
+    holding: "Internet Archive / Wikimedia Commons"
+    access: open
+    rights: "PD (1899 publication)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:What_is_art_-_1899.djvu"
+    localPath: ""
+    note: "English text facsimile, not the Russian first edition. The Russian 1898 first-edition title page is a gap (needsReview)."
+
+# ── Scholarship (secondary layer; attributed, not byte-checked) ──────────────
+scholarship:
+  summary: >-
+    The scholarly consensus treats What Is Art? as philosophically serious but flawed, and
+    classifies it as a version of the expression / transmission theory of art (distinct from
+    Collingwood and Croce in insisting that completed outward transmission to an audience is
+    constitutive). Gary R. Jahn (1975) gives the most technical critique — the central term
+    'emotion' is under-defined and the religious/universal/counterfeit categorisation is
+    'often confusing'. John Bayley (1986) locates the book's force in its rejection of received
+    aesthetics rather than its positive thesis. Aylmer Maude (the translator) calls it 'probably
+    the most masterly of all Tolstoy's works'; Rimvydas Šilbajoris (1991) argues, against the
+    'old-age rupture' reading, that Tolstoy's aesthetics are consistent across his career and
+    embodied in the novels; H. O. Mounce (2001) frames it as a principled, Plato-like denial of
+    the autonomy of art. The widely-repeated charge that Tolstoy caricatures Kant, Schopenhauer
+    and Helmholtz circulates in teaching materials but was not found argued at length in a single
+    authoritative monograph (needsReview). VOICE NOTE: the mainstream tendency to call the
+    condemnations of Wagner/Beethoven/Shakespeare/his own novels 'arbitrary excess' risks
+    inverting Tolstoy's position — they follow rigorously from the infection-criterion, and are
+    judged 'arbitrary' largely by the beauty-criterion he explicitly rejects.
+  triangulation:
+    - evidenceRef: wia-def-v
+      conventionalView: "Art as transmission of feeling (not beauty) is the standard characterisation of the treatise; aesthetics handbooks file it as the (or a) transmission/expression theory."
+      relation: confirms
+      source: "Jahn 1975; Šilbajoris 1991; Mounce 2001; Maude 1925"
+    - evidenceRef: wia-religious-criterion-xvi
+      conventionalView: "The religious-consciousness criterion and the religious/universal/counterfeit scheme are read as 'often confusing' and as conflating moral with aesthetic 'good' (Jahn); Šilbajoris defends the scheme as coherent in light of the fiction; Mounce reads the denial of aesthetic autonomy as the point."
+      relation: complicates
+      source: "Jahn 1975; Šilbajoris 1991; Mounce 2001"
+    - evidenceRef: wia-selfcondemn-xvi
+      conventionalView: "The condemnation of high culture and of his own novels is universally registered as the book's most provocative feature; the mainstream tends to treat it as moralistic excess."
+      relation: complicates
+      source: "Bayley 1986; Simmons 1973; Šilbajoris 1991 (who argues it follows from the theory's logic, not self-flagellation)"
+    - evidenceRef: wia-stasov-books
+      conventionalView: "Scholarship mentions Stasov's bibliographic help only thematically; the PSS correspondence supplies the primary grounding (the «Pan» journal, the borrowed books)."
+      relation: extends
+      source: "PSS letters Tom 70 (this dive); cf. general accounts"
+    - evidenceRef: wia-pref-censor-redemption
+      conventionalView: "Tolstoy's own preface is the fullest first-person account of the censorship; Maude's translation as the first unexpurgated text 'in any language' is uncontested."
+      relation: confirms
+      source: "Tolstoy, Author's Preface (PSS Tom 30); Maude 1925"
+
+# ── workRecord (proposed fills for the works/ frontmatter; human ingestion applies) ──
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/what-is-art/What Is Art?.md"
+  workId: what-is-art
+  fields:
+    - field: dateWritingStarted
+      value: "1897-01"
+      oldStyle: "1897-01-11"
+      approximate: true
+      evidenceRefs: [wia-genesis-jan1897]
+      source: "Gudzy, PSS Tom 30 commentary; letter to Birukoff 11 Jan 1897 (OS)"
+      confidence: medium
+      note: "Concentrated writing of the treatise proper began ~11 Jan 1897 (Old Style). The work grew out of art-essays from 1882 (preparatory stages, see relatedWorks). PSS dates are Old Style; ingestion should finalize the OS→NS conversion."
+    - field: dateWritingCompleted
+      value: "1898-02"
+      oldStyle: "1898-02"
+      approximate: true
+      evidenceRefs: [wia-genesis-prostitution]
+      source: "Gudzy, PSS Tom 30 commentary; S. A. Tolstaya diary (proofs finished 23 Feb 1898 OS)"
+      confidence: medium
+      note: "Tolstoy declared it finished several times from Aug 1897; final journal proofs corrected through Feb 1898 (OS). The English-edition preface is dated 17 March (OS) 1898."
+    - field: dateFirstPublished
+      value: "1897"
+      approximate: true
+      evidenceRefs: [wia-pref-trueform]
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "First (partial) appearance: chapters I–V in «Вопросы философии и психологии» No. 5 (Nov–Dec 1897 OS, issued end Dec 1897). Remaining chapters in Book 1, 1898, released 17 March 1898 (OS). The first COMPLETE text was Maude's English (Brotherhood Publishing Co. / 'The New Order': I–IX Jan, X–XIV Mar, XV–XX May 1898)."
+    - field: firstPublishedVenue
+      value: "Вопросы философии и психологии"
+      evidenceRefs: [wia-pref-grot]
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "The censored Russian journal serial. (The first complete edition was the English Brotherhood Publishing Co. printing.)"
+    - field: firstPublishedVenueType
+      value: "journal"
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1897"
+      approximate: true
+      evidenceRefs: [wia-pref-trueform]
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "Same journal serial (Russia); first five chapters end of Dec 1897 (OS), completed 17 Mar 1898 (OS), censored."
+    - field: firstPublishedInRussiaVenue
+      value: "Вопросы философии и психологии"
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "journal"
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: [wia-pref-trueform]
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "CORRECTION to the stub (false). Maude's English edition (1898) and the Russian journal serial (1897–98) both appeared in Tolstoy's lifetime."
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [wia-pref-grot, wia-pref-censor-redemption]
+      source: "Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "CORRECTION to the stub (false). The censored serial (1897–98) and S. A. Tolstaya's Collected Works 15th part (Kushnerev, April 1898) were published in Russia in his lifetime — but only ever in censored form (see censoredVersionExists)."
+    - field: censoredVersionExists
+      value: true
+      evidenceRefs: [wia-pref-grot, wia-pref-censor-redemption]
+      source: "Tolstoy, preface to the English edition; Gudzy, PSS Tom 30 commentary"
+      confidence: high
+      note: "Every Russian lifetime edition was censored. Two stages: Grot's lexical softening (всегда→иногда, церковное→католическое, etc.), then the spiritual censor's cuts and the inserted redemption dogma. Fullest Russian: S. A. Tolstaya's 1911 ed.; Biryukov's 1913 ed. First complete uncensored text = Maude's English (1898)."
+    - field: censoredVersionNotes
+      value: "Spiritual censor cut whole passages (incl. the Trinity passage in Ch VII) and changed Christ dying 'for the truth he professed' to 'for the human race', ascribing the redemption dogma to Tolstoy. Grot softened wordings to pass the secular censor."
+      evidenceRefs: [wia-pref-censor-redemption]
+      source: "Tolstoy, preface to the English edition"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - title: "Об искусстве"
+          type: working
+          language: ru
+      evidenceRefs: []
+      source: "Gudzy, PSS Tom 30 commentary (Tolstoy tried «Об искусстве» during composition, then reverted)"
+      confidence: high
+    - field: bans
+      value:
+        - banningAuthority: "Spiritual Censorship (Russian Orthodox)"
+          authorityType: holy-synod
+          jurisdiction: "Russian Empire"
+          scope: "passages-cut"
+          banDate: "1898"
+          notes: "The complete / uncensored text could not appear in Russia in Tolstoy's lifetime; the spiritual censor cut whole passages from the journal book (incl. the Christ/redemption and Trinity passages). Not a clean outright ban — the censored version WAS released."
+      evidenceRefs: [wia-pref-censor-redemption]
+      source: "Tolstoy, preface to the English edition; Gudzy, PSS Tom 30 commentary"
+      confidence: medium
+      note: "scope set to the schema enum value 'passages-cut'; the explanatory detail is in bans[].notes. Ingestion may prefer to record this only via censoredVersionExists. Verify the authority's exact name."
+    - field: identifiers.jubileeEdition.volumes
+      value: "30"
+      source: "PSS Tom 30 (treatise pp. 27–203)"
+      confidence: high
+    - field: authoringLocations
+      value: ["Moscow", "Yasnaya Polyana", "Nikolskoye (Olsufyev estate)"]
+      source: "Gudzy, PSS Tom 30 commentary; composition-window diaries"
+      confidence: medium
+      note: "Shape to the works schema's authoringLocations object form on ingestion."
+    - field: themes
+      value: ["aesthetics", "philosophy of art", "infection theory of art", "religious art", "censorship"]
+      source: "dive synthesis"
+      confidence: medium
+
+# ── Coverage ledger (surfaces × status) ─────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition (incl. the people)"
+    status: covered
+    note: "25 dated genesis passages + 8 people from Tom 53 diaries and Toms 69–71/88 letters."
+  - surface: "What the work says (structural map)"
+    status: covered
+    note: "Chapters I–XX read structurally; 18 keystone quotes + the recovered self-condemnation footnote."
+  - surface: "Mainstream aesthetics vs Tolstoy (concept/philosopher map)"
+    status: covered
+    note: "17 thinkers + 5 concepts, each with received view + Tolstoy's verdict + faithful/flattened judgement (extracts/_concept_map.md)."
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "Precursor essays 1882–1896 + the 1894 Maupassant preface extracted and characterised from Gudzy's commentary; the variant drafts (v30_303_426) were not deep-collated."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Two-stage censorship + full publication lineage from the preface and Gudzy's commentary."
+  - surface: "Reception & afterlife — Russian society & church"
+    status: partial
+    note: "Symbolist counter-positioning (Bryusov, Merezhkovsky) documented; church reaction to THIS work is thin (the 1901 excommunication was driven by Resurrection + the religious works) and not overstated; Stasov's published reaction not recovered (needsReview)."
+  - surface: "Reception & afterlife — international"
+    status: covered
+    note: "Maude's translation = most-read Western aesthetics text; divided reviews (Faguet, Rilke, Shaw, Walkley, Noyes)."
+  - surface: "Scholarly context (triangulation)"
+    status: covered
+    note: "5 triangulation entries; the 'caricatures Kant/Schopenhauer' charge flagged as un-sourced at length (needsReview)."
+  - surface: "Visual & manuscript record"
+    status: partial
+    note: "5 PD images cached; Maude (CC-BY-SA) recorded; Russian first-edition title page, a date-precise Repin/Nesterov Tolstoy painting, and a PD Maude photo are gaps."
+  - surface: "workRecord fill"
+    status: covered
+    note: "Dating, venues, the publishedInRussiaDuringLifetime correction, censorship flags, working title. OS→NS conversion left to ingestion."
+  - surface: "The author's later verdict"
+    status: partial
+    note: "The self-condemnation is in the work itself; the composition letters add the doubt; later (post-1898) judgments not separately swept."
+
+# ── Intra-corpus development (primary vs primary) ───────────────────────────
+contradictions:
+  - claim: "The 1894 Maupassant preface lists three conditions of a true work of art — a moral relation to the subject, beauty of form, and sincerity (wia-maupassant-3conditions)."
+    correction: "The 1898 treatise drops 'beauty of form' as a criterion entirely and relocates the centre to 'infection' (заражение) — the transmission of feeling (wia-def-v). This is a development of Tolstoy's own position across four years, not an inconsistency within one text."
+    evidenceRef: wia-maupassant-3conditions
+
+# ── Not covered (resume queue) ──────────────────────────────────────────────
+notCovered:
+  - "Full chapter-by-chapter collation of the censored journal text against the uncensored English (only the headline cuts documented)."
+  - "Deep collation of the treatise's variant drafts (works/v30_303_426_Chto_takoe_iskusstvo_Varianty)."
+  - "Maude's biography framing and the translation's textual history (a translator/edition follow-up)."
+  - "Russian-language periodical reception of the treatise, 1898–1899 (needs Russian periodical archives)."
+  - "The precursor art-essays' internal argument (extracted but not deep-read; only characterised from the commentary)."
+
+# ── Needs review (deferred human judgment) ──────────────────────────────────
+needsReview:
+  - item: "extract_tei.py has no mode to recover authorial inline <note> footnotes (it strips them). The famous self-condemnation footnote was recovered here with a one-off helper (extracts/_recover_notes.py). Candidate for a tooling enhancement (e.g. --notes=inline)."
+    phase: "Phase 2"
+    why: "Tooling gap that silently dropped the single most-cited line in the treatise; affects any future dive on a work with authorial footnotes."
+  - item: "workRecord dating is Old Style; OS→NS conversion for dateWritingStarted/Completed and dateFirstPublished should be finalized by ingestion."
+    phase: "Phase 4"
+    why: "PSS diary/letter dates are Julian; the works schema's main date fields likely expect a chosen calendar."
+  - item: "Stasov's published reaction to the printed (censored) treatise — his 1898–1900 criticism — was not recovered; needs an archival check."
+    phase: "Phase 3"
+    why: "Russian-society reception is partial without it; the dive only has the composition-stage collaboration."
+  - item: "No single authoritative monograph found that argues at length that Tolstoy caricatures Kant/Schopenhauer/Helmholtz; the concept-map's 'flattened' judgements are the dive's own analysis, attributed as such."
+    phase: "Phase 3"
+    why: "The juxtaposition section advances a reading without a named scholarly backer for the flattening claim."
+  - item: "Russian 1898 first-edition title-page facsimile not located as PD (for the visual record)."
+    phase: "Phase 2"
+    why: "Visual record is partial; likely survives in RGALI / RGB, not digitised publicly."
+  - item: "relatedWorks ids for the Maupassant preface and the precursor art-essays — resolve against works/ records before linking."
+    phase: "Phase 4"
+    why: "The dive will not fabricate work ids; the precursors are companions/sources to the treatise."
+
+archivesConsulted:
+  - "tolstoydigital-TEI corpus (PSS Tom 30 works + comments; Tom 53 diaries/notebooks; Toms 69–71 letters; Tom 88 letters to Chertkov)"
+  - "PSS Tom 30 PDF (primary-sources/jubilee-edition/vol90/vol90.pdf) — printed 1951 edition, not a first edition"
+  - "Wikimedia Commons (visual sweep)"
+  - "Web scholarship (English-first): JAAC, Slavica, Routledge, Wikipedia, marxists.org, Michigan Publishing"
+
+references:
+  primary:
+    - "Что такое искусство? — tolstoydigital TEI works/v30_027_203 (treatise, Chs I–XX + Прибавления), PSS Tom 30 pp. 27–203"
+    - "Предисловие к английскому изданию трактата «Что такое искусство?» — works/v30_204_206, PSS Tom 30 pp. 204–206"
+    - "Предисловие к сочинениям Гюи де Мопассана (1894) — works/v30_003_024, PSS Tom 30 pp. 3–24"
+    - "Precursor art-essays 1882–1896 — works/v30_209_212, v30_213_215, v30_216_225, v30_226_230, v30_231_239, v30_240_242, v30_243_270"
+    - "N. K. Gudzy, История писания и печатания статей об искусстве и трактата «Что такое искусство?» — comments/v30_509_555 (editorial history); MS description comments/v30_555_570; textological commentary comments/v30_571_582"
+    - "Composition-window diaries Tom 53 (1896–1898) and letters Toms 69–71, 88 — per-file ids in evidence[]"
+  background:
+    - "Aylmer Maude, Tolstoy on Art and Its Critics (1925)"
+    - "Gary R. Jahn, 'The Aesthetic Theory of Leo Tolstoy's What Is Art?', JAAC 34 (1975), 59–65"
+    - "Rimvydas Šilbajoris, Tolstoy's Aesthetics and His Art (Slavica, 1991)"
+    - "H. O. Mounce, Tolstoy on Aesthetics: What Is Art? (Routledge, 2001)"
+    - "John Bayley, Leo Tolstoy (1986); Ernest J. Simmons, Introduction to Tolstoy's Writings (1973); G. R. Noyes (1918)"
+    - "Valery Bryusov, 'On Art' (1899); Dmitry Merezhkovsky, L. Tolstoy and Dostoevsky (1902)"
+    - "William B. Edgerton, 'The Critical Reception Abroad of Tolstoy's What Is Art?' (Indiana University, 1978)"
+    - "Decree of Excommunication of Leo Tolstoy (Holy Synod, 1901), Wikisource"
+    - "Full source list with URLs: extracts/_scholarship.md"
