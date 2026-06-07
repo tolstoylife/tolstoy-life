@@ -612,8 +612,8 @@ visuals:
     note: "Not found on Commons; the PSS follows this edition. Targeted search of imwerden.de / vtoraya-literatura.com / RGB recommended (see needsReview)."
 
 # ─────────────────────────────────────────────────────────────────────────────
-# SCHOLARSHIP — secondary layer (Phase 3). PENDING: gather agent running; this
-# block is filled from extracts/_scholarship.md once it lands.
+# SCHOLARSHIP — secondary layer (Phase 3), filled from extracts/_scholarship.md.
+# Attribute, don't assert; ground in primary first. 5 triangulation entries.
 # ─────────────────────────────────────────────────────────────────────────────
 scholarship:
   summary: >-
