@@ -1,0 +1,911 @@
+topic:
+  slug: 1901-1902-what-is-religion
+  title: "«Что такое религия и в чём сущность её?» / What Is Religion and What Is Its Essence?"
+  question: "What does the treatise argue, how was it composed at Gaspra during Tolstoy's grave illness just after his excommunication, who were its interlocutors, and what is its place in the Prophet-period cluster?"
+  date: "2026-06-07"
+  period: Prophet period (1880–1910)
+  corpusSurface: "Main text (PSS T. 35); PSS editorial apparatus (history of writing, manuscript description); Diary T. 54 (1900–1901 entries); Letters T. 73 (Aug 1901 – Dec 1902); Letters T. 88 (to Chertkov, Aug–Nov 1901); Notebook T. 54 (Jan 1900–Mar 1901)"
+  dateRange: "1900-11-07 to 1902-01-20"
+
+evidence:
+  - id: ev-main-text
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Истинная религия есть такое согласное с разумом и знаниями человека установленное им отношение к окружающей его бесконечной жизни, которое связывает его жизнь с этой бесконечностью и руководит его поступками."
+    quoteEn: "(working English) True religion is such a relation, established by man in accord with his reason and knowledge, to the infinite life surrounding him, which binds his life to that infinity and guides his actions."
+    significance: "The treatise's core positive definition of religion — given at the close of chapter III. Distinguishes true religion from both church orthodoxy and positivist science as substitutes."
+    facsimile: ""
+
+  - id: ev-definition-ch2
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Всякая религия есть установление отношения человека к бесконечному существованию, которому он чувствует себя причастным и из которого он выводит руководство своей деятельности."
+    quoteEn: "(working English) Every religion is an establishment of man's relation to the infinite existence of which he feels himself a part and from which he draws guidance for his activity."
+    significance: "Chapter III synthesis statement after surveying Vauvenargues, Bayle, Constant, Goblet d'Alviella, and Reville — establishes the structural unity of all religions."
+    facsimile: ""
+
+  - id: ev-corruption-three-means
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "А нужно было внушать во всех религиях одни и те же три положения, служащие основанием всех тех извращений, которым подвергались стареющие религии. Во-первых, то, что есть особенного рода люди, которые одни могут быть посредниками между людьми и Богом или богами; во-вторых, то, что совершились и совершаются чудеса, которые доказывают и подтверждают истинность того, что говорят посредники между людьми и Богом, и"
+    quoteEn: "(working English) In all religions it was necessary to instil the same three propositions that underlie all the corruptions to which ageing religions are subjected: first, that there exist special people who alone can mediate between humans and God; second, that miracles occurred and occur; and third, that there exist certain words that express the unchanging will of God."
+    significance: "Chapter V — the three mechanisms of religious corruption (priesthood, miracles, scripture) applied to all historical religions including Christianity. Connects the church critique to a universal structural argument."
+    facsimile: ""
+
+  - id: ev-equality-core
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "признание равенства людей есть неизбежное, основное свойство всякой религии."
+    quoteEn: "(working English) The recognition of the equality of people is the inevitable, fundamental property of every religion."
+    significance: "Chapter IV — Tolstoy's structural claim that equality is the one feature all authentic religions share, and that corruption always consists in hiding or inverting this feature."
+    facsimile: ""
+
+  - id: ev-church-truc
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Truc этот состоит в том, что приписывается непогрешимость не только известной букве, но и известному собранию людей, называемому церковью и имеющему право передавать эту непогрешимость избираемым ими людям."
+    quoteEn: "(working English) The trick consists in attributing infallibility not only to certain written texts but to a certain assembly of people called the Church, which has the right to transfer that infallibility to people of its own choosing."
+    significance: "Chapter VI — the specific Christian novelty in the corruption sequence: the concept of the Church as an infallible body, which renders all evangelical safeguards (against priesthood, texts) void."
+    facsimile: ""
+
+  - id: ev-faith-definition
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Вера есть сознание человеком такого своего положения в мире, которое обязывает его к известным поступкам."
+    quoteEn: "(working English) Faith is a person's awareness of such a position in the world as obliges him to certain actions."
+    significance: "Chapter VII — Tolstoy's own definition of faith, contrasted with the Hebrews epistle's definition and with the catechism. Faith is not credence or hope but a defining awareness of one's situatedness that generates conduct."
+    facsimile: ""
+
+  - id: ev-universal-religion-ch14
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Положения эти в том, что есть Бог, начало всего; что в человеке есть частица этого божественного начала, которую он может уменьшить или увеличить в себе своей жизнью; что для увеличения этого начала человек должен подавлять свои страсти и увеличивать в себе любовь; и что практическое средство достижения этого состоит в том, чтобы поступать с другими так же, как хочешь, чтобы поступали с тобою."
+    quoteEn: "(working English) These propositions are: that there is God, the source of all; that in man there is a particle of this divine principle, which he can diminish or increase in himself through his life; that to increase this principle man must subdue his passions and increase love in himself; and that the practical means of achieving this is to act toward others as one wishes them to act toward oneself."
+    significance: "Chapter XIV — the four propositions of the 'universal religion' common to Brahmanism, Judaism, Confucianism, Taoism, Buddhism, Christianity, and Islam. The culminating positive argument of the treatise."
+    facsimile: ""
+
+  - id: ev-religious-people-break-circle
+    genre: work
+    pssTom: 35
+    pages: "157–198"
+    date: "1901-08–1902-01"
+    localPdf: ""
+    extract: "extracts/v35_157_198_Chto_takoe_religiya.txt"
+    quoteRu: "Как ни мало таких людей, как ни низко их общественное положение, как ни слабы они образованием или умом, люди эти так же верно, как огонь зажигает сухую степь, зажгут весь мир, все высохшие от долгой безрелигиозной жизни сердца людей, жаждущие обновления."
+    quoteEn: "(working English) However few such people are, however low their social position, however weak in education or mind — these people, just as surely as fire ignites the dry steppe, will kindle the whole world, all the hearts dried out by a long irreligious life that thirst for renewal."
+    significance: "Chapter XVII — the closing prophetic image: the true religious person, like fire on dry steppe, will break the vicious circle of false religion and state violence. A rare moment of eschatological confidence in Tolstoy's late prose."
+    facsimile: ""
+
+  - id: ev-diary-1900-11-07
+    genre: diary
+    pssTom: 54
+    pages: "53–54"
+    date: "1900-11-07"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_053_054_1900_11_07.txt"
+    quoteRu: "2) Думал о трех статьях: 1) Письмо Китайцам, 2) О том, что все на убийстве, и 3) что у нас quasi христиан нет никакой религии."
+    quoteEn: "(working English) Thought about three articles: … 3) that we quasi-Christians have no religion at all."
+    significance: "First recorded crystallisation — embryonic third article of a planned trilogy. The three-article frame was later collapsed into one work."
+    facsimile: ""
+
+  - id: ev-diary-1901-02-08
+    genre: diary
+    pssTom: 54
+    pages: "86–89"
+    date: "1901-02-08"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_086_089_1901_02_08.txt"
+    quoteRu: "Искал определение религии, взял книгу Чичерина — Религия и Наука. Искусственные построения на заданную тему. Мое определение такое: Это — такое установление человеком отношения к бесконечному,¹⁰ которым¹¹ определяется цель его жизни."
+    quoteEn: "(working English) Sought a definition of religion, took Chicherin's book Religion and Science. Artificial constructions on a set theme. My definition is: It is such an establishment by man of his relation to the infinite, by which the purpose of his life is determined."
+    significance: "Definitional keystone of the treatise — first articulation of the relation-to-the-infinite formula, dated just days before the Holy Synod excommunication decree (22–24 Feb 1901 OS / 7–9 Mar NS)."
+    facsimile: ""
+
+  - id: ev-diary-1901-02-11
+    genre: diary
+    pssTom: 54
+    pages: "89–90"
+    date: "1901-02-11"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_089_090_1901_02_11.txt"
+    quoteRu: "Еще думал, что обращение к китайцам надо оставить. А прямо озаглавить: Безбожное время или новое падение Рима. И прямо начать с указания на отсутствие религии."
+    quoteEn: "(working English) Also thought that the address to the Chinese should be dropped. Instead simply title it: A Godless Time, or the New Fall of Rome. And open directly with pointing to the absence of religion."
+    significance: "First candidate title — «Безбожное время, или новое падение Рима» — confirms merger of three projected articles into one work. Title ultimately abandoned."
+    facsimile: ""
+
+  - id: ev-diary-1901-10-10
+    genre: diary
+    pssTom: 54
+    pages: "110–112"
+    date: "1901-10-10"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_110_112_1901_10_10.txt"
+    quoteRu: "За все это время работаю над Религией. Кажется подвигается, но и умственно стал слабее, меньше времени могу работать."
+    quoteEn: "(working English) All this time I have been working on Religion. It seems to be progressing, but mentally I have grown weaker, less time to work."
+    significance: "Confirms active drafting at Gaspra, written despite serious illness that would continue through winter. Entry also contains aphorisms that recur in the treatise."
+    facsimile: ""
+
+  - id: ev-diary-1901-11-29
+    genre: diary
+    pssTom: 54
+    pages: "113–115"
+    date: "1901-11-29"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_113_115_1901_11_29.txt"
+    quoteRu: "Я думаю, что кончил о религии. Как всегда сомневаюсь в важности и доброте этого сочинения, но кажется теперь более основательно, чем в прежних случаях."
+    quoteEn: "(working English) I think I have finished On religion. As always I doubt the importance and quality of this work, but it seems now more well-grounded than in previous cases."
+    significance: "First 'I think I have finished' declaration — immediately qualified by characteristic self-doubt, but 'основательно' (more thoroughly grounded) is a positive register rare in his post-completion notes."
+    facsimile: ""
+
+  - id: ev-diary-1901-12-26
+    genre: diary
+    pssTom: 54
+    pages: "115–117"
+    date: "1901-12-26"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_115_117_1901_12_26.txt"
+    quoteRu: "Кончил о религии. Но должно быть пересмотрю еще."
+    quoteEn: "(working English) Finished On religion. But I will probably review it again."
+    significance: "Definitive completion declaration. Entry also contains a late alternative definition: 'Religion is such a state in which actions are conditioned not by considerations of this temporal life alone, but by considerations of the whole eternal, infinite life' — a consequence-oriented formulation complementing the February relation-to-the-infinite formula."
+    facsimile: ""
+
+  - id: ev-letter-chertkov-aug12
+    genre: letter
+    pssTom: 88
+    pages: "243–244"
+    date: "1901-08-12"
+    addressee: "В. Г. Чертков (Vladimir Chertkov)"
+    localPdf: ""
+    extract: "extracts/v88_636_avgusta12.txt"
+    quoteRu: "начал о религии, о ее значении и об отсутствии ее в нашем мире.⁴ Надеюсь и чувствую, что эта статья увлечет меня и даст возможность высказать многое, что хочется высказать. Надо торопиться."
+    quoteEn: "(working English) I have begun [writing] about religion, about its significance and about its absence in our world. I hope and feel that this article will carry me away and will make it possible to say much that I want to say. I must hurry."
+    significance: "Start-of-composition announcement to Chertkov. «Надо торопиться» — the urgency note signals Tolstoy's awareness of age and declining health."
+    facsimile: ""
+
+  - id: ev-letter-chertkov-sep14
+    genre: letter
+    pssTom: 88
+    pages: "244–246"
+    date: "1901-09-14"
+    addressee: "В. Г. Чертков (Vladimir Chertkov)"
+    localPdf: ""
+    extract: "extracts/v88_637_sentyabrya14.txt"
+    quoteRu: "Две, включая и О p e л иг ии, у меня есть вещи, которые я буду виноват, если не кончу до смерти.⁶ Виноват, потому что мог сделать это прежде."
+    quoteEn: "(working English) Two things — including On Religion — are works for which I shall be guilty if I do not finish them before death. Guilty, because I could have done it earlier."
+    significance: "Tolstoy ranks the religion essay among the two things he must finish before death. Written from Gaspra, day 4 of arrival; drafts left behind at Yasnaya Polyana."
+    facsimile: ""
+
+  - id: ev-letter-chertkov-nov6
+    genre: letter
+    pssTom: 88
+    pages: "247–250"
+    date: "1901-11-06"
+    addressee: "В. Г. Чертков (Vladimir Chertkov)"
+    localPdf: ""
+    extract: "extracts/v88_641_noyabrya6.txt"
+    quoteRu: "Пишу я, как вы знаете, о религии, «Что такое религия?». Написано и много раз пересмотрено 12 глав, — остается едва ли 6."
+    quoteEn: "(working English) I am writing, as you know, about religion, 'What is religion?' Twelve chapters have been written and many times reviewed — barely 6 remain."
+    significance: "Mid-composition chapter count — 12 done + ~6 remaining = projected ~18. Also: Tolstoy had been reading Mikhailovsky on religion ('произвольная, легкомысленная, ничего не говорящая чепуха') and Kuno Fischer on Kant."
+    facsimile: ""
+
+  - id: ev-letter-chertkov-nov30
+    genre: letter
+    pssTom: 88
+    pages: "251–252"
+    date: "1901-11-30"
+    addressee: "В. Г. Чертков (Vladimir Chertkov)"
+    localPdf: ""
+    extract: "extracts/v88_644_noyabrya30.txt"
+    quoteRu: "А, главное, надеюсь, что кончил о религии (Что такое религия и ее назначение). Нечто придется переменить, прибавить кое-что в последней 16-й главе. Как всегда, то кажется, что много там важных мыслей, хотя и дурно выраженных, то кажется, что всё нехорошо. Одно знаю, что написать это мне было нужно, и я сделал, что мог."
+    quoteEn: "(working English) I hope I have finished On Religion (What is religion and its purpose). Something will need to be changed, a little added in the last, 16th chapter… One thing I know: it was necessary for me to write this, and I did what I could."
+    significance: "First 30-Nov completion note to Chertkov: 16 chapters at this stage; Tolstoy calls the work «одностороннюю» (one-sided) after setting it down — notable self-description. Title still in flux: «назначение» (purpose) not «сущность» (essence)."
+    facsimile: ""
+
+  - id: ev-letter-ge-aug26
+    genre: letter
+    pssTom: 73
+    pages: "134–136"
+    date: "1901-08-26"
+    addressee: "Н. Н. Ге (сын) (Nikolai Ge, son)"
+    localPdf: ""
+    extract: "extracts/v73_146_H_N_Gesynu.txt"
+    quoteRu: "теперь пишу о религии,³ об ее отсутствии и въехал в работу."
+    quoteEn: "(working English) Now I am writing about religion, about its absence, and I have gotten into the work."
+    significance: "Earliest letter announcing active composition, two weeks after the Chertkov start-letter. The phrase «въехал в работу» (literally 'driven into the work') signals full engagement."
+    facsimile: ""
+
+  - id: ev-letter-rusanov-sep5
+    genre: letter
+    pssTom: 73
+    pages: "144–145"
+    date: "1901-09-05"
+    addressee: "Г. А. Русанов (Gavril Rusanov)"
+    localPdf: ""
+    extract: "extracts/v73_154_G_A_Rusanovu.txt"
+    quoteRu: "Теперь я занят статьей о религии: определение ее и выяснение ее отсутствия в нашем мире и ужасных последствиях этого. Очень меня занимает эта работа."
+    quoteEn: "(working English) I am now occupied with an article on religion: defining it and elucidating its absence in our world and the terrible consequences of this. This work absorbs me greatly."
+    significance: "Clearest early programme statement: definition + absence + consequences. This three-part structure maps directly onto the treatise's architecture. Written on the day of departure for Crimea."
+    facsimile: ""
+
+  - id: ev-letter-biryukov-dec31
+    genre: letter
+    pssTom: 73
+    pages: "179–180"
+    date: "1901-12-31"
+    addressee: "П. И. Бирюков (Pavel Biryukov)"
+    localPdf: ""
+    extract: "extracts/v73_197_P_I_Biryukovu.txt"
+    quoteRu: "О религии кончил⁴ и на днях отправлю.⁵"
+    quoteEn: "(working English) On religion I have finished and will send it off in the coming days."
+    significance: "Completion announcement on New Year's Eve 1901 — manuscript not yet dispatched to Chertkov at this moment. Also mentions Biryukov reviewing a Binshtok translation's religious-philosophical section."
+    facsimile: ""
+
+  - id: ev-letter-grauberger-jan20
+    genre: letter
+    pssTom: 73
+    pages: "201–203"
+    date: "1902-01-20"
+    addressee: "Ф. Х. Граубергер (Fyodor Grauberger)"
+    localPdf: ""
+    extract: "extracts/v73_209_F_X_Graubergeru.txt"
+    quoteRu: "Я совершенно согласен с тем, что вы пишете. Я понемногу приходил к этому убеждению и теперь пришел окончательно, что и выразил в своей статье «Что такое религия и в чем ее сущность?», которая теперь, вероятно, печатается у Черткова."
+    quoteEn: "(working English) I entirely agree with what you write. I was gradually coming to this conviction and have now arrived at it definitively, which I expressed in my article 'What Is Religion and What Is Its Essence?', which is now, probably, being printed at Chertkov's."
+    significance: "Only letter that names the article by its full Russian title and places it in the press. Written 20 Jan 1902, ~3 weeks after the Biryukov 'finished' letter — the manuscript had reached Chertkov in the interim."
+    facsimile: ""
+
+  - id: ev-history-writing
+    genre: commentary
+    pssTom: 35
+    pages: "670–675"
+    date: "1950"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v35_670_675_history.txt"
+    quoteRu: "В Дневнике под этим числом Толстой записал: «Думал о трех статьях... 3) что у нас, quasi-христиан, нет никакой религии»."
+    quoteEn: "(working English) In the Diary under this date Tolstoy wrote: 'Thought about three articles… 3) that we, quasi-Christians, have no religion at all.'"
+    significance: "PSS editorial history of writing (V. S. Mishin), covering the full composition arc from 7 Nov 1900 to Jan 1902 dispatch to Chertkov, textual variants in the Free Word edition, the Russian first publication (1906), and the French translation (Bienstock + Biryukov, 1902)."
+    facsimile: ""
+
+  - id: ev-manuscript-description
+    genre: commentary
+    pssTom: 35
+    pages: "675–676"
+    date: "1950"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v35_675_676_primechanija.txt"
+    quoteRu: "Рукописи, относящиеся к статье «Что такое религия и в чем сущность ее?», хранятся в Рукописном отделе Музея Л. Н. Толстого Академии наук СССР, в архиве В. Г. Черткова. Общее количество их исчисляется в 1449 рукописных единиц."
+    quoteEn: "(working English) The manuscripts relating to the article are held in the Manuscript Department of the Tolstoy Museum of the Academy of Sciences of the USSR, in the Chertkov archive. Their total number amounts to 1,449 manuscript units."
+    significance: "82 sequentially ordered manuscripts (1,449 total units) documenting the drafting process. Chapters I–IV covered by MSS 1–9; the final fair copy (MS 82) is the base text for PSS T. 35."
+    facsimile: ""
+
+  - id: ev-notebook-1900-1901
+    genre: notebook
+    pssTom: 54
+    pages: "211–240"
+    date: "1900-01 / 1901-03"
+    addressee: ""
+    localPdf: ""
+    extract: "extracts/v54_211_240_Zapisnaja_knizhka.txt"
+    quoteRu: "Les obligations de l’homme envers Dieu voilà la religion ( Vauvenargues ).¹¹³¹\n\nLa religion est une affaire entre chaque homme et Dieu. (Beile).¹¹³²\n\nLa religion est le résultat des besoins de l’âme et des efforts de l’ intéligence. (B. Constant ).¹¹³³"
+    quoteEn: "(working English) [Vauvenargues:] 'The obligations of man toward God — that is religion.' [Bayle:] 'Religion is a matter between each man and God.' [Constant:] 'Religion is the result of the needs of the soul and the efforts of the intelligence.'"
+    significance: "Notebook cluster of French-language выписки from Vauvenargues, Bayle, Constant, Proudhon, Rousseau, Swift — the direct source material for the survey of definitions in chapter II. Coleridge noted absent from this notebook; Goblet d'Alviella and Reville appear only in the text itself."
+    facsimile: ""
+
+entities:
+  - name: "Что такое религия и в чём сущность её?"
+    wikiType: work
+    wikilinkTarget: "what-is-religion"
+    vaultStatus: missing
+    role: subject work — the treatise itself
+    sources:
+      - jubilee-edition
+      - tolstoydigital-tei
+    evidenceRefs:
+      - ev-main-text
+      - ev-history-writing
+      - ev-manuscript-description
+    ingestionPriority: 1
+
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: publisher (Free Word / «Свободное слово», Christchurch, England); primary correspondent during composition; received the manuscript for typesetting
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-letter-chertkov-aug12
+      - ev-letter-chertkov-sep14
+      - ev-letter-chertkov-nov6
+      - ev-letter-chertkov-nov30
+    ingestionPriority: 2
+
+  - name: Pavel Birukoff
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: co-translator of the French edition (with J.-W. Bienstock, Paris 1902); biographer; received the completion announcement (31 Dec 1901)
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-letter-biryukov-dec31
+      - ev-history-writing
+    ingestionPriority: 2
+
+  - name: Gavril Rusanov
+    wikiType: person
+    wikilinkTarget: "Gavril Rusanov"
+    vaultStatus: missing
+    role: Tolstoyan correspondent; received the clearest early programme statement (5 Sept 1901) and the final completion note (17 Jan 1902)
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-letter-rusanov-sep5
+    ingestionPriority: 3
+
+  - name: Aylmer Maude
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: English biographer and translator; received a progress report from Gaspra (23 Sept 1901) while composing «Resurrection» translation; also managing the Tolstoy Society correspondence
+    sources:
+      - jubilee-edition
+      - maude-biography-vol1
+    evidenceRefs:
+      - ev-letter-chertkov-nov6
+    ingestionPriority: 3
+
+  - name: Pavel Boulanger
+    wikiType: person
+    wikilinkTarget: "Pavel Boulanger"
+    vaultStatus: missing
+    role: Tolstoyan; accompanied Tolstoy to Gaspra (Sept 1901); one of the scribes (dictation of late additions during pneumonia, Jan–Feb 1902); received two composition progress letters
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-history-writing
+    ingestionPriority: 3
+
+  - name: Konstantin Pobedonostsev
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: Ober-Procurator of the Holy Synod; architect of the excommunication decree (22–24 Feb 1901 OS); the institutional antagonist whose religious-political order the treatise directly addresses
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-main-text
+    ingestionPriority: 2
+
+  - name: "«Свободное слово» (Free Word Press)"
+    wikiType: organisation
+    wikilinkTarget: "Svobodnoe Slovo"
+    vaultStatus: missing
+    role: publisher of the essay's first edition (No. 75, Christchurch, Hants, 1902)
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-history-writing
+      - ev-letter-grauberger-jan20
+    ingestionPriority: 2
+    dependsOn:
+      - Vladimir Chertkov
+
+  - name: Holy Synod excommunication (1901)
+    wikiType: event
+    wikilinkTarget: "Holy Synod Excommunication 1901"
+    vaultStatus: missing
+    role: the ecclesiastical-political context in which the treatise was composed; Tolstoy's formal response to the decree appears in the opening chapters' critique of church Christianity
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-main-text
+      - ev-diary-1901-02-08
+    ingestionPriority: 2
+
+  - name: Gaspra (Panina estate)
+    wikiType: place
+    wikilinkTarget: "Gaspra"
+    vaultStatus: missing
+    role: composition site; Tolstoy stayed at the Panina estate at Gaspra, Crimea, Sept 1901 – June 1902; gravely ill through winter 1901–02; most of the treatise written here
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-diary-1901-10-10
+      - ev-diary-1901-11-29
+      - ev-diary-1901-12-26
+    ingestionPriority: 2
+
+  - name: Nikolai Chicherin (Boris Chicherin)
+    wikiType: person
+    wikilinkTarget: "Boris Chicherin"
+    vaultStatus: missing
+    role: philosopher whose book «Наука и религия» Tolstoy read in February 1901 and rejected as 'artificial constructions on a set theme'; the rejection catalysed Tolstoy's own opening definition
+    sources:
+      - jubilee-edition
+    evidenceRefs:
+      - ev-diary-1901-02-08
+    ingestionPriority: 3
+
+visuals:
+  - id: tolstoy-sofia-crimea-1902
+    type: photograph
+    subject: "Tolstoy and Sofia Tolstaya together at Gaspra, Crimea"
+    relatedEntity: "Что такое религия и в чём сущность её?"
+    relatedEvidence: ev-diary-1901-10-10
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Sofia_Tolstaya_in_Crimea,_1902.jpg"
+    localPath: "visuals/commons-tolstoy-sofia-crimea-1902.jpg"
+    note: "Keystone image. Tolstoy and Sofia at Gaspra, May 1902, during the composition period. Photographer unknown; pre-1928."
+
+  - id: gaspra-house-1901-1902
+    type: photograph
+    subject: "The Panina estate at Gaspra — where Tolstoy stayed and wrote, 1901–1902"
+    relatedEntity: Gaspra (Panina estate)
+    relatedEvidence: ev-diary-1901-10-10
+    holding: "Wikimedia Commons / Государственный исторический музей (GIM)"
+    archiveId: "ГИМ e1"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Россия._Крым._Гаспра._Дом,_где_жила_семья_Толстых_в_1901_и_1902гг_ГИМ_e1.jpg"
+    localPath: "visuals/commons-gaspra-house-1901-1902.jpg"
+    note: "Photographed 1911 by Sherer, Nabgolts & Co. (Moscow). Published pre-1928; PD."
+
+  - id: tolstoy-chekhov-yalta-1901
+    type: photograph
+    subject: "Tolstoy and Chekhov at the Panina dacha, Yalta/Gaspra area, 1901"
+    relatedEntity: Gaspra (Panina estate)
+    relatedEvidence: ev-diary-1901-11-29
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_and_chekhov.jpg"
+    localPath: "visuals/commons-tolstoy-chekhov-yalta-1901.jpg"
+    note: "By Petr Alekseevich Sergenko (1854–1932), died >70y ago. The 29 Nov 1901 diary entry notes Gorky and Chekhov visited; this photo places Tolstoy with Chekhov in the same locale."
+
+  - id: tolstoy-scherer-nabholz-1901
+    type: photograph
+    subject: "Formal cabinet portrait of Tolstoy, year of excommunication"
+    relatedEntity: Holy Synod excommunication (1901)
+    relatedEvidence: ev-diary-1901-02-08
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_Scherer_%26_Nabholz,_1901.jpg"
+    localPath: "visuals/commons-tolstoy-scherer-nabholz-1901.jpg"
+    note: "Scherer & Nabholz, Moscow, 1901. Same firm that photographed the Gaspra house. Signed and dated 1901 by Tolstoy."
+
+  - id: chertkov-tolstoy-1909
+    type: photograph
+    subject: "Chertkov and Tolstoy at Yasnaya Polyana, 29 March 1909"
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: ev-letter-chertkov-aug12
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov%26Tolstoy.jpg"
+    localPath: "visuals/commons-chertkov-tolstoy-1909.jpg"
+    note: "Photograph by Chertkov's own circle. Shows the collaboration that produced the 1902 Free Word edition."
+
+  - id: chertkov-portrait-repin-1890s
+    type: "portrait (painting)"
+    subject: "Vladimir Chertkov, solo portrait"
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: ev-letter-chertkov-aug12
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg"
+    localPath: "visuals/commons-chertkov-portrait-repin-1890s.jpg"
+    note: "By Ilya Repin (1844–1930), 1890s. Individual likeness; prefer when the joint 1909 photo is too relational."
+
+  - id: biryukov-1916
+    type: photograph
+    subject: "Pavel Ivanovich Biryukov, portrait, 1916"
+    relatedEntity: Pavel Birukoff
+    relatedEvidence: ev-letter-biryukov-dec31
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Бірюков_Павло_Іванович.jpg"
+    localPath: "visuals/commons-biryukov-1916.jpg"
+    note: "Unknown photographer; Biryukov died 1931, >70y. Dated 1916 — more specific than the undated portrait (biryukov-pavel-portrait)."
+
+  - id: pobedonostsev-repin-1903
+    type: "portrait (painting — oil study)"
+    subject: "Konstantin Pobedonostsev, Synod Ober-Procurator, study by Repin"
+    relatedEntity: Konstantin Pobedonostsev
+    relatedEvidence: ev-main-text
+    holding: Wikimedia Commons
+    archiveId: ""
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: "yes"
+    url: "https://commons.wikimedia.org/wiki/File:Pobedonostsev_by_repin.jpg"
+    localPath: "visuals/commons-pobedonostsev-repin-1903.jpg"
+    note: "Preparatory study for Repin's 'Formal Session of the State Council' (1901–03). Pobedonostsev signed and drove the 1901 excommunication decree."
+
+scholarship:
+  summary: "The conventional scholarly view treats «Что такое религия» as the clearest and most systematic of Tolstoy's religious writings, his mature synthesis after three decades of religious thought. Bartlett (Tolstoy: A Russian Life, 2010) and Maude (The Life of Tolstoy: Later Years, 1911) both note the essay was written in the shadow of the excommunication, interpreting it as Tolstoy's doctrinal counterpoint to the Synod's action. The 'Our Civilisation' commentary (Simmons, 1968) calls it 'perhaps his most conclusive, best-tempered, and persuasive treatment of the subject.' The Cambridge Core article 'Tolstoy, Universalism and the World Religions' (2021) situates the treatise within Tolstoy's programme of convergent universalism — arguing all major religions share a common ethical core. The dominant scholarly frame (universalism + anti-institutionalism + reaction to excommunication) broadly confirms what the primary sources show. Where scholarship stops short is on the genesis detail — the specific intellectual arc from the three-article plan (Nov 1900) through the Chicherin rejection to the first definition formula (Feb 1901), and the production history at Free Word."
+  triangulation:
+    - evidenceRef: ev-definition-ch2
+      conventionalView: "Scholarship treats the essay as a religious universalism manifesto, noting Tolstoy surveys world religions to find a common core."
+      relation: confirms
+      source: "Tolstoy, Universalism and the World Religions, Journal of Ecclesiastical History, Cambridge Core (2021)"
+
+    - evidenceRef: ev-corruption-three-means
+      conventionalView: "Scholars note Tolstoy's critique of institutional religion is rooted in his anti-clericalism."
+      relation: extends
+      source: ""
+      note: "The primary text shows Tolstoy has a precise three-mechanism model (priesthood, miracles, scripture) applied structurally to all historical religions — more rigorous than the generic 'anti-clericalism' frame."
+
+    - evidenceRef: ev-church-truc
+      conventionalView: "The essay is read as anti-Orthodox polemic in the context of the 1901 excommunication."
+      relation: complicates
+      source: "Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile Books, 2010."
+      note: "The primary text shows Tolstoy's critique of the Church is structural (the concept of infallible Church as the specific Christian 'trick'), not primarily reactive to the Synod's action. The excommunication sharpened his urgency but did not determine the argument — the three-article plan predates the decree by over a year."
+
+    - evidenceRef: ev-universal-religion-ch14
+      conventionalView: "Scholarship reads the universal-religion argument as derivative of Tolstoy's earlier Gospel work."
+      relation: extends
+      source: ""
+      note: "The treatise's four-proposition distillate (God as source; divine particle in man; subdue passion, increase love; Golden Rule) is more explicit and more systematically comparative than anything in the earlier religious works. This is a terminus, not a repetition."
+
+    - evidenceRef: ev-diary-1901-02-08
+      conventionalView: "The composition is typically dated 'Aug 1901–Jan 1902' (i.e. from the first manuscripts)."
+      relation: extends
+      source: ""
+      note: "The primary sources show the definitional kernel formed in February 1901 (Chicherin rejection; first relation-to-the-infinite formula), five months before the first dated manuscripts. The Nov 1900 diary entry places the conceptual genesis even earlier."
+
+workRecord:
+  recordPath: ""
+  workId: "what-is-religion"
+  note: "No works record exists yet for this essay. The proposed fields below are for a new record to be created at website/src/works/non-fiction/essays-and-criticism/what-is-religion/What Is Religion.md (or similar path following the What Is Art pattern)."
+  fields:
+    - field: id
+      value: "what-is-religion"
+      evidenceRefs: []
+      source: "project convention"
+      confidence: high
+
+    - field: recordStatus
+      value: "draft"
+      evidenceRefs: []
+      source: "project convention"
+      confidence: high
+
+    - field: titleEn
+      value: "What Is Religion and What Is Its Essence?"
+      evidenceRefs:
+        - ev-letter-grauberger-jan20
+      source: "full Russian title in the Grauberger letter (20 Jan 1902)"
+      confidence: high
+
+    - field: titleRu
+      value: "Что такое религия и в чём сущность её?"
+      evidenceRefs:
+        - ev-history-writing
+      source: "PSS T. 35 editorial apparatus"
+      confidence: high
+
+    - field: titleAlternatives
+      value:
+        - title: "Безбожное время, или новое падение Рима"
+          type: working
+          language: ru
+        - title: "Что такое религия и ее назначение"
+          type: working
+          language: ru
+        - title: "Qu'est-ce la Religion?"
+          type: translation
+          language: fr
+        - title: "What Is Religion?"
+          type: translation
+          language: en
+      evidenceRefs:
+        - ev-diary-1901-02-11
+        - ev-letter-chertkov-nov30
+        - ev-history-writing
+      source: "diary entry (11 Feb 1901); Chertkov letter (30 Nov 1901); PSS editorial apparatus"
+      confidence: high
+
+    - field: genre
+      value: "essay"
+      evidenceRefs:
+        - ev-main-text
+      source: "PSS classification: статья (article / essay)"
+      confidence: high
+
+    - field: language
+      value: "ru"
+      evidenceRefs:
+        - ev-main-text
+      source: "composition language"
+      confidence: high
+
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs:
+        - ev-diary-1901-12-26
+      source: "diary 26 Dec 1901"
+      confidence: high
+
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs:
+        - ev-history-writing
+      source: "Free Word edition, Christchurch, 1902"
+      confidence: high
+
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs:
+        - ev-history-writing
+      source: "First Russian publication 1906 (A. E. Belyaev, Zemlya i Trud, vyp. 2); censored pre-1906"
+      confidence: high
+
+    - field: dateWritingStarted
+      value: "1901-08-12"
+      dateWritingStartedOldStyle: "1901-07-30"
+      dateWritingStartedApproximate: false
+      evidenceRefs:
+        - ev-letter-chertkov-aug12
+      source: "Chertkov letter 12 Aug 1901 NS (30 Jul OS)"
+      confidence: high
+      note: "Conceptual genesis dates to Nov 1900 diary; first dated manuscripts are '10 авг. 1901' (MS 1–2). The Chertkov letter of 12 Aug confirms the work had begun."
+
+    - field: dateWritingCompleted
+      value: "1902-01"
+      dateWritingCompletedOldStyle: "1901-12"
+      dateWritingCompletedApproximate: true
+      evidenceRefs:
+        - ev-letter-grauberger-jan20
+        - ev-letter-biryukov-dec31
+        - ev-history-writing
+      source: "Biryukov letter 31 Dec 1901 (finished, about to send); Grauberger letter 20 Jan 1902 (probably printing at Chertkov's now); PSS editorial apparatus (late additions dictated Jan–Feb 1902 during pneumonia)"
+      confidence: medium
+      note: "The draft was sent to Chertkov in early-mid Jan 1902; final additions dictated during pneumonia (30 Jan – 8 Feb 1902). 'Completed' = fair copy dispatched to printer; 'approximate' because the exact dispatch date is not in the diary."
+
+    - field: dateFirstPublished
+      value: "1902"
+      dateFirstPublishedApproximate: true
+      evidenceRefs:
+        - ev-history-writing
+      source: "PSS editorial apparatus: Free Word No. 75, Christchurch, 1902 (exact month not in the corpus)"
+      confidence: medium
+
+    - field: firstPublishedVenue
+      value: "«Свободное слово» / Free Word"
+      evidenceRefs:
+        - ev-history-writing
+      source: "PSS editorial apparatus"
+      confidence: high
+
+    - field: firstPublishedVenueType
+      value: "publisher"
+      evidenceRefs: []
+      source: "Chertkov's press, Christchurch, Hants, England"
+      confidence: high
+
+    - field: dateFirstPublishedInRussia
+      value: "1906"
+      dateFirstPublishedInRussiaApproximate: false
+      evidenceRefs:
+        - ev-history-writing
+      source: "PSS editorial apparatus: A. E. Belyaev, Zemlya i Trud, vyp. 2, 1906"
+      confidence: high
+
+    - field: firstPublishedInRussiaVenue
+      value: "«Земля и труд» (Zemlya i Trud)"
+      evidenceRefs:
+        - ev-history-writing
+      source: "PSS T. 35, editorial history"
+      confidence: high
+
+    - field: authoringLocations
+      value:
+        - country: Russia
+          region: Tula Oblast
+          city: ""
+          estate: Yasnaya Polyana
+          building: ""
+          room: ""
+          dateFrom: "1901-08-10"
+          dateFromOldStyle: "1901-07-28"
+          dateFromApproximate: false
+          dateTo: "1901-09-05"
+          dateToOldStyle: "1901-08-23"
+          dateToApproximate: false
+          notes: "First drafts (MS 1–2, dated 10 Aug 1901). Drafts left behind when the family departed for Crimea 5 Sept 1901."
+        - country: Russia
+          region: Crimea (then Taurida Governorate)
+          city: Gaspra
+          estate: "Panina estate (Ясная Поляна дом не, имение Паниной)"
+          building: ""
+          room: ""
+          dateFrom: "1901-09-08"
+          dateFromOldStyle: "1901-08-26"
+          dateFromApproximate: false
+          dateTo: "1902-01"
+          dateToApproximate: true
+          notes: "Bulk of composition and revision, Sept 1901 – Jan 1902. Tolstoy seriously ill with pleurisy, pneumonia, and typhoid during this period."
+      evidenceRefs:
+        - ev-letter-chertkov-sep14
+        - ev-diary-1901-10-10
+        - ev-history-writing
+      source: "PSS editorial apparatus; diary; letters"
+      confidence: high
+
+    - field: bans
+      value:
+        - banningAuthority: "Russian Imperial censorship"
+          authorityType: "state"
+          jurisdiction: "Russian Empire"
+          scope: "full publication ban"
+          banDate: "1902"
+          note: "Banned in Russia on publication. First legal Russian printing 1906 (Zemlya i Trud). Tolstoy's Dec 1902 letter to Ostrogorsky (journal Obrazovanie) shows a censorship-circumvention attempt that also failed (banned Jan 1903)."
+      evidenceRefs:
+        - ev-history-writing
+        - ev-letter-grauberger-jan20
+      source: "PSS editorial apparatus; Ostrogorsky correspondence"
+      confidence: high
+
+    - field: mainCategory
+      value: "Non-Fiction"
+      evidenceRefs: []
+      source: "genre classification"
+      confidence: high
+
+    - field: subcategory
+      value: "Essays and Criticism"
+      evidenceRefs: []
+      source: "follows What Is Art? classification"
+      confidence: medium
+
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Full arc from Nov 1900 three-article plan through Chicherin rejection (Feb 1901), composition at Yasnaya Polyana (Aug–Sept 1901) and Gaspra (Sept 1901 – Jan 1902), multiple completion notes, and post-despatch additions during pneumonia (Jan–Feb 1902)."
+
+  - surface: "What the work says"
+    status: covered
+    note: "All 17 chapters read. Structural map: I–II (religion vs science); III (definition); IV (equality as religion's core); V (three corruption mechanisms); VI (the Church truc); VII (faith redefined); VIII–IX (the irreligious present); X–XI (norms-without-religion pathologies); XII–XIII (scholars as gatekeepers); XIV (four propositions of universal religion); XV (what education should do); XVI–XVII (the vicious circle and who breaks it)."
+
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "82 manuscripts (1,449 units) known from PSS. Main textual variants in the Free Word edition noted (three places where Chertkov's editors restored material Tolstoy had struck). The lost Chapter III late insertion (not received by Chertkov) documented. Full collation requires the manuscripts at the Tolstoy Museum."
+
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Free Word No. 75 (Christchurch, 1902); Russian ban; first Russian publication 1906; French translation Bienstock + Biryukov (Paris, Stock, 1902); Tolstoy's verdict on the French translation ('ужасным'); censorship circumvention attempt via journal Obrazovanie (Dec 1902, blocked Jan 1903)."
+
+  - surface: "Reception & afterlife — Russian society & church reaction"
+    status: partial
+    note: "The excommunication context is covered (the Synod decree preceded the essay; the essay is in part a direct theological response). Contemporary Russian press and clerical reaction to the published essay specifically is not in the corpus extracts and was not found in the web scholarship sweep. Requires targeted archival or newspaper research."
+
+  - surface: "Composition-year interlocutors (people around the work)"
+    status: covered
+    note: "Network of 11 correspondents during composition identified and documented. See entities section."
+
+  - surface: "Place in the cluster (sibling works)"
+    status: covered
+    note: "Connected to Kingdom of God Is Within You (1893), What Is Art? (1897–98), The Slavery of Our Times (1900), and the near-contemporary On Tolerance (О веротерпимости, Nov–Dec 1901). Dives for all exist."
+
+  - surface: "Author's later verdict"
+    status: partial
+    note: "The 30 Nov 1901 letter calls the work 'one-sided' (одностороннюю); the Grauberger letter (Jan 1902) claims it expresses his 'definitive' conviction. No post-publication retrospective statement found in the corpus."
+
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "9 images downloaded; visuals sweep complete. Manuscript holdings at GTM/AN USSR noted; no facsimile in local corpus."
+
+  - surface: "Scholarly context"
+    status: partial
+    note: "Light web sweep completed; no deep academic database search. Core biographers (Maude, Bartlett) and Cambridge Core article identified. No dedicated monograph on this essay found."
+
+contradictions: []
+
+notCovered:
+  - "Contemporary Russian press and clerical reaction to the published essay (1902–1906) — requires newspaper archive research (e.g. Новое время, Русское слово, clerical journals)."
+  - "Biryukov's French translation correspondence in detail — the letters exchanged about the 'ужасным' verdict on the Bienstock translation; Tolstoy's partially corrected copy of the French text (location unknown)."
+  - "Chertkov's own letter of 10 Feb 1902 (NS) responding to the essay in detail — referenced in the PSS apparatus but not in the local corpus (T. 88 extracts do not include Chertkov-to-Tolstoy letters)."
+  - "Full manuscript collation of the 82 drafts (1,449 units) — requires GTM Manuscript Department access."
+  - "The 'Мысли о современном человечестве' retitling episode (Ostrogorsky / Obrazovanie, 1902–03) — correspondence partially in corpus but the censorship committee's reasoning is not documented here."
+
+needsReview:
+  - item: "Title in flux at completion — «назначение» (purpose) vs «сущность» (essence): the 30 Nov 1901 Chertkov letter uses «назначение», the Grauberger letter (20 Jan 1902) uses «сущность». The works record should use «сущность» (PSS canonical form), but the workRecord titleAlternatives entry for the «назначение» variant should be confirmed."
+    phase: 4
+    why: "Minor but affects the workRecord titleAlternatives field."
+
+  - item: "Chapter count discrepancy — 6 Nov letter projects ~18 chapters (12 done + 'едва ли 6'); 30 Nov letter says finished at chapter 16. Published text should be checked for the actual chapter count to resolve whether compression happened or the projections were loose."
+    phase: 2
+    why: "The final published text chapter structure needs a count pass against the TEI. Low-priority but relevant for the textual history coverage."
+
+  - item: "Subcategory for the works record — placed under Essays and Criticism following What Is Art?. The essay is also classified as 'religious' (PSS) and 'philosophical'. Johann should confirm the preferred subcategory."
+    phase: 4
+    why: "Schema judgment — not a mechanical question."
+
+  - item: "Biryukov's role description — the PSS apparatus says 'co-translator' (Bienstock + Biryukov); Tolstoy's letter to Biryukov (31 Dec 1901) mentions him reviewing a Binshtok translation's religious-philosophical section, not necessarily co-authoring. The distinction between reviser and co-translator of the French edition needs confirmation against the French title page."
+    phase: 3
+    why: "Biryukov's vault page and the works record should accurately reflect his role."
+
+archivesConsulted:
+  - "PSS Tom 35 (main text + editorial apparatus) — via TEI corpus"
+  - "PSS Tom 54 (diary 1900–1901 + notebook 1900–1901) — via TEI corpus"
+  - "PSS Tom 73 (letters to correspondents, 1901–1902) — via TEI corpus"
+  - "PSS Tom 88 (letters to Chertkov, 1901) — via TEI corpus"
+  - "Wikimedia Commons (visual materials sweep)"
+
+references:
+  primary:
+    - "Толстой Л. Н. Что такое религия и в чем сущность ее? // ПСС: в 90 тт. Т. 35. М.: Худож. лит., 1950. С. 157–198."
+    - "Мишин В. С. «Что такое религия и в чем сущность ее?». История писания и печатания // ПСС Т. 35. С. 670–675."
+    - "Толстой Л. Н. Дневник 1900–1901 // ПСС Т. 54."
+    - "Толстой Л. Н. Письма // ПСС Т. 73 (Ге, Стасов, Русанов, Моод, Буланже, Лебрен, Трегубов, Бирюков, Граубергер, Острогорский)."
+    - "Толстой Л. Н. Письма В. Г. Черткову // ПСС Т. 88."
+    - "Л. Н. Толстой. «Что такое религия и в чем сущность ее?». Изд. «Свободного слова», № 75. Christchurch, Hants, England, 1902."
+    - "С-е Léon Tolstoï. Qu'est-ce la Religion? Trad. J.-W. Bienstock et P. Birukov. Paris: P.-V. Stock, 1902."
+    - "Л. Н. Толстой. «Что такое религия». Изд. А. Е. Беляева «Земля и труд», вып. 2. 1906 [first Russian legal printing]."
+
+  background:
+    - "Maude, Aylmer. The Life of Tolstoy: Later Years. London: Oxford University Press, 1911."
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile Books, 2010."
+    - "Simmons, Ernest J. Introduction to Tolstoy's Writings. Chicago: University of Chicago Press, 1968. Chapter 7 (Tolstoy's Religious, Moral, and Didactic Writings). https://www.ourcivilisation.com/smartboard/shop/smmnsej/tolstoy/chap7.htm"
+    - "Tolstoy, Universalism and the World Religions. Journal of Ecclesiastical History. Cambridge Core, 2021. https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/abs/tolstoys-universalism-and-the-world-religions/BFDA558CFA56DE5BF7E188117204B481"
