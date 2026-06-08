@@ -1,0 +1,1061 @@
+# Machine-readable dossier for the "Bethink Yourselves!" (Одумайтесь!, 1904) corpus work-dive.
+# Created 2026-06-08. Slug: 1904-bethink-yourselves.
+# Subject: Tolstoy's anti-war essay written during the Russo-Japanese War, "a letter to the men
+# of war and the tsar." A Prophet-period WORK dive (carries a workRecord block).
+# Every evidence[].quoteRu is byte-faithful from the named `extract` file (verify_quotes.py).
+# quoteEn is working English (labelled). PSS Tom -> local PDF via pss-volume-mapping.md
+# (Tom 36 -> vol05; Tom 55 -> vol21; Tom 75 -> vol38). The three fire-coda quotes reuse the
+# fire-metaphor dive's findings, re-verified against this dive's own fresh extract.
+
+topic:
+  slug: 1904-bethink-yourselves
+  title: "Bethink Yourselves! (Одумайтесь!) — a corpus work-dive"
+  question: >-
+    How does Tolstoy's 1904 anti-war essay Одумайтесь! argue its case across its twelve sections;
+    how was it composed during the Russo-Japanese War; and how did its abroad-first publication,
+    censorship in Russia, and translation lineage (incl. the Swedish Betänken Eder!) carry it to
+    the world?
+  date: 2026-06-08
+  period: prophet
+  corpusSurface: [works, diaries, letters, commentary, variants]
+  dateRange: "1904 (composition Jan–May 1904; reception 1904–present)"
+
+# ---------------------------------------------------------------------------------------------
+# Layer 1 — flat citation ledger.
+# ---------------------------------------------------------------------------------------------
+evidence:
+
+  # ===== A. THE WORK'S OWN TEXT (PSS Tom 36, pp. 100–148) ==========================
+
+  - id: odum-opening
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Опять война. Опять никому не нужные, ничем не вызванные страдания, опять ложь, опять всеобщее одурение, озверение людей.
+    quoteEn: >-
+      Again war. Again sufferings that no one needs, utterly uncalled for; again fraud, again the universal stupefaction and brutalization of men. (working English)
+    significance: >-
+      The essay's first words. The Russo-Japanese War as a relapse: the indictment is set before a
+      single argument is made.
+    facsimile: null
+
+  - id: odum-enlightened-preach-war
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Но как могут так называемые просвещенные люди проповедовать войну, содействовать ей, участвовать в ней, и, что ужаснее всего, не подвергаясь опасностям войны, возбуждать к ней, посылать на нее своих несчастных, обманутых братьев?
+    quoteEn: >-
+      But how can so-called enlightened people preach war, abet it, take part in it, and — most terrible of all — without themselves facing war's dangers, incite others to it, sending their unfortunate, deceived brothers to it? (working English)
+    significance: >-
+      Chapter I. Tolstoy excuses the deceived peasant-conscript but turns the whole essay against the
+      educated classes — professors, journalists, clergy — who know better and incite anyway.
+    facsimile: null
+
+  - id: odum-impotence-of-reason
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      испытываешь ужас уже не перед ужасами войны, а перед тем, что ужаснее всех ужасов, — перед сознанием бессилия человеческого разума.
+    quoteEn: >-
+      one feels horror no longer at the horrors of war, but at what is more horrible than all horrors — at the consciousness of the impotence of human reason. (working English)
+    significance: >-
+      Chapter III. Having catalogued the writers who exposed war (Voltaire, Pascal, Kant), Tolstoy's
+      deeper dread is that reason itself is overridden the moment war begins.
+    facsimile: null
+
+  - id: odum-soldier-question
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Спросите у бросившего старых родителей, жену, детей солдата-рядового, ефрейтора, унтер-офицера, зачем он готовится убивать неизвестных ему людей, — он сначала удивится вашему вопросу.
+    quoteEn: >-
+      Ask a private soldier, a corporal, a sergeant who has left his old parents, wife, and children, why he is preparing to kill people he does not know — at first he will be surprised by your question. (working English)
+    significance: >-
+      Chapter IV. The structural engine of the essay: soldier, officer, diplomat, journalist, and
+      tsar are each asked the personal question and each answers with an abstraction — faith,
+      fatherland, oath, civilization. "Во имя ... вообще чего-то отвлеченного и неопределенного."
+    facsimile: null
+
+  - id: odum-metanoeite
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Две тысячи лет тому назад Иоанн Креститель и за ним Христос говорили людям: «исполнилось время и приблизилось царство Божие, одумайтесь (μετανοειτε) и веруйте в Евангелие» (Марка I, 15).
+    quoteEn: >-
+      Two thousand years ago John the Baptist, and after him Christ, said to men: "the time is fulfilled and the Kingdom of God is at hand; bethink yourselves (μετανοειτε) and believe in the Gospel" (Mark I, 15). (working English)
+    significance: >-
+      Chapter VI. The title's source: the Greek μετανοεῖτε (metanoeite), which the translators render
+      "bethink yourselves," not the narrower "repent." This is the essay's pivot from indictment to remedy.
+    facsimile: null
+
+  - id: odum-bethink-definition
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Христос говорил: одумайтесь, т. е. каждый человек остановись в своей начатой деятельности и спроси себя: кто ты? откуда ты взялся и в чем твое назначение?
+    quoteEn: >-
+      Christ said: bethink yourselves — that is, let each person stop in the activity he has begun and ask himself: who are you? where did you come from, and what is your purpose? (working English)
+    significance: >-
+      Chapter VI. The core definition of "bethinking": an individual act of interruption and
+      self-questioning. The whole social cure is built on this single personal one.
+    facsimile: null
+
+  - id: odum-individual-not-external
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      самое верное и несомненное избавление людей от всех бедствий, которые они сами наносят себе, и от самого ужасного из них — от войны достигается не какими-либо внешними общими мерами, а только тем простым, обращением к сознанию каждого отдельного человека
+    quoteEn: >-
+      the surest and most certain deliverance of people from all the calamities they inflict on themselves, and from the most terrible of them — war — is achieved not by any external, general measures, but only by that simple appeal to the conscience of each separate person. (working English)
+    significance: >-
+      Chapter VI. The thesis that sets the essay against every institutional remedy: not peace
+      conferences, courts, disarmament, or revolution, but the conscience of one person at a time.
+    facsimile: null
+
+  - id: odum-religion-thesis
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Зло, от которого страдают люди нашего времени, происходит оттого, что большинство их живет без того, чтò одно дает разумное руководство человеческой деятельности — без религии
+    quoteEn: >-
+      The evil from which the people of our time suffer arises from the fact that most of them live without the one thing that gives reasonable guidance to human activity — without religion. (working English)
+    significance: >-
+      Chapter VII. The deeper diagnosis beneath the war: this is the "religion" theme Tolstoy had been
+      writing separately and fused into the war essay (see odum-genesis-letter, odum-diary-genesis).
+    facsimile: null
+
+  - id: odum-children-gunpowder
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Лишенные религии люди, обладая огромной властью над силами природы, подобны детям, которым дали бы для игры порох или гремучий газ.
+    quoteEn: >-
+      People without religion, possessing enormous power over the forces of nature, are like children who have been given gunpowder or detonating gas to play with. (working English)
+    significance: >-
+      Chapter VII. The technology-without-conscience image: modern power (railways, electricity,
+      explosives) in the hands of the morally undeveloped. A strikingly modern formulation.
+    facsimile: null
+
+  - id: odum-love-enemies
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      «Любите врагов ваших, и не будет у вас врага»; сказано в «Учении Двенадцати Апостолов».
+    quoteEn: >-
+      "Love your enemies, and you will have no enemy"; it is said in the Teaching of the Twelve Apostles (the Didache). (working English)
+    significance: >-
+      Chapter X. Tolstoy's answer to "but what of the enemy who attacks us?" — and he insists it is
+      not figurative: to love the Japanese means literally not to kill, poison, or drown them.
+    facsimile: null
+
+  - id: odum-port-arthur
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Я кончал эту статью, когда пришло известие о погибели шестисот невинных жизней против Порт-Артура.
+    quoteEn: >-
+      I was finishing this article when news came of the destruction of six hundred innocent lives off Port Arthur. (working English)
+    significance: >-
+      Chapter XI opening. The sinking of the battleship Petropavlovsk (13 Apr 1904 NS / 31 Mar OS;
+      Admiral Makarov and the painter Vereshchagin among ~679 dead) breaks into the finished essay and
+      provokes its angriest section.
+    facsimile: null
+
+  - id: odum-human-material
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      главный шанс успеха России в том, что у нее неистощимый человеческий материал
+    quoteEn: >-
+      Russia's chief chance of success lies in the fact that it possesses an inexhaustible supply of human material. (working English)
+    significance: >-
+      Chapter XI. Tolstoy quotes the press phrase back at it — the "50,000 lives" Nikolai Romanov and
+      Kuropatkin will spend — to expose the arithmetic of conscription as murder.
+    facsimile: null
+
+  - id: odum-where-flee
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      «Куда же денешься?» Вот точное выражение того душевного состояния, которое в официальном и газетном мире переводится словами: «За веру, царя и отечество».
+    quoteEn: >-
+      "Where can one escape to?" That is the exact expression of the state of mind that the official and newspaper world translates into the words: "For Faith, Tsar, and Fatherland." (working English)
+    significance: >-
+      Chapter XII. A reservist Tolstoy met on the road. The gap between what the people actually feel
+      ("where can one escape to?") and what the state says they feel is the essay's documentary heart.
+    facsimile: null
+
+  - id: odum-luke12-49
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Христос, тогда еще, в свое время томился ожиданием и говорил: «Огонь пришел низвесть я на землю, и как желал бы, чтобы он возгорелся». (Лука XII, 49.)
+    quoteEn: >-
+      Christ, even then, in his own time, was in anguish of expectation and said: "Fire I came to cast upon the earth, and how I would wish that it were kindled." (Luke XII, 49.) (working English)
+    significance: >-
+      Chapter XII. The fire coda. Reused from the fire-metaphor dive (id odumaytes-luke12-49),
+      re-verified against this dive's fresh extract. Dated «30 Апреля 1904 г.» in the PSS text.
+    facsimile: null
+
+  - id: odum-fire-rising
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      Чего желал Христос, совершается. Огонь возгорается. Не будем же противиться, а будем служить ему.
+    quoteEn: >-
+      What Christ wished for is coming to pass. The fire is blazing up. Let us then not resist it, but serve it. (working English)
+    significance: >-
+      Chapter XII. Tolstoy's own coda. The RU reads "let us not resist it, but serve it"; the Swedish
+      Betänken Eder! renders it "låtom oss då icke släcka den, utan sprida och underhålla den" — "let
+      us not extinguish it, but spread and sustain it." A free translation/redaction variant
+      (see contradictions / needsReview), reused from the fire-metaphor dive (id odumaytes-fire-rising).
+    facsimile: null
+
+  - id: odum-spark
+    genre: works
+    pssTom: 36
+    pages: "100–148"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_100_148_Odumajtes.txt
+    quoteRu: >-
+      это искра того огня, который Христос низвел на землю и который начинает возгораться.
+    quoteEn: >-
+      this is a spark of that fire which Christ brought down to the earth and which is beginning to blaze up. (working English)
+    significance: >-
+      Chapter XII, the essay's last sentence-image (8 May 1904). The seaman Ivus's doubt — "is it
+      pleasing to God or not that our commanders make us kill?" — is itself the spark. Reused from the
+      fire-metaphor dive (id odumaytes-spark).
+    facsimile: null
+
+  # ===== B. GENESIS & COMPOSITION (diaries Tom 55, letters Tom 75) =================
+
+  - id: odum-diary-warday
+    genre: diaries
+    pssTom: 55
+    pages: "10–11"
+    date: 1904-01-27
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol21/vol21.pdf
+    extract: extracts/v55_010_011_1904_01_27.txt
+    quoteRu: >-
+      Война, и сотни рассуждений о том, почему она, что она означает, что из неё будет и тому под. — Все — рассуждающие люди, от царя до последнего фурштата.
+    quoteEn: >-
+      War, and hundreds of disquisitions about why it is, what it means, what will come of it, and so on. Everyone reasons — from the tsar down to the lowliest baggage-train soldier. (working English)
+    significance: >-
+      Diary, 27 January 1904 OS — the very day the war broke out (war began 27 Jan OS / 9 Feb NS). The
+      essay's pivot is already formed: everyone reasons in the third person; no one asks "how must I,
+      I, I relate to the war?" (как мне, мне, мне отнестись к войне).
+    facsimile: null
+
+  - id: odum-diary-genesis
+    genre: diaries
+    pssTom: 55
+    pages: "11–12"
+    date: 1904-01-28
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol21/vol21.pdf
+    extract: extracts/v55_011_012_1904_01_28.txt
+    quoteRu: >-
+      помнить, что прежде, чем я — Царь, кучер, городовой, я — человек. Это, только это одно я желал бы проповедовать всем людям.
+    quoteEn: >-
+      to remember that before I am Tsar, coachman, policeman, I am a human being. This, only this, is what I would wish to preach to all people. (working English)
+    significance: >-
+      Diary, 28 January 1904 OS. The kernel of the whole essay one day after the war began — and in the
+      same entry he names the link he would build the essay on: "nothing can correct existing evil
+      except religion" (кроме религии).
+    facsimile: null
+
+  - id: odum-northamerican
+    genre: letters
+    pssTom: 75
+    pages: "37"
+    date: 1904-02-09
+    addressee: The North American (Philadelphia)
+    localPdf: primary-sources/jubilee-edition/vol38/vol38.pdf
+    extract: extracts/v75_041_VredakciyugazetyTheNorthAmerican.txt
+    quoteRu: >-
+      Я ни за Россию, ни за Японию, а за рабочий народ обеих стран, обманутый правительствами и вынужденный воевать против своего благополучия, совести и религии.
+    quoteEn: >-
+      I am neither for Russia nor Japan, but for the labouring people of both, deceived by their governments and forced to fight against their own welfare, conscience, and religion. (working English)
+    significance: >-
+      Cabled to a Philadelphia newspaper on 9 Feb 1904 OS, nine days into the war — the thesis of the
+      whole essay in two lines, published in English (the cable text survives in both languages).
+    facsimile: null
+
+  - id: odum-verigin
+    genre: letters
+    pssTom: 75
+    pages: "56–58"
+    date: 1904-03-03
+    addressee: P. V. Verigin
+    localPdf: primary-sources/jubilee-edition/vol38/vol38.pdf
+    extract: extracts/v75_069_P_V_Veriginu.txt
+    quoteRu: >-
+      избавление от нее только в исповедании не на словах, а на деле учения Христа
+    quoteEn: >-
+      deliverance from it [war] lies only in professing the teaching of Christ — not in words, but in deed. (working English)
+    significance: >-
+      To Pyotr Verigin, leader of the Doukhobors Tolstoy had helped emigrate to Canada in 1899. Mid-
+      composition (3 Mar 1904), he states the essay's remedy to the very community that embodied it.
+    facsimile: null
+
+  - id: odum-diary-seaman
+    genre: diaries
+    pssTom: 55
+    pages: "33"
+    date: 1904-05-08
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol21/vol21.pdf
+    extract: extracts/v55_033_033_1904_05_08.txt
+    quoteRu: >-
+      Нынче получил письмо от матроса из Порть Артура. Угодно ли Богу или нет, что нас начальство заставляет убивать?
+    quoteEn: >-
+      Today I received a letter from a sailor at Port Arthur. Is it pleasing to God or not that our commanders make us kill? (working English)
+    significance: >-
+      Diary, 8 May 1904 OS — the day the seaman Efim Ivus's letter arrived. Tolstoy added it to the
+      essay's final section that same day; the sailor's question becomes the closing "spark" (odum-spark).
+    facsimile: null
+
+  - id: odum-grandduke
+    genre: letters
+    pssTom: 75
+    pages: "116–117"
+    date: 1904-06-01
+    addressee: Grand Duke Nikolai Mikhailovich
+    localPdf: primary-sources/jubilee-edition/vol38/vol38.pdf
+    extract: extracts/v75_155_Vel_kn_NikolayuMixajlovichu.txt
+    quoteRu: >-
+      Я никак не думал, чтобы эта ужасная война так подействовала на меня, как она подействовала.
+    quoteEn: >-
+      I never thought that this terrible war would affect me as it has. (working English)
+    significance: >-
+      To a Romanov grand duke, 1 June 1904. Tolstoy adds that he has sent the essay abroad and that it
+      "will probably be very much disapproved of in the higher spheres" — and warns the grand duke that
+      visiting Yasnaya Polyana could now compromise him. His own measure of the essay's danger.
+    facsimile: null
+
+  - id: odum-diary-oscillation
+    genre: diaries
+    pssTom: 55
+    pages: "45–47"
+    date: 1904-06-06
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol21/vol21.pdf
+    extract: extracts/v55_045_047_1904_06_06.txt
+    quoteRu: >-
+      иногда думаю, что напрасно, только вызывая вражду, написал я свою статью, а посмотришь на народ, на солдаток, и жалеешь, что мало, слабо написал.
+    quoteEn: >-
+      sometimes I think I wrote my article in vain, only stirring up enmity; but you look at the people, at the soldiers' wives, and you regret that I wrote too little, too weakly. (working English)
+    significance: >-
+      Diary, 6 June 1904 OS. The sharpest swing of self-assessment in the window — doubt about the
+      essay's polemic giving way, at the sight of the conscripts' wives, to regret that it was not
+      fiercer. Documentary proof of the essay's stakes for him.
+    facsimile: null
+
+  - id: odum-verdict-tol
+    genre: letters
+    pssTom: 75
+    pages: "136–137"
+    date: 1904-07-01
+    addressee: Countess S. D. Tol'
+    localPdf: primary-sources/jubilee-edition/vol38/vol38.pdf
+    extract: extracts/v75_179_S_D_Tol.txt
+    quoteRu: >-
+      Я виноват, что тон, дух моей статьи недобрый, но смысл ее для меня несомненно истинен, и я буду повторять то же на смертном одре.
+    quoteEn: >-
+      I am at fault that the tone, the spirit of my article is unkind, but its meaning is, for me, undoubtedly true, and I will repeat the same on my deathbed. (working English)
+    significance: >-
+      To a hostile reader, 1 July 1904 — the fullest verdict on his own essay. He concedes the angry
+      tone (a charge he made against himself to Chertkov too) but defends the substance absolutely:
+      "I will repeat the same on my deathbed."
+    facsimile: null
+
+  # ===== C. TEXTUAL HISTORY & CHERTKOV'S EDITING (editorial commentary) ============
+
+  - id: odum-genesis-letter
+    genre: letters
+    pssTom: 36
+    pages: "604–621"
+    date: 1904-04-28
+    addressee: V. G. Chertkov
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_604_621_Odumajtes_comments.txt
+    quoteRu: >-
+      От этого я соединил две темы, и, пожалуй, ни одна не обработана достаточно
+    quoteEn: >-
+      Because of this I joined two themes together, and perhaps neither is worked out sufficiently. (working English)
+    significance: >-
+      Tolstoy to Chertkov, 28 Apr 1904, quoted in the editorial history. His own account of the essay's
+      double structure: he was writing on the absence of religion as the root of all human ills when the
+      war broke out "as an illustration of my thought," and welded the two. Source: editorial commentary
+      (secondary), quoting the Chertkov correspondence (АЧ).
+    facsimile: null
+
+  - id: odum-softening-letter
+    genre: letters
+    pssTom: 36
+    pages: "604–621"
+    date: 1904-05-04
+    addressee: V. G. Chertkov
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_604_621_Odumajtes_comments.txt
+    quoteRu: >-
+      пожалуйста, выкиньте всё такое
+    quoteEn: >-
+      please throw out everything of that kind. (working English)
+    significance: >-
+      Tolstoy to Chertkov, 4 May 1904 (per the commentary), asking him to cut the harsh words about the
+      military ("большей частью пьяные" — "mostly drunk") that might wound. He gave Chertkov carte
+      blanche; Chertkov made six documented cuts in proof and Tolstoy approved them all (1 July 1904).
+    facsimile: null
+
+  - id: odum-pub-abroad
+    genre: works
+    pssTom: 36
+    pages: "604–621"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_604_621_Odumajtes_comments.txt
+    quoteRu: >-
+      Статья вышла в издании «Свободного слова», в Крайстчерче, в Англии, в 1904 г.
+    quoteEn: >-
+      The article appeared in the Free Word [Free Age Press] edition, at Christchurch, in England, in 1904. (working English)
+    significance: >-
+      The first publication, abroad, through Chertkov's Free Age Press. The editors added the subtitle
+      "Статья по поводу русско-японской войны" (An article on the Russo-Japanese War). A second popular
+      edition (no epigraphs, for the people and soldiers) and a corrected third followed the same year.
+    facsimile: null
+
+  - id: odum-pub-russia-banned
+    genre: works
+    pssTom: 36
+    pages: "604–621"
+    date: 1906
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_604_621_Odumajtes_comments.txt
+    quoteRu: >-
+      В России «Одумайтесь!» вышло впервые в 1906 г. в издании «Обновление» отдельной брошюрой (конфискована).
+    quoteEn: >-
+      In Russia, Bethink Yourselves! appeared for the first time in 1906, published by Obnovlenie [Renewal] as a separate pamphlet (confiscated). (working English)
+    significance: >-
+      The measure of the Russian state's reaction: not prosecution of the celebrity author but
+      confiscation of the text. The 1911 reprint in vol. 19 of the 12th collected edition was likewise
+      confiscated. Never legally published in Russia in Tolstoy's lifetime.
+    facsimile: null
+
+  # ===== D. A REDACTION VARIANT (the excised direct apostrophe) ====================
+
+  - id: odum-variant-apostrophe
+    genre: works
+    pssTom: 36
+    pages: "426–435"
+    date: 1904
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol05/vol05.pdf
+    extract: extracts/v36_426_435_Odumajtes_Varianty.txt
+    quoteRu: >-
+      Одумайтесь, главное, вы, несчастные толпы молодых людей военных, необдуманно повинующихся людям, ведущих вас на заклание или на убийство братьев.
+    quoteEn: >-
+      Bethink yourselves, above all, you unhappy crowds of young military men, blindly obeying those who lead you to slaughter or to the murder of your brothers. (working English)
+    significance: >-
+      Variant No. 13 (pre-1918 orthography in the PSS variants apparatus). An early draft ended chapter
+      XI with a four-fold direct "Bethink yourselves!" apostrophe to tsar, clergy, journalists, and
+      soldiers; Tolstoy cut the whole passage. Shows the title used as a live second-person imperative
+      before he muted it. NOTE pre-reform orthography (see needsReview).
+    facsimile: null
+
+# ---------------------------------------------------------------------------------------------
+# Layer 2 — entities (ingestion routing map). This is a PLAN for the later wiki-ingestion
+# step; the dive writes no pages. vaultStatus checked against website/src/wiki + /works.
+# ---------------------------------------------------------------------------------------------
+entities:
+
+  - name: Leo Tolstoy
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: Author of the essay
+    sources: []
+    evidenceRefs: [odum-opening, odum-diary-genesis, odum-verdict-tol]
+    ingestionPriority: 1
+
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: >-
+      Translator (with I. F. M.), editor, and abroad-publisher. The entire publication ran through
+      him: Tolstoy sent each instalment to Christchurch, gave him carte blanche to cut, and approved
+      his six proof changes. His Free Age Press issued the first edition.
+    sources: []
+    evidenceRefs: [odum-genesis-letter, odum-softening-letter, odum-pub-abroad, odum-grandduke]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Russo-Japanese War
+    wikiType: event
+    wikilinkTarget: "Russo-Japanese War"
+    vaultStatus: missing
+    role: >-
+      The 1904–1905 war (began 27 Jan 1904 OS / 9 Feb NS) that occasioned the essay and breaks into
+      its later chapters (Port Arthur, the Yalu, the conscription call-up).
+    sources: []
+    evidenceRefs: [odum-diary-warday, odum-port-arthur, odum-human-material]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Free Age Press
+    wikiType: institution
+    wikilinkTarget: "Free Age Press"
+    vaultStatus: missing
+    role: >-
+      Chertkov's "No Rights Reserved" English press (Свободное слово / Free Word; Christchurch, Hants),
+      established after his 1897 exile; the channel through which banned Tolstoy texts reached the world.
+      Issued the first edition of Bethink Yourselves! (1904). Later absorbed by C. W. Daniel Ltd.
+    sources: []
+    evidenceRefs: [odum-pub-abroad]
+    ingestionPriority: 1
+    dependsOn: [Vladimir Chertkov]
+
+  - name: Isabella Fyvie Mayo
+    wikiType: person
+    wikilinkTarget: "Isabella Fyvie Mayo"
+    vaultStatus: missing
+    role: >-
+      "I. F. M." — Scottish writer (pen name Edward Garrett), suffragist and reformer (1843–1914);
+      Chertkov's co-translator of the authorised English text and a Free Age Press collaborator.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: [Free Age Press]
+
+  - name: Mikhail Petrovich Novikov
+    wikiType: person
+    wikilinkTarget: "Mikhail Novikov"
+    vaultStatus: missing
+    role: >-
+      Tula peasant, friend and correspondent of Tolstoy. His two letters (27–28 Apr 1904) on being
+      called up are quoted at length in chapter XII (the "where can one escape to?" reservist material).
+    sources: []
+    evidenceRefs: [odum-where-flee]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Petropavlovsk sinking
+    wikiType: event
+    wikilinkTarget: "Sinking of the Petropavlovsk"
+    vaultStatus: missing
+    role: >-
+      13 Apr 1904 NS (31 Mar OS): the Russian flagship struck a mine off Port Arthur and sank; ~679
+      dead. The event that breaks into the finished essay at chapter XI.
+    sources: []
+    evidenceRefs: [odum-port-arthur]
+    ingestionPriority: 2
+    dependsOn: [Russo-Japanese War]
+
+  - name: Stepan Makarov
+    wikiType: person
+    wikilinkTarget: "Stepan Makarov"
+    vaultStatus: missing
+    role: Vice-admiral commanding the Pacific squadron; drowned when the Petropavlovsk sank. Named in chapter XI.
+    sources: []
+    evidenceRefs: [odum-port-arthur]
+    ingestionPriority: 3
+    dependsOn: [Petropavlovsk sinking]
+
+  - name: Vasily Vereshchagin
+    wikiType: person
+    wikilinkTarget: "Vasily Vereshchagin"
+    vaultStatus: missing
+    role: >-
+      War painter; died with Makarov on the Petropavlovsk. Not named in the essay but bound to its
+      central event; his anti-war battle paintings are a thematic sibling to the essay.
+    sources: []
+    evidenceRefs: [odum-port-arthur]
+    ingestionPriority: 3
+    dependsOn: [Petropavlovsk sinking]
+
+  - name: Efim Savelievich Ivus
+    wikiType: person
+    wikilinkTarget: "Efim Ivus"
+    vaultStatus: missing
+    role: >-
+      Seaman of the cruiser Pallada at Port Arthur whose 8 May 1904 letter ("is it pleasing to God…
+      that our commanders make us kill?") Tolstoy reproduced verbatim, with its original spelling, as
+      the essay's closing "spark."
+    sources: []
+    evidenceRefs: [odum-spark, odum-diary-seaman]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Yulia Igumnova
+    wikiType: person
+    wikilinkTarget: "Yulia Igumnova"
+    vaultStatus: missing
+    role: Tolstoy's secretary/copyist; dispatched the corrections and the final chapters to Chertkov (Apr 1904).
+    sources: []
+    evidenceRefs: [odum-softening-letter]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Alexandra Tolstaya
+    wikiType: person
+    wikilinkTarget: "Alexandra Tolstaya"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's youngest daughter ("Sasha"); copyist of the essay's drafts (the cover sheet "Черновики.
+      30 января 1904 г." is in her hand) and of chapter XII.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Pyotr Verigin
+    wikiType: person
+    wikilinkTarget: "Pyotr Verigin"
+    vaultStatus: missing
+    role: Doukhobor leader in Canada; recipient of Tolstoy's mid-composition statement of the essay's thesis.
+    sources: []
+    evidenceRefs: [odum-verigin]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Ernest Crosby
+    wikiType: person
+    wikilinkTarget: "Ernest Crosby"
+    vaultStatus: missing
+    role: American Tolstoyan; his anti-war verse furnished one of the essay's epigraphs (chapter X).
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Shusui Kotoku
+    wikiType: person
+    wikilinkTarget: "Shusui Kotoku"
+    vaultStatus: missing
+    role: >-
+      Japanese socialist; his 1904 response in Heimin Shimbun praised the essay's moral diagnosis but
+      rejected its individual-repentance remedy as inadequate to war's structural causes — the earliest
+      precisely datable critical engagement.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Nicholas II
+    wikiType: person
+    wikilinkTarget: "Nicholas II"
+    vaultStatus: missing
+    role: >-
+      Reigning tsar; addressed directly in the essay ("the men of war and the tsar") and named with
+      Kuropatkin as responsible for the "50,000 lives."
+    sources: []
+    evidenceRefs: [odum-human-material]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: metanoeite (bethinking)
+    wikiType: concept
+    wikilinkTarget: "Metanoia"
+    vaultStatus: missing
+    role: >-
+      The Greek μετανοεῖτε of the title, glossed "bethink yourselves" rather than "repent": the
+      individual turning-back of conscience that is the essay's whole remedy.
+    sources: []
+    evidenceRefs: [odum-metanoeite, odum-bethink-definition]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Christian Anarchism
+    wikiType: concept
+    wikilinkTarget: "Christian Anarchism"
+    vaultStatus: exists
+    role: >-
+      The non-resistance / refusal-of-state-violence frame the essay belongs to; cross-link, do not
+      assert the contested label in the dive's own voice.
+    sources: []
+    evidenceRefs: [odum-individual-not-external, odum-love-enemies]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ---------------------------------------------------------------------------------------------
+# Layer 3 — visual & manuscript record (visuals/ is git-ignored; PD facsimiles only in extracts/).
+# ---------------------------------------------------------------------------------------------
+visuals:
+
+  - id: tolstoy-yasnaya-polyana-1905
+    type: photograph
+    subject: Leo Tolstoy at Yasnaya Polyana, 1905
+    relatedEntity: Leo Tolstoy
+    relatedEvidence: odum-opening
+    holding: Wikimedia Commons
+    archiveId: "File:ЯснаяПоляна._Портрет_Льва_Толстого_1905г._Любошец.jpg"
+    access: open
+    rights: "PD — published before 1928; author (Lyuboshets) and subject long dead"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Category:Leo_Tolstoy_in_1905"
+    localPath: visuals/commons-tolstoy-yasnaya-polyana-1905.jpg
+    note: >-
+      Keystone image; closest confirmed Yasnaya Polyana portrait bracketing 1904 (the 1904 Commons
+      category was empty). A dated 1904 Chertkov-album photo would need a museum request (GTM / RGALI).
+
+  - id: swedish-betanken-eder-cover
+    type: cover-scan
+    subject: "Betänken Eder! (Stockholm: Björck & Börjesson, 1904) — front cover"
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: odum-fire-rising
+    holding: "Johan Edlund personal collection (Internet Archive item leo-tolstoy_betanken-eder_jed)"
+    archiveId: "IA:leo-tolstoy_betanken-eder_jed"
+    access: open
+    rights: "PD — 1904 Swedish edition; surrogate digitised by Johan Edlund"
+    licence: PD
+    usable: true
+    url: "https://archive.org/details/leo-tolstoy_betanken-eder_jed"
+    localPath: visuals/swedish-betanken-eder-cover.png
+    note: >-
+      The Swedish translation whose coda variance this dive examines. A living surrogate: Johan
+      Edlund's own scan → transcription → epub → Internet Archive edition. No third-party rights.
+
+  - id: chertkov-portrait-1883
+    type: photograph
+    subject: Vladimir Grigoryevich Chertkov
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: odum-pub-abroad
+    holding: Wikimedia Commons
+    archiveId: "File:Vladimir_Chertkov.jpg"
+    access: open
+    rights: "PD — photograph dated 1883; Chertkov died 1936"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg"
+    localPath: visuals/commons-chertkov-portrait-1883.jpg
+    note: >-
+      Only clearly identified solo Chertkov portrait on Commons (1883, ~20 years before the essay).
+      A period 1904 image would need RGALI fond 552 or the British Library Chertkov collection.
+
+  - id: petropavlovsk-battleship-1904
+    type: photograph
+    subject: Russian battleship Petropavlovsk (before its 1904 sinking)
+    relatedEntity: Petropavlovsk sinking
+    relatedEvidence: odum-port-arthur
+    holding: Wikimedia Commons
+    archiveId: "File:Russian_battleship_Petropavlovsk_(prior_to_its_1904_sinking).jpg"
+    access: open
+    rights: "PD — pre-1928 Russian naval photograph"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Russian_battleship_Petropavlovsk_(prior_to_its_1904_sinking).jpg"
+    localPath: visuals/commons-petropavlovsk-battleship-1904.jpg
+    note: >-
+      The ship whose sinking (13 Apr 1904 NS, ~679 dead incl. Makarov and Vereshchagin) breaks into
+      chapter XI of the essay.
+
+  - id: makarov-vice-admiral-1904
+    type: photograph
+    subject: Vice-Admiral Stepan Osipovich Makarov
+    relatedEntity: Stepan Makarov
+    relatedEvidence: odum-port-arthur
+    holding: Wikimedia Commons
+    archiveId: "File:Stepan_Makarov,_vice-admiral.jpg"
+    access: open
+    rights: "PD — pre-1928 Russian official photograph; subject died 1904"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Stepan_Makarov,_vice-admiral.jpg"
+    localPath: visuals/commons-makarov-vice-admiral-1904.jpg
+    note: >-
+      The admiral whose death Tolstoy names in chapter XI ("the loss of the brave Makarov, who… could
+      kill people very skilfully").
+
+# ---------------------------------------------------------------------------------------------
+# Layer 4 — secondary scholarship (Phase 3). Attributed, English-first. Contrast, not baseline.
+# ---------------------------------------------------------------------------------------------
+scholarship:
+  summary: >-
+    English-language biography gives Bethink Yourselves! brief but consistent coverage as the most
+    prominent of Tolstoy's anti-war interventions — his stand against jingoism on both sides of the
+    Russo-Japanese War, read between the 1901 excommunication and the 1905 revolution. The specific
+    page-level treatment in Maude (1908/10), Simmons (1946), and Bartlett (2010) could not be confirmed
+    in this pass (Archive.org access failures). The sharpest contemporary engagement is not Western but
+    Japanese: Shūsui Kōtoku's 1904 response in the socialist Heimin Shimbun praised Tolstoy's moral
+    courage while rejecting his individual-repentance remedy as inadequate to war's structural,
+    capitalist causes — the founding instance of the socialist critique of Tolstoyan nonresistance. The
+    essay's reach was immediate (Kōtoku notes even Nicholas II's reaction was telegraphed worldwide) and
+    durable (Navalny cited its opening sentence at his 2022 trial).
+  triangulation:
+    - evidenceRef: odum-pub-abroad
+      conventionalView: "The essay was banned at home and published abroad through Chertkov's Free Age Press."
+      relation: confirms
+      source: "PSS v.36 commentary; Free Age Press / Ginn (Boston, 1904) edition records."
+    - evidenceRef: odum-pub-russia-banned
+      conventionalView: "Not legally published in Russia in Tolstoy's lifetime."
+      relation: extends
+      source: "PSS v.36 commentary — the dive supplies the precise confiscations (1906 Obnovlenie; 1911 vol.19)."
+    - evidenceRef: odum-individual-not-external
+      conventionalView: "The essay's thesis is individual conscience over collective/state war-duty."
+      relation: confirms
+      source: "Kōtoku 1904 engages exactly this thesis; Wikisource text; PSS text."
+    - evidenceRef: odum-bethink-definition
+      conventionalView: "Scholarship treats the remedy (individual repentance) as the essay's distinctive and contested move."
+      relation: complicates
+      source: "Kōtoku 1904 (Heimin Shimbun no.40) — rejects the remedy as circular; structural critique."
+    - evidenceRef: odum-genesis-letter
+      conventionalView: "Chertkov was the authorised translator."
+      relation: extends
+      source: "PSS v.36 commentary — six documented proof cuts, a paragraph reordering, epigraph omissions, all delegated and approved: editor as much as translator."
+    - evidenceRef: odum-metanoeite
+      conventionalView: "The title renders the Gospel μετανοεῖτε."
+      relation: confirms
+      source: "PSS v.36 commentary (first autograph «Одумайтесь (μετανοεῖτε)»); Wikisource text."
+    - evidenceRef: odum-fire-rising
+      conventionalView: "(no secondary source in this pass discusses the fire coda)"
+      relation: extends
+      source: "Primary text only; the corpus (and the fire-metaphor dive) ground an image the scholarship leaves untouched."
+
+# ---------------------------------------------------------------------------------------------
+# Layer 5 — workRecord: proposed fills for the works/ frontmatter. READ-ONLY to works/.
+# Human ingestion applies. The dive proposes; it never writes works/.
+# ---------------------------------------------------------------------------------------------
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/bethink-yourselves/Bethink Yourselves!.md"
+  workId: bethink-yourselves
+  fields:
+    - field: dateFirstPublished
+      value: "1904"
+      evidenceRefs: [odum-pub-abroad]
+      source: "PSS v.36 commentary; The Times (London) 27 June 1904 NS; Free Age Press 1904."
+      confidence: high
+      note: >-
+        Record already carries "1904". First public appearance: The Times (London), 27 June 1904 NS,
+        and the Free Age Press / Свободное слово pamphlet (Christchurch) the same year.
+    - field: firstPublishedVenue
+      value: "The Times, London"
+      evidenceRefs: [odum-pub-abroad]
+      source: "PG #27189 title page ('Reprinted from the London Times'); PSS commentary names Свободное слово."
+      confidence: high
+      note: >-
+        Record value stands. Consider noting the first BOOK edition: Free Age Press (Свободное слово),
+        Christchurch, England, 1904, with editor-added subtitle «Статья по поводу русско-японской войны».
+    - field: bans
+      value: "[{banningAuthority: Russian Imperial government, authorityType: state, jurisdiction: Russian Empire, scope: full-work, banDate: 1906}]"
+      evidenceRefs: [odum-pub-russia-banned]
+      source: "PSS v.36 commentary: 1906 Обновление pamphlet confiscated; 1911 vol.19 of 12th collected ed. confiscated."
+      confidence: high
+      note: >-
+        Record currently has bans: []. Two confiscations are documented (1906, 1911). Shape to the
+        works schema's bans object array; the 1906 and 1911 confiscations can be two entries.
+    - field: titleAlternatives
+      value: >-
+        add {title: 'Betänken Eder!', type: translation, language: sv},
+        {title: 'Besinnet Euch!', type: translation, language: de},
+        {title: 'Ressaisissez-vous!', type: translation, language: fr},
+        {title: 'Статья по поводу русско-японской войны', type: subtitle, language: ru}
+      evidenceRefs: [odum-pub-abroad]
+      source: "Runeberg (Swedish); ZVAB/Diederichs (German); fr.Wikisource (French); PSS commentary (subtitle)."
+      confidence: high
+      note: "Shape each to the {title, type, language} object the works schema uses."
+    - field: relatedWorks
+      value: >-
+        keep {id: the-kingdom-of-god-is-within-you, relationshipType: companion};
+        add {id: what-is-religion, relationshipType: companion} and the religion-essay it split from
+        (Единое на потребу / Edinoe na potrebu)
+      evidenceRefs: [odum-religion-thesis, odum-genesis-letter]
+      source: "PSS v.36 commentary (the religion theme «Камень» that became Единое на потребу); odum-genesis-letter."
+      confidence: medium
+      note: "Verify the slug/id of Единое на потребу in works/ before adding (may not yet have a record)."
+    - field: dateWritingCompleted
+      value: "1904-05-13"
+      evidenceRefs: [odum-luke12-49, odum-diary-seaman]
+      source: "PSS text dateline «30 Апреля 1904 г.» (= 13 May NS) on the fire coda; 8 May OS seaman postscript; final tweaks to 20 May OS."
+      confidence: high
+      note: >-
+        Record value (1904-05-13 NS / 1904-04-30 OS) is the fire-coda date and is correct. NOTE the
+        essay kept growing after it: the seaman's postscript is dated 8 May OS (= 21 May NS) and the
+        diary records a final addition on 20 May OS. See needsReview on the colophon dates.
+    - field: censorshipNotes
+      value: >-
+        Refine: first publication abroad via Chertkov's Free Age Press (Christchurch, 1904) and The
+        Times (London); banned in Russia — 1906 Обновление pamphlet and 1911 collected-works vol.19
+        both confiscated; never legally published in Russia in Tolstoy's lifetime.
+      evidenceRefs: [odum-pub-abroad, odum-pub-russia-banned]
+      source: "PSS v.36 commentary."
+      confidence: high
+      note: "Record's censorshipNotes is already close; this adds the two confiscation dates."
+
+# ---------------------------------------------------------------------------------------------
+# Layer 6 — coverage ledger (surfaces × status). Derives index.md "Material not covered".
+# ---------------------------------------------------------------------------------------------
+coverage:
+  - surface: "Genesis & composition (incl. people)"
+    status: covered
+    note: "27–28 Jan 1904 genesis; the chapter-by-chapter timeline from the editorial history; Chertkov, Igumnova, A. L. Tolstaya, Novikov, Ivus, the correspondents."
+  - surface: "What the work says (structural map)"
+    status: covered
+    note: "All twelve chapters read from the work's own TEI; keystone passages I–XII in the evidence ledger."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "13 variants + the editorial history of the manuscript; Tolstoy's self-softening and Chertkov's six proof cuts."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Free Age Press + The Times; 1906/1911 Russian confiscations; the EN (Chertkov + Mayo), SV, DE, FR translation tree; the Swedish coda variance."
+  - surface: "Reception & afterlife (Russian/Church first)"
+    status: partial
+    note: "The state reaction is documented (confiscation); a Synod statement specific to this essay was not found (1901 excommunication was the standing frame). International + Japanese (Kōtoku) reception covered; later resonance (Navalny 2022) noted."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "Cross-linked to fire-metaphor, christian-anarchism, tolstoyanism, doukhobors."
+  - surface: "The author's later verdict"
+    status: covered
+    note: "The 1 July 1904 letter to S. D. Tol' ('I will repeat the same on my deathbed') and the 6 June diary oscillation."
+  - surface: "Visual & manuscript record"
+    status: partial
+    note: "5 PD images cached; a dated 1904 Tolstoy photo, a period Chertkov photo, and the Free Age Press / Times title pages are not openly available (museum/archive requests noted)."
+
+# ---------------------------------------------------------------------------------------------
+# Intra-corpus contradictions (primary-vs-primary) — distinct from scholarship triangulation.
+# ---------------------------------------------------------------------------------------------
+contradictions:
+  - claim: "The RU coda reads «Не будем же противиться, а будем служить ему» — 'let us not resist it, but serve it.'"
+    correction: >-
+      The Swedish Betänken Eder! (1904) renders the same sentence "låtom oss då icke släcka den, utan
+      sprida och underhålla den" — "let us not extinguish it, but spread and sustain it." A free
+      translation/redaction variant (the Swedish was made from Russian, omitting the epigraphs), not a
+      different source. Worth flagging for the wiki because it changes the verb of the essay's last act
+      from non-resistance to active spreading.
+    evidenceRef: odum-fire-rising
+
+# ---------------------------------------------------------------------------------------------
+notCovered:
+  - "The full epigraph apparatus: ~50 epigraphs (Voltaire, Pascal, Kant, Maupassant, Lao-Tzu, Marcus Aurelius, Origen, etc.), most drawn from Jean Grave's anthology Guerre-Militarisme (Paris, 1902). The dive maps their function, not each source."
+  - "A page-by-page collation of the PSS text against the Free Age Press first edition (Chertkov's six proof cuts are described in the commentary but not independently re-collated against a held copy)."
+  - "The Japanese-side reception beyond Kōtoku (Anesaki Masaharu; the broader Heimin Shimbun circle)."
+  - "Vereshchagin's anti-war paintings as a visual counterpart (his death on the Petropavlovsk is the essay's central event)."
+
+needsReview:
+  - item: "Colophon dates. The PSS text shows «30 Апреля 1904 г.» (the fire coda) and «8 Мая 1904 г.» (the seaman postscript); the PG/Free Age Press English edition is reported to carry 'May 2' / '13 May 1904'. The OS↔NS pairing of the printed colophon dates should be checked against the printed editions before any chronology is driven from them."
+    phase: 2
+    why: "Bears on the workRecord dateWritingCompleted and on the TEI-diary-filename-year gotcha; do not let a colophon date drive a slug/date unchecked."
+  - item: "Swedish translator unidentified. «Betänken Eder!» (Björck & Börjesson, 1904) names no translator in the Runeberg catalogue or any source found; translated from Russian, epigraphs omitted."
+    phase: 3
+    why: "A detail Johan's edition project could surface; left open rather than guessed."
+  - item: "Pre-1918 orthography in the variants extract (odum-variant-apostrophe and the other 12 variants). The PSS variants apparatus is printed diplomatically in old orthography, so --choice=reg had nothing to normalize; quote bytes are pre-reform (ъ/ѣ/і)."
+    phase: 2
+    why: "Verbatim, but old orthography — flag like the fire-metaphor dive did for its pre-reform rows."
+  - item: "First legal Russian publication after 1917 not pinned (PSS 1936 is the authoritative Soviet text; whether an earlier early-Soviet legal printing exists is unconfirmed)."
+    phase: 3
+    why: "Bears on the publication-history completeness; not in-scope to resolve fully."
+  - item: "The 'множество японцев' (chapter XII) vs the Petropavlovsk. The Petropavlovsk (chapter XI) was a Russian loss; the chapter-XII 'multitude of peaceful Japanese' drowned refers to Admiral Iessen's sinking of transports near Genzan (~late Apr 1904). The commentary records Chertkov softening «несколько тысяч» → «множество». Keep the two events distinct in any wiki page."
+    phase: 3
+    why: "Easy to conflate the two naval events; the scholarship sweep briefly did."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ (v36_100_148 essay; v36_426_435 variants)"
+  - "primary-sources/tolstoydigital-TEI/texts/comments/ (v36_604_621 editorial history)"
+  - "primary-sources/tolstoydigital-TEI/texts/diaries/ (Tom 55, Jan–Jun 1904)"
+  - "primary-sources/tolstoydigital-TEI/texts/letters/ (Tom 75, 1904)"
+  - "docs/research/fire-metaphor/ (the three reusable coda quotes; prior dive)"
+  - "projects/bethink-yourselves/ (Johan's Swedish edition + PG English reference, read-only)"
+  - "Wikimedia Commons (5 PD images)"
+  - "Web: Projekt Runeberg, Project Gutenberg #27189, fr/en Wikisource, Heimin Shimbun (Kōtoku, via Anarchist Library), Wikipedia (Petropavlovsk, excommunication)"
+
+references:
+  primary:
+    - "Толстой Л. Н. Одумайтесь! // ПСС в 90 тт. Т. 36. М., 1936. С. 100–148. (TEI works/v36_100_148_Odumajtes)"
+    - "Толстой Л. Н. Варианты к статье «Одумайтесь!» // ПСС Т. 36. С. 426–435. (TEI works/v36_426_435)"
+    - "Горбачев Н. В. «Одумайтесь!». Комментарий // ПСС Т. 36. С. 604–621. (TEI comments/v36_604_621)"
+    - "Толстой Л. Н. Дневник 1904 г. // ПСС Т. 55. (TEI diaries/v55_*, Jan–Jun 1904)"
+    - "Толстой Л. Н. Письма 1904 г. // ПСС Т. 75. (TEI letters/v75_*)"
+  background:
+    - "Tolstoy, Leo. Bethink Yourselves! Trans. V. Tchertkoff and I. F. M., ed. Edwin D. Mead. Boston: Ginn & Co., 1904. Project Gutenberg #27189. https://www.gutenberg.org/ebooks/27189"
+    - "Betänken Eder! Ett bref till krigets män och tsaren. Stockholm: Björck & Börjesson, 1904. Projekt Runeberg. http://runeberg.org/betanken/"
+    - "Besinnet Euch! (Tut Buße). Trans. Raphael Löwenfeld. Jena: Eugen Diederichs, 1904."
+    - "Ressaisissez-vous! Trans. Georges Bourdon, in En écoutant Tolstoï. Paris: Charpentier & Fasquelle, 1904. fr.Wikisource."
+    - "La Guerre russo-japonaise. Trans. J.-W. Bienstock, in Dernières paroles. Paris: Mercure de France, 1905. Gallica bpt6k96485k."
+    - "Kōtoku, Shūsui. Commenting on Tolstoy's Anti-War Stance. Heimin Shimbun no. 40, 1904. The Anarchist Library."
+    - "Leo Tolstoy: Russian Pacifist Thinker. University of Kansas, Dept. of Slavic, German & Eurasian Studies. https://sges.ku.edu/leo-tolstoy-russian-pacifist-thinker (notes the Navalny 2022 trial citation)."
+    - "Mayo, Isabella Fyvie ('I. F. M.'). Scotland-Russia project, Univ. of Edinburgh. http://www.scotland-russia.llc.ed.ac.uk/isabella-fyvie-mayo/"
+    - "Russian battleship Petropavlovsk (1894). Wikipedia. (13 Apr 1904 NS; ~679 dead; Makarov, Vereshchagin)"
+    - "Kolstø, Pål. Heretical Orthodoxy: Lev Tolstoi and the Russian Orthodox Church (excommunication and its aftermath). Cambridge UP."
+    - "Maude, Aylmer. The Life of Tolstoy. 2 vols. London: Constable, 1908/1910. [context; not accessed]"
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile, 2010. [context; not accessed]"
