@@ -127,7 +127,7 @@ evidence:
     extract: "extracts/v54_086_089_1901_02_08.txt"
     quoteRu: "Искал определение религии, взял книгу Чичерина — Религия и Наука. Искусственные построения на заданную тему. Мое определение такое: Это — такое установление человеком отношения к бесконечному,¹⁰ которым¹¹ определяется цель его жизни."
     quoteEn: "(working English) Sought a definition of religion, took Chicherin's book Religion and Science. Artificial constructions on a set theme. My definition is: It is such an establishment by man of his relation to the infinite, by which the purpose of his life is determined."
-    significance: "Definitional keystone of the treatise — first articulation of the relation-to-the-infinite formula, dated just days before the Holy Synod excommunication decree (22–24 Feb 1901 OS / 7–9 Mar NS)."
+    significance: "Definitional keystone of the treatise — first articulation of the relation-to-the-infinite formula, dated about two weeks before the Holy Synod excommunication decree (22–24 Feb 1901 OS)."
     facsimile: ""
 
   - id: ev-diary-1901-02-11
@@ -404,15 +404,14 @@ entities:
     wikiType: person
     wikilinkTarget: "Konstantin Pobedonostsev"
     vaultStatus: missing
-    role: Ober-Procurator of the Holy Synod; architect of the excommunication decree (22–24 Feb 1901 OS); the institutional antagonist whose religious-political order the treatise directly addresses
+    role: "Ober-Procurator of the Holy Synod; drove the 22–24 Feb 1901 (OS) excommunication decree. Contextual to the dive's excommunication frame only — NOT named in the treatise or in the corpus extracts; included for the reception/biographical surround."
     sources:
       - jubilee-edition
-    evidenceRefs:
-      - ev-main-text
-    ingestionPriority: 2
+    evidenceRefs: []
+    ingestionPriority: 3
 
   - name: "«Свободное слово» (Free Word Press)"
-    wikiType: organisation
+    wikiType: institution
     wikilinkTarget: "Svobodnoe Slovo"
     vaultStatus: missing
     role: publisher of the essay's first edition (No. 75, Christchurch, Hants, 1902)
@@ -429,11 +428,10 @@ entities:
     wikiType: event
     wikilinkTarget: "Holy Synod Excommunication 1901"
     vaultStatus: missing
-    role: the ecclesiastical-political context in which the treatise was composed; Tolstoy's formal response to the decree appears in the opening chapters' critique of church Christianity
+    role: "the ecclesiastical-political context in which the treatise was composed (the 22–24 Feb 1901 OS decree predates the work); the treatise's critique of an infallible institutional Church bears on it but is not a formal reply, and the decree is nowhere named in the text — attributed, not asserted"
     sources:
       - jubilee-edition
     evidenceRefs:
-      - ev-main-text
       - ev-diary-1901-02-08
     ingestionPriority: 2
 
@@ -450,11 +448,11 @@ entities:
       - ev-diary-1901-12-26
     ingestionPriority: 2
 
-  - name: Nikolai Chicherin (Boris Chicherin)
+  - name: Boris Chicherin
     wikiType: person
     wikilinkTarget: "Boris Chicherin"
     vaultStatus: missing
-    role: philosopher whose book «Наука и религия» Tolstoy read in February 1901 and rejected as 'artificial constructions on a set theme'; the rejection catalysed Tolstoy's own opening definition
+    role: "philosopher (B. N. Chicherin) whose book «Наука и религия» (Science and Religion) Tolstoy read in February 1901 and rejected as 'artificial constructions on a set theme'; the rejection catalysed Tolstoy's own opening definition. (Tolstoy's diary loosely renders the title «Религия и Наука».)"
     sources:
       - jubilee-edition
     evidenceRefs:
@@ -583,12 +581,12 @@ visuals:
     note: "Preparatory study for Repin's 'Formal Session of the State Council' (1901–03). Pobedonostsev signed and drove the 1901 excommunication decree."
 
 scholarship:
-  summary: "The conventional scholarly view treats «Что такое религия» as the clearest and most systematic of Tolstoy's religious writings, his mature synthesis after three decades of religious thought. Bartlett (Tolstoy: A Russian Life, 2010) and Maude (The Life of Tolstoy: Later Years, 1911) both note the essay was written in the shadow of the excommunication, interpreting it as Tolstoy's doctrinal counterpoint to the Synod's action. The 'Our Civilisation' commentary (Simmons, 1968) calls it 'perhaps his most conclusive, best-tempered, and persuasive treatment of the subject.' The Cambridge Core article 'Tolstoy, Universalism and the World Religions' (2021) situates the treatise within Tolstoy's programme of convergent universalism — arguing all major religions share a common ethical core. The dominant scholarly frame (universalism + anti-institutionalism + reaction to excommunication) broadly confirms what the primary sources show. Where scholarship stops short is on the genesis detail — the specific intellectual arc from the three-article plan (Nov 1900) through the Chicherin rejection to the first definition formula (Feb 1901), and the production history at Free Word."
+  summary: "The conventional scholarly view treats «Что такое религия» as the clearest and most systematic of Tolstoy's religious writings, his mature synthesis after three decades of religious thought. Bartlett (Tolstoy: A Russian Life, 2010) and Maude (The Life of Tolstoy: Later Years, 1911) both note the essay was written in the shadow of the excommunication, interpreting it as Tolstoy's doctrinal counterpoint to the Synod's action. Simmons (Introduction to Tolstoy's Writings, 1968, ch. 7) calls it 'perhaps his most conclusive, best-tempered, and persuasive treatment of the subject.' Daniel Moulin's 'Tolstoy, Universalism and the World Religions' (Journal of Ecclesiastical History 68:3, 2017) situates the treatise within Tolstoy's programme of convergent universalism — arguing all major religions share a common ethical core. The dominant scholarly frame (universalism + anti-institutionalism + reaction to excommunication) broadly confirms what the primary sources show. Where scholarship stops short is on the genesis detail — the specific intellectual arc from the three-article plan (Nov 1900) through the Chicherin rejection to the first definition formula (Feb 1901), and the production history at Free Word."
   triangulation:
     - evidenceRef: ev-definition-ch2
       conventionalView: "Scholarship treats the essay as a religious universalism manifesto, noting Tolstoy surveys world religions to find a common core."
       relation: confirms
-      source: "Tolstoy, Universalism and the World Religions, Journal of Ecclesiastical History, Cambridge Core (2021)"
+      source: "Daniel Moulin, 'Tolstoy, Universalism and the World Religions', Journal of Ecclesiastical History 68:3 (2017)"
 
     - evidenceRef: ev-corruption-three-means
       conventionalView: "Scholars note Tolstoy's critique of institutional religion is rooted in his anti-clericalism."
@@ -739,9 +737,9 @@ workRecord:
       confidence: high
 
     - field: firstPublishedVenueType
-      value: "publisher"
+      value: "book"
       evidenceRefs: []
-      source: "Chertkov's press, Christchurch, Hants, England"
+      source: "Free Word edition No. 75, a separately-published booklet (Chertkov's press, Christchurch, Hants, England); schema enum journal·newspaper·book·samizdat"
       confidence: high
 
     - field: dateFirstPublishedInRussia
@@ -796,9 +794,9 @@ workRecord:
     - field: bans
       value:
         - banningAuthority: "Russian Imperial censorship"
-          authorityType: "state"
+          authorityType: "imperial-state"
           jurisdiction: "Russian Empire"
-          scope: "full publication ban"
+          scope: "complete-ban"
           banDate: "1902"
           note: "Banned in Russia on publication. First legal Russian printing 1906 (Zemlya i Trud). Tolstoy's Dec 1902 letter to Ostrogorsky (journal Obrazovanie) shows a censorship-circumvention attempt that also failed (banned Jan 1903)."
       evidenceRefs:
@@ -838,7 +836,7 @@ coverage:
 
   - surface: "Reception & afterlife — Russian society & church reaction"
     status: partial
-    note: "The excommunication context is covered (the Synod decree preceded the essay; the essay is in part a direct theological response). Contemporary Russian press and clerical reaction to the published essay specifically is not in the corpus extracts and was not found in the web scholarship sweep. Requires targeted archival or newspaper research."
+    note: "The excommunication context is covered (the 22–24 Feb 1901 OS Synod decree preceded the essay; the treatise's critique of an infallible institutional Church bears on it but is not a formal reply, and the decree is not named in the text). Contemporary Russian press and clerical reaction to the published essay specifically is not in the corpus extracts and was not found in the web scholarship sweep. Requires targeted archival or newspaper research."
 
   - surface: "Composition-year interlocutors (people around the work)"
     status: covered
@@ -846,7 +844,7 @@ coverage:
 
   - surface: "Place in the cluster (sibling works)"
     status: covered
-    note: "Connected to Kingdom of God Is Within You (1893), What Is Art? (1897–98), The Slavery of Our Times (1900), and the near-contemporary On Tolerance (О веротерпимости, Nov–Dec 1901). Dives for all exist."
+    note: "Cross-linked to existing dives: A Confession (1879–82), What I Believe (1882–84), Examination of Dogmatic Theology (1879–80), Kingdom of God Is Within You (1890–93), What Is Art? (1897–98), The Slavery of Our Times (1900), Christianity and Patriotism (1893–94), plus the theme dives christian / christian-anarchism / christian-communism-socialism. The near-contemporary On Religious Tolerance (О веротерпимости, Nov–Dec 1901) and On Freedom of Conscience are sibling works with NO dedicated dive yet (mentioned, not linked)."
 
   - surface: "Author's later verdict"
     status: partial
@@ -874,9 +872,9 @@ needsReview:
     phase: 4
     why: "Minor but affects the workRecord titleAlternatives field."
 
-  - item: "Chapter count discrepancy — 6 Nov letter projects ~18 chapters (12 done + 'едва ли 6'); 30 Nov letter says finished at chapter 16. Published text should be checked for the actual chapter count to resolve whether compression happened or the projections were loose."
+  - item: "Chapter count — documented discrepancy. The PSS Tom 35 manuscript description states the critical text is главы I—XVIII (18 chapters; MS 76 'finishes it with the XVIII chapter', MS 82 'главы I—XVIII'); the tolstoydigital TEI used here carries only 17 numbered heads (I–XVII). Tolstoy's own count was lower mid-composition (12 + 'едва ли 6' on 6 Nov; 'last, 16th chapter' on 30 Nov) and grew into December. The one-head gap (TEI 17 vs PSS 18) is unresolved — most likely a chapter break not carried into the digitised heads; the local PSS Tom 35 scan has no usable text layer for an independent count. Chapter numbers cited in the dive follow the TEI heads; quotes are byte-faithful. A manual PSS-print count would confirm where the gap falls."
     phase: 2
-    why: "The final published text chapter structure needs a count pass against the TEI. Low-priority but relevant for the textual history coverage."
+    why: "TEI (17 heads) and the PSS manuscript description (18 chapters) differ by one; the dive states this honestly and numbers per the TEI."
 
   - item: "Subcategory for the works record — placed under Essays and Criticism following What Is Art?. The essay is also classified as 'religious' (PSS) and 'philosophical'. Johann should confirm the preferred subcategory."
     phase: 4
@@ -908,4 +906,4 @@ references:
     - "Maude, Aylmer. The Life of Tolstoy: Later Years. London: Oxford University Press, 1911."
     - "Bartlett, Rosamund. Tolstoy: A Russian Life. London: Profile Books, 2010."
     - "Simmons, Ernest J. Introduction to Tolstoy's Writings. Chicago: University of Chicago Press, 1968. Chapter 7 (Tolstoy's Religious, Moral, and Didactic Writings). https://www.ourcivilisation.com/smartboard/shop/smmnsej/tolstoy/chap7.htm"
-    - "Tolstoy, Universalism and the World Religions. Journal of Ecclesiastical History. Cambridge Core, 2021. https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/abs/tolstoys-universalism-and-the-world-religions/BFDA558CFA56DE5BF7E188117204B481"
+    - "Moulin, Daniel. Tolstoy, Universalism and the World Religions. Journal of Ecclesiastical History 68, no. 3 (2017): 570–587. https://doi.org/10.1017/S0022046916001469"

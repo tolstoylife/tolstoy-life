@@ -1,12 +1,12 @@
 ---
 layer: reference
-lastUpdated: 2026-06-07
+lastUpdated: 2026-06-08
 tags: [research, corpus-dive, work-dive, religion, prophet-period, gaspra, excommunication]
 ---
 
 # What Is Religion? (Что такое религия и в чём сущность её?) — a corpus work-dive
 
-A single-work corpus dive on Tolstoy's religious treatise *Что такое религия и в чём сущность её?* (*What Is Religion and What Is Its Essence?*), written August 1901 – January 1902. It reads the treatise from its own text in the tolstoydigital TEI corpus (PSS Tom 35), reconstructs its composition at Gaspra during Tolstoy's gravest illness from the Jubilee-Edition editorial commentary and the 1900–1902 diaries and letters, and maps its central manoeuvre — the structural critique of all false religion against the positive definition of true religion as a relation to the infinite. The keystone is the definitional moment of 8 February 1901, written nine days before the Holy Synod excommunication, in which Tolstoy rejects Chicherin's *Religion and Science* and sets down his own formula for the first time.
+A single-work corpus dive on Tolstoy's religious treatise *Что такое религия и в чём сущность её?* (*What Is Religion and What Is Its Essence?*), written August 1901 – January 1902. It reads the treatise from its own text in the tolstoydigital TEI corpus (PSS Tom 35), reconstructs its composition at Gaspra during Tolstoy's gravest illness from the Jubilee-Edition editorial commentary and the 1900–1902 diaries and letters, and maps its central manoeuvre — the structural critique of all false religion against the positive definition of true religion as a relation to the infinite. The keystone is the definitional moment of 8 February 1901, written about two weeks before the Holy Synod excommunication, in which Tolstoy rejects Chicherin's *Science and Religion* and sets down his own formula for the first time.
 
 The dive prepares ingestion-ready material (this `index.md`, a machine-readable `dossier.yaml`, byte-faithful `extracts/`, and a draft dev-blog note). It does not create vault pages; it plans them.
 
@@ -14,7 +14,7 @@ The dive prepares ingestion-ready material (this `index.md`, a machine-readable 
 
 ## Key findings
 
-- **The treatise defines religion as a relation to the infinite.** The central definition — "True religion is such an establishment by man, in accord with his reason and knowledge, of his relation to the infinite life surrounding him, which binds his life to that infinity and guides his actions" — was first articulated on 8 February 1901, nine days before the Holy Synod excommunication decree. The decree did not prompt the argument; it sharpened the urgency of publishing it.
+- **The treatise defines religion as a relation to the infinite.** The central definition — "True religion is such an establishment by man, in accord with his reason and knowledge, of his relation to the infinite life surrounding him, which binds his life to that infinity and guides his actions" — was first articulated on 8 February 1901, about two weeks before the Holy Synod excommunication decree (22–24 February 1901, Old Style). The decree did not prompt the argument; it sharpened the urgency of publishing it.
 - **The argument has two movements: structural and positive.** The first movement (Chs I–IX) traces how all historical religions, including Christianity, share three corruption mechanisms — priesthood, miracles, and scripture — and how the Church adds a fourth: the claim of institutional infallibility ("the Church truc"). The second movement (Chs X–XVII) identifies the four propositions shared by all authentic religions (God as source; a divine particle in man; subdue passion, increase love; the Golden Rule) and argues their recovery is the only escape from the vicious circle of false religion and state violence.
 - **Equality is the structural constant.** "The recognition of the equality of people is the inevitable, fundamental property of every religion." Tolstoy's taxonomy of religious corruption is at bottom a taxonomy of how equality gets hidden or inverted, and his positive universalism is the recovery of it.
 - **The work was composed under mortal urgency.** Written at the Panina estate at Gaspra, Crimea, while Tolstoy suffered severe illness (pleurisy, typhoid, pneumonia) through the winter of 1901–02, the treatise is one of two works he explicitly told Chertkov he would be "guilty" of leaving unfinished at death. The phrase «Надо торопиться» (I must hurry), in the start-of-composition announcement of 12 August 1901, is one of the most compact self-descriptions of purpose in the late corpus.
@@ -29,9 +29,9 @@ The dive prepares ingestion-ready material (this `index.md`, a machine-readable 
 
 *Что такое религия* is Tolstoy's most systematic treatment of a question that had driven his writing since *A Confession* (1879–82): what is the difference between the institutional religion that lied to him his whole life and the authentic religious relation he recovered after his conversion crisis. Where *A Confession* and *What I Believe* (1882–84) narrate and defend his personal break with Orthodoxy, and *The Kingdom of God Is Within You* (1890–93) extends the argument to the political order, this treatise does something formally different: it builds a comparative theology, surveying Brahmanism, Judaism, Confucianism, Taoism, Buddhism, Christianity, and Islam in order to extract the four propositions they share — and then argues that the Church's *specific* innovation (institutional infallibility, the "Church truc") is the mechanism that hides those propositions from the people who most need them.
 
-The treatise was written six months after the Holy Synod excommunication and immediately after Tolstoy's gravest illness. Both facts are in the text, not just in the biographical surround. The excommunication is the institutional act that the "Church truc" chapter directly addresses; the illness is legible in the compression of the final chapters and in the letters' recurring note of urgency and self-justification.
+The treatise was written about six months after the Holy Synod excommunication and during Tolstoy's gravest illness. The excommunication is the institutional backdrop: the treatise's critique of the Church as a self-authorising, infallible body (the "Church truc" of chapter VI) bears on exactly the kind of authority the Synod had just exercised against him — though the text nowhere names the decree, and its argument was already taking shape before it (see *Genesis* and *Scholarly context*). The illness leaves its own trace, in the recurring note of urgency and self-justification that runs through the composition-window letters.
 
-For this project the essay sits at the centre of a cluster of Prophet-period works: the ethical ground cleared in [What Is Art?](../1897-1898-what-is-art/index.html) (1897–98) and [The Slavery of Our Times](../1900-what-is-slavery/index.html) (1900) makes the universalism of this treatise structurally possible; the contemporaneous [On Tolerance](../1901-on-tolerance/index.html) (Nov–Dec 1901) is its political companion-piece; [A Confession](../1879-1882-a-confession/index.html) is its biographical precursor.
+For this project the essay sits at the centre of a cluster of Prophet-period works: the ethical ground cleared in [What Is Art?](../1897-1898-what-is-art/index.html) (1897–98) and [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html) (1900) makes the universalism of this treatise structurally possible; the near-contemporary *On Religious Tolerance* («О веротерпимости», Nov–Dec 1901) is its political companion-piece, written in the same Gaspra weeks (no dedicated dive yet); [A Confession](../1879-1882-a-confession/index.html) (1879–82) is its biographical precursor.
 
 ---
 
@@ -55,7 +55,7 @@ The three were never written separately. By 11 February 1901 Tolstoy was plannin
 
 *Diary, 11 February 1901 · PSS Tom 54 · TEI `v54_089_090_1901_02_11`.*
 
-Three days earlier — on 8 February 1901, nine days before the Holy Synod excommunication decree — Tolstoy wrote the first articulation of the definitional formula that would become the treatise's centre:
+Three days earlier — on 8 February 1901, about two weeks before the Holy Synod excommunication decree (22–24 February 1901, Old Style) — Tolstoy wrote the first articulation of the definitional formula that would become the treatise's centre:
 
 > Искал определение религии, взял книгу Чичерина — Религия и Наука. Искусственные построения на заданную тему. Мое определение такое: Это — такое установление человеком отношения к бесконечному, которым определяется цель его жизни.
 
@@ -245,7 +245,7 @@ Mishin's editorial history (`extracts/v35_670_675_history.txt`) and the manuscri
 
 **The 82 manuscripts (1,449 units)** are held at the Manuscript Department of the Tolstoy Museum (AN USSR) and in the Chertkov archive. Manuscripts 1–2 cover the opening; manuscripts 1–9 cover chapters I–IV. The key cover dates are 10 August 1901, 23 August 1901, and 7 December 1901. MS 82 is the printer's copy — the fair copy that went to Chertkov and served as the base text for PSS Tom 35. The manuscript record for a work of this length (42 pages in PSS) is unusually dense.
 
-**Chapter-count question.** The 6 November letter to Chertkov projects approximately 18 chapters (12 done + "едва ли 6" remaining); the 30 November letter calls it finished at chapter 16. The discrepancy — approximately 2 chapters fewer than projected — suggests compression or merger in the final writing. The published PSS text should be checked for the chapter count (17 chapters as read, not 16) against Tolstoy's own "16-й главе" self-count: it is possible that an additional chapter was written in December that Tolstoy did not yet count on 30 November, or that the chapter numbering shifted (a `needsReview` item in the dossier).
+**Chapter count.** The PSS Tom 35 manuscript description states the critical text comprises eighteen chapters — «Рукопись № 82… заключает в себе текст всей статьи, главы I—XVIII» (and it is in MS 76 that Tolstoy "finishes it with the XVIII chapter"). Tolstoy's own composition notes track a lower, still-growing count: twelve chapters with "barely six" remaining on 6 November 1901, and work on "the last, 16th chapter" on 30 November — before he carried on into December (the diary's "Finished On religion" is 26 December, with more revision after). The tolstoydigital TEI used for this dive presents the treatise in seventeen numbered heads (I–XVII) — one short of the description's eighteen. The cause is not resolvable from the corpus alone (most likely a chapter break not carried through into the digitised heads); the local PSS Tom 35 scan has no usable text layer for an independent count. The quotations in this dive are byte-faithful to the TEI, and the chapter numbers cited above follow the TEI's heads. Flagged in the dossier `needsReview`.
 
 **Late additions.** Boulanger took dictation during the pneumonia crisis of late January – early February 1902. The PSS apparatus records three places where the Free Word edition preserves material Tolstoy had struck in the fair copy; whether these struck passages were restored or represent Chertkov's editorial choice is not resolved in the corpus extracts.
 
@@ -277,15 +277,15 @@ The dominant scholarly reading treats *Что такое религия* as Tols
 
 Simmons (*Introduction to Tolstoy's Writings*, 1968) calls it "perhaps his most conclusive, best-tempered, and persuasive treatment of the subject." Maude (1911) notes the essay's place in the sequence that begins with *A Confession* and ends here — a more than twenty-year arc of religious thought arriving at a stable systematic statement. Bartlett (*Tolstoy: A Russian Life*, 2010) situates the composition at Gaspra and the excommunication context but does not develop the structural argument.
 
-The most illuminating secondary framing is the "universalism" reading: the Cambridge Core article "Tolstoy, Universalism and the World Religions" (*Journal of Ecclesiastical History*, 2021) treats the treatise as the fullest expression of Tolstoy's programme of convergent universalism — the argument that all major religions share a common ethical core obscured by institutional accretion. This reading broadly confirms what the primary sources show, while stopping short of the structural precision of the three-corruption-mechanism argument.
+The most illuminating secondary framing is the "universalism" reading: Daniel Moulin's "Tolstoy, Universalism and the World Religions" (*Journal of Ecclesiastical History* 68:3, 2017) treats the treatise as the fullest expression of Tolstoy's programme of convergent universalism — the argument that all major religions share a common ethical core obscured by institutional accretion. This reading broadly confirms what the primary sources show, while stopping short of the structural precision of the three-corruption-mechanism argument.
 
 Where the corpus evidence meets or diverges from the conventional view:
 
 - **The comparative religious survey** — *confirms, then extends.* Scholarship correctly identifies the comparative survey (Brahmanism, Judaism, etc.) as central. The primary text shows the survey is not primarily descriptive but structural: Tolstoy is looking for the corruption mechanism in each religion, not cataloguing its doctrines. Scholarship rarely makes this move explicit.
-- **The excommunication as motive** — *complicates.* The received framing (Bartlett, Maude) reads the essay as a response to the 1901 excommunication. The primary sources show the definitional kernel formed in February 1901, nine days *before* the decree, and the conceptual genesis in November 1900. The excommunication sharpened urgency; it did not determine the argument.
+- **The excommunication as motive** — *complicates.* The received framing (Bartlett, Maude) reads the essay as a response to the 1901 excommunication. The primary sources show the definitional kernel formed in February 1901, about two weeks *before* the decree, and the conceptual genesis in November 1900. The excommunication sharpened urgency; it did not determine the argument.
 - **The three corruption mechanisms** — *extends.* Scholarship identifies the anti-clericalism broadly but does not name the three-mechanism model (priesthood, miracles, scripture) as a structural claim applied universally. The primary text makes it explicit.
 - **The Church truc as Christianity's specific contribution** — *extends.* No secondary source consulted develops the "institutional infallibility" argument as Tolstoy's precise claim about what Christianity adds to the universal corruption template. The primary text states it plainly in Chapter VI.
-- **The four propositions of universal religion** — *confirms.* The universalism reading (Cambridge Core 2021) is broadly correct. The primary text is more explicit and more systematically comparative than the scholarly summary suggests: the four propositions are named, not merely implied, and are attributed to all seven named religions.
+- **The four propositions of universal religion** — *confirms.* The universalism reading (Moulin 2017) is broadly correct. The primary text is more explicit and more systematically comparative than the scholarly summary suggests: the four propositions are named, not merely implied, and are attributed to all seven named religions.
 
 One genuine gap (flagged, not papered over): the claim that the treatise is Tolstoy's "most conclusive" religious statement (Simmons) cannot be tested from within this dive alone; it would require a cross-dive comparison with *A Confession*, *What I Believe*, and *The Kingdom of God*. The description is plausible from the internal evidence of this text — it is more systematic than the earlier works — but the "most conclusive" judgement is an external attribution, not a finding.
 
@@ -295,10 +295,13 @@ One genuine gap (flagged, not papered over): the claim that the treatise is Tols
 
 - [A Confession](../1879-1882-a-confession/index.html) (1879–82) — the biographical and existential precursor; the crisis of faith that the treatise's positive definition finally resolves systematically.
 - [What I Believe](../1882-1884-what-i-believe/index.html) (1882–84) — the personal creed; where the anti-Church argument first takes written form.
+- [Examination of Dogmatic Theology](../1879-1880-examination-of-dogmatic-theology/index.html) (1879–80) — the negative critique of church doctrine whose positive counterpart this treatise supplies.
 - [The Kingdom of God Is Within You](../1890-1893-the-kingdom-of-god-is-within-you/index.html) (1890–93) — the political-theological extension; non-violence as the consequence of the same religious universalism.
 - [What Is Art?](../1897-1898-what-is-art/index.html) (1897–98) — the aesthetic companion-treatise; the "religious consciousness of the age" that grounds good art is the same relation-to-the-infinite worked out here.
-- [The Slavery of Our Times](../1900-what-is-slavery/index.html) (1900) — the immediately preceding treatise in the cluster; the economic argument clears the ground for the religious one.
-- [Christianity and Patriotism](../1893-christianity-and-patriotism/index.html) (1893) — an earlier essay whose anti-institutional critique the Church truc chapter extends.
+- [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html) (1900) — the immediately preceding treatise in the cluster; the economic argument clears the ground for the religious one.
+- [Christianity and Patriotism](../1893-1894-christianity-and-patriotism/index.html) (1893–94) — an earlier essay whose anti-institutional critique the Church-truc chapter extends.
+
+The wider thematic field is mapped by the project's theme dives: the [christian](../christian/index.html) dive (the religious thread overall) and — where the mainstream files this work under contested movement-labels — [Christian anarchism](../christian-anarchism/index.html) and [Christian communism / socialism](../christian-communism-socialism/index.html); the latter already lists this treatise as re-grounding the political question in religious terms, so it is cross-linked here rather than repeated.
 
 ---
 
@@ -324,7 +327,7 @@ No post-publication retrospective statement from Tolstoy specifically assessing 
 
 ## Visual & manuscript record
 
-Nine public-domain images were cached locally; full provenance and rights in `dossier.yaml → visuals` and `visuals/_visuals_sweep.md`.
+Eight public-domain images are catalogued in `dossier.yaml → visuals`, each with provenance and licence; they live in the git-ignored `visuals/` cache (repopulate a fresh clone with `python3 docs/fetch_visuals.py 1901-1902-what-is-religion`).
 
 <figure><img src="visuals/commons-tolstoy-sofia-crimea-1902.jpg" alt="Leo Tolstoy and Sofia Tolstaya at Gaspra, Crimea, May 1902"><figcaption>Leo Tolstoy and Sofia Tolstaya at Gaspra, Crimea, May 1902 — within the essay's composition window. Photographer unknown; pre-1928. Wikimedia Commons, public domain.</figcaption></figure>
 
@@ -335,8 +338,7 @@ Nine public-domain images were cached locally; full provenance and rights in `do
 - **Vladimir Chertkov and Tolstoy, 1909** — photograph, PD. The publisher relationship. `visuals/commons-chertkov-tolstoy-1909.jpg`.
 - **Vladimir Chertkov, portrait by Repin, 1890s** — oil study, PD. Individual likeness. `visuals/commons-chertkov-portrait-repin-1890s.jpg`.
 - **Pavel Biryukov, 1916** — photograph, PD. The French co-translator; completion correspondent. `visuals/commons-biryukov-1916.jpg`.
-- **Konstantin Pobedonostsev, study by Repin, 1903** — oil study, PD. Ober-Procurator of the Holy Synod; architect of the excommunication decree. `visuals/commons-pobedonostsev-repin-1903.jpg`.
-- **Biryukov, undated portrait** — photograph, PD. `visuals/commons-biryukov-pavel-portrait.jpg`.
+- **Konstantin Pobedonostsev, study by Repin, 1903** — oil study, PD. Ober-Procurator of the Holy Synod who drove the excommunication decree; contextual to the reception frame, not named in the treatise. `visuals/commons-pobedonostsev-repin-1903.jpg`.
 
 ---
 
@@ -346,7 +348,7 @@ A `corpus-dive` (work-dive) run on 2026-06-07, continued across two sessions fol
 
 - **Scope.** Subject: the single work *Что такое религия и в чём сущность её?* (PSS Tom 35, pp. 157–198). Slug `1901-1902-what-is-religion` (composition window Aug 1901 – Jan 1902; conceptual genesis Nov 1900). Corpus surface: PSS Tom 35 (main text + editorial apparatus: history of writing, manuscript description), PSS Tom 54 (diaries 1900–1901 + notebook 1900–1901), PSS Tom 73 (letters to correspondents 1901–1902), PSS Tom 88 (letters to Chertkov 1901).
 - **Extraction.** `python3 docs/research/lib/extract_tei.py <xml> --choice=reg` on all pre-1918 texts. Pre-reform `<choice><orig>/<reg>` pairs resolved to modern orthography throughout.
-- **Visual sweep.** Wikimedia Commons API (`generator=search` + `prop=imageinfo&iiprop=url|extmetadata`); 9 images downloaded via `Special:Redirect/file/` with `User-Agent: TolstoyResearch/1.0`; 6 additional images catalogued but not downloaded. Full sweep: `visuals/_visuals_sweep.md`.
+- **Visual sweep.** Wikimedia Commons API (`generator=search` + `prop=imageinfo&iiprop=url|extmetadata`); eight public-domain images downloaded into the git-ignored `visuals/` cache and catalogued in `dossier.yaml → visuals` with a per-image licence; items not openly available (Free Word imprint scans, manuscript facsimiles) are noted for later request.
 - **Verification.** `python3 docs/research/lib/verify_quotes.py dossier.yaml` (mechanical byte-fidelity gate) before a separate verifier pass.
 - **Voice.** Simple, factual, minimal editorial; working-English translations labelled; mainstream scholarship attributed as a foil, never asserted as baseline.
 
@@ -369,8 +371,8 @@ A `corpus-dive` (work-dive) run on 2026-06-07, continued across two sessions fol
 - Maude, Aylmer. *The Life of Tolstoy: Later Years*. London: Oxford University Press, 1911.
 - Bartlett, Rosamund. *Tolstoy: A Russian Life*. London: Profile Books, 2010.
 - Simmons, Ernest J. *Introduction to Tolstoy's Writings*. Chicago: University of Chicago Press, 1968. Chapter 7 (Tolstoy's Religious, Moral, and Didactic Writings). https://www.ourcivilisation.com/smartboard/shop/smmnsej/tolstoy/chap7.htm
-- "Tolstoy, Universalism and the World Religions." *Journal of Ecclesiastical History*. Cambridge Core, 2021. https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/abs/tolstoys-universalism-and-the-world-religions/BFDA558CFA56DE5BF7E188117204B481
+- Moulin, Daniel. "Tolstoy, Universalism and the World Religions." *Journal of Ecclesiastical History* 68, no. 3 (2017): 570–587. https://doi.org/10.1017/S0022046916001469
 
 ---
 
-*A draft dev-blog note accompanies this dive: see `website/src/posts/notes/2026-06-07-1901-1902-what-is-religion.md` (`draft: true`).*
+*A draft dev-blog note accompanies this dive: see `website/src/posts/notes/2026-06-07-what-is-religion.md` (`draft: true`).*
