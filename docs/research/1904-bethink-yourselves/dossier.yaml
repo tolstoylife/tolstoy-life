@@ -999,10 +999,14 @@ contradictions:
   - claim: "The RU coda reads «Не будем же противиться, а будем служить ему» — 'let us not resist it, but serve it.'"
     correction: >-
       The Swedish Betänken Eder! (1904) renders the same sentence "låtom oss då icke släcka den, utan
-      sprida och underhålla den" — "let us not extinguish it, but spread and sustain it." A free
-      translation/redaction variant (the Swedish was made from Russian, omitting the epigraphs), not a
-      different source. Worth flagging for the wiki because it changes the verb of the essay's last act
-      from non-resistance to active spreading.
+      sprida och underhålla den" — "let us not extinguish it, but spread and sustain it" — but this was
+      carried over from Chertkov's authorised ENGLISH ("let us spread and serve it"), NOT freely rendered
+      from the Russian. The Swedish matches the English at the three points where the English departs from
+      the Russian: the added "spread"/sprida (RU has only serve/служить), "Jesus" (RU Christ/Христос), and
+      "kindled"/tändas (RU blazes-up/возгорается). So the source language is English (Runeberg's "from
+      Russian" note notwithstanding); the shift from non-resistance to active propagation is inherited from
+      the English. Independently flagged by Johan's edition project; confirmed here against PG #27189.
+      Flag for the wiki.
     evidenceRef: odum-fire-rising
 
 # ---------------------------------------------------------------------------------------------
@@ -1016,9 +1020,9 @@ needsReview:
   - item: "Colophon dates. The PSS text shows «30 Апреля 1904 г.» (the fire coda) and «8 Мая 1904 г.» (the seaman postscript); the PG/Free Age Press English edition is reported to carry 'May 2' / '13 May 1904'. The OS↔NS pairing of the printed colophon dates should be checked against the printed editions before any chronology is driven from them."
     phase: 2
     why: "Bears on the workRecord dateWritingCompleted and on the TEI-diary-filename-year gotcha; do not let a colophon date drive a slug/date unchecked."
-  - item: "Swedish translator unidentified. «Betänken Eder!» (Björck & Börjesson, 1904) names no translator in the Runeberg catalogue or any source found; translated from Russian, epigraphs omitted."
+  - item: "Swedish translator + source language. «Betänken Eder!» (Björck & Börjesson, 1904) names no translator in the Runeberg catalogue or any source found — identity still open. Source language: Runeberg calls it a translation from the Russian, but the coda demonstrably follows Chertkov's English (the added spread/sprida; Jesus not Christ; kindled not blazes-up — three points where the English departs from the Russian), so the source was English (or both), not Russian. Johan's edition project independently reached the English-source reading; confirmed against PG #27189."
     phase: 3
-    why: "A detail Johan's edition project could surface; left open rather than guessed."
+    why: "Johan flagged the English-source possibility; the coda comparison confirms it. Translator identity remains genuinely open — left for the edition project / ingestion, not guessed."
   - item: "Pre-1918 orthography in the variants extract (odum-variant-apostrophe and the other 12 variants). The PSS variants apparatus is printed diplomatically in old orthography, so --choice=reg had nothing to normalize; quote bytes are pre-reform (ъ/ѣ/і)."
     phase: 2
     why: "Verbatim, but old orthography — flag like the fire-metaphor dive did for its pre-reform rows."
