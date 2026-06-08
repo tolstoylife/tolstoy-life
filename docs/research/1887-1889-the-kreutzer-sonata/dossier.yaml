@@ -1,0 +1,1433 @@
+topic:
+  slug: 1887-1889-the-kreutzer-sonata
+  title: "The Kreutzer Sonata (Крейцерова соната) + the Afterword — a novel-dive"
+  question: >-
+    How far does Tolstoy endorse Pozdnyshev? Read the novella and its Afterword
+    together against the composition record to test the marquee question and to
+    render the chastity doctrine as Tolstoy actually argued it.
+  date: 2026-06-08
+  period: "Prophet period (post-1880)"
+  corpusSurface: >-
+    PSS Tom 27 (novella, Afterword, 9 redactions/variants, «История писания»);
+    diaries Tom 50–51 (1888–1890); letters Tom 64–65 (1887–1891).
+  dateRange: "1887–1891 (composition 1887→1890; first Russian print 1891)"
+
+# ============================================================================
+evidence:
+
+  # ---- Novella: the doctrine (chs X–XIV) ----
+  - id: ks-doctrine-passion-evil
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: >-
+      Половая страсть, как бы она ни была обставлена, есть зло, страшное зло, с
+      которым надо бороться, а не поощрять, как у нас.
+    quoteEn: >-
+      (working English) Sexual passion, however it is arranged, is an evil, a
+      terrible evil, which must be fought, not encouraged as it is among us.
+    significance: >-
+      Pozdnyshev's core doctrine (ch. XI): the carnal is not a regrettable
+      necessity but an evil to be combated — and the standard applies inside
+      marriage.
+    facsimile: ""
+
+  - id: ks-gospel-own-wife
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: >-
+      Слова Евангелия о том, что смотрящий на женщину с вожделением уже
+      прелюбодействовал с нею, относятся не к одним чужим женам, а именно — и
+      главное — к своей жене.
+    quoteEn: >-
+      (working English) The words of the Gospel — that he who looks on a woman
+      with lust has already committed adultery with her — apply not only to
+      other men's wives, but precisely — and above all — to one's own wife.
+    significance: >-
+      The Matthew V:28 standard (the novella's epigraph) turned inward against
+      one's own wife — the in-text form of the Afterword's argument.
+    facsimile: ""
+
+  - id: ks-marriage-as-sale
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: >-
+      Выходит что-то в роде продажи. Развратнику продают невинную девушку и
+      обставляют эту продажу известными формальностями.
+    quoteEn: >-
+      (working English) It turns out to be something like a sale. An innocent
+      girl is sold to a debauchee, and this sale is dressed up with certain
+      formalities.
+    significance: "Marriage as practised indicted as a disguised sale (ch. X)."
+    facsimile: ""
+
+  - id: ks-woman-instrument
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: "Она орудие наслаждения. Тело ее есть средство наслаждения."
+    quoteEn: >-
+      (working English) She is an instrument of pleasure. Her body is a means of
+      pleasure.
+    significance: >-
+      The objectification thesis (ch. XIV) — framed as an indictment of the male
+      view, not an endorsement of it.
+    facsimile: ""
+
+  # ---- Novella: the music passage (ch. XXIII) ----
+  - id: ks-music-irritating
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: >-
+      Что такое музыка? Что она делает? И зачем она делает то, что она делает?
+      [...] Она действует ни возвышающим ни принижающим душу образом, а
+      раздражающим душу образом.
+    quoteEn: >-
+      (working English) What is music? What does it do? And why does it do what
+      it does? [...] It acts neither in an elevating nor in a degrading way on
+      the soul, but in an irritating [provoking] way.
+    significance: >-
+      The theory of music as an involuntary power (ch. XXIII) — a direct primary
+      anticipation of the "infectiousness" argument of What Is Art? (1897–98).
+    facsimile: ""
+
+  # ---- Novella: the murder (ch. XXVII) ----
+  - id: ks-murder-dagger
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: "изо всех сил ударил ее кинжалом в левый бок, ниже ребер."
+    quoteEn: >-
+      (working English) I struck her with all my strength with the dagger in the
+      left side, below the ribs.
+    significance: >-
+      The killing rendered without exculpatory haze (ch. XXVII); Pozdnyshev
+      insists he remembered everything.
+    facsimile: ""
+
+  # ---- Novella: marquee in-text signals ----
+  - id: ks-opened-eyes
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: "у меня открылись глаза, и я увидал всё совсем в другом свете."
+    quoteEn: >-
+      (working English) my eyes were opened, and I saw everything in a completely
+      different light.
+    significance: >-
+      The conversion claim (ch. III) — the killing presented as the catastrophe
+      that produced insight; an authority cue the frame does not contradict.
+    facsimile: ""
+
+  - id: ks-complete-madness
+    genre: works
+    pssTom: 27
+    pages: "7-78"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_007_078_Krejtserova_sonata.txt
+    quoteRu: "Это было полное сумасшествие!"
+    quoteEn: "(working English) It was complete madness!"
+    significance: >-
+      Pozdnyshev's own retrospective verdict (ch. XXV) on the state that drove
+      the killing — a distance cue: the speaker marks himself abnormal.
+    facsimile: ""
+
+  # ---- Afterword: the decisive doctrinal layer ----
+  - id: pos-abstinence-in-marriage
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: >-
+      воздержание, составляющее необходимое условие человеческого достоинства
+      при безбрачном состоянии, еще более обязательно в браке.
+    quoteEn: >-
+      (working English) abstinence — which constitutes the necessary condition of
+      human dignity in the unmarried state — is still more obligatory in
+      marriage.
+    significance: >-
+      The maximal claim, in Tolstoy's own voice: chastity is more, not less,
+      obligatory inside marriage. Rendered as made (project rule: not softened).
+    facsimile: ""
+
+  - id: pos-chastity-better
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: "никто не спорит о том, что целомудрие лучше распущенности."
+    quoteEn: >-
+      (working English) no one disputes that chastity is better than
+      dissoluteness.
+    significance: "The premise Tolstoy says no one actually contests."
+    facsimile: ""
+
+  - id: pos-ideal-full-chastity
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: "оно указывает идеал полного целомудрия."
+    quoteEn: >-
+      (working English) it [the teaching of Christ] points to the ideal of full
+      chastity.
+    significance: "The Gospel grounding of the ideal of full chastity."
+    facsimile: ""
+
+  - id: pos-chastity-ideal-not-rule
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: >-
+      Целомудрие не есть правило или предписание, а идеал или скорее — одно из
+      условий его.
+    quoteEn: >-
+      (working English) Chastity is not a rule or a prescription, but an ideal —
+      or rather, one of the conditions of it.
+    significance: >-
+      THE doctrinal pivot and the answer to the marquee question's modality:
+      Tolstoy endorses the chastity ideal but explicitly refuses it the status of
+      a rule.
+    facsimile: ""
+
+  - id: pos-marriage-is-sin
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: >-
+      плотская же любовь, брак, есть служение себе и потому есть во всяком случае
+      препятствие служению Богу и людям, а потому с христианской точки зрения —
+      падение, грех.
+    quoteEn: >-
+      (working English) but carnal love, marriage, is service of self and
+      therefore is in any case an obstacle to the service of God and of people,
+      and therefore, from the Christian point of view — a fall, a sin.
+    significance: "The valuation of marriage itself — rendered exactly as stated."
+    facsimile: ""
+
+  - id: pos-sister-brother
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: >-
+      заменой плотской любви чистыми отношениями сестры и брата.
+    quoteEn: >-
+      (working English) by replacing carnal love with the pure relations of
+      sister and brother.
+    significance: "What the ideal asks of a married couple specifically."
+    facsimile: ""
+
+  - id: pos-horrified-own-conclusions
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: "Я ужасался своим выводам, хотел не верить им, но не верить нельзя было."
+    quoteEn: >-
+      (working English) I was horrified at my own conclusions, I wanted not to
+      believe them, but it was impossible not to believe them.
+    significance: >-
+      Decisive for the marquee question: the conclusions are «свои» — Tolstoy's
+      own, reached against his own resistance, in propria persona, not a
+      character's.
+    facsimile: ""
+
+  - id: pos-convictions-now-express
+    genre: works
+    pssTom: 27
+    pages: "79-92"
+    date: "1890"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_079_092_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: >-
+      я никак не ожидал, что ход моих мыслей приведет меня к тому, к чему он
+      привел меня.
+    quoteEn: >-
+      (working English) I in no way expected that the course of my thoughts would
+      bring me to where it brought me.
+    significance: >-
+      Authorial ownership stated in the first person — "my thoughts," not a
+      character's views.
+    facsimile: ""
+
+  # ---- Commentary: genesis (novella history) ----
+  - id: comm-andreev-burlak
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: "мысль создать «Крейцерову сонату» внушил Толстому актер"
+    quoteEn: >-
+      (working English) the idea of creating The Kreutzer Sonata was suggested to
+      Tolstoy by the actor [V. N. Andreyev-Burlak].
+    significance: >-
+      The railway-confession seed — S. A. Tolstaya's diary (28 Dec 1890) as
+      reported by the editors; attribution, not Tolstoy's own statement.
+    facsimile: ""
+
+  - id: comm-triptych
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: "предложил изобразить эту сонату доступными всем трем средствами искусства."
+    quoteEn: >-
+      (working English) he proposed to depict this sonata by means accessible to
+      all three arts.
+    significance: >-
+      The Beethoven evening and the three-art triptych (story + Repin painting +
+      Andreyev-Burlak reading) — Biryukov's account via the editors.
+    facsimile: ""
+
+  - id: comm-8th-lithographed
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: >-
+      Эта редакция распространилась в многочисленных списках и литографированных
+      и гектографированных изданиях и стала достоянием широких читательских
+      кругов.
+    quoteEn: >-
+      (working English) This redaction spread in numerous copies and in
+      lithographed and hectographed editions and became the property of wide
+      reading circles.
+    significance: >-
+      The eighth redaction — NOT the final ninth — is the text that swept Russia
+      underground.
+    facsimile: ""
+
+  - id: comm-ban-categorical
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: >-
+      категорически объявлено, что она ни в каком случае не будет допущена к
+      выпуску в свет
+    quoteEn: >-
+      (working English) categorically informed that under no circumstances will it
+      be permitted to appear.
+    significance: >-
+      The formal ban (Gaideburov, 20 Dec 1889), naming Feoktistov, Pobedonostsev,
+      Durnovo as the authorities.
+    facsimile: ""
+
+  - id: comm-sofia-audience
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: "добилась с государем свидания, которое произошло 13 апреля в Петербурге."
+    quoteEn: >-
+      (working English) obtained an audience with the Sovereign, which took place
+      on 13 April [1891] in Petersburg.
+    significance: >-
+      Sofia Tolstaya's audience with Alexander III (via the Tsar's cousin
+      Sheremeteva) — the act that got the work into print, in the Collected Works
+      only.
+    facsimile: ""
+
+  - id: comm-vol13-1891
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: >-
+      вышла, наконец, в свет тринадцатая часть сочинений Толстого с «Крейцеровой
+      сонатой» и «Послесловием» к ней
+    quoteEn: >-
+      (working English) the thirteenth part of Tolstoy's works finally appeared
+      with The Kreutzer Sonata and its Afterword.
+    significance: "First legal Russian printing — vol. 13 of the Сочинения, June 1891."
+    facsimile: ""
+
+  - id: comm-200-distortions
+    genre: commentary
+    pssTom: 27
+    pages: "563-624"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: "огромное количество искажений (около 200)"
+    quoteEn: "(working English) an enormous quantity of distortions (about 200)"
+    significance: >-
+      The 1891 vol. 13 text (set from S. A. Tolstaya's copy) carried ~200
+      distortions vs the authentic text; the PSS prints from manuscript № 14
+      instead.
+    facsimile: ""
+
+  # ---- Commentary: Afterword genesis ----
+  - id: comm-chertkov-pressure
+    genre: commentary
+    pssTom: 27
+    pages: "625-646"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_625_646_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: "полное воздержание лучше всего, но только для тех, кто могут вместить."
+    quoteEn: >-
+      (working English) full abstinence is best, but only for those who can
+      contain it.
+    significance: >-
+      Chertkov's 27 Oct 1889 plea (quoted by the editors) for a softer, "for
+      those who can receive it" framing — the editorial pressure that prompted
+      the Afterword.
+    facsimile: ""
+
+  - id: comm-no-such-marriage
+    genre: commentary
+    pssTom: 27
+    pages: "625-646"
+    date: "1936"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_625_646_Posleslovie_k_Krejtserovoj_sonate.txt
+    quoteRu: "Нет такого брака."
+    quoteEn: "(working English) There is no such marriage."
+    significance: >-
+      Tolstoy (to Chertkov, 25 Apr 1890) refusing the "rehabilitation of honest
+      marriage" Chertkov urged — he would not soften the doctrine.
+    facsimile: ""
+
+  # ---- Diaries (Tom 50–51) ----
+  - id: diary-1889-04-05-firstmention
+    genre: diary
+    pssTom: 50
+    pages: "62"
+    date: "1889-04-05"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_062_062_1889_04_05.txt
+    quoteRu: "Очень много и не дурно писал Крейцерову сонату."
+    quoteEn: "(working English) Wrote a great deal on the Kreutzer Sonata, and not badly."
+    significance: "First explicit diary mention; active composition resumes at Spasskoye."
+    facsimile: ""
+
+  - id: diary-1889-07-04-conception
+    genre: diary
+    pssTom: 50
+    pages: "103-104"
+    date: "1889-07-04"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_103_104_1889_07_04.txt
+    quoteRu: "Вся драма повести, всё время не выходившая у меня, теперь ясна в голове."
+    quoteEn: >-
+      (working English) The whole drama of the story, which had never come clear
+      for me, is now clear in my head.
+    significance: >-
+      The dramatic conception crystallises as Sofia copies the draft — the
+      genesis keystone; same entry works to make the wife's culpability shared.
+    facsimile: ""
+
+  - id: diary-1889-09-21-no-murder
+    genre: diary
+    pssTom: 50
+    pages: "145-146"
+    date: "1889-09-21"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_145_146_1889_09_21.txt
+    quoteRu: "Окончательно решил переделать, не надо убийства."
+    quoteEn: >-
+      (working English) Definitively decided to rework it — the murder is not
+      needed.
+    significance: >-
+      A recorded moment of wavering on the central plot (later reversed) — the
+      instability of the work's design.
+    facsimile: ""
+
+  - id: diary-1889-11-07-not-good
+    genre: diary
+    pssTom: 50
+    pages: "174-175"
+    date: "1889-11-07"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_174_175_1889_11_07.txt
+    quoteRu: "Получаю известия, что Крейцерова Соната действует, и радуюсь. Это нехорошо."
+    quoteEn: >-
+      (working English) I receive news that the Kreutzer Sonata is acting on
+      people, and I rejoice. This is not good.
+    significance: >-
+      The moral self-suspicion under the project — distrust of his own pleasure
+      in the work's effect.
+    facsimile: ""
+
+  # ---- Letters (Tom 64–65) ----
+  - id: letter-1889-05-17-biryukov
+    genre: letter
+    pssTom: 64
+    pages: ""
+    date: "1889-05-17"
+    addressee: "P. I. Biryukov"
+    localPdf: ""
+    extract: extracts/v64_375_P_I_Biryukovu.txt
+    quoteRu: "стал писать Крейцерову Сонату. Это пошло легко."
+    quoteEn: "(working English) began writing the Kreutzer Sonata. It went easily."
+    significance: "First explicit named reference to the work in the letters."
+    facsimile: ""
+
+  - id: letter-1889-11-17-strakhov
+    genre: letter
+    pssTom: 64
+    pages: ""
+    date: "1889-11-17"
+    addressee: "N. N. Strakhov"
+    localPdf: ""
+    extract: extracts/v64_465_N_N_Straxovu.txt
+    quoteRu: "В художественном отношении я знаю, что это писание ниже всякой критики"
+    quoteEn: >-
+      (working English) Artistically I know that this writing is beneath all
+      criticism.
+    significance: >-
+      Tolstoy's own low verdict on the novella's artistry ("it came about in two
+      goes, and the two goes don't agree").
+    facsimile: ""
+
+  - id: letter-1890-04-06-khilkov
+    genre: letter
+    pssTom: 65
+    pages: ""
+    date: "1890-04-06"
+    addressee: "D. A. Khilkov"
+    localPdf: ""
+    extract: extracts/v65_054_D_A_Xilkovu.txt
+    quoteRu: >-
+      написал к этому послесловие — его от меня требовали многие — Чертков в том
+      числе
+    quoteEn: >-
+      (working English) I have written an afterword to it — many demanded it of
+      me, Chertkov among them.
+    significance: >-
+      Tolstoy names Chertkov as a prompter of the Afterword; sent to Petersburg
+      the same day via the Danish translator (Hansen).
+    facsimile: ""
+
+  - id: letter-1890-04-27-rusanov
+    genre: letter
+    pssTom: 65
+    pages: ""
+    date: "1890-04-27"
+    addressee: "G. A. Rusanov"
+    localPdf: ""
+    extract: extracts/v65_069_G_A_Rusanovu.txt
+    quoteRu: "Ваше суждение о смысле Крейцеровой Сонаты разумеется вполне верно."
+    quoteEn: >-
+      (working English) Your judgment on the meaning of the Kreutzer Sonata is of
+      course entirely correct.
+    significance: >-
+      Tolstoy endorses a reader's account of the tale's meaning — supports the
+      proposition-ownership side of the marquee answer.
+    facsimile: ""
+
+  - id: letter-1890-08-25-andersen
+    genre: letter
+    pssTom: 65
+    pages: ""
+    date: "1890-08-25"
+    addressee: "Charles Andersen"
+    localPdf: ""
+    extract: extracts/v65_131_CHarlzuAndersenuCharlesAndersen.txt
+    quoteRu: >-
+      Вы спрашиваете, разумею ли я, что следует совершенно воздержаться от
+      половых сношений? Отвечаю: да.
+    quoteEn: >-
+      (working English) You ask whether I mean that one ought to abstain entirely
+      from sexual intercourse? I answer: yes.
+    significance: >-
+      The flattest possible confirmation, in a letter, that the Afterword's
+      answer is total abstinence — decisive marquee evidence.
+    facsimile: ""
+
+  - id: letter-1891-05-22-tsar-permission
+    genre: letter
+    pssTom: 65
+    pages: ""
+    date: "1891-05-22"
+    addressee: "O. A. Barsheva & M. A. Schmidt"
+    localPdf: ""
+    extract: extracts/v65_310_O_A_BarshevojiM_A_SHmidt.txt
+    quoteRu: "была у государя, и он разрешил напечатать «Крейцерову Сонату»."
+    quoteEn: >-
+      (working English) she had an audience with the sovereign, and he permitted
+      the printing of The Kreutzer Sonata.
+    significance: "Tolstoy reports the Tsar's permission, secured by Sofia — flatly, without pleasure."
+    facsimile: ""
+
+  # ---- Redaction: the lithographed (8th) novella variants ----
+  - id: litho-stud-horses
+    genre: works
+    pssTom: 27
+    pages: "291-338"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_291_338_Krejtserova_sonata_Varianty_litografirovannoj_redaktsii.txt
+    quoteRu: "содержатся и кормятся, как случные жеребцы."
+    quoteEn: "(working English) [the men of our world] are kept and fed like stud-horses."
+    significance: >-
+      A passage in the underground (8th) redaction cut entirely from the printed
+      text — the zoological simile too stark for print.
+    facsimile: ""
+
+  - id: litho-svalny-grekh
+    genre: works
+    pssTom: 27
+    pages: "291-338"
+    date: "1889"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_291_338_Krejtserova_sonata_Varianty_litografirovannoj_redaktsii.txt
+    quoteRu: "к свальному греху. Износилась старая основа"
+    quoteEn: "(working English) to orgiastic sin. The old foundation has worn out."
+    significance: >-
+      Free-love advocacy named in the litho text as a call "to orgiastic sin"
+      («свальный грех») — an ecclesiastically charged phrase softened for print.
+    facsimile: ""
+
+# ============================================================================
+entities:
+
+  - name: Leo Tolstoy
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author of the novella and the Afterword."
+    sources: []
+    evidenceRefs: [pos-horrified-own-conclusions, letter-1890-08-25-andersen]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Sophia Tolstaya
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: >-
+      Wife; copyist of both texts; the reading that helped clarify the drama
+      (4 Jul 1889); and the person who secured publication via audience with
+      Alexander III (1891). The wounded reader who nonetheless drove the work
+      into print; later wrote two counter-fictions.
+    sources: []
+    evidenceRefs: [diary-1889-07-04-conception, comm-sofia-audience, letter-1891-05-22-tsar-permission, comm-200-distortions]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: >-
+      Disciple and intended publisher (Posrednik); the editorial pressure behind
+      the Afterword; pushed unsuccessfully for a "moral marriage" compromise.
+    sources: []
+    evidenceRefs: [comm-chertkov-pressure, comm-no-such-marriage, letter-1890-04-06-khilkov]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Pozdnyshev
+    wikiType: concept
+    wikilinkTarget: "Pozdnyshev"
+    vaultStatus: missing
+    role: >-
+      STOPGAP ROUTING — the novella's narrator-murderer. No `character` wiki type
+      exists; routed as `concept` pending the schema decision (see needsReview).
+    sources: []
+    evidenceRefs: [ks-doctrine-passion-evil, ks-complete-madness, ks-opened-eyes]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Pozdnyshev's wife
+    wikiType: concept
+    wikilinkTarget: "Pozdnyshev's wife"
+    vaultStatus: missing
+    role: "STOPGAP ROUTING — the murdered wife; unnamed in the text. Routed as `concept` (no `character` type)."
+    sources: []
+    evidenceRefs: [diary-1889-07-04-conception, ks-murder-dagger]
+    ingestionPriority: 2
+    dependsOn: [Pozdnyshev]
+
+  - name: Trukhachevsky
+    wikiType: concept
+    wikilinkTarget: "Trukhachevsky"
+    vaultStatus: missing
+    role: >-
+      STOPGAP ROUTING — the violinist; the musician-rival who replaced the
+      earlier painter-rival when the Beethoven sonata entered (3rd redaction).
+      Routed as `concept` (no `character` type).
+    sources: []
+    evidenceRefs: [ks-music-irritating]
+    ingestionPriority: 2
+    dependsOn: [Pozdnyshev]
+
+  - name: V. N. Andreyev-Burlak
+    wikiType: person
+    wikilinkTarget: "Vasily Andreyev-Burlak"
+    vaultStatus: missing
+    role: >-
+      Actor; reported originator of the railway-confession subject and intended
+      public reader in the triptych. Died 10 May 1888.
+    sources: []
+    evidenceRefs: [comm-andreev-burlak, comm-triptych]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Ilya Repin
+    wikiType: person
+    wikilinkTarget: "Ilya Repin"
+    vaultStatus: missing
+    role: >-
+      Painter; the third corner of the triptych (the canvas never painted);
+      painted the composition-period 1887 Tolstoy portrait.
+    sources: []
+    evidenceRefs: [comm-triptych]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Pyotr Hansen (Ganzen)
+    wikiType: translator
+    wikilinkTarget: "Pyotr Hansen"
+    vaultStatus: missing
+    role: >-
+      Danish translator; copied the Afterword five times (1–6 Apr 1890); his
+      6 April copy seeded the lithographed Afterword and he carried the
+      manuscript to Petersburg.
+    sources: []
+    evidenceRefs: [letter-1890-04-06-khilkov]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Pavel Biryukov
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: >-
+      Biographer; the source for the Beethoven-evening / triptych account; a
+      correspondent during composition (the early "secret" letters).
+    sources: []
+    evidenceRefs: [comm-triptych, letter-1889-05-17-biryukov]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Maria Tolstaya
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; the master copyist — the copy from which the vast majority of underground lists descend."
+    sources: []
+    evidenceRefs: [comm-8th-lithographed]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Tatyana Tolstaya
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; copyist and critic — her two objections to the wife's portrayal (7 Sep 1889) Tolstoy recorded as apt."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Konstantin Pobedonostsev
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: "Ober-Procurator of the Holy Synod; a chief obstacle to publication (admitted he had not read the work)."
+    sources: []
+    evidenceRefs: [comm-ban-categorical]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Yevgeny Feoktistov
+    wikiType: person
+    wikilinkTarget: "Yevgeny Feoktistov"
+    vaultStatus: missing
+    role: "Head of the Main Directorate for Press Affairs; issued the print ban (Dec 1889)."
+    sources: []
+    evidenceRefs: [comm-ban-categorical]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Alexander III
+    wikiType: person
+    wikilinkTarget: "Alexander III"
+    vaultStatus: missing
+    role: "Emperor; granted permission (Apr 1891) to print the work, but only inside the Collected Works."
+    sources: []
+    evidenceRefs: [comm-sofia-audience, letter-1891-05-22-tsar-permission]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Ban and underground circulation of The Kreutzer Sonata
+    wikiType: event
+    wikilinkTarget: "Ban of The Kreutzer Sonata (1889)"
+    vaultStatus: missing
+    role: >-
+      The Dec 1889 print ban and the lithograph/hectograph circulation that
+      followed; resolved into the Collected Works only, June 1891; separate-
+      edition ban held until 1900.
+    sources: []
+    evidenceRefs: [comm-ban-categorical, comm-8th-lithographed, comm-vol13-1891]
+    ingestionPriority: 2
+    dependsOn: [Konstantin Pobedonostsev, Sophia Tolstaya, Alexander III]
+
+  - name: Beethoven's Kreutzer Sonata (Op. 47)
+    wikiType: concept
+    wikilinkTarget: "Kreutzer Sonata (Beethoven)"
+    vaultStatus: missing
+    role: "The musical source — the violin sonata whose Presto is the novella's pivot and titular reference."
+    sources: []
+    evidenceRefs: [ks-music-irritating, comm-triptych]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: The Shakers
+    wikiType: concept
+    wikilinkTarget: "Shakers"
+    vaultStatus: missing
+    role: "The celibate sectarian community whose literature, arriving mid-composition (spring 1889), reinforced the total-chastity ideal."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+# ============================================================================
+visuals:
+
+  - id: VIS-01
+    type: portrait
+    subject: "Ilya Repin, Portrait of Leo Tolstoy (1887)"
+    relatedEntity: Leo Tolstoy
+    relatedEvidence: comm-triptych
+    holding: "State Tretyakov Gallery"
+    archiveId: ""
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ilya_Efimovich_Repin_%281844-1930%29_-_Portrait_of_Leo_Tolstoy_%281887%29.jpg"
+    localPath: visuals/commons-repin-tolstoy-portrait-1887.jpg
+    note: "Composition-period anchor; embedded in index.md. A CC0 alternate scan is also cached (commons-repin-tolstoy-1887-cc0.png)."
+
+  - id: VIS-13
+    type: facsimile
+    subject: "Beethoven Op. 47 (Kreutzer Sonata), first-edition frontispiece (1805)"
+    relatedEntity: "Beethoven's Kreutzer Sonata (Op. 47)"
+    relatedEvidence: ks-music-irritating
+    holding: ""
+    archiveId: ""
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Beethoven_Opus_47_Kreutzer_frontispiece.jpg"
+    localPath: visuals/commons-beethoven-op47-kreutzer-frontispiece-1805.jpg
+    note: "Names the musical source directly; embedded in index.md."
+
+  - id: VIS-07
+    type: portrait
+    subject: "Nikolai Ge, Portrait of Sofia Andreyevna Tolstaya (1886)"
+    relatedEntity: Sophia Tolstaya
+    relatedEvidence: diary-1889-07-04-conception
+    holding: ""
+    archiveId: ""
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/06/Ge_Sophia_Tolstaya.jpg"
+    localPath: visuals/commons-ge-sofia-tolstaya-1886.jpg
+    note: "Sofia one year before composition begins."
+
+  - id: VIS-11
+    type: portrait
+    subject: "Ivan Kramskoy, Portrait of Vladimir Chertkov (1881)"
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: comm-chertkov-pressure
+    holding: ""
+    archiveId: ""
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/49/Chertkov_by_Kramskoy.jpg"
+    localPath: visuals/commons-chertkov-kramskoy-1881.jpg
+    note: "Embedded in index.md by the Afterword section."
+
+  - id: VIS-04
+    type: photograph
+    subject: "Leo Tolstoy, 1888 photograph"
+    relatedEntity: Leo Tolstoy
+    relatedEvidence: diary-1889-04-05-firstmention
+    holding: ""
+    archiveId: ""
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Tolstoy_Lev_Nikolaevich.jpg"
+    localPath: visuals/commons-tolstoy-photo-1888.jpg
+    note: "Within the core composition window."
+
+  - id: VIS-19
+    type: portrait
+    subject: "V. N. Andreyev-Burlak (actor)"
+    relatedEntity: V. N. Andreyev-Burlak
+    relatedEvidence: comm-andreev-burlak
+    holding: "State Tolstoy Museum (likely)"
+    archiveId: ""
+    access: "not found online"
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: ""
+    localPath: ""
+    note: "No image found on Wikimedia Commons under any spelling. The seed-figure of the genesis; request from the State Tolstoy Museum."
+
+  - id: VIS-20
+    type: facsimile
+    subject: "Сочинения т. 13 (1890/1891) — first authorised Russian printing, title page"
+    relatedEntity: "Ban and underground circulation of The Kreutzer Sonata"
+    relatedEvidence: comm-vol13-1891
+    holding: "State Tolstoy Museum / RSL"
+    archiveId: ""
+    access: "not programmatically accessible"
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: "https://tolstoy-iss.kamiscloud.ru"
+    localPath: ""
+    note: "tolstoy-iss.kamiscloud.ru and Goskatalog not accessible in this session; request via museum enquiry."
+
+  - id: VIS-21
+    type: facsimile
+    subject: "Foreign first editions, 1890 (French: La Sonate à Kreutzer; English: Tucker)"
+    relatedEntity: "Ban and underground circulation of The Kreutzer Sonata"
+    relatedEvidence: comm-8th-lithographed
+    holding: "Internet Archive / BnF Gallica"
+    archiveId: ""
+    access: "open (Internet Archive)"
+    rights: PD
+    licence: PD
+    usable: true
+    url: "https://archive.org/search?query=kreutzer+sonata+tolstoy&and[]=year%3A%221890%22"
+    localPath: ""
+    note: "Multiple 1890 foreign editions on IA as PDF/DjVu; individual title-page images not yet extracted."
+
+# ============================================================================
+scholarship:
+  summary: >-
+    English-language biography (Simmons; Bartlett 2010; Maude) reads the novella
+    as the culmination of Tolstoy's post-1870s moral-religious crisis, belonging
+    with the treatises rather than the earlier realist fiction — a placement the
+    corpus confirms. The central interpretive split is the marquee question: a
+    "mouthpiece" reading (Pozdnyshev = Tolstoy, leaning on the Afterword; Maude,
+    popular reception) versus an "ironic-distance / unreliable-narrator" reading
+    (the novella formally manages Pozdnyshev's voice; the Afterword is a separate
+    rhetorical act — Yacobi 2005, engaged by Gershkovich 2019). Scholars also
+    connect the novella's music theory to What Is Art?, trace the chastity
+    argument partly to Alice Stockham's Tokology, and document a worldwide moral
+    panic (US postal ban 1890; Roosevelt's "sexual moral pervert"). The
+    Sofia-centred biographical frame is the mainstream lens the dive treats
+    critically. Full attribution: extracts/_scholarship.md.
+  triangulation:
+    - evidenceRef: pos-horrified-own-conclusions
+      conventionalView: >-
+        Mouthpiece reading: Pozdnyshev voices Tolstoy's own ethics, confirmed by
+        the Afterword (Maude; popular reception). Counter: the novella's formal
+        management of the voice marks ironic distance; the Afterword is a
+        separate rhetorical act (Yacobi 2005).
+      relation: extends
+      source: >-
+        Yacobi 2005; Gershkovich, PMLA 2019; Maude 1908–10. The corpus locates
+        the precise seam neither pole resolves: proposition owned in propria
+        persona, modality (rule vs ideal) explicitly withheld.
+    - evidenceRef: pos-chastity-ideal-not-rule
+      conventionalView: >-
+        The Afterword is often read as flat dogmatic absolutism (the
+        "moralistic dogmatist" frame).
+      relation: complicates
+      source: >-
+        General reception (Chesterton 1908 hostile touchstone). The primary text
+        frames chastity as an asymptotic ideal — a compass-bearing, not a rule —
+        which the absolutist reading flattens.
+    - evidenceRef: ks-music-irritating
+      conventionalView: >-
+        Scholars read the novella's music theory as anticipating What Is Art?
+        (Knapp 1988; Green 1966).
+      relation: confirms
+      source: "Knapp 1988; the project's own What Is Art? dive (1897-1898-what-is-art)."
+    - evidenceRef: comm-andreev-burlak
+      conventionalView: >-
+        The autobiographical frame: the novella as an attack on the Tolstoy
+        marriage, Pozdnyshev's jealousy mirroring Tolstoy's of Taneyev.
+      relation: complicates
+      source: >-
+        Popular biography; Shirer 1994; Smoluchowski 1987. Chronology pushes
+        back: the first sketch is 1887, the doctrine is grounded in
+        post-conversion Gospel reading, and the Taneyev episode is mid-1890s.
+    - evidenceRef: pos-abstinence-in-marriage
+      conventionalView: >-
+        The chastity doctrine read as patriarchal in origin.
+      relation: complicates
+      source: >-
+        Edwards 1993; Bartlett 2010 — the argument is partly traceable to Alice
+        B. Stockham's Tokology, a North American proto-feminist medical source
+        Tolstoy promoted.
+
+# ============================================================================
+workRecord:
+  # NOTE: two record-CREATING proposals. The Afterword gets its own record
+  # (confirmed with the reader at Phase 0), mirroring the PSS, which catalogues
+  # it as a distinct work. The dive PROPOSES; human ingestion applies to works/.
+
+  - recordPath: "website/src/works/fiction/novellas/the-kreutzer-sonata/The Kreutzer Sonata.md"
+    workId: the-kreutzer-sonata
+    fields:
+      - field: title
+        value: "The Kreutzer Sonata"
+        evidenceRefs: []
+        source: "PSS Tom 27"
+        confidence: high
+        note: ""
+      - field: titleRu
+        value: "Крейцерова соната"
+        evidenceRefs: []
+        source: "PSS Tom 27"
+        confidence: high
+        note: ""
+      - field: titleEn
+        value: "The Kreutzer Sonata"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: ""
+      - field: titleAlternatives
+        value:
+          - { title: "Как муж убил жену", type: working, language: ru }
+          - { title: "How a Husband Killed his Wife", type: working, language: en }
+        evidenceRefs: [comm-8th-lithographed]
+        source: "PSS Tom 27 commentary (7th-redaction title, manuscript № 9, Aug 1889)"
+        confidence: high
+        note: "Working title of the 7th redaction."
+      - field: mainCategory
+        value: "Fiction"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: ""
+      - field: subcategory
+        value: "Novellas"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Modeled on the Master and Man record (genre novella → subcategory Novellas)."
+      - field: genre
+        value: "novella"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: ""
+      - field: publishedDuringLifetime
+        value: true
+        evidenceRefs: [comm-vol13-1891]
+        source: ""
+        confidence: high
+        note: "Abroad 1890; in Russia 1891."
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        evidenceRefs: [comm-vol13-1891]
+        source: ""
+        confidence: high
+        note: "Legally, only inside Collected Works vol. 13 (1891)."
+      - field: dateWritingStarted
+        value: "1887"
+        evidenceRefs: [comm-andreev-burlak]
+        source: "PSS Tom 27 commentary; Tolstoy to Rusanov, Mar 1889 ('about two years ago')"
+        confidence: medium
+        approximate: true
+        note: "First rough sketch; editors date it to 1887."
+      - field: dateWritingCompleted
+        value: "1889-12-08"
+        evidenceRefs: [diary-1889-11-07-not-good]
+        source: "PSS Tom 27 commentary + diary, 8 Dec 1889 (completion of the 9th/final redaction)"
+        confidence: high
+        oldStyle: "1889-12-08"
+        approximate: false
+        note: "Old-Style (Julian) diary date; NS conversion (≈20 Dec 1889) to be applied at ingestion."
+      - field: dateFirstPublished
+        value: "1890"
+        evidenceRefs: []
+        source: "PSS Tom 27 commentary (Elpidin, Geneva, 1890; Berlin eds 1890)"
+        confidence: medium
+        approximate: true
+        note: "First publication abroad (uncensored émigré/foreign editions), ahead of the Russian printing."
+      - field: firstPublishedVenue
+        value: "M. K. Elpidin (Geneva)"
+        evidenceRefs: []
+        source: "PSS Tom 27 commentary"
+        confidence: medium
+        note: "One of several near-simultaneous 1890 foreign editions; venue precedence to confirm at ingestion."
+      - field: dateFirstPublishedInRussia
+        value: "1891-06"
+        evidenceRefs: [comm-vol13-1891]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "Сочинения гр. Л. Н. Толстого, ч. 13 (Moscow, Mamontov press); title page dated 1890, wrapper 1891."
+      - field: firstPublishedInRussiaVenue
+        value: "Сочинения гр. Л. Н. Толстого, часть 13 (Moscow, A. I. Mamontov)"
+        evidenceRefs: [comm-vol13-1891]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: ""
+      - field: epigraph
+        value: "Matthew V:28–30 (Мф. V, 28–30)"
+        evidenceRefs: [ks-gospel-own-wife]
+        source: "PSS Tom 27; diary 23 Aug 1889 (epigraph chosen)"
+        confidence: high
+        note: "Epigraph reference; the exact epigraph text to be transcribed verbatim at ingestion."
+      - field: bans
+        value:
+          - { banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати)", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "pre-publication-rejected", banDate: "1889-12" }
+        evidenceRefs: [comm-ban-categorical]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "Separate-edition ban held (via repeated circulars) until 17 Feb 1900."
+      - field: samizdatCirculation
+        value: true
+        evidenceRefs: [comm-8th-lithographed]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "Lithographed/hectographed (8th redaction); a forerunner of Soviet samizdat."
+      - field: censoredVersionExists
+        value: true
+        evidenceRefs: [comm-200-distortions]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "The 1891 vol. 13 text carried ~200 distortions (some conscious softenings by S. A. Tolstaya); PSS prints from manuscript № 14."
+      - field: excommunicationRelated
+        value: false
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: "Part of the broader doctrinal record but not the 1901 trigger (that was Resurrection); the work's chastity doctrine fed the church conflict."
+      - field: relatedWorks
+        value:
+          - { id: "afterword-to-the-kreutzer-sonata", relationshipType: "companion" }
+          - { id: "what-is-art", relationshipType: "companion" }
+        evidenceRefs: [ks-music-irritating]
+        source: ""
+        confidence: high
+        note: "The Afterword is the primary companion; What Is Art? is the aesthetic sequel for the music theory."
+      - field: themes
+        value: ["sexuality", "marriage", "chastity", "jealousy", "music", "Christian ethics"]
+        evidenceRefs: [ks-doctrine-passion-evil, ks-music-irritating]
+        source: ""
+        confidence: medium
+        note: "Map to the controlled themes vocab at ingestion."
+      - field: jubileeEdition.volumes
+        value: "27"
+        evidenceRefs: []
+        source: "PSS (Jubilee Edition) Tom 27"
+        confidence: high
+        note: "Nested under identifiers.jubileeEdition.volumes in the works schema."
+
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/afterword-to-the-kreutzer-sonata/Afterword to The Kreutzer Sonata.md"
+    workId: afterword-to-the-kreutzer-sonata
+    fields:
+      - field: title
+        value: "Afterword to The Kreutzer Sonata"
+        evidenceRefs: []
+        source: "PSS Tom 27"
+        confidence: high
+        note: ""
+      - field: titleRu
+        value: "Послесловие к «Крейцеровой сонате»"
+        evidenceRefs: []
+        source: "PSS Tom 27"
+        confidence: high
+        note: ""
+      - field: titleEn
+        value: "Afterword to The Kreutzer Sonata"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Also Englished as 'Epilogue to the Kreutzer Sonata' in period translations."
+      - field: mainCategory
+        value: "Non-fiction"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: "The Afterword is a doctrinal statement in Tolstoy's own voice, not fiction."
+      - field: subcategory
+        value: "Essays and Criticism"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Modeled on the What Is Art? path (non-fiction/essays-and-criticism); could be religious/personal-papers — confirm at ingestion."
+      - field: genre
+        value: "essay"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Religious/ethical statement; genre could be 'religious' or 'philosophical' in the works vocab — confirm at ingestion."
+      - field: publishedDuringLifetime
+        value: true
+        evidenceRefs: [comm-vol13-1891]
+        source: ""
+        confidence: high
+        note: "Berlin (Zimmermann) 1890 abroad; in Russia 1891 with the novella."
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        evidenceRefs: [comm-vol13-1891]
+        source: ""
+        confidence: high
+        note: "Inside Collected Works vol. 13 (1891). Uncized Russian-language printing only abroad (Chertkov, 1901) / Всемирный вестник 1906."
+      - field: dateWritingStarted
+        value: "1889-10"
+        evidenceRefs: [comm-chertkov-pressure]
+        source: "PSS Tom 27 commentary; Tolstoy to Chertkov, 1 Nov 1889"
+        confidence: high
+        approximate: true
+        note: "Begun late Oct 1889, prompted by Chertkov, right after the novella's 8th redaction."
+      - field: dateWritingCompleted
+        value: "1890-04-24"
+        evidenceRefs: [letter-1890-04-27-rusanov]
+        source: "PSS Tom 27 commentary (final authorized manuscript № 23, 24 Apr 1890)"
+        confidence: high
+        oldStyle: "1890-04-24"
+        approximate: false
+        note: "Old-Style; last corrections to the setting-copy no later than 23 Nov 1890. The penultimate ('lithographed') redaction is dated 6 Apr 1890."
+      - field: dateFirstPublished
+        value: "1890"
+        evidenceRefs: []
+        source: "PSS Tom 27 commentary (Walter Zimmermann, Berlin, 1890 — separate uncensored booklet)"
+        confidence: medium
+        approximate: true
+        note: "Circulated in lithograph from 6 Apr 1890; printed abroad 1890."
+      - field: dateFirstPublishedInRussia
+        value: "1891-06"
+        evidenceRefs: [comm-vol13-1891]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "With the novella, in Collected Works vol. 13."
+      - field: bans
+        value:
+          - { banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати)", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "pre-publication-rejected", banDate: "1889-12" }
+        evidenceRefs: [comm-ban-categorical]
+        source: "PSS Tom 27 commentary"
+        confidence: high
+        note: "Banned with the novella; the uncensored Afterword text appeared in Russia only in 1906 (Всемирный вестник)."
+      - field: samizdatCirculation
+        value: true
+        evidenceRefs: []
+        source: "PSS Tom 27 commentary (Hansen copy, 6 Apr 1890)"
+        confidence: high
+        note: "Lithographed/hectographed in its penultimate redaction before legal print."
+      - field: excommunicationRelated
+        value: false
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: "Part of the doctrinal record; not the 1901 trigger."
+      - field: relatedWorks
+        value:
+          - { id: "the-kreutzer-sonata", relationshipType: "companion" }
+        evidenceRefs: [pos-chastity-ideal-not-rule]
+        source: ""
+        confidence: high
+        note: "Companion to the novella it explains; the PSS catalogues them as distinct works."
+      - field: jubileeEdition.volumes
+        value: "27"
+        evidenceRefs: []
+        source: "PSS (Jubilee Edition) Tom 27, pp. 79–92"
+        confidence: high
+        note: ""
+
+# ============================================================================
+coverage:
+  - surface: "Textual — novella (close-read of 3 nodes + thematic map)"
+    status: covered
+    note: "Full novella extracted once; doctrine, music, murder close-read; rest mapped. Light layer, by design."
+  - surface: "Textual — Afterword (full close-read)"
+    status: covered
+    note: "Treated as a first-class keystone; the decisive marquee evidence."
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Heaviest layer: «История писания» mine + Tom 50–51 diaries + Tom 64–65 letters; seeds, gestation, people."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "9 novella redactions characterized; lithographed (8th) vs printed (9th) differences sampled with verbatim variants."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Ban, underground circulation, Sofia's audience with Alexander III, vol. 13 1891, foreign editions."
+  - surface: "Reception & afterlife — Russian society & church"
+    status: covered
+    note: "Censorship-as-reception; the moral panic; Sofia's counter-fictions (via scholarship); excommunication contribution noted."
+  - surface: "Characters & prototypes"
+    status: partial
+    note: "Pozdnyshev / wife / Trukhachevsky routed as `concept` stopgaps (no `character` wiki type); prototypes documented."
+  - surface: "Themes"
+    status: covered
+    note: "Sexuality, chastity-as-ideal, marriage, music/involuntary emotion, the unreliable confessor."
+  - surface: "Scholarly context"
+    status: covered
+    note: "24 sources; marquee debate (Yacobi/Gershkovich vs mouthpiece) triangulated; Stockham, Sofia frame, What Is Art link."
+  - surface: "Visual & manuscript record"
+    status: partial
+    note: "17 PD images cached; Andreyev-Burlak portrait, the 1890 vol. 13 title page, and lithograph artefacts not openly available."
+  - surface: "workRecord (novella + Afterword)"
+    status: covered
+    note: "Two record-creating proposals, field-shaped to the live works schema."
+
+# ============================================================================
+contradictions:
+  - claim: "Pozdnyshev strangles his wife before stabbing her (two sequential acts)."
+    correction: >-
+      Present in the lithographed (8th) redaction («я душил ее, и я ударил ее
+      кинжалом») but the strangling is dropped from the final printed text, where
+      the dagger blow is the sole act. An intra-corpus variant, not an error.
+    evidenceRef: litho-stud-horses
+  - claim: "The murder weapon and manner are fixed from the start."
+    correction: >-
+      The first redaction already uses a кинжал (dagger) and the wife briefly
+      survives asking forgiveness; the final text has her die unforgiving — the
+      'apt' objection Tatyana raised (7 Sep 1889) shaped the change.
+    evidenceRef: ks-murder-dagger
+
+# ============================================================================
+notCovered:
+  - "The 1890s court/legal-document layer and the full censorship-circular archive beyond the PSS commentary's quotations."
+  - "Sofia Tolstaya's counter-fictions «Чья вина?» and «Песня без слов» in the primary (known via Katz 2014; the corpus holds Tolstoy's side)."
+  - "Nabokov's reception ('Pozdnyshev's Address') and the 20th-century stage/film afterlife — out of period."
+  - "The Stockham/Tokology textual bridge in the primary (documented via scholarship; not in the local corpus)."
+
+# ============================================================================
+needsReview:
+  - item: >-
+      No `character` (or `group`) wiki type exists. Pozdnyshev, his wife, and
+      Trukhachevsky are routed as `concept` stopgaps. Pending decision: add a
+      `character` type, or fold principal characters into the work's own page.
+    phase: "synthesis / schema"
+    why: "Same gap the Resurrection dive flagged; a schema decision for the reader (memory feedback_explain_schema_before_edit). Do NOT invent a type."
+  - item: >-
+      The 15 Jan 1890 diary on readers who treat Pozdnyshev as exceptional
+      (Samarin, Storozhenko, Lopatin) was surfaced by the sweep but the cited
+      file (v51_014_015_1890_01_27) did not yield a byte-verifiable form.
+    phase: "extract / verify"
+    why: "Likely a diary-year filename mismatch (memory reference_tei_diary_filename_year_gotcha); re-locate before citing as evidence."
+  - item: "Entity `sources` ids are left empty — mapping to website/schema/sources.yaml ids is deferred to the ingestion step."
+    phase: "entities"
+    why: "Avoid fabricating source ids; the human ingestion method assigns them."
+  - item: "Old-Style → New-Style date conversion for the composition dates is flagged on each workRecord date field, not applied."
+    phase: "workRecord"
+    why: "19th-c Russian diary/letter dates are Julian; conversion belongs to the ingestion step that fills the *OldStyle siblings."
+  - item: "Afterword record subcategory/genre (Essays-and-criticism / essay) is a best-fit; could be religious/personal-papers."
+    phase: "workRecord"
+    why: "Confirm the works-schema placement against the live What Is Art? and Confession records at ingestion."
+
+# ============================================================================
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/ (PSS Tom 27 works + comments; diaries Tom 50–51; letters Tom 64–65)"
+  - "Wikimedia Commons API (generator=search + imageinfo) — 17 PD images cached"
+  - "tolstoy.ru (mirror) — one modern cover, rights unknown"
+  - "State Tolstoy Museum (tolstoy-iss.kamiscloud.ru) + Goskatalog — not programmatically accessible this session"
+  - "Internet Archive — 1890 foreign editions (noted, not downloaded)"
+  - "Web scholarship sweep — 24 sources (see extracts/_scholarship.md)"
+
+# ============================================================================
+references:
+  primary:
+    - "PSS Tom 27: Крейцерова соната (pp. 7–78); Послесловие к «Крейцеровой сонате» (pp. 79–92); 9 redactions/variants (pp. 291–432); История писания и печатания (pp. 563–646)."
+    - "PSS Tom 50–51: diaries 1888–1890."
+    - "PSS Tom 64–65: letters 1887–1891."
+  background:
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life. Houghton Mifflin Harcourt."
+    - "Maude, Aylmer (1908–10). The Life of Tolstoy. 2 vols. Oxford University Press."
+    - "Simmons, Ernest J. (1945–46). Leo Tolstoy. 2 vols. Harvard University Press."
+    - "Yacobi, Tamar (2005). 'Authorial Rhetoric, Narratorial (Un)Reliability… Tolstoy's Kreutzer Sonata.' In A Companion to Narrative Theory (Blackwell), pp. 108–23."
+    - "Gershkovich, Tatyana (2019). 'Suspicion on Trial: Tolstoy's The Kreutzer Sonata and Nabokov's Pozdnyshev's Address.' PMLA 134.3, pp. 459–474."
+    - "Edwards, Robert (1993). 'Tolstoy and Alice B. Stockham: The Influence of Tokology on The Kreutzer Sonata.' Tolstoy Studies Journal 6."
+    - "Katz, Michael R., ed. (2014). The Kreutzer Sonata Variations. Yale University Press."
+    - "Knapp, Bettina L. (1988). 'Tolstoy's Kreutzer Sonata: Archetypal Music as a Demonic Force.' In Music, Archetype, and the Writer (Penn State UP)."
+    - "Full 24-source list with URLs: extracts/_scholarship.md."
