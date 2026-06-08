@@ -54,7 +54,33 @@ handoff's "~39–40".
   it as doctrinal/systemic («странное отлучение»). Connective fact: chs XXXIX–XL were cut
   entirely from Нива, so Russian serial readers never saw the communion satire.
 
-**CHECKPOINT REACHED** — awaiting reader review before the lighter layers.
+**CHECKPOINT REACHED** — reader reviewed; approved the "complicates" framing and asked for a HEAVY visuals sweep. Continued autonomously.
+
+## 2026-06-08 — Session 1 (continued, lighter layers → completion)
+
+**Lighter layers (6 more subagents + 1 consolidator):**
+- `extracts/_thematic_map.md` — 3 pivotal scenes (verdict error / land / ending) + thematic map, 7 byte-verified passages.
+- `extracts/_redactions.md` — light redaction sampling; CONFIRMED the church service first appears in the 3rd redaction (Aug 1898) as two adjacent drafts.
+- `extracts/_scholarship.md` — 7 triangulations / 14 refs; flags the money-total inconsistency (≈30k–34.2k secondary, NOT corpus-anchored — corpus fixes only the 12,000 r. advance).
+- `extracts/_reception.md` — 12 sources; Russian/Church reception first; named RU press reviews = a gap.
+- Visuals HEAVY 4-channel sweep → 90 files / 38 MB, deduped to **85 distinct** in `extracts/_visuals_consolidated.md` (19 Pasternak illustrations PD-usable; Repin 1901; Pobedonostsev; the censored-chapters autograph is request-only at ГМТ).
+
+**Synthesis:** `index.md` (novel-dive spine, 12 figures embedded), `dossier.yaml` (31 evidence rows, 13 entities, 101 visuals, 7 triangulations, 17-field record-CREATING `workRecord` at `website/src/works/fiction/novels/resurrection/Resurrection.md`, 8-row coverage), draft note `website/src/posts/notes/2026-06-08-resurrection.md` (draft:true). Rendered via `serve.py --build-only`.
+
+**Phase 5 — verify:** `verify_quotes.py` PASS (31/31 byte-verbatim). Independent opus verifier: **CLEAN-WITH-NITS** (0 blockers / 2 should-fix / 4 nits) → `_verifier-report.md`. Nits N-1 (Chekhov attribution) + N-2 (imperial-censor → «Нива» censorship precision) fixed in index.md and re-rendered. SF-2 (no `character` wikiType for Maslova/Nekhlyudov) → deferred schema decision (see `novel-dive-proposal.md`).
+
+**Phase 6 — research handoff / work-orders:**
+- *Entity work-order* (ingestion order): P1 — Resurrection (work), Excommunication-1901 (event), Koni, Doukhobors; P2 — Chertkov (present), Birukoff (present), Marks, Pobedonostsev, Pasternak; P3 — Maslova, Nekhlyudov, communion/Eucharist theme, Henry George. (13 entities; Chertkov + Pavel Birukoff already in the vault.)
+- *Visuals work-order*: 66/85 PD-usable + cached; request-only = the ГМТ censored-chapters proofs (highest value), the 1899 «Нива» run, the «Свободное слово» editions.
+- *Work-record work-order*: record-CREATING — propose the full `workRecord` block (high-confidence on dates/genre/censorship/excommunicationRelated; `relatedWorks` slugs need confirming — in needsReview).
+- *Coverage*: covered = genesis, communion, publication/censorship, excommunication, visuals, scholarship; partial = reception (no named RU press reviews), redactions (sampled only).
+
+**Novel-dive skill proposal:** written to `novel-dive-proposal.md` (recommend a `--novel` MODE, not a standalone skill; flags the character/group schema gap as the one new design decision).
+
+### ⚠️ ANOMALY for the reader (needs a decision — NOT resolved autonomously)
+A commit **`8fe5e056` "feat(corpus-dive): Resurrection … work-dive"** (Johan Edlund, Mon 8 Jun 20:22, now an ancestor of HEAD on `feat/corpus-dive-skill`) was made MID-SESSION and committed: this session's `extracts/` + `session-log.md` **plus a `resurrection-dive.md` (357-line OLD work-dive format) that THIS session did not author** (this session wrote `index.md`, the novel-dive). Result: two divergent narratives in one dive folder, sharing the same extracts. Likely a concurrent/automated `--auto` run on the same repo. **Not deleted** (committed work I didn't create). Decision for the reader: which narrative is canonical (recommend `index.md` — it is the novel-dive the handoff asked for) and whether to remove `resurrection-dive.md` + `resurrection-dive.html`. My new work (`index.md`, `dossier.yaml`, `_verifier-report.md`, `novel-dive-proposal.md`, per-entry extracts) is **uncommitted** pending this decision.
+
+**STATUS: dive complete** (definition-of-done met) pending (1) the duplicate-narrative decision and (2) commit.
 
 ### Remaining after checkpoint (Phase 2-light → 7)
 - Thematic map + the other pivotal scenes read lightly (courtroom/verdict, the prison, the

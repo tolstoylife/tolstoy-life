@@ -1,0 +1,2875 @@
+# dossier.yaml — Resurrection (Воскресение), 1889–1899 — novel-dive
+# Machine-readable backbone for the narrative index.md. Quotes byte-verified
+# against the named extract files with docs/research/lib/verify_quotes.py.
+# All Russian extracted with extract_tei.py --choice=reg --notes=auto.
+# English glosses are working translations, labelled.
+
+topic:
+  slug: 1889-1899-resurrection
+  title: "Resurrection (Воскресение) — a novel-dive"
+  question: >
+    How was Tolstoy's last novel finished (the Doukhobor-funded sprint), what
+    is its central church-service satire, and did that satire trigger the 1901
+    excommunication? Tested against the primary record.
+  date: 2026-06-08
+  period: "Prophet period (late Tolstoy)"
+  corpusSurface: >
+    PSS Tom 32 (novel + censorship variants → vol01), Tom 33 (six redactions +
+    «История писания» commentary → vol02), Tom 34 (Reply to the Synod + commentary
+    → vol03), diaries Tom 53 (1898–99 → vol19) and Tom 54 (1901 → vol20), letters
+    Toms 71 (→vol53) / 72 (→vol36) / 88 (Chertkov → vol47).
+  dateRange: "1889-12-26 – 1899-12-18 (writing); 1899–1901 (publication, excommunication)"
+
+# ── EVIDENCE — flat citation ledger, one row per cited primary passage ─────────
+# genre ∈ works|diary|letter|commentary. extract = filename only (file holds the
+# quote). localPdf is informational (Tom→vol mapping). quoteRu is byte-exact.
+evidence:
+
+  # ---- Communion centrepiece (Part I, chs XXXIX–XLI; novel text) ----
+  - id: communion-service-physical
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Богослужение состояло в том, что священник, одевшись в особенную
+      странную и очень неудобную парчевую одежду, вырезывал и раскладывал
+      кусочки хлеба на блюдце и потом клал их в чашу с вином, произнося при
+      этом различные имена и молитвы.
+    quoteEn: >-
+      (working English) The service consisted in this: the priest, having
+      dressed in a peculiar, strange and very uncomfortable brocade garment,
+      cut up and laid out little pieces of bread on a saucer and then put them
+      into a cup of wine, pronouncing meanwhile various names and prayers.
+    significance: >-
+      The defamiliarised opening of the prison-church liturgy (ch. XXXIX): the
+      Eucharist named only as physical actions, every sacral term refused. Head
+      of the dive's marquee scene.
+    facsimile: ""
+
+  - id: communion-manipulations-napkin
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Самое же главное действие было то, когда священник, взяв обеими руками
+      салфетку,равномерно и плавно махал ею над блюдцем и золотой чашей.
+      Предполагалось, что в это самое время из хлеба и вина делается тело и
+      кровь, и потому это место богослужения было обставлено особенной
+      торжественностью.
+    quoteEn: >-
+      (working English) But the main action of all was when the priest, taking
+      a napkin in both hands, evenly and smoothly waved it over the saucer and
+      the golden cup. It was supposed that at this very moment the bread and
+      wine became body and blood, and therefore this part of the service was
+      furnished with a special solemnity.
+    significance: >-
+      The consecration rendered as "manipulations" and a napkin waved over the
+      saucer; transubstantiation bracketed by "it was supposed" (предполагалось).
+    facsimile: ""
+
+  - id: communion-ate-god-body
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      После этого считалось, что превращение совершилось, и священник, сняв
+      салфетку с блюдца,разрезал серединный кусочек начетверо и положил его
+      сначала в вино, а потом в рот.Предполагалось, что он съел кусочек тела
+      Бога и выпил глоток Его крови.
+    quoteEn: >-
+      (working English) After this it was held that the transformation had been
+      accomplished, and the priest, having removed the napkin from the saucer,
+      cut the central little piece into four and put it first into the wine and
+      then into his mouth. It was supposed that he ate a piece of the body of
+      God and drank a gulp of His blood.
+    significance: >-
+      The Eucharist rendered as ingestion — the most-quoted single offence of
+      the satire; what the Synod decree later named as the «последняя и высшая
+      степень» of Tolstoy's guilt (see excommunication rows).
+    facsimile: ""
+
+  - id: communion-priest-cheerful-boots
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      После этого священник унес чашку за перегородку и, допив там всю
+      находившуюся в чашке кровь и съев все кусочки тела Бога, старательно
+      обсосав усы и вытерев рот и чашку, в самом веселом расположении духа,
+      поскрипывая тонкими подошвами опойковых сапог, бодрыми шагами вышел
+      из-за перегородки.
+    quoteEn: >-
+      (working English) After this the priest carried the cup away behind the
+      partition and, having drunk up there all the blood remaining in the cup
+      and eaten all the pieces of the body of God, having diligently sucked his
+      moustache and wiped his mouth and the cup, in the most cheerful frame of
+      mind, the thin soles of his calfskin boots squeaking, walked out from
+      behind the partition with brisk steps.
+    significance: >-
+      Bodily, commercial detail displaces mystery; the priest finishes the cup,
+      sucks his moustache, walks out cheerful. The flat register at full pitch.
+    facsimile: ""
+
+  - id: communion-cross-gallows
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Никому в голову не приходило того, что золоченый крест с эмалевыми
+      медальончиками на концах, который вынес священник и давал целовать людям,
+      был не что иное, как изображение той виселицы, на которой был казнен
+      Христос именно за то,что он запретил то самое, что теперь его именем
+      совершалось здесь.
+    quoteEn: >-
+      (working English) It occurred to no one that the gilded cross with enamel
+      medallions on its ends, which the priest had carried out and gave people
+      to kiss, was nothing other than the image of that gallows on which Christ
+      was executed precisely for forbidding the very thing that was now being
+      performed here in his name.
+    significance: >-
+      The ch. XL explicit indictment: the gilded cross = the gallows on which
+      Christ was executed for forbidding what is now done in his name. The
+      flat-register satire dropped for direct authorial polemic.
+    facsimile: ""
+
+  - id: communion-priest-18-years
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Он верил не в то, что из хлеба сделалось тело, что полезно для души
+      произносить много слов или что он съел действительно кусочек Бога, — в
+      это нельзя верить, — а верил в то, что надо верить в эту веру. Главное
+      же, утверждало его в этой вере то, что за исполнение треб этой веры он
+      18 лет уже получал доходы, на которые содержал свою семью, сына в
+      гимназии, дочь в духовном училище.
+    quoteEn: >-
+      (working English) He believed not that the bread had become body, nor
+      that it is useful for the soul to pronounce many words, nor that he had
+      really eaten a piece of God — that cannot be believed — but he believed
+      that one must believe in this faith. And what chiefly confirmed him in
+      this faith was that for performing the rites of this faith he had for 18
+      years already been receiving an income, on which he kept his family, a son
+      at the gymnasium and a daughter at the church school.
+    significance: >-
+      The priest's psychology given as complicity, not malice: he believes only
+      "that one must believe in this faith," sustained by 18 years of income.
+    facsimile: ""
+
+  - id: communion-bells-same-service
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Со всех сторон дрожал воздух от разнообразного звона и гула
+      колоколов,призывающих народ к присутствованию при таком же служении,
+      какое совершалось теперь в тюрьме.
+    quoteEn: >-
+      (working English) From all sides the air trembled with the varied
+      ringing and din of bells, calling the people to attend the same kind of
+      service as was now being performed in the prison.
+    significance: >-
+      The ch. XLI structural hammer-blow: the city's bells call the free
+      population to the same rite as in the prison — church and prison are one
+      institution.
+    facsimile: ""
+
+  # ---- Censorship: the «Началось богослужение» cut ----
+  - id: censorship-communion-cut
+    genre: commentary
+    pssTom: 32
+    pages: "471-505"
+    date: "1936"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_471_505_Tsenzurnye_varianty.txt
+    quoteRu: >-
+      От главы XXXIX I части в Н. сохранилась только первая фраза: Началось
+      богослужение., присоединенная к главе XXXVIII. Глава XL в Н. выпущена
+      целиком. В связи с этим общее количество глав в первой части романа в Н.
+      уменьшено на две.
+    quoteEn: >-
+      (working English) Of chapter XXXIX of Part I, only the first sentence
+      survived in «Нива»: "The church service began.", appended to chapter
+      XXXVIII. Chapter XL was dropped entirely. As a result the total number of
+      chapters in Part I of the novel in «Нива» is reduced by two.
+    significance: >-
+      The decisive censorship datum: the communion chapters were cut WHOLESALE
+      from the «Нива» serialisation (only the first sentence left, part
+      renumbered to hide the gap). The single most heavily censored passage in
+      the novel; PSS editorial note (variants file).
+    facsimile: ""
+
+  - id: censorship-survival-sentence
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: "Началось богослужение."
+    quoteEn: '(working English) "The church service began."'
+    significance: >-
+      The one sentence the censor allowed through (novel line 2357); everything
+      after it in chs XXXIX–XL was removed from «Нива». Russian serial readers
+      saw only these four words.
+    facsimile: ""
+
+  # ---- Genesis diaries (Tom 53) ----
+  - id: diary-1898-07-17-decision
+    genre: diary
+    pssTom: 53
+    pages: "203-204"
+    date: "1898-07-17"
+    addressee: ""
+    localPdf: vol19
+    extract: extracts/v53_203_204_1898_07_17.txt
+    quoteRu: >-
+      Решил отдать свои повести: Воскресение и Отец Сергий в печать для
+      духоборов. […] Взялся за Воскресение, и сначала шло хорошо, но с тех пор
+      как встревожили — два дня ничего не мог сделать. […] Приди и вселися в ны.
+      Возбуди воскресение во мне.
+    quoteEn: >-
+      (working English) I decided to give my tales — Resurrection and Father
+      Sergius — to print for the Doukhobors. […] I took up Resurrection and at
+      first it went well, but from the moment I was disturbed — two days I could
+      do nothing. […] Come and dwell within us. Kindle resurrection in me. — the
+      entry fuses the novel's title with a prayer.
+    significance: >-
+      The founding decision: Tolstoy resolves to sell his fiction to fund the
+      Doukhobor emigration, reversing his post-1881 refusal of literary fees.
+      First day of resumed work after the spring illness.
+    facsimile: ""
+
+  - id: diary-1898-11-02-12000
+    genre: diary
+    pssTom: 53
+    pages: "210-211"
+    date: "1898-11-02"
+    addressee: ""
+    localPdf: vol19
+    extract: extracts/v53_210_211_1898_11_02.txt
+    quoteRu: >-
+      Продажа повести и получение 12-ти тысяч, которые отдал духоборам,
+      устроилось хорошо. […] Дела очень много, но я весь поглощен Воскресением,
+      берегу воду и пускаю только на Воскресение.
+    quoteEn: >-
+      (working English) The sale of the tale and the receipt of twelve
+      thousand, which I handed over to the Doukhobors, worked out well. […] I
+      have a great deal of work, but I am wholly absorbed in Resurrection, I
+      husband my water and let it flow only onto Resurrection.
+    significance: >-
+      The transaction recorded (12,000 r. advance handed to the Doukhobors) plus
+      the total creative immersion of autumn 1898.
+    facsimile: ""
+
+  - id: diary-1899-12-18-completion
+    genre: diary
+    pssTom: 53
+    pages: "232-234"
+    date: "1899-12-18"
+    addressee: ""
+    localPdf: vol19
+    extract: extracts/v53_232_234_1899_12_18.txt
+    quoteRu: >-
+      Кончил «Воскресение». Нехорошо. Не поправлено. Поспешно. Но отвалилось и
+      не интересует более.
+    quoteEn: >-
+      (working English) I finished Resurrection. It is not good. Uncorrected.
+      Rushed. But it has fallen away and no longer interests me.
+    significance: >-
+      The completion verdict — Tolstoy's own contemporaneous, unsparing
+      self-assessment. A primary datum the criticism rarely cites; grounds the
+      "rough/rushed" charge. NOTE: the commentary file v33_329_422 carries the
+      comma-and-«больше» variant; this diary file carries the period-and-«более»
+      form used here and in index.md.
+    facsimile: ""
+
+  - id: diary-1898-11-25-outgrows
+    genre: diary
+    pssTom: 53
+    pages: "214-216"
+    date: "1898-11-25"
+    addressee: ""
+    localPdf: vol19
+    extract: extracts/v53_214_216_1898_11_25.txt
+    quoteRu: "Воскресение разрастается. Едва ли влезет в 100 глав."
+    quoteEn: >-
+      (working English) Resurrection is growing. It will hardly fit into 100
+      chapters.
+    significance: >-
+      Explicit acknowledgment that the reopened novel has outgrown its original
+      shape — the 1898 expansion that brought in the church service, the
+      politicals, and Toporov.
+    facsimile: ""
+
+  # ---- Letters (Toms 71/72/88) ----
+  - id: letter-marks-contract
+    genre: letter
+    pssTom: 71
+    pages: "279"
+    date: "1898-10-12"
+    addressee: "A. F. Marks"
+    localPdf: vol53
+    extract: extracts/v71_279_A_F_Marksu.txt
+    quoteRu: >-
+      Предоставляю Редакции Нивы право первого печатания моей повести
+      Воскресение. Редакция же Нивы платит мне по ты сяче рублей за печатный
+      лист в 35 000 букв. Двенадцать тысяч рублей Редакция выдает мне теперь же.
+    quoteEn: >-
+      (working English) I grant the editorial office of Niva the right of first
+      publication of my novel Resurrection. The editorial office of Niva pays me
+      one thousand roubles per printed sheet of 35,000 characters. Twelve
+      thousand roubles the editorial office pays me now.
+    significance: >-
+      The contract's hard financial datum: first-printing rights to «Нива»,
+      1,000 r./sheet, 12,000 r. advance. The corpus-anchored figure (no lump-sum
+      "total raised" is asserted). NOTE: «по ты сяче» with an internal space is a
+      verbatim TEI artefact in the extract, preserved here for byte-fidelity.
+    facsimile: ""
+
+  - id: letter-marks-censorship
+    genre: letter
+    pssTom: 71
+    pages: "306"
+    date: "1898-11-07"
+    addressee: "A. F. Marks"
+    localPdf: vol53
+    extract: extracts/v71_306_A_F_Marksu.txt
+    quoteRu: >-
+      Дело это предоставлено мною Черткову (V. Tchertkoff. Maldon. Essex,
+      England), к которому немецкие переводчики и издатели имеют обратиться. […]
+      В повести есть много мест нецензурных, и чем дальше я над нею работаю, тем
+      этих нецензурных мест становится больше.
+    quoteEn: >-
+      (working English) [On foreign rights:] This matter has been delegated by me
+      to Chertkov (V. Tchertkoff. Maldon. Essex, England), to whom German
+      translators and publishers should apply. […] The novel contains many
+      passages that will not pass the censor, and the further I work on it the
+      more such passages appear.
+    significance: >-
+      Tolstoy's own "domestic censorship" strategy (engage a literator to
+      pre-cut) and the delegation of foreign rights to Chertkov — the mechanism
+      by which the complete text reached print abroad.
+    facsimile: ""
+
+  - id: letter-marks-fee-routing
+    genre: letter
+    pssTom: 72
+    pages: "056"
+    date: "1899-03-02"
+    addressee: "A. F. Marks"
+    localPdf: vol36
+    extract: extracts/v72_056_A_F_Marksu.txt
+    quoteRu: >-
+      Будьте так добры переслать две тысячи рублей в Англию по следующему
+      адресу: Vladimir Tchertkoff, Purleigh, Maldon, Essex, England. Две тысячи
+      рублей эти я буду считать полученными мною за предоставленное вам право
+      первого печатания в Ниве моего отрывка: История Матери.
+    quoteEn: >-
+      (working English) Please be so good as to forward two thousand roubles to
+      England to the following address: Vladimir Tchertkoff, Purleigh, Maldon,
+      Essex, England. These two thousand roubles I shall consider as received by
+      me in exchange for the first-publication right in Niva which I have granted
+      you for my excerpt: The Story of a Mother.
+    significance: >-
+      Direct proof that the novel's fees funded the emigration: «Нива» pays 2,000
+      r. straight to Chertkov in England, charged against rights to a Resurrection
+      excerpt («История Матери»).
+    facsimile: ""
+
+  - id: letter-biryukov-ships
+    genre: letter
+    pssTom: 71
+    pages: "347"
+    date: "1898-12-16"
+    addressee: "P. I. Biryukov"
+    localPdf: vol53
+    extract: extracts/v71_347_P_I_Biryukovu.txt
+    quoteRu: >-
+      Чертков просил, чтобы я просил его взять на себя все дела по
+      духоборческому делу и переводам Воскресения, и я сделал это. […]
+      Воскресенье выйдет в России 13-го марта, так нужно для переводов — и, как
+      кажется, право первого печатания продано в Англию и Америку.
+    quoteEn: >-
+      (working English) Chertkov asked me to ask him to take charge of all
+      affairs relating to the Doukhobor matter and to the translations of
+      Resurrection, and I have done so. […] Resurrection will appear in Russia
+      on 13 March; that date is set for the sake of the translations — and, it
+      seems, first-publication rights have been sold to England and America.
+    significance: >-
+      The nexus letter: Chertkov coordinates both the Doukhobor emigration and
+      the foreign Resurrection rights; the Russian release date (13 March 1899)
+      is fixed to synchronise the simultaneous foreign editions. The same letter
+      reports the Doukhobor ships Lake Huron and Lake Superior sailing.
+    facsimile: ""
+
+  - id: letter-chertkov-40000-paralysis
+    genre: letter
+    pssTom: 88
+    pages: "541"
+    date: "1899-02-05"
+    addressee: "V. G. Chertkov"
+    localPdf: vol47
+    extract: extracts/v88_541_fevralya5.txt
+    quoteRu: >-
+      Первое и самое главное: духоборы, и духоборы Кипрские. […] Вы меня очень
+      озадачили и смутили, написав, что для их отъезда нужно 40 тысяч и деньги
+      эти должен достать я. […] Другое дело это мое писанье, в котором я не могу
+      ничего двигать, так как нездоровится и мне прямо противно это писанье,
+      особенно конец. А Маркс просит прислать конец, чтобы, судя по нем, цензура
+      решила, можно ли пропустить начало.
+    quoteEn: >-
+      (working English) First and most important: the Doukhobors, and the
+      Cyprus Doukhobors. […] You puzzled and disturbed me greatly by writing
+      that 40,000 roubles are needed for their departure and that I must obtain
+      this money. […] The other matter is my writing, which I cannot advance at
+      all since I am unwell and the writing is simply repellent to me, especially
+      the ending. And Marks is pressing me to send the ending so that the censor
+      can decide, on the basis of it, whether the beginning may be passed.
+    significance: >-
+      The funding pressure (40,000 r. shortfall target for the Cyprus
+      Doukhobors) set directly against the novel's stalled ending and Marks's
+      censorship-clearance demand. The 40,000 figure is the shortfall target, not
+      a "total raised" — see needsReview on the money inconsistency.
+    facsimile: ""
+
+  # ---- Genesis commentary (Tom 33, «История писания») ----
+  - id: commentary-church-scene-late-addition
+    genre: commentary
+    pssTom: 33
+    pages: "329-422"
+    date: "1935"
+    addressee: ""
+    localPdf: vol02
+    extract: extracts/v33_329_422_Istorija_pisanija.txt
+    quoteRu: >-
+      В конечной стадии работы над третьей редакцией впервые дано подробное
+      описание богослужения в тюремной церкви (см. варианты №№ 57 и 58).
+    quoteEn: >-
+      (working English) In the final stage of work on the third redaction the
+      detailed description of the divine service in the prison church is given
+      for the first time (see variants nos. 57 and 58).
+    significance: >-
+      The PSS editors (N. V. Gorbachev) fix the communion centrepiece as a late
+      addition (third redaction, 27–28 Aug 1898) — absent from the pre-1898 text
+      Tolstoy first meant to publish. The satire is a product of the
+      Doukhobor-driven reopening. SECONDARY editorial commentary, attributed.
+    facsimile: ""
+
+  - id: commentary-completion-finish
+    genre: commentary
+    pssTom: 33
+    pages: "329-422"
+    date: "1935"
+    addressee: ""
+    localPdf: vol02
+    extract: extracts/v33_329_422_Istorija_pisanija.txt
+    quoteRu: >-
+      На следующий день, 18 декабря 1899 года, в дневнике записано: «Кончил
+      «Воскресение». Нехорошо, не поправлено, поспешно; но отвалилось и не
+      интересует больше».
+    quoteEn: >-
+      (working English) On the next day, 18 December 1899, the diary records:
+      "Finished Resurrection. Not good, unpolished, hasty; but it has fallen away
+      and no longer interests me."
+    significance: >-
+      The PSS editors' dating of the finish (18 Dec 1899), quoting the diary in
+      the comma-and-«больше» recension. Pairs with diary-1899-12-18-completion
+      (the diary file's own period-and-«более» form). SECONDARY, attributed.
+    facsimile: ""
+
+  # ---- Redactions (Tom 33 third redaction) ----
+  - id: redaction3-church-framing
+    genre: works
+    pssTom: 33
+    pages: "135-160"
+    date: "1898"
+    addressee: ""
+    localPdf: vol02
+    extract: extracts/v33_135_160_red3.txt
+    quoteRu: >-
+      Религия, которую исповедывали и арестанты и те, которые содержали их, была
+      религия Христа, та религия, которая, по словам Христа, состоит в том,
+      чтобы не делать другому чего не хочешь, чтобы тебе делали, в прощении всех
+    quoteEn: >-
+      (working English) The religion professed by the prisoners and by those
+      who held them was the religion of Christ, that religion which, in Christ's
+      own words, consists in not doing to another what you would not wish done
+      to yourself, in forgiving all...
+    significance: >-
+      The second of two adjacent third-redaction drafts of the church scene
+      (variant 58), with the theological framing moved to the front — later
+      transferred into Nekhlyudov's interiority and the narratorial voice in the
+      final text. Light redaction sample.
+    facsimile: ""
+
+  # ---- Thematic scenes (novel text) ----
+  - id: thematic-verdict-error
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      Все так устали, так запутались в спорах, что никто не догадался прибавить
+      к ответу: да, но без намерения лишить жизни.
+    quoteEn: >-
+      (working English) Everyone was so tired, so tangled in arguments, that no
+      one thought to add to the answer: yes, but with no intention of taking
+      life.
+    significance: >-
+      The wrongful-verdict scene (Part I): Maslova is condemned to katorga by a
+      procedural blunder, not malice — the jury drops the robbery motive but
+      forgets the parallel qualifier on intent to kill. The court as machinery
+      that grinds without regard to guilt.
+    facsimile: ""
+
+  - id: thematic-single-tax
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      А так как трудно распределить, кто кому должен платить, и так как на
+      общественные нужды деньги собирать нужно, то и сделать так, чтобы тот, кто
+      владеет землей, платил бы в общество на всякие нужды то, что его земля
+      стоит. Так всем ровно будет.
+    quoteEn: >-
+      (working English) And since it is hard to work out who should pay whom,
+      and since money has to be collected for common needs, then arrange it so
+      that whoever owns land pays into the community, for all its needs, what his
+      land is worth. So it will be equal for all.
+    significance: >-
+      The land question (Part II): Nekhlyudov's Henry-George single-tax scheme,
+      received by the peasants with suspicion, not gratitude — kept provisional
+      in Nekhlyudov's own mouth ("a transition from a cruder to a less crude
+      form of violence").
+    facsimile: ""
+
+  - id: thematic-ending-new-life
+    genre: works
+    pssTom: 32
+    pages: "3-445"
+    date: "1899"
+    addressee: ""
+    localPdf: vol01
+    extract: extracts/v32_003_445_Voskresenie.txt
+    quoteRu: >-
+      С этой ночи началась для Нехлюдова совсем новая жизнь, не столько потому,
+      что он вступил в новые условия жизни, а потому, что всё, что случилось с
+      ним с этих пор, получало для него совсем иное, чем прежде, значение. Чем
+      кончится этот новый период его жизни, покажет будущее.
+    quoteEn: >-
+      (working English) From that night a wholly new life began for Nekhlyudov,
+      not so much because he had entered new conditions of life, as because
+      everything that happened to him from then on took on a wholly different
+      meaning for him than before. How this new period of his life will end, the
+      future will show.
+    significance: >-
+      The ending (Part III, ch. XXVIII): the "resurrection" of the title
+      realised not as plot (Maslova chooses Simonson) but as a private reading of
+      the Gospel; the awakening is interior and the ending deliberately open. The
+      text is dated «16 декабря 1899 года. Конец.»
+    facsimile: ""
+
+  # ---- Excommunication (Reply to the Synod, Tom 34; diaries Tom 54; commentary) ----
+  - id: reply-broad-indictment
+    genre: works
+    pssTom: 34
+    pages: "245-253"
+    date: "1901-04-04"
+    addressee: "Holy Synod"
+    localPdf: vol03
+    extract: extracts/v34_245_253_Otvet_Sinodu.txt
+    quoteRu: >-
+      отвергаю бога, во святой троице славимого создателя и промыслителя
+      вселенной, отрицаю господа Иисуса Христа, богочеловека, искупителя и
+      спасителя мира, пострадавшего нас ради человеков и нашего ради спасения и
+      воскресшего из мертвых, отрицаю бессемейное зачатие по человечеству Христа
+      господа и девство до рождества и по рождестве пречистой богородицы
+    quoteEn: >-
+      (working English) [the decree charges that I] reject God, glorified in the
+      Holy Trinity, Creator and Provider of the universe; deny the Lord Jesus
+      Christ, God-man, Redeemer and Saviour of the world, who suffered for us men
+      and for our salvation and rose from the dead; deny the seedless conception
+      in His humanity of Christ the Lord and the virginity before and after birth
+      of the Most Pure Mother of God.
+    significance: >-
+      Tolstoy's verbatim quotation, inside his Reply, of the Synod decree's broad
+      doctrinal indictment (Trinity, Christ's divinity/resurrection, virgin
+      birth). The standing content of his 1880s–90s religious works — none of it
+      turns on Resurrection. The decree's own wording is cited HERE (corpus), not
+      from the web-sourced Skvortsov printing.
+    facsimile: ""
+
+  - id: reply-eucharist-climax
+    genre: works
+    pssTom: 34
+    pages: "245-253"
+    date: "1901-04-04"
+    addressee: "Holy Synod"
+    localPdf: vol03
+    extract: extracts/v34_245_253_Otvet_Sinodu.txt
+    quoteRu: >-
+      Сказано, наконец, как последняя и высшая степень моей виновности, что я,
+      «ругаясь над самыми священными предметами веры, не содрогнулся подвергнуть
+      глумлению священнейшее из таинств — евхаристию».
+    quoteEn: >-
+      (working English) It is said, finally, as the last and highest degree of
+      my guilt, that I, "mocking the most sacred objects of the faith, did not
+      shudder to subject to derision the most holy of the sacraments — the
+      Eucharist."
+    significance: >-
+      The decisive clause for the marquee question: the Synod names the
+      communion satire, but explicitly as the «последняя и высшая степень»
+      (rhetorical climax) of a broad indictment, not its basis. Tolstoy's
+      verbatim quotation of the decree.
+    facsimile: ""
+
+  - id: reply-eucharist-defence
+    genre: works
+    pssTom: 34
+    pages: "245-253"
+    date: "1901-04-04"
+    addressee: "Holy Synod"
+    localPdf: vol03
+    extract: extracts/v34_245_253_Otvet_Sinodu.txt
+    quoteRu: >-
+      То, что я не содрогнулся описать просто и объективно то, что священник
+      делает для приготовления этого, так называемого, таинства, то это
+      совершенно справедливо; но то, что это, так называемое, таинство есть
+      нечто священное и что описать его просто, как оно делается, есть кощунство,
+      — это совершенно несправедливо.
+    quoteEn: >-
+      (working English) That I did not shudder to describe simply and
+      objectively what the priest does to prepare this so-called sacrament — that
+      is perfectly true; but that this so-called sacrament is something holy, and
+      that to describe it simply, as it is done, is blasphemy — that is perfectly
+      untrue.
+    significance: >-
+      Tolstoy's own answer to the Eucharist charge: he affirms he wrote the flat
+      Resurrection-manner description and defends it. The one place where Tolstoy
+      and the Synod meet on the communion question — confirming the chapter is
+      genuinely in play, embedded in his total rejection of sacrament-as-sorcery.
+    facsimile: ""
+
+  - id: reply-church-renunciation
+    genre: works
+    pssTom: 34
+    pages: "245-253"
+    date: "1901-04-04"
+    addressee: "Holy Synod"
+    localPdf: vol03
+    extract: extracts/v34_245_253_Otvet_Sinodu.txt
+    quoteRu: >-
+      То, что я отрекся от церкви, называющей себя православной, это совершенно
+      справедливо. […] Сказано также, что я отвергаю все таинства. Это
+      совершенно справедливо.
+    quoteEn: >-
+      (working English) That I renounced the church that calls itself Orthodox —
+      that is perfectly true. […] It is also said that I reject all the
+      sacraments. That is perfectly true.
+    significance: >-
+      Tolstoy concedes both the church-renunciation (dating it to years of study
+      of dogmatic theology, not to any novel) and the rejection of ALL
+      sacraments as a class — communion being one item in a total alternative
+      theology. Supports the COMPLICATES verdict.
+    facsimile: ""
+
+  - id: diary-1901-03-19-strange
+    genre: diary
+    pssTom: 54
+    pages: "090-093"
+    date: "1901-03-19"
+    addressee: ""
+    localPdf: vol20
+    extract: extracts/v54_090_093_1901_03_19.txt
+    quoteRu: >-
+      За это время было странное отлучение от церкви и вызванные им выражения
+      сочувствия, и тут же студенческия истории, принявшия общественный характер
+    quoteEn: >-
+      (working English) During this time there was the strange excommunication
+      from the church and the expressions of sympathy it provoked, and at the
+      same time the student affairs, which took on a public character.
+    significance: >-
+      Tolstoy's first diary reaction (cool, doctrinal): «странное отлучение»
+      filed in one breath between his work and student unrest, no mention of
+      Resurrection as cause. Load-bearing for the COMPLICATES reading.
+    facsimile: ""
+
+  - id: diary-1901-03-28-sorcery
+    genre: diary
+    pssTom: 54
+    pages: "093"
+    date: "1901-03-28"
+    addressee: ""
+    localPdf: vol20
+    extract: extracts/v54_093_093_1901_03_28.txt
+    quoteRu: >-
+      Записано только одно — то, что стало совершенно ясно, что все наше
+      православие есть колдовство от страха. И корень всего — вера в чудесное.
+    quoteEn: >-
+      (working English) Only one thing recorded — that it has become completely
+      clear that all our Orthodoxy is sorcery out of fear. And the root of it all
+      is belief in the miraculous.
+    significance: >-
+      The one recorded thought (28 Mar 1901): the frame is the whole sacramental
+      system as «колдовство» (the same word he aims at all the sacraments in the
+      Reply), not the communion scene in particular.
+    facsimile: ""
+
+  - id: commentary-tolchok-publish
+    genre: commentary
+    pssTom: 34
+    pages: "575-577"
+    date: "1964"
+    addressee: ""
+    localPdf: vol03
+    extract: extracts/v34_575_577_Otvet_commentary.txt
+    quoteRu: >-
+      Отлучение Толстого от церкви было задумано царским правительством еще в
+      1880-х гг. Толчком к опубликованию отлучения послужило появление в 1899 г.
+      романа «Воскресение», в котором Толстой разоблачил лицемерие казенной
+      церкви и создал сатирический образ Топорова, недвусмысленно намекавший на
+      обер-прокурора «святейшего» синода К. П. Победоносцева.
+    quoteEn: >-
+      (working English) The excommunication of Tolstoy was conceived by the
+      tsarist government as far back as the 1880s. The impulse to publish the
+      excommunication was the appearance in 1899 of the novel Resurrection, in
+      which Tolstoy exposed the hypocrisy of the official church and created the
+      satirical figure of Toporov, an unmistakable allusion to the
+      Over-Procurator of the "most holy" Synod, K. P. Pobedonostsev.
+    significance: >-
+      The corpus's own editor (A. I. Opulsky) distinguishes long-laid intent
+      (1880s) from proximate occasion (1899 publication), and locates the sting
+      as much in the Toporov caricature of Pobedonostsev as in the Mass scene.
+      The crux of the COMPLICATES verdict. SECONDARY (Soviet-era) commentary,
+      attributed; the Pobedonostsev-as-author line is contested (see needsReview).
+    facsimile: ""
+
+# ── ENTITIES — ingestion routing map → wiki pages this dive feeds ─────────────
+# vaultStatus loose-matched against src/wiki/ and src/works/. wikiType ∈
+# wiki-schema 10 types (or works-schema for the work). sources from sources.yaml.
+entities:
+
+  - name: "Resurrection (Воскресение)"
+    wikiType: work
+    wikilinkTarget: "Resurrection"
+    vaultStatus: missing
+    role: "The novel itself — subject of this dive; record-creating workRecord."
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [communion-service-physical, censorship-communion-cut, diary-1898-07-17-decision, diary-1899-12-18-completion, thematic-ending-new-life]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "Excommunication of Tolstoy (1901)"
+    wikiType: event
+    wikilinkTarget: "Excommunication of Tolstoy"
+    vaultStatus: missing
+    role: >-
+      The Holy Synod «Определение» No. 557 of 20–22 Feb 1901 (O.S.). This dive
+      tests and complicates the popular "Resurrection caused it" prior.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [reply-broad-indictment, reply-eucharist-climax, reply-eucharist-defence, diary-1901-03-19-strange, diary-1901-03-28-sorcery, commentary-tolchok-publish]
+    ingestionPriority: 1
+    dependsOn: ["Konstantin Pobedonostsev", "Resurrection (Воскресение)"]
+
+  - name: "Anatoly Fyodorovich Koni"
+    wikiType: person
+    wikilinkTarget: "Anatoly Koni"
+    vaultStatus: missing
+    role: >-
+      Jurist; source of the plot (the Rozalia Oni case, told June 1887); the
+      working title «Коневская повесть». Ceded the subject 1888.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [commentary-church-scene-late-addition]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "Doukhobors"
+    wikiType: concept
+    wikilinkTarget: "Doukhobors"
+    vaultStatus: missing
+    role: >-
+      Pacifist peasant sect; the emigration to Canada that Resurrection's fees
+      were sold to fund. The engine of the 1898 completion. (Currently named only
+      inside Pavel Birukoff / Vladimir Chertkov pages — no dedicated page.)
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [diary-1898-07-17-decision, diary-1898-11-02-12000, letter-marks-fee-routing, letter-biryukov-ships, letter-chertkov-40000-paralysis]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: present
+    role: >-
+      Ran the complete uncensored edition abroad («Свободное слово»); managed
+      foreign rights for the Doukhobor fund; partial spiritual prototype for
+      Nekhlyudov (editors' conjecture).
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [letter-marks-censorship, letter-marks-fee-routing, letter-biryukov-ships, letter-chertkov-40000-paralysis, diary-1898-11-02-12000]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Pavel Birukoff"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: present
+    role: >-
+      "Posha"; intermediary to the Doukhobor colony; recipient of progress
+      reports on the novel and the emigration.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [letter-biryukov-ships]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Adolf Marks"
+    wikiType: person
+    wikilinkTarget: "Adolf Marks"
+    vaultStatus: missing
+    role: >-
+      Publisher of «Нива»; bought first-printing rights (12 Oct 1898 contract);
+      ran the "domestic" censorship via editor Sementkovsky; pressed Tolstoy to
+      finish.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [letter-marks-contract, letter-marks-censorship, letter-marks-fee-routing]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Konstantin Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: >-
+      Over-Procurator of the Holy Synod; model for the novel's Toporov; his exact
+      role in the decree (author/prime-mover vs reluctant) is contested.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [commentary-tolchok-publish]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Leonid Pasternak"
+    wikiType: person
+    wikilinkTarget: "Leonid Pasternak"
+    vaultStatus: missing
+    role: >-
+      Illustrator of the 1899 «Нива» serialisation and several editions; his
+      works entered the public domain in 2016 (19 distinct compositions in the
+      dive's visual record).
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "The communion / Eucharist satire"
+    wikiType: concept
+    wikilinkTarget: "Eucharist satire in Resurrection"
+    vaultStatus: missing
+    role: >-
+      The defamiliarised liturgy at the heart of the novel; the most heavily
+      censored passage and the most-quoted single offence in the excommunication
+      decree. Could fold into the Resurrection work page rather than a standalone
+      concept.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [communion-service-physical, communion-ate-god-body, communion-cross-gallows, communion-bells-same-service, censorship-communion-cut]
+    ingestionPriority: 3
+    dependsOn: ["Resurrection (Воскресение)"]
+
+  - name: "Katyusha Maslova"
+    wikiType: concept
+    wikilinkTarget: "Katyusha Maslova"
+    vaultStatus: missing
+    role: >-
+      The novel's heroine (a character, not a historical person — routed as
+      concept); rooted in the Rozalia Oni case. Peripheral to ingestion.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [thematic-verdict-error]
+    ingestionPriority: 3
+    dependsOn: ["Resurrection (Воскресение)"]
+
+  - name: "Prince Dmitri Nekhlyudov"
+    wikiType: concept
+    wikilinkTarget: "Dmitri Nekhlyudov"
+    vaultStatus: missing
+    role: >-
+      The novel's protagonist (a character → concept); heavily autobiographical,
+      with traits of Chertkov (editors' conjecture). Peripheral to ingestion.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [thematic-ending-new-life, thematic-single-tax]
+    ingestionPriority: 3
+    dependsOn: ["Resurrection (Воскресение)"]
+
+  - name: "Henry George / the single tax"
+    wikiType: concept
+    wikilinkTarget: "Single tax (Henry George)"
+    vaultStatus: missing
+    role: >-
+      The land-reform doctrine Nekhlyudov adopts in Part II; named in the novel
+      as the source of the single-tax project. Peripheral.
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [thematic-single-tax]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ── VISUALS — copied verbatim from extracts/_visuals_consolidated.md (85 entries)
+visuals:
+
+  # ============================================================
+  # GROUP 1 — PASTERNAK RESURRECTION ILLUSTRATIONS
+  # All: Leonid Pasternak, commissioned 1898–1899 for Нива serialisation
+  # PD (pre-1931, US; PD life+70 RU). All cached locally.
+  # ============================================================
+
+  - id: pasternak-res-001-variant
+    type: illustration
+    subject: Nekhlyudov waking in bed — opening scene (variant scan)
+    relatedEntity: Leonid Pasternak; Prince Dmitri Nekhlyudov
+    relatedEvidence: Part I, Ch. 1 — the awakening of conscience
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_002.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_002.jpg
+    localPath: visuals/commons-pasternak-res-awake-002.jpg
+    note: "DEDUP: same composition as pasternak-res-016 (preferred); this is the Нива-serialisation plate scan. Charcoal drawing."
+
+  - id: pasternak-res-016
+    type: illustration
+    subject: Nekhlyudov waking in bed — opening scene (canonical, sharper print)
+    relatedEntity: Leonid Pasternak; Prince Dmitri Nekhlyudov
+    relatedEvidence: Part I, Ch. 1; titled "The Awakening" (Воскресение)
+    holding: Wikimedia Commons
+    archiveId: File:1900_The_Awakening.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:1900_The_Awakening.jpg
+    localPath: visuals/commons-pasternak-1900-awakening.jpg
+    note: "Canonical for this composition. c. 1900; sharper than the Нива scan variant. RECOMMENDED EMBED: opening section."
+
+  - id: pasternak-res-002
+    type: illustration
+    subject: Jury and court officials seated — courtroom scene
+    relatedEntity: Leonid Pasternak; courtroom jury / assessors
+    relatedEvidence: Part I, trial chapters (Ch. 19–27)
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_003.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_003.jpg
+    localPath: visuals/commons-pasternak-res-awake-003.jpg
+    note: "Charcoal, signed «Пастернак» lower left. Five assessors in dark suits."
+
+  - id: pasternak-res-003
+    type: illustration
+    subject: Katyusha Maslova standing at the prisoner's dock — trial (canonical)
+    relatedEntity: Leonid Pasternak; Katyusha Maslova; Nekhlyudov
+    relatedEvidence: Part I, trial; the central iconic image of the novel
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_004.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_004.jpg
+    localPath: visuals/commons-pasternak-res-awake-004.jpg
+    note: "Canonical for this composition. Katyusha centre, white headscarf, two guards, co-defendants seated; Nekhlyudov lower right (from behind). DEDUP: variant is pasternak-res-017. RECOMMENDED EMBED: trial section."
+
+  - id: pasternak-res-017-variant
+    type: illustration
+    subject: Katyusha Maslova at the prisoner's dock (variant scan — Chapter 35)
+    relatedEntity: Leonid Pasternak; Katyusha Maslova
+    relatedEvidence: Part I, trial; Ch. 35 Wikisource edition label
+    holding: Wikimedia Commons
+    archiveId: File:Awakening_Chapter35.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Awakening_Chapter35.jpg
+    localPath: visuals/commons-pasternak-chapter35.jpg
+    note: "DEDUP: same composition as pasternak-res-003 (preferred); different scan/printing. Widely used in Wikipedia language editions."
+
+  - id: pasternak-res-004
+    type: illustration
+    subject: Court judges / presiding officials at the bench
+    relatedEntity: Leonid Pasternak; judges / court president
+    relatedEvidence: Part I, trial scene
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_005.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_005.jpg
+    localPath: visuals/commons-pasternak-res-awake-005.jpg
+    note: "Two robed judges at a document-covered bench; candelabra visible."
+
+  - id: pasternak-res-005
+    type: illustration
+    subject: Women's prison ward — multiple prisoners in a barrack-like room
+    relatedEntity: Leonid Pasternak; Katyusha Maslova; prison inmates
+    relatedEvidence: Part I — Katyusha's prison life
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_006.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_006.jpg
+    localPath: visuals/commons-pasternak-res-awake-006.jpg
+    note: "Charcoal. Women in grey prison dress; barred windows. Most atmospheric interior view in the series."
+
+  - id: pasternak-res-006
+    type: illustration
+    subject: Prison visiting corridor — guard between two cage-like cells full of prisoners
+    relatedEntity: Leonid Pasternak; Nekhlyudov; prison warden; convicts
+    relatedEvidence: Part I, Ch. 43–44 — Nekhlyudov visits Katyusha
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_007.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_007.jpg
+    localPath: visuals/commons-pasternak-res-awake-007.jpg
+    note: "Long corridor; prisoners press against cage-fencing on both sides; warden centre. RECOMMENDED EMBED: prison system section."
+
+  - id: pasternak-res-007
+    type: illustration
+    subject: Society buffet / banquet scene — officers and an elegant woman (coloured plate)
+    relatedEntity: Leonid Pasternak; Missy Korchagin or society figures
+    relatedEvidence: Part I — privilege world Nekhlyudov is trying to leave
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_008.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_008.jpg
+    localPath: visuals/commons-pasternak-res-awake-008.jpg
+    note: "Watercolour wash / coloured plate. Senior official eating; elegant woman in black."
+
+  - id: pasternak-res-008
+    type: illustration
+    subject: Prisoners being assembled / escorted in prison — group with guard
+    relatedEntity: Leonid Pasternak; convicts; prison guard
+    relatedEvidence: Parts II–III — étape staging area
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_009.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_009.jpg
+    localPath: visuals/commons-pasternak-res-awake-009.jpg
+    note: "Charcoal. Guard (sword at hip) among grey-coated convicts; barred windows."
+
+  - id: pasternak-res-009
+    type: illustration
+    subject: Woman in a theatre box — society scene (coloured plate)
+    relatedEntity: Leonid Pasternak; Missy Korchagin
+    relatedEvidence: Part I — the society match Nekhlyudov is expected to make
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_010.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_010.jpg
+    localPath: visuals/commons-pasternak-res-awake-010.jpg
+    note: "Watercolour. Elegantly dressed young woman with feathered hat; officer beside her; stage visible behind."
+
+  - id: pasternak-res-010
+    type: illustration
+    subject: Nekhlyudov visiting peasants on his estate — village scene (coloured plate)
+    relatedEntity: Leonid Pasternak; Prince Nekhlyudov; peasant women and children
+    relatedEvidence: Part II — Nekhlyudov's estate visits to redistribute land
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_011.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_011.gif
+    localPath: visuals/commons-pasternak-res-awake-011.jpg
+    note: "Watercolour. Gentleman in white coat faces peasant women and children; summer sky. Richest coloured plate in the series. RECOMMENDED EMBED: land reform section."
+
+  - id: pasternak-res-011
+    type: illustration
+    subject: Horse-drawn sledge in a winter landscape — the Siberian journey (coloured plate)
+    relatedEntity: Leonid Pasternak; convict party; Nekhlyudov
+    relatedEvidence: Part III — the Siberian march of the convict party
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_012.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_012.gif
+    localPath: visuals/commons-pasternak-res-awake-012.jpg
+    note: "Watercolour. Troika on snow-covered plain; grey sky; figures huddled on sledge."
+
+  - id: pasternak-res-012
+    type: illustration
+    subject: Rainy night street scene — solitary hunched figure under gas lamps
+    relatedEntity: Leonid Pasternak; Katyusha Maslova
+    relatedEvidence: Part I backstory — Katyusha homeless before the fatal Easter night
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_013.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_013.gif
+    localPath: visuals/commons-pasternak-res-awake-013.jpg
+    note: "Pastel/chalk in blue-green tones. Most expressionistic plate in the series. RECOMMENDED EMBED: backstory / fall section."
+
+  - id: pasternak-res-013
+    type: illustration
+    subject: Carriage passing a column of soldiers in city streets (coloured plate)
+    relatedEntity: Leonid Pasternak; Nekhlyudov; soldiers
+    relatedEvidence: Part I — civilian privilege vs. state military power
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_014.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_014.gif
+    localPath: visuals/commons-pasternak-res-awake-014.jpg
+    note: "Watercolour. Open carriage with parasol; bayoneted soldiers march past; church domes behind."
+
+  - id: pasternak-res-014
+    type: illustration
+    subject: Russian landscape — birch trees, factory chimneys, church domes (coloured plate)
+    relatedEntity: Leonid Pasternak
+    relatedEvidence: Parts II–III — Siberian or industrial landscape vignette
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_015.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_015.gif
+    localPath: visuals/commons-pasternak-res-awake-015.jpg
+    note: "Watercolour. Rare purely landscape plate; birch grove, crow, chimneys, domes."
+
+  - id: pasternak-res-015
+    type: illustration
+    subject: Woman reading by lamplight — interior, night
+    relatedEntity: Leonid Pasternak; Katyusha Maslova or Vera Bogodukhovskaya
+    relatedEvidence: Possibly Katyusha in prison cell, or a political prisoner in Part II
+    holding: Wikimedia Commons
+    archiveId: File:Tolsoy-Res-Awake_016.gif
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsoy-Res-Awake_016.gif
+    localPath: visuals/commons-pasternak-res-awake-016.jpg
+    note: "Pastel/chalk. Woman in grey dress and white headscarf bent over a book; blue lamp."
+
+  - id: pasternak-res-018
+    type: illustration
+    subject: Easter night church procession — congregation with candles
+    relatedEntity: Leonid Pasternak; Katyusha Maslova (implied); congregation
+    relatedEvidence: Ch. 57; the Easter night when young Nekhlyudov seduces Katyusha — the night that defines the novel
+    holding: Wikimedia Commons
+    archiveId: File:Awakening_Chapter57.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Awakening_Chapter57.jpg
+    localPath: visuals/commons-pasternak-chapter57.jpg
+    note: "Charcoal. Dense crowd of worshippers with candles; outdoor крестный ход. Most frequently reproduced of all Pasternak Resurrection images. RECOMMENDED EMBED: Easter / seduction backstory section."
+
+  - id: pasternak-res-019
+    type: illustration
+    subject: Katyusha at a prison cell door with a uniformed warden holding keys
+    relatedEntity: Leonid Pasternak; Katyusha Maslova; prison warden
+    relatedEvidence: Parts I–II — dehumanising prison machinery
+    holding: Wikimedia Commons
+    archiveId: File:Awakening_Chapter74.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Awakening_Chapter74.jpg
+    localPath: visuals/commons-pasternak-chapter74.jpg
+    note: "Ch. 74. Woman prisoner at heavy cell door; stout warden with ring of keys."
+
+  - id: pasternak-res-020
+    type: illustration
+    subject: Political prisoners at a way-station by lamplight — group gathered around a table
+    relatedEntity: Leonid Pasternak; political prisoners; Katyusha Maslova
+    relatedEvidence: Part III — «Политические на полу-этапе»; Simonson, Rantseva, Bogodukhovskaya
+    holding: Wikimedia Commons
+    archiveId: File:Resurrection_Political.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Resurrection_Political.jpg
+    localPath: visuals/commons-pasternak-political.jpg
+    note: "Charcoal, dated 1911 — later revised plate for post-serialisation edition. RECOMMENDED EMBED: political prisoners section."
+
+  - id: pasternak-res-021
+    type: illustration
+    subject: Katyusha escorted by two soldiers — frontispiece, Book I Chapter 1
+    relatedEntity: Leonid Pasternak; Katyusha Maslova; soldiers
+    relatedEvidence: Signed «Пастернак 1899»; frontispiece for T.Y. Crowell Complete Works vols 23–24
+    holding: Wikimedia Commons
+    archiveId: File:The_Complete_Works_of_Tolstoi_Volume_23_frontispiece.jpg
+    access: open
+    rights: public domain
+    licence: PD (pre-1931, US; PD life+70 RU)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:The_Complete_Works_of_Tolstoi_Volume_23_frontispiece.jpg
+    localPath: visuals/commons-pasternak-frontispiece-vol23.jpg
+    note: "1899 date confirms original serialisation-era plate. Caption: 'THE SOLDIER PUT THE PAPER INTO THE SLEEVE OF HIS COAT. Book I. Chapter 1.' RECOMMENDED EMBED: publication history section."
+
+  # ============================================================
+  # GROUP 2A — TOLSTOY PHOTOGRAPHS (writing period ~1895–1901)
+  # ============================================================
+
+  - id: tolstoy-scherer-nabholz-1901
+    type: photograph
+    subject: Leo Tolstoy — cabinet portrait, three-quarter length
+    relatedEntity: Tolstoy
+    relatedEvidence: Canonical writing-period studio portrait; same year as excommunication
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoy_by_Scherer_&_Nabholz,_1901.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_Scherer_%26_Nabholz,_1901.jpg
+    localPath: visuals/commons-photo-tolstoy-scherer-nabholz-1901.jpg
+    note: "Scherer & Nabholz studio, Moscow, 1901. Hands on table. RECOMMENDED EMBED: biographical header."
+
+  - id: tolstoy-reformers-yearbook-1901
+    type: photograph
+    subject: Leo Tolstoy — reproduced in The Reformers' Year Book, 1901
+    relatedEntity: Tolstoy
+    relatedEvidence: Excommunication-period portrait
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoy_(The_Reformers'_Year_Book,_1901).png
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_(The_Reformers%27_Year_Book,_1901).png
+    localPath: visuals/commons-photo-tolstoy-reformers-yearbook-1901.png
+    note: "The Reformers' Year Book, 1901."
+
+  - id: tolstoy-gorky-yasnaya-polyana-1900
+    type: photograph
+    subject: Leo Tolstoy and Maxim Gorky at Yasnaya Polyana
+    relatedEntity: Tolstoy; Gorky; Yasnaya Polyana
+    relatedEvidence: Photographed by Sofia Tolstaya, 1900; Gorky visited while Resurrection was being serialised
+    holding: Wikimedia Commons
+    archiveId: File:1900_yasnaya_polyana-gorky_and_tolstoy.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:1900_yasnaya_polyana-gorky_and_tolstoy.jpg
+    localPath: visuals/commons-photo-tolstoy-gorky-yasnaya-polyana-1900.jpg
+    note: "Photographer: Sofia Andreevna Tolstaya, 1900."
+
+  - id: tolstoy-kazakov-odessa-1900
+    type: photograph
+    subject: Leo Tolstoy — portrait by I. S. Kazakov, Odessa, 1900
+    relatedEntity: Tolstoy
+    relatedEvidence: Writing/publication period; Tolstoy visited Odessa during Doukhobor fundraising
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg
+    localPath: visuals/commons-photo-tolstoy-kazakov-odessa-1900.jpg
+
+  - id: tolstoy-bain-news-1900
+    type: photograph
+    subject: Leo Tolstoy — Bain News Service, c. 1900 (Library of Congress)
+    relatedEntity: Tolstoy
+    relatedEvidence: Glass negative, Bain News Service, Library of Congress
+    holding: Wikimedia Commons / Library of Congress
+    archiveId: File:Tolstoy_LCCN2014689004.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_LCCN2014689004.jpg
+    localPath: visuals/commons-photo-tolstoy-bain-news-1900.jpg
+
+  - id: tolstoy-lccn-cabinet-card
+    type: photograph
+    subject: Leo Tolstoy — half-length portrait, facing right (Library of Congress cabinet card)
+    relatedEntity: Tolstoy
+    holding: Wikimedia Commons / Library of Congress
+    archiveId: File:Count_Leo_Tolstoy,_half-length_portrait,_facing_right_LCCN99615676.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Count_Leo_Tolstoy%2C_half-length_portrait%2C_facing_right_LCCN99615676.jpg
+    localPath: visuals/commons-photo-tolstoy-lccn-cabinet-card.jpg
+
+  - id: tolstoy-early-1900s
+    type: photograph
+    subject: Leo Tolstoy — portrait, early 20th century
+    relatedEntity: Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Tolstoy_Leo_port.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_Leo_port.jpg
+    localPath: visuals/commons-photo-tolstoy-early-1900s.jpg
+    note: "Unknown photographer. Approximate to Resurrection/excommunication period."
+
+  - id: tolstoy-chertkov-1908
+    type: photograph
+    subject: Leo Tolstoy — photograph by Chertkov, July 1908
+    relatedEntity: Tolstoy; Chertkov
+    holding: Wikimedia Commons
+    archiveId: File:Tolstoy_portrait_tolstoy.ru.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_portrait_tolstoy.ru.jpg
+    localPath: visuals/commons-photo-tolstoy-chertkov-1908.jpg
+    note: "By Чертков, July 1908. Later than writing period but by the chief publication collaborator."
+
+  - id: tolstoy-1906-swedish
+    type: photograph
+    subject: Leo Tolstoy — Swedish publication portrait, 1906
+    relatedEntity: Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoi_1906.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1906.jpg
+    localPath: visuals/commons-photo-tolstoi-1906.jpg
+
+  - id: tolstoy-sofia-bicycle-1895
+    type: photograph
+    subject: Leo Tolstoy with bicycle and Sofia Tolstaya, 1895
+    relatedEntity: Tolstoy; Sofia Tolstaya
+    relatedEvidence: Photographed by Sofia Tolstaya, 1895; directly precedes the Resurrection writing period
+    holding: Wikimedia Commons
+    archiveId: File:L.Tolstoy_and_S.Tolstaya,_1895.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:L.Tolstoy_and_S.Tolstaya%2C_1895.jpg
+    localPath: visuals/commons-photo-tolstoy-sofia-bicycle-1895.jpg
+
+  - id: tolstoy-family-c1900
+    type: photograph
+    subject: Leo Tolstoy family group, c. 1900
+    relatedEntity: Tolstoy; Tolstoy family
+    relatedEvidence: Writing period context; Sergei, Andrei, Tatiana, Lev Jr., Sofia, Mikhail, Maria, Ilya, Alexandra
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoy_family.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_family.jpg
+    localPath: visuals/commons-photo-tolstoy-family-c1900.jpg
+
+  - id: tolstoy-makovitsky-c1900
+    type: photograph
+    subject: Leo Tolstoy and Dushan Makovitsky
+    relatedEntity: Tolstoy; Makovitsky
+    relatedEvidence: "Photographer: Vladimir Chertkov, c. 1900; Makovitsky was Tolstoy's personal physician during the Resurrection years"
+    holding: Wikimedia Commons
+    archiveId: File:Leo_Tolstoy_and_Dushan_Makovitsky.JPG
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Dushan_Makovitsky.JPG
+    localPath: visuals/commons-photo-tolstoy-makovitsky-c1900.jpg
+
+  - id: chekhov-gorky-tolstoy
+    type: photograph
+    subject: Chekhov, Gorky, and Tolstoy
+    relatedEntity: Tolstoy; Chekhov; Gorky
+    relatedEvidence: 1900s; both Chekhov and Gorky visited Yasnaya Polyana during the Resurrection period
+    holding: Wikimedia Commons / Glavarkhiv Moskvy
+    archiveId: File:Chekhov,_Gorky_and_Tolstoy.jpg
+    access: open
+    rights: CC BY 4.0
+    licence: CC BY 4.0
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Chekhov,_Gorky_and_Tolstoy.jpg
+    localPath: visuals/commons-photo-chekhov-gorky-tolstoy.jpg
+    note: "NOTE: CC BY 4.0 — attribution to Glavarkhiv Moskvy required. Not PD."
+
+  # ============================================================
+  # GROUP 2B — PAINTED PORTRAITS OF TOLSTOY (writing/excommunication period)
+  # ============================================================
+
+  - id: repin-tolstoy-barefoot-google
+    type: painting
+    subject: Leo Tolstoy barefoot — Ilya Repin, 1901 (high-res Google Art Project scan)
+    relatedEntity: Tolstoy; Repin
+    relatedEvidence: State Russian Museum. Painted year of excommunication; iconic barefoot Tolstoy image
+    holding: Wikimedia Commons / Google Art Project / State Russian Museum
+    archiveId: File:Ilya_Repin_-_Leo_Tolstoy_Barefoot_-_Google_Art_Project.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Ilya_Repin_-_Leo_Tolstoy_Barefoot_-_Google_Art_Project.jpg
+    localPath: visuals/commons-painting-repin-tolstoy-barefoot-google.jpg
+    note: "DEDUP: canonical high-res version. 207×73 cm, oil on canvas. Two lower-res versions of same painting also cached (barefoot-1901, 1901-cropped). RECOMMENDED EMBED: excommunication section."
+
+  - id: repin-tolstoy-1901-cropped
+    type: painting
+    subject: Leo Tolstoy barefoot — Repin 1901, face/upper body crop
+    relatedEntity: Tolstoy; Repin
+    relatedEvidence: Same Repin 1901 painting; crop for portrait use
+    holding: Wikimedia Commons
+    archiveId: File:Tolstoy_by_Repin_1901_cropped.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_by_Repin_1901_cropped.jpg
+    localPath: visuals/commons-painting-repin-tolstoy-1901-cropped.jpg
+    note: "DEDUP: utility crop of repin-tolstoy-barefoot-google. Use for portrait contexts."
+
+  - id: repin-tolstoy-ploughing-1887
+    type: painting
+    subject: Leo Tolstoy ploughing — Ilya Repin, 1887
+    relatedEntity: Tolstoy; Yasnaya Polyana
+    relatedEvidence: Tolstoy's physical-labour asceticism that defines his Resurrection-era self-presentation
+    holding: Wikimedia Commons
+    archiveId: File:Tolstoy_ploughing.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_ploughing.jpg
+    localPath: visuals/commons-painting-repin-tolstoy-ploughing-1887.jpg
+
+  - id: repin-tolstoy-sofia-1907
+    type: painting
+    subject: Leo Tolstoy and Sofia Tolstaya — Ilya Repin, 1907–1911
+    relatedEntity: Tolstoy; Sofia Tolstaya
+    relatedEvidence: The marriage tension underlying Resurrection's moral frame
+    holding: Wikimedia Commons
+    archiveId: File:1907Портрет_Л.Н.Толстого_с_женой_С.А.Толстой.JPG
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:1907%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%9B.%D0%9D.%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B3%D0%BE_%D1%81_%D0%B6%D0%B5%D0%BD%D0%BE%D0%B9_%D0%A1.%D0%90.%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9.JPG
+    localPath: visuals/commons-painting-repin-tolstoy-sofia-1907.jpg
+
+  # ============================================================
+  # GROUP 2C — PASTERNAK PORTRAITS OF TOLSTOY (not Resurrection illustrations)
+  # ============================================================
+
+  - id: pasternak-tolstoy-lamp-1902
+    type: painting
+    subject: Leo Tolstoy reading under lamp — Leonid Pasternak, 1902
+    relatedEntity: Tolstoy; Pasternak
+    relatedEvidence: Intimate writing-context scene, directly post-Resurrection; the "Tolstoy at his desk" archetype
+    holding: Wikimedia Commons
+    archiveId: File:Pasternak_podlampoj.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Pasternak_podlampoj.jpg
+    localPath: visuals/commons-painting-pasternak-tolstoy-lamp-1902.jpg
+    note: "RECOMMENDED EMBED: writing process / Niva serialisation section."
+
+  - id: pasternak-tolstoy-portrait
+    type: painting
+    subject: Leo Tolstoy portrait — Leonid Pasternak (date uncertain)
+    relatedEntity: Tolstoy; Pasternak
+    relatedEvidence: Pasternak's long collaboration with Tolstoy began with the Resurrection illustrations
+    holding: Wikimedia Commons
+    archiveId: File:Pasternak_leo_tolstoy.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Pasternak_leo_tolstoy.jpg
+    localPath: visuals/commons-painting-pasternak-tolstoy-portrait.jpg
+
+  - id: pasternak-tolstoy-profile
+    type: painting
+    subject: Leo Tolstoy profile portrait — Leonid Pasternak
+    relatedEntity: Tolstoy; Pasternak
+    holding: Wikimedia Commons
+    archiveId: File:Profile_portrait_of_Leo_Tolstoy_by_L._Pasternak.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Profile_portrait_of_Leo_Tolstoy_by_L._Pasternak.jpg
+    localPath: visuals/commons-painting-pasternak-tolstoy-profile.jpg
+
+  - id: pasternak-tolstoy-1908
+    type: painting
+    subject: Leo Tolstoy — Leonid Pasternak, 1908
+    relatedEntity: Tolstoy; Pasternak
+    holding: Wikimedia Commons
+    archiveId: File:Pasternak_Tolstoy_1908.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Pasternak_Tolstoy_1908.jpg
+    localPath: visuals/commons-painting-pasternak-tolstoy-1908.jpg
+
+  # ============================================================
+  # GROUP 2D — CHERTKOV
+  # ============================================================
+
+  - id: chertkov-portrait-1883
+    type: photograph
+    subject: Vladimir Grigoryevich Chertkov — portrait, 1883
+    relatedEntity: Chertkov
+    relatedEvidence: Publisher of the Free Word (Свободное слово) abroad edition; exiled 1897
+    holding: Wikimedia Commons
+    archiveId: File:Vladimir_Chertkov.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg
+    localPath: visuals/commons-photo-chertkov-portrait-1883.jpg
+
+  - id: chertkov-kramskoy-1881
+    type: painting
+    subject: Vladimir Chertkov — portrait by Ivan Kramskoi, 1881
+    relatedEntity: Chertkov
+    relatedEvidence: Painted before Chertkov's meeting with Tolstoy; the young Chertkov who would become Tolstoy's chief disciple
+    holding: Wikimedia Commons
+    archiveId: File:Chertkov_by_Kramskoy.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Chertkov_by_Kramskoy.jpg
+    localPath: visuals/commons-photo-chertkov-kramskoy-1881.jpg
+
+  - id: chertkov-with-tolstoy
+    type: photograph
+    subject: Chertkov with Tolstoy (date uncertain)
+    relatedEntity: Chertkov; Tolstoy
+    relatedEvidence: The pair at the centre of the Resurrection publication story
+    holding: Wikimedia Commons
+    archiveId: File:Chertkov_with_tolstoy.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Chertkov_with_tolstoy.jpg
+    localPath: visuals/commons-photo-chertkov-with-tolstoy.jpg
+
+  - id: chertkov-tolstoy-1909
+    type: photograph
+    subject: L. N. Tolstoy and V. G. Chertkov at Yasnaya Polyana, 29 March 1909
+    relatedEntity: Chertkov; Tolstoy; Yasnaya Polyana
+    relatedEvidence: Photographed by Chertkov, after his return from exile; documents the working relationship
+    holding: Wikimedia Commons
+    archiveId: File:Chertkov&Tolstoy.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Chertkov%26Tolstoy.jpg
+    localPath: visuals/commons-photo-chertkov-tolstoy-1909.jpg
+
+  # ============================================================
+  # GROUP 2E — KONI
+  # ============================================================
+
+  - id: koni-repin-1898
+    type: painting
+    subject: Anatoly Fyodorovich Koni — portrait by Ilya Repin, 1898 (Commons reproduction)
+    relatedEntity: Koni
+    relatedEvidence: Painted exactly during the Resurrection writing period; Koni told Tolstoy the Rosalie Oni story in 1887
+    holding: Wikimedia Commons (reproduction of Tretyakov Gallery painting)
+    archiveId: File:Koni_by_Repin.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Koni_by_Repin.jpg
+    localPath: visuals/commons-photo-koni-repin-1898.jpg
+    note: "Cross-ref: RU-PRT-02 is the ГТГ museum record for the same painting (rights-reserved, no download). This Commons reproduction is the usable open asset."
+
+  - id: koni-portrait-19c
+    type: photograph
+    subject: Anatoly Fyodorovich Koni — photograph, late 19th century
+    relatedEntity: Koni
+    relatedEvidence: The plot-source of Resurrection; Russian jurist and public figure
+    holding: Wikimedia Commons
+    archiveId: File:Кони_А._Ф..jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BD%D0%B8_%D0%90._%D0%A4..jpg
+    localPath: visuals/commons-photo-koni-portrait-19c.jpg
+
+  - id: koni-and-tolstoy
+    type: photograph
+    subject: Koni and Tolstoy together
+    relatedEntity: Koni; Tolstoy
+    relatedEvidence: Photographed by Sofia Tolstaya; the two men whose conversation generated the Resurrection plot
+    holding: Wikimedia Commons
+    archiveId: File:Koni_A._F._and_Tolstoy_L._N..jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Koni_A._F._and_Tolstoy_L._N..jpg
+    localPath: visuals/commons-photo-koni-and-tolstoy.jpg
+
+  - id: koni-1915
+    type: photograph
+    subject: Anatoly Fyodorovich Koni — portrait by М.Л. Левенсон, 1915
+    relatedEntity: Koni
+    holding: Wikimedia Commons
+    archiveId: File:Koni_Anatoly_Fedorovich,_1915.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Koni_Anatoly_Fedorovich%2C_1915.jpg
+    localPath: visuals/commons-photo-koni-1915.jpg
+
+  - id: repin-koni-literary-1889
+    type: drawing
+    subject: Koni at Russian Literary Society, with Fofanov and Polonsky — drawing by Repin, 1889
+    relatedEntity: Koni
+    relatedEvidence: Two years after Koni told Tolstoy the Maslova story; shows Koni in his literary-legal milieu
+    holding: Wikimedia Commons
+    archiveId: File:1889Врус.лит.общ.Фоф.Полонск.Кони.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:1889%D0%92%D1%80%D1%83%D1%81.%D0%BB%D0%B8%D1%82.%D0%BE%D0%B1%D1%89.%D0%A4%D0%BE%D1%84.%D0%9F%D0%BE%D0%BB%D0%BE%D0%BD%D1%81%D0%BA.%D0%9A%D0%BE%D0%BD%D0%B8.jpg
+    localPath: visuals/commons-drawing-repin-koni-literary-1889.jpg
+
+  # ============================================================
+  # GROUP 2F — POBEDONOSTSEV
+  # ============================================================
+
+  - id: pobedonostsev-makovsky-1899
+    type: painting
+    subject: Konstantin Pobedonostsev — portrait by Aleksandr Makovsky, 1899
+    relatedEntity: Pobedonostsev; Toporov (fictional)
+    relatedEvidence: "\"Portrait of Chief Procurator of the Synod K. P. Pobedonostsev.\" Painted year Resurrection was completed; model for the Toporov character; drove the 1901 excommunication"
+    holding: Wikimedia Commons
+    archiveId: File:Alexander_Makovsky_Pobedonostsev.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Alexander_Makovsky_Pobedonostsev.jpg
+    localPath: visuals/commons-painting-pobedonostsev-makovsky-1899.jpg
+    note: "RECOMMENDED EMBED: censorship / Synod section."
+
+  - id: pobedonostsev-repin-1903
+    type: painting
+    subject: Konstantin Pobedonostsev — Ilya Repin, 1903 study (Commons reproduction / ГРМ original)
+    relatedEntity: Pobedonostsev
+    relatedEvidence: Study for Formal Session of the State Council. Post-excommunication portrait.
+    holding: Wikimedia Commons (reproduction); Государственный Русский музей (original, Ж-4027)
+    archiveId: File:Pobedonostsev_by_repin.jpg (Commons); Ж-4027 (ГРМ)
+    access: open (Commons); request (ГРМ)
+    rights: public domain (Commons image)
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Pobedonostsev_by_repin.jpg
+    localPath: visuals/commons-painting-pobedonostsev-repin-1903.jpg
+    note: "DEDUP MERGE: originally in both _visuals_photos (Commons) and _visuals_russia (RU-PRT-03, ГРМ record). Commons image is the open asset. ГРМ archiveId Ж-4027 retained for reproduction requests."
+
+  - id: pobedonostsev-serov-1902
+    type: painting
+    subject: Konstantin Pobedonostsev — Valentin Serov, 1902 (Commons reproduction / ГРМ original)
+    relatedEntity: Pobedonostsev
+    relatedEvidence: Charcoal and colour pencils. Painted year after excommunication; ageing Ober-Procurator at height of power
+    holding: Wikimedia Commons (reproduction); Государственный Русский музей (original)
+    archiveId: File:Portrait_of_K._Pobedonostsev.jpg (Commons); ГРМ inv. not retrieved
+    access: open (Commons); request (ГРМ)
+    rights: public domain (Commons image)
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Portrait_of_K._Pobedonostsev.jpg
+    localPath: visuals/commons-painting-pobedonostsev-serov-1902.jpg
+    note: "DEDUP MERGE: originally in both _visuals_photos (Commons) and _visuals_russia (RU-PRT-06, ГРМ). Commons image is the open asset."
+
+  # ============================================================
+  # GROUP 2G — BIRYUKOV
+  # ============================================================
+
+  - id: biryukov-portrait
+    type: photograph
+    subject: Pavel Ivanovich Biryukov — portrait
+    relatedEntity: Biryukov
+    relatedEvidence: Tolstoy's biographer; exiled 1897 (with Chertkov) partly for Doukhobor support funded by Resurrection
+    holding: Wikimedia Commons
+    archiveId: File:Pavel_Biryukov.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Pavel_Biryukov.jpg
+    localPath: visuals/commons-photo-biryukov-portrait.jpg
+
+  - id: biryukov-portrait-1916
+    type: photograph
+    subject: Pavel Ivanovich Biryukov — portrait, 1916
+    relatedEntity: Biryukov
+    relatedEvidence: Tolstoy biographer; his four-volume biography is the primary source for the Resurrection period
+    holding: Wikimedia Commons
+    archiveId: File:Бірюков_Павло_Іванович.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File/%D0%91%D1%96%D1%80%D1%8E%D0%BA%D0%BE%D0%B2_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg
+    localPath: visuals/commons-photo-biryukov-portrait-1916.jpg
+
+  - id: biryukov-bio3-p69
+    type: photograph
+    subject: Photograph from Biryukov biography vol. 3, p. 69
+    relatedEntity: Biryukov; Tolstoy
+    relatedEvidence: Period photograph from Biryukov's Léon Tolstoï, vie et oeuvre, Vol. 3, 2nd ed. (1906)
+    holding: Wikimedia Commons
+    archiveId: File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_3_(page_69_crop).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Biriukov_-_L%C3%A9on_Tolsto%C3%AF%2C_vie_et_oeuvre_3_(page_69_crop).jpg
+    localPath: visuals/commons-photo-biryukov-bio3-p69.jpg
+
+  - id: biryukov-bio3-p107
+    type: photograph
+    subject: Photograph from Biryukov biography vol. 3, p. 107
+    relatedEntity: Biryukov; Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_3_(page_107_crop).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Biriukov_-_L%C3%A9on_Tolsto%C3%AF%2C_vie_et_oeuvre_3_(page_107_crop).jpg
+    localPath: visuals/commons-photo-biryukov-bio3-p107.jpg
+
+  - id: biryukov-bio3-p247
+    type: photograph
+    subject: Photograph from Biryukov biography vol. 3, p. 247
+    relatedEntity: Biryukov; Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_3_(page_247_crop).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Biriukov_-_L%C3%A9on_Tolsto%C3%AF%2C_vie_et_oeuvre_3_(page_247_crop).jpg
+    localPath: visuals/commons-photo-biryukov-bio3-p247.jpg
+
+  - id: biryukov-bio3-p307
+    type: photograph
+    subject: Photograph from Biryukov biography vol. 3, p. 307
+    relatedEntity: Biryukov; Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_3_(page_307_crop).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Biriukov_-_L%C3%A9on_Tolsto%C3%AF%2C_vie_et_oeuvre_3_(page_307_crop).jpg
+    localPath: visuals/commons-photo-biryukov-bio3-p307.jpg
+
+  - id: biryukov-bio3-p409
+    type: photograph
+    subject: Photograph from Biryukov biography vol. 3, p. 409
+    relatedEntity: Biryukov; Tolstoy
+    holding: Wikimedia Commons
+    archiveId: File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_3_(page_409_crop).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Biriukov_-_L%C3%A9on_Tolsto%C3%AF%2C_vie_et_oeuvre_3_(page_409_crop).jpg
+    localPath: visuals/commons-photo-biryukov-bio3-p409.jpg
+
+  # ============================================================
+  # GROUP 2H — SOFIA TOLSTAYA
+  # ============================================================
+
+  - id: sofia-tolstaya-paints-c1900
+    type: photograph
+    subject: Sofia Tolstaya painting, c. 1900
+    relatedEntity: Sofia Tolstaya; Tolstoy
+    relatedEvidence: Sofia was Tolstoy's primary copyist and photographer during the Resurrection period
+    holding: Wikimedia Commons
+    archiveId: File:Sofia_Tolstaya_paints.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Sofia_Tolstaya_paints.jpg
+    localPath: visuals/commons-photo-sofia-tolstaya-paints-c1900.jpg
+
+  - id: sofia-tolstaya-ge-1886
+    type: painting
+    subject: Sofia Andreevna Tolstaya — portrait by Nikolai Ge, 1886
+    relatedEntity: Sofia Tolstaya
+    relatedEvidence: Sofia in the years before Resurrection was begun; key domestic figure of the writing period
+    holding: Wikimedia Commons
+    archiveId: File:Ge_Sophia_Tolstaya.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Ge_Sophia_Tolstaya.jpg
+    localPath: visuals/commons-painting-sofia-tolstaya-ge-1886.jpg
+
+  # ============================================================
+  # GROUP 2I — DOUKHOBORS
+  # ============================================================
+
+  - id: doukhobor-women-plough-1899
+    type: photograph
+    subject: Doukhobor women pulling a plough — Thunder Hill Colony, Manitoba, c. 1899
+    relatedEntity: Doukhobors
+    relatedEvidence: Tolstoy donated all Resurrection royalties to fund Doukhobor emigration to Canada
+    holding: Wikimedia Commons
+    archiveId: File:Doukhobor_women_pulling_a_plough_-_Thunder_Hill_Colony-Manitoba.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Doukhobor_women_pulling_a_plough_-_Thunder_Hill_Colony-Manitoba.jpg
+    localPath: visuals/commons-photo-doukhobor-women-plough-1899.jpg
+    note: "RECOMMENDED EMBED: Doukhobor / royalties section."
+
+  - id: doukhobor-women-winnowing-1899
+    type: photograph
+    subject: Doukhobor women winnowing grain — Saskatchewan, 1899
+    relatedEntity: Doukhobors
+    relatedEvidence: Arrival year 1899 — same year as Resurrection's Нива serialisation
+    holding: Wikimedia Commons
+    archiveId: File:Doukhobor_women_winnowing_grain.jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Doukhobor_women_winnowing_grain.jpg
+    localPath: visuals/commons-photo-doukhobor-women-winnowing-1899.jpg
+
+  - id: doukhobor-pilgrims-yorkton
+    type: photograph
+    subject: Doukhobor pilgrims entering Yorkton
+    relatedEntity: Doukhobors
+    relatedEvidence: T. V. Simpson photographer; 1902 pilgrimage march (Library and Archives Canada)
+    holding: Wikimedia Commons / Library and Archives Canada
+    archiveId: File:The_Doukhobor_pilgrims_entering_Yorkton_(HS85-10-13519).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:The_Doukhobor_pilgrims_entering_Yorkton_(HS85-10-13519).jpg
+    localPath: visuals/commons-photo-doukhobor-pilgrims-yorkton.jpg
+
+  - id: doukhobor-pilgrims-prayer
+    type: photograph
+    subject: Doukhobor pilgrims at prayer
+    relatedEntity: Doukhobors
+    relatedEvidence: T. V. Simpson. The pacifist religious practice that led to their persecution — same spirit Tolstoy wrote against
+    holding: Wikimedia Commons / Library and Archives Canada
+    archiveId: File:The_Doukhobor_pilgrims_at_prayer_(HS85-10-13521).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:The_Doukhobor_pilgrims_at_prayer_(HS85-10-13521).jpg
+    localPath: visuals/commons-photo-doukhobor-pilgrims-prayer.jpg
+
+  - id: doukhobor-camp-yorkton-1899
+    type: photograph
+    subject: Doukhobor camp before arriving at Yorkton, SK, 1899
+    relatedEntity: Doukhobors
+    relatedEvidence: Direct visual record of the emigration that Resurrection funded
+    holding: Wikimedia Commons
+    archiveId: File:Camp_before_arriving_at_Yorkton,_SK_1899.jpg
+    access: open
+    rights: CC0
+    licence: CC0
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Camp_before_arriving_at_Yorkton%2C_SK_1899.jpg
+    localPath: visuals/commons-photo-doukhobor-camp-yorkton-1899.jpg
+
+  - id: doukhobor-pilgrims-leaving-yorkton
+    type: photograph
+    subject: Doukhobor pilgrims leaving Yorkton to evangelise
+    relatedEntity: Doukhobors
+    holding: Wikimedia Commons / Library and Archives Canada
+    archiveId: File:Doukhobor_pilgrims_leaving_Yorkton_to_evangelize_the_world_(HS85-10-13523).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Doukhobor_pilgrims_leaving_Yorkton_to_evangelize_the_world_(HS85-10-13523).jpg
+    localPath: visuals/commons-photo-doukhobor-pilgrims-leaving-yorkton.jpg
+
+  - id: doukhobor-refuse-return
+    type: photograph
+    subject: Doukhobors refuse to return to their villages
+    relatedEntity: Doukhobors
+    relatedEvidence: T. V. Simpson. The spirit of non-compliance with state authority that Tolstoy celebrated
+    holding: Wikimedia Commons / Library and Archives Canada
+    archiveId: File:Doukhobors_refuse_to_return_to_their_villages_(HS85-10-13522).jpg
+    access: open
+    rights: public domain
+    licence: public domain
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Doukhobors_refuse_to_return_to_their_villages_(HS85-10-13522).jpg
+    localPath: visuals/commons-photo-doukhobor-refuse-return.jpg
+
+  # ============================================================
+  # GROUP 3 — MANUSCRIPTS, PROOFS, AND MUSEUM ORIGINALS
+  # All: rights-reserved; access: request or catalogue-only; no localPath
+  # ============================================================
+
+  - id: RU-MS-01
+    type: manuscript
+    subject: Воскресение — Рукопись 3 (второй вариант начала романа); dated 26 Dec 1889, Yasnaya Polyana
+    relatedEntity: Tolstoy L.N.
+    relatedEvidence: Earliest dated Resurrection autograph
+    holding: Государственный музей Л.Н. Толстого (ГМТ), Moscow — Отдел рукописей
+    archiveId: ГМТ папки 1388, 4939; KAMIS search match
+    access: request
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoymuseum.ru/about/our-funds/manuscripts/
+    localPath:
+    note: "20 sheets, 4°; opening text dated 26 Dec 1889. Earliest dated Resurrection autograph."
+
+  - id: RU-MS-02
+    type: manuscript
+    subject: Воскресение — Рукопись 11 (позднейший полный список, 15 разделов); dated passages Jan 1895
+    relatedEntity: Tolstoy L.N.
+    relatedEvidence: 446 sheets; near-final chapter structure
+    holding: ГМТ + ИРЛИ (split holding)
+    archiveId: ГМТ папки 1388/4939; ИРЛИ кат. 10402; PSS vol. 33 manuscript no. 11
+    access: request
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-lit.ru/tolstoy/proza/voskresenie/opisanie-rukopisej.htm
+    localPath:
+    note: "446 sheets; 15 sections; multiple hands. PSS vol. 33 apparatus pp. 329–422 is the published textual description."
+
+  - id: RU-MS-03
+    type: proof
+    subject: Корректуры «Воскресения» с цензурными пометами — 1898–1899 гг. (censored chs XXXIX–XL autograph)
+    relatedEntity: Tolstoy L.N.; Нива (А.Ф. Маркс); Holy Synod
+    relatedEvidence: Censor blue-pencil deletions and Tolstoy's counter-revisions for the communion/liturgy scenes; high-value centrepiece target
+    holding: ГМТ — Отдел рукописей, Chertkov archive папки 43–58
+    archiveId: ГМТ Chertkov archive папки 43–58
+    access: request
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoymuseum.ru/about/our-funds/manuscripts/
+    localPath:
+    note: "Priority acquisition target. Not digitised online. Proofs show blue-pencil censor deletions + Tolstoy counter-revisions for Easter service scene (chs XXXIX–XL). Physical access: ГМТ reading room, Prechistenka 11, Moscow."
+
+  - id: RU-ILL-01
+    type: illustration-original
+    subject: «Катюша у пасхальной заутрени» — original drawing, 1898–1899
+    relatedEntity: Pasternak L.O.; Katyusha Maslova
+    relatedEvidence: Opening Easter night scene; Нива 1899 Ch. I–II
+    holding: ГМТ — Фонд живописи и графики
+    archiveId: ГМТ КП-6420/9 АИГ-465; KAMIS ID 22998
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/22998
+    localPath:
+    note: "Italian pencil and white pigment on paper, 26.5 × 39 cm. Featured in 2024 \"Толстой Вас любит\" exhibition."
+
+  - id: RU-ILL-02
+    type: illustration-original
+    subject: "«Подсудимые: Катюша Маслова, Евфимия Бочкова и Симон Картинкин» — original, 1899"
+    relatedEntity: Pasternak L.O.; Katyusha Maslova; trial scene
+    relatedEvidence: Part I courtroom; Koni's legal story as source
+    holding: ГМТ
+    archiveId: ГМТ КП-6420/12 АИГ-468; KAMIS ID 22657
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/22657
+    localPath:
+    note: "Italian pencil, white pigment, charcoal on paper, 39.3 × 26.5 cm."
+
+  - id: RU-ILL-03
+    type: illustration-original
+    subject: «Утро Нехлюдова» — original, 1899
+    relatedEntity: Pasternak L.O.; Nekhlyudov
+    relatedEvidence: Nekhlyudov's morning routine, Part I opening
+    holding: ГМТ
+    archiveId: ГМТ КП-6420/2 АИГ-458; KAMIS ID 22968
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/22968
+    localPath:
+    note: "Italian pencil, white lead, watercolour on paper mounted on cardboard, 33.4 × 39.5 cm."
+
+  - id: RU-ILL-04
+    type: illustration-original
+    subject: «После экзекуции. В больницу» — original, 1898–1899
+    relatedEntity: Pasternak L.O.
+    relatedEvidence: Flogging scene; chapter repeatedly cut by censors and restored — direct evidence of censorship on the illustration series
+    holding: ГМТ
+    archiveId: ГМТ КП-6420/15 АИГ-471; KAMIS ID 22660
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/22660
+    localPath:
+    note: "Italian pencil and white chalk on paper, 29.3 × 39.9 cm. Date 1898–1899."
+
+  - id: RU-ILL-05
+    type: illustration-original
+    subject: «Катюша – сиделка в больнице» — later watercolour revisit, 1915
+    relatedEntity: Pasternak L.O.; Katyusha Maslova
+    relatedEvidence: Part III — Katyusha as hospital nurse on the Siberian march
+    holding: ГМТ
+    archiveId: ГМТ КП-6421/4 АИГ-450; KAMIS ID 30449
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/30449
+    localPath:
+    note: "Watercolour and gouache, 24.5 × 16.5 cm image. 1915 revisit — not the 1899 Нива original."
+
+  - id: RU-ILL-06
+    type: illustration-original
+    subject: «Нехлюдов-студент читает Катюше» — later watercolour, 1917
+    relatedEntity: Pasternak L.O.; Nekhlyudov; Katyusha
+    relatedEvidence: Flashback to student visit to the aunts — first seduction backstory
+    holding: ГМТ
+    archiveId: ГМТ КП-6421/3 АИГ-449; KAMIS ID 30448
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/30448
+    localPath:
+    note: "Watercolour, 15.6 × 25.5 cm. 1917 — not the 1899 Нива original."
+
+  - id: RU-ILL-07
+    type: illustration-original
+    subject: «Нехлюдов у окна девушки» — sketch, 1898–1899
+    relatedEntity: Pasternak L.O.; Nekhlyudov; Katyusha
+    relatedEvidence: Night-window seduction scene sketch
+    holding: ГМТ
+    archiveId: KAMIS ID 70486
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/70486
+    localPath:
+
+  - id: RU-ILL-08
+    type: illustration-original
+    subject: «Нехлюдов среди крестьян» — later watercolour, 1917
+    relatedEntity: Pasternak L.O.; Nekhlyudov
+    relatedEvidence: Part II — Nekhlyudov's land-reform episode
+    holding: ГМТ
+    archiveId: KAMIS ID 30451
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/30451
+    localPath:
+    note: "1917 — same late-watercolour revisit series as RU-ILL-05/06."
+
+  - id: RU-ILL-09
+    type: illustration-original
+    subject: Виньетка к обложке «Воскресения» — cover vignette for 1900 book edition
+    relatedEntity: Pasternak L.O.
+    relatedEvidence: Cover vignette for the Posrednik / Free Word 1900 edition
+    holding: ГМТ
+    archiveId: Part of КП-6420 group; KAMIS search result
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT?query=%D0%9F%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D0%BA+%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5
+    localPath:
+
+  - id: RU-JRN-01
+    type: journal-page
+    subject: Нива 1899 №№ 1–26 — complete set with first publication of Воскресения
+    relatedEntity: А.Ф. Маркс (publisher); Pasternak L.O. (illustrator)
+    relatedEvidence: Serial publication Mar–Dec 1899; printed with censorship omissions; issues 11–52 carry the novel
+    holding: ГМТ — Фонд редкой книги
+    archiveId: KAMIS confirmed; КП number not exposed
+    access: catalogue-only
+    rights: rights-reserved (museum copy)
+    licence: PD for 1899 text; museum copy rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT?query=%D0%9D%D0%B8%D0%B2%D0%B0+%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9+1899
+    localPath:
+    note: "496 pp., St Petersburg. Full digital archive of Нива at eivis.ru (East View subscription, not open access)."
+
+  - id: RU-BK-01
+    type: rare-book
+    subject: "Толстой Л.Н. Воскресение. Purleigh: Свободное Слово, 1900 (4th ed.) with 33 Pasternak illustrations"
+    relatedEntity: Pasternak L.O.; Chertkov V.G.
+    relatedEvidence: First book edition with Pasternak illustrations; published outside censorship reach
+    holding: ГМТ — Фонд редкой книги
+    archiveId: KAMIS 34-item "Воскресение" result set; КП not retrieved
+    access: catalogue-only
+    rights: rights-reserved (museum copy)
+    licence: PD (1900 text + illustrations); museum copy rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT?query=%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5
+    localPath:
+    note: "Museum also holds English (NY/London 1899), German and French 1900 editions."
+
+  - id: RU-PRT-01
+    type: portrait
+    subject: Портрет А.Ф. Кони — pencil drawing by I. E. Repin
+    relatedEntity: Koni A.F.
+    relatedEvidence: Koni's conversation with Tolstoy at Yasnaya Polyana, June 1887, generated the novel's plot; ГМТ pencil drawing is distinct from the oil portrait at ГТГ
+    holding: ГМТ — Фонд живописи и графики
+    archiveId: ГМТ КП-3944 АИГ-524; KAMIS ID 30523
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/30523
+    localPath:
+    note: "Pencil on paper, 35.1 × 22.3 cm. Distinct from the Tretyakov Gallery oil portrait (RU-PRT-02)."
+
+  - id: RU-PRT-02
+    type: portrait
+    subject: Репин И.Е. Портрет А.Ф. Кони — oil on canvas, 1898 (Tretyakov Gallery)
+    relatedEntity: Koni A.F.
+    relatedEvidence: "Painted 1898 — same year Tolstoy was deep in Resurrection revisions. Note: Commons has an open reproduction (koni-repin-1898) of this work."
+    holding: Государственная Третьяковская галерея (ГТГ), Moscow
+    archiveId: ГТГ inv. not retrieved; WikiArt confirms 65 × 49 cm, oil on canvas
+    access: request (ГТГ reproduction dept)
+    rights: rights-reserved (ГТГ)
+    licence: rights-reserved
+    usable: no
+    url: https://www.wikiart.org/ru/ilya-repin/portret-a-f-koni-1898
+    localPath:
+    note: "Open Commons reproduction at koni-repin-1898. ГТГ archiveId for reproduction requests."
+
+  - id: RU-PRT-04
+    type: sculpture
+    subject: Голубкина А.С. Бюст В.Г. Черткова — wood sculpture, 1926
+    relatedEntity: Chertkov V.G.
+    relatedEvidence: Commissioned by the Tolstoy Museum; Chertkov organised the uncensored Free Word publication
+    holding: ГМТ — Фонд скульптуры
+    archiveId: ГМТ КП-4525 С-117; KAMIS ID 92152
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/92152
+    localPath:
+    note: "Wood, 70 × 60 × 47 cm. ГРМ holds a separate bronze cast (СО-19)."
+
+  - id: RU-PRT-05
+    type: ephemera
+    subject: Кони А.Ф. — визитная карточка (visiting card, late 19th c.)
+    relatedEntity: Koni A.F.; Tolstoy
+    relatedEvidence: From Tolstoy's Khamovniki estate collection; documents personal contact between Koni and Tolstoy
+    holding: ГМТ — Усадьба «Хамовники»
+    archiveId: KAMIS ID 5951
+    access: catalogue-only
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: no
+    url: https://tolstoy-iss.kamiscloud.ru/entity/OBJECT/5951
+    localPath:
+
+  # ============================================================
+  # GROUP 4 — PRINT ARTEFACTS (edition scans, document scans)
+  # ============================================================
+
+  - id: archive-henderson-1900-en
+    type: book-edition-scan
+    subject: Resurrection — London, Francis Riddell Henderson, 1900; 33 Pasternak illustration plates; Louise Maude translation
+    relatedEntity: Louise Maude (translator); Leonid Pasternak (illustrator); Henderson (publisher)
+    relatedEvidence: First London English edition; most important illustrated English edition; 33 Pasternak plates as published; published in aid of the Doukhobors
+    holding: Internet Archive (Cornell University Library scan)
+    archiveId: cu31924027464647
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/cu31924027464647
+    localPath: visuals/archive-cu31924027464647-cover.jpg
+    note: "Cover + title-page cached (cover.jpg, titlepage.jpg, titlepage-raw.gif). PDF 19.3 MB at archive.org. Contains the 33 Pasternak plates in full. RECOMMENDED EMBED: publication history section (title page)."
+
+  - id: archive-doddmead-1900-en
+    type: book-edition-scan
+    subject: Resurrection — Dodd Mead & Co., New York, 1900; Maude translation; first American edition
+    relatedEntity: Louise Maude (translator); Dodd, Mead & Company (publisher)
+    relatedEvidence: First American edition; copyright dated 1899
+    holding: Internet Archive (University of California Libraries)
+    archiveId: resurrectionnove00tols
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/resurrectionnove00tols
+    localPath: visuals/archive-resurrectionnove00tols-cover.jpg
+    note: "Cover + title-page cached."
+
+  - id: archive-crowell-1899-en
+    type: book-edition-scan
+    subject: Resurrection — T.Y. Crowell, New York, 1899; Maude translation; earliest dated American printing
+    relatedEntity: Louise Maude (translator); T.Y. Crowell (publisher)
+    relatedEvidence: American publication race (simultaneous with serialisation)
+    holding: Internet Archive
+    archiveId: resurrection00tols
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/resurrection00tols
+    localPath: visuals/archive-resurrection00tols-cover.jpg
+    note: "Cover + title-page cached."
+
+  - id: archive-crowell-1911-delano-en
+    type: book-edition-scan
+    subject: Resurrection — T.Y. Crowell, New York, c.1911; Aline Delano translation; Pasternak drawing frontispiece
+    relatedEntity: Aline P. Delano (translator); Leonid Pasternak (illustrator); T.Y. Crowell (publisher)
+    relatedEvidence: Pasternak illustration reuse in American market
+    holding: Internet Archive (California Digital Library)
+    archiveId: resurrection00tolsrich
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/resurrection00tolsrich
+    localPath: visuals/archive-resurrection00tolsrich-cover.jpg
+    note: "Cover + title-page cached."
+
+  - id: archive-ladyschnikow-1912-ru
+    type: book-edition-scan
+    subject: Воскресение — J. Ladyschnikow Verlag, Berlin, 1912; émigré Russian-language reprint
+    relatedEntity: J. Ladyschnikow (publisher, Berlin)
+    relatedEvidence: Uncensored Russian text circulation outside Russia; Berlin émigré press
+    holding: Internet Archive (University of Toronto, Robarts Library)
+    archiveId: voskresenieroman00tols
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/voskresenieroman00tols
+    localPath: visuals/archive-voskresenieroman00tols-cover.jpg
+    note: "Cover + title-page (jpg + gif) cached. 558 pp., Russian text."
+
+  - id: archive-auferstehung-tronin-1900-de
+    type: book-edition-scan
+    subject: Auferstehung — F. Fontane & Co., Berlin, 1900; Tronin/Frapan translation; first authorised complete German edition
+    relatedEntity: Wadim Tronin (translator); Ilse Frapan (translator); F. Fontane & Co. (publisher, Berlin)
+    relatedEvidence: First authorised complete German translation; made on the author's behalf
+    holding: Internet Archive (NYPL, Google-digitised) AND Wikimedia Commons (PDF upload)
+    archiveId: auferstehung00gragoog (archive.org); File:Auferstehung_(Tolstoy,_Tronin,_Frapan_1900).pdf (Wikimedia)
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US; CC Public Domain Mark 1.0)
+    usable: yes
+    url: https://archive.org/details/auferstehung00gragoog
+    localPath: visuals/archive-auferstehung00gragoog-cover.jpg
+    note: "DEDUP MERGE: archive.org scan (item 6) and Wikimedia Commons PDF (item 9) are the same edition; consolidated. Cover + title-page (jpg + gif) from archive.org cached. Wikimedia title-page 800px also cached as archive-wikimedia-auferstehung-tronin-1900-p1.jpg."
+
+  - id: archive-response-synod-1901
+    type: document-scan
+    subject: Tolstoy's Response to the Synod (Ответ Синоду), 1901 — his reply to the excommunication decree
+    relatedEntity: Leo Tolstoy; Holy Synod of the Russian Orthodox Church
+    relatedEvidence: Synod Определение №557, Feb. 20–22 1901; Tolstoy's excommunication provoked directly by Resurrection's church-service scenes
+    holding: Internet Archive
+    archiveId: ResponseToTheSynod_LevTolstoy
+    access: open
+    rights: public domain
+    licence: PD (Public Domain Mark 1.0)
+    usable: yes
+    url: https://archive.org/details/ResponseToTheSynod_LevTolstoy
+    localPath: visuals/archive-ResponseToTheSynod_LevTolstoy-cover.jpg
+    note: "Cover cached. PDF 356 KB. Contains Tolstoy's written rejoinder; does not contain the original Церковные ведомости №8 decree. RECOMMENDED EMBED: excommunication section."
+
+  - id: archive-halperine-1900-fr
+    type: title-page
+    subject: Résurrection — Halpérine-Kaminsky translation, Part 1; 1900/1943 Geneva reprint
+    relatedEntity: Ely Halpérine-Kaminsky (translator); Bibliothèque de Genève
+    relatedEvidence: French simultaneous publication race; Halpérine-Kaminsky as Tolstoy's principal French translator
+    holding: Wikimedia Commons (scanned by Wikimedia CH from Bibliothèque de Genève)
+    archiveId: File:Tolstoï_-_Résurrection,_trad._Halpérine-Kaminsky,_part_1.pdf
+    access: open
+    rights: public domain
+    licence: PD (CC Public Domain Mark 1.0; pre-1931)
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolsto%C3%AF_-_R%C3%A9surrection%2C_trad._Halp%C3%A9rine-Kaminsky,_part_1.pdf
+    localPath: visuals/archive-wikimedia-halperine-resurrection-fr-p1.jpg
+    note: "Title-page 800px cached. 1943 reprint of 1900 translation. 474 pp. PDF 155 MB at Wikimedia."
+
+  - id: niva-1899-serialisation-provenance
+    type: journal-page
+    subject: «Нива» 1899 serialisation — issues 11–52 (Mar–Dec 1899) with Pasternak illustrations as printed
+    relatedEntity: A.F. Marks (publisher, St Petersburg); Leonid Pasternak (illustrator)
+    relatedEvidence: Censored church-service gap (chs XXXIX–XL cut under Synodal pressure); Pasternak plates in original layout
+    holding: East View Information Services (subscription); HathiTrust (supplement only, unverified)
+    archiveId: East View Niva Digital Archive (full run); HathiTrust uc1.aa0014053508 (supplement)
+    access: request
+    rights: public domain
+    licence: PD (pre-1929, A.F. Marks pub.)
+    usable: partial
+    url: https://www.eastview.com/resources/journals/niva/
+    localPath:
+    note: "East View subscription required (Harvard, Yale, Berkeley, Penn have access). HathiTrust item is likely the annual literary supplement, not the main weekly journal. The censored layout is not in open-access form."
+
+  - id: svobodnoe-slovo-1899-1900-ru
+    type: book-edition-scan
+    subject: «Свободное слово» uncensored Russian editions of Воскресение, 1899–1900 (up to 5 printings, Purleigh/Christchurch)
+    relatedEntity: Vladimir Chertkov (editor/publisher)
+    relatedEvidence: First uncensored complete Russian text; 4th edition includes 33 Pasternak illustrations; smuggled back into Russia
+    holding: "Not located in open-access form. Probable holdings: British Library, Bodleian, Helsinki University Library"
+    archiveId:
+    access: request
+    rights: public domain
+    licence: PD (pre-1929)
+    usable: no
+    url:
+    localPath:
+    note: "Priority target for scan hunt. British Library likely holds Chertkov press output. Emigrantica.ru catalogue was unreachable at time of sweep."
+
+  - id: synod-opredelenie-1901
+    type: document-scan
+    subject: Holy Synod Определение №557, Feb. 20–22 1901 — Tolstoy excommunication, as printed in «Церковные ведомости» №8, 1901
+    relatedEntity: Holy Synod; K.P. Pobedonostsev; Metropolitan Antonii Vadkovsky
+    relatedEvidence: Directly provoked by Воскресение's church-service scene; read from pulpits across Russia
+    holding: Not located in open-access digital form
+    archiveId:
+    access: request
+    rights: public domain
+    licence: PD (pre-1929, government document)
+    usable: no
+    url:
+    localPath:
+    note: "Wikisource (en) holds the transcribed text. No page-scan of Церковные ведомости №8 found open-access. Priority for RNL/RSL microfilm acquisition."
+
+  - id: rusneb-marks-1900-3ed-ru
+    type: book-edition-scan
+    subject: Воскресение — A.F. Marks 3rd edition, St Petersburg 1900; mainstream Russian commercial (censored) text
+    relatedEntity: A.F. Marks (publisher, St Petersburg)
+    relatedEvidence: Censored commercial text — the церковная служба chapter gap visible for comparison with Свободное слово edition
+    holding: Russian State Library (РГБ) / НЭБ
+    archiveId: rusneb.ru catalog 000199_000009_003643295
+    access: open (online reader); PDF download requires НЭБ account
+    rights: public domain
+    licence: PD (pre-1929)
+    usable: partial
+    url: https://rusneb.ru/catalog/000199_000009_003643295/
+    localPath:
+    note: "518 pp. Free online read via НЭБ viewer; no cover image downloadable without account."
+
+  - id: archive-morang-1900-microform-en
+    type: book-edition-scan
+    subject: Resurrection — G.N. Morang, Toronto, 1900; Louise Maude translation; Canadian edition (microform)
+    relatedEntity: Louise Maude (translator); G.N. Morang (publisher, Toronto)
+    relatedEvidence: Canadian simultaneous publication; Doukhobor resettlement to Canada context
+    holding: Internet Archive (CIHM / University of Alberta Libraries)
+    archiveId: cihm_93694
+    access: open
+    rights: public domain
+    licence: PD (pre-1929, US)
+    usable: yes
+    url: https://archive.org/details/cihm_93694
+    localPath:
+    note: "591 pp. Microform scan; no cover image retrieved (blank leader). PDF 47.6 MB."
+
+# ── SCHOLARSHIP — received view (attributed contrast layer) + triangulation ────
+scholarship:
+  summary: >-
+    The received scholarly view, attributed here as a contrast to the primary
+    record, runs: Resurrection is Tolstoy's third and last full-length novel,
+    "usually regarded as inferior to War and Peace and Anna Karenina" yet a
+    sensation on publication that outsold both (Wikipedia; Bartlett 2010). Its
+    centre of gravity is the art-vs-sermon debate — Simmons (1968) calls the
+    didacticism its "major artistic fault"; McLean (Cambridge Companion, 2002)
+    recovers its artistic import; a minority (Aldiss) dissents upward. On
+    genesis, the received view and the corpus PSS commentary agree: the plot came
+    from Koni's Rozalia Oni case (1887); Tolstoy rushed the stalled book in 1898
+    to fund the Doukhobor emigration to Canada, breaking his post-1881 refusal of
+    fees. On the excommunication the conventional account is at its loosest and
+    internally split — the popular line makes the mass-satire chapter the trigger
+    (Bartlett: "finally exasperated by Tolstoy's blistering satire of a mass"),
+    while a more careful strand sets the decree inside the long arc of Tolstoy's
+    heterodoxy, and a revisionist strand inverts the Soviet-PSS Pobedonostsev-as-
+    author line. Money figures for the Doukhobor fund vary by source and are not
+    mutually consistent; the dive anchors only the corpus's per-sheet rate and
+    advance, asserting no single total. All secondary claims attributed; none
+    given byte-fidelity.
+  triangulation:
+    - evidenceRef: diary-1898-07-17-decision
+      conventionalView: >-
+        Standard: Tolstoy decided in 1898 to finish and sell the novel to fund
+        the Doukhobors' move to Canada (Wikipedia; Simmons 1968; Britannica).
+      relation: confirms
+      source: >-
+        English Wikipedia, "Resurrection (Tolstoy novel)"; Simmons 1968,
+        ourcivilisation.com; Britannica. (Extends edge: the dive's PSS-sourced
+        point that the deadline forced the massive expansion into the politically
+        sharp final text is sharper than the handbooks.)
+    - evidenceRef: letter-marks-contract
+      conventionalView: >-
+        Secondary "total raised" figures diverge — Wikipedia "34,200 rubles";
+        gw2ru "about 30,000 rubles… and 22,000 rubles from A. F. Marx."
+      relation: complicates
+      source: >-
+        Wikipedia, "Resurrection (Tolstoy novel)"; gw2ru, "How Leo Tolstoy
+        resettled the Doukhobors in Canada." The round totals are not mutually
+        consistent and none is corpus-anchored; the corpus datum is the
+        per-sheet rate + 12,000 r. advance, not a lump sum.
+    - evidenceRef: communion-service-physical
+      conventionalView: >-
+        Critics register the mass satire as real and as a flaw of taste — Simmons
+        (1968) "a lapse of taste… the blasphemously satiric account"; Bartlett
+        (2010) "blistering satire of a mass." The device is read as Tolstoy's
+        signature остранение (defamiliarisation).
+      relation: confirms
+      source: >-
+        Simmons 1968; Bartlett 2010 (via Goodreads description); "Estranged and
+        Degraded Worlds: The Grotesque Aesthetics of Tolstoy's Resurrection"
+        (academia.edu). Confirms the fact/centrality; complicates the
+        value-judgement (lapse-of-taste vs deliberate technique).
+    - evidenceRef: reply-eucharist-climax
+      conventionalView: >-
+        The popular line makes the communion chapter the trigger of the
+        excommunication (Bartlett 2010; Wikipedia "publication led to" it); a
+        more careful strand attributes the decree to Tolstoy's "broader religious
+        writings" (gw2ru, naming A Confession and What I Believe).
+      relation: contradicts
+      source: >-
+        Bartlett 2010 (Goodreads); Wikipedia; gw2ru, "Why was Tolstoy kicked out
+        of the Russian Orthodox Church?" The dive's primary-record reading
+        contradicts the strong "mass-satire-caused-it" formulation and extends
+        the careful strand with the corpus's long-intent / proximate-occasion
+        distinction.
+    - evidenceRef: commentary-tolchok-publish
+      conventionalView: >-
+        Pobedonostsev's role is genuinely split: (a) "composed by Pobedonostsev"
+        / long advocate (Soviet PSS; Anthony Vadkovsky Wikipedia); (b) revisionist
+        — Metropolitan Antony drove it while Pobedonostsev hesitated/opposed,
+        fearing it would amplify Tolstoy (socialbites.ca).
+      relation: complicates
+      source: >-
+        Anthony Vadkovsky (Wikipedia); socialbites.ca, "Tolstoy Excommunication
+        and Its Aftermath." The two secondary strands contradict each other; the
+        revisionist strand complicates the corpus's authorship attribution. Left
+        contested, not adjudicated — neither label allowed to harden.
+    - evidenceRef: censorship-communion-cut
+      conventionalView: >-
+        Handbooks register heavy censorship but not the granularity — Wikipedia
+        notes parts "censored and shortened" and that the complete Russian text
+        was not published until 1936 (English 1938).
+      relation: extends
+      source: >-
+        English Wikipedia, "Resurrection (Tolstoy novel)." The dive's corpus
+        record is far more precise (specific chapters cut, Bonch-Bruevich's 497
+        distortions / 10,240 words, the parallel-printing leak of censored proofs
+        into the "uncut" Chertkov edition); the secondary view adds the useful
+        1936 RU / 1938 EN first-complete-publication dates.
+    - evidenceRef: diary-1899-12-18-completion
+      conventionalView: >-
+        Dominant verdict: "lesser than the two great novels, because didactic"
+        (Simmons 1968 "major artistic fault"; Wikipedia "usually regarded as
+        inferior"); minority upward dissent (Aldiss); recovery readings (McLean).
+      relation: confirms
+      source: >-
+        Simmons 1968; Wikipedia; McLean in Orwin (ed.), The Cambridge Companion
+        to Tolstoy, 2002. The "rough/unpolished" charge is confirmed by Tolstoy's
+        own contemporaneous diary verdict — a primary datum the criticism rarely
+        cites; the dive extends the debate by grounding it in Tolstoy's words.
+
+# ── WORK RECORD — RECORD-CREATING (no works/ record exists) ────────────────────
+# Proposed path models the actual fiction structure (fiction/novels/<slug>/<Title>.md).
+# Field shapes follow tolstoy-works-schema.md v7 and the existing Anna Karenina record.
+workRecord:
+  recordPath: website/src/works/fiction/novels/resurrection/Resurrection.md
+  workId: resurrection
+  fields:
+    - field: titleRu
+      value: "Воскресение"
+      evidenceRefs: [communion-service-physical, commentary-completion-finish]
+      source: jubilee-edition
+      confidence: high
+      note: "PSS Tom 32 title."
+    - field: titleEn
+      value: "Resurrection"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Standard English title (Maude). Cosmopolitan serialised it as 'The Awakening'."
+    - field: genre
+      value: novel
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Third and last full-length novel."
+    - field: mainCategory
+      value: Fiction
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Matches existing fiction records (Anna Karenina). subcategory: Novels."
+    - field: completionStatus
+      value: complete
+      evidenceRefs: [diary-1899-12-18-completion]
+      source: tolstoy-diaries
+      confidence: high
+      note: "Diary 18 Dec 1899: «Кончил Воскресение»."
+    - field: dateWritingStarted
+      value: "1889"
+      evidenceRefs: [commentary-church-scene-late-addition]
+      source: jubilee-edition
+      confidence: medium
+      note: >-
+        dateWritingStartedApproximate: true. First sustained work 26 Dec 1889
+        (PSS Tom 33, «История писания»); OS companion dateWritingStartedOldStyle
+        1889-12-14. Koni told the plot in June 1887, but the seed letter is in
+        Tom 64 (unswept) — see needsReview.
+    - field: dateWritingCompleted
+      value: "1899-12-30"
+      evidenceRefs: [diary-1899-12-18-completion, commentary-completion-finish]
+      source: tolstoy-diaries
+      confidence: high
+      note: >-
+        dateWritingCompletedOldStyle: 1899-12-18 (the diary «Кончил» date, O.S.).
+        NS 30 Dec 1899 (Julian +12 in the 19th c.). The text itself is dated
+        «16 декабря 1899 года. Конец.» (the last chapters' completion).
+    - field: dateFirstPublished
+      value: "1899-03-25"
+      evidenceRefs: [letter-biryukov-ships]
+      source: jubilee-edition
+      confidence: high
+      note: >-
+        dateFirstPublishedOldStyle: 1899-03-13 (the «Нива» No. 11 serialisation
+        start that Tolstoy himself fixed; letter to Biryukov 16 Dec 1898). NS 25
+        Mar 1899. firstPublishedVenue: «Нива» (A. F. Marks); firstPublishedVenueType
+        journal.
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [letter-marks-contract, censorship-communion-cut]
+      source: jubilee-edition
+      confidence: high
+      note: >-
+        Published in «Нива» in 1899 — but heavily censored. publishedDuringLifetime
+        also true. Full uncensored Russian text only abroad (Chertkov, «Свободное
+        слово») during the lifetime; first complete in Russia 1936 (Jubilee Ed.).
+        Captured in censorshipNotes.
+    - field: censorshipNotes
+      value: >-
+        Serialised censored in «Нива» (1899) under a Marks contract; Tolstoy
+        arranged "domestic" pre-censorship via editor Sementkovsky. V. D.
+        Bonch-Bruevich counted 497 distortions/omissions/paraphrases affecting
+        10,240 words; only 25 of 123 chapters printed without distortion. The
+        prison-church communion chapters (Part I, XXXIX–XL) were cut WHOLESALE,
+        leaving only «Началось богослужение». The complete text was printed
+        simultaneously abroad by Chertkov's «Свободное слово» (Purleigh, Essex);
+        first complete Russian text 1936 (Jubilee Ed.), first complete English
+        1938.
+      evidenceRefs: [censorship-communion-cut, censorship-survival-sentence, letter-marks-censorship]
+      source: jubilee-edition
+      confidence: high
+      note: "Numbers from PSS Tom 33 commentary (Bonch-Bruevich count); attributed."
+    - field: censoredVersionExists
+      value: true
+      evidenceRefs: [censorship-communion-cut]
+      source: jubilee-edition
+      confidence: high
+      note: "Censored «Нива»/Marks line vs uncensored Chertkov «Свободное слово» edition."
+    - field: bans
+      value: >-
+        One entry: banningAuthority "Main Administration for Press Affairs (imperial
+        censorship)"; authorityType imperial-state; jurisdiction Russia; scope
+        passages-cut; banDate 1899 (banDateApproximate true); notes — chs XXXIX–XL
+        cut wholesale from «Нива», ~497 distortions across the novel; complete text
+        only abroad until 1905/1936. (NOT a Holy-Synod ban of the work itself: the
+        1901 Synod act excommunicated the AUTHOR, not the book — kept distinct.)
+      evidenceRefs: [censorship-communion-cut, letter-marks-censorship]
+      source: jubilee-edition
+      confidence: medium
+      note: >-
+        Shaped as the schema bans[] object array. The censor was institutionally
+        aligned with the Synod but the act on the text was state press censorship,
+        not an ecclesiastical ban — see excommunicationRelated below.
+    - field: excommunicationRelated
+      value: true
+      evidenceRefs: [reply-eucharist-climax, commentary-tolchok-publish, censorship-communion-cut]
+      source: jubilee-edition
+      confidence: high
+      note: >-
+        The novel (Toporov caricature + communion satire) was the proximate
+        trigger that made the Synod PUBLISH, in Feb 1901, an excommunication whose
+        doctrinal substance had accumulated since the 1880s. The communion satire
+        is the decree's named «последняя и высшая степень». NOTE the schema's
+        adjacent Anna Karenina record sets this false; here true.
+    - field: relatedWorks
+      value: >-
+        [{id: father-sergius, relationshipType: companion} (the other tale
+        designated for the Doukhobor fund), {id: a-confession, relationshipType:
+        companion}, {id: the-kingdom-of-god-is-within-you, relationshipType:
+        companion}]. (Father Sergius / A Confession / Kingdom of God IDs are
+        proposed; verify slugs against works/ before writing — only the-kingdom-
+        of-god-is-within-you and a confession-equivalent record were seen this
+        session.)
+      evidenceRefs: [diary-1898-07-17-decision, reply-broad-indictment]
+      source: jubilee-edition
+      confidence: medium
+      note: >-
+        Shaped as relatedWorks[] {id, relationshipType}. The church-critique link
+        to A Confession / Kingdom of God reflects the excommunication evidence
+        (the decree's doctrinal substance = those works). Confirm target IDs exist.
+    - field: identifiers.jubileeEdition.volumes
+      value: "32-33"
+      evidenceRefs: [communion-service-physical, commentary-church-scene-late-addition]
+      source: jubilee-edition
+      confidence: high
+      note: "Tom 32 = novel + censorship variants; Tom 33 = redactions + «История писания»."
+    - field: themes
+      value: >-
+        [moral resurrection, church critique, prison and justice, land and
+        property, prostitution, repentance, defamiliarisation, Doukhobors,
+        censorship]
+      evidenceRefs: [communion-cross-gallows, thematic-verdict-error, thematic-single-tax, thematic-ending-new-life]
+      source: tolstoydigital-tei
+      confidence: high
+      note: "Free keyword tags; drawn from the thematic map."
+    - field: synopsis
+      value: >-
+        Prince Nekhlyudov, recognising on a jury the maid he once seduced and
+        ruined, follows her wrongful conviction to Siberia, attempting restitution
+        through the institutions that implicate him — court, prison, land, Church —
+        until his moral "resurrection" arrives privately, through the Gospel, with
+        the ending left open.
+      evidenceRefs: [thematic-verdict-error, thematic-ending-new-life]
+      source: tolstoydigital-tei
+      confidence: high
+      note: "Plain-summary, matches the index's thematic reading."
+
+# ── COVERAGE — one row per spine surface ──────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition (Koni seed, Doukhobor engine, the people)"
+    status: covered
+    note: "Heaviest layer. PSS «История писания» + diaries + letters; ~70 dated facts."
+  - surface: "Communion centrepiece (Part I, chs XXXIX–XLI)"
+    status: covered
+    note: "9 verbatim passages byte-verified; located precisely; head of the dive."
+  - surface: "Redactions & textual history (six redactions)"
+    status: partial
+    note: "Light sample only — the third-redaction church scene (variants 57/58); full six-redaction collation not done."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Marks contract, «Нива» serialisation map, the wholesale communion cut, Chertkov abroad, foreign editions."
+  - surface: "Reception & afterlife"
+    status: partial
+    note: "Chekhov/Stasov/Gorky, censorship-as-reception, opera/stage/film afterlife — but NO named 1899–1900 Russian press reviews recovered."
+  - surface: "Excommunication hypothesis (the marquee question)"
+    status: covered
+    note: "Tested against the decree (quoted in the Reply), Tolstoy's diary, and PSS commentary. Verdict: COMPLICATES."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Heavy sweep — 85 distinct items, ~66 openly usable and cached. Censored-proofs autograph catalogue-only."
+  - surface: "Scholarly context"
+    status: covered
+    note: "7 triangulation entries; received view attributed as contrast, not adopted."
+
+# ── CONTRADICTIONS — intra-corpus only ────────────────────────────────────────
+# The money-total inconsistency is SCHOLARSHIP (secondary), not corpus — it lives
+# in needsReview, not here. One genuine intra-corpus textual variant is noted.
+contradictions:
+  - claim: >-
+      The completion-diary verdict appears in two corpus forms: the diary file
+      (Tom 53) reads «Нехорошо. Не поправлено. Поспешно. […] не интересует более»
+      (period-separated, «более»); the «История писания» commentary (Tom 33)
+      quotes it as «Нехорошо, не поправлено, поспешно; […] не интересует больше»
+      (comma-separated, «больше»).
+    correction: >-
+      Not a substantive contradiction — a transcription/recension variant of the
+      same diary entry. Each form is cited from its own file (diary-1899-12-18-
+      completion from Tom 53; commentary-completion-finish from Tom 33), so both
+      are byte-exact to their source. The index.md uses the diary (period) form.
+    evidenceRef: diary-1899-12-18-completion
+
+# ── NOT COVERED ───────────────────────────────────────────────────────────────
+notCovered:
+  - "Named Russian press reviews, 1899–1900 (Русская мысль, Новое время, Вестник Европы) — would require period press archives."
+  - "The Koni genesis letter (Tolstoy ↔ Koni, 1887) — in PSS Tom 64, outside the swept Toms; the seed quotation is reported via editorial commentary, not the letter."
+  - "The full six-redaction collation of the communion scene's drafts — only a light third-redaction sample was taken."
+  - "The autograph of the censored church chapters (blue-pencilled proofs of chs XXXIX–XL) — held at the State Tolstoy Museum, not digitised (RU-MS-03, catalogue-only)."
+  - "Aylmer Maude's Life of Tolstoy — the obvious first-hand secondary source on the novel and the Doukhobor fund; not consulted this session."
+  - "The Свободное слово complete Russian editions — not located in open-access form (catalogue-only)."
+
+# ── NEEDS REVIEW ──────────────────────────────────────────────────────────────
+needsReview:
+  - item: >-
+      The Doukhobor-fund "total raised" is inconsistent across secondary sources
+      (Wikipedia 34,200 r.; others ≈30,000 r.; 22,000 r. attributed to Marks; the
+      40,000 r. shortfall target in v88_541). Do NOT assert a single figure. The
+      corpus anchors only the 1,000 r./sheet rate and the 12,000 r. advance
+      (letter-marks-contract) plus documented routed sums (2,000 r. via v72_056;
+      8,000+2,000 via v88_545; 3,000 r. Konshin via v88_548). Reception extract
+      cites 34,200 r. from PSS — reconcile before quoting any total.
+    phase: scholarship/reception
+    why: "Secondary money figures are not mutually consistent; risk of asserting a false total."
+  - item: >-
+      Pobedonostsev's exact role in the decree (author/prime-mover per Soviet PSS
+      vs reluctant participant who feared amplifying Tolstoy, per a revisionist
+      strand) is contested. Report attributed; do not adjudicate; do not let
+      either label harden.
+    phase: scholarship/excommunication
+    why: "Corpus (Soviet PSS) and later accounts disagree; the revisionist line partly serves a rehabilitative frame."
+  - item: >-
+      The Synod decree's own wording (beyond Tolstoy's quotations of it) is
+      web-sourced (Skvortsov 1901 via azbyka.ru) and NOT corpus-verified. Only the
+      decree passages Tolstoy quotes verbatim inside his Reply (Tom 34) are in the
+      corpus and cited as evidence. The «священнейшее» (Tolstoy) vs «величайшее»
+      (Skvortsov) Eucharist-clause variant is flagged.
+    phase: excommunication
+    why: "No corpus extract exists for the full decree text; keep the web wording out of the evidence ledger."
+  - item: >-
+      The Koni 1887 genesis letter (Tom 64) is unswept; the seed quotation is
+      reported only via the «История писания» editorial commentary, not the letter
+      itself. A future pass should fetch Tom 64 for the primary attestation.
+    phase: genesis
+    why: "The plot-origin primary source is outside the swept Toms."
+  - item: >-
+      Named 1899–1900 Russian press reviews (Русская мысль, Новое время, Вестник
+      Европы) were not recovered — a reception gap. The art-vs-sermon debate is
+      documented mostly via English/retrospective sources.
+    phase: reception
+    why: "Period Russian press archives not searched this session."
+  - item: >-
+      The censored-chapters autograph (RU-MS-03, blue-pencilled proofs of chs
+      XXXIX–XL at the State Tolstoy Museum) is the highest-value visual but is not
+      digitised — request-only. Provenance recorded for a future reproduction
+      request.
+    phase: visuals
+    why: "Highest-value manuscript visual is catalogue-only, not retrievable."
+  - item: >-
+      workRecord relatedWorks target IDs (father-sergius, a-confession,
+      the-kingdom-of-god-is-within-you) are proposed; confirm the slugs exist in
+      website/src/works/ before writing the record. Only a Confession record and a
+      Kingdom-of-God record were observed this session; no Father Sergius record
+      was confirmed.
+    phase: synthesis/workRecord
+    why: "relatedWorks must resolve to existing work IDs; unverified slugs would dangle."
+
+# ── ARCHIVES CONSULTED ────────────────────────────────────────────────────────
+archivesConsulted:
+  - "tolstoydigital-TEI corpus (local clone, primary-sources/) — PSS Toms 32, 33, 34, 53, 54, 71, 72, 88; extracted with extract_tei.py --choice=reg --notes=auto."
+  - "PSS Jubilee Edition PDFs (local, vol01/02/03/19/20/36/47/53) — informational page-mapping, not re-extracted."
+  - "Wikimedia Commons (×2 sweeps: Pasternak illustrations + Tolstoy-circle photographs/portraits)."
+  - "Russian museum catalogues — ГМТ KAMIS (tolstoy-iss.kamiscloud.ru), ГТГ, ГРМ — manuscripts/proofs/originals, request- or catalogue-only."
+  - "Internet Archive / archive.org — English (Henderson, Dodd Mead, Crowell, Morang), German (Fontane), Russian (Ladyschnikow) editions + Response to the Synod."
+  - "Open web (attributed secondary) — English/Russian Wikipedia, Simmons 1968, Cambridge Companion abstract, gw2ru, socialbites.ca, azbyka.ru (Skvortsov decree, web-sourced)."
+  - "NOT consulted: PSS Tom 64 (Koni 1887 letter); Tom 89 (Chertkov, beyond content-grep); East View «Нива» digital archive (subscription); period Russian press archives; Aylmer Maude, Life of Tolstoy."
+
+# ── REFERENCES ────────────────────────────────────────────────────────────────
+references:
+  primary:
+    - "Воскресение, PSS Tom 32, pp. 3–445 (v32_003_445_Voskresenie)."
+    - "Воскресение. Цензурные варианты, PSS Tom 32, pp. 471–505."
+    - "The six redactions, PSS Tom 33, pp. 3–321."
+    - "N. V. Gorbachev, «История писания и печатания \"Воскресения\"», PSS Tom 33, pp. 329–422."
+    - "Diaries, PSS Tom 53 (1895–1899) and Tom 54 (1900–1903)."
+    - "Letters to A. F. Marks and P. I. Biryukov (PSS Toms 71–72) and to V. G. Chertkov (PSS Tom 88)."
+    - "Ответ на определение Синода от 20–22 февраля…, PSS Tom 34, pp. 245–253 (+ commentary, pp. 575–577)."
+  background:
+    - "Simmons, Ernest J. (1968). Introduction to Tolstoy's Writings, ch. 12 'Resurrection' (ourcivilisation.com)."
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life (Houghton Mifflin Harcourt / Profile) — excommunication framing, via description; unverified to page."
+    - "McLean, Hugh. 'Resurrection,' in Donna Tussing Orwin (ed.), The Cambridge Companion to Tolstoy (CUP, 2002)."
+    - "Skvortsov, V. M. (1901). По поводу отпадения… графа Льва Николаевича Толстого — the Synod decree as printed (web-sourced via azbyka.ru; NOT corpus-verified)."
+    - "English & Russian Wikipedia: 'Resurrection (Tolstoy novel)', 'Anthony Vadkovsky', 'Konstantin Pobedonostsev', «Воскресение (роман)» — tertiary, consensus formulations + 1936/1938 dates."
+    - "gw2ru.com (Russia Beyond successor) — Doukhobor resettlement and church-scandal summaries; journalistic."
+    - "socialbites.ca — the revisionist Pobedonostsev strand; journalistic summary of unnamed scholarship."
+    - "Full secondary list with URLs in extracts/_scholarship.md and extracts/_reception.md."
