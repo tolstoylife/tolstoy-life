@@ -876,9 +876,9 @@ needsReview:
     phase: 2
     why: "TEI (17 heads) and the PSS manuscript description (18 chapters) differ by one; the dive states this honestly and numbers per the TEI."
 
-  - item: "Subcategory for the works record — placed under Essays and Criticism following What Is Art?. The essay is also classified as 'religious' (PSS) and 'philosophical'. Johann should confirm the preferred subcategory."
+  - item: "Subcategory for the works record — provisionally 'Essays and Criticism' (following What Is Art?). Johan reviewed 2026-06-08: NOT 'Treatises'; the works-record category/subcategory taxonomy gets a dedicated cross-dive pass later (TODO.md §8). Left as 'Essays and Criticism' for now."
     phase: 4
-    why: "Schema judgment — not a mechanical question."
+    why: "Schema judgment — deferred to Johan's cross-dive category review."
 
   - item: "Biryukov's role description — the PSS apparatus says 'co-translator' (Bienstock + Biryukov); Tolstoy's letter to Biryukov (31 Dec 1901) mentions him reviewing a Binshtok translation's religious-philosophical section, not necessarily co-authoring. The distinction between reviser and co-translator of the French edition needs confirmation against the French title page."
     phase: 3

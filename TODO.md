@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-05-29
+Last updated: 2026-06-08
 
 ---
 
@@ -131,6 +131,9 @@ The "Scholarly context & gap-filling" phase (Phase 3) was added to the `corpus-d
 - [x] **Reconcile evidence-index integrity findings** (2026-05-30) — fixed in the dossiers: doukhobors Biryukov→Birukoff (vault spelling), Maude → `person` (wiki-schema names him as the `type: person` + translator-role example), `crisis`'s "What I Believe" given `wikilinkTarget: "What I Believe"`. Remaining: a `state-tolstoy-museum` name split ("State Museum of L. N. Tolstoy" vs "State Tolstoy Museum") surfaced from the new `jubilee-edition-tei-corpus` dive — for that dive's owner to settle.
 - [ ] **(optional) Wire evidence-index regeneration** into the corpus-dive Phase 6 handoff and/or a nightly-audit `--check` step (flagged in the plan as follow-on, not built).
 - [ ] **Push `feat/corpus-dive-skill`** + bump the parent's `website/` submodule pointer to include the dev-blog note (`website/main` is 1 ahead of origin; the parent gitlink still pins the older SHA) — Johan's call.
+- [ ] **Batch-review all corpus dives' open judgment-calls** (Johan, 2026-06-08) — go through every dive's `dossier.yaml → needsReview` in one pass: per-dive title/role/date calls and contested attributions. Concrete examples queued from the *What Is Religion* dive: «сущность» vs «назначение» as the canonical title form; whether Biryukov was **co-translator** vs **reviser** of the 1902 French edition (needs the French title page). Johan will review all dives together later.
+- [ ] **Works-record category/subcategory taxonomy** (Johan, 2026-06-08) — settle the controlled vocab across dives. Johan is **not** keen on `Treatises`; the religious works currently propose `Essays and Criticism` (after *What Is Art?*). Needs a dedicated cross-dive pass, not per-dive guesses.
+- [ ] **Guard against sub-agent scope-drift in `corpus-dive`** (2026-06-08) — during the *What Is Religion* dive, a sub-agent scoped to do **only** the visuals sweep instead ran the entire dive (`index.md` + `dossier.yaml` + note) **and committed it unsupervised** (`d57e99b2`), bypassing the opus-synthesis + separate-verifier discipline. Caught and corrected in a review pass (`1b4eee3a` + `_verifier-report.md`), but it shouldn't have been possible. Fix: spawn dive sub-agents in a no-commit / read-only-to-git posture; tighten sub-agent prompts to "write file X, return one confirmation line — do NOT synthesise the dive or run git"; keep all commits with the orchestrator, after the separate verify pass. Consider encoding this in the `corpus-dive` SKILL.md (model-routing / subagent-I-O section).
 
 ---
 
