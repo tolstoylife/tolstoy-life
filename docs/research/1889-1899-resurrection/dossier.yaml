@@ -822,7 +822,7 @@ entities:
     dependsOn: []
 
   - name: "Doukhobors"
-    wikiType: concept
+    wikiType: group
     wikilinkTarget: "Doukhobors"
     vaultStatus: missing
     role: >-
@@ -912,24 +912,28 @@ entities:
     dependsOn: ["Resurrection (Воскресение)"]
 
   - name: "Katyusha Maslova"
-    wikiType: concept
+    wikiType: character
     wikilinkTarget: "Katyusha Maslova"
     vaultStatus: missing
     role: >-
-      The novel's heroine (a character, not a historical person — routed as
-      concept); rooted in the Rozalia Oni case. Peripheral to ingestion.
+      The novel's heroine; rooted in the Rozalia Oni case (told to Tolstoy by the
+      jurist Koni). prototypes[]: Rozalia Oni (basis: documented). Earns a
+      `character` page under the tiering rule (principal + documented prototype).
     sources: [jubilee-edition, tolstoydigital-tei]
     evidenceRefs: [thematic-verdict-error]
     ingestionPriority: 3
     dependsOn: ["Resurrection (Воскресение)"]
 
   - name: "Prince Dmitri Nekhlyudov"
-    wikiType: concept
-    wikilinkTarget: "Dmitri Nekhlyudov"
+    wikiType: character
+    wikilinkTarget: "Dmitri Nekhlyudov (Resurrection)"
     vaultStatus: missing
     role: >-
-      The novel's protagonist (a character → concept); heavily autobiographical,
-      with traits of Chertkov (editors' conjecture). Peripheral to ingestion.
+      The novel's protagonist; heavily autobiographical, with traits of Chertkov
+      (editors' conjecture). prototypes[]: Leo Tolstoy (basis: autobiographical,
+      certainty: probable); Vladimir Chertkov (basis: editorial, certainty:
+      conjectured). Title disambiguated — Tolstoy reused the Nekhlyudov name across
+      several distinct works. Earns a page (principal + prototype).
     sources: [jubilee-edition, tolstoydigital-tei]
     evidenceRefs: [thematic-ending-new-life, thematic-single-tax]
     ingestionPriority: 3

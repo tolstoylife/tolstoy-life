@@ -705,35 +705,36 @@ entities:
     dependsOn: []
 
   - name: Pozdnyshev
-    wikiType: concept
+    wikiType: character
     wikilinkTarget: "Pozdnyshev"
     vaultStatus: missing
     role: >-
-      STOPGAP ROUTING — the novella's narrator-murderer. No `character` wiki type
-      exists; routed as `concept` pending the schema decision (see needsReview).
+      The novella's narrator-murderer. prototypes[]: Leo Tolstoy (partial; basis:
+      autobiographical, certainty: conjectured). Earns a `character` page
+      (principal + narrator).
     sources: []
     evidenceRefs: [ks-doctrine-passion-evil, ks-complete-madness, ks-opened-eyes]
     ingestionPriority: 1
     dependsOn: []
 
   - name: Pozdnyshev's wife
-    wikiType: concept
+    wikiType: character
     wikilinkTarget: "Pozdnyshev's wife"
     vaultStatus: missing
-    role: "STOPGAP ROUTING — the murdered wife; unnamed in the text. Routed as `concept` (no `character` type)."
+    role: "The murdered wife; unnamed in the text. Secondary character; may fold into the Pozdnyshev page under the tiering rule rather than stand alone."
     sources: []
     evidenceRefs: [diary-1889-07-04-conception, ks-murder-dagger]
     ingestionPriority: 2
     dependsOn: [Pozdnyshev]
 
   - name: Trukhachevsky
-    wikiType: concept
+    wikiType: character
     wikilinkTarget: "Trukhachevsky"
     vaultStatus: missing
     role: >-
-      STOPGAP ROUTING — the violinist; the musician-rival who replaced the
-      earlier painter-rival when the Beethoven sonata entered (3rd redaction).
-      Routed as `concept` (no `character` type).
+      The violinist; the musician-rival who replaced the earlier painter-rival
+      when the Beethoven sonata entered (3rd redaction). Secondary character; may
+      fold into the Pozdnyshev page under the tiering rule.
     sources: []
     evidenceRefs: [ks-music-irritating]
     ingestionPriority: 2
@@ -862,7 +863,7 @@ entities:
     dependsOn: []
 
   - name: The Shakers
-    wikiType: concept
+    wikiType: group
     wikilinkTarget: "Shakers"
     vaultStatus: missing
     role: "The celibate sectarian community whose literature, arriving mid-composition (spring 1889), reinforced the total-chastity ideal."
@@ -1345,8 +1346,8 @@ coverage:
     status: covered
     note: "Censorship-as-reception; the moral panic; Sofia's counter-fictions (via scholarship); excommunication contribution noted."
   - surface: "Characters & prototypes"
-    status: partial
-    note: "Pozdnyshev / wife / Trukhachevsky routed as `concept` stopgaps (no `character` wiki type); prototypes documented."
+    status: covered
+    note: "Pozdnyshev / wife / Trukhachevsky routed as `character` (wiki-schema v1.4); prototypes documented for the `prototypes[]` field."
   - surface: "Themes"
     status: covered
     note: "Sexuality, chastity-as-ideal, marriage, music/involuntary emotion, the unreliable confessor."
@@ -1385,11 +1386,13 @@ notCovered:
 # ============================================================================
 needsReview:
   - item: >-
-      No `character` (or `group`) wiki type exists. Pozdnyshev, his wife, and
-      Trukhachevsky are routed as `concept` stopgaps. Pending decision: add a
-      `character` type, or fold principal characters into the work's own page.
+      RESOLVED 2026-06-09 — the `character` and `group` wiki types were added
+      (wiki-schema.md v1.4). Pozdnyshev, his wife, and Trukhachevsky are now
+      `character`; the Shakers are `group`. Characters earn a standalone page by
+      the tiering rule; prototype links are recorded via the `prototypes[]` field
+      (basis + certainty enums).
     phase: "synthesis / schema"
-    why: "Same gap the Resurrection dive flagged; a schema decision for the reader (memory feedback_explain_schema_before_edit). Do NOT invent a type."
+    why: "Schema decision made with the reader (feedback_explain_schema_before_edit); routing corrected in this dossier."
   - item: >-
       The 15 Jan 1890 diary on readers who treat Pozdnyshev as exceptional
       (Samarin, Storozhenko, Lopatin) was surfaced by the sweep but the cited

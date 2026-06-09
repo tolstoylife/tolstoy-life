@@ -101,7 +101,7 @@ So the flat "Pozdnyshev = Tolstoy" identification is **`complicates`d** (the doc
 
 ## Characters & prototypes
 
-The novel-dive surfaces fictional characters that the wiki schema has no type for (no `character` or `group` type exists). They are routed as `concept` with a note and flagged in `needsReview`; this dive does not invent a schema type — a pending decision (memory `feedback_explain_schema_before_edit`).
+The novel-dive surfaces fictional characters and a real-world sect. These were originally routed as `concept` stopgaps and flagged in `needsReview`; the schema question was **resolved 2026-06-09** by adding a `character` type (with a structured `prototypes[]` field for the fiction→life edge) and a `group` type (`wiki-schema.md` v1.4). Pozdnyshev, his wife, and Trukhachevsky are now `character`; the Shakers are `group`.
 
 - **Pozdnyshev (Позднышев)** — the narrator-murderer; named from the first redaction, renamed "Stepanov" in the third, restored thereafter. His doctrine is the novella's argument; his derangement is its frame.
 - **Pozdnyshev's wife** — unnamed; the diaries (4, 7 July) show Tolstoy working to make her culpability shared, not assigned ("He cultivated her sensuality… he killed her before").

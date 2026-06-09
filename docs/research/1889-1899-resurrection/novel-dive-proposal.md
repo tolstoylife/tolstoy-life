@@ -35,6 +35,8 @@ The work-dive spine was tuned on the non-fiction treatises, where the textual la
 
 ## A schema decision the novel-dive forces (needs a go before building)
 
+> **Update 2026-06-09 — RESOLVED (gate cleared).** Decided **option (a)** with the reader: added a `character` wiki type (minted by a *tiering rule* — principal, documented prototype, or recurs across works) carrying a structured `prototypes[]` field (`person` + `name` + `basis`/`certainty` evidence enums — the fiction→life edge), **and** a `group` type for real-world peoples/sects (Doukhobors, Shakers). The reverse direction is left to Obsidian backlinks (no field added to `person`). See `website/schema/wiki-schema.md` v1.4; the *Resurrection* and *Kreutzer* dossiers were re-routed off the `concept` stopgap. The `--novel` skill should emit character rows with `wikiType: character` (+ `prototypes[]`) and sects with `wikiType: group`. Gate (2) — standalone-skill-vs-mode — is still open and belongs to the build session.
+
 Fictional **characters** (Maslova, Nekhlyudov) have no home in the 10-type wiki schema — the Resurrection dossier routed them as `concept`, which the verifier flagged as a stopgap that will mis-shape their eventual pages. Before the `--novel` mode is built (and before these entities are ingested), decide one of:
 - **(a)** add a `character` wiki type (and possibly a `group` type — the Doukhobors are a people/sect, also routed as `concept`); or
 - **(b)** fold a novel's principal characters into the work's own wiki page rather than giving them standalone pages.
