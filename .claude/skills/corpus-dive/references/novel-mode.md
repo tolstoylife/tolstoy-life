@@ -127,7 +127,11 @@ Route by **what the figure actually is** — the leads are *not* always fictiona
 - **Historical person appearing as themselves** → `wikiType: person`, **not** `character`. *Hadji
   Murat*'s Nicholas I, Shamil, Vorontsov, and Loris-Melikov are `person`; only the invented Butler and
   Marya Dmitrievna are `character` — a far smaller `character` blast radius than the wholly-invented
-  casts of *Resurrection* and *Kreutzer*.
+  casts of *Resurrection* and *Kreutzer*. The same holds for the **middle case** between those poles: a
+  *single* real figure appearing as himself inside an *otherwise wholly-fictional* cast still routes
+  `person`, not `character` — *Father Sergius*'s Nicholas I (the censored love-affairs strand) is
+  `person`, while Kasatsky/Sergius, Mary, and Pashenka remain `character`. The presence of one
+  historical walk-on does not make the cast "historical"; route each figure by what it is.
 - **Real-world people / sect / ethnic group** → `wikiType: group` (the Doukhobors, the Shakers, the
   Caucasus highlanders), distinct from a `concept` (an idea) or `institution` (an organisation).
 
@@ -159,8 +163,10 @@ The three runs surfaced variations the mode must **flex** to, not bake in:
 
 ## Reference implementations
 
-Each was run by hand, applying this re-weighting manually; the mode codifies what they share. Read the
-nearest analogue when scoping a new novel-dive.
+The first three were run **by hand**, applying this re-weighting manually; the mode codifies what they
+share. *Father Sergius* (2026-06-09) was the **first run under the codified mode** — a validation, not
+a derivation — and it held up with no overlay change needed. Read the nearest analogue when scoping a
+new novel-dive.
 
 - `docs/research/1889-1899-resurrection/` — wholly-invented cast; marquee = **`complicates`**
   (communion → excommunication, with the Pobedonostsev-caricature axis). Pre-schema-v1.4 run: its
@@ -172,5 +178,10 @@ nearest analogue when scoping a new novel-dive.
   `person`; Butler/Marya Dmitrievna → `character`); heaviest genesis (the source-research campaign);
   posthumous passages-cut censorship; marquee = **`extends`** (the *What Is Art?* contradiction was
   lived, not reconciled).
+- `docs/research/1890-1898-father-sergius/` — **the mode's first validation run** (above three
+  *derived* it; this one ran under the codified overlay). Wholly-fictional cast with one historical
+  walk-on → the **person-in-a-fictional-cast middle case** (Nicholas I, the censored love-affairs
+  strand → `person`); marquee = **`confirms` + `extends`** (the driver is слава людская / vanity, not
+  lust; the cure is anonymity, not asceticism); finished 1898 for the Doukhobor emigration fund.
 
 The written proposal that specced this mode: `docs/research/1889-1899-resurrection/novel-dive-proposal.md`.
