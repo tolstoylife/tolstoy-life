@@ -231,6 +231,9 @@ TEI corpus + Jubilee Edition PDFs, producing a tracked `docs/research/<topic>/` 
 ingestion-ready, modeled on the existing `docs/research/` dives. Runs unattended with `--auto`;
 batch overnight via `docs/research/lib/corpus-dive-queue.sh`. Canonical TEI extractor:
 `docs/research/lib/extract_tei.py`. Design: `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.
+A `--novel` mode (overlay `.claude/skills/corpus-dive/references/novel-mode.md`) re-weights the spine
+for a full novel/novella dive — lighter close-read, heaviest genesis & reception, plus
+character/theme/marquee sections.
 
 ---
 
