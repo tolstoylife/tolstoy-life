@@ -1,0 +1,1415 @@
+topic:
+  slug: 1896-1904-hadji-murat
+  title: "Hadji Murat (Хаджи-Мурат) — a novel-dive"
+  question: >-
+    Is Hadji Murat a betrayal or a fulfilment of What Is Art?? Tolstoy wrote his
+    most sensuous late fiction in secret (1896–1904) while publicly teaching that
+    art must be moral, universal, and "infectious" — and he called writing it
+    self-indulgence. Read the novella against the composition record (the heaviest
+    genesis + source-research layer in his fiction) to test that relation, and to
+    render the mirrored critique of Nicholas I and Shamil as Tolstoy built it.
+  date: 2026-06-09
+  period: "Prophet period (post-1880); composed 1896–1904"
+  corpusSurface: >-
+    PSS Tom 35 (the novella pp. 5–118; working notes pp. 275–283; variants
+    pp. 284–556; commentary: «История писания» pp. 583–629, «История печатания»
+    pp. 629–631, «Список источников» pp. 631–633, «Примечания» pp. 634–643,
+    glossary of mountaineer words pp. 644–647, «Описание рукописей» pp. 648–666);
+    diaries Tom 53–55 (1895–1904); letters Tom 69–75 (1896–1904).
+  dateRange: "1896–1904 (composition); published posthumously 1912"
+
+# ============================================================================
+evidence:
+
+  # ---- Textual: the thistle frame ----
+  - id: hm-thistle-notsurrender
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Но он всё стоит и не сдается человеку, уничтожившему всех его братий кругом его."
+    quoteEn: >-
+      (working English) But it still stands and does not surrender to man, who has
+      destroyed all its brothers around it.
+    significance: >-
+      The crushed-but-standing "Tatar" thistle of the prologue — the work's
+      controlling image of a life-force that will not yield, explicitly equated
+      with Hadji Murat.
+    facsimile: ""
+
+  - id: hm-thistle-payoff
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Вот эту-то смерть и напомнил мне раздавленный репей среди вспаханного поля."
+    quoteEn: >-
+      (working English) It was this very death that the crushed thistle in the
+      middle of the ploughed field reminded me of.
+    significance: >-
+      The closing line: the frame paid off — the thistle stands for Hadji Murat's
+      death, sealing the prologue's image.
+    facsimile: ""
+
+  # ---- Textual: Nicholas I (ch. XV) ----
+  - id: hm-nicholas-cruelty-pleasure
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Но ему приятно было быть неумолимо жестоким, и приятно было думать, что у нас нет смертной казни."
+    quoteEn: >-
+      (working English) But it pleased him to be implacably cruel, and it pleased
+      him to think that we have no death penalty.
+    significance: >-
+      The gauntlet sentence on the student (ch. XV): state cruelty performed as
+      virtue — the hypocrisy at the political centre of the novella.
+    facsimile: ""
+
+  - id: hm-nicholas-selfdeception
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: >-
+      все его распоряжения, как бы они ни были бессмысленны, несправедливы и
+      несогласны между собою, становились и осмысленны, и справедливы, и согласны
+      между собой только потому, что он их делал.
+    quoteEn: >-
+      (working English) all his orders, however senseless, unjust, and mutually
+      contradictory they might be, became sensible, just, and consistent simply
+      because he made them.
+    significance: >-
+      The psychology of despotism Tolstoy said the chapter was for: the autocrat
+      detached from reality by flattery.
+    facsimile: ""
+
+  - id: hm-nicholas-war-system
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Твердо держаться моей системы разорения жилищ, уничтожения продовольствия в Чечне и тревожить их набегами"
+    quoteEn: >-
+      (working English) Hold firmly to my system of laying waste their dwellings,
+      destroying provisions in Chechnya, and harassing them with raids.
+    significance: >-
+      Nicholas's order — the abstract "system" whose human consequence is rendered
+      two chapters later in the burned aul (XVII).
+    facsimile: ""
+
+  # ---- Textual: Shamil (ch. XIX) — the mirror ----
+  - id: hm-shamil-grandeur
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "производила то самое впечатление величия, которое он желал и умел производить в народе."
+    quoteEn: >-
+      (working English) [his figure] produced exactly that impression of grandeur
+      which he wished and knew how to produce upon the people.
+    significance: >-
+      Shamil's staged greatness — drawn in the same ink as Nicholas's court; the
+      mirror of absolutism.
+    facsimile: ""
+
+  - id: hm-shamil-prophet-voice
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Советники знали, что это значило то, что он слушает теперь говорящий ему голос пророка, указывающий то, что должно быть сделано."
+    quoteEn: >-
+      (working English) The councillors knew this meant that he was now listening
+      to the voice of the prophet speaking to him, indicating what must be done.
+    significance: >-
+      Shamil's self-attributed divine sanction — the exact counterpart to
+      Nicholas's conviction that his orders are just because he makes them.
+    facsimile: ""
+
+  - id: hm-shamil-gouge-eyes
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Напиши, что я пожалел тебя и не убью, а выколю глаза, как я делаю всем изменникам."
+    quoteEn: >-
+      (working English) Write that I had pity on you and will not kill you, but
+      will gouge out your eyes, as I do to all traitors.
+    significance: >-
+      Shamil's threat to Hadji Murat's son Yusuf — the casual cruelty that mirrors
+      Nicholas's gauntlet sentence; the gouged eye echoes the mutilated thistle.
+    facsimile: ""
+
+  # ---- Textual: the aul-burning (ch. XVII) ----
+  - id: hm-aul-dead-boy
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: >-
+      Сын же его, тот красивый, с блестящими глазами мальчик, который восторженно
+      смотрел на Хаджи-Мурата, был привезен мертвым к мечети на покрытой буркой
+      лошади.
+    quoteEn: >-
+      (working English) And his son, that handsome, bright-eyed boy who had gazed
+      in rapture at Hadji Murat, was brought dead to the mosque on a horse covered
+      with a burka.
+    significance: >-
+      The raid rendered from the highlanders' side: the bayoneted child of Sado —
+      the concrete cost of Nicholas's "system."
+    facsimile: ""
+
+  - id: hm-aul-beyond-hatred
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Чувство, которое испытывали все чеченцы, от мала до велика, было сильнее ненависти."
+    quoteEn: >-
+      (working English) The feeling all the Chechens experienced, from small to
+      great, was stronger than hatred.
+    significance: >-
+      The moral indictment the political frame builds toward — not Russian heroics
+      but the revulsion the destroyed village feels.
+    facsimile: ""
+
+  # ---- Textual: Hadji Murat's death (ch. XXV) ----
+  - id: hm-death-thistle-simile
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "со всего роста, как подкошенный репей, упал на лицо и уже не двигался."
+    quoteEn: >-
+      (working English) he fell face down at his full height, like a thistle that
+      has been mown down, and moved no more.
+    significance: >-
+      The climax: the simile «как подкошенный репей» makes the prologue's image
+      literal — the whole work's keystone.
+    facsimile: ""
+
+  - id: hm-death-nightingales
+    genre: works
+    pssTom: 35
+    pages: "5-118"
+    date: "1896-1904"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_005_118_Hadzhi_Murat.txt
+    quoteRu: "Соловьи, смолкнувшие во время стрельбы, опять защелкали, сперва один близко и потом другие на дальнем конце."
+    quoteEn: >-
+      (working English) The nightingales, which had fallen silent during the
+      shooting, began to trill again, at first one close by and then others at the
+      far end.
+    significance: >-
+      Indifferent nature resumes over the severed head — the sensuous, un-moralized
+      close that bears on the marquee question.
+    facsimile: ""
+
+  # ---- Diaries: genesis (Tom 53–55) ----
+  - id: d-thistle-seed
+    genre: diary
+    pssTom: 53
+    pages: "99-102"
+    date: "1896-07-19"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v53_099-1896_07_19.txt
+    quoteRu: "Напомнил Хаджи-Мурата. Хочется написать. Отстаивает жизнь до последнего, и один среди всего поля, хоть как-нибудь, да отстоял ее."
+    quoteEn: >-
+      (working English) It reminded me of Hadji Murat. I want to write [it]. It
+      defends its life to the last, and alone in the whole field, somehow or other,
+      has held on to it.
+    significance: >-
+      THE genesis seed (entry of 19 July 1896; the thistle seen the day before).
+      The crushed roadside thistle becomes the controlling image and the trigger.
+    facsimile: ""
+
+  - id: d-obman-very
+    genre: diary
+    pssTom: 53
+    pages: "143-145"
+    date: "1897-04-04"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v53_143_145_1897_04_04.txt
+    quoteRu: "Вчера думал очень хорошо о Хаджи-Мурате — о том, что в нем, главное, надо выразить обман веры."
+    quoteEn: >-
+      (working English) Yesterday I thought very well about Hadji Murat — that the
+      main thing in him is to express the deceit of faith.
+    significance: >-
+      The thematic core Tolstoy assigns the work in 1897 — «обман веры», the
+      deceit/delusion of faith; the same entry records his shame at the
+      "unlawfulness" of his own life.
+    facsimile: ""
+
+  - id: d-peepshow
+    genre: diary
+    pssTom: 53
+    pages: "186-189"
+    date: "1898-03-21"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v53_186_189_1898_03_21.txt
+    quoteRu: "Вот так-то показать надо человека Хаджи-Мурата: мужа, фанатика и т. п."
+    quoteEn: >-
+      (working English) Just so one must show the man Hadji Murat: husband,
+      fanatic, and so on.
+    significance: >-
+      The "peepshow" method — the multi-sided characterisation technique (the entry
+      compares it to an English peepshow toy); one of the work's defining craft notes.
+    facsimile: ""
+
+  - id: d-shame-1898
+    genre: diary
+    pssTom: 53
+    pages: "195-196"
+    date: "1898-05-15"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v53_195_196_1898_05_15.txt
+    quoteRu: "Писал Хаджи-Мурата неохотно. Опять упражнялся — глупо, почти душевная болезнь."
+    quoteEn: >-
+      (working English) Wrote Hadji Murat reluctantly. Again indulged [in it] —
+      stupid, almost a mental illness.
+    significance: >-
+      The renunciation-conflict at its sharpest: fiction-writing framed as a
+      near-pathological self-indulgence. The work then goes dormant for ~3 years.
+    facsimile: ""
+
+  - id: d-eagerness-and-shame
+    genre: diary
+    pssTom: 54
+    pages: "134-135"
+    date: "1902-08-05"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v54_134_135_1902_08_05.txt
+    quoteRu: "писал Хаджи Мурата, то с охотой, то с неохотой и стыдом."
+    quoteEn: >-
+      (working English) [I] have been writing Hadji Murat, now with eagerness, now
+      with reluctance and shame.
+    significance: >-
+      The dive's central tension in Tolstoy's own words during the decisive 1902
+      push (the Gaspra recovery) — appetite and shame in the same breath.
+    facsimile: ""
+
+  - id: d-vse-sovestno
+    genre: diary
+    pssTom: 54
+    pages: "135-136"
+    date: "1902-08-08"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v54_135_136_1902_08_08.txt
+    quoteRu: "Пишу Хаджи Мурата и все совестно."
+    quoteEn: "(working English) I write Hadji Murat and feel ashamed the whole time."
+    significance: >-
+      The shame undefended and alone, three days after the eagerness/shame entry —
+      the most compressed statement of the conflict.
+    facsimile: ""
+
+  - id: d-glupogo
+    genre: diary
+    pssTom: 54
+    pages: "178-180"
+    date: "1903-06-18"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v54_178_180_1903_06_18.txt
+    quoteRu: "Все это много важнее глупого Хаджи Мурата."
+    quoteEn: "(working English) All this is far more important than the stupid Hadji Murat."
+    significance: >-
+      The self-deprecation hardened into dismissal — he ranks the work below the
+      moral/religious "all this," to the end of composition.
+    facsimile: ""
+
+  - id: d-brosil
+    genre: diary
+    pssTom: 55
+    pages: "15-16"
+    date: "1904-02-25"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/diary-v55_015_016_1904_02_25.txt
+    quoteRu: "Нынче поправил Николая Павловича в Хаджи Мурате и бросил. Если будет время, то напишу отдельно о Николае."
+    quoteEn: >-
+      (working English) Today corrected Nikolai Pavlovich [Nicholas I] in Hadji
+      Murat and abandoned it. If there's time, I'll write separately about Nicholas.
+    significance: >-
+      The terminal composition note — «бросил». ~7.5 years after the thistle, the
+      work is left essentially complete but unpublished.
+    facsimile: ""
+
+  # ---- Letters: the source-research network (Tom 69–75) ----
+  - id: l-stasov-avaria-1896
+    genre: letter
+    pssTom: 69
+    pages: ""
+    date: "1896-12-27"
+    addressee: "V. V. Stasov"
+    localPdf: ""
+    extract: extracts/v69_199_Stasov.txt
+    quoteRu: "Главное, нужно мне историю, географию, этнографию Аварского ханства в нынешнем столетии."
+    quoteEn: >-
+      (working English) The main thing I need is the history, geography, ethnography
+      of the Avar Khanate in the present century.
+    significance: >-
+      The earliest confirmed research request — to V. V. Stasov at the Imperial
+      Public Library; opens the source-gathering that is the work's genesis distinctive.
+    facsimile: ""
+
+  - id: l-grandduke-episode-1902
+    genre: letter
+    pssTom: 73
+    pages: ""
+    date: "1902-08-20"
+    addressee: "Grand Duke Nikolai Mikhailovich"
+    localPdf: ""
+    extract: extracts/v73_318_GrandDukeNM.txt
+    quoteRu: "Теперь же я занят окончанием давно начатого и всё разрастающегося одного эпизода из кавказской истории 1851, 52 годов."
+    quoteEn: >-
+      (working English) I am now occupied with finishing a long-begun and
+      ever-expanding episode from Caucasian history of 1851–52.
+    significance: >-
+      Tolstoy's own description of the work, and his approach to the Grand Duke as
+      a conduit to the imperial archives (the Nicholas-I rescripts, AKAK vol. X).
+    facsimile: ""
+
+  - id: l-stasov-pustyaki-1902
+    genre: letter
+    pssTom: 73
+    pages: ""
+    date: "1902-09-11"
+    addressee: "V. V. Stasov"
+    localPdf: ""
+    extract: extracts/v73_333_Stasov.txt
+    quoteRu: "Продолжаю заниматься пустяками, Хаджи-Муратом"
+    quoteEn: "(working English) I continue to occupy myself with trifles — Hadji Murat."
+    significance: >-
+      The dismissive bracket («пустяками») around the work even while chasing
+      AKAK vol. X — the shame and the labour coexisting in one letter.
+    facsimile: ""
+
+  - id: l-korganov-credo-1902
+    genre: letter
+    pssTom: 73
+    pages: ""
+    date: "1902-12-25"
+    addressee: "I. I. Korganov"
+    localPdf: ""
+    extract: extracts/v73_423_Korganov.txt
+    quoteRu: "когда я пишу историческое, я люблю быть до малейших подробностей верным действительности."
+    quoteEn: >-
+      (working English) when I write historical [fiction], I like to be faithful to
+      reality down to the smallest particulars.
+    significance: >-
+      Tolstoy's historicist credo, stated to an eyewitness family at Nukha — the
+      principle behind the archival research.
+    facsimile: ""
+
+  - id: l-nakashidze-rezolyutsii-1902
+    genre: letter
+    pssTom: 73
+    pages: ""
+    date: "1902-12-20"
+    addressee: "I. P. Nakashidze"
+    localPdf: ""
+    extract: extracts/v73_415_Nakashidze.txt
+    quoteRu: "Нет ли его резолюций о Хаджи-Мурате."
+    quoteEn: "(working English) Are there any of his [Nicholas I's] rescripts concerning Hadji Murat?"
+    significance: >-
+      The most focused archival question in the whole sweep — dispatched via Nakashidze
+      to the Tiflis archive contacts.
+    facsimile: ""
+
+  - id: l-esadze-sufficient-1903
+    genre: letter
+    pssTom: 74
+    pages: ""
+    date: "1903-05-06"
+    addressee: "S. S. Esadze"
+    localPdf: ""
+    extract: extracts/v74_147_Esadze.txt
+    quoteRu: "дальше, пожалуйста, не работайте, так как имеющихся у меня матерьялов мне вполне достаточно."
+    quoteEn: >-
+      (working English) please do not work further, as the materials I have are
+      fully sufficient.
+    significance: >-
+      The close of the Tiflis-archive commission (Esadze hand-copied 151 documents):
+      source-gathering essentially complete by May 1903.
+    facsimile: ""
+
+  # ---- Commentary: genesis, redactions, censorship (Tom 35) ----
+  - id: c-thistle-notebook
+    genre: commentary
+    pssTom: 35
+    pages: "583-629"
+    date: "1896-07-18"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: "Татарин на дороге. Хаджи-Мурат"
+    quoteEn: "(working English) A tatar [thistle] on the road. Hadji Murat. [notebook entry]"
+    significance: >-
+      The notebook seed (18 July 1896), the germ before the diary entry develops it —
+      as the editors transcribe it in the «История писания».
+    facsimile: ""
+
+  - id: c-secret-composition
+    genre: commentary
+    pssTom: 35
+    pages: "583-629"
+    date: "1896-09-05"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: "но он не говорит о чем именно и скрывает старательно"
+    quoteEn: >-
+      (working English) but he won't say about what exactly, and conceals it
+      carefully.
+    significance: >-
+      S. A. Tolstaya (5 Sep 1896, via the editors) on the secrecy of the work — the
+      hidden fiction Tolstoy wrote against the grain of his public teaching.
+    facsimile: ""
+
+  - id: c-balovstvo
+    genre: commentary
+    pssTom: 35
+    pages: "583-629"
+    date: "1902-06-29"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: "Это баловство и глупость, но начато и хочется кончить"
+    quoteEn: >-
+      (working English) This is self-indulgence and foolishness, but it's begun and
+      I want to finish it.
+    significance: >-
+      Tolstoy to his brother Sergei (29 June 1902) — the self-indulgence verdict in
+      his own words (the apparatus's recurring «баловство»/«глупость», not «озорство»).
+    facsimile: ""
+
+  - id: c-not-publish-lifetime
+    genre: commentary
+    pssTom: 35
+    pages: "583-629"
+    date: "1902-10-11"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: "Кончил Хаджи Мурата, который в неотделанном вполне виде отложил и при жизни не буду печатать"
+    quoteEn: >-
+      (working English) Finished Hadji Murat, which, not fully polished, I've set
+      aside and will not publish in my lifetime.
+    significance: >-
+      Tolstoy to Chertkov (11 Oct 1902): the decision NOT to publish in his lifetime
+      — the documentary anchor that the censorship story is posthumous, not a
+      living-author ban.
+    facsimile: ""
+
+  - id: c-tenth-redaction
+    genre: commentary
+    pssTom: 35
+    pages: "583-629"
+    date: "1902-08-06"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: "6 августа 1902 г. была начата новая работа (редакция десятая)."
+    quoteEn: "(working English) On 6 August 1902 a new work was begun (the tenth redaction)."
+    significance: >-
+      The tenth and final redaction — the 49-day 1902 burst that produced most of
+      the work; the editors count ten redactions 1896→1904.
+    facsimile: ""
+
+  - id: c-2166-sheets
+    genre: commentary
+    pssTom: 35
+    pages: "648-666"
+    date: "1950"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_648_666_Opisanie_rukopisej.txt
+    quoteRu: "общее их количество составляет 2166 листов."
+    quoteEn: "(working English) their total number is 2166 sheets."
+    significance: >-
+      The surviving manuscripts run to 2166 sheets — the scale of the obsessive
+      eight-year labour on a work he called a trifle.
+    facsimile: ""
+
+  - id: c-belgard-verdict
+    genre: commentary
+    pssTom: 35
+    pages: "629-631"
+    date: "1912"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_629_631_Istorija_pechatanija.txt
+    quoteRu: "император Николай I подвергается недопустимым, крайне грубым и оскорбительным для его памяти нападкам"
+    quoteEn: >-
+      (working English) Emperor Nicholas I is subjected to impermissible, extremely
+      crude attacks insulting to his memory.
+    significance: >-
+      The posthumous censor's verdict (A. V. Belgard, Main Directorate for Press
+      Affairs, 1912) — the basis for cutting the Nicholas-I material from the Russian
+      printing.
+    facsimile: ""
+
+  - id: c-berlin-uncensored
+    genre: commentary
+    pssTom: 35
+    pages: "629-631"
+    date: "1912"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v35_629_631_Istorija_pechatanija.txt
+    quoteRu: "В. Г. Чертковым был напечатан «Хаджи-Мурат» полностью, с восстановлением всех цензурных пропусков."
+    quoteEn: >-
+      (working English) V. G. Chertkov printed Hadji Murat in full, with all the
+      censorship omissions restored.
+    significance: >-
+      The two simultaneous 1912 editions: the censored Moscow text vs Chertkov's
+      uncensored Berlin (Ladyzhnikov) edition — the posthumous-censorship resolution.
+    facsimile: ""
+
+# ============================================================================
+entities:
+
+  # ---- Inner circle (exist) ----
+  - name: Leo Tolstoy
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author; began the work from the 1896 thistle image and worked it across 1896–1904, never publishing it in his lifetime."
+    sources: []
+    evidenceRefs: [d-thistle-seed, d-eagerness-and-shame, c-not-publish-lifetime]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple and editor; took down the 1896 Stasov request slip; printed the uncensored Berlin (Ladyzhnikov) edition in 1912, restoring the cuts."
+    sources: []
+    evidenceRefs: [c-berlin-uncensored]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Pavel Biryukov
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Biographer; source of the schoolboy-and-the-pastry anecdote about the embarrassment with which Tolstoy admitted writing Hadji Murat."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Sophia Tolstaya
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; her 1896 letter attests the secrecy of the work; she held the Caucasus source-books at Yasnaya Polyana during the 1899–1900 fallow."
+    sources: []
+    evidenceRefs: [c-secret-composition]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # ---- The protagonist (character + prototype) ----
+  - name: Hadji Murat
+    wikiType: character
+    wikilinkTarget: "Hadji Murat"
+    vaultStatus: missing
+    role: >-
+      The titular protagonist (the Avar naib who defected to the Russians Nov 1851
+      and was killed Apr 1852). character page by the tiering rule (titular + a
+      documented historical prototype). prototypes[]: the historical Hadji Murat —
+      person: "" (no page yet), name "Hadji Murat (historical figure)", basis
+      author-stated/editorial (Tolstoy built him from the Loris-Melikov record, the
+      газета «Кавказ», AKAK vol. X, eyewitness testimony), certainty documented.
+      NB the historical figure may also merit a standalone `person` page — see needsReview.
+    sources: []
+    evidenceRefs: [hm-thistle-payoff, hm-death-thistle-simile, d-peepshow]
+    ingestionPriority: 1
+    dependsOn: []
+
+  # ---- Historical principals who appear in the novel (person) ----
+  - name: Nicholas I
+    wikiType: person
+    wikilinkTarget: "Nicholas I"
+    vaultStatus: missing
+    role: >-
+      Emperor (r. 1825–1855); the satirical court portrait (ch. XV) is the work's
+      political counterweight and the target of the 1912 posthumous censorship.
+      Historically major in his own right → person (the novel-appearance is a
+      backlink; a `character` treatment of Tolstoy's satirical construct is a
+      possible alternative — see needsReview).
+    sources: []
+    evidenceRefs: [hm-nicholas-cruelty-pleasure, hm-nicholas-selfdeception, hm-nicholas-war-system, c-belgard-verdict]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Imam Shamil
+    wikiType: person
+    wikilinkTarget: "Imam Shamil"
+    vaultStatus: missing
+    role: >-
+      Third Imam of the Caucasian Imamate; in the novel the mirror of Nicholas
+      (ch. XIX) — staged grandeur, self-attributed divine sanction, casual cruelty.
+      Historically major → person.
+    sources: []
+    evidenceRefs: [hm-shamil-grandeur, hm-shamil-prophet-voice, hm-shamil-gouge-eyes]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Mikhail Semyonovich Vorontsov
+    wikiType: person
+    wikilinkTarget: "Mikhail Vorontsov"
+    vaultStatus: missing
+    role: >-
+      Viceroy of the Caucasus (from 1844); receives Hadji Murat's surrender in the
+      novel. Tolstoy researched him heavily (the Vorontsov–Chernyshov correspondence,
+      the Alupka portraits) and had personally met him.
+    sources: []
+    evidenceRefs: [l-grandduke-episode-1902]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Mikhail Loris-Melikov
+    wikiType: person
+    wikilinkTarget: "Mikhail Loris-Melikov"
+    vaultStatus: missing
+    role: >-
+      The officer who recorded Hadji Murat's own life-story (printed «Русская
+      старина», 1881, № 3) — the documentary basis for the autobiography in chs.
+      XI–XIII; later Minister of the Interior under Alexander II.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+
+  # ---- Invented characters (character) ----
+  - name: Butler
+    wikiType: character
+    wikilinkTarget: "Butler (Hadji Murat)"
+    vaultStatus: missing
+    role: >-
+      Invented officer (the joyful-war / decline arc). character page by the tiering
+      rule (documented prototype). prototypes[]: F. F. Kutler — person: "", name
+      "F. F. Kutler", basis editorial (the PSS editors), certainty probable, note
+      "Described in Poltoratsky's memoirs and personally known to Tolstoy
+      («История писания», PSS 35)." appearsIn: [hadji-murat], roleInWork secondary.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: [Hadji Murat]
+
+  - name: Marya Dmitrievna
+    wikiType: character
+    wikilinkTarget: "Marya Dmitrievna (Hadji Murat)"
+    vaultStatus: missing
+    role: >-
+      Invented domestic figure (the major's companion at the fort), present from the
+      first 1896 sketch «Репей»; her tender feeling for Hadji Murat enters the 1901
+      redaction. Tiering-rule judgment call (principal invented figure, no documented
+      prototype) — see needsReview. appearsIn: [hadji-murat], roleInWork secondary.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: [Hadji Murat]
+
+  # ---- Group ----
+  - name: Caucasus highlanders
+    wikiType: group
+    wikilinkTarget: "Caucasus highlanders"
+    vaultStatus: missing
+    role: >-
+      The mountain peoples of Chechnya and Dagestan (Avars, Chechens) whose world
+      the novel renders from inside (chs. I, XVII, XIX, the songs). groupType
+      ethnic-group (the wiki-schema v1.4 worked example). Distinct from Muridism
+      (a concept) and the Imamate (an institution/state).
+    sources: []
+    evidenceRefs: [hm-aul-dead-boy, hm-aul-beyond-hatred]
+    ingestionPriority: 2
+    dependsOn: []
+
+  # ---- The source-research network (person) ----
+  - name: Vladimir Stasov
+    wikiType: person
+    wikilinkTarget: "Vladimir Stasov"
+    vaultStatus: missing
+    role: >-
+      Critic and librarian at the Imperial Public Library; Tolstoy's principal
+      book-supplier for the Caucasus and Nicholas-I research (1896–1904).
+    sources: []
+    evidenceRefs: [l-stasov-avaria-1896, l-stasov-pustyaki-1902]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Grand Duke Nikolai Mikhailovich
+    wikiType: person
+    wikilinkTarget: "Nikolai Mikhailovich"
+    vaultStatus: missing
+    role: >-
+      Romanov historian; Tolstoy's conduit to imperial-archive holdings (the
+      Nicholas-I rescripts, AKAK vol. X) and his confirmed interlocutor on the
+      Nicholas-I and Vorontsov portraits.
+    sources: []
+    evidenceRefs: [l-grandduke-episode-1902]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Tiflis archive helpers (Esadze, Nakashidze, Potto, Veidenbaum)
+    wikiType: person
+    wikilinkTarget: ""
+    vaultStatus: missing
+    role: >-
+      The Tiflis military-historical-archive chain: S. S. Esadze (hand-copied 151
+      documents), I. P. Nakashidze (the local fixer), V. A. Potto (archive chief),
+      E. G. Veidenbaum. Each a candidate `person` page; grouped here as a routing
+      cluster — split at ingestion.
+    sources: []
+    evidenceRefs: [l-nakashidze-rezolyutsii-1902, l-esadze-sufficient-1903]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Korganov family (I. I. Korganov & A. A. Korganova)
+    wikiType: person
+    wikilinkTarget: ""
+    vaultStatus: missing
+    role: >-
+      The Nukha eyewitnesses Tolstoy corresponded with for the physical detail of
+      Hadji Murat's last weeks (appearance, dress, the day of the escape). Candidate
+      `person` page(s); the credo-letter addressee.
+    sources: []
+    evidenceRefs: [l-korganov-credo-1902]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # ---- Event ----
+  - name: Posthumous publication and censorship of Hadji Murat (1912)
+    wikiType: event
+    wikilinkTarget: "Posthumous censorship of Hadji Murat (1912)"
+    vaultStatus: missing
+    role: >-
+      The 1912 first publication: the censored Moscow «Посмертные художественные
+      произведения» (Belgard cut the Nicholas-I chapter from >10pp to 4½pp and
+      excised the aul-destruction of ch. XVII) vs Chertkov's uncensored Berlin
+      (Ladyzhnikov) edition. State/dynasty censorship of a dead author.
+    sources: []
+    evidenceRefs: [c-belgard-verdict, c-berlin-uncensored]
+    ingestionPriority: 2
+    dependsOn: [Nicholas I, Vladimir Chertkov]
+
+  # ---- Concept (cross-link to the aesthetic dive) ----
+  - name: What Is Art? (the renunciation-of-art doctrine)
+    wikiType: concept
+    wikilinkTarget: "What Is Art"
+    vaultStatus: missing
+    role: >-
+      The 1897–98 aesthetic doctrine (art must be sincere, universal, "infectious"
+      of the highest feeling) that overlaps this work's composition and against
+      which Tolstoy measured — and condemned — the writing of Hadji Murat. The
+      marquee-question pole; the project has a dive at docs/research/1897-1898-what-is-art.
+    sources: []
+    evidenceRefs: [d-shame-1898, d-eagerness-and-shame, hm-death-nightingales]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ============================================================================
+visuals:
+  # Heavy four-channel Commons sweep; 24 PD images cached in the git-ignored
+  # visuals/ dir. Full catalogue: visuals/_sweep.md. Representative set below.
+
+  - id: VIS-01
+    type: illustration
+    subject: "Yevgeny Lanceray, illustration for Hadji Murat (1913 edition)"
+    relatedEntity: "Hadji Murat"
+    relatedEvidence: hm-death-thistle-simile
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — Lanceray d. 1946; plate published 1913 (life+70 lapsed)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Hadji-Mural_by_Lanceray.jpg"
+    localPath: visuals/commons-lanceray-hadji-mural-1913.jpg
+    note: "The canonical illustration cycle; verify PD per jurisdiction at publication."
+
+  - id: VIS-02
+    type: illustration
+    subject: "Yevgeny Lanceray, second Hadji Murat plate (1913)"
+    relatedEntity: "Hadji Murat"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — Lanceray d. 1946; published 1913"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:%D0%A5%D0%B0%D0%B4%D0%B6%D0%B8-%D0%9C%D1%83%D1%80%D0%B0%D1%82.JPG"
+    localPath: visuals/commons-lanceray-hadji-murat-cyrillic.jpg
+    note: "Second Lanceray plate, same 1913 edition."
+
+  - id: VIS-03
+    type: photograph
+    subject: "Imam Shamil, photograph by Sergey Levitsky, 1861"
+    relatedEntity: "Imam Shamil"
+    relatedEvidence: hm-shamil-grandeur
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — photographed 1861; photographer d. 1898"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:ImamShamil.jpg"
+    localPath: visuals/commons-portrait-shamil-levitsky-1861.jpg
+    note: "The definitive Shamil portrait, taken after his 1859 surrender."
+
+  - id: VIS-05
+    type: portrait
+    subject: "Imam Shamil, oil portrait by Prince Chavchavadze, 1856"
+    relatedEntity: "Imam Shamil"
+    relatedEvidence: hm-shamil-grandeur
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — painted 1856"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Imam_Shamil_%28portrait_by_Prince_Chavchavadze%29.JPG"
+    localPath: visuals/commons-portrait-shamil-chavchavadze-1856.jpg
+    note: "Painted close to the 1851 defection period."
+
+  - id: VIS-09
+    type: portrait
+    subject: "Tsar Nicholas I, state portrait by Egor Botman, 1856"
+    relatedEntity: "Nicholas I"
+    relatedEvidence: hm-nicholas-selfdeception
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — painted 1856; Botman d. 1891"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Nicholas_I_of_Russia_by_E.Botman_%281856%29.jpg"
+    localPath: visuals/commons-portrait-nicholas1-botman-1856.jpg
+    note: "The official image the novella satirizes."
+
+  - id: VIS-11
+    type: portrait
+    subject: "Prince M. S. Vorontsov, portrait by George Dawe, 1820s"
+    relatedEntity: "Mikhail Semyonovich Vorontsov"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — Dawe d. 1829"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Dawe%2C_Mikhail_Vorontsov.jpg"
+    localPath: visuals/commons-portrait-vorontsov-dawe-1820s.jpg
+    note: "Viceroy of the Caucasus; receives Hadji Murat's surrender in the novel."
+
+  - id: VIS-12
+    type: portrait
+    subject: "General Loris-Melikov, photograph"
+    relatedEntity: "Mikhail Loris-Melikov"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — pre-1900; d. 1888"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:LorisMelikov.jpg"
+    localPath: visuals/commons-portrait-lorismelikov-photo.jpg
+    note: "Recorded Hadji Murat's own life-story — the basis for chs. XI–XIII."
+
+  - id: VIS-14
+    type: painting
+    subject: "Grigory Gagarin, The Meeting of Klüke von Klügenau and Shamil, 1837 (painted 1849)"
+    relatedEntity: "Imam Shamil"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — Gagarin d. 1893"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Gagarin._The_Meeting_of_General_Kl%C3%BCke_von_Kl%C3%BCgenau_and_Imam_Shamil_in_1837%2C_1849_sec.jpg"
+    localPath: visuals/commons-caucasus-gagarin-shamil-meeting-1849.jpg
+    note: "Gagarin served in the Caucasus; primary visual document of the war's parleys."
+
+  - id: VIS-16
+    type: painting
+    subject: "Ivan Aivazovsky, Aul Gunib in Dagestan, 1869"
+    relatedEntity: "Caucasus highlanders"
+    relatedEvidence: hm-aul-beyond-hatred
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — painted 1869; Aivazovsky d. 1900"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Aivazovsky-Aul_Gunib_in_Dagestan.jpg"
+    localPath: visuals/commons-caucasus-aivazovsky-gunib-1869.jpg
+    note: "The Avar/Dagestani highland terrain of the novel."
+
+  - id: VIS-18
+    type: painting
+    subject: "Franz Roubaud, End of the Caucasian War, 1900"
+    relatedEntity: "Caucasus highlanders"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — Roubaud d. 1928; painted 1900"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B1%D0%BE._%D0%9A%D0%BE%D0%BD%D0%B5%D1%86_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D1%81%D0%BA%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B.jpg"
+    localPath: visuals/commons-caucasus-roubaud-end-caucasus-war-1900.jpg
+    note: "Roubaud is the foremost painter of the Caucasian War."
+
+  - id: VIS-24
+    type: map
+    subject: "Map of the North-West Caucasus Line, E. D. Felitsyn, 1899"
+    relatedEntity: "Caucasus highlanders"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: ""
+    access: open
+    rights: "PD — published 1899"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Caucasus_Line%2C_North-West_%281899_map%29.png"
+    localPath: visuals/commons-map-caucasus-line-1899.png
+    note: "The fortified frontier (Кавказская линия) of the novel's theatre."
+
+  - id: VIS-25
+    type: photograph
+    subject: "The 1851 daguerreotype of young Tolstoy in Caucasus uniform"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ""
+    holding: "State Tolstoy Museum (GMT), Moscow"
+    archiveId: ""
+    access: "not openly available"
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: ""
+    localPath: ""
+    note: "The earliest photograph of Tolstoy, from his 1851–53 Caucasus service (the lived source). Not on Commons; request from GMT. The Commons LeoTolstoy.jpg is 1895, post-Caucasus."
+
+# ============================================================================
+scholarship:
+  summary: >-
+    The mainstream treats Hadji Murat as Tolstoy's last great fiction and, para-
+    doxically, the aesthetic capstone of a career whose public author had renounced
+    art — Harold Bloom's "the best story in the world" (The Western Canon, 1994)
+    anchors the popular reception, and biographers (Bartlett 2010; A. N. Wilson;
+    Troyat; Simmons 1968) read it as a "return" to the Caucasian energies of his
+    youth, distinguished by the absence of the didacticism that marks the other late
+    fiction. The two dominant labels are "return to art" and "anti-imperialist
+    masterpiece" (the symmetrical indictment of Nicholas I and Shamil), the latter
+    revived by the 1990s–2000s Chechen wars. The dive treats both as the mainstream's
+    framings to attribute, not confirm: post-colonial scholarship complicates the
+    anti-imperial story (Bojanowska 2022 on Tolstoy as a settler-colonial landlord;
+    Gould 2013 on the "ethnographic gaze"), and the Sufi/Islamic dimension is argued
+    to have been omitted from prior readings (Kokobobo 2017/2025). On the marquee
+    question the literature splits three ways — fulfilment of What Is Art? (Simmons
+    1968), flagrant violation / a structuring "silence" that withdraws from all
+    moralizing (Herman 2005), and biographical private-indulgence (Wilson; Grasso) —
+    and is not settled in one place. Full attribution + 25 sources: extracts/_scholarship.md.
+  triangulation:
+    - evidenceRef: d-eagerness-and-shame
+      conventionalView: >-
+        The What-Is-Art tension is read three ways: Simmons (1968) calls Hadji Murat
+        "almost a perfect example of the good universal art" the treatise demands;
+        Herman (2005) reads it as a flagrant violation of his late aesthetic/ethical
+        standards; the biographical camp (Wilson; Grasso) reads it as a private
+        relapse he disowned.
+      relation: extends
+      source: >-
+        Simmons 1968; Herman, Slavic Review 64.1 (2005); Wilson 1988. The corpus
+        locates the seam none of the three resolves: the diaries show Tolstoy never
+        reconciled the contradiction intellectually — he LIVED it as shame
+        («совестно», «стыдом», «глупого») while unable to stop, and refused to
+        publish. The "fulfilment" reading is the scholar's reconstruction, not
+        Tolstoy's; the felt record is unreconciled guilt over the worthiness of
+        making art at all.
+    - evidenceRef: hm-death-nightingales
+      conventionalView: >-
+        Herman (2005): the work is structured by "silence" — an unspoken critique of
+        all moralizing and teaching; it withdraws from prescription.
+      relation: confirms
+      source: >-
+        Herman 2005. The text bears this out: the moral judgment is carried
+        structurally (Nicholas → raid → severed head; the indifferent nightingales),
+        never asserted — which, read against What Is Art?'s attack on didacticism, is
+        the closest the work comes to OBEYING the doctrine even as Tolstoy condemned
+        writing it.
+    - evidenceRef: hm-nicholas-selfdeception
+      conventionalView: >-
+        The mirrored-despots / "anti-imperialist masterpiece" reading: Nicholas I and
+        Shamil as twin absolutisms.
+      relation: confirms
+      source: >-
+        Tolstoy's own stated design (reported by S. N. Shulgin, PSS 35 commentary):
+        «два полюса властного абсолютизма — азиатского и европейского». The parallel is the author's, not
+        only the critics'. The "anti-imperialist" LABEL, however, stays the
+        mainstream's — Bojanowska (2022) and Gould (2013) complicate it.
+    - evidenceRef: hm-aul-beyond-hatred
+      conventionalView: >-
+        The novella as a clean anti-colonial conscience; or, conversely, as an
+        imperial "ethnographic gaze" on Russia's enemies (Gould).
+      relation: complicates
+      source: >-
+        Bojanowska, Slavic Review 81.2 (2022); Gould, CLS 50.1 (2013); Kokobobo 2017.
+        The aul-burning is rendered from the highlanders' side with real force, yet
+        the post-colonial scholarship questions whether the author held a coherent
+        anti-imperial position; the corpus does not resolve this beyond Tolstoy's
+        own design statements.
+    - evidenceRef: c-tenth-redaction
+      conventionalView: >-
+        Shklovsky: no "final" version of Hadji Murat exists — Tolstoy simply stopped;
+        the impulse to write fiction as if "true" is the "energy of delusion."
+      relation: confirms
+      source: >-
+        Shklovsky, Energy of Delusion (1981, tr. 2007). The PSS apparatus confirms
+        ten redactions across 1896–1904, 2166 manuscript sheets, and an unfinished
+        verdict — the work was abandoned, not closed.
+
+# ============================================================================
+workRecord:
+  # Record-CREATING (no works/ record exists). Single record (no companion text,
+  # unlike the Kreutzer Sonata + Afterword pair). Field shapes mirror the live
+  # Master and Man novella record + tolstoy-works-schema. The dive PROPOSES; human
+  # ingestion applies to works/.
+  - recordPath: "website/src/works/fiction/novellas/hadji-murat/Hadji Murat.md"
+    workId: hadji-murat
+    fields:
+      - field: title
+        value: "Hadji Murat"
+        evidenceRefs: []
+        source: "PSS Tom 35"
+        confidence: high
+        note: ""
+      - field: titleRu
+        value: "Хаджи-Мурат"
+        evidenceRefs: []
+        source: "PSS Tom 35"
+        confidence: high
+        note: ""
+      - field: titleEn
+        value: "Hadji Murat"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: "Also transliterated Hadji Murad / Khadzhi-Murat."
+      - field: titleAlternatives
+        value:
+          - { title: "Репей", type: working, language: ru }
+          - { title: "The Thistle", type: working, language: en }
+          - { title: "Хазават", type: working, language: ru }
+        evidenceRefs: [c-tenth-redaction]
+        source: "PSS Tom 35 «История писания» / «Описание рукописей»"
+        confidence: high
+        note: "«Репей» = the 1896 first-sketch title; «Хазават» = the 1898 sixth-redaction title."
+      - field: mainCategory
+        value: "Fiction"
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: ""
+      - field: subcategory
+        value: "Novellas"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Modeled on the Master and Man record (~110pp povest); could read as a short novel — confirm vocab at ingestion."
+      - field: genre
+        value: "novella"
+        evidenceRefs: []
+        source: ""
+        confidence: medium
+        note: "Russian повесть; the works-schema controlled vocab decides novella vs short-novel."
+      - field: completionStatus
+        value: "incomplete"
+        evidenceRefs: [d-brosil]
+        source: "PSS Tom 35 commentary: «повесть не может считаться вполне законченным произведением»"
+        confidence: high
+        note: "The editors judge it unfinished (the second part not revised as Tolstoy intended). Confirm the controlled value (complete|incomplete|fragment) at ingestion."
+      - field: publishedDuringLifetime
+        value: false
+        evidenceRefs: [c-not-publish-lifetime]
+        source: "PSS Tom 35"
+        confidence: high
+        note: "Tolstoy explicitly withheld it («при жизни не буду печатать»)."
+      - field: publishedInRussiaDuringLifetime
+        value: false
+        evidenceRefs: [c-not-publish-lifetime]
+        source: ""
+        confidence: high
+        note: ""
+      - field: dateWritingStarted
+        value: "1896"
+        evidenceRefs: [d-thistle-seed, c-thistle-notebook]
+        source: "PSS Tom 35; notebook 18 Jul 1896 / diary 19 Jul 1896; first sketch «Репей» 14 Aug 1896"
+        confidence: high
+        oldStyle: "1896"
+        approximate: true
+        note: "Old-Style (Julian) diary/notebook dates; the 14 Aug 1896 first sketch is the firm start. NS conversion deferred to ingestion."
+      - field: dateWritingCompleted
+        value: "1904"
+        evidenceRefs: [d-brosil]
+        source: "PSS Tom 35 commentary; diary 25 Feb 1904 (Nicholas chapter, «бросил»); last touch (Makovitsky) 19 Dec 1904"
+        confidence: medium
+        oldStyle: "1904"
+        approximate: true
+        note: "Left unfinished; the editors mark 1904 as the last working year. Approximate by design (the bulk was the 49-day 1902 burst)."
+      - field: dateFirstPublished
+        value: "1912"
+        evidenceRefs: [c-berlin-uncensored]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        approximate: false
+        note: "Posthumous. Two simultaneous 1912 editions: censored Moscow «Посмертные художественные произведения» and uncensored Berlin (Ladyzhnikov, ed. Chertkov)."
+      - field: firstPublishedVenue
+        value: "J. Ladyzhnikov Verlag, Berlin (uncensored, ed. Chertkov); concurrently «Посмертные художественные произведения», Moscow (censored)"
+        evidenceRefs: [c-berlin-uncensored]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: "Two venues the same year; the Berlin edition is the full text."
+      - field: dateFirstPublishedInRussia
+        value: "1912"
+        evidenceRefs: [c-belgard-verdict]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: "The censored Moscow edition; the first fully uncensored Russian text appeared 1917."
+      - field: firstPublishedInRussiaVenue
+        value: "«Посмертные художественные произведения Л. Н. Толстого», т. III (Moscow, 1912; ed. V. G. Chertkov / P. A. Bulanzhe)"
+        evidenceRefs: [c-belgard-verdict]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: "Censored: the Nicholas-I chapter cut from >10pp to 4½pp; the ch. XVII aul-destruction excised."
+      - field: bans
+        value:
+          - { banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати), A. V. Belgard", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "passages-cut", banDate: "1912" }
+        evidenceRefs: [c-belgard-verdict]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: "POSTHUMOUS state/dynasty censorship (Tolstoy d. 1910): passages cut, not a complete ban. The Nicholas-I material was the flashpoint."
+      - field: censoredVersionExists
+        value: true
+        evidenceRefs: [c-belgard-verdict, c-berlin-uncensored]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: ""
+      - field: censoredVersionNotes
+        value: "The 1912 Moscow «Посмертные художественные произведения» (vol. III) cut the Nicholas-I chapter (>10pp → 4½pp) and excised the aul-destruction of ch. XVII; editions to 1917 reprinted this censored text. Chertkov's Berlin (Ladyzhnikov) 1912 edition restored all cuts; the first uncensored Russian printing is 1917; PSS Tom 35 (1950) is freshly collated from the autographs."
+        evidenceRefs: [c-belgard-verdict, c-berlin-uncensored]
+        source: "PSS Tom 35 «История печатания»"
+        confidence: high
+        note: ""
+      - field: excommunicationRelated
+        value: false
+        evidenceRefs: []
+        source: ""
+        confidence: high
+        note: "Composed across the 1901 excommunication but not a trigger for it; unpublished in Tolstoy's lifetime."
+      - field: relatedWorks
+        value:
+          - { id: "the-cossacks", relationshipType: "companion" }
+          - { id: "what-is-art", relationshipType: "companion" }
+        evidenceRefs: [d-eagerness-and-shame]
+        source: "PSS Tom 35; the dive's marquee question"
+        confidence: medium
+        note: "The Cossacks + the Sevastopol/Caucasus material as the youthful Caucasus companion; What Is Art? as the aesthetic counterpart (the marquee tension). Map ids to live works records at ingestion."
+      - field: authoringLocations
+        value: ["Yasnaya Polyana", "Shamordino (first sketch, Aug 1896)", "Gaspra, Crimea (1902 burst)", "Pirogovo (the thistle, Jul 1896)"]
+        evidenceRefs: [d-thistle-seed, c-tenth-redaction]
+        source: "PSS Tom 35 «История писания»; diaries Tom 53–54"
+        confidence: medium
+        note: "Shape to the authoringLocations field (objects vs strings) per the live schema at ingestion."
+      - field: themes
+        value: ["the Caucasus", "war and empire", "despotism", "the life-force", "honour and betrayal", "death"]
+        evidenceRefs: [hm-thistle-notsurrender, hm-nicholas-selfdeception, hm-aul-beyond-hatred]
+        source: ""
+        confidence: medium
+        note: "Map to the controlled themes vocab at ingestion."
+      - field: epigraph
+        value: ""
+        evidenceRefs: []
+        source: "PSS Tom 35"
+        confidence: high
+        note: "Hadji Murat carries no epigraph (unlike The Kreutzer Sonata); leave empty."
+      - field: jubileeEdition.volumes
+        value: "35"
+        evidenceRefs: []
+        source: "PSS (Jubilee Edition) Tom 35, pp. 5–118"
+        confidence: high
+        note: "Nested under identifiers.jubileeEdition.volumes in the works schema. Local PDF: vol04."
+
+# ============================================================================
+coverage:
+  - surface: "Textual — the novella (scene-led close-read + thematic map)"
+    status: covered
+    note: "Full text extracted once (--choice=reg); thistle frame, Nicholas I, Shamil, aul-burning, and the death close-read; 25-chapter structural map + themes. Light layer by design (novel-dive)."
+  - surface: "Genesis & composition (incl. the source-research layer)"
+    status: covered
+    note: "Heaviest layer: «История писания» mine + diaries Tom 53–55 (26 finalists) + letters Tom 69–75 (20 finalists). The thistle seed, the secret 1896→1904 gestation, the shame thread, and the full archive network (Stasov, Grand Duke NM, Bartenev, the Tiflis chain, the Korganov eyewitnesses)."
+  - surface: "Sources / archival research (the «Список источников»)"
+    status: covered
+    note: "82-item source list characterised; the load-bearing items (AKAK vol. X, Loris-Melikov «Русская старина» 1881, Зиссерман, Сборник сведений о кавказских горцах, the Vorontsov–Chernyshov correspondence, Шильдер / Custine for Nicholas I) named for entity routing."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "Ten redactions (1896→1904) and the chronology characterised; 2166 manuscript sheets; «Репей» → «Хазават» → «Хаджи-Мурат» title history. Not collated (the ~270pp variants file sampled, not transcribed) — by design."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "The posthumous 1912 dual publication (censored Moscow vs uncensored Berlin); the Belgard verdict and the specific cuts (Nicholas-I chapter, ch. XVII). Translation lineage beyond the first editions not pursued."
+  - surface: "Reception & afterlife — Russian society & church first"
+    status: partial
+    note: "The posthumous state/dynasty censorship is covered as the primary reception; early Russian critical reception is thin in the corpus (the work appeared after Tolstoy's death). Soviet canonisation + the post-Chechen-war revival via scholarship only."
+  - surface: "Characters & prototypes"
+    status: covered
+    note: "Hadji Murat → character (+ prototype = the historical figure); Nicholas I/Shamil/Vorontsov/Loris-Melikov → person; Butler (prototype F. F. Kutler) + Marya Dmitrievna → character; the highlanders → group. Applies wiki-schema v1.4."
+  - surface: "Themes"
+    status: covered
+    note: "Mirrored despotism, the life-force/thistle, the brutality of empire, honour/betrayal/divided loyalty, the highlanders' world from inside, the sensuous-prose-vs-renunciation tension."
+  - surface: "Scholarly context"
+    status: covered
+    note: "25 sources; the marquee debate triangulated (Simmons fulfilment vs Herman violation/silence vs biographical indulgence); the colonial complication (Bojanowska, Gould) and the Sufi reading (Kokobobo) attributed; Shklovsky on the unfinished work."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Heavy sweep: 24 PD images cached (Lanceray cycle, six Shamil portraits, Nicholas I, Vorontsov, Loris-Melikov, Roubaud/Gagarin/Horschelt/Kivshenko/Aivazovsky, a map). Not openly available: the full GTM-held Lanceray plates, the 1851 Tolstoy daguerreotype, the historical Hadji Murat lithograph — request channels logged."
+  - surface: "workRecord (record-CREATING)"
+    status: covered
+    note: "Single record proposed, field-shaped to the live Master and Man novella record + works schema; posthumous-publication and passages-cut censorship fields filled."
+
+# ============================================================================
+contradictions:
+  - claim: "Marya Dmitrievna sees Hadji Murat alive as late as June (in the 1896 first sketch «Репей»)."
+    correction: >-
+      An authorial slip the PSS editors flag: the historical Hadji Murat was killed
+      in April 1852, so a June sighting is impossible. Corrected in later redactions.
+      An intra-corpus chronology error, not a transmission error.
+    evidenceRef: c-thistle-notebook
+  - claim: "Hadji Murat's father is named «Абдулл» (as in the 1896 sketch)."
+    correction: >-
+      The real father's name was Итин-Магомет (per Neverovsky); in 1896 Tolstoy had
+      not yet read Neverovsky and used an invented name. The PSS «Примечания» record
+      both. A genesis-stage invention later overtaken by the source research.
+    evidenceRef: c-thistle-notebook
+
+# ============================================================================
+notCovered:
+  - "The ~270pp variants file (v35_284_556) — sampled for the redaction count/chronology, not transcribed; the keystone redaction-text differences are not collated verbatim (a follow-up could do for Hadji Murat what the Kreutzer dive did with the lithographed 8th redaction)."
+  - "The working notes / conspectuses (v35_275_283) and the glossary of mountaineer words (v35_644_647) — extracted-adjacent but not mined; the glossary would support verbatim translation of the highlander vocabulary."
+  - "Early Russian critical reception 1912–1917 in the periodical press (beyond the PSS commentary's account of the censorship)."
+  - "The full translation lineage (the English Aylmer Maude 1912; later translations) — out of the primary corpus."
+  - "The post-1994 Chechen-war reception surge as a documented reception event (known via scholarship; no dedicated primary layer)."
+
+# ============================================================================
+needsReview:
+  - item: >-
+      Hadji Murat himself is routed as a `character` (titular) with a prototypes[]
+      edge to the historical figure. Whether the HISTORICAL Hadji Murat ALSO warrants
+      a standalone `person` page (he is historically significant in his own right,
+      independent of the novel) is an ingestion judgment call — the work is so
+      grounded in the documentary record that the line is unusually thin here.
+    phase: "entities / schema"
+    why: "wiki-schema v1.4 separates character from person via prototypes[]; this work blurs them more than Maslova/Pozdnyshev did. Surface to the reader (feedback_explain_schema_before_edit)."
+  - item: >-
+      Nicholas I and Shamil are routed as `person` (dominant historical identity),
+      not `character`. But each is a major fictional set-piece in the novel; a
+      `character` treatment of Tolstoy's satirical Nicholas-I construct is a
+      defensible alternative. Routed person here per the schema's "historical person
+      who appears" guidance; flag for the reader.
+    phase: "entities / schema"
+    why: "Genuine routing ambiguity for historical figures who are also vivid fictional portraits."
+  - item: >-
+      Marya Dmitrievna (invented, no documented prototype) is given a `character`
+      page as a principal invented domestic figure; under the tiering rule she could
+      instead fold into the work's overview page. Ivan Matveevich and the soldier
+      Avdeev were NOT given pages (fold into the work page).
+    phase: "entities / schema"
+    why: "Tiering-rule judgment call (wiki-schema v1.4 §'When a character earns its own page')."
+  - item: >-
+      The source-research network is proposed as routing clusters (the Tiflis chain;
+      the Korganov family) rather than one page each. Split into individual `person`
+      pages at ingestion as warranted (Esadze, Nakashidze, Potto, Veidenbaum;
+      I. I. Korganov / A. A. Korganova).
+    phase: "entities"
+    why: "Avoid over-proliferating priority-3 stubs in the dossier; the ingestion step decides page granularity."
+  - item: "Entity `sources` ids left empty — mapping to website/schema/sources.yaml is deferred to ingestion."
+    phase: "entities"
+    why: "Avoid fabricating source ids."
+  - item: "Old-Style → New-Style conversion for the composition dates flagged on each workRecord date field, not applied."
+    phase: "workRecord"
+    why: "19th-c Russian diary/letter/notebook dates are Julian; conversion belongs to ingestion."
+  - item: "workRecord subcategory/genre (Novellas / novella) and completionStatus value are best-fit; confirm against the works-schema controlled vocab and the live records at ingestion."
+    phase: "workRecord"
+    why: "~110pp повесть; could read as a short novel. completionStatus controlled value to confirm."
+
+# ============================================================================
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/ (PSS Tom 35 works + comments; diaries Tom 53–55; letters Tom 69–75)"
+  - "Wikimedia Commons API (generator=search + imageinfo|extmetadata) — 24 PD images cached"
+  - "State Tolstoy Museum (tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru) — not programmatically accessible this session; request channels logged in visuals/_sweep.md"
+  - "RGVIA (Russian State Military-Historical Archive) — Caucasian-War maps/orders; request-only (noted)"
+  - "Web scholarship sweep — 25 sources (see extracts/_scholarship.md)"
+
+# ============================================================================
+references:
+  primary:
+    - "PSS Tom 35: Хаджи-Мурат (pp. 5–118); working notes (pp. 275–283); variants (pp. 284–556); «История писания» (pp. 583–629); «История печатания» (pp. 629–631); «Список источников» (pp. 631–633); «Примечания» (pp. 634–643); glossary of mountaineer words (pp. 644–647); «Описание рукописей» (pp. 648–666). Local PDF: jubilee-edition/vol04."
+    - "PSS Tom 53–55: diaries 1895–1904."
+    - "PSS Tom 69–75: letters 1896–1904."
+  background:
+    - "Bloom, Harold (1994). The Western Canon. Harcourt Brace. (\"the best story in the world\".)"
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life. Houghton Mifflin Harcourt."
+    - "Simmons, Ernest J. (1968). Introduction to Tolstoy's Writings. University of Chicago Press. (Hadji Murat as good universal art.)"
+    - "Herman, David (2005). 'Khadzhi-Murat's Silence.' Slavic Review 64.1, pp. 1–23. (Violation / silence reading.)"
+    - "Shklovsky, Viktor (1981; tr. 2007). Energy of Delusion: A Book on Plot. Dalkey Archive Press."
+    - "Bojanowska, Edyta M. (2022). 'Was Tolstoi a Colonial Landlord?' Slavic Review 81.2, pp. 324–348."
+    - "Gould, Rebecca Ruth (2013). 'Topographies of Anticolonialism.' Comparative Literature Studies 50.1, pp. 87–107."
+    - "Kokobobo, Ani (2017). 'Tolstoy's Enigmatic Final Hero: Holy War, Sufism…' The Russian Review 76, pp. 38–52; expanded in Leo Tolstoy: The Power of Dissent (2025)."
+    - "Souder, Eric M. (2014). 'The Circassian Thistle…' MA thesis, Miami University (Ohio)."
+    - "Full 25-source list with URLs: extracts/_scholarship.md."
