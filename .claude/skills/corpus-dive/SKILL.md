@@ -1,10 +1,12 @@
 ---
 name: corpus-dive
-description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals + scholarship + work-record + coverage layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
-argument-hint: "<theme or research question> [--auto] [--confirm-scope] [--model <tier>]"
+description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals + scholarship + work-record + coverage layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended. Add `--novel` for a full novel/novella dive — a work-subject dive that re-weights the spine (lighter close-read, heaviest genesis & reception, plus character/theme/marquee sections); use it whenever the subject is one of Tolstoy's novels or long narratives."
+argument-hint: "<theme or research question> [--auto] [--novel] [--confirm-scope] [--model <tier>]"
 triggers:
   - "corpus dive"
   - "corpus-dive"
+  - "novel dive"
+  - "novel-dive"
   - "research across the corpus"
   - "research across the PSS"
   - "research across the TEI"
@@ -43,6 +45,10 @@ the *plan and the pointer*, ingestion is the *writer*. Proposing a page is not c
 Parse `{{ARGUMENTS}}`:
 - **theme** (required) — everything that is not a flag; the research question/topic.
 - **`--auto`** — unattended mode (see Mode).
+- **`--novel`** — novel mode: the subject is a single novel/long narrative. A work-subject dive (so it
+  carries a `workRecord:`) with a re-weighted spine and three added index sections. **When set, read
+  `references/novel-mode.md` first and treat it as the governing overlay on the phases below** (see the
+  *Novel mode* section).
 - **`--confirm-scope`** — in `--auto`, approve the auto-drafted scope once, then detach.
 - **`--model <tier>`** — informational (the CLI already set the baseline); record the effective tier in the run-report.
 - **slug** = kebab-case of the theme (lowercase, non-alphanumeric → `-`).
@@ -87,6 +93,36 @@ self-scored, with concerns routed to `needsReview`:
 - Did the spine stay bare?
 
 The human retrospective is deferred to the reader's return; the self-assessment never blocks the run.
+
+## Novel mode (`--novel`)
+
+A novel-dive **is a work-subject dive** (single work → a `workRecord:` block) tuned for a long
+narrative. The work-dive spine was calibrated on the non-fiction treatises, where the textual layer is
+exhaustive (chapter-by-chapter keystones); for a 300–500-page novel that is both wrong and impossible.
+The mode re-weights *where the effort goes* — the genesis, redaction history, and reception carry a
+novel's depth; the text is read by *locating* its pivotal scenes, not marching through it.
+
+**When `--novel` is set, read `references/novel-mode.md` and treat it as the governing overlay on the
+phases below.** It is the distillation of three flagship novel-dives that re-balanced the spine by hand
+and converged on one shape. In brief, relative to the work-dive spine:
+
+- **Lighter close-read** — extract the full text once, close-read 3–5 pivotal scenes (one centrepiece
+  quoted in full), map the rest thematically (replaces the chapter-by-chapter deep read in Phase 2).
+- **Heaviest genesis & reception** — the composition-years witness sweep and the censorship-as-reception
+  pass get the most budget.
+- **Three added index sections** — *Characters & prototypes* (routes `character` + `prototypes[]`,
+  `person`, and `group` entities), a promoted *Themes* section, and a *Marquee question* section that
+  states the dive's contested claim and tests it as a hypothesis (`confirms`/`complicates`/`extends`).
+- **Heavy visuals** by default for a canonical novel.
+- **Flex, don't hard-code** — principals are not always fictional (route by what the figure is); a
+  separately-catalogued companion text gets its own `workRecord`; reception flexes by era; a
+  historically-sourced work adds a genesis source-research sub-step.
+
+**Hard gates are unchanged** (`--choice=reg --notes=auto`, `verify_quotes.py` exit 0, the bare voice,
+no vault writes, a record-creating `workRecord`, the separate-pass verifier, the Phase 6 + 7 handoffs).
+**One run at a time** — never start an `--auto` pass while an in-session run of the same dive is live
+(a concurrent `--auto` run once committed a duplicate narrative). Everything in `references/novel-mode.md`
+is an overlay; the boundaries, model routing, and gates in this file still hold.
 
 ## Model routing
 
@@ -134,10 +170,12 @@ than re-firing it. The contract still gets written down; it just isn't gated beh
 **Work-subject dives.** When the subject is a *single work* (not a scattered theme), the
 scope contract additionally pins: the PSS Tom(s) holding the work and each of its
 redactions; the composition window (writing start→finish, from the `works/` record +
-corpus); and the path to the work's `works/` record. These drive the composition-years sweep
-(Phase 1), the deep read (Phase 2), the standing spine (Phase 4), and the `workRecord:` fill
-(dossier). Everything below degrades gracefully for a pure theme: a spine section with no
-evidence is dropped and logged in the `coverage` ledger.
+corpus); and the path to the work's `works/` record — or, when no record exists yet (common: only a
+handful of works are recorded so far), the path it *should* live at (derived from genre/category),
+with the `workRecord:` then proposing the record's **creation** rather than a fill. These drive the
+composition-years sweep (Phase 1), the deep read (Phase 2), the standing spine (Phase 4), and the
+`workRecord:` proposal (dossier). Everything below degrades gracefully for a pure theme: a spine
+section with no evidence is dropped and logged in the `coverage` ledger.
 
 ## Phase 1 — Sweep (scale-aware)
 
@@ -165,7 +203,9 @@ runs alongside the always-on post-1880 letter pass and feeds the Genesis section
 - **Read the work's own text deeply (work dives).** The subject text is known — read its TEI
   in the holding Tom(s) as the primary source: a structural pass for the keystone passages,
   chapter by chapter, not only a grep for theme hits. This is the raw material for the *What the
-  work says* section.
+  work says* section. **Novel mode (`--novel`) replaces this chapter-by-chapter read** with
+  extract-once → locate → close-read 3–5 pivotal scenes → map the rest thematically — a 500-page
+  novel can't be read exhaustively; see `references/novel-mode.md` (Phase 2).
 - **Pre-reform orthography:** run `extract_tei.py` with `--choice=reg` on any pre-1918 text
   (every Prophet-period work qualifies) — it resolves `<choice><orig>/<reg>` spelling pairs to
   modern orthography. Without the flag the legacy default drops those pairs and guts the text (it
@@ -346,7 +386,9 @@ context" prose section of `index.md` is composed in Synthesize.
    archivesConsulted: [ … ]
    references: { primary: [], background: [] }
    ```
-   - `wikiType` ∈ the 9 wiki types (`website/schema/wiki-schema.md`).
+   - `wikiType` ∈ the wiki types defined in `website/schema/wiki-schema.md` (12 as of v1.4 — the
+     latter two, `character` (with `prototypes[]`) and `group`, are what a novel-dive routes its
+     fictional characters and real-world sects/peoples to; see `references/novel-mode.md`).
    - `vaultStatus` ∈ exists | stub | missing — check `website/src/wiki/` and `website/src/works/`.
    - `sources` ids come from `website/schema/sources.yaml`.
    - `licence` ∈ PD | CC0 | CC-BY | CC-BY-SA | rights-reserved | unknown.

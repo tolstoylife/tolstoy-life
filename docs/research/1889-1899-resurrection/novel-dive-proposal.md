@@ -8,7 +8,9 @@ tags: [research, meta, corpus-dive, novel-dive, skill-proposal]
 
 Written after running the *Resurrection* dive (the first flagship novel-dive). The handoff asked: build a new `novel-dive` skill, or a `--novel` mode of `corpus-dive`? **Recommendation: a `--novel` MODE of `corpus-dive`, not a standalone skill** — it shares all the machinery (extraction, `verify_quotes`, the visuals sweep, render, the verifier, the handoff) and differs only in spine *weighting* and two extra sections. One maintained pipeline; the hard gates stay identical.
 
-This is a written proposal, not a built skill. Building it (via `skill-creator`) should wait for a go, because it touches a schema question (below) that needs a decision first, per the project's explain-schema-before-editing rule.
+> **Update 2026-06-09 — BUILT.** Both gates cleared (Gate 1 schema = resolved; Gate 2 = **mode**, confirmed with the reader). The `--novel` mode is implemented in `.claude/skills/corpus-dive/` — a lean overlay `references/novel-mode.md` plus hooks in `SKILL.md` (argument + triggers, a *Novel mode* section, a Phase-2 breadcrumb, and a stale wiki-type-count fix). Verified by a dry-run against *The Cossacks* (an early/uncensored work with no `works/` record) that confirmed the spine is followable and surfaced three late-work-calibration gaps — all since hardened: an absent `works/` record now routes to a record-*creating* proposal; a fourth early-fiction reception shape ("acclaimed legal publication, no ban"); and marquee framing that admits interpretive/developmental claims, not only causal ones. **This proposal is now the historical spec; `references/novel-mode.md` is the live source of record.**
+
+This was a written proposal, not a built skill. Building it (via `skill-creator`) waited for a go, because it touched a schema question (below) that needed a decision first, per the project's explain-schema-before-editing rule.
 
 ## What the work-dive spine got wrong for a novel — and what the Resurrection run actually did
 
