@@ -1,0 +1,1096 @@
+topic:
+  slug: 1886-the-power-of-darkness
+  title: 'The Power of Darkness (Власть тьмы, 1886)'
+  question: >-
+    A --novel work-subject dive (drama flex) on Tolstoy's five-act peasant tragedy.
+    Marquee: the play enacts the chain-of-sin doctrine («коготок увяз, всей птичке
+    пропасть») in peasant speech and locates redemption not in the naturalist horror
+    (the infanticide that drove the censors) but in Akim's inarticulate moral truth
+    and Nikita's public confession — "art for the people" practised a decade before
+    What Is Art? (1897–98) theorised it.
+  date: '2026-06-10'
+  period: Prophet
+  corpusSurface: 'works (PSS Tom 26) · letters (Toms 63–64) · diaries (Tom 49) · editorial commentary (Tom 26) · in-circle biography (Biryukov vol. III)'
+  dateRange: '1886 (composition) — 1895 (Russian stage première); reception to 1902 (MAT)'
+
+evidence:
+  # ---- The play's own text (PSS Tom 26, pp. 123–243) ----
+  - id: vt-epigraph
+    genre: work
+    pssTom: 26
+    pages: '123'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'А я говорю вам, что всякий, кто смотрит на женщину с вожделением, уже прелюбодействовал с нею в сердце своем.'
+    quoteEn: '(working English) "But I say unto you, that whosoever looketh on a woman to lust after her hath committed adultery with her already in his heart." (Matthew 5:28 — the epigraph the censor struck from the printed text.)'
+    significance: 'The epigraph (Matt. 5:28–29) frames the whole play around the INTERNAL origin of sin — adultery of the heart — the first claw of the chain. Cut by censorship; restored only in the 1913 Biryukov edition.'
+    facsimile: ''
+  - id: vt-akim-deceive-god
+    genre: work
+    pssTom: 26
+    pages: '~140'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'От людей утаишь, а от Бога не утаишь.'
+    quoteEn: '(working English) "You can hide it from people, but you cannot hide it from God." (Akim to Nikita, Act 1.)'
+    significance: 'Akim — the inarticulate, God-fearing father — states the moral law at the outset: the wrong done to the orphan Marina cannot be hidden from God. The conscience the chain of sin will override.'
+    facsimile: ''
+  - id: vt-akim-bank
+    genre: work
+    pssTom: 26
+    pages: '~159'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Бог трудиться велел. А ты, значит, тае, положил в банку деньги, да и спи, а деньги тебя, значит, тае, поваля кормить будут. Скверность это, значит, не по закону это.'
+    quoteEn: '(working English) "God bade us labour. But you, see, tae, put money in the bank and sleep, and the money, tae, lying down, will feed you. That''s vileness, that is, that''s not by the law." (Akim, Act 3 — the usury speech the censor circled.)'
+    significance: 'Akim''s inarticulate but morally penetrating attack on living off money instead of labour — the "bank" discourse the theatrical censor marked. The play''s positive doctrine voiced through a stammering peasant.'
+    facsimile: ''
+  - id: vt-anisya-smother
+    genre: work
+    pssTom: 26
+    pages: '~232'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Задуши скорей, не будет живой.'
+    quoteEn: '(working English) "Smother it quick, it won''t stay alive." (Anisya, throwing the newborn into the cellar, Act 4.)'
+    significance: 'The nadir of the chain of sin: Anisya forces Nikita to kill the infant — "your business, you finish it." The crime the prototype case supplied.'
+    facsimile: ''
+  - id: vt-board
+    genre: work
+    pssTom: 26
+    pages: '~233'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Доской прикрыл, на доску сел. Кончил, должно.'
+    quoteEn: '(working English) "He covered it with a board, sat on the board. Finished it, must have." (Anisya, watching, Act 4.)'
+    significance: 'The infanticide itself — narrated, off-stage in the cellar. The scene Pobedonostsev and Feoktistov fixed on as unstageable.'
+    facsimile: ''
+  - id: vt-ne-chelovek
+    genre: work
+    pssTom: 26
+    pages: '~235'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Как запищит, да как захрустят эти косточки[…]не человек я стал.'
+    quoteEn: '(working English) "The way it squealed, and the way those little bones crunched — kr... kr... I am no longer a man." (Nikita, variant Act 4.)'
+    significance: 'Nikita''s breaking point. The crunching of the bones is the play''s most harrowing line; the murder undoes him — the chain of sin destroys the man who let himself be led.'
+    facsimile: ''
+  - id: vt-matrena-chorus
+    genre: work
+    pssTom: 26
+    pages: '~233'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'О-ох! И рад бы не грешить, а что сделаешь?'
+    quoteEn: '(working English) "Oh-oh! Glad enough not to sin, but what can you do?" (Matryona, on the cellar step, Act 4.)'
+    significance: 'Matryona''s worldly accommodation — the voice that rationalises every link in the chain. The mother who facilitates the evil with folk-proverb comfort.'
+    facsimile: ''
+  - id: vt-mitrich-women
+    genre: work
+    pssTom: 26
+    pages: '~217'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Вашей сестры в России большие миллионы, а все как кроты слепые, — ничего не знаете.'
+    quoteEn: '(working English) "There are great millions of your sisters in Russia, and all like blind moles — you know nothing." (Mitrich to little Anyutka, variant Act 4.)'
+    significance: 'Mitrich — the retired soldier Tolstoy added late to serve "the function of the chorus of ancient Greek tragedy" — carries the variant Act 4''s indirect horror through his drunken aria on the abandonment of peasant women.'
+    facsimile: ''
+  - id: vt-confession
+    genre: work
+    pssTom: 26
+    pages: '~242'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'На погребице доской ребеночка ее задушил.'
+    quoteEn: '(working English) "In the cellar I smothered her little child with a board." (Nikita''s public confession at the wedding, Act 5.)'
+    significance: 'The turn: Nikita confesses everything publicly at the wedding feast, refusing to let Akulina shield him — "Forgive me, Orthodox world!"'
+    facsimile: ''
+  - id: vt-kogotok
+    genre: work
+    pssTom: 26
+    pages: '~243'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'говорил ты мне: «коготок увяз и всей птичке пропасть», не послушал я, пес, твоего слова, и вышло по-твоему.'
+    quoteEn: '(working English) "You told me: ''a claw caught, the whole bird is lost'' — I did not heed your word, dog that I am, and it came out as you said." (Nikita to his father Akim, Act 5.)'
+    significance: 'THE doctrinal keystone. Nikita names the subtitle-proverb as Akim''s Act-1 warning come true — the chain of sin traced back to its first lustful link. The proverb bookends the play.'
+    facsimile: ''
+  - id: vt-akim-transfig
+    genre: work
+    pssTom: 26
+    pages: '~243'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Себя не пожалел, Он тебя пожалеет.'
+    quoteEn: '(working English) "You did not spare yourself — He will spare you." (Akim, "в восторге"/in rapture, embracing his son, Act 5.)'
+    significance: 'The redemption — located not in the horror but in the self-not-sparing public confession, blessed by the inarticulate father. Tolstoy coached the actor Svobodin that Akim must "come to rapture at his son''s deed."'
+    facsimile: ''
+  - id: vt-final-line
+    genre: work
+    pssTom: 26
+    pages: '~243'
+    date: '1886'
+    extract: extracts/v26_123_243_Vlast_tmy.txt
+    quoteRu: 'Всё я один сделал. Мой и умысел, мое и дело.'
+    quoteEn: '(working English) "I did it all alone. Mine the intent, mine the deed." (Nikita, bound, final line before the curtain.)'
+    significance: 'The original closing line the PSS (1936) restored, rejecting Chertkov''s softened "От меня всё. Мой грех, мое и дело." Tolstoy: in folk speech "мой умысел" means he owns the guilt in the spiritual sense, not the legal.'
+    facsimile: ''
+  # ---- The plan (PSS Tom 26, pp. 533–534) ----
+  - id: plan-kogotok-seed
+    genre: work
+    pssTom: 26
+    pages: '534'
+    date: '1886'
+    extract: extracts/v26_533_534_plan_dramy.txt
+    quoteRu: 'Входит Влас. Кается на коленах. — Вяжите меня. Коготок увяз, и всей птичке пропасть.'
+    quoteEn: '(working English) "Vlas enters. Repents on his knees. — Bind me. A claw caught, the whole bird is lost." (The drama plan, Act 5.)'
+    significance: 'The night-written plan already carries the doctrine: the protagonist (here named Vlas, later Nikita) ends in kneeling public confession with the proverb. The chain-of-sin reading is original, not a late overlay.'
+    facsimile: ''
+  # ---- Genesis & composition (editorial commentary, PSS Tom 26, pp. 705–736; Gudzy) ----
+  - id: com-rakshanin-fabula
+    genre: commentary
+    pssTom: 26
+    pages: '705'
+    date: '1886'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Фабула «Власти тьмы» почти целиком взята мною из подлинного уголовного дела, рассматривавшегося в Тульском суде.'
+    quoteEn: '(working English) "The plot of The Power of Darkness is taken by me almost entirely from a real criminal case heard in the Tula court." (Tolstoy to the journalist N. Rakshanin.)'
+    significance: 'Author-stated prototype: the Koloskov case (Tula, 1879–80), supplied by prosecutor N. V. Davydov. Tolstoy met the convict Efrem Koloskov twice.'
+    facsimile: ''
+  - id: com-poisoning-invented
+    genre: commentary
+    pssTom: 26
+    pages: '705'
+    date: '1886'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Отравление мужа было придумано мною, но даже главные фигуры навеяны действительным происшествием.'
+    quoteEn: '(working English) "The poisoning of the husband was invented by me, but even the main figures were inspired by the actual event." (Tolstoy to Rakshanin.)'
+    significance: 'The single invented crime (Pyotr''s poisoning) darkens Anisya beyond her real prototype Marfa Koloskova — Tolstoy reshaped the case to deepen the chain of sin.'
+    facsimile: ''
+  - id: com-illness
+    genre: commentary
+    pssTom: 26
+    pages: '707'
+    date: '1886'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Во время болезни и вынужденного бездействия он и написал «Власть тьмы».'
+    quoteEn: '(working English) "It was during this illness and forced inactivity that he wrote The Power of Darkness." (Tolstoy spent ~3 months bedridden with erysipelas after a hay-cart leg injury, autumn 1886.)'
+    significance: 'The play was written fast, in a burst of forced rest in autumn 1886, prompted by Lentovsky''s people''s-theatre appeal and Stakhovich''s reading-aloud of Ostrovsky.'
+    facsimile: ''
+  - id: com-folk-theatre-intent
+    genre: commentary
+    pssTom: 26
+    pages: '708'
+    date: '1886'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Так как с самого начала работы над пьесой Толстой предназначал ее для постановки на сцене народного театра'
+    quoteEn: '(working English) "Since from the very beginning of work on the play Tolstoy intended it for staging on the people''s-theatre stage..."'
+    significance: 'The intent was popular-theatre from the start (M. V. Lentovsky''s Skomorokh). The "art for the people" frame is Tolstoy''s own design.'
+    facsimile: ''
+  - id: com-sa-diary-act1
+    genre: commentary
+    pssTom: 26
+    pages: '708'
+    date: '1886-10-26'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Левочка написал 1-е действие драмы. Я буду переписывать'
+    quoteEn: '(working English) "Lyovochka has written the 1st act of the drama. I shall copy it." (S. A. Tolstaya''s diary, 26 October 1886 [OS].)'
+    significance: 'Dates composition: Act 1 written 26 Oct 1886; the whole drama drafted within ~two to three weeks, Sofya Andreyevna copying as he wrote.'
+    facsimile: ''
+  - id: com-chertkov-adultery
+    genre: commentary
+    pssTom: 26
+    pages: '708'
+    date: '1886-11-14'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Написал драму на прелюбодеяние. Кажется хорошо'
+    quoteEn: '(working English) "I have written a drama on adultery. Seems good." (Tolstoy to V. G. Chertkov, 14 November 1886.)'
+    significance: 'Tolstoy''s own one-line description of the finished draft — names adultery (the Matthew-epigraph root) as the subject.'
+    facsimile: ''
+  - id: com-variant-act4
+    genre: commentary
+    pssTom: 26
+    pages: '709'
+    date: '1886-12'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'четвертый акт слишком реалистичен и потому для исполнения на сцене мало пригоден, решил написать вариант последних четырех явлений этого действия. Работа над ним происходила в декабре 1886 г.'
+    quoteEn: '(working English) "...the fourth act was too realistic and therefore little suited for stage performance, [so he] decided to write a variant of the last four scenes of that act. Work on it took place in December 1886."'
+    significance: 'The keystone variant Act 4 (the indirect, Anyutka-and-Mitrich version) was written in Dec 1886 — sixteen years before Stanislavski''s involvement, correcting a common secondary attribution.'
+    facsimile: ''
+  - id: com-peasants-not-understood
+    genre: commentary
+    pssTom: 26
+    pages: '708'
+    date: '1886-11'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Крестьянами драма не была понята и не произвела на них того впечатления, на которое рассчитывал автор.'
+    quoteEn: '(working English) "The drama was not understood by the peasants and did not produce on them the impression the author had counted on." (Of the reading aloud to ~40 Yasnaya Polyana peasants.)'
+    significance: 'The central complication of the marquee, in the primary record: the play written FOR the people failed with its first peasant audience.'
+    facsimile: ''
+  - id: com-above-masses
+    genre: commentary
+    pssTom: 26
+    pages: '714'
+    date: '1887-01'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: '«Власть тьмы» вообще выше понимания масс, которым только доступны народные рассказы и поучения Льва Николаевича'
+    quoteEn: '(working English) "...The Power of Darkness is altogether above the understanding of the masses, to whom only Lev Nikolaevich''s folk tales and teachings are accessible." (A. A. Stakhovich''s argument to the censor, per his letter to S. A. Tolstaya.)'
+    significance: 'The irony at the heart of the censorship win: Chertkov and Stakhovich got the play past the censor for the popular Posrednik edition by arguing the people would not understand it — and used the failed Yasnaya reading as proof.'
+    facsimile: ''
+  # ---- Publication, censorship, reception (commentary) ----
+  - id: com-aleks3-praise
+    genre: commentary
+    pssTom: 26
+    pages: '717'
+    date: '1887-01-27'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Александр III остался очень доволен пьесой и после пятого акта воскликнул: «Чудная вещь».'
+    quoteEn: '(working English) "Alexander III was very pleased with the play and after the fifth act exclaimed: ''A wonderful thing.''" (Court reading by Stakhovich, 27 Jan 1887.)'
+    significance: 'The tsar first praised it and ordered it staged at the imperial theatres — the court audience read its moral centre exactly where the marquee locates it.'
+    facsimile: ''
+  - id: com-pobedonostsev-zola
+    genre: commentary
+    pssTom: 26
+    pages: '718'
+    date: '1887-02-18'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Едва ли сам Золя дошел до такой степени грубого реализма, на какую здесь становится Толстой.'
+    quoteEn: '(working English) "Hardly even Zola himself reached such a degree of crude realism as Tolstoy attains here." (K. P. Pobedonostsev to Alexander III, 18 Feb 1887.)'
+    significance: 'The Ober-Procurator''s horrified letter — invoking Zola/naturalism and "a negation of the ideal" — reversed the tsar the next day. The naturalism charge comes from the censor''s own mouth.'
+    facsimile: ''
+  - id: com-aleks3-reversal
+    genre: commentary
+    pssTom: 26
+    pages: '718'
+    date: '1887-02-19'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Мое мнение и убеждение, что эту драму на сцене давать невозможно, она слишком реальна и ужасна по сюжету.'
+    quoteEn: '(working English) "My opinion and conviction is that this drama is impossible to give on stage — it is too real and horrible in subject." (Alexander III to Pobedonostsev, 19 Feb 1887, reversing himself.)'
+    significance: 'The tsar''s about-face the day after Pobedonostsev''s letter — the stage ban that would hold until 1895.'
+    facsimile: ''
+  - id: com-feoktistov-nerves
+    genre: commentary
+    pssTom: 26
+    pages: '712'
+    date: '1887-01-09'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Надо иметь железные нервы, чтобы вынести всё это'
+    quoteEn: '(working English) "One must have iron nerves to bear all this." (E. M. Feoktistov, head of the Press Affairs directorate, to S. A. Tolstaya, 9 Jan 1887.)'
+    significance: 'The press chief''s verdict on the fourth act — yet he permitted the play for print (13 Jan 1887) while banning the stage.'
+    facsimile: ''
+  - id: com-publication
+    genre: commentary
+    pssTom: 26
+    pages: '715'
+    date: '1887-02'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'в начале февраля 1887 г. драма вышла в свет в издании «Посредника»'
+    quoteEn: '(working English) "...in early February 1887 the drama appeared in the Posrednik edition." (Sytin press, Moscow; censorship permission 13 Jan 1887, 12,000 copies.)'
+    significance: 'First publication: the cheap popular Posrednik edition, marked "For adults" — the form Tolstoy intended (a 9-kopeck book for the people).'
+    facsimile: ''
+  - id: com-100000
+    genre: commentary
+    pssTom: 26
+    pages: '715'
+    date: '1887'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'в течение первых месяцев 1887 г. «Власть тьмы» была напечатана в количестве свыше 100 000 экземпляров'
+    quoteEn: '(working English) "...within the first months of 1887 The Power of Darkness was printed in more than 100,000 copies." (The 5th Posrednik edition alone ran to 40,000 at 3 kopecks.)'
+    significance: 'Mass popular circulation despite the stage ban — exactly what alarmed Pobedonostsev ("sold for 10 kopecks by peddlers at every crossroads"). (S. A. Tolstaya''s reminiscence gives 250,000 in three days — see contradictions.)'
+    facsimile: ''
+  - id: com-title-luke
+    genre: commentary
+    pssTom: 26
+    pages: '715'
+    date: '1887'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'видимо, заимствовано из «Евангелия» от Луки, гл. XXII, ст. 53: «Но теперь — ваше время и власть тьмы».'
+    quoteEn: '(working English) "...evidently borrowed from the Gospel of Luke, ch. XXII, v. 53: ''But now is your hour, and the power of darkness.''" (The title, supplied late by Tolstoy.)'
+    significance: 'The title is Christ''s words at his arrest (Luke 22:53); the original title became the subtitle proverb. Title and epigraph (Matt. 5:28) together frame the play between the hour of darkness and the lustful heart.'
+    facsimile: ''
+  - id: com-copyright
+    genre: commentary
+    pssTom: 26
+    pages: '715'
+    date: '1887-02-23'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: 'Прошу всех печатать где и как хотят, и прав собственности ни я ни мои наследники заявлять не будем'
+    quoteEn: '(working English) "I ask everyone to print it where and how they wish, and neither I nor my heirs will declare property rights." (Tolstoy to Chertkov, 23 Feb 1887.)'
+    significance: 'Tolstoy renounced literary-property rights on the play immediately after publication — the same copyright renunciation the project dives separately.'
+    facsimile: ''
+  - id: com-theatre-libre
+    genre: commentary
+    pssTom: 26
+    pages: '720'
+    date: '1888-02-10'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: '10 февраля 1888 г. она была поставлена в Париже в «Théâtre libre» в переводе И. Я. Павловского и Оскара Магенье под названием «La Puissance des Ténèbres».'
+    quoteEn: '(working English) "On 10 February 1888 it was staged in Paris at the Théâtre Libre, in the translation of I. Ya. Pavlovsky and Oscar Méténier, under the title La Puissance des Ténèbres."'
+    significance: 'The world première was abroad — André Antoine''s Théâtre Libre, Paris — and it played Geneva, Berlin, Milan, Rome and elsewhere while still banned from the Russian stage.'
+    facsimile: ''
+  - id: com-nicholas2-lifts
+    genre: commentary
+    pssTom: 26
+    pages: '719'
+    date: '1895-09-15'
+    extract: extracts/v26_705_736_commentary.txt
+    quoteRu: '15 сентября 1895 г. последовало, помимо Феоктистова и без его ведома, разрешение Николая II на постановку пьесы на императорской сцене.'
+    quoteEn: '(working English) "On 15 September 1895 there followed — bypassing Feoktistov and without his knowledge — Nicholas II''s permission to stage the play on the imperial stage."'
+    significance: 'The eight-year stage ban ended by the new tsar''s fiat; Russian premières followed Oct–Nov 1895 (Alexandrinsky, Skomorokh, Maly).'
+    facsimile: ''
+  # ---- Letters (re-extracted clean) ----
+  - id: let-great-world
+    genre: letter
+    pssTom: 64
+    pages: '6'
+    date: '1887-01'
+    addressee: 'A. A. Tolstaya'
+    extract: extracts/v64_010_A_A_Tolstoj.txt
+    quoteRu: 'будет полезна для тех, для «большого света»[…]для которого я писал ее, но вам она совсем не нужна.'
+    quoteEn: '(working English) "...it (the play) will be useful for those, for the ''great world,'' for whom I wrote it, but you have no need of it at all." (Tolstoy to Countess A. A. Tolstaya, ~Jan 1887.)'
+    significance: 'The marquee''s decisive complication, in Tolstoy''s own words: by January 1887 he frames the moral TARGET of his "folk" play as the educated upper class — not the peasantry. Folk form, "great world" audience.'
+    facsimile: ''
+  - id: let-svobodin-akim
+    genre: letter
+    pssTom: 64
+    pages: '24'
+    date: '1887-03-05'
+    addressee: 'P. M. Svobodin'
+    extract: extracts/v64_035_P_M_Svobodinu.txt
+    quoteRu: 'В 5-м действии он должен упираться, гнушаясь видом сватьбы, потом начать понимать, в чем дело, потом придти в восторг от поступка сына'
+    quoteEn: '(working English) "In Act 5 he must resist, loathing the sight of the wedding, then begin to understand what is happening, then come to rapture at his son''s deed." (Tolstoy directing the actor on how to play Akim.)'
+    significance: 'Tolstoy''s own staging note confirms Akim''s arc — resistance → understanding → rapture at the confession — as the play''s spiritual spine. Akim, not the horror, is where the meaning lands.'
+    facsimile: ''
+
+entities:
+  # --- Characters (fictional; prototypes[] fiction→life edge) ---
+  - name: Nikita
+    wikiType: character
+    wikilinkTarget: 'Nikita (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'The weak-willed farmhand whose chain of sins (seduction, complicity in poisoning, infanticide) drives the tragedy; ends in public confession.'
+    sources: []
+    evidenceRefs: [vt-kogotok, vt-ne-chelovek, vt-confession, vt-final-line, com-rakshanin-fabula]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: 'Efrem Koloskov'
+        basis: author-stated
+        certainty: documented
+        note: 'Tolstoy to Rakshanin names the Koloskov case as the source; but he softened the figure — Nikita is no rapist and is "soft-hearted" in the plan, where Koloskov was "a bad, stern man."'
+        sourceId: ''
+  - name: Akim
+    wikiType: character
+    wikilinkTarget: 'Akim (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'Nikita''s father — the inarticulate, God-fearing peasant (the "тае" speech tic) who voices the play''s moral truth and, in rapture, blesses his son''s confession.'
+    sources: []
+    evidenceRefs: [vt-akim-deceive-god, vt-akim-bank, vt-akim-transfig, let-svobodin-akim]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: 'an unnamed old отходник (migrant-labourer) peasant'
+        basis: editorial
+        certainty: probable
+        note: 'N. V. Davydov recalled Tolstoy describing a meek, good-natured old peasant met on the highway around the time of writing; the commentary identifies him as Akim''s prototype.'
+        sourceId: ''
+  - name: Anisya
+    wikiType: character
+    wikilinkTarget: 'Anisya (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'Pyotr''s wife (orig. named Aksinya in the plan); poisons her husband to marry Nikita, then forces the infanticide. The chain''s most active agent.'
+    sources: []
+    evidenceRefs: [vt-anisya-smother, vt-board, com-poisoning-invented]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: 'Marfa Koloskova'
+        basis: author-stated
+        certainty: documented
+        note: 'Based on Marfa Koloskova but darkened — the husband-poisoning is Tolstoy''s invention, with no counterpart in the case; her age dropped 50→32 for the romantic intrigue.'
+        sourceId: ''
+  - name: Matryona
+    wikiType: character
+    wikilinkTarget: 'Matryona (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'Nikita''s mother (orig. Katerina, "a cunning witch"); supplies the poison and rationalises every sin. Tolstoy''s hardest-worked role linguistically (folk proverbs).'
+    sources: []
+    evidenceRefs: [vt-matrena-chorus]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: ''
+        basis: editorial
+        certainty: conjectured
+        note: 'No documented life-prototype; an invented figure present from the plan. The chorus of worldly accommodation.'
+        sourceId: ''
+  - name: Mitrich
+    wikiType: character
+    wikilinkTarget: 'Mitrich (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'A retired soldier and reformed drunkard; added late (Dec 1886) and developed in the variant Act 4, where he comforts little Anyutka. Tolstoy gave him "the function of the chorus of ancient Greek tragedy."'
+    sources: []
+    evidenceRefs: [vt-mitrich-women, com-variant-act4]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: 'a remembered retired-soldier "type"'
+        basis: contemporary
+        certainty: probable
+        note: 'A. K. Chertkova records Tolstoy (mid-Dec 1886) recalling "the type of a retired soldier, a funny old man" while writing the variant Act 4. A general type recalled in a circle-member''s memoir, not a documented named prototype — hence contemporary/probable.'
+        sourceId: ''
+  - name: Akulina
+    wikiType: character
+    wikilinkTarget: 'Akulina (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'Pyotr''s deaf, half-witted daughter; seduced by Nikita, mother of the murdered child. At the end she corroborates his confession.'
+    sources: []
+    evidenceRefs: [vt-confession]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: 'Elena (Koloskov''s stepdaughter)'
+        basis: author-stated
+        certainty: documented
+        note: 'Inverted from the prototype: the real Elena was, per witnesses, "a kind, meek, hardworking girl"; Tolstoy made Akulina coarse and sensual, an apparently willing partner — to emphasise, per the commentary, "the negative sides of female nature."'
+        sourceId: ''
+  - name: Anyutka
+    wikiType: character
+    wikilinkTarget: 'Anyutka (The Power of Darkness)'
+    vaultStatus: missing
+    role: 'Pyotr''s younger daughter, age 10; the frightened child of the variant Act 4 who intuits the infanticide and whose terror carries its indirect horror.'
+    sources: []
+    evidenceRefs: [vt-mitrich-women]
+    ingestionPriority: 3
+    prototypes:
+      - person: ''
+        name: 'Efimya (Koloskov''s daughter, age 6)'
+        basis: author-stated
+        certainty: documented
+        note: 'Age raised 6→10 to make her a speaking character; the Koloskov-case episode of the father striking his daughter (in the plan as "Aniska, strikes her") was ultimately cut.'
+        sourceId: ''
+  # --- Persons (real figures in genesis / reception) ---
+  - name: 'N. V. Davydov'
+    wikiType: person
+    wikilinkTarget: 'Nikolai Davydov'
+    vaultStatus: missing
+    role: 'Prosecutor of the Tula circuit court; gave Tolstoy the Koloskov criminal case that became the plot, and the highway-peasant who became Akim.'
+    sources: []
+    evidenceRefs: [com-rakshanin-fabula]
+    ingestionPriority: 2
+  - name: 'A. A. Stakhovich'
+    wikiType: person
+    wikilinkTarget: 'Alexander Stakhovich'
+    vaultStatus: missing
+    role: 'Theatre-lover whose reading-aloud of Ostrovsky sparked the writing; read the play in society salons and before Alexander III; central to the censorship campaign.'
+    sources: []
+    evidenceRefs: [com-above-masses, com-aleks3-praise]
+    ingestionPriority: 2
+  - name: 'K. P. Pobedonostsev'
+    wikiType: person
+    wikilinkTarget: 'Konstantin Pobedonostsev'
+    vaultStatus: missing
+    role: 'Ober-Procurator of the Holy Synod; his 18 Feb 1887 letter to Alexander III ("cruder than Zola") reversed the tsar and secured the stage ban.'
+    sources: []
+    evidenceRefs: [com-pobedonostsev-zola]
+    ingestionPriority: 2
+  - name: 'Alexander III'
+    wikiType: person
+    wikilinkTarget: 'Alexander III'
+    vaultStatus: missing
+    role: 'Emperor; first praised the play ("Чудная вещь") and ordered it staged, then banned the stage after Pobedonostsev''s protest.'
+    sources: []
+    evidenceRefs: [com-aleks3-praise, com-aleks3-reversal]
+    ingestionPriority: 2
+  - name: 'E. M. Feoktistov'
+    wikiType: person
+    wikilinkTarget: 'Evgeny Feoktistov'
+    vaultStatus: missing
+    role: 'Head of the Main Administration for Press Affairs; banned the stage but permitted the print edition (13 Jan 1887). Later banned The Kreutzer Sonata.'
+    sources: []
+    evidenceRefs: [com-feoktistov-nerves]
+    ingestionPriority: 3
+  - name: 'M. V. Lentovsky'
+    wikiType: person
+    wikilinkTarget: 'Mikhail Lentovsky'
+    vaultStatus: missing
+    role: 'Director of the Moscow people''s theatre Skomorokh; his 31 Aug 1886 appeal for Tolstoy''s support prompted the play, written for his stage.'
+    sources: []
+    evidenceRefs: [com-folk-theatre-intent]
+    ingestionPriority: 3
+  - name: 'M. G. Savina'
+    wikiType: person
+    wikilinkTarget: 'Maria Savina'
+    vaultStatus: missing
+    role: 'Alexandrinsky Theatre actress who sought the play for her benefit; Tolstoy sent her the manuscript and cast her as Marina, deferring stage changes to Potekhin.'
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: 'André Antoine'
+    wikiType: person
+    wikilinkTarget: 'André Antoine'
+    vaultStatus: missing
+    role: 'Founder of the Théâtre Libre, Paris; staged the world première (10 Feb 1888) and played Akim. The play''s European career ran ahead of Russia.'
+    sources: []
+    evidenceRefs: [com-theatre-libre]
+    ingestionPriority: 3
+  - name: 'Efrem Koloskov'
+    wikiType: person
+    wikilinkTarget: 'Efrem Koloskov'
+    vaultStatus: missing
+    role: 'The Tula peasant whose 1879–80 crime (child-murder + public repentance at a wedding) was the documented prototype for Nikita; Tolstoy met him twice.'
+    sources: []
+    evidenceRefs: [com-rakshanin-fabula]
+    ingestionPriority: 3
+  - name: 'V. G. Chertkov'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Chertkov'
+    vaultStatus: exists
+    role: 'Ran the censorship campaign (the salon readings) and the Posrednik popular edition; arranged the variant Act 4''s placement; received the copyright-renunciation instruction.'
+    sources: []
+    evidenceRefs: [com-copyright, com-above-masses]
+    ingestionPriority: 2
+  - name: 'S. A. Tolstaya'
+    wikiType: person
+    wikilinkTarget: 'Sophia Tolstaya'
+    vaultStatus: exists
+    role: 'Copied the play as Tolstoy wrote it; her diary dates the acts; her reminiscences and her appeal to Feoktistov are a primary source for the censorship struggle; printed it in her collected editions.'
+    sources: []
+    evidenceRefs: [com-sa-diary-act1]
+    ingestionPriority: 2
+  - name: 'K. S. Stanislavski'
+    wikiType: person
+    wikilinkTarget: 'Konstantin Stanislavski'
+    vaultStatus: missing
+    role: 'Staged the play at the Moscow Art Theatre (opened 5 Dec 1902) and explicitly denied its realism was "naturalism not justified from within" — a practitioner''s push-back on the naturalist label.'
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: 'Leo Tolstoy'
+    wikiType: person
+    wikilinkTarget: 'Leo Tolstoy'
+    vaultStatus: exists
+    role: 'Author.'
+    sources: []
+    evidenceRefs: [com-chertkov-adultery, let-great-world, com-copyright]
+    ingestionPriority: 2
+  # --- Concepts ---
+  - name: 'Chain of sin («коготок увяз, всей птичке пропасть»)'
+    wikiType: concept
+    wikilinkTarget: 'The chain of sin'
+    vaultStatus: missing
+    role: 'The play''s governing doctrine and subtitle: one small sin caught fast drags the whole person to ruin. Bookended — Akim''s Act-1 warning, Nikita''s Act-5 confession.'
+    sources: []
+    evidenceRefs: [vt-kogotok, plan-kogotok-seed]
+    ingestionPriority: 2
+  - name: 'Art for the people / accessibility of art (народность)'
+    wikiType: concept
+    wikilinkTarget: 'Art for the people'
+    vaultStatus: missing
+    role: 'The popular-accessibility ideal the play practises (folk speech, the Skomorokh stage) and that Tolstoy would theorise in What Is Art? (1897–98). The dive''s marquee tests the practice→theory link.'
+    sources: []
+    evidenceRefs: [com-folk-theatre-intent, com-peasants-not-understood, let-great-world]
+    ingestionPriority: 2
+    dependsOn: []
+  # --- Institutions ---
+  - name: 'Skomorokh (Moscow people''s theatre)'
+    wikiType: institution
+    wikilinkTarget: 'Skomorokh Theatre'
+    vaultStatus: missing
+    role: 'M. V. Lentovsky''s people''s theatre (active 1882–1897), for whose stage the play was written; staged it 25 Oct 1895.'
+    sources: []
+    evidenceRefs: [com-folk-theatre-intent]
+    ingestionPriority: 3
+  - name: 'Main Administration for Press Affairs'
+    wikiType: institution
+    wikilinkTarget: 'Main Administration for Press Affairs'
+    vaultStatus: missing
+    role: 'The imperial censorship body (under Feoktistov) that banned the stage and permitted the print; the same apparatus that suppressed Tolstoy''s treatises.'
+    sources: []
+    evidenceRefs: [com-feoktistov-nerves]
+    ingestionPriority: 3
+
+visuals:
+  - id: VIS-01
+    type: photograph
+    subject: 'Leo Tolstoy portrait, 1887 (Sherer & Nabholz studio)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Leo Tolstoi 1887.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1887.jpg'
+    localPath: visuals/commons-tolstoy-portrait-1887.jpg
+    note: 'Dated 1887 — the year the play was finished and published. Primary visual anchor.'
+  - id: VIS-03
+    type: portrait
+    subject: 'Ilya Repin — Portrait of Leo Tolstoy (1887)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: []
+    holding: 'State Tretyakov Gallery / Wikimedia Commons'
+    archiveId: 'File:Ilya Efimovich Repin (1844-1930) - Portrait of Leo Tolstoy (1887).jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg'
+    localPath: visuals/commons-repin-tolstoy-1887.jpg
+    note: 'Canonical Repin portrait, painted 1887 — the play''s completion year.'
+  - id: VIS-04
+    type: stage-photo
+    subject: 'Scene from The Power of Darkness (Brentano''s, New York, 1922)'
+    relatedEntity: 'The Power of Darkness (staging)'
+    relatedEvidence: [com-nicholas2-lifts]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Scene from The Power of Darkness.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Scene_from_The_Power_of_Darkness.jpg'
+    localPath: visuals/commons-scene-power-of-darkness-brentanos-1922.jpg
+    note: 'The only PD staging photograph of the play on Commons (1922, Brentano''s NY).'
+  - id: VIS-05
+    type: film-still
+    subject: 'The Power of Darkness — 1909 Russian film (Khanzhonkov), still'
+    relatedEntity: 'The Power of Darkness (1909 film)'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Power of Darkness 1909 still.png'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Power_of_Darkness_1909_still.png'
+    localPath: visuals/commons-power-of-darkness-1909-film-still.png
+    note: 'Still from the (lost) 1909 film by A. Khanzhonkov & Co. — early afterlife.'
+  - id: VIS-17
+    type: title-page
+    subject: 'La Puissance des ténèbres — 1887 French first-edition title page (Perrin, trans. Halpérine)'
+    relatedEntity: 'André Antoine'
+    relatedEvidence: [com-theatre-libre]
+    holding: 'Internet Archive (Univ. of Ottawa copy)'
+    archiveId: 'IA: lapuissancedest00tols (leaf n8)'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://archive.org/details/lapuissancedest00tols'
+    localPath: visuals/emigre-ia-1887-french-firsted-titlepage.jpg
+    note: 'The 1887 Perrin edition André Antoine staged at the Théâtre Libre (world première, 10 Feb 1888). Keystone first-edition artifact.'
+  - id: VIS-19
+    type: portrait
+    subject: 'André Antoine (founder of the Théâtre Libre)'
+    relatedEntity: 'André Antoine'
+    relatedEvidence: [com-theatre-libre]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:André Antoine actor.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Antoine_actor.jpg'
+    localPath: visuals/emigre-antoine-portrait.jpg
+    note: 'Antoine directed and played Akim in the world première, four years before the Russian staging.'
+  - id: VIS-10
+    type: photograph
+    subject: 'N. V. Davydov (Tula prosecutor)'
+    relatedEntity: 'N. V. Davydov'
+    relatedEvidence: [com-rakshanin-fabula]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Nikolai V. Davidov.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Nikolai_V._Davidov.jpg'
+    localPath: visuals/commons-davydov-portrait.jpg
+    note: 'Supplied the Koloskov criminal case that seeded the plot.'
+  - id: VIS-09
+    type: photograph
+    subject: 'K. P. Pobedonostsev, 1896'
+    relatedEntity: 'K. P. Pobedonostsev'
+    relatedEvidence: [com-pobedonostsev-zola]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Konstantin Pobedonostsev, 1896.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Konstantin_Pobedonostsev,_1896.jpg'
+    localPath: visuals/commons-pobedonostsev-1896.jpg
+    note: 'Lobbied Alexander III to ban the stage production.'
+  - id: VIS-11
+    type: photograph
+    subject: 'E. M. Feoktistov (1828–1898)'
+    relatedEntity: 'E. M. Feoktistov'
+    relatedEvidence: [com-feoktistov-nerves]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Feoktistov Eugeny (1828-1898).jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Feoktistov_Eugeny_(1828-1898).jpg'
+    localPath: visuals/commons-feoktistov.jpg
+    note: 'Head of the Press Affairs directorate; banned the stage, permitted the print.'
+  - id: VIS-12
+    type: portrait
+    subject: 'Ivan Kramskoy — Portrait of Vladimir Chertkov'
+    relatedEntity: 'V. G. Chertkov'
+    relatedEvidence: [com-copyright]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Chertkov by Kramskoy.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Chertkov_by_Kramskoy.jpg'
+    localPath: visuals/commons-chertkov-kramskoy.jpg
+    note: 'Ran the Posrednik edition + the censorship-campaign salon readings.'
+  - id: VIS-07
+    type: photograph
+    subject: 'M. G. Savina (Bergamasco studio)'
+    relatedEntity: 'M. G. Savina'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Actress Maria Savina.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Actress_Maria_Savina.jpg'
+    localPath: visuals/commons-savina-bergamasco-1870s.jpg
+    note: 'Alexandrinsky actress who sought the play for her 1887 benefit. (VIS-06 is a dated 1881 variant.)'
+  - id: VIS-08
+    type: portrait
+    subject: 'Valentin Serov — Portrait of Alexei Stakhovich (1911)'
+    relatedEntity: 'A. A. Stakhovich'
+    relatedEvidence: [com-aleks3-praise]
+    holding: 'Stanislavsky Memorial Museum / Wikimedia Commons'
+    archiveId: 'File:Portrait of Alexei Stakhovich.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: false
+    url: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Alexei_Stakhovich.jpg'
+    localPath: visuals/commons-stakhovich-serov-1911.jpg
+    note: 'IDENTITY CAUTION — this is Aleksei A. Stakhovich (1856–1919, MAT). The play''s reader before Alexander III was Aleksandr A. Stakhovich (1830–1913), a different (related) man. Do NOT publish as the reader without verification. See needsReview.'
+  - id: VIS-13
+    type: photograph
+    subject: 'Maly Theatre, Moscow (exterior, modern)'
+    relatedEntity: 'Maly Theatre'
+    relatedEvidence: [com-nicholas2-lifts]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Moscow - Maly Theatre.jpg'
+    access: open
+    rights: CC-BY
+    licence: CC-BY
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Moscow_-_Maly_Theatre.jpg'
+    localPath: ''
+    note: 'Modern CC-BY exterior (attribution required); contextual only. The play was staged here 29 Nov 1895. Not downloaded.'
+  - id: VIS-20
+    type: title-page
+    subject: '«Власть тьмы» — Посредник / Sytin, Moscow 1887, Russian first-edition title page'
+    relatedEntity: 'The Power of Darkness (Russian first ed.)'
+    relatedEvidence: [com-publication]
+    holding: 'not located in PD scan form (target: ГМТ / RSL / Goskatalog)'
+    archiveId: ''
+    access: not-found
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: ''
+    localPath: ''
+    note: 'GAP — the Russian first edition (Posrednik/Sytin 1887) title page was not found on Internet Archive or Commons. Most probable holding: State Tolstoy Museum (ГМТ) or Russian State Library (rights-reserved). Follow-up.'
+  - id: VIS-14
+    type: manuscript
+    subject: '«Власть тьмы» manuscripts & staging photographs in the State Tolstoy Museum (ГМТ)'
+    relatedEntity: 'The Power of Darkness'
+    relatedEvidence: []
+    holding: 'State Tolstoy Museum (ГМТ), tolstoy-iss.kamiscloud.ru'
+    archiveId: 'KAMIS portal (object IDs not isolable this session)'
+    access: partial
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: false
+    url: 'https://tolstoy-iss.kamiscloud.ru'
+    localPath: ''
+    note: 'Holdings CONFIRMED via the suggest API (it autocompletes «власть тьмы», «власть тьмы в мхт реж»), but the public search returns the whole fund for any query, so specific manuscript/stage-photo IDs could not be isolated programmatically. Rights reserved by default. Browse the portal UI or contact the museum.'
+
+scholarship:
+  summary: >-
+    Mainstream criticism files the play under "naturalism" (English Wikipedia''s genre tag;
+    the German 1880s–90s reception that grouped Tolstoy "with Zola and Ibsen"), but the label
+    is contested at the source: at Antoine''s 1888 Théâtre Libre première Zola and de Vogüé
+    defended the play''s stageability while Dumas fils, Sardou and Augier said it "could only
+    be read"; and Stanislavski — who staged it at the MAT in 1902 — held that "realism becomes
+    naturalism [only] when it is not justified by the artist from within," judging his own
+    production''s external realism unjustified. The most useful modern study (Gatrall 2008)
+    argues the moralism and the naturalist surface work together — the murdered child is at
+    once "cutting-edge naturalism" and the play''s "moral and artistic climax." Sizova (2023,
+    from RGALI) situates the play inside the народность / accessibility-of-art declaration
+    "the active creator of which was Tolstoy." The in-circle sources (Biryukov, S. A. Tolstaya)
+    frame it not as naturalism or as a temperance tract but as a chain-of-sin drama turning on
+    "the lingering force of sin and the brilliance of truth in the humble form of Akim."
+  triangulation:
+    - evidenceRef: vt-kogotok
+      conventionalView: 'Simmons reads the proverb-subtitle as the work''s whole thematic weight ("the terrible evil-begetting power of evil"); Biryukov names the idea "the lingering force of sin and the brilliance of truth in Akim."'
+      relation: confirms
+      source: 'Simmons, Introduction to Tolstoy''s Writings (1968), ch. 11; Biryukov, Life of Tolstoy, vol. III.'
+    - evidenceRef: vt-akim-transfig
+      conventionalView: 'The court audience of 27 Jan 1887, per Stakhovich, talked after Act 5 "of Nikita''s heartfelt confession, of Akim''s holy joy" — locating redemption exactly where the marquee does.'
+      relation: confirms
+      source: 'Stakhovich''s letter, in Biryukov vol. III ch. 6.'
+    - evidenceRef: com-folk-theatre-intent
+      conventionalView: 'Sizova (2023) places the play inside the 19th-c. "accessibility of art" (народность) declaration of which Tolstoy was "the active creator," anticipating What Is Art?.'
+      relation: extends
+      source: 'I. I. Sizova, Literaturnyi fakt no. 28 (2023); cf. the project''s What Is Art? dive.'
+    - evidenceRef: com-peasants-not-understood
+      conventionalView: 'Scholarship treats the play as Tolstoy''s major "folk drama"; the primary record shows its first peasant audience did not understand it and its triumphs were salon, court and student — a gap Tolstoy felt and recorded.'
+      relation: complicates
+      source: 'Biryukov vol. III chs 6 & 19 (the Yasnaya reading; the Moscow students); Tolstoy to Strakhov, 3 Mar 1887.'
+    - evidenceRef: com-pobedonostsev-zola
+      conventionalView: 'The "naturalist / Russian Zola" reading is real (German critics; Wikipedia genre tag) but contested by a practitioner (Stanislavski) and complicated by Gatrall (2008): the moral frame and naturalist surface are not rivals.'
+      relation: complicates
+      source: 'J. Gatrall, Theatre Survey 49.2 (2008); Stanislavski, My Life in Art; cf. the Paris 1888 debate.'
+
+workRecord:
+  recordPath: 'website/src/works/plays/drama/the-power-of-darkness/The Power of Darkness.md'
+  workId: the-power-of-darkness
+  fields:
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: [com-publication, com-100000]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'CORRECTION: record currently false. The play was printed in early Feb 1887 (Posrednik) in Tolstoy''s lifetime, in 100,000+ copies.'
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'CORRECTION: record currently false. First publication was in Russia (Moscow, Posrednik / Sytin), 1887.'
+    - field: dateWritingStarted
+      value: '1886-11-07'
+      oldStyle: '1886-10-26'
+      approximate: true
+      evidenceRefs: [com-sa-diary-act1]
+      source: 'S. A. Tolstaya''s diary (26 Oct 1886 OS), in PSS Tom 26 commentary'
+      confidence: high
+      note: 'Act 1 written 26 Oct 1886 (OS); conception sketched a few days earlier (~25 Oct). NS = +12 days.'
+    - field: dateWritingCompleted
+      value: '1886-12'
+      oldStyle: '1886-12'
+      approximate: true
+      evidenceRefs: [com-chertkov-adultery, com-variant-act4]
+      source: 'PSS Tom 26 commentary; Tolstoy to Chertkov 14 Nov & 9–18 Dec 1886'
+      confidence: medium
+      note: 'Main five-act draft finished by mid-Nov 1886 ("Написал пьесу", 14 Nov); the variant Act 4 added in Dec 1886. "Completed" taken as the variant''s completion.'
+    - field: dateFirstPublished
+      value: '1887-02'
+      oldStyle: '1887-02'
+      approximate: true
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary (censorship permission 13 Jan 1887 OS; out early Feb 1887)'
+      confidence: high
+      note: 'Posrednik standalone edition; near-simultaneous with the play in S. A. Tolstaya''s collected works.'
+    - field: firstPublishedVenue
+      value: 'Posrednik (I. D. Sytin press), Moscow'
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'A cheap popular-edition book (9 kopecks), marked "Для взрослых" (For adults).'
+    - field: firstPublishedVenueType
+      value: book
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: ''
+    - field: dateFirstPublishedInRussia
+      value: '1887-02'
+      oldStyle: '1887-02'
+      approximate: true
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'Same as first publication — the play first appeared in Russia.'
+    - field: firstPublishedInRussiaVenue
+      value: 'Posrednik (I. D. Sytin press), Moscow'
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: ''
+    - field: firstPublishedInRussiaVenueType
+      value: book
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: ''
+    - field: epigraph
+      value: 'А я говорю вам, что всякий, кто смотрит на женщину с вожделением, уже прелюбодействовал с нею в сердце своем. Если же правый глаз соблазняет тебя, вырви его и брось от себя, ибо лучше, чтобы погиб один из членов твоих, а не всё тело твое было ввержено в геену. Мф. V, 28, 29.'
+      evidenceRefs: [vt-epigraph]
+      source: 'PSS Tom 26, play text'
+      confidence: high
+      note: 'Matthew 5:28–29. Struck out by the censor from the lifetime printed text; restored in the 1913 Biryukov edition.'
+    - field: epigraphLanguage
+      value: ru
+      evidenceRefs: [vt-epigraph]
+      source: 'PSS Tom 26'
+      confidence: high
+      note: ''
+    - field: epigraphSource
+      value: 'Gospel of Matthew 5:28–29'
+      evidenceRefs: [vt-epigraph]
+      source: 'PSS Tom 26'
+      confidence: high
+      note: ''
+    - field: titleAlternatives
+      value:
+        - title: 'Коготок увяз, всей птичке пропасть'
+          type: subtitle
+          language: ru
+        - title: 'La Puissance des Ténèbres'
+          type: translation
+          language: fr
+      evidenceRefs: [com-title-luke, com-theatre-libre]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'The subtitle was the original title (from Nikita''s Act-5 line); «Власть тьмы» from Luke 22:53 was supplied late.'
+    - field: bans
+      value:
+        - banningAuthority: 'Dramatic censorship / Main Administration for Press Affairs (E. M. Feoktistov), upheld by Alexander III on K. P. Pobedonostsev''s appeal'
+          authorityType: imperial-state
+          jurisdiction: Russia
+          scope: complete-ban
+          banDate: '1887-03'
+          banDateOldStyle: '1887-02'
+          banDateApproximate: true
+          banLiftedDate: '1895-09-27'
+          banLiftedDateOldStyle: '1895-09-15'
+          banLiftedDateApproximate: false
+        - banningAuthority: 'Ministry of Internal Affairs'
+          authorityType: imperial-state
+          jurisdiction: Russia
+          scope: complete-ban
+          banDate: '1887'
+          banDateOldStyle: '1887'
+          banDateApproximate: true
+      evidenceRefs: [com-aleks3-reversal, com-pobedonostsev-zola, com-nicholas2-lifts]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'IMPORTANT vocab caveat: scope=complete-ban is the closest controlled value, but NEITHER ban was a total suppression. Ban 1 was on STAGE performance ONLY (lifted by Nicholas II 15 Sep 1895 OS / 27 Sep NS) — the PRINT text was freely permitted 13 Jan 1887 and sold 100,000+ copies. Ban 2 was on STREET/peddler retail of the cheap brochure ONLY. A later Popova popular reprint was refused in 1898. The scope enum has no value for a stage-only ban — see needsReview.'
+    - field: censoredVersionExists
+      value: true
+      evidenceRefs: [vt-epigraph]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'The lifetime printed text omitted the Matthew epigraph (and 2–3 church-sharp expressions) by the censor''s demand; the epigraph was restored only in 1913. Separate cut stage-adaptations were prepared (Morozov 1889; the Literary-Artistic Circle 1895).'
+    - field: censorshipNotes
+      value: 'Stage banned 1887–1895 (Pobedonostsev → Alexander III); print permitted 13 Jan 1887 with only the Gospel epigraph cut; circulated 100,000+ copies in 1887; staged abroad (Paris 1888) years before Russia; stage ban lifted by Nicholas II 15 Sep 1895.'
+      evidenceRefs: [com-feoktistov-nerves, com-aleks3-reversal, com-nicholas2-lifts, com-theatre-libre]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: ''
+    - field: authoringLocations
+      value:
+        - 'Yasnaya Polyana'
+        - 'Moscow'
+      evidenceRefs: [com-illness, com-variant-act4]
+      source: 'PSS Tom 26 commentary'
+      confidence: high
+      note: 'Main draft at Yasnaya Polyana (Oct–Nov 1886); the variant Act 4 in Moscow (Dec 1886).'
+    - field: synopsis
+      value: 'A weak-willed farmhand, Nikita, is drawn step by step — seduction, complicity in his master''s poisoning, a second seduction, the murder of his own newborn — into ruin, then confesses publicly at a wedding and is blessed by his God-fearing father. A five-act peasant tragedy on the chain of sin: "a claw caught, the whole bird is lost."'
+      evidenceRefs: [vt-kogotok, vt-confession]
+      source: 'dive synthesis from the play text'
+      confidence: high
+      note: 'Proposed; the record''s prose body already carries a similar summary.'
+    - field: identifiers.jubileeEdition.volumes
+      value: '26'
+      evidenceRefs: [com-publication]
+      source: 'PSS Tom 26'
+      confidence: high
+      note: 'Text, plan, variants, author-corrections and commentary all in Tom 26.'
+
+coverage:
+  - surface: 'Genesis & composition (diaries/letters/commentary; the people around the work)'
+    status: covered
+    note: 'Heavy: the Koloskov prototype, the illness, Lentovsky/Stakhovich, S. A.''s diary dates, the variant Act 4.'
+  - surface: 'What the play says (close-read of pivotal scenes)'
+    status: covered
+    note: 'Full text read; epigraph, Akim''s warning + bank speech, the infanticide (main + variant Act 4), the Act-5 confession + Akim''s transfiguration.'
+  - surface: 'Redactions & textual history'
+    status: covered
+    note: 'Seven+ redactions summarised; the keystone variant Act 4 (Dec 1886) read first-class. Manuscript-level collation of all 23 mss NOT done (sampled, not collated — per novel-mode).'
+  - surface: 'Publication, censorship & translation'
+    status: covered
+    note: 'Posrednik 1887, 100,000+ copies; stage ban 1887–95; Théâtre Libre 1888; Nicholas II 1895.'
+  - surface: 'Reception & afterlife (Russian society/court/church first)'
+    status: covered
+    note: 'Court reading + reversal; reactionary press; the Yasnaya peasant non-comprehension; salon/student triumph; Stanislavski 1902.'
+  - surface: 'Characters & prototypes'
+    status: covered
+    note: 'Seven characters routed with prototypes[]; the Koloskov-case figures author-stated.'
+  - surface: 'Visual & manuscript record'
+    status: partial
+    note: 'Heavy visuals sweep run (see visuals); staging photographs and manuscript pages largely rights-reserved/Russian-museum — see visuals work-order.'
+  - surface: 'European stage career beyond Paris (Geneva/Berlin/Milan dates)'
+    status: not-covered
+    note: 'Principle documented (played across Europe before Russia); specific theatres/dates beyond Paris 1888 not confirmed — see needsReview.'
+
+contradictions:
+  - claim: 'Print runs of the 1887 editions.'
+    correction: 'The PSS apparatus gives "more than 100,000 copies" across the 1887 editions (the 5th Posrednik alone 40,000). S. A. Tolstaya''s reminiscence (quoted in Biryukov) gives "250,000 copies in three days." Both recorded; not merged — the apparatus figure is the dive''s baseline.'
+    evidenceRef: com-100000
+
+notCovered:
+  - 'Full manuscript collation of all 23 redactions (the dive samples the variant Act 4 as keystone, per novel-mode).'
+  - 'The play''s later Soviet and world stage history beyond Stanislavski''s 1902 MAT production.'
+  - 'The First Distiller (Первый винокур, 1886) and the folk-tale cycle as the play''s sibling "art for the people" — flagged for a cluster cross-link, not dived here.'
+  - 'The Союз против пьянства / temperance-society context (c. 1887) as a parallel to the play''s drink theme.'
+
+needsReview:
+  - item: 'Théâtre Libre venue: French sources place the 10 Feb 1888 première at the Théâtre des Menus-Plaisirs; some English sources say Théâtre Montparnasse. Confirm before asserting a specific house.'
+    phase: 3
+    why: 'Secondary-source discrepancy; the PSS commentary says only "в Париже в Théâtre libre".'
+  - item: 'European stagings beyond Paris (Geneva, Amsterdam, Milan, Rome, Turin, Venice, Genoa, Berlin) are named in the PSS commentary as a list but without dates; specific productions/dates unverified.'
+    phase: 3
+    why: 'The commentary lists cities; no per-city dates. Do not assert individual premières.'
+  - item: 'A common secondary claim credits Stanislavski with prompting the variant Act 4 (for an intended 1895 production). The PSS apparatus dates the variant to Dec 1886, sixteen years earlier, prompted by literati/theatre-people (A. K. Chertkova''s memoir). The dive follows the apparatus; flag the secondary error.'
+    phase: 3
+    why: 'Primary record contradicts a circulating secondary attribution.'
+  - item: 'Character wikilinkTargets use a disambiguating "(The Power of Darkness)" suffix to avoid collisions (e.g. Anyutka/Akulina are common names). Confirm the vault''s disambiguation convention at ingestion.'
+    phase: 4
+    why: 'Routing judgment; the wiki has no character pages yet.'
+  - item: 'Sales-figure discrepancy (100,000+ vs 250,000) — see contradictions; decide which to surface in the work record''s prose.'
+    phase: 3
+    why: 'Two primary-adjacent figures; the apparatus is the baseline.'
+  - item: 'The works-schema bans[].scope enum (complete-ban / passages-cut / serialization-refused / confiscation / pre-publication-rejected) has no value for a STAGE-ONLY ban while print is freely permitted — the exact shape of The Power of Darkness. Both ban entries are mapped to complete-ban with the nuance in the field note; consider a schema-vocab addition (e.g. stage-ban / distribution-restricted) at ingestion. A schema change needs Johan''s nod, so flagged not applied.'
+    phase: 4
+    why: 'Controlled-vocab gap; the proposal is schema-valid as written but the mapping is approximate.'
+
+archivesConsulted:
+  - 'primary-sources/tolstoydigital-TEI — PSS Tom 26 (play text, plan, variants, author-corrections, commentary); Toms 63–64 (letters); Tom 49 (diaries)'
+  - 'docs/research/doukhobors/biryukov-vol3 — Biryukov''s authorized biography, chs 6 & 19 (in-circle reception)'
+  - 'website/src/wiki — vault status of entities (16 pages)'
+  - 'web — Gatrall (2008), Sizova (2023), Simmons (1968), Stanislavski, and the 1888 Paris reception (see references.background)'
+
+references:
+  primary:
+    - 'Л. Н. Толстой. Власть тьмы, или «Коготок увяз, всей птичке пропасть». ПСС, Т. 26, с. 123–243 (текст), 533–534 (план), 534–544 (варианты), 544–548 (авторские исправления). Комментарий Н. К. Гудзия, с. 705–736.'
+    - 'Письма Л. Н. Толстого, ПСС Тт. 63–64 (1886–1887) — к Страхову, Ге, Черткову, А. А. Толстой, Савиной, Потехину, Свободину.'
+    - 'Дневники, ПСС Т. 49 (1886) — почти безмолвны о пьесе.'
+    - 'П. И. Бирюков. Биография Л. Н. Толстого, т. III, гл. 6 и 19 (in-circle account; vospominaniya of S. A. Tolstaya).'
+  background:
+    - 'Jefferson J. A. Gatrall, "Child Murder, Peasant Sins, and the Infantilizing of Evil in Tolstoy''s The Power of Darkness," Theatre Survey 49.2 (Nov. 2008), 253–275.'
+    - 'И. И. Сизова, "Малоизвестные подробности из истории создания пьесы Л. Н. Толстого «Власть тьмы»…," Литературный факт, № 28 (2023) — from RGALI materials.'
+    - 'Ernest J. Simmons, Introduction to Tolstoy''s Writings (Univ. of Chicago Press, 1968), ch. 11 (the dramatic writings).'
+    - 'Aylmer Maude, The Life of Tolstoy (and the Maudes'' standard English translation of the play).'
+    - 'Konstantin Stanislavski, My Life in Art — on the 1902 MAT production and the naturalism question.'
+    - 'A. N. Wilson, Tolstoy (1988); Rosamund Bartlett, Tolstoy: A Russian Life (2010); Henri Troyat, Tolstoy (trans. Amphoux, 1967) — biographical context.'
+    - 'On the 1888 Paris première: the Théâtre Libre debate (Zola and de Vogüé vs Dumas fils, Sardou, Augier); André Antoine as Akim.'
