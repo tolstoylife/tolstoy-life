@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-06-09
+Last updated: 2026-06-10
 
 ---
 
@@ -11,6 +11,7 @@ Base installation done (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operational sin
 
 **Remaining:**
 - ~~Switch embedding model to bge-m3 (1024d) for Russian + English~~ — Done 2026-04-25 (commit `9775cab5`).
+- **Verify local inference still works end-to-end** — discovered 2026-06-10 (Graphify spike) that the Homebrew **formula** `ollama` ships no `llama-server` runner (every generate → HTTP 500), so LightRAG's local qwen2.5:7b path was likely silently broken since some ollama update. Fixed by installing the **cask** `ollama-app`; re-confirm a LightRAG query/ingest actually runs. See `reference_ollama_macos_llama_server` (memory) + the 2026-06-10 LOG entry.
 - Set up a nightly cron job for `sync.py`
 - Test incremental sync after wiki edits
 - ~~Commit the LightRAG scaffold (staged in git)~~ — Done 2026-04-25 (commit `9775cab5` carried the `config.py` + `requirements.txt` changes and the `diagnose.sh` + `start-ui.sh` helpers).
