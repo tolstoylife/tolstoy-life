@@ -1,0 +1,919 @@
+topic:
+  slug: 1889-1909-the-devil
+  title: "The Devil (Дьявол) — a novella-dive"
+  question: >-
+    Is the "devil" of the title the peasant Stepanida, or Evgeny Irtenev's own
+    divided, involuntary will? Read the novella (drafted Nov 1889 in the Kreutzer
+    fortnight, given a second ending and its title c. 1909, published posthumously
+    1911) against its composition record — the genesis diaries, the 1858–60 Aksinya
+    Bazykina diaries, the 1898/1909 letters and diaries, and the PSS Tom 27
+    commentary — to test the claim that the title is the protagonist's self-deceiving
+    projection, not the author's verdict.
+  date: 2026-06-10
+  period: "Prophet period (post-1880); drafted 1889, second ending c. 1909"
+  corpusSurface: >-
+    PSS Tom 27 (the novella pp. 481–515; the variant ending pp. 516–517; draft
+    variants pp. 518–519; Sreznevsky's «История писания» pp. 714–728);
+    composition-years diaries (Tom 50), the autobiographical diaries (Tom 48,
+    1858–60), the late diaries (Toms 56–57, 1908–09), and letters (Toms 65, 85, 88).
+  dateRange: "1858–1911 (autobiographical source to first publication)"
+
+evidence:
+  # --- The text: PSS Tom 27, main redaction (suicide ending) ---
+  - id: E1
+    genre: work
+    pssTom: 27
+    pages: "481 (epigraph)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Если же правый глаз твой соблазняет тебя, вырви его и брось от себя, ибо лучше для тебя, чтобы погиб один из членов твоих, а не всё тело твое было ввержено в геенну."
+    quoteEn: "(working English) And if your right eye causes you to stumble, pluck it out and cast it from you; for it is better for you that one of your members perish, than that your whole body be cast into hell."
+    significance: >-
+      The epigraph (Matthew V:28–30) frames the sin and its remedy as the man's own
+      — the same Gospel verse set over The Kreutzer Sonata. The offending member is
+      the looker's; the title's accusation of the woman runs against it.
+    facsimile: ""
+  - id: E2
+    genre: work
+    pssTom: 27
+    pages: "511 (ch. XX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Ах, да, третий есть: себя, — сказал он тихо вслух, и вдруг мороз пробежал у него по коже."
+    quoteEn: "(working English) Ah, yes, there is a third: myself, he said quietly aloud, and suddenly a chill ran over his skin."
+    significance: >-
+      The centrepiece. The three-exits monologue worked out in the 18 Nov 1889 diary
+      — kill the wife, kill her, or kill himself. The suicide ending names the will
+      as the thing to be destroyed.
+    facsimile: ""
+  - id: E3
+    genre: work
+    pssTom: 27
+    pages: "511 (ch. XX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Я думал, что я ее взял, а она взяла меня, взяла и не пустила. Ведь я думал, что я свободен, а я не был свободен."
+    quoteEn: "(working English) I thought I had taken her, but she had taken me — taken me and not let go. I thought I was free, and I was not free."
+    significance: >-
+      The involuntary will stated in Evgeny's own voice — possession from inside.
+      The mechanism the dive reads as the true "devil."
+    facsimile: ""
+  - id: E4
+    genre: work
+    pssTom: 27
+    pages: "511 (ch. XX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Ведь она чорт. Прямо чорт. Ведь она против воли моей завладела мною."
+    quoteEn: "(working English) She is the devil. Simply the devil. She has taken possession of me against my will."
+    significance: >-
+      The title-word «чорт» in Evgeny's mouth in the suicide redaction — voiced in
+      the same breath as the reasoning toward suicide; the projection and its
+      correction are adjacent.
+    facsimile: ""
+  - id: E5
+    genre: work
+    pssTom: 27
+    pages: "485 (ch. III)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Он подошел к ней и, оглядываясь, коснулся ее."
+    quoteEn: "(working English) He went up to her and, looking around, touched her."
+    significance: >-
+      The first fall (ch. III). The seduction is almost without event and Stepanida
+      is barely seen — the text withholds her interiority so the "devil" stays
+      Evgeny's projection.
+    facsimile: ""
+  - id: E6
+    genre: work
+    pssTom: 27
+    pages: "502 (ch. XIII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "зажег спичку и положил палец в огонь. «Ну, думай о ней теперь», — иронически обратился он к себе."
+    quoteEn: "(working English) He struck a match and held his finger in the flame. 'Well, think about her now,' he said to himself ironically."
+    significance: >-
+      The burned-finger scene — the self-excision of the Gospel epigraph attempted
+      and failed. Direct sibling image to Father Sergius's axe-cut finger, written
+      within a year.
+    facsimile: ""
+  - id: E7
+    genre: work
+    pssTom: 27
+    pages: "515 (ch. XXI)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "Он приставил к виску, замялся было, но как только вспомнил Степаниду, решение не видеть, борьбу, соблазн, падение, опять борьбу, так вздрогнул от ужаса."
+    quoteEn: "(working English) He put it to his temple, hesitated a moment, but the instant he remembered Stepanida — the resolve not to see her, the struggle, the temptation, the fall, the struggle again — he shuddered with horror."
+    significance: >-
+      The canonical (suicide) ending. The violence turns on its true source — the
+      man's own will — not on the woman.
+    facsimile: ""
+  - id: E8
+    genre: work
+    pssTom: 27
+    pages: "515 (ch. XXI)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_481_515_Djavol.txt
+    quoteRu: "самые же душевно-больные это несомненно те, которые в других людях видят признаки сумасшествия, которых в себе не видят."
+    quoteEn: "(working English) the most insane of all are surely those who see the signs of madness in others and not in themselves."
+    significance: >-
+      The closing meditation, identical in both endings — turns the diagnosis of
+      Evgeny back on the reader who would call him mad.
+    facsimile: ""
+  # --- The text: PSS Tom 27, variant (murder) ending, c. 1909 ---
+  - id: E9
+    genre: work
+    pssTom: 27
+    pages: "517 (variant ending)"
+    date: "c. 1909"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_516_517_Djavol_varianty_kontsa.txt
+    quoteRu: "Да нет никакого Бога. Есть дьявол. И это она. Он овладел мной. А я не хочу, не хочу. Дьявол, да, дьявол"
+    quoteEn: "(working English) No — there is no God. There is a devil, and it is she. He has taken possession of me. And I do not want this, I do not want it. The devil, yes, the devil."
+    significance: >-
+      THE KEYSTONE VARIANT. The murder ending's title-naming sentence — denying God
+      and naming the woman the devil are one act. The work is titled after a
+      murderer's self-justification; the projection is staged as projection.
+    facsimile: ""
+  - id: E10
+    genre: work
+    pssTom: 27
+    pages: "517 (variant ending)"
+    date: "c. 1909"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v27_516_517_Djavol_varianty_kontsa.txt
+    quoteRu: "Он подошел вплоть к ней, вынул из кармана револьвер и раз, два, три раза выстрелил ей в спину."
+    quoteEn: "(working English) He went right up to her, took the revolver from his pocket, and fired into her back — one, two, three times."
+    significance: >-
+      The murder itself, immediately following the «дьявол» sentence. He is acquitted
+      as temporarily insane and degenerates into an alcoholic — survival without
+      redemption.
+    facsimile: ""
+  # --- Genesis: November 1889 diaries (Tom 50) ---
+  - id: E11
+    genre: diary
+    pssTom: 50
+    pages: "177"
+    date: "1889-11-10 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_177_177_1889_11_10_2.txt
+    quoteRu: "После обеда неожиданно стал писать историю Фредерикса."
+    quoteEn: "(working English) After dinner unexpectedly began writing the story of Frederiks."
+    significance: >-
+      The start of composition, to the day. In the diaries the work is «История
+      Фредерикса/Фридрихса», never «Дьявол».
+    facsimile: ""
+  - id: E12
+    genre: diary
+    pssTom: 50
+    pages: "179-180"
+    date: "1889-11-18 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_179_180_1889_11_18.txt
+    quoteRu: "две жизни представляются ему и два выхода. И наконец 3-й. Себя убить."
+    quoteEn: "(working English) two lives present themselves to him and two ways out. And finally a third: to kill himself."
+    significance: >-
+      The double-ending structure conceived in the diary before the draft was
+      finished — the formal feature of the work, planned not improvised. At this
+      stage the only end was suicide.
+    facsimile: ""
+  - id: E13
+    genre: diary
+    pssTom: 50
+    pages: "177"
+    date: "1889-11-12 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v50_177_177_1889_11_12.txt
+    quoteRu: "Писал Фредерикса, вписал в Крейцерову Сонату"
+    quoteEn: "(working English) Wrote Frederiks, inserted [a passage] into the Kreutzer Sonata."
+    significance: >-
+      The two works literally interleaved — The Devil drafted inside the Kreutzer
+      fortnight, in Tolstoy's own hand.
+    facsimile: ""
+  # --- The autobiographical prototype: Aksinya Bazykina (Tom 48, 1858–60) ---
+  - id: E14
+    genre: diary
+    pssTom: 48
+    pages: "15"
+    date: "1858-05-13 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v48_015_015_1858_05_13.txt
+    quoteRu: "Я влюблен, как никогда в жизни. Нет другой мысли. Мучаюсь."
+    quoteEn: "(working English) I am in love as never before in my life. No other thought. I am tormented."
+    significance: >-
+      The autobiographical origin of Evgeny's helpless attraction — Tolstoy's own
+      affair with the married peasant Aksinya Bazykina.
+    facsimile: ""
+  - id: E15
+    genre: diary
+    pssTom: 48
+    pages: "16"
+    date: "1858-06-16 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v48_016_016_1858_06_16.txt
+    quoteRu: "Имел Аксинью....; но она мне постыла."
+    quoteEn: "(working English) Had Aksinya…; but she has become repugnant to me."
+    significance: >-
+      The rapid revulsion after consummation — the attraction→aversion cycle the
+      novella gives Evgeny toward Stepanida.
+    facsimile: ""
+  - id: E16
+    genre: diary
+    pssTom: 48
+    pages: "21-22"
+    date: "1859-10-09 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v48_021_022_1859_10_09.txt
+    quoteRu: "Аксинью продолжаю видать исключительно."
+    quoteEn: "(working English) I continue to see Aksinya exclusively."
+    significance: >-
+      The re-flaring after revulsion — the obsession persists months later, the same
+      oscillation transposed into the fiction.
+    facsimile: ""
+  - id: E17
+    genre: diary
+    pssTom: 48
+    pages: "25"
+    date: "1860-05-26 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v48_025_025_1860_05_26.txt
+    quoteRu: "Уж не чувство оленя, а мужа к жене."
+    quoteEn: "(working English) No longer the feeling of a stag, but of a husband to his wife."
+    significance: >-
+      The change from animal lust to quasi-conjugal feeling — directly echoed in
+      Evgeny's deepening bond with Stepanida.
+    facsimile: ""
+  # --- Late recollection of Aksinya (Toms 56–57, 1908–09) ---
+  - id: E18
+    genre: diary
+    pssTom: 56
+    pages: "173-174"
+    date: "1908-07-09 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v56_173_174_1908_07_09.txt
+    quoteRu: "И так до связи с крестьянкой Акс. — она жива."
+    quoteEn: "(working English) And so up to the liaison with the peasant woman Aks. — she is alive."
+    significance: >-
+      The intimate diary: the Aksinya guilt still live in 1908, in the months before
+      the return to the work. «она жива» — she is still alive.
+    facsimile: ""
+  # --- The 1909 return ---
+  - id: E19
+    genre: diary
+    pssTom: 57
+    pages: "28-29"
+    date: "1909-01-19 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v57_028_029_1909_01_19.txt
+    quoteRu: "Просмотрел «Дьявола». Тяжело, неприятно."
+    quoteEn: "(working English) Read through 'The Devil.' Heavy, unpleasant."
+    significance: >-
+      The dated return to the work c. 1909 — the moment the second ending and the
+      title belong to (per Sreznevsky's handwriting analysis). Commentary dates this
+      19 Feb; the corpus dates it 19 Jan (see needsReview).
+    facsimile: ""
+  - id: E20
+    genre: diary
+    pssTom: 57
+    pages: "66"
+    date: "1909-05-13 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v57_066_066_1909_05_13.txt
+    quoteRu: "Оказывается, она читала «Дьявол», и в ней поднялись старые дрожжи"
+    quoteEn: "(working English) It turns out she had read 'The Devil,' and the old yeast rose in her."
+    significance: >-
+      Sofia Tolstaya discovers the manuscript in 1909 — the marital crisis the
+      twenty-year secrecy had been built to prevent.
+    facsimile: ""
+  # --- Letters ---
+  - id: E21
+    genre: letter
+    pssTom: 65
+    pages: ""
+    date: "1890-01-17 (OS)"
+    addressee: "P. I. Birukoff"
+    localPdf: ""
+    extract: extracts/v65_005_P_I_Biryukovu.txt
+    quoteRu: "у меня начаты еще другие художественные работы всё на тему половой любви (это секрет)"
+    quoteEn: "(working English) I have also begun other artistic works, all on the theme of sexual love (this is a secret)."
+    significance: >-
+      The work named as a secret — the suppression begun at conception, covering The
+      Devil and the «Коневская повесть» (Resurrection).
+    facsimile: ""
+  - id: E22
+    genre: letter
+    pssTom: 88
+    pages: ""
+    date: "1898-07-14 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v88_506_iyulya14.txt
+    quoteRu: "Иртенева нехорошо печатать, потому что мотив один и тот же, что в Отце Сергие."
+    quoteEn: "(working English) It is not good to publish Irtenev, because the motif is the same as in Father Sergius."
+    significance: >-
+      The same-day withdrawal of The Devil from the Doukhobor-fund sale — Tolstoy's
+      own pairing of the work with Father Sergius, not Kreutzer.
+    facsimile: ""
+  - id: E23
+    genre: letter
+    pssTom: 85
+    pages: ""
+    date: "1884-07-24 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v85_022_a24.txt
+    quoteRu: "я назначил ей свиданье и пошел на него."
+    quoteEn: "(working English) I arranged an assignation with her and went toward it."
+    significance: >-
+      The Domna confession — the 1880s temptation and the chance interruption (the
+      son's lesson) that becomes Evgeny's near-escape structure in the novella.
+    facsimile: ""
+  # --- PSS commentary (Tom 27, Sreznevsky) ---
+  - id: E24
+    genre: commentary
+    pssTom: 27
+    pages: "714-728"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_commentary_istoriya.txt
+    quoteRu: "связь с крестьянской женщиной из нашей деревни, до моей женитьбы, — на это есть намек в моем рассказе «Дьявол»."
+    quoteEn: "(working English) a liaison with a peasant woman of our village, before my marriage — there is a hint of it in my story 'The Devil.'"
+    significance: >-
+      Tolstoy's own statement to Birukoff naming the autobiography — the author
+      confirming Aksinya as the source of Stepanida.
+    facsimile: ""
+  - id: E25
+    genre: commentary
+    pssTom: 27
+    pages: "714-728"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_commentary_istoriya.txt
+    quoteRu: "вспомнил Аксинью, то, что она жива, и, говорят, Ермил мой сын"
+    quoteEn: "(working English) remembered Aksinya, that she is alive, and that, they say, Ermil is my son."
+    significance: >-
+      The 13 June 1909 notebook entry (quoted in the commentary; extract_tei.py
+      dropped it from the notebook file) — the unforgiven debt naming the son.
+    facsimile: ""
+  - id: E26
+    genre: commentary
+    pssTom: 27
+    pages: "714-728"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_commentary_istoriya.txt
+    quoteRu: "начерно в течение двух недель, в промежуток между окончанием предпоследней редакции «Крейцеровой сонаты» и началом работы над последней ее редакцией."
+    quoteEn: "(working English) in rough over two weeks, in the gap between the penultimate and final redactions of The Kreutzer Sonata."
+    significance: >-
+      The editor's dating of the composition — The Devil drafted inside the Kreutzer
+      fortnight, November 1889.
+    facsimile: ""
+
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: leo-tolstoy
+    vaultStatus: exists
+    role: "Author; the autobiographical source (the Aksinya affair, the Domna temptation)."
+    sources: []
+    evidenceRefs: [E11, E12, E14, E15, E16, E17, E18, E19, E21, E22, E23, E24, E25]
+    ingestionPriority: 1
+  - name: "Evgeny Irtenev"
+    wikiType: character
+    wikilinkTarget: evgeny-irtenev
+    vaultStatus: missing
+    role: "Protagonist. Prototypes: Tolstoy (autobiographical/probable) + N. N. Fridrikhs (the external crime/documented). Briefly renamed Tveretinov to mask the autobiography."
+    sources: []
+    evidenceRefs: [E2, E3, E4, E6, E7, E9, E10, E24]
+    ingestionPriority: 1
+    dependsOn: [leo-tolstoy, nikolai-fridrikhs]
+  - name: "Stepanida"
+    wikiType: character
+    wikilinkTarget: stepanida
+    vaultStatus: missing
+    role: "Principal — the peasant woman. Prototype: Aksinya Bazykina (author-stated/documented). The text withholds her interiority; the dive resists reading her as the title's 'devil'."
+    sources: []
+    evidenceRefs: [E5, E9, E10]
+    ingestionPriority: 1
+    dependsOn: [aksinya-bazykina]
+  - name: "Liza Irteneva"
+    wikiType: character
+    wikilinkTarget: liza-irteneva
+    vaultStatus: missing
+    role: "Secondary — the wife. No documented prototype; a Liza ↔ Sofia portrait is not asserted (see needsReview). May fold into the work's prose rather than a standalone node."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Aksinya Bazykina"
+    wikiType: person
+    wikilinkTarget: aksinya-bazykina
+    vaultStatus: missing
+    role: "The married peasant woman of Tolstoy's 1858–60 affair; the documented prototype for Stepanida. Mother of a son (the diary's «Ермил»; biographers' Timofei Bazykin)."
+    sources: []
+    evidenceRefs: [E14, E15, E16, E17, E18, E24, E25]
+    ingestionPriority: 1
+    dependsOn: [leo-tolstoy]
+  - name: "N. N. Fridrikhs"
+    wikiType: person
+    wikilinkTarget: nikolai-fridrikhs
+    vaultStatus: missing
+    role: "Tula judicial investigator who shot his peasant lover Stepanida and later died beneath a train; the external-crime source for the plot and both endings."
+    sources: []
+    evidenceRefs: [E24]
+    ingestionPriority: 2
+  - name: "Domna"
+    wikiType: person
+    wikilinkTarget: domna
+    vaultStatus: missing
+    role: "The Yasnaya Polyana kitchen-cook of the 1880s temptation Tolstoy confessed to Chertkov (1884); a secondary source for the near-escape structure."
+    sources: []
+    evidenceRefs: [E23]
+    ingestionPriority: 3
+  - name: "Sofia Andreevna Tolstaya"
+    wikiType: person
+    wikilinkTarget: sophia-tolstaya
+    vaultStatus: exists
+    role: "Tolstoy's wife; the figure the secrecy was built around. Discovered the manuscript in 1909 (the marital crisis). The work's earliest charged reader. (Vault page: «Sophia Tolstaya».)"
+    sources: []
+    evidenceRefs: [E20]
+    ingestionPriority: 2
+    dependsOn: [leo-tolstoy]
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: vladimir-chertkov
+    vaultStatus: exists
+    role: "Carried and copied the autograph (1890), urged publication, held the manuscript in Petersburg; recipient of the 1884 and 1898 letters."
+    sources: []
+    evidenceRefs: [E22, E23]
+    ingestionPriority: 2
+  - name: "Pavel Birukoff"
+    wikiType: person
+    wikilinkTarget: pavel-birukoff
+    vaultStatus: exists
+    role: "Confidant and biographer; received the secret (1890) and Tolstoy's own statement of the work's autobiography."
+    sources: []
+    evidenceRefs: [E21, E24]
+    ingestionPriority: 2
+  - name: "Ivan Gorbunov (I. I. Gorbunov-Posadov)"
+    wikiType: person
+    wikilinkTarget: ivan-gorbunov-posadov
+    vaultStatus: missing
+    role: "Co-copyist (with Chertkov) of the autograph, February 1890."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Nikolai Obolensky"
+    wikiType: person
+    wikilinkTarget: nikolai-obolensky
+    vaultStatus: missing
+    role: "Married Tolstoy's daughter Maria Lvovna (1897); copied the variant (murder) ending into the manuscript c. 1909. The variant-ending autograph stayed in his archive (now GTM No. 77)."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: [maria-tolstaya]
+  - name: "Maria Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: maria-tolstaya
+    vaultStatus: exists
+    role: "Tolstoy's daughter (1871–1906), later Obolenskaya. Connects the genesis network via her 1897 marriage to N. L. Obolensky. (Existing page is the daughter — confirm against the sister M. N. Tolstaya; see Father Sergius disambig.)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: yasnaya-polyana
+    vaultStatus: exists
+    role: "The estate where The Devil was written (the autograph dated there, 19 Nov 1889) and the thinly veiled setting of its action."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Doukhobors"
+    wikiType: group
+    wikilinkTarget: doukhobors
+    vaultStatus: missing
+    role: "The pacifist sect whose 1898 emigration fund Tolstoy meant to feed by selling three novellas — from which he withdrew The Devil. Context only; covered by its own dive."
+    sources: []
+    evidenceRefs: [E22]
+    ingestionPriority: 3
+
+visuals:
+  - id: V1
+    type: portrait
+    subject: "Tolstoy at work at his desk, Yasnaya Polyana"
+    relatedEntity: leo-tolstoy
+    relatedEvidence: E11
+    holding: "Wikimedia Commons"
+    archiveId: "File:1891Репин.Толстой за работой в Ясной Поляне.jpg"
+    access: open
+    rights: "Public domain (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:1891%D0%A0%D0%B5%D0%BF%D0%B8%D0%BD.%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%D0%B7%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D0%B9_%D0%B2_%D0%AF%D1%81%D0%BD%D0%BE%D0%B9_%D0%9F%D0%BE%D0%BB%D1%8F%D0%BD%D0%B5.jpg"
+    localPath: visuals/commons-tolstoy-1891-repin-yasnaya.jpg
+    note: "Ilya Repin, 1891. The keystone — composition-era, the exact milieu."
+  - id: V2
+    type: portrait
+    subject: "Tolstoy resting in a wood"
+    relatedEntity: leo-tolstoy
+    relatedEvidence: ""
+    holding: "State Tretyakov Gallery / Wikimedia Commons"
+    archiveId: "File:Leo_Tolstoy03.jpg"
+    access: open
+    rights: "Public domain (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy03.jpg"
+    localPath: visuals/commons-tolstoy-1891-repin-forest.jpg
+    note: "Ilya Repin, 1891. The estate forest Evgeny haunts."
+  - id: V3
+    type: photograph
+    subject: "Sofia Andreevna Tolstaya, 1908"
+    relatedEntity: sofia-tolstaya
+    relatedEvidence: E20
+    holding: "Wikimedia Commons"
+    archiveId: "File:Grevinde_Sofia_Andrejevna_Tolstoi_1908.jpg"
+    access: open
+    rights: "Public domain (photographer unknown, pre-1928)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Grevinde_Sofia_Andrejevna_Tolstoi_1908.jpg"
+    localPath: visuals/commons-sofia-tolstaya-1908.jpg
+    note: "The year before she found the manuscript (1909)."
+  - id: V4
+    type: photograph
+    subject: "Tolstoy and Sofia Tolstaya, 1910"
+    relatedEntity: leo-tolstoy
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tolstoy_and_wife_1910.jpg"
+    access: open
+    rights: "Public domain (photograph pre-1928 Russian)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_and_wife_1910.jpg"
+    localPath: visuals/commons-tolstoy-sofia-1910.jpg
+    note: "V. Bulgakov, 1910 — the post-discovery period."
+  - id: V5
+    type: photograph
+    subject: "Yasnaya Polyana house (aerial)"
+    relatedEntity: yasnaya-polyana
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tula_YasnayaPolyana_asv2019-09_img11_LNTolstoy_House.jpg"
+    access: open
+    rights: "Free Art License — attribution required"
+    licence: CC-BY-SA
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tula_YasnayaPolyana_asv2019-09_img11_LNTolstoy_House.jpg"
+    localPath: visuals/commons-yasnaya-polyana-house-aerial.jpg
+    note: "A. Savin, 2019. FAL — requires attribution on publication."
+  - id: V6
+    type: photograph
+    subject: "Aksinya Bazykina"
+    relatedEntity: aksinya-bazykina
+    relatedEvidence: E14
+    holding: "Yasnaya Polyana museum / GTM (unverified)"
+    archiveId: ""
+    access: "not found under open licence"
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: ""
+    localPath: ""
+    note: "REQUEST-TARGET. No Commons result; verify provenance via the Yasnaya Polyana museum before any PD claim. Any image labelled 'Aksinya Bazykina' in secondary literature must be traced to GTM/YP first."
+  - id: V7
+    type: title-page
+    subject: "«Посмертные художественные произведения», т. 1, 1911 — title page"
+    relatedEntity: ""
+    relatedEvidence: ""
+    holding: "RGB / GTM (Chertkov fond 435)"
+    archiveId: ""
+    access: "not located as open image"
+    rights: "Public domain (1911)"
+    licence: PD
+    usable: true
+    url: ""
+    localPath: ""
+    note: "REQUEST-TARGET. First publication of The Devil. One catalogue says vol. II; PSS apparatus says vol. 1 — confirm the volume when ordering (see needsReview)."
+  - id: V8
+    type: facsimile
+    subject: "Autograph manuscript of The Devil (and the variant-ending autograph)"
+    relatedEntity: leo-tolstoy
+    relatedEvidence: E9
+    holding: "IRLI (Pushkin House) 22.5.5; variant ending GTM, Obolensky archive No. 77"
+    archiveId: "IRLI 22.5.5; GTM Obolensky No. 77"
+    access: "not openly available; archival request required"
+    rights: "object PD; reproduction rights institutional"
+    licence: rights-reserved
+    usable: false
+    url: ""
+    localPath: ""
+    note: "REQUEST-TARGET. The variant-ending autograph (the suppressed murder ending) is the textual crux."
+
+scholarship:
+  summary: >-
+    The dominant English-language framing reads The Devil as an autobiographical
+    study of uncontrollable male sexual obsession and, to varying degrees, casts
+    Stepanida as a dangerous elemental female force — a peasant "femme fatale," the
+    title taken literally. The autobiographical basis in the Aksinya Bazykina affair
+    is universal consensus (Wilson, Troyat, the Maude preface, which also names the
+    Domna incident). The two-ending structure is usually described as Tolstoy's
+    personal indecision rather than as a structural argument about where the
+    destroying force is located. Møller's Postlude to The Kreutzer Sonata (1988) is
+    the key contextual study of the 1890s sexual-morality debate but treats Kreutzer,
+    not The Devil. Rancour-Laferriere (1998) reads the projection of evil onto women
+    as Tolstoy's own pathology. No source surveyed argues that the title is the
+    protagonist's self-deceiving projection offered critically by the author.
+  triangulation:
+    - evidenceRef: E9
+      conventionalView: "The title is literal: Stepanida is the devil, an irresistible peasant femme fatale (popular editions; the 'From the Ideal to Femme Fatale' line of reading)."
+      relation: contradicts
+      source: "Penguin / Melville House edition blurbs; russiantheatrefest, 'From the Ideal to Femme Fatale' (unverified author)"
+    - evidenceRef: E4
+      conventionalView: "Tolstoy's projection of evil onto women is symptomatic of his own misogynistic pathology (maternal-loss psychoanalysis)."
+      relation: complicates
+      source: "Daniel Rancour-Laferriere, Tolstoy on the Couch, 1998"
+    - evidenceRef: E14
+      conventionalView: "The novella is built on the Aksinya Bazykina affair (autobiographical confession)."
+      relation: extends
+      source: "A. N. Wilson, Tolstoy, 1988; Henri Troyat, 1965; Aylmer Maude preface, 1925"
+    - evidenceRef: E22
+      conventionalView: "The Devil is paired with The Kreutzer Sonata (sexual obsession); the triptych with Father Sergius and Tolstoy's own withdrawal-quote is rarely noted in English scholarship."
+      relation: complicates
+      source: "Peter Ulf Møller, Postlude to The Kreutzer Sonata, 1988"
+
+workRecord:
+  recordPath: website/src/works/fiction/novellas/the-devil/The Devil.md
+  workId: the-devil
+  fields:
+    - field: titleEn
+      value: "The Devil"
+      evidenceRefs: []
+      source: "PSS Tom 27"
+      confidence: high
+      note: ""
+    - field: titleRu
+      value: "Дьявол"
+      evidenceRefs: [E9]
+      source: "PSS Tom 27; title from the variant ending, given c. 1909"
+      confidence: high
+      note: ""
+    - field: titleAlternatives
+      value:
+        - { title: "История Фредерикса", type: working, language: ru }
+        - { title: "История Фридрихса", type: working, language: ru }
+        - { title: "Иртенев", type: working, language: ru }
+      evidenceRefs: [E11, E22]
+      source: "PSS Tom 27 commentary; the diary name (Фредерикса/Фридрихса) and the 1898 letter name (Иртенев)"
+      confidence: high
+      note: "The work had no title in the autograph; «Дьявол» was added c. 1909."
+    - field: genre
+      value: "novella"
+      evidenceRefs: []
+      source: "PSS Tom 27 (повесть)"
+      confidence: high
+      note: ""
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: []
+      source: "dive"
+      confidence: medium
+      note: "Finished as a work but left with two alternative endings; never finally revised for print."
+    - field: publishedDuringLifetime
+      value: false
+      evidenceRefs: [E22]
+      source: "PSS Tom 27 commentary; first published 1911 (posthumous)"
+      confidence: high
+      note: ""
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs: []
+      source: "PSS Tom 27 commentary"
+      confidence: high
+      note: ""
+    - field: dateWritingStarted
+      value: "1889-11-22"
+      evidenceRefs: [E11]
+      source: "Diary 10 Nov 1889 (OS) = 22 Nov 1889 (NS)"
+      confidence: high
+      oldStyle: "1889-11-10"
+      approximate: false
+    - field: dateWritingCompleted
+      value: "1889-12-01"
+      evidenceRefs: [E26]
+      source: "Draft finished 19 Nov 1889 (OS) = 1 Dec 1889 (NS); but the variant ending and title were added c. 1909"
+      confidence: medium
+      oldStyle: "1889-11-19"
+      approximate: true
+      note: "The main draft completed Nov 1889; the variant (murder) ending and the title «Дьявол» date to c. 1909 — 'completion' is split. See manuscripts and notes."
+    - field: dateFirstPublished
+      value: "1911"
+      evidenceRefs: []
+      source: "«Посмертные художественные произведения Л. Н. Толстого», т. 1, ed. Chertkov, pub. A. L. Tolstaya, Moscow 1911"
+      confidence: high
+      approximate: false
+    - field: firstPublishedVenue
+      value: "Посмертные художественные произведения Л. Н. Толстого, т. 1 (ред. В. Г. Чертков, изд. А. Л. Толстой, М.)"
+      evidenceRefs: []
+      source: "PSS Tom 27 commentary"
+      confidence: high
+      note: "One bookseller catalogue gives vol. II; the PSS apparatus says vol. 1 (see needsReview)."
+    - field: firstPublishedVenueType
+      value: "book"
+      evidenceRefs: []
+      source: "dive"
+      confidence: high
+      note: ""
+    - field: dateFirstPublishedInRussia
+      value: "1911"
+      evidenceRefs: []
+      source: "Same posthumous edition, Moscow 1911"
+      confidence: high
+      approximate: false
+    - field: epigraph
+      value: "Если же правый глаз твой соблазняет тебя, вырви его и брось от себя… (Мф. V, 28, 29, 30)"
+      evidenceRefs: [E1]
+      source: "PSS Tom 27, p. 481"
+      confidence: high
+      note: "Matthew 5:28–30. Same Gospel verse as The Kreutzer Sonata."
+    - field: epigraphSource
+      value: "Matthew 5:28-30"
+      evidenceRefs: [E1]
+      source: "PSS Tom 27"
+      confidence: high
+      note: ""
+    - field: epigraphLanguage
+      value: "ru"
+      evidenceRefs: []
+      source: "dive"
+      confidence: high
+      note: "Church Slavonic / Russian Synodal."
+    - field: authoringLocations
+      value:
+        - { estate: "Yasnaya Polyana", region: "Tula Governorate", country: "Russia" }
+      evidenceRefs: [E11]
+      source: "Autograph dated 'Ясная Поляна, 19 Ноября 1889'"
+      confidence: high
+      note: ""
+    - field: manuscripts
+      value:
+        - { draftLabel: "first-draft", dateCreated: "1889-11", numberOfFolios: 48, currentRepository: "Institute of Russian Literature (Pushkin House), RAN", repositoryCity: "St Petersburg", repositoryCountry: "Russia", repositoryCallNumber: "22.5.5" }
+        - { draftLabel: "fair-copy", dateCreated: "1890-02", currentRepository: "corrected Chertkov–Gorbunov copy (with the variant ending added c. 1909)", repositoryCallNumber: "GTM, Obolensky archive No. 77 (variant-ending autograph)" }
+      evidenceRefs: [E26]
+      source: "PSS Tom 27 «Описание рукописей»"
+      confidence: high
+      note: "Autograph 48 leaves, 22 chapters, dated 10–19 Nov 1889. Variant ending autograph at GTM."
+    - field: bans
+      value: []
+      evidenceRefs: []
+      source: "dive"
+      confidence: high
+      note: "No censorship: suppressed by the author, published posthumously."
+    - field: relatedWorks
+      value:
+        - { id: "the-kreutzer-sonata", relationshipType: "companion" }
+        - { id: "father-sergius", relationshipType: "companion" }
+      evidenceRefs: [E22, E26]
+      source: "Written in the Kreutzer fortnight; Tolstoy paired it with Father Sergius («мотив один и тот же»)"
+      confidence: high
+      note: ""
+    - field: themes
+      value: ["sexuality", "lust", "marriage", "the divided will", "suicide", "autobiography", "peasantry"]
+      evidenceRefs: [E2, E3, E14]
+      source: "dive"
+      confidence: medium
+      note: ""
+    - field: synopsis
+      value: "A young landowner, Evgeny Irtenev, is destroyed by an involuntary sexual obsession with the peasant woman Stepanida — first as a secret liaison, then, after his marriage, as a relapse he cannot will away. The novella survives in two endings: in one he shoots himself, in the other he shoots her. Tolstoy's most autobiographical fiction, built on his own pre-marriage affair with the peasant Aksinya Bazykina."
+      evidenceRefs: []
+      source: "dive"
+      confidence: high
+      note: ""
+    - field: identifiers.jubileeEdition.volumes
+      value: "27"
+      evidenceRefs: []
+      source: "PSS Tom 27"
+      confidence: high
+      note: ""
+
+coverage:
+  - surface: "The marquee question (internal vs external devil)"
+    status: covered
+    note: "Tested via the two endings, the epigraph, and the involuntary-will language; outcome contradicts+extends."
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Nov 1889 diaries (start, the double-ending schema, the Kreutzer interleaving); the c.1909 return; the three real sources."
+  - surface: "What the work says (close-read)"
+    status: covered
+    note: "Centrepiece (ch. XX) + 4 pivotal scenes; the rest mapped thematically."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "The two endings sampled; the murder ending extracted first-class. Draft variants sampled, not collated."
+  - surface: "Publication, censorship & afterlife"
+    status: covered
+    note: "Posthumous 1911; the 1898 withdrawal; Maude translation. bans: []."
+  - surface: "Characters & prototypes"
+    status: covered
+    note: "Irtenev/Stepanida/Liza as character; Aksinya/Domna/Fridrikhs as person. Tiering calls in needsReview."
+  - surface: "Themes"
+    status: covered
+    note: "Involuntary desire; internal/external devil; Gospel excision; autobiography; class."
+  - surface: "Reception & afterlife"
+    status: partial
+    note: "Posthumous → no contemporary public reception; Sofia's 1909 discovery as earliest reading. Contemporary critical reception of the 1911 volume not surveyed in depth."
+  - surface: "Scholarly context"
+    status: covered
+    note: "Femme-fatale frame, misogyny reading, autobiographical consensus, triptych — triangulated."
+  - surface: "Visual & manuscript record"
+    status: partial
+    note: "PD period photographs held; the Aksinya photo, 1911 title page, and manuscript facsimiles are request-targets."
+  - surface: "The author's later verdict"
+    status: covered
+    note: "1909 reread; 1898 withdrawal; the 1908–09 Aksinya guilt."
+
+contradictions:
+  - claim: "The PSS commentary dates the return-to-the-work diary entry to 19 February 1909."
+    correction: "The corpus has no February 1909 diary; the entry «Просмотрел «Дьявола». Тяжело, неприятно» is filed and dated 19 January 1909 (v57_028_029_1909_01_19)."
+    evidenceRef: E19
+
+notCovered:
+  - "Full collation of the draft variants (v27_518_519); the cancelled openings (№ 1–2) are summarised only."
+  - "Contemporary Russian critical reception of the 1911 posthumous volume (drew less notice than the censored siblings)."
+  - "The Wiener English 'Complete Works' (1904) predates publication and holds no Devil text; no local Russian PSS Tom 27 PDF for a facsimile."
+
+needsReview:
+  - item: "The 'hidden in a chair' anecdote — popular claim that Tolstoy sewed the manuscript into chair upholstery to hide it from Sofia."
+    phase: 3
+    why: "Not in the PSS commentary (which says the autograph was kept in Petersburg with E. I. Chertkova); a retailer-level embellishment with no traceable scholarly source. Do not assert."
+  - item: "The 1911 Posmertnye volume number for The Devil (vol. 1 vs vol. II)."
+    phase: 4
+    why: "PSS apparatus says vol. 1; a bookseller catalogue says vol. II. The dive follows the PSS. Confirm before ordering a title-page scan."
+  - item: "The name of Aksinya Bazykina's son (the diary's «Ермил» vs the biographers' Timofei Bazykin, patronymic Ermilovich)."
+    phase: 4
+    why: "Tolstoy's 1909 notebook says «Ермил мой сын»; biographical scholarship names the boy Timofei. Genealogy unresolved; cite the diary verbatim, attribute the identification."
+  - item: "Liza ↔ Sofia Andreevna as a character prototype."
+    phase: 4
+    why: "The jealousy/discovery material draws on Sofia, but no author-stated or documented prototype edge exists for Liza; do not mint the link as a fact. Liza may fold into the work's prose."
+  - item: "Maria Tolstaya disambiguation (daughter M. L. Obolenskaya vs sister M. N. Tolstaya)."
+    phase: 4
+    why: "The existing maria-tolstaya page is the daughter (1871–1906); confirm before linking the Obolensky genesis edge. (Same disambig flagged by the Father Sergius dive.)"
+  - item: "Character tiering: whether Liza, and the minor figures (the uncle, Varvara Alekseevna, Danila, the steward), earn standalone character nodes."
+    phase: 4
+    why: "Only Irtenev and Stepanida clearly meet the v1.4 tiering rule (principal + documented prototype). The rest likely fold into the work's prose."
+
+archivesConsulted:
+  - "tolstoydigital TEI corpus (PSS Toms 27, 48, 50, 56, 57, 65, 85, 88)"
+  - "Wikimedia Commons (period photographs/portraits — PD)"
+  - "local primary-sources/ (no relevant Devil imagery; Wiener 1904 English set predates publication)"
+  - "web: Russian Virtual Library / tolstoy-lit.ru (PSS commentary); ru.wikipedia; Project Gutenberg (Maude preface); bookseller catalogues (1911 edition)"
+
+references:
+  primary:
+    - "PSS Tom 27 — Дьявол (pp. 481–515), the variant ending (pp. 516–517), draft variants (pp. 518–519), Sreznevsky «История писания» (pp. 714–728)"
+    - "PSS Tom 48 — diaries 1858–1860 (the Aksinya Bazykina entries)"
+    - "PSS Tom 50 — diary November 1889 (the genesis)"
+    - "PSS Toms 56–57 — diaries/notebooks 1908–1909 (the late recollection and the return)"
+    - "PSS Tom 65 — letter to P. I. Birukoff, 17 Jan 1890"
+    - "PSS Tom 85 — letter to V. G. Chertkov, 24 Jul 1884 (Domna)"
+    - "PSS Tom 88 — letter to V. G. Chertkov, 14 Jul 1898 (Doukhobor sale + withdrawal)"
+  background:
+    - "Rosamund Bartlett, Tolstoy: A Russian Life, 2010"
+    - "A. N. Wilson, Tolstoy, 1988"
+    - "Henri Troyat, Tolstoy, 1965 (trans. 1967)"
+    - "Peter Ulf Møller, Postlude to The Kreutzer Sonata, 1988"
+    - "Daniel Rancour-Laferriere, Tolstoy on the Couch, 1998"
+    - "Aylmer Maude, preface to The Devil (trans. 1925; Project Gutenberg)"
+    - "Richard F. Gustafson, introduction to The Devil and Other Stories (Oxford World's Classics)"
+    - "V. Ya. Linkov, commentary on Дьявол (Russian Virtual Library)"
