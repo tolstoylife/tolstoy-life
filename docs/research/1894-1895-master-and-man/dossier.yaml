@@ -1,0 +1,981 @@
+topic:
+  slug: 1894-1895-master-and-man
+  title: "Master and Man (Хозяин и работник) — a novella-dive"
+  question: >-
+    Does Master and Man give narrative flesh to Tolstoy's doctrine of On Life
+    (1887) — that true life is the renunciation of the separate "animal
+    personality" (личность) for love — and does it make its boldest move by
+    routing salvation through the master, the calculating exploiter Brekhunov,
+    whose substitutionary death (he covers and warms his workman Nikita with his
+    own body, and dying feels "он — Никита, а Никита — он") gives the treatise its
+    flesh, while standing as a lived specimen of the "universal religious art"
+    Tolstoy would theorise two years later in What Is Art? (1897–98)? Read the
+    novella (conceived 6 Sept 1894, finished Jan 1895, published March 1895)
+    against its composition and redaction record to test the three claims.
+  date: 2026-06-10
+  period: "Prophet period (post-1880); composed Sept 1894 – Feb 1895"
+  corpusSurface: >-
+    PSS Tom 29 (the novella pp. 3–46; Posrednik printed variant pp. 233–248;
+    «Варианты» pp. 295–324 incl. the first rough redaction in full; «История
+    писания и печатания» pp. 375–378; «Описание рукописей» pp. 378–380);
+    composition-years diaries (Toms 52–53, Sept 1894 – Mar 1895) and letters
+    (Toms 67–68 to Strakhov / Gurevich / Volynsky / Olsufyeva; Tom 84 to S. A.
+    Tolstaya).
+  dateRange: "1892–1895 (Begichevka seed to first publication)"
+
+evidence:
+
+  # ---------- THE TEXT (PSS Tom 29, main text, pp. 3–46) ----------
+  - id: E1
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "ему кажется, что он — Никита, а Никита — он, и что жизнь его не в нем самом, а в Никите"
+    quoteEn: "(working English) it seems to him that he is Nikita and Nikita is he, and that his life is not in himself but in Nikita"
+    significance: >-
+      The centrepiece. In the death-dream Brekhunov's separate self dissolves: his
+      life is now located in the man he covers. This is On Life's thesis — that the
+      boundary of the animal личность is the illusion, and true life is found in
+      love for another — given narrative flesh. The marquee's first hypothesis (On
+      Life given flesh) and its second (salvation through the exploiter) converge in
+      this sentence.
+    facsimile: ""
+  - id: E2
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "«Жив Никита, значит жив и я», — с торжеством говорит он себе"
+    quoteEn: "(working English) \"Nikita is alive, so I too am alive,\" he says to himself with triumph."
+    significance: >-
+      The self-dissolution stated as triumph, not loss. Brekhunov's survival is now
+      conditional on Nikita's — the master's life routed through the man's. The word
+      "с торжеством" (with triumph) marks a positive spiritual event, not a tragedy.
+    facsimile: ""
+  - id: E3
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "лег на него, покрывая его не только своей шубой, но и всем своим теплым, разгоряченным телом"
+    quoteEn: "(working English) he lay on him, covering him not only with his fur coat but with his whole warm, heated body"
+    significance: >-
+      The substitutionary act, bodily and deliberate. The master makes himself the
+      covering that keeps the workman alive — the хозяин becomes the servant of his
+      работник. The marquee's second hypothesis (salvation routed through the
+      exploiter, the master saving the man) in its literal gesture.
+    facsimile: ""
+  - id: E4
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "Не знал, так теперь знаю. Теперь уж без ошибки. Теперь знаю"
+    quoteEn: "(working English) I did not know, so now I know. Now without mistake. Now I know."
+    significance: >-
+      Brekhunov's recognition, spoken about himself in the third person ("про Василья
+      Брехунова") — the man who lived for acquisition sees, at the threshold, what
+      his life was actually for. The instantaneous awakening On Life describes:
+      rational consciousness breaking through where its preconditions had long
+      accumulated unseen.
+    facsimile: ""
+  - id: E5
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX, closing image)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "лежащего под мертвым уже хозяином угревшегося Никиту"
+    quoteEn: "(working English) Nikita, warmed, lying beneath the master who was now dead"
+    significance: >-
+      The closing tableau: the snow swirling over the dead master and the living,
+      warmed man beneath him. The economic relation of the title is inverted in the
+      final picture — the хозяин is the covering, the работник is alive under him.
+    facsimile: ""
+  - id: E6
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. I)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "И, говоря это, Василий Андреич был искренно уверен, что он благодетельствует Никите"
+    quoteEn: "(working English) And, saying this, Vasily Andreich was sincerely convinced that he was a benefactor to Nikita."
+    significance: >-
+      The exploiter established at the outset, and the precise mechanism of the
+      exploitation: self-deception. Brekhunov pays Nikita 40 roubles where the labour
+      is worth 80, mostly in overpriced shop goods, and believes himself generous.
+      The figure who is saved is introduced as the one who cheats — the asymmetry the
+      marquee turns on.
+    facsimile: ""
+  - id: E6b
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. I)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "Василий Андреич платил Никите не 80 руб., сколько стоил такой работник, а рублей 40"
+    quoteEn: "(working English) Vasily Andreich paid Nikita not 80 roubles, the worth of such a workman, but some 40"
+    significance: >-
+      The concrete ledger of the exploitation — half wages, paid in kind at the shop's
+      inflated prices. Tolstoy grounds the master/man relation in exact economics
+      before he dissolves it in the snow.
+    facsimile: ""
+  - id: E7
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. IX)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "двух смертей не бывать, а одной не миновать"
+    quoteEn: "(working English) there are not two deaths to die, and the one cannot be escaped"
+    significance: >-
+      Nikita's equanimity before death — the man who already lives by surrender ("видно
+      и меня зовешь", he says, as if God is calling). The scholarship's "parallel
+      salvation" reading rests here: Nikita does not need converting. The dive's
+      asymmetry: it is the master, not the already-grounded peasant, who is transfigured.
+    facsimile: ""
+  - id: E8
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. VII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "Известно, грехи. Да что же, разве я сам их на себя напустил?"
+    quoteEn: "(working English) Of course, sins. But what of it — did I bring them on myself?"
+    significance: >-
+      Nikita's settled relation to his own failings (drink, the money drunk away,
+      wrongs to his wife) — accepted without despair, "such, it seems, God made me."
+      The unselfconscious faith Tolstoy sets against Brekhunov's calculating ego.
+    facsimile: ""
+  - id: E9
+    genre: work
+    pssTom: 29
+    pages: "3-46 (ch. X)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_003_046_main-text.txt
+    quoteRu: "умер, истинно радуясь тому, что избавляет своей смертью сына и сноху"
+    quoteEn: "(working English) died, truly rejoicing that by his death he was relieving his son and daughter-in-law [of a burden]"
+    significance: >-
+      The coda: Nikita is rescued, crippled, lives twenty more years and dies content,
+      "as he had wished, under the icons, a lighted candle in his hand." His good death
+      mirrors Brekhunov's — the two are the same passage seen twice. Frames the
+      Ivan-Ilyich diptych (a bad death and a good death).
+    facsimile: ""
+
+  # ---------- REDACTIONS (PSS Tom 29, «Варианты» pp. 295–324) ----------
+  - id: E10
+    genre: work
+    pssTom: 29
+    pages: "295-324 (Первая черновая редакция, рук. № 2)"
+    date: "1894-09"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_295_324_variants.txt
+    quoteRu: "Он поднялся над всем миром."
+    quoteEn: "(working English) He rose above the whole world."
+    significance: >-
+      KEYSTONE REDACTION. In the first rough redaction (6–13 Sept 1894) Brekhunov's
+      awakening is solitary and self-regarding — "he rose above the whole world… he
+      recognised in himself something so high, which in 40 years he had never once
+      felt." It is NOT tied to saving Nikita. The substitutionary, other-directed
+      salvation of the final text is absent here.
+    facsimile: ""
+  - id: E11
+    genre: work
+    pssTom: 29
+    pages: "295-324 (Первая черновая редакция, рук. № 2)"
+    date: "1894-09"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_295_324_variants.txt
+    quoteRu: "огляделся и в 100 саженях увидал, что чернеется, и пошел туда"
+    quoteEn: "(working English) [Nikita] looked round and saw something dark some 100 sazhens off, and walked towards it — it was a village."
+    significance: >-
+      The first draft's ending: Brekhunov simply freezes, Nikita rolls the dead master
+      off "как чурбан" (like a log) and walks to a village alone — survival, terse, with
+      no merging of selves. The whole spiritual climax of the published novella did not
+      yet exist. The story began as "рассказ о метели" (a blizzard story), not a parable
+      of substitutionary death.
+    facsimile: ""
+  - id: E12
+    genre: work
+    pssTom: 29
+    pages: "295-324 (вариант № 33, рук. № 11 — Severny Vestnik galley proofs)"
+    date: "1895-02"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_295_324_variants.txt
+    quoteRu: "он Никита, а Никита — он"
+    quoteEn: "(working English) he is Nikita, and Nikita is he"
+    significance: >-
+      The self-dissolution centrepiece (E1) reaches its final form only at the PROOF
+      stage (рук. № 11, the Severny Vestnik galleys, Feb 1895) — variant № 33 carries
+      "он Никита, а Никита — он… Жив Никита, значит я жив." The doctrinal heart of the
+      story was the last thing Tolstoy wrote into it, matching the 6 Jan 1895 diary
+      ("Теперь знаю, что сделать"). The marquee is thus grounded in compositional fact,
+      not only in interpretation.
+    facsimile: ""
+  - id: E13
+    genre: work
+    pssTom: 29
+    pages: "295-324 (вариант № 18, рук. № 4)"
+    date: "1894-12"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_295_324_variants.txt
+    quoteRu: "А на что ему жить? Какая его жизнь"
+    quoteEn: "(working English) And what is there for him to live for? What kind of life is his?"
+    significance: >-
+      In the December redactions the master's contempt for the workman's life is made
+      explicit ("Nikita guessed right, didn't drink, maybe he'll survive — but what's
+      there for him to live for?"). Sharpening the contempt first deepens the eventual
+      reversal: the man whose life Brekhunov dismisses becomes the one through whom he
+      finds his own.
+    facsimile: ""
+  - id: E14
+    genre: work
+    pssTom: 29
+    pages: "295-324 (вариант № 26, рук. № 5)"
+    date: "1894-12"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v29_295_324_variants.txt
+    quoteRu: "он перенес на Никиту"
+    quoteEn: "(working English) he transferred [the terror of death] onto Nikita"
+    significance: >-
+      The hinge of the conversion as Tolstoy built it across the redactions: Brekhunov's
+      own terror of death is "transferred onto Nikita," and pity for the man displaces
+      fear for the self. The mechanism of salvation is the redirection of the same
+      egoistic energy toward another — the move scholarship (Saunders) notes formally.
+    facsimile: ""
+
+  # ---------- GENESIS — diaries (PSS Toms 52–53) ----------
+  - id: E15
+    genre: diary
+    pssTom: 52
+    pages: "137-138"
+    date: "1894-09-06"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "продумал очень живой художественный рассказ о хозяине и работнике"
+    quoteEn: "(working English) thought through a very vivid artistic story about a master and a workman"
+    significance: >-
+      The conception, arrived in bed after a bad night — the story is named from its
+      relation (хозяин и работник) at the very first. The genesis is dated to the day.
+    facsimile: ""
+  - id: E16
+    genre: diary
+    pssTom: 52
+    pages: "141"
+    date: "1894-09-14"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "написал рассказ о метели. Нехорошо"
+    quoteEn: "(working English) wrote the story about the blizzard. Not good."
+    significance: >-
+      The first full drafting session, and the story named for its setting — "a story
+      about a blizzard." The self-verdict ("Нехорошо") is immediate and recurs through
+      the whole composition.
+    facsimile: ""
+  - id: E17
+    genre: diary
+    pssTom: 52
+    pages: "157-159"
+    date: "1894-12-31"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "Не знаю, хорошо ли. Довольно ничтожно"
+    quoteEn: "(working English) I don't know if it is good. Rather insignificant."
+    significance: >-
+      After the Christmas-week revision surge. Tolstoy judges the very story that would
+      sell 15,000 copies in four days "rather insignificant" — the tension between his
+      verdict and the work's reception runs through the dive.
+    facsimile: ""
+  - id: E18
+    genre: diary
+    pssTom: 53
+    pages: "2"
+    date: "1895-01-03"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "Стало порядочно по художественности, но по содержанию еще слабо"
+    quoteEn: "(working English) It has become tolerable artistically, but in content it is still weak."
+    significance: >-
+      Tolstoy separates art from content — the form is coming right, the meaning is not
+      yet there. Three days before the breakthrough that would supply the meaning (the
+      substitutionary death).
+    facsimile: ""
+  - id: E19
+    genre: diary
+    pssTom: 53
+    pages: "3-4"
+    date: "1895-01-06"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "Нет характера ни того, ни другого. Теперь знаю, что сделать"
+    quoteEn: "(working English) There is no character in either one or the other. Now I know what to do."
+    significance: >-
+      THE BREAKTHROUGH, dated. After reading the story aloud at the Olsufyevs', Tolstoy
+      finds neither the master nor the man has depth — "now I know what to do." The
+      redaction record (E10–E12) shows what he did: fuse the two in the substitutionary
+      death and the self-dissolution. The diary and the manuscripts agree.
+    facsimile: ""
+  - id: E22
+    genre: diary
+    pssTom: 53
+    pages: "10"
+    date: "1895-02-26"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "Похоронили Ваничку"
+    quoteEn: "(working English) We buried Vanichka."
+    significance: >-
+      Tolstoy's youngest son Ivan (Vanechka), aged six, died of scarlet fever on 23 Feb
+      1895, as the final proofs were being dispatched. The diary line "terrible — no, not
+      terrible, but great spiritual event" registers the grief and the effort to convert
+      it into acceptance — the same movement the novella performs.
+    facsimile: ""
+  - id: E23
+    genre: diary
+    pssTom: 53
+    pages: "10-13"
+    date: "1895-03-12"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/_diaries_composition.txt
+    quoteRu: "слышу со всех сторон похвалы, а мне не нравится"
+    quoteEn: "(working English) I hear praise from all sides, but I do not like it"
+    significance: >-
+      The author's verdict against the reception, three weeks after Vanechka's death:
+      praise everywhere, but he dislikes the work — "and yet, a feeling of petty, vain
+      satisfaction." The candour is the diary's; the dive carries it as Tolstoy's own
+      later verdict.
+    facsimile: ""
+
+  # ---------- GENESIS — letters (PSS Toms 68, 84) ----------
+  - id: E20
+    genre: letter
+    pssTom: 68
+    pages: "15-16"
+    date: "1895-01-14"
+    addressee: "N. N. Strakhov"
+    localPdf: ""
+    extract: extracts/_letters_composition.txt
+    quoteRu: "Если вы скажете, что нехорошо, я нисколько не обижусь"
+    quoteEn: "(working English) If you say it is no good, I shall not be in the least offended."
+    significance: >-
+      Sending the manuscript to Petersburg via Strakhov (carried by Baroness Meyendorf),
+      Tolstoy hands his friend a veto and asks for blunt judgment — "whether my faculty
+      has weakened." The anxiety of a man returning to fiction after years of treatises.
+    facsimile: ""
+  - id: E21
+    genre: letter
+    pssTom: 68
+    pages: "32-33"
+    date: "1895-02-14"
+    addressee: "N. N. Strakhov (confidential postscript)"
+    localPdf: ""
+    extract: extracts/_letters_composition.txt
+    quoteRu: "почти безумный припадок"
+    quoteEn: "(working English) an almost insane fit [of jealousy of Gurevich]… She was close to suicide"
+    significance: >-
+      The most unguarded record of the publication crisis: S. A. Tolstaya, distressed
+      that the story was given gratis to Severny Vestnik and seized by a baseless jealousy
+      of its editor L. Ya. Gurevich, "was close to suicide." Tolstoy asks Strakhov to tear
+      off and burn the postscript. The story's own blizzard runs parallel to the household's.
+    facsimile: ""
+
+scholarship:
+  summary: >-
+    Biographers (Troyat, Bartlett, Simmons, Wilson) and craft critics (Saunders,
+    Deresiewicz) read Master and Man as Tolstoy's most artistically controlled late
+    story and as a conversion tale: the greedy merchant Brekhunov dies saving his
+    servant and "thereby saves his own soul," usually paired with The Death of Ivan
+    Ilyich as a diptych on dying badly versus dying well. Gustafson's theological-realist
+    framework ("emblematic realism") is the nearest scholarly instrument for reading the
+    death-merging as a doctrinal proposition rather than sentiment. But three things the
+    dive foregrounds sit below where the accessible scholarship stops: (1) the explicit
+    grounding in On Life's vocabulary of личность-renunciation is noted only thematically,
+    never traced to the treatise; (2) the soteriological asymmetry — that it is the
+    exploiter who is saved, the already-grounded peasant the instrument — is named in
+    passing (Deresiewicz, the church-reader Austin) but not argued; (3) the proto–What Is
+    Art? reading (the story as a prior enactment of "universal religious art," its 15,000
+    copies in four days the proof of infectious universality) is pointed at (Deresiewicz)
+    but undeveloped. The popular biographies give disproportionate space to the publication
+    drama (Sofia's breakdown, Vanechka's death), sometimes eclipsing the text.
+  triangulation:
+    - evidenceRef: E1
+      conventionalView: >-
+        Scholarship agrees the story dramatises Tolstoy's late religious philosophy
+        (true life = living for others) and that Brekhunov's death is a positive
+        spiritual event; the specific link to On Life (1887) and its личность argument
+        is asserted thematically, not traced to the treatise.
+      relation: extends
+      source: "Gustafson 1986; Troyat 1965/1967; Deresiewicz 2010"
+    - evidenceRef: E3
+      conventionalView: >-
+        The merchant's transformation from exploiter to saviour is universally noted,
+        but read as PARALLEL salvation (Nikita "had known salvation all along";
+        Brekhunov arrives at it). The asymmetry — Brekhunov saved in the full sense,
+        Nikita the instrument — is at most implicit.
+      relation: complicates
+      source: "Deresiewicz 2010; Saunders 2021; Austin 2022"
+    - evidenceRef: E12
+      conventionalView: >-
+        No scholar appears to use the redaction record to show that the
+        self-dissolution / substitution was a late (proof-stage) addition; the
+        composition history is treated as biographical drama, not as evidence for the
+        reading of the death scene.
+      relation: extends
+      source: "(corpus; PSS Tom 29 «Варианты» / «История писания»)"
+    - evidenceRef: E2
+      conventionalView: >-
+        The What Is Art? (1897–98) connection is noted as chronological proximity and
+        thematic consistency; the claim that Master and Man is a PRIOR ENACTMENT of
+        "universal religious art" in Tolstoy's technical sense (infecting the reader with
+        brotherhood across class lines) is not made.
+      relation: extends
+      source: "Deresiewicz 2010; literariness.org"
+
+entities:
+  # ----- The two titular characters (fictional → character) -----
+  - name: "Vasily Andreich Brekhunov"
+    wikiType: character
+    wikilinkTarget: "Vasily Brekhunov"
+    vaultStatus: missing
+    role: >-
+      The master (хозяин): a second-guild merchant, church elder, innkeeper and grain
+      dealer; the calculating acquirer who is transfigured by a substitutionary death.
+      The principal/titular figure; the one the marquee turns on.
+    sources: []
+    evidenceRefs: [E1, E2, E3, E4, E6, E6b, E13]
+    ingestionPriority: 1
+    prototypes:
+      - person: ""
+        name: "(no single documented prototype)"
+        basis: editorial
+        certainty: conjectured
+        note: >-
+          The surname Брехунов derives from брехать (to lie, to bluster) — an authorial,
+          characterising name. No single real prototype is documented; Brekhunov is a type
+          drawn from the post-Emancipation provincial merchant world Tolstoy knew at
+          Begichevka and around Tula. Do not assert a specific model.
+        sourceId: ""
+  - name: "Nikita"
+    wikiType: character
+    wikilinkTarget: "Nikita (Master and Man)"
+    vaultStatus: missing
+    role: >-
+      The workman (работник): a 50-year-old peasant, a reformed drunk, paid half his
+      worth and knowing it, who lives by surrender and is ready to die; the instrument
+      of the master's salvation and the survivor of the storm.
+    sources: []
+    evidenceRefs: [E7, E8, E9, E11]
+    ingestionPriority: 1
+    prototypes:
+      - person: ""
+        name: "(no single documented prototype)"
+        basis: editorial
+        certainty: conjectured
+        note: >-
+          Drawn from the Yasnaya Polyana / Tula peasants Tolstoy knew; no single documented
+          model. The figure of the equable, self-effacing peasant who has made peace with
+          God recurs across the late fiction (cf. Platon Karataev) but Nikita is not a
+          re-use of a named person. Marfa (his wife) folds into this page, not a standalone node.
+        sourceId: ""
+
+  # ----- People around the work (real → person) -----
+  - name: "Nikolai Nikolaevich Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: >-
+      Philosopher and critic (1828–1896), Tolstoy's close confidant; first reader of the
+      manuscript and supervisor of the proofs, to whom Tolstoy confided the publication
+      crisis. Died Jan 1896, less than a year after the story appeared.
+    sources: []
+    evidenceRefs: [E20, E21]
+    ingestionPriority: 2
+    dependsOn: ["Leo Tolstoy"]
+  - name: "Lyubov Yakovlevna Gurevich"
+    wikiType: person
+    wikilinkTarget: "Lyubov Gurevich"
+    vaultStatus: missing
+    role: >-
+      Editor and co-owner of Severny Vestnik (1866–1940), to whose journal Tolstoy gave
+      the story gratis; the (innocent) focus of S. A. Tolstaya's jealousy crisis; published
+      it in the March 1895 issue.
+    sources: []
+    evidenceRefs: [E21]
+    ingestionPriority: 2
+    dependsOn: ["Severny Vestnik"]
+  - name: "Akim Lvovich Volynsky (Flekser)"
+    wikiType: person
+    wikilinkTarget: "Akim Volynsky"
+    vaultStatus: missing
+    role: >-
+      Literary critic and co-editor of Severny Vestnik (1861–1926, pen-name Volynsky);
+      practical handler of the three rounds of proof corrections in Jan–Feb 1895.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Severny Vestnik"]
+  - name: "Sofia Andreevna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's wife (1844–1919), administrator of the family's publishing rights and
+      editor of the collected-works vol. 14 in which the story first appeared in book form;
+      the publication crisis (her objection to the gift to Severny Vestnik, her jealousy of
+      Gurevich, her near-suicidal distress) ran in parallel with Vanechka's fatal illness.
+    sources: []
+    evidenceRefs: [E21]
+    ingestionPriority: 2
+  - name: "Ivan Lvovich Tolstoy (Vanechka)"
+    wikiType: person
+    wikilinkTarget: "Ivan Lvovich Tolstoy"
+    vaultStatus: missing
+    role: >-
+      Tolstoy's youngest child (1888–1895), his and Sofia's mutual darling, who died of
+      scarlet fever on 23 Feb 1895 as the final proofs of the novella were being dispatched.
+    sources: []
+    evidenceRefs: [E22]
+    ingestionPriority: 2
+    dependsOn: ["Leo Tolstoy", "Sofia Andreevna Tolstaya"]
+  - name: "Vladimir Grigorievich Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's closest disciple and founder of Posrednik (1854–1936); his December 1894
+      visit framed the drafting surge (and the portrait quarrel that seeded the SAT crisis);
+      he requested an early copy for English translation; Posrednik issued the story
+      simultaneously with Severny Vestnik (the 3-kopeck mass edition).
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Tatyana Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's eldest daughter (1864–1950); copyist of the manuscript and his companion
+      at the Olsufyev estate during the decisive January 1895 revision.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Maria Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's daughter (1871–1906); principal copyist of the redactions (рук. 3–10),
+      dating several in her own hand.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Pavel Ivanovich Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: >-
+      Tolstoy's biographer and Posrednik associate (1860–1931); copyist of several
+      redactions and Tolstoy's proxy who wrote to Severny Vestnik on the day of Vanechka's
+      burial.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Baroness M. Meyendorf"
+    wikiType: person
+    wikilinkTarget: "Baroness Meyendorf"
+    vaultStatus: missing
+    role: >-
+      A young woman Tolstoy met at the Olsufyev estate; courier who carried the manuscript
+      to Strakhov in Petersburg and, per the «Описание рукописей», a copyist of the final
+      redactions (рук. 9–10).
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Anna Mikhailovna Olsufyeva"]
+  - name: "Anna Mikhailovna Olsufyeva"
+    wikiType: person
+    wikilinkTarget: "Anna Olsufyeva"
+    vaultStatus: missing
+    role: >-
+      Hostess (1842–1932, née Princess Obolenskaya) at the Olsufyev estate
+      Nikolskoye-Gorushki (Tver province), where Tolstoy spent the two weeks of January 1895
+      that produced the decisive revision; the estate is where he read the story aloud and
+      found "what to do."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Nikolai Vasilyevich Orlov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Orlov"
+    vaultStatus: missing
+    role: >-
+      Painter (1863–1924), later called by Tolstoy his "favourite artist"; his coeval
+      peasant genre painting (Подати, 1895) renders the visual world of the novella, though
+      no Orlov illustration to Master and Man is documented. Visuals/context entity.
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+
+visuals:
+  - id: commons-tolstoy-sofiya-1895
+    type: photograph
+    subject: "Leo Tolstoy and S. A. Tolstaya, Yasnaya Polyana, 1895 (photo by S. A. Tolstaya)"
+    relatedEntity: "Leo Tolstoy; Sofia Andreevna Tolstaya"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:L.Tolstoy and S.Tolstaya, 1895.jpg"
+    access: open
+    rights: "Public domain (Russia + US, pre-1931)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/fc/L.Tolstoy_and_S.Tolstaya%2C_1895.jpg"
+    localPath: visuals/commons-tolstoy-sofiya-1895.jpg
+    note: "Keystone image — exactly the year of publication; the couple whose crisis shadowed it."
+  - id: commons-tolstoy-portrait-1892-grw239
+    type: photograph
+    subject: "Leo Tolstoy, studio portrait, 1892 (André & Sloss)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:GRW239_Tolstoi.jpg"
+    access: open
+    rights: "Public domain (pre-1931)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/65/GRW239_Tolstoi.jpg"
+    localPath: visuals/commons-tolstoy-portrait-1892-grw239.jpg
+    note: "Highest-quality firmly-dated portrait nearest the composition period."
+  - id: commons-tolstoy-famine-relief-1891
+    type: photograph
+    subject: "Tolstoy organising famine relief, Samara/Begichevka context, 1891"
+    relatedEntity: "Leo Tolstoy; 1891–93 famine relief"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tolstoy organising famine relief in Samara, 1891.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/49/Tolstoy_organising_famine_relief_in_Samara%2C_1891.jpg"
+    localPath: visuals/commons-tolstoy-famine-relief-1891.jpg
+    note: "The famine-relief winters at Begichevka are the biographical seed of the blizzard-and-death scenario (Birukoff's claim; Raevskaya's memoir of Tolstoy lost in a blizzard, 1892)."
+  - id: commons-master-and-man-copeland-1899
+    type: illustration
+    subject: "Frontispiece to Master and Man, Charles Copeland (Crowell ed., 1899)"
+    relatedEntity: "Master and Man (novella)"
+    relatedEvidence: "E3"
+    holding: "Wikimedia Commons"
+    archiveId: "File:The_Complete_Works_of_Lyof_N._Tolstoi_-_08_-_Master_and_Man.png"
+    access: open
+    rights: "Public domain (US, pre-1931)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/The_Complete_Works_of_Lyof_N._Tolstoi_-_08_-_Master_and_Man.png"
+    localPath: visuals/commons-master-and-man-copeland-1899.png
+    note: "Only PD illustration directly tied to the novella located; American edition. No Orlov illustration to this text is documented."
+  - id: commons-orlov-taxes-1895
+    type: illustration
+    subject: "«Подати» (The Taxes), N. V. Orlov, 1895 — peasant genre"
+    relatedEntity: "Nikolai Vasilyevich Orlov"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:The_taxes_by_Orlov.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_taxes_by_Orlov.jpg"
+    localPath: visuals/commons-orlov-taxes-1895.jpg
+    note: "Coeval (1895) peasant genre by Tolstoy's later 'favourite artist' — the visual world of the novella."
+  - id: commons-gurevich-grw513-1901
+    type: portrait
+    subject: "L. Ya. Gurevich, editor of Severny Vestnik (GRW, 1901)"
+    relatedEntity: "Lyubov Yakovlevna Gurevich"
+    relatedEvidence: "E21"
+    holding: "Wikimedia Commons"
+    archiveId: "File:GRW513_Gurevich.jpg"
+    access: open
+    rights: "Public domain (pre-1931)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/b9/GRW513_Gurevich.jpg"
+    localPath: visuals/commons-gurevich-grw513-1901.jpg
+    note: "The editor at the centre of the publication crisis."
+  - id: commons-strakhov-portrait-grw387-1901
+    type: portrait
+    subject: "N. N. Strakhov (GRW, 1901)"
+    relatedEntity: "Nikolai Nikolaevich Strakhov"
+    relatedEvidence: "E20"
+    holding: "Wikimedia Commons"
+    archiveId: "File:GRW387_Straxov.jpg"
+    access: open
+    rights: "Public domain (pre-1931)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/GRW387_Straxov.jpg"
+    localPath: visuals/commons-strakhov-portrait-grw387-1901.jpg
+    note: "First reader and proof supervisor; recipient of the confidential crisis postscript."
+  - id: russia-posrednik-1895-first-edition
+    type: title-page
+    subject: "First Posrednik edition of Хозяин и работник (Moscow, 1895; cens. 17 Feb 1895; 20 kop.)"
+    relatedEntity: "Master and Man (novella); first edition"
+    relatedEvidence: ""
+    holding: "PY Rare Books (commercial dealer)"
+    archiveId: ""
+    access: restricted
+    rights: rights-reserved
+    licence: rights-reserved
+    usable: false
+    url: "https://www.pyrarebooks.com/rare-book/tolstoy-khoziain-rabotnik-first-1334/"
+    localPath: ""
+    note: "No freely-licensed scan of the 1895 wrappers located; Goskatalog / State Tolstoy Museum recommended next lookup. NOT downloaded."
+
+workRecord:
+  recordPath: website/src/works/fiction/novellas/master-and-man/Master and Man.md
+  workId: master-and-man
+  fields:
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: [E23]
+      source: "PSS Tom 29 «История писания»; corpus"
+      confidence: high
+      note: "CORRECTION — the record currently reads false. The novella was published in March 1895, 15 years before Tolstoy's death."
+      oldStyle: ""
+      approximate: false
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [E23]
+      source: "PSS Tom 29 «История писания» (censorship permission 17 Feb 1895; no ban)"
+      confidence: high
+      note: "CORRECTION — the record currently reads false. Legally published in Russia in 1895; not censored."
+      oldStyle: ""
+      approximate: false
+    - field: dateWritingStarted
+      value: "1894-09-18"
+      evidenceRefs: [E15, E16]
+      source: "PSS Tom 52 diary 6 Sept 1894 (Old Style); «История писания»"
+      confidence: high
+      note: "Conceived and first draft begun 6 Sept 1894 (Old Style). New-Style value (+12 days) = 18 Sept 1894."
+      oldStyle: "1894-09-06"
+      approximate: false
+    - field: dateWritingCompleted
+      value: "1895-01-26"
+      evidenceRefs: [E19]
+      source: "PSS Tom 29 «Описание рукописей» (final fair copy рук. 10 sent 14 Jan 1895 OS); «История писания»"
+      confidence: medium
+      note: "The final fair copy was sent to Severny Vestnik on 14 Jan 1895 (Old Style; NS +12 = 26 Jan). Tolstoy then revised the proofs three times through ~23 Feb 1895 (OS); the Posrednik text carried a further 184 corrections. Treat 14 Jan OS as completion of writing, with proof revision continuing into February."
+      oldStyle: "1895-01-14"
+      approximate: true
+    - field: dateFirstPublished
+      value: "1895-03-17"
+      evidenceRefs: [E23]
+      source: "PSS Tom 29 «История писания» (March 1895 issue of Severny Vestnik appeared 5 March 1895 OS)"
+      confidence: high
+      note: "Severny Vestnik March 1895 issue appeared 5 March 1895 (Old Style; NS +12 = 17 March). Posrednik editions and SAT's vol. 14 released the same day."
+      oldStyle: "1895-03-05"
+      approximate: false
+    - field: firstPublishedVenue
+      value: "Severny Vestnik (Северный вестник), no. 3 (March 1895), pp. 137–175"
+      evidenceRefs: []
+      source: "PSS Tom 29 «История писания»"
+      confidence: high
+      note: "Simultaneously issued by Posrednik (two editions, 20 and 3 kopecks) and in vol. 14 of S. A. Tolstaya's collected Works. The PSS base text is the Posrednik printing (184 extra corrections)."
+      oldStyle: ""
+      approximate: false
+    - field: firstPublishedVenueType
+      value: "magazine"
+      evidenceRefs: []
+      source: "PSS Tom 29 «История писания»"
+      confidence: high
+      note: "Severny Vestnik was a St Petersburg literary monthly. Confirm the controlled-vocabulary value (magazine / journal / periodical) against the works schema before applying."
+      oldStyle: ""
+      approximate: false
+    - field: dateFirstPublishedInRussia
+      value: "1895-03-17"
+      evidenceRefs: []
+      source: "PSS Tom 29 «История писания»"
+      confidence: high
+      note: "First publication WAS in Russia, legally (March 1895). OldStyle 1895-03-05."
+      oldStyle: "1895-03-05"
+      approximate: false
+    - field: firstPublishedInRussiaVenue
+      value: "Severny Vestnik (Северный вестник), no. 3 (March 1895), pp. 137–175"
+      evidenceRefs: []
+      source: "PSS Tom 29 «История писания»"
+      confidence: high
+      note: ""
+      oldStyle: ""
+      approximate: false
+    - field: authoringLocations
+      value:
+        - "Yasnaya Polyana"
+        - "Moscow (Khamovniki)"
+        - "Nikolskoye-Gorushki (Olsufyev estate, Tver province)"
+      evidenceRefs: [E16, E19]
+      source: "PSS Tom 29 «История писания»; composition-years letters (Tom 84)"
+      confidence: high
+      note: "First draft at Yasnaya Polyana (Sept 1894); revision in Moscow and decisively at the Olsufyev estate Nikolskoye-Gorushki (Jan 1895). Shape to the schema's authoringLocations object form before applying."
+      oldStyle: ""
+      approximate: false
+    - field: themes
+      value:
+        - "self-sacrifice"
+        - "spiritual awakening"
+        - "death"
+        - "greed and acquisitiveness"
+        - "master and servant"
+        - "true life versus false life"
+      evidenceRefs: [E1, E3, E6]
+      source: "(dive synthesis from the text)"
+      confidence: medium
+      note: "Proposed theme tags; reconcile with any controlled vocabulary / existing theme records before applying."
+      oldStyle: ""
+      approximate: false
+    - field: relatedWorks
+      value:
+        - id: the-death-of-ivan-ilyich
+          relationshipType: companion
+        - id: on-life
+          relationshipType: thematicSequel
+      evidenceRefs: [E1, E9]
+      source: "(dive synthesis; scholarship — the Ivan-Ilyich diptych is standard)"
+      confidence: medium
+      note: "The Death of Ivan Ilyich pairing (a bad death / a good death) is a near-universal critical diptych — verify the relationshipType controlled vocabulary and the exact work ids against the works schema and existing records before applying. On Life is the doctrinal source the novella dramatises; What Is Art? (id what-is-art) is the aesthetic it pre-enacts — add if a suitable relationshipType exists."
+      oldStyle: ""
+      approximate: false
+    - field: identifiers.jubileeEdition.volumes
+      value: "29"
+      evidenceRefs: []
+      source: "PSS Tom 29"
+      confidence: high
+      note: "Main text pp. 3–46; Posrednik printed variant pp. 233–248; «Варианты» pp. 295–324; «История писания и печатания» pp. 375–378; «Описание рукописей» pp. 378–380."
+      oldStyle: ""
+      approximate: false
+    - field: manuscripts
+      value: "14 manuscripts described in PSS Tom 29 «Описание рукописей» (рук. 1–14), held in the State Tolstoy Museum (ГМТ): the conspectus (рук. 1), the first rough redaction (рук. 2, 6–13 Sept 1894), the December redactions (рук. 3–8), the final fair copies (рук. 9–10, dated 13/14 Jan 1895 — the autograph carries a slip-of-the-pen «13 я. 1894» for 1895), and the Severny Vestnik galley proofs with corrections (рук. 11–14)."
+      evidenceRefs: [E10, E11, E12]
+      source: "PSS Tom 29 «Описание рукописей»"
+      confidence: high
+      note: "Summary, not structured entries — shape to the schema's manuscripts object array if the record is to carry per-manuscript rows. Note: chapter divisions appear only in the final stages; the manuscripts have none."
+      oldStyle: ""
+      approximate: false
+
+coverage:
+  - surface: "Genesis & composition (work-mood + the people around the work)"
+    status: covered
+    note: "Heavy — 23 diary/letter quotes; the full named network; the Begichevka seed; the Olsufyev breakthrough."
+  - surface: "What the work says (close-read of pivotal scenes)"
+    status: covered
+    note: "Centrepiece (the death-dream / self-dissolution) quoted in full; the exploiter opening, Nikita's equanimity, the deliberate covering, the coda all close-read."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "The keystone finding — the substitutionary climax was a late (proof-stage) addition — fully evidenced from «Варианты» + «Описание рукописей»."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "March 1895, three simultaneous editions, 15,000 copies in four days, not censored; English translations 1895 (Beaman; Rapoport/Kenworthy; Maude)."
+  - surface: "Reception & afterlife — Russian society & critics"
+    status: partial
+    note: "Popular phenomenon + the SAT/Gurevich crisis well-covered from the corpus; specific 1895 critical reviews (the Symbolist/Severny-Vestnik camp) thin — see needsReview. No church/Synod dimension (the work is not anti-clerical; the 1901 excommunication does not bear on it)."
+  - surface: "Characters & prototypes"
+    status: covered
+    note: "Two titular characters routed (character + prototypes[]); twelve real people routed (person)."
+  - surface: "Scholarly context"
+    status: covered
+    note: "Triangulated; English-first; the three marquee hypotheses each tested against the received view."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "13 PD images downloaded; the keystone 1895 portrait, the famine-relief seed, the Copeland frontispiece, Orlov's coeval peasant genre, and the principals' portraits."
+  - surface: "Source-research sub-layer"
+    status: not-covered
+    note: "Not applicable — Master and Man is invented (seeded by a lived blizzard), not built from an archive. No «Список источников» layer (unlike Hadji Murat)."
+
+contradictions:
+  - claim: "The story's spiritual climax — Brekhunov saving Nikita by covering him, the two selves merging — was the original conception."
+    correction: "The first rough redaction (рук. 2, Sept 1894) has only a solitary, self-regarding awakening and ends with Nikita walking to a village alone; the substitutionary death and the «он — Никита, а Никита — он» self-dissolution were built across the December–February redactions and reached final form only at the Severny Vestnik proof stage (вариант № 33, рук. 11)."
+    evidenceRef: E10
+
+notCovered:
+  - "Variant-by-variant collation of all 33 printed «Варианты» (sampled, not collated — novel-mode policy)."
+  - "The Posrednik printed text (pp. 233–248) vs the Severny Vestnik text — the 184-correction divergence not line-collated."
+  - "Specific 1895 critical reviews from the Symbolist / Severny Vestnik circle (Merezhkovsky, Gippius) — named as a camp, individual reviews not retrieved."
+  - "Wiener English facsimile (local archive-org PDF set) — not consulted; it is Wiener's Boston 1904 EN edition, not the Russian PSS."
+  - "Film/stage adaptations beyond a note (Bernard Rose's Boxing Day, 2012; early Russian/Soviet films unconfirmed)."
+
+needsReview:
+  - item: "N. S. Leskov's reported reaction to Master and Man."
+    phase: 3
+    why: "Leskov died 5 March 1895 (the day of the Posrednik release), so any reaction was private and pre-publication; a documented Leskov notice could not be confirmed. Do not assert a Leskov endorsement without a source."
+  - item: "The OS→NS date conversions in the workRecord (+12 days) and the dateWritingCompleted choice (final fair copy vs end of proof revision)."
+    phase: 4
+    why: "The corpus dates are Old Style; the works schema carries both. The +12-day NS values and the decision to date completion to the 14 Jan OS fair copy (proofs ran to ~23 Feb) should be confirmed by a human before applying to the record."
+  - item: "relatedWorks ids and relationshipType vocabulary (the-death-of-ivan-ilyich / on-life / what-is-art)."
+    phase: 4
+    why: "The diptych with The Death of Ivan Ilyich is standard, but the controlled-vocabulary relationshipType values and the exact work ids must be checked against the works schema and live records before the proposal is applied."
+  - item: "Character slugs / wikilink targets for Brekhunov and Nikita."
+    phase: 4
+    why: "No vault page exists; the proposed targets ('Vasily Brekhunov', 'Nikita (Master and Man)') are the dive's suggestion — the ingestion step should settle the canonical filename/disambiguation."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI — PSS Tom 29 (work, printed variant, variants, История писания, Описание рукописей); Toms 52–53 (diaries); Toms 67–68, 84 (letters)."
+  - "Wikimedia Commons (API: imageinfo + extmetadata)."
+  - "Web scholarship & reception sweep (The Nation/Deresiewicz; Saunders; Troyat; Bartlett; Gustafson; LRB/Meek; PY Rare Books; feb-web.ru)."
+  - "NOT consulted: State Tolstoy Museum (kamiscloud) and Goskatalog (web access not exercised); local archive-org Wiener EN facsimile."
+
+references:
+  primary:
+    - "Л. Н. Толстой. Хозяин и работник. ПСС Т. 29, с. 3–46 (Госиздат «Худож. лит.», 1954)."
+    - "Хозяин и работник. Печатный вариант. ПСС Т. 29, с. 233–248."
+    - "Хозяин и работник. Варианты (вкл. первую черновую редакцию). ПСС Т. 29, с. 295–324."
+    - "Н. К. Гудзий. «Хозяин и работник». История писания и печатания. ПСС Т. 29, с. 375–378."
+    - "Н. К. Гудзий. «Хозяин и работник». Описание рукописей. ПСС Т. 29, с. 378–380."
+    - "Дневники Л. Н. Толстого, ПСС Тт. 52–53 (1894–1895)."
+    - "Письма Л. Н. Толстого, ПСС Тт. 67–68 (Страхову, Гуревич, Волынскому/Флексеру, Олсуфьевой) и Т. 84 (С. А. Толстой)."
+  background:
+    - "Deresiewicz, William (2010). 'The Renunciation Artist: On Leo Tolstoy.' The Nation, 11 Feb. https://www.thenation.com/article/archive/renunciation-artist-leo-tolstoy/"
+    - "Saunders, George (2021). A Swim in a Pond in the Rain. Random House."
+    - "Gustafson, Richard F. (1986). Leo Tolstoy: Resident and Stranger. Princeton UP."
+    - "Troyat, Henri (1965; tr. 1967). Tolstoy. Doubleday. https://archive.org/details/tolstoytr00troy"
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life. https://archive.org/details/tolstoyrussianli0000bart"
+    - "Simmons, Ernest J. (1946). Leo Tolstoy. Little, Brown."
+    - "Wilson, A. N. (1988). Tolstoy. Norton."
+    - "Meek, James (2010). 'Some Wild Creature: Tolstoy Leaves Home.' LRB 32(14). https://www.lrb.co.uk/the-paper/v32/n14/james-meek/some-wild-creature"
+    - "Austin, Michael (2022). 'Tolstoy's Master and Man: An Advent Sermon on Love.' By Common Consent."
+    - "Valiunas, Algis (2012/13). 'Godlike, Godly Tolstoy.' Claremont Review of Books XIII(1)."
+    - "PY Rare Books. Catalogue entry, Tolstoy, Khoziain i rabotnik, first edition (1895). https://www.pyrarebooks.com/rare-book/tolstoy-khoziain-rabotnik-first-1334/"
