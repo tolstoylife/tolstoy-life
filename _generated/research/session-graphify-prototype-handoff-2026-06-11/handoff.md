@@ -1,6 +1,6 @@
 # Handoff — PLANNING session: Tolstoy-Graphify-Spike → full prototype
 
-**Date:** 2026-06-11 · **From:** Graphify-evaluation continuation session (LightRAG e2e verify + planning-trail reconstruction)
+**Date:** 2026-06-11 · **From:** Graphify-evaluation continuation session (LightRAG full working-order check + planning-trail reconstruction)
 **Next session type:** brainstorming + planning. **PLAN ONLY — no execution.** Per memory `feedback_plan_then_execute_separately`: the session ends when the plan is approved and saved; execution happens in a *later* fresh session. Plan approval ≠ "go".
 
 ## The ask
@@ -25,7 +25,7 @@ This picks up **thread 2** of the 2026-06-10 brainstorm, which was voiced but ne
   - `graphify-out-haiku/graphify-out/` — Haiku comparison run (~540 notes, noisier).
   - `graphify-out-ollama/`, `ollama-validate-out/`, `pilot-out/` — Ollama leg remnants (infeasible on this hardware) + the calibration pilot; plus run logs.
 - **Graphify tool:** `~/Projects/graphify-8` (v8, local checkout), run via `uv run graphify`. Unexplored capabilities flagged in the verdict: MCP serve, global graph, benchmark.
-- **LightRAG (production Layer 2) verified e2e same day** — query + ingest + incremental sync all pass (TODO #1 closed, commit `c0d969f0`). It indexes only the 29 curated vault docs; **unaffected by and orthogonal to this prototype**. Nightly-cron sub-item still open (sync.py retry footgun noted in TODO.md #1).
+- **LightRAG (production Layer 2) confirmed in full working order same day** — query + ingest + incremental sync all pass (TODO #1 closed, commit `c0d969f0`). It indexes only the 29 curated vault docs; **a separate system, unaffected by this prototype**. Nightly-scheduled-sync sub-item still open (a sync.py flaw — failed files are never retried — is noted in TODO.md #1 and must be fixed first).
 - **Schemas the generated pages would target:** `website/schema/` — works schema **v9** (incl. the new `stage-ban` bans scope), wiki-schema **v1.4** (12 types incl. `character` + `group`). Frontmatter validator: `cd website && node .github/scripts/validate-frontmatter.mjs`.
 - **Pending small decision from 2026-06-11 session:** recommendation to move the Opus `graphify-out/` to `_generated/graphify/` (gitignored) as the standing nav-aid home — **not yet acted on**; if the prototype workspace becomes its home instead, that recommendation is superseded.
 
