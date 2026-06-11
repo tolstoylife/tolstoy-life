@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-06-10
+Last updated: 2026-06-11
 
 ---
 
@@ -102,6 +102,8 @@ A 2D knowledge-graph + timeline visualisation of Tolstoy's universe (`/graph/`),
 
 **v1 launch criterion:** internal-tool gate per `projects/timelinegraph/QA.md` (planned, will live in the timelinegraph workspace). Public landing-page placement is gated separately on corpus density (~200 nodes) + designer pass on cloud-type palette + Lighthouse / axe-core CI.
 
+**2026-06-11 note:** the ~200-node density gate is now met in the Tolstoy Lab (442 entity nodes in its graph), and the Lab reserves `/graph/` as the slot this prototype later takes or joins — see priority 9.
+
 ### 7. docs/ → dev-blog migration ("Notes" on eleventy)
 *Plan + decisions: `website/src/posts/notes/2026-05-11-docs-to-blog-migration.md` (the plan was itself ported in Phase 3 step 2). Started 2026-05-11.*
 
@@ -141,6 +143,15 @@ The "Scholarly context & gap-filling" phase (Phase 3) was added to the `corpus-d
 - [ ] **Batch-review all corpus dives' open judgment-calls** (Johan, 2026-06-08) — go through every dive's `dossier.yaml → needsReview` in one pass: per-dive title/role/date calls and contested attributions. Concrete examples queued from the *What Is Religion* dive: «сущность» vs «назначение» as the canonical title form; whether Biryukov was **co-translator** vs **reviser** of the 1902 French edition (needs the French title page). Johan will review all dives together later.
 - [ ] **Works-record category/subcategory taxonomy** (Johan, 2026-06-08) — settle the controlled vocab across dives. Johan is **not** keen on `Treatises`; the religious works currently propose `Essays and Criticism` (after *What Is Art?*). Needs a dedicated cross-dive pass, not per-dive guesses.
 - [ ] **Guard against sub-agent scope-drift in `corpus-dive`** (2026-06-08) — during the *What Is Religion* dive, a sub-agent scoped to do **only** the visuals sweep instead ran the entire dive (`index.md` + `dossier.yaml` + note) **and committed it unsupervised** (`d57e99b2`), bypassing the opus-synthesis + separate-verifier discipline. Caught and corrected in a review pass (`1b4eee3a` + `_verifier-report.md`), but it shouldn't have been possible. Fix: spawn dive sub-agents in a no-commit / read-only-to-git posture; tighten sub-agent prompts to "write file X, return one confirmation line — do NOT synthesise the dive or run git"; keep all commits with the orchestrator, after the separate verify pass. Consider encoding this in the `corpus-dive` SKILL.md (model-routing / subagent-I-O section).
+
+### 9. Tolstoy Lab — the graph-populated research site
+*Plan (approved 2026-06-11): `~/.claude/plans/abundant-launching-fox.md`. Repo: `/Volumes/Graugear/Tolstoy-Lab/` (own git repo, **no remote by design**).*
+
+A standing research site generated from the Graphify corpus graph + the dive dossiers — research surface (find cross-dive threads worth curated ingestion) and design sandbox (realistic ~200+ page density; provides the `/graph/` slot for timelinegraph, priority 6).
+
+- [x] **Phase 1 — stand it up** (2026-06-11). Repo + Eleventy machinery (copied from `website/`, trimmed) builds green; corpus sync (`_generator/sync.sh`, **shipped = git-tracked only**, md+yaml only); full pipeline ran end-to-end from a session: extract → label → export = **696 nodes / 946 edges / 56 communities / 66 topic-hub articles**, ~19 min cold, 2.5M tokens in, $0 (claude-cli). Wrinkle fixed: graphify falls back to `.gitignore` (which hides `_raw/`) — the Lab's `.graphifyignore` is load-bearing. Handoff: `_generated/research/session-tolstoy-lab-phase1-2026-06-11/handoff.md` (local-only).
+- [ ] **Phase 2 — the generator** (`_generator/build_pages.py`): entity pages (graph structure + dossier substance, reusing `docs/research/lib/build_evidence_index.py`), works records + timeline index, topic hubs, research section, the six additions (match report, generated-badge, provenance footers, `/threads/`, `/graph/` atlas, colophon). Checkpoint: full `regenerate.sh` end-to-end; generated pages committed.
+- [ ] **Phase 3 — evaluate**: side-by-side of ~3 dual-existence entities (e.g. Chertkov) vs the curated wiki; evaluation note in the Lab README + LOG entry; follow-ups (prose pass? alias table?) decided with Johan.
 
 ---
 
