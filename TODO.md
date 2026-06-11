@@ -11,9 +11,9 @@ Base installation done (2026-04-18). Qwen2.5:7b + bge-m3 (1024d) operational sin
 
 **Remaining:**
 - ~~Switch embedding model to bge-m3 (1024d) for Russian + English~~ — Done 2026-04-25 (commit `9775cab5`).
-- **Verify local inference still works end-to-end** — discovered 2026-06-10 (Graphify spike) that the Homebrew **formula** `ollama` ships no `llama-server` runner (every generate → HTTP 500), so LightRAG's local qwen2.5:7b path was likely silently broken since some ollama update. Fixed by installing the **cask** `ollama-app`; re-confirm a LightRAG query/ingest actually runs. See `reference_ollama_macos_llama_server` (memory) + the 2026-06-10 LOG entry.
-- Set up a nightly cron job for `sync.py`
-- Test incremental sync after wiki edits
+- ~~**Verify local inference still works end-to-end**~~ — **Verified 2026-06-11.** Post-cask-install (`ollama-app`, server 0.30.7): raw generate OK; hybrid query OK (287s, well-grounded Chertkov answer, 84 entities / 133 relations / 20 chunks); full sync OK (29/29 docs, 61s, content-hash dedupe working); `qwen2.5:7b` loads at the full 32k context LightRAG requests per-call (native API honors `options.num_ctx` — the `OLLAMA_CONTEXT_LENGTH` env workaround is only needed for `/v1` OpenAI-compat clients like graphify). Vault still 29 indexed docs — dive output lives in `docs/research/`, outside `CONTENT_DIRS`.
+- ~~Test incremental sync after wiki edits~~ — Done 2026-06-11. First real `sync.py` run wrote the previously-missing `data/sync_state.json` baseline; a no-change rerun reports "No changed documents found"; an mtime-bumped wiki file is detected, re-inserted, and deduped by content hash.
+- Set up a nightly cron job for `sync.py` — **fix a retry footgun first:** `sync.py` advances `last_sync` even when `errors > 0` (line ~88), so files that failed (e.g. Ollama not running overnight) are silently never retried. Guard the state update on `errors == 0` (or track per-file state) before unattended scheduling. Also decide launchd-vs-cron and whether Ollama.app is guaranteed running at the scheduled hour.
 - ~~Commit the LightRAG scaffold (staged in git)~~ — Done 2026-04-25 (commit `9775cab5` carried the `config.py` + `requirements.txt` changes and the `diagnose.sh` + `start-ui.sh` helpers).
 
 ### 2. GitHub Projects for the `projects/` folder
