@@ -38,20 +38,21 @@ meta:
   - fire-metaphor
   - gospel-translation
   - jubilee-edition-tei-corpus
+  - late-voice-encryption-compression
   - lords-prayer
   - stories-for-the-people
   - tolstoy-in-art
   - tolstoy-in-photographs
   - tolstoyanism
-  diveCount: 36
-  entityCount: 353
-  evidenceRowCount: 894
-  visualCount: 443
+  diveCount: 37
+  entityCount: 359
+  evidenceRowCount: 951
+  visualCount: 450
   byVaultStatus:
     exists: 10
     stub: 6
-    missing: 337
-  lastUpdated: '2026-06-11'
+    missing: 343
+  lastUpdated: '2026-06-12'
 entities:
 - key: abbyy
   displayTitle: ABBYY
@@ -2863,6 +2864,70 @@ entities:
     url: https://commons.wikimedia.org/wiki/File:Caucasus_Line%2C_North-West_%281899_map%29.png
     localPath: docs/research/1896-1904-hadji-murat/visuals/commons-map-caucasus-line-1899.png
     alsoInDives: []
+- key: censorship-in-late-imperial-russia
+  displayTitle: Censorship in late Imperial Russia
+  names:
+  - Censorship in late Imperial Russia
+  wikiType: concept
+  wikiTypeVariants:
+  - concept
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: The apparatus the whole dive turns on — state press censorship, the spiritual (Synod) censor, and (per Chertkov) the «second censor» of the liberal press that mutilated Tolstoy's articles. The constraint that forced genre and channel choices.
+  evidenceCount: 3
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: enc-wia-censor-inserts-dogma
+    genre: treatise
+    teiId: null
+    pssTom: 30
+    pages: null
+    date: null
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../1897-1898-what-is-art/extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    facsimile: null
+    quoteRu: приписал мне таким образом утверждение догмата искупления
+    quoteEn: thus ascribing to me the affirmation of the redemption dogma (working English)
+    significance: 'Censorship as active distortion, not mere cutting: the spiritual censor struck Tolstoy''s words and inserted the redemption dogma he rejected, putting an alien doctrine in his mouth. The state did not only silence — it ventriloquised.'
+  - dive: late-voice-encryption-compression
+    id: con-censored-lit-idle
+    genre: diary
+    teiId: null
+    pssTom: 55
+    pages: null
+    date: '1904-01-14'
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v55_006_007_1904_01_14.txt
+    facsimile: null
+    quoteRu: Какое праздное занятие вся наша подцензурная литература!
+    quoteEn: What an idle occupation is all our censored literature! (working English)
+    significance: 'The structural diagnosis: censorship empties legal literature of everything substantive (domestic and foreign policy, economics, and above all religion); what is left is entertainment that keeps readers from understanding what is being done to them. The foundation of why indirection and foreign publication are necessary.'
+  - dive: late-voice-encryption-compression
+    id: con-chas-cant-print
+    genre: letter
+    teiId: null
+    pssTom: 77
+    pages: null
+    date: '1907-09-05'
+    addressee: Editorial board of the newspaper «Час»
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v77_218_RedakciigazetyCHas.txt
+    facsimile: null
+    quoteRu: В таком случае нельзя печатать.
+    quoteEn: In that case it cannot be printed. (working English)
+    significance: The tersest statement of the constraint in the corpus. «Час» wired that it could run his «Не убий никого» only with censorship cuts; this two-word reply is the answer. The article went elsewhere and appeared with «большими пропусками». Incomplete truth is no truth — silence over mutilation.
+  visuals: []
 - key: chem-ljudi-zhivy
   displayTitle: Chem ljudi zhivy
   names:
@@ -7186,13 +7251,16 @@ entities:
   dossierVaultStatus:
     1889-1909-the-devil: missing
     1893-1894-christianity-and-patriotism: missing
+    late-voice-encryption-compression: missing
     stories-for-the-people: missing
   ingestionPriority: 2
   dependsOn:
+  - posrednik-the-intermediary
   - посредник-posrednik-publishing-house
   dives:
   - 1889-1909-the-devil
   - 1893-1894-christianity-and-patriotism
+  - late-voice-encryption-compression
   - stories-for-the-people
   sources:
   - jubilee-edition
@@ -7200,9 +7268,24 @@ entities:
   rolesByDive:
     1889-1909-the-devil: Co-copyist (with Chertkov) of the autograph, February 1890.
     1893-1894-christianity-and-patriotism: Posrednik editor; sent Tolstoy the newspaper clipping of the Toulon bishop's speech that 'proved useful' (quoted in ch. II)
+    late-voice-encryption-compression: Editor of Posrednik; ran the legal-Russian popular-publishing and the «Круг чтения» domestic production; correspondent on routing banned texts into the Readings.
     stories-for-the-people: Joined 1889, led Posrednik from the 1890s; addressee of the 24 Oct 1910 four-grade ranking letter — the project's longest-serving editor.
-  evidenceCount: 2
+  evidenceCount: 3
   evidence:
+  - dive: late-voice-encryption-compression
+    id: chan-gorbunov-recycle-banned
+    genre: letter
+    teiId: null
+    pssTom: 76
+    pages: null
+    date: '1905-09-25'
+    addressee: I. I. Gorbunov-Posadov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v76_053_I_I_Gorbunovu_Posadovu.txt
+    facsimile: null
+    quoteRu: недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить
+    quoteEn: it would not be a bad idea for the Readings to draw on my banned works when a replacement is needed (working English)
+    significance: 'A practical encryption move that fuses the threads: smuggling his own censored texts into circulation disguised as anthology reading-matter — forbidden content re-entering the public sphere inside legal devotional packaging.'
   - dive: stories-for-the-people
     id: E40
     genre: letter
@@ -10774,7 +10857,8 @@ entities:
     usable: true
     url: https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg
     localPath: docs/research/1908-the-law-of-violence-and-the-law-of-love/visuals/tolstoy-prokudin-gorsky-1908-colour.jpg
-    alsoInDives: []
+    alsoInDives:
+    - late-voice-encryption-compression
   - dive: 1908-the-law-of-violence-and-the-law-of-love
     id: zakon-opening-facsimile
     type: manuscript-facsimile
@@ -13079,6 +13163,70 @@ entities:
     quoteRu: Как огонь не бывает немножко горячий, немножко холодный, а бывает огонь только тогда, когда он жжет, так и истина не бывает немножко истина, немножко ложь, а всегда истина
     quoteEn: As fire is never a little hot, a little cold, but is fire only when it burns, so truth is never a little truth, a little falsehood, but is always truth. (working English)
     significance: 'On Every Day (На каждый день). The credo''s fire-image recast as a maxim on truth: fire is only fire when it burns, and truth only truth when it shows what is — the exact sibling of the What I Believe credo (vera-credo), rewritten for the daily-reading anthology.'
+  visuals: []
+- key: narodny-rasskaz-folk-tale
+  displayTitle: Narodny rasskaz (folk tale)
+  names:
+  - Народный рассказ (the folk-tale / parable form)
+  wikiType: concept
+  wikiTypeVariants:
+  - concept
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: 'The encoded genre at the centre of Thread 1: the popular tale/legend/parable as a vehicle that could carry a truth a treatise could not legally print. The form whose theory is in What Is Art? and whose licence is in the Цветник preface.'
+  evidenceCount: 3
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: enc-tsvetnik-genre-licence
+    genre: parable
+    teiId: null
+    pssTom: 26
+    pages: null
+    date: null
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../stories-for-the-people/extracts/v26_307_309_Predislovie_k_sborniku_Tsvetnik.txt
+    facsimile: null
+    quoteRu: и легенды, и притчи, и сказки будут правда, если в них будет правда царствия Божия
+    quoteEn: legends, parables and fairy tales will be truth, if the truth of the Kingdom of God is in them (working English)
+    significance: 'The Цветник preface states the genre licence that makes the encoded form admissible-as-truth: the criterion is moral, not documentary, so a legend can carry a truth a treatise could not — the theory of the народный рассказ a decade before What Is Art?.'
+  - dive: late-voice-encryption-compression
+    id: enc-razrushenie-invented-church
+    genre: legend
+    teiId: null
+    pssTom: 34
+    pages: null
+    date: 1902-1903
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../1903-folk-tales/extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    facsimile: null
+    quoteRu: я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь
+    quoteEn: I feared they might notice the too-obvious deception — and so I invented the Church (working English)
+    significance: The devil's confession in «Разрушение ада» — the line that made the satirical legend unprintable in Russia until 1917. Fiction carries a charge against the Church that a treatise could never have got past the censor; the legend form is the encryption.
+  - dive: late-voice-encryption-compression
+    id: key-sholom-aleichem
+    genre: letter
+    teiId: null
+    pssTom: 74
+    pages: 118–119
+    date: '1903-05-06'
+    addressee: S. N. Rabinovich (Sholom Aleichem)
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v74_144_S_H_RabinovichuSHolom_Alejxemu.txt
+    facsimile: null
+    quoteRu: этого-то я не могу сказать в русском легальном издании
+    quoteEn: this is precisely what I cannot say in a legal Russian publication (working English)
+    significance: THE keystone of the dive — Tolstoy names the suppressed political truth about the Kishinev pogrom (the culprit is «одно правительство», the government alone) and names the channel blockage in the same breath. The reason a forbidden truth had to come as coded legend rather than statement. The sentence was cut from all Russian reprints; first printed uncensored abroad («Свободное слово», 1903).
   visuals: []
 - key: narodnye-rasskazy
   displayTitle: Narodnye rasskazy
@@ -16561,6 +16709,57 @@ entities:
     url: null
     localPath: null
     alsoInDives: []
+- key: posrednik-the-intermediary
+  displayTitle: Posrednik (The Intermediary)
+  names:
+  - Posrednik (The Intermediary)
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 2
+  dependsOn:
+  - vladimir-chertkov
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: The cheap legal-Russian popular-publishing house (Chertkov/Gorbunov-Posadov) — the domestic, censored channel for the народные рассказы and the anthologies; the pole against which the abroad channel is defined.
+  evidenceCount: 2
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: enc-vse-zapreshchayut
+    genre: letter
+    teiId: null
+    pssTom: 64
+    pages: null
+    date: '1886'
+    addressee: I. B. Fainerman
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../stories-for-the-people/extracts/v64_001_I_B_Fajnermanu.txt
+    facsimile: null
+    quoteRu: Всё запрещают.
+    quoteEn: They are banning everything. (working English)
+    significance: Censorship as the daily weather of the Posrednik popular-tale project from its first years — the background pressure that made genre choice a channel decision long before 1900.
+  - dive: late-voice-encryption-compression
+    id: chan-gorbunov-recycle-banned
+    genre: letter
+    teiId: null
+    pssTom: 76
+    pages: null
+    date: '1905-09-25'
+    addressee: I. I. Gorbunov-Posadov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v76_053_I_I_Gorbunovu_Posadovu.txt
+    facsimile: null
+    quoteRu: недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить
+    quoteEn: it would not be a bad idea for the Readings to draw on my banned works when a replacement is needed (working English)
+    significance: 'A practical encryption move that fuses the threads: smuggling his own censored texts into circulation disguised as anthology reading-matter — forbidden content re-entering the public sphere inside legal devotional packaging.'
+  visuals: []
 - key: posthumous-censorship-of-hadji-murat-1912
   displayTitle: Posthumous censorship of Hadji Murat (1912)
   names:
@@ -17006,6 +17205,42 @@ entities:
     quoteRu: спиритического сеанса, бывшего в Москве на квартире Н. А. Львова, куда Толстой был приглашен по собственной инициативе.
     quoteEn: (working English) "...a spiritualist séance held in Moscow at the flat of N. A. Lvov, to which Tolstoy had had himself invited on his own initiative." (Editorial commentary.)
     significance: 'The documented source: the séance at N. A. Lvov''s Moscow flat (no later than spring 1886; Lvov died 1887), attended by Tolstoy on his own initiative, with P. F. Samarin, K. Yu. Milioti, and N. V. Davydov (who described it). Lvov → Zvezdintsev, Samarin → Sakhatov.'
+  visuals: []
+- key: pyotr-stolypin
+  displayTitle: Pyotr Stolypin
+  names:
+  - Pyotr Stolypin
+  wikiType: person
+  wikiTypeVariants:
+  - person
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 3
+  dependsOn: []
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: Prime Minister; recipient of the 1909 ultimatum letter in which abroad-publication is named as a dated political weapon.
+  evidenceCount: 1
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: chan-stolypin-ultimatum
+    genre: letter
+    teiId: null
+    pssTom: 80
+    pages: null
+    date: '1909-08-30'
+    addressee: P. A. Stolypin
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v80_112_P_A_Stolypinu.txt
+    facsimile: null
+    quoteRu: если в вашей деятельности не будет никакого изменения, письмо это будет напечатано за границей
+    quoteEn: if there is no change in your conduct, this letter will be printed abroad (working English)
+    significance: Publication abroad named as a deliberate political weapon with a deadline — the abroad channel used not as a fallback but as active leverage on the Prime Minister's conduct.
   visuals: []
 - key: pyotr-verigin
   displayTitle: Pyotr Verigin
@@ -18021,6 +18256,7 @@ entities:
   displayTitle: Sholom Aleichem
   names:
   - Sholom Aleichem (Solomon N. Rabinovich)
+  - Sholom Aleichem (S. N. Rabinovich)
   wikiType: person
   wikiTypeVariants:
   - person
@@ -18029,14 +18265,17 @@ entities:
   wordCount: null
   dossierVaultStatus:
     1903-folk-tales: missing
+    late-voice-encryption-compression: missing
   ingestionPriority: 1
   dependsOn: []
   dives:
   - 1903-folk-tales
+  - late-voice-encryption-compression
   sources: []
   rolesByDive:
     1903-folk-tales: Yiddish writer (1859–1916); editor of the «Гилф»/«Hilf» relief almanac; commissioned and translated the three tales. The dive's principal new person.
-  evidenceCount: 7
+    late-voice-encryption-compression: 'Recipient of the keystone letter (6 May 1903): the Yiddish writer who solicited a Kishinev-relief contribution and to whom Tolstoy named both the suppressed truth and the censorship that barred it.'
+  evidenceCount: 9
   evidence:
   - dive: 1903-folk-tales
     id: E02
@@ -18136,6 +18375,34 @@ entities:
     quoteRu: я не могу отступить от раз навсегда принятого мною правила предоставлять всем права печатания моих писаний. Отдаю я в пользу пострадавших поэтому только то, что могу отдать — право первого печатания.
     quoteEn: (working English) I cannot depart from the rule I once and for all adopted, of granting everyone the right to print my writings. I therefore give to the sufferers only what I can give — the right of first printing.
     significance: 'The copyright renunciation of 1891 in action: the relief fund receives only first-printing rights. Ties the cluster to the renunciation and the Posrednik economics of the parent dive.'
+  - dive: late-voice-encryption-compression
+    id: enc-folk-tale-held-back
+    genre: parable
+    teiId: null
+    pssTom: 74
+    pages: null
+    date: '1903'
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../1903-folk-tales/extracts/v74_219_S_N_RabinovichuSHolom_Alejxemu.txt
+    facsimile: null
+    quoteRu: из боязни, что она будет запрещена
+    quoteEn: out of fear that it would be banned (working English)
+    significance: 'Censorship anxiety operating inside the gift itself: «Труд, смерть и болезнь» held back from the relief anthology for fear of the ban. The constraint shapes not only the form but which tales can be offered where.'
+  - dive: late-voice-encryption-compression
+    id: key-sholom-aleichem
+    genre: letter
+    teiId: null
+    pssTom: 74
+    pages: 118–119
+    date: '1903-05-06'
+    addressee: S. N. Rabinovich (Sholom Aleichem)
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v74_144_S_H_RabinovichuSHolom_Alejxemu.txt
+    facsimile: null
+    quoteRu: этого-то я не могу сказать в русском легальном издании
+    quoteEn: this is precisely what I cannot say in a legal Russian publication (working English)
+    significance: THE keystone of the dive — Tolstoy names the suppressed political truth about the Kishinev pogrom (the culprit is «одно правительство», the government alone) and names the channel blockage in the same breath. The reason a forbidden truth had to come as coded legend rather than statement. The sentence was cut from all Russian reprints; first printed uncensored abroad («Свободное слово», 1903).
   visuals:
   - dive: 1903-folk-tales
     id: hilf-almanac-warsaw-1903
@@ -18159,6 +18426,16 @@ entities:
     usable: true
     url: https://commons.wikimedia.org/wiki/File:Sholem_Aleichem_1907.jpg
     localPath: docs/research/1903-folk-tales/visuals/commons-sholem-aleichem-1907b.jpg
+    alsoInDives: []
+  - dive: late-voice-encryption-compression
+    id: sholem-aleichem-1907
+    type: photo
+    subject: Sholom Aleichem (S. N. Rabinovich)
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Sholem_Aleichem_1907_(cropped).jpg
+    localPath: docs/research/late-voice-encryption-compression/visuals/commons-sholem-aleichem-1907.jpg
     alsoInDives: []
 - key: shusui-kotoku
   displayTitle: Shusui Kotoku
@@ -20129,6 +20406,81 @@ entities:
     url: ''
     localPath: null
     alsoInDives: []
+- key: svobodnoe-slovo-free-age-press
+  displayTitle: Svobodnoe Slovo (Free Age Press)
+  names:
+  - Свободное слово (Free Age Press)
+  wikiType: institution
+  wikiTypeVariants:
+  - institution
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 1
+  dependsOn:
+  - vladimir-chertkov
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: Chertkov's émigré publishing operation in England (also «Листки Свободного слова», the Free Age Press). The physical channel that published the uncensored complete texts abroad-first; the destination of «не пройдет в России, но может быть напечатано за границей».
+  evidenceCount: 3
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: enc-razrushenie-russia-1917
+    genre: legend
+    teiId: null
+    pssTom: 34
+    pages: null
+    date: null
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/../1903-folk-tales/extracts/v34_546_547_Razrushenie_ada_i_vosstanovlenie_ego_Ist.txt
+    facsimile: null
+    quoteRu: легенда «Разрушение ада и восстановление его» впервые появилась только в 1917 г.
+    quoteEn: the legend 'The Destruction of Hell…' first appeared [in Russia] only in 1917 (working English)
+    significance: 'The channel outcome of the encoded legend: first abroad 1903 («Свободное слово»), banned in Russia across 1906/1910/1913, legal only after the Revolution. The most heavily-routed item in the 1903 cluster.'
+  - dive: late-voice-encryption-compression
+    id: chan-router-svobodnoe-slovo
+    genre: letter
+    teiId: null
+    pssTom: 75
+    pages: null
+    date: '1905-01-24'
+    addressee: B. I. Knirsha
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v75_296_B_I_Knirshe.txt
+    facsimile: null
+    quoteRu: я послал вчера для напечатания
+    quoteEn: I sent it yesterday for printing [in «Свободное слово», abroad] (working English)
+    significance: Matter-of-fact routing of a new article to «Свободное слово» — the foreign press as unremarkable working practice, the institutionalised reflex behind the channel.
+  - dive: late-voice-encryption-compression
+    id: chan-abroad-rationale
+    genre: letter
+    teiId: null
+    pssTom: 89
+    pages: null
+    date: '1905-04-17'
+    addressee: V. G. Chertkov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v89_738_aprelya17.txt
+    facsimile: null
+    quoteRu: не пройдет в России, но может быть напечатано за границей
+    quoteEn: will not get through in Russia, but can be printed abroad (working English)
+    significance: The abroad-printing rationale in one sentence, said of a batch of religious-philosophical prefaces and Круг чтения weekly-reading materials — fuses Thread 1 (channel) and Thread 2 (the anthology). Even devotional anthology matter is designated abroad-first as a matter of course.
+  visuals:
+  - dive: late-voice-encryption-compression
+    id: free-age-press-pamphlets
+    type: title-page
+    subject: Free Age Press — Tolstoy's Pamphlets (title page)
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_-_Pamphlets.djvu
+    localPath: null
+    alsoInDives: []
 - key: synod-ban-of-on-life
   displayTitle: Synod ban of On Life
   names:
@@ -21545,6 +21897,94 @@ entities:
     quoteEn: And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)
     significance: The transformation stated as explicitly un-datable ("when and how … I could not say") and as a return to something old rather than the arrival of something new — the strongest textual counter to reading it as a dated "crisis".
   visuals: []
+- key: tolstoys-wisdom-anthologies
+  displayTitle: Tolstoy's wisdom anthologies
+  names:
+  - The wisdom-anthology series
+  wikiType: concept
+  wikiTypeVariants:
+  - concept
+  vaultStatus: missing
+  vaultPath: null
+  wordCount: null
+  dossierVaultStatus:
+    late-voice-encryption-compression: missing
+  ingestionPriority: 2
+  dependsOn: []
+  dives:
+  - late-voice-encryption-compression
+  sources: []
+  rolesByDive:
+    late-voice-encryption-compression: The compression endpoint as a single project across four books (Мысли мудрых людей → Круг чтения → На каждый день → Путь жизни) — the concept page that ties the four proposed work-records together and narrates the arc (attributions dropped, calendar abandoned, doctrine distilled to aphorism).
+  evidenceCount: 4
+  evidence:
+  - dive: late-voice-encryption-compression
+    id: comp-krug-stated-aim
+    genre: anthology
+    teiId: null
+    pssTom: 41
+    pages: null
+    date: 1908-03
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v41_009_009_Krug_chtenija_Predislovie.txt
+    facsimile: null
+    quoteRu: дать большому числу читателей доступный им ежедневный круг чтения, возбуждающего лучшие мысли и чувства
+    quoteEn: to give a large number of readers an accessible daily round of reading that arouses the best thoughts and feelings (working English)
+    significance: 'The compression intent stated outright in the Круг чтения preface: the source text is raw material, deliberately re-cut and re-worded for the daily reader — fidelity to the original explicitly subordinated to the daily effect. The method of the whole series.'
+  - dive: late-voice-encryption-compression
+    id: comp-put-drops-attributions
+    genre: anthology
+    teiId: null
+    pssTom: 45
+    pages: null
+    date: '1910'
+    addressee: null
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v45_013_496_Put_zhizni.txt
+    facsimile: null
+    quoteRu: я нахожу неудобным подписывать их именами их авторов
+    quoteEn: I find it inconvenient to sign them with their authors' names (working English)
+    significance: 'The end-state of the method, in Путь жизни''s note: the named voices of 1903 have been re-worked so far into Tolstoy''s own diction that he drops the attributions altogether — «the best of these unsigned thoughts belong not to me but to the greatest sages of the world». The anthology has become his own compressed voice.'
+  - dive: late-voice-encryption-compression
+    id: comp-krug-genesis
+    genre: letter
+    teiId: null
+    pssTom: 75
+    pages: null
+    date: '1904-01-19'
+    addressee: L. L. Tolstoy (son Lev)
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v75_013_L_L_Tolstomu.txt
+    facsimile: null
+    quoteRu: Хочу сделать из них Круг чтения на каждый день.
+    quoteEn: I want to make from them a Circle of Reading for each day. (working English)
+    significance: 'The genesis of Круг чтения stated in his own words: «Мысли мудрых людей» is being enlarged and reconceived as the daily-reading anthology. Each book in the series is the previous one re-made — compression by repeated re-cutting.'
+  - dive: late-voice-encryption-compression
+    id: comp-put-like-krug
+    genre: letter
+    teiId: null
+    pssTom: 82
+    pages: null
+    date: '1910-07-20'
+    addressee: M. G. Bolkvadze
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v82_096_M_G_Bolkvadze.txt
+    facsimile: null
+    quoteRu: составленной, как «Круг чтения», из изречений разных мыслителей
+    quoteEn: compiled, like 'Circle of Reading', from the sayings of various thinkers (working English)
+    significance: 'Tolstoy''s own self-description of Путь жизни''s form, months before his death — the project naming its own lineage: the last book is the series compressed one final time.'
+  visuals:
+  - dive: late-voice-encryption-compression
+    id: krug-chteniya-1906-title-page
+    type: title-page
+    subject: Круг чтения — first-edition title page (1906)
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Ma1-055-.jpg
+    localPath: docs/research/late-voice-encryption-compression/visuals/commons-krug-chteniya-1906-title-page.jpg
+    alsoInDives: []
 - key: true-christianity-tolstoy
   displayTitle: True Christianity (Tolstoy)
   names:
@@ -22771,6 +23211,7 @@ entities:
     fire-metaphor: exists
     gospel-translation: exists
     jubilee-edition-tei-corpus: exists
+    late-voice-encryption-compression: exists
     stories-for-the-people: exists
     tolstoy-in-art: exists
     tolstoy-in-photographs: exists
@@ -22811,6 +23252,7 @@ entities:
   - fire-metaphor
   - gospel-translation
   - jubilee-edition-tei-corpus
+  - late-voice-encryption-compression
   - stories-for-the-people
   - tolstoy-in-art
   - tolstoy-in-photographs
@@ -22849,11 +23291,12 @@ entities:
     fire-metaphor: Closest disciple; conduit for the 1904 soldiers' letter; co-author of the Doukhobor record
     gospel-translation: Later custodian/publisher of the banned works; his Croydon/Free Age circle stands behind the first English translation
     jubilee-edition-tei-corpus: editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project
+    late-voice-encryption-compression: 'The abroad-publishing channel: ran «Свободное слово» / Free Age Press (Maldon → Purleigh → Christchurch/Tuckton, England); sole authorised node for Tolstoy''s writings going abroad (1900); sole posthumous literary executor (1904/1910). The page exists; this dive supplies the channel-protocol evidence to enrich it.'
     stories-for-the-people: 'Co-founder and operational head of Posrednik: commissioned tales, supplied sources (the Saillens story), routed censorship, managed Sytin production — the daily correspondent of the whole project (Toms 85–86).'
     tolstoy-in-art: Disciple; ran the late photographic documentation of Tolstoy; party to the conflict over Tolstoy's portraits/image
     tolstoy-in-photographs: built the largest photographic archive of Tolstoy; brought the photographer Tapsell; the public/prophet image-maker
     tolstoyanism: 'Not named in the four quotes, but the focal point of the ambivalence: the de facto organiser, dogmatist and publisher (Free Age Press) of the very movement Tolstoy disowns. The gap between Tolstoy''s ''there is no such thing'' and Chertkov''s institution-building is the dive''s central tension.'
-  evidenceCount: 62
+  evidenceCount: 68
   evidence:
   - dive: 1879-1882-a-confession
     id: conf-let-07
@@ -23569,6 +24012,90 @@ entities:
     quoteRu: Это же самое желание он затем подтвердил письменно в своем завещательном распоряжении от 31 июля 1910 г.
     quoteEn: This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)
     significance: 'From "ОТ ГЛАВНОГО РЕДАКТОРА" (From the Editor-in-Chief), Chertkov''s own foreword: Tolstoy asked him to review and publish the unpublished manuscripts, confirmed in the 31 July 1910 testamentary disposition — the exact document the copyright-renunciation dive centres on. PD facsimile.'
+  - dive: late-voice-encryption-compression
+    id: chan-public-sole-node
+    genre: letter
+    teiId: null
+    pssTom: 76
+    pages: null
+    date: '1906-01-14'
+    addressee: Editors of «Новое время» and «Русские ведомости» (public notice)
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v76_116_VredakciigazetNovoevremyaiRusskievedomosti.txt
+    facsimile: null
+    quoteRu: Ему одному я посылал и посылаю теперь для печатания за границей по-русски и в переводах все мои новые писания.
+    quoteEn: To him alone I sent, and send now, for publication abroad in Russian and in translation, all my new writings. (working English)
+    significance: A public declaration of the channel architecture, issued exactly as the 1905 partial lifting of censorship triggers a rush of Russian publishers to reprint banned works — Tolstoy formalises Chertkov as the sole authorised node at the moment the corpus is becoming domestically accessible.
+  - dive: late-voice-encryption-compression
+    id: chan-chertkov-controls-all
+    genre: letter
+    teiId: null
+    pssTom: 80
+    pages: null
+    date: '1909-12-19'
+    addressee: N. N. Ge (son)
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v80_370_H_N_Gesynu.txt
+    facsimile: null
+    quoteRu: Чертковым, который заведует печатанием всего мною писанного
+    quoteEn: Chertkov, who is in charge of the printing of everything I have written (working English)
+    significance: The single most direct statement of Chertkov's role as the one controlling node for the publication of all Tolstoy's writing — the reason the channel runs through him.
+  - dive: late-voice-encryption-compression
+    id: chan-posthumous-testament
+    genre: letter
+    teiId: null
+    pssTom: 88
+    pages: null
+    date: '1904-05-13'
+    addressee: V. G. Chertkov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v88_719_maya13.txt
+    facsimile: null
+    quoteRu: что выбросить, что оставить и когда и где и в какой форме издать
+    quoteEn: what to discard, what to keep, and when and where and in what form to publish (working English)
+    significance: A 1904 letter reaffirming the 1895 written instruction (записка) naming Chertkov to sort and dispose of Tolstoy's papers after his death — Tolstoy stating the wish in his own hand, years before the contested 1909–1910 legal will. The posthumous channel is constructed as deliberately, and as early, as the living one. (Distinct from the famous secret will; see needsReview on the testament dating.)
+  - dive: late-voice-encryption-compression
+    id: chan-rule-only-through-you
+    genre: letter
+    teiId: null
+    pssTom: 88
+    pages: null
+    date: '1900-12-12'
+    addressee: V. G. Chertkov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v88_607_dekabrya12.txt
+    facsimile: null
+    quoteRu: чтобы за границу все мои писания проникали только через вас
+    quoteEn: that all my writings reach abroad only through you (working English)
+    significance: 'The clearest single statement of the channel protocol as a rule: every writing going abroad passes only through Chertkov, and Tolstoy commits to keeping the order strictly. The structural foundation of the whole abroad channel.'
+  - dive: late-voice-encryption-compression
+    id: chan-abroad-rationale
+    genre: letter
+    teiId: null
+    pssTom: 89
+    pages: null
+    date: '1905-04-17'
+    addressee: V. G. Chertkov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v89_738_aprelya17.txt
+    facsimile: null
+    quoteRu: не пройдет в России, но может быть напечатано за границей
+    quoteEn: will not get through in Russia, but can be printed abroad (working English)
+    significance: The abroad-printing rationale in one sentence, said of a batch of religious-philosophical prefaces and Круг чтения weekly-reading materials — fuses Thread 1 (channel) and Thread 2 (the anthology). Even devotional anthology matter is designated abroad-first as a matter of course.
+  - dive: late-voice-encryption-compression
+    id: chan-all-or-nothing
+    genre: letter
+    teiId: null
+    pssTom: 89
+    pages: null
+    date: '1906-02-13'
+    addressee: V. G. Chertkov
+    localPdf: null
+    extract: docs/research/late-voice-encryption-compression/extracts/v89_757_fevralya1.txt
+    facsimile: null
+    quoteRu: печатать всю или ничего
+    quoteEn: '[I set a conditio sine qua non —] to print the whole thing or nothing (working English)'
+    significance: 'Tolstoy adopts the integrity rule as his own: if Russia will not print the whole text uncensored, it does not appear in Russia at all. The channel enforces textual wholeness against partial/censored domestic publication.'
   - dive: stories-for-the-people
     id: E34
     genre: letter
@@ -23807,6 +24334,7 @@ entities:
     - 1904-bethink-yourselves
     - biryukov-sofia-relationship
     - copyright-renunciation
+    - late-voice-encryption-compression
   - dive: 1901-1902-what-is-religion
     id: chertkov-portrait-repin-1890s
     type: portrait (painting)
@@ -23818,6 +24346,7 @@ entities:
     localPath: docs/research/1901-1902-what-is-religion/visuals/commons-chertkov-portrait-repin-1890s.jpg
     alsoInDives:
     - 1908-the-law-of-violence-and-the-law-of-love
+    - late-voice-encryption-compression
   - dive: 1901-1902-what-is-religion
     id: chertkov-tolstoy-1909
     type: photograph
@@ -23910,6 +24439,16 @@ entities:
     usable: true
     url: null
     localPath: docs/research/jubilee-edition-tei-corpus/extracts/pss-vol62-pages/page-006.png
+    alsoInDives: []
+  - dive: late-voice-encryption-compression
+    id: tolstoy-chess-chertkov-son-1907
+    type: photo
+    subject: Tolstoy at chess with Chertkov's son
+    relatedEvidence: null
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_playing_chess_with_the_son_of_Vladimir_Chertkov.png
+    localPath: docs/research/late-voice-encryption-compression/visuals/commons-tolstoy-chess-chertkov-son-1907.png
     alsoInDives: []
   - dive: tolstoy-in-photographs
     id: chertkov-tolstoy-makovitsky
@@ -24922,6 +25461,7 @@ lint:
     dives:
     - 1889-1909-the-devil
     - 1893-1894-christianity-and-patriotism
+    - late-voice-encryption-compression
     - stories-for-the-people
   - key: jubilee-edition
     names:
@@ -25119,6 +25659,13 @@ lint:
     dives:
     - 1889-1899-resurrection
     - doukhobors
+  - key: sholom-aleichem
+    names:
+    - Sholom Aleichem (S. N. Rabinovich)
+    - Sholom Aleichem (Solomon N. Rabinovich)
+    dives:
+    - 1903-folk-tales
+    - late-voice-encryption-compression
   - key: soedinenie-i-perevod-chetyrekh-evangelij
     names:
     - The Gospel in Brief / The Four Gospels Harmonized (Соединение и перевод четырёх Евангелий)
@@ -25237,6 +25784,7 @@ lint:
     - fire-metaphor
     - gospel-translation
     - jubilee-edition-tei-corpus
+    - late-voice-encryption-compression
     - stories-for-the-people
     - tolstoy-in-art
     - tolstoy-in-photographs
@@ -25522,118 +26070,46 @@ lint:
   worksRoutedNotWiki:
   - key: abrege-de-levangile
     wikiType: work
-  - key: akim-the-power-of-darkness
-    wikiType: character
-  - key: akulina-the-power-of-darkness
-    wikiType: character
-  - key: anisya-the-power-of-darkness
-    wikiType: character
-  - key: anyutka-the-power-of-darkness
-    wikiType: character
   - key: bethink-yourselves
     wikiType: work
-  - key: butler-hadji-murat
-    wikiType: character
-  - key: caucasus-highlanders
-    wikiType: group
   - key: chem-ljudi-zhivy
     wikiType: work
   - key: christianity-and-patriotism
     wikiType: work
   - key: confession
     wikiType: work
-  - key: dmitri-nekhlyudov-resurrection
-    wikiType: character
-  - key: doukhobors
-    wikiType: group
-  - key: evgeny-irtenev
-    wikiType: character
-  - key: father-sergius
-    wikiType: character
-  - key: four-gospels-harmonised-and-translated-1895
-    wikiType: edition
-  - key: grossman-the-fruits-of-enlightenment
-    wikiType: character
-  - key: hadji-murat
-    wikiType: character
   - key: hodite-v-svete-poka-est-svet
     wikiType: work
   - key: issledovanie-dogmaticheskogo-bogoslovija
     wikiType: work
-  - key: jubilee-edition
-    wikiType: edition
-  - key: katyusha-maslova
-    wikiType: character
   - key: kratkoe-izlozhenie-evangelija
     wikiType: work
   - key: leeds-russian-archive-chertkov-tapsell-fond
     wikiType: archival-fond
-  - key: leonid-zvezdintsev-the-fruits-of-enlightenment
-    wikiType: character
-  - key: liza-irteneva
-    wikiType: character
-  - key: makovkina
-    wikiType: character
-  - key: mary-father-sergius
-    wikiType: character
-  - key: marya-dmitrievna-hadji-murat
-    wikiType: character
-  - key: marya-father-sergius
-    wikiType: character
-  - key: matryona-the-power-of-darkness
-    wikiType: character
-  - key: mitrich-the-power-of-darkness
-    wikiType: character
   - key: na-kazhdyj-den
     wikiType: work
-  - key: nikita-master-and-man
-    wikiType: character
-  - key: nikita-the-power-of-darkness
-    wikiType: character
   - key: o-zhizni
     wikiType: work
   - key: otets-sergij
     wikiType: work
-  - key: pashenka-father-sergius
-    wikiType: character
-  - key: pozdnyshev
-    wikiType: character
-  - key: pozdnyshevs-wife
-    wikiType: character
-  - key: professor-krugosvetlov-the-fruits-of-enlightenment
-    wikiType: character
   - key: prokudin-gorsky-collection-library-of-congress
     wikiType: archival-fond
   - key: put-zhizni
     wikiType: work
   - key: resurrection
     wikiType: work
-  - key: sakhatov-the-fruits-of-enlightenment
-    wikiType: character
-  - key: semyon-the-fruits-of-enlightenment
-    wikiType: character
-  - key: shakers
-    wikiType: group
   - key: smert-ivana-ilicha
     wikiType: work
   - key: soedinenie-i-perevod-chetyrekh-evangelij
     wikiType: work
-  - key: stepanida
-    wikiType: character
-  - key: tanya-the-fruits-of-enlightenment
-    wikiType: character
   - key: the-kingdom-of-god-is-within-you
     wikiType: work
   - key: the-slavery-of-our-times
     wikiType: work
-  - key: trukhachevsky
-    wikiType: character
   - key: tsgakffd-bulla-collection
     wikiType: archival-fond
   - key: v-chem-moja-vera
     wikiType: work
-  - key: vasily-brekhunov
-    wikiType: character
   - key: what-i-believe
     wikiType: work
   - key: what-is-art

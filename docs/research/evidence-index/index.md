@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-06-11
+lastUpdated: 2026-06-12
 tags: [research]
 ---
 
@@ -10,9 +10,9 @@ Generated aggregate of every corpus-dive dossier, keyed by entity. It collates t
 
 ## 1. At a glance
 
-- 36 dives · 353 distinct entities · 894 evidence rows · 443 visuals
-- By vault status: 10 exists · 6 stub · 337 missing
-- 70 entities recur across ≥2 dives
+- 37 dives · 359 distinct entities · 951 evidence rows · 450 visuals
+- By vault status: 10 exists · 6 stub · 343 missing
+- 71 entities recur across ≥2 dives
 
 ## 2. Ingestion work-order
 
@@ -27,11 +27,11 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Kratkoe izlozhenie Evangelija | work | missing | gospel-translation, lords-prayer | 11 | union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий |
 | Doukhobors | group | missing | 1889-1899-resurrection, 1889-1909-the-devil, 1890-1898-father-sergius, doukhobors | 9 | — |
 | Posrednik | institution | missing | 1903-folk-tales, stories-for-the-people | 9 | — |
+| Sholom Aleichem | person | missing | 1903-folk-tales, late-voice-encryption-compression | 9 | — |
 | evgeny-irtenev | character | missing | 1889-1909-the-devil | 8 | leo-tolstoy, nikolai-fridrikhs |
 | Ilya Repin | person | missing | 1887-1889-the-kreutzer-sonata, stories-for-the-people, tolstoy-in-art | 8 | — |
 | aksinya-bazykina | person | missing | 1889-1909-the-devil, biryukov-sofia-relationship | 7 | leo-tolstoy |
 | Excommunication of Tolstoy | event | missing | 1889-1899-resurrection, gospel-translation | 7 | konstantin-pobedonostsev, resurrection-воскресение |
-| Sholom Aleichem | person | missing | 1903-folk-tales | 7 | — |
 | Stories for the People | concept | missing | stories-for-the-people | 7 | — |
 | Vasily Brekhunov | character | missing | 1894-1895-master-and-man | 7 | — |
 | Father Sergius | character | missing | 1890-1898-father-sergius | 6 | a-m-kuzminsky, l-d-urusov, leo-tolstoy |
@@ -79,6 +79,7 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Russo-Japanese War | event | missing | 1904-bethink-yourselves | 3 | — |
 | Spiritual crisis (perevorot) | concept | missing | 1879-1882-a-confession | 3 | lev-tolstoy |
 | stepanida | character | missing | 1889-1909-the-devil | 3 | aksinya-bazykina |
+| Svobodnoe Slovo (Free Age Press) | institution | missing | late-voice-encryption-compression | 3 | vladimir-chertkov |
 | The False Life | concept | missing | 1884-1886-the-death-of-ivan-ilyich | 3 | — |
 | The five commandments (Sermon on the Mount) | concept | missing | 1882-1884-what-i-believe | 3 | lev-tolstoy, non-resistance-to-evil-непротивление-злу-насилием |
 | The Slavery of Our Times | work | missing | 1900-the-slavery-of-our-times | 3 | — |
@@ -101,17 +102,21 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Alexander III | person | missing | 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata | 4 | — |
 | Konstantin Pobedonostsev | person | missing | 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1901-1902-what-is-religion, stories-for-the-people | 4 | — |
 | Na kazhdyj den | work | missing | fire-metaphor | 4 | fire-of-conscience-the-luke-1249-motif, light-of-reason-свет-разума |
+| Tolstoy's wisdom anthologies | concept | missing | late-voice-encryption-compression | 4 | — |
 | Adolf Marks | person | missing | 1889-1899-resurrection | 3 | — |
 | Alexander Stakhovich | person | missing | 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness | 3 | — |
 | Alexandra Andreyevna Tolstaya | person | missing | 1879-1882-a-confession, 1882-1884-what-i-believe | 3 | lev-tolstoy |
 | Art for the people | concept | missing | 1886-the-power-of-darkness | 3 | — |
 | Ban of The Kreutzer Sonata (1889) | event | missing | 1887-1889-the-kreutzer-sonata | 3 | alexander-iii, konstantin-pobedonostsev, sophia-tolstaya |
+| Censorship in late Imperial Russia | concept | missing | late-voice-encryption-compression | 3 | — |
 | Death (On Life) | concept | missing | 1886-1887-on-life | 3 | lev-tolstoy, the-animal-personality-and-true-life-животная-личность-/-истинная-жизнь |
 | Division of labour (Tolstoy's critique) | concept | missing | 1882-1886-what-then-must-we-do | 3 | lev-tolstoy |
 | Dmitry Khilkov | person | missing | 1893-1894-christianity-and-patriotism, christian | 3 | — |
 | Four Gospels Harmonised and Translated (1895) | edition | missing | gospel-translation | 3 | union-and-translation-of-the-four-gospels-соединение-и-перевод-четырёх-евангелий |
 | Gaspra | place | missing | 1901-1902-what-is-religion | 3 | — |
 | Henry George | person | missing | 1882-1886-what-then-must-we-do, 1900-the-slavery-of-our-times, tolstoyanism | 3 | lev-tolstoy, wage-slavery-tolstoys-concept |
+| ivan-gorbunov-posadov | person | missing | 1889-1909-the-devil, 1893-1894-christianity-and-patriotism, late-voice-encryption-compression, stories-for-the-people | 3 | posrednik-the-intermediary, посредник-posrednik-publishing-house |
+| Narodny rasskaz (folk tale) | concept | missing | late-voice-encryption-compression | 3 | — |
 | Nikolai Davydov | person | missing | 1882-1884-what-i-believe, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness | 3 | — |
 | Nikolai Gusev | person | missing | 1908-the-law-of-violence-and-the-law-of-love, jubilee-edition-tei-corpus | 3 | — |
 | Nikolai Lvov | person | missing | 1886-1890-the-fruits-of-enlightenment | 3 | — |
@@ -129,7 +134,6 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Critique of beauty | concept | missing | 1897-1898-what-is-art | 2 | — |
 | Gabriel Sacy | person | missing | christian-anarchism | 2 | christian-anarchism, leo-tolstoy |
 | Ilya Ginzburg | person | missing | tolstoy-in-art | 2 | — |
-| ivan-gorbunov-posadov | person | missing | 1889-1909-the-devil, 1893-1894-christianity-and-patriotism, stories-for-the-people | 2 | посредник-posrednik-publishing-house |
 | Karl Marx | person | missing | 1900-the-slavery-of-our-times | 2 | — |
 | Leonid Urusov | person | missing | 1879-1882-a-confession, 1882-1884-what-i-believe, 1884-1886-the-death-of-ivan-ilyich, 1890-1898-father-sergius | 2 | — |
 | Lubok | concept | missing | stories-for-the-people | 2 | посредник-posrednik-publishing-house |
@@ -139,6 +143,7 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Nikolai Fedorov | person | missing | 1879-1882-a-confession | 2 | lev-tolstoy |
 | O zhizni | work | missing | fire-metaphor | 2 | light-of-reason-свет-разума |
 | Ponyatie zhizni lecture | event | missing | 1886-1887-on-life | 2 | moscow-psychological-society, n-ya-grot |
+| Posrednik (The Intermediary) | institution | missing | late-voice-encryption-compression | 2 | vladimir-chertkov |
 | Posthumous censorship of Hadji Murat (1912) | event | missing | 1896-1904-hadji-murat | 2 | nicholas-i, vladimir-chertkov |
 | Pozdnyshev's wife | character | missing | 1887-1889-the-kreutzer-sonata | 2 | pozdnyshev |
 | razumenie | concept | missing | lords-prayer | 2 | — |
@@ -278,6 +283,7 @@ Entities not yet written (or only stubbed) that already have verified evidence, 
 | Otets Sergij | work | missing | fire-metaphor | 1 | light-of-reason-свет-разума |
 | Paul Deroulede | person | missing | 1893-1894-christianity-and-patriotism | 1 | — |
 | Prokudin-Gorsky Collection Library of Congress | archival-fond | missing | tolstoy-in-photographs | 1 | — |
+| Pyotr Stolypin | person | missing | late-voice-encryption-compression | 1 | — |
 | Richard Wagner | person | missing | 1897-1898-what-is-art | 1 | — |
 | Rumyantsev Museum | place | missing | 1879-1882-a-confession | 1 | n-f-fedorov |
 | Russian State Library | institution | missing | jubilee-edition-tei-corpus | 1 | — |
@@ -941,6 +947,24 @@ _1896-1904-hadji-murat_: The mountain peoples of Chechnya and Dagestan (Avars, C
 > — PSS Tom 35, pp. 5-118 · 1896-1904-hadji-murat · 1896-1904
 
 Visuals: 3 (3 usable) — Ivan Aivazovsky, Aul Gunib in Dagestan, 1869 [PD], Franz Roubaud, End of the Caucasian War, 1900 [PD], Map of the North-West Caucasus Line, E. D. Felitsyn, 1899 [PD]
+
+### Censorship in late Imperial Russia
+
+concept · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: The apparatus the whole dive turns on — state press censorship, the spiritual (Synod) censor, and (per Chertkov) the «second censor» of the liberal press that mutilated Tolstoy's articles. The constraint that forced genre and channel choices.
+
+> приписал мне таким образом утверждение догмата искупления
+> thus ascribing to me the affirmation of the redemption dogma (working English)
+> — PSS Tom 30 · late-voice-encryption-compression
+
+> Какое праздное занятие вся наша подцензурная литература!
+> What an idle occupation is all our censored literature! (working English)
+> — PSS Tom 55 · late-voice-encryption-compression · 1904-01-14
+
+> В таком случае нельзя печатать.
+> In that case it cannot be printed. (working English)
+> — PSS Tom 77 · late-voice-encryption-compression · 1907-09-05
 
 ### Chem ljudi zhivy
 
@@ -1952,11 +1976,16 @@ _gospel-translation_: Project part 2 — the polemical demolition of Orthodox do
 
 ### ivan-gorbunov-posadov
 
-person · missing · dives: 1889-1909-the-devil, 1893-1894-christianity-and-patriotism, stories-for-the-people · names: Ivan Gorbunov (I. I. Gorbunov-Posadov) / Ivan Gorbunov-Posadov
+person · missing · dives: 1889-1909-the-devil, 1893-1894-christianity-and-patriotism, late-voice-encryption-compression, stories-for-the-people · names: Ivan Gorbunov (I. I. Gorbunov-Posadov) / Ivan Gorbunov-Posadov
 
 _1889-1909-the-devil_: Co-copyist (with Chertkov) of the autograph, February 1890.
 _1893-1894-christianity-and-patriotism_: Posrednik editor; sent Tolstoy the newspaper clipping of the Toulon bishop's speech that 'proved useful' (quoted in ch. II)
+_late-voice-encryption-compression_: Editor of Posrednik; ran the legal-Russian popular-publishing and the «Круг чтения» domestic production; correspondent on routing banned texts into the Readings.
 _stories-for-the-people_: Joined 1889, led Posrednik from the 1890s; addressee of the 24 Oct 1910 four-grade ranking letter — the project's longest-serving editor.
+
+> недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить
+> it would not be a bad idea for the Readings to draw on my banned works when a replacement is needed (working English)
+> — PSS Tom 76 · late-voice-encryption-compression · 1905-09-25
 
 > Получил листовки, высланные вами Саше, и очень заинтересовался ими. Разобрал их на четыре сорта: самые хорошие, хорошие, посредственные и плохие.
 > (working English) I received the leaflets you sent to Sasha and became very interested in them. I sorted them into four grades: the very good, the good, the mediocre and the bad.
@@ -3255,6 +3284,24 @@ _fire-metaphor_: The daily-wisdom anthology (1906–10) that recasts the fire/li
 > As fire is never a little hot, a little cold, but is fire only when it burns, so truth is never a little truth, a little falsehood, but is always truth. (working English)
 > — PSS Tom 44, pp. 3–390 · fire-metaphor · 1909
 
+### Narodny rasskaz (folk tale)
+
+concept · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: The encoded genre at the centre of Thread 1: the popular tale/legend/parable as a vehicle that could carry a truth a treatise could not legally print. The form whose theory is in What Is Art? and whose licence is in the Цветник preface.
+
+> и легенды, и притчи, и сказки будут правда, если в них будет правда царствия Божия
+> legends, parables and fairy tales will be truth, if the truth of the Kingdom of God is in them (working English)
+> — PSS Tom 26 · late-voice-encryption-compression
+
+> я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь
+> I feared they might notice the too-obvious deception — and so I invented the Church (working English)
+> — PSS Tom 34 · late-voice-encryption-compression · 1902-1903
+
+> этого-то я не могу сказать в русском легальном издании
+> this is precisely what I cannot say in a legal Russian publication (working English)
+> — PSS Tom 74, pp. 118–119 · late-voice-encryption-compression · 1903-05-06
+
 ### Narodnye rasskazy
 
 concept · missing · dives: 1903-folk-tales
@@ -4102,6 +4149,20 @@ _stories-for-the-people_: The cheap-editions publishing enterprise (founded from
 
 Visuals: 1 (0 usable) — 9 illustrations by N. I. Zhivoy for the 1903 Posrednik edition of «Асархадон» / «Три вопроса» [unknown]
 
+### Posrednik (The Intermediary)
+
+institution · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: The cheap legal-Russian popular-publishing house (Chertkov/Gorbunov-Posadov) — the domestic, censored channel for the народные рассказы and the anthologies; the pole against which the abroad channel is defined.
+
+> Всё запрещают.
+> They are banning everything. (working English)
+> — PSS Tom 64 · late-voice-encryption-compression · 1886
+
+> недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить
+> it would not be a bad idea for the Readings to draw on my banned works when a replacement is needed (working English)
+> — PSS Tom 76 · late-voice-encryption-compression · 1905-09-25
+
 ### Posthumous censorship of Hadji Murat (1912)
 
 event · missing · dives: 1896-1904-hadji-murat
@@ -4225,6 +4286,16 @@ _1886-1890-the-fruits-of-enlightenment_: Attendee of the Lvov séance; the proto
 > спиритического сеанса, бывшего в Москве на квартире Н. А. Львова, куда Толстой был приглашен по собственной инициативе.
 > (working English) "...a spiritualist séance held in Moscow at the flat of N. A. Lvov, to which Tolstoy had had himself invited on his own initiative." (Editorial commentary.)
 > — PSS Tom 27, pp. 647 · 1886-1890-the-fruits-of-enlightenment · 1886
+
+### Pyotr Stolypin
+
+person · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: Prime Minister; recipient of the 1909 ultimatum letter in which abroad-publication is named as a dated political weapon.
+
+> если в вашей деятельности не будет никакого изменения, письмо это будет напечатано за границей
+> if there is no change in your conduct, this letter will be printed abroad (working English)
+> — PSS Tom 80 · late-voice-encryption-compression · 1909-08-30
 
 ### Pyotr Verigin
 
@@ -4458,9 +4529,10 @@ Visuals: 1 (1 usable) — Tolstoy seated at Yasnaya Polyana — the only colour 
 
 ### Sholom Aleichem
 
-person · missing · dives: 1903-folk-tales
+person · missing · dives: 1903-folk-tales, late-voice-encryption-compression · names: Sholom Aleichem (Solomon N. Rabinovich) / Sholom Aleichem (S. N. Rabinovich)
 
 _1903-folk-tales_: Yiddish writer (1859–1916); editor of the «Гилф»/«Hilf» relief almanac; commissioned and translated the three tales. The dive's principal new person.
+_late-voice-encryption-compression_: Recipient of the keystone letter (6 May 1903): the Yiddish writer who solicited a Kishinev-relief contribution and to whom Tolstoy named both the suppressed truth and the censorship that barred it.
 
 > Я очень рад буду содействовать вашему сборнику и постараюсь написать что-либо соответствующее обстоятельствам.
 > (working English) I shall be very glad to contribute to your anthology and will try to write something suited to the circumstances.
@@ -4490,7 +4562,15 @@ _1903-folk-tales_: Yiddish writer (1859–1916); editor of the «Гилф»/«Hi
 > (working English) I cannot depart from the rule I once and for all adopted, of granting everyone the right to print my writings. I therefore give to the sufferers only what I can give — the right of first printing.
 > — PSS Tom 74, pp. 182 · 1903-folk-tales · 1903-09-07
 
-Visuals: 2 (1 usable) — Cover / title page of the «Гилф»/«Hilf» relief almanac (Warsaw, ed. Sholom Aleichem) [unknown], Sholom Aleichem (S. N. Rabinovich), portrait, 1907 [PD]
+> из боязни, что она будет запрещена
+> out of fear that it would be banned (working English)
+> — PSS Tom 74 · late-voice-encryption-compression · 1903
+
+> этого-то я не могу сказать в русском легальном издании
+> this is precisely what I cannot say in a legal Russian publication (working English)
+> — PSS Tom 74, pp. 118–119 · late-voice-encryption-compression · 1903-05-06
+
+Visuals: 3 (2 usable) — Cover / title page of the «Гилф»/«Hilf» relief almanac (Warsaw, ed. Sholom Aleichem) [unknown], Sholom Aleichem (S. N. Rabinovich), portrait, 1907 [PD], Sholom Aleichem (S. N. Rabinovich) [PD]
 
 ### Single tax (Henry George)
 
@@ -4969,6 +5049,26 @@ _1901-1902-what-is-religion_: publisher of the essay's first edition (No. 75, Ch
 
 Visuals: 1 (1 usable) — Svobodnoe Slovo (Free Word) 1900 first edition title page [unknown]
 
+### Svobodnoe Slovo (Free Age Press)
+
+institution · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: Chertkov's émigré publishing operation in England (also «Листки Свободного слова», the Free Age Press). The physical channel that published the uncensored complete texts abroad-first; the destination of «не пройдет в России, но может быть напечатано за границей».
+
+> легенда «Разрушение ада и восстановление его» впервые появилась только в 1917 г.
+> the legend 'The Destruction of Hell…' first appeared [in Russia] only in 1917 (working English)
+> — PSS Tom 34 · late-voice-encryption-compression
+
+> я послал вчера для напечатания
+> I sent it yesterday for printing [in «Свободное слово», abroad] (working English)
+> — PSS Tom 75 · late-voice-encryption-compression · 1905-01-24
+
+> не пройдет в России, но может быть напечатано за границей
+> will not get through in Russia, but can be printed abroad (working English)
+> — PSS Tom 89 · late-voice-encryption-compression · 1905-04-17
+
+Visuals: 1 (1 usable) — Free Age Press — Tolstoy's Pamphlets (title page) [PD]
+
 ### Synod ban of On Life
 
 event · missing · dives: 1886-1887-on-life
@@ -5345,6 +5445,30 @@ _crisis_: the event this dive is about; candidate concept page — should foregr
 > And I was saved from suicide. When and how this upheaval [переворот] took place in me, I could not say. […] just as gradually, imperceptibly, the force of life returned to me. And it is strange that the force of life which returned to me was not a new one, but the very oldest — the same that had drawn me in the first days of my life. (working English)
 > — PSS Tom 23, pp. 46 · TEI v23_001_059_Ispoved · crisis · 1882
 
+### Tolstoy's wisdom anthologies
+
+concept · missing · dives: late-voice-encryption-compression
+
+_late-voice-encryption-compression_: The compression endpoint as a single project across four books (Мысли мудрых людей → Круг чтения → На каждый день → Путь жизни) — the concept page that ties the four proposed work-records together and narrates the arc (attributions dropped, calendar abandoned, doctrine distilled to aphorism).
+
+> дать большому числу читателей доступный им ежедневный круг чтения, возбуждающего лучшие мысли и чувства
+> to give a large number of readers an accessible daily round of reading that arouses the best thoughts and feelings (working English)
+> — PSS Tom 41 · late-voice-encryption-compression · 1908-03
+
+> я нахожу неудобным подписывать их именами их авторов
+> I find it inconvenient to sign them with their authors' names (working English)
+> — PSS Tom 45 · late-voice-encryption-compression · 1910
+
+> Хочу сделать из них Круг чтения на каждый день.
+> I want to make from them a Circle of Reading for each day. (working English)
+> — PSS Tom 75 · late-voice-encryption-compression · 1904-01-19
+
+> составленной, как «Круг чтения», из изречений разных мыслителей
+> compiled, like 'Circle of Reading', from the sayings of various thinkers (working English)
+> — PSS Tom 82 · late-voice-encryption-compression · 1910-07-20
+
+Visuals: 1 (1 usable) — Круг чтения — first-edition title page (1906) [PD]
+
 ### True Christianity (Tolstoy)
 
 concept · missing · dives: christian
@@ -5629,7 +5753,7 @@ _1890-1898-father-sergius_: Correspondent who drew out the second marquee statem
 
 ### Vladimir Chertkov
 
-person · exists · dives: 1879-1880-examination-of-dogmatic-theology, 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1890-1898-father-sergius, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, 1896-1904-hadji-murat, 1897-1898-what-is-art, 1900-the-slavery-of-our-times, 1901-1902-what-is-religion, 1903-folk-tales, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, stories-for-the-people, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism · names: V. G. Chertkov / Vladimir Chertkov / Vladimir Grigorievich Chertkov / Vladimir Grigoryevich Chertkov
+person · exists · dives: 1879-1880-examination-of-dogmatic-theology, 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1890-1898-father-sergius, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, 1896-1904-hadji-murat, 1897-1898-what-is-art, 1900-the-slavery-of-our-times, 1901-1902-what-is-religion, 1903-folk-tales, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, late-voice-encryption-compression, stories-for-the-people, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism · names: V. G. Chertkov / Vladimir Chertkov / Vladimir Grigorievich Chertkov / Vladimir Grigoryevich Chertkov
 
 _1879-1880-examination-of-dogmatic-theology_: Disciple and chief publishing agent. He prompted the final 1884 revision (asking for the manuscript in May 1884, then spurring Tolstoy to revise it in October 1884); his «Свободное слово» press (Christchurch) issued the 1903 edition; his wife A. K. Chertkova prepared that reissue and sent Tolstoy the first sheets to correct in November 1902.
 _1879-1882-a-confession_: Disciple and publisher; the «Свободное слово» (Christchurch, 1901) edition; the agent for distributing the suppressed text.
@@ -5661,6 +5785,7 @@ _doukhobors_: Co-author of «Help!»; expelled to England 1897, where he became 
 _fire-metaphor_: Closest disciple; conduit for the 1904 soldiers' letter; co-author of the Doukhobor record
 _gospel-translation_: Later custodian/publisher of the banned works; his Croydon/Free Age circle stands behind the first English translation
 _jubilee-edition-tei-corpus_: editor-in-chief (главный редактор) of the Jubilee Edition; Tolstoy's disciple and keeper of his manuscripts; d. 1936 mid-project
+_late-voice-encryption-compression_: The abroad-publishing channel: ran «Свободное слово» / Free Age Press (Maldon → Purleigh → Christchurch/Tuckton, England); sole authorised node for Tolstoy's writings going abroad (1900); sole posthumous literary executor (1904/1910). The page exists; this dive supplies the channel-protocol evidence to enrich it.
 _stories-for-the-people_: Co-founder and operational head of Posrednik: commissioned tales, supplied sources (the Saillens story), routed censorship, managed Sytin production — the daily correspondent of the whole project (Toms 85–86).
 _tolstoy-in-art_: Disciple; ran the late photographic documentation of Tolstoy; party to the conflict over Tolstoy's portraits/image
 _tolstoy-in-photographs_: built the largest photographic archive of Tolstoy; brought the photographer Tapsell; the public/prophet image-maker
@@ -5870,6 +5995,30 @@ _tolstoyanism_: Not named in the four quotes, but the focal point of the ambival
 > This same wish he then confirmed in writing in his testamentary disposition of 31 July 1910. (working English)
 > — PSS Tom 1, pp. vi · jubilee-edition-tei-corpus · 1928-01-01
 
+> Ему одному я посылал и посылаю теперь для печатания за границей по-русски и в переводах все мои новые писания.
+> To him alone I sent, and send now, for publication abroad in Russian and in translation, all my new writings. (working English)
+> — PSS Tom 76 · late-voice-encryption-compression · 1906-01-14
+
+> Чертковым, который заведует печатанием всего мною писанного
+> Chertkov, who is in charge of the printing of everything I have written (working English)
+> — PSS Tom 80 · late-voice-encryption-compression · 1909-12-19
+
+> что выбросить, что оставить и когда и где и в какой форме издать
+> what to discard, what to keep, and when and where and in what form to publish (working English)
+> — PSS Tom 88 · late-voice-encryption-compression · 1904-05-13
+
+> чтобы за границу все мои писания проникали только через вас
+> that all my writings reach abroad only through you (working English)
+> — PSS Tom 88 · late-voice-encryption-compression · 1900-12-12
+
+> не пройдет в России, но может быть напечатано за границей
+> will not get through in Russia, but can be printed abroad (working English)
+> — PSS Tom 89 · late-voice-encryption-compression · 1905-04-17
+
+> печатать всю или ничего
+> [I set a conditio sine qua non —] to print the whole thing or nothing (working English)
+> — PSS Tom 89 · late-voice-encryption-compression · 1906-02-13
+
 > C’est ainsi, monsieur, qu’à mon grand regret je me suis rendu coupable envers vous d’un plagiat involontaire
 > (working English) [from the French original] Thus it is, monsieur, that to my great regret I have made myself guilty toward you of an involuntary plagiarism.
 > — PSS Tom 64 · stories-for-the-people · 1888-10 OS
@@ -5914,7 +6063,7 @@ _tolstoyanism_: Not named in the four quotes, but the focal point of the ambival
 > You cannot imagine what harm praise does me, given my vanity. It is drunkenness. (working English)
 > — PSS Tom 89, pp. 46–48 · tolstoy-in-photographs · 1906-10-26
 
-Visuals: 18 (18 usable) — V. G. Chertkov, 1854–1936 (Kramskoy) [PD], V. G. Chertkov (Repin, c.1890) [PD], V. G. Chertkov [PD], Ivan Kramskoy — Portrait of Vladimir Chertkov [PD], V. G. Chertkov [PD], Vladimir Chertkov (Repin, c.1890) [PD], Vladimir Chertkov (photographed 1883) [PD], Vladimir Chertkov, solo portrait [PD], Chertkov and Tolstoy at Yasnaya Polyana, 29 March 1909 [PD], Betänken Eder! (Stockholm: Björck & Börjesson, 1904) — front cover [PD], Leo Tolstoy holding a book — photographed by V. G. Chertkov, 1908 [PD], Chertkov with Tolstoy, Yasnaya Polyana 1909 [PD], Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD], Tolstoy with his granddaughter, photographed by Vladimir Chertkov, 1910 (final year) [PD], PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword) [PD], Tolstoy with his physician Dushan Makovitsky [PD]
+Visuals: 19 (19 usable) — V. G. Chertkov, 1854–1936 (Kramskoy) [PD], V. G. Chertkov (Repin, c.1890) [PD], V. G. Chertkov [PD], Ivan Kramskoy — Portrait of Vladimir Chertkov [PD], V. G. Chertkov [PD], Vladimir Chertkov (Repin, c.1890) [PD], Vladimir Chertkov (photographed 1883) [PD], Vladimir Chertkov, solo portrait [PD], Chertkov and Tolstoy at Yasnaya Polyana, 29 March 1909 [PD], Betänken Eder! (Stockholm: Björck & Börjesson, 1904) — front cover [PD], Leo Tolstoy holding a book — photographed by V. G. Chertkov, 1908 [PD], Chertkov with Tolstoy, Yasnaya Polyana 1909 [PD], Vladimir Chertkov, portrait by Ilya Repin (1890s) [PD], Tolstoy and Chertkov together, Yasnaya Polyana, 29 March 1909 [PD], Tolstoy and Chertkov at Yasnaya Polyana, 1909 [PD], Tolstoy with his granddaughter, photographed by Vladimir Chertkov, 1910 (final year) [PD], PSS Tom 1 — «ОТ ГЛАВНОГО РЕДАКТОРА» (Chertkov's editor-in-chief foreword) [PD], Tolstoy at chess with Chertkov's son [PD], Tolstoy with his physician Dushan Makovitsky [PD]
 
 ### Vladimir Istomin
 
@@ -6163,13 +6312,13 @@ _1904-bethink-yourselves_: Tolstoy's secretary/copyist; dispatched the correctio
 
 - none
 
-**Name conflicts (same key, multiple spellings)** (34)
+**Name conflicts (same key, multiple spellings)** (35)
 
 - christian-anarchism: Christian Anarchism / Christian anarchism (1882-1884-what-i-believe, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, christian-anarchism)
 - confession: A Confession (Исповедь) / Confession (Исповедь) (crisis, fire-metaphor, gospel-translation)
 - gavriil-rusanov: G. A. Rusanov / Gavriil Rusanov (1882-1886-what-then-must-we-do, 1893-1894-christianity-and-patriotism)
 - holy-synod: Holy Synod / Holy Synod of the Russian Orthodox Church (1879-1880-examination-of-dogmatic-theology, 1908-the-law-of-violence-and-the-law-of-love)
-- ivan-gorbunov-posadov: Ivan Gorbunov (I. I. Gorbunov-Posadov) / Ivan Gorbunov-Posadov (1889-1909-the-devil, 1893-1894-christianity-and-patriotism, stories-for-the-people)
+- ivan-gorbunov-posadov: Ivan Gorbunov (I. I. Gorbunov-Posadov) / Ivan Gorbunov-Posadov (1889-1909-the-devil, 1893-1894-christianity-and-patriotism, late-voice-encryption-compression, stories-for-the-people)
 - jubilee-edition: Jubilee Edition (Полное собрание сочинений) / The Jubilee Edition (Полное собрание сочинений) (gospel-translation, jubilee-edition-tei-corpus)
 - konstantin-pobedonostsev: K. P. Pobedonostsev / Konstantin Pobedonostsev (1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1901-1902-what-is-religion, stories-for-the-people)
 - leo-tolstoy: Leo Tolstoy / Lev Tolstoy (1879-1880-examination-of-dogmatic-theology, 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1893-1894-christianity-and-patriotism, 1896-1904-hadji-murat, 1897-1898-what-is-art, 1900-the-slavery-of-our-times, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, tolstoy-in-photographs, tolstoyanism)
@@ -6188,6 +6337,7 @@ _1904-bethink-yourselves_: Tolstoy's secretary/copyist; dispatched the correctio
 - pavel-boulanger: Pavel Boulanger / Pavel Boulanger (P. A. Boulanger) (1901-1902-what-is-religion, 1903-folk-tales)
 - pyotr-verigin: Pyotr Vasilevich Verigin / Pyotr Verigin (1904-bethink-yourselves, doukhobors)
 - resurrection: Resurrection / Resurrection (Воскресение) (1889-1899-resurrection, doukhobors)
+- sholom-aleichem: Sholom Aleichem (S. N. Rabinovich) / Sholom Aleichem (Solomon N. Rabinovich) (1903-folk-tales, late-voice-encryption-compression)
 - soedinenie-i-perevod-chetyrekh-evangelij: The Gospel in Brief / The Four Gospels Harmonized (Соединение и перевод четырёх Евангелий) / Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий) (fire-metaphor, gospel-translation, lords-prayer)
 - sophia-tolstaya: S. A. Tolstaya / S. A. Tolstaya (Sofia Andreyevna) / Sofia Andreevna Tolstaya / Sofia Tolstaya / Sophia Tolstaya (1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, 1896-1904-hadji-murat, biryukov-sofia-relationship, copyright-renunciation, gospel-translation, tolstoy-in-photographs)
 - state-museum-of-leo-tolstoy: State Museum of L. N. Tolstoy (GMT) / State Museum of L. N. Tolstoy (Moscow) (tolstoy-in-art, tolstoy-in-photographs)
@@ -6196,7 +6346,7 @@ _1904-bethink-yourselves_: Tolstoy's secretary/copyist; dispatched the correctio
 - tatyana-tolstaya: T. L. Tolstaya / T. L. Tolstaya (Tatyana Lvovna) / Tatyana Lvovna Tolstaya / Tatyana Tolstaya (1886-1890-the-fruits-of-enlightenment, 1887-1889-the-kreutzer-sonata, 1890-1893-the-kingdom-of-god-is-within-you, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, tolstoy-in-art)
 - the-kingdom-of-god-is-within-you: The Kingdom of God Is Within You / The Kingdom of God Is Within You (Царство Божие внутри вас) (doukhobors, fire-metaphor)
 - vasily-sutaev: V. K. Sutaev / V. K. Sutaev (and son I. V. Sutaev) (1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do)
-- vladimir-chertkov: V. G. Chertkov / Vladimir Chertkov / Vladimir Grigorievich Chertkov / Vladimir Grigoryevich Chertkov (1879-1880-examination-of-dogmatic-theology, 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1890-1898-father-sergius, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, 1896-1904-hadji-murat, 1897-1898-what-is-art, 1900-the-slavery-of-our-times, 1901-1902-what-is-religion, 1903-folk-tales, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, stories-for-the-people, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism)
+- vladimir-chertkov: V. G. Chertkov / Vladimir Chertkov / Vladimir Grigorievich Chertkov / Vladimir Grigoryevich Chertkov (1879-1880-examination-of-dogmatic-theology, 1879-1882-a-confession, 1882-1884-what-i-believe, 1882-1886-what-then-must-we-do, 1884-1886-the-death-of-ivan-ilyich, 1886-1887-on-life, 1886-1890-the-fruits-of-enlightenment, 1886-the-power-of-darkness, 1887-1889-the-kreutzer-sonata, 1889-1899-resurrection, 1889-1909-the-devil, 1890-1893-the-kingdom-of-god-is-within-you, 1890-1898-father-sergius, 1893-1894-christianity-and-patriotism, 1894-1895-master-and-man, 1896-1904-hadji-murat, 1897-1898-what-is-art, 1900-the-slavery-of-our-times, 1901-1902-what-is-religion, 1903-folk-tales, 1904-bethink-yourselves, 1908-the-law-of-violence-and-the-law-of-love, biryukov-sofia-relationship, christian-anarchism, copyright-renunciation, crisis, doukhobors, fire-metaphor, gospel-translation, jubilee-edition-tei-corpus, late-voice-encryption-compression, stories-for-the-people, tolstoy-in-art, tolstoy-in-photographs, tolstoyanism)
 - vladimir-stasov: Vladimir Stasov / Vladimir Vasilyevich Stasov (1896-1904-hadji-murat, 1897-1898-what-is-art, tolstoy-in-art)
 - what-is-art: What Is Art? (the renunciation-of-art doctrine) / What Is Art? (work) (1896-1904-hadji-murat, 1897-1898-what-is-art)
 
@@ -6210,65 +6360,29 @@ _1904-bethink-yourselves_: Tolstoy's secretary/copyist; dispatched the correctio
 - the-kingdom-of-god-is-within-you: criticalWork / work
 - what-is-art: concept / work
 
-**Works routed to works/ (not a wiki type)** (60)
+**Works routed to works/ (not a wiki type)** (24)
 
 - abrege-de-levangile (work)
-- akim-the-power-of-darkness (character)
-- akulina-the-power-of-darkness (character)
-- anisya-the-power-of-darkness (character)
-- anyutka-the-power-of-darkness (character)
 - bethink-yourselves (work)
-- butler-hadji-murat (character)
-- caucasus-highlanders (group)
 - chem-ljudi-zhivy (work)
 - christianity-and-patriotism (work)
 - confession (work)
-- dmitri-nekhlyudov-resurrection (character)
-- doukhobors (group)
-- evgeny-irtenev (character)
-- father-sergius (character)
-- four-gospels-harmonised-and-translated-1895 (edition)
-- grossman-the-fruits-of-enlightenment (character)
-- hadji-murat (character)
 - hodite-v-svete-poka-est-svet (work)
 - issledovanie-dogmaticheskogo-bogoslovija (work)
-- jubilee-edition (edition)
-- katyusha-maslova (character)
 - kratkoe-izlozhenie-evangelija (work)
 - leeds-russian-archive-chertkov-tapsell-fond (archival-fond)
-- leonid-zvezdintsev-the-fruits-of-enlightenment (character)
-- liza-irteneva (character)
-- makovkina (character)
-- mary-father-sergius (character)
-- marya-dmitrievna-hadji-murat (character)
-- marya-father-sergius (character)
-- matryona-the-power-of-darkness (character)
-- mitrich-the-power-of-darkness (character)
 - na-kazhdyj-den (work)
-- nikita-master-and-man (character)
-- nikita-the-power-of-darkness (character)
 - o-zhizni (work)
 - otets-sergij (work)
-- pashenka-father-sergius (character)
-- pozdnyshev (character)
-- pozdnyshevs-wife (character)
-- professor-krugosvetlov-the-fruits-of-enlightenment (character)
 - prokudin-gorsky-collection-library-of-congress (archival-fond)
 - put-zhizni (work)
 - resurrection (work)
-- sakhatov-the-fruits-of-enlightenment (character)
-- semyon-the-fruits-of-enlightenment (character)
-- shakers (group)
 - smert-ivana-ilicha (work)
 - soedinenie-i-perevod-chetyrekh-evangelij (work)
-- stepanida (character)
-- tanya-the-fruits-of-enlightenment (character)
 - the-kingdom-of-god-is-within-you (work)
 - the-slavery-of-our-times (work)
-- trukhachevsky (character)
 - tsgakffd-bulla-collection (archival-fond)
 - v-chem-moja-vera (work)
-- vasily-brekhunov (character)
 - what-i-believe (work)
 - what-is-art (work)
 - what-is-religion (work)
