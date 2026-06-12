@@ -1,0 +1,780 @@
+topic:
+  slug: late-voice-encryption-compression
+  title: "The late voice — encryption & compression (1900–1910)"
+  question: "Two related threads, encryption leading. (1) Which truths did the late Tolstoy encode because he could not state them in legal Russian print, and how did genre and channel serve concealment vs directness — parable/legend/fiction vs treatise; legal-Russian print (Posrednik) vs Chertkov's «Свободное слово» abroad vs posthumous vs withheld? (2) How did the late metaphysics (unity of all life / «это ты», non-resistance, rejection of church-and-state) distil argument → story → aphorism, with the wisdom-anthology series as the endpoint (Мысли мудрых людей 1903 → Круг чтения 1906 → На каждый день 1909 → Путь жизни 1910)?"
+  date: 2026-06-12
+  period: "1900–1910 core (Prophet period), with 1880s–90s roots admitted through existing dives only"
+  corpusSurface: "Synthesis-first: 19 finished sibling dives mined for reusable evidence, plus fresh sweeps of letters Toms 73–82, Chertkov letters Toms 88–89, diaries Toms 55–58, and a structural read of the four wisdom-anthologies (Toms 40–45)."
+  dateRange: "1900–1910, with cited roots back to 1886"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE LEDGER — flat citation list.
+# Reused rows cite a sibling dive's extract by relative path (../<slug>/extracts/…);
+# fresh rows cite this dive's own extracts/. quoteRu is byte-verifiable in its extract
+# (verify_quotes.py). quoteEn is a labelled working translation. Tight exact spans are
+# used for quoteRu; index.md may quote the surrounding passage from the same extract.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ── THREAD 1 · the constraint named (Tolstoy says he cannot say it in legal print) ──
+  - id: key-sholom-aleichem
+    genre: letter
+    pssTom: 74
+    pages: "118–119"
+    date: "1903-05-06"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_144_S_H_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'этого-то я не могу сказать в русском легальном издании'
+    quoteEn: "this is precisely what I cannot say in a legal Russian publication (working English)"
+    significance: "THE keystone of the dive — Tolstoy names the suppressed political truth about the Kishinev pogrom (the culprit is «одно правительство», the government alone) and names the channel blockage in the same breath. The reason a forbidden truth had to come as coded legend rather than statement. The sentence was cut from all Russian reprints; first printed uncensored abroad («Свободное слово», 1903)."
+
+  - id: con-chas-cant-print
+    genre: letter
+    pssTom: 77
+    date: "1907-09-05"
+    addressee: "Editorial board of the newspaper «Час»"
+    extract: extracts/v77_218_RedakciigazetyCHas.txt
+    quoteRu: 'В таком случае нельзя печатать.'
+    quoteEn: "In that case it cannot be printed. (working English)"
+    significance: "The tersest statement of the constraint in the corpus. «Час» wired that it could run his «Не убий никого» only with censorship cuts; this two-word reply is the answer. The article went elsewhere and appeared with «большими пропусками». Incomplete truth is no truth — silence over mutilation."
+
+  - id: con-censored-lit-idle
+    genre: diary
+    pssTom: 55
+    date: "1904-01-14"
+    extract: extracts/v55_006_007_1904_01_14.txt
+    quoteRu: 'Какое праздное занятие вся наша подцензурная литература!'
+    quoteEn: "What an idle occupation is all our censored literature! (working English)"
+    significance: "The structural diagnosis: censorship empties legal literature of everything substantive (domestic and foreign policy, economics, and above all religion); what is left is entertainment that keeps readers from understanding what is being done to them. The foundation of why indirection and foreign publication are necessary."
+
+  - id: con-banned-printed-england
+    genre: letter
+    pssTom: 73
+    date: "1902-08-20"
+    addressee: "A. P. Naugolnikov"
+    extract: extracts/v73_317_A_P_Naugolnikovu.txt
+    quoteRu: 'запрещенных в России и печатаемых в Англии'
+    quoteEn: "banned in Russia and printed in England (working English)"
+    significance: "Tolstoy states flatly that his religious-philosophical corpus exists in two states — banned domestic silence vs living foreign print — and that even the postal route to readers (works sent in letters) is unreliable, sometimes getting through, sometimes held back."
+
+  - id: con-two-track-strategy
+    genre: letter
+    pssTom: 74
+    date: "1903-12-18"
+    addressee: "M. A. Taube"
+    extract: extracts/v74_346_M_A_Taube.txt
+    quoteRu: 'напечатать ее за границей по-русски или по-английски, если не найдется издателя для русского издания'
+    quoteEn: "print it abroad in Russian, or in English if no Russian publisher can be found (working English)"
+    significance: "Tolstoy as editorial strategist: he diagnoses the censorship threat to a fellow writer's article, names the two-track workaround (soften and cut for domestic print vs publish complete abroad), and frames the foreign channel as the only way to let the truth land whole."
+
+  - id: con-tarsakov-samizdat
+    genre: letter
+    pssTom: 79
+    date: "1909-01-11"
+    addressee: "F. Tarsakov"
+    extract: extracts/v79_016_F_Tarsakovu.txt
+    quoteRu: 'который также нельзя напечатать в России'
+    quoteEn: "which also cannot be printed in Russia (working English)"
+    significance: "Names the print barrier directly and describes the hand-copying workaround («Мы спишем его и будем давать читать») as the default channel when legal print is blocked — manuscript circulation as a routine fallback, a forerunner of samizdat."
+
+  - id: con-davydov-uncensorable
+    genre: letter
+    pssTom: 78
+    date: "1908-11-13"
+    addressee: "N. V. Davydov"
+    extract: extracts/v78_290_N_V_Davydovu.txt
+    quoteRu: 'эти, вероятно, не годятся и по содержанию и по нецензурности'
+    quoteEn: "these are probably no use — both by their content and by their uncensored nature (working English)"
+    significance: "«Нецензурность» treated as a routine, matter-of-fact disqualifier alongside content — the censor is so internalised that unprintability is named without drama, as a standing condition of his late work."
+
+  - id: con-gogol-double-bind
+    genre: letter
+    pssTom: 79
+    date: "1909-03-05"
+    addressee: "V. A. Posse"
+    extract: extracts/v79_109_V_A_Posse.txt
+    quoteRu: 'то, что думаю, и неюбилейно и нецензурно'
+    quoteEn: "what I think is both non-anniversary and non-censurable (working English)"
+    significance: "The paired adjectives «неюбилейно и нецензурно» define the double constraint on legal Russian print: a text must be both ceremonially acceptable and censorship-safe. He dispatches both in one dismissive breath and switches topic — a textbook channel-calculation."
+
+  - id: con-bolkvadze-predict
+    genre: letter
+    pssTom: 81
+    date: "1910-02-09"
+    addressee: "M. G. Bolkvadze"
+    extract: extracts/v81_116_M_G_Bolkvadze.txt
+    quoteRu: 'Боюсь, что всё, что мне придется написать, будет нецензурно.'
+    quoteEn: "I fear that everything I will have to write will be non-censurable. (working English)"
+    significance: "The constraint named in advance of writing: Tolstoy predicts his own future text will be uncensorable and announces the editorial effort of shaping it into a printable form — self-censorship pressure stated as a compositional fact."
+
+  - id: con-kazmichov-full-text
+    genre: letter
+    pssTom: 80
+    date: "1909-07-23"
+    addressee: "P. P. Kazmichov"
+    extract: extracts/v80_044_P_P_Kazmichovu.txt
+    quoteRu: 'желательно, чтобы он получил наибольшее распространение без выпусков'
+    quoteEn: "it would be desirable for it to reach the widest circulation without the deletions (working English)"
+    significance: "Tolstoy distinguishes the manuscript (full truth) from the printed (censored) version of a story and advocates the uncensored text's widest circulation — censorship distorts the work; wide distribution of the full version is the corrective."
+
+  # ── THREAD 1 · the channel mechanics (Chertkov / abroad / posthumous) ──
+  - id: chan-rule-only-through-you
+    genre: letter
+    pssTom: 88
+    date: "1900-12-12"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v88_607_dekabrya12.txt
+    quoteRu: 'чтобы за границу все мои писания проникали только через вас'
+    quoteEn: "that all my writings reach abroad only through you (working English)"
+    significance: "The clearest single statement of the channel protocol as a rule: every writing going abroad passes only through Chertkov, and Tolstoy commits to keeping the order strictly. The structural foundation of the whole abroad channel."
+
+  - id: chan-public-sole-node
+    genre: letter
+    pssTom: 76
+    date: "1906-01-14"
+    addressee: "Editors of «Новое время» and «Русские ведомости» (public notice)"
+    extract: extracts/v76_116_VredakciigazetNovoevremyaiRusskievedomosti.txt
+    quoteRu: 'Ему одному я посылал и посылаю теперь для печатания за границей по-русски и в переводах все мои новые писания.'
+    quoteEn: "To him alone I sent, and send now, for publication abroad in Russian and in translation, all my new writings. (working English)"
+    significance: "A public declaration of the channel architecture, issued exactly as the 1905 partial lifting of censorship triggers a rush of Russian publishers to reprint banned works — Tolstoy formalises Chertkov as the sole authorised node at the moment the corpus is becoming domestically accessible."
+
+  - id: chan-abroad-rationale
+    genre: letter
+    pssTom: 89
+    date: "1905-04-17"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_738_aprelya17.txt
+    quoteRu: 'не пройдет в России, но может быть напечатано за границей'
+    quoteEn: "will not get through in Russia, but can be printed abroad (working English)"
+    significance: "The abroad-printing rationale in one sentence, said of a batch of religious-philosophical prefaces and Круг чтения weekly-reading materials — fuses Thread 1 (channel) and Thread 2 (the anthology). Even devotional anthology matter is designated abroad-first as a matter of course."
+
+  - id: chan-all-or-nothing
+    genre: letter
+    pssTom: 89
+    date: "1906-02-13"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_757_fevralya1.txt
+    quoteRu: 'печатать всю или ничего'
+    quoteEn: "[I set a conditio sine qua non —] to print the whole thing or nothing (working English)"
+    significance: "Tolstoy adopts the integrity rule as his own: if Russia will not print the whole text uncensored, it does not appear in Russia at all. The channel enforces textual wholeness against partial/censored domestic publication."
+
+  - id: chan-posthumous-testament
+    genre: letter
+    pssTom: 88
+    date: "1904-05-13"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v88_719_maya13.txt
+    quoteRu: 'что выбросить, что оставить и когда и где и в какой форме издать'
+    quoteEn: "what to discard, what to keep, and when and where and in what form to publish (working English)"
+    significance: "A 1904 letter reaffirming the 1895 written instruction (записка) naming Chertkov to sort and dispose of Tolstoy's papers after his death — Tolstoy stating the wish in his own hand, years before the contested 1909–1910 legal will. The posthumous channel is constructed as deliberately, and as early, as the living one. (Distinct from the famous secret will; see needsReview on the testament dating.)"
+
+  - id: chan-posthumous-diary
+    genre: diary
+    pssTom: 57
+    date: "1909-02-04"
+    extract: extracts/v57_020_022_1909_01_04.txt
+    quoteRu: 'отдать мои сочинения, не только те, которые отданы мною, но и все, все в общее пользование'
+    quoteEn: "to give my writings — not only those already given by me but all, all — into common use (working English)"
+    significance: "The posthumous-release instruction in the diary, pairing the literary estate with the land («обе мои посмертные просьбы»): both withheld in life, both released at death. Direct evidence that publication timing was a deliberate, legally-conscious strategy keyed to the moment of death."
+
+  - id: chan-stolypin-ultimatum
+    genre: letter
+    pssTom: 80
+    date: "1909-08-30"
+    addressee: "P. A. Stolypin"
+    extract: extracts/v80_112_P_A_Stolypinu.txt
+    quoteRu: 'если в вашей деятельности не будет никакого изменения, письмо это будет напечатано за границей'
+    quoteEn: "if there is no change in your conduct, this letter will be printed abroad (working English)"
+    significance: "Publication abroad named as a deliberate political weapon with a deadline — the abroad channel used not as a fallback but as active leverage on the Prime Minister's conduct."
+
+  - id: chan-router-svobodnoe-slovo
+    genre: letter
+    pssTom: 75
+    date: "1905-01-24"
+    addressee: "B. I. Knirsha"
+    extract: extracts/v75_296_B_I_Knirshe.txt
+    quoteRu: 'я послал вчера для напечатания'
+    quoteEn: "I sent it yesterday for printing [in «Свободное слово», abroad] (working English)"
+    significance: "Matter-of-fact routing of a new article to «Свободное слово» — the foreign press as unremarkable working practice, the institutionalised reflex behind the channel."
+
+  - id: chan-nemogu-molchat
+    genre: letter
+    pssTom: 89
+    date: "1908-06-01"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_809_iyunya1.txt
+    quoteRu: 'в русских газетах или по крайней мере за границей'
+    quoteEn: "in the Russian papers or at least abroad (working English)"
+    significance: "Genesis of «Не могу молчать», his protest against the capital punishments of 1908. The article appeared abroad on 2 July; Russia got only excerpts a day later. The channel runs in real time — abroad is the primary venue, Russia gets what survives the filter."
+
+  - id: chan-herzen-model
+    genre: diary
+    pssTom: 55
+    date: "1906-10-02"
+    extract: extracts/v55_254_256_1906_10_02.txt
+    quoteRu: 'нельзя у себя — за границей, как Герцен'
+    quoteEn: "when one cannot do it at home, then abroad, as Herzen did (working English)"
+    significance: "Tolstoy names the Herzen model outright — publish abroad when publication at home is blocked — placing his own abroad channel in the lineage of nineteenth-century Russian émigré dissent."
+
+  - id: chan-gorbunov-recycle-banned
+    genre: letter
+    pssTom: 76
+    date: "1905-09-25"
+    addressee: "I. I. Gorbunov-Posadov"
+    extract: extracts/v76_053_I_I_Gorbunovu_Posadovu.txt
+    quoteRu: 'недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить'
+    quoteEn: "it would not be a bad idea for the Readings to draw on my banned works when a replacement is needed (working English)"
+    significance: "A practical encryption move that fuses the threads: smuggling his own censored texts into circulation disguised as anthology reading-matter — forbidden content re-entering the public sphere inside legal devotional packaging."
+
+  - id: chan-chertkov-controls-all
+    genre: letter
+    pssTom: 80
+    date: "1909-12-19"
+    addressee: "N. N. Ge (son)"
+    extract: extracts/v80_370_H_N_Gesynu.txt
+    quoteRu: 'Чертковым, который заведует печатанием всего мною писанного'
+    quoteEn: "Chertkov, who is in charge of the printing of everything I have written (working English)"
+    significance: "The single most direct statement of Chertkov's role as the one controlling node for the publication of all Tolstoy's writing — the reason the channel runs through him."
+
+  # ── THREAD 1 · genre / fiction as encryption (reused from the encoded-form dives) ──
+  - id: enc-razrushenie-invented-church
+    genre: legend
+    pssTom: 34
+    date: "1902-1903"
+    extract: ../1903-folk-tales/extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    quoteRu: 'я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь'
+    quoteEn: "I feared they might notice the too-obvious deception — and so I invented the Church (working English)"
+    significance: "The devil's confession in «Разрушение ада» — the line that made the satirical legend unprintable in Russia until 1917. Fiction carries a charge against the Church that a treatise could never have got past the censor; the legend form is the encryption."
+
+  - id: enc-razrushenie-russia-1917
+    genre: legend
+    pssTom: 34
+    extract: ../1903-folk-tales/extracts/v34_546_547_Razrushenie_ada_i_vosstanovlenie_ego_Ist.txt
+    quoteRu: 'легенда «Разрушение ада и восстановление его» впервые появилась только в 1917 г.'
+    quoteEn: "the legend 'The Destruction of Hell…' first appeared [in Russia] only in 1917 (working English)"
+    significance: "The channel outcome of the encoded legend: first abroad 1903 («Свободное слово»), banned in Russia across 1906/1910/1913, legal only after the Revolution. The most heavily-routed item in the 1903 cluster."
+
+  - id: enc-folk-tale-held-back
+    genre: parable
+    pssTom: 74
+    date: "1903"
+    extract: ../1903-folk-tales/extracts/v74_219_S_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'из боязни, что она будет запрещена'
+    quoteEn: "out of fear that it would be banned (working English)"
+    significance: "Censorship anxiety operating inside the gift itself: «Труд, смерть и болезнь» held back from the relief anthology for fear of the ban. The constraint shapes not only the form but which tales can be offered where."
+
+  - id: enc-resurrection-survival-sentence
+    genre: novel
+    pssTom: 32
+    extract: ../1889-1899-resurrection/extracts/v32_003_445_Voskresenie.txt
+    quoteRu: 'Началось богослужение.'
+    quoteEn: "The church service began. (working English)"
+    significance: "The four words the censor allowed of the whole prison-Eucharist satire in the legal «Нива» serial — Part I chs XXXIX–XL cut wholesale, the part renumbered to hide the gap. The single sharpest exhibit of mutilated-legal vs full-abroad: the same passage is both the most-censored in Russia and the «последняя и высшая степень» named in the 1901 excommunication."
+
+  - id: enc-resurrection-marks-censorship
+    genre: letter
+    pssTom: 71
+    date: "1899"
+    addressee: "A. F. Marks"
+    extract: ../1889-1899-resurrection/extracts/v71_306_A_F_Marksu.txt
+    quoteRu: 'чем дальше я над нею работаю, тем этих нецензурных мест становится больше'
+    quoteEn: "the further I work on it, the more such uncensorable passages appear (working English)"
+    significance: "Tolstoy names the constraint and the workaround together: the novel has many passages the censor will not pass, and foreign rights are delegated to Chertkov in England. The more he revises toward truth, the less of it legal Russia can hold."
+
+  - id: enc-wia-true-form-abroad
+    genre: treatise
+    pssTom: 30
+    extract: ../1897-1898-what-is-art/extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: 'выходит теперь в первый раз в ее настоящем виде'
+    quoteEn: "now comes out for the first time in its true form (working English)"
+    significance: "Even the direct treatise could appear whole only abroad: Tolstoy declares Maude's English edition of What Is Art? the first in its true form because every Russian edition was mangled. The treatise that theorises the народный рассказ is itself a censorship exhibit."
+
+  - id: enc-wia-censor-inserts-dogma
+    genre: treatise
+    pssTom: 30
+    extract: ../1897-1898-what-is-art/extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: 'приписал мне таким образом утверждение догмата искупления'
+    quoteEn: "thus ascribing to me the affirmation of the redemption dogma (working English)"
+    significance: "Censorship as active distortion, not mere cutting: the spiritual censor struck Tolstoy's words and inserted the redemption dogma he rejected, putting an alien doctrine in his mouth. The state did not only silence — it ventriloquised."
+
+  - id: enc-power-of-darkness-stage-ban
+    genre: play
+    pssTom: 26
+    extract: ../1886-the-power-of-darkness/extracts/v26_705_736_commentary.txt
+    quoteRu: 'эту драму на сцене давать невозможно, она слишком реальна и ужасна по сюжету'
+    quoteEn: "this drama is impossible to give on stage — it is too real and horrible in subject (working English)"
+    significance: "The print/stage channel split as a genre-level encryption: «Власть тьмы» printed free (Posrednik, 100,000+ copies) the same season the stage was banned (1887–95, after Pobedonostsev reversed Alexander III). The world première was abroad (Théâtre Libre, Paris, 1888) while still banned at home."
+
+  - id: enc-kreutzer-samizdat
+    genre: novella
+    pssTom: 27
+    extract: ../1887-1889-the-kreutzer-sonata/extracts/v27_563_624_Krejtserova_sonata.txt
+    quoteRu: 'распространилась в многочисленных списках и литографированных и гектографированных изданиях'
+    quoteEn: "spread in numerous copies and in lithographed and hectographed editions (working English)"
+    significance: "The print-banned novella (Dec 1889) swept Russia underground — a forerunner of Soviet samizdat — before reaching legal print only via Sofia Tolstaya's personal audience with Alexander III (Apr 1891), and then only inside the Collected Works. The fullest illustration of the personal-dispensation channel."
+
+  - id: enc-hadji-murat-withheld
+    genre: novella
+    pssTom: 35
+    extract: ../1896-1904-hadji-murat/extracts/v35_583_629_Istorija_pisanija.txt
+    quoteRu: 'отложил и при жизни не буду печатать'
+    quoteEn: "I have set it aside and will not publish it in my lifetime (working English)"
+    significance: "The withheld pole: Tolstoy wrote his most sensuous late fiction in secret and decided not to publish it in life, so its censorship story is posthumous — the 1912 Moscow text cut the Nicholas-I chapter, restored only in Chertkov's uncensored Berlin edition."
+
+  - id: enc-devil-secret
+    genre: letter
+    pssTom: 65
+    date: "1889-11"
+    addressee: "P. I. Biryukov"
+    extract: ../1889-1909-the-devil/extracts/v65_005_P_I_Biryukovu.txt
+    quoteRu: 'всё на тему половой любви (это секрет)'
+    quoteEn: "all on the theme of sexual love (this is a secret) (working English)"
+    significance: "The withheld/secret pole in its purest form: «Дьявол» named a secret at conception, withdrawn from the Doukhobor-fund sale, hidden from Sofia for twenty years, published only posthumously (1911). No state censorship — the suppression is entirely the author's own."
+
+  - id: enc-inoskazatelno-rejected
+    genre: letter
+    pssTom: 78
+    date: "1908-11-09"
+    addressee: "Paul Desjardins"
+    extract: extracts/v78_285_PolyuDezhardenuPaulDesjardins.txt
+    quoteRu: 'совестно говорить иносказательно'
+    quoteEn: "it feels shameful to speak allegorically (working English)"
+    significance: "The inverse of the encryption logic: at eighty, with one foot in the grave, Tolstoy finds the иносказательный (allegorical/fictional) wrapper shameful — direct statement of truth matters more than the disguise. Where the constraint forces encoding, his own pull is toward the unencoded; the tension between them is the late voice."
+
+  - id: enc-tsvetnik-genre-licence
+    genre: parable
+    pssTom: 26
+    extract: ../stories-for-the-people/extracts/v26_307_309_Predislovie_k_sborniku_Tsvetnik.txt
+    quoteRu: 'и легенды, и притчи, и сказки будут правда, если в них будет правда царствия Божия'
+    quoteEn: "legends, parables and fairy tales will be truth, if the truth of the Kingdom of God is in them (working English)"
+    significance: "The Цветник preface states the genre licence that makes the encoded form admissible-as-truth: the criterion is moral, not documentary, so a legend can carry a truth a treatise could not — the theory of the народный рассказ a decade before What Is Art?."
+
+  - id: enc-vse-zapreshchayut
+    genre: letter
+    pssTom: 64
+    date: "1886"
+    addressee: "I. B. Fainerman"
+    extract: ../stories-for-the-people/extracts/v64_001_I_B_Fajnermanu.txt
+    quoteRu: 'Всё запрещают.'
+    quoteEn: "They are banning everything. (working English)"
+    significance: "Censorship as the daily weather of the Posrednik popular-tale project from its first years — the background pressure that made genre choice a channel decision long before 1900."
+
+  # ── THREAD 2 · the metaphysics compressed to a formula ──
+  - id: comp-religion-four-propositions
+    genre: treatise
+    pssTom: 35
+    extract: ../1901-1902-what-is-religion/extracts/v35_157_198_Chto_takoe_religiya.txt
+    quoteRu: 'в человеке есть частица этого божественного начала'
+    quoteEn: "in man there is a particle of this divine principle (working English)"
+    significance: "Thread-2 endpoint inside a treatise: the whole worldview distilled to four propositions and the Golden Rule (God the source; the divine particle in man; subdue passion and increase love; do as you would be done by) — the compression the anthologies would carry further."
+
+  - id: comp-eto-ty
+    genre: parable
+    pssTom: 34
+    extract: ../1903-folk-tales/extracts/v34_138_140_Eto_ty.txt
+    quoteRu: 'выражается словами: это ты'
+    quoteEn: "expressed in the words: this is you (working English)"
+    significance: "The unity-of-life metaphysics (tat tvam asi) compressed to a two-word self-naming formula inside the 1903 parable — argument, story and bald proposition in a single cluster, where Thread 1 (encoded form) and Thread 2 (compressed doctrine) fuse."
+
+  - id: comp-law-of-violence-formula
+    genre: treatise
+    pssTom: 37
+    extract: ../1908-the-law-of-violence-and-the-law-of-love/extracts/v37_149_221_Zakon_nasilija_i_zakon_ljubvi.txt
+    quoteRu: 'только заменой закона насилия законом любви'
+    quoteEn: "only by the replacement of the law of violence with the law of love (working English)"
+    significance: "The title-as-formula: the entire last systematic doctrine folded into one phrase. The late treatises increasingly carry their argument in a compressed title-sentence — the distillation reflex the anthologies industrialise."
+
+  - id: comp-patriotism-is-slavery
+    genre: essay
+    pssTom: 39
+    extract: ../1893-1894-christianity-and-patriotism/extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: 'Патриотизм есть рабство.'
+    quoteEn: "Patriotism is slavery. (working English)"
+    significance: "A three-word verdict carrying the whole essay — the aphoristic pole of the direct treatise, the same compression instinct that the wisdom-anthologies make into a method."
+
+  - id: comp-only-not-to-lie
+    genre: essay
+    pssTom: 39
+    extract: ../1893-1894-christianity-and-patriotism/extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: 'нужно только не лгать'
+    quoteEn: "one need only not lie (working English)"
+    significance: "The social cure compressed to three words — and the seed of the refusal-to-lie ethic the whole encryption theme turns on: the constraint is a demand to lie by omission, and the answer is silence over the half-truth."
+
+  - id: comp-metanoeite-title
+    genre: essay
+    pssTom: 36
+    extract: ../1904-bethink-yourselves/extracts/v36_100_148_Odumajtes.txt
+    quoteRu: 'исполнилось время и приблизилось царство Божие, одумайтесь'
+    quoteEn: "the time is fulfilled and the Kingdom of God is at hand; bethink yourselves (working English)"
+    significance: "The Gospel μετανοεῖτε folded into a one-word title (Одумайтесь!) that carries the whole anti-war cure — the individual act of turning, against every institutional remedy. The same compressed imperative recurs across eleven years (Kingdom of God 1893 → Bethink Yourselves 1904)."
+
+  # ── THREAD 2 · the anthology project, in his own words (fresh letters + diaries) ──
+  - id: comp-mysli-announced
+    genre: letter
+    pssTom: 74
+    date: "1903-04-01"
+    addressee: "I. F. Timonov"
+    extract: extracts/v74_114_I_F_Timonovu.txt
+    quoteRu: 'Я сделал такой сборник с изречениями на каждый день.'
+    quoteEn: "I have made such a collection with sayings for each day. (working English)"
+    significance: "Tolstoy announces the near-finished «Мысли мудрых людей на каждый день» (pub. Aug 1903), the first of the four anthologies and the direct precursor to Круг чтения — the daily-reading form chosen deliberately at the point of completion."
+
+  - id: comp-krug-genesis
+    genre: letter
+    pssTom: 75
+    date: "1904-01-19"
+    addressee: "L. L. Tolstoy (son Lev)"
+    extract: extracts/v75_013_L_L_Tolstomu.txt
+    quoteRu: 'Хочу сделать из них Круг чтения на каждый день.'
+    quoteEn: "I want to make from them a Circle of Reading for each day. (working English)"
+    significance: "The genesis of Круг чтения stated in his own words: «Мысли мудрых людей» is being enlarged and reconceived as the daily-reading anthology. Each book in the series is the previous one re-made — compression by repeated re-cutting."
+
+  - id: comp-krug-abroad-uncensored
+    genre: letter
+    pssTom: 75
+    date: "1904-12-19"
+    addressee: "G. A. Rusanov"
+    extract: extracts/v75_275_G_A_Rusanovu.txt
+    quoteRu: 'Я думаю издать полный «Круг чтения» за границей без цензурных соображений.'
+    quoteEn: "I am thinking of publishing the complete Circle of Reading abroad, without censorship considerations. (working English)"
+    significance: "The two threads meet in one sentence: even the wisdom-anthology — ostensibly a harmless gathering of sayings — contained matter that could not appear in Russian legal print, so the foreign channel is proposed for the complete text. Compression and encryption are the same project."
+
+  - id: comp-krug-design-principle
+    genre: letter
+    pssTom: 80
+    date: "1909-08-09"
+    addressee: "Jan Styka"
+    extract: extracts/v80_058_YAnuStykeJanStyka.txt
+    quoteRu: 'состоящей из взятых у нескольких сот древних и современных авторов мыслей и изречений о религии и морали'
+    quoteEn: "consisting of thoughts and maxims on religion and morality taken from several hundred ancient and modern authors (working English)"
+    significance: "The clearest description of the Круг чтения design to a Western correspondent: hundreds of sources, no privileged scripture (only a few Gospel verses among them) — a universal, anti-dogmatic moral distillation rather than a Christian devotional."
+
+  - id: comp-put-like-krug
+    genre: letter
+    pssTom: 82
+    date: "1910-07-20"
+    addressee: "M. G. Bolkvadze"
+    extract: extracts/v82_096_M_G_Bolkvadze.txt
+    quoteRu: 'составленной, как «Круг чтения», из изречений разных мыслителей'
+    quoteEn: "compiled, like 'Circle of Reading', from the sayings of various thinkers (working English)"
+    significance: "Tolstoy's own self-description of Путь жизни's form, months before his death — the project naming its own lineage: the last book is the series compressed one final time."
+
+  - id: comp-400-days-obligation
+    genre: diary
+    pssTom: 56
+    date: "1907-11-22"
+    extract: extracts/v56_078_081_1907_11_22.txt
+    quoteRu: 'Чем ближе смерть, тем сильнее чувствую обязанность сказать то, что знаю'
+    quoteEn: "The closer death comes, the more strongly I feel the obligation to say what I know (working English)"
+    significance: "The compression project tied to mortality: polishing 5–6 sayings a day is more than a year's work (400 days) he is almost sure he will not live — yet the nearer death, the stronger the duty to compress and say what he knows. Urgency and compression are inseparable in the late voice."
+
+  - id: comp-truth-simple-form-hard
+    genre: diary
+    pssTom: 55
+    date: "1905-12-16"
+    extract: extracts/v55_172_174_1905_12_16.txt
+    quoteRu: 'я все не могу облечь ее в наиболее доступную форму'
+    quoteEn: "I still cannot clothe it in the most accessible form (working English)"
+    significance: "The engine behind both the parable turn and the anthology work, named in the diary: the truth is already «до глупости простая» (stupidly simple) — the whole struggle is finding a form accessible enough to carry it. Compression is the late labour."
+
+  - id: comp-only-what-i-published
+    genre: diary
+    pssTom: 57
+    date: "1909-08-25"
+    extract: extracts/v57_123_125_1909_08_25.txt
+    quoteRu: 'мною сознательно не отдано в печать'
+    quoteEn: "[not to attach any significance to] what I have not consciously given to press (working English)"
+    significance: "Editorial control as a Thread-1/Thread-2 hinge: planning the twelve «Для души» booklets, Tolstoy insists only consciously-published text counts, warning that unguarded sayings are weaponised by «those whom the teaching exposes». The authorised compressed text vs the garbled private word."
+
+  - id: comp-daily-spiritual-practice
+    genre: diary
+    pssTom: 55
+    date: "1906-01-04"
+    extract: extracts/v55_179_180_1906_01_04.txt
+    quoteRu: 'Читаю Мысли Мудрых Людей ежедневно и с большой пользой для души.'
+    quoteEn: "I read Thoughts of Wise People every day and with great benefit for the soul. (working English)"
+    significance: "The anthology is not only a publishing project but Tolstoy's own daily instrument of self-work — the compressed form built to be used, internalised like a prayer (cf. the 1 Jan 1908 entry on sayings as remembered prayers)."
+
+  - id: comp-grand-monde-turn
+    genre: diary
+    pssTom: 57
+    date: "1909-03-20"
+    extract: extracts/v57_039_040_1909_03_20.txt
+    quoteRu: 'чувствую потребность писать для grand monde'
+    quoteEn: "I feel the need to write for the grand monde [and for it alone] (working English)"
+    significance: "The late audience inversion behind the world-religion anthology (На каждый день's source-list of Krishna, Confucius, Buddha, Muhammad): the small accessible booklets are aimed at the people, while the legend form he had rejected for «our circle» he now finds «excellent for the people»."
+
+  # ── THREAD 2 · the anthology architecture (structural read of the four books) ──
+  - id: comp-krug-stated-aim
+    genre: anthology
+    pssTom: 41
+    date: "1908-03"
+    extract: extracts/v41_009_009_Krug_chtenija_Predislovie.txt
+    quoteRu: 'дать большому числу читателей доступный им ежедневный круг чтения, возбуждающего лучшие мысли и чувства'
+    quoteEn: "to give a large number of readers an accessible daily round of reading that arouses the best thoughts and feelings (working English)"
+    significance: "The compression intent stated outright in the Круг чтения preface: the source text is raw material, deliberately re-cut and re-worded for the daily reader — fidelity to the original explicitly subordinated to the daily effect. The method of the whole series."
+
+  - id: comp-put-drops-attributions
+    genre: anthology
+    pssTom: 45
+    date: "1910"
+    extract: extracts/v45_013_496_Put_zhizni.txt
+    quoteRu: 'я нахожу неудобным подписывать их именами их авторов'
+    quoteEn: "I find it inconvenient to sign them with their authors' names (working English)"
+    significance: "The end-state of the method, in Путь жизни's note: the named voices of 1903 have been re-worked so far into Tolstoy's own diction that he drops the attributions altogether — «the best of these unsigned thoughts belong not to me but to the greatest sages of the world». The anthology has become his own compressed voice."
+
+  - id: comp-put-three-superstitions
+    genre: anthology
+    pssTom: 45
+    date: "1910"
+    extract: extracts/v45_013_496_Put_zhizni.txt
+    quoteRu: 'суеверие государства, суеверие церкви и суеверие науки'
+    quoteEn: "the superstition of the state, the superstition of the church, and the superstition of science (working English)"
+    significance: "The rejection of church-and-state compressed to three named «superstitions» in the Путь жизни preface — the whole late politics as a one-page system. The chapter «СУЕВЕРИЕ ГОСУДАРСТВА» carries a passage almost verbatim from На каждый день (1909), proof the four books are one text re-cut."
+
+  - id: comp-tat-tvam-asi-schopenhauer
+    genre: anthology
+    pssTom: 41
+    date: "1906"
+    extract: extracts/v41_160_161_Krug_chtenija_weekly_mar_2_Edinenie.txt
+    quoteRu: 'Это познание, выражающееся в санскрите неизменной формулой'
+    quoteEn: "This knowledge, expressed in Sanskrit by the unchanging formula [tat tvam asi] (working English)"
+    significance: "The single purest statement of the unity doctrine in the whole series — the Круг чтения weekly «Единение» selects Schopenhauer on tat tvam asi, «всё это ты», the same formula the 1903 parable «Это ты» dramatises. The anthology gathers the doctrine the parable encoded."
+
+  - id: fuse-krug-censored-thoughts
+    genre: anthology
+    pssTom: 42
+    date: "1906"
+    extract: extracts/v42_423_438_Krug_chtenija_Mysli_vypuschennye_tsenzura.txt
+    significance: "A whole PSS appendix gathers the thoughts the publisher cut from the first Круг чтения for censorship reasons (e.g. the «19-е января» entry on true vs external religion). The daily-anthology form let Tolstoy place his church-and-state critique as one unsigned numbered line among foreign sages — the forbidden statement compressed to a maxim and hidden in a devotional calendar. The two threads in one file. [No quoteRu cited — this row points to the file; a specific entry to quote is in needsReview.]"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a plan for the later, human-in-the-loop wiki
+# ingestion; the dive writes no pages). vaultStatus checked against website/src/.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "The abroad-publishing channel: ran «Свободное слово» / Free Age Press (Maldon → Purleigh → Christchurch/Tuckton, England); sole authorised node for Tolstoy's writings going abroad (1900); sole posthumous literary executor (1904/1910). The page exists; this dive supplies the channel-protocol evidence to enrich it."
+    sources: []
+    evidenceRefs: [chan-rule-only-through-you, chan-public-sole-node, chan-abroad-rationale, chan-all-or-nothing, chan-posthumous-testament, chan-chertkov-controls-all]
+    ingestionPriority: 1
+
+  - name: Свободное слово (Free Age Press)
+    wikiType: institution
+    wikilinkTarget: "Svobodnoe Slovo (Free Age Press)"
+    vaultStatus: missing
+    role: "Chertkov's émigré publishing operation in England (also «Листки Свободного слова», the Free Age Press). The physical channel that published the uncensored complete texts abroad-first; the destination of «не пройдет в России, но может быть напечатано за границей»."
+    sources: []
+    evidenceRefs: [chan-router-svobodnoe-slovo, chan-abroad-rationale, enc-razrushenie-russia-1917]
+    ingestionPriority: 1
+    dependsOn: [Vladimir Chertkov]
+
+  - name: "Posrednik (The Intermediary)"
+    wikiType: institution
+    wikilinkTarget: "Posrednik (The Intermediary)"
+    vaultStatus: missing
+    role: "The cheap legal-Russian popular-publishing house (Chertkov/Gorbunov-Posadov) — the domestic, censored channel for the народные рассказы and the anthologies; the pole against which the abroad channel is defined."
+    sources: []
+    evidenceRefs: [chan-gorbunov-recycle-banned, enc-vse-zapreshchayut]
+    ingestionPriority: 2
+    dependsOn: [Vladimir Chertkov]
+
+  - name: "Censorship in late Imperial Russia"
+    wikiType: concept
+    wikilinkTarget: "Censorship in late Imperial Russia"
+    vaultStatus: missing
+    role: "The apparatus the whole dive turns on — state press censorship, the spiritual (Synod) censor, and (per Chertkov) the «second censor» of the liberal press that mutilated Tolstoy's articles. The constraint that forced genre and channel choices."
+    sources: []
+    evidenceRefs: [con-censored-lit-idle, con-chas-cant-print, enc-wia-censor-inserts-dogma]
+    ingestionPriority: 2
+
+  - name: "Народный рассказ (the folk-tale / parable form)"
+    wikiType: concept
+    wikilinkTarget: "Narodny rasskaz (folk tale)"
+    vaultStatus: missing
+    role: "The encoded genre at the centre of Thread 1: the popular tale/legend/parable as a vehicle that could carry a truth a treatise could not legally print. The form whose theory is in What Is Art? and whose licence is in the Цветник preface."
+    sources: []
+    evidenceRefs: [enc-tsvetnik-genre-licence, key-sholom-aleichem, enc-razrushenie-invented-church]
+    ingestionPriority: 2
+
+  - name: "The wisdom-anthology series"
+    wikiType: concept
+    wikilinkTarget: "Tolstoy's wisdom anthologies"
+    vaultStatus: missing
+    role: "The compression endpoint as a single project across four books (Мысли мудрых людей → Круг чтения → На каждый день → Путь жизни) — the concept page that ties the four proposed work-records together and narrates the arc (attributions dropped, calendar abandoned, doctrine distilled to aphorism)."
+    sources: []
+    evidenceRefs: [comp-krug-genesis, comp-put-like-krug, comp-krug-stated-aim, comp-put-drops-attributions]
+    ingestionPriority: 2
+
+  - name: Sholom Aleichem (S. N. Rabinovich)
+    wikiType: person
+    wikilinkTarget: "Sholom Aleichem"
+    vaultStatus: missing
+    role: "Recipient of the keystone letter (6 May 1903): the Yiddish writer who solicited a Kishinev-relief contribution and to whom Tolstoy named both the suppressed truth and the censorship that barred it."
+    sources: []
+    evidenceRefs: [key-sholom-aleichem, enc-folk-tale-held-back]
+    ingestionPriority: 2
+
+  - name: Ivan Gorbunov-Posadov
+    wikiType: person
+    wikilinkTarget: "Ivan Gorbunov-Posadov"
+    vaultStatus: missing
+    role: "Editor of Posrednik; ran the legal-Russian popular-publishing and the «Круг чтения» domestic production; correspondent on routing banned texts into the Readings."
+    sources: []
+    evidenceRefs: [chan-gorbunov-recycle-banned]
+    ingestionPriority: 3
+    dependsOn: ["Posrednik (The Intermediary)"]
+
+  - name: Pyotr Stolypin
+    wikiType: person
+    wikilinkTarget: "Pyotr Stolypin"
+    vaultStatus: missing
+    role: "Prime Minister; recipient of the 1909 ultimatum letter in which abroad-publication is named as a dated political weapon."
+    sources: []
+    evidenceRefs: [chan-stolypin-ultimatum]
+    ingestionPriority: 3
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — filled from the Phase-2 visuals sweep (_visuals.md). visuals/ is the
+# git-ignored local cache; each item records licence + url for the publication gate.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - { id: chertkov-photo-1883, type: photo, subject: "V. G. Chertkov, portrait photograph", relatedEntity: "Vladimir Chertkov", holding: "Wikimedia Commons (from tolstoy.ru)", archiveId: "File:Vladimir_Chertkov.jpg", access: open, rights: "Photo A. F. Eichenwald, 1883", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg", localPath: "visuals/commons-chertkov-portrait-1883.jpg", note: "the man who ran the abroad channel" }
+  - { id: chertkov-repin-1890s, type: portrait, subject: "V. G. Chertkov, oil portrait by Ilya Repin", relatedEntity: "Vladimir Chertkov", holding: "National Museum, Warsaw (acc. 120625)", archiveId: "File:Repin_Vladimir_Chertkov.jpg", access: open, rights: "Repin d. 1930 (PD-old-80)", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg", localPath: "visuals/commons-repin-chertkov-portrait-1890s.jpg", note: "Repin, 1890s" }
+  - { id: tolstoy-prokudin-gorsky-1908, type: photo, subject: "Leo Tolstoy at Yasnaya Polyana (first colour portrait in Russia)", relatedEntity: "Leo Tolstoy", holding: "Leo Tolstoy State Museum", archiveId: "File:L.N.Tolstoy_Prokudin-Gorsky.jpg", access: open, rights: "Prokudin-Gorsky d. 1944", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg", localPath: "visuals/commons-tolstoy-prokudin-gorsky-1908.jpg", note: "23 May 1908; the canonical late-period image" }
+  - { id: tolstoy-chess-chertkov-son-1907, type: photo, subject: "Tolstoy at chess with Chertkov's son", relatedEntity: "Vladimir Chertkov", holding: "Wikimedia Commons", archiveId: "File:Tolstoy_playing_chess_with_the_son_of_Vladimir_Chertkov.png", access: open, rights: "photo by V. Chertkov, 1907", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Tolstoy_playing_chess_with_the_son_of_Vladimir_Chertkov.png", localPath: "visuals/commons-tolstoy-chess-chertkov-son-1907.png", note: "the Chertkov-era closeness, photographed by Chertkov himself" }
+  - { id: krug-chteniya-1906-title-page, type: title-page, subject: "Круг чтения — first-edition title page (1906)", relatedEntity: "The wisdom-anthology series", holding: "feb-web.ru (Fundamental Electronic Library)", archiveId: "File:Ma1-055-.jpg", access: open, rights: "Public Domain Mark 1.0", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Ma1-055-.jpg", localPath: "visuals/commons-krug-chteniya-1906-title-page.jpg", note: "the compression endpoint; representative for the calendar-of-wisdom cluster" }
+  - { id: sholem-aleichem-1907, type: photo, subject: "Sholom Aleichem (S. N. Rabinovich)", relatedEntity: "Sholom Aleichem (S. N. Rabinovich)", holding: "Wikimedia Commons", archiveId: "File:Sholem_Aleichem_1907_(cropped).jpg", access: open, rights: "New York 1907, author unknown", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Sholem_Aleichem_1907_(cropped).jpg", localPath: "visuals/commons-sholem-aleichem-1907.jpg", note: "recipient of the keystone letter; PD-US — may not be PD in all jurisdictions, so clear rights before any publication outside the cache" }
+  - { id: free-age-press-pamphlets, type: title-page, subject: "Free Age Press — Tolstoy's Pamphlets (title page)", relatedEntity: "Свободное слово (Free Age Press)", holding: "Wikimedia Commons / Archive.org", archiveId: "File:Tolstoy_-_Pamphlets.djvu", access: open, rights: "PD-old-80 / PD-US", licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Tolstoy_-_Pamphlets.djvu", localPath: "", note: "DJVU only — no standalone cover image extracted. The closest surrogate for the abroad press: NO «Свободное слово» masthead exists on Commons (the one genuine visuals gap)." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Triangulation, not corroboration.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    English scholarship treats late-Tolstoy censorship as a well-documented background condition and confirms both the abroad-publishing channel and the Resurrection mutilation — but does not reach the dive's three live findings. Bartlett (2010) and Wilson (1988) give the censorship background; Alston (2014) and Holman (1988) document Chertkov's Free Age Press as an organised international movement (43 publications / ~209,000 copies 1900–1902, managed by Arthur Fifield from Tuckton House near Christchurch). What the literature does NOT examine: (1) that the parable/folk-tale form was chosen as a deliberate response to censorship rather than only for peasant reach — scholars read the folk turn aesthetically and through access, and document the Kishinev–Sholom-Aleichem contribution biographically without reading those tales as encoding the pogrom-condemnation Tolstoy said he could not publish legally; (2) the explicit 1900 protocol routing ALL writings abroad through Chertkov as a named agreement; (3) the four wisdom-anthologies as one compression project whose dropped attributions and thematic re-ordering also lowered the collection's censorship profile (Tulyakova et al. 2018 is the one article treating Круг чтения as politically active; the compression-as-encryption reading is absent). Popoff (2014) supplies the contested "false disciple" frame — Chertkov as a controlling editor-censor who extracted the posthumous will under duress; the primary record here (Tolstoy freely and repeatedly stating the channel as his own settled wish across 1900–1910, and reaffirming the 1895 papers-instruction in 1904) complicates that reading rather than confirming it. Full pass: extracts/_scholarship.md.
+  triangulation:
+    - { evidenceRef: key-sholom-aleichem, conventionalView: "Folk forms chosen for peasant reach and Tolstoy's aesthetic conversion; censorship acknowledged as pressure on Posrednik but not as the generative cause of the genre choice; the Kishinev–Aleichem link documented biographically, not read as encryption.", relation: extends, source: "Simmons, Introduction to Tolstoy's Writings; Emerson, Tolstoy in Context (2021); Wenzer 1997" }
+    - { evidenceRef: chan-rule-only-through-you, conventionalView: "The abroad channel and Chertkov's posthumous authority are confirmed, but the explicit 1900 protocol routing ALL writings through Chertkov is not examined as a named agreement in English scholarship.", relation: extends, source: "Alston 2014; Holman, SEER 66/2 (1988); Popoff 2014" }
+    - { evidenceRef: chan-public-sole-node, conventionalView: "Scholars describe the Free Age Press operation but not the public sole-node declaration as deliberate procedural architecture.", relation: confirms, source: "Alston 2014; Holman 1988" }
+    - { evidenceRef: enc-resurrection-survival-sentence, conventionalView: "The ~497 Niva distortions and the Purleigh complete edition are documented; the full Russian text appeared only in 1936.", relation: confirms, source: "Simmons; Wikipedia (Resurrection); Chertkov Purleigh imprint records" }
+    - { evidenceRef: chan-chertkov-controls-all, conventionalView: "State censorship is thoroughly documented; the 'two censors' framing (state + liberal press), attributed to Chertkov, is not a named concept in English scholarship.", relation: extends, source: "Hapgood 1887; Chertkov, «Две цензуры для Толстого» (1909); Popoff 2014" }
+    - { evidenceRef: comp-put-drops-attributions, conventionalView: "The four anthologies are acknowledged as one sustained project, and the Soviet ban shows they were politically live; the compression-as-encryption reading (attributions dropped, critique hidden as unsigned foreign maxim) is absent from English scholarship.", relation: extends, source: "Tulyakova et al., Slověne (2018); Wikipedia / Grokipedia (A Calendar of Wisdom)" }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORDS — proposed CREATION of four anthology records (none exist yet).
+# READ-ONLY to works/; a human applies these. genre: anthology (schema v7).
+# subcategory is uncertain for an anthology under Non-Fiction (see needsReview).
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  - recordPath: "website/src/works/non-fiction/<subcategory-TBD>/Thoughts of Wise People.md"
+    workId: thoughts-of-wise-people
+    note: "Мысли мудрых людей на каждый день (1903) — PSS Tom 40. CREATION proposal (no record exists). The first anthology; precursor reconceived as Круг чтения. A later trimmed «Новая редакция» exists in the same Tom."
+    fields:
+      - { field: titleEn, value: "Thoughts of Wise People for Every Day", confidence: medium, note: "translation varies; sometimes 'Thoughts of Wise Men'" }
+      - { field: titleRu, value: "Мысли мудрых людей на каждый день", evidenceRefs: [comp-mysli-announced], confidence: high }
+      - { field: genre, value: anthology, confidence: high, source: "works schema v7" }
+      - { field: mainCategory, value: "Non-Fiction", confidence: medium }
+      - { field: dateFirstPublished, value: "1903", evidenceRefs: [comp-mysli-announced], confidence: high, approximate: true }
+      - { field: firstPublishedVenue, value: "Посредник (Posrednik)", confidence: medium }
+      - { field: relatedWorks, value: [ { id: circle-of-reading, relationshipType: revision } ], confidence: high, note: "Tolstoy reconceived it as Круг чтения (comp-krug-genesis)" }
+
+  - recordPath: "website/src/works/non-fiction/<subcategory-TBD>/Circle of Reading.md"
+    workId: circle-of-reading
+    note: "Круг чтения (1st ed. 1906; 2nd ed. 1908) — PSS Toms 41–42, own genre dir krug_chtenija/. CREATION proposal. Mixed-form: daily sayings + weekly readings (Tolstoy's own tales + borrowed fiction)."
+    fields:
+      - { field: titleEn, value: "The Circle of Reading", confidence: medium, note: "also translated 'A Calendar of Wisdom' (Sekirin)" }
+      - { field: titleRu, value: "Круг чтения", evidenceRefs: [comp-krug-genesis], confidence: high }
+      - { field: genre, value: anthology, confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", confidence: medium }
+      - { field: dateWritingStarted, value: "1904", evidenceRefs: [comp-krug-genesis], confidence: high, approximate: true }
+      - { field: dateFirstPublished, value: "1906", confidence: high, approximate: true }
+      - { field: firstPublishedVenue, value: "Посредник (Posrednik)", confidence: medium }
+      - { field: censoredVersionExists, value: true, evidenceRefs: [fuse-krug-censored-thoughts], confidence: high, note: "publisher cut thoughts for censorship; PSS restores them as an appendix (Tom 42)" }
+      - { field: relatedWorks, value: [ { id: thoughts-of-wise-people, relationshipType: revision }, { id: for-every-day, relationshipType: revision } ], confidence: high }
+
+  - recordPath: "website/src/works/non-fiction/<subcategory-TBD>/For Every Day.md"
+    workId: for-every-day
+    note: "На каждый день (pub. 1909–1910, two parts) — PSS Toms 43–44. CREATION proposal. Day-of-month-as-fixed-theme; statements now mostly Tolstoy's own and unsigned. Censor-conscious monthly release sequencing (chan/Thread-2 letters)."
+    fields:
+      - { field: titleEn, value: "For Every Day", confidence: medium }
+      - { field: titleRu, value: "На каждый день", evidenceRefs: [comp-put-like-krug], confidence: high }
+      - { field: genre, value: anthology, confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", confidence: medium }
+      - { field: dateFirstPublished, value: "1909", confidence: high, approximate: true }
+      - { field: relatedWorks, value: [ { id: circle-of-reading, relationshipType: revision }, { id: the-path-of-life, relationshipType: revision } ], confidence: high }
+
+  - recordPath: "website/src/works/non-fiction/<subcategory-TBD>/The Path of Life.md"
+    workId: the-path-of-life
+    note: "Путь жизни (1910) — PSS Tom 45 (main text v45_013_496). CREATION proposal. Tolstoy's last book; calendar abandoned for 30 thematic chapters; attributions dropped; the preface is the whole late metaphysics in 31 numbered points."
+    fields:
+      - { field: titleEn, value: "The Path of Life", confidence: medium, note: "also 'The Way of Life'" }
+      - { field: titleRu, value: "Путь жизни", evidenceRefs: [comp-put-like-krug], confidence: high }
+      - { field: genre, value: anthology, confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", confidence: medium }
+      - { field: dateWritingCompleted, value: "1910", evidenceRefs: [comp-put-like-krug], confidence: high, approximate: true }
+      - { field: dateFirstPublished, value: "1910", confidence: high, approximate: true, note: "published in parts 1910–1911; verify exact first-issue date" }
+      - { field: relatedWorks, value: [ { id: for-every-day, relationshipType: revision }, { id: circle-of-reading, relationshipType: revision } ], confidence: high }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. The resume reads this first.
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "Thread 1 — the constraint named (не могу сказать / нельзя печатать)", status: covered, note: "keystone + 9 fresh letter/diary statements 1902–1910" }
+  - { surface: "Thread 1 — channel mechanics (Chertkov / abroad / posthumous protocol)", status: covered, note: "Chertkov seam: protocol-as-rule, abroad-rationale, all-or-nothing, the testament" }
+  - { surface: "Thread 1 — the 8-tier channel spectrum (legal→abroad→samizdat→posthumous→withheld)", status: covered, note: "built from the mined dives; see index map" }
+  - { surface: "Thread 1 — genre/fiction as encryption (parable/legend/drama/novel)", status: covered, note: "reused from 11 encoded-form dives" }
+  - { surface: "Thread 2 — the metaphysics compressed to a formula (title-as-doctrine)", status: covered }
+  - { surface: "Thread 2 — the anthology project in his own words (genesis, purpose, mortality)", status: covered, note: "fresh letters + diaries 1903–1910" }
+  - { surface: "Thread 2 — the anthology architecture & the 1903→1910 tightening arc", status: covered, note: "structural read of all four books" }
+  - { surface: "Where the threads fuse (1903 parables; the censored Круг чтения thoughts; Круг abroad)", status: covered }
+  - { surface: "Scholarly context (Tolstoy & censorship; the Free Age Press; the anthologies)", status: partial, note: "Phase-3 pass pending integration; anthology scholarship is thin in English" }
+  - { surface: "Visual & manuscript record", status: partial, note: "light sweep: Chertkov, Sholem Aleichem, Круг чтения title page, late Tolstoy photo; no Free Age Press masthead found yet" }
+  - { surface: "Un-dived direct-treatise comparators (Tom 34–35: К духовенству, Не убий, etc.)", status: not-covered, note: "deliberate: the direct pole is carried by four full dives + the threadmap; see notCovered" }
+  - { surface: "The 1905–06 Круг чтения weekly tales as tales (a planned sibling dive)", status: not-covered, note: "out of scope by design; pointer in notCovered" }
+
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions: []   # no intra-corpus (primary-vs-primary) contradictions surfaced
+
+notCovered:
+  - "Un-dived direct-treatise comparators in Toms 34–35 (Царю и его помощникам, К духовенству, Не убий, Ответ на определение Синода, Единственное средство, К рабочему народу, О Шекспире и о драме) — read selectively against the channel map in a future light pass; the direct/abroad pole is already well-evidenced."
+  - "The 1905–06 Круг чтения weekly tales treated AS tales (genre-craft, sources, redactions) — reserved for the planned sequel dive; this dive treats the anthology only as the compression endpoint."
+  - "Full publication-history reconstruction of each anthology (editions, print runs, translation lineage) — needed before the four proposed work-records are finalised; only first-publication outlines captured here."
+  - "Chertkov's own «Две цензуры для Толстого» (the 'two censors' article) read in full — used here as PSS-commentary context only."
+
+needsReview:
+  - { item: "Anthology subcategory under Non-Fiction (Treatises / Personal Papers / Essays and Criticism / Educational) — genre: anthology has no clean shelving slot; a works-schema shelving decision is needed before the four records are created.", phase: 4, why: "schema gap; the workRecord recordPaths leave subcategory as <TBD>." }
+  - { item: "A specific quotable entry from the censored-out-thoughts file (v42_423_438) — the «19-е января» true-vs-external-religion entry — to anchor fuse-krug-censored-thoughts with a verifiable quoteRu.", phase: 2, why: "the fusion row currently cites the file without a quoteRu." }
+  - { item: "Proposed work-record IDs (thoughts-of-wise-people, circle-of-reading, for-every-day, the-path-of-life) and English titles need confirmation against the project's title conventions (e.g. 'A Calendar of Wisdom' vs 'The Circle of Reading').", phase: 4, why: "IDs/titles are proposals; the relatedWorks links depend on them." }
+  - { item: "Exact first-publication dates/venues for each anthology (esp. Путь жизни's 1910–1911 part-issue and the legal-Russian status of Круг чтения / На каждый день) — first-publication outlines only.", phase: 3, why: "work-record date fields carry approximate: true pending verification." }
+  - { item: "Sholom Aleichem keystone: the fuller passage («одно правительство. К сожалению, этого-то я не могу сказать…») has a dash/elision boundary that differed between the parent-dive E03 quote and the fresh re-extract; the tight span is used here, but confirm the fuller passage byte-for-byte before quoting it in full anywhere ingestion-facing.", phase: 5, why: "two transcriptions diverged on the «— одно правительство» boundary." }
+  - { item: "Testament dating: chan-posthumous-testament (v88_719, May 1904) reaffirms the 1895 papers-instruction; English scholarship (Chertkov 1911; Popoff 2014) usually means the contested 1909–1910 secret will. Keep the two distinct in any ingestion; confirm whether a separate 1904 instrument exists or it is the 1895 записка restated.", phase: 3, why: "scholarship flags a 1904-vs-1909/10 testament conflict (_scholarship.md B-2)." }
+  - { item: "The 'two censors' (state + liberal press) is Chertkov's framing, from his 1909 article «Две цензуры для Толстого» (PSS commentary at v89_867); used here as attributed context, not a Tolstoy quoteRu. If ingested, anchor it to the Chertkov article, not to a Tolstoy letter.", phase: 3, why: "scholarship suggested v76_116 as the anchor, but that letter is the sole-node declaration, not the two-censors concept (_scholarship.md D-2)." }
+
+archivesConsulted:
+  - "tolstoydigital-TEI (local): letters Toms 73–82 + Chertkov 88–89 (3,670 files); diaries Toms 55–58 (1,035 files, Tom 54/1903 reused from parent dive); the four anthologies (Toms 40–45, incl. krug_chtenija/ 444 files)."
+  - "docs/research/ — 19 finished sibling dives mined (the direct-statement, encoded-form, and compression dives); evidence-index regenerated (36 dives, 894 evidence rows)."
+  - "Wikimedia Commons (visuals sweep — light)."
+  - "Web scholarship sweep (Phase 3 — see references.background)."
+
+references:
+  primary:
+    - "L. N. Tolstoy, Полное собрание сочинений (Jubilee Edition / PSS), Toms 26–45 (works & anthologies), 52–58 (diaries), 64–66, 71–82 (letters), 87–89 (letters to Chertkov)."
+    - "tolstoydigital-TEI corpus (local), extracted with extract_tei.py --choice=reg --notes=auto."
+  background:
+    - "Alston, Charlotte (2014). Tolstoy and His Disciples: The History of a Radical International Movement. Bloomsbury Academic. — the main English account of Chertkov's abroad-publishing network as a movement."
+    - "Holman, Michael J. (1988). 'Translating Tolstoy for the Free Age Press: Vladimir Chertkov and His English Manager Arthur Fifield.' The Slavonic and East European Review 66(2). — the detailed Free Age Press operational record (Fifield, Tuckton House, output figures)."
+    - "Popoff, Alexandra (2014). Tolstoy's False Disciple: The Untold Story of Leo Tolstoy and Vladimir Chertkov. Pegasus Books. — the contested 'Chertkov as controlling editor/censor' frame; read critically (cf. the project's ground-in-primary rule)."
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life. Profile Books. — late-period censorship and excommunication background."
+    - "Wilson, A. N. (1988). Tolstoy. — biography; concurs on the abroad-first pattern."
+    - "Chertkov, Vladimir (1911). The Last Days of Tolstoy (Eng. trans.). — Chertkov's own statement of his posthumous editorial role."
+    - "Emerson, Caryl (2021). 'Theater,' in A. A. Berman (ed.), Tolstoy in Context, Cambridge University Press. — names censorship as a context for the dramatised folk tales without developing the encryption argument."
+    - "Hapgood, Isabel (1887). 'Count Tolstoi and the Public Censor.' — near-contemporary account of the censor's excisions and of complete texts 'printed abroad' supplying the suppressed passages."
+    - "Tulyakova, O. A., et al. (2018). 'Leo Tolstoy, Mikhail Artsybashev, and Richard Wagner: About One Case of Polemics in Tolstoy's The Circle of Reading.' Slověne. — the one article treating Круг чтения as a politically active text."
+    - "Wenzer, Kenneth (1997). 'Tolstoy's Georgist Spiritual Political Economy (1897–1910).' — Posrednik under censor harassment; reliance on Chertkov's clandestine domestic printing and foreign dissemination."
+    - "Simmons, Ernest J. (1968). Introduction to Tolstoy's Writings. — the standard 'folk forms for reach' reading of the late short fiction; the Resurrection mutilation figures."
+    - "Medzhibovskaya, Inessa (2008). Tolstoy and the Religious Culture of His Time, 1845–1887. Lexington Books. — the conversion arc; stops before the 1900–1910 window (a gap in the secondary literature)."
+    - "Wikipedia: 'A Calendar of Wisdom' (the anthology arc; Soviet ban lifted 1995); 'Resurrection (Tolstoy novel)'; 'Kishinev pogrom'; 'Vladimir Chertkov'. — tertiary, used for dates and corroboration only."

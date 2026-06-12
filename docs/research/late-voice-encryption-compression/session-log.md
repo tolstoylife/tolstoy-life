@@ -54,3 +54,17 @@ Scoped in conversation with Johan (handoff from the 1903 dive). Decisions, all c
 
 - Wiki ingestion of the 1903-folk-tales dossier (separate, human-in-the-loop step).
 - The 1905–06 Круг чтения tales dive (sequel candidate; reads better after this map exists).
+
+## Session 1 — 2026-06-12 — FULL DIVE EXECUTED (steps 0–7, not just 0–3)
+
+The two-session plan was over-cautious: the synthesis-first mining came in rich enough that the whole dive — gather, synthesise, scholarship, verify, handoff — ran in one session. Phases 0–7 all complete; the dive is shipped (committed, not pushed).
+
+**What ran.** Step 0: evidence index regenerated (36 dives, 894 rows). Step 1: two opus mining agents → `_threadmap-direct.md` (35 rows / 8 dives) + `_threadmap-encoded.md` (41 rows / 11 dives) = 76 reusable rows, classified genre × channel × thread, with a ready-made 8-tier channel spectrum. Step 2 (fresh sweep A): four sonnet agents → letters 73–77 (13 finalists), 78–82 (14), Chertkov 88–89 (22, 3 keystones), diaries 55–58 (13) = 62 finalists from ~390 candidates; 76 fresh `.txt` extracts. Step 3 (sweep B): one opus agent → `_sweep_anthologies.md` (structural read of all four anthologies + the 1903→1910 tightening arc). Step 5 scholarship: sonnet web agent → `_scholarship.md` (19 sources; verdicts: genre-as-encryption / two-censors / compression-arc = `extends`, the live findings; channel + Resurrection = `confirms`). Visuals: light sweep, 6 PD images cached (gap: no Свободное слово masthead).
+
+**Outputs.** `index.md` (+ rendered `index.html`), `dossier.yaml` (57 evidence rows, 8 entities, 7 visuals, 6 triangulation rows, 4 anthology workRecord creation proposals, coverage ledger), draft note `website/src/posts/notes/2026-06-12-late-voice-encryption-compression.md` (`draft: true`).
+
+**Gates.** `verify_quotes.py` 56/56 PASS (1 deliberate no-quote fusion row). Opus verifier in a fresh context: **CLEAN-WITH-MINORS, 0 must-fix** (`_verifier-report.md`). Minors: M-2 (enc-devil-secret pssTom corrected 27→65) fixed; M-1 (three-vs-four `extends` wording) cosmetic; M-3 (fuse-row no-quote) pre-flagged in needsReview.
+
+**Scope decisions taken (vs the plan's open questions).** Step 4 (Tom 34–35 direct-treatise comparators) → `notCovered` pointer, not a sweep (direct pole already carried by four full dives). Cross-dive reuse → sibling extracts referenced by relative path `../<slug>/extracts/…` (verify_quotes resolves `../`), fresh rows in this dive's `extracts/`. Anthology workRecords → four lightweight record-CREATION proposals (genre `anthology`), with the Non-Fiction subcategory left `<TBD>` in `needsReview` (anthology has no clean shelving slot). 1905–06 tales boundary kept (pointer only).
+
+**Open for ingestion / next (from `needsReview` + `coverage`):** the anthology subcategory shelving decision; a quotable entry from the censored-out-thoughts file (v42_423_438) to anchor the fusion row; confirm the four workRecord IDs/titles + exact first-publication dates; keep the 1904 papers-instruction distinct from the contested 1909–10 will; anchor "two censors" to Chertkov's 1909 article, not a Tolstoy letter; acquire a Свободное слово masthead. The dive is the plan/pointer — wiki ingestion is the separate human-in-the-loop step.
