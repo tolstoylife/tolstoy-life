@@ -7,18 +7,20 @@ tags: [research]
 
 # The late voice — encryption & compression (1900–1910)
 
-A theme-dive across the whole late period, following one phenomenon through every genre and channel: how the late Tolstoy said what he was forbidden to say. Two threads, encryption leading. **(1) Encryption under censorship** — which truths he encoded because he could not state them in legal Russian print, and how *genre* (parable/legend/fiction vs treatise) and *channel* (legal Posrednik print vs Chertkov's «Свободное слово» abroad vs posthumous vs withheld) served concealment or directness. **(2) Compression** — how the late metaphysics distilled argument → story → aphorism, ending in the four wisdom-anthologies (Мысли мудрых людей 1903 → Круг чтения 1906 → На каждый день 1909 → Путь жизни 1910).
+A theme-dive across the whole late period, following one phenomenon through every genre and channel: how the late Tolstoy said what he was forbidden to say. Two threads, encryption leading. **(1) Encryption under censorship** — which truths he encoded because he could not state them in legal Russian print, and how *genre* (parable/legend/fiction vs treatise) and *channel* (legal Posrednik print vs Chertkov's «Свободное слово» (Free Age Press) abroad vs posthumous vs withheld) served concealment or directness. **(2) Compression** — how the late metaphysics distilled argument → story → aphorism, ending in the four wisdom-anthologies (Мысли мудрых людей / *Thoughts of Wise People* 1903 → Круг чтения / *Circle of Reading* 1906 → На каждый день / *For Every Day* 1909 → Путь жизни / *The Path of Life* 1910).
 
 This dive is synthesis-first: it mines nineteen finished sibling dives for reusable evidence, then adds fresh sweeps of the un-mined late letters (Toms 73–82), the Chertkov correspondence (Toms 88–89), the late diaries (Toms 55–58), and a structural read of the four anthologies. The grain of the argument is Tolstoy's own words; the scholarship is read as a divergence map, not a baseline to confirm.
+
+*Throughout, the English in quotation marks (and the parenthetical title translations) are working cribs — see Method — not finished published translations.*
 
 ## Key findings
 
 - **One constraint, two solutions.** A truth that could not pass the legal Russian censor could still be told — if it changed either its **genre** (a legend or parable says what a treatise would have had banned) or its **channel** (abroad through Chertkov, posthumous, or withheld). *Encryption* (change the form) and *routing* (change the venue) are two answers to the same wall.
-- **The constraint, named.** The keystone is the 6 May 1903 letter to Sholom Aleichem: the culprit of the Kishinev pogrom is «одно правительство» — the government alone — and «этого-то я не могу сказать в русском легальном издании». What he could not say as statement he published as legend. He says «нельзя печатать» to a newspaper that offered to run a cut version; he calls all censored literature «праздное занятие».
-- **The channel was a built system with a stated rule.** To Chertkov, 1900: everything going abroad passes «только через вас». He sets an all-or-nothing condition against partial printing («печатать всю или ничего»), names the abroad route in one sentence («не пройдет в России, но может быть напечатано за границей»), and reserves the posthumous estate to Chertkov from a written 1895 instruction. The result is an **eight-tier channel spectrum**, from legal-uncensored down to author-withheld.
-- **Fiction did the encryption a treatise could not.** *Resurrection*'s prison-Eucharist survived the legal «Нива» serial as four words — «Началось богослужение.» — while the complete text was printed simultaneously at Chertkov's Purleigh press; the same passage is both the most-censored in Russia and the «последняя и высшая степень» named in the 1901 excommunication. The народный рассказ is the form built to carry a forbidden truth.
-- **Compression is the same impulse turned inward.** The late metaphysics distils to a formula (the four-proposition religion; «Патриотизм есть рабство»; the title-as-doctrine of *The Law of Violence and the Law of Love*) and finally to the wisdom-anthologies — one project squeezed four times. Across 1903→1910 the attributions drop away (in *Путь жизни* he «нахожу неудобным подписывать их именами их авторов»), the calendar is abandoned for thirty thematic chapters, and whole paragraphs carry verbatim from book to book.
-- **The two threads fuse.** The daily-anthology form let the church-and-state critique sit as one unsigned numbered maxim among foreign sages — and the publisher still cut some entries «по цензурным соображениям». Tolstoy proposed publishing the complete *Круг чтения* abroad «без цензурных соображений», and suggested filling the legal Readings with «из запрещенных моих» works. The wisdom-book is also a smuggling vessel.
+- **The constraint, named.** The keystone is the 6 May 1903 letter to Sholom Aleichem: the culprit of the Kishinev pogrom is «одно правительство» — the government alone — and «этого-то я не могу сказать в русском легальном издании» ("this is precisely what I cannot say in a legal Russian publication"). What he could not say as statement he published as legend. He says «нельзя печатать» ("it cannot be printed") to a newspaper that offered to run a cut version; he calls all censored literature «праздное занятие» ("an idle occupation").
+- **The channel was a built system with a stated rule.** To Chertkov, 1900: everything going abroad passes «только через вас» ("only through you"). He sets an all-or-nothing condition against partial printing («печатать всю или ничего» — "to print the whole thing or nothing"), names the abroad route in one sentence («не пройдет в России, но может быть напечатано за границей» — "it won't get through in Russia, but can be printed abroad"), and reserves the posthumous estate to Chertkov from a written 1895 instruction. The result is an **eight-tier channel spectrum**, from legal-uncensored down to author-withheld.
+- **Fiction did the encryption a treatise could not.** *Resurrection*'s prison-Eucharist survived the legal «Нива» (*Niva*) serial as four words — «Началось богослужение.» ("The church service began.") — while the complete text was printed simultaneously at Chertkov's Purleigh press; the same passage is both the most-censored in Russia and the «последняя и высшая степень» ("the last and highest degree") named in the 1901 excommunication. The народный рассказ (folk tale) is the form built to carry a forbidden truth.
+- **Compression is the same impulse turned inward.** The late metaphysics distils to a formula (the four-proposition religion; «Патриотизм есть рабство» — "Patriotism is slavery"; the title-as-doctrine of *The Law of Violence and the Law of Love*) and finally to the wisdom-anthologies — one project squeezed four times. Across 1903→1910 the attributions drop away (in *Путь жизни* / *The Path of Life* he «нахожу неудобным подписывать их именами их авторов» — "finds it inconvenient to sign them with their authors' names"), the calendar is abandoned for thirty thematic chapters, and whole paragraphs carry verbatim from book to book.
+- **The two threads fuse.** The daily-anthology form let the church-and-state critique sit as one unsigned numbered maxim among foreign sages — and the publisher still cut some entries «по цензурным соображениям» ("for reasons of censorship"). Tolstoy proposed publishing the complete *Круг чтения* (*Circle of Reading*) abroad «без цензурных соображений» ("without censorship considerations"), and suggested filling the legal Readings with «из запрещенных моих» ("from my banned") works. The wisdom-book is also a smuggling vessel.
 - **Scholarship confirms the plumbing, not the design.** English scholarship documents the abroad channel (Alston 2014; Holman 1988) and the *Resurrection* mutilation, but does not reach the dive's three live findings — genre-as-encryption, the explicit 1900 protocol, and compression-as-encryption. The corpus supplies primary grounding for points the literature only gestures at.
 
 ## Why this matters
@@ -32,14 +34,14 @@ The standard picture of the late Tolstoy is of a writer who renounced art for do
 > «этого-то я не могу сказать в русском легальном издании»
 > "this is precisely what I cannot say in a legal Russian publication" *(working English)*
 
-Date: 6 May 1903. To S. N. Rabinovich (Sholom Aleichem), declining to name in print what he names in the letter — that the Kishinev pogrom's culprit is «одно правительство». PSS Tom 74, pp. 118–119 (`v74_144`). The sentence was cut from all Russian reprints; the contribution he *did* make came as three folk tales. This is the seed of the whole theme: the forbidden statement becomes an encoded legend.
+Date: 6 May 1903. To S. N. Rabinovich (Sholom Aleichem), declining to name in print what he names in the letter — that the Kishinev pogrom's culprit is «одно правительство» ("the government alone"). PSS Tom 74, pp. 118–119 (`v74_144`). The sentence was cut from all Russian reprints; the contribution he *did* make came as three folk tales. This is the seed of the whole theme: the forbidden statement becomes an encoded legend.
 
-The same wall, stated barest of all, to a newspaper that offered to print a cut version of «Не убий никого»:
+The same wall, stated barest of all, to a newspaper that offered to print a cut version of «Не убий никого» (*Thou Shalt Not Kill Anyone*):
 
 > «В таком случае нельзя печатать.»
 > "In that case it cannot be printed." *(working English)*
 
-Date: 5–6 September 1907. To the editors of «Час». PSS Tom 77 (`v77_218`). Incomplete truth is no truth; silence is preferred to mutilation.
+Date: 5–6 September 1907. To the editors of «Час» (*Chas*). PSS Tom 77 (`v77_218`). Incomplete truth is no truth; silence is preferred to mutilation.
 
 **Stage 2 — the first solution: change the channel.** When the truth cannot print at home, route it abroad. The rule, stated to the man who ran the route:
 
@@ -48,7 +50,7 @@ Date: 5–6 September 1907. To the editors of «Час». PSS Tom 77 (`v77_218`)
 
 Date: 12 December 1900. To V. G. Chertkov. PSS Tom 88 (`v88_607`). The abroad channel is not improvised; it is a protocol Tolstoy commits to keeping strictly.
 
-**Stage 3 — the second solution: change the genre.** What a treatise could not get past the censor, a legend could. From «Разрушение ада и восстановление его», the devil explaining how the Church was built on a forged gospel:
+**Stage 3 — the second solution: change the genre.** What a treatise could not get past the censor, a legend could. From «Разрушение ада и восстановление его» (*The Destruction of Hell and Its Restoration*), the devil explaining how the Church was built on a forged gospel:
 
 > «я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь»
 > "I feared they might notice the too-obvious deception — and so I invented the Church" *(working English)*
@@ -60,7 +62,7 @@ And the sharpest exhibit of all, where fiction carries what a treatise could not
 > «Началось богослужение.»
 > "The church service began." *(working English)*
 
-PSS Tom 32 (`v32_003_445`, reused from `1889-1899-resurrection`). Part I, chapters XXXIX–XL were cut wholesale and the part renumbered to hide the gap; the complete text was printed at the same moment by Chertkov's press at Purleigh. The defamiliarised Eucharist is both the most-censored passage in the legal text and the «последняя и высшая степень» the Synod named in excommunicating him.
+PSS Tom 32 (`v32_003_445`, reused from `1889-1899-resurrection`). Part I, chapters XXXIX–XL were cut wholesale and the part renumbered to hide the gap; the complete text was printed at the same moment by Chertkov's press at Purleigh. The defamiliarised Eucharist is both the most-censored passage in the legal text and the «последняя и высшая степень» ("the last and highest degree") the Synod named in excommunicating him.
 
 **Stage 4 — compression: the same impulse, turned on the doctrine itself.** The late metaphysics contracts to a formula. The unity of all life, stated in a 1903 parable as a two-word self-naming:
 
@@ -83,9 +85,9 @@ PSS Tom 41 (`v41_009_009`). The source text is raw material, deliberately re-cut
 | Tier | What it means | Worked example |
 |---|---|---|
 | 1 · legal Russian, uncensored | content was sayable; published cheaply at home | *Master and Man* (1895), 15,000 copies in four days |
-| 2 · legal Russian, censored | printed but cut / softened / distorted | *What Is Art?* journal serial; the народные рассказы; two of the five 1903 tales |
+| 2 · legal Russian, censored | printed but cut / softened / distorted | *What Is Art?* journal serial; the народные рассказы (folk tales); two of the five 1903 tales |
 | 3 · print free / stage banned (genre as channel) | the medium itself splits | *The Power of Darkness* (stage ban 1887–95); *The Fruits of Enlightenment* (stage-only ban) |
-| 4 · abroad-first / abroad-only | foreign edition precedes or replaces the Russian | *The Kingdom of God* (Paris 1893); *What Is Religion* (Christchurch 1902); «Разрушение ада» (Russia 1917 only) |
+| 4 · abroad-first / abroad-only | foreign edition precedes or replaces the Russian | *The Kingdom of God* (Paris 1893); *What Is Religion* (Christchurch 1902); «Разрушение ада» (*The Destruction of Hell*, Russia 1917 only) |
 | 5 · underground / samizdat | banned text circulates hand-copied | *The Kreutzer Sonata* (8th redaction, lithographed/hectographed) |
 | 6 · legal Russia by personal dispensation | reaches print only by special grace | *The Kreutzer Sonata* (Sofia's audience with Alexander III → Collected Works only) |
 | 7 · posthumous, cut at home / restored abroad | a dead author still censored | *Hadji Murat* (Moscow 1912 cut / Berlin uncensored); *Father Sergius* (Moscow 1911 cut / Berlin 1912) |
@@ -97,36 +99,36 @@ The mechanism that makes tiers 4–8 possible is the 1891/1910 copyright renunci
 
 | Tom | id | Date | Addressee | What it shows |
 |---|---|---|---|---|
-| 73 | `v73_317` | 1902-08-20 | A. P. Naugolnikov | works «запрещенных в России и печатаемых в Англии» — the two-state corpus |
-| 74 | `v74_144` | 1903-05-06 | Sholom Aleichem | **keystone** — «не могу сказать в русском легальном издании» |
+| 73 | `v73_317` | 1902-08-20 | A. P. Naugolnikov | works «запрещенных в России и печатаемых в Англии» ("banned in Russia and printed in England") — the two-state corpus |
+| 74 | `v74_144` | 1903-05-06 | Sholom Aleichem | **keystone** — «не могу сказать в русском легальном издании» ("I cannot say it in a legal Russian publication") |
 | 74 | `v74_346` | 1903-12-18 | M. A. Taube | the two-track workaround (soften for home / publish whole abroad) |
 | 76 | `v76_116` | 1906-01-14 | press (public notice) | Chertkov declared the sole node for everything abroad |
-| 77 | `v77_218` | 1907-09-05 | «Час» editors | «В таком случае нельзя печатать.» |
-| 79 | `v79_109` | 1909-03-05 | V. A. Posse | «неюбилейно и нецензурно» — the double bind |
+| 77 | `v77_218` | 1907-09-05 | «Час» (*Chas*) editors | «В таком случае нельзя печатать.» ("In that case it cannot be printed.") |
+| 79 | `v79_109` | 1909-03-05 | V. A. Posse | «неюбилейно и нецензурно» ("non-jubilee and uncensorable") — the double bind |
 | 80 | `v80_112` | 1909-08-30 | P. A. Stolypin | abroad publication as a dated political weapon |
-| 80 | `v80_370` | 1909-12-19 | N. N. Ge (son) | Chertkov «заведует печатанием всего мною писанного» |
-| 81 | `v81_116` | 1910-02-09 | M. G. Bolkvadze | predicts his own text will be «нецензурно» |
+| 80 | `v80_370` | 1909-12-19 | N. N. Ge (son) | Chertkov «заведует печатанием всего мною писанного» ("is in charge of the printing of everything I have written") |
+| 81 | `v81_116` | 1910-02-09 | M. G. Bolkvadze | predicts his own text will be «нецензурно» ("uncensorable") |
 
 ### The Chertkov channel (Thread 1, Toms 88–89)
 
 | Tom | id | Date | What it shows |
 |---|---|---|---|
-| 88 | `v88_607` | 1900-12-12 | the protocol as a rule — everything abroad «только через вас» |
+| 88 | `v88_607` | 1900-12-12 | the protocol as a rule — everything abroad «только через вас» ("only through you") |
 | 88 | `v88_719` | 1904-05-13 | reaffirms the 1895 written instruction reserving the posthumous papers to Chertkov |
-| 89 | `v89_738` | 1905-04-17 | «не пройдет в России, но может быть напечатано за границей» |
-| 89 | `v89_757` | 1906-02-13 | «печатать всю или ничего» |
-| 89 | `v89_809` | 1908-06-01 | «Не могу молчать» — abroad first, Russia gets excerpts a day later |
+| 89 | `v89_738` | 1905-04-17 | «не пройдет в России, но может быть напечатано за границей» ("it won't get through [the censor] in Russia, but it can be printed abroad") |
+| 89 | `v89_757` | 1906-02-13 | «печатать всю или ничего» ("to print the whole [article] or nothing") |
+| 89 | `v89_809` | 1908-06-01 | «Не могу молчать» (*I Cannot Be Silent*) — abroad first, Russia gets excerpts a day later |
 
 ### The compression arc (Thread 2) — one project, squeezed four times
 
 | Year | Book | The unit | What tightened |
 |---|---|---|---|
-| 1903 | Мысли мудрых людей на каждый день | a bouquet of *attributed* sayings per day | no preface; a commonplace book |
-| 1906 | Круг чтения | a dated *chord* of signed sayings + a weekly story/essay | the method preface added; the story layer still present |
-| 1909 | На каждый день | a day = one theme, mostly his own *unsigned* prose | named voices recede to a near-monologue |
-| 1910 | Путь жизни | 30 *thematic chapters* of numbered aphorisms; calendar gone | attributions dropped; the preface is the whole metaphysics in 31 points |
+| 1903 | Мысли мудрых людей на каждый день (*Thoughts of Wise People for Every Day*) | a bouquet of *attributed* sayings per day | no preface; a commonplace book |
+| 1906 | Круг чтения (*Circle of Reading*) | a dated *chord* of signed sayings + a weekly story/essay | the method preface added; the story layer still present |
+| 1909 | На каждый день (*For Every Day*) | a day = one theme, mostly his own *unsigned* prose | named voices recede to a near-monologue |
+| 1910 | Путь жизни (*The Path of Life*) | 30 *thematic chapters* of numbered aphorisms; calendar gone | attributions dropped; the preface is the whole metaphysics in 31 points |
 
-The diaries record the project from inside: the 400-day calculation he was «почти уверен, что этого не проживу» (`v56_078`, 1907); «Чем ближе смерть, тем сильнее чувствую обязанность сказать то, что знаю» (same); and the recognition that the truth is «до глупости простая» and the whole labour is the form (`v55_172`, 1905). Verbatim carry-over proves it is one text: the «суеверие государства» paragraph passes from *На каждый день* into *Путь жизни* ch. XVII, «суеверие» sharpened to «лжеучение»; the water-vessels unity simile is re-cut between the two books.
+The diaries record the project from inside: the 400-day calculation he was «почти уверен, что этого не проживу» ("almost certain I will not live to see it") (`v56_078`, 1907); «Чем ближе смерть, тем сильнее чувствую обязанность сказать то, что знаю» ("The closer death comes, the more strongly I feel the obligation to say what I know") (same); and the recognition that the truth is «до глупости простая» ("simple to the point of stupidity") and the whole labour is the form (`v55_172`, 1905). Verbatim carry-over proves it is one text: the «суеверие государства» ("the superstition of the state") paragraph passes from *На каждый день* into *Путь жизни* ch. XVII, «суеверие» ("superstition") sharpened to «лжеучение» ("false teaching"); the water-vessels unity simile is re-cut between the two books.
 
 ## Scholarly context
 
@@ -136,11 +138,11 @@ The received scholarly view is a divergence map, not a confirmation. Where it ag
 
 **Extended.** Three findings reach below the scholarship. First, **genre-as-encryption**: scholars read the folk turn aesthetically and through access (cheap booklets for peasant readers) and record the Kishinev–Sholom-Aleichem contribution biographically — but none reads those 1903 tales as encoding the pogrom-condemnation Tolstoy *said* he could not publish legally. Second, **the explicit 1900 protocol**: Alston and Holman describe the operation but not the named rule that *all* writings abroad pass only through Chertkov — a procedural architecture the PSS correspondence states outright. Third, **compression-as-encryption**: the four anthologies are acknowledged as one sustained project (and **Tulyakova et al. 2018** show the second *Круг чтения* was polemically active), but the reading that dropped attributions and a thematic re-ordering also lowered the collection's censorship profile is absent from the English literature. English coverage of the anthologies is itself thin.
 
-**Read critically.** **Popoff (2014)** supplies the contested frame of Chertkov as a controlling editor-censor who extracted the posthumous will «under duress» — the same Chertkov-as-antagonist framing the project interrogates elsewhere (see `biryukov-sofia-relationship` and `tolstoyanism`). The primary record here complicates that reading rather than confirming it: Tolstoy states the channel as his own settled wish, freely and repeatedly, across 1900–1910, and reaffirms the 1895 papers-instruction in his own hand in 1904 — years before the contested 1909–1910 legal will. The "two censors" framing (the state *and* the liberal press that mutilated his articles) is Chertkov's, from his 1909 article «Две цензуры для Толстого»; it is carried here as his attributed idea, not asserted in the dive's voice.
+**Read critically.** **Popoff (2014)** supplies the contested frame of Chertkov as a controlling editor-censor who extracted the posthumous will «under duress» — the same Chertkov-as-antagonist framing the project interrogates elsewhere (see `biryukov-sofia-relationship` and `tolstoyanism`). The primary record here complicates that reading rather than confirming it: Tolstoy states the channel as his own settled wish, freely and repeatedly, across 1900–1910, and reaffirms the 1895 papers-instruction in his own hand in 1904 — years before the contested 1909–1910 legal will. The "two censors" framing (the state *and* the liberal press that mutilated his articles) is Chertkov's, from his 1909 article «Две цензуры для Толстого» ("Two Censorships for Tolstoy"); it is carried here as his attributed idea, not asserted in the dive's voice.
 
 ## Material not covered
 
-- **The un-dived direct-treatise comparators** in Toms 34–35 («Царю и его помощникам», «К духовенству», «Не убий», «Ответ на определение Синода», «К рабочему народу», «О Шекспире и о драме») — left as a future light pass; the direct/abroad pole is already carried by four full dives and the threadmap.
+- **The un-dived direct-treatise comparators** in Toms 34–35 («Царю и его помощникам» / *To the Tsar and His Assistants*, «К духовенству» / *To the Clergy*, «Не убий» / *Thou Shalt Not Kill*, «Ответ на определение Синода» / *Reply to the Synod's Edict*, «К рабочему народу» / *To the Working People*, «О Шекспире и о драме» / *On Shakespeare and Drama*) — left as a future light pass; the direct/abroad pole is already carried by four full dives and the threadmap.
 - **The 1905–06 Круг чтения weekly tales treated *as* tales** (genre-craft, sources, redactions) — reserved for a planned sibling dive; this dive treats the anthology only as the compression endpoint.
 - **Full publication histories** of the four anthologies (editions, print runs, translation lineage) — only first-publication outlines are captured; needed before the proposed work-records are finalised.
 
