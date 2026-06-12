@@ -1,0 +1,1245 @@
+topic:
+  slug: 1900-the-living-corpse
+  title: 'The Living Corpse (Живой труп) — Tolstoy''s unfinished 1900 drama'
+  question: >-
+    Is The Living Corpse an indictment of the institution of legal/church
+    marriage and its divorce machinery — honesty against the institution — and
+    was its abandonment driven mainly by Tolstoy''s reluctance to wound the real
+    people (the Gimers) whose court case it dramatises?
+  date: '2026-06-12'
+  period: 'Prophet period (post-1880); composed 1900'
+  corpusSurface: 'works (PSS Tom 34: play + plans + variants + 2 commentaries); diaries Tom 53–54 (1897, 1900); letters Tom 72 + Tom 88 (1900)'
+  dateRange: '1897-12 (seed) · 1900-01/11 (writing & abandonment) · 1911 (posthumous publication & premiere)'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE LEDGER — every quoteRu is byte-verified against its extract (verify_quotes.py 40/40 PASS)
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ---- The play's own text (PSS Tom 34, pp. 7–99) ----
+  - id: lc-volya
+    genre: work
+    pssTom: 34
+    pages: '~12'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Это степь, это десятый век, это не свобода, а воля.'
+    quoteEn: '(working English) "This is the steppe, this is the tenth century, this is not freedom but boundless will (volya)." (Fedya at the gypsies, Act I, picture 2.)'
+    significance: 'The play''s positive pole. Fedya distinguishes свобода (legal/social liberty) from воля (boundless, lawless aliveness) — the gypsy song is the one place he is not ashamed. The thing the institution cannot give him.'
+    facsimile: ''
+  - id: lc-pomeret
+    genre: work
+    pssTom: 34
+    pages: '~17'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Ах, хорошо. Кабы только не просыпаться. Так и помереть.'
+    quoteEn: '(working English) "Ah, good. If only one need not wake. To die just so." (Fedya, ending Act I.)'
+    significance: 'Death-as-release foreshadowed in Act I, in the gypsy room — the same note the play closes on ("Как хорошо… Кончается"). The corpse is wished-for from the start.'
+    facsimile: ''
+  - id: lc-ne-lgat
+    genre: work
+    pssTom: 34
+    pages: '~38'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Не могу спокойно лгать.'
+    quoteEn: '(working English) "I cannot calmly lie." (Fedya to Prince Abrezkov, Act III, picture 2.)'
+    significance: 'The moral core in four words. Fedya is "a scoundrel" by his own account, but the one thing he cannot do is the perjury the divorce requires. Honesty against the institution.'
+    facsimile: ''
+  - id: lc-razvod-lozh
+    genre: work
+    pssTom: 34
+    pages: '~38'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'условия принятия вины на себя, всей лжи, связанной с этим, очень тяжелы.'
+    quoteEn: '(working English) "…the conditions of taking the guilt on oneself, of all the lying bound up with it, are very heavy." (Fedya to Abrezkov on what a divorce demands, Act III.)'
+    significance: 'States the institutional trap precisely: an Orthodox divorce required one party to confess fabricated adultery. The honest exit is closed by design.'
+    facsimile: ''
+  - id: lc-suicide-note
+    genre: work
+    pssTom: 34
+    pages: '~58'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Лгать, играть гнусную комедию, давая взятки в консистории, и вся эта гадость невыносима, противна мне.'
+    quoteEn: '(working English) "To lie, to play a vile comedy, bribing the consistory, and all this filth is unbearable, repellent to me." (Fedya''s farewell letter, read aloud Act IV, picture 2.)'
+    significance: 'CENTREPIECE. The institutional indictment in Fedya''s own written voice — the church consistory, the bribes, the comedy of fault — followed by his conclusion: "я мешаю этому, следовательно, я должен уничтожиться" (I am the obstacle, so I must annihilate myself).'
+    facsimile: ''
+  - id: lc-unichtozhitsya
+    genre: work
+    pssTom: 34
+    pages: '~58'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'я должен уничтожиться'
+    quoteEn: '(working English) "…I must annihilate myself." (Fedya''s farewell letter, Act IV.)'
+    significance: 'The logic of the title: not death but self-erasure. He is the legal obstacle to two honest people''s happiness, so he removes the obstacle — becomes a corpse on paper.'
+    facsimile: ''
+  - id: lc-tri-vybora
+    genre: work
+    pssTom: 34
+    pages: '~75'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'три выбора — только три: служить, наживать деньги, увеличивать ту пакость, в которой живешь.'
+    quoteEn: '(working English) "…three choices — only three: to serve, to make money, to add to the filth one lives in." (Fedya to the painter Petushkov, Act V, picture 1. The other two: to destroy the filth — for that one must be a hero, and he is not; or to forget oneself — drink, carouse, sing.)'
+    significance: 'Widens the indictment from marriage to the whole social order. Fedya''s social diagnosis: serve the system, fight it (heroism he lacks), or drink — and he chose the third. The "superfluous man" register named from inside.'
+    facsimile: ''
+  - id: lc-ya-trup
+    genre: work
+    pssTom: 34
+    pages: '~76'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Нет. Я труп. Да.'
+    quoteEn: '(working English) "No. I am a corpse. Yes." (Fedya to Petushkov, Act V — the title spoken.)'
+    significance: 'The title in the protagonist''s mouth. His wife "is left a widow"; he is legally dead and physically alive — a living corpse.'
+    facsimile: ''
+  - id: lc-sudyat-obshchestvo
+    genre: work
+    pssTom: 34
+    pages: '~96'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Не их судят, а они судят общество.'
+    quoteEn: '(working English) "It is not they who are on trial — it is they who judge society." (The young lawyer on Karenin and Liza in the dock, Act VI, picture 2.)'
+    significance: 'The marquee stated by a minor character: the courtroom inverts. The honest defendants indict the law that drags them there.'
+    facsimile: ''
+  - id: lc-prestuplenie-suicide
+    genre: work
+    pssTom: 34
+    pages: '~97'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'так только за то, что вы не совершили самоубийства, то есть того, что считается преступлением по закону и гражданскому и церковному.'
+    quoteEn: '(working English) "…[you are tried] only because you did NOT commit suicide — that is, the thing considered a crime by both civil and church law." (The defence lawyer Petrushin to Fedya, Act VI.)'
+    significance: 'The Catch-22 made explicit: suicide is a crime, faking it to free his wife is a crime, and the best case binds them all again. No honest exit exists in law — so he shoots himself for real.'
+    facsimile: ''
+  - id: lc-svyazhut
+    genre: work
+    pssTom: 34
+    pages: '~98'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'То есть они опять меня свяжут с ней, то есть ее со мной?'
+    quoteEn: '(working English) "That is — they will bind me to her again, her to me?" (Fedya, on the "best case" of church penance and annulment, Act VI.)'
+    significance: 'Why acquittal is unbearable: the law''s mercy re-imprisons all three in the marriage it could not honestly dissolve. The trigger for the real suicide.'
+    facsimile: ''
+  - id: lc-trup-final
+    genre: work
+    pssTom: 34
+    pages: '~99'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'я труп и со мной ничего не сделаете; нет того положения, которое было бы хуже моего.'
+    quoteEn: '(working English) "I am a corpse, and you can do nothing to me; there is no position worse than mine." (Fedya to the investigating magistrate, Act VI, picture 1.)'
+    significance: 'The corpse as the only free man — beyond the reach of law because already dead to it. The play''s bitterest paradox.'
+    facsimile: ''
+  - id: lc-chernyshevsky
+    genre: work
+    pssTom: 34
+    pages: '~62'
+    date: '1900'
+    extract: extracts/v34_007_099_play.txt
+    quoteRu: 'Рахманов взял да и сделал вид, что он утопился.'
+    quoteEn: '(working English) "…[that fellow] Rakhmanov went and pretended he had drowned." (Masha, proposing the fake suicide to Fedya, Act IV — misremembering the name from Chernyshevsky''s What Is to Be Done?.)'
+    significance: 'The Chernyshevsky subtext IN the play: Masha gets the idea of the staged drowning from «Что делать?». Primary-text confirmation of the intertext scholars (Wachtel 1992) argue for.'
+    facsimile: ''
+
+  # ---- Genesis: diaries (Tom 53–54) ----
+  - id: lc-seed-1897
+    genre: diary
+    pssTom: 53
+    pages: '172'
+    date: '1897-12-29 (OS)'
+    extract: extracts/v53_172_174_1897_12_29.txt
+    quoteRu: 'Вчера же целый день складывалась драма- комедия: Труп.'
+    quoteEn: '(working English) "And yesterday all day long a drama-comedy was taking shape: Corpse." (Diary, 29 Dec 1897.)'
+    significance: 'The seed — 29 Dec 1897, more than two years before he wrote a line. The play is conceived as a "drama-comedy."'
+    facsimile: ''
+  - id: lc-seed-hadji
+    genre: diary
+    pssTom: 53
+    pages: '172'
+    date: '1897-12-29 (OS)'
+    extract: extracts/v53_172_174_1897_12_29.txt
+    quoteRu: 'Думал о Хаджи-Мурате.'
+    quoteEn: '(working English) "Thought about Hadji Murat." (Diary, 29 Dec 1897 — the same entry that records the Corpse seed.)'
+    significance: 'The Corpse is conceived in the same breath as Hadji Murat — the late fiction germinating side by side (cf. After the Ball, conceived 1903 beside Hadji Murat''s Nicholas I).'
+    facsimile: ''
+  - id: lc-uncle-vanya
+    genre: diary
+    pssTom: 54
+    pages: '10'
+    date: '1900-01-27 (OS)'
+    extract: extracts/v54_010_010_1900_01_27.txt
+    quoteRu: 'Ездил смотреть Дядю Ваню и возмутился. Захотел написать драму Труп, набросал конспект.'
+    quoteEn: '(working English) "Went to see Uncle Vanya and was indignant. Wanted to write the drama Corpse, sketched an outline." (Diary, 27 Jan 1900.)'
+    significance: 'The trigger — and a correction to the bland "after seeing Uncle Vanya" framing. Tolstoy was PROVOKED (возмутился) by Chekhov''s play; the Corpse was begun in reaction, not admiration.'
+    facsimile: ''
+  - id: lc-rabstvo
+    genre: diary
+    pssTom: 54
+    pages: '26'
+    date: '1900-05-19 (OS)'
+    extract: extracts/v54_026_026_1900_05_19.txt
+    quoteRu: 'Кончил «Рабство» и написал два акта.'
+    quoteEn: '(working English) "Finished Slavery [of Our Times] and wrote two acts." (Diary, 19 May 1900, Yasnaya Polyana.)'
+    significance: 'The play is twinned with the publicistic tract The Slavery of Our Times — written in the same days. The art and the polemic share one desk; the polemic will soon win.'
+    facsimile: ''
+  - id: lc-okonchil
+    genre: diary
+    pssTom: 54
+    pages: '33'
+    date: '1900-08-15 (OS)'
+    extract: extracts/v54_033_035_1900_08_15.txt
+    quoteRu: 'писал Труп — окончил. И втягиваюсь все дальше и дальше.'
+    quoteEn: '(working English) "…wrote Corpse — finished it. And I am drawn further and further in." (Diary, 15 Aug 1900.)'
+    significance: 'Completion of the first full draft, and the danger he feels in it: the work pulls him in — exactly the "frivolous" absorption he will renounce four months later.'
+    facsimile: ''
+  - id: lc-ne-delo-bozhie
+    genre: diary
+    pssTom: 54
+    pages: '35'
+    date: '1900-08-21 (OS)'
+    extract: extracts/v54_035_037_1900_08_21.txt
+    quoteRu: 'Писал драму и недоволен ею совсем. Нет сознания, что это — дело Божие'
+    quoteEn: '(working English) "Wrote the drama and am quite dissatisfied with it. No sense that this is God''s work…" (Diary, 21 Aug 1900.)'
+    significance: 'The post–What Is Art? conscience already at work six days after finishing: a play is not "God''s work." The seed of the abandonment is internal, not the Gimer plea.'
+    facsimile: ''
+  - id: lc-predsmertnye-draft
+    genre: diary
+    pssTom: 54
+    pages: '42'
+    date: '1900-09-07 (OS)'
+    extract: extracts/v54_039_042_1900_09_07.txt
+    quoteRu: 'а может быть я ошибся. Ну да чтò сделано, то сделано. Несите.'
+    quoteEn: '(working English) "…and perhaps I was mistaken. But what''s done is done. Carry me." (Diary draft for Fedya''s dying words, 7 Sept 1900.)'
+    significance: 'A drafted ending Tolstoy did NOT keep — Fedya dying in doubt. The finished text replaces it with the serene "Как хорошо… Как хорошо." A keystone redaction visible in the diary.'
+    facsimile: ''
+  - id: lc-nemirovich
+    genre: diary
+    pssTom: 54
+    pages: '48'
+    date: '1900-10-16 (OS)'
+    extract: extracts/v54_048_049_1900_10_16.txt
+    quoteRu: 'Немирович Данченко был о драме. А у меня к ней охота прошла.'
+    quoteEn: '(working English) "Nemirovich-Danchenko came about the drama. But my appetite for it has gone." (Diary, 16 Oct 1900.)'
+    significance: 'The Moscow Art Theatre''s director comes to Yasnaya Polyana to ask for the play; Tolstoy''s desire for it is already dead — eleven years before the MAT would in fact premiere it.'
+    facsimile: ''
+  - id: lc-brosit
+    genre: diary
+    pssTom: 54
+    pages: '65'
+    date: '1900-11-28 (OS)'
+    extract: extracts/v54_065_066_1900_11_28.txt
+    quoteRu: 'Драму Труп надо бросить. А если писать, то ту драму и продолжение Воскресенья.'
+    quoteEn: '(working English) "The drama Corpse must be dropped. And if I write, then that [other] drama and the continuation of Resurrection." (Diary, 28 Nov 1900.)'
+    significance: 'THE abandonment, in his own hand — and the reason he names is not the Gimers but the pull of the people''s suffering (the entry opens recalling "the life of the people: need, humiliation, and our guilt" after reading Novikov''s article). The conscience-turn, dated.'
+    facsimile: ''
+  - id: lc-narod-vina
+    genre: diary
+    pssTom: 54
+    pages: '65'
+    date: '1900-11-28 (OS)'
+    extract: extracts/v54_065_066_1900_11_28.txt
+    quoteRu: 'вспомнил то, чтò забыл: жизнь народа: нужду, унижение и наши вины.'
+    quoteEn: '(working English) "…remembered what I had forgotten: the life of the people — their need, humiliation, and our guilt." (Diary, 28 Nov 1900, the entry that drops the play.)'
+    significance: 'The actual content of the conscience-turn: the people''s need, not the Gimers'' fear, is what makes the drama feel like a frivolous distraction.'
+    facsimile: ''
+  - id: lc-kreutzer-lineage
+    genre: diary
+    pssTom: 54
+    pages: '72'
+    date: '1900-12-15 (OS)'
+    extract: extracts/v54_071_073_1900_12_15.txt
+    quoteRu: 'я писал без всякой думы о проповеди людям, о пользе'
+    quoteEn: '(working English) "…[The Kreutzer Sonata, The Power of Darkness, even Resurrection] I wrote with no thought of preaching to people, of usefulness… and yet [The Kreutzer Sonata especially] did much good. Is it not so with Corpse too?" (Diary, 15 Dec 1900.)'
+    significance: 'Tolstoy himself places The Living Corpse in the lineage of Kreutzer / Power of Darkness / Resurrection — and wonders if it, too, might "do good." His own answer to the "about-face from Kreutzer" reading: continuity, not reversal.'
+    facsimile: ''
+  - id: lc-sochinitelstvo
+    genre: diary
+    pssTom: 54
+    pages: '79'
+    date: '1900-12-31 (OS)'
+    extract: extracts/v54_079_079_1900_12_31.txt
+    quoteRu: 'Хотел так переделать свою драму. Да видно, мое сочинительство кончилось.'
+    quoteEn: '(working English) "I wanted to rework my drama like that. But evidently my fiction-writing is over." (Diary, 31 Dec 1900.)'
+    significance: 'Year''s end: a fresh dramaturgical idea (each character should speak as long as his nature dictates) — and the verdict that his art-making is finished. The play is abandoned to that finality.'
+    facsimile: ''
+
+  # ---- Genesis & abandonment: letters (Tom 72, Tom 88) ----
+  - id: lc-posse
+    genre: letter
+    pssTom: 72
+    pages: '482'
+    date: '1900-10-06 (OS)'
+    addressee: 'V. A. Posse (editor of the journal Жизнь)'
+    extract: extracts/v72_397_V_A_Posse.txt
+    quoteRu: 'Я нетолько не обещал драмы, которой у меня нет, но и ничего не обещал.'
+    quoteEn: '(working English) "I not only did not promise a drama I do not have — I promised nothing at all." (Letter to V. A. Posse, 6 Oct 1900.)'
+    significance: 'The refusals begin: as the rumour leaks, editors and theatres ask for the play; Tolstoy denies he even has one. He guards the unfinished text.'
+    facsimile: ''
+  - id: lc-chertkov-baluyas
+    genre: letter
+    pssTom: 88
+    pages: '216'
+    date: '1900-12-12 (OS)'
+    addressee: 'V. G. Chertkov'
+    extract: extracts/v88_607_chertkov_dec12.txt
+    quoteRu: 'шутя, или, вернее, балуясь, я написал начерно'
+    quoteEn: '(working English) "…[the drama] I wrote in jest, or rather, fooling about, as a rough draft… but I not only do not think now of finishing and printing it, I very much doubt I ever shall." (Letter to Chertkov, 12 Dec 1900.)'
+    significance: 'The most-quoted self-dismissal. Read with the diary, "балуясь" is not modesty but the conscience-verdict: the play was play, and "so much more is needful before my conscience."'
+    facsimile: ''
+  - id: lc-chertkov-legkomysl
+    genre: letter
+    pssTom: 88
+    pages: '217'
+    date: '1900-12-12 (OS)'
+    addressee: 'V. G. Chertkov'
+    extract: extracts/v88_607_chertkov_dec12.txt
+    quoteRu: 'Это поощряло бы меня писать легкомысленное.'
+    quoteEn: '(working English) "It would have encouraged me to write frivolous things." (Letter to Chertkov, 12 Dec 1900 — on abandoning a planned literary venture.)'
+    significance: 'The clearest statement of the art-vs-conscience tension that abandoned the play: fiction-for-amusement is "frivolous" (легкомысленное) and to be resisted.'
+    facsimile: ''
+
+  # ---- Prototypes & abandonment: PSS commentary (Tom 34, История писания) ----
+  - id: lc-comm-davydov
+    genre: commentary
+    pssTom: 34
+    pages: '533'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'В основу сюжета драмы «Живой труп» положены обстоятельства судебного дела супругов Н. С. и Е. П. Гимер'
+    quoteEn: '(working English) "The plot of the drama The Living Corpse is founded on the circumstances of the court case of the spouses N. S. and E. P. Gimer…" (PSS Tom 34 commentary; the case was told to Tolstoy by N. V. Davydov, chairman of the Moscow District Court.)'
+    significance: 'The prototype edge, documented: a real false-suicide/bigamy case, supplied by Tolstoy''s judge-friend Davydov — the legal-circle source that also gave him Resurrection (via Koni).'
+    facsimile: ''
+  - id: lc-comm-protasovy
+    genre: commentary
+    pssTom: 34
+    pages: '533'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'послуживших прототипами Федора Васильевича и Елизаветы Андреевны Протасовых'
+    quoteEn: '(working English) "…[N. S. and E. P. Gimer], who served as the prototypes of Fyodor Vasilyevich and Elizaveta Andreevna Protasov." (PSS Tom 34 commentary.)'
+    significance: 'The named character→person mapping for the two leads: Fedya ← N. S. Gimer; Liza ← E. P. Gimer. Documented, not conjectured.'
+    facsimile: ''
+  - id: lc-comm-simon
+    genre: commentary
+    pssTom: 34
+    pages: '533'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'многие черты которой воплощены в образе матери Лизы Протасовой, Анны Павловны.'
+    quoteEn: '(working English) "…[E. A. Simon] many of whose traits are embodied in the figure of Liza Protasova''s mother, Anna Pavlovna." (PSS Tom 34 commentary.)'
+    significance: 'Anna Pavlovna ← E. A. Simon, the real mother (whom Tolstoy knew; she often visited the Tolstoys 1887–89, and her son lived at Yasnaya Polyana). A documented prototype.'
+    facsimile: ''
+  - id: lc-comm-ivanov
+    genre: commentary
+    pssTom: 34
+    pages: '534'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'послужил прототипом Ивана Петровича Александрова.'
+    quoteEn: '(working English) "[Tolstoy''s copyist Aleksandr Petrovich Ivanov, a sick man who suffered from drinking bouts, a frequent visitor of the Khitrovka flophouse] served as the prototype of Ivan Petrovich Aleksandrov." (PSS Tom 34 commentary.)'
+    significance: 'The "genius" (гений) of the tavern ← A. P. Ivanov, Tolstoy''s own copyist. The same Ivanov who, drunk at Khitrovka, leaked the plot to a reporter — the prototype who helped doom the play.'
+    facsimile: ''
+  - id: lc-comm-ofrosimov
+    genre: commentary
+    pssTom: 34
+    pages: '534'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'В образе Афремова (в черновых редакциях — Афросимова) изображен Александр Павлович Офросимов'
+    quoteEn: '(working English) "In the figure of Afremov (in the drafts, Afrosimov) is depicted Aleksandr Pavlovich Ofrosimov [1846–1921, a rich Tula landowner, neighbour and acquaintance of the Tolstoys, a great lover of gypsy singing]." (PSS Tom 34 commentary.)'
+    significance: 'Afremov ← A. P. Ofrosimov, a Tula neighbour. A documented minor-character prototype (with the gypsy-song milieu drawn from life).'
+    facsimile: ''
+  - id: lc-comm-gimer-plea
+    genre: commentary
+    pssTom: 34
+    pages: '542'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'к Толстому пришел сын Н. С. Гимера и просил от имени матери не публиковать драму'
+    quoteEn: '(working English) "…N. S. Gimer''s son came to Tolstoy and asked, on his mother''s behalf, not to publish the drama [lest it revive interest in the dormant court case and lead to her imprisonment]." (PSS Tom 34 commentary.)'
+    significance: 'The documented "wound the living" pressure: after the leak (Nov 1900), the real family begged Tolstoy not to publish. Real and immediate — but, per the commentary, one cause "также" (also), alongside the conscience-turn.'
+    facsimile: ''
+  - id: lc-comm-gnedich
+    genre: commentary
+    pssTom: 34
+    pages: '540'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'Я в «Плодах просвещения» был, как автор, на стороне мужиков'
+    quoteEn: '(working English) "In The Fruits of Enlightenment I was, as author, on the side of the peasants — but on stage they suddenly turned out to be the same rogues and cheats as [the rest]…" (Tolstoy to P. P. Gnedich, refusing the play for the imperial theatres, autumn 1900; reported in Gnedich''s memoirs.)'
+    significance: 'Tolstoy''s own stated distrust of the stage — the gap between text and performance — drawn from the Fruits of Enlightenment experience. A reason for withholding rooted in his theory of art, cross-linking the two drama dives.'
+    facsimile: ''
+  - id: lc-comm-koni-1904
+    genre: commentary
+    pssTom: 34
+    pages: '541'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'Нет, это читать не стоит: оно не кончено, да и вообще мне не нравится, и я его совсем бросил'
+    quoteEn: '(working English) "No, it''s not worth reading: it''s not finished, and anyway I don''t like it, and I''ve dropped it altogether." (Tolstoy to A. F. Koni, spring 1904, refusing to let him read the play; reported by Koni.)'
+    significance: 'Tolstoy''s own later verdict, four years on: not finished, disliked, dropped. The author''s settled judgment — to the very jurist whose legal world the play indicts.'
+    facsimile: ''
+  - id: lc-comm-publication
+    genre: commentary
+    pssTom: 34
+    pages: '542'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'Впервые драма была опубликована в газете «Русское слово» 23 сентября 1911 г.'
+    quoteEn: '(working English) "The drama was first published in the newspaper Russkoe Slovo on 23 September 1911 [OS], and simultaneously as a separate edition under V. G. Chertkov''s editorship." (PSS Tom 34 commentary.)'
+    significance: 'Publication facts: posthumous, 23 Sept (OS) 1911, Russkoe Slovo + a Chertkov/Sytin edition — within a year of Tolstoy''s death and days before the MAT premiere.'
+    facsimile: ''
+  - id: lc-comm-uncle-vanya
+    genre: commentary
+    pssTom: 34
+    pages: '534'
+    date: '1952'
+    extract: extracts/v34_533_543_history.txt
+    quoteRu: 'после просмотра пьесы А. П. Чехова «Дядя Ваня»'
+    quoteEn: '(working English) "…work on the play was begun only in January 1900, after seeing A. P. Chekhov''s play Uncle Vanya at the Moscow Art Theatre." (PSS Tom 34 commentary.)'
+    significance: 'Confirms the Uncle Vanya trigger and the January 1900 start; read with the diary (lc-uncle-vanya), the reaction was indignation, not admiration.'
+    facsimile: ''
+
+  # ---- Redactions: variants & plans (Tom 34) ----
+  - id: lc-var-kryukova
+    genre: work
+    pssTom: 34
+    pages: '411'
+    date: '1900'
+    extract: extracts/v34_411_483_variants.txt
+    quoteRu: 'сторонница свободной любви, весь интерес жизни всех людей полагающая в влюбленьи.'
+    quoteEn: '(working English) "…an advocate of free love, who places the whole interest of everyone''s life in being in love." (Description of Marya Vasilyevna Kryukova, the lead figure of the first redaction, var. № 1.)'
+    significance: 'KEYSTONE REDACTION. The first draft (titled simply «Труп») opened not with Liza''s mother and the moral frame but with Kryukova, a 30-ish "advocate of free love." Tolstoy replaced this framing figure with the conventional mother Anna Pavlovna — shifting the play''s moral centre of gravity. (The PSS restores Kryukova in Act V, picture 2, where earlier editions had wrongly substituted Anna Pavlovna.)'
+    facsimile: ''
+  - id: lc-plan-predsmertnye
+    genre: work
+    pssTom: 34
+    pages: '410'
+    date: '1900'
+    extract: extracts/v34_407_410_plans.txt
+    quoteRu: 'Какая странная вещь жизнь! Зачем всё это так?'
+    quoteEn: '(working English) "What a strange thing life is! Why is it all like this?" (Draft of Fedya''s dying monologue, plan № 5 / ms. № 4 — cut from the final text.)'
+    significance: 'A cut metaphysical death-speech — Fedya philosophising as he dies ("…how many different ways it all could have been"). Tolstoy struck it for the bare "Как хорошо." A redaction that shows the play moving from talk toward gesture.'
+    facsimile: ''
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITY ROUTING MAP — the plan for the (separate, later) LLM wiki ingestion step.
+# vaultStatus checked against website/src/wiki (16 files; only Chertkov + Birukoff exist).
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+
+  # --- Characters (fictional; tiering rule: principal/titular OR documented prototype OR recurs) ---
+  - name: 'Fyodor (Fedya) Protasov'
+    wikiType: character
+    wikilinkTarget: 'Fyodor Protasov'
+    vaultStatus: missing
+    role: 'protagonist / titular — "the living corpse"'
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [lc-ne-lgat, lc-suicide-note, lc-ya-trup, lc-tri-vybora, lc-trup-final, lc-comm-protasovy]
+    ingestionPriority: 1
+    dependsOn: ['N. S. Gimer']
+    prototypes:
+      - person: ''
+        name: 'N. S. Gimer'
+        basis: editorial
+        certainty: documented
+        note: 'PSS Tom 34 commentary names N. S. Gimer as the prototype of Fyodor Protasov; the real first husband who wrote a false suicide letter.'
+        sourceId: jubilee-edition
+  - name: 'Liza (Elizaveta Andreevna) Protasova'
+    wikiType: character
+    wikilinkTarget: 'Liza Protasova'
+    vaultStatus: missing
+    role: 'principal — Fedya''s wife'
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [lc-comm-protasovy]
+    ingestionPriority: 2
+    dependsOn: ['E. P. Gimer']
+    prototypes:
+      - person: ''
+        name: 'E. P. Gimer'
+        basis: editorial
+        certainty: documented
+        note: 'PSS Tom 34 commentary names E. P. Gimer as the prototype of Liza Protasova.'
+        sourceId: jubilee-edition
+  - name: 'Viktor Karenin'
+    wikiType: character
+    wikilinkTarget: 'Viktor Karenin'
+    vaultStatus: missing
+    role: 'principal — the honourable man Liza marries'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-svyazhut]
+    ingestionPriority: 2
+    dependsOn: []
+    prototypes:
+      - person: ''
+        name: 'S. I. Chistov'
+        basis: editorial
+        certainty: conjectured
+        note: 'NOT named in the PSS commentary. The real Liza-figure (E. P. Gimer) married S. I. Chistov as her later husband; the structural parallel is suggestive but the PSS asserts no portrait. See needsReview.'
+        sourceId: ''
+  - name: 'Masha (the gypsy singer)'
+    wikiType: character
+    wikilinkTarget: 'Masha (The Living Corpse)'
+    vaultStatus: missing
+    role: 'principal — the gypsy singer Fedya loves; proposes the fake suicide'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-volya, lc-chernyshevsky]
+    ingestionPriority: 2
+    dependsOn: []
+    prototypes:
+      - person: ''
+        name: '(unnamed; gypsy-choir milieu)'
+        basis: autobiographical
+        certainty: conjectured
+        note: 'No prototype named in the PSS. The Moscow gypsy-choir world was real in Tolstoy''s life (his brother Sergei married the gypsy singer M. M. Shishkina; Tolstoy frequented the choirs in youth). Milieu, not a documented individual model. See needsReview.'
+        sourceId: ''
+  - name: 'Anna Pavlovna'
+    wikiType: character
+    wikilinkTarget: 'Anna Pavlovna (The Living Corpse)'
+    vaultStatus: missing
+    role: 'secondary — Liza''s mother; carries a documented prototype'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-simon]
+    ingestionPriority: 3
+    dependsOn: ['E. A. Simon']
+    prototypes:
+      - person: ''
+        name: 'E. A. Simon'
+        basis: editorial
+        certainty: documented
+        note: 'PSS Tom 34 commentary: many of E. A. Simon''s traits are embodied in Anna Pavlovna.'
+        sourceId: jubilee-edition
+  - name: 'Ivan Petrovich Aleksandrov'
+    wikiType: character
+    wikilinkTarget: 'Ivan Petrovich Aleksandrov'
+    vaultStatus: missing
+    role: 'secondary — the drink-ruined "genius" (гений); carries a documented prototype who also leaked the plot'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-ivanov]
+    ingestionPriority: 3
+    dependsOn: ['Aleksandr Petrovich Ivanov']
+    prototypes:
+      - person: ''
+        name: 'Aleksandr Petrovich Ivanov'
+        basis: editorial
+        certainty: documented
+        note: 'PSS Tom 34 commentary: Tolstoy''s copyist A. P. Ivanov is the prototype; the same Ivanov leaked the plot to a reporter at Khitrovka (Nov 1900).'
+        sourceId: jubilee-edition
+  - name: 'Afremov'
+    wikiType: character
+    wikilinkTarget: 'Afremov'
+    vaultStatus: missing
+    role: 'minor — Fedya''s carousing friend; borderline node (documented prototype)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-ofrosimov]
+    ingestionPriority: 3
+    dependsOn: []
+    prototypes:
+      - person: ''
+        name: 'A. P. Ofrosimov'
+        basis: editorial
+        certainty: documented
+        note: 'PSS Tom 34 commentary: Afremov (draft Afrosimov) depicts the Tula neighbour A. P. Ofrosimov (1846–1921). Borderline minor character; see needsReview on whether to fold.'
+        sourceId: jubilee-edition
+
+  # --- Persons (real: the prototypes & the witness network) ---
+  - name: 'N. S. Gimer'
+    wikiType: person
+    wikilinkTarget: 'N. S. Gimer'
+    vaultStatus: missing
+    role: 'prototype of Fedya Protasov; the real first husband; visited Tolstoy and (via his son) asked him not to publish'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-protasovy, lc-comm-gimer-plea]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: 'E. P. Gimer'
+    wikiType: person
+    wikilinkTarget: 'E. P. Gimer'
+    vaultStatus: missing
+    role: 'prototype of Liza Protasova; copied manuscripts for Tolstoy and Biryukov; Tolstoy advised her not to leave her husband (1887)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-protasovy, lc-comm-davydov]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: 'E. A. Simon'
+    wikiType: person
+    wikilinkTarget: 'E. A. Simon'
+    vaultStatus: missing
+    role: 'prototype of Anna Pavlovna; E. P. Gimer''s mother; often at the Tolstoys'' 1887–89'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-simon]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'N. V. Davydov'
+    wikiType: person
+    wikilinkTarget: 'Nikolai Davydov'
+    vaultStatus: missing
+    role: 'chairman of the Moscow District Court; Tolstoy''s friend who supplied the Gimer case (and earlier supplied/directed the Fruits of Enlightenment material and its first staging)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-davydov]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: 'A. F. Koni'
+    wikiType: person
+    wikilinkTarget: 'Anatoly Koni'
+    vaultStatus: missing
+    role: 'jurist; intervened in the real Gimer case (commuting exile to imprisonment); wrote the essay «Живой труп в действительности» (1911); Tolstoy refused to let him read the play (1904). Same legal-circle source as Resurrection.'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-koni-1904]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: 'Aleksandr Petrovich Ivanov'
+    wikiType: person
+    wikilinkTarget: 'Aleksandr Ivanov (copyist)'
+    vaultStatus: missing
+    role: 'Tolstoy''s copyist; prototype of Aleksandrov; leaked the plot to a reporter (Nov 1900); co-copied the base manuscript (ms. № 14)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-ivanov]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'Vladimir Nemirovich-Danchenko'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Nemirovich-Danchenko'
+    vaultStatus: missing
+    role: 'co-founder/director of the Moscow Art Theatre; came to Yasnaya Polyana (Oct 1900) to ask for the play; principal director of the 1911 premiere'
+    sources: [jubilee-edition, wikidata]
+    evidenceRefs: [lc-nemirovich]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: 'Konstantin Stanislavski'
+    wikiType: person
+    wikilinkTarget: 'Konstantin Stanislavski'
+    vaultStatus: missing
+    role: 'co-director of the 1911 MAT premiere; played Prince Abrezkov'
+    sources: [wikidata]
+    evidenceRefs: [lc-comm-publication]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: 'Ivan Moskvin'
+    wikiType: person
+    wikilinkTarget: 'Ivan Moskvin'
+    vaultStatus: missing
+    role: 'MAT actor; played Fedya Protasov in the 1911 premiere'
+    sources: [wikidata]
+    evidenceRefs: [lc-comm-publication]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'Anton Chekhov'
+    wikiType: person
+    wikilinkTarget: 'Anton Chekhov'
+    vaultStatus: missing
+    role: 'author of Uncle Vanya, the MAT production of which provoked Tolstoy into beginning the play (Jan 1900)'
+    sources: [jubilee-edition, wikidata]
+    evidenceRefs: [lc-uncle-vanya, lc-comm-uncle-vanya]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'Vladimir Chertkov'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Chertkov'
+    vaultStatus: exists
+    role: 'recipient of the "балуясь" letter (12 Dec 1900); editor of the posthumous first edition (1911)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-chertkov-baluyas, lc-chertkov-legkomysl, lc-comm-publication]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: 'Pavel Biryukov'
+    wikiType: person
+    wikilinkTarget: 'Pavel Birukoff'
+    vaultStatus: exists
+    role: 'gave E. P. Gimer manuscripts to copy; Tolstoy''s 11–12 Oct 1887 letter to him advised E. P. Gimer not to leave her husband'
+    sources: [jubilee-edition, birukoff-biography]
+    evidenceRefs: [lc-comm-davydov]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'V. A. Posse'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Posse'
+    vaultStatus: missing
+    role: 'editor of the journal Жизнь; asked for the play; Tolstoy refused (Oct 1900)'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-posse]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # --- Group (real-world community central to the play's positive pole) ---
+  - name: 'Moscow gypsy choirs (Roma singers)'
+    wikiType: group
+    wikilinkTarget: 'Moscow Gypsy Choirs'
+    vaultStatus: missing
+    role: 'the real Roma choral milieu of Moscow — the play''s image of воля (boundless aliveness); Masha sings in it'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-volya]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # --- Event ---
+  - name: 'Moscow Art Theatre premiere of The Living Corpse (1911)'
+    wikiType: event
+    wikilinkTarget: 'Premiere of The Living Corpse (1911)'
+    vaultStatus: missing
+    role: 'the posthumous premiere, 23 Sept (OS) / 6 Oct (NS) 1911, MAT — the reception story is the staging story'
+    sources: [wikidata]
+    evidenceRefs: [lc-comm-publication]
+    ingestionPriority: 2
+    dependsOn: ['Vladimir Nemirovich-Danchenko', 'Konstantin Stanislavski']
+  - name: 'The Gimer court case (1897 trial)'
+    wikiType: event
+    wikilinkTarget: 'The Gimer case'
+    vaultStatus: missing
+    role: 'the real false-suicide/bigamy affair (sentencing 8 Dec 1897) that is the play''s factual source'
+    sources: [jubilee-edition]
+    evidenceRefs: [lc-comm-davydov]
+    ingestionPriority: 2
+    dependsOn: ['N. S. Gimer', 'E. P. Gimer']
+
+  # --- Institution ---
+  - name: 'Moscow Art Theatre'
+    wikiType: institution
+    wikilinkTarget: 'Moscow Art Theatre'
+    vaultStatus: missing
+    role: 'the theatre whose Uncle Vanya provoked the play and which premiered it in 1911'
+    sources: [wikidata]
+    evidenceRefs: [lc-nemirovich, lc-comm-uncle-vanya]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # --- Adaptations (afterlife) ---
+  - name: 'Redemption (1918 Broadway production)'
+    wikiType: adaptation
+    wikilinkTarget: 'Redemption (1918 play)'
+    vaultStatus: missing
+    role: 'Arthur Hopkins''s Broadway staging (Plymouth Theatre, 3 Oct 1918), John Barrymore as Fedya; 204 performances; the English title "Redemption"'
+    sources: [wikidata]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: 'The Living Corpse (1929 film, dir. Fyodor Otsep)'
+    wikiType: adaptation
+    wikilinkTarget: 'The Living Corpse (1929 film)'
+    vaultStatus: missing
+    role: 'German-Soviet silent film; Vsevolod Pudovkin as Fedya'
+    sources: [wikidata]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — local cache in visuals/ (git-ignored). All PD; usable for publication.
+# 12 files downloaded; gaps recorded in needsReview / visuals work-order.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: tolstoy-kazakov-1900
+    type: portrait-painting
+    subject: 'Leo Tolstoy, oil portrait by I. S. Kazakov, Odessa 1900 (the composition year)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: lc-uncle-vanya
+    holding: 'Odesa Art Museum'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg'
+    localPath: visuals/commons-tolstoy-kazakov-1900.jpg
+    note: 'Made in the exact composition year.'
+  - id: tolstoy-gorky-1900
+    type: photograph
+    subject: 'Tolstoy with Maxim Gorky at Yasnaya Polyana, 1900 (photo: S. A. Tolstaya)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: lc-rabstvo
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:1900_yasnaya_polyana-gorky_and_tolstoy.jpg'
+    localPath: visuals/commons-tolstoy-gorky-1900.jpg
+    note: 'Same year; Sofia Tolstaya, photographer.'
+  - id: tolstoy-makovitsky-c1900
+    type: photograph
+    subject: 'Tolstoy with Dr Dušan Makovický, c. 1900 (photo: V. Chertkov)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: lc-chertkov-baluyas
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Dushan_Makovitsky.JPG'
+    localPath: visuals/commons-tolstoy-makovitsky-c1900.jpg
+    note: 'Chertkov-circle provenance.'
+  - id: stanislavski-abrezkov-1911
+    type: production-still
+    subject: 'Konstantin Stanislavski as Prince Abrezkov, MAT premiere, 1911'
+    relatedEntity: 'Moscow Art Theatre premiere of The Living Corpse (1911)'
+    relatedEvidence: lc-comm-publication
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Prince_Abrezkov_in_Tolstoy%27s_The_Living_Corpse_1911.jpg'
+    localPath: visuals/commons-stanislavski-prince-abrezkov-1911.jpg
+    note: 'The one confirmed Commons scene photograph of the 1911 MAT production.'
+  - id: zhivoy-trup-1911-film
+    type: production-still
+    subject: 'Promotional photograph, the 1911 Russian film Живой труп (photo: K. Mauro)'
+    relatedEntity: 'The Living Corpse (1929 film, dir. Fyodor Otsep)'
+    relatedEvidence: ''
+    holding: 'Russian State Catalog / Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D0%B2%D0%BE%D0%B9_%D1%82%D1%80%D1%83%D0%BF,_1911.jpg'
+    localPath: visuals/commons-zhivoy-trup-1911-film.jpg
+    note: 'A 1911 film, separate from the MAT premiere but contemporaneous.'
+  - id: moskvin-1912
+    type: portrait-photograph
+    subject: 'Ivan Moskvin (played Fedya Protasov), portrait by K. A. Fisher, 1912'
+    relatedEntity: 'Ivan Moskvin'
+    relatedEvidence: lc-comm-publication
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Ivan_Moskvin_1912.jpg'
+    localPath: visuals/commons-moskvin-1912.jpg
+    note: 'Closest solo portrait to the premiere year; no confirmed photo of Moskvin AS Fedya on Commons.'
+  - id: koni-repin-1898
+    type: portrait-painting
+    subject: 'A. F. Koni, oil portrait by Ilya Repin, 1898'
+    relatedEntity: 'A. F. Koni'
+    relatedEvidence: lc-comm-koni-1904
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Koni_by_Repin.jpg'
+    localPath: visuals/commons-koni-repin-1898.jpg
+    note: ''
+  - id: koni-tolstoy-together
+    type: photograph
+    subject: 'A. F. Koni and Leo Tolstoy together'
+    relatedEntity: 'A. F. Koni'
+    relatedEvidence: lc-comm-koni-1904
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Koni_A._F._and_Tolstoy_L._N..jpg'
+    localPath: visuals/commons-koni-tolstoy-together.jpg
+    note: 'The legal-circle source visualised — Koni with Tolstoy.'
+  - id: nemirovich-danchenko-1915
+    type: portrait-painting
+    subject: 'V. I. Nemirovich-Danchenko, oil by Boris Kustodiev, 1915'
+    relatedEntity: 'Vladimir Nemirovich-Danchenko'
+    relatedEvidence: lc-nemirovich
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Vladimir_Nemirovich-Danchenko_(Kustodiev,_1915).jpg'
+    localPath: visuals/commons-nemirovich-danchenko-kustodiev-1915.jpg
+    note: ''
+  - id: stanislavski-serov
+    type: portrait-painting
+    subject: 'K. S. Stanislavski, portrait by Valentin Serov'
+    relatedEntity: 'Konstantin Stanislavski'
+    relatedEvidence: lc-comm-publication
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Stanislavsky.jpg'
+    localPath: visuals/commons-stanislavski-serov.jpg
+    note: ''
+  - id: redemption-nyt-1918
+    type: newspaper-clipping
+    subject: 'New York Times notice of Redemption (Broadway), 4 Oct 1918, John Barrymore'
+    relatedEntity: 'Redemption (1918 Broadway production)'
+    relatedEvidence: ''
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Redemption_NYT_10-4-18.jpg'
+    localPath: visuals/commons-redemption-nyt-1918.jpg
+    note: 'The English-title afterlife.'
+  - id: living-corpse-1929-poster
+    type: film-poster
+    subject: 'Soviet poster for the 1929 film Живой труп (dir. Otsep; design: G. Borisov)'
+    relatedEntity: 'The Living Corpse (1929 film, dir. Fyodor Otsep)'
+    relatedEvidence: ''
+    holding: 'Wikimedia Commons'
+    archiveId: ''
+    access: web
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:The_Living_Corpse_(1929)_poster.jpg'
+    localPath: visuals/commons-living-corpse-1929-poster.jpg
+    note: ''
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Ground in the primary record first; attribute, don't assert.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    The play is little-treated by the major English biographers as a text, but
+    well-served on two fronts. (1) The 1911 Moscow Art Theatre premiere is the
+    reception event: directed by Nemirovich-Danchenko with Stanislavski (who
+    played Abrezkov), Ivan Moskvin as Fedya — an immediate success that travelled
+    to Berlin, Vienna, Paris, London, and was rivalled within days by Meyerhold's
+    Alexandrinsky staging in Petersburg. (2) Andrew Wachtel (PMLA 1992) is the
+    substantive scholarly article: he reads the fake-suicide/resurrection knot as
+    a "cultural paradigm," tracing its subtexts to the Gimer trial, a polemic with
+    Chernyshevsky's What Is to Be Done?, and a dialogue with Nikolai Fedorov, and
+    its issue to Mayakovsky, Erdman, Nabokov, Bulgakov. Simmons (1968) groups the
+    play with Resurrection as the legal-circle court-case works and resists the
+    "moral didacticism disfigures it" reading. On the abandonment, the standard
+    account (Simmons; Russian Wikipedia; the 12 Dec 1900 Chertkov letter) gives the
+    Gimer family's plea as the leading cause; the deeper What Is Art? / publicistic
+    reading is, in the surveyed scholarship, only inferential — which is where the
+    diary supplies the missing primary grounding. The Sofia-centred /
+    Last-Station frame is not a factor here; the relevant mainstream lens is the
+    "about-face from Kreutzer" reading (Kommersant 2024), which the primary record
+    complicates.
+  triangulation:
+    - evidenceRef: lc-chernyshevsky
+      conventionalView: 'Wachtel (1992) argues The Living Corpse is structured by a polemic with Chernyshevsky''s What Is to Be Done? (the staged-suicide motif), among four subtexts.'
+      relation: confirms
+      source: 'Wachtel, Andrew. "Resurrection à la Russe: Tolstoy''s The Living Corpse as Cultural Paradigm." PMLA 107:2 (1992), 261–273.'
+    - evidenceRef: lc-chernyshevsky
+      conventionalView: 'The intertext is argued thematically by scholars; that it is named INSIDE the play (Masha cites «Что делать?»/«Рахманов») is not usually foregrounded.'
+      relation: extends
+      source: 'Primary text, Act IV (lc-chernyshevsky); cf. Wachtel (1992).'
+    - evidenceRef: lc-comm-davydov
+      conventionalView: 'Simmons (1968) pairs The Living Corpse with Resurrection as the two works built from court cases supplied by Tolstoy''s legal circle (Davydov here; Koni for Resurrection).'
+      relation: confirms
+      source: 'Simmons, Ernest J. Introduction to Tolstoy''s Writings (1968), ch. on the dramatic writings.'
+    - evidenceRef: lc-suicide-note
+      conventionalView: 'Pre-1917 Orthodox divorce law placed dissolution in the Church consistories; the only practical ground was proven adultery, requiring perjured testimony — divorce rate ~0.0038% (1913). The play dramatises this trap.'
+      relation: confirms
+      source: 'Russia Beyond, "The trouble with divorce in Old Russia" (2019); UNI ScholarWorks digest of pre-1917 divorce law.'
+    - evidenceRef: lc-kreutzer-lineage
+      conventionalView: 'A popular reading (e.g. Kommersant 2024) frames The Living Corpse as an "about-face" from The Kreutzer Sonata: KS condemns marriage/sexuality itself, while the Corpse blames only the legal/ecclesiastical system.'
+      relation: complicates
+      source: 'Kommersant (2024), kommersant.ru/doc/7166441; tested against Tolstoy''s diary, 15 Dec 1900 (lc-kreutzer-lineage).'
+    - evidenceRef: lc-brosit
+      conventionalView: 'The standard account gives the Gimer family''s plea (and distaste for revision) as the leading reason Tolstoy abandoned the play.'
+      relation: complicates
+      source: 'Simmons (1968); Russian Wikipedia; PSS Tom 34 commentary — which itself frames the plea as "also" (также) a cause. Tested against the diary (lc-brosit, lc-ne-delo-bozhie, lc-sochinitelstvo).'
+    - evidenceRef: lc-brosit
+      conventionalView: 'The What Is Art? / publicistic-turn reading of the abandonment is, in the surveyed scholarship, inferential and unsourced to Tolstoy''s own words.'
+      relation: extends
+      source: 'Scholarship gap flagged in the reception sweep; the corpus supplies the grounding (diary 21 Aug, 28 Nov, 31 Dec 1900; Chertkov 12 Dec 1900).'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORD — record-creating proposal (no works/ record exists). READ-ONLY to works/.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  recordPath: 'website/src/works/plays/drama/the-living-corpse/The Living Corpse.md'
+  workId: 'the-living-corpse'
+  fields:
+    - field: id
+      value: 'the-living-corpse'
+      evidenceRefs: []
+      source: 'derived (genre/category path)'
+      confidence: high
+      note: 'Mirrors website/src/works/plays/drama/the-power-of-darkness/.'
+    - field: recordStatus
+      value: 'draft'
+      evidenceRefs: []
+      source: 'dive default'
+      confidence: high
+      note: ''
+    - field: titleEn
+      value: 'The Living Corpse'
+      evidenceRefs: []
+      source: 'standard English title'
+      confidence: high
+      note: 'Most common scholarly title; "Redemption" and "The Man Who Was Dead" are theatrical/translation variants (see titleAlternatives).'
+    - field: titleRu
+      value: 'Живой труп'
+      evidenceRefs: [lc-comm-davydov, lc-comm-publication]
+      source: 'PSS Tom 34'
+      confidence: high
+      note: ''
+    - field: titleAlternatives
+      value: '[{title: "Труп", type: working, language: ru}, {title: "The Man Who Was Dead", type: translation, language: en}, {title: "Redemption", type: translation, language: en}, {title: "The Live Corpse", type: translation, language: en}]'
+      evidenceRefs: [lc-var-kryukova, lc-seed-1897]
+      source: 'PSS Tom 34 (working title «Труп»); reception sweep (English titles)'
+      confidence: high
+      note: '«Труп» (Corpse) was the working title through the drafts; «Живой» added later (ms. № 12). English: "The Man Who Was Dead" (London 1912), "Redemption" (Broadway 1918 / MGM 1930), "The Live Corpse" (literal).'
+    - field: mainCategory
+      value: 'Plays'
+      evidenceRefs: []
+      source: 'derived'
+      confidence: high
+      note: ''
+    - field: subcategory
+      value: 'Drama'
+      evidenceRefs: []
+      source: 'derived'
+      confidence: high
+      note: 'A drama, not a comedy — though conceived in 1897 as a "drama-comedy" (lc-seed-1897).'
+    - field: genre
+      value: 'play'
+      evidenceRefs: []
+      source: 'PSS Tom 34 ("Драма в 6 действиях")'
+      confidence: high
+      note: ''
+    - field: language
+      value: 'ru'
+      evidenceRefs: []
+      source: 'PSS Tom 34'
+      confidence: high
+      note: ''
+    - field: completionStatus
+      value: 'incomplete'
+      evidenceRefs: [lc-comm-koni-1904, lc-sochinitelstvo]
+      source: 'PSS Tom 34 commentary; Tolstoy''s own statements'
+      confidence: high
+      note: 'A complete 6-act/12-scene text exists, but Tolstoy considered it unfinished — revised only Acts I–II of the final copy, and called it "not finished, dropped" (1904).'
+    - field: publishedDuringLifetime
+      value: false
+      evidenceRefs: [lc-comm-publication, lc-chertkov-baluyas]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'Withheld by the author; first published 1911, posthumously.'
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'First published in Russia (Russkoe Slovo + Chertkov/Sytin edition) Sept 1911, after Tolstoy''s death.'
+    - field: dateWritingStarted
+      value: '1900-02-08'
+      evidenceRefs: [lc-uncle-vanya, lc-comm-uncle-vanya]
+      source: 'Diary 27 Jan 1900 (OS); PSS commentary'
+      confidence: high
+      note: 'The конспект (outline) after Uncle Vanya. Seed two years earlier: 29 Dec 1897 (lc-seed-1897). Sustained writing began May 1900.'
+      oldStyle: '1900-01-27'
+      approximate: false
+    - field: dateWritingCompleted
+      value: '1900-08-28'
+      evidenceRefs: [lc-okonchil]
+      source: 'Diary 15 Aug 1900 (OS)'
+      confidence: medium
+      note: 'First full draft finished 15 Aug (OS) 1900. Tolstoy revised Acts I–II to late Oct/early Nov 1900, then abandoned the play unfinished — so "completed" is the first-draft date, not a true completion.'
+      oldStyle: '1900-08-15'
+      approximate: true
+    - field: dateFirstPublished
+      value: '1911-10-06'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'Russkoe Slovo, 23 Sept (OS) 1911 = 6 Oct (NS).'
+      oldStyle: '1911-09-23'
+      approximate: false
+    - field: firstPublishedVenue
+      value: 'Русское слово (Russkoe Slovo)'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'Simultaneously a separate edition ed. V. G. Chertkov (Sytin''s press).'
+    - field: firstPublishedVenueType
+      value: 'newspaper'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: ''
+    - field: dateFirstPublishedInRussia
+      value: '1911-10-06'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'Same event — published in Russia, posthumously.'
+      oldStyle: '1911-09-23'
+      approximate: false
+    - field: firstPublishedInRussiaVenue
+      value: 'Русское слово (Russkoe Slovo)'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: ''
+    - field: firstPublishedInRussiaVenueType
+      value: 'newspaper'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: ''
+    - field: authoringLocations
+      value: 'Moscow (outline, Jan 1900); Pirogovo, Tula gub. (brother S. N. Tolstoy''s estate, ~5–16 May 1900, "wrote two acts"); Yasnaya Polyana (May–Nov 1900, main work + abandonment)'
+      evidenceRefs: [lc-uncle-vanya, lc-rabstvo, lc-okonchil]
+      source: 'Diary 1900 (OS)'
+      confidence: high
+      note: 'Three locations attested in the diary; Pirogovo is where the first two acts were written.'
+    - field: bans
+      value: '[]'
+      evidenceRefs: [lc-comm-publication]
+      source: 'PSS Tom 34 commentary; reception sweep'
+      confidence: medium
+      note: 'No formal ban: the work was WITHHELD BY THE AUTHOR, not censored, and appeared freely (print + MAT + imperial Alexandrinsky stage) in 1911. Distinct from the stage-bans on Power of Darkness / Fruits of Enlightenment. Verify no incidental stage-censorship of the 1911 productions (needsReview).'
+    - field: samizdatCirculation
+      value: false
+      evidenceRefs: [lc-posse, lc-chertkov-baluyas]
+      source: 'PSS Tom 34 commentary'
+      confidence: high
+      note: 'Tolstoy guarded the manuscript and refused all requests; it did not circulate before 1911.'
+    - field: excommunicationRelated
+      value: false
+      evidenceRefs: []
+      source: 'derived'
+      confidence: high
+      note: ''
+    - field: censorshipNotes
+      value: 'Not banned. The play remained unpublished 1900–1911 because Tolstoy himself withheld it — partly from a plea by the real family (the Gimers) it depicts, partly from a conscience-driven turn against art-for-amusement. Published freely posthumously, 1911.'
+      evidenceRefs: [lc-comm-gimer-plea, lc-brosit, lc-chertkov-baluyas]
+      source: 'PSS Tom 34 commentary; diary & letters 1900'
+      confidence: high
+      note: ''
+    - field: themes
+      value: '["marriage", "divorce", "honesty", "the law and the courts", "the Orthodox Church", "self-sacrifice", "the gypsies / volya", "alcoholism", "the superfluous man"]'
+      evidenceRefs: [lc-ne-lgat, lc-suicide-note, lc-volya, lc-tri-vybora]
+      source: 'derived from the text'
+      confidence: high
+      note: ''
+    - field: synopsis
+      value: 'Fyodor (Fedya) Protasov, unable to live within his marriage yet unwilling to commit the perjury an Orthodox divorce requires, fakes his own suicide so his wife Liza can marry the honourable Viktor Karenin. Exposed by a blackmailer, all three are tried for bigamy; rather than be "bound again," Fedya shoots himself in the courthouse corridor. An unfinished 1900 drama based on the real Gimer case.'
+      evidenceRefs: [lc-suicide-note, lc-ya-trup, lc-svyazhut, lc-trup-final]
+      source: 'derived from the text'
+      confidence: high
+      note: ''
+    - field: relatedWorks
+      value: '[]'
+      evidenceRefs: [lc-kreutzer-lineage]
+      source: 'diary 15 Dec 1900'
+      confidence: low
+      note: 'Tolstoy grouped the play with The Kreutzer Sonata, The Power of Darkness, and Resurrection (lc-kreutzer-lineage), but the works-schema relationshipType enum (cycle/sequel/prequel/revision/source/companion/adaptation) has no "thematic sibling" value; left empty pending a human call. The Chernyshevsky «Что делать?» link is an external intertext, not a tolstoy.life work.'
+    - field: identifiers.jubileeEdition.volumes
+      value: '34'
+      evidenceRefs: [lc-comm-davydov]
+      source: 'PSS Tom 34'
+      confidence: high
+      note: 'Play pp. 7–99; plans/notes 407–410; variants 411–483; commentary 533–545.'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE LEDGER — surfaces × status (derives "Material not covered")
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - surface: 'Genesis & composition (diaries + letters + commentary)'
+    status: covered
+    note: 'Seed 1897 → outline Jan 1900 → writing May–Aug → abandonment Nov–Dec 1900, all from the primary record.'
+  - surface: 'The witness/interlocutor network'
+    status: covered
+    note: 'Davydov, Koni, the Gimers/Simon, Nemirovich-Danchenko, Ivanov, Posse, Gnedich, Chertkov, Biryukov surfaced as entities.'
+  - surface: 'What the work says (close-read of pivotal scenes)'
+    status: covered
+    note: 'Full play read act by act (drama flex); 5 scenes close-read + centrepiece (the suicide letter).'
+  - surface: 'Redactions & textual history'
+    status: covered
+    note: 'Title evolution Труп→Живой труп; the Kryukova→Anna Pavlovna shift (keystone); the cut death-monologue; the Marya Vasilyevna restoration. Variants sampled, not collated.'
+  - surface: 'Characters & prototypes'
+    status: covered
+    note: 'Six documented prototype edges (Protasovs←Gimers, Anna Pavlovna←Simon, Aleksandrov←Ivanov, Afremov←Ofrosimov); Karenin←Chistov and Masha flagged conjectural.'
+  - surface: 'Themes'
+    status: covered
+    note: 'Promoted section; marriage/divorce/law/честность/воля.'
+  - surface: 'Marquee question (hypothesis tested)'
+    status: covered
+    note: 'Two-pronged; confirms+complicates+extends.'
+  - surface: 'Reception & afterlife — the 1911 staging story'
+    status: covered
+    note: 'MAT premiere (cast, directors) + Alexandrinsky/Meyerhold + English afterlife (Redemption/Barrymore) + film. From the reception sweep; attributed.'
+  - surface: 'Russian society & church reaction (contemporary, pre-1911)'
+    status: partial
+    note: 'The play was unpublished in Tolstoy''s lifetime, so there was no contemporary public/church reception; the only contemporary "reaction" is the Gimer family''s plea and the press leak (covered). True reception is posthumous (1911).'
+  - surface: 'Scholarly context'
+    status: covered
+    note: 'Wachtel (1992), Simmons (1968), the divorce-law context, the "about-face" reading — triangulated.'
+  - surface: 'Manuscript facsimile (PD, committed to extracts/)'
+    status: not-covered
+    note: 'No PD manuscript/first-edition page image located (Commons has none; State Tolstoy Museum / RGB not yet searched). The local archive-org PDFs are Wiener''s English edition, not the Russian PSS. See needsReview / visuals work-order.'
+  - surface: 'Variant collation (full apparatus)'
+    status: partial
+    note: 'Variants sampled for the keystone redaction only; the 8 numbered variants (рук. №№ 1–14) not fully collated.'
+
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: 'Fedya dies in doubt — "perhaps I was mistaken" (diary draft, 7 Sept 1900).'
+    correction: 'The finished text replaces the doubt with serenity — "Как хорошо… Как хорошо" — and the gypsy-scene foreshadow ("Кабы только не просыпаться. Так и помереть"). The doubt was a draft Tolstoy cut.'
+    evidenceRef: lc-predsmertnye-draft
+  - claim: 'The reporter-leaked plot and the Gimer family''s plea (late Nov 1900) are the reason Tolstoy dropped the play.'
+    correction: 'In his own diary the abandonment (28 Nov 1900) is attributed to the pull of the people''s suffering after reading Novikov, not the Gimer plea; the structural dissatisfaction runs from 21 Aug. The PSS itself frames the plea as "также" (also) a cause. Over-determined, with the conscience-turn dominant in his own voice.'
+    evidenceRef: lc-brosit
+
+notCovered:
+  - 'Full collation of the 8 numbered variants (рук. №№ 1–14) against the base text (ms. № 14).'
+  - 'The 1911 Alexandrinsky (Meyerhold) production in depth, and the play''s European tour (Berlin/Vienna/Paris/London).'
+  - 'The full English-translation lineage (whether the Maude Centenary Edition volume uses a Maude hand or another).'
+  - 'Tolstoy''s 11–12 Oct 1887 letter to Biryukov advising E. P. Gimer not to leave her husband (Tom 64) — cited in commentary, not extracted here.'
+  - 'The «большая драма» Tolstoy distinguished from the «малая драма» (the Corpse) in the 7 Sept 1900 diary — a separate, unwritten project.'
+
+needsReview:
+  - item: 'Karenin ← S. I. Chistov prototype is conjectural (not in PSS). Decide whether to record the edge or drop it at ingestion.'
+    phase: 4
+    why: 'The real Liza-figure married Chistov, but the PSS asserts no portrait; risk of over-claiming a prototype.'
+  - item: 'Masha (gypsy) has no documented individual prototype; the gypsy-choir milieu (brother Sergei''s wife M. M. Shishkina) is biographical resonance, not a model.'
+    phase: 4
+    why: 'Avoid flattening a milieu into a named prototype.'
+  - item: 'The reception sweep''s claim that A. F. Koni "wrote to Tolstoy on 14 Jan 1900 about how a husband might liberate his wife through self-sacrifice" is unverified against the PSS.'
+    phase: 3
+    why: 'The PSS commentary attributes the plot to Davydov and gives Koni a real-case + essay role; the 14 Jan 1900 self-sacrifice letter is a separate claim needing the Tom 54 note / Koni''s own essay to confirm.'
+  - item: 'Whether the 1911 MAT and/or Alexandrinsky productions met any incidental stage-censorship (the play itself was not banned).'
+    phase: 3
+    why: 'bans: [] is proposed; confirm no theatrical-censorship event before ingestion.'
+  - item: 'Marya Vasilyevna Kryukova: she is BOTH a cut first-redaction lead AND restored by the PSS in Act V, picture 2. At ingestion decide whether she warrants her own character node or folds into the redaction prose.'
+    phase: 4
+    why: 'Unusual textual status; borderline character node.'
+  - item: 'wordCount left at 0 (not computed for the play text).'
+    phase: 4
+    why: 'Optional field; compute at ingestion if wanted.'
+
+archivesConsulted:
+  - 'primary-sources/tolstoydigital-TEI — PSS Tom 34 (play, plans, variants, 2 commentaries); Tom 53–54 diaries (1897, 1900); Tom 72 + Tom 88 letters (1900).'
+  - 'Wikimedia Commons (12 PD images downloaded; the one confirmed 1911 MAT scene photo + Tolstoy-1900 portraits + prototype/witness portraits + afterlife).'
+  - 'Web scholarship/reception sweep: Wachtel (PMLA 1992), Simmons (1968), Russia Beyond + UNI ScholarWorks (divorce law), Kommersant (2024), EN/RU Wikipedia, Alexandrinsky Theatre collection.'
+  - 'NOT consulted: State Tolstoy Museum (kamiscloud) and RGB digital collections for manuscript facsimiles; the printed Russian PSS Tom 34 PDF (not held locally).'
+
+references:
+  primary:
+    - 'L. N. Tolstoy, «Живой труп», PSS (Jubilee Edition) Tom 34, Moscow 1952, pp. 7–99 (play), 407–410 (plans), 411–483 (variants), 533–545 (commentary: А. И. Опульский, История писания и печатания / Описание рукописей).'
+    - 'L. N. Tolstoy, Diaries 1897 & 1900, PSS Tom 53–54.'
+    - 'L. N. Tolstoy, Letters to V. A. Posse (6 & 14 Oct 1900), PSS Tom 72; to V. G. Chertkov (12 Dec 1900), PSS Tom 88.'
+  background:
+    - 'Wachtel, Andrew. "Resurrection à la Russe: Tolstoy''s The Living Corpse as Cultural Paradigm." PMLA 107:2 (1992), 261–273.'
+    - 'Simmons, Ernest J. Introduction to Tolstoy''s Writings (1968), chapter on the dramatic writings.'
+    - 'A. F. Koni, «Живой труп в действительности», Ежегодник императорских театров, 1911, vyp. VI.'
+    - 'Russia Beyond, "The trouble with divorce in Old Russia" (2019); UNI ScholarWorks, pre-1917 Russian Orthodox divorce-law digest.'
+    - 'Kommersant (2024), «"Живой труп" Толстого — сюжет, анализ и тема развода», kommersant.ru/doc/7166441.'
+    - 'EN & RU Wikipedia, "The Living Corpse" / «Живой труп» (premiere cast, afterlife); Alexandrinsky Theatre collection (Meyerhold 1911 production record).'
