@@ -1,0 +1,1068 @@
+topic:
+  slug: 1908-a-letter-to-a-hindu
+  title: "A Letter to a Hindu (Письмо к индусу)"
+  question: >-
+    Tolstoy's 1908 open letter to Tarak Nath Das, editor of «Free Hindustan» — its genesis,
+    its argument (non-resistance as the lever of India's liberation), and the reception that
+    made it historically decisive: Gandhi read it, reprinted it in «Indian Opinion», and it
+    fed his satyagraha. Marquee question: India is held by a handful of Englishmen only
+    because Indians themselves participate in violence — does the corpus + the Gandhi record
+    confirm, complicate, or extend that claim?
+  date: 2026-06-13
+  period: "Prophet period (late, 1908)"
+  corpusSurface: "works (the letter) + comments (история писания) + diaries (Tom 56, 1908) + letters (Gandhi Toms 80–82; Chitale Tom 78)"
+  dateRange: "composition June–December 1908; reception 1909–1910"
+
+evidence:
+
+  # ===== A. THE LETTER'S OWN TEXT (PSS Tom 37, pp. 245–272) ==========================
+  # The TEI carries BOTH the authorized contemporary English (Chertkov, revised by Tolstoy)
+  # and the full Russian original. quoteRu = Russian original; quoteEn = the published 1909
+  # English where it has a direct equivalent (labelled), else a working gloss.
+
+  - id: hindu-epigraph-vedas
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das (and, through him, the colonised East)"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Всё, что существует, едино: люди только называют это единое разными именами.
+    quoteEn: >-
+      All that exists is One; people only call this One by different names. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The opening epigraph (from the Vedas), one of a triad — Vedas, 1 John ("God is love"),
+      Vivekananda — that frames the whole letter as a statement of the one law of love common
+      to all religions. The letter is studded throughout with epigraphs attributed to "Krishna",
+      drawn from Baba Premananda Bharati's «Sree Krishna: The Lord of Love» (1904).
+    facsimile: null
+
+  - id: hindu-thesis-oppression
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      В Индии это кажется особенно странным, так как здесь более чем 200-миллионный, высокоодаренный и духовными и телесными силами народ находится во власти совершенно чуждого ему небольшого кружка людей, стоящих в религиозно-нравственном отношении неизмеримо ниже тех людей, над которыми они властвуют.
+    quoteEn: >-
+      It appears especially strange of India, for here we have a people of 200 millions of individuals, highly endowed with spiritual and physical powers, in absolute subjection to a small clique, composed of persons utterly alien in thought and aspiration and altogether inferior to those whom they enslave. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      Section I — the opening puzzle the whole letter answers: how does a vast, gifted nation
+      come to be ruled by a small, alien, and (in Tolstoy's framing) inferior minority. The
+      setup for the "consent" thesis.
+    facsimile: null
+
+  - id: hindu-spencer-frame
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Вы в своем журнале, как основной принцип, долженствующий руководить деятельностью вашего народа, ставите эпиграфом такую мысль
+    quoteEn: >-
+      In your magazine you insert as the basic principle which should direct the activity of your people the following thought as an epigraph [Spencer: "Resistance to aggression is not simply justifiable but imperative; non resistance hurts both Altruism and Egoism"]. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The structural pivot. The letter is built as a direct rebuttal to the Herbert Spencer
+      motto that «Free Hindustan» flew as its epigraph (per the PSS commentary, from ch. 8 of
+      Spencer's «Sociology»). Tolstoy quotes the Spencer line verbatim in Section V and turns
+      it on its head. Scholarship (see _scholarship.md §E) does not discuss this inversion —
+      it is dropped from some English editions; the corpus supplies it (extends).
+    facsimile: null
+
+  - id: hindu-love-only-means
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Любовь есть единственное средство спасения людей от всех претерпеваемых ими бедствий. В данном случае единственное средство освобождения вашего народа от порабощения только в любви.
+    quoteEn: >-
+      Love is the only means of saving people from all disasters which he may undergo. In your case the only means of liberating your people from slavery lies in love. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      Tolstoy's answer to Spencer: not resistance but love (which "includes non-resistance")
+      is the sole means of liberation. The doctrinal core of the marquee claim.
+    facsimile: null
+
+  - id: hindu-contrary
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Но ведь это совершенно наоборот. Если англичане поработили индусов, то только потому, что индусы признавали и признают главными, основными принципами своего общественного устройства насилие.
+    quoteEn: >-
+      But it is just the contrary. If the English have enslaved the Hindoos, it is just because the Hindoos recognised and do recognise coercion as the main and fundamental principle of their social order. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The inversion stated flatly: the English did not impose subjection from outside; the
+      Hindoos' own commitment to violence as a principle is what makes subjection possible.
+    facsimile: null
+
+  - id: hindu-thirty-thousand
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Что значит то, что 30 тысяч людей, не силачей, даже скорее слабых и дурных людей, поработили 200 миллионов живых, умных, сильных, любящих свободу людей? Разве не ясно по одним цифрам, что не англичане, а сами индусы поработили себя.
+    quoteEn: >-
+      What does it mean that thirty thousand people not athletes, but rather weak and illooking have enslaved 200 millions of vigorous, clever, strong, freedom-loving people? Do not the figures make it clear that not the English, but the Hindoos, have enslaved themselves? (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The single most-cited passage of the letter — the arithmetic of consent. A commercial
+      company (the East India Company) holding 200 millions is, to Tolstoy, proof on the face
+      of the numbers that the subjection is self-imposed.
+    facsimile: null
+
+  - id: hindu-drunkard
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Индусам жаловаться на то, что англичане поработили их, всё равно, что людям, предающимся пьянству, жаловаться на то, что поселившиеся среди них продавцы вина поработили их.
+    quoteEn: >-
+      For the Hindoos to complain that the English have enslaved them, is equal to people who are addicted to drink, complaining that vendors of wine, who have settled in their midst, have enslaved them. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The drunkard analogy — the rhetorical heart of the consent thesis. The wine-seller
+      doesn't enslave; the drinking does. The image makes the argument concrete and is the one
+      most likely to land, and to wound, an audience seeking endorsement of resistance.
+    facsimile: null
+
+  - id: hindu-marquee-lever
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Только живи человек согласно с свойственным его сердцу и открытым уже ему законом любви, включающей в себя непротивление, и потому естественно не участвуя в каком бы то ни было насилии, и не только сотни не поработят миллионы, но миллионы не поработят одного. Не противьтесь злу, но и сами не участвуйте во зле, в насилиях администрации, судов, сборов податей и, главное, войска, и никто в мире не поработит вас.
+    quoteEn: >-
+      If man lives only in accord with the law of love which includes non resistance, which has been already revealed to him and is natural to his heart, and hence does not participate in any form of violence, not only hundreds will not enslave millions but even millions will be unable to enslave one individual. Do not resist evil, but also yourselves participate not in evil, in the violent deeds of the administration, of the law courts, the collection of taxes, and what is most important of the soldiers, and no one in the world will enslave you. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      THE marquee keystone — the lever stated in full. Liberation is not won by resisting the
+      oppressor but by withdrawing participation from the machinery of violence (administration,
+      courts, taxes, above all the army). This is the Tolstoyan, anarchist, individual form of
+      non-resistance — distinct from the organised mass civil disobedience Gandhi would build
+      (see scholarship triangulation).
+    facsimile: null
+
+  - id: hindu-self-enslaved
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Если индусы порабощены насилием, то только оттого, что они сами жили насилием, живут насилием и не признают вечного, свойственного человечеству закона любви.
+    quoteEn: >-
+      If the Hindoos have been enslaved by violence it is because they themselves have lived by violence, live by violence, and do not recognise the eternal law of love, inherent in humanity. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The diagnosis closed: subjection follows from the subjected nation's own embrace of
+      violence. The cure is therefore not counter-violence but its renunciation.
+    facsimile: null
+
+  - id: hindu-science-ballast
+    genre: works
+    pssTom: 37
+    pages: "245–272"
+    date: 1908
+    addressee: "Tarak Nath Das"
+    localPdf: null
+    extract: extracts/v37_245_272_letter_to_a_hindu.txt
+    quoteRu: >-
+      Для того, чтобы спасти тонущий корабль, надо выбросить из него тот балласт, который если и был, может быть, когда-нибудь нужен, теперь губит его.
+    quoteEn: >-
+      In order to save a sinking ship it is necessary to throw overboard the ballast, which though it might have been indispensable at one time, would now cause destruction. (Tolstoy/Chertkov English, 1909)
+    significance: >-
+      The second front of the letter: the law of love is hidden not only by false religion but
+      by a new "scientific" superstition (historical law, struggle-for-existence, the will of
+      the people). Both must be thrown overboard. Tolstoy's late anti-scientism, here aimed at
+      the Westernising Indian leadership that looks to European forms for deliverance.
+    facsimile: null
+
+  # ===== B. GENESIS (commentary + 1908 diaries, all OS dates) ========================
+
+  - id: hindu-das-appeal
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1908-05-24 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      Именем голодающих миллионов взываю к вашему христианскому чувству
+    quoteEn: >-
+      In the name of the starving millions I appeal to your Christian feeling [— take up this cause]. (working English)
+    significance: >-
+      From Tarak Nath Das's letter of 24 May 1908 (OS), quoted in full in the PSS commentary
+      (Mishin). Das, a Bengali revolutionary, asked Tolstoy — whose moral authority over the
+      Russian government he invoked — to write an article on India. He led with the 1891–1900
+      famine (19 million dead) set against war deaths, arguing India suffers worse than Russia.
+      He wanted endorsement for the struggle; the reply he got reframed the struggle itself.
+    facsimile: null
+
+  - id: hindu-spencer-source
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: 1908
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      Редакция журнала выставляла эпиграфом цитату из восьмой главы «Социологии» Г. Спенсера
+    quoteEn: >-
+      The journal's editors flew as their epigraph a quotation from chapter eight of H. Spencer's «Sociology» [—the last clause, that non-resistance harms both altruism and egoism, especially caught Tolstoy's attention]. (working English)
+    significance: >-
+      The PSS commentary identifies the Spencer epigraph as the provocation Tolstoy fixed on —
+      grounding the dive's reading that the whole letter answers Spencer. Resolves a needsReview
+      from the scholarship sweep (which could not find the Spencer frame in English editions).
+    facsimile: null
+
+  - id: hindu-genesis-start
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1908-06-07 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      Начало писания ответа Дасу относится к 7 июня 1908 г.
+    quoteEn: >-
+      The start of writing the reply to Das dates to 7 June 1908. (working English)
+    significance: >-
+      Composition began 7 June 1908 (OS) — the cover of the first drafts is dated "7, 8, 9 June 08".
+      The work then stalled for months and was only finished in a sustained 17 Nov–14 Dec push.
+    facsimile: null
+
+  - id: hindu-diary-zapnulsja
+    genre: diary
+    pssTom: 56
+    pages: "133"
+    date: "1908-06-10 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_133_133_1908_06_10.txt
+    quoteRu: >-
+      Начал письмо к Индусу, да запнулся.
+    quoteEn: >-
+      Began the letter to the Hindu, but stumbled. (working English)
+    significance: >-
+      The first diary witness — and the start of a self-deprecation thread that runs through the
+      whole composition. (The same entry notes "Чертков прекрасно поправил" — Chertkov's hand is
+      in the work from June, months before he made the English translation.)
+    facsimile: null
+
+  - id: hindu-diary-28nov
+    genre: diary
+    pssTom: 56
+    pages: "158"
+    date: "1908-11-28 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_158_158_1908_11_28.txt
+    quoteRu: >-
+      Все пишу письмо Индусу. Все повторения.
+    quoteEn: >-
+      Still writing the letter to the Hindu. All repetitions. (working English)
+    significance: >-
+      The sustained Nov–Dec push, and the verdict that never lifts: "all repetitions". Tolstoy
+      thought the marquee letter weak even as he wrote it.
+    facsimile: null
+
+  - id: hindu-diary-6dec
+    genre: diary
+    pssTom: 56
+    pages: "162–163"
+    date: "1908-12-06 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_162_163_1908_12_06.txt
+    quoteRu: >-
+      Все копаюсь над Письмом к Индусу. Кажется, дребедень и повторение. Надо кончить и оторваться.
+    quoteEn: >-
+      Still digging away at the Letter to the Hindu. Seems like rubbish and repetition. Must finish it and tear myself away. (working English)
+    significance: >-
+      The harshest self-judgment of the dive: "дребедень и повторение" — rubbish and repetition.
+      The historically decisive letter is, to its author, a chore to be got rid of.
+    facsimile: null
+
+  - id: hindu-diary-finished
+    genre: diary
+    pssTom: 56
+    pages: "163"
+    date: "1908-12-14 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_163_163_1908_12_14.txt
+    quoteRu: >-
+      Кончил письмо Индусу, слабо, повторения.
+    quoteEn: >-
+      Finished the letter to the Hindu, weak, repetitions. (working English)
+    significance: >-
+      The completion date, 14 Dec 1908 (OS) = 27 Dec NS, and the closing verdict. The same entry
+      records his anger that day at news of executions ("вешанье, мучанье людей") — the Stolypin
+      hangings that drove the 1908 essay «I Cannot Be Silent»; the non-resistance argued to India
+      was written against that domestic backdrop.
+    facsimile: null
+
+  - id: hindu-mss-413
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: 1908
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      Общее количество рукописного материала, относящегося к «Письму к индусу», исчисляется в 413 листов разного формата
+    quoteEn: >-
+      The total manuscript material relating to the «Letter to a Hindu» comes to 413 sheets of various formats. (working English)
+    significance: >-
+      413 manuscript sheets (45 autograph, the rest typed copies with corrections), 29 numbered
+      redactions — a heavy redaction history for a short open letter, confirming the "all
+      repetitions" struggle was a real, prolonged reworking, not a single sitting.
+    facsimile: null
+
+  # ===== C. RECEPTION — publication and the Gandhi correspondence ====================
+
+  - id: hindu-chertkov-translated
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1909-05 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      На английский язык письмо было переведено В. Г. Чертковым. Толстой исправил и отредактировал этот перевод
+    quoteEn: >-
+      The letter was translated into English by V. G. Chertkov. Tolstoy corrected and edited this translation. (working English)
+    significance: >-
+      Resolves the "who translated it" question (a scholarship needsReview): the published English
+      "A Letter to a Hindoo" is Chertkov's translation, corrected and edited by Tolstoy — i.e. the
+      English the dive quotes is authorized, not a working gloss.
+    facsimile: null
+
+  - id: hindu-pub-russian
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1909-04-19 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      «Письмо к индусу» по-русски впервые было напечатано в выдержках в газетах
+    quoteEn: >-
+      The «Letter to a Hindu» was first printed in Russian, in excerpts, in the newspapers [«Kievskie Vesti» no. 103 of 19 April and «Russkie Vedomosti» no. 89 of 19 April 1909; in full only in S. A. Tolstaya's collected works, Moscow 1911]. (working English)
+    significance: >-
+      First appearance anywhere = Russian newspaper excerpts, 19 April 1909 (OS) = 2 May NS, in
+      Tolstoy's lifetime. The full Russian text appeared only in 1911 (posthumous), in S. A.
+      Tolstaya's collected works. The letter circulated meanwhile in typed copies (машинописные
+      списки) — one of which reached Gandhi.
+    facsimile: null
+
+  - id: hindu-pub-gandhi
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1910-01"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      На английском языке письмо впервые было напечатано в журнале М. Ганди «Indian opinion» 1910, январь.
+    quoteEn: >-
+      In English the letter was first printed in M. Gandhi's journal «Indian Opinion», January 1910. (working English)
+    significance: >-
+      The hinge of the reception story, in the PSS's own words. The commentary continues: Gandhi's
+      preface explained the letter circulated in typed copies, one sent to him to print; Gandhi
+      wrote to Tolstoy for confirmation of authorship and permission, and on receiving it
+      published the letter. (Scholarship dates the serialization 25 Dec 1909 / 1 Jan / 8 Jan 1910
+      — the PSS "January 1910" is the completion; see _scholarship.md §A.)
+    facsimile: null
+
+  - id: hindu-tolstoy-approved
+    genre: comments
+    pssTom: 37
+    pages: "444–446"
+    date: "1910-03-19 (OS)"
+    addressee: null
+    localPdf: null
+    extract: extracts/v37_444_446_comments_istoria_pisania.txt
+    quoteRu: >-
+      Прочел письмо свое индусу и очень одобрил
+    quoteEn: >-
+      Read my own letter to the Hindu and very much approved it. (working English)
+    significance: >-
+      Tolstoy's later verdict, reversing the composition-time disdain. Receiving Gandhi's printed
+      «Indian Opinion» in March 1910, he reread the letter he had called "rubbish and repetition"
+      and "very much approved" it. The work he dismissed while writing, he embraced once Gandhi
+      had made it a movement document.
+    facsimile: null
+
+  - id: gandhi-confirm
+    genre: letter
+    pssTom: 80
+    pages: "110–112"
+    date: "1909-09-25 / 1909-10-07"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v80_149_MaxatmeGandiMohandasGandhi.txt
+    quoteRu: >-
+      Письмо к индусу писано мною. […] Перевод очен хорош.
+    quoteEn: >-
+      The letter to a Hindu was written by me, and the translation is a very good one. (Tolstoy's own English, in the same letter)
+    significance: >-
+      Tolstoy's first letter to Gandhi (25 Sep OS / 7 Oct NS 1909) — confirming authorship and
+      endorsing the translation Gandhi proposed to reprint. The contact that the letter set in
+      motion. (The Russian "очен" is a transcription artefact in the source.)
+    facsimile: null
+
+  - id: gandhi-reincarnation
+    genre: letter
+    pssTom: 80
+    pages: "110–112"
+    date: "1909-09-25 / 1909-10-07"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v80_149_MaxatmeGandiMohandasGandhi.txt
+    quoteRu: >-
+      Слово reincarnation […] мне бы не хотелось исключать, потому что, по моему мнению, вера в reincarnation никогда не может быть так тверда, как вера в неумираемость души и в справедливость и любовь бога.
+    quoteEn: >-
+      As to the word reincarnation, I should not myself like to omit it, for, in my opinion, belief in reincarnation can never be as firm as belief in the soul's immortality and in God's justice and love. (Tolstoy's own English, in the same letter)
+    significance: >-
+      Gandhi proposed cutting the reincarnation material for his readership; Tolstoy preferred to
+      keep it but left the choice to Gandhi ("делайте, как хотите"). The published «Indian Opinion»
+      text is thus a Gandhi-edited version — a small but documented instance of Gandhi curating
+      Tolstoy for an Indian audience.
+    facsimile: null
+
+  - id: gandhi-transvaal-struggle
+    genre: letter
+    pssTom: 80
+    pages: "110–112"
+    date: "1909-09-25 / 1909-10-07"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v80_149_MaxatmeGandiMohandasGandhi.txt
+    quoteRu: >-
+      Та же борьба мягкого против жесткого, смирения и любви против гордости и насилия с каждым годом всё более и более проявляется и у нас, в особенности в одном из самых резких столкновений закона религиозного с законом мирским — в отказах от военной службы.
+    quoteEn: >-
+      That same struggle of the tender against the harsh, of meekness and love against pride and violence, is every year making itself more and more felt here among us also, especially in one of the very sharpest of the conflicts of the religious law with the worldly laws — in refusals of military service. (Tolstoy's own English, in the same letter)
+    significance: >-
+      Tolstoy ties Gandhi's Transvaal campaign to the Russian conscientious-objector movement and
+      the Doukhobors — the same law of love working itself out East and West. His non-resistance
+      is refusal-of-participation (military service first of all), not organised confrontation.
+    facsimile: null
+
+  - id: gandhi-hindswaraj
+    genre: letter
+    pssTom: 81
+    pages: "247–249"
+    date: "1910-04-25 / 1910-05-08"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v81_318_M_GandiM_Gandhi.txt
+    quoteRu: >-
+      Я прочел вашу книгу с большим интересом, так как я думаю, что вопрос, который вы в ней обсуждаете — пассивное сопротивление — вопрос величайшей важности, не только для Индии, но и для всего человечества.
+    quoteEn: >-
+      I read your book with great interest because I think that the question you treat in it: passive resistance — is a question of the greatest importance, not only for India but for the whole humanity. (Tolstoy's own English, in the same letter)
+    significance: >-
+      On receiving Gandhi's «Hind Swaraj» («Indian Home Rule») — written, scholarship notes, on the
+      very voyage on which Gandhi translated the Letter to a Hindu into Gujarati. The exchange has
+      become a two-way conversation about "passive resistance".
+    facsimile: null
+
+  - id: gandhi-last-love
+    genre: letter
+    pssTom: 82
+    pages: "137–140"
+    date: "1910-09-07"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v82_178_GandiGandhi.txt
+    quoteRu: >-
+      мне хочется сказать другим то, что я так особенно живо чувствую и что, по моему мнению, имеет огромную важность, а именно о том, что называется непротивлением, но что в сущности есть не что иное, как учение любви, не извращенное ложными толкованиями.
+    quoteEn: >-
+      I want to say to others what I feel so especially vividly and what in my opinion is of enormous importance — namely, what is called non-resistance, but which in essence is nothing other than the teaching of love undistorted by false interpretations. (working English)
+    significance: >-
+      From Tolstoy's last letter to Gandhi (7 Sep 1910, from Kochety) — the long non-resistance
+      letter, written eight weeks before his death. His final definition: non-resistance is simply
+      the law of love undistorted. The letter prompted by reading Gandhi's «Indian Opinion».
+    facsimile: null
+
+  - id: gandhi-last-transvaal
+    genre: letter
+    pssTom: 82
+    pages: "137–140"
+    date: "1910-09-07"
+    addressee: "Mohandas K. Gandhi"
+    localPdf: null
+    extract: extracts/v82_178_GandiGandhi.txt
+    quoteRu: >-
+      ваша деятельность в Трансвале, как нам кажется на конце света, есть дело самое центральное, самое важное из всех дел, какие делаются теперь в мире
+    quoteEn: >-
+      your work in the Transvaal, which to us seems at the end of the world, is the most central, the most important of all the affairs being done now in the world. (working English)
+    significance: >-
+      Tolstoy's verdict on Gandhi's campaign, in his own words — resolving the scholarship's
+      needsReview about the famous "most important work in the world" phrasing (which the corpus
+      confirms from the primary Russian, against the looser "most weighty practical proof" of some
+      English translations). The dying Tolstoy names a stranger's distant campaign the most
+      important thing happening on earth.
+    facsimile: null
+
+  # ===== D. THE INDIAN-CORRESPONDENCE CONTEXT =======================================
+
+  - id: chitale-indian-religion
+    genre: letter
+    pssTom: 78
+    pages: "32–33"
+    date: "1908-01-21 / 1908-02-03"
+    addressee: "S. R. Chitale"
+    localPdf: null
+    extract: extracts/v78_023_S_R_CHitelyuS_R_Chitale.txt
+    quoteRu: >-
+      Я высоко ценю мое общение с индийскими религиозными людьми, каковым и вы являетесь, судя по вашему письму. С большим интересом и пользой для моей духовной жизни прочел я все встретившиеся мне браминские религиозные книги
+    quoteEn: >-
+      I appreciate very highly all my intercourse with Indian religious men such as from your letter I infer you to be. I have read with great interest and profit for my spiritual life all the Braminic religious books which I have come across. (Tolstoy's own English, in the same letter)
+    significance: >-
+      The letter to Das did not come from nowhere: Tolstoy was in active correspondence with a
+      network of Indians (Chitale, Das, later Gandhi, with Baba Premananda Bharati's book as a
+      source) and had been reading Indian religious texts. This Jan 1908 letter to Chitale, on the
+      Bhagavad-Gita, shows the engagement six months before Das's appeal arrived.
+    facsimile: null
+
+entities:
+  - name: "Mohandas K. Gandhi"
+    wikiType: person
+    wikilinkTarget: "Mohandas Gandhi"
+    vaultStatus: missing
+    role: >-
+      The reception. Read the letter in London 1909, sought Tolstoy's permission, reprinted it in
+      «Indian Opinion» (1909–10) with his own preface, translated it into Gujarati on the voyage on
+      which he wrote «Hind Swaraj». The 1909–10 correspondence (3 Tolstoy letters here) fed his
+      satyagraha. Named "M. Gandi (Mohandas Gandhi)" in the PSS letter titles.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-pub-gandhi, gandhi-confirm, gandhi-reincarnation, gandhi-transvaal-struggle, gandhi-hindswaraj, gandhi-last-love, gandhi-last-transvaal]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Tarak Nath Das"
+    wikiType: person
+    wikilinkTarget: "Tarak Nath Das"
+    vaultStatus: missing
+    role: >-
+      The addressee. Bengali revolutionary (Anushilan Samiti; later Ghadar Party), editor of «Free
+      Hindustan», who appealed to Tolstoy in May 1908 for an article on India — and rejected the
+      reply: his "Open Letter to Count Leo Tolstoy" (16 Oct 1909) defended resistance to despotism
+      as a duty. PSS garbles his name as "Таракуатта Дас / Tarakuatta Das" and the journal as
+      "Free Hindustham/Hindusthan"; correct = Tarak Nath Das, «Free Hindustan».
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-das-appeal, hindu-thesis-oppression]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: >-
+      Translated the letter into English (the authorized "A Letter to a Hindoo"); his hand is in the
+      Russian text from the first June drafts ("Чертков прекрасно поправил"). Tolstoy corrected and
+      edited the English translation.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-chertkov-translated, hindu-diary-zapnulsja]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Baba Premananda Bharati"
+    wikiType: person
+    wikilinkTarget: "Baba Premananda Bharati"
+    vaultStatus: missing
+    role: >-
+      Bengali Vaishnava missionary (b. Surendranath Mukherjee, 1858–1913). His book «Sree Krishna:
+      The Lord of Love» (New York, 1904) is the source of the "Krishna" epigraphs studded through the
+      letter — Tolstoy translated passages into Russian. Yet Tolstoy also names "Baba Bharatis" among
+      the "new interpreters... of what no one stands in need". Source and target at once.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-epigraph-vedas]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Swami Vivekananda"
+    wikiType: person
+    wikilinkTarget: "Swami Vivekananda"
+    vaultStatus: missing
+    role: >-
+      Named in the letter's third epigraph (the Vedanta gloss) and then named dismissively in the
+      body — "your Vivekanandas, Baba Bharatis, and others" — as an interpreter India does not need.
+      Tolstoy's critique of the Vedanta-as-universal-system project. (1863–1902.)
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-epigraph-vedas, hindu-science-ballast]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Dushan Makovitsky"
+    wikiType: person
+    wikilinkTarget: "Dushan Makovitsky"
+    vaultStatus: missing
+    role: >-
+      Tolstoy's physician and diarist. His «Яснополянские записки» record the genesis (the 4 June and
+      7 June 1908 entries quoted in the PSS commentary); the letter was partly dictated to him.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-genesis-start]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Nikolai Gusev"
+    wikiType: person
+    wikilinkTarget: "Nikolai Gusev"
+    vaultStatus: missing
+    role: >-
+      Tolstoy's secretary; took the 5 Aug 1908 dictation of the letter's opening and dated the
+      manuscript covers through the Nov–Dec push. (Also a registered transcriber in the works schema.)
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-mss-413]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Albert Škarvan"
+    wikiType: person
+    wikilinkTarget: "Albert Škarvan"
+    vaultStatus: missing
+    role: >-
+      Slovak physician and Tolstoyan; made the authorized German translation «Brief an einen Hindu»
+      (1910), with a foreword by Eugen Heinrich Schmitt. (1869–1926.)
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-pub-gandhi]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "A Letter to a Hindu"
+    wikiType: work
+    wikilinkTarget: "A Letter to a Hindu"
+    vaultStatus: missing
+    role: >-
+      The subject work itself — the record this dive proposes (see workRecord). An open letter /
+      essay, PSS Tom 37 pp. 245–272. Its live destination is a `works/` record (the workRecord
+      proposal below), NOT a `wiki/` page; `wikiType: work` is the Lab-only convention and
+      `vaultStatus: missing` here means "no works/ record yet", not "needs a wiki page".
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-marquee-lever, hindu-thirty-thousand]
+    ingestionPriority: 1
+    dependsOn: ["Mohandas K. Gandhi", "Tarak Nath Das"]
+  - name: "Non-resistance to evil (непротивление злу насилием)"
+    wikiType: concept
+    wikilinkTarget: "Non-resistance"
+    vaultStatus: missing
+    role: >-
+      The doctrine the letter applies to colonial subjection — withdrawal of participation from the
+      machinery of violence as the lever of liberation. The thread linking this dive to the Kingdom
+      of God dive and the Law of Violence and the Law of Love dive. No dedicated wiki page exists;
+      the term currently appears only inside «Christian Anarchism», «Leo Tolstoy», and «Tolstoyanism»
+      — so a standalone page must be created, not a stub extended.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-marquee-lever, gandhi-last-love]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Free Hindustan"
+    wikiType: concept
+    wikilinkTarget: "Free Hindustan"
+    vaultStatus: missing
+    role: >-
+      Das's émigré journal (founded Vancouver, 1907), whose Spencer epigraph ("Resistance to
+      aggression is not simply justifiable but imperative...") Tolstoy answered. A candidate concept/
+      reference page rather than a person.
+    sources: [jubilee-edition]
+    evidenceRefs: [hindu-spencer-frame, hindu-spencer-source]
+    ingestionPriority: 3
+    dependsOn: []
+
+visuals:
+  - id: tolstoy-1908-prokudin
+    type: photograph
+    subject: "Leo Tolstoy, 80th birthday, Yasnaya Polyana, 23 May 1908"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [hindu-diary-finished]
+    holding: "Sergei Prokudin-Gorsky / State Museum of Tolstoy (GTM)"
+    archiveId: "Commons: L.N.Tolstoy_Prokudin-Gorsky.jpg"
+    access: "open (Wikimedia Commons)"
+    rights: "public domain (pre-1928)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/L.N.Tolstoy_Prokudin-Gorsky.jpg"
+    localPath: visuals/commons-tolstoy-1908-prokudin.jpg
+    note: "Keystone image — the iconic colour photo from the year the letter was written."
+  - id: gandhi-south-africa-1906
+    type: photograph
+    subject: "Mohandas K. Gandhi, Johannesburg, 1906 (barrister / Transvaal period)"
+    relatedEntity: "Mohandas K. Gandhi"
+    relatedEvidence: [gandhi-confirm, gandhi-transvaal-struggle]
+    holding: "Unknown author / Wikimedia Commons"
+    archiveId: "Commons: Mohandas_K._Gandhi_in_South_Africa,_1906.jpg"
+    access: "open (Wikimedia Commons)"
+    rights: "public domain (pre-1928, unknown author)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mohandas_K._Gandhi_in_South_Africa,_1906.jpg"
+    localPath: visuals/commons-gandhi-south-africa-1906.jpg
+    note: "The Transvaal-period Gandhi — the right era for the reception story (not the later iconography)."
+  - id: taraknath-das-1937
+    type: photograph
+    subject: "Tarak Nath Das (1884–1958), recipient of the letter"
+    relatedEntity: "Tarak Nath Das"
+    relatedEvidence: [hindu-das-appeal]
+    holding: "«The Modern Review» (Calcutta), July 1937"
+    archiveId: "Commons: Taraknath_Das_1937.jpg"
+    access: "open (Wikimedia Commons)"
+    rights: "public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Taraknath_Das_1937.jpg"
+    localPath: visuals/commons-taraknath-das-1937.jpg
+    note: "The only PD portrait of Das on Commons; dated 1937, not the 1908–09 exchange period."
+  - id: chertkov-repin-portrait
+    type: portrait
+    subject: "Vladimir Grigoryevich Chertkov (1890s), by Ilya Repin"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: [hindu-chertkov-translated]
+    holding: "Ilya Repin (1844–1930)"
+    archiveId: "Commons: Repin_Vladimir_Chertkov.jpg"
+    access: "open (Wikimedia Commons)"
+    rights: "public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Repin_Vladimir_Chertkov.jpg"
+    localPath: visuals/commons-chertkov-repin-portrait.jpg
+    note: "Repin likeness of the translator; a PD Eichwald photo (1883) also exists."
+  - id: chertkov-tolstoy-1909
+    type: photograph
+    subject: "Vladimir Chertkov and Tolstoy at Yasnaya Polyana, 29 March 1909"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: [hindu-chertkov-translated]
+    holding: "V. G. Chertkov (photographer)"
+    archiveId: "Commons: Chertkov_&_Tolstoy_(cropped).jpg"
+    access: "open (Wikimedia Commons)"
+    rights: "public domain (pre-1928)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chertkov_&_Tolstoy_(cropped).jpg"
+    localPath: visuals/commons-chertkov-tolstoy-1909.jpg
+    note: "Translator and author together, the spring the English translation was made."
+  - id: indian-opinion-linotype
+    type: photograph
+    subject: "Linotype machine Gandhi operated to print «Indian Opinion», Phoenix/Durban"
+    relatedEntity: "Mohandas K. Gandhi"
+    relatedEvidence: [hindu-pub-gandhi]
+    holding: "Prabhachatterji, 2009 (own work)"
+    archiveId: "Commons: Printing_Press.JPG"
+    access: "open (Wikimedia Commons)"
+    rights: "CC BY-SA 3.0 — attribution required"
+    licence: CC-BY-SA
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Printing_Press.JPG"
+    localPath: visuals/commons-indian-opinion-linotype.jpg
+    note: "Only image in Commons Category:Indian Opinion; a modern photo of the press, not a period masthead."
+
+scholarship:
+  summary: >-
+    The mainstream reads the letter almost entirely through Gandhi: it is "the trigger of the
+    Tolstoy–Gandhi correspondence" and a formative influence on Gandhi's South African campaign
+    (Green; Guha; Doke's 1909 "Undoubtedly Count Tolstoy has profoundly influenced him"). The best
+    recent scholarship is more careful. Hazama (2023) shows the letter shaped Gandhi's anti-violence
+    in South Africa but that "satyagraha"/"ahimsa"/"non-violence" as a framework came later, after
+    Gandhi's 1915 return to India and partly for reasons unrelated to Tolstoy (he coined "non-violence"
+    in 1919). Mantena (2012) reads Gandhi's nonviolence as contextual "political realism", structurally
+    unlike Tolstoy's absolute spiritual non-resistance. Scholarship rarely reads the letter's own text
+    closely — the Spencer-epigraph frame and the seven-section Krishna-epigraph spine go undiscussed.
+    English-first; the dive grounds in the primary record (Tolstoy's text + the correspondence + the
+    PSS commentary) and treats the Gandhi-origin-of-satyagraha story as the received view to test, not
+    confirm. See extracts/_scholarship.md for the full attributed layer and source list.
+  triangulation:
+    - evidenceRef: hindu-marquee-lever
+      conventionalView: >-
+        That "A Letter to a Hindu" shaped Gandhi's commitment to non-violence in South Africa
+        (Green; Guha; Hazama; Gandhi's own "what I had learned from Tolstoy has fructified a
+        hundredfold").
+      relation: confirms
+      source: "Hazama 2023; Guha 2013; Doke 1909"
+    - evidenceRef: hindu-marquee-lever
+      conventionalView: >-
+        That the letter is therefore the source of satyagraha / Gandhian nonviolence.
+      relation: complicates
+      source: "Hazama 2023 (ahimsa framing post-1915; 'non-violence' coined 1919); Mantena 2012 (satyagraha as organised political realism, not Tolstoyan individual withdrawal)"
+    - evidenceRef: hindu-thirty-thousand
+      conventionalView: >-
+        That Tolstoy's counsel was welcome to the Indian independence movement.
+      relation: contradicts
+      source: "Tarak Nath Das, 'Open Letter to Count Leo Tolstoy' (16 Oct 1909) — the addressee, a revolutionary, publicly rejected the non-resistance counsel and defended resistance to despotism as a duty"
+    - evidenceRef: hindu-spencer-frame
+      conventionalView: >-
+        (Scholarship does not treat the letter as a structured rebuttal of the Spencer epigraph.)
+      relation: extends
+      source: "No source found; the PSS commentary (hindu-spencer-source) supplies the frame the corpus reads"
+    - evidenceRef: gandhi-last-transvaal
+      conventionalView: >-
+        Tolstoy's praise of Gandhi's Transvaal work is variously translated ('most weighty practical
+        proof' in some English texts).
+      relation: extends
+      source: "The primary Russian (PSS Tom 82) gives 'самое центральное, самое важное из всех дел... в мире' — grounding the stronger 'most important work in the world' phrasing"
+
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/a-letter-to-a-hindu/A Letter to a Hindu.md  (PROPOSED — does not exist yet)"
+  workId: a-letter-to-a-hindu
+  fields:
+    - field: titleEn
+      value: "A Letter to a Hindu"
+      evidenceRefs: [hindu-marquee-lever]
+      source: "PSS Tom 37 main title «Letter to a Hindoo»; modern English convention 'A Letter to a Hindu'. Propose 'A Letter to a Hindoo' (the 1909 spelling) as a titleAlternatives variant."
+      confidence: high
+    - field: titleRu
+      value: "Письмо к индусу"
+      evidenceRefs: [hindu-pub-russian]
+      source: "PSS Tom 37 subtitle / commentary title (extract # bibl line)."
+      confidence: high
+    - field: titleAlternatives
+      value: >-
+        [{title: 'A Letter to a Hindoo', type: variant, language: en},
+        {title: 'Brief an einen Hindu', type: translation, language: de}]
+      evidenceRefs: [hindu-chertkov-translated, hindu-pub-gandhi]
+      source: "1909 English spelling 'Hindoo' (Chertkov/Tolstoy); German authorized translation (Škarvan, 1910). Shape each to {title, type, language}."
+      confidence: high
+    - field: mainCategory
+      value: "Non-Fiction"
+      evidenceRefs: []
+      source: "Mirrors the essays-and-criticism records (Bethink Yourselves!, What Is Art?)."
+      confidence: high
+    - field: subcategory
+      value: "Essays and Criticism"
+      evidenceRefs: []
+      source: "Open letter / public essay; sits with «Bethink Yourselves!» (also an open address). The schema has no 'open-letters' subcategory; Essays and Criticism is the fit."
+      confidence: medium
+      note: "Alternatively Personal Papers, but this is a public open letter intended for publication, not private correspondence (genre: letter)."
+    - field: genre
+      value: "essay"
+      evidenceRefs: [hindu-marquee-lever]
+      source: "Mirrors «Bethink Yourselves!» (genre: essay). An argumentative open letter, not a private letter; the schema 'letter' genre is for the correspondence collection."
+      confidence: medium
+    - field: language
+      value: "ru"
+      evidenceRefs: [hindu-chertkov-translated]
+      source: "Written in Russian; the English is Chertkov's authorized translation."
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [hindu-diary-finished]
+      source: "Finished 14 Dec 1908 (OS), signed «14 дек. 1908»."
+      confidence: high
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: [hindu-pub-russian, hindu-pub-gandhi]
+      source: "Russian newspaper excerpts April 1909; English in «Indian Opinion» Dec 1909–Jan 1910 — all before Tolstoy's death (Nov 1910)."
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: [hindu-pub-russian]
+      source: "Excerpts legally printed in «Киевские вести» and «Русские ведомости», 19 April 1909 (OS). NUANCE: only excerpts; the full Russian text appeared posthumously in 1911 (S. A. Tolstaya's collected works). Put the excerpts-vs-full distinction in censorshipNotes."
+      confidence: medium
+      note: "Edge case: legally but only partially printed in Russia in his lifetime; full text 1911. Flag prominently — a reviewer may prefer the nuance foregrounded. See needsReview."
+    - field: dateWritingStarted
+      value: "1908-06-20"
+      evidenceRefs: [hindu-genesis-start, hindu-diary-zapnulsja]
+      source: "PSS commentary: writing began 7 June 1908 (OS) = 20 June NS (+13 in 1908); diary 10 June OS confirms ('Начал письмо к Индусу'). The June attempt stalled; sustained work was 17 Nov–14 Dec."
+      confidence: high
+      oldStyle: "1908-06-07"
+    - field: dateWritingCompleted
+      value: "1908-12-27"
+      evidenceRefs: [hindu-diary-finished]
+      source: "Author's date «14 дек. 1908» (OS) = 27 Dec NS (+13). Manuscript №28 dated 14 Dec 1908."
+      confidence: high
+      oldStyle: "1908-12-14"
+    - field: dateFirstPublished
+      value: "1909-05-02"
+      evidenceRefs: [hindu-pub-russian]
+      source: "First appearance anywhere = Russian excerpts, «Киевские вести» no. 103 / «Русские ведомости» no. 89, 19 April 1909 (OS) = 2 May 1909 NS."
+      confidence: medium
+      oldStyle: "1909-04-19"
+      note: "An earlier Free Age Press English printing is not strictly ruled out (Tolstoy revised the English May 1909 OS); the documented first English printing is «Indian Opinion» Dec 1909. See needsReview."
+    - field: firstPublishedVenue
+      value: "«Киевские вести» / «Русские ведомости» (excerpts)"
+      evidenceRefs: [hindu-pub-russian]
+      source: "PSS commentary; both newspapers, no. 103 and no. 89, 19 April 1909 (OS)."
+      confidence: high
+    - field: firstPublishedVenueType
+      value: "newspaper"
+      evidenceRefs: [hindu-pub-russian]
+      source: "Newspaper excerpts."
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1909-05-02"
+      evidenceRefs: [hindu-pub-russian]
+      source: "Same as first publication — the excerpts were the first Russian printing; full Russian text 1911."
+      confidence: medium
+      oldStyle: "1909-04-19"
+    - field: firstPublishedInRussiaVenue
+      value: "«Киевские вести» / «Русские ведомости» (excerpts); full text «Сочинения гр. Л. Н. Толстого», ч. 20, изд. С. А. Толстой, M. 1911"
+      evidenceRefs: [hindu-pub-russian]
+      source: "PSS commentary."
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "newspaper"
+      evidenceRefs: [hindu-pub-russian]
+      source: "First Russian printing was newspaper excerpts; the 1911 full text was a book."
+      confidence: medium
+    - field: epigraph
+      value: "Всё, что существует, едино: люди только называют это единое разными именами. (Веды) [and a triad of further epigraphs — 1 John 4 «God is love», and Vivekananda's exposition of the Vedas; each of the seven sections opens with a «Krishna» epigraph from Baba Premananda Bharati's «Sree Krishna: The Lord of Love» (1904).]"
+      evidenceRefs: [hindu-epigraph-vedas]
+      source: "Letter text, opening epigraphs."
+      confidence: high
+    - field: epigraphAuthor
+      value: "Vedas / 1 John / Vivekananda / Krishna (via Baba Premananda Bharati)"
+      evidenceRefs: [hindu-epigraph-vedas]
+      source: "Letter text + scholarship (Bharati's book as the Krishna source)."
+      confidence: high
+    - field: themes
+      value: >-
+        [non-resistance, colonialism, India, law of love, violence, false science,
+        liberation, conscientious objection]
+      evidenceRefs: [hindu-marquee-lever, hindu-science-ballast]
+      source: "Free keyword tags from the letter's argument."
+      confidence: high
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: [hindu-pub-russian, hindu-pub-gandhi]
+      source: "Circulated in typed copies («машинописные списки») before publication — one reached Gandhi; the PSS commentary and Gandhi's preface both note this."
+      confidence: high
+    - field: bans
+      value: "[]"
+      evidenceRefs: [hindu-pub-russian]
+      source: "No formal ban found; the letter was printed (in excerpts) in legal Russian newspapers in 1909. The full text's delay to 1911 appears editorial/length-related, not a documented ban. Leave bans empty; record the excerpts-vs-full nuance in censorshipNotes."
+      confidence: medium
+      note: "If a reviewer finds a censorship action on the excerpts, add a bans[] entry; none surfaced in this dive."
+    - field: relatedWorks
+      value: >-
+        [{id: the-kingdom-of-god-is-within-you, relationshipType: source},
+        {id: the-law-of-violence-and-the-law-of-love, relationshipType: companion},
+        {id: a-letter-to-a-chinese, relationshipType: companion},
+        {id: an-address-to-the-chinese-people, relationshipType: companion}]
+      evidenceRefs: [hindu-marquee-lever]
+      source: >-
+        Kingdom of God (record exists) = the non-resistance root Gandhi also read (relationshipType
+        source). Law of Violence and the Law of Love (1908, proposed by sibling dive) = the same
+        year's systematic statement. Letter to a Chinese (1906, Tom 36) and Address to the Chinese
+        People (1900, Tom 34) = the wider 'letter to the colonised East' cluster (records not yet
+        created — propose as companions, verify IDs at ingestion).
+      confidence: medium
+      note: "Only the-kingdom-of-god-is-within-you is a live record today; the other three IDs are proposed/forward references."
+    - field: identifiers.jubileeEdition.volumes
+      value: "37"
+      evidenceRefs: [hindu-pub-russian]
+      source: "PSS Tom 37, pp. 245–272 (Russian); English text pp. 273–291 region in the same volume. Verify exact English-text page range at ingestion."
+      confidence: high
+
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Commentary + 5 dated diary entries (June, Oct, Nov, Dec 1908); the Das appeal; the self-deprecation thread; 413-sheet/29-redaction history."
+  - surface: "What the work says"
+    status: covered
+    note: "10 keystone passages read from the letter's own TEI (RU + authorized EN), structured around the Spencer-answer / consent / lever spine."
+  - surface: "The people around the work"
+    status: covered
+    note: "Chertkov, Makovitsky, Gusev (production); Das, Gandhi, Chitale, Bharati, Vivekananda, Škarvan (the Indian/translation network). All routed to entities."
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "413 sheets, 29 numbered redactions, dated manuscript covers from the commentary; individual variants not collated (the first June draft vs the Nov–Dec rework would repay a closer look)."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Russian excerpts 1909 / full 1911; English «Indian Opinion» 1909–10 (Chertkov, rev. Tolstoy); German 1910 (Škarvan). No formal ban found."
+  - surface: "Reception & afterlife — the Gandhi story"
+    status: covered
+    note: "The 3 Tolstoy→Gandhi letters; Gandhi's preface and serialization; Das's rejection; the satyagraha triangulation; Tolstoy's later approval."
+  - surface: "Reception & afterlife — Russian society & church"
+    status: partial
+    note: "The letter drew far less Russian/Church reaction than the banned treatises (it was a letter to a foreigner, printed in excerpts). No Synod/critic storm found; marked partial honestly, not padded."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "Kingdom of God (root), Law of Violence (same-year systematic statement), Letter to a Chinese / Address to the Chinese People (the colonised-East cluster); christian-anarchism, tolstoyanism, doukhobors dives cross-linked."
+  - surface: "The author's later verdict"
+    status: covered
+    note: "The dismissed-while-writing → 'very much approved' arc (diary 19 March 1910)."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "6 PD/CC images (Tolstoy 1908, Gandhi 1906, Das, Chertkov ×2, Indian Opinion press). No manuscript facsimile openly available → GTM request."
+
+contradictions:
+  - claim: "Tolstoy dismissed the letter as 'rubbish and repetition' (diaries, Nov–Dec 1908)."
+    correction: "He 'very much approved' it on rereading Gandhi's printed version (diary, 19 March 1910)."
+    evidenceRef: hindu-tolstoy-approved
+
+notCovered:
+  - "Individual collation of the 29 redactions (first June draft vs the Nov–Dec rework) — only the aggregate manuscript history is captured."
+  - "Tarak Nath Das's rebuttals ('Open Letter…' 16 Oct 1909; 'Young India's Reply to Count Tolstoy') as primary texts — known from scholarship (SAADA), not held in the corpus; flagged, not quoted from source."
+  - "The Krishna epigraphs spot-checked against Bharati's «Sree Krishna» (1904) page-by-page — confirmed as the source in scholarship, not collated here."
+  - "Letter to a Chinese (1906) and Address to the Chinese People (1900) as their own dives — the 'colonised East' cluster belongs to a separate dive."
+  - "Any earlier Free Age Press English printing of the letter (pre-«Indian Opinion»)."
+
+needsReview:
+  - item: "Exact English-text page range in PSS Tom 37 (TEI bibl says the work spans pp. 245–272; the visuals agent reported pp. 273–291 for the English — likely the English portion within the same volume). Confirm at ingestion."
+    phase: 2
+    why: "Conflicting page ranges between the TEI header and a secondary note."
+  - item: "No local Russian PSS Tom 37 facsimile: jubilee-edition/vol37 is mislabelled (actually PSS Tom 73). Keystone facsimile not rendered; request from GTM if wanted."
+    phase: 2
+    why: "Local jubilee dir names are offset from real PSS Toms (known gotcha); no facsimile produced."
+  - item: "publishedInRussiaDuringLifetime = true is technically correct (1909 excerpts) but the full text was 1911 (posthumous). Decide whether the boolean or the nuance leads in the record."
+    phase: 4
+    why: "Edge case the works schema's boolean flattens; flagged for the ingestion judgment call."
+  - item: "Whether an earlier (Free Age Press / «Свободное слово») English printing preceded «Indian Opinion» Dec 1909. Tolstoy revised the English in May 1909 (OS)."
+    phase: 3
+    why: "Affects the dateFirstPublished claim; documented first English printing is Indian Opinion."
+  - item: "Gandhi's preface exact quotes ('one of my guides', 'one of the clearest thinkers in the western world') — verify against CWMG Vol. 10 pp. 1–5; one popular phrasing was not found in the Wikisource text."
+    phase: 3
+    why: "Secondary-source quote precision; routed to the wiki page on Gandhi, not asserted in the dive's voice."
+  - item: "wikilinkTarget transliterations for the missing entities (Makovitsky, Škarvan, Bharati, Das) — confirm the vault's preferred spelling at ingestion (the vault uses non-obvious forms, e.g. Birukoff)."
+    phase: 4
+    why: "Avoid creating a duplicate page under a wrong transliteration."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (works/v37 letter; comments/v37_444_446; diaries Tom 56; letters Toms 78, 80, 81, 82)"
+  - "Wikimedia Commons (visuals, via MediaWiki imageinfo API)"
+  - "Web: Cambridge Core (Hazama 2023; Mantena 2012); Wikisource (Tolstoy–Gandhi correspondence; CWMG vol. 10); SAADA (Das rebuttal, summary only); Gutenberg/Internet Archive (Bharati, Sree Krishna)"
+  - "NOT consulted (gaps): GTM manuscript facsimiles; Russian PSS Tom 37 page scans (local dir mislabelled); SAADA primary text (403); Murthy 1987 edition; Bartlett 2010 page-level"
+
+references:
+  primary:
+    - "Л. Н. Толстой. «Письмо к индусу» / «Letter to a Hindoo». ПСС, Т. 37, с. 245–272 (М., 1956)."
+    - "В. С. Мишин. «Письмо к индусу». История писания и печатания и описание рукописей. ПСС, Т. 37, с. 444–446."
+    - "Л. Н. Толстой. Дневник 1908 г. ПСС, Т. 56 (entries 10 June, 30 Oct, 28 Nov, 6 Dec, 14 Dec)."
+    - "Л. Н. Толстой. Письма М. Ганди. ПСС, Т. 80 (№149, 25 Sep/7 Oct 1909), Т. 81 (№318, 25 Apr 1910), Т. 82 (№178, 7 Sep 1910)."
+    - "Л. Н. Толстой. Письмо С. Р. Чителю (S. R. Chitale). ПСС, Т. 78, с. 32–33 (21 Jan 1908)."
+  background:
+    - "Hazama, Eijiro, 2023, 'Unravelling the Myth of Gandhian Non-violence', Modern Intellectual History 20:1 (Cambridge UP)."
+    - "Mantena, Karuna, 2012, 'Another Realism: The Politics of Gandhian Nonviolence', American Political Science Review."
+    - "Guha, Ramachandra, 2013, Gandhi Before India (Allen Lane / Knopf)."
+    - "Green, Martin, 1983, Tolstoy and Gandhi, Men of Peace; 1986, The Origins of Nonviolence (Penn State UP)."
+    - "Murthy, B. Srinivasa (ed.), 1987, Mahatma Gandhi and Leo Tolstoy Letters (Long Beach Publications)."
+    - "Doke, Joseph J., 1909, M. K. Gandhi: An Indian Patriot in South Africa (London)."
+    - "Das, Tarak Nath, 1909, 'Open Letter to Count Leo Tolstoy in Reply to His Letter to a Hindoo' (SAADA)."
+    - "Hofmeyr, Isabel, 2013, Gandhi's Printing Press (Harvard UP)."
+    - "Gandhi, M. K., The Collected Works of Mahatma Gandhi, vol. 10 (preface to the letter)."
