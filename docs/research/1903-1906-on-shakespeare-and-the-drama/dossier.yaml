@@ -1,0 +1,765 @@
+# Corpus-dive dossier — On Shakespeare and the Drama
+# Layer: reference. Primary evidence + entity/visual/scholarship/work-record/coverage maps.
+# The dive PROPOSES vault pages and a works record; it never writes them.
+
+topic:
+  slug: 1903-1906-on-shakespeare-and-the-drama
+  title: "On Shakespeare and the Drama (О Шекспире и о драме)"
+  question: >-
+    Tolstoy's 1903–04 essay attacking Shakespeare's reputation. Does it confirm or
+    over-extend the What Is Art? doctrine — through the claims that Shakespeare's fame is
+    a collective "epidemic suggestion" and that his drama fails the religious-art /
+    sincerity test (craft without sincerity)?
+  date: 2026-06-13
+  period: "Prophet period (post-1880); composed 1903–04, published 1906"
+  corpusSurface: "work text + variants (Tom 35); composition-window diaries (Toms 54–55) + letters (Toms 74–75, 88); Grossman commentary apparatus (Tom 35)"
+  dateRange: "1903-09 .. 1906-11 (composition → first publication); roots from the 1850s"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE LEDGER — flat citation list. quoteRu verified verbatim against `extract`.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ── Genesis: diaries (Tom 54–55) ──
+  - id: diary-22sep-preface
+    genre: diary
+    pssTom: 54
+    pages: "192"
+    date: "1903-09-22 (OS)"
+    extract: extracts/_diaries_1903-1904.txt
+    quoteRu: "Пишу несколько дней (больше недели ) предисловие о Шекспире."
+    quoteEn: "(working English) I have been writing a preface about Shakespeare for several days (more than a week)."
+    significance: "First diary mention; confirms it began as a 'preface' and that writing was already a week old by 22 Sept (OS) — matching the 13 Sept (OS) start the manuscript covers record."
+  - id: diary-19dec-finished
+    genre: diary
+    pssTom: 54
+    pages: "200-201"
+    date: "1903-12-19 (OS)"
+    extract: extracts/_diaries_1903-1904.txt
+    quoteRu: "Кончил заниматься Шекспиром и начал о значении религии."
+    quoteEn: "(working English) I have finished with Shakespeare and begun on the meaning of religion."
+    significance: "The 'finished' date in the diary. But corrections continued: cf. 18 Jan 1904 ('added a bit to Shakespeare'); the last manuscript date is 19 Jan 1904."
+  - id: diary-distraction
+    genre: diary
+    pssTom: 54
+    pages: "193-199"
+    date: "1903-11-14 .. 1903-12-02 (OS)"
+    extract: extracts/_diaries_1903-1904.txt
+    quoteRu: "Все вожусь с Шекспиром"
+    quoteEn: "(working English) Still messing with Shakespeare."
+    significance: "The recurring self-reproach: the essay 'kept growing' (14 Nov) and he kept 'digging'/'messing' with it (24 Nov, 2 Dec) as a distraction from work he judged 'more necessary'."
+  - id: diary-18jan-lastadd
+    genre: diary
+    pssTom: 55
+    pages: "8-9"
+    date: "1904-01-18 (OS)"
+    extract: extracts/_diaries_1903-1904.txt
+    quoteRu: "Вчера немного добавил к Шекспиру"
+    quoteEn: "(working English) Yesterday I added a little to Shakespeare."
+    significance: "The last datable touch to the essay in the diary, the day before the final manuscript date (19 Jan 1904 OS)."
+
+  # ── Genesis: letters (Toms 74, 88) ──
+  - id: letter-chertkov-6oct
+    genre: letter
+    pssTom: 88
+    pages: "308-310"
+    date: "1903-10-06 (OS)"
+    addressee: "V. G. Chertkov"
+    extract: extracts/_letters_window.txt
+    quoteRu: "Это начатое мною предисловие к статье Crosby об отношении Шекспира к рабочему народу, которое переросло статью Crosby и стоило мне большого труда."
+    quoteEn: "(working English) This is the preface I began to Crosby's article on Shakespeare's relation to the working people, which has outgrown Crosby's article and cost me much labour."
+    significance: "The clearest statement of the genesis: a preface to Crosby that outgrew its frame. Same letter: he calls it 'a very unexpected work' that has distracted him 'for nearly a month' from 'more necessary works'."
+  - id: letter-chertkov-6oct-impression
+    genre: letter
+    pssTom: 88
+    pages: "308-310"
+    date: "1903-10-06 (OS)"
+    addressee: "V. G. Chertkov"
+    extract: extracts/_letters_window.txt
+    quoteRu: "Мне хотелось высказать мое много раз и очень добросовестно проверенное впечатление о Шекспире, совершенно противоположное установившемуся."
+    quoteEn: "(working English) I wanted to express my many-times and very conscientiously verified impression of Shakespeare, completely opposite to the established one."
+    significance: "The essay's self-understanding: a long-tested, deliberate dissent — not a whim. Echoes the essay's own opening."
+  - id: letter-stasov-9oct
+    genre: letter
+    pssTom: 74
+    pages: "202-203"
+    date: "1903-10-09 (OS)"
+    addressee: "V. V. Stasov"
+    extract: extracts/_letters_window.txt
+    quoteRu: "Я всё копаюсь с Шекспиром et je ne démords pas de mon idée."
+    quoteEn: "(working English) I keep digging at Shakespeare, and I won't give up my idea. [French: 'et je ne démords pas de mon idée']"
+    significance: "To Stasov, who had supplied the Shakespeare scholarship and visited Yasnaya Polyana in Sept 1903."
+  - id: letter-stasov-9oct-halfcentury
+    genre: letter
+    pssTom: 74
+    pages: "202-203"
+    date: "1903-10-09 (OS)"
+    addressee: "V. V. Stasov"
+    extract: extracts/_letters_window.txt
+    quoteRu: "Дело не в аристократизме Шекспира, а в извращении, посредством восхваления нехудожественных произведений, эстетического вкуса."
+    quoteEn: "(working English) The point is not Shakespeare's aristocratism, but the perversion of aesthetic taste through the praise of non-artistic works."
+    significance: "Distinguishes his thesis from Crosby's (whose point WAS Shakespeare's class politics): for Tolstoy the deeper harm is the corruption of taste — the What Is Art? continuity. Same letter: 'I needed to express what has been sitting in me for half a century' (сидело во мне полстолетия)."
+
+  # ── The work itself (Tom 35, pp. 216-272) ──
+  - id: essay-great-evil
+    genre: works
+    pssTom: 35
+    pages: "216-217"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "есть великое зло, как и всякая неправда"
+    quoteEn: "(working English) [the indisputable fame of Shakespeare] is a great evil, like every untruth."
+    significance: "Ch I. Frames the whole essay: the fame is not merely mistaken but harmful, because untrue. Sets up the 'suggestion = lie = evil' chain completed in Ch VIII."
+  - id: essay-fifty-years
+    genre: works
+    pssTom: 35
+    pages: "216-217"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "я ли безумен, находя ничтожными и прямо дурными произведения, которые считаются верхом совершенства всем образованным миром"
+    quoteEn: "(working English) am I mad, finding insignificant and downright bad the works that the whole educated world considers the height of perfection…"
+    significance: "Ch I. The 50-year struggle and the 75-year-old's re-reading; the personal stake that Orwell (1947) reads autobiographically."
+  - id: essay-leir-better
+    genre: works
+    pssTom: 35
+    pages: "239-240"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "вся эта старая драма без всякого сравнения во всех отношениях лучше переделки Шекспира"
+    quoteEn: "(working English) this whole old play is, beyond all comparison and in every respect, better than Shakespeare's reworking of it."
+    significance: "Ch IV. The claim that the anonymous old King Leir surpasses Shakespeare — the natural reconciliation scene (both kneel) vs Cordelia's needless death."
+  - id: essay-hamlet-hypnosis
+    genre: works
+    pssTom: 35
+    pages: "245-246"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "то слепое поклонение Шекспиру, тот нерассуждающий гипноз"
+    quoteEn: "(working English) that blind worship of Shakespeare, that unreasoning hypnosis…"
+    significance: "Ch IV. Hamlet as the case where 'hypnosis' forbids even the thought that a Shakespeare work could be ungenius; critics invented 'characterlessness as a profound character'."
+  - id: essay-homer-insincere
+    genre: works
+    pssTom: 35
+    pages: "256-257"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "Сейчас видно, что он не верит в то, что говорит, что оно ему не нужно"
+    quoteEn: "(working English) One sees at once that he does not believe what he says, that he has no need of it…"
+    significance: "Ch V. The sincerity charge stated against Homer's foil: Homer believes and never exaggerates; Shakespeare neither believes nor needs what he writes."
+  - id: essay-three-criteria-sincerity
+    genre: works
+    pssTom: 35
+    pages: "260-261"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "сущность искусства состоит в заражении воспринимающего произведение искусства чувством автора"
+    quoteEn: "(working English) the essence of art consists in infecting the perceiver of the work of art with the author's feeling."
+    significance: "Ch VI. The third criterion — sincerity — is the What Is Art? infection (заражение) theory, here named as the standard Shakespeare fails. The hinge of the marquee question."
+  - id: essay-content-lowest
+    genre: works
+    pssTom: 35
+    pages: "261-262"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "самое низменное, пошлое миросозерцание, считающее внешнюю высоту сильных мира действительным преимуществом людей, презирающее толпу, т. е. рабочий класс"
+    quoteEn: "(working English) the lowest, most vulgar worldview, which regards the outward elevation of the powerful as a real human advantage and despises the crowd, i.e. the working class."
+    significance: "Ch VI. The content critique — the point Crosby raised, now in Tolstoy's own voice; the failure of criterion 1 (content)."
+  - id: essay-epidemic-suggestion
+    genre: works
+    pssTom: 35
+    pages: "263-264"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "слава эта есть одно из тех эпидемических внушений, которым всегда подвергались и подвергаются люди"
+    quoteEn: "(working English) this fame is one of those epidemic suggestions to which people have always been, and still are, subject."
+    significance: "Ch VII. THE marquee thesis. Compared to the Crusades, witch-belief, torture-for-truth, the philosopher's stone, the Dutch tulip mania; magnified by the press 'like a snowball'."
+  - id: essay-dreyfus
+    genre: works
+    pssTom: 35
+    pages: "265-266"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "делом Дрейфуса"
+    quoteEn: "(working English) the Dreyfus affair."
+    significance: "Ch VII. The worked contemporary example of press-amplified collective suggestion — a recent case (1894–1906) his readers had lived through."
+  - id: essay-goethe-proclaimed
+    genre: works
+    pssTom: 35
+    pages: "268-269"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "провозгласил Шекспира великим поэтом"
+    quoteEn: "(working English) [Goethe] proclaimed Shakespeare a great poet."
+    significance: "Ch VIII. The genealogy: Goethe — 'dictator of public opinion in aesthetic questions' — canonised him because their worldviews coincided; the German critics, 'like crows on carrion' (как вороны на падаль), then built the theory of 'objective art' out of him."
+  - id: essay-suggestion-is-lie
+    genre: works
+    pssTom: 35
+    pages: "270-271"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "Внушение же всегда есть ложь, а всякая ложь есть зло."
+    quoteEn: "(working English) But suggestion is always a lie, and every lie is evil."
+    significance: "Ch VIII. Closes the chain from Ch I (fame as 'untruth'): suggestion → lie → evil; hence the harm of Shakespeare-worship is moral, not merely aesthetic."
+  - id: essay-conclusion-other-sources
+    genre: works
+    pssTom: 35
+    pages: "271-272"
+    date: "1903-1904"
+    extract: extracts/v35_216_272_O_Shekspire_i_o_drame.txt
+    quoteRu: "учение о жизни, покуда нет настоящей религиозной драмы, надо искать в других источниках"
+    quoteEn: "(working English) the teaching of life, until there is a true religious drama, must be sought in other sources."
+    significance: "The essay's final words. The positive programme: a new religious form of drama, and meanwhile life's teaching from elsewhere — the What Is Art? religious-art standard restated."
+
+  # ── Variants / redactions (Tom 35, pp. 557-577) ──
+  - id: var-preface-original
+    genre: works
+    pssTom: 35
+    pages: "557-558"
+    date: "1903 (рук. № 1)"
+    extract: extracts/v35_557_577_Varianty.txt
+    quoteRu: "Печатая прекрасное основательное исследование г-на Э. Кросби об отношении Шекспира к рабочему народу, я считаю не лишним высказать и мое отношение к произведениям Шекспира"
+    quoteEn: "(working English) In printing Mr. E. Crosby's excellent, thorough study of Shakespeare's attitude to the working people, I think it not superfluous to express my own attitude to Shakespeare's works…"
+    significance: "Draft № 1 (рук. № 1), titled ПРЕДИСЛОВИЕ (Preface) — the essay's first form, literally a preface to Crosby. The published Ch I softens 'Печатая… предисловие' to 'Crosby's article led me to the thought'. Keystone redaction."
+  - id: var-would-not-die
+    genre: works
+    pssTom: 35
+    pages: "557-558"
+    date: "1903 (рук. № 1)"
+    extract: extracts/v35_557_577_Varianty.txt
+    quoteRu: "мне бы не хотелось умереть, не высказав его"
+    quoteEn: "(working English) I should not like to die without having expressed it."
+    significance: "Draft № 1. The personal urgency, cut from the published opening — the 75-year-old's compulsion that Orwell (1947) reads as self-reproach."
+  - id: var-infection-cut
+    genre: works
+    pssTom: 35
+    pages: "571-572"
+    date: "1903 (рук. № 12)"
+    extract: extracts/v35_557_577_Varianty.txt
+    quoteRu: "всякое художественно воспринимаемое впечатление есть заражение тем чувством, которое испытывает художник"
+    quoteEn: "(working English) every artistically perceived impression is an infection with the feeling the artist experiences…"
+    significance: "Draft № 24 (рук. № 12) — a CUT passage giving the psychological mechanism: the feeling of union with the many who praise Shakespeare counterfeits the genuine aesthetic union, deceiving even gifted readers (Goethe, Hugo, Turgenev). The most explicit What Is Art? bridge; dropped from the published text."
+  - id: var-awl-objectivity
+    genre: works
+    pssTom: 35
+    pages: "568-569"
+    date: "1903 (рук. № 11)"
+    extract: extracts/v35_557_577_Varianty.txt
+    quoteRu: "Шила в мешке не утаишь."
+    quoteEn: "(working English) You can't hide an awl in a sack. [i.e. an author's worldview always shows through]"
+    significance: "Draft № 15 (рук. № 11) — a CUT critique of 'objectivity in art': the 'Olympianism of Goethe and the soaring of Shakespeare above life's events' is only proof that 'they are not in earnest'. Objectivity survives only obliquely in the published Ch VIII."
+  - id: var-hamlet-nochar
+    genre: works
+    pssTom: 35
+    pages: "562"
+    date: "1903 (рук. № 8)"
+    extract: extracts/v35_557_577_Varianty.txt
+    quoteRu: "Гамлет есть отсутствие характера"
+    quoteEn: "(working English) Hamlet is the absence of character."
+    significance: "Draft № 7/8. The blunt form of the Hamlet argument ('only Shakespeare's worshippers recognised this absence of character as a character')."
+
+  # ── Editorial commentary (Grossman, Tom 35, pp. 680-685) — secondary/provenance ──
+  - id: comm-start-13sep
+    genre: commentary
+    pssTom: 35
+    pages: "680-684"
+    date: "1950 (Grossman)"
+    extract: extracts/_commentary_istoriya-pisaniya.txt
+    quoteRu: "Как видно по обложкам, сохранившимся в рукописях статьи, она была начата 13 сентября."
+    quoteEn: "(working English) As is clear from the covers preserved among the manuscripts of the essay, it was begun on 13 September."
+    significance: "Provenance for the composition start (13 Sept 1903, OS). Secondary (editorial); used for dates, not asserted as Tolstoy's voice."
+  - id: comm-continuation-of-wia
+    genre: commentary
+    pssTom: 35
+    pages: "680-684"
+    date: "1950 (Grossman)"
+    extract: extracts/_commentary_istoriya-pisaniya.txt
+    quoteRu: "с которым статья о Шекспире непосредственно связана, являясь как бы его продолжением"
+    quoteEn: "(working English) …with which [What Is Art?] the Shakespeare essay is directly connected, being, as it were, its continuation."
+    significance: "The PSS editor's own statement of the What Is Art? link, and that the theses formed in 1896–97. Grounds the sequel relationship and the marquee."
+  - id: comm-publication
+    genre: commentary
+    pssTom: 35
+    pages: "680-684"
+    date: "1950 (Grossman)"
+    extract: extracts/_commentary_istoriya-pisaniya.txt
+    quoteRu: "Статья появилась сначала в газете «Русское слово» 1906 г."
+    quoteEn: "(working English) The essay first appeared in the newspaper Russkoe Slovo in 1906."
+    significance: "Provenance for first publication: Russkoe Slovo, Nov 1906 (OS, nos. 277–285), then Sytin separate ed. (Moscow 1907) and the English Free Age Press ed. (Christchurch 1907)."
+  - id: comm-conspectus-25sep
+    genre: commentary
+    pssTom: 35
+    pages: "684-685"
+    date: "1950 (Grossman)"
+    extract: extracts/_commentary_opisanie-rukopisej.txt
+    quoteRu: "конспект в 11 пунктах (пункт 1 не сохранился), с перечислением недостатков в творчестве Шекспира. В конце листа 5 этой рукописи дата Толстого: «25 сент.»."
+    quoteEn: "(working English) [Manuscript № 6 — also an autograph —] a conspectus in 11 points (point 1 not preserved), enumerating the defects in Shakespeare's work. At the end of leaf 5 of this manuscript is Tolstoy's date: '25 Sept.'."
+    significance: "Provenance for the 11-point conspectus (the argument's skeleton) and its date, 25 Sept (OS) — i.e. the analytic spine was fixed within ~2 weeks of starting. Secondary (editorial, from the manuscript description)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a plan; the dive writes no pages)
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "On Shakespeare and the Drama"
+    wikiType: work   # routing label only — 'work' is not a wiki/ type; real home is a works/ record (see workRecord), not a wiki/ page
+    wikilinkTarget: "On Shakespeare and the Drama"
+    vaultStatus: missing
+    role: "The subject work — record-creating (see workRecord)."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-great-evil, essay-epidemic-suggestion, essay-conclusion-other-sources]
+    ingestionPriority: 1
+  - name: "Ernest Howard Crosby"
+    wikiType: person
+    wikilinkTarget: "Ernest Crosby"
+    vaultStatus: missing
+    role: "American Tolstoyan; his essay Shakespeare and the Working Classes is the essay's occasion; correspondent and acquaintance from 1894."
+    sources: [jubilee-edition]
+    evidenceRefs: [letter-chertkov-6oct, var-preface-original]
+    ingestionPriority: 1
+  - name: "Vladimir Stasov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Stasov"
+    vaultStatus: missing
+    role: "Critic; supplied the Shakespeare scholarship (Brandes, via Storozhenko), visited Yasnaya Polyana Sept 1903, recommended Nordau/Brandes."
+    sources: [jubilee-edition]
+    evidenceRefs: [letter-stasov-9oct, letter-stasov-9oct-halfcentury]
+    ingestionPriority: 2
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Obtained Tolstoy's consent to publish; arranged the English edition (Free Age Press / The Free Age Press translation)."
+    sources: [jubilee-edition]
+    evidenceRefs: [letter-chertkov-6oct, comm-publication]
+    ingestionPriority: 2
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "Tolstoy's authorised English translator/biographer; in the composition window he was translating folk tales (Chertkov letter 6 Oct 1903). Co-translator/biographer context for reception."
+    sources: [jubilee-edition]
+    evidenceRefs: [letter-chertkov-6oct]
+    ingestionPriority: 3
+  - name: "Johann Wolfgang von Goethe"
+    wikiType: person
+    wikilinkTarget: "Johann Wolfgang von Goethe"
+    vaultStatus: missing
+    role: "In the essay, the 'dictator of aesthetic opinion' who canonised Shakespeare; the genealogical villain of the fame (Ch VIII)."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-goethe-proclaimed]
+    ingestionPriority: 3
+  - name: "Georg Gottfried Gervinus"
+    wikiType: person
+    wikilinkTarget: "Georg Gervinus"
+    vaultStatus: missing
+    role: "German literary historian whose Shakespeare (1849–52) Tolstoy quotes and polemicises with at length (Ch VI) as the type of the Shakespeare-as-ethical-teacher reading."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-content-lowest]
+    ingestionPriority: 3
+  - name: "Georg Brandes"
+    wikiType: person
+    wikilinkTarget: "Georg Brandes"
+    vaultStatus: missing
+    role: "Danish critic; his Shakespeare (Russian transl. 1901, supplied by Stasov) is quoted as the modern admirer Tolstoy contests."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-hamlet-hypnosis]
+    ingestionPriority: 3
+  - name: "Ivan Turgenev"
+    wikiType: person
+    wikilinkTarget: "Ivan Turgenev"
+    vaultStatus: missing
+    role: "Named (with Fet) as the aesthetically-gifted-but-suggestible Shakespeare-worshipper; the cut Turgenev/Macbeth anecdote (draft № 17). 1850s-60s interlocutor on Shakespeare."
+    sources: [jubilee-edition]
+    evidenceRefs: [var-infection-cut]
+    ingestionPriority: 3
+  - name: "William Shakespeare"
+    wikiType: person
+    wikilinkTarget: "William Shakespeare"
+    vaultStatus: missing
+    role: "The essay's subject; route as a person only if a vault page is wanted (peripheral to a Tolstoy-research vault)."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-great-evil]
+    ingestionPriority: 3
+  - name: "What Is Art?"
+    wikiType: work   # routing label only — 'work' is not a wiki/ type; this is an existing works/ record, not a wiki/ page
+    wikilinkTarget: "What Is Art?"
+    vaultStatus: exists
+    role: "The governing theory; the Shakespeare essay is its practical sequel (relatedWorks)."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-three-criteria-sincerity, comm-continuation-of-wia]
+    ingestionPriority: 2
+  - name: "Infection theory of art (заражение)"
+    wikiType: concept
+    wikilinkTarget: "Infection theory of art"
+    vaultStatus: missing
+    role: "Tolstoy's definition of art (from What Is Art?); the sincerity criterion the Shakespeare essay applies."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-three-criteria-sincerity, var-infection-cut]
+    ingestionPriority: 2
+    dependsOn: ["What Is Art?"]
+  - name: "Epidemic suggestion (эпидемическое внушение)"
+    wikiType: concept
+    wikilinkTarget: "Epidemic suggestion"
+    vaultStatus: missing
+    role: "Tolstoy's explanation of canonical fame as press-amplified collective suggestion; the essay's distinctive thesis."
+    sources: [jubilee-edition]
+    evidenceRefs: [essay-epidemic-suggestion, essay-suggestion-is-lie]
+    ingestionPriority: 2
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — see visuals/_visuals-sweep.md. Cache git-ignored; licences recorded.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: tolstoy-1906-photograph
+    type: photograph
+    subject: "Leo Tolstoy, 1906"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [essay-great-evil]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Leo_Tolstoi_1906.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1906.jpg"
+    localPath: visuals/commons-tolstoy-1906.jpg
+    note: "Keystone. Anonymous, 1906 — within 2–3 years of composition, the year of Russian publication. No closer PD photo for 1903–04 confirmed."
+  - id: crosby-1904-photograph
+    type: photograph
+    subject: "Ernest Howard Crosby, 1904"
+    relatedEntity: "Ernest Howard Crosby"
+    relatedEvidence: [letter-chertkov-6oct]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Ernest_Howard_Crosby_1904.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Ernest_Howard_Crosby_1904.jpg"
+    localPath: visuals/commons-crosby-1904.jpg
+    note: "Portrait by James E. Purdy, 1904 — the year of composition. PD by age."
+  - id: stasov-repin-1905-portrait
+    type: portrait
+    subject: "Vladimir Stasov (by Ilya Repin, 1905)"
+    relatedEntity: "Vladimir Stasov"
+    relatedEvidence: [letter-stasov-9oct]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Stasov_by_Repin_1905.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Stasov_by_Repin_1905.jpg"
+    localPath: visuals/commons-stasov-repin-1905.jpg
+    note: "Repin oil, 1905 — closest in time to Stasov's Sept 1903 visit. Repin d.1930, Stasov d.1906; PD."
+  - id: tolstoy-on-shakespeare-1906-title-page
+    type: title-page
+    subject: "Tolstoy on Shakespeare (Funk & Wagnalls, New York, 1906)"
+    relatedEntity: "On Shakespeare and the Drama"
+    relatedEvidence: [comm-publication]
+    holding: "Internet Archive"
+    archiveId: "tolstoyonshakesp00tols"
+    access: "open (IA scan)"
+    rights: "Public domain (1906 US imprint)"
+    licence: PD
+    usable: true
+    url: "https://archive.org/details/tolstoyonshakesp00tols"
+    localPath: ""
+    note: "Not downloaded — IA exposes only a thumbnail. To obtain: download the PDF and extract p.1 (pdftoppm -r 300 -f 1 -l 1). Translation by V. Tchertkoff & I. F. Mayo; includes Crosby's essay + Shaw's letter. Visuals work-order item."
+  - id: shakespeare-droeshout-1623-engraving
+    type: engraving
+    subject: "William Shakespeare (Droeshout, First Folio 1623)"
+    relatedEntity: "William Shakespeare"
+    relatedEvidence: [essay-great-evil]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Shakespeare_Droeshout_1623.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Shakespeare_Droeshout_1623.jpg"
+    localPath: visuals/commons-shakespeare-droeshout-1623.jpg
+    note: "Optional visual counterpoint; PD by age. Low priority (this is a Tolstoy essay, not a Shakespeare biography)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). See extracts/_scholarship.md.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    English-language criticism overwhelmingly treats the essay as a brilliant failure.
+    George Orwell's "Lear, Tolstoy and the Fool" (1947) set the durable terms: the logical
+    case is partly unanswerable, but it cannot dislodge the enjoyment readers take from the
+    plays (the "survival" test of merit), and the venom is best explained by the Lear-Tolstoy
+    biographical parallel — renunciation, flight, a death among strangers. A. N. Wilson
+    (1988: "fifteen thousand words of nonsense") and Harold Bloom (Tolstoy's attack as a
+    strong writer's anxiety-of-influence repudiation) repeat the dismissal. A minority grants
+    Tolstoy something: G. Wilson Knight (1934) conceded he exposed real weaknesses in
+    Shakespeare-worship; Shaw (who coined "bardolatry") agreed on Shakespeare's missing social
+    conscience while defending the "word-music"; George Gibian (1957, the only dedicated study)
+    locates Tolstoy in the French neoclassical tradition; Catherine Brown (2015) reads it as a
+    self-aware moral criticism. The hostile mainstream, as Brown notes, tends to beg the
+    question — taking the pleasure in Shakespeare as a settled fact, which is exactly what
+    Tolstoy contests.
+  triangulation:
+    - evidenceRef: essay-three-criteria-sincerity
+      conventionalView: "The essay is the practical application of What Is Art? — the same three criteria, with sincerity (infection) decisive."
+      relation: confirms
+      source: "Gibian (1957), Tolstoj and Shakespeare; Orwell (1947)"
+    - evidenceRef: essay-epidemic-suggestion
+      conventionalView: "Orwell calls the 'epidemic suggestion' a conspiracy-theory substitute for argument; Bloom reframes the fame as a real aesthetic fact the essay fails to explain."
+      relation: complicates
+      source: "Orwell (1947); Bloom (1994), The Western Canon"
+    - evidenceRef: essay-goethe-proclaimed
+      conventionalView: "Gibian places Tolstoy himself in a French (not German) neoclassical lineage, which softens the Germany-as-villain story; Orwell treats the historical claim as beside the point."
+      relation: complicates
+      source: "Gibian (1957); Orwell (1947)"
+    - evidenceRef: essay-content-lowest
+      conventionalView: "Shaw and Crosby independently affirm the class critique — Shakespeare had no social conscience."
+      relation: confirms
+      source: "Shaw (1906 letter); Crosby (1902/1906)"
+    - evidenceRef: essay-leir-better
+      conventionalView: "Orwell, Bloom and Wilson read the scene-by-scene demolition as wilfully obtuse — missing verbal music, symbolic depth, the Fool; Orwell defends the very Fool material Tolstoy omits."
+      relation: contradicts
+      source: "Orwell (1947); Bloom (1998); Wilson (1988)"
+    - evidenceRef: essay-fifty-years
+      conventionalView: "Orwell develops the Lear-Tolstoy autobiographical parallel (renunciation → resentment), which Tolstoy's own account does not make."
+      relation: extends
+      source: "Orwell (1947); Brown (2015)"
+    - evidenceRef: var-preface-original
+      conventionalView: "The Crosby-preface origin and the self-reproached 'distraction' are confirmed by the 1906 edition's own structure and front matter."
+      relation: confirms
+      source: "Funk & Wagnalls (1906) volume; Crosby (1902)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORD — PROPOSES CREATION (no record exists). Read-only to works/.
+# Shapes match the LIVE works schema (v9). Human ingestion applies.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/on-shakespeare-and-the-drama/On Shakespeare and the Drama.md"
+  workId: on-shakespeare-and-the-drama
+  fields:
+    - field: titleEn
+      value: "On Shakespeare and the Drama"
+      source: "Standard English title (Tchertkoff & Mayo, 1906: 'Shakespeare and the Drama')"
+      confidence: high
+      note: "The Tchertkoff/Mayo translation titles Tolstoy's part 'Shakespeare and the Drama'; the Russian is 'О Шекспире и о драме'. 'On Shakespeare and the Drama' is the conventional full English rendering."
+    - field: titleRu
+      value: "О Шекспире и о драме"
+      evidenceRefs: [comm-publication]
+      source: "PSS Tom 35 title"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - title: "Критический очерк"
+          type: subtitle
+          language: ru
+        - title: "Shakespeare and the Drama"
+          type: translation
+          language: en
+        - title: "Предисловие"
+          type: working
+          language: ru
+      source: "Subtitle from the 1907 Sytin ed. (Критический очерк); EN title from Tchertkoff & Mayo 1906; working title 'Предисловие' from draft № 1"
+      confidence: high
+    - field: mainCategory
+      value: "Non-Fiction"
+      source: "directory taxonomy"
+      confidence: high
+    - field: subcategory
+      value: "Essays and Criticism"
+      source: "directory taxonomy (mirrors What Is Art?)"
+      confidence: high
+    - field: genre
+      value: essay
+      source: "criticism / essay (the PSS prints it among СТАТЬИ)"
+      confidence: high
+    - field: language
+      value: ru
+      confidence: high
+    - field: completionStatus
+      value: complete
+      evidenceRefs: [diary-19dec-finished]
+      source: "Finished and published"
+      confidence: high
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: [comm-publication]
+      source: "Russkoe Slovo 1906; Sytin 1907; English editions 1906–07 — all in Tolstoy's lifetime"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [comm-publication]
+      source: "Russkoe Slovo (Moscow daily), Nov 1906; Sytin separate ed. 1907 — published freely in Russia after the 1905 censorship relaxation"
+      confidence: high
+    - field: dateWritingStarted
+      value: "1903-09-26"
+      oldStyle: "1903-09-13"
+      approximate: false
+      evidenceRefs: [comm-start-13sep, diary-22sep-preface]
+      source: "Grossman commentary — the manuscript covers date the start to 13 Sept 1903 (OS)"
+      confidence: high
+      note: "OS 1903-09-13 → NS 1903-09-26 (13-day offset). Ingestion should confirm the OS→NS conversion."
+    - field: dateWritingCompleted
+      value: "1904-02-01"
+      oldStyle: "1904-01-19"
+      approximate: true
+      evidenceRefs: [diary-19dec-finished, diary-18jan-lastadd, comm-start-13sep]
+      source: "Grossman commentary — last manuscript date 19 Jan 1904 (OS); Tolstoy declared it 'finished' in the diary 19 Dec 1903 (OS) but corrected it into January"
+      confidence: medium
+      note: "Two candidate dates: 'finished' 19 Dec 1903 (OS) vs last correction 19 Jan 1904 (OS). Recorded the later (firmest end of work). OS 1904-01-19 → NS 1904-02-01."
+    - field: dateFirstPublished
+      value: "1906-11-25"
+      oldStyle: "1906-11-12"
+      approximate: true
+      evidenceRefs: [comm-publication]
+      source: "Grossman: Russkoe Slovo, first installment 12 Nov 1906 (OS), nos. 277–285 (12–23 Nov OS)"
+      confidence: medium
+      note: "PSS editor states Russkoe Slovo appeared 'first' (сначала). OS 1906-11-12 → NS 1906-11-25. NEEDS REVIEW: near-simultaneous English appearances — The Fortnightly Review (Dec 1906) and Funk & Wagnalls (New York, Nov 1906) — may complicate strict priority."
+    - field: firstPublishedVenue
+      value: "Русское слово (Russkoe Slovo)"
+      evidenceRefs: [comm-publication]
+      source: "Grossman commentary"
+      confidence: high
+      note: "The large-circulation Moscow daily (founded 1895, Sytin), not the 1859–66 St Petersburg weekly of the same name."
+    - field: firstPublishedVenueType
+      value: newspaper
+      source: "Grossman commentary"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1906-11-25"
+      oldStyle: "1906-11-12"
+      approximate: true
+      evidenceRefs: [comm-publication]
+      source: "Same Russkoe Slovo serialisation (Russia)"
+      confidence: medium
+    - field: firstPublishedInRussiaVenue
+      value: "Русское слово (Russkoe Slovo)"
+      source: "Grossman commentary"
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: newspaper
+      source: "Grossman commentary"
+      confidence: high
+    - field: authoringLocations
+      value: ["Yasnaya Polyana"]
+      source: "All composition-window diaries and letters headed Я. П. (Yasnaya Polyana)"
+      confidence: high
+      note: "Shape to the works schema authoringLocations object form on ingestion (Russia / Tula Oblast / Yasnaya Polyana)."
+    - field: bans
+      value: []
+      source: "No ban recovered — published freely in Russia (Russkoe Slovo, Nov 1906) after the 1905 censorship relaxation"
+      confidence: medium
+      note: "Brown (2015) observes the essay 'courted, though didn't quite meet, censorship' by attacking an author used to evade the censor — but it was not banned. Record via censorshipNotes rather than a bans[] entry."
+    - field: censorshipNotes
+      value: "Tolstoy did not intend to publish it (he set it aside among works not for release in his lifetime); Chertkov obtained his consent. It then appeared freely in Russia in 1906 after the 1905 censorship relaxation. Catherine Brown (2015) notes it 'courted, though didn't quite meet, censorship' because attacking an author used to circumvent the censor was itself faintly subversive."
+      evidenceRefs: [comm-publication]
+      source: "Grossman commentary (Chertkov's note); Brown (2015)"
+      confidence: medium
+    - field: relatedWorks
+      value:
+        - id: what-is-art
+          relationshipType: sequel
+      evidenceRefs: [comm-continuation-of-wia, essay-three-criteria-sincerity]
+      source: "Grossman: 'directly connected [to What Is Art?], being as it were its continuation'"
+      confidence: high
+      note: "relationshipType 'sequel' captures 'продолжение' (continuation). Ingestion may prefer 'companion'; the directional sense is sequel."
+    - field: themes
+      value: ["aesthetics", "drama", "Shakespeare", "religious art", "sincerity", "suggestion / collective hypnosis", "authority", "King Lear"]
+      source: "dive synthesis"
+      confidence: medium
+    - field: identifiers.jubileeEdition.volumes
+      value: "35"
+      source: "PSS Tom 35, pp. 216–272 (essay); 557–577 (variants); 680–685 (commentary)"
+      confidence: high
+    - field: wordCount
+      value: 18208
+      wordCountEdition: "Jubilee Edition (PSS), Tom 35 — TEI extract"
+      source: "word count of the tolstoydigital TEI extract"
+      confidence: medium
+      note: "Approximate; from the cleaned TEI text, not a typeset count."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status (derives 'Material not covered'; resume reads this)
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition (incl. the people)"
+    status: covered
+    note: "13 dated diary/letter passages (Toms 54–55, 74, 88) + Grossman commentary; the people sweep yielded Crosby, Stasov, Chertkov, Maude, Storozhenko, the daughter-in-law (translator)."
+  - surface: "What the work says (structural map)"
+    status: covered
+    note: "All 8 chapters read; keystones for each (the Lear retelling, no-characters/Leir, Homer/sincerity, the three criteria, epidemic suggestion, the Goethe genealogy, the conclusion)."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "Variants № 1–28 read: the original ПРЕДИСЛОВИЕ opening, the 11-point conspectus (dated 25 Sept), and the cut passages (the infection/union mechanism, the objectivity critique, the Shakespeare-the-man portrait, the Turgenev anecdote, the Koran analogy)."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Russkoe Slovo Nov 1906 (OS) → Sytin 1907 → English Free Age Press 1907 / Funk & Wagnalls 1906 (Tchertkoff & Mayo). English-edition priority and the Fortnightly Dec 1906 appearance flagged to needsReview."
+  - surface: "Reception & afterlife"
+    status: partial
+    note: "Scholarly reception strong (Orwell, Knight, Shaw, Bloom, Gibian, Wilson, Brown). Contemporary 1906–07 press reaction (Russian and English) is thin in open sources — needsReview; the 1907 ed.'s 'Press against Shakespeare' section not recovered."
+  - surface: "Scholarly context (triangulation)"
+    status: covered
+    note: "7 triangulation entries; the question-begging move in the hostile mainstream named and attributed (Brown 2015)."
+  - surface: "Marquee question (confirm vs over-extend WIA)"
+    status: covered
+    note: "Tested as hypothesis: confirms (faithful application of the three criteria) + extends (the hypnotism charge generalised into a press-amplified social-contagion theory of fame); the unfalsifiable sincerity verdict noted as the doctrine's exposed vulnerability."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "4 PD images cached (Tolstoy 1906, Crosby 1904, Stasov/Repin 1905, Droeshout 1623) + full provenance + fetch recipe for the Funk & Wagnalls 1906 title page (IA)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:   # intra-corpus (primary-vs-primary) only
+  - claim: "The launch framing: 'published 1906 as the preface to Crosby's book'."
+    correction: "The essay was CONCEIVED as a preface to Crosby (draft № 1 is titled ПРЕДИСЛОВИЕ) but OUTGREW it into a standalone essay (Chertkov, 6 Oct 1903). It was published on its own (Russkoe Slovo 1906; Sytin separate ed. 1907). The English editions printed it bound TOGETHER WITH Crosby's companion piece — that is where 'with Crosby' is true."
+    evidenceRef: var-preface-original
+  - claim: "A single 'date completed' for the essay."
+    correction: "Tolstoy declared it 'finished' in the diary 19 Dec 1903 (OS) but went on correcting it; the last manuscript date is 19 Jan 1904 (OS), and the diary records an addition on 18 Jan 1904. Composition spans Sept 1903 – Jan 1904, not a clean single endpoint."
+    evidenceRef: diary-18jan-lastadd
+
+notCovered:
+  - "The 1851 anonymous old play King Leir itself (Tolstoy's preferred text) — not in this corpus; would need an external Elizabethan-drama source."
+  - "Crosby's companion essay Shakespeare's Attitude toward the Working Classes (the occasion) — not Tolstoy's text; available in the Funk & Wagnalls 1906 / Free Age Press 1907 volumes (IA)."
+  - "The full 1151-unit manuscript fond (Tolstoy Museum, Moscow) — only the 48 dated covers and key drafts (№ 1, 6, 8, 11, 12) are characterised from Grossman's description."
+  - "Variant drafts beyond № 1–28 / fine-grained collation of which published sentence derives from which redaction."
+  - "Tolstoy's earlier scattered Shakespeare remarks (1850s–1894) — characterised from Grossman's commentary, not independently swept from the diaries/letters of those decades (out of the declared composition window)."
+
+needsReview:
+  - item: "Strict first-publication priority: Russkoe Slovo (12 Nov 1906 OS) vs the English appearances — The Fortnightly Review (Dec 1906) and Funk & Wagnalls (New York, Nov 1906). Grossman says Russkoe Slovo was 'first'; verify the Funk & Wagnalls month against the NS Russkoe Slovo date."
+    phase: 3
+    why: "Affects dateFirstPublished and the publishedDuringLifetime provenance; sources disagree on which printing came first."
+  - item: "Identify Tolstoy's daughter-in-law (wife of son Mikhail L. Tolstoy) who translated Crosby's article under Tolstoy's supervision."
+    phase: 1
+    why: "Named in Grossman's commentary / Stasov's letter but not by full name; a possible minor person entity."
+  - item: "G. Wilson Knight's actual arguments in Shakespeare and Tolstoy (1934) — pamphlet not readable in open sources."
+    phase: 3
+    why: "The triangulation marks it 'contradicts' presumptively; the precise concessions/defences are unconfirmed."
+  - item: "Shaw's letter full text (Appendix II, p.166 of the 1906/1907 editions) and the Russian 1906–07 press reaction."
+    phase: 3
+    why: "Reception surface is partial; the texture of Shaw's 'word-music' defence and the '1907 Press against Shakespeare' section are unconfirmed."
+  - item: "Maude / Bartlett precise framing of the essay."
+    phase: 3
+    why: "Cited via Brown; exact terms not confirmed from open sources."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ (essay + variants, Tom 35)"
+  - "primary-sources/tolstoydigital-TEI/texts/comments/ (Grossman: writing-history + manuscript description, Tom 35)"
+  - "primary-sources/tolstoydigital-TEI/texts/diaries/ (Toms 54–55, Sept 1903 – Jan 1904)"
+  - "primary-sources/tolstoydigital-TEI/texts/letters/ (Toms 74, 88 — Stasov, Chertkov, Crosby)"
+  - "Wikimedia Commons API; Internet Archive (Tolstoy on Shakespeare, 1906/1907)"
+  - "Web scholarship: Orwell (orwell.ru), Catherine Brown, ProQuest/Penn State/IA bibliographic records"
+
+references:
+  primary:
+    - "Толстой Л. Н. О Шекспире и о драме // ПСС, Т. 35. М.: ГИХЛ, 1950. С. 216–272."
+    - "Толстой Л. Н. Варианты к статье «О Шекспире и о драме» // ПСС, Т. 35. С. 557–577."
+    - "Гроссман Л. П. «О Шекспире и о драме». История писания и печатания; Описание рукописей // ПСС, Т. 35. С. 680–685."
+    - "Толстой Л. Н. [Дневник 1903–1904] // ПСС, Т. 54 (с. 190–203), Т. 55 (с. 2–12)."
+    - "Толстой Л. Н. Письма В. В. Стасову (Т. 74) и В. Г. Черткову (Т. 88), сент.–окт. 1903."
+  background:
+    - "George Orwell, 'Lear, Tolstoy and the Fool', Polemic No. 7 (1947) — orwell.ru/library/essays/lear."
+    - "G. Wilson Knight, Shakespeare and Tolstoy (English Association Pamphlet No. 88, 1934)."
+    - "George Bernard Shaw, letter in Tolstoy on Shakespeare (Funk & Wagnalls, 1906 / Free Age Press, 1907)."
+    - "George Gibian, Tolstoj and Shakespeare (The Hague: Mouton, 1957)."
+    - "Harold Bloom, The Western Canon (1994); Shakespeare: The Invention of the Human (1998)."
+    - "Catherine Brown, 'Revisiting Tolstoy's On Shakespeare and on Drama' (catherinebrown.org, 2015)."
+    - "A. N. Wilson, Tolstoy (1988); Aylmer Maude, The Life of Tolstoy (1908–10); Rosamund Bartlett, Tolstoy: A Russian Life (2010)."
+    - "Ernest Crosby, Shakespeare's Attitude toward the Working Classes (1902; repr. in the 1906/1907 volumes)."
