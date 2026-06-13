@@ -1,0 +1,1111 @@
+# Machine-readable dossier for the "Against the death penalty" (1900–1910) corpus theme-dive.
+# Created 2026-06-13. Slug: 1900-1910-against-the-death-penalty.
+# Subject: Tolstoy's sustained case against capital punishment and state killing across six works
+# of his last decade. A MULTI-WORK theme-dive (like 1903-folk-tales): it carries SIX record-creating
+# workRecord proposals (none of the cluster has a works/ record yet; non-fiction / essays-and-criticism).
+# Centrepiece = «Не могу молчать» / I Cannot Be Silent (1908), dived separately at
+# docs/research/1908-i-cannot-be-silent/ — CROSS-REFERENCED here, NOT re-extracted.
+# Every evidence[].quoteRu is byte-faithful from its `extract` file (verify_quotes.py).
+# Extraction: extract_tei.py --choice=reg --notes=auto (pre-1918 orthography → modern).
+# PSS Tom→local PDF: Tom 34 = jubilee-edition/vol03; Tom 37 = vol06; Tom 38 = vol07 (mapping verified
+# against docs/research/pss-volume-mapping.md). quoteEn is working English (labelled).
+
+topic:
+  slug: 1900-1910-against-the-death-penalty
+  title: "Against the death penalty — Tolstoy's writings against capital punishment and state killing, 1900–1910"
+  question: >-
+    How, across the last decade of his life, did Tolstoy build a sustained moral case against capital
+    punishment and state killing — from «Не убий» (1900, on the assassination of King Umberto) through
+    the 1901 addresses «Царю и его помощникам» and «Единственное средство», the 1907 «Не убий никого»
+    (provoked by the jailing of a publisher for reprinting «Не убий»), the 1908–09 «Смертная казнь и
+    христианство» (answering a Novoe Vremya article that defended the gallows with the Gospel), and the
+    1909–10 «Три дня в деревне» (poverty and the gallows as its end-point)? What recurring arguments
+    bind the cluster (the death penalty as un-Russian and un-Christian; the symmetric guilt of state and
+    revolutionary killing; complicity through non-resistance; refuse-to-kill as the only remedy); how was
+    the cluster published and censored (Свободное слово abroad, «Обновление» 1906, the 1911 confiscations);
+    and how does the cluster set «Не могу молчать» (1908) in its decade-long context?
+  date: 2026-06-13
+  period: prophet
+  corpusSurface: [works, comments, diaries, letters]
+  dateRange: "1900–1910 (composition 1900–1910; publication 1900–1917; reception 1900–present)"
+
+# =============================================================================================
+# EVIDENCE — flat citation ledger. Every quoteRu is verbatim in its `extract`.
+#   Grouped by work. OS = Old Style (Julian); NS = New Style. 1900–1910: OS + 13 = NS.
+#   Genesis diary/letter rows are appended after the work-text rows.
+# =============================================================================================
+evidence:
+
+  # ===== A. НЕ УБИЙ / Thou Shalt Not Kill (1900) — PSS Tom 34, pp. 200–205 =====================
+  - id: neubij-hypocrisy
+    genre: works
+    pssTom: 34
+    pages: "200"
+    date: 1900
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_200_205_Ne_ubij.txt
+    quoteRu: >-
+      самые добрые из убитых королей, как Александр II или Гумберт, были виновниками, участниками и сообщниками, — не говоря уже о домашних казнях, — убийства десятков тысяч людей, погибших на полях сражений; недобрые же короли и императоры были виновниками сотен тысяч, миллионов убийств.
+    quoteEn: >-
+      even the kindest of the murdered kings, such as Alexander II or Umberto, were the authors, participants and accomplices — to say nothing of executions at home — of the murder of tens of thousands of people who perished on the battlefields; while the unkind kings and emperors were the authors of hundreds of thousands, of millions of murders. (working English)
+    significance: >-
+      The essay's hinge, written days after the assassination of King Umberto I of Italy (29 July 1900):
+      the kings and emperors who recoil in horror at a regicide are themselves the greatest killers, by
+      war and execution. Regicide is condemned not for cruelty or injustice but for its UNREASON.
+    facsimile: extracts/v34_200_Ne_ubij_opening_facsimile.png
+
+  - id: neubij-hydra
+    genre: works
+    pssTom: 34
+    pages: "201"
+    date: 1900
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_200_205_Ne_ubij.txt
+    quoteRu: >-
+      Короли и императоры давно уже устроили для себя такой же порядок, как в магазинных ружьях: как только выскочит одна пуля, другая мгновенно становится на ее место.
+    quoteEn: >-
+      Kings and emperors have long since arranged for themselves the same order as in a magazine rifle: as soon as one bullet flies out, another instantly takes its place. (working English)
+    significance: >-
+      Why killing a ruler is pointless: the office refills itself («Le roi est mort, vive le roi!»). The
+      cause of oppression is not the man but the structure that produces him — so the answer is not to
+      kill rulers but to stop sustaining the structure.
+
+  - id: neubij-spoil-children
+    genre: works
+    pssTom: 34
+    pages: "203"
+    date: 1900
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_200_205_Ne_ubij.txt
+    quoteRu: >-
+      Убивать этих людей, — всё равно, что избаловать детей, а потом сечь их.
+    quoteEn: >-
+      To kill these people is the same as to spoil children and then flog them. (working English)
+    significance: >-
+      The peoples make their rulers by surrendering their freedom and dignity for small material gains,
+      then rage at the rulers they made. The killing is doubly absurd.
+
+  - id: neubij-refuse
+    genre: works
+    pssTom: 34
+    pages: "204"
+    date: 1900
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_200_205_Ne_ubij.txt
+    quoteRu: >-
+      не убивать надо Александров, Карно, Гумбертов и других, а надо разъяснить им то, что они сами убийцы, и, главное, не позволять им убивать людей, отказываться убивать по их приказанию.
+    quoteEn: >-
+      one must not kill the Alexanders, Carnots, Umbertos and others, but must make clear to them that they are themselves murderers, and, above all, not allow them to kill people — refuse to kill at their command. (working English)
+    significance: >-
+      The cluster's positive remedy in its first statement: not regicide, but the refusal to kill on
+      command. The same conclusion recurs in «Единственное средство», «Не убий никого», and «Не могу
+      молчать». The note ends: «Это самое я и пытаюсь делать этой заметкой» (8 August 1900).
+
+  # ===== B. ЦАРЮ И ЕГО ПОМОЩНИКАМ / To the Tsar and His Assistants (1901) — Tom 34, pp. 239–244 =
+  - id: tsarju-opening
+    genre: works
+    pssTom: 34
+    pages: "239"
+    date: 1901
+    addressee: "Nicholas II and those in power"
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_239_244_Tsarju_i_ego_pomoschnikam.txt
+    quoteRu: >-
+      Опять убийства, опять уличные побоища, опять будут казни, опять страх, ложные обвинения, угрозы и озлобление с одной стороны, и опять ненависть, желание мщения и готовность жертвы с другой.
+    quoteEn: >-
+      Again murders, again street fights, again there will be executions, again fear, false accusations, threats and bitterness on one side, and again hatred, the desire for revenge and readiness for sacrifice on the other. (working English)
+    significance: >-
+      The opening of the public address to the Tsar and his ministers, written in the spring-1901
+      repression of student/worker unrest. The cycle of state violence and counter-violence the four
+      reforms are meant to break.
+
+  - id: tsarju-death-penalty-unrussian
+    genre: works
+    pssTom: 34
+    pages: "241"
+    date: 1901
+    addressee: "Nicholas II and those in power"
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_239_244_Tsarju_i_ego_pomoschnikam.txt
+    quoteRu: >-
+      только благодаря этой страшной мере всё чаще и чаще стала употребляться вернее всего развращающая людей, противная христианскому духу русского народа и не признанная до этого в нашем законодательстве смертная казнь, составляющая величайшее, запрещенное богом и совестью человека преступление.
+    quoteEn: >-
+      only thanks to this terrible measure [reinforced security] has the death penalty come to be used more and more often — the surest corrupter of people, contrary to the Christian spirit of the Russian people and not recognised until now in our legislation — constituting the greatest crime, forbidden by God and by the conscience of man. (working English)
+    significance: >-
+      THE keystone legal-historical claim that runs through the whole cluster: the death penalty was NOT
+      part of Russian law (abolished for civil crimes by Empress Elizabeth, surviving only for state
+      crimes and under martial law); the «усиленная охрана» (reinforced-security/emergency) regime
+      revived it. Tolstoy treats it as both un-Russian and un-Christian.
+
+  - id: tsarju-corporal
+    genre: works
+    pssTom: 34
+    pages: "240"
+    date: 1901
+    addressee: "Nicholas II and those in power"
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_239_244_Tsarju_i_ego_pomoschnikam.txt
+    quoteRu: >-
+      уничтожить бессмысленное, ни на что не нужное, оставленное только для самого трудолюбивого, нравственного и многочисленного сословия людей, позорное телесное наказание.
+    quoteEn: >-
+      to abolish the senseless, utterly needless, shameful corporal punishment, left in force only for the most industrious, moral and numerous estate of people [the peasantry]. (working English)
+    significance: >-
+      The first of the four reforms the address asks for: abolition of corporal punishment for peasants.
+      State bodily violence on the lowest is the same evil as the gallows at the top — the cluster reads
+      the whole penal apparatus as one.
+
+  # ===== C. ЕДИНСТВЕННОЕ СРЕДСТВО / The Only Means (1901) — Tom 34, pp. 254–269 =================
+  - id: sredstvo-all-rests-on-killing
+    genre: works
+    pssTom: 34
+    pages: "262"
+    date: 1901
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_254_269_Edinstvennoe_sredstvo.txt
+    quoteRu: >-
+      не были бы возможны ни войны, ни рабство, ни отнятие земли богатыми от бедных, ни обладание произведениями труда многих, потому что всё это держится только на возможности или на угрозе убийства.
+    quoteEn: >-
+      neither wars, nor slavery, nor the taking of land by the rich from the poor, nor the possession of the labour-products of the many would be possible — because all of it rests only on the possibility, or the threat, of killing. (working English)
+    significance: >-
+      The structural argument that ties the death penalty to the whole social order: every form of
+      economic oppression «rests only on the possibility, or the threat, of killing». Make «не убий» the
+      one binding law and the order falls.
+
+  - id: sredstvo-refuse-army
+    genre: works
+    pssTom: 34
+    pages: "264"
+    date: 1901
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_254_269_Edinstvennoe_sredstvo.txt
+    quoteRu: >-
+      Отказ же рабочих от участия в войсках, имеющих целью убийство, — поступок, самый противный закону взаимности, — в последнее время всё чаще и чаще направляемых против рабочих, уже совершенно изменил бы к лучшему всё положение рабочих.
+    quoteEn: >-
+      But the workers' refusal to take part in the armies, whose aim is killing — those armies more and more often turned against the workers themselves — would already wholly change the workers' condition for the better. (working English)
+    significance: >-
+      The "only means" applied: the worker's liberation is not strikes or revolution but the religious
+      refusal to be made into a killer (soldier, policeman, tax-collector). The refuse-to-kill remedy of
+      «Не убий», now addressed to the labouring majority.
+
+  - id: sredstvo-key
+    genre: works
+    pssTom: 34
+    pages: "269"
+    date: 1901
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol03/vol03.pdf
+    extract: extracts/v34_254_269_Edinstvennoe_sredstvo.txt
+    quoteRu: >-
+      Ключ этот есть вера в бога и закон его.
+    quoteEn: >-
+      That key is faith in God and in His law. (working English)
+    significance: >-
+      The "only means" named: the key to the chain that binds the working people lies beside them — faith
+      in God's law (the golden rule, «не убий»). Closes the address (12 July 1901, Yasnaya Polyana).
+
+  # ===== D. НЕ УБИЙ НИКОГО / Thou Shalt Not Kill Anyone (1907) — Tom 37, pp. 39–54 =============
+  - id: nikogo-felten-framing
+    genre: works
+    pssTom: 37
+    pages: "39"
+    date: 1907
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_039_054_Ne_ubij_nikogo.txt
+    quoteRu: >-
+      В начале июля 1907 года человек, участвовавший в Петербурге в издательстве «Обновление», был посажен в тюрьму Петербургским судебным следователем по обвинению его в распространении написанной мною семь лет тому назад брошюры под заглавием «Не убий».
+    quoteEn: >-
+      At the beginning of July 1907 a man involved in the "Obnovlenie" publishing house in St Petersburg was put in prison by a St Petersburg examining magistrate on the charge of distributing a brochure I had written seven years before, titled "Thou Shalt Not Kill." (working English)
+    significance: >-
+      The trigger and the frame: the 1907 essay is a sequel to the 1900 «Не убий», provoked by the
+      jailing of its publisher (N. E. Felten) for reprinting it. A government fighting a "mania for
+      murder" jails the man who circulates "Thou shalt not kill." The «закон возмездия» (law of
+      retribution) the essay is built on.
+
+  - id: nikogo-kill-no-one
+    genre: works
+    pssTom: 37
+    pages: "40"
+    date: 1907
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_039_054_Ne_ubij_nikogo.txt
+    quoteRu: >-
+      «Не убий» значит только то, что христианам не должно убивать никого, ни непосредственно, ни посредственно, подсобляя убийствам.
+    quoteEn: >-
+      "Thou shalt not kill" means only this: that Christians must kill no one — neither directly nor indirectly, by abetting killings. (working English)
+    significance: >-
+      The title's whole content, and the symmetry the cluster insists on: the commandment forbids ALL
+      killing — state executions, war, and revolutionary terror alike — and forbids the indirect
+      participation (taxes, service, obedience) that makes one an accomplice.
+
+  - id: nikogo-execute-me
+    genre: works
+    pssTom: 37
+    pages: "48"
+    date: 1907
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_039_054_Ne_ubij_nikogo.txt
+    quoteRu: >-
+      Правительство преследует мою брошюру «Не убий» и сажает в тюрьму ее распространителя. Теперь оно неизбежно должно преследовать то, что я сейчас пишу, должно казнить и меня
+    quoteEn: >-
+      The government prosecutes my brochure "Thou Shalt Not Kill" and jails its distributor. Now it must inevitably prosecute what I am writing now — it must execute me too. (working English)
+    significance: >-
+      The "execute me too" demand — a full year BEFORE «Не могу молчать» (1908) made it the marquee.
+      The personal-complicity move is already present in 1907: if distributing «Не убий» is a crime, the
+      author should be punished, not the publisher.
+
+  - id: nikogo-door
+    genre: works
+    pssTom: 37
+    pages: "54"
+    date: 1907
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_039_054_Ne_ubij_nikogo.txt
+    quoteRu: >-
+      Но что же делать человеку, который видит, что толпа, давя, губя друг друга, валит и напирает на неразрушимую дверь, надеясь отворить ее наружу, когда он знает, что дверь отворяется только внутрь.
+    quoteEn: >-
+      But what is a man to do who sees that the crowd, crushing and destroying one another, presses and heaves against an indestructible door, hoping to open it outward — when he knows that the door opens only inward? (working English)
+    significance: >-
+      The closing image (cf. «Не могу молчать»'s "a door that opens towards him"): the revolution pushes
+      the wrong way. Change comes only from within — the religious refusal to kill — not from force
+      against force. Dated «5 августа 1907 г.»
+
+  # ===== E. СМЕРТНАЯ КАЗНЬ И ХРИСТИАНСТВО / Capital Punishment and Christianity (1909) — Tom 38 ==
+  - id: smertkazn-stn-blasphemy
+    genre: works
+    pssTom: 38
+    pages: "40"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_039_048_Smertnaja_kazn_i_hristianstvo.txt
+    quoteRu: >-
+      Между тем в Евангелии только в одном месте (Ев. от Марка гл. 7, ст. 9—13) упоминается о смертной казни и... в пользу ее:
+    quoteEn: >-
+      Yet in the Gospel the death penalty is mentioned in only one place (Mark 7:9–13) — and… in its favour. (working English) — quoting A. A. Stolypin's article.
+    significance: >-
+      The provocation, reproduced verbatim in the essay: A. A. Stolypin's «Заметки» in Novoe Vremya
+      (18 Dec 1908) argued that Christ did not forbid but SANCTIONED capital punishment (Mark 7:9–13, the
+      "корван" passage). The essay is Tolstoy's answer to the use of the Gospel to defend the gallows.
+
+  - id: smertkazn-shame
+    genre: works
+    pssTom: 38
+    pages: "41"
+    date: 1909
+    addressee: "the St Petersburg student"
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_039_048_Smertnaja_kazn_i_hristianstvo.txt
+    quoteRu: >-
+      Оправдывать смертную казнь словами Христа не решался до сих пор ни один изувер. Такое оправдание, кроме своей искусственности, и глупо, и бессовестно.
+    quoteEn: >-
+      To justify the death penalty with the words of Christ no fanatic has dared until now. Such a justification, besides being contrived, is both stupid and shameless. (working English)
+    significance: >-
+      Tolstoy's reply to the student who forwarded the article. To Stolypin himself he wrote a single
+      word — «стыдно» (shame) — quoted in the next sentence of the essay. The reply that a man named in
+      the corpus could send to the brother of the Prime Minister.
+
+  - id: smertkazn-cannot-be-silent
+    genre: works
+    pssTom: 38
+    pages: "43"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_039_048_Smertnaja_kazn_i_hristianstvo.txt
+    quoteRu: >-
+      Не могу молчать я именно потому, что[...]я один могу говорить среди всех живущих в России с зажатыми ртами людей, я своим молчанием показывал бы согласие и одобрение тем злодействам
+    quoteEn: >-
+      I cannot be silent precisely because … I alone can speak among all the people living in Russia with their mouths stopped; by my silence I would be showing agreement with, and approval of, those villainies. (working English)
+    significance: >-
+      The essay reuses the title and logic of «Не могу молчать» (1908): silence is complicity, and
+      Tolstoy's exceptional position obliges him to speak for the silenced. Direct cross-link to the
+      cluster's centrepiece.
+
+  - id: smertkazn-tsar-granted-life
+    genre: works
+    pssTom: 38
+    pages: "47"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_039_048_Smertnaja_kazn_i_hristianstvo.txt
+    quoteRu: >-
+      в газетах появилось известие о том, что русский царь, как он выразился, «даровал жизнь» этим приговоренным 32 человекам.
+    quoteEn: >-
+      news appeared in the papers that the Russian tsar had, as he put it, "granted life" to these 32 condemned men. (working English)
+    significance: >-
+      The Ekaterinoslav/Gorlovka 32 (sentenced to death 19 Dec 1908; Nicholas II's 1 Jan 1909 «Даровать
+      жизнь»). Tolstoy's point: a man who for years let thousands hang is praised as merciful for sparing
+      one in a hundred. (Eight of the 32 were hanged anyway, 4 Sept 1909.) The 18 Jan addition «о царе»
+      was made, per the diary, «с тайной целью вызвать против себя гонения».
+
+  - id: smertkazn-diagnosis
+    genre: works
+    pssTom: 38
+    pages: "47"
+    date: 1909
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_039_048_Smertnaja_kazn_i_hristianstvo.txt
+    quoteRu: >-
+      главное бедствие наше не в деспотизме, не в ничтожности и жестокости и глупости людей, стоящих во власти, не в озлобленности революционеров, не в бедности народа, а в одном: в отсутствии религии у одних и в притворстве или самообмане других.
+    quoteEn: >-
+      our chief calamity is not despotism, nor the worthlessness and cruelty and stupidity of those in power, nor the bitterness of the revolutionaries, nor the poverty of the people, but one thing: the absence of religion in some and the pretence or self-deception in others. (working English)
+    significance: >-
+      The essay's diagnosis: the death penalty flourishes because both camps lack a binding faith —
+      liberals/revolutionaries have only "science," the government only church-deception. The titular
+      argument: capital punishment is incompatible with the Christianity its defenders claim.
+
+  # ===== F. ТРИ ДНЯ В ДЕРЕВНЕ / Three Days in the Village (1909–10) — Tom 38, pp. 5–22 ==========
+  - id: tridnja-executions-breed
+    genre: works
+    pssTom: 38
+    pages: "11"
+    date: 1910
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_005_012_Tri_dnja_1.txt
+    quoteRu: >-
+      эта армия Стеньки и Емельки все больше и больше разрастается, благодаря таким же, как и пугачевские, деяниям нашего правительства последнего времени с его ужасами полицейских насилий, безумных ссылок, тюрем, каторги, крепостей, ежедневных казней.
+    quoteEn: >-
+      this army of Stenka and Emelka [Razin and Pugachev] grows larger and larger, thanks to the deeds — like Pugachev's own — of our government of late, with its horrors of police violence, insane exiles, prisons, hard labour, fortresses, daily executions. (working English)
+    significance: >-
+      Day 1 (Wandering People): the state's "daily executions" are themselves breeding the wandering,
+      embittered ex-prisoners who will become the next Razins and Pugachevs. The gallows manufactures the
+      violence it claims to suppress — the symmetric argument in social-portrait form.
+
+  - id: tridnja-charity-restrains
+    genre: works
+    pssTom: 38
+    pages: "8"
+    date: 1910
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_005_012_Tri_dnja_1.txt
+    quoteRu: >-
+      Да, не будь среди огромного населения русского крестьянства того глубокого, религиозного сознания братства всех людей, уже давно, несмотря ни на какую полицию (ее же так мало и не может быть много в деревнях), не только разнесли бы эти бездомные люди, дошедшие до последней степени отчаяния, все дома богатых, но и поубивали бы всех тех, кто стоял бы им на дороге.
+    quoteEn: >-
+      Yes, were it not for that deep, religious sense of the brotherhood of all people among the vast population of the Russian peasantry, then long ago — despite any police (of which there is so little, and can be little, in the villages) — these homeless people, driven to the last degree of despair, would not only have wrecked all the houses of the rich but would have killed everyone who stood in their way. (working English)
+    significance: >-
+      What truly protects the propertied is not the police, courts and gallows but the peasants'
+      Christian charity to the wanderers. The penal apparatus is not only evil but superfluous —
+      it is the threatened, not the threateners, who keep the peace.
+
+  - id: tridnja-soldatka
+    genre: works
+    pssTom: 38
+    pages: "13"
+    date: 1910
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_012_018_Tri_dnja_2.txt
+    quoteRu: >-
+      — Хозяина мово в Крапивну угнали. — Куда, зачем? — В солдаты, значит. А не по закону, потому один кормилец.
+    quoteEn: >-
+      "They've driven my husband off to Krapivna." — "Where, what for?" — "To be a soldier, that is. And it's against the law, because he's the only breadwinner." (working English)
+    significance: >-
+      Day 2 (The Living and the Dying): the soldier's wife. Poverty's other end-point — the breadwinner
+      taken to be made into a killer, leaving the family to starve. The conscription that «Единственное
+      средство» named as the foundation of the whole order, in one ruined household.
+
+  - id: tridnja-chain-to-gallows
+    genre: works
+    pssTom: 38
+    pages: "22"
+    date: 1910
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_019_022_Tri_dnja_3.txt
+    quoteRu: >-
+      Министры же, и те, которые занимаются торговлей водкой, и те, которые заняты обучением людей убийству, и те, которые заняты присуждениями к изгнаниям, тюрьмам, каторгам, вешанию людей, все министры и их помощники — эти уже вполне уверены, что и самовары, и овцы, и холсты, и телки, отбираемые от нищих, находят самое свое лучшее помещение в приготовлении водки, отравляющей народ, в изготовлении орудий убийства, в устройстве тюрем, арестантских рот и т. п.
+    quoteEn: >-
+      And the ministers — those engaged in the vodka trade, and those engaged in teaching people to kill, and those engaged in sentencing people to exile, prison, hard labour, the hanging of people — all the ministers and their assistants are quite certain that the samovars, sheep, linens and calves taken from the destitute find their very best use in the making of vodka that poisons the people, in the manufacture of instruments of murder, in the building of prisons and convict-companies, and so on. (working English)
+    significance: >-
+      THE keystone of Three Days and the dive's poverty→gallows hinge (Day 3, Taxes): the chain of
+      complicity from the village elder who seizes a widow's last sheep up through the volost, the zemsky
+      nachalnik, the governor, to the ministers occupied with «вешанию людей» — the hanging of people.
+      Poverty's taxes fund the gallows; the gallows is poverty's end-point.
+
+  - id: tridnja-starosta-sin
+    genre: works
+    pssTom: 38
+    pages: "20"
+    date: 1910
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol07/vol07.pdf
+    extract: extracts/v38_019_022_Tri_dnja_3.txt
+    quoteRu: >-
+      Тридцать рублей наше жалованье, а греха не оберешься.
+    quoteEn: >-
+      Thirty roubles is our wage — and there's no end of sin to it. (working English)
+    significance: >-
+      The village elder (staroста), lowest link in the chain, knows his part in seizing the poor's goods
+      is sin and wants to quit. The complicity Tolstoy traces is felt at the bottom and denied at the top
+      — the moral inversion of «Не могу молчать»'s executioner-caretaker who "stands morally higher."
+
+  # ===== G. GENESIS — diary rows (byte-faithful; see extracts/_genesis-diary-sweep.md) ==========
+  - id: gen-neubij-dispatch
+    genre: diaries
+    pssTom: 54
+    pages: "32–33"
+    date: "1900-08-07"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_032_033_1900_08_07.txt
+    quoteRu: >-
+      Кончил и отослал и Рабство нашего времени и о смерти Гумберта.
+    quoteEn: >-
+      Finished and sent off both Slavery of Our Time and [the piece] on Umberto's death. (working English)
+    significance: >-
+      Tolstoy's own record of completing «Не убий» (7 Aug 1900 OS), dispatched together with «Рабство
+      нашего времени». The terse, un-celebratory phrasing is characteristic. (The text was re-signed and
+      revised on 8 Aug — its dateline.)
+
+  - id: gen-tsarju-trigger
+    genre: diaries
+    pssTom: 54
+    pages: "90–93"
+    date: "1901-03-19"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_090_093_1901_03_19.txt
+    quoteRu: >-
+      студенческия истории, принявшия общественный характер и заставившия меня написать обращение к Царю и его помощникам и программу. Старался руководиться только желанием служить, а не личным удовлетворением. Еще не посылал.
+    quoteEn: >-
+      the student affairs, which took on a public character and drove me to write the address to the Tsar and his assistants, and a programme. I tried to be guided only by the wish to serve, not by personal satisfaction. Have not yet sent it. (working English)
+    significance: >-
+      Names the exact trigger of «Царю и его помощникам» (the spring-1901 student unrest) and Tolstoy's
+      self-scrutiny over motive. The companion «программа» (withheld from print, later in Birukov's
+      biography) is named here. (Old-style spellings retained as in the diary.)
+
+  - id: gen-sredstvo-program
+    genre: diaries
+    pssTom: 54
+    pages: "96"
+    date: "1901-04-29"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_096_096_1901_04_29.txt
+    quoteRu: >-
+      Народную программу бросил.
+    quoteEn: >-
+      I have abandoned the People's Programme. (working English)
+    significance: >-
+      «Единственное средство» went through a prior conceptual stage — the «Народная программа» Tolstoy
+      dropped on 29 April 1901 OS before restarting the article from scratch in May–July. (On finishing it,
+      16 July OS, the diary's verdict was «слабо» / weak — a rare flat self-dismissal of a political piece.)
+
+  - id: gen-nikogo-felten
+    genre: diaries
+    pssTom: 56
+    pages: "44–48"
+    date: "1907-07-20"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_044_048_1907_07_20.txt
+    quoteRu: >-
+      Оставил Круг Чтения и по случаю заключения в тюрьму Фельтена писал брошюру «Не убий никого». Вчера, хотя и не кончил, прочел ее Черткову и другим.
+    quoteEn: >-
+      Left off Krug Chteniya and, on account of Felten's imprisonment, wrote the pamphlet "Thou Shalt Not Kill Anyone." Yesterday, though I had not finished it, I read it to Chertkov and others. (working English)
+    significance: >-
+      The genesis of «Не убий никого» in Tolstoy's own hand: it displaced his daily reading-anthology,
+      was provoked by Felten's jailing, and was read aloud to Chertkov mid-draft. The same surge planned
+      a direct letter to PM Stolypin and the piece «Руки вверх».
+
+  - id: gen-smertkazn-provoke
+    genre: diaries
+    pssTom: 57
+    pages: "13–14"
+    date: "1909-01-18"
+    addressee: null
+    localPdf: null
+    extract: extracts/v57_013_014_1909_01_18.txt
+    quoteRu: >-
+      Нынче написал только маленькую прибавку к статье о Ст-не, прибавку о царе, с тайной целью вызвать против себя гонения.
+    quoteEn: >-
+      Today I wrote only a small addition to the article about St[olypin], an addition about the tsar, with the secret aim of provoking persecution against myself. (working English)
+    significance: >-
+      The most intimate genesis evidence in the cluster: the 18 Jan 1909 OS addition «о царе» (the
+      passage on Nicholas II «даровав жизнь» to the 32) was made deliberately to provoke his own
+      prosecution — the «execute me too» logic of «Не убий никого» and «Не могу молчать», turned inward.
+      The same entry catches the motive as not «совсем хороша» and resolves to correct it.
+
+  - id: gen-tridnja-impulse
+    genre: diaries
+    pssTom: 57
+    pages: "180–181"
+    date: "1909-12-01"
+    addressee: null
+    localPdf: null
+    extract: extracts/v57_180_181_1909_12_01.txt
+    quoteRu: >-
+      Положение голопузых у Курносенковой ужасно. Очень хочется написать три дня в деревне.
+    quoteEn: >-
+      The condition of the bare-bellied children at Kurnosenkova's is terrible. I very much want to write Three Days in the Village. (working English)
+    significance: >-
+      The first diary record of «Три дня в деревне» by its eventual title (1 Dec 1909 OS), born from a
+      visit to actual village poverty — «ужасно», the same shock register Tolstoy reserves for executions
+      and floggings. The lived source, not an abstract theme.
+
+# =============================================================================================
+# ENTITIES — ingestion routing map (a PLAN for the separate wiki-ingestion step; writes no pages).
+#   ingestionPriority: 1 central · 2 supporting · 3 peripheral. dependsOn = write first.
+# =============================================================================================
+entities:
+  - name: "Capital punishment in late-Imperial Russia"
+    wikiType: concept
+    wikilinkTarget: "Capital Punishment"
+    vaultStatus: missing
+    role: "The dive's subject — the post-1905 execution wave, Russia's earlier near-abolition (Empress Elizabeth) and the death penalty's survival only under martial law / усиленная охрана. Shared with the centrepiece dive 1908-i-cannot-be-silent (which proposes the same page)."
+    sources: []
+    evidenceRefs: [tsarju-death-penalty-unrussian, smertkazn-tsar-granted-life, tridnja-chain-to-gallows]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Non-resistance to evil by force"
+    wikiType: concept
+    wikilinkTarget: "Non-Resistance"
+    vaultStatus: missing
+    role: "The doctrine underlying the whole cluster: refuse to kill / refuse to abet killing as the only remedy; the symmetric condemnation of state and revolutionary violence; the door-that-opens-inward image. Shared with the centrepiece + the twin treatise dives."
+    sources: []
+    evidenceRefs: [neubij-refuse, nikogo-kill-no-one, nikogo-door, sredstvo-refuse-army]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Umberto I of Italy"
+    wikiType: person
+    wikilinkTarget: "Umberto I"
+    vaultStatus: missing
+    role: "King of Italy, assassinated by the anarchist Gaetano Bresci on 29 July 1900 — the occasion of «Не убий». The regicide whose condemnation Tolstoy turns back on the kings."
+    sources: []
+    evidenceRefs: [neubij-hypocrisy, neubij-refuse]
+    ingestionPriority: 2
+    dependsOn: ["Capital punishment in late-Imperial Russia"]
+  - name: "Nicholas II"
+    wikiType: person
+    wikilinkTarget: "Nicholas II"
+    vaultStatus: missing
+    role: "The Tsar addressed directly in «Царю и его помощникам» (1901) and named in «Смертная казнь и христианство» for «даровав жизнь» to the Ekaterinoslav 32 while thousands hanged. Shared with the centrepiece dive (named in the «Не могу молчать» first draft)."
+    sources: []
+    evidenceRefs: [tsarju-opening, smertkazn-tsar-granted-life]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Alexander Arkadievich Stolypin"
+    wikiType: person
+    wikilinkTarget: "Alexander Stolypin"
+    vaultStatus: missing
+    role: "A. A. Stolypin (1863–1925), journalist and poet at Novoe Vremya, younger brother of Prime Minister Pyotr Stolypin and son of Tolstoy's Sevastopol friend A. D. Stolypin; died in émigré Belgrade. His «Заметки» (18 Dec 1908) defended the death penalty via Mark 7:9–13 — the provocation for «Смертная казнь и христианство». Tolstoy answered him in one word: «стыдно»."
+    sources: []
+    evidenceRefs: [smertkazn-stn-blasphemy, smertkazn-shame]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Nikolai Felten"
+    wikiType: person
+    wikilinkTarget: "Nikolai Felten"
+    vaultStatus: missing
+    role: "N. E. Felten, responsible editor of the «Обновление» publishing house; arrested 3 July 1907 for reprinting Tolstoy's «Не убий» (1900) — the trigger of «Не убий никого». Wrote to Tolstoy from prison the same day."
+    sources: []
+    evidenceRefs: [nikogo-felten-framing, nikogo-execute-me]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Tolstoy's closest disciple and foreign publisher; received and printed the cluster abroad through «Свободное слово» / Free Age Press; proposed edits to «Царю и его помощникам» and «Не убий никого» (mostly minor). Extend the existing vault page."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Nikolai Gusev"
+    wikiType: person
+    wikilinkTarget: "Nikolai Gusev"
+    vaultStatus: missing
+    role: "Tolstoy's secretary 1907–09; diary-witness to the genesis of «Не убий никого» and «Смертная казнь и христианство» (he read Stolypin's article aloud, dated the drafts). Shared with the centrepiece dive."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Pavel Boulanger"
+    wikiType: person
+    wikilinkTarget: "Pavel Boulanger"
+    vaultStatus: missing
+    role: "P. A. Boulanger, close associate; answered Chertkov on Tolstoy's behalf about the edits to «Царю и его помощникам». Shared with the 1903-folk-tales dive."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Pavel Birukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukov"
+    vaultStatus: exists
+    role: "Tolstoy's biographer; reprinted «Царю и его помощникам» in his Geneva journal «Свободная мысль», and first printed the withheld «программа» (Чего прежде всего желает большинство русского народа) in his biography (vol. IV, 1923). Vault page: Pavel Birukoff.md."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Ekaterinoslav (Gorlovka) death sentences of 1908"
+    wikiType: event
+    wikilinkTarget: "Ekaterinoslav Death Sentences 1908"
+    vaultStatus: missing
+    role: "The Odessa military-district-court trial at Ekaterinoslav of the Dec-1905 Donets-basin railway strike («Горловский бой»); 32 of ~131 sentenced to death 19 Dec 1908; Nicholas II's 1 Jan 1909 «Даровать жизнь»; 8 hanged anyway 4 Sept 1909. The event behind «Смертная казнь и христианство»."
+    sources: []
+    evidenceRefs: [smertkazn-tsar-granted-life]
+    ingestionPriority: 2
+    dependsOn: ["Capital punishment in late-Imperial Russia"]
+  - name: "Свободное слово (Free Age Press)"
+    wikiType: edition
+    wikilinkTarget: "Free Age Press"
+    vaultStatus: missing
+    role: "Chertkov's émigré press (England) / «Листки Свободного слова» — first publisher of «Не убий» (1900), «Царю и его помощникам» (1901) and «Единственное средство» (1901), all banned in Russia. Shared with the centrepiece dive."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Vladimir Chertkov"]
+  - name: "Обновление (publishing house)"
+    wikiType: institution
+    wikilinkTarget: "Obnovlenie"
+    vaultStatus: missing
+    role: "St Petersburg publisher (1906) that issued banned Tolstoy works; printed «Не убий» in Russia (1906); its editor N. E. Felten was jailed in 1907 for it — the trigger of «Не убий никого»."
+    sources: []
+    evidenceRefs: [nikogo-felten-framing]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Ivan Ladyzhnikov"
+    wikiType: person
+    wikilinkTarget: "Ivan Ladyzhnikov"
+    vaultStatus: missing
+    role: "Émigré publisher (Berlin) of «Смертная казнь и христианство» as a separate book (1909). Shared with the centrepiece dive."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+# =============================================================================================
+# VISUALS — see extracts/_visuals-sweep.md. visuals/ is git-ignored; extracts/ facsimiles are PD.
+# =============================================================================================
+visuals:
+  - id: facsimile-neubij-opening
+    type: facsimile
+    subject: "PSS Tom 34, p. 200 — the opening page of «Не убий» (title + four epigraphs + the Umberto/Alexander II opening)"
+    relatedEntity: "Umberto I of Italy"
+    relatedEvidence: [neubij-hypocrisy]
+    holding: "Jubilee Edition (ПСС), Tom 34 = jubilee-edition/vol03/vol03.pdf (self-rendered)"
+    archiveId: "ПСС т. 34, с. 200"
+    access: open
+    rights: "Public domain (Tolstoy's text)"
+    licence: PD
+    usable: true
+    url: null
+    localPath: extracts/v34_200_Ne_ubij_opening_facsimile.png
+    note: "Rendered with pdftoppm @ 220 dpi (pdf p.239 = printed p.200). Committed in extracts/ (PD facsimile)."
+  - id: facsimile-smertkazn-opening
+    type: facsimile
+    subject: "PSS Tom 38, p. 39 — the opening page of «Смертная казнь и христианство» (title + the student's letter)"
+    relatedEntity: "Alexander Arkadievich Stolypin"
+    relatedEvidence: [smertkazn-stn-blasphemy]
+    holding: "Jubilee Edition (ПСС), Tom 38 = jubilee-edition/vol07/vol07.pdf (self-rendered)"
+    archiveId: "ПСС т. 38, с. 39"
+    access: open
+    rights: "Public domain (Tolstoy's text)"
+    licence: PD
+    usable: true
+    url: null
+    localPath: extracts/v38_039_Smertnaja_kazn_opening_facsimile.png
+    note: "Rendered with pdftoppm @ 220 dpi (pdf p.49 = printed p.39). Committed in extracts/ (PD facsimile)."
+  - id: tolstoy-kazakov-1900
+    type: photograph
+    subject: "Leo Tolstoy, studio portrait, Kazakov (Odessa), 1900"
+    relatedEntity: "Capital punishment in late-Imperial Russia"
+    relatedEvidence: [gen-neubij-dispatch]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Leo Tolstoy by I.S.Kazakov (1900, Odessa).jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_I.S.Kazakov_(1900,_Odessa).jpg"
+    localPath: visuals/commons-tolstoy-kazakov-1900.jpg
+    note: "Tolstoy at the opening of the cluster's composition years — the summer he wrote «Не убий» after Umberto I's assassination. Brackets the decade with the 1909 portrait."
+  - id: tolstoy-1909
+    type: photograph
+    subject: "Leo Tolstoy, 1909"
+    relatedEntity: "Capital punishment in late-Imperial Russia"
+    relatedEvidence: [gen-tridnja-impulse]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Leo Tolstoy 1909.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1909.jpg"
+    localPath: visuals/commons-tolstoy-1909.jpg
+    note: "The last full year of the cluster (Three Days). Closes the decade the 1900 Kazakov portrait opens."
+  - id: umberto-i-1904
+    type: painting
+    subject: "King Umberto I of Italy (portrait, de Stefani, 1904, posthumous)"
+    relatedEntity: "Umberto I of Italy"
+    relatedEvidence: [neubij-hypocrisy]
+    holding: "Wikimedia Commons"
+    archiveId: "File:H.M. King Umberto I of Italy in Portrait.png"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:H.M._King_Umberto_I_of_Italy_in_Portrait.png"
+    localPath: visuals/commons-umberto-i-1904.png
+    note: "The king whose assassination (29 July 1900) triggered «Не убий». Tolstoy refuses to distinguish the regicide from the wars and executions the king's authority sanctioned."
+  - id: bresci-1900
+    type: photograph
+    subject: "Gaetano Bresci, assassin of Umberto I, 1900"
+    relatedEntity: "Umberto I of Italy"
+    relatedEvidence: [neubij-hypocrisy, neubij-refuse]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Bresci portrait, 1900.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Bresci_portrait,_1900.jpg"
+    localPath: visuals/commons-bresci-1900.jpg
+    note: "The Italian-American anarchist who shot Umberto at Monza. Pairing Bresci with the king is the core image of «Не убий». Low-res grayscale (the only Commons portrait)."
+  # CROSS-REFERENCE (do NOT refetch — cached in docs/research/1908-i-cannot-be-silent/visuals/):
+  #   Prokudin-Gorsky 1908 (colour, keystone), Bulla 1908 (×2), Repin/Chertkov, Stolypin (PM, Bulla
+  #   1906 — stands in for his brother A. A. with an explicit caption), Nicholas II (Downey 1898).
+  # WORK-ORDERS (not on Commons — see extracts/_visuals-sweep.md): a PD image of the 1905–09 execution
+  #   wave / "Stolypin's necktie" (SENSITIVE); a portrait of A. A. Stolypin; a portrait of N. E. Felten;
+  #   first-edition title pages (Листки Свободного слова; Обновление 1906; Ladyzhnikov Berlin 1909).
+
+# =============================================================================================
+# SCHOLARSHIP — secondary layer (Phase 3). Mainstream = contrast, not baseline.
+#   (filled from extracts/_scholarship.md after the scholarship sweep.)
+# =============================================================================================
+scholarship:
+  summary: >-
+    English-language scholarship treats Tolstoy's opposition to capital punishment almost entirely
+    through «Не могу молчать» (1908); the other five essays of this cluster have attracted little
+    dedicated commentary. Bartlett (2010) frames the 1908 essay as the climax of Tolstoy's late
+    political witness; Maude (1911), the closest English source, arranged the Free Age Press
+    translations of most of the cluster but treats the 1908 outburst as the defining moment and the
+    rest as context. Studies of Tolstoy's political non-fiction (Orwin, Gustafson) concentrate on the
+    doctrinal treatises (The Kingdom of God, The Law of Violence and the Law of Love); the polemic
+    essays are read as applications of doctrine, not as a coherent body. The most authoritative record
+    is the Russian one — the PSS editorial apparatus (Eikhenbaum on «Не могу молчать»; the Tom 34/37/38
+    commentaries on the rest) — which this dive treats as its baseline. Tolstoy's recurring legal claim
+    (that the death penalty was a legislative newcomer, abolished de facto by Empress Elizabeth and
+    revived only through the 1881 emergency statute and the post-1905 field courts) is historically
+    grounded, though it overstates the case as regards the military and political-crime provisions that
+    persisted throughout. The cluster as a coherent series — built on one logical kernel (the state
+    kills more, and kills in the citizens' name) and aimed at precise targets (the 1881 statute, the
+    Stolypin field courts, the Gorlovka sentences, A. A. Stolypin's Novoe Vremya article) — has no
+    dedicated English study as of this writing.
+  triangulation:
+    - evidenceRef: tsarju-death-penalty-unrussian
+      conventionalView: >-
+        Tolstoy's claim that the death penalty was "formerly unknown in our code of laws" is usually
+        treated as rhetoric. It is in fact substantively accurate for the ordinary civil penal code:
+        Empress Elizabeth's de-facto moratorium (1744–1762) was real and, per Marasinova, unique in
+        Europe; the 19th-century criminal code did not carry death for common crimes — it survived only
+        in military law and for state crimes.
+      relation: confirms
+      source: "Marasinova, Quaestio Rossica 2018; TASS factbox; Wikipedia 'Capital punishment in Russia'."
+    - evidenceRef: tsarju-death-penalty-unrussian
+      conventionalView: >-
+        Standard biography does not register the legal precision of «Царю и его помощникам»: Tolstoy
+        names the 1881 «Положение о мерах к охранению» (Statute of Increased Protection) — the emergency
+        mechanism that let commanders move cases to courts-martial — as the channel through which capital
+        punishment re-entered Russian governance, not a change to the code.
+      relation: extends
+      source: "Tolstoy, To the Tsar and His Assistants (Wikisource/Maude); Wikipedia 'Martial law in Russia'."
+    - evidenceRef: nikogo-felten-framing
+      conventionalView: >-
+        Where scholarship mentions «Не убий никого» at all, it rarely names its catalyst. The 1907 essay
+        is a documented legal-solidarity sequel to «Не убий» (1900), triggered by the arrest of N. E.
+        Felten of «Обновление» for circulating the 1900 pamphlet.
+      relation: extends
+      source: "Wikipedia 'Thou Shalt Not Kill (essay)'; nonresistance.org; PSS т.37 commentary."
+    - evidenceRef: smertkazn-tsar-granted-life
+      conventionalView: >-
+        The Gorlovka case is confirmable by its numbers: the Odessa Military District court at
+        Ekaterinoslav (7–19 Dec 1908) tried 131, convicted 92, sentenced 32 to death; 24 were commuted;
+        8 were hanged on the night of 4 Sept 1909. Tolstoy scholarship does not usually trace the case.
+      relation: confirms
+      source: "Wikipedia RU «Горловское вооружённое восстание»; PSS т.38 commentary (Sergeenko)."
+    - evidenceRef: smertkazn-stn-blasphemy
+      conventionalView: >-
+        Accounts that mention «Смертная казнь и христианство» rarely specify the trigger: A. A.
+        Stolypin's Novoe Vremya article of 18 Dec 1908 defending the gallows via Mark 7:9–13, answered by
+        Tolstoy on 2 Jan 1909. The corpus supplies the exact Gospel passage and the one-word reply.
+      relation: extends
+      source: "nonresistance.org (full text); PSS т.38 commentary."
+    - evidenceRef: smertkazn-shame
+      conventionalView: >-
+        English accounts mention "Stolypin's brother" but rarely name him. Alexander Arkadyevich
+        Stolypin (1863–1925), journalist and poet, younger brother of the Prime Minister, died in
+        émigré Belgrade — the conservative who used the Gospel to defend the death penalty.
+      relation: extends
+      source: "Find a Grave 261205774; Wikipedia 'Stolypin (disambiguation)'."
+    - evidenceRef: smertkazn-tsar-granted-life
+      conventionalView: >-
+        The execution wave is usually given as a single figure ("over 3,000", 1906–09). Kropotkin's
+        contemporary compilation shows the granular series (280 in 1906, 508 in 1907, 802 in the first
+        ten months of 1908) and the 1908 peak that is this cluster's backdrop; "Stolypin's necktie" was
+        coined by the Kadet F. Rodichev (Duma, 17 Nov 1907).
+      relation: complicates
+      source: "Kropotkin, The Terror in Russia (1909); Wikipedia 'Pyotr Stolypin'."
+    - evidenceRef: neubij-hypocrisy
+      conventionalView: >-
+        «Не убий» (1900) was triggered by the assassination of Umberto I by Gaetano Bresci (29 July
+        1900). Its core move — the hypocrisy of rulers who decry assassination while killing on a vastly
+        greater scale — is the single logical kernel of all six cluster essays; scholarship has not read
+        the texts as one series built on it.
+      relation: extends
+      source: "Wikipedia 'Thou Shalt Not Kill (essay)'; Bartlett 2010."
+    - evidenceRef: tridnja-chain-to-gallows
+      conventionalView: >-
+        «Три дня в деревне» is usually read as a late-life social sketch; its function as the cluster's
+        coda — linking the gallows to poverty as effect to cause (the ministers «заняты… вешанию людей»
+        funded by the taxes seized from the destitute) — is not highlighted.
+      relation: complicates
+      source: "marxists.org (Three Days text); Gutenberg Free Age Press edition note."
+    - evidenceRef: nikogo-execute-me
+      conventionalView: >-
+        The censorship pattern is a uniform reception history: every cluster essay was banned in Russia
+        on first publication and reached readers abroad (Chertkov's «Свободное слово» / Free Age Press,
+        Maude translations) and then by hectograph/illegal print. It has not been studied as a pattern.
+      relation: extends
+      source: "Wikipedia 'Thou Shalt Not Kill (essay)'; PSS commentaries; the i-cannot-be-silent dive."
+    - evidenceRef: sredstvo-all-rests-on-killing
+      conventionalView: >-
+        No English-language scholarship on «Единственное средство» (1901) was located. Its argument —
+        that all economic oppression rests on the threat of killing, so the workers' only means is the
+        refusal to be made into killers — connects the cluster's nonviolence to its social critique but
+        has attracted no separate study.
+      relation: extends
+      source: "(no clear secondary source located — see extracts/_scholarship.md §5)."
+
+# =============================================================================================
+# WORK RECORDS — six PROPOSED CREATIONS (none of the cluster has a works/ record yet).
+#   Non-fiction / essays-and-criticism. Read-only to works/; the human ingestion step applies these.
+#   Field shapes mirror website/schema/tolstoy-works-schema.md (v9) + the live i-cannot-be-silent proposal.
+#   Each date field's `oldStyle:` sub-flag maps to the schema's sibling key <field>OldStyle.
+# =============================================================================================
+workRecords:
+  # --- 1 · Не убий / Thou Shalt Not Kill (1900) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/thou-shalt-not-kill/Thou Shalt Not Kill.md  (PROPOSED — does not exist yet)"
+    workId: thou-shalt-not-kill
+    create: true
+    fields:
+      - { field: titleRu, value: "Не убий", evidenceRefs: [neubij-hypocrisy], source: "PSS т.34 с.200 (extract # bibl)", confidence: high }
+      - { field: titleEn, value: "Thou Shalt Not Kill", source: "Maude / Free Age Press standard title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'Убийство Гумберта', type: working, language: ru}, {title: 'Ужасное недоразумение', type: working, language: ru}, {title: 'Кто виноват?', type: working, language: ru}]", source: "working titles of mss №1–3 (История писания, т.34)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "mirrors the i-cannot-be-silent proposal + sibling essays-and-criticism records", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "short polemical article (статья), not a treatise", confidence: high }
+      - { field: genre, value: "essay", source: "TEI [head] СТАТЬИ; schema genre enum 'essay'", confidence: high }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "finished + dated 8 Aug 1900", confidence: high }
+      - { field: dateWritingStarted, value: "1900-08-04", evidenceRefs: [], source: "first redaction by 22 July OS (4th copy dated 25 July); История писания т.34", confidence: medium, oldStyle: "1900-07-22", approximate: true }
+      - { field: dateWritingCompleted, value: "1900-08-21", evidenceRefs: [neubij-refuse], source: "text dated «8 августа 1900» OS = 21 Aug NS (revisions continued after dispatch)", confidence: high, oldStyle: "1900-08-08" }
+      - { field: dateFirstPublished, value: "1900", source: "«Листки Свободного слова» №17, 1900 (Chertkov, England)", confidence: high }
+      - { field: firstPublishedVenue, value: "«Листки Свободного слова» №17 (ed. V. Chertkov), England", source: "История писания т.34", confidence: high }
+      - { field: firstPublishedVenueType, value: "samizdat", source: "émigré leaflet series (no exact schema enum for émigré press; samizdat closest). See needsReview.", confidence: low }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "издание «Обновления» №13, СПб 1906", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "Издание «Обновления» №13, St Petersburg", source: "История писания т.34", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "Свободное слово 1900", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "«Обновление» 1906; later confiscated from the 1911 collected works", confidence: high }
+      - { field: bans, value: "[{banningAuthority: 'Moscow Judicial Chamber (Московская судебная палата)', authorityType: imperial-state, jurisdiction: Russian Empire, scope: confiscation, banDate: 1911, banDateApproximate: true, notes: 'Confiscated from part 19 of the 12th edition of Tolstoy''s collected works (1911). Its 1907 reprint by «Обновление» led to the editor N. E. Felten''s arrest (the trigger of «Не убий никого»).'}]", evidenceRefs: [nikogo-felten-framing], source: "История писания т.34", confidence: high }
+      - { field: relatedWorks, value: "[{id: thou-shalt-not-kill-anyone, relationshipType: sequel}, {id: i-cannot-be-silent, relationshipType: companion}]", source: "«Не убий никого» (1907) is the explicit sequel; the death-penalty cluster", confidence: high }
+
+  # --- 2 · Царю и его помощникам / To the Tsar and His Assistants (1901) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/to-the-tsar-and-his-assistants/To the Tsar and His Assistants.md  (PROPOSED — does not exist yet)"
+    workId: to-the-tsar-and-his-assistants
+    create: true
+    fields:
+      - { field: titleRu, value: "Царю и его помощникам", evidenceRefs: [tsarju-opening], source: "PSS т.34 с.239", confidence: high }
+      - { field: titleEn, value: "To the Tsar and His Assistants", source: "Maude standard title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'Обращение русских людей к царю и его помощникам', type: working, language: ru}]", source: "ms №2 title (История писания т.34)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "essays-and-criticism shelf", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "a public address (обращение)", confidence: high }
+      - { field: genre, value: "essay", source: "TEI [head] СТАТЬИ / ОБРАЩЕНИЕ; schema enum 'essay'", confidence: medium, note: "an address/appeal; 'essay' is the closest enum value" }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "finished + dated 15 March 1901", confidence: high }
+      - { field: dateWritingStarted, value: "1901-03", source: "begun mid-March 1901 OS (История писания т.34; diary 19 March)", confidence: medium, oldStyle: "1901-03", approximate: true }
+      - { field: dateWritingCompleted, value: "1901-03-28", evidenceRefs: [tsarju-opening], source: "3rd redaction signed «15 марта 1901» OS = 28 March NS", confidence: high, oldStyle: "1901-03-15" }
+      - { field: dateFirstPublished, value: "1901", source: "«Листки Свободного слова» №20 (Chertkov, England)", confidence: high }
+      - { field: firstPublishedVenue, value: "«Листки Свободного слова» №20 (ed. V. Chertkov), England", source: "История писания т.34", confidence: high }
+      - { field: firstPublishedVenueType, value: "samizdat", source: "émigré leaflet series. See needsReview.", confidence: low }
+      - { field: dateFirstPublishedInRussia, value: "1917", source: "first legal Russian edition («Звезда», 1917); circulated illegally in hectographed/manuscript copies before then", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "Книгоиздательство «Звезда», Moscow (1917)", source: "История писания т.34", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "Свободное слово 1901 (abroad)", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "only illegal hectographed/manuscript copies in Russia in his lifetime; legal Russian edition 1917; the 1911 collected-works inclusion was confiscated", confidence: high }
+      - { field: bans, value: "[{banningAuthority: 'Moscow Judicial Chamber (Московская судебная палата)', authorityType: imperial-state, jurisdiction: Russian Empire, scope: confiscation, banDate: '1911-05-02', banDateOldStyle: '1911-04-19', notes: 'Confiscated from part 20 of the 12th edition of the collected works, 19 April 1911 OS. The address could not be printed legally in Russia in Tolstoy''s lifetime.'}]", source: "История писания т.34", confidence: high }
+      - { field: relatedWorks, value: "[{id: the-only-means, relationshipType: companion}]", source: "the companion 1901 address «Единственное средство» grew out of the same «программа»", confidence: medium }
+      - { field: notes, value: "Carried a companion «программа» («Чего прежде всего желает большинство русского народа») that Tolstoy withheld from print; first published in Birukov's biography vol. IV (1923). Chertkov proposed three small cuts (re workers, private schools, religious assemblies) + A. K. Chertkova reworded the Alexander-II sentence; the Свободное слово text (this extract) carries those changes.", source: "История писания т.34", confidence: high }
+
+  # --- 3 · Единственное средство / The Only Means (1901) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/the-only-means/The Only Means.md  (PROPOSED — does not exist yet)"
+    workId: the-only-means
+    create: true
+    fields:
+      - { field: titleRu, value: "Единственное средство", evidenceRefs: [sredstvo-key], source: "PSS т.34 с.254", confidence: high }
+      - { field: titleEn, value: "The Only Means", source: "Maude standard title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'Что нужно рабочему народу', type: working, language: ru}, {title: 'Чего желает рабочий народ', type: working, language: ru}]", source: "working titles (История писания т.34; title fixed at ms №45)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "essays-and-criticism shelf", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "polemical article on the worker question", confidence: high }
+      - { field: genre, value: "essay", source: "TEI [head] СТАТЬИ; schema enum 'essay'", confidence: high }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "finished + dated 12 July 1901", confidence: high }
+      - { field: dateWritingStarted, value: "1901-04", source: "begun mid-April 1901 OS, set aside, resumed in May (История писания т.34)", confidence: medium, oldStyle: "1901-04", approximate: true }
+      - { field: dateWritingCompleted, value: "1901-07-25", evidenceRefs: [sredstvo-key], source: "text dated «12 июля» OS = 25 July NS; diary 16 July «Кончил Единственное средство»; sent to Chertkov 18 July OS", confidence: high, oldStyle: "1901-07-12" }
+      - { field: dateFirstPublished, value: "1901", source: "«Листки Свободного слова» №24, 1901 (Chertkov, England)", confidence: high }
+      - { field: firstPublishedVenue, value: "«Листки Свободного слова» №24 (ed. V. Chertkov), England", source: "История писания т.34", confidence: high }
+      - { field: firstPublishedVenueType, value: "samizdat", source: "émigré leaflet series. See needsReview.", confidence: low }
+      - { field: publishedDuringLifetime, value: true, source: "Свободное слово 1901 (abroad)", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "no legal Russian publication recorded in the История писания; abroad only in his lifetime. See needsReview.", confidence: medium }
+      - { field: relatedWorks, value: "[{id: to-the-tsar-and-his-assistants, relationshipType: companion}, {id: the-slavery-of-our-times, relationshipType: companion}]", source: "the 1901 worker-question pair; cf. «Рабство нашего времени» (1900)", confidence: medium }
+
+  # --- 4 · Не убий никого / Thou Shalt Not Kill Anyone (1907) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/thou-shalt-not-kill-anyone/Thou Shalt Not Kill Anyone.md  (PROPOSED — does not exist yet)"
+    workId: thou-shalt-not-kill-anyone
+    create: true
+    fields:
+      - { field: titleRu, value: "Не убий никого", evidenceRefs: [nikogo-felten-framing], source: "PSS т.37 с.39", confidence: high }
+      - { field: titleEn, value: "Thou Shalt Not Kill Anyone", source: "Free Age Press / Maude title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'Не убий', type: working, language: ru}, {title: 'Единственное спасение', type: working, language: ru}, {title: 'Чем это кончится', type: working, language: ru}]", source: "working titles (История писания т.37; final at ms №9)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "essays-and-criticism shelf", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "polemical article (статья)", confidence: high }
+      - { field: genre, value: "essay", source: "schema enum 'essay'", confidence: high }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "finished + dated 5 Aug 1907", confidence: high }
+      - { field: dateWritingStarted, value: "1907-07-22", evidenceRefs: [], source: "begun 9 July 1907 OS (notebook: Felten letter received) (История писания т.37)", confidence: high, oldStyle: "1907-07-09" }
+      - { field: dateWritingCompleted, value: "1907-08-18", evidenceRefs: [nikogo-door], source: "text dated «5 августа 1907» OS = 18 Aug NS (a small 14 Aug addition followed)", confidence: high, oldStyle: "1907-08-05" }
+      - { field: dateFirstPublished, value: "1907-09-19", evidenceRefs: [], source: "газета «Слово» №245, 6 Sept 1907 OS = 19 Sept NS — in EXCERPTS (the issue marked Tolstoy's 50-year jubilee); other papers followed 8 Sept OS", confidence: high, oldStyle: "1907-09-06" }
+      - { field: firstPublishedVenue, value: "газета «Слово» (St Petersburg) №245, and other Russian papers — in fragments", source: "История писания т.37", confidence: high }
+      - { field: firstPublishedVenueType, value: "newspaper", source: "first appearance in newspapers (excerpts)", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1907-09-19", source: "same Russian newspaper excerpts, Sept 1907 OS; FULL text only Posrednik 1917", confidence: medium, oldStyle: "1907-09-06", note: "Edge case: legal Russian appearance was fragmentary; the complete article first appeared 1917 (Posrednik). See needsReview." }
+      - { field: firstPublishedInRussiaVenue, value: "газета «Слово» (St Petersburg) and other papers, in excerpts; full text «Посредник», 1917", source: "История писания т.37", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "newspaper excerpts Sept 1907", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Russian newspaper excerpts Sept 1907; full text only posthumously (1917)", confidence: medium, note: "Like «Не могу молчать»: legal but fragmentary. See needsReview." }
+      - { field: relatedWorks, value: "[{id: thou-shalt-not-kill, relationshipType: sequel}, {id: i-cannot-be-silent, relationshipType: companion}]", source: "explicit sequel to «Не убий» (1900); anticipates «Не могу молчать»", confidence: high }
+      - { field: notes, value: "Provoked by the arrest (3 July 1907) of N. E. Felten, editor of «Обновление», for reprinting «Не убий». Began as a newspaper protest, grew into a treatise on the unconditional commandment. Contains the «execute me too» demand a year before «Не могу молчать».", evidenceRefs: [nikogo-execute-me], source: "История писания т.37", confidence: high }
+
+  # --- 5 · Смертная казнь и христианство / Capital Punishment and Christianity (1909) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/capital-punishment-and-christianity/Capital Punishment and Christianity.md  (PROPOSED — does not exist yet)"
+    workId: capital-punishment-and-christianity
+    create: true
+    fields:
+      - { field: titleRu, value: "Смертная казнь и христианство", evidenceRefs: [smertkazn-diagnosis], source: "PSS т.38 с.39", confidence: high }
+      - { field: titleEn, value: "Capital Punishment and Christianity", source: "Free Age Press / Maude title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'О смертной казни', type: working, language: ru}, {title: 'Христианство и смертная казнь', type: working, language: ru}]", source: "Gusev's manuscript cover «О смертных казнях»; Gusev's diary «Христианство и смертная казнь» (Комментарии т.38)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "essays-and-criticism shelf", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "polemical article (статья)", confidence: high }
+      - { field: genre, value: "essay", source: "schema enum 'essay'", confidence: high }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "finished + dated 2 Jan 1909 (a 18 Jan addition «о царе» followed)", confidence: high }
+      - { field: dateWritingStarted, value: "1909-01-03", evidenceRefs: [], source: "begun 21 Dec 1908 OS (Gusev diary; Tolstoy dictated the start) (Комментарии т.38)", confidence: high, oldStyle: "1908-12-21" }
+      - { field: dateWritingCompleted, value: "1909-01-15", evidenceRefs: [smertkazn-diagnosis], source: "text dated «2 Янв. 1909» OS = 15 Jan NS; a final addition «о царе» on 18 Jan OS", confidence: high, oldStyle: "1909-01-02", note: "The 18 Jan OS addition about the Tsar was made «с тайной целью вызвать против себя гонения» (diary)." }
+      - { field: dateFirstPublished, value: "1909-03-13", evidenceRefs: [], source: "газета «Новая Русь» №57, 28 Feb 1909 OS = 13 March NS, with large censorship cuts", confidence: high, oldStyle: "1909-02-28" }
+      - { field: firstPublishedVenue, value: "газета «Новая Русь» №57 (with censorship cuts); same year as a book by I. Ladyzhnikov, Berlin", source: "Комментарии т.38", confidence: high }
+      - { field: firstPublishedVenueType, value: "newspaper", source: "first appearance in «Новая Русь»", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1909-03-13", source: "«Новая Русь» 28 Feb 1909 OS (censored)", confidence: medium, oldStyle: "1909-02-28" }
+      - { field: firstPublishedInRussiaVenue, value: "газета «Новая Русь» №57, 1909 (with cuts)", source: "Комментарии т.38", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "Новая Русь + Ladyzhnikov 1909", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "«Новая Русь» Feb 1909, with censorship cuts", confidence: medium, note: "Legal Russian appearance was censored (cut); the uncut text was the Berlin Ladyzhnikov edition. See needsReview." }
+      - { field: bans, value: "[{banningAuthority: 'Russian imperial censorship', authorityType: imperial-state, jurisdiction: Russian Empire, scope: passages-cut, banDate: 1909, banDateApproximate: true, notes: 'The «Новая Русь» appearance carried large censorship cuts; the uncut text appeared abroad (Ladyzhnikov, Berlin, 1909).'}]", source: "Комментарии т.38", confidence: high }
+      - { field: relatedWorks, value: "[{id: i-cannot-be-silent, relationshipType: companion}]", source: "answers the same 1908–09 execution wave; reuses the «не могу молчать» logic", confidence: high }
+      - { field: notes, value: "Answer to A. A. Stolypin's «Заметки» (Novoe Vremya, 18 Dec 1908) defending the death penalty via Mark 7:9–13. Stolypin was the brother of PM Pyotr Stolypin. Tied to the Ekaterinoslav/Gorlovka 32 death sentences (19 Dec 1908) and Nicholas II's 1 Jan 1909 «Даровать жизнь».", evidenceRefs: [smertkazn-stn-blasphemy, smertkazn-tsar-granted-life], source: "Комментарии т.38", confidence: high }
+
+  # --- 6 · Три дня в деревне / Three Days in the Village (1909–10) ---
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/three-days-in-the-village/Three Days in the Village.md  (PROPOSED — does not exist yet)"
+    workId: three-days-in-the-village
+    create: true
+    fields:
+      - { field: titleRu, value: "Три дня в деревне", evidenceRefs: [tridnja-chain-to-gallows], source: "PSS т.38 с.5", confidence: high }
+      - { field: titleEn, value: "Three Days in the Village", source: "Maude standard title", confidence: high }
+      - { field: titleAlternatives, value: "[{title: 'Бродячие люди', type: subtitle, language: ru}, {title: 'Живущие и умирающие', type: subtitle, language: ru}, {title: 'Подати', type: subtitle, language: ru}]", source: "the three days' subtitles (Комментарии т.38)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "essays-and-criticism shelf", confidence: medium, note: "a trilogy of sketches (очерки); Fiction/Sketches is an alternative shelving — see needsReview." }
+      - { field: subcategory, value: "Essays and Criticism", source: "social-portrait sketches/essays (очерки)", confidence: medium }
+      - { field: genre, value: "essay", source: "schema enum 'essay' (sketch/очерк has no enum value)", confidence: medium, note: "literary-documentary sketches; 'essay' is the closest enum. See needsReview." }
+      - { field: language, value: "ru", source: "original Russian", confidence: high }
+      - { field: completionStatus, value: "complete", source: "the trilogy completed Jan 1910; «Сон»/A Dream is a separate companion piece", confidence: high }
+      - { field: dateWritingStarted, value: "1909-11-27", evidenceRefs: [], source: "Day 1 first draft 14 Nov 1909 OS; trilogy conceived 1 Dec 1909 OS (Комментарии т.38)", confidence: high, oldStyle: "1909-11-14" }
+      - { field: dateWritingCompleted, value: "1910-01-26", evidenceRefs: [tridnja-chain-to-gallows], source: "Day 3 finished 9 Jan 1910 OS; trilogy read through 13 Jan OS «Перечитал все три дня. И кажется кончу»; sweep text mid-Jan 1910 OS", confidence: medium, oldStyle: "1910-01-13", approximate: true }
+      - { field: dateFirstPublished, value: "1910-09", evidenceRefs: [], source: "«Вестник Европы», September 1910 issue (released late August to preempt the foreign translation) (Комментарии т.38)", confidence: high, approximate: true }
+      - { field: firstPublishedVenue, value: "«Вестник Европы», September 1910 (with censorship cuts in Day 3)", source: "Комментарии т.38", confidence: high }
+      - { field: firstPublishedVenueType, value: "journal", source: "«Вестник Европы» is a monthly journal", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1910-09", source: "«Вестник Европы» Sept 1910 (Russia, censored)", confidence: high, approximate: true }
+      - { field: firstPublishedInRussiaVenue, value: "«Вестник Европы», September 1910", source: "Комментарии т.38", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "Вестник Европы Sept 1910 (Tolstoy died Nov 1910)", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Вестник Европы Sept 1910, with censorship cuts in Day 3", confidence: high }
+      - { field: bans, value: "[{banningAuthority: 'Moscow Judicial Chamber (Московская судебная палата)', authorityType: imperial-state, jurisdiction: Russian Empire, scope: confiscation, banDate: '1912-03-08', notes: 'The separate brochure editions were ordered destroyed «во всем количестве издания», 8 March 1912; the «Вестник Европы» first printing made censorship cuts in Day 3 (Taxes). The uncut text appeared in the Posrednik (Chertkov) edition.'}]", source: "Комментарии т.38", confidence: high }
+      - { field: relatedWorks, value: "[{id: i-cannot-be-silent, relationshipType: companion}]", source: "the death-penalty cluster; «Сон»/A Dream is a separate companion piece worked alongside", confidence: medium }
+      - { field: notes, value: "A trilogy of village sketches — Бродячие люди (Wandering People), Живущие и умирающие (The Living and the Dying), Подати (Taxes). Conceived 1 Dec 1909 OS; the gallows is poverty's documented end-point (Day 3's chain of complicity). «Сон»/A Dream, a separate anti-violence dream-vision, was written alongside and partly substituted for in the censored Day 3 — out of this dive's named scope; see notCovered.", evidenceRefs: [tridnja-executions-breed, tridnja-chain-to-gallows], source: "Комментарии т.38", confidence: high }
+
+# =============================================================================================
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# =============================================================================================
+coverage:
+  - { surface: "The works' own texts (close read of all six + the Three Days trilogy)", status: covered, note: "All eight extracts read in full; keystones extracted per work." }
+  - { surface: "Genesis & composition (diary/letters + people)", status: covered, note: "Composition reconstructed from each work's История писания (attributed) + a targeted diary sweep (6 byte-faithful genesis rows); the people-network surfaced (Felten, A. A. Stolypin, Gusev, Chertkov, Boulanger, Goldenweiser, Korolenko). Full letter-network not exhausted (notCovered)." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "Свободное слово abroad; «Обновление» 1906; «Слово» excerpts 1907; «Новая Русь» + Ladyzhnikov 1909; Вестник Европы 1910; the 1911/1912 confiscations — all from the История писания." }
+  - { surface: "workRecords (record-creating, ×6)", status: covered, note: "Full field sets proposed for all six; samizdat venue-type + several publishedInRussia edge cases flagged." }
+  - { surface: "Scholarly context", status: covered, note: "22 sources; 11 triangulation entries (extracts/_scholarship.md). The cluster is largely untreated as a series in English scholarship — mostly extends/confirms; the death-penalty-history claim verified." }
+  - { surface: "Reception & afterlife (Russian society/church first)", status: partial, note: "Censorship IS the lifetime reception event (confiscations, the Felten arrest); discrete critical reception of these specific essays is thin in the corpus." }
+  - { surface: "Visual & manuscript record", status: covered, note: "2 PD facsimiles committed (Не убий + Смертная казнь opening pages) + 4 PD Commons downloads (Tolstoy 1900/1909, Umberto I, Bresci) + 7 sibling-dive cross-refs; 6 work-orders (execution-wave image, A. A. Stolypin/Felten portraits, 3 first-edition title pages)." }
+  - { surface: "Place in the cluster / link to «Не могу молчать»", status: covered, note: "Centrepiece cross-referenced throughout; «Смертная казнь и христианство» reuses its logic; «Не убий никого» anticipates it." }
+
+# =============================================================================================
+# CONTRADICTIONS — intra-corpus / primary-vs-secondary corrections.
+# =============================================================================================
+contradictions:
+  - claim: "«Не убий никого» was written/finished in 1908 (the История писания т.37 reads «продолжалась до 5 августа 1908 г.»)."
+    correction: "A typo in the commentary: the article is dated «5 августа 1907 г.» and the whole genesis (Felten's July-1907 arrest, the Слово publication 6 Sept 1907) is 1907. Use 1907."
+    evidenceRef: nikogo-door
+
+# =============================================================================================
+notCovered:
+  - "«Сон» (A Dream) — Tolstoy's standalone anti-violence/anti-execution dream-vision written Nov–Dec 1909 alongside Three Days, partly substituted for in the censored Day 3. The natural companion to this cluster; out of the declared six-work scope."
+  - "«Не могу молчать» (1908) — the cluster's centrepiece, dived separately (docs/research/1908-i-cannot-be-silent/); cross-referenced, not re-extracted."
+  - "The full letter-network of each work (to Rusanov, Mood, Birukov, Chertkov, the student Arseniev, A. A. Stolypin) — surfaced via the commentary, not all extracted byte-faithfully."
+  - "Variant collation: none of the six works' redaction variants were collated (the История писания apparatus was read for facts, not diffed)."
+  - "«Рабство нашего времени» (1900) and «Ответ на определение Синода» (1901) — the neighbouring works named in the commentaries; cross-referenced, not dived."
+
+# =============================================================================================
+needsReview:
+  - { item: "firstPublishedVenueType = 'samizdat' for the three Свободное слово works (Не убий, Царю, Единственное средство): the schema enum (journal|newspaper|book|samizdat) has no 'émigré press' value. 'samizdat' is the least-wrong fit for Chertkov's English leaflet series. Confirm at ingestion.", phase: 4, why: "Venue-type enum gap for émigré-press first publication." }
+  - { item: "publishedInRussiaDuringLifetime edge cases: «Не убий никого» (legal but only in newspaper excerpts; full text 1917) and «Смертная казнь и христианство» (legal but censored/cut). Booleans set true; the nuance belongs in censorshipNotes. A reviewer may prefer false-with-note.", phase: 4, why: "Boolean cannot carry the fragmentary/censored nuance — mirrors the i-cannot-be-silent flag." }
+  - { item: "«Единственное средство» publishedInRussiaDuringLifetime = false is inferred (no Russian publication recorded in the История писания), not asserted by a source. Verify before a works record states it.", phase: 4, why: "Absence-of-evidence inference on a boolean." }
+  - { item: "Three Days shelving: mainCategory Non-Fiction / Essays and Criticism vs Fiction / Sketches — the trilogy is literary-documentary очерки. genre 'essay' is the closest enum (no 'sketch'/очерк value). Decide at ingestion.", phase: 4, why: "Genre/shelf fit is weakest for the one narrative-sketch work in the cluster." }
+  - { item: "English titles CONFIRMED by the scholarship sweep against Maude/Free Age Press holdings: Thou Shalt Not Kill (1900), Thou Shalt Kill No One / Thou Shalt Not Kill Anyone (1907), Capital Punishment and Christianity (1909), Three Days in the Village (1910), To the Tsar and His Assistants (1901), The Only Means (1901). Only residual note: «Не убий никого» also renders as 'Thou Shalt Kill No One' — record as a titleAlternative.", phase: 3, why: "Resolved; minor title-variant to record at ingestion." }
+  - { item: "OS→NS conversions in the workRecords use +13 days (1900–1910) and are partly approximate; the well-attested values are the OldStyle dates from the texts/История писания.", phase: 4, why: "Composition/publication NS dates derived by calendar conversion." }
+  - { item: "The Ekaterinoslav/Gorlovka facts: the count (32 of 131; 92 convicted; 24 commuted; 8 hanged 4 Sept 1909) is now corroborated by Russian-language web sources AND the PSS Комментарии. The specific 1 Jan 1909 «Даровать жизнь» imperial resolution rests on the PSS Комментарии (Sergeenko) alone — the scholarship sweep confirmed the commutation but could not independently date/attribute the imperial act. Treat the date as PSS-attested, not independently confirmed.", phase: 3, why: "One reception detail (the dated imperial resolution) rests on a single Soviet-era PSS commentary." }
+
+archivesConsulted:
+  - "tolstoydigital TEI corpus: works v34_200_205 (Не убий), v34_239_244 (Царю), v34_254_269 (Единственное средство), v37_039_054 (Не убий никого), v38_039_048 (Смертная казнь и христианство), v38_005_012 / v38_012_018 / v38_019_022 (Три дня в деревне); + the six comments files (История писания / Комментарии)."
+  - "PSS Jubilee Edition: Tom 34 = vol03, Tom 37 = vol06, Tom 38 = vol07 (mapping per docs/research/pss-volume-mapping.md); pp. 200 (Не убий) and 39 (Смертная казнь) rendered at 220 dpi."
+  - "tolstoydigital diaries Tom 54 (1900–03), 56 (1907–08), 57 (1908–09), 58 (1909–10) — targeted genesis sweep."
+  - "docs/research/1908-i-cannot-be-silent (centrepiece, cross-referenced) + sibling dives 1908-the-law-of-violence-and-the-law-of-love, 1889-1899-resurrection, christian-anarchism."
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС т. 34: «Не убий» (с. 200–205), «Царю и его помощникам» (с. 239–244), «Единственное средство» (с. 254–269) + История писания (с. 568, 572–574, 578–579)"
+    - "ПСС т. 37: «Не убий никого» (с. 39–54) + История писания (с. 414–416)"
+    - "ПСС т. 38: «Смертная казнь и христианство» (с. 39–48), «Три дня в деревне» (с. 5–22) + Комментарии (с. 460–490, 494–497)"
+    - "ПСС тт. 54, 56, 57, 58 — дневники 1900–1910 (genesis sweep)"
+  background:
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. Profile, 2010/2011 (the 1908 essay as the climax of his late political witness)."
+    - "Maude, Aylmer. The Life of Tolstoy: Later Years. Constable, 1911; and the Free Age Press translations of most of the cluster."
+    - "Marasinova, Elena. 'The Death Penalty Moratorium in 18th-Century Russia.' Quaestio Rossica 6/4, 2018 (Empress Elizabeth's moratorium)."
+    - "Kropotkin, Peter. The Terror in Russia, Pt 1 ch. 3 'Executions' / ch. 5. 1909 (the granular execution figures 1906–09)."
+    - "Wikipedia (RU): «Горловское вооружённое восстание» (the Gorlovka uprising + the Ekaterinoslav trial numbers); Wikipedia 'Pyotr Stolypin', 'Capital punishment in Russia', 'Thou Shalt Not Kill (essay)'."
+    - "Find a Grave 261205774 — Alexander Arkadyevich Stolypin (1863–1925)."
+    - "Tolstoy texts online: To the Tsar and His Assistants (Wikisource/Maude); Capital Punishment and Christianity, Thou Shalt Kill No One (nonresistance.org); Three Days in the Village (marxists.org / Gutenberg, Free Age Press)."
+    - "Full source list + URLs + open verification flags in extracts/_scholarship.md (22 sources)."
