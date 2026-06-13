@@ -54,11 +54,13 @@ WIKI_DIR = REPO_ROOT / "website" / "src" / "wiki"
 WORKS_DIR = REPO_ROOT / "website" / "src" / "works"
 OUT_DIRNAME = "evidence-index"               # docs/research/evidence-index/
 
-# The nine wiki article types (website/schema/wiki-schema.md). Anything else
-# (notably `work`) is a Tolstoy work, routed to website/src/works/, and flagged.
+# The twelve wiki article types (website/schema/wiki-schema.md v1.4; `edition`
+# added v1.3, `character` + `group` v1.4). Anything else (notably `work`) is a
+# Tolstoy work, routed to website/src/works/, and flagged.
 WIKI_TYPES = {
     "person", "place", "event", "concept", "translator",
     "institution", "adaptation", "criticalWork", "archivalFond",
+    "edition", "character", "group",
 }
 
 # Reproduces website/src/_config/filters/slugify.js (npm `slugify`,

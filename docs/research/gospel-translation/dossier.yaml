@@ -1,0 +1,934 @@
+# Machine-readable dossier for the gospel-translation corpus-dive (index.md).
+# Created 2026-06-05 by a corpus-dive run (slug: gospel-translation).
+# Theme: the HISTORY of Tolstoy's Bible/gospel-translation project (Соединение и перевод
+# четырёх Евангелий, 1880–81, + the condensed Краткое изложение Евангелия), the strain it
+# caused at home (in his family life), and its ENGLISH translation lineage. Two
+# sibling dives own the adjacent ground: fire-metaphor (the textual fire/light rewrite) and
+# jubilee-edition-tei-corpus (the edition/corpus anatomy); this dive cross-links them.
+# Russian quoteRu rows are byte-faithful from the named extract (verify_quotes.py). English
+# rows hold the English source text in quoteRu (per the Abrégé precedent in the fire dossier),
+# verified against extracts/english-source-passages.txt (transcribed from the page images).
+# PSS Tom -> local PDF via pss-volume-mapping.md (Tom 24 = vol84, Tom 23 = vol83, Tom 62 = vol28).
+
+topic:
+  slug: gospel-translation
+  title: "Tolstoy and the Gospels: the translation project, its history, and the strain at home"
+  question: >-
+    How and why did Tolstoy come to translate and harmonize the four Gospels; what was his
+    method; how did the work affect his family life; how is the project situated in the Jubilee
+    Edition / TEI corpus; and what has been translated into English, by whom? The fire metaphor
+    (its own dive) and the corpus/edition anatomy (its own dive) are cross-linked, not re-derived.
+  date: 2026-06-05
+  period: "conversion + prophet (focus 1878–1896; afterlife to 1957/2011)"
+  corpusSurface: [works, gospel-harmony, diaries, letters, witness-diaries, english-editions]
+  dateRange: "1878–1896 (composition 1880–81; first legal Russian printing 1957)"
+
+# =============================================================================================
+# Layer 1 — flat citation ledger.
+#   A. The history & method of the project (Tom 23–24)
+#   B. The strain at home (Tolstoy's diaries/letters + S. A. Tolstaya's witness diaries)
+#   C. Into English (the local English editions; source text is English)
+# =============================================================================================
+evidence:
+
+  # ===== A. THE HISTORY & METHOD OF THE PROJECT ===================================
+
+  - id: harm-reject-orthodoxy
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      В православном вероучении я нашел изложение самых непонятных, кощунственных и безнравственных положений, не только не допускаемых разумом, но совершенно непостижимых и противных нравственности, и — никакого учения о жизни и о смысле ее.
+    quoteEn: >-
+      In the Orthodox creed I found an exposition of the most incomprehensible, blasphemous and immoral propositions — not only inadmissible to reason but utterly incomprehensible and contrary to morality — and no teaching whatever about life or its meaning. (working English)
+    significance: >-
+      The motive, stated in the Introduction to the harmony: Orthodox dogmatic theology gave him no
+      teaching about life, so he resolved to go behind it to Christ's own words. The negative half of
+      the project (the positive being the new translation itself).
+    facsimile: null
+
+  - id: harm-turn-to-gospels
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      обратился к изучению Евангелий.
+    quoteEn: >-
+      I turned to the study of the Gospels. (working English)
+    significance: >-
+      The pivot, in Tolstoy's own words in the Introduction: rejecting church mediation, he goes
+      directly to the Gospel text. The decision that generated the whole project.
+    facsimile: null
+
+  - id: harm-greek-lexicons
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      Читал я по-гречески, на том языке, на котором оно есть у нас, и переводил так, как указывал смысл и лексиконы
+    quoteEn: >-
+      I read in Greek, the language in which we have it, and translated as the sense and the lexicons indicated. (working English)
+    significance: >-
+      The method in one sentence: he worked from the Koine Greek with lexicons, departing from the
+      existing translations precisely because they were made after the church had fixed the meaning.
+      (Secondary literature names I. M. Ivakin as his Greek tutor at Yasnaya Polyana — see needsReview.)
+    facsimile: null
+
+  - id: harm-four-into-one
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      я неизбежно был приведен к необходимости свести четыре Евангелия в одно, так как все они излагают, хотя и разноречиво, одни и те же события и одно и то же учение.
+    quoteEn: >-
+      I was inevitably led to the necessity of bringing the four Gospels together into one, since all of them set out, however divergently, the same events and the same teaching. (working English)
+    significance: >-
+      Why a HARMONY and not just a translation: the four accounts of one teaching had to be unified.
+      The structural premise of the whole work.
+    facsimile: null
+
+  - id: harm-predecessors
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      Попыток соединения Евангелий в одно было много, но те все, которые я знаю, — Arnolde, de Vence, Фаррара, Рейса, Гречулевича, — все они берут исторические основы соединения, и все они безуспешны
+    quoteEn: >-
+      There have been many attempts to combine the Gospels into one, but all those I know — Arnolde, de Vence, Farrar, Reuss, Grechulevich — all take historical bases for the combination, and all are unsuccessful. (working English)
+    significance: >-
+      He differentiates his method from prior harmonies (Farrar, Reuss, Grechulevich): they harmonize
+      by historical chronology; he harmonizes by the MEANING of the teaching. (He took Grechulevich's
+      sequence as a base and cross-checked Reuss.)
+    facsimile: null
+
+  - id: harm-circle
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      учение истинное представляет как бы круг, которого все части одинаково определяют значение друг друга и для изучения которого безразлично начинание изучения с одного или другого места.
+    quoteEn: >-
+      the true teaching presents itself as a kind of circle, all of whose parts equally define one another's meaning, and for the study of which it is a matter of indifference where one begins. (working English)
+    significance: >-
+      The interpretive logic of the harmony: the teaching is an organic circle, not a chronology, so
+      its order of assembly follows the meaning rather than the calendar.
+    facsimile: null
+
+  - id: harm-self-critical
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1902
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_007_798_Soedinenie_i_perevod_chetyreh_evangelij.txt
+    quoteRu: >-
+      искусственные и, вероятно, неправильные филологические разъяснения, которые не только не усиливают убедительность общего смысла, но должны ослаблять ее.
+    quoteEn: >-
+      artificial and probably incorrect philological explanations, which not only fail to strengthen the persuasiveness of the general sense but must weaken it. (working English)
+    significance: >-
+      Tolstoy's own retrospective verdict (the 1902 "Free Word" edition preface): he concedes he forced
+      obscure passages with strained philology and would not do so again. A rare self-criticism of the
+      project's method — the honest counterweight to the confident Introduction.
+    facsimile: null
+
+  - id: gib-crisis-at-50
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      Я был приведен к христианству не богословскими, не историческими исследованиями, а тем, что пятидесяти лет от роду [...] я пришел в отчаяние и хотел убить себя [...] И я стал изучать христианство
+    quoteEn: >-
+      I was brought to Christianity not by theological or historical investigations, but by the fact that, at fifty years of age […] I fell into despair and wanted to kill myself […] And I began to study Christianity. (working English)
+    significance: >-
+      The crisis that drove the project, from the Gospel-in-Brief preface: the harmony is the PRODUCT
+      of the conversion, not its cause (the point scholarship — Matual 1992 — also makes). Cross-links
+      the project's "Confession → переworot" framing in the sibling crisis dive.
+    facsimile: null
+
+  - id: gib-mud-and-silt
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      нашел незаконно соединенную с ним грязь и тину, которая одна заслоняла для меня его чистоту; рядом с высоким христианским учением я нашел связанное с ним чуждое ему безобразное учение еврейское и церковное.
+    quoteEn: >-
+      I found, illegitimately joined to it, mud and silt which alone obscured its purity for me; beside the lofty Christian teaching I found bound up with it an alien, ugly Jewish and ecclesiastical teaching. (working English)
+    significance: >-
+      The governing image of the whole enterprise: the pure spring of Christ's teaching choked by the
+      "mud and silt" of church accretion, which the translation sets out to clear away.
+    facsimile: null
+
+  - id: gib-four-part-plan
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      перевод четырех Евангелий и соединение их в одно.
+    quoteEn: >-
+      the translation of the four Gospels and their combination into one. (working English)
+    significance: >-
+      Step 3 of the four-part project Tolstoy lays out in the preface: (1) the autobiographical account
+      [Confession]; (2) the critique of church dogma [Critique of Dogmatic Theology]; (3) the
+      translation+harmony itself; (4) the exposition of the teaching's true meaning [What I Believe].
+      The harmony is the keystone of a tetralogy, not a standalone book.
+    facsimile: null
+
+  - id: gib-12-chapters
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      Разделение Евангелия на 12 или на 6 глав (соединяя по две главы в одну) вытекло само собою из смысла учения.
+    quoteEn: >-
+      The division of the Gospel into 12 chapters (or into 6, joining two chapters into one) emerged of itself from the meaning of the teaching. (working English)
+    significance: >-
+      The harmony's architecture: 12 chapters framed by the John 1 prologue and the 1 John epilogue —
+      a structure Tolstoy says he did not impose but found in the teaching.
+    facsimile: null
+
+  - id: gib-lords-prayer
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      так называемая молитва господня есть не что иное, как в самой сжатой форме выраженное всё учение Иисуса в том самом порядке, в котором были расположены мною главы, и что каждое выражение молитвы соответствует смыслу и порядку глав.
+    quoteEn: >-
+      the so-called Lord's Prayer is nothing other than the whole teaching of Jesus expressed in the most condensed form, in the very order in which I had arranged the chapters, and each phrase of the prayer corresponds to the sense and order of the chapters. (working English)
+    significance: >-
+      The post-hoc confirmation Tolstoy reports with "surprise and joy": his 12-chapter outline maps
+      onto the Lord's Prayer phrase by phrase — for him, internal proof that the structure was the
+      teaching's own.
+    facsimile: null
+
+  - id: gib-50000-variants
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/v24_801_938_Kratkoe_izlozhenie_Evangelija_Predislovie.txt
+    quoteRu: >-
+      разночтений евангельских книг насчитывают до пятидесяти тысяч.
+    quoteEn: >-
+      the variant readings of the Gospel books are counted at up to fifty thousand. (working English)
+    significance: >-
+      His textual-criticism warrant for independence from the canonical text: with ~50,000 variants and
+      no autograph, no single received reading is sacrosanct — so a fresh translation is legitimate.
+    facsimile: null
+
+  - id: dogm-no-faith
+    genre: works
+    pssTom: 23
+    pages: "60–303"
+    date: 1880
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol83/vol83.pdf
+    extract: extracts/v23_060_303_Issledovanie_dogmaticheskogo_bogoslovija.txt
+    quoteRu: >-
+      кощунственные сочинения Вольтера, Юма, но никогда я не испытывал того несомненного убеждения в полном безверии человека, как то, которое я испытывал относительно составителей катехизисов и богословии
+    quoteEn: >-
+      the blasphemous writings of Voltaire and Hume — yet never did I feel such a certain conviction of a man's complete unbelief as the one I felt regarding the composers of catechisms and theologies. (working English)
+    significance: >-
+      From the Critique of Dogmatic Theology (project part 2). His verdict on the theologians whose
+      apparatus he was clearing away: not even Voltaire or Hume struck him as so faithless. The
+      polemical engine behind the harmony's de-dogmatizing.
+    facsimile: null
+
+  # ===== B. THE STRAIN AT HOME ===================================================
+
+  - id: diary-1878-read-gospel
+    genre: diaries
+    pssTom: 48
+    pages: "69–70"
+    date: 1878-05-22
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol16/vol16.pdf
+    extract: extracts/v48_069_070_1878_05_22.txt
+    quoteRu: >-
+      Читал Евангелие.
+    quoteEn: >-
+      Read the Gospel. (working English)
+    significance: >-
+      The two-word entry (22 May 1878) at the moment Tolstoy resumes his diary after a 13-year gap —
+      the Gospel reading already at the centre of the new life. The entry goes on to set the eternal
+      against "everything temporal." The private beginning of the public project.
+    facsimile: null
+
+  - id: letter-strakhov-1879-passionate
+    genre: letters
+    pssTom: 62
+    pages: "471–472"
+    date: 1879-02-13
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol28/vol28.pdf
+    extract: extracts/v62_489_N_N_Straxovu.txt
+    quoteRu: >-
+      работаю очень много и страстно, хотя ничего не пишу.
+    quoteEn: >-
+      I work very much and passionately, though I write nothing. (working English)
+    significance: >-
+      To his confidant Strakhov: the formula for the whole gospel phase — total, consuming labour that
+      produces nothing publishable. From the household's side this was a husband absorbed and invisible,
+      generating no income.
+    facsimile: null
+
+  - id: letter-strakhov-1879-never-print
+    genre: letters
+    pssTom: 62
+    pages: "501–503"
+    date: 1879-11
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol28/vol28.pdf
+    extract: extracts/v62_535_N_N_Straxovu.txt
+    quoteRu: >-
+      занят работой для себя, которой никогда не напечатаю.
+    quoteEn: >-
+      I am occupied with work for myself, which I shall never print. (working English)
+    significance: >-
+      The uncensorable status of the work, in his own words — which is exactly why it produced no return
+      for a family whose finances Sofia managed. (S. A. Tolstaya names the same fact from her side:
+      "this work is endless, because it cannot be printed" — see sofia-1883-endless.)
+    facsimile: null
+
+  - id: letter-aatolstaya-1879-stranger
+    genre: letters
+    pssTom: 62
+    pages: "495–496"
+    date: 1879-08-13
+    addressee: A. A. Tolstaya
+    localPdf: primary-sources/jubilee-edition/vol28/vol28.pdf
+    extract: extracts/v62_524_A_A_Tolstoj.txt
+    quoteRu: >-
+      более чуждым всему этому человека трудно себе представить. [...] Я счастлив женой и не несчастлив детьми.
+    quoteEn: >-
+      it would be hard to imagine a person more a stranger to all this. […] I am happy in my wife and not unhappy in my children. (working English)
+    significance: >-
+      To his cousin: amid the full-house theatricals and sociability he describes himself as a stranger
+      in his own home, then qualifies his domestic contentment with a double negative ("not unhappy").
+      The estrangement registering in his own voice, three years before Sofia's keystone entry.
+    facsimile: null
+
+  - id: sofia-1878-reading
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1878-10-18
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1878-10-18.txt
+    quoteRu: >-
+      он вял, молчалив и сосредоточен. Все читает.
+    quoteEn: >-
+      he is listless, silent and absorbed. He keeps reading. (working English)
+    significance: >-
+      S. A. Tolstaya's shorthand for the gospel-period withdrawal (18 Oct 1878), set against the busy
+      household around her. From the witness corpus (her diaries), not Tolstoy's own hand.
+    facsimile: null
+
+  - id: sofia-1878-machine
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1878-11-10
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1878-11-10.txt
+    quoteRu: >-
+      Чувствую себя работающей машиной, хотелось бы жизни немного для себя, да нет ее.
+    quoteEn: >-
+      I feel like a working machine; I would like a little life for myself, but there is none. (working English)
+    significance: >-
+      Sofia's own exhaustion (10 Nov 1878): eight children and the whole estate on her while Tolstoy
+      withdraws into religious study. The domestic underside of the project.
+    facsimile: null
+
+  - id: sofia-1879-religious
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1879-12-18
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1879-12-18.txt
+    quoteRu: >-
+      Он много пишет о религиозном.
+    quoteEn: >-
+      He writes a great deal about the religious. (working English)
+    significance: >-
+      One flat sentence (18 Dec 1879, on the eve of a birth) naming the religious writing, before she
+      turns to the children for comfort. Her near-silence in 1879–81 — the densest work years — is
+      itself part of the record (see needsReview / Method).
+    facsimile: null
+
+  - id: sofia-1882-incompatible
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1882-02-28
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1882-02-28.txt
+    quoteRu: >-
+      его христианское настроение слишком не уживается с условиями роскоши, тунеядства, борьбы городской жизни.
+    quoteEn: >-
+      his Christian mood is too incompatible with the conditions of luxury, idleness and the struggle of city life. (working English)
+    significance: >-
+      Sofia names the source of the strain directly (28 Feb 1882): his "Christian mood" — the orientation
+      the gospel work produced — cannot coexist with the household they share. The marriage is already
+      reorganizing itself around his religious state.
+    facsimile: null
+
+  - id: sofia-1882-keystone
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1882-08-26
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1882-08-26.txt
+    quoteRu: >-
+      Он сегодня громко вскрикнул, что самая страстная мысль его о том, чтоб уйти от семьи. [...] Он проникся христианством и мыслями о самосовершенствованье. Я ревную его...
+    quoteEn: >-
+      Today he cried out aloud that his most passionate thought is to leave the family. […] He has become imbued with Christianity and with thoughts of self-perfection. I am jealous of it… (working English)
+    significance: >-
+      THE keystone of the family angle (26 Aug 1882, the 20th anniversary of her wedding diary). Sofia
+      names the cause — "imbued with Christianity" — and ties it to the threat to leave and to her own
+      jealousy of the religious mission. The single most direct primary witness to the work's domestic
+      strain. (The same entry shows her also nursing the typhoid-stricken Ilya through the night.)
+    facsimile: null
+
+  - id: sofia-1883-endless
+    genre: witness-diaries
+    pssTom: null
+    pages: null
+    date: 1883-03-05
+    addressee: null
+    localPdf: null
+    extract: extracts/tolstaya-s-a-diaries_1883-03-05.txt
+    quoteRu: >-
+      эта работа нескончаемая, потому что не может быть напечатана.
+    quoteEn: >-
+      this work is endless, because it cannot be printed. (working English)
+    significance: >-
+      Sofia's mirror (5 Mar 1883) of Tolstoy's own "work I shall never print": she names what makes the
+      project domestically impossible — no end, no income, no publication — and resigns herself to it as
+      "God's will." The two voices converge on the same fact from opposite sides.
+    facsimile: null
+
+  - id: diary-1883-madman
+    genre: diaries
+    pssTom: 49
+    pages: "32–33"
+    date: 1883-04-16
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol50/vol50.pdf
+    extract: extracts/v49_032_033_1883_04_16.txt
+    quoteRu: >-
+      называли сумашедшим, и я чуть было не рассердился.
+    quoteEn: >-
+      [they] called [me] a madman, and I almost lost my temper. (working English)
+    significance: >-
+      Tolstoy's own diary (16 Apr 1883): his wife and son Sergei call him "a madman" for his religious
+      radicalism, and he records his effort to restrain his anger. The gulf between his new conviction
+      and the household, from his side.
+    facsimile: null
+
+  # ===== C. INTO ENGLISH (source text is English) =================================
+
+  - id: eng-imprimatur
+    genre: english-edition
+    pssTom: null
+    pages: null
+    date: 1894-10
+    addressee: null
+    localPdf: "primary-sources/archive-org/The four gospels harmonized and translated/fourgospelsPart1/"
+    extract: extracts/english-source-passages.txt
+    quoteRu: >-
+      I hereby certify that this rendering of my work, The Four Gospels Harmonised and Translated, has been made by a competent translator and with my consent. — Leo Tolstoy. October 19/31, 1894.
+    quoteEn: null
+    significance: >-
+      Tolstoy's autograph IMPRIMATUR, reproduced in facsimile at the front of the English Part I — his
+      own hand authorizing this exact English translation, per his Daily Chronicle policy of marking
+      sanctioned versions. The keystone of the English-lineage section. Source text is English.
+    facsimile: extracts/facsimile-english-imprimatur-1894.png
+
+  - id: eng-translator-note
+    genre: english-edition
+    pssTom: null
+    pages: null
+    date: 1894-09-21
+    addressee: null
+    localPdf: "primary-sources/archive-org/The four gospels harmonized and translated/fourgospelsPart1/"
+    extract: extracts/english-source-passages.txt
+    quoteRu: >-
+      It is at Count Tolstoy's express wish that I have undertaken the translation of his book on the Gospels. [...] owing to the impossibility of its being published in Russia, the Genevan edition is disfigured by numerous typographical mistakes.
+    quoteEn: null
+    significance: >-
+      The anonymous translator's note (signed only "The Translator", 21 Sep 1894): names the censored
+      GENEVA edition as the Russian source and the work's first publication "this autumn" (1894). The
+      translator is never named in the volume; secondary sources attribute it to J. C. Kenworthy of the
+      Croydon Brotherhood — unconfirmed (see needsReview). Source text is English.
+    facsimile: extracts/facsimile-english-titlepage-1895.png
+
+  - id: eng-daily-chronicle
+    genre: english-edition
+    pssTom: null
+    pages: null
+    date: 1894-08-30
+    addressee: null
+    localPdf: "primary-sources/archive-org/The four gospels harmonized and translated/fourgospelsPart1/"
+    extract: extracts/english-source-passages.txt
+    quoteRu: >-
+      The right of translation I freely accord, without exception, to everyone who would like to undertake the trouble of translating. But being eager to have my ideas spread, I also wish them to be correctly interpreted.
+    quoteEn: null
+    significance: >-
+      Tolstoy's letter to the London Daily Chronicle (30 Aug 1894), reprinted in the front matter: the
+      policy that frames the whole English lineage — translation rights given freely to all, but
+      "correct" versions to be marked with his sanction (hence the imprimatur). Source text is English.
+    facsimile: null
+
+# =============================================================================================
+# Layer 2 — entities (ingestion routing map → vault). ingestionPriority: 1 central, 2 supporting,
+# 3 peripheral. vaultStatus checked against website/src/works/ and website/src/wiki/ on 2026-06-05.
+# =============================================================================================
+entities:
+
+  - name: "Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"
+    wikiType: work
+    wikilinkTarget: "Soedinenie i perevod chetyrekh Evangelij"
+    vaultStatus: missing
+    role: "The full harmony itself — the work this dive is about; composed 1880–81, first legal Russian printing 1957 (PSS Tom 24)"
+    sources: [jubilee-edition]
+    evidenceRefs: [harm-reject-orthodoxy, harm-turn-to-gospels, harm-greek-lexicons, harm-four-into-one, harm-predecessors, harm-circle, harm-self-critical]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "The Gospel in Brief (Краткое изложение Евангелия)"
+    wikiType: work
+    wikilinkTarget: "Kratkoe izlozhenie Evangelija"
+    vaultStatus: missing
+    role: "The condensed redaction of the harmony; its preface narrates the crisis, the method, the 12-chapter structure and the four-part plan"
+    sources: [jubilee-edition]
+    evidenceRefs: [gib-crisis-at-50, gib-mud-and-silt, gib-four-part-plan, gib-12-chapters, gib-lords-prayer, gib-50000-variants]
+    ingestionPriority: 1
+    dependsOn: ["Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"]
+
+  - name: "Sophia Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Tolstoy's wife; her diaries are the primary witness to the work's domestic strain. The dive's evidence COMPLICATES the 'domestic-tragedy' frame (she names the cause yet accepts it as God's will)"
+    sources: []
+    evidenceRefs: [sofia-1878-reading, sofia-1878-machine, sofia-1879-religious, sofia-1882-incompatible, sofia-1882-keystone, sofia-1883-endless]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "Critique of Dogmatic Theology (Исследование догматического богословия)"
+    wikiType: work
+    wikilinkTarget: "Issledovanie dogmaticheskogo bogoslovija"
+    vaultStatus: missing
+    role: "Project part 2 — the polemical demolition of Orthodox dogma that cleared the ground for the harmony"
+    sources: [jubilee-edition]
+    evidenceRefs: [dogm-no-faith]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "What I Believe (В чём моя вера?)"
+    wikiType: work
+    wikilinkTarget: "V chem moja vera"
+    vaultStatus: missing
+    role: "Project part 4 — the positive exposition of the recovered teaching (also the fire+light credo of the sibling fire-metaphor dive)"
+    sources: [jubilee-edition]
+    evidenceRefs: [gib-four-part-plan]
+    ingestionPriority: 2
+    dependsOn: ["Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"]
+
+  - name: "A Confession (Исповедь)"
+    wikiType: work
+    wikilinkTarget: "Confession"
+    vaultStatus: exists
+    role: "Project part 1 — the autobiographical account of the crisis; the translator's note calls it 'an introduction to the present work'"
+    sources: [jubilee-edition]
+    evidenceRefs: [gib-crisis-at-50]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Nikolai Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Tolstoy's confidant and critical interlocutor during the gospel years; the addressee who hears the work described as consuming and unpublishable"
+    sources: []
+    evidenceRefs: [letter-strakhov-1879-passionate, letter-strakhov-1879-never-print]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Later custodian/publisher of the banned works; his Croydon/Free Age circle stands behind the first English translation"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "The Four Gospels Harmonised and Translated (Brotherhood / Walter Scott, 1895–96)"
+    wikiType: edition
+    wikilinkTarget: "Four Gospels Harmonised and Translated (1895)"
+    vaultStatus: missing
+    role: "The first English translation of the harmony — anonymous, from the Geneva text, authorized by Tolstoy's imprimatur; Parts I–II only, Part III never published"
+    sources: []
+    evidenceRefs: [eng-imprimatur, eng-translator-note, eng-daily-chronicle]
+    ingestionPriority: 2
+    dependsOn: ["Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"]
+
+  - name: "Leo Wiener"
+    wikiType: person
+    wikilinkTarget: "Leo Wiener"
+    vaultStatus: missing
+    role: "Harvard Slavist whose Complete Works of Count Tolstoy (Dana Estes, 1904, vols XIV–XV) carries the first COMPLETE English translation of the full harmony"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["The Four Gospels Harmonised and Translated (Brotherhood / Walter Scott, 1895–96)"]
+
+  - name: "John Coleman Kenworthy"
+    wikiType: person
+    wikilinkTarget: "John Coleman Kenworthy"
+    vaultStatus: missing
+    role: "Leader of the Croydon Brotherhood Church; attributed (secondary sources, unconfirmed) as the anonymous translator of the 1895–96 edition"
+    sources: []
+    evidenceRefs: [eng-translator-note]
+    ingestionPriority: 3
+    dependsOn: ["The Four Gospels Harmonised and Translated (Brotherhood / Walter Scott, 1895–96)"]
+
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "Tolstoy's English biographer and translator; his Gospel in Brief (1921) is the standard later English version (cross-link fire-metaphor)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Ivan Ivakin (И. М. Ивакин)"
+    wikiType: person
+    wikilinkTarget: "Ivan Ivakin"
+    vaultStatus: missing
+    role: "Tolstoy's Greek tutor at Yasnaya Polyana during the gospel work (per secondary literature — unconfirmed)"
+    sources: []
+    evidenceRefs: [harm-greek-lexicons]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Mikhail Elpidin (М. К. Эльпидин)"
+    wikiType: institution
+    wikilinkTarget: "Mikhail Elpidin"
+    vaultStatus: missing
+    role: "Geneva émigré publisher; the censored full harmony first appeared abroad through this network (1892–94, per scholarship — confirm)"
+    sources: []
+    evidenceRefs: [eng-translator-note]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Excommunication of Tolstoy (1901)"
+    wikiType: event
+    wikilinkTarget: "Excommunication of Tolstoy"
+    vaultStatus: missing
+    role: "The Holy Synod's 1901 decree — the institutional bookend of the religious project the gospel translation began"
+    sources: []
+    evidenceRefs: [harm-reject-orthodoxy]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Jubilee Edition (Полное собрание сочинений)"
+    wikiType: edition
+    wikilinkTarget: "Jubilee Edition"
+    vaultStatus: missing
+    role: "The 90-vol PSS; Tom 24 (1957) is the first legal Russian publication of the full harmony. Fully mapped in the sibling jubilee-edition-tei-corpus dive"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+
+# =============================================================================================
+# Layer 3 — visuals. visuals/ is git-ignored (local cache, refetch via docs/fetch_visuals.py);
+# extracts/ is committed (PD facsimiles only).
+# =============================================================================================
+visuals:
+
+  - id: facsimile-english-imprimatur
+    type: manuscript
+    subject: "Tolstoy's autograph imprimatur authorizing the English translation (1894)"
+    relatedEntity: "The Four Gospels Harmonised and Translated (Brotherhood / Walter Scott, 1895–96)"
+    relatedEvidence: eng-imprimatur
+    holding: "The Four Gospels Harmonised and Translated, Part I (Brotherhood/Walter Scott, 1895); rendered locally at 220 dpi"
+    archiveId: "Part I, autograph imprimatur plate (facing title page)"
+    access: open
+    rights: "Public domain (Tolstoy's autograph; 1895 imprint)"
+    licence: PD
+    usable: yes
+    url: null
+    localPath: extracts/facsimile-english-imprimatur-1894.png
+    note: "Committed (PD). The keystone visual: Tolstoy's own hand certifying 'a competent translator and with my consent.'"
+
+  - id: facsimile-english-titlepage
+    type: manuscript
+    subject: "Title page: 'In Three Parts … at the request of the author', Brotherhood Publishing Co. / Walter Scott, 1895"
+    relatedEntity: "The Four Gospels Harmonised and Translated (Brotherhood / Walter Scott, 1895–96)"
+    relatedEvidence: eng-translator-note
+    holding: "The Four Gospels Harmonised and Translated, Part I (Brotherhood/Walter Scott, 1895); rendered locally at 220 dpi"
+    archiveId: "Part I, title page"
+    access: open
+    rights: "Public domain (1895 imprint)"
+    licence: PD
+    usable: yes
+    url: null
+    localPath: extracts/facsimile-english-titlepage-1895.png
+    note: "Committed (PD). Shows the Croydon Brotherhood + Walter Scott provenance and 'In Three Parts' (only two appeared)."
+
+  - id: tolstoy-loc-1880
+    type: photograph
+    subject: "Leo Tolstoy, half-length portrait, 1880 — the year he began the harmony"
+    relatedEntity: "Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"
+    relatedEvidence: harm-turn-to-gospels
+    holding: "Library of Congress / Wikimedia Commons"
+    archiveId: "File:Count Leo Tolstoy, half-length portrait, facing right LCCN99615676.jpg"
+    access: open
+    rights: "Public domain (LoC, pre-1928)"
+    licence: PD
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Count_Leo_Tolstoy,_half-length_portrait,_facing_right_LCCN99615676.jpg
+    localPath: visuals/commons-tolstoy-portrait-loc-1880.jpg
+    note: "Dated to the year the gospel work began; distinct from the portraits cached by sibling dives."
+
+  - id: sofia-ge-1886
+    type: painting
+    subject: "Sofia Andreevna Tolstaya — Nikolai Ge's 1886 portrait"
+    relatedEntity: "Sophia Tolstaya"
+    relatedEvidence: sofia-1882-keystone
+    holding: "Yasnaya Polyana Museum / Wikimedia Commons"
+    archiveId: "File:Ge Sophia Tolstaya.jpg"
+    access: open
+    rights: "Public domain (Ge d. 1894)"
+    licence: PD
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Ge_Sophia_Tolstaya.jpg
+    localPath: visuals/commons-sofia-tolstaya-ge-1886.jpg
+    note: "Sofia in the years just after the gospel work — the wife whose diaries record the strain it caused."
+
+  - id: sofia-photo-1875
+    type: photograph
+    subject: "Sofia Andreevna Tolstaya, photograph c.1875 (the 'before')"
+    relatedEntity: "Sophia Tolstaya"
+    relatedEvidence: sofia-1878-machine
+    holding: "Wikimedia Commons (publ. in T. Tolstoy, Anni con mio padre, 1976)"
+    archiveId: "File:Sofia Tolstaya, 1875.jpg"
+    access: open
+    rights: "Public domain (PD-old, unknown photographer)"
+    licence: PD
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Sofia_Tolstaya,_1875.jpg
+    localPath: visuals/commons-sofia-tolstaya-photo-1875.jpg
+    note: "Three years before the gospel work began — a baseline portrait."
+
+  - id: tolstoy-family-snapshot-1880s
+    type: photograph
+    subject: "Tolstoy with his wife, a son, and a dog at Yasnaya Polyana, c.1880s"
+    relatedEntity: "Sophia Tolstaya"
+    relatedEvidence: letter-aatolstaya-1879-stranger
+    holding: "Library of Congress / Wikimedia Commons"
+    archiveId: "File:CountTolstoyWifeSonAndDog.187090.ws.jpg"
+    access: open
+    rights: "Public domain (LoC)"
+    licence: PD
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:CountTolstoyWifeSonAndDog.187090.ws.jpg
+    localPath: visuals/commons-tolstoy-wife-son-dog-1880s.jpg
+    note: "The domestic context the gospel work strained; informal family snapshot."
+
+  - id: tolstoy-family-ge-1886
+    type: painting
+    subject: "The Tolstoy family — Nikolai Ge, 1886"
+    relatedEntity: "Sophia Tolstaya"
+    relatedEvidence: sofia-1882-incompatible
+    holding: "Wikimedia Commons"
+    archiveId: "File:Tolstoy family.jpg"
+    access: open
+    rights: "Public domain (Ge d. 1894)"
+    licence: PD
+    usable: yes
+    url: https://commons.wikimedia.org/wiki/File:Tolstoy_family.jpg
+    localPath: visuals/commons-tolstoy-family-ge-1886.jpg
+    note: "Small reproduction; a higher-res source would be preferable for publication."
+
+  - id: geneva-elpidin-edition
+    type: document
+    subject: "The censored Geneva (Elpidin) first edition of the Russian harmony"
+    relatedEntity: "Mikhail Elpidin (М. К. Эльпидин)"
+    relatedEvidence: eng-translator-note
+    holding: "No openly-licensed image located"
+    archiveId: null
+    access: restricted
+    rights: "No PD image of Elpidin or a Geneva title page found on Commons"
+    licence: unknown
+    usable: no
+    url: null
+    note: "Geneva first-publication imagery not retrievable; see needsReview. The fact is documented from the translator's note ('the Genevan edition')."
+
+# =============================================================================================
+# Layer 4 — scholarship (secondary). English-first; attributed, read critically, never a baseline.
+# =============================================================================================
+scholarship:
+  summary: >-
+    Mainstream scholarship agrees the harmony (Соединение и перевод четырёх Евангелий, 1880–81) is a
+    deliberately de-supernaturalized, rationalist rendering in which ethics displaces theology, and —
+    crucially — that it is the PRODUCT of the conversion, not its cause: Matual (1992), the one
+    book-length English study, writes that "Tolstoy's gospel did not lead to his religious views, but
+    that his views gave rise to his gospels"; Wilson (1988) says he "actually rewrote the gospels";
+    Gustafson (1986) resists the "two Tolstoys" split; Medzhibovskaya (2008) reframes the turn as a
+    long, coherent "conversion" rather than a breakdown. On the FAMILY, a Sofia-centred popular frame
+    (Popoff 2010; Shirer 1994; the film The Last Station, 2009) reads the religious turn as a domestic
+    tragedy with Chertkov as villain and Sofia as victim. This dive grounds in the primary record and
+    treats that frame critically: S. A. Tolstaya's own diary both names the cause ("проникся
+    христианством") AND accepts it as "воля божья" — more ambivalent than the villain narrative, and
+    the "Tolstoyan" label she and others used is one Tolstoy himself rejected.
+  triangulation:
+    - evidenceRef: gib-crisis-at-50
+      conventionalView: "The harmony is the product of Tolstoy's conversion, not its cause (Matual: 'his views gave rise to his gospels')."
+      relation: confirms
+      source: "Matual, Tolstoy's Translation of the Gospels (1992)"
+    - evidenceRef: harm-greek-lexicons
+      conventionalView: "Tolstoy worked from the Koine Greek (assisted by a Greek tutor, I. M. Ivakin), harmonizing by ethical meaning and excising the supernatural — comparable to Jefferson's gospel (Britannica; Matual)."
+      relation: confirms
+      source: "Britannica, 'Union and Translation of the Four Gospels'; Matual (1992)"
+    - evidenceRef: harm-reject-orthodoxy
+      conventionalView: "The de-supernaturalizing/anti-dogmatic thrust is well-noted; it led to the 1901 excommunication (Wilson 1988)."
+      relation: confirms
+      source: "Wilson, Tolstoy (1988); Holy Synod decree, 1901"
+    - evidenceRef: sofia-1882-keystone
+      conventionalView: "The popular frame makes the religious turn a domestic tragedy with Chertkov the villain and Sofia the victim (Popoff; Shirer; The Last Station)."
+      relation: complicates
+      source: "Popoff, Sophia Tolstoy (2010); Shirer, Love and Hatred (1994)"
+    - evidenceRef: harm-self-critical
+      conventionalView: "Scholarship treats the harmony as confident rationalist exegesis; Tolstoy's own 1902 admission of 'artificial, probably incorrect' philology is rarely foregrounded."
+      relation: extends
+      source: "(the self-criticism is in the work's own 1902 preface; under-discussed in the accessible literature)"
+
+# =============================================================================================
+# Intra-corpus contradictions (primary-vs-primary).
+# =============================================================================================
+contradictions:
+  - claim: "Tolstoy's gospel work was a private spiritual exercise that left the household untouched."
+    correction: >-
+      His own letters frame it as all-consuming and unpublishable (letter-strakhov-1879-passionate,
+      letter-strakhov-1879-never-print), and from the other side S. A. Tolstaya's diaries record the
+      estrangement, the threat to leave the family, and the work's endlessness (sofia-1882-keystone,
+      sofia-1883-endless). The two voices, independently, document the same domestic strain.
+    evidenceRef: sofia-1882-keystone
+
+notCovered:
+  - "The TEXTUAL fire/light rewrite of the Gospels (John 1 Logos→разумение, the hell-fire excisions, Luke 12:49) is owned by the sibling fire-metaphor dive and is only summarized here — not re-extracted."
+  - "The edition/corpus anatomy (how Tom 24 sits in the 90-vol PSS, the TEI document model, the digitisation chain) is owned by the sibling jubilee-edition-tei-corpus dive; this dive cites its findings rather than repeating them."
+  - "The copyright/will dimension of the family conflict (the 1891 renunciation, the contested will) is owned by the copyright-renunciation and biryukov-sofia-relationship dives; touched here only where the gospel work itself is the stressor."
+  - "S. A. Tolstaya's diary is near-silent in 1879–1881 (the densest work years); the family evidence for that window leans on Tolstoy's letters to Strakhov and A. A. Tolstaya. A fuller pass over the children's memoirs (Ilya, Sergei, Tatyana Tolstoy) and Gusev's chronicle in the witness corpus remains."
+  - "The downstream English Gospel-in-Brief lineage (Crowell 1896; Maude 1921; Condren 2011) and Wiener's complete 1904 harmony are documented from the local copies + web, but not collated line-by-line against the Russian."
+  - "The SCANDINAVIAN / Swedish reception of the gospel work is unmapped. No standalone Swedish edition of the full harmony (Соединение и перевод четырёх Евангелий) was found in Project Runeberg or the Svenskt översättarlexikon; the condensed strand reached Swedish via Walborg Hedberg (Bonnier) — above all 'Anden af Kristi lära: en kommentarie öfver evangeliets mening' (Stockholm: Bonnier, 1891; KB-digitised), very likely the Gospel-in-Brief strand though the catalogues do not certify the Russian original — plus 'Hvari min tro består' (1887), 'Jesu lära: enkelt framställd' (Geber, 1909) and 'Kristi lära förklarad för barnen' (1910). Not collated; seeds a future 'Tolstoy's gospel work in Swedish' thread. NB the Swedish titles avoid 'evangelieharmoni'/'harmoni', reaching for 'lära' and 'evangeliets mening' — closer to Tolstoy's own соединение-by-meaning than to the harmonist tradition."
+
+needsReview:
+  - item: "Translator of the 1895–96 Walter Scott/Brotherhood 'Four Gospels Harmonised' is anonymous on the title page; secondary sources attribute it to John Coleman Kenworthy (Croydon Brotherhood Church)."
+    phase: 3
+    why: "Attribution is from secondary commentary, not title-page evidence; confirm against Matual (1992) or a Tolstoy-in-English bibliography before asserting in the vault."
+  - item: "Geneva first-publication details: the censored full harmony first appeared abroad, commonly given as M. K. Elpidin's Geneva press, 1892–94; the Gospel in Brief earlier."
+    phase: 3
+    why: "Publisher/dates are standard in scholarship but were not confirmed against a primary catalogue in this run. First legal Russian printing = Jubilee Edition Tom 24, 1957 (confirmed from the local vol84 PDF cover)."
+  - item: "The English translator's-note dating: 'written nearly eighteen years ago' (i.e. ~1876) vs the documented composition 1880–81."
+    phase: 2
+    why: "The translator counts loosely (probably from the conversion's onset); do NOT propagate 1876 — the harmony is 1880–81 (PSS Tom 24; Tolstoy's 1891 'From the Author' note says 'composed ten years ago')."
+  - item: "I. M. Ivakin as Tolstoy's Greek tutor during the work."
+    phase: 3
+    why: "From secondary literature (Gale, 'Authoring Jesus'); confirm before stating as fact in a wiki page."
+  - item: "1896 Crowell (New York) Gospel in Brief translator is anonymous; sometimes attributed to Isabel Hapgood — unconfirmed."
+    phase: 3
+    why: "Archive.org records it anonymous; the Hapgood attribution appears only in later editorial apparatus."
+  - item: "Walter Scott edition coverage: Parts I–II (1895–96) carry the Preface, Introduction and ~Chapters I–VIII of XII; Part III never appeared."
+    phase: 2
+    why: "Confirm the exact final chapter of Part II if precise coverage is needed for an edition wiki page."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ — Tom 23 (Confession, Critique of Dogmatic Theology) + Tom 24 (full harmony, Gospel in Brief) introductions"
+  - "primary-sources/tolstoydigital-TEI/texts/diaries/ — Tom 48 (1878) + Tom 49 (1881–83)"
+  - "primary-sources/tolstoydigital-TEI/texts/letters/ — Tom 62 (to N. N. Strakhov, to A. A. Tolstaya, 1879)"
+  - "primary-sources/tolstoydigital-TEI/tolstoy-bio/ — S. A. Tolstaya's diaries (witness corpus), 1878–1883"
+  - "primary-sources/jubilee-edition/vol84 (Tom 24) — cover confirms first publication 1957"
+  - "primary-sources/archive-org/The four gospels harmonized and translated/ — Walter Scott/Brotherhood Parts I–II (1895–96): imprimatur, translator's note, Daily Chronicle; facsimiles rendered at 220 dpi"
+  - "primary-sources/archive-org/The gospels in brief (Crowell 1896) + Complete Works of Count Tolstoy (Wiener, Dana Estes 1904, vols XIV–XV)"
+  - "Wikimedia Commons — Sofia (Ge 1886; photo 1875), the family (Ge 1886; LoC snapshot), Tolstoy 1880 (LoC); PD verified via extmetadata"
+  - "Web scholarship — Matual (1992); Gustafson (1986); Medzhibovskaya (2008); Bartlett (2010); Wilson (1988); Popoff (2010); Shirer (1994); Britannica; Thompson (1997)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, Соединение и перевод четырёх Евангелий (ПСС Т. 24; первая легальная русская публикация 1957)"
+    - "Л. Н. Толстой, Краткое изложение Евангелия (ПСС Т. 24)"
+    - "Л. Н. Толстой, Исповедь; Исследование догматического богословия; В чём моя вера? (ПСС Т. 23)"
+    - "Л. Н. Толстой, Дневники (ПСС Т. 48–49); Письма к Н. Н. Страхову и А. А. Толстой (ПСС Т. 62)"
+    - "С. А. Толстая, Дневники, 1862–1900 (witness corpus; Т. 1)"
+    - "Tolstoy, The Four Gospels Harmonised and Translated, Parts I–II (Croydon: Brotherhood Publishing Co. / London: Walter Scott, 1895–96) — incl. the autograph imprimatur + the (anonymous) translator's note"
+    - "Tolstoy, The Gospel in Brief (New York: T. Y. Crowell, 1896, anonymous)"
+    - "Tolstoy, The Four Gospels Harmonized and Translated, trans. Leo Wiener, in The Complete Works of Count Tolstoy, vols XIV–XV (Boston: Dana Estes, 1904)"
+  background:
+    - "David Matual, Tolstoy's Translation of the Gospels: A Critical Study (Edwin Mellen, 1992)"
+    - "Richard F. Gustafson, Leo Tolstoy: Resident and Stranger (Princeton, 1986)"
+    - "Inessa Medzhibovskaya, Tolstoy and the Religious Culture of His Time (Lexington, 2008)"
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2010); A. N. Wilson, Tolstoy (1988)"
+    - "Alexandra Popoff, Sophia Tolstoy: A Biography (Free Press, 2010); William L. Shirer, Love and Hatred: The Troubled Marriage of Leo and Sonya Tolstoy (1994); The Last Station (film, dir. M. Hoffman, 2009)"
+    - "Leo Tolstoy, The Gospel in Brief, trans. Aylmer Maude (1921); trans. Dustin Condren (HarperCollins, 2011)"
+    - "Caleb Thompson, 'Wittgenstein, Tolstoy and the Meaning of Life,' Philosophical Investigations (1997); Ray Monk, Ludwig Wittgenstein: The Duty of Genius (1990)"

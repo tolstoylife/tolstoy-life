@@ -1,0 +1,749 @@
+topic:
+  slug: 1889-1904-the-forged-coupon
+  title: "The Forged Coupon (Фальшивый купон)"
+  question: >-
+    What is The Forged Coupon and what does its doubled chain of consequence prove?
+    Tested as a hypothesis: the novella is Tolstoy's most schematic narrative proof of the
+    non-resistance / kingdom-of-God ethic — the doubled chain dramatises the claim, which he
+    diagrammed in an 1886 dream-vision, that evil spreads but cannot conquer good while good
+    spreads and does conquer evil.
+  date: 2026-06-12
+  period: "Composed intermittently 1889–1904 (theme-germ 1886; main pushes Oct–Nov 1902 and 25 Dec 1903 – early Feb 1904); posthumous 1911"
+  corpusSurface: "works (PSS Tom 36) + variants + commentary; genesis diaries & letters (Toms 49–55, 1886–1904)"
+  dateRange: "1886–1911"
+
+# ───────────────────────── EVIDENCE LEDGER ─────────────────────────
+evidence:
+  # ---- A. Genesis: the seed and the long gestation ----
+  - id: ev-program-1886
+    genre: notebook
+    pssTom: 36
+    pages: "558 (commentary)"
+    date: "1886-09-15"
+    extract: extracts/v36_genesis-records-from-commentary.txt
+    quoteRu: "И он увидал, что зло расходится, но не поборает добра. А добро также расходится и поборает зло"
+    quoteEn: "And he saw that evil spreads, but does not conquer good. And good likewise spreads and conquers evil. (working English)"
+    significance: >-
+      The structural germ. In a programme for a planned tale about the rich man Mitasha, Tolstoy
+      diagrams the whole doubled chain in a dream-vision: a "bright youth" shows the dreamer the
+      entire history of the forged coupon — where it came from, how evil spread and how it was cut
+      short. The asymmetry (evil spreads but does NOT conquer; good spreads AND conquers) is the
+      thesis the finished novella executes. Commentary-mediated; original notebook not held locally.
+    facsimile: ""
+  - id: ev-diary-1889-05-29
+    genre: diary
+    pssTom: 50
+    pages: "86–87"
+    date: "1889-05-29"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Как хороша могла бы быть история об убийце, раскаявшемся на незащищавшейся женщине."
+    quoteEn: "How fine the story of a murderer who repents over an undefended woman could be. (working English)"
+    significance: >-
+      The germ of Stepan and the centrepiece. Written the same day Tolstoy had clubbed a wounded
+      hare while hunting and reflected «как невинны должны быть убийцы. Они думают о другом и убивают
+      без борьбы» ("how innocent murderers must be — they think of something else and kill without
+      a struggle"). The "undefended woman" is Maria Semyonovna; her non-resistance is the hinge.
+    facsimile: ""
+  - id: ev-diary-1891-07-31
+    genre: diary
+    pssTom: 52
+    pages: "47"
+    date: "1891-07-31"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Сюжет — впечатления и история человека, бывшего в золотой роте и попавшего в сад караульщиком около господского дома, в котором он видит близко господскую жизнь и даже принимает в ней участие."
+    quoteEn: "A subject — the impressions and history of a man who had been in the punishment company and became a garden-watchman by a manor house, where he sees the gentry's life up close and even takes part in it. (working English)"
+    significance: "The germ of the watchman (the figure that became the dvornik Vasily / Prokofy)."
+    facsimile: ""
+  - id: ev-diary-1895-03-12
+    genre: diary
+    pssTom: 53
+    pages: "10–13"
+    date: "1895-03-12"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Нынче захотелось писать художественное. Вспоминал, что да что у меня не кончено. Хорошо бы всё докончить"
+    quoteEn: "Today I felt like writing something artistic. I recalled what I have left unfinished. It would be good to finish it all. (working English)"
+    significance: >-
+      «Купон» appears as item 5 in a list of nine unfinished artistic works (beside Resurrection,
+      Father Sergius, Hadji Murat's siblings, The Devil). Shows the coupon dormant but alive through
+      the 1890s.
+    facsimile: ""
+  - id: ev-diary-1897-11-14
+    genre: diary
+    pssTom: 53
+    pages: "161–162"
+    date: "1897-11-14"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "написать другого русского разбойника Григория Николаева, чтоб он видел всю незаконность жизни богатых"
+    quoteEn: "Thought of writing, as a pendant to Hadji Murat, another Russian brigand, Grigory Nikolaev, who would see the whole lawlessness of the rich man's life, living as an apple-watchman on a rich estate with a lawn tennis court. (working English)"
+    significance: "Ties the coupon's robber strand to Hadji Murat as a deliberate pendant; the apple-watchman becomes Vasily/Prokofy."
+    facsimile: ""
+  - id: ev-diary-1897-12-13
+    genre: diary
+    pssTom: 53
+    pages: "170–171"
+    date: "1897-12-13"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Фальшивый купон. 7) Хаджи-Мурат."
+    quoteEn: "The Forged Coupon. 7) Hadji Murat — items 6–7 in a list of subjects worth working up. (working English)"
+    significance: "«Фальшивый купон» listed (item 6) among workable subjects, with «Разбойник — убивающий беззащитных» (item 11, marked прекрасно) — the murderer-of-the-defenceless that becomes Stepan."
+    facsimile: ""
+  - id: ev-diary-1898-06-12
+    genre: diary
+    pssTom: 53
+    pages: "196–199"
+    date: "1898-06-12"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "только одно непротивление прекращает зло, поглощая его в себе, нейтрализирует его, не позволяет ему идти дальше, как оно неизбежно идет, как передача движения упругими шарами, если только нет той силы, которая поглощает его."
+    quoteEn: "only non-resistance puts an end to evil, absorbing it into itself, neutralising it, not letting it travel further, as it inevitably does — like the transmission of motion by elastic balls — unless there is the force that absorbs it. (working English)"
+    significance: >-
+      The doctrinal spine of the whole novella, written in the same diary entry as «Рассказ Купон
+      очень хочется дописать» ("I very much want to finish the Coupon story"). Evil propagates like
+      momentum through colliding balls; non-resistance is the force that absorbs it. The novella is
+      this theory dramatised: Maria Semyonovna's non-resistance is the absorbing force that stops
+      Stepan's chain.
+    facsimile: ""
+  - id: ev-diary-1898-06-12b
+    genre: diary
+    pssTom: 53
+    pages: "196–199"
+    date: "1898-06-12"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Рассказ Купон очень хочется дописать."
+    quoteEn: "I very much want to finish the Coupon story. (working English)"
+    significance: "Confirms part of the tale was written by mid-1898."
+    facsimile: ""
+  - id: ev-diary-1899-12-20
+    genre: diary
+    pssTom: 53
+    pages: "234–235"
+    date: "1899-12-20"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Думал нынче о «Купоне» — хорошо. Может быть напишу."
+    quoteEn: "Thought about the Coupon today — well. Perhaps I'll write it. (working English)"
+    significance: "Last mention before the long gap to 1902."
+    facsimile: ""
+  # ---- B. The 1902–1904 composition pushes ----
+  - id: ev-diary-1902-10-06
+    genre: diary
+    pssTom: 54
+    pages: "145"
+    date: "1902-10-06"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Вчера начал поправлять и продолжать Фальшивый купон."
+    quoteEn: "Yesterday I began correcting and continuing The Forged Coupon. (working English)"
+    significance: >-
+      The first sustained push (the first seven chapters, per M. L. Obolenskaya's manuscript cover,
+      Nov 1902). The same entry records a visit from Gorky and Pyatnitsky — people around the work.
+    facsimile: ""
+  - id: ev-diary-1903-12-02
+    genre: diary
+    pssTom: 54
+    pages: "199"
+    date: "1903-12-02"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "начать новое или драму, или о религии, или кончить купон."
+    quoteEn: "to begin something new — either a drama, or something on religion, or to finish the coupon. (working English)"
+    significance: "The coupon weighed against the alternatives just before the decisive push."
+    facsimile: ""
+  - id: ev-diary-1903-12-25
+    genre: diary
+    pssTom: 54
+    pages: "202"
+    date: "1903-12-25"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Начал писать фальшивый купон. Пишу очень небрежно, но интересует меня тем, что выясняется новая форма, очень sobre."
+    quoteEn: "Began writing The Forged Coupon. I write very carelessly, but it interests me because a new form is taking shape, very sober. (working English)"
+    significance: >-
+      KEYSTONE composition note. The «новая форма, очень sobre» is the stripped, bare style — short
+      chapters, no psychological dwelling, the supernatural devils about to be cut — that makes the
+      chain stand on plain human causation. Cross-links the late-voice dive (compression).
+    facsimile: ""
+  - id: ev-letter-1904-01-19-LL
+    genre: letter
+    pssTom: 75
+    pages: "13–15"
+    date: "1904-01-19"
+    addressee: "L. L. Tolstoy (son)"
+    extract: extracts/v75_013_letter_LL_Tolstomu.txt
+    quoteRu: "если помнишь, я давно начал, и дополнение о религии"
+    quoteEn: "I am also writing The Forged Coupon — you remember, I began it long ago — and a supplement on religion. (working English)"
+    significance: "Letter evidence of the work in progress during the Jan 1904 push; «я давно начал» confirms the long gestation."
+    facsimile: ""
+  - id: ev-diary-1904-01-22
+    genre: diary
+    pssTom: 55
+    pages: "10"
+    date: "1904-01-22"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Нынче занимался купоном и колеблюсь, оставить или уничтожить чертей."
+    quoteEn: "Today I worked on the coupon and waver over whether to leave or destroy the devils. (working English)"
+    significance: >-
+      The decision behind the keystone redaction. Tolstoy had drawn little devils (чертенята) on the
+      characters' shoulders, growing and dividing as evil spread; here he wavers, then destroys them,
+      marking «пропустить» (omit) everywhere but three places he missed. The same entry calls the
+      government «шайка разбойников» (a band of robbers) — the novella's politics in the diary.
+    facsimile: ""
+  - id: ev-diary-1904-02-02
+    genre: diary
+    pssTom: 55
+    pages: "12"
+    date: "1904-02-02"
+    extract: extracts/_diaries-genesis.txt
+    quoteRu: "Работаю над Купоном, а о войне не пишется."
+    quoteEn: "I am working on the Coupon, but the war won't be written. (working English)"
+    significance: "The last diary mention of work on the tale; it broke off within days and was never resumed."
+    facsimile: ""
+  # ---- C. The text: origin, centrepiece, reversal ----
+  - id: ev-text-origin
+    genre: works
+    pssTom: 36
+    pages: "5–6 (ch I)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "А я тебе скажу, что если ты так поведешь себя, ты будешь мошенник."
+    quoteEn: "And I tell you that if you behave like this, you'll be a swindler. (working English)"
+    significance: >-
+      The first link. The liberal official Fyodor Mikhailovich Smokovnikov, in a bad mood, refuses
+      his son the small sum and plants the word «мошенник» (swindler) — which the boy then half-sets
+      out to fulfil by altering the coupon. Evil begins not in a great crime but in a father's
+      contempt.
+    facsimile: ""
+  - id: ev-text-maria-nonresist
+    genre: works
+    pssTom: 36
+    pages: "32 (ch XXIII)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "но она не подняла рук, не противилась и только прижала их к груди и тяжело вздохнула"
+    quoteEn: "but she did not raise her hands, did not resist, and only pressed them to her breast and sighed heavily. (working English)"
+    significance: >-
+      THE centrepiece — the structural hinge. Maria Semyonovna does not resist as Stepan prepares to
+      kill her; she pities him: «Пожалей себя. Чужие души, а пуще свою губишь» ("Have pity on
+      yourself. You destroy others' souls, and your own still more"). Her non-resistance is the
+      absorbing force of the 1898 diary; it is what Stepan «не мог больше переносить» and what turns
+      the whole tale from the chain of evil to the chain of good.
+    facsimile: ""
+  - id: ev-text-maria-pity
+    genre: works
+    pssTom: 36
+    pages: "32 (ch XXIII)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "Пожалей себя. Чужие души, а пуще свою губишь"
+    quoteEn: "Have pity on yourself. You destroy others' souls, and your own still more. (working English)"
+    significance: "Maria Semyonovna's words as she is killed — pity for her murderer, the seed of his conversion."
+    facsimile: ""
+  - id: ev-text-conversion
+    genre: works
+    pssTom: 36
+    pages: "37 (Part II ch III)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "И с этого времени Степан стал другим человеком."
+    quoteEn: "And from that time Stepan became a different man. (working English)"
+    significance: >-
+      The reversal completes inside Stepan. After Maria Semyonovna's face haunts him, her silent
+      dream-forgiveness releases him, and the sectarian Chuev reads him the Gospel (Matthew 25, the
+      sheep and goats; Luke 23, the repentant thief), Stepan is remade. From here good propagates
+      back outward — he converts the executioner Makhorkin and, through Mahin's retelling, Lisa
+      Eropkina.
+    facsimile: ""
+  - id: ev-text-executioner
+    genre: works
+    pssTom: 36
+    pages: "40 (Part II ch V)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "Что ж, плети — так плети, а убивать закона нет."
+    quoteEn: "Well — flog me then, but there's no law to kill. (working English)"
+    significance: >-
+      The good chain made visible: the convict-executioner Makhorkin, having heard Stepan, refuses
+      to hang the two condemned peasants though threatened with flogging. The same machinery that
+      transmitted evil now transmits the refusal of violence.
+    facsimile: ""
+  - id: ev-text-brothers
+    genre: works
+    pssTom: 36
+    pages: "39 (Part II ch VI)"
+    date: ""
+    extract: extracts/v36_005_053_main.txt
+    quoteRu: "— Оттого что понял, что все люди братья."
+    quoteEn: "— Because I understood that all men are brothers. (working English)"
+    significance: >-
+      Stepan to Mahin, the investigator — who is the very schoolboy who first taught how to alter
+      the coupon. The node that began the evil chain now carries the redemption-story outward; «От
+      непонятия» ("from not-understanding") is Stepan's whole account of why men judge and kill.
+    facsimile: ""
+  # ---- D. Redactions: the devils (keystone variant) and the real bases ----
+  - id: ev-devils-redaction
+    genre: works
+    pssTom: 36
+    pages: "559–560 (commentary, on draft additions)"
+    date: ""
+    extract: extracts/v36_commentary-excerpts.txt
+    quoteRu: "маленький чертенок, сидевший на бумаге, перескочил на плечо Федора Михайловича и, сидя на нем, несколько увеличился."
+    quoteEn: "a little devil that had been sitting on the paper leapt onto Fyodor Mikhailovich's shoulder and, sitting there, grew somewhat larger. (working English)"
+    significance: >-
+      The keystone redaction. Tolstoy first wrote the chain of evil as a literal allegory — little
+      devils sitting on shoulders, swelling and dividing and leaping from person to person as malice
+      passed. He cut them all (decision of 22 Jan 1904), leaving the bare human causation: the «очень
+      sobre» new form is what remained after the supernatural scaffolding was stripped away.
+    facsimile: ""
+  - id: ev-prototype-larivon
+    genre: notebook
+    pssTom: 36
+    pages: "578 (commentary)"
+    date: "1881"
+    extract: extracts/v36_genesis-records-from-commentary.txt
+    quoteRu: "Повели Ларивона в острог."
+    quoteEn: "They led Larivon off to prison. (working English)"
+    significance: >-
+      Prokofy's author-stated prototype: Tolstoy's former coachman Larion/Larivon, whose destruction
+      by the courts (jailed and re-jailed for trivial offences, declining, dead of consumption)
+      Tolstoy had already told in his Notes of a Christian (Записки христианина, 1881). The novella's
+      indictment of the justice system is drawn from a man Tolstoy knew.
+    facsimile: ""
+  - id: ev-prototype-stanislavsky
+    genre: works
+    pssTom: 36
+    pages: "578 (commentary)"
+    date: "1887-04-14"
+    extract: extracts/v36_commentary-excerpts.txt
+    quoteRu: "Эпизод убийства крестьянами управляющего имением Петра Николаевича Свентицкого"
+    quoteEn: "The episode of the peasants' killing of the estate manager Pyotr Nikolaevich Sventitsky — commentary attribution. (working English)"
+    significance: >-
+      The killing of the manager Sventitsky (Part I ch XVII), and the hanging of two peasants for it,
+      almost exactly reproduces the real killing of A. V. Stanislavsky, manager of N. A.
+      Tuchkova-Ogareva's estate, by peasants on 14 April 1887 — two peasants were hanged. The
+      execution disturbed Tolstoy deeply; he still spoke of it to Goldenweiser in 1904.
+    facsimile: ""
+  - id: ev-pub-censorship
+    genre: works
+    pssTom: 36
+    pages: "580 (commentary)"
+    date: "1911"
+    extract: extracts/v36_commentary-excerpts.txt
+    quoteRu: "однако с цензурными урезками"
+    quoteEn: "however, with censorship excisions (working English)"
+    significance: >-
+      First printed in vol. 1 of the Posthumous Artistic Works (ed. Chertkov, pub. A. L. Tolstaya,
+      Moscow 1911) WITH censorship cuts — the sharpest anti-clerical and pro-sectarian passages
+      removed (Part I ch XII «Наплевать мне на ваш сан»; the anti-authority passage on Stepan in ch
+      XV; the icon-renunciation in ch XVIII; most of ch XX on the sect; in Part II, the
+      true-faith-of-Christ words in ch III, and ch XV entire). The simultaneous Berlin «Свободное
+      слово» edition (also ed. Chertkov) carried the full uncensored text.
+    facsimile: ""
+
+# ───────────────────────── ENTITIES (ingestion routing map; the dive writes NO pages) ─────────────────────────
+entities:
+  - name: "The Forged Coupon"
+    wikiType: work
+    wikilinkTarget: "The Forged Coupon"
+    vaultStatus: missing
+    role: "The novella itself — record-creating workRecord (see workRecord block)."
+    sources: []
+    evidenceRefs: [ev-program-1886, ev-diary-1903-12-25, ev-text-maria-nonresist]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Stepan Pelageyushkin"
+    wikiType: character
+    wikilinkTarget: "Stepan Pelageyushkin"
+    vaultStatus: missing
+    role: "The murderer whose chain of killing ends at the non-resisting Maria Semyonovna and reverses into the chain of good; the novella's pivot."
+    sources: []
+    evidenceRefs: [ev-diary-1889-05-29, ev-text-maria-nonresist, ev-text-conversion, ev-text-brothers]
+    ingestionPriority: 1
+    dependsOn: ["The Forged Coupon"]
+  - name: "Maria Semyonovna"
+    wikiType: character
+    wikilinkTarget: "Maria Semyonovna"
+    vaultStatus: missing
+    role: "The non-resisting widow whose death is the structural hinge — the absorbing force that stops the chain of evil."
+    sources: []
+    evidenceRefs: [ev-diary-1889-05-29, ev-text-maria-nonresist, ev-text-maria-pity]
+    ingestionPriority: 1
+    dependsOn: ["The Forged Coupon"]
+  - name: "Prokofy (The Forged Coupon)"
+    wikiType: character
+    wikilinkTarget: "Prokofy (The Forged Coupon)"
+    vaultStatus: missing
+    role: "The wronged peasant who turns to robbery; carries the author-stated Larivon prototype. (Partly merged with the dvornik Vasily in the final text.)"
+    sources: []
+    evidenceRefs: [ev-prototype-larivon, ev-diary-1891-07-31]
+    ingestionPriority: 2
+    dependsOn: ["The Forged Coupon"]
+    prototypes:
+      - person: ""
+        name: "Larion / Larivon (Tolstoy's coachman)"
+        basis: author-stated
+        certainty: documented
+        note: "Named by Tolstoy; his destruction by the courts told in Notes of a Christian (1881), quoted in the PSS T.36 commentary."
+        sourceId: ""
+  - name: "Fyodor Mikhailovich Smokovnikov"
+    wikiType: character
+    wikilinkTarget: "Fyodor Mikhailovich Smokovnikov"
+    vaultStatus: missing
+    role: "The liberal official father whose contempt starts the chain of evil."
+    sources: []
+    evidenceRefs: [ev-text-origin]
+    ingestionPriority: 2
+    dependsOn: ["The Forged Coupon"]
+  - name: "Mitya Smokovnikov"
+    wikiType: character
+    wikilinkTarget: "Mitya Smokovnikov"
+    vaultStatus: missing
+    role: "The schoolboy who alters the coupon (the first deed) and, at the broken-off end, is reconciled — the chain closing on itself."
+    sources: []
+    evidenceRefs: [ev-text-origin]
+    ingestionPriority: 2
+    dependsOn: ["The Forged Coupon"]
+  - name: "Mahin"
+    wikiType: character
+    wikilinkTarget: "Mahin (The Forged Coupon)"
+    vaultStatus: missing
+    role: "The schoolboy who teaches the forgery and later, as investigator, carries Stepan's redemption-story outward — a single node serving both chains."
+    sources: []
+    evidenceRefs: [ev-text-brothers]
+    ingestionPriority: 3
+    dependsOn: ["The Forged Coupon", "Stepan Pelageyushkin"]
+  - name: "Archimandrite Misail (Mikhail Vvedensky)"
+    wikiType: character
+    wikilinkTarget: "Archimandrite Misail"
+    vaultStatus: missing
+    role: "The religion-teacher who becomes a monk and persecutes the sectarians; the novella's anti-clerical strand (the most-censored material)."
+    sources: []
+    evidenceRefs: [ev-pub-censorship]
+    ingestionPriority: 3
+    dependsOn: ["The Forged Coupon"]
+  - name: "Pyotr Nikolaevich Sventitsky"
+    wikiType: character
+    wikilinkTarget: "Pyotr Nikolaevich Sventitsky"
+    vaultStatus: missing
+    role: "The estate manager killed by peasants; the episode reproduces the real Stanislavsky killing of 1887."
+    sources: []
+    evidenceRefs: [ev-prototype-stanislavsky]
+    ingestionPriority: 3
+    dependsOn: ["The Forged Coupon"]
+    prototypes:
+      - person: ""
+        name: "A. V. Stanislavsky (estate manager, killed 14 Apr 1887)"
+        basis: editorial
+        certainty: documented
+        note: "Per the PSS T.36 commentary the killing-episode 'almost exactly reproduces' the real Stanislavsky case (manager of Tuchkova-Ogareva's estate); two peasants hanged in both."
+        sourceId: ""
+  - name: "Gospel Christians / icon-rejecting sectarians (The Forged Coupon)"
+    wikiType: group
+    wikilinkTarget: ""
+    vaultStatus: missing
+    role: "The peasant sect (icon- and sacrament-rejecting, штунда-adjacent) through whom — via Chuev — Stepan converts; the pro-sectarian material the censor cut."
+    sources: []
+    evidenceRefs: [ev-text-conversion, ev-pub-censorship]
+    ingestionPriority: 3
+    dependsOn: ["The Forged Coupon"]
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: []
+    evidenceRefs: [ev-program-1886, ev-diary-1903-12-25]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Copied the first chapter (1880s); edited both the censored Moscow 1911 and the uncensored Berlin posthumous editions."
+    sources: []
+    evidenceRefs: [ev-program-1886, ev-pub-censorship]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Maria Lvovna Obolenskaya"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: stub
+    role: "Daughter; copyist of the manuscript, dated its covers (the 19 work-sessions of Dec 1903 – Feb 1904)."
+    sources: []
+    evidenceRefs: [ev-diary-1902-10-06]
+    ingestionPriority: 3
+    dependsOn: []
+    note: "vaultStatus to verify against vault transliteration — 'Maria Tolstaya' may resolve to another Maria; check loosely before marking."
+  - name: "Alexandra Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Alexandra Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; copyist; publisher of the Moscow 1911 Posthumous Artistic Works."
+    sources: []
+    evidenceRefs: [ev-pub-censorship]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "L. L. Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Lev Lvovich Tolstoy"
+    vaultStatus: missing
+    role: "Son; addressee of the 19 Jan 1904 letter mentioning work on the coupon."
+    sources: []
+    evidenceRefs: [ev-letter-1904-01-19-LL]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Maxim Gorky"
+    wikiType: person
+    wikilinkTarget: "Maxim Gorky"
+    vaultStatus: missing
+    role: "Visited (with the publisher Pyatnitsky) on 5 Oct 1902, the day before Tolstoy resumed the coupon."
+    sources: []
+    evidenceRefs: [ev-diary-1902-10-06]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Robert Bresson"
+    wikiType: person
+    wikilinkTarget: ""
+    vaultStatus: missing
+    role: "Director of L'Argent (1983), adapting Part I of the novella; the work's major afterlife. (Borderline — peripheral to the Tolstoy vault; record only if the films/adaptations area warrants.)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["The Forged Coupon"]
+
+# ───────────────────────── VISUALS (heavy 4-channel sweep; 20 records, 9 PD downloaded) ─────────────────────────
+visuals:
+  - { id: C1-03, type: portrait, subject: "Tolstoy, studio portrait (1902, composition restart)", relatedEntity: "Lev Tolstoy", relatedEvidence: ev-diary-1902-10-06, holding: "Wikimedia Commons", archiveId: "", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Лев_Толстой_(Шерер_и_Набгольц,_1902).jpg", localPath: "visuals/Tolstoy-Scherer-Nabholz-1902.jpg", note: "Scherer & Nabholz, Moscow. Best contemporaneous header image." }
+  - { id: C1-07, type: photo, subject: "Tolstoy photographed by Chertkov (1906)", relatedEntity: "Vladimir Chertkov", relatedEvidence: ev-pub-censorship, holding: "Wikimedia Commons / State Tolstoy Museum", archiveId: "0003600097", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Лев_Толстой_(Чертков,_1906)_-_0003600097.jpg", localPath: "visuals/Tolstoy-Chertkov-1906.jpg", note: "By Chertkov — first-chapter copyist & editor of both posthumous editions." }
+  - { id: C1-01, type: photo, subject: "Tolstoy with daughter Tatyana, Yasnaya Polyana (1902)", relatedEntity: "Lev Tolstoy", relatedEvidence: ev-diary-1902-10-06, holding: "Wikimedia Commons", archiveId: "", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Tolstoy1902.jpeg", localPath: "visuals/Tolstoy1902-Sofia-daughter.jpeg", note: "Photo by Sofia Tolstaya." }
+  - { id: C1-02, type: photo, subject: "Tolstoy and Sofia at Gaspra, Crimea (May 1902)", relatedEntity: "Lev Tolstoy", relatedEvidence: ev-diary-1902-10-06, holding: "Wikimedia Commons", archiveId: "", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_and_Sofia_Tolstaya_in_Crimea,_1902.jpg", localPath: "visuals/Tolstoy-Sofia-Crimea-1902.jpg", note: "Convalescence year." }
+  - { id: C1-08, type: photo, subject: "Tolstoy, colour photograph (Prokudin-Gorsky, 1908)", relatedEntity: "Lev Tolstoy", relatedEvidence: "", holding: "State Tolstoy Museum / Wikimedia Commons", archiveId: "", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg", localPath: "visuals/Tolstoy-Prokudin-Gorsky-1908.jpg", note: "Canonical late portrait; 4 yrs after completion." }
+  - { id: "C1-04..06,09", type: photo, subject: "Further PD Tolstoy photos (vegetarian breakfast 1902; Appleton's ≤1905; 1906; Bulla 1908)", relatedEntity: "Lev Tolstoy", relatedEvidence: "", holding: "Wikimedia Commons", archiveId: "", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/Category:Leo_Tolstoy", localPath: "visuals/ (4 files)", note: "Downloaded; see _visuals-sweep.md C1-04/05/06/09." }
+  - { id: E2-01, type: edition-titlepage, subject: "Посмертные художественные произведения, vol. 1 (Moscow 1911, CENSORED)", relatedEntity: "The Forged Coupon", relatedEvidence: ev-pub-censorship, holding: "Russian National Library (РНБ)", archiveId: "000200_000018_v19_rc_1912336", access: "description-only", rights: "PD (text); scan unknown", licence: unknown, usable: false, url: "https://rusneb.ru/catalog/000200_000018_v19_rc_1912336/", localPath: "", note: "The censored first printing; no public scan. Vol.1 also carried The Devil & After the Ball." }
+  - { id: E2-02, type: edition-titlepage, subject: "Berlin uncensored posthumous-works edition", relatedEntity: "The Forged Coupon", relatedEvidence: ev-pub-censorship, holding: "(not digitised)", archiveId: "", access: "auction listings only", rights: "PD (text)", licence: unknown, usable: false, url: "https://www.litfund.ru/auction/544s1/136/", localPath: "", note: "PSS commentary names the uncensored Berlin «Свободное слово» edition (ed. Chertkov, simultaneous, ~1911). A 1912 J. Ladyschnikow Verlag Berlin set found at auction may be a separate émigré printing — see needsReview." }
+  - { id: E2-03, type: edition-titlepage, subject: "The Forged Coupon and Other Stories and Dramas (first English; Hagberg Wright, Nelson, c.1911)", relatedEntity: "The Forged Coupon", relatedEvidence: "", holding: "Internet Archive / U. Toronto", archiveId: "forgedcouponothe00tolsuoft", access: open, rights: PD, licence: PD, usable: true, url: "https://archive.org/details/forgedcouponothe00tolsuoft", localPath: "", note: "Full PD scan incl. title page; not downloaded (452 pp)." }
+  - { id: M3-01, type: manuscript-facsimile, subject: "Autograph drafts, full complex", relatedEntity: "The Forged Coupon", relatedEvidence: ev-devils-redaction, holding: "ИРЛИ РАН (Pushkin House)", archiveId: "Ф.22 оп.5 д.16 (shifr 22.5.16)", access: "reading room / remote request", rights: unknown, licence: unknown, usable: false, url: "https://pushkinskijdom.ru/", localPath: "", note: "Opening autograph + 151-pp full complex. No public digital facsimile." }
+  - { id: M3-02, type: manuscript-facsimile, subject: "Chertkov-hand copy of ch. I + ch. XI–XIII sheets", relatedEntity: "Vladimir Chertkov", relatedEvidence: ev-devils-redaction, holding: "State Tolstoy Museum (ГТМ), Chertkov Archive", archiveId: "АЧ папки 78 и 82", access: "reading room / KAMIS catalogue", rights: unknown, licence: unknown, usable: false, url: "https://tolstoy-iss.kamiscloud.ru/", localPath: "", note: "Most direct manuscript↔publication link." }
+  - { id: A4-01, type: film-still, subject: "Robert Bresson, L'Argent (1983) — adapts Part I only", relatedEntity: "Robert Bresson", relatedEvidence: ev-text-origin, holding: "Criterion / Bresson estate", archiveId: "Criterion spine #886", access: "commercial", rights: rights-reserved, licence: rights-reserved, usable: false, url: "https://www.criterion.com/films/27588-l-argent", localPath: "", note: "Dominant afterlife; stops before Part II. Cannes 1983 directing prize (shared, Tarkovsky). Do not publish stills." }
+  - { id: A4-02, type: film-still, subject: "Aku Louhimies, Frozen Land / Paha maa (2005) — adapts Part I only", relatedEntity: "The Forged Coupon", relatedEvidence: ev-text-origin, holding: "(Finnish producers)", archiveId: "", access: "commercial", rights: rights-reserved, licence: rights-reserved, usable: false, url: "https://en.wikipedia.org/wiki/Frozen_Land", localPath: "", note: "Second adaptation; same Part-I-only pattern. No Soviet/pre-1983 adaptation found." }
+
+# ───────────────────────── SCHOLARSHIP (Phase 3) ─────────────────────────
+scholarship:
+  summary: >-
+    The received English-language view reads The Forged Coupon as a late "schematic moral parable"
+    with a domino / chain structure expressing Tolstoy's non-resistance and Christian-anarchist
+    ethic (Troyat; Simmons; Wilson; the 1912 Bernstein introduction; popular criticism). The most
+    sophisticated academic treatment — Kliger & Zakariya, "Poetics of Brotherhood" (Slavic Review,
+    2011) — reaches the doubled chain itself but frames it narratologically (organic vs mechanistic
+    narrative), pairing the novella with Resurrection as Tolstoy's two long-form "proofs" of human
+    brotherhood; it stops short of naming the theological asymmetry the chains dramatise and does
+    not connect them to the 1886 dream-diagram. A Bryn Mawr digital exhibit reads the work through
+    class and gender, which shifts emphasis from the moral mechanism to social structure. The work's
+    dominant cultural afterlife — Robert Bresson's film L'Argent (1983) — adapts only Part I and
+    stops exactly where the redemptive Part II would begin, so the most famous reception of the work
+    breaks its doubled chain and has fed a reading in which Part II is a "schematic appendage." A
+    primary-grounded reading contests that: Part II is the structural proof, not an appendage.
+  triangulation:
+    - evidenceRef: ev-program-1886
+      conventionalView: "Scholars read the work as a 'domino' / chain parable of non-resistance but do not cite a documented origin for the doubled structure."
+      relation: extends
+      source: "Kliger & Zakariya 2011; Bernstein 1912"
+    - evidenceRef: ev-diary-1898-06-12
+      conventionalView: "The non-resistance theme is named in general terms; the explicit 'evil as transmitted momentum, non-resistance as the absorbing force' mechanism is not cited from the diaries."
+      relation: extends
+      source: "Wilson 1988; general criticism"
+    - evidenceRef: ev-text-maria-nonresist
+      conventionalView: "Kliger/Zakariya: the late novellas structurally enact human brotherhood; Maria Semyonovna's death is the connective pivot."
+      relation: confirms
+      source: "Kliger & Zakariya 2011, Slavic Review 70.4"
+    - evidenceRef: ev-devils-redaction
+      conventionalView: "Scholarship does not discuss the cut 'devils' allegory or the conscious de-allegorisation into the «очень sobre» form."
+      relation: extends
+      source: "— (no secondary source reaches this; PSS commentary + diaries only)"
+    - evidenceRef: ev-text-conversion
+      conventionalView: "A Bryn Mawr exhibit foregrounds class/gender and institutional-vs-authentic religion over the non-resistance proof."
+      relation: complicates
+      source: "Bryn Mawr 'Crime or Punishment' digital exhibit"
+    - evidenceRef: ev-text-origin
+      conventionalView: "Bresson's L'Argent (1983) — the dominant afterlife — keeps only the chain of evil (Part I), implying Part II is the dispensable, schematic half."
+      relation: contradicts
+      source: "Bresson, L'Argent (1983); Pipolo 2010; Cannes 1983"
+
+# ───────────────────────── WORK RECORD (record-creating proposal; READ-ONLY to works/) ─────────────────────────
+workRecord:
+  recordPath: "website/src/works/Fiction/Novellas/The Forged Coupon.md"
+  workId: "the-forged-coupon"
+  fields:
+    - field: title
+      value: "The Forged Coupon"
+      evidenceRefs: [ev-text-origin]
+      source: "PSS Tom 36"
+      confidence: high
+      note: "Russian: Фальшивый купон."
+    - field: titleAlternatives
+      value:
+        - { title: "Фальшивый купон", type: variant, language: ru }
+        - { title: "The Counterfeit Note", type: translation, language: en }
+        - { title: "The Forged Banknote", type: translation, language: en }
+      evidenceRefs: [ev-text-origin]
+      source: "PSS Tom 36; English editions (Hagberg Wright 1911 canonicalised 'The Forged Coupon'; variants from later listings)"
+      confidence: high
+      note: "Canonical English title 'The Forged Coupon' (Hagberg Wright, Thomas Nelson, 1911). Variants 'The Counterfeit Note' / 'The Forged Banknote' seen in later listings."
+    - field: mainCategory
+      value: "Fiction"
+      evidenceRefs: []
+      source: "works schema taxonomy"
+      confidence: high
+    - field: subcategory
+      value: "Novellas"
+      evidenceRefs: []
+      source: "works schema taxonomy"
+      confidence: medium
+      note: "Alternative: an 'Unfinished' categorization — the tale breaks off at Part II ch XX. Human call; see needsReview."
+    - field: genre
+      value: "novella"
+      evidenceRefs: [ev-text-origin]
+      source: "повесть, ~48 pp, 43 short chapters in 2 parts (PSS T.36 pp. 5–53)"
+      confidence: high
+    - field: dateWritingStarted
+      value: "1889"
+      evidenceRefs: [ev-program-1886, ev-diary-1895-03-12]
+      source: "PSS T.36 commentary: first-chapter autograph datable to the late 1880s; conceived no later than 1889"
+      confidence: medium
+      approximate: true
+      note: "Theme-germ earlier (15 Sept 1886 Mitasha programme). 1889 is the firm 'no later than' for the first-chapter text."
+    - field: dateWritingCompleted
+      value: "1904"
+      evidenceRefs: [ev-diary-1904-02-02]
+      source: "PSS T.36 commentary: last work-session early Feb 1904; broke off, never resumed (left unfinished)"
+      confidence: high
+      approximate: true
+      note: "Unfinished — 'finished' here means the writing stopped, not that the work was completed."
+    - field: dateFirstPublished
+      value: "1911"
+      evidenceRefs: [ev-pub-censorship]
+      source: "Posthumous Artistic Works vol. 1 (ed. Chertkov, pub. A. L. Tolstaya, Moscow 1911); Berlin Свободное слово same year"
+      confidence: high
+      note: "Posthumous — Tolstoy d. 1910. (Schema has no 'publishedPosthumously' field; derivable from this date vs the death year.)"
+    - field: dateFirstPublishedInRussia
+      value: "1911"
+      evidenceRefs: [ev-pub-censorship]
+      source: "The censored Moscow 1911 edition was the first legal Russian publication; the uncensored full text appeared abroad (Berlin)"
+      confidence: high
+      note: "First Russian printing was censored (anti-clerical/sectarian passages cut); the complete text first appeared in the Berlin edition."
+    - field: publishedDuringLifetime
+      value: false
+      evidenceRefs: [ev-pub-censorship]
+      source: "Left unpublished at Tolstoy's death"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs: [ev-pub-censorship]
+      source: "n/a — posthumous"
+      confidence: high
+    - field: bans
+      value:
+        - { banningAuthority: "Russian censorship (Moscow 1911 edition)", authorityType: state, jurisdiction: "Russian Empire", scope: passages-cut, banDate: "1911" }
+      evidenceRefs: [ev-pub-censorship]
+      source: "PSS T.36 commentary: Moscow 1911 printed with цензурные урезки (anti-clerical + sectarian passages); Berlin edition uncut"
+      confidence: high
+      note: "scope=passages-cut (the whole work was printed, specific passages excised). Verify enum value against the live bans[].scope vocabulary before applying."
+    - field: relatedWorks
+      value:
+        - { id: "the-power-of-darkness", relationshipType: companion }
+        - { id: "resurrection", relationshipType: companion }
+        - { id: "hadji-murat", relationshipType: companion }
+      evidenceRefs: [ev-diary-1897-11-14, ev-diary-1895-03-12]
+      source: "Twin chain-of-sin work (Power of Darkness); moral-regeneration sibling (Resurrection); explicit 'pendant to Hadji Murat' (14 Nov 1897 diary)"
+      confidence: medium
+      note: "relationshipType set to 'companion' (the closest valid enum value: cycle/sequel/prequel/revision/source/companion/adaptation); the links are thematic/companion, not a cycle or revision — confirm at ingestion. (Schema has no 'thematic' value.)"
+
+# ───────────────────────── COVERAGE LEDGER ─────────────────────────
+coverage:
+  - surface: "Genesis & composition (diaries/letters, the people around the work)"
+    status: covered
+    note: "Heavy — 1886 germ through Feb 1904; Gorky/Pyatnitsky, the daughter-copyists, the L. L. letter."
+  - surface: "What the work says (close-read)"
+    status: covered
+    note: "Origin (ch I), centrepiece (Maria Semyonovna, ch XXIII, full), reversal (Part II i–vii); rest mapped thematically."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "The devils keystone variant; the chapter renumbering; the 8 editorial conjectures — sampled, not collated."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Moscow 1911 cut vs Berlin uncut; censorship list from commentary. English translation lineage = partial (see needsReview)."
+  - surface: "Characters & prototypes"
+    status: covered
+    note: "Tiered cast; two documented prototypes (Larivon; Stanislavsky-case); sectarians as group."
+  - surface: "Themes"
+    status: covered
+    note: "The doubled chain; non-resistance as the absorbing force; state/justice violence; moral regeneration; Gospel vs Church."
+  - surface: "Reception & afterlife"
+    status: covered
+    note: "Posthumous 1911 censorship; the Bresson L'Argent (1983) and Louhimies Frozen Land (2005) adaptations (both adapt Part I only); scholarly reception. No Soviet/pre-1983 adaptation found (negative result logged)."
+  - surface: "Scholarly context"
+    status: covered
+    note: "English-first sweep: Kliger/Zakariya (closest, extends), Simmons/Wilson/Troyat/Bartlett, the Bryn Mawr exhibit (complicates), the Bresson tradition (contradicts). Triangulated."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "9 PD Tolstoy photos (1902–1908) downloaded; first English edition PD-scanned at archive.org. Russian first editions + manuscripts are access-gated (РНБ / ИРЛИ / ГТМ) — provenance + how-to-request recorded; honest ceiling, not a gap."
+  - surface: "The author's later verdict"
+    status: partial
+    note: "Tolstoy left no late re-judgment of the unfinished tale; the Dec 1904 subject-list note «Убийца, ужаснувшийся непротивления» is the nearest. Honest partial."
+
+# ───────────────────────── CONTRADICTIONS (intra-corpus) ─────────────────────────
+contradictions:
+  - claim: "The protagonist of the robbery strand is named Prokofy."
+    correction: "In the final text the watchman/robber role is largely transferred from Prokofy to the dvornik Vasily; the manuscripts show the names changing hands mid-composition (a loose end of the unfinished tale)."
+    evidenceRef: ev-prototype-larivon
+
+# ───────────────────────── NOT COVERED ─────────────────────────
+notCovered:
+  - "The full collation of all redactions/variants (sampled, not collated — per novel mode)."
+  - "Independent verification of the 15 Sept 1886 programme and the Larivon passage against the original notebooks/Notes of a Christian (only the PSS commentary's reproduction held locally)."
+  - "The political/terrorist strand (Turchaninova shooting the minister) and the Misail/sectarian-persecution chapters read only thematically, not close-read."
+  - "Soviet-era and post-Soviet stage/screen adaptations beyond Bresson's L'Argent (light touch)."
+
+# ───────────────────────── NEEDS REVIEW ─────────────────────────
+needsReview:
+  - item: "Slug start year 1889 (vs the user's proposed 1902, or the 1886 theme-germ). Chosen as the firm 'first-chapter datable to ≤1889'; the 1886 Mitasha-programme is the structural germ but predates the coupon's own text."
+    phase: 0
+    why: "Editorial dating call delegated by the user; recorded for transparency."
+  - item: "workRecord categorization: Fiction/Novellas vs an 'Unfinished' mainCategory (the tale breaks off)."
+    phase: 4
+    why: "The work is canonically anthologised as a late novella but is literally unfinished; human ingestion decides the shelving."
+  - item: "RESOLVED (Phase 3): canonical English title is 'The Forged Coupon' (Hagberg Wright, Thomas Nelson, 1911 — first English). Translator lineage: Hagberg Wright 1911 (PD) → Bernstein 1912 → Patterson, Norton 1986 → Aplin, Hesperus 2006 / Alma 2018. No Maude standalone; no Pevear/Volokhonsky."
+    phase: 3
+    why: "Kept for the record; no longer open."
+  - item: "RESOLVED (Phase 5 verifier, checked vs the live schema + records): workRecord field shapes corrected — dateWritingCompleted (not …Finished), dateFirstPublished (not datePublished), dateFirstPublishedInRussia added; dropped publishedPosthumously and setting (no such fields); titleAlternatives[].type original→variant; relatedWorks[].relationshipType thematic→companion. bans[].scope 'passages-cut' confirmed VALID. The novella entity's wikiType:work is a deliberate routing marker to the works/ schema (the Lab-only 13th type), not a wiki page — note at ingestion."
+    phase: 5
+    why: "Kept for the record; corrections already applied to the proposal so it can be used verbatim."
+  - item: "M. L. Obolenskaya vaultStatus / wikilink target (the daughter Maria; vault transliteration may differ; do not conflate with another Maria Tolstaya)."
+    phase: 4
+    why: "Vault transliteration gotcha — loose-match before marking missing/stub."
+  - item: "1886 programme original is a записная книжка record not independently held; the dream-vision quote rides on the PSS T.36 commentary's reproduction."
+    phase: 1
+    why: "Provenance honesty — the single most load-bearing genesis quote is commentary-mediated."
+  - item: "The uncensored Berlin edition: PSS commentary names «Свободное слово» (ed. Chertkov, published simultaneously, ~1911); the visuals sweep found a 1912 J. Ladyschnikow Verlag Berlin posthumous-works set at auction. Confirm whether these are the same edition or two distinct Berlin printings before writing the publication record."
+    phase: 3
+    why: "Possible conflation of the «Свободное слово» imprint with a separate émigré publisher; the commentary is authoritative on the uncensored simultaneous edition."
+  - item: "Bresson's L'Argent Cannes 1983 prize — reported variously as the Grand Prix du Cinéma de Création (festival-cannes.com, shared ex aequo with Nostalghia) and as the Prix de la mise en scène / Best Director. Confirm the exact prize name before any vault page asserts it."
+    phase: 3
+    why: "Minor factual discrepancy between the two background sweeps; not worth blocking, but flagged for accuracy."
+
+# ───────────────────────── ARCHIVES CONSULTED ─────────────────────────
+archivesConsulted:
+  - "tolstoydigital TEI corpus (works/diaries/letters/notes/comments, PSS Toms 36, 49–55, 75)"
+  - "PSS Tom 36 editorial commentary (Mishin, 1936) — история писания, variants, publication history"
+  - "Wikimedia Commons; State Tolstoy Museum (tolstoy-iss.kamiscloud.ru); Goskatalog; archive.org; émigré scan archives (visuals sweep)"
+
+# ───────────────────────── REFERENCES ─────────────────────────
+references:
+  primary:
+    - "L. N. Tolstoy, «Фальшивый купон», PSS Tom 36, pp. 5–53 (text); pp. 419–422 (variants); pp. 557–581 (commentary, V. S. Mishin)"
+    - "L. N. Tolstoy, Diaries 1889–1904, PSS Toms 50–55 (genesis entries)"
+    - "L. N. Tolstoy, Letter to L. L. Tolstoy, 19 Jan 1904, PSS Tom 75, pp. 13–15"
+    - "L. N. Tolstoy, «Записки христианина» (1881), quoted in PSS Tom 36 commentary (the Larivon prototype)"
+  background:
+    - "Ilya Kliger & Nasser Zakariya, 'Poetics of Brotherhood: Organic and Mechanistic Narrative in Late Tolstoi', Slavic Review 70.4 (2011), 754–772 — the closest academic reading of the doubled chain (narratological framing)."
+    - "Ernest J. Simmons, Leo Tolstoy (1946) — standard mid-century biography; credits the best late fiction with narrative craft over didactic intrusion."
+    - "A. N. Wilson, Tolstoy (1988); Henri Troyat, Tolstoy (1965/1967); Rosamund Bartlett, Tolstoy: A Russian Life (2010) — biographies placing the work in the late religious-anarchist frame."
+    - "Richard Gustafson, Leo Tolstoy: Resident and Stranger (1986); Donna Orwin, Tolstoy's Art and Thought 1847–1880 (1993) — theological-aesthetic context (cited by Kliger/Zakariya)."
+    - "Herman Bernstein (intro), The Forged Coupon, and Other Stories (Ogilvie, 1912) — early reception naming the chain/non-resistance link."
+    - "Bryn Mawr College digital exhibit, 'Crime or Punishment: Russian Narratives of Incarceration' — class/gender + institutional-religion reading."
+    - "Tony Pipolo, Robert Bresson: A Passion for Film (Oxford UP, 2010); Paul Schrader, Transcendental Style in Film (1972) — on Bresson's L'Argent (1983), the adaptation of Part I."
+    - "English translations: C. T. Hagberg Wright (ed.), Thomas Nelson 1911 (first English, PD); David Patterson, W. W. Norton 1986; Hugh Aplin, Hesperus 2006 / Alma Classics 2018. (No Maude standalone; no Pevear/Volokhonsky.)"

@@ -1,0 +1,931 @@
+# dossier.yaml — corpus-dive: Tolstoy in art (paintings, drawings, sculpture)
+# Machine-readable companion to index.md. Evidence quotes are byte-faithful to
+# the named extract file (verify_quotes.py gate). Secondary/scholarly claims are
+# attributed, not asserted. Visuals cache is git-ignored; licence is the gate for
+# any later publication to website/src/.
+
+topic:
+  slug: tolstoy-in-art
+  title: "Tolstoy in art — paintings, drawings and sculpture of Tolstoy and his circle"
+  question: >
+    What fine-art and sculptural depictions exist of Tolstoy, the people and places
+    around him (1873–1910); when were they actually made; do high-quality reproductions
+    exist; are they public domain or held under institutional control? Grounded in
+    Tolstoy's own letters and diaries.
+  date: 2026-06-02
+  period: "1873–1910 (portrait era); letters/diaries sweep emphasises post-1880"
+  corpusSurface: "letters (Toms 62–82), diaries (Toms 49–58), works (Tom 19 Anna Karenina; Tom 30 What Is Art?; Tom 37 Orlov preface)"
+  dateRange: "1873-09 – 1910-09"
+
+# ── EVIDENCE LEDGER (byte-faithful primary citations) ───────────────────────
+evidence:
+  # KRAMSKOY — 1873 keystone
+  - id: v62_034_A_A_Fetu
+    genre: letter
+    pssTom: 62
+    pages: "48–49"
+    date: "1873-09-23"
+    dateNote: "Old Style"
+    addressee: "A. A. Fet"
+    localPdf: "primary-sources/jubilee-edition/vol62/vol62.pdf"
+    extract: extracts/v62_034_A_A_Fetu.txt
+    quoteRu: "У меня каждый день, вот уже с неделю, живописец Крамской [...] делает мой портрет в Третьяковскую галлерею, и я сижу и болтаю с ним и из Петербургской стараюсь обращать его в крещеную веру."
+    quoteEn: "Every day now, for a week already, the painter Kramskoy has been making my portrait for the Tretyakov gallery, and I sit and chat with him and try to convert him from the Petersburg faith to the baptized one. (working English)"
+    significance: "The keystone. Tolstoy's own words date the Kramskoy sittings to the week before 23 Sept 1873 and name the Tretyakov commission."
+  - id: v62_035_N_N_Straxovu
+    genre: letter
+    pssTom: 62
+    pages: "49–51"
+    date: "1873-09-23"
+    dateNote: "Old Style (written 23–24 Sept)"
+    addressee: "N. N. Strakhov"
+    localPdf: "primary-sources/jubilee-edition/vol62/vol62.pdf"
+    extract: extracts/v62_035_N_N_Straxovu.txt
+    quoteRu: "Он теперь кончает оба портрета и ездит каждый день, и мешает мне заниматься. Я же во время сидений обращаю его из петербургской в христианскую веру и, кажется, успешно."
+    quoteEn: "He is now finishing both portraits and comes every day, keeping me from my work. During the sittings I am converting him from the Petersburg to the Christian faith — successfully, it seems. (working English)"
+    significance: "Independent second-source confirmation that TWO 1873 portraits were painted (Tretyakov + a family version) and of the daily sittings."
+
+  # ANNA KARENINA — the painter Mikhailov (literary counterpart)
+  - id: v19_003_399_Anna_Karenina_Chasti_5_8
+    genre: work
+    pssTom: 19
+    pages: "Part 5, ch. IX–XIII"
+    date: "1875-1876"
+    dateNote: "AK Part 5 composition"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol19/vol19.pdf"
+    extract: extracts/v19_003_399_Anna_Karenina_Chasti_5_8.txt
+    quoteRu: "Портрет с пятого сеанса поразил всех, в особенности Вронского, не только сходством, но и особенною красотою. Странно было, как мог Михайлов найти ту ее особенную красоту."
+    quoteEn: "The portrait, after the fifth sitting, struck everyone, Vronsky especially, not only by its likeness but by a particular beauty. It was strange how Mikhailov could have found that particular beauty of hers. (working English)"
+    significance: "Written in the same years Kramskoy painted Tolstoy; the painter Mikhailov who finds the sitter's inner truth (vs Vronsky the dilettante) is widely identified with Kramskoy — but the corpus text does NOT name him (that link is scholarship)."
+
+  # GE — the closest art friendship (1882–94)
+  - id: v64_307_N_N_Ge_otcu
+    genre: letter
+    pssTom: 64
+    pages: "217–218"
+    date: "1889-01-31"
+    dateNote: "Old Style"
+    addressee: "N. N. Ge (the painter, father)"
+    localPdf: "primary-sources/jubilee-edition/vol64/vol64.pdf"
+    extract: extracts/v64_307_N_N_Ge_otcu.txt
+    quoteRu: "которая хороша не потому, что я ее люблю, а всем хороша будет, потому что очень задушевна."
+    quoteEn: "...which is good not because I love it but because it will be good for everyone, since it is very heartfelt. (working English)"
+    significance: "Dates Tolstoy's knowledge that Ge was painting a new canvas to Jan 1889 — the gestation of 'What Is Truth?' (exhibited 1890)."
+  - id: v64_358_N_N_Ge_otcu
+    genre: letter
+    pssTom: 64
+    pages: "248–250"
+    date: "1889-04-21"
+    dateNote: "Old Style"
+    addressee: "N. N. Ge (father)"
+    localPdf: "primary-sources/jubilee-edition/vol64/vol64.pdf"
+    extract: extracts/v64_358_N_N_Ge_otcu.txt
+    quoteRu: "Я знал эскиз, слышал про картину, но когда увидал, я умилился. Картина делает то, что нужно — раскрывает целый мир той жизни Христа, вне знакомых моментов, и показывает его там таким, каким каждый может себе его представить по своей духовной силе."
+    quoteEn: "I knew the sketch, had heard about the picture, but when I saw it I was moved to tenderness. The picture does what is needed — it opens up a whole world of that life of Christ, outside the familiar moments, and shows him as each may picture him by his own spiritual strength. (working English)"
+    significance: "Dated first-hand viewing (April 1889) of Ge's 'Exit from the Last Supper', with compositional critique — exceptional reception/provenance evidence."
+  - id: v50_067_068_1889_04_15
+    genre: diary
+    pssTom: 50
+    pages: "67–68"
+    date: "1889-04-15"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol50/vol50.pdf"
+    extract: extracts/v50_067_068_1889_04_15.txt
+    quoteRu: "Картина Репина невозможна — всё выдумано. Ге хорош очень."
+    quoteEn: "Repin's picture is impossible — it is all made up. Ge is very good. (working English)"
+    significance: "Terse dated verdict (six days before the long Ge letter) preferring Ge's canvas to Repin's — a counterweight to the 'admiring sitter' framing."
+  - id: v51_015_015_1890_01_28
+    genre: diary
+    pssTom: 51
+    pages: "15"
+    date: "1890-01-28"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol51/vol51.pdf"
+    extract: extracts/v51_015_015_1890_01_28.txt
+    quoteRu: "Приехал Ге старший, привез рисунок картины — очень хорошо."
+    quoteEn: "Ge the elder arrived, brought a drawing of the picture — very good. (working English)"
+    significance: "First-person record of Ge physically bringing a study to Yasnaya Polyana, Jan 1890 — provenance anchor for the 'What Is Truth?' year."
+  - id: v51_095_096_1890_10_23
+    genre: diary
+    pssTom: 51
+    pages: "95–96"
+    date: "1890-10-23"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol51/vol51.pdf"
+    extract: extracts/v51_095_096_1890_10_23.txt
+    quoteRu: "Ге всё лепит."
+    quoteEn: "Ge keeps sculpting. (working English)"
+    significance: "Dated diary note that Ge was modelling in autumn 1890 — the period of his bust of Tolstoy."
+  - id: v66_012_N_N_Geotcu
+    genre: letter
+    pssTom: 66
+    pages: "24–25"
+    date: "1891-07-30"
+    dateNote: "Old Style"
+    addressee: "N. N. Ge (father)"
+    localPdf: "primary-sources/jubilee-edition/vol66/vol66.pdf"
+    extract: extracts/v66_012_N_N_Geotcu.txt
+    quoteRu: "Бюст сделал большой Гинцбург, нехорош. Репинский похож, но, не для того, чтобы вам сказать приятное, а потому, что так есть, ваш лучше всех."
+    quoteEn: "Ginzburg has made a large bust [of me], not good. Repin's is a likeness, but — not to flatter you, but because it is so — yours is the best of all. (working English)"
+    significance: "Sculpture keystone — documents THREE busts of Tolstoy (Ge, Ginzburg, Repin) competing in 1890–91, with Tolstoy ranking Ge's above the others."
+  - id: v66_341_N_N_Geotcu
+    genre: letter
+    pssTom: 66
+    pages: "258–259"
+    date: "1892-09-22"
+    dateNote: "Old Style"
+    addressee: "N. N. Ge (father)"
+    localPdf: "primary-sources/jubilee-edition/vol66/vol66.pdf"
+    extract: extracts/v66_341_N_N_Geotcu.txt
+    quoteRu: "«Повинен смерти» необходимо переписать Христа: сделать его с простым, добрым лицом и с выражением сострадания"
+    quoteEn: "['Guilty of Death'] — Christ must be repainted: make him with a simple, kind face and an expression of compassion. (working English)"
+    significance: "Tolstoy giving direct iconographic instruction on Ge's Passion canvas (Sept 1892) — evidence of his hands-on role in Ge's late religious art."
+  - id: v67_161_P_M_Tretyakovu
+    genre: letter
+    pssTom: 67
+    pages: "153–155"
+    date: "1894-06-14"
+    dateNote: "Old Style (written 7–14 June)"
+    addressee: "P. M. Tretyakov"
+    localPdf: "primary-sources/jubilee-edition/vol67/vol67.pdf"
+    extract: extracts/v67_161_P_M_Tretyakovu.txt
+    quoteRu: "Я нынче зимою был три раза в вашей галлерее и всякий раз невольно останавливался перед «Что есть истина»"
+    quoteEn: "This winter I was three times in your gallery and each time involuntarily stopped before 'What Is Truth?'. (working English)"
+    significance: "Capstone provenance: confirms 'What Is Truth?' hung in the Tretyakov Gallery by winter 1893–94, and frames Tolstoy's plea to acquire Ge's whole estate for the national collection."
+
+  # REPIN — the most prolific depicter
+  - id: v49_077_077_1883_04_03
+    genre: diary
+    pssTom: 49
+    pages: "77"
+    date: "1883-04-03"
+    dateNote: "Old Style (dual-dated 3/15 April)"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol49/vol49.pdf"
+    extract: extracts/v49_077_077_1883_04_03.txt
+    quoteRu: "Дома Репин. С ним очень хорошо говорил, за работой."
+    quoteEn: "At home — Repin. Talked with him very well, while he was at work. (working English)"
+    significance: "Earliest Repin–Tolstoy working contact in the corpus (Moscow, 1883) — predates the canonical first Yasnaya Polyana visit of 1887."
+  - id: v64_115_V_V_Stasovu
+    genre: letter
+    pssTom: 64
+    pages: "66–67"
+    date: "1887-09-08"
+    dateNote: "Old Style"
+    addressee: "V. V. Stasov"
+    localPdf: "primary-sources/jubilee-edition/vol64/vol64.pdf"
+    extract: extracts/v64_115_V_V_Stasovu.txt
+    quoteRu: "Портрет Репина уложен и завтра отсылается."
+    quoteEn: "Repin's portrait is packed and is being sent off tomorrow. (working English)"
+    significance: "Primary anchor for the canonical 1887 Tretyakov portrait — Tolstoy logs the finished portrait leaving Yasnaya in Sept 1887."
+  - id: v52_044_044_1891_07_13
+    genre: diary
+    pssTom: 52
+    pages: "44"
+    date: "1891-07-13"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol52/vol52.pdf"
+    extract: extracts/v52_044_044_1891_07_13.txt
+    quoteRu: "Приехал Репин и Гинзбург. За это время они меня лепят и пишут, а я написал статью об обжорстве и много подвинулся в большой статье."
+    quoteEn: "Repin and Ginzburg have arrived. During this time they sculpt and paint me, while I have written an article on gluttony and made much progress on the big article. (working English)"
+    significance: "Keystone for the July 1891 Yasnaya sitting — Repin painting AND Ginzburg sculpting Tolstoy simultaneously, in his own words."
+  - id: v52_063_063_1892_02_24
+    genre: diary
+    pssTom: 52
+    pages: "63"
+    date: "1892-02-24"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol52/vol52.pdf"
+    extract: extracts/v52_063_063_1892_02_24.txt
+    quoteRu: "Был Репин, уехал нынче."
+    quoteEn: "Repin was here; he left today. (working English)"
+    significance: "Dates a Repin visit to the famine-relief site Begichevka (Feb 1892) — the setting of Repin's famine-aid sketches of Tolstoy at work."
+  - id: v71_090_I_E_Repinu
+    genre: letter
+    pssTom: 71
+    pages: "334–335"
+    date: "1898-03-24"
+    dateNote: "Old Style"
+    addressee: "I. E. Repin"
+    localPdf: "primary-sources/jubilee-edition/vol71/vol71.pdf"
+    extract: extracts/v71_090_I_E_Repinu.txt
+    quoteRu: "Если моя книга помогла уяснить вопросы искусства такому художнику, как Репин, то труд ее писания не пропал даром."
+    quoteEn: "If my book helped to clarify questions of art for an artist such as Repin, then the labour of writing it was not in vain. (working English)"
+    significance: "The art-theory bond behind the sittings — Tolstoy to Repin on What Is Art?; the painter he most wanted to reach disagreed with him on art's purpose."
+
+  # WHAT IS ART? — Tolstoy theorising about the painters who painted him
+  - id: v30_027_203_Chto_takoe_iskusstvo
+    genre: work
+    pssTom: 30
+    pages: "27–203 (here ~p.150)"
+    date: "1897"
+    dateNote: "first published 1898"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol30/vol30.pdf"
+    extract: extracts/v30_027_203_Chto_takoe_iskusstvo.txt
+    quoteRu: "Таков рисунок Крамского, стоящий многих его картин [...] Образцами же в области живописи произведений, вызывающих негодование, ужас пред нарушением любви к Богу и ближнему, могут служить картина Ге — суд"
+    quoteEn: "Such is Kramskoy's drawing, worth many of his paintings [...] As models in painting of works that arouse indignation and horror at the violation of love of God and neighbour, Ge's picture 'The Judgement' can serve. (working English)"
+    significance: "In his own aesthetic treatise Tolstoy names Kramskoy and Ge — the two men who painted him — as exemplars of true art. Note: he praises Ge's earlier 'Suд/Judgement', not the late Passion canvases he championed privately."
+
+  # ORLOV — 'my favourite artist'
+  - id: v37_273_277_Predislovie_k_albomu_Russkie_muzhiki_N_Orlova
+    genre: work
+    pssTom: 37
+    pages: "273–277"
+    date: "1908"
+    dateNote: "preface to Orlov's album, pub. 1909"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol37/vol37.pdf"
+    extract: extracts/v37_273_277_Predislovie_k_albomu_Russkie_muzhiki_N_Orlova.txt
+    quoteRu: "Орлов мой любимый художник, а любимый он мой художник потому, что предмет его картин — мой любимый предмет."
+    quoteEn: "Orlov is my favourite artist, and my favourite because the subject of his pictures is my favourite subject. (working English)"
+    significance: "The fullest statement in the corpus of Tolstoy's regard for a living artist — for a peasant-genre painter, not a portraitist of himself."
+
+  # PASTERNAK — Resurrection illustrator
+  - id: v75_262_L_O_Pasternaku
+    genre: letter
+    pssTom: 75
+    pages: "186–187"
+    date: "1904-11-22"
+    dateNote: "Old Style"
+    addressee: "L. O. Pasternak"
+    localPdf: "primary-sources/jubilee-edition/vol75/vol75.pdf"
+    extract: extracts/v75_262_L_O_Pasternaku.txt
+    quoteRu: "Но вообще прекрасный, как все ваши рисунки, и я вам благодарен за них."
+    quoteEn: "But on the whole splendid, like all your drawings, and I am grateful to you for them. (working English)"
+    significance: "Tolstoy's own appraisal of Pasternak's draughtsmanship — the only letter-level corpus anchor for the painter who illustrated Resurrection (1898–99)."
+
+  # YAROSHENKO — 1894 portrait
+  - id: v52_116_117_1894_05_03
+    genre: diary
+    pssTom: 52
+    pages: "116–117"
+    date: "1894-05-03"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol52/vol52.pdf"
+    extract: extracts/v52_116_117_1894_05_03.txt
+    quoteRu: "Провожали нас Соловьев и Ярошенко, с которым приятно сблизился."
+    quoteEn: "Solovyov and Yaroshenko saw us off — Yaroshenko, with whom I have grown pleasantly close. (working English)"
+    significance: "Dates the Tolstoy–Yaroshenko closeness to 1894, the year of Yaroshenko's portrait — though no sitting is described."
+
+  # THE PORTRAIT AS FRICTION — Chertkov / Sofia
+  - id: v52_157_159_1894_12_31
+    genre: diary
+    pssTom: 52
+    pages: "157–159"
+    date: "1894-12-31"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol52/vol52.pdf"
+    extract: extracts/v52_157_159_1894_12_31.txt
+    quoteRu: "Был здесь Чертков. Вышло очень неприятное столкновение из-за портрета. Как всегда, Соня поступила решительно, но необдуманно и нехорошо."
+    quoteEn: "Chertkov was here. A very unpleasant clash arose over a portrait. As always, Sonya acted decisively but rashly and badly. (working English)"
+    significance: "Earliest corpus instance of a portrait of Tolstoy becoming an object of conflict between Chertkov and S. A. Tolstaya — sixteen years before the 1910 'portrait war'."
+
+  # SELF-DEPICTION — the mirror effect
+  - id: v53_025_026_1895_04_26
+    genre: diary
+    pssTom: 53
+    pages: "25–26"
+    date: "1895-04-26"
+    dateNote: "Old Style"
+    addressee: ""
+    localPdf: "primary-sources/jubilee-edition/vol53/vol53.pdf"
+    extract: extracts/v53_025_026_1895_04_26.txt
+    quoteRu: "Вчера видел свой портрет, и он поразил меня своей старостью. Мало остается времени."
+    quoteEn: "Yesterday I saw my portrait, and it struck me by its old age. Little time remains. (working English)"
+    significance: "Rare first-person reaction to his own depicted likeness — the portrait as a memento mori."
+
+# ── ENTITIES (ingestion routing map → wiki) ─────────────────────────────────
+entities:
+  - name: "Ivan Kramskoy"
+    wikiType: person
+    wikilinkTarget: "Ivan Kramskoy"
+    vaultStatus: missing
+    role: "Painter; made the two 1873 portraits of Tolstoy; model for Mikhailov in Anna Karenina; praised in What Is Art?"
+    sources: []
+    evidenceRefs: [v62_034_A_A_Fetu, v62_035_N_N_Straxovu, v19_003_399_Anna_Karenina_Chasti_5_8, v30_027_203_Chto_takoe_iskusstvo]
+    ingestionPriority: 1
+  - name: "Nikolai Ge"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ge"
+    vaultStatus: missing
+    role: "Painter and sculptor; Tolstoy's closest artist friend (1882–94); made the 1884 portrait and a bust; his late religious canvases were shaped in dialogue with Tolstoy"
+    sources: []
+    evidenceRefs: [v64_307_N_N_Ge_otcu, v64_358_N_N_Ge_otcu, v50_067_068_1889_04_15, v51_015_015_1890_01_28, v51_095_096_1890_10_23, v66_012_N_N_Geotcu, v66_341_N_N_Geotcu, v67_161_P_M_Tretyakovu, v30_027_203_Chto_takoe_iskusstvo]
+    ingestionPriority: 1
+  - name: "Ilya Repin"
+    wikiType: person
+    wikilinkTarget: "Ilya Repin"
+    vaultStatus: missing
+    role: "Painter; the most prolific depicter of Tolstoy (~12 portraits, 25 drawings, 3 busts, 1883–1910); disagreed with Tolstoy's art theory"
+    sources: []
+    evidenceRefs: [v49_077_077_1883_04_03, v64_115_V_V_Stasovu, v52_044_044_1891_07_13, v52_063_063_1892_02_24, v71_090_I_E_Repinu, v50_067_068_1889_04_15]
+    ingestionPriority: 1
+  - name: "Pavel Tretyakov"
+    wikiType: person
+    wikilinkTarget: "Pavel Tretyakov"
+    vaultStatus: missing
+    role: "Collector; commissioned the 1873 Kramskoy portrait; recipient of Tolstoy's 1894 plea to acquire Ge's estate"
+    sources: []
+    evidenceRefs: [v67_161_P_M_Tretyakovu]
+    ingestionPriority: 2
+  - name: "Nikolai Yaroshenko"
+    wikiType: person
+    wikilinkTarget: "Nikolai Yaroshenko"
+    vaultStatus: missing
+    role: "Painter; portrait of Tolstoy 1894"
+    sources: []
+    evidenceRefs: [v52_116_117_1894_05_03]
+    ingestionPriority: 2
+  - name: "Leonid Pasternak"
+    wikiType: person
+    wikilinkTarget: "Leonid Pasternak"
+    vaultStatus: missing
+    role: "Painter; illustrated Resurrection (1898–99); many Tolstoy drawings"
+    sources: []
+    evidenceRefs: [v75_262_L_O_Pasternaku]
+    ingestionPriority: 2
+  - name: "Ilya Ginzburg"
+    wikiType: person
+    wikilinkTarget: "Ilya Ginzburg"
+    vaultStatus: missing
+    role: "Sculptor; statuette 'Tolstoy at work' (1891) and a bust; GMT holds 51 of his Tolstoy works"
+    sources: []
+    evidenceRefs: [v52_044_044_1891_07_13, v66_012_N_N_Geotcu]
+    ingestionPriority: 2
+  - name: "Paolo Trubetskoy"
+    wikiType: person
+    wikilinkTarget: "Paolo Trubetskoy"
+    vaultStatus: missing
+    role: "Sculptor; bust (1899, Russian Museum Ск-556) and equestrian statuette 'Tolstoy on horseback' (Paris 1900 Grand Prix)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Mikhail Nesterov"
+    wikiType: person
+    wikilinkTarget: "Mikhail Nesterov"
+    vaultStatus: missing
+    role: "Painter; sketches 1906, painted portrait 1907 (GMT)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Nikolai Orlov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Orlov (painter)"
+    vaultStatus: missing
+    role: "Peasant-genre painter; Tolstoy's self-declared 'favourite artist'; Tolstoy wrote the preface to his album Russian Peasants (1909)"
+    sources: []
+    evidenceRefs: [v37_273_277_Predislovie_k_albomu_Russkie_muzhiki_N_Orlova]
+    ingestionPriority: 2
+  - name: "Valentin Serov"
+    wikiType: person
+    wikilinkTarget: "Valentin Serov"
+    vaultStatus: missing
+    role: "Painter; drew/painted Tolstoy from 1892 — but the corpus is silent in Tolstoy's own words"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Naum Aronson"
+    wikiType: person
+    wikilinkTarget: "Naum Aronson"
+    vaultStatus: missing
+    role: "Sculptor; bust of Tolstoy 1901 (Paris-cast) — corpus silent"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Jan Styka"
+    wikiType: person
+    wikilinkTarget: "Jan Styka"
+    vaultStatus: missing
+    role: "Polish painter; full-length 'prophet' portrait of Tolstoy c.1909–12 — corpus silent"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Vladimir Stasov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Stasov"
+    vaultStatus: missing
+    role: "Critic; mediated the Repin–Tolstoy relationship; recipient of the 1887 'portrait shipped' note"
+    sources: []
+    evidenceRefs: [v64_115_V_V_Stasovu]
+    ingestionPriority: 3
+  - name: "Tatyana Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: "Tolstoy's daughter; a trained painter (under Ge, Repin) who painted her father — but the corpus does not record this in Tolstoy's own words"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple; ran the late photographic documentation of Tolstoy; party to the conflict over Tolstoy's portraits/image"
+    sources: []
+    evidenceRefs: [v52_157_159_1894_12_31]
+    ingestionPriority: 2
+  - name: "State Tretyakov Gallery"
+    wikiType: institution
+    wikilinkTarget: "State Tretyakov Gallery"
+    vaultStatus: missing
+    role: "Holds the Kramskoy 1873, Ge 1884, Ge 'What Is Truth?' 1890, Repin 1887/1887-ploughing/1891-forest portraits"
+    sources: []
+    evidenceRefs: [v62_034_A_A_Fetu, v67_161_P_M_Tretyakovu]
+    ingestionPriority: 2
+  - name: "State Russian Museum"
+    wikiType: institution
+    wikilinkTarget: "State Russian Museum"
+    vaultStatus: missing
+    role: "Holds Repin 'Tolstoy Barefoot' (Ж-4010), Ge portrait 1884 (Ж-6624), Yaroshenko 1894, Trubetskoy bust (Ск-556)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "State Museum of L. N. Tolstoy (GMT)"
+    wikiType: institution
+    wikilinkTarget: "State Museum of Leo Tolstoy"
+    vaultStatus: missing
+    role: "Moscow; holds the Ge bust, Repin 1909, Nesterov 1907, Pasternak Resurrection originals, Ginzburg (51 works) and Aronson sculptures"
+    sources: ["tolstoy-museum-moscow"]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "The estate where most sittings happened (Kramskoy 1873, Repin 1887/1891, Ginzburg 1891, Nesterov, Aronson, Trubetskoy); holds the family version of the 1873 Kramskoy portrait"
+    sources: ["yasnaya-polyana-archive"]
+    evidenceRefs: [v62_034_A_A_Fetu, v52_044_044_1891_07_13]
+    ingestionPriority: 2
+  - name: "Peredvizhniki (the Wanderers)"
+    wikiType: concept
+    wikilinkTarget: "Peredvizhniki"
+    vaultStatus: missing
+    role: "The realist exhibition society to which Kramskoy, Ge, Repin, Yaroshenko, Serov belonged; the milieu of Tolstoy's portraitists"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+
+# ── VISUALS (→ the Visual & manuscript record section) ───────────────────────
+# licence ∈ PD | CC0 | CC-BY | CC-BY-SA | rights-reserved | unknown
+# Most artists died pre-1955 → PD in Russia (life+70) and US (created pre-1929).
+visuals:
+  - id: kramskoy-tolstoy-1873-tretyakov
+    type: painting
+    subject: "Portrait of L. N. Tolstoy"
+    relatedEntity: "Ivan Kramskoy"
+    relatedEvidence: [v62_034_A_A_Fetu, v62_035_N_N_Straxovu]
+    holding: "State Tretyakov Gallery, Moscow"
+    archiveId: "98 × 79.5 cm; my.tretyakov.ru/app/masterpiece/20213"
+    access: "Commons scan (972×1200) PD; Tretyakov holds higher-res, licensable"
+    rights: "Artwork PD; Tretyakov asserts control over its own photography"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Leo_Tolstoy,_1873.jpg"
+    localPath: visuals/commons-kramskoy-tolstoy-1873.jpg
+    note: "The Tretyakov-commissioned version of the two 1873 canvases."
+  - id: kramskoy-tolstoy-1873-yasnaya
+    type: painting
+    subject: "Portrait of Tolstoy (family version)"
+    relatedEntity: "Ivan Kramskoy"
+    relatedEvidence: [v62_035_N_N_Straxovu]
+    holding: "Yasnaya Polyana Museum-Estate"
+    archiveId: ""
+    access: "Not on Commons; no individual online page found"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://ypmuseum.ru/"
+    localPath: ""
+    note: "The 'cheaper second portrait' Tolstoy says his wife asked for (v62_035). Request from Yasnaya Polyana."
+  - id: ge-tolstoy-1884
+    type: painting
+    subject: "Portrait of Tolstoy at his desk"
+    relatedEntity: "Nikolai Ge"
+    relatedEvidence: []
+    holding: "State Tretyakov Gallery (95×71); a second version at State Russian Museum (Ж-6624)"
+    archiveId: "GRM Ж-6624"
+    access: "Commons PD 1529×2048; Russian Museum portal high-res for the GRM version"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ge_Tolstoy.jpg"
+    localPath: visuals/commons-ge-tolstoy-writing-1884.jpg
+    note: "The iconic Ge portrait — but NOT documented in the local corpus letters/diaries (the 1887+ Ge correspondence begins after it). Painted/exhibited Feb 1884."
+  - id: ge-what-is-truth-1890
+    type: painting
+    subject: "What Is Truth? (Christ and Pilate)"
+    relatedEntity: "Nikolai Ge"
+    relatedEvidence: [v64_307_N_N_Ge_otcu, v51_015_015_1890_01_28, v67_161_P_M_Tretyakovu]
+    holding: "State Tretyakov Gallery, Moscow (233×171)"
+    archiveId: ""
+    access: "Commons PD 1513×2048"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:What_is_truth.jpg"
+    localPath: visuals/commons-ge-what-is-truth-1890.jpg
+    note: "Not a portrait of Tolstoy but the canvas he championed; banned from exhibition 1890. Tretyakov radiography (2011) found 'Mercy' beneath it."
+  - id: ge-bust-tolstoy-1890
+    type: sculpture
+    subject: "Bust of Tolstoy"
+    relatedEntity: "Nikolai Ge"
+    relatedEvidence: [v51_095_096_1890_10_23, v66_012_N_N_Geotcu]
+    holding: "State Museum of L. N. Tolstoy (Khamovniki House-Museum)"
+    archiveId: ""
+    access: "Not online; no Commons file"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "Tolstoy ranked this above the Ginzburg and Repin busts (v66_012). Confirm current location within GMT branch network."
+  - id: repin-tolstoy-1887
+    type: painting
+    subject: "Portrait of Tolstoy"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: [v64_115_V_V_Stasovu]
+    holding: "State Tretyakov Gallery (124×88)"
+    archiveId: "my.tretyakov.ru/app/masterpiece/8459"
+    access: "Commons PD 1200×1711; Tretyakov higher-res licensable"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg"
+    localPath: visuals/commons-repin-tolstoy-portrait-1887.jpg
+    note: "Painted in one week at Yasnaya, Aug 1887; shipped Sept 1887 (v64_115). Bought immediately by Tretyakov."
+  - id: repin-tolstoy-ploughing-1887
+    type: painting
+    subject: "Tolstoy Ploughing (Пахарь)"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: [v64_115_V_V_Stasovu]
+    holding: "State Tretyakov Gallery (27.8×40.3, oil on card)"
+    archiveId: "Инв.748; my.tretyakov.ru/app/masterpiece/22083"
+    access: "Commons PD 1784×1200"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_ploughing.jpg"
+    localPath: visuals/commons-repin-tolstoy-ploughing-1887.jpg
+    note: "Small oil sketch from the same 1887 visit as the portrait."
+  - id: repin-tolstoy-forest-1891
+    type: painting
+    subject: "Tolstoy Resting in the Forest"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: [v52_044_044_1891_07_13]
+    holding: "State Tretyakov Gallery (60×50)"
+    archiveId: "Инв.6313; my.tretyakov.ru/app/masterpiece/10800"
+    access: "Commons PD 1682×2038"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ilja_Jefimowitsch_Repin_004.jpg"
+    localPath: visuals/commons-repin-tolstoy-forest-1891.jpg
+    note: "From the July 1891 Yasnaya visit (v52_044)."
+  - id: repin-tolstoy-study-1891
+    type: painting
+    subject: "Tolstoy in his Study"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: [v52_044_044_1891_07_13]
+    holding: "State Tretyakov Gallery"
+    archiveId: ""
+    access: "Oil NOT on Commons; only an 1893 Italian woodcut (xilografia) proxy 2784×1908 PD"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Il_romanziere_Leone_Tolstoi_nella_sua_stanza_da_lavoro,_quadro_di_Repin_(xilografia).jpg"
+    localPath: visuals/commons-repin-tolstoy-study-xilografia-1893.jpg
+    note: "Downloaded file is the 1893 woodcut reproduction, not the oil — flag for replacement with a real scan."
+  - id: repin-tolstoy-barefoot-1901
+    type: painting
+    subject: "Tolstoy Barefoot"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: []
+    holding: "State Russian Museum (207×73)"
+    archiveId: "Ж-4010; rusmuseumvrm.ru .../repin_i._e._lev_tolstoy_bosoy._1901._zh-4010/"
+    access: "Commons PD 2281×6490 (Google Art Project — best file in the sweep); Russian Museum portal high-res"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ilya_Repin_-_Leo_Tolstoy_Barefoot_-_Google_Art_Project.jpg"
+    localPath: visuals/commons-repin-tolstoy-barefoot-1901.jpg
+    note: "Begun as an 1891 study (Tretyakov), large canvas finished 1901."
+  - id: repin-tolstoy-pink-armchair-1909
+    type: painting
+    subject: "Tolstoy in the Pink Armchair"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: []
+    holding: "State Museum of L. N. Tolstoy, Moscow"
+    archiveId: ""
+    access: "Not online"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "One of Repin's last Tolstoy portraits. Request from GMT."
+  - id: yaroshenko-tolstoy-1894
+    type: painting
+    subject: "Portrait of Tolstoy"
+    relatedEntity: "Nikolai Yaroshenko"
+    relatedEvidence: [v52_116_117_1894_05_03]
+    holding: "State Russian Museum, St Petersburg"
+    archiveId: ""
+    access: "Absent from Commons; request from Russian Museum"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "Among Yaroshenko's last works (he died 1898)."
+  - id: serov-tolstoy-1892
+    type: drawing
+    subject: "Portrait/sketch of Tolstoy"
+    relatedEntity: "Valentin Serov"
+    relatedEvidence: []
+    holding: "Uncertain — likely Tretyakov graphics dept or GMT"
+    archiveId: ""
+    access: "Absent from Commons; location needs archival confirmation"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "Corpus silent. Serov's 1892 Yasnaya visit also produced a portrait of Sofia Andreevna."
+  - id: pasternak-resurrection-1898-99
+    type: graphic
+    subject: "Illustrations for Resurrection"
+    relatedEntity: "Leonid Pasternak"
+    relatedEvidence: [v75_262_L_O_Pasternaku]
+    holding: "State Museum of L. N. Tolstoy (originals); pub. in Niva 1899"
+    archiveId: ""
+    access: "Commons PD plates up to ~1940px"
+    rights: "Artwork PD (pre-1929)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/Category:Resurrection_(Tolstoy)"
+    localPath: visuals/commons-pasternak-resurrection-awake-002.jpg
+    note: "Won a medal at the Paris World Fair 1900."
+  - id: pasternak-tolstoy-lamp-1902
+    type: drawing
+    subject: "Tolstoy reading by a lamp"
+    relatedEntity: "Leonid Pasternak"
+    relatedEvidence: [v75_262_L_O_Pasternaku]
+    holding: "State Museum of L. N. Tolstoy / Russian Museum"
+    archiveId: ""
+    access: "Commons PD (609×488, low-res)"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Pasternak_podlampoj.jpg"
+    localPath: visuals/commons-pasternak-tolstoy-lamp-1902.jpg
+    note: "The well-known intimate study scene."
+  - id: pasternak-three-philosophers-1903
+    type: drawing
+    subject: "Tolstoy, Solovyov and Fyodorov"
+    relatedEntity: "Leonid Pasternak"
+    relatedEvidence: []
+    holding: "—"
+    archiveId: ""
+    access: "Commons PD (936×525)"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Три_философа._Лев_Толстой,_Владимир_Соловьёв,_Николай_Фёдоров.jpg"
+    localPath: visuals/commons-pasternak-three-philosophers-1903.jpg
+    note: "Tolstoy within his philosophical circle."
+  - id: nesterov-tolstoy-1907
+    type: painting
+    subject: "Portrait of Tolstoy (against pond)"
+    relatedEntity: "Mikhail Nesterov"
+    relatedEvidence: []
+    holding: "State Museum of L. N. Tolstoy"
+    archiveId: ""
+    access: "Commons low-res only (776×952); GMT higher-res licensable"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_by_Nesterov.jpg"
+    localPath: visuals/commons-nesterov-tolstoy-1907.jpg
+    note: "10 pencil sketches summer 1906; oil 1907. The corpus letter to Nesterov is about his religious painting, not this portrait."
+  - id: trubetskoy-bust-1899
+    type: sculpture
+    subject: "Bust of Tolstoy"
+    relatedEntity: "Paolo Trubetskoy"
+    relatedEvidence: []
+    holding: "State Russian Museum (bronze, 34×32×30)"
+    archiveId: "Ск-556; rusmuseumvrm.ru .../sk_556/"
+    access: "Museum portal: excellent multi-angle photos; absent from Commons"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://rusmuseumvrm.ru/data/collections/sculpture/18_20/sk_556/index.php"
+    localPath: ""
+    note: "Russian Museum holds 8 Trubetskoy Tolstoy sculptures."
+  - id: trubetskoy-equestrian-1900
+    type: sculpture
+    subject: "Tolstoy on Horseback ('Délire')"
+    relatedEntity: "Paolo Trubetskoy"
+    relatedEvidence: []
+    holding: "Musée d'Orsay (bequest 1923); other casts at Detroit Institute of Arts (16.18) and GMT"
+    archiveId: "musee-orsay.fr/en/artworks/leon-tolstoi-cheval-2332"
+    access: "Orsay portal medium-res; absent from Commons"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://www.musee-orsay.fr/en/artworks/leon-tolstoi-cheval-2332"
+    localPath: ""
+    note: "Won the Grand Prix de Sculpture at the Paris Exposition Universelle 1900."
+  - id: ginzburg-statuette-1891
+    type: sculpture
+    subject: "Tolstoy at Work (statuette)"
+    relatedEntity: "Ilya Ginzburg"
+    relatedEvidence: [v52_044_044_1891_07_13, v66_012_N_N_Geotcu]
+    holding: "State Museum of L. N. Tolstoy (51 Ginzburg works); a 1908 cast at National Museum of Finland"
+    archiveId: ""
+    access: "1891 GMT statuette not online; a 1908 version photo is CC0 on Commons (2840×3485)"
+    rights: "Artwork PD; the Helsinki photograph is CC0"
+    licence: CC0
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy,_1908,_Russia,_by_Ilya_Ginzburg_-_National_Museum_of_Finland_-_DSC04133.JPG"
+    localPath: visuals/commons-ginzburg-tolstoy-sculpture-1908.jpg
+    note: "Downloaded file is a CC0 photo of the 1908 version in Helsinki — NOT the 1891 GMT statuette the diary documents."
+  - id: aronson-bust-1901
+    type: sculpture
+    subject: "Bust of Tolstoy"
+    relatedEntity: "Naum Aronson"
+    relatedEvidence: []
+    holding: "State Museum of L. N. Tolstoy (7 works); casts at Petach Tikva Museum and in private hands"
+    archiveId: ""
+    access: "Absent from Commons; request from GMT"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "June 1901 sitting (~80 sketches); cast at Rudier, Paris 1901–02. Corpus silent."
+  - id: styka-tolstoy-c1910
+    type: painting
+    subject: "Tolstoy ('l'homme de la vérité')"
+    relatedEntity: "Jan Styka"
+    relatedEvidence: []
+    holding: "Various (non-Russian collections)"
+    archiveId: ""
+    access: "Commons PD up to 2500×3693"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoi_l'homme_de_la_vérité.jpg"
+    localPath: visuals/commons-styka-tolstoy-homme-verite.jpg
+    note: "Full-length 'prophet' image; corpus silent."
+  - id: orlov-russkie-muzhiki
+    type: graphic
+    subject: "Russian Peasants (album) — peasant-genre scenes"
+    relatedEntity: "Nikolai Orlov"
+    relatedEvidence: [v37_273_277_Predislovie_k_albomu_Russkie_muzhiki_N_Orlova]
+    holding: "Canvases scattered: Tretyakov, Russian Museum, Tula Regional; album at Cornell (Kroch Library)"
+    archiveId: ""
+    access: "Partial online; album digitisable via Cornell"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: ""
+    localPath: ""
+    note: "The peasant scenes Tolstoy prefaced — depictions of the 'places and people around him' rather than of Tolstoy himself."
+  - id: ge-sofia-tolstaya-1886
+    type: painting
+    subject: "Portrait of Sofia Andreevna Tolstaya"
+    relatedEntity: "Nikolai Ge"
+    relatedEvidence: []
+    holding: "—"
+    archiveId: ""
+    access: "Commons PD (520×884, low-res)"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ge_Sophia_Tolstaya.jpg"
+    localPath: visuals/commons-ge-sofia-tolstaya-1886.jpg
+    note: "A depiction of the circle, not of Tolstoy. Ge also painted a Tolstoy family group, 1886."
+  - id: sofia-portrait-of-tolstoy-1904
+    type: painting
+    subject: "Portrait of Tolstoy by Sofia Andreevna herself"
+    relatedEntity: "Sofia Tolstaya"
+    relatedEvidence: []
+    holding: "—"
+    archiveId: ""
+    access: "Commons PD (2526×3420)"
+    rights: "Artwork PD"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Лев_Толстой_(Софья_Толстая,_1904).jpg"
+    localPath: ""
+    note: "An inversion of the depiction question — the most-painted man painted by his wife. Not downloaded; fetchable via url."
+
+# ── SCHOLARSHIP (secondary layer — attributed, not asserted) ─────────────────
+scholarship:
+  summary: >
+    English-language scholarship treats Tolstoy as the most-depicted writer of his
+    age and reads the late Repin portraits (ploughing, barefoot, at his desk) as the
+    machinery that built the "sage of Yasnaya Polyana" iconography (Bartlett 2011;
+    Vaysman 2022). Valkenier (1990) frames Repin and Tolstoy as mutual admirers who
+    disagreed irreconcilably on art's purpose. The Kramskoy→Mikhailov identification in
+    Anna Karenina is a received tradition passed through biographies (Bartlett 2011),
+    complicated by Vladiv-Glover, not established from archive. Gatrall argues the
+    Ge–Tolstoy bond was a bidirectional "interarts" dialogue, not simple discipleship.
+    Reischl (2018) reads the late image-war as a contest between Sofia's domestic
+    photography and Chertkov's prophet-among-peasants vision; the Sofia-as-jealous-
+    antagonist framing (Popoff 2010; the film The Last Station) is itself a contested
+    position, attributed — not adopted.
+  triangulation:
+    - evidenceRef: v64_115_V_V_Stasovu
+      conventionalView: "Repin's late portraits constructed Tolstoy's prophet-iconography (Bartlett 2011; Vaysman 2022)."
+      relation: confirms
+      source: "Bartlett 2011; Vaysman 2022"
+    - evidenceRef: v50_067_068_1889_04_15
+      conventionalView: "Tolstoy admired Repin's depictions of him."
+      relation: complicates
+      source: "Valkenier 1990 (via Gambrell 1993)"
+    - evidenceRef: v30_027_203_Chto_takoe_iskusstvo
+      conventionalView: "What Is Art? is an undifferentiated attack on elite art; the depicted iconoclast is a paradox scholarship notes but does not resolve."
+      relation: extends
+      source: "Vaysman 2022"
+    - evidenceRef: v19_003_399_Anna_Karenina_Chasti_5_8
+      conventionalView: "Kramskoy is the model for the painter Mikhailov."
+      relation: complicates
+      source: "Bartlett 2011; Vladiv-Glover"
+    - evidenceRef: v66_341_N_N_Geotcu
+      conventionalView: "Tolstoy was the spiritual catalyst for Ge's late art but did not give compositional direction."
+      relation: contradicts
+      source: "Gatrall; Yudenkova 2011"
+    - evidenceRef: v67_161_P_M_Tretyakovu
+      conventionalView: "Tretyakov acquired Ge's late works often only on Tolstoy's urging."
+      relation: confirms
+      source: "Yudenkova 2011; Birchenough"
+    - evidenceRef: v52_157_159_1894_12_31
+      conventionalView: "The 1910 'portrait war' pitted a jealous Sofia against Chertkov."
+      relation: complicates
+      source: "Reischl 2018; cf. Popoff 2010 (contested)"
+
+# ── CONTRADICTIONS (intra-corpus, primary-vs-primary) ───────────────────────
+contradictions:
+  - claim: "Repin was the sculptor at the July 1891 Yasnaya sitting."
+    correction: "The diary names Ginzburg as the sculptor and Repin as the painter ('они меня лепят и пишут'); Repin's own busts are separately attested (v66_012)."
+    evidenceRef: v52_044_044_1891_07_13
+  - claim: "Tolstoy uniformly admired the artists who painted him."
+    correction: "He repeatedly judged specific Repin canvases harshly ('невозможна — всё выдумано') while elevating Ge."
+    evidenceRef: v50_067_068_1889_04_15
+
+# ── NOT COVERED ─────────────────────────────────────────────────────────────
+notCovered:
+  - "Photography (Chertkov, Sofia Tolstaya, Bulla, the 1908 Prokudin-Gorsky colour plate) — excluded by scope; a large separate dive. The 1909 diary note of Chertkov 'делал портреты' (photographs) was extracted but flagged as photography, out of scope."
+  - "Pre-1873 images (1848/1850s youth portraits) — out of the declared 1873–1910 window."
+  - "Death masks and posthumous monuments (Merkurov 1910 death mask; later statues) — edge of scope, not catalogued."
+  - "Caricature and the periodical-press graphic record (Niva, foreign illustrated weeklies beyond the Pasternak/Repin woodcuts noted)."
+  - "Tatyana Lvovna Tolstaya's own paintings of her father — attested only in external biography, silent in the corpus; needs a separate vault/archive pass."
+
+# ── NEEDS REVIEW (deferred human judgement) ─────────────────────────────────
+needsReview:
+  - item: "Keystone facsimile (Tom 62 p.48, Kramskoy/Fet letter) not rendered: vol62.pdf is an image-only scan with no text layer, so the exact page could not be located by search. The verbatim text is captured in extracts/ (PD). Locate the page visually and render at 220 dpi if a facsimile is wanted."
+    phase: 2
+    why: "PDF lacks an OCR text layer; page-pinning is a manual visual task."
+  - item: "1910 'portrait war' diary (v58_107, 26 Sept 1910) is severely OCR-corrupted in the TEI ('моей мои портреты, сожгла² моего друга'). Used only in prose, NOT as a byte-faithful quote. Collate against vol58.pdf before any wiki ingestion."
+    phase: 2
+    why: "Garbled source text; cross-links to the Biryukov–Sofia dive's image-control theme."
+  - item: "Ge 1884 portrait and the Kramskoy→Mikhailov identification rest on external scholarship, not the local corpus. Attribute, do not assert."
+    phase: 3
+    why: "Corpus is silent on the 1884 portrait's making and does not name Kramskoy as Mikhailov's model."
+  - item: "Serov, Aronson, Nesterov's portrait, Trubetskoy's sculptures, Tatyana Lvovna as painter — corpus is silent in Tolstoy's own words; visual/holding data is web-sourced and should be confirmed against the institutions before ingestion."
+    phase: 2
+    why: "No primary anchor; holdings sourced from museum portals/auction notes."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (letters, diaries, works) — full sweep"
+  - "primary-sources/jubilee-edition vol01–vol90 PDFs (held locally; vol62 confirmed image-only)"
+  - "Wikimedia Commons (API: imageinfo + extmetadata) — 17 PD/CC0 images cached"
+  - "State Tretyakov Gallery (my.tretyakov.ru)"
+  - "State Russian Museum (rusmuseumvrm.ru)"
+  - "Musée d'Orsay (musee-orsay.fr)"
+  - "State Museum of L. N. Tolstoy (tolstoymuseum.ru / tolstoy-iss.kamiscloud.ru)"
+  - "Yasnaya Polyana Museum-Estate (ypmuseum.ru)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС (Jubilee Edition): Tom 62 (letters 1873), Tom 64–67 (letters to Ge & Tretyakov), Tom 71/75 (Repin, Pasternak, Orlov), Tom 49–53/58 (diaries), Tom 19 (Anna Karenina), Tom 30 (What Is Art?), Tom 37 (Orlov preface)"
+  background:
+    - "Bartlett, Rosamund. 2011. Tolstoy: A Russian Life. Houghton Mifflin Harcourt. https://archive.org/details/tolstoyrussianli0000bart"
+    - "Vaysman, Margarita. 2022. 'Tolstoy as the Subject of Art.' In Tolstoy in Context, ed. A. Berman, 323–335. CUP. https://research-repository.st-andrews.ac.uk/handle/10023/27789"
+    - "Taroutina, Maria. 2022. 'The Visual Arts.' In Tolstoy in Context. CUP. https://www.cambridge.org/core/books/abs/tolstoy-in-context/visual-arts/4D204255D93A249A7BE06D01EE474A67"
+    - "Valkenier, Elizabeth Kridl. 1990. Ilya Repin and the World of Russian Art. Columbia UP."
+    - "Gambrell, Jamey. 1993. 'Art and the Great Utopia.' NYRB, 22 April. https://www.nybooks.com/articles/1993/04/22/art-and-the-great-utopia/"
+    - "Gatrall, Jefferson J. A. 'Tolstoy, Ge, and Two Pilates: A Tale of the Interarts.' Montclair State University. https://www.montclair.edu/profilepages/media/1959/user/Gatrall_Tolstoy_and_Nikolai_Ge.pdf"
+    - "Yudenkova, T. 2011. 'Pavel Tretyakov and Nikolai Ge.' Tretyakov Gallery Magazine 3 (32). https://www.tretyakovgallerymagazine.com/articles/3-2011-32/pavel-tretyakov-and-nikolai-ge"
+    - "Reischl, Katherine M. H. 2018. Photographic Literacy: Cameras in the Hands of Russian Authors. Cornell UP. https://www.cornellpress.cornell.edu/book/9781501724367/photographic-literacy/"
+    - "Popoff, Alexandra. 2010. Sophia Tolstoy: A Biography. Free Press. https://www.simonandschuster.com/books/Sophia-Tolstoy/Alexandra-Popoff/9781416597605"

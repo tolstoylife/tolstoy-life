@@ -1,0 +1,408 @@
+topic:
+  slug: biryukov-sofia-relationship
+  title: "Biryukov and Sofia: the dedication, the withheld lover, and the contested diaries"
+  question: "The story behind Biryukov's warm 1908 dedication to Sofia in Vol II; whether it connects to his withholding a pre-marriage lover's name; the (strained) Biryukov–Sofia relationship; and the lines Sofia is said to have removed from the diary will-note, and how Biryukov handled it as biographer."
+  date: 2026-05-31
+  period: "1862; 1895; 1897–1910 (biography-making + the will/diaries crisis)"
+  corpusSurface: "Tolstoy's letters to Biryukov (PSS 63–82); diaries (Toms 48, 53, 57, 58); diary publication-history apparatus; the reader's photographs of the Swedish Vol II; secondary scholarship."
+  dateRange: "1862–1910"
+
+evidence:
+  # --- The dedication & afterword (Swedish Vol II; reader's photographs) ---
+  - id: dedication-1908
+    genre: biography
+    pssTom: null
+    pages: "Vol II front matter"
+    date: 1908-01-11
+    localPdf: null
+    extract: extracts/birukoff-vol2-dedication-and-slutord-swedish.txt
+    quoteRu: "Ni har ock afvärjt mycken ofärd från hans hufvud."
+    quoteEn: "You have also averted much misfortune from his head. (working English) — source language Swedish."
+    significance: "Biryukov, a Chertkov ally, opens Vol II (Kostroma, 11 Jan 1908) with an unguarded tribute to Sofia, mid-strife — the central puzzle of the dive."
+    facsimile: null
+  - id: slutord-archive-1908
+    genre: biography
+    pssTom: null
+    pages: "Vol II p. 453"
+    date: 1908-08-27
+    localPdf: null
+    extract: extracts/birukoff-vol2-dedication-and-slutord-swedish.txt
+    quoteRu: "S. A. Tolstojs arkiv."
+    quoteEn: "The archive of S. A. Tolstaya. (working English) — footnote sourcing the volume's closing quotation; documentary sign of Sofia's cooperation."
+    significance: "The Slutord (Ivanskoye, 27 Aug 1908) closes Vol II on a document held in Sofia's archive — the dependence behind the dedication."
+    facsimile: null
+
+  # --- The withheld lover: Arsenyeva (Tolstoy's own disclosure) ---
+  - id: arsenyeva-disclosure-1903
+    genre: letter
+    pssTom: 74
+    pages: "319"
+    date: 1903-11-27
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v74_319_P_I_Biryukovu.txt
+    quoteRu: "это была Арсеньева Валерия. Она теперь жива, за Волковым была, живет в Париже."
+    quoteEn: "that was Arsenyeva, Valeria. She is alive now, was married to Volkov, lives in Paris. (working English)"
+    significance: "Tolstoy himself names Arsenyeva to his biographer as the most serious pre-marriage love — the candor came from Tolstoy, the suppression from Sofia."
+    facsimile: null
+  - id: arsenyeva-letters-packet-1903
+    genre: letter
+    pssTom: 74
+    pages: "319"
+    date: 1903-11-27
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v74_319_P_I_Biryukovu.txt
+    quoteRu: "есть целая пачка моих писем к ней."
+    quoteEn: "there is a whole packet of my letters to her. (working English)"
+    significance: "Tolstoy actively supplies the Arsenyeva letters (via his daughter Tanya) — the very material Sofia would later veto."
+    facsimile: null
+  - id: arsenyeva-sofia-veto-1905
+    genre: letter
+    pssTom: 76
+    pages: "65"
+    date: 1905-10-18
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v76_065_P_I_Biryukovu.txt
+    quoteRu: "протестовала против писем Арсеньевой."
+    quoteEn: "[Sofia Andreevna] protested against the Arsenyeva letters. (working English)"
+    significance: "The documentary hinge: Tolstoy's own statement that Sofia objected to the Arsenyeva letters — the suppression that kept the chapter out until Berlin 1921."
+    facsimile: null
+
+  # --- The biography collaboration & candor philosophy ---
+  - id: biography-earliest-auth-1898
+    genre: letter
+    pssTom: 71
+    pages: "5"
+    date: 1898-01-09
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v71_005_P_I_Biryukovu.txt
+    quoteRu: "Делайте скорее, не откладывая."
+    quoteEn: "Do it quickly, without delay. (working English)"
+    significance: "Earliest explicit authorization of the biography programme, written while Biryukov was in exile."
+    facsimile: null
+  - id: biography-pose-1901
+    genre: letter
+    pssTom: 73
+    pages: "186"
+    date: 1901-12-02
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v73_186_P_I_Biryukovu.txt
+    quoteRu: "позировать вам и буду категорически отвечать на ваши вопросы."
+    quoteEn: "[glad] to sit for you and will answer your questions categorically. (working English)"
+    significance: "Opens the active Q&A collaboration on the biography."
+    facsimile: null
+  - id: candor-rousseau-1902
+    genre: letter
+    pssTom: 73
+    pages: "315"
+    date: 1902-08-20
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v73_315_P_I_Biryukovu.txt
+    quoteRu: "правдивее даже, чем Руссо"
+    quoteEn: "more truthful even than Rousseau. (working English)"
+    significance: "The editorial philosophy: between self-whitewash and cynical exposure, aim to be more honest than Rousseau — the standard governing what the biography could include."
+    facsimile: null
+  - id: biography-form-1902
+    genre: letter
+    pssTom: 73
+    pages: "256"
+    date: 1902-05-19
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v73_256_P_I_Biryukovu.txt
+    quoteRu: "нашел форму, в которой могу исполнить ваше желание"
+    quoteEn: "found a form in which I can fulfil your wish. (working English)"
+    significance: "The breakthrough of genuine consent to the biography."
+    facsimile: null
+  - id: biography-before-after-1902
+    genre: letter
+    pssTom: 73
+    pages: "373"
+    date: 1902-11-11
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v73_373_P_I_Biryukovu.txt
+    quoteRu: "всю мерзость моей жизни до моего пробуждения"
+    quoteEn: "all the vileness of my life before my awakening. (working English)"
+    significance: "Commits to the before/after-awakening arc — the pre-1879 darkness included, not whitewashed."
+    facsimile: null
+
+  # --- The relationship arc with Sofia ---
+  - id: sofia-loves-you-1897
+    genre: letter
+    pssTom: 70
+    pages: "57"
+    date: 1897-03-12
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v70_057_P_I_Biryukovu.txt
+    quoteRu: "Софья Андреевна всё так же любит вас, чему я очень радуюсь."
+    quoteEn: "Sofia Andreevna loves you just as before, at which I greatly rejoice. (working English)"
+    significance: "The warm baseline of the relationship during Biryukov's exile years."
+    facsimile: null
+  - id: sofia-crisis-1910
+    genre: letter
+    pssTom: 82
+    pages: "95"
+    date: 1910-07-19
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v82_095_P_I_Biryukovu.txt
+    quoteRu: "почти душевно больна — ненависть к Черткову, ревность к нему, и мне очень трудно."
+    quoteEn: "almost mentally ill — hatred of Chertkov, jealousy of him, and it is very hard for me. (working English)"
+    significance: "The relationship at its final-summer extreme, poured out to Biryukov three months before Tolstoy's flight."
+    facsimile: null
+  - id: biography-prosecution-1910
+    genre: letter
+    pssTom: 82
+    pages: "172"
+    date: 1910-09-01
+    addressee: "P. I. Biryukov"
+    localPdf: null
+    extract: extracts/v82_172_P_I_Biryukovu.txt
+    quoteRu: "Неужели только биография?"
+    quoteEn: "Surely not just for the biography? (working English)"
+    significance: "The biography itself triggers a criminal prosecution of Biryukov in 1910 — the censorship dimension, two months before Tolstoy's death."
+    facsimile: null
+
+  # --- The diaries as contested document (1862 → 1897) ---
+  - id: bachelor-diaries-1862
+    genre: diary
+    pssTom: 48
+    pages: "45"
+    date: 1862-09-15
+    localPdf: null
+    extract: extracts/v48_045_045_1862_09_15_1.txt
+    quoteRu: "не будет тайн для одного, а тайны для двух, она будет всё читать."
+    quoteEn: "there will be no secrets for one, but secrets for two; she will read everything. (working English)"
+    significance: "A week before the wedding — the willing surrender of the private self that the bachelor-diary handover to Sofia enacted; the root of the diary-as-contested-document theme."
+    facsimile: null
+  - id: sonya-reads-diary-1897
+    genre: diary
+    pssTom: 53
+    pages: "132"
+    date: 1897-02-04
+    localPdf: null
+    extract: extracts/v53_132_136_1897_02_04.txt
+    quoteRu: "Соня без меня читала этот дневник, и ее очень огорчило то, что из него могут потом заключить о том, что она была нехорошей женой."
+    quoteEn: "Sonya read this diary while I was away, and it grieved her greatly that from it people might later conclude she had been a bad wife. (working English)"
+    significance: "The fear of the diary's posthumous verdict on her — the anxiety that would drive Sofia to seize the secret diary in 1910."
+    facsimile: null
+
+  # --- The 1895 testament (keystone) ---
+  - id: testament-1895-diaries-clause
+    genre: diary
+    pssTom: 53
+    pages: "14-18"
+    date: 1895-03-27
+    localPdf: "primary-sources/jubilee-edition/vol19/vol19.pdf"
+    extract: extracts/v53_014_018_1895_03_27.txt
+    quoteRu: "Чертков обещал мне еще при жизни моей сделать это."
+    quoteEn: "Chertkov promised me, while I am still alive, to do this [destroy/prune the diaries]. (working English)"
+    significance: "Keystone: the testamentary diary entry assigns the diaries' pruning to Chertkov — the seed of the 1910 custody war."
+    facsimile: extracts/keystone-1895-testament.png
+  - id: testament-1895-copyright-clause
+    genre: diary
+    pssTom: 53
+    pages: "14-18"
+    date: 1895-03-27
+    localPdf: "primary-sources/jubilee-edition/vol19/vol19.pdf"
+    extract: extracts/v53_014_018_1895_03_27.txt
+    quoteRu: "отказаться от авторского права."
+    quoteEn: "to renounce the author's right. (working English)"
+    significance: "The copyright-renunciation clause of the 1895 testament — the material Biryukov (its named translator) printed; the prize Sofia fought to keep."
+    facsimile: extracts/keystone-1895-testament.png
+
+  # --- The 1910 will crisis (Diary for myself alone; reconstructed from TEI reg) ---
+  - id: will-invalid-senile-1910
+    genre: diary
+    pssTom: 58
+    pages: "137"
+    date: 1910-09-16
+    localPdf: "primary-sources/jubilee-edition/vol24/vol24.pdf"
+    extract: extracts/v58_137_137_1910_09_16.txt
+    quoteRu: "завещание, если есть таковое."
+    quoteEn: "[to make my will invalid,] if such a will exists. (working English) — reconstructed from TEI reg, cross-checked vs facsimile."
+    significance: "Tolstoy records Sofia's plan to have him declared senile so as to void the will — the 1910 endgame."
+    facsimile: extracts/keystone-1910-diary.png
+  - id: diary-seized-1910
+    genre: diary
+    pssTom: 58
+    pages: "141"
+    date: 1910-10-13
+    localPdf: "primary-sources/jubilee-edition/vol24/vol24.pdf"
+    extract: extracts/v58_141_141_1910_10_13.txt
+    quoteRu: "нашла и унесла мой дневник маленький."
+    quoteEn: "[she] found and carried off my little diary. (working English) — reconstructed from TEI reg, cross-checked vs facsimile."
+    significance: "The documented act of Sofia 'removing' a diary — the seizure of the secret notebook over fear of the copyright will; not an excision of will-lines from the 1895 note."
+    facsimile: extracts/keystone-1910-diary.png
+
+entities:
+  - name: Pavel Biryukov
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Tolstoy's disciple and authorized biographer; subject of the dive. (Vault file spells the name 'Pavel Birukoff'.)"
+    sources: []
+    evidenceRefs: [dedication-1908, slutord-archive-1908, arsenyeva-disclosure-1903, candor-rousseau-1902, biography-prosecution-1910]
+    ingestionPriority: 1
+  - name: Sofia Tolstaya
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Dedicatee of Vol II; archive-keeper; vetoed the Arsenyeva letters; seized the 1910 diary. (Vault file spells the name 'Sophia Tolstaya'.)"
+    note: "Reader guidance for ingestion in annotations.md — read the mainstream Sofia-centred framing (Popoff; The Last Station) as contrast, not authority; ground in the words of Tolstoy/Biryukov/Chertkov and the project's prior dives (tolstoyanism, crisis)."
+    sources: []
+    evidenceRefs: [dedication-1908, arsenyeva-sofia-veto-1905, sofia-loves-you-1897, sofia-crisis-1910, sonya-reads-diary-1897, diary-seized-1910]
+    ingestionPriority: 1
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Editor and close associate of Tolstoy, entrusted with his manuscripts and diaries; named diary-executor in the 1895 testament; on the opposing side of Sofia in the 1910 will crisis; first (censored) publisher of the diaries (1916)"
+    sources: []
+    evidenceRefs: [testament-1895-diaries-clause, sofia-crisis-1910, will-invalid-senile-1910]
+    ingestionPriority: 2
+  - name: Leo Tolstoy
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Subject; author of the letters, diaries, and testament"
+    sources: []
+    evidenceRefs: [testament-1895-copyright-clause, arsenyeva-disclosure-1903, bachelor-diaries-1862]
+    ingestionPriority: 2
+  - name: Valeria Arsenyeva
+    wikiType: person
+    wikilinkTarget: "Valeria Arsenyeva"
+    vaultStatus: missing
+    role: "Tolstoy's near-fiancée of 1856–57; the withheld lover; the suppressed-chapter subject (basis of Family Happiness)"
+    sources: []
+    evidenceRefs: [arsenyeva-disclosure-1903, arsenyeva-letters-packet-1903, arsenyeva-sofia-veto-1905]
+    ingestionPriority: 2
+    dependsOn: [Pavel Biryukov, Sofia Tolstaya]
+  - name: Aksinya Bazykina
+    wikiType: person
+    wikilinkTarget: "Aksinya Bazykina"
+    vaultStatus: missing
+    role: "Married peasant; Tolstoy's affair and illegitimate son Timofei; basis of The Devil; the other pre-marriage-women axis (no documented Sofia-vetoed chapter found)"
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Biryukov's Biography of Tolstoy"
+    wikiType: criticalWork
+    wikilinkTarget: "Biography of Leo Tolstoy (Biryukov)"
+    vaultStatus: missing
+    role: "The four-volume authorized biography; Vol II (1908) carries the dedication; editions settled in the biryukov-biography-editions dive"
+    sources: []
+    evidenceRefs: [dedication-1908, slutord-archive-1908]
+    ingestionPriority: 2
+    dependsOn: [Pavel Biryukov]
+
+scholarship:
+  summary: >
+    The conventional view treats Biryukov's biography as the "voluminous and reverential" authorized
+    life (Bartlett 2010) and the 1910 catastrophe as "fundamentally about the struggle for control of
+    his diaries" between Sofia and the Chertkov/Alexandra side (Meek, LRB 2010). The dominant popular
+    framing (Popoff; The Last Station) is Sofia-centred and is read here as contrast, not baseline:
+    the dive's spine is the primary record (Tolstoy/Biryukov/Chertkov), against which the standard
+    "Sofia removed the will-lines" premise does not hold. See annotations.md for the reader's steer.
+  triangulation:
+    - evidenceRef: dedication-1908
+      conventionalView: "The biography is reverential; Biryukov used Sofia's archive and thanked her."
+      relation: extends
+      source: "tolstoy-lit.ru; Russian Wikipedia (Бирюков); Bartlett 2010"
+    - evidenceRef: sofia-loves-you-1897
+      conventionalView: "Sofia was hostile to the Tolstoyans."
+      relation: complicates
+      source: "Bartlett 2010 (Sofia tolerated the meek Biryukov specifically)"
+    - evidenceRef: arsenyeva-sofia-veto-1905
+      conventionalView: "The Arsenyeva chapter was suppressed in Sofia's lifetime, restored Berlin 1921."
+      relation: extends
+      source: "PSS apparatus; Tolstoi's Love Letters (Hogarth 1923) front matter; Aldanov 1923"
+    - evidenceRef: testament-1895-copyright-clause
+      conventionalView: "Tolstoy renounced copyright; Biryukov reproduced the testament."
+      relation: confirms
+      source: "Birukoff trans. of the testament (Ybarra 1922); Bartlett 2010 (1891 public renunciation)"
+    - evidenceRef: diary-seized-1910
+      conventionalView: "Sofia removed/excised will-lines from the diary note."
+      relation: contradicts
+      source: "PSS Tom 53/58 apparatus (the 1895 break is authorial; the cuts are Chertkov's 1916 ed.; Sofia's act was the 1910 diary seizure)"
+
+contradictions:
+  - claim: "The «.....» in the 1895 testament marks a line removed about the will."
+    correction: "It is Tolstoy's own trailing-off (literal dots in the <p>, no editorial gap); the one deletion there (his daughters' names) is also his own."
+    evidenceRef: testament-1895-diaries-clause
+  - claim: "Sofia removed will-lines from the 1895 diary note."
+    correction: "No such excision is documented. Sofia's documented acts are the Arsenyeva-letters veto and the 1910 seizure of the secret diary; the diaries' will/copyright cuts were Chertkov's (1916 Sytin edition, 'с многими купюрами')."
+    evidenceRef: diary-seized-1910
+  - claim: "The 1895 testament names Strakhov among the executors."
+    correction: "The diary-notebook text does name Strakhov, but on the fair copy his name was struck (with 'умер' added) after his 1896 death; the version Biryukov translated names wife + Chertkov + daughters."
+    evidenceRef: testament-1895-diaries-clause
+
+notCovered:
+  - "Verbatim Russian of the Vol II dedication and Slutord (held here only in Swedish, from the reader's photographs)."
+  - "Aldanov's specific claim that Berlin 1921 still withheld Arsenyeva's surname (attributed, not verified at quotation level)."
+  - "A specifically Sofia-vetoed Aksinya Bazykina chapter (not found)."
+  - "Line-by-line PDF collation of the reconstructed Tom 58 (1910) quotations."
+
+needsReview:
+  - item: "The reader's source for 'Sofia removed the will-lines from the diary note' — supply it so the corrected-by-default finding can be traced rather than assumed."
+    phase: 3
+    why: "The premise could not be corroborated in the primary record; a named source would resolve whether it conflates the Arsenyeva veto, the 1910 diary seizure, and Chertkov's cuts."
+  - item: "Tom 58 (1910) quotations reconstructed from TEI <reg> readings (extract_tei.py drops pre-reform <choice> pairs); cross-checked vs facsimile but not PDF-collated."
+    phase: 2
+    why: "Byte-fidelity for ingestion should rest on a PDF collation, not the TEI reg alone. Tooling gap: extract_tei.py needs a --choice mode for pre-reform volumes."
+  - item: "Vault transliteration divergence: dive uses 'Biryukov'/'Sofia'; vault files are 'Pavel Birukoff.md'/'Sophia Tolstaya.md'. wikilinkTarget points at the existing files."
+    phase: 4
+    why: "Surfaced during verification; worth a project-wide naming decision before more cross-links accrue."
+
+archivesConsulted:
+  - "Local tolstoydigital-TEI corpus (letters Toms 63–82; diaries Toms 48, 53, 57, 58; comments apparatus)"
+  - "Local Jubilee Edition PDFs (vol19 = Tom 53; vol24 = Tom 58)"
+  - "Wikimedia Commons (portraits, plates, facsimiles)"
+  - "imwerden.de; vtoraya-literatura.com (edition covers, Biryukov portrait)"
+  - "Web scholarship (Bartlett; Chertkov; Meek/LRB; Hogarth 1923; tolstoy-lit.ru; Russian Wikipedia)"
+
+visuals:
+  - { id: biryukov-portrait, type: photograph, subject: "Pavel Biryukov (1916)", relatedEntity: "Pavel Biryukov", relatedEvidence: dedication-1908, holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Бірюков_Павло_Іванович.jpg", localPath: "visuals/commons-biryukov-portrait-uk.jpg", note: "Best Biryukov portrait on Commons." }
+  - { id: biryukov-portrait-en, type: photograph, subject: "Pavel Biryukov", relatedEntity: "Pavel Biryukov", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Pavel_Biryukov.jpg", localPath: "visuals/commons-biryukov-portrait-en.jpg", note: "Smaller English-captioned copy." }
+  - { id: sofia-1908, type: photograph, subject: "Sofia Andreevna Tolstaya, 1908", relatedEntity: "Sofia Tolstaya", relatedEvidence: dedication-1908, holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Grevinde_Sofia_Andrejevna_Tolstoi_1908.jpg", localPath: "visuals/commons-sofia-tolstaya-1908.jpg", note: "Contemporaneous with the dedication." }
+  - { id: sofia-cassell-1911, type: photograph, subject: "Sofia Tolstaya (formal portrait)", relatedEntity: "Sofia Tolstaya", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Countess_Sophia_Andreyevna_Tolstaya.jpg", localPath: "visuals/commons-sofia-tolstaya-portrait.jpg", note: "Cassell & Co, NY, 1911; high-res." }
+  - { id: sofia-ge-1886, type: portrait, subject: "Sofia Tolstaya (oil, N. Ge 1886)", relatedEntity: "Sofia Tolstaya", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Ge_Sophia_Tolstaya.jpg", localPath: "visuals/commons-sofia-tolstaya-ge-painting.jpg", note: "Nikolai Ge oil portrait." }
+  - { id: chertkov-1883, type: portrait, subject: "Vladimir Chertkov (1883)", relatedEntity: "Vladimir Chertkov", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Vladimir_Chertkov.jpg", localPath: "visuals/commons-chertkov-portrait.jpg", note: "Earliest known portrait." }
+  - { id: chertkov-tolstoy-1909, type: photograph, subject: "Chertkov with Tolstoy, Yasnaya Polyana 1909", relatedEntity: "Vladimir Chertkov", relatedEvidence: testament-1895-diaries-clause, holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Chertkov&Tolstoy.jpg", localPath: "visuals/commons-chertkov-with-tolstoy.jpg", note: "High-res; the will-conflict period." }
+  - { id: tolstoy-sofia-1910, type: photograph, subject: "Leo and Sofia Tolstoy, 1910", relatedEntity: "Sofia Tolstaya", relatedEvidence: sofia-crisis-1910, holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Sofja_Andrejewna_Tolstaja.jpg", localPath: "visuals/commons-tolstoy-sofia-together-1910b.jpg", note: "Weeks before the flight from Yasnaya." }
+  - { id: tolstoy-sofia-1910b, type: photograph, subject: "Leo and Sofia Tolstoy, 19 Sept 1910", relatedEntity: "Sofia Tolstaya", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:L.Tolstoy_and_S.Tolstaya.jpg", localPath: "visuals/commons-tolstoy-sofia-together-1910.jpg", note: "48th wedding anniversary." }
+  - { id: biryukov-photo-masha-1895, type: photograph, subject: "Maria (Masha) Lvovna Tolstaya, by P. Biryukov, Yasnaya Polyana 1895", relatedEntity: "Pavel Biryukov", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Maria_L._Tolstoy._Photo_PI_Biryukov._Yasnaya_Polyana,_1895.jpeg", localPath: "visuals/commons-biryukov-photo-maria-yasnaya-1895.jpeg", note: "Biryukov as photographer at the estate, 1895." }
+  - { id: biography-plate-221, type: facsimile, subject: "Tolstoy youth (1848), biography plate", relatedEntity: "Biryukov's Biography of Tolstoy", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_1_(page_221_crop).jpg", localPath: "visuals/commons-biriukov-biography-page221.jpg", note: "From Biryukov's biography (1906)." }
+  - { id: biography-plate-295, type: facsimile, subject: "The four Tolstoy brothers, biography plate", relatedEntity: "Biryukov's Biography of Tolstoy", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Biriukov_-_Léon_Tolstoï,_vie_et_oeuvre_1_(page_295_crop).jpg", localPath: "visuals/commons-biriukov-biography-page295.jpg", note: "From Biryukov's biography (1906)." }
+  - { id: yasnaya-polyana, type: photograph, subject: "Yasnaya Polyana main house", relatedEntity: "Leo Tolstoy", holding: "Wikimedia Commons", access: open, rights: PD, licence: PD, usable: true, url: "https://commons.wikimedia.org/wiki/File:Yasnaya_Polyana_main_building.jpg", localPath: "visuals/commons-yasnaya-polyana-main.jpg", note: "Early 20th c." }
+  - { id: biography-cover-1911, type: facsimile, subject: "Biryukov biography Tom 1, 1911 Moscow (Kushnerov) cover", relatedEntity: "Biryukov's Biography of Tolstoy", holding: "imwerden.de / Russian archives", access: open, rights: PD, licence: PD, usable: true, url: "https://imwerden.de", localPath: "visuals/russia-biryukov-biography-tom1-1911-cover.jpg", note: "2nd ed. cover." }
+  - { id: biography-cover-1921, type: facsimile, subject: "Biryukov biography Tom 1, 1921 Berlin (Ladyzhnikov) cover", relatedEntity: "Biryukov's Biography of Tolstoy", holding: "vtoraya-literatura.com", access: open, rights: PD, licence: PD, usable: true, url: "https://vtoraya-literatura.com", localPath: "visuals/emigre-biryukov-biography-tom1-1921-cover.jpg", note: "The edition that first printed the Arsenyeva chapter." }
+  - { id: biryukov-portrait-imwerden, type: photograph, subject: "Pavel Biryukov", relatedEntity: "Pavel Biryukov", holding: "imwerden.de", access: open, rights: unknown, licence: unknown, usable: false, url: "https://imwerden.de", localPath: "visuals/russia-biryukov-portrait-imwerden.jpg", note: "Rights uncertain; metadata-only for publication." }
+  - { id: facsimile-1895-testament, type: facsimile, subject: "1895 testament, PSS Tom 53", relatedEntity: "Leo Tolstoy", relatedEvidence: testament-1895-copyright-clause, holding: "local Jubilee Edition (vol19)", access: open, rights: PD, licence: PD, usable: true, url: null, localPath: "extracts/keystone-1895-testament.png", note: "Rendered locally; committed (PD)." }
+  - { id: facsimile-1910-diary, type: facsimile, subject: "Diary for myself alone, Oct 1910, PSS Tom 58", relatedEntity: "Leo Tolstoy", relatedEvidence: diary-seized-1910, holding: "local Jubilee Edition (vol24)", access: open, rights: PD, licence: PD, usable: true, url: null, localPath: "extracts/keystone-1910-diary.png", note: "Rendered locally; committed (PD)." }
+
+references:
+  primary:
+    - "L. N. Tolstoy, diary 27 March 1895 (testament), PSS Tom 53 pp. 14–18 — TEI v53_014_018_1895_03_27"
+    - "L. N. Tolstoy, 'Diary for myself alone' 1910, PSS Tom 58 pp. 137, 141 — TEI v58_137_137_1910_09_16, v58_141_141_1910_10_12, v58_141_141_1910_10_13"
+    - "L. N. Tolstoy, letters to P. I. Biryukov, PSS Toms 63–82 (173 letters)"
+    - "L. N. Tolstoy, diaries 1862–63 (Tom 48), 1897 & 1909 (Toms 53, 57)"
+    - "Paul Birukoff, Leo Tolstoj: Hans liv och verk, Del II (Norstedt) — dedication (11 Jan 1908) and Slutord (27 Aug 1908); reader's photographs"
+    - "PSS Toms 53 & 58 editorial apparatus (Gusev, Rodionov, eds.)"
+  background:
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2010) — https://erenow.org/biographies/tolstoy-a-russian-life/13.php"
+    - "V. G. Chertkov, The Last Days of Tolstoy (1922) — https://www.gutenberg.org/cache/epub/40260/pg40260-images.html"
+    - "James Meek, 'Some Wild Creature: Tolstoy Leaves Home,' LRB 32/14 (2010) — https://www.lrb.co.uk/the-paper/v32/n14/james-meek/some-wild-creature"
+    - "Tolstoi's Love Letters (Hogarth Press, 1923; trans. Koteliansky & Woolf) — front-matter note on the Arsenyeva letters"
+    - "T. R. Ybarra, 'Tolstoy's Newly Published Diary and Letters' (1922) — https://www.marxists.org/archive/tolstoy/about/1922/newly-published.html"
+    - "P. I. Biryukov, Биография Л. Н. Толстого, vol. 4 ch. 17 — http://tolstoy-lit.ru/tolstoy/bio/biryukov/biografiya-biryukov-4-17.htm"
+    - "Mark Aldanov, Загадка Толстого (Berlin, 1923) — surname-withholding claim (unverified at quotation level)"
+    - "Russian Dinosaur, 'Opportunity, Glory, and Doom: Married to Tolstoy' (2017) — https://russiandinosaur.blogspot.com/2017/02/opportunity-glory-and-doom-married.html"
+    - "Alexandra Popoff, Sophia Tolstoy: A Biography (2010); Tolstoy's False Disciple (2014)"

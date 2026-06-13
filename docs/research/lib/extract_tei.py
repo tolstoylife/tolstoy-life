@@ -5,6 +5,7 @@ Usage:
   extract_tei.py <xml>                    # prints full body text + metadata
   extract_tei.py <xml> <substring>        # prints paragraphs containing substring
   extract_tei.py <xml> [--notes=MODE]     # control note-encoded-body recovery
+  extract_tei.py <xml> [--choice=MODE]    # resolve pre-reform <choice><orig>/<reg>
 
 Most documents carry their text in <p> body elements, with <note>/<noteGrp>
 holding editorial footnotes that are stripped. A handful of PSS letters and
@@ -20,6 +21,15 @@ apparatus (the body has no <p> at all). For those, --notes recovers that text:
 
 Recovered paragraphs are tagged [note] and flagged by a banner — they mix the
 document's own text with editorial commentary, so verify against the source PDF.
+
+--choice controls pre-reform <choice><orig>/<reg> orthographic pairs:
+  --choice=legacy (default)  drop the pair (historical behaviour); warns on stderr
+                             so a forgetful run is not silently gutted.
+  --choice=reg               resolve to the <reg> (modern-orthography) reading —
+                             recommended for any pre-1918 text (all Prophet-period works).
+  --choice=orig              resolve to the <orig> (pre-reform) reading.
+  --choice=both              emit the <reg> reading with the <orig> in [brackets].
+Editorial <choice><sic>/<corr> pairs are unaffected (always resolved to <corr>).
 """
 import re
 import sys
@@ -33,7 +43,7 @@ NS = {
 SUPERSCRIPT = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
 
 
-def normalise_paragraph(p):
+def normalise_paragraph(p, choice_mode="legacy"):
     """Walk a <p> element and return its visible Russian prose, resolving <choice>/<sic>/<corr>."""
     parts = []
     for node in p.iter():
@@ -43,8 +53,14 @@ def normalise_paragraph(p):
         # When we hit <choice> we'll process its children explicitly and skip recursion.
         # Easier approach: only collect text from <corr>, skip <sic>; skip <note> bodies entirely.
         if tag == "note":
-            # Skip note text — these are footnote bodies, not Tolstoy's prose.
+            # Skip note text — these are footnote bodies, not Tolstoy's prose —
+            # but PRESERVE the note's .tail: the prose that follows a footnote
+            # anchor is Tolstoy's own, and lxml's .clear() would wipe it (the
+            # cause of silently-dropped sentences after inline notes in letters,
+            # diaries, and the works themselves).
+            tail = node.tail
             node.clear()  # destructive but we don't reuse the tree
+            node.tail = tail
             continue
 
     # Re-iterate cleanly: prefer <corr> over <sic>, drop <note>.
@@ -55,9 +71,32 @@ def normalise_paragraph(p):
         if tag == "note":
             return
         if tag == "choice":
+            # Editorial sic/corr: always prefer the corrected reading (unchanged).
             corr = node.find("t:corr", NS)
             if corr is not None:
                 walk(corr)
+                return
+            # Orthographic orig/reg: pre-reform spelling pairs. Legacy mode drops
+            # them (the historical gap); reg/orig/both resolve them per --choice.
+            reg = node.find("t:reg", NS)
+            orig = node.find("t:orig", NS)
+            if reg is not None or orig is not None:
+                if choice_mode == "reg":
+                    walk(reg if reg is not None else orig)
+                elif choice_mode == "orig":
+                    walk(orig if orig is not None else reg)
+                elif choice_mode == "both":
+                    if reg is not None:
+                        walk(reg)
+                        if orig is not None:
+                            text.append(" [")
+                            walk(orig)
+                            text.append("]")
+                    elif orig is not None:
+                        # Degenerate: no <reg>; emit orig unbracketed (same as --choice=orig).
+                        walk(orig)
+                # choice_mode == "legacy": drop (preserve historical behaviour)
+                return
             return
         if tag == "sic":
             return  # sibling of <corr>, already handled above
@@ -104,7 +143,7 @@ def normalise_paragraph(p):
     return out
 
 
-def recover_note_body(body):
+def recover_note_body(body, choice_mode="legacy"):
     """Recover paragraphs from <noteGrp type="comments"> apparatus that carries the
     document's own text.
 
@@ -125,13 +164,13 @@ def recover_note_body(body):
             continue
         for note in notegrp.findall("t:note[@type='comments']", NS):
             for p in note.findall("t:p", NS):
-                txt = normalise_paragraph(p)
+                txt = normalise_paragraph(p, choice_mode)
                 if txt:
                     recovered.append(("note", txt))
     return recovered
 
 
-def extract(path, notes_mode="auto"):
+def extract(path, notes_mode="auto", choice_mode="legacy"):
     tree = etree.parse(path)
     root = tree.getroot()
 
@@ -154,7 +193,7 @@ def extract(path, notes_mode="auto"):
     paragraphs = []
     body = root.find(".//t:body", NS)
     if body is None:
-        return file_id, title_text, bibl_text, [], 0
+        return file_id, title_text, bibl_text, [], 0, 0
 
     def inside_note(el):
         cur = el.getparent()
@@ -170,7 +209,7 @@ def extract(path, notes_mode="auto"):
         if tag in ("opener", "p", "closer", "head"):
             if inside_note(el):
                 continue
-            txt = normalise_paragraph(el)
+            txt = normalise_paragraph(el, choice_mode)
             if txt:
                 paragraphs.append((tag, txt))
 
@@ -180,20 +219,29 @@ def extract(path, notes_mode="auto"):
     has_real_body = any(tag in ("p", "closer") for tag, _ in paragraphs)
     recovered = 0
     if notes_mode == "force" or (notes_mode == "auto" and not has_real_body):
-        note_paras = recover_note_body(body)
+        note_paras = recover_note_body(body, choice_mode)
         paragraphs.extend(note_paras)
         recovered = len(note_paras)
-    return file_id, title_text, bibl_text, paragraphs, recovered
+    prereform_pairs = sum(
+        1
+        for ch in body.iter("{http://www.tei-c.org/ns/1.0}choice")
+        if (ch.find("t:reg", NS) is not None or ch.find("t:orig", NS) is not None)
+        and ch.find("t:corr", NS) is None
+    )
+    return file_id, title_text, bibl_text, paragraphs, recovered, prereform_pairs
 
 
 def main():
     notes_mode = "auto"
+    choice_mode = "legacy"
     positional = []
     for arg in sys.argv[1:]:
         if arg.startswith("--notes="):
             notes_mode = arg.split("=", 1)[1]
         elif arg == "--no-notes":
             notes_mode = "off"
+        elif arg.startswith("--choice="):
+            choice_mode = arg.split("=", 1)[1]
         else:
             positional.append(arg)
     if not positional:
@@ -202,10 +250,21 @@ def main():
     if notes_mode not in ("auto", "off", "force"):
         print(f"invalid --notes mode: {notes_mode!r} (use auto|off|force)", file=sys.stderr)
         sys.exit(2)
+    if choice_mode not in ("legacy", "reg", "orig", "both"):
+        print(f"invalid --choice mode: {choice_mode!r} (use legacy|reg|orig|both)", file=sys.stderr)
+        sys.exit(2)
     path = positional[0]
     needle = positional[1] if len(positional) > 1 else None
 
-    file_id, title, bibl, paragraphs, recovered = extract(path, notes_mode)
+    file_id, title, bibl, paragraphs, recovered, prereform_pairs = extract(
+        path, notes_mode, choice_mode
+    )
+    if choice_mode == "legacy" and prereform_pairs:
+        print(
+            f"# warning: dropped {prereform_pairs} pre-reform <choice><orig>/<reg> "
+            f"pair(s) — re-run with --choice=reg to resolve them to modern orthography",
+            file=sys.stderr,
+        )
     print(f"# {title}")
     print(f"# id: {file_id}")
     print(f"# bibl: {bibl}")

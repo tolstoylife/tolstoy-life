@@ -1,0 +1,978 @@
+topic:
+  slug: 1905-1906-krug-chtenija-tales
+  title: "The народный рассказ in Круг чтения — Tolstoy's 1905–06 weekly-reading tales"
+  question: >-
+    Tolstoy's third movement of the народный рассказ form: the six original tales written in 1905–06
+    for the weekly-reading (недельное чтение) slot of the anthology Круг чтения — Алёша Горшок,
+    Корней Васильев, Ягоды, Молитва, За что?, Божеское и человеческое. What they say; how, when and
+    why they were written (amid the 1905 revolution and its executions); their genre swing back to
+    realist fiction after the 1903 parables; the anthology-as-channel and its censorship logic; and
+    the works-record proposals each needs (none exists yet).
+  date: "2026-06-12"
+  period: "1905–1906 (Божеское и человеческое conceived 1897, first drafted 1903)"
+  corpusSurface: >-
+    PSS Tom 36 (Алёша Горшок + comm.); Tom 41 (Корней Васильев, Ягоды, Молитва — the texts); Tom 42
+    (За что?, Божеское и человеческое — the texts + ALL six tales' «История писания» commentary +
+    the Круг чтения general history); the reversed-title draft «Человеческое и божеское» (Набросок,
+    Tom 54); Tom 55 (1904–06 diary); Toms 75–76 + 89 (1905–06 letters — Gorbunov-Posadov, Chertkov,
+    Biryukov, family).
+  dateRange: "1903-12 – 1911 (composition of the earliest draft → posthumous first printing of Алёша Горшок)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE — flat citation ledger. Every quoteRu is verbatim in its `extract`
+# (substring; verify_quotes.py exit 0). Working-English labelled.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+  # ─── The anthology & the недельное чтение slot (the channel) ───
+  - id: E01
+    genre: commentary
+    pssTom: 42
+    pages: "557–583"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_557_583_Krug_chtenija_general.txt
+    quoteRu: 'Толстой сначала называл эти выдержки «воскресными чтениями», но потом по совету помогавшего ему в работе Х. Н. Абрикосова решил называть их «недельными чтениями». Таких «недельных чтений» должно было быть всего, по числу недель в году, пятьдесят два.'
+    quoteEn: '(working English) Tolstoy first called these excerpts "Sunday readings", but then, on the advice of his helper Kh. N. Abrikosov, decided to call them "weekly readings". There were to be fifty-two such "weekly readings" in all, one for each week of the year.'
+    significance: "The structural slot the six tales occupy: one narrative reading every seven days, 52 in the year. The renaming «воскресные»→«недельные» (Abrikosov's suggestion) is the slot's identity. Excerpts were drawn from Tolstoy's own and others' fiction (even Turgenev, Herzen, Dostoevsky, Chekhov, Leskov — abridged)."
+    facsimile: null
+  - id: E02
+    genre: commentary
+    pssTom: 42
+    pages: "557–583"
+    date: "1957 (PSS apparatus, quoting Tolstoy)"
+    addressee: null
+    extract: extracts/c_v42_557_583_Krug_chtenija_general.txt
+    quoteRu: 'я имею в виду именно нецензурное и постараюсь сохранить то, что вычеркнет цензура'
+    quoteEn: '(working English) in composing the Circle of Reading I have in mind precisely the uncensorable, and shall try to preserve what the censor would strike out.'
+    significance: "MARQUEE — the encryption thesis in Tolstoy's own words for the anthology: he built Круг чтения intending to keep what the censor would cut. The weekly-reading tales are part of that design."
+    facsimile: null
+  - id: E03
+    genre: commentary
+    pssTom: 42
+    pages: "557–583"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_557_583_Krug_chtenija_general.txt
+    quoteRu: 'Однако в русском издании поместить их оказалось невозможным, так как ни одно из них не могло быть пропущено цензурой. Вследствие этого месячные чтения появились только в немецком переводе «Круга чтения», сделанном А. Шкарваном и изданном в Дрездене в 1907 г.'
+    quoteEn: '(working English) But it proved impossible to include them [the monthly readings] in the Russian edition, since not one of them could pass the censorship. As a result the monthly readings appeared only in the German translation of the Circle of Reading, made by A. Škarvan and published in Dresden in 1907.'
+    significance: "The censorship pressure on the anthology made concrete: the surplus «месячные чтения» could not pass the Russian censor at all and survived only in the 1907 German Dresden edition. The encryption was real and only partly successful."
+    facsimile: null
+  - id: E04
+    genre: letter
+    pssTom: 89
+    pages: "—"
+    date: "1905-04-17"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_738_Chertkovu_apr17_1905.txt
+    quoteRu: 'Всё это, вероятно, не пройдет в России, но может быть напечатано за границей.'
+    quoteEn: '(working English) All this will probably not get through in Russia, but it can be printed abroad.'
+    significance: "ANCHOR (channel). Said of the Круг чтения prefaces and недельные чтения materials — Tolstoy writes that he has «написал один [рассказ] и не кончил» for it, and that this anthology material will not pass in Russia but can be printed abroad. The abroad-channel (Chertkov) is built into the weekly-reading plan."
+    facsimile: null
+  - id: E05
+    genre: letter
+    pssTom: 76
+    pages: "—"
+    date: "1905-09-25"
+    addressee: "I. I. Gorbunov-Posadov"
+    extract: extracts/v76_053_Gorbunovu_sep25_1905.txt
+    quoteRu: 'Вообще недурно бы в Чтения выбирать из запрещенных моих, когда нужно заменить.'
+    quoteEn: '(working English) In general it would not be a bad idea to draw on my banned works for the Readings, when something needs replacing.'
+    significance: "ANCHOR (channel). The same letter reports «Ягоды — поправил». Tolstoy proposes filling the weekly-reading slots from his BANNED works — the anthology as a re-entry route for censored material into legal Russian print."
+    facsimile: null
+  - id: E06
+    genre: letter
+    pssTom: 76
+    pages: "—"
+    date: "1906-04-01"
+    addressee: "E. V. Gertsik"
+    extract: extracts/v76_179_Gerciku_apr1_1906.txt
+    quoteRu: 'Я давно уже отказался от права собственности на все мои сочинения, вышедшие после 1891 года'
+    quoteEn: '(working English) I long ago renounced the right of property in all my writings published after 1891.'
+    significance: "The 1891 copyright renunciation in force over this cluster: Tolstoy holds no property in these tales and points the publisher to Chertkov as keeper of the uncensored originals. Ties the cluster to the copyright-renunciation dive and the Posrednik economics."
+    facsimile: null
+  - id: E07
+    genre: commentary
+    pssTom: 42
+    pages: "557–583"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_557_583_Krug_chtenija_general.txt
+    quoteRu: 'И. И. Горбунов-Посадов был признан виновным и присужден к заключению в крепости на один год.'
+    quoteEn: '(working English) I. I. Gorbunov-Posadov was found guilty and sentenced to one year of imprisonment in a fortress.'
+    significance: "MARQUEE — the prosecution arc. After Tolstoy's death the anthology's editor was tried (8 Nov 1911, the day after the first anniversary of Tolstoy's death) for publishing Круг чтения and sentenced to a year in a fortress; the seizure was lifted only after destroying 12 specified passages. The encryption did not finally protect it."
+    facsimile: null
+
+  # ─── Алёша Горшок ───
+  - id: E08
+    genre: work
+    pssTom: 36
+    pages: "54–58"
+    date: "1905"
+    addressee: null
+    extract: extracts/v36_054_058_Alesha_Gorshok.txt
+    quoteRu: 'есть еще отношения совсем особенные: не то чтобы нужно было человеку вычистить сапоги, или снести покупку, или запречь лошадь, а то, что человек так, ни зачем нужен другому человеку, нужно ему послужить, его приласкать, и что он, Алеша, тот самый человек.'
+    quoteEn: '(working English) there are also quite special relations: not that a person needs his boots cleaned, or a purchase carried, or a horse harnessed, but that a man is simply needed by another man for no reason at all, that one should serve him, show him tenderness — and that he, Alyosha, is that very man.'
+    significance: "Алёша Горшок's single revelation — the «самое необыкновенное событие» of his life: that he himself, not his labour, is wanted by another (the cook Ustinya's pity-become-love). The whole tale carries its meaning through character and action, no statement — the What Is Art? «infection» ideal made flesh."
+    facsimile: extracts/v36_055_Alesha_autograph_plate-068.png
+  - id: E09
+    genre: work
+    pssTom: 36
+    pages: "54–58"
+    date: "1905"
+    addressee: null
+    extract: extracts/v36_054_058_Alesha_Gorshok.txt
+    quoteRu: 'А в сердце у него было то, что как здесь хорошо, коли слушаешь и не обижаешь, так и там хорошо будет.'
+    quoteEn: '(working English) And in his heart there was this: that just as it is good here, if you obey and do not wrong anyone, so it will be good there too.'
+    significance: "The death of Alyosha — pure acceptance, no fear, no complaint. He dies «Удивился чему-то, потянулся и помер» (he wondered at something, stretched out, and died). The radiant late-Tolstoyan ideal of the man without self-will."
+    facsimile: null
+  - id: E10
+    genre: commentary
+    pssTom: 36
+    pages: "582–583"
+    date: "1936 (PSS apparatus, V. S. Mishin)"
+    addressee: null
+    extract: extracts/c_v36_582_583_Alesha_Gorshok.txt
+    quoteRu: 'Алеша Горшок — живое лицо.'
+    quoteEn: '(working English) Alyosha Gorshok is a real person.'
+    significance: "The tale's real-life basis: a half-witted helper-cook and yard-man («помощник повара и дворник») at Yasnaya Polyana in the 1860s, remembered in T. A. Kuzminskaya's memoir and S. A. Tolstaya's 1863 diary. A realist character study from life, not an invented parable."
+    facsimile: null
+  - id: E11
+    genre: commentary
+    pssTom: 36
+    pages: "582–583"
+    date: "1936 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v36_582_583_Alesha_Gorshok.txt
+    quoteRu: 'Впервые рассказ напечатан в I томе «Посмертных художественных произведений Л. Н. Толстого» под редакцией В. Г. Черткова, Москва 1911.'
+    quoteEn: '(working English) The story was first printed in vol. I of "Posthumous Artistic Works of L. N. Tolstoy", edited by V. G. Chertkov, Moscow 1911.'
+    significance: "Алёша Горшок was EXCLUDED by Tolstoy from Круг чтения (written for it late Feb 1905, then dropped) and first published posthumously in 1911. The one tale of the six Tolstoy never saw in print. publishedDuringLifetime = false."
+    facsimile: null
+
+  # ─── Корней Васильев ───
+  - id: E12
+    genre: work
+    pssTom: 41
+    pages: "205–220"
+    date: "1905"
+    addressee: null
+    extract: extracts/v41_205_220_Kornej_Vasilev.txt
+    quoteRu: 'умиленная слабость вдруг овладела им.'
+    quoteEn: '(working English) a tender weakness suddenly came over him.'
+    significance: "Корней Васильев's spiritual hinge — returning a broken beggar to the house of the wife he beat and the daughter he maimed seventeen years before, the lifelong hatred he carried simply dissolves. Repentance dramatized, not preached."
+    facsimile: null
+  - id: E13
+    genre: work
+    pssTom: 41
+    pages: "205–220"
+    date: "1905"
+    addressee: null
+    extract: extracts/v41_205_220_Kornej_Vasilev.txt
+    quoteRu: 'прощает ли он, или еще гневается.'
+    quoteEn: '(working English) whether he forgives, or is still angry.'
+    significance: "The realist refusal of a tidy moral close: Marfa walks to make peace and arrives one hour too late; the dead face gives no verdict. The dying Korney's «Гаша, … время мое доспело. Я помирать хочу. Так вот ты прости меня Христа ради» (asking forgiveness of the child he maimed) is the repentance; the unanswering corpse is the irony."
+    facsimile: null
+  - id: E14
+    genre: commentary
+    pssTom: 42
+    pages: "599–605"
+    date: "1957 (PSS apparatus, A. I. Nikiforov)"
+    addressee: null
+    extract: extracts/c_v42_599_605_Kornej_Vasilev.txt
+    quoteRu: 'Рассказ, как это видно по черновым рукописям, переделывался автором тринадцать раз.'
+    quoteEn: '(working English) The story, as the draft manuscripts show, was reworked by the author thirteen times.'
+    significance: "Корней's labour and source: a plot Tolstoy carried for years from the skazitel' V. P. Shchegolenok (who stayed at Yasnaya Polyana in 1879 — the same oral source that fed the 1880s tales of the parent dive); first on the Feb-1905 list of «рассказов к воскресеньям» as «ушедший странствовать от жены»; reworked 13 times. First title «Чем был и чем стал»."
+    facsimile: null
+
+  # ─── Молитва ───
+  - id: E15
+    genre: work
+    pssTom: 41
+    pages: "128–133"
+    date: "1905"
+    addressee: null
+    extract: extracts/v41_128_133_Molitva.txt
+    quoteRu: 'Ты ведь не знаешь, чем он был бы, если бы остался жив. А я знаю.'
+    quoteEn: '(working English) You do not know what he would have been, had he lived. But I know.'
+    significance: "Молитва's doctrinal core — a grieving mother, her three-year-old dead of «водянка в голове», dreams that the angel-being shows her the debauched old man her boy would have become. Theodicy in narrative: death as mercy, the future unknowable, prayer answered by «по-своему, а не по ее». The nanny closes it: «А жив бы был, кто знает, что бы было»."
+    facsimile: null
+  - id: E16
+    genre: work
+    pssTom: 41
+    pages: "128–133"
+    date: "1905"
+    addressee: null
+    extract: extracts/v41_128_133_Molitva.txt
+    quoteRu: 'Вот сейчас по всей России молятся, да какие люди! Самые первые архиереи, монахи в соборах, в церквах над мощами, все молятся, чтобы бог дал победы над японцами.'
+    quoteEn: '(working English) Right now all over Russia people are praying — and what people! The very highest bishops, monks in the cathedrals, in the churches over the relics, all praying that God grant victory over the Japanese.'
+    significance: "KEYSTONE VARIANT — this passage (the Russo-Japanese war prayer, with «Японцы тоже молятся, чтобы им победить» just after) is the exact span the censor cut from the 2nd edition of Круг чтения (E17). The 1905 war dates the tale and supplies its sharpest anticlerical-pacifist edge — the one the censor removed."
+    facsimile: null
+  - id: E17
+    genre: commentary
+    pssTom: 42
+    pages: "594–597"
+    date: "1957 (PSS apparatus, V. S. Spiridonov)"
+    addressee: null
+    extract: extracts/c_v42_594_597_Molitva.txt
+    quoteRu: 'Во втором издании «Круга чтения» подверглось цензурному изъятию одно место в «Молитве» — от слов: «Вот сейчас» кончая словами: «Японцы тоже молятся, чтобы им победить»'
+    quoteEn: '(working English) In the second edition of the Circle of Reading one passage in "A Prayer" was subjected to censorship excision — from the words "Right now" to the words "the Japanese too pray that they may win".'
+    significance: "The censor's cut, located exactly (E16 is the cut span). The tale's source is a Shchegolenok legend of the angel who kills an infant who would have grown corrupt; the apparatus notes a likely autobiographical echo — Tolstoy's own infant son Nikolushka died 20 Feb 1875 of the same illness («водянка»). Молитва replaced the legend «Три старца» in the slot."
+    facsimile: null
+
+  # ─── Ягоды ───
+  - id: E18
+    genre: work
+    pssTom: 41
+    pages: "450–460"
+    date: "1905"
+    addressee: null
+    extract: extracts/v41_450_460_Jagody.txt
+    quoteRu: 'но собеседники всё курили и разговаривали, разговаривали и курили.'
+    quoteEn: '(working English) but the companions kept on smoking and talking, talking and smoking.'
+    significance: "Ягоды's satirical nerve — the dacha gentry (a Slavophile landowner and his Petersburg liberal friend) debate Russia's constitutional future all night to no effect, while the peasant children gather berries at dawn in a luminous scene of real life and real work. The 1905 constitutional moment rendered as gentry self-importance. The tale ends with everyone in the gentry house «доволен», incl. «Валя был доволен тем, что съел целую тарелку земляники» — the spoiled child eating the children's berries."
+    facsimile: null
+  - id: E19
+    genre: diary
+    pssTom: 55
+    pages: "146"
+    date: "1905-06-12 (OS)"
+    addressee: null
+    extract: extracts/v55_146_147_1905_06_12.txt
+    quoteRu: 'Написал в два дня рассказ: Ягоды. Не дурно.'
+    quoteEn: '(working English) Wrote a story in two days: Berries. Not bad.'
+    significance: "The composition record for Ягоды (written 10–11 June 1905). The same period diaries carry the tale's exact moral nerve — «болею своим довольством» (I am sick with my own comfort [amid surrounding need]) — the gentry/peasant contrast lived before it is written."
+    facsimile: null
+
+  # ─── За что? ───
+  - id: E20
+    genre: work
+    pssTom: 42
+    pages: "84–106"
+    date: "1906"
+    addressee: null
+    extract: extracts/v42_084_106_Za_chto.txt
+    quoteRu: 'Опять бессмысленно повинующиеся десятки тысяч русских людей были пригнаны в Польшу'
+    quoteEn: '(working English) Again, tens of thousands of senselessly obedient Russian people were driven into Poland…'
+    significance: "За что?'s explicit indictment of the regime — the state as senseless, blood-soaked coercion (under Diebitsch, Paskevich, «и высшего распорядителя Николая I») serving «корыстолюбия и ребяческого тщеславия». The political core of the cluster, carried by a historical-fiction frame a treatise could not."
+    facsimile: null
+  - id: E21
+    genre: work
+    pssTom: 42
+    pages: "84–106"
+    date: "1906"
+    addressee: null
+    extract: extracts/v42_084_106_Za_chto.txt
+    quoteRu: 'За что? за что? — думала она'
+    quoteEn: '(working English) For what? for what? — she thought…'
+    significance: "The title-question located, at the grave of the Migurskis' two dead children: the innocent want only «чтоб ему жить так, как он родился и жили его деды и прадеды» — and power takes it from them. «За что?» recurs as the cluster's cry against the state (it echoes again at the foiled escape). State torture appears in documentary close-up — the gauntlet of «высочайше утвержденной толщины» (a thickness approved at the highest level)."
+    facsimile: null
+  - id: E22
+    genre: work
+    pssTom: 42
+    pages: "84–106"
+    date: "1906"
+    addressee: null
+    extract: extracts/v42_084_106_Za_chto.txt
+    quoteRu: 'задавил гидру революции не только в Польше'
+    quoteEn: '(working English) [Nicholas Pavlovich rejoiced that he had] crushed the hydra of revolution not only in Poland [but in all Europe]…'
+    significance: "The closing portrait: Nicholas I named and skewered — the author of the human catastrophe who believes himself a great benefactor, «на развращение и одурение которых были бессознательно направлены все его силы». The most directly censorship-sensitive sentence in the cluster — a named Tsar condemned in fiction."
+    facsimile: null
+  - id: E23
+    genre: commentary
+    pssTom: 42
+    pages: "626–643"
+    date: "1957 (PSS apparatus, B. M. Eikhenbaum)"
+    addressee: null
+    extract: extracts/c_v42_626_643_Za_chto.txt
+    quoteRu: 'Альбина и Мигурский являются действительными личностями; сохранены не только их имена, но и события их жизни.'
+    quoteEn: '(working English) Albina and Migurski are real persons; not only their names but the events of their lives are preserved.'
+    significance: "Source confirmed: «Источником рассказа «За что?» послужил труд писателя-этнографа С. В. Максимова «Сибирь и каторга»» — Tolstoy read Maximov 18 Jan 1906 («Чудные сюжеты»). The Polish exiles Wincenty Migurski and Albina are real; Tolstoy researched the 1830 uprising via Baudouin de Courtenay, Shakhmatov, Stasov (17 vols). Historical realism, documented."
+    facsimile: null
+  - id: E24
+    genre: commentary
+    pssTom: 42
+    pages: "626–643"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_626_643_Za_chto.txt
+    quoteRu: 'Текст рассказа был переделан Толстым пятнадцать раз'
+    quoteEn: '(working English) The text of the story was reworked by Tolstoy fifteen times.'
+    significance: "The labour and its direction: the centre of Tolstoy's reworking was «углубление психологического анализа… в связи с обличением деспотизма николаевской эпохи» (deepening the psychological analysis in connection with the exposure of the despotism of the Nicholas era). In proof he sharpened the Polish-patriot register («русские»→«москали»). First title «Непоправимо»."
+    facsimile: null
+  - id: E25
+    genre: letter
+    pssTom: 76
+    pages: "—"
+    date: "1906-02-13"
+    addressee: "A. L. Tolstaya (daughter)"
+    extract: extracts/v76_139_A_L_Tolstoj_feb13_1906.txt
+    quoteRu: 'Я написал маленький рассказ «За что», кажется, без тебя. Нехорошо.'
+    quoteEn: '(working English) I wrote a little story, "What For", it seems while you were away. Not good.'
+    significance: "The one naming of За что? in the surviving correspondence, fixing the writing to early 1906 and carrying the period's self-deprecation («Нехорошо»). The tale was written amid the 1905–06 revolution and executions (see E35–E36)."
+    facsimile: null
+
+  # ─── Божеское и человеческое ───
+  - id: E26
+    genre: work
+    pssTom: 42
+    pages: "194–227"
+    date: "1903–1905"
+    addressee: null
+    extract: extracts/v42_194_227_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'именно, отдать душу свою; не сберечь, а отдать. В этом радость, в этом жизнь.'
+    quoteEn: '(working English) precisely, to give up one''s soul; not to save it, but to give it. In this is joy, in this is life.'
+    significance: "The spiritual centre — the condemned revolutionary Svetlogub, reading the Gospel in his cell, finds the Sermon-on-the-Mount logic of giving (not saving) the soul. His transformation is the «божеское» (divine) pole of the title; he goes to the gallows in «умиленно торжественное» peace."
+    facsimile: null
+  - id: E27
+    genre: work
+    pssTom: 42
+    pages: "194–227"
+    date: "1903–1905"
+    addressee: null
+    extract: extracts/v42_194_227_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'прости им, они не знают, что творят.'
+    quoteEn: '(working English) forgive them, they know not what they do.'
+    significance: "Svetlogub's letter to his mother extends Gospel forgiveness to both his comrades and his executioners — non-resistance and enemy-love made personal, at the foot of the scaffold. The tale indicts capital punishment in procedural detail (the general signing the warrant; the hangman destroyed by the act — «и не жалко тебе меня?») — the matter of «Не могу молчать» (1908) in narrative form."
+    facsimile: null
+  - id: E28
+    genre: work
+    pssTom: 42
+    pages: "194–227"
+    date: "1903–1905"
+    addressee: null
+    extract: extracts/v42_194_227_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'Тело Меженецкого снесли в мертвецкую и положили на нары рядом с телом старика раскольника.'
+    quoteEn: '(working English) Mezhenetsky''s body was carried to the mortuary and laid on the boards beside the body of the old Old-Believer.'
+    significance: "The closing image and the title's argument in one sentence: the revolutionary Mezhenetsky, who answered the world with force and злоба, hangs himself; the Old-Believer, who sought the faith of the radiant youth, dies in vision. The «человеческое» (force, the state, revolution) and the «божеское» (faith, love) laid side by side. The tale condemns the executing state AND the revolutionary terror — neither is the divine."
+    facsimile: null
+  - id: E29
+    genre: commentary
+    pssTom: 42
+    pages: "645–665"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_645_665_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'В Одессе 8 августа 1879 г. были повешены по обвинению в подготовке покушения на Александра II трое революционеров — Лизогуб, Чубаров и Давиденко.'
+    quoteEn: '(working English) In Odessa on 8 August 1879 three revolutionaries — Lizogub, Chubarov and Davidenko — were hanged on a charge of preparing an attempt on Alexander II.'
+    significance: "Source of Svetlogub: the real Dmitri Lizogub, hanged Odessa 1879, known to Tolstoy through Stepnyak-Kravchinsky's «Подпольная Россия» and a typescript biography among his papers. Conceived late 1897 («казнь в Одессе»); first tried as the cut «Синегуб» episode of Resurrection; «прежде чем написать слово «Синегуба», Толстой… механически написал «Лизо», затем зачеркнул»."
+    facsimile: null
+  - id: E30
+    genre: commentary
+    pssTom: 42
+    pages: "645–665"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_645_665_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'озаглавленный им «Человеческое и божеское»'
+    quoteEn: '(working English) [a story] entitled by him "The Human and the Divine".'
+    significance: "TEXTUAL HISTORY — the title was reversed. The first written form (30 Dec 1903, on the blank end-pages of the diary, Tom 54) put the human first: «Человеческое и божеское». In reworking it cycled to «Божеское и человеческое», then «Еще три смерти», then back. 49 manuscript/proof units. The final order — divine first — is the verdict the tale reaches."
+    facsimile: null
+  - id: E31
+    genre: letter
+    pssTom: 89
+    pages: "25"
+    date: "1905-10-18"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_747_Chertkovu_oct18_1905.txt
+    quoteRu: 'начав перечитывать «Божеское и человеческое», ужаснулся на то, как главная часть, предсмертные часы Светлогуба отвратительно дурны.'
+    quoteEn: '(working English) on re-reading "The Divine and the Human" I was horrified at how the main part — Svetlogub''s last hours before death — is disgustingly bad.'
+    significance: "The redaction crisis: Tolstoy halts Chertkov's printing to radically rework the Svetlogub death-scene, because «жалко потерять случай высказать так много нужного» (it would be a pity to lose the chance to say so much that is needed). The most-laboured passage of the tale; the abroad-channel (Chertkov) routing visible in the proof correspondence."
+    facsimile: null
+  - id: E32
+    genre: commentary
+    pssTom: 42
+    pages: "645–665"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_645_665_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'С английского в переводе А. Грена рассказ под заглавием «Божеское и человеческое, или Еще три смерти» был напечатан в №№ 8 —14 газеты «Новая жизнь» от 16—22 июня 1906 г.'
+    quoteEn: '(working English) From the English, in A. Gren''s translation, the story — under the title "The Divine and the Human, or Three More Deaths" — was printed in nos. 8–14 of the newspaper "Novaya zhizn", 16–22 June 1906.'
+    significance: "Because vol. II of Круг чтения was delayed, Божеское и человеческое appeared first abroad/in émigré-channel translations (A. Gren, «Новая жизнь», June 1906; M. I. S—f, «Новое время», July 1906 — both from English, under Chertkov's supervision) BEFORE its Russian anthology printing. The abroad-first pattern of the late censored work."
+    facsimile: null
+  - id: E33
+    genre: commentary
+    pssTom: 42
+    pages: "645–665"
+    date: "1957 (PSS apparatus)"
+    addressee: null
+    extract: extracts/c_v42_645_665_Bozheskoe_i_chelovecheskoe.txt
+    quoteRu: 'Рассказ впервые был напечатан в качестве недельного чтения на 3 ноября во второй части второго тома «Круга чтения», вышедшего в свет в издательстве «Посредник» в конце ноября 1906 г., но помеченного на корешке 1907 г.'
+    quoteEn: '(working English) The story was first printed, as the weekly reading for 3 November, in part 2 of the second volume of the Circle of Reading, issued by Posrednik at the end of November 1906 but dated 1907 on the spine.'
+    significance: "First Russian printing: vol. II part 2 of Круг чтения (the 3 November слот), late 1906. Tolstoy later regretted placing it there rather than letting Chertkov publish it separately (E34). In collected works first in the Sytin/Biryukov ed., vol. XVI, 1913."
+    facsimile: null
+  - id: E34
+    genre: letter
+    pssTom: 89
+    pages: "—"
+    date: "1906-11-26"
+    addressee: "V. G. Chertkov"
+    extract: extracts/v89_770_Chertkovu_nov26_1906.txt
+    quoteRu: 'Очень жалею, что забыл про Божеское и Человеческое и поместил в Круг Чтения'
+    quoteEn: '(working English) I much regret that I forgot about "The Divine and the Human" and placed it in the Circle of Reading.'
+    significance: "Tolstoy's regret at putting the tale in the anthology rather than in Chertkov's abroad edition (a matter of money for the foreign edition and of the work's reach). Confirms the dual-channel logic — abroad (Chertkov) vs the legal anthology (Posrednik) — that governs the cluster."
+    facsimile: null
+
+  # ─── Composition amid the 1905 revolution & the executions ───
+  - id: E35
+    genre: diary
+    pssTom: 55
+    pages: "169"
+    date: "1905-11-03 (OS)"
+    addressee: null
+    extract: extracts/v55_169_170_1905_11_03.txt
+    quoteRu: 'Во всей теперешней революции нет идеала. И потому не революция, а бунт.'
+    quoteEn: '(working English) In the whole present revolution there is no ideal. And therefore it is not a revolution but a riot.'
+    significance: "Written the same week as «Писал Божеское и Человеческое недурно» — the political weather inside which Божеское и человеческое was composed. Tolstoy's «neither» stance (against both the state's violence and the revolution's) is the tale's structure: Svetlogub's faith above both."
+    facsimile: null
+  - id: E36
+    genre: diary
+    pssTom: 55
+    pages: "256"
+    date: "1906-10-10 (OS)"
+    addressee: null
+    extract: extracts/v55_256_258_1906_10_10.txt
+    quoteRu: 'чтение газет с 22 казненными, и я начал писать об этом.'
+    quoteEn: '(working English) reading the newspapers with 22 executed, and I began to write about it.'
+    significance: "The Stolypin-era executions of autumn 1906 — the same political violence that drives За что? and Божеское и человеческое. The diary ends «Хочется ответить на вопрос: что делать?» — the question the tales put to the reader; this draft would grow into «Не могу молчать» (1908)."
+    facsimile: null
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a PLAN for the separate wiki-ingestion step).
+# ingestionPriority: 1 central · 2 supporting · 3 peripheral. dependsOn = write first.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "Народные рассказы (Tolstoy's folk tales)"
+    wikiType: concept
+    wikilinkTarget: "Narodnye rasskazy"
+    vaultStatus: missing
+    role: "The genre the dive is about, in its 1905–06 phase — the народный рассказ revived a third time, now as realist short fiction for the Круг чтения weekly-reading slot. Proposed by the parent dives (stories-for-the-people, 1903-folk-tales); extend with this third movement and the realist-return finding."
+    sources: []
+    evidenceRefs: [E01, E08, E20]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Недельное чтение (the Круг чтения weekly-reading slot)"
+    wikiType: concept
+    wikilinkTarget: "Nedelnoe chtenie"
+    vaultStatus: missing
+    role: "The structural feature of Круг чтения these six tales occupy: one narrative reading every seven days, 52 a year, renamed from «воскресные чтения» on Abrikosov's advice. The genre function — a narrative exhibit of a day's theme — and the censorship calculus (banned works re-entered here; the surplus «месячные чтения» passed only in German). The anthology Круг чтения itself merits its own works/ record (genre: anthology) — see needsReview."
+    sources: []
+    evidenceRefs: [E01, E03, E05]
+    ingestionPriority: 1
+    dependsOn: ["Народные рассказы (Tolstoy's folk tales)"]
+  - name: "Ivan Gorbunov-Posadov (I. I. Gorbunov-Posadov)"
+    wikiType: person
+    wikilinkTarget: "Ivan Gorbunov-Posadov"
+    vaultStatus: missing
+    role: "Editor and head of Посредник; editor of Круг чтения, who placed the tales in the weekly-reading slots and coordinated their printing. Tried (8 Nov 1911) and sentenced to a year in a fortress for publishing the anthology after Tolstoy's death. The dive's principal new person."
+    sources: []
+    evidenceRefs: [E05, E07, E34]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Посредник (Posrednik publishing house)"
+    wikiType: institution
+    wikilinkTarget: "Posrednik"
+    vaultStatus: missing
+    role: "The cheap-editions publisher (co-founded by Tolstoy/Chertkov, 1884) that issued Круг чтения and so all six tales' first Russian printings. Proposed by the parent dives; extend with the anthology."
+    sources: []
+    evidenceRefs: [E07, E33]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Tolstoy's closest disciple and the abroad-channel publisher («Свободное слово»); supervised the foreign first printings of Божеское и человеческое (1906) and shaped its proof; keeper of the uncensored originals; edited the posthumous 1911 «Посмертные художественные произведения» that first printed Алёша Горшок. Extend the existing page."
+    sources: []
+    evidenceRefs: [E04, E06, E11, E31, E32, E34]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vasily Shchegolenok (V. P. Shchegolenok)"
+    wikiType: person
+    wikilinkTarget: "Vasily Shchegolyonok"
+    vaultStatus: missing
+    role: "The Olonets skazitel' (folk reciter) who stayed at Yasnaya Polyana in 1879; oral source of Корней Васильев («ушедший странствовать от жены») and of the angel-legend behind Молитва. Proposed by the parent dives (which sourced his photo + Repin portrait); extend. NB transliteration in the vault may be «Vasily Shchegolyonok» — loose-match before marking missing."
+    sources: []
+    evidenceRefs: [E14, E17]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Sergei Maximov (S. V. Maximov)"
+    wikiType: person
+    wikilinkTarget: "Sergei Maximov"
+    vaultStatus: missing
+    role: "Ethnographer (1831–1901); his «Сибирь и каторга» (1871) is the documentary source of За что? (the Migurski Polish-exile case and the gauntlet scenes). New person."
+    sources: []
+    evidenceRefs: [E23]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Dmitri Lizogub"
+    wikiType: person
+    wikilinkTarget: "Dmitri Lizogub"
+    vaultStatus: missing
+    role: "Revolutionary (народоволец) hanged in Odessa 8 Aug 1879; the real prototype of Anatoly Svetlogub in Божеское и человеческое (via Stepnyak-Kravchinsky's «Подпольная Россия» and a typescript biography). New person."
+    sources: []
+    evidenceRefs: [E29]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Capital punishment (smertnaya kazn)"
+    wikiType: concept
+    wikilinkTarget: "Capital punishment"
+    vaultStatus: missing
+    role: "The doctrine these tales prosecute: За что? (the gauntlet, state torture) and Божеское и человеческое (the gallows, the destroyed executioner) condemn the death penalty in narrative — the same matter as «Не могу молчать» (1908), written amid the 1905–06 executions. Links the cluster to the late anti-death-penalty writing."
+    sources: []
+    evidenceRefs: [E22, E27, E36]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Nicholas I"
+    wikiType: person
+    wikilinkTarget: "Nicholas I"
+    vaultStatus: missing
+    role: "Emperor (r. 1825–1855); named and condemned by name in За что?'s closing portrait as the vain, self-deceived author of the Migurskis' destruction. A historical person appearing as a named figure in the fiction (cf. the Father Sergius dive's Nicholas-I-as-person precedent)."
+    sources: []
+    evidenceRefs: [E22]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Alyosha the Pot (Alyosha Gorshok)"
+    wikiType: character
+    wikilinkTarget: "Alyosha the Pot"
+    vaultStatus: missing
+    role: "The title character of Алёша Горшок — the uncomplaining («безответный») peasant lad whose one revelation is being loved for himself, who dies without protest. prototypes[]: the real half-witted helper-cook/yard-man at Yasnaya Polyana in the 1860s (E10)."
+    sources: []
+    evidenceRefs: [E08, E09, E10]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Anatoly Svetlogub"
+    wikiType: character
+    wikilinkTarget: "Anatoly Svetlogub"
+    vaultStatus: missing
+    role: "The executed revolutionary of Божеское и человеческое, transformed by the Gospel into the «божеское» pole of the title. prototypes[]: Dmitri Lizogub (E29); the name evolved Синегуб → Светлогуб."
+    sources: []
+    evidenceRefs: [E26, E27, E29]
+    ingestionPriority: 3
+    dependsOn: ["Dmitri Lizogub"]
+  - name: "Wincenty & Albina Migurski"
+    wikiType: person
+    wikilinkTarget: "Wincenty Migurski"
+    vaultStatus: missing
+    role: "Real Polish exiles (post-1830 November Uprising) whose documented lives Tolstoy preserved, names and events, as the protagonists of За что? (via Maximov). Historical persons used as the tale's central figures."
+    sources: []
+    evidenceRefs: [E21, E23]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "November Uprising of 1830 (Polish uprising)"
+    wikiType: event
+    wikilinkTarget: "November Uprising"
+    vaultStatus: missing
+    role: "The 1830–31 Polish revolt against Russian rule whose suppression begins the action of За что? (Migurski's exile). Named historical setting; Tolstoy researched it for the tale."
+    sources: []
+    evidenceRefs: [E20, E23]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Khristofor Abrikosov (Kh. N. Abrikosov)"
+    wikiType: person
+    wikilinkTarget: "Khristofor Abrikosov"
+    vaultStatus: missing
+    role: "Tolstoy's helper on Круг чтения; suggested the name «недельные чтения» for the weekly-reading slot and distributed material across the days. Peripheral but named in the slot's history."
+    sources: []
+    evidenceRefs: [E01]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Sergei Stepnyak-Kravchinsky"
+    wikiType: person
+    wikilinkTarget: "Sergei Stepnyak-Kravchinsky"
+    vaultStatus: missing
+    role: "Revolutionary émigré writer; his «Подпольная Россия» carried the Lizogub biography Tolstoy drew on for Svetlogub. Peripheral source-figure."
+    sources: []
+    evidenceRefs: [E29]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — see extracts/_visuals-sweep.md for full provenance. visuals/ is git-ignored
+# (python3 docs/fetch_visuals.py 1905-1906-krug-chtenija-tales repopulates a fresh clone).
+# Medium-intensity sweep: 8 PD downloads + 5 work-orders + 2 sibling-dive cross-refs.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: alesha-autograph-plate
+    type: facsimile
+    subject: "First page of the autograph manuscript of «Алёша Горшок» («Размер подлинника» — actual size)"
+    relatedEntity: "Alyosha the Pot (Alyosha Gorshok)"
+    relatedEvidence: [E08]
+    holding: "PSS Tom 36 = jubilee-edition/vol05/vol05.pdf, pdf p.68 (inserted plate after printed p.54)"
+    archiveId: "PSS т. 36, вклейка к с. 54"
+    access: local
+    rights: "PD (Tolstoy's own manuscript)"
+    licence: PD
+    usable: yes
+    url: null
+    localPath: extracts/v36_055_Alesha_autograph_plate-068.png
+    note: "Rendered with pdftoppm @ 220 dpi. Committed in extracts/ (PD facsimile). The keystone image — Tolstoy's hand, the headline tale."
+  - id: tolstoy-1906-portrait
+    type: photograph
+    subject: "Leo Tolstoy at Yasnaya Polyana, 1906 (the composition years)"
+    relatedEntity: "Народные рассказы (Tolstoy's folk tales)"
+    relatedEvidence: [E19]
+    holding: "Wikimedia Commons (File:Leo_Tolstoi_1906.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1906.jpg"
+    localPath: visuals/commons-tolstoy-1906-portrait.jpg
+    note: "Canonical 1906 portrait. A second image — Tolstoy with daughter M. Obolenskaya, Yasnaya Polyana 26–31 July 1906, photo by Chertkov himself — is also cached (commons-tolstoy-yasnaya-polyana-1906-chertkov-photo.jpg), dating to the weeks Круг чтения proofs circulated."
+  - id: gorbunov-posadov-portrait
+    type: photograph
+    subject: "I. I. Gorbunov-Posadov, portrait (К. А. Фишер, 1898)"
+    relatedEntity: "Ivan Gorbunov-Posadov (I. I. Gorbunov-Posadov)"
+    relatedEvidence: [E07]
+    holding: "Wikimedia Commons (File:Ivan_Ivanovich_Gorbunov-Posadov.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ivan_Ivanovich_Gorbunov-Posadov.jpg"
+    localPath: visuals/commons-gorbunov-posadov-portrait-1898.jpg
+    note: "The editor convicted for the anthology. A Tolstovtsy group photo (1880s, with Gorbunov-Posadov + Biryukov) is also cached (commons-tolstovtsy-group-1880s.jpg)."
+  - id: lizogub-portrait
+    type: photograph
+    subject: "Dmitri Lizogub, portrait 1877 (executed Odessa 1879) — prototype of Svetlogub"
+    relatedEntity: "Dmitri Lizogub"
+    relatedEvidence: [E29]
+    holding: "Wikimedia Commons (File:Lizogub_D_A.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Lizogub_D_A.jpg"
+    localPath: visuals/commons-lizogub-dmitry-portrait-1877.jpg
+    note: "Only known portrait, taken two years before his hanging — the real face behind Svetlogub."
+  - id: maximov-repin-portrait
+    type: portrait
+    subject: "S. V. Maximov, portrait by I. E. Repin, 1890 (source-author of «За что?»)"
+    relatedEntity: "Sergei Maximov (S. V. Maximov)"
+    relatedEvidence: [E23]
+    holding: "Wikimedia Commons (File:1890Репин10.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:1890%D0%A0%D0%B5%D0%BF%D0%B8%D0%BD10.jpg"
+    localPath: visuals/commons-maximov-sv-repin-portrait-1890.jpg
+    note: "Repin oil portrait; a photographic portrait is also cached (commons-maximov-sv-portrait.jpg)."
+  - id: november-uprising-1830-appeal
+    type: document
+    subject: "Appeal to Volhynians, Ukrainians and Podolians — November Uprising proclamation, Feb 1831"
+    relatedEntity: "November Uprising of 1830 (Polish uprising)"
+    relatedEvidence: [E20]
+    holding: "Wikimedia Commons (File:Appeal_to_Volhynians,_Ukrainians_and_Podolians_-_November_Uprising_Congress_Poland_1830.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Appeal_to_Volhynians,_Ukrainians_and_Podolians_-_November_Uprising_Congress_Poland_1830.jpg"
+    localPath: visuals/commons-november-uprising-1830-appeal-to-volhynians.jpg
+    note: "Contemporary 1831 document from the uprising whose suppression begins За что?. A period document, not a later illustration."
+  - id: shchegolenok-cross-ref
+    type: portrait
+    subject: "V. P. Shchegolenok (photo 1908 + Repin portrait)"
+    relatedEntity: "Vasily Shchegolenok (V. P. Shchegolenok)"
+    relatedEvidence: [E14, E17]
+    holding: "Already sourced in the parent dive (docs/research/stories-for-the-people/visuals/)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Schegolenok_VP.jpg"
+    localPath: null
+    note: "CROSS-REFERENCE — do not re-fetch; reuse the parent dive's commons-shchegolonok-photo-1908.jpg + commons-shchegolonok-by-repin-portrait.jpg for the Корней Васильев + Молитва oral source."
+  - id: krug-chtenija-1906-titlepage
+    type: document
+    subject: "Title page / cover of Круг чтения, 1-е изд., изд. «Посредник», Moscow 1906"
+    relatedEntity: "Недельное чтение (the Круг чтения weekly-reading slot)"
+    relatedEvidence: [E01, E33]
+    holding: "Not openly digitised"
+    archiveId: null
+    access: request
+    rights: "PD (1906)"
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — request from РГБ (search.rsl.ru) / НЭБ (rusneb.ru, «Круг чтения» Толстой 1906) / Государственный музей Л. Н. Толстого. No open scan found 2026-06-12."
+  - id: gauntlet-illustration
+    type: illustration
+    subject: "Running the gauntlet (сквозь строй / Spießruten) — period illustration"
+    relatedEntity: "Capital punishment (smertnaya kazn)"
+    relatedEvidence: [E21]
+    holding: "Not openly digitised (no usable Commons hit)"
+    archiveId: null
+    access: request
+    rights: "PD (period)"
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — the punishment central to За что? (and to Sirocinski's execution). Request from BnF Gallica («supplice des baguettes»/«bastonnade militaire»), the State Historical Museum (shm.ru) print collection, or Europeana."
+  - id: migurski-portrait
+    type: portrait
+    subject: "Wincenty / Albina Migurski — the real couple behind «За что?»"
+    relatedEntity: "Wincenty & Albina Migurski"
+    relatedEvidence: [E23]
+    holding: "Not found on Commons / Wikipedia"
+    archiveId: null
+    access: request
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — request from Biblioteka Narodowa (bn.org.pl), Muzeum Historii Polski, or the Polish State Archives (archiwa.gov.pl)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Mainstream = contrast, not baseline.
+# Full sweep + sources + per-tale translation status: extracts/_scholarship.md.
+# (scholarship block folded in after the Phase-3 web pass — see _scholarship.md)
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    The 1905–06 weekly-reading tales fall almost entirely outside the English-language Tolstoy canon and
+    are treated, when noticed, as a minor appendage to the anthology's aphoristic apparatus. The received
+    English frame de-politicises them (Sekirin's spiritualising 2000 Zondervan edition; the 1997 Calendar
+    of Wisdom that drops all 52 weekly stories) and homogenises the late tales as uniform "didactic/parabolic"
+    prose. Gordon Spence's 2000 Northwestern edition is the one English framing to foreground "the political
+    import and allegory… written around the Russian revolution of 1905". D. S. Mirsky (1926) calls Алёша
+    Горшок "one of his most perfect creations" — the high-water mark of English praise for any of the six.
+    The Gorbunov-Posadov trial has effectively no independent English footprint. Mainstream read as contrast.
+  triangulation:
+    - evidenceRef: E08
+      conventionalView: "The late weekly-reading stories are generically uniform 'didactic/parabolic' prose, continuous with the 1880s folk tales (Kirkus 2000: 'heavily moralistic… many structured as parables'; Semmens 1968 names only Alyosha as a realist reversion)."
+      relation: extends
+      source: "Semmens 1968 (ourcivilisation.com digest); Kirkus Reviews 2000; PSS т.42 commentary."
+    - evidenceRef: E02
+      conventionalView: "The English reception de-politicises the anthology ('lovely artifacts', spiritual insight — Publishers Weekly 2000; Sekirin/Zondervan). Only Spence (2000) foregrounds the 1905-revolution politics, and only for his three tales."
+      relation: extends
+      source: "Spence 2000 (Northwestern, intro); Publishers Weekly 2000; PSS т.42 general apparatus (Spiridonov)."
+    - evidenceRef: E07
+      conventionalView: "The Gorbunov-Posadov prosecution is effectively undocumented in English: the English Wikipedia article omits it; Troyat/Wilson/Bartlett do not use it as a named episode."
+      relation: extends
+      source: "PSS т.42 general apparatus (Spiridonov) — primary; no English secondary located."
+    - evidenceRef: E08
+      conventionalView: "Алёша Горшок is a late masterpiece of simplicity; Mirsky (1926) 'one of his most perfect creations'; Pine (2020) links it to the What Is Art? infection ideal."
+      relation: confirms
+      source: "Mirsky 1926; Pine 2020 (Ploughshares); PSS т.36 (Mishin) — corpus extends with the compositional record (4 days, excluded, Kuzminskaya's protest)."
+  translationStatus:
+    note: >-
+      Only Алёша Горшок had a published English translation before 2000 (Hagberg Wright 1912; Maude
+      c.1922 / Oxford Centenary; Clarence Brown 1985). The other five first appeared in English in 2000,
+      in two parallel editions both titled "Divine and Human and Other Stories" — Peter Sekirin (Zondervan)
+      and Gordon Spence (Northwestern UP). None of the six is in Maude's Twenty-Three Tales. Do NOT claim the
+      dive's working glosses are "first English"; the accurate claim is that the tales had no English home
+      until 2000 (and remain absent from the English Круг чтения, whose Calendar of Wisdom omits all weekly stories).
+    perTale:
+      - { tale: "Алёша Горшок", status: translated-complete, english: "Hagberg Wright 1912; Maude c.1922; Clarence Brown 1985" }
+      - { tale: "Корней Васильев", status: translated-complete, english: "Sekirin 2000 (a prior unidentified translation asserted by Sekirin — unverified)" }
+      - { tale: "Молитва", status: translated-complete, english: "Sekirin 2000 ('The Prayer'); no pre-2000 standalone located" }
+      - { tale: "Ягоды", status: translated-complete, english: "Sekirin 2000 + Spence 2000 ('Berries'); no pre-2000 standalone located" }
+      - { tale: "За что?", status: translated-complete, english: "Sekirin 2000 ('Why Did It Happen?') + Spence 2000 ('What For?'); no pre-2000 standalone located" }
+      - { tale: "Божеское и человеческое", status: translated-complete, english: "Sekirin 2000 + Spence 2000 ('Divine and Human'); abroad 1906 Russian-journal translations from an unnamed English intermediary; no pre-2000 standalone English located" }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORDS — proposed CREATIONS (none of the six exists yet). genre decided
+# per-tale from the text (Johan-confirmed approach). Read-only to works/; the human
+# ingestion step applies these. Shelving subcategory is a known <TBD> — see needsReview.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecords:
+  - recordPath: "website/src/works/fiction/short-stories/alyosha-the-pot/Alyosha the Pot.md"
+    workId: alyosha-the-pot
+    create: true
+    fields:
+      - { field: titleRu, value: "Алёша Горшок", source: "PSS т.36 с.54", confidence: high }
+      - { field: titleEn, value: "Alyosha the Pot", source: "Maude title", confidence: high }
+      - { field: genre, value: short_story, source: "dive read — realist character study from a real Yasnaya Polyana servant (E10), no fable schema", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving (cluster convention)", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving — no anthology/weekly-readings shelf exists", confidence: low, note: "shelf, not genre — flagged in needsReview" }
+      - { field: dateWritingStarted, value: "1905-03-09", evidenceRefs: [E10], source: "diary 24 Feb OS (commentary places writing 24–28 Feb 1905)", confidence: medium, oldStyle: "1905-02-24", approximate: true }
+      - { field: dateWritingCompleted, value: "1905-03-13", evidenceRefs: [E10], source: "diary 28 Feb OS «Писал Алешу, совсем плохо. Бросил»", confidence: medium, oldStyle: "1905-02-28", approximate: true }
+      - { field: dateFirstPublished, value: "1911", evidenceRefs: [E11], source: "«Посмертные художественные произведения», т. I, ed. Chertkov, Moscow 1911", confidence: high }
+      - { field: firstPublishedVenue, value: "Посмертные художественные произведения Л. Н. Толстого, т. I (ред. В. Г. Чертков), Москва 1911", evidenceRefs: [E11], source: "PSS т.36 с.582", confidence: high }
+      - { field: firstPublishedVenueType, value: "book", source: "posthumous collected edition", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1911", evidenceRefs: [E11], source: "Posthumous Works, Moscow 1911", confidence: high }
+      - { field: publishedDuringLifetime, value: false, source: "excluded from Круг чтения; first printed 1911, posthumously", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "first printed 1911", confidence: high }
+      - { field: notes, value: "Written for the Круг чтения weekly-reading slot in late Feb 1905, then excluded by Tolstoy from the anthology; the one tale of the six he never saw in print. Real-life basis: a half-witted helper-cook/yard-man at Yasnaya Polyana in the 1860s (Kuzminskaya & S. A. Tolstaya memoirs).", evidenceRefs: [E10, E11], source: "PSS т.36 с.582–583", confidence: high }
+      - { field: relatedWorks, value: [{id: kornei-vasilyev, relationshipType: cycle}, {id: berries, relationshipType: cycle}, {id: a-prayer, relationshipType: cycle}, {id: what-for, relationshipType: cycle}, {id: divine-and-human, relationshipType: cycle}], source: "the 1905–06 Круг чтения weekly-reading tales", confidence: medium }
+  - recordPath: "website/src/works/fiction/short-stories/kornei-vasilyev/Kornei Vasilyev.md"
+    workId: kornei-vasilyev
+    create: true
+    fields:
+      - { field: titleRu, value: "Корней Васильев", source: "PSS т.41 с.205", confidence: high }
+      - { field: titleEn, value: "Kornei Vasilyev", source: "Maude title", confidence: high }
+      - { field: genre, value: short_story, source: "dive read — realist domestic tragedy across 40 years, no fable schema", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Чем был и чем стал", type: working, language: ru}], source: "PSS т.42 (first title)", confidence: high }
+      - { field: dateWritingStarted, value: "1905-03-07", evidenceRefs: [E14], source: "autograph cover (A. L. Tolstaya): begun 22 Feb 1905 OS", confidence: medium, oldStyle: "1905-02-22", approximate: true }
+      - { field: dateWritingCompleted, value: "1905-03-10", evidenceRefs: [E14], source: "autograph end-date 25 Feb OS (diary «28 февраля… Дописал Корнея»); reworked 13× into May 1905", confidence: low, oldStyle: "1905-02-25", approximate: true, note: "first draft date; the tale was reworked 13 times into May 1905 — completion of revision ~May 1905" }
+      - { field: dateFirstPublished, value: "1906", evidenceRefs: [E14], source: "Круг чтения, т. I, изд. «Посредник», М. 1906, с. 234–250", confidence: high }
+      - { field: firstPublishedVenue, value: "Круг чтения, т. I, изд. «Посредник», Москва 1906 (с. 234–250)", evidenceRefs: [E14], source: "PSS т.42 с.599", confidence: high }
+      - { field: firstPublishedVenueType, value: "book", source: "anthology volume", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "Круг чтения т. I", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "Круг чтения, т. I, изд. «Посредник», Москва 1906", source: "PSS", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Круг чтения 1906", confidence: high }
+      - { field: notes, value: "Plot from the skazitel' V. P. Shchegolenok (1879); reworked 13 times. First title «Чем был и чем стал».", evidenceRefs: [E14], source: "PSS т.42 с.599–605", confidence: high }
+      - { field: relatedWorks, value: [{id: alyosha-the-pot, relationshipType: cycle}, {id: a-prayer, relationshipType: cycle}, {id: berries, relationshipType: cycle}], source: "the 1905 weekly-reading group", confidence: medium }
+  - recordPath: "website/src/works/fiction/short-stories/berries/Berries.md"
+    workId: berries
+    create: true
+    fields:
+      - { field: titleRu, value: "Ягоды", source: "PSS т.41 с.450", confidence: high }
+      - { field: titleEn, value: "Berries", source: "Maude title", confidence: high }
+      - { field: genre, value: short_story, source: "dive read — realist social-contrast tale (1905 gentry vs peasant children)", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: dateWritingStarted, value: "1905-06-23", evidenceRefs: [E19], source: "written over 10–11 June 1905 OS (autograph dated 11 June; diary 12 June)", confidence: medium, oldStyle: "1905-06-10", approximate: true }
+      - { field: dateWritingCompleted, value: "1905-06-24", evidenceRefs: [E19], source: "autograph «11 июн. 1905» OS", confidence: medium, oldStyle: "1905-06-11", approximate: false }
+      - { field: dateFirstPublished, value: "1906", evidenceRefs: [E18], source: "Круг чтения, т. I, изд. «Посредник», 1906", confidence: high }
+      - { field: firstPublishedVenue, value: "Круг чтения, т. I, изд. «Посредник», Москва 1906", evidenceRefs: [E18], source: "PSS т.42 с.614", confidence: high }
+      - { field: firstPublishedVenueType, value: "book", source: "anthology volume", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "Круг чтения т. I", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Круг чтения 1906", confidence: high }
+      - { field: notes, value: "Written in two days, 10–11 June 1905. Hero first named «Иван Семеныч», then «Николай Семеныч». F. A. Strakhov flagged the tutor-student's «социалист-демократ, революционер» label in proof (warring parties) and proposed «социалист-революционер»; the PSS restores Tolstoy's original.", evidenceRefs: [E19], source: "PSS т.42 с.614–615", confidence: high }
+      - { field: relatedWorks, value: [{id: alyosha-the-pot, relationshipType: cycle}, {id: kornei-vasilyev, relationshipType: cycle}, {id: a-prayer, relationshipType: cycle}], source: "the 1905 weekly-reading group", confidence: medium }
+  - recordPath: "website/src/works/fiction/short-stories/a-prayer/A Prayer.md"
+    workId: a-prayer
+    create: true
+    fields:
+      - { field: titleRu, value: "Молитва", source: "PSS т.41 с.128", confidence: high }
+      - { field: titleEn, value: "A Prayer", source: "Maude title (also 'Prayer')", confidence: medium }
+      - { field: genre, value: short_story, source: "dive read — realist grief-frame; BUT the core is a dream-vision/angel theodicy (parable-inflected)", confidence: low, note: "the one hybrid of the six — short_story vs parable is genuinely open; see needsReview" }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: dateWritingStarted, value: "1905-05", evidenceRefs: [E17], source: "late April–early May 1905 (3rd redaction dated 4 May OS)", confidence: low, oldStyle: "1905-04", approximate: true }
+      - { field: dateWritingCompleted, value: "1905-05-17", evidenceRefs: [E17], source: "diary 4 May 1905 OS «Написал рассказ на молитву»; corrections in proof to mid-May", confidence: low, oldStyle: "1905-05-04", approximate: true }
+      - { field: dateFirstPublished, value: "1906", evidenceRefs: [E17], source: "Круг чтения, т. I, изд. «Посредник», 1906 (the weekly reading after 25 Feb)", confidence: high }
+      - { field: firstPublishedVenue, value: "Круг чтения, т. I, изд. «Посредник», Москва 1906 (недельное чтение после 25 февраля; заменила «Три старца»)", evidenceRefs: [E17], source: "PSS т.42 с.594", confidence: high }
+      - { field: firstPublishedVenueType, value: "book", source: "anthology volume", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "Круг чтения т. I", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Круг чтения 1906", confidence: high }
+      - { field: bans, value: [{banningAuthority: "Russian imperial censorship", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "passages-cut", banDate: "1911", banDateApproximate: true, notes: "One passage was cut from the 2nd edition of Круг чтения — from «Вот сейчас» to «Японцы тоже молятся, чтобы им победить» (the Russo-Japanese war prayer, т.41 с.130). The 1st edition (1906) was uncut. The 2nd edition (revised by Tolstoy 1907–08) appeared only POSTHUMOUSLY, in the Sytin/Biryukov «Библиотека Л. Н. Толстого» issues of 1910–1912, with numerous censorship excisions — so the cut is posthumous, not a lifetime ban."}], evidenceRefs: [E16, E17], source: "PSS т.42 с.594", confidence: high }
+      - { field: notes, value: "Source: a Shchegolenok legend of the inok and the angel (the angel kills an infant who would have grown corrupt). Likely autobiographical echo — Tolstoy's infant son Nikolushka died 20 Feb 1875 of the same «головная водянка». Replaced the legend «Три старца» in the slot.", evidenceRefs: [E15, E17], source: "PSS т.42 с.594–597", confidence: high }
+      - { field: relatedWorks, value: [{id: alyosha-the-pot, relationshipType: cycle}, {id: kornei-vasilyev, relationshipType: cycle}, {id: berries, relationshipType: cycle}], source: "the 1905 weekly-reading group", confidence: medium }
+  - recordPath: "website/src/works/fiction/short-stories/what-for/What For.md"
+    workId: what-for
+    create: true
+    fields:
+      - { field: titleRu, value: "За что?", source: "PSS т.42 с.84", confidence: high }
+      - { field: titleEn, value: "What For?", source: "Maude title (also 'Why?')", confidence: medium, note: "Maude = 'What For?'; some editions 'Why?' — see needsReview" }
+      - { field: genre, value: short_story, source: "dive read — realist historical fiction (the 1830 Polish exile)", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Непоправимо", type: working, language: ru}], source: "PSS т.42 (first autograph title)", confidence: high }
+      - { field: dateWritingStarted, value: "1906-01-31", evidenceRefs: [E23, E25], source: "read Maximov 18 Jan OS, began writing ~20 Jan 1906 OS", confidence: medium, oldStyle: "1906-01-18", approximate: true }
+      - { field: dateWritingCompleted, value: "1906-03-15", evidenceRefs: [E24], source: "diary 2 March 1906 OS «отослал набирать»", confidence: medium, oldStyle: "1906-03-02", approximate: true }
+      - { field: dateFirstPublished, value: "1906", evidenceRefs: [E24], source: "Круг чтения, т. II (1-я половина, the September weekly reading), изд. «Посредник», 1906", confidence: medium, note: "first edition, vol. II (the September слот, vol. II 1st half-volume out 6 July 1906); commentary says «в первом издании»" }
+      - { field: firstPublishedVenue, value: "Круг чтения, т. II (1-е изд.), изд. «Посредник», Москва 1906 (недельное чтение на сентябрь)", evidenceRefs: [E24], source: "PSS т.42 с.643", confidence: medium }
+      - { field: firstPublishedVenueType, value: "book", source: "anthology volume", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "Круг чтения т. II", confidence: medium }
+      - { field: publishedDuringLifetime, value: true, source: "1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Круг чтения 1906", confidence: high }
+      - { field: notes, value: "Source: S. V. Maximov's «Сибирь и каторга» (the real Polish exiles Wincenty Migurski & Albina; the Sirocinski gauntlet). Reworked 15 times; the reworking deepened «обличение деспотизма николаевской эпохи». Names and condemns Nicholas I. First title «Непоправимо».", evidenceRefs: [E20, E22, E23, E24], source: "PSS т.42 с.626–643", confidence: high }
+      - { field: relatedWorks, value: [{id: divine-and-human, relationshipType: cycle}, {id: kornei-vasilyev, relationshipType: cycle}], source: "the 1905–06 weekly-reading tales; thematic pair with Божеское (the «За что?» cry + the state-violence theme)", confidence: medium }
+  - recordPath: "website/src/works/fiction/short-stories/divine-and-human/Divine and Human.md"
+    workId: divine-and-human
+    create: true
+    fields:
+      - { field: titleRu, value: "Божеское и человеческое", source: "PSS т.42 с.194", confidence: high }
+      - { field: titleEn, value: "Divine and Human", source: "both 2000 English editions (Sekirin/Zondervan + Spence/Northwestern) title it 'Divine and Human'", confidence: high }
+      - { field: genre, value: short_story, source: "dive read — realist multi-plot tale with one hagiographic-visionary strand", confidence: low, note: "13 chapters, 3 interwoven strands, 14-year span, ~10.7k words — `novella` is defensible on length/structure; proposed short_story for anthology-slot/cluster consistency; see needsReview" }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Человеческое и божеское", type: variant, language: ru}, {title: "Еще три смерти", type: variant, language: ru}], source: "PSS т.42 (the reversed first title + the working title)", confidence: high }
+      - { field: dateWritingStarted, value: "1904-01-12", evidenceRefs: [E30], source: "first written form 30 Dec 1903 OS «Человеческое и божеское» (conceived 1897, diary 13 Dec 1897 «казнь в Одессе»)", confidence: medium, oldStyle: "1903-12-30", approximate: true, note: "conception 1897; first written form 30 Dec 1903" }
+      - { field: dateWritingCompleted, value: "1905-12", evidenceRefs: [E31], source: "radical reworking Oct–Nov 1905; completion ~late Nov 1905 OS (diary 9 Dec OS «закончил»)", confidence: medium, oldStyle: "1905-11", approximate: true }
+      - { field: dateFirstPublished, value: "1906-06", evidenceRefs: [E32], source: "abroad first: A. Gren tr. in «Новая жизнь» nos. 8–14, 16–22 June 1906 (from English), preceding the Russian printing", confidence: high, note: "the abroad/émigré-channel translations preceded the Russian Круг чтения printing" }
+      - { field: firstPublishedVenue, value: "«Новая жизнь» (пер. А. Грена с английского), №№ 8–14, 16–22 июня 1906 — заграничное/эмигрантское первое появление", evidenceRefs: [E32], source: "PSS т.42 с.664", confidence: high }
+      - { field: firstPublishedVenueType, value: "newspaper", source: "PSS", confidence: medium }
+      - { field: dateFirstPublishedInRussia, value: "1906-11", evidenceRefs: [E33], source: "Круг чтения, т. II, ч. 2 (недельное чтение на 3 ноября), изд. «Посредник», конец ноября 1906 (корешок 1907)", confidence: high, oldStyle: "1906-11", approximate: true }
+      - { field: firstPublishedInRussiaVenue, value: "Круг чтения, т. II, ч. 2, изд. «Посредник», Москва, конец 1906 (помечен 1907)", evidenceRefs: [E33], source: "PSS т.42 с.664", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "abroad June 1906 + Russia late 1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Круг чтения т. II 1906", confidence: high }
+      - { field: notes, value: "Conceived 1897 («казнь в Одессе»); first drafted 30 Dec 1903 as the reversed-title «Человеческое и божеское» (Tom 54); radically reworked Oct–Nov 1905 (49 ms. units; the Svetlogub death-scene rewritten after Tolstoy's 18 Oct 1905 horror at it); title cycled «Еще три смерти». Source: the real Dmitri Lizogub, hanged Odessa 1879 (via Stepnyak-Kravchinsky), via the cut «Синегуб» episode of Resurrection. In collected works first in the Sytin/Biryukov ed., т. XVI, 1913.", evidenceRefs: [E29, E30, E31, E32, E33], source: "PSS т.42 с.645–665", confidence: high }
+      - { field: relatedWorks, value: [{id: what-for, relationshipType: cycle}, {id: resurrection, relationshipType: source}], source: "the 1905–06 weekly-reading tales; the «Синегуб» episode cut from Resurrection part 3 is its seed", confidence: medium }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "Genesis & composition (diary + letters + apparatus)", status: covered, note: "All six tales' composition traced from the «История писания» + the 1904–06 diary + the Gorbunov/Chertkov letters; the people-network surfaced. Diary thin on Алёша + Корней (apparatus carries those)." }
+  - { surface: "What the tales say (keystone passages)", status: covered, note: "All six read in full; keystones extracted per tale; the reversed-title draft of Божеское read." }
+  - { surface: "Redactions & textual history", status: covered, note: "Reworking counts (Корней 13×, За что? 15×, Божеское 49 ms. units) + the reversed-title finding + the Молитва censor-cut span; variant collation itself not done." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "Per-tale venues (Круг чтения vols I/II; Алёша posthumous 1911; Божеское abroad-first June 1906); the Молитва censor cut; the anthology prosecution. English translation: only Алёша had a pre-2000 translation (Hagberg Wright 1912; Maude; C. Brown 1985); the other five first appeared in English in 2000 (Sekirin/Zondervan + Spence/Northwestern); the English Круг чтения (Calendar of Wisdom 1997) still omits all 52 weekly stories." }
+  - { surface: "Reception & afterlife", status: partial, note: "Censorship-as-reception covered (the Gorbunov-Posadov trial); contemporary critical reception of the individual tales thin/out-of-corpus." }
+  - { surface: "Scholarly context", status: covered, note: "4 findings triangulated (3 `extends`, 1 `confirms`); 17 sources. The realist/parabolic split, the encryption thesis, and the Gorbunov-Posadov trial are all under-addressed in English; Spence (2000) is the closest political reading. See extracts/_scholarship.md." }
+  - { surface: "Visual & manuscript record", status: covered, note: "1 PD facsimile (Алёша autograph plate) + 8 Commons downloads; 5 work-orders; Shchegolenok + Chertkov cross-refs." }
+  - { surface: "The anthology as channel (недельное чтение)", status: covered, note: "The slot's structure + Tolstoy's encryption statement + the месячные чтения German-only fact + the banned-works re-entry policy." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRADICTIONS — intra-corpus / primary-vs-secondary corrections.
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: "За что? first appeared in volume I of Круг чтения (sweep/deep-read working note)."
+    correction: "За что? is the SEPTEMBER weekly reading → volume II of the first edition (vol. II 1st half-volume, out 6 July 1906). The commentary says «в первом издании» (first EDITION, vs the 1908 2nd edition), not «первый том»; the diary confirms it went to the typesetter alongside «коректуры 2 тома Круга Чтения»."
+    evidenceRef: E24
+  - claim: "The tale's title is «Божеское и человеческое» from the start."
+    correction: "The first written form (30 Dec 1903) was the REVERSED «Человеческое и божеское» (human first); the order was inverted only in reworking (and cycled through «Еще три смерти»). The final divine-first order is the verdict the tale reaches."
+    evidenceRef: E30
+  - claim: "Алёша Горшок was published in Круг чтения like the other five."
+    correction: "Алёша Горшок was EXCLUDED by Tolstoy from Круг чтения and first printed only posthumously, in 1911 — the one tale of the six he never saw in print. publishedDuringLifetime = false."
+    evidenceRef: E11
+
+# ─────────────────────────────────────────────────────────────────────────────
+notCovered:
+  - "Variant collation: the manuscript-description apparatus (Корней 13×, За что? 15×, Божеское 49 ms. units) is summarised but the variants are not collated line by line."
+  - "Круг чтения itself as a work: the anthology merits its own works/ record (genre: anthology) and a fuller treatment of its daily-thoughts architecture — out of this dive's scope (the dive proposes the six TALE records)."
+  - "Contemporary critical/press reception of the individual tales (beyond the censorship and the 1911 Gorbunov-Posadov trial) — largely out of the local corpus."
+  - "The 1909 «На каждый день» and 1910 «Путь жизни» anthologies (the later compression stages mapped by the late-voice dive) — cross-referenced, not dived."
+  - "The За что? source research network (Baudouin de Courtenay, Shakhmatov, Stasov's 17 volumes, Solovyov) is named from the apparatus but the specific borrowings are not traced."
+
+# ─────────────────────────────────────────────────────────────────────────────
+needsReview:
+  - { item: "ANTHOLOGY SUBCATEGORY <TBD>: all six proposed under works/fiction/short-stories/ with subcategory «Short Stories». These are anthology weekly-reading pieces (недельное чтение) — there is no shelf for that, and no «Parables» shelf either. A taxonomy decision (a dedicated subcategory for the народные рассказы / anthology pieces?) spans the 1880s + 1903 tale-dives too. Do NOT invent vocab at ingestion — decide the shelf with Johan.", phase: 4, why: "Shelving is a controlled-vocab choice distinct from genre; flagged per the dive brief; affects the sibling dives' proposed records." }
+  - { item: "GENRE of Молитва: short_story vs parable is genuinely open — a realist bourgeois grief-frame wrapping a dream-vision/angel theodicy. Proposed short_story (dominant realist mode); parable is defensible for the doctrinal dream-core. Decide at ingestion.", phase: 4, why: "The one hybrid of the six; the genre call shapes the record and the cluster's genre profile." }
+  - { item: "GENRE of Божеское и человеческое: short_story vs novella. 13 chapters, 3 interwoven plot strands, 14-year span, ~10.7k words — novella is defensible on length/structure (cf. Master and Man shelved Novellas). Proposed short_story for anthology-slot/cluster consistency. Decide at ingestion.", phase: 4, why: "Length/structure pull toward novella; the weekly-reading-slot context pulls toward short_story." }
+  - { item: "English titles RESOLVED from the 2000 editions, but variants exist: «Божеское и человеческое» = «Divine and Human» (both Sekirin & Spence); «За что?» = «What For?» (Spence/Maude) or «Why Did It Happen?» (Sekirin) — proposed «What For?»; «Молитва» = «The Prayer» (Sekirin) / «A Prayer» — proposed «A Prayer»; «Ягоды» = «Berries»; «Корней Васильев» = «Kornei Vasilyev». Pick the project's preferred form at ingestion.", phase: 4, why: "titleEn variants across the two 2000 translations." }
+  - { item: "OS→NS date conversions in the workRecords use +13 days for 1905–06 and are marked approximate; the well-attested values are the OldStyle dates. Verify NS conversions before asserting exact days. Several composition windows are ranges (Корней reworked into May 1905; Божеское conceived 1897 / drafted 1903 / completed 1905) — the proposed dates pick a representative point.", phase: 4, why: "Composition dates derived by calendar conversion and span long reworking windows." }
+  - { item: "Круг чтения as its own works record: needs creation (genre: anthology, schema v7) with the недельное чтение architecture, the 2-volume/2nd-edition history, and the Gorbunov-Posadov prosecution. Separate from the six tale records.", phase: 4, why: "The anthology is a distinct work the dive references but does not propose a full record for." }
+  - { item: "За что? exact volume/half-volume of Круг чтения: proposed т. II (1-я половина, the September слот). Confirm against the printed 1906 edition before asserting in the record (the commentary states «первое издание», not the том number).", phase: 2, why: "firstPublishedVenue volume is inferred from the September weekly-reading position + the diary, not stated verbatim." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI — PSS Tom 36 (Алёша + comm.), Tom 41 (Корней/Ягоды/Молитва), Tom 42 (За что?/Божеское + all six tales' commentary + Круг чтения general history), Tom 54 (the reversed-title draft), Tom 55 (1904–06 diary), Toms 75/76/89 (1905–06 letters)"
+  - "primary-sources/jubilee-edition/vol05 (= PSS Tom 36 PDF) — Алёша autograph-plate facsimile"
+  - "Wikimedia Commons — Tolstoy 1906, Gorbunov-Posadov, Lizogub, Maximov (photo + Repin), the 1830 November Uprising appeal (all PD)"
+  - "docs/research/stories-for-the-people + 1903-folk-tales (parent dives) — shared entities (Posrednik, Shchegolenok, Chertkov) + Shchegolenok visuals; docs/research/late-voice-encryption-compression (the Круг чтения channel + translation status); docs/research/1897-1898-what-is-art; docs/research/copyright-renunciation"
+  - "Web (Phase 3): see extracts/_scholarship.md"
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС т. 36 (Произведения 1904–1910): «Алёша Горшок» (с. 54–58) + История писания (с. 582–583)"
+    - "ПСС т. 41 (Круг чтения, т. I): «Корней Васильев», «Ягоды», «Молитва» (тексты)"
+    - "ПСС т. 42 (Круг чтения, т. II): «За что?», «Божеское и человеческое» (тексты) + История писания и печатания всех шести рассказов (с. 557–665) + Круг чтения. История писания и печатания (с. 557–583)"
+    - "ПСС т. 54: «Человеческое и Божеское. Наброски» (с. 204–208) — the reversed-title draft"
+    - "ПСС т. 55: Дневник 1904–1906"
+    - "ПСС тт. 75–76: письма 1905–1906 (И. И. Горбунову-Посадову, А. Л. Толстой, Е. В. Герцик и др.); т. 89: письма к В. Г. Черткову 1905–1906"
+  background:
+    - "Mirsky, D. S. 1926. A History of Russian Literature (later-Tolstoy chapter) — «one of his most perfect creations» on Alyosha the Pot."
+    - "Spence, Gordon. 2000. Intro to Divine and Human and Other Stories. Northwestern UP (European Classics) — the one English framing foregrounding the 1905-revolution politics."
+    - "Sekirin, Peter (trans./ed.). 2000. Divine and Human and Other Stories. Zondervan."
+    - "Hagberg Wright, C. T. (trans.). 1912. The Forged Coupon… Alyosha the Pot: Miscellaneous Stories."
+    - "Semmens, E. J. 1968. Tolstoy's Later Short Stories (ourcivilisation.com digest)."
+    - "Pine, Andrew. 2020. «The Singular Character of Tolstoy's Alyosha». Ploughshares blog."
+    - "Kirkus Reviews 2000; Publishers Weekly 2000 — reviews of Divine and Human and Other Stories."
+    - "Marxists Internet Archive, Tolstoy missing-works list — confirms За что?, Божеское, Ягоды, Корней were untranslated pre-2000."

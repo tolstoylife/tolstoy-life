@@ -1,0 +1,1037 @@
+topic:
+  slug: 1886-1890-the-fruits-of-enlightenment
+  title: 'The Fruits of Enlightenment (Плоды просвещения, 1886–1890)'
+  question: >-
+    A --novel work-subject dive (drama flex) on Tolstoy's four-act comedy. Marquee: The Fruits of
+    Enlightenment is the satirical INVERSE of The Power of Darkness — where the tragedy was written
+    FOR the people (peasant speech, the people's stage) and failed to reach them, the comedy was
+    written BY and FOR Tolstoy's own class (the Yasnaya Polyana family theatre, then the court at
+    Tsarskoye Selo) to laugh at itself, using the peasants not as audience but as the MORAL MEASURE
+    against which the "enlightened" gentry's spiritualist idleness is judged. The title's irony
+    makes it Tolstoy's comic anti-pseudo-science companion to What Is Art?; the stage-only ban then
+    literally confined a play mocking the gentry to amateur (gentry) performance.
+  date: '2026-06-11'
+  period: Prophet
+  corpusSurface: 'works (PSS Tom 27, pp. 95–250) · the two plans + the first redaction «Исхитрилась!» + variants (Tom 27, pp. 433–480) · editorial commentary «История писания» (Tom 27, pp. 647–670) · diaries (Toms 49–51, 1884–1890) · letters (Toms 64–65, 1889–1890)'
+  dateRange: '1886 (séance source + first plans) — 1890 (final redaction, proofs); amateur première 30 Dec 1889; first publication 1891; reception to the Maly transfer (Dec 1891) and beyond'
+
+evidence:
+  # ---- The play's own text (PSS Tom 27, pp. 95–250) ----
+  - id: fe-investigation
+    genre: work
+    pssTom: 27
+    pages: '~118'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Но мы и не требуем веры. Мы требуем исследованья.'
+    quoteEn: '(working English) "But we do not require faith. We require investigation." (Leonid Fyodorovich Zvezdintsev to the sceptic Sakhatov, Act 1.)'
+    significance: 'The gentry-spiritualist''s self-justification: spiritualism dressed as empirical science ("we require investigation"). The play''s satire of pseudo-science is stated by its dupe in Act 1.'
+    facsimile: ''
+  - id: fe-land-need
+    genre: work
+    pssTom: 27
+    pages: '~110'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Земля наша малая, не то что скотину, — курицу, скажем, и ту выпустить некуда.'
+    quoteEn: '(working English) "Our land is so small that — not to speak of cattle — there''s nowhere even to let out a chicken." (The 3rd Peasant, pleading, Act 1.)'
+    significance: 'The peasant land-hunger that is the play''s real subject — repeated as a refrain through all four acts. The material need against which the gentry''s séances are measured.'
+    facsimile: ''
+  - id: fe-yum
+    genre: work
+    pssTom: 27
+    pages: '~106'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Тем более, что лицом он очень похож на Юма. Вы помните Юма? — белокурый, наивный.'
+    quoteEn: '(working English) "All the more so as in face he much resembles Home. You remember Home? — fair-haired, naïve." (Leonid Fyodorovich, declaring the peasant-lad Semyon a medium, Act 1.)'
+    significance: 'The play names the celebrity medium D. D. Home (Юм) — the real spiritualism vogue glimpsed inside the fiction. Leonid Fyodorovich reads the village lad as a "medium" by resemblance to Home.'
+    facsimile: ''
+  - id: fe-tanya-believed
+    genre: work
+    pssTom: 27
+    pages: '~135'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Поверил, поверил! (Взвизгивает, прыгает.) Ей-Богу, поверил! Вот чудо-то! (Взвизгивает.) Теперь сделаю, только бы Семен не сробел.'
+    quoteEn: '(working English) "He believed me, he believed me! (Squeals, jumps.) By God, he believed me! What a wonder! (Squeals.) Now I''ll do it, if only Semyon doesn''t lose his nerve." (The maid Tanya, alone, Act 1.)'
+    significance: 'The plot engine: Tanya has persuaded the master that the peasant-lad Semyon is a medium, and will fake the séance phenomena to get the land deed signed. The servant''s wit drives the play.'
+    facsimile: ''
+  - id: fe-fedor-superstition
+    genre: work
+    pssTom: 27
+    pages: '~170'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Народные суеверия, грубые, истребляются, суеверия домовых, колдунов, ведьм... А ведь если вникнуть, ведь это такое же суеверие.'
+    quoteEn: '(working English) "Folk superstitions — coarse ones — are being stamped out: the superstitions of house-spirits, sorcerers, witches... And yet, if you look into it, this [spiritualism] is just the same kind of superstition." (Fyodor Ivanych, the valet, alone, Act 3.)'
+    significance: 'The play''s plain-sense verdict, given to the educated servant: the gentry''s fashionable spiritualism is the same superstition as the peasant beliefs being "stamped out." Ends "Удивительна слабость человеческая!" ("Amazing — human weakness!").'
+    facsimile: ''
+  - id: fe-coaching
+    genre: work
+    pssTom: 27
+    pages: '~183'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'как бумага на стол падет — я еще в колокольчик позвоню, — так ты сейчас же руками вот так... Разведи шире и захватывай. Кто возле сидит, того и захватывай. А как захватишь, так жми.'
+    quoteEn: '(working English) "...when the paper falls on the table — I''ll also ring the little bell — then at once with your hands like this... Spread them wide and grab. Whoever sits beside you, grab them. And once you''ve grabbed, squeeze." (Tanya coaching Semyon for the séance, Act 3.)'
+    significance: 'The mechanics of the fraud: Tanya, hidden, will throw the land-deed onto the séance table and ring a bell; Semyon, the "medium," is to seize and squeeze whoever is next to him until the master signs. The hoax is wholly stage-managed by the servants.'
+    facsimile: ''
+  - id: fe-prof-mediumism
+    genre: work
+    pssTom: 27
+    pages: '~200'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'один из таких новых, мало известных видов энергии и исследуется нами. Я говорю об энергии медиумизма.'
+    quoteEn: '(working English) "...one of these new, little-known kinds of energy is what we are investigating. I speak of the energy of mediumism." (Professor Krugosvetlov''s lecture, the séance, Act 3.)'
+    significance: 'The centrepiece of the pseudo-science satire: the Professor derives "the energy of mediumism" and a "spiritual ether" (proven by the invented "genius Hermann Schmidt and Joseph Schmatzhofen") whose particles are "the souls of the living, the dead, and the unborn." Materialist science pressed into the service of superstition.'
+    facsimile: ''
+  - id: fe-signed
+    genre: work
+    pssTom: 27
+    pages: '~228'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Оказывается что землю-то надо уступить крестьянам на их условиях.'
+    quoteEn: '(working English) "It turns out the land must be ceded to the peasants on their terms." (Leonid Fyodorovich to Fyodor Ivanych, after the séance, Act 3.)'
+    significance: 'The hoax succeeds: the "spirit" Nikolai has commanded the master to sign the deed Tanya threw on the table. The land is sold — by a fraud worked through the master''s own credulity.'
+    facsimile: ''
+  - id: fe-prof-unfalsifiable
+    genre: work
+    pssTom: 27
+    pages: '~248'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'может быть, она что-нибудь и делала, но то, что она делала, — делала она, то, что было проявлением медиумической энергии, — было проявлением медиумической энергии.'
+    quoteEn: '(working English) "...maybe she did do something, but what she did, she did; and what was a manifestation of mediumic energy was a manifestation of mediumic energy." (Professor Krugosvetlov, told the maid faked it all, Act 4.)'
+    significance: 'The satirical climax: confronted with proof of the fraud, the believer cannot be disabused — the girl''s trick merely "solicited" the genuine medium-energy. The unfalsifiability of pseudo-science, exposed by making it absurd.'
+    facsimile: ''
+  - id: fe-far-europe
+    genre: work
+    pssTom: 27
+    pages: '~248'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Да, как еще мы далеки от Европы!'
+    quoteEn: '(working English) "Yes — how far we still are from Europe!" (Professor Krugosvetlov''s exit line, Act 4.)'
+    significance: 'The title''s irony in one line: the Europhile "enlightened" man laments Russia''s backwardness — while he is the superstitious dupe. "Enlightenment" inverted.'
+    facsimile: ''
+  - id: fe-oldcook
+    genre: work
+    pssTom: 27
+    pages: '~155'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Я у плиты тридцать лет прожарился. А вот не нужен стал: издыхай, как собака!.. Как же, пожалеют!'
+    quoteEn: '(working English) "I roasted thirty years at the stove. And now I''m not needed: die like a dog!.. Pity, indeed!" (The Old Cook, a cast-off ex-chef, the servants'' kitchen, Act 2.)'
+    significance: 'The human cost beneath the comedy: the Old Cook — once chef to the Emperor — discarded, dying of drink and cold, kept alive only by the kitchen-maid''s pity. The casualty of the idle gentry the séance-farce sits atop.'
+    facsimile: ''
+  - id: fe-made-people
+    genre: work
+    pssTom: 27
+    pages: '~250'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Она нас людьми изделала; а то бы что? земля малая, не то что скотину, — курицу, скажем, и ту выпустить некуда.'
+    quoteEn: '(working English) "She made us into human beings; for what else? — the land is so small that, not to speak of cattle, there''s nowhere even to let out a chicken." (The 3rd Peasant of Tanya, the final scene, Act 4.)'
+    significance: 'The peasants'' verdict on Tanya: the servant-girl''s trick has won them the land and "made them into people." The moral weight is given to the servants and peasants, not the masters.'
+    facsimile: ''
+  - id: fe-without-her
+    genre: work
+    pssTom: 27
+    pages: '~250'
+    date: '1890'
+    extract: extracts/v27_095_250_Plody_prosveschenija.txt
+    quoteRu: 'Да благодарите Таню. Кабы не она, быть бы вам без земли.'
+    quoteEn: '(working English) "Thank Tanya. Had it not been for her, you''d be without land." (Fyodor Ivanych, the valet, the final scene, Act 4.)'
+    significance: 'The kind valet closes the play crediting Tanya — confirming the comedy''s moral hierarchy: practical intelligence and decency belong to the servants, folly to the masters.'
+    facsimile: ''
+  # ---- The plans (PSS Tom 27, pp. 433–437) ----
+  - id: fe-plan-lvov
+    genre: work
+    pssTom: 27
+    pages: '433'
+    date: '1886'
+    extract: extracts/v27_433_435_Pervyj_plan.txt
+    quoteRu: 'вертит блюдечко о земле крестьянам. Самарин неверующий.'
+    quoteEn: '(working English) "[Lvov] spins the saucer about the peasants'' land. Samarin the unbeliever." (The first plan of the comedy, Act 1.)'
+    significance: 'The genesis in the draft: the spiritualist master is named outright «Львов» (Lvov, the real séance host) and the sceptic «Самарин» (Samarin, a real séance-goer). The whole mechanism — séance vs. the peasants'' land — is present from the first plan.'
+    facsimile: ''
+  # ---- The first redaction «Исхитрилась!» (PSS Tom 27, pp. 438–475) ----
+  - id: fe-ishitrilas-title
+    genre: work
+    pssTom: 27
+    pages: '438'
+    date: '1886'
+    extract: extracts/v27_438_475_Ishitrilas.txt
+    quoteRu: 'ИСХИТРИЛАСЬ!'
+    quoteEn: '(working English) "SHE CONTRIVED IT!" (Title of the first redaction.)'
+    significance: 'The keystone variant: the first redaction was titled «Исхитрилась!» — named for the maid''s trick, a plot-farce. Its cast is far smaller; the heavy social-satire layer (the Professor''s pseudo-science, the mind-reader, the dying Old Cook, the microbe-panic) was added only after the Dec 1889 staging, in 1890. The retitling «Исхитрилась!» → «Плоды просвещения» tracks the work''s growth from servant''s-trick farce into class-satire.'
+    facsimile: ''
+  # ---- Editorial commentary «История писания» (PSS Tom 27, pp. 647–670; Sreznevsky) ----
+  - id: fe-com-seance
+    genre: commentary
+    pssTom: 27
+    pages: '647'
+    date: '1886'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'спиритического сеанса, бывшего в Москве на квартире Н. А. Львова, куда Толстой был приглашен по собственной инициативе.'
+    quoteEn: '(working English) "...a spiritualist séance held in Moscow at the flat of N. A. Lvov, to which Tolstoy had had himself invited on his own initiative." (Editorial commentary.)'
+    significance: 'The documented source: the séance at N. A. Lvov''s Moscow flat (no later than spring 1886; Lvov died 1887), attended by Tolstoy on his own initiative, with P. F. Samarin, K. Yu. Milioti, and N. V. Davydov (who described it). Lvov → Zvezdintsev, Samarin → Sakhatov.'
+    facsimile: ''
+  - id: fe-com-milk
+    genre: commentary
+    pssTom: 27
+    pages: '647'
+    date: '1886'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'что верить в то, что из моей трости, если я ее пососу, потечет молоко, чего никогда не было и быть не может'
+    quoteEn: '(working English) "...[it is just the same] as believing that if I suck my walking-stick, milk will flow from it — which has never happened and cannot happen." (Tolstoy before the séance, reported by N. V. Davydov.)'
+    significance: 'Tolstoy went to the séance already a scoffer; the play grew from contempt, not curiosity. The cane-and-milk simile is his pre-séance verdict on spiritualism.'
+    facsimile: ''
+  - id: fe-com-simultaneous
+    genre: commentary
+    pssTom: 27
+    pages: '648'
+    date: '1886'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'работа над комедией была начата осенью 1886 г., одновременно или почти одновременно с работой над «Властью тьмы»'
+    quoteEn: '(working English) "...work on the comedy was begun in the autumn of 1886, simultaneously or almost simultaneously with the work on The Power of Darkness." (Editorial commentary.)'
+    significance: 'The matched pair, literal: the comedy (as «Исхитрилась!») and the tragedy The Power of Darkness were begun in the same season — the apparatus elsewhere notes, in the same notebook — both sparked by A. A. Stakhovich reading Ostrovsky and Gogol aloud at Yasnaya. The tragedy and the comedy of Tolstoy''s Prophet years are twins.'
+    facsimile: ''
+  - id: fe-com-staging
+    genre: commentary
+    pssTom: 27
+    pages: '660'
+    date: '1889-12-30'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'Первое представление комедии в Ясной поляне состоялось 30 декабря 1889'
+    quoteEn: '(working English) "The first performance of the comedy at Yasnaya Polyana took place on 30 December 1889." (Editorial commentary; Old Style.)'
+    significance: 'The amateur première — a home theatrical got up by the daughter Tatyana Lvovna, directed by N. V. Davydov, cast almost entirely from the young Tolstoys and their friends. The play''s first audience was the satirised class itself.'
+    facsimile: ''
+  - id: fe-com-staging-cast
+    genre: commentary
+    pssTom: 27
+    pages: '661'
+    date: '1889-12-30'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'М. Л. Толстую — кухарку, А. М. Новикова — буфетчика Якова, С. А. Лопухина — Звездинцева, С. Э. Мамонову — толстую барыню, Н. В. Давыдова — профессора Кругосветлова, Т. Л. Толстую — Таню'
+    quoteEn: '(working English) "...M. L. Tolstaya as the cook, A. M. Novikov as the butler Yakov, S. A. Lopukhin as Zvezdintsev, S. E. Mamonova as the fat lady, N. V. Davydov as Professor Krugosvetlov, T. L. Tolstaya as Tanya." (Editorial commentary, the 30 Dec 1889 cast.)'
+    significance: 'The author''s own daughters played the maid Tanya (Tatyana) and the cook (Maria); the satirised gentry roles were taken by the family and its circle. The casting is the marquee made literal.'
+    facsimile: ''
+  - id: fe-com-prototypes
+    genre: commentary
+    pssTom: 27
+    pages: '655'
+    date: '1890'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Звездинцев и Сахатов, прототипами для которых послужили Н. А. Львов и П. Ф. Самарин. ... фамилия профессора звучала сначала Кутлер, затем Кутлеров, т. е. созвучно с фамилией знаменитого химика и в то же время спирита академика и профессора — А. М. Бутлерова'
+    quoteEn: '(working English) "...Zvezdintsev and Sakhatov, whose prototypes were N. A. Lvov and P. F. Samarin. ...the professor''s surname sounded at first Kutler, then Kutlerov — i.e. consonant with the surname of the famous chemist and at the same time spiritualist, academician and professor A. M. Butlerov." (Editorial commentary.)'
+    significance: 'The prototype chain: Zvezdintsev←Lvov, Sakhatov←Samarin, and Professor Krugosvetlov''s draft name Кутлеров echoing the chemist-spiritualist A. M. Butlerov (d. 1886). The satire of "scientific" spiritualism had real targets — which Tolstoy then denied (see fe-let-wagner).'
+    facsimile: ''
+  - id: fe-com-uncensored
+    genre: commentary
+    pssTom: 27
+    pages: '665'
+    date: '1891'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'Впервые «Плоды просвещения» были напечатаны, видимо без каких-либо цензурных изъятий, в книге «В память Юрьева. Сборник, изданный друзьями покойного». М. 1891'
+    quoteEn: '(working English) "The Fruits of Enlightenment was first printed — apparently without any censorship excisions — in the book In Memory of [S. A.] Yuryev. A collection issued by the late man''s friends, Moscow 1891." (Editorial commentary.)'
+    significance: 'First publication: 1891, in Russia, in Tolstoy''s lifetime, uncensored — corrects the works-record stub (publishedDuringLifetime / publishedInRussiaDuringLifetime were false → both true). Reprinted the same year in Part 13 of the collected works.'
+    facsimile: ''
+  - id: fe-com-stageban
+    genre: commentary
+    pssTom: 27
+    pages: '667'
+    date: '1890-04-26'
+    extract: extracts/v27_commentary_fruits.txt
+    quoteRu: 'эту пьесу неудобною для сцены, на любительских же театрах она может быть разрешена'
+    quoteEn: '(working English) "[His Majesty is pleased to find] this play unsuitable for the [public] stage, but on amateur theatres it may be permitted." (Alexander III''s resolution, in Minister Durnovo''s hand, on the report of 26 April 1890 [OS].)'
+    significance: 'The stage-only ban: print was free, but Alexander III barred the public stage while permitting amateur performance — a play mocking the idle gentry confined to performance by the gentry. The Feoktistov circular (28 Apr 1890) enforced it; the public stage opened only at the Alexandrinsky on 26 Sept 1891, general permission 1894. The exact shape the bans[].scope=stage-ban value was added for.'
+    facsimile: ''
+  # ---- Diaries & letters (PSS Toms 49–51, 64–65) ----
+  - id: fe-diary-lvov-1884
+    genre: diary
+    pssTom: 49
+    pages: '84'
+    date: '1884-04-19'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Львов рассказывал о Блавацкой, переселении душ, силах духа, белом слоне, присяге новой вере. Как не сойти с ума при таких впечатлениях?'
+    quoteEn: '(working English) "Lvov told [me] of Blavatsky, transmigration of souls, spirit-forces, the white elephant, the oath to a new faith. How can one not go mad amid such impressions?" (Diary, 19 April 1884.)'
+    significance: 'The séance host N. A. Lvov in person — Tolstoy''s source for the theosophy-and-spirits milieu the play satirises, recorded two years before composition began. (TEI filename says 1883; the bibl header and PSS commentary fix it to 19 April 1884 — see needsReview.)'
+    facsimile: ''
+  - id: fe-ge-three-works
+    genre: letter
+    pssTom: 64
+    pages: '392'
+    date: '1889-06-23'
+    addressee: 'N. N. Ge (father and son)'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Пишу и комедию,² и повесть,³ и об искусстве.⁴'
+    quoteEn: '(working English) "I am writing both the comedy, and a story, and about art." (To N. N. Ge, 23 June 1889.)'
+    significance: 'The comedy was written in parallel with the story (The Kreutzer Sonata) and the treatise (What Is Art?, then in progress) — the three projects of 1889 share a workshop. Grounds the What-Is-Art companion link as contemporaneity.'
+    facsimile: ''
+  - id: fe-annenkova-tanya
+    genre: letter
+    pssTom: 64
+    pages: '479'
+    date: '1889-12-25'
+    addressee: 'L. F. Annenkova'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'которая у меня давно была набросана. Таня дочь затеяла спектакль и попросила у меня, я согласился и вот поправил ее кое-как, и вот они играют у нас на праздниках.'
+    quoteEn: '(working English) "...quite unexpectedly I took up a comedy I had long ago sketched. My daughter Tanya got up a play and asked me for it; I agreed and patched it up somehow, and now they are performing it over the holidays." (To L. F. Annenkova, 25 December 1889.)'
+    significance: 'The genesis of the staged version in Tolstoy''s own words: written for the family theatre, at his daughter Tatyana''s request — not for the people or a public stage. The marquee''s "by and for the class" point, from the author.'
+    facsimile: ''
+  - id: fe-biryukov-mocks
+    genre: letter
+    pssTom: 64
+    pages: '484'
+    date: '1889-12-31'
+    addressee: 'P. I. Biryukov'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Делали с спокойной совестью в усиленной мере то самое, что осмеивается комедией. Маша играла кухарку необыкновенно хорошо'
+    quoteEn: '(working English) "With clear consciences we were doing, in heightened measure, the very thing the comedy ridicules. Masha played the cook remarkably well." (To P. I. Biryukov, 31 December 1889.)'
+    significance: 'The deepest, self-aware irony of the marquee, in Tolstoy''s own voice: the family staging the satire of idle gentry amusement was itself an idle gentry amusement — "in heightened measure" — and he knew it. The satirist caught inside his satire''s target, and naming it.'
+    facsimile: ''
+  - id: fe-diary-shame
+    genre: diary
+    pssTom: 50
+    pages: '194'
+    date: '1889-12-27'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Мне же всё время стыдно, стыдно за эту безумную трату среди нищеты.'
+    quoteEn: '(working English) "I myself am ashamed the whole time — ashamed of this senseless extravagance amid poverty." (Diary, 27 December 1889, of the staging.)'
+    significance: 'Tolstoy''s shame at the staging — the senseless gentry expense amid surrounding poverty, the exact contrast the play draws between the séance and the peasants'' landlessness, felt in his own household.'
+    facsimile: ''
+  - id: fe-diary-shameful
+    genre: diary
+    pssTom: 50
+    pages: '116'
+    date: '1889-08-02'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Дома взялся было за комедию, но противно и совестно.'
+    quoteEn: '(working English) "At home I took up the comedy, but [it is] repugnant and shameful." (Diary, 2 August 1889.)'
+    significance: 'Tolstoy''s recurrent self-disparagement of the comedy across the years of composition — art as a "low and seductive occupation" in the Prophet-period frame (cf. the Kreutzer Sonata / What Is Art? mood).'
+    facsimile: ''
+  - id: fe-diary-trash
+    genre: diary
+    pssTom: 51
+    pages: '37'
+    date: '1890-04-13'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'Очень скучно, комедия плоха — дребедень.'
+    quoteEn: '(working English) "Very dull; the comedy is poor — trash." (Diary, 13 April 1890, at a Tula rehearsal.)'
+    significance: 'Tolstoy''s own verdict on the work even as it triumphed — the author''s later judgment is contempt, not pride, despite the comedy''s stage success.'
+    facsimile: ''
+  - id: fe-let-wagner
+    genre: letter
+    pssTom: 65
+    pages: '51'
+    date: '1890-03-25'
+    addressee: 'N. P. Wagner'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'И главное мое с годами всё усиливающееся отвращение, от которого я не отрекаюсь, ко всяким суевериям, к которым я причисляю спиритизм.'
+    quoteEn: '(working English) "And the main thing is my hatred, growing with the years, which I do not renounce, of every kind of superstition, among which I count spiritualism." (To the zoologist-spiritualist N. P. Wagner, 25 March 1890.)'
+    significance: 'The apology to Wagner (who took Professor Krugosvetlov as a libel on himself and Butlerov): Tolstoy denies a personal portrait but states the play''s purpose outright — his deepening hatred of superstition, spiritualism included. The anti-pseudo-science marquee, from the author. Also restates the genesis (the daughters asked to play it).'
+    facsimile: ''
+  - id: fe-let-apollov
+    genre: letter
+    pssTom: 65
+    pages: '23'
+    date: '1890-02-22'
+    addressee: 'A. I. Apollov'
+    extract: extracts/witness_1886_1890_diaries_letters.txt
+    quoteRu: 'не только среди неученых, но и среди, ученых классов (пример — спиритизм)'
+    quoteEn: '(working English) "...not only among the unlearned but among the educated classes too (example — spiritualism)." (To A. I. Apollov, 22 February 1890.)'
+    significance: 'Tolstoy names spiritualism as the type-specimen of superstition surviving among the EDUCATED — the precise target of a play whose title calls such superstition the "fruits of enlightenment."'
+    facsimile: ''
+
+entities:
+  # --- Characters (fictional; prototypes[] = fiction→life edge) ---
+  - name: Tanya (Tatyana Markovna)
+    wikiType: character
+    wikilinkTarget: 'Tanya (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The young maid — an orphan of the peasants'' own village, in love with the peasant-lad Semyon — who engineers the land sale by faking the séance phenomena. The play''s practical, decent intelligence; its protagonist and the title of its first redaction («Исхитрилась!» = "she contrived it").'
+    sources: []
+    evidenceRefs: [fe-tanya-believed, fe-coaching, fe-made-people, fe-without-her]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: ''
+        basis: editorial
+        certainty: conjectured
+        note: 'No documented life-prototype; an invented figure (the clever-servant type). Played at the 1889 première by Tolstoy''s daughter T. L. Tolstaya — casting, not a prototype.'
+        sourceId: ''
+  - name: Leonid Fyodorovich Zvezdintsev
+    wikiType: character
+    wikilinkTarget: 'Leonid Zvezdintsev (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The retired-officer landowner, master of the house, devout believer in spiritualism, who lavishes money on séances while refusing the peasants land; the séance "spirits" he trusts command him to sign the deed.'
+    sources: []
+    evidenceRefs: [fe-investigation, fe-yum, fe-signed, fe-plan-lvov, fe-com-prototypes]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: 'N. A. Lvov'
+        basis: editorial
+        certainty: documented
+        note: 'The host of the real séance Tolstoy attended; in the first two plans the character bears Lvov''s actual surname. The PSS editors state the prototype; the draft naming makes it documented.'
+        sourceId: ''
+  - name: Professor Krugosvetlov
+    wikiType: character
+    wikilinkTarget: 'Professor Krugosvetlov (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The scientist who explains the séance phenomena as "the energy of mediumism" / a "spiritual ether" — the embodiment, in Tolstoy''s phrase, of the comic contradiction between strict scientific method and the most fantastical assertions. Even shown the fraud, he cannot be disabused.'
+    sources: []
+    evidenceRefs: [fe-prof-mediumism, fe-prof-unfalsifiable, fe-far-europe, fe-com-prototypes, fe-let-wagner]
+    ingestionPriority: 1
+    prototypes:
+      - person: ''
+        name: 'A. M. Butlerov'
+        basis: editorial
+        certainty: probable
+        note: 'The draft surname Кутлер→Кутлеров echoes the chemist-and-spiritualist academician A. M. Butlerov (d. 1886). Tolstoy explicitly DENIED portraying Butlerov or his friend N. P. Wagner (letter, 25 Mar 1890), calling the professor "a personification of comic contradiction" — so this is a name-source/composite, NOT a documented portrait. Do not overclaim.'
+        sourceId: ''
+  - name: Grossman
+    wikiType: character
+    wikilinkTarget: 'Grossman (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The travelling hypnotist / thought-reader who, blindfolded, "finds" the hidden spoon in a terrified peasant''s bag (Act 2) and "vibrates" in sympathy with the medium at the séance.'
+    sources: []
+    evidenceRefs: [fe-com-prototypes]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: 'O. I. Feldman'
+        basis: editorial
+        certainty: documented
+        note: 'Based on the celebrity hypnotist O. I. Feldman, whom Tolstoy met (Apr 1889; diary "Шарлатанство"). The PSS editors trace the development Шпюлер→Гросман to that meeting; the final touches were a soundalike surname and "a brunet of Jewish type." The Maly actor Garin-Vinding played him made up to look like Feldman, who sued.'
+        sourceId: ''
+  - name: Sakhatov
+    wikiType: character
+    wikilinkTarget: 'Sakhatov (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The urbane sceptic — a former deputy minister — who attends the séance unconvinced, catches Tanya''s thread, but "reserves his opinion." The play''s on-stage doubter.'
+    sources: []
+    evidenceRefs: [fe-plan-lvov, fe-com-prototypes]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: 'P. F. Samarin'
+        basis: editorial
+        certainty: documented
+        note: 'In the first two plans the sceptic bears the surname Samarin — P. F. Samarin, a real attendee of the Lvov séance. PSS editors state the prototype.'
+        sourceId: ''
+  - name: Semyon
+    wikiType: character
+    wikilinkTarget: 'Semyon (The Fruits of Enlightenment)'
+    vaultStatus: missing
+    role: 'The healthy young buffet-peasant taken for a "medium"; Tanya''s betrothed and the unwitting instrument of the séance hoax. A son of the 2nd Peasant; returns to the village to marry Tanya.'
+    sources: []
+    evidenceRefs: [fe-coaching, fe-yum]
+    ingestionPriority: 2
+    prototypes:
+      - person: ''
+        name: ''
+        basis: editorial
+        certainty: conjectured
+        note: 'No documented life-prototype; the village-lad type. Present from the first plan (as "Семка").'
+        sourceId: ''
+  # --- Persons (real figures in genesis / staging / reception) ---
+  - name: 'N. A. Lvov'
+    wikiType: person
+    wikilinkTarget: 'Nikolai Lvov'
+    vaultStatus: missing
+    role: 'Host of the spiritualist séance (Moscow, ≤1886) that Tolstoy attended on his own initiative; died 1887. The source impression of the play and the prototype of Zvezdintsev; in person in the 1884 diary expounding Blavatsky.'
+    sources: []
+    evidenceRefs: [fe-com-seance, fe-diary-lvov-1884, fe-plan-lvov]
+    ingestionPriority: 2
+  - name: 'P. F. Samarin'
+    wikiType: person
+    wikilinkTarget: 'Pyotr Samarin'
+    vaultStatus: missing
+    role: 'Attendee of the Lvov séance; the prototype of the sceptic Sakhatov (his surname is the character''s draft name).'
+    sources: []
+    evidenceRefs: [fe-com-seance, fe-plan-lvov]
+    ingestionPriority: 3
+  - name: 'N. V. Davydov'
+    wikiType: person
+    wikilinkTarget: 'Nikolai Davydov'
+    vaultStatus: missing
+    role: 'Tula prosecutor and Tolstoy''s friend; séance attendee who described it in his memoirs; director of the 30 Dec 1889 Yasnaya staging and player of Professor Krugosvetlov; secured the Tula stage permit. (The same Davydov who supplied the Koloskov case for The Power of Darkness.)'
+    sources: []
+    evidenceRefs: [fe-com-seance, fe-com-staging-cast]
+    ingestionPriority: 2
+  - name: 'A. M. Butlerov'
+    wikiType: person
+    wikilinkTarget: 'Aleksandr Butlerov'
+    vaultStatus: missing
+    role: 'Eminent chemist (structural theory) and convinced spiritualist (d. 1886); the name-source for Professor Krugosvetlov (Кутлеров). With Wagner, the leading St-Petersburg scientist-spiritualist; hosted the medium D. D. Home in 1871.'
+    sources: []
+    evidenceRefs: [fe-com-prototypes, fe-let-wagner]
+    ingestionPriority: 3
+  - name: 'N. P. Wagner'
+    wikiType: person
+    wikilinkTarget: 'Nikolai Wagner'
+    vaultStatus: missing
+    role: 'Zoologist and convinced spiritualist, Butlerov''s friend; heard the comedy read (12 Mar 1890), took Professor Krugosvetlov as a libel on himself and Butlerov, and protested (13 Mar 1890). Tolstoy apologised (25 Mar 1890) while affirming his hatred of spiritualism.'
+    sources: []
+    evidenceRefs: [fe-let-wagner]
+    ingestionPriority: 3
+  - name: 'O. I. Feldman'
+    wikiType: person
+    wikilinkTarget: 'Osip Feldman'
+    vaultStatus: missing
+    role: 'Celebrity hypnotist / thought-reader Tolstoy met in April 1889 ("charlatanry," diary); the prototype of the character Grossman. Later sued the Maly actor Garin-Vinding for the look-alike makeup.'
+    sources: []
+    evidenceRefs: [fe-com-prototypes]
+    ingestionPriority: 3
+  - name: 'T. L. Tolstaya'
+    wikiType: person
+    wikilinkTarget: 'Tatyana Tolstaya'
+    vaultStatus: exists
+    role: 'Tolstoy''s eldest daughter; initiated the 30 Dec 1889 home theatrical on returning from abroad, asked her father for the play, and played the maid Tanya. The proximate cause of the staged comedy.'
+    sources: []
+    evidenceRefs: [fe-annenkova-tanya, fe-com-staging-cast]
+    ingestionPriority: 2
+  - name: 'M. L. Tolstaya'
+    wikiType: person
+    wikilinkTarget: 'Maria Tolstaya'
+    vaultStatus: exists
+    role: 'Tolstoy''s daughter; played the cook at the 30 Dec 1889 première "remarkably well" (Tolstoy to Biryukov).'
+    sources: []
+    evidenceRefs: [fe-biryukov-mocks, fe-com-staging-cast]
+    ingestionPriority: 3
+  - name: 'A. A. Stakhovich'
+    wikiType: person
+    wikilinkTarget: 'Alexander Stakhovich'
+    vaultStatus: missing
+    role: 'Theatre-lover whose reading-aloud of Ostrovsky and Gogol at Yasnaya (mid-Oct 1886) prompted Tolstoy to begin the play — the same spark as The Power of Darkness.'
+    sources: []
+    evidenceRefs: [fe-com-simultaneous]
+    ingestionPriority: 3
+  - name: 'V. M. Lopatin'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Lopatin'
+    vaultStatus: missing
+    role: 'Then a justice of the peace, later a Moscow Art Theatre actor; played the 3rd Peasant so well at the 1889 staging that Tolstoy expanded the role.'
+    sources: []
+    evidenceRefs: [fe-com-staging-cast]
+    ingestionPriority: 3
+  - name: 'K. S. Stanislavski'
+    wikiType: person
+    wikilinkTarget: 'Konstantin Stanislavski'
+    vaultStatus: missing
+    role: 'Staged the comedy for his amateur Society of Art and Literature (Feb 1891), playing Zvezdintsev — by his own account his first independent directorial work, and a Moscow event that impressed the future Moscow Art Theatre co-founder Nemirovich-Danchenko.'
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: 'V. G. Chertkov'
+    wikiType: person
+    wikilinkTarget: 'Vladimir Chertkov'
+    vaultStatus: exists
+    role: 'Heard the comedy read aloud (with Leskov) as a Yasnaya house-guest, 25 Jan 1890; the chief correspondent of Tolstoy''s self-disparaging verdicts on the work.'
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: 'Leo Tolstoy'
+    wikiType: person
+    wikilinkTarget: 'Leo Tolstoy'
+    vaultStatus: exists
+    role: 'Author.'
+    sources: []
+    evidenceRefs: [fe-com-milk, fe-ge-three-works, fe-annenkova-tanya, fe-biryukov-mocks, fe-let-wagner]
+    ingestionPriority: 2
+  # --- Concepts ---
+  - name: 'Spiritualism (спиритизм) as superstition of the educated'
+    wikiType: concept
+    wikilinkTarget: 'Spiritualism'
+    vaultStatus: missing
+    role: 'The 1860s–80s Russian séance vogue — mediums, the "spiritual ether," scientist-believers (Butlerov, Wagner) against the sceptic Mendeleev — which Tolstoy satirised as the type-specimen of superstition surviving among the educated classes. The play''s central target and the irony of its title.'
+    sources: []
+    evidenceRefs: [fe-investigation, fe-prof-mediumism, fe-fedor-superstition, fe-let-apollov, fe-let-wagner]
+    ingestionPriority: 2
+    dependsOn: []
+  # --- Institutions ---
+  - name: 'Society of Art and Literature (Общество искусства и литературы)'
+    wikiType: institution
+    wikilinkTarget: 'Society of Art and Literature'
+    vaultStatus: missing
+    role: 'Stanislavski''s amateur theatre society; its Feb 1891 production of the comedy (Stanislavski as Zvezdintsev) was his first independent directorial work and a step toward the founding of the Moscow Art Theatre (1898).'
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: 'Alexandrinsky Theatre'
+    wikiType: institution
+    wikilinkTarget: 'Alexandrinsky Theatre'
+    vaultStatus: missing
+    role: 'St Petersburg Imperial theatre; gave the first public/Imperial performance of the comedy on 26 September 1891, once the stage ban was eased to the Imperial stage.'
+    sources: []
+    evidenceRefs: [fe-com-stageban]
+    ingestionPriority: 3
+  - name: 'Main Administration for Press Affairs'
+    wikiType: institution
+    wikilinkTarget: 'Main Administration for Press Affairs'
+    vaultStatus: missing
+    role: 'The imperial censorship body (under E. M. Feoktistov) that, after Alexander III''s ruling, banned the comedy from the public stage (circular 28 Apr 1890) while permitting amateur performance — the same apparatus that handled The Power of Darkness and The Kreutzer Sonata.'
+    sources: []
+    evidenceRefs: [fe-com-stageban]
+    ingestionPriority: 3
+  # --- Events ---
+  - name: 'The séance at N. A. Lvov''s flat'
+    wikiType: event
+    wikilinkTarget: 'Séance at Lvov''s flat'
+    vaultStatus: missing
+    role: 'The Moscow spiritualist séance (≤1886) Tolstoy attended on his own initiative — the seed of the play. Failed; confirmed his scorn for spiritualism.'
+    sources: []
+    evidenceRefs: [fe-com-seance, fe-com-milk]
+    ingestionPriority: 3
+    dependsOn: ['N. A. Lvov']
+  - name: 'Yasnaya Polyana amateur première (30 Dec 1889)'
+    wikiType: event
+    wikilinkTarget: 'The Fruits of Enlightenment première (1889)'
+    vaultStatus: missing
+    role: 'The first performance — a home theatrical got up by Tatyana Lvovna, directed by Davydov, cast from the young Tolstoys and their circle; the satirised class staging its own satire.'
+    sources: []
+    evidenceRefs: [fe-com-staging, fe-com-staging-cast, fe-biryukov-mocks, fe-diary-shame]
+    ingestionPriority: 3
+    dependsOn: ['T. L. Tolstaya', 'N. V. Davydov']
+
+visuals:
+  - id: VIS-01
+    type: stage-photo
+    subject: 'K. S. Stanislavski as Zvezdintsev, The Fruits of Enlightenment, 1891'
+    relatedEntity: 'K. S. Stanislavski'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Stanislavski The Fruits of Enlightenment (1891).jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Stanislavski_The_Fruits_of_Enlightenment_(1891).jpg'
+    localPath: visuals/commons-stanislavski-fruits-1891.jpg
+    note: 'Stanislavski in costume as the spiritualist landowner — the Society of Art and Literature production (Feb 1891), his first independent directorial work. Keystone reception image.'
+  - id: VIS-02
+    type: programme
+    subject: 'Programme of the Yasnaya Polyana home staging, December 1889'
+    relatedEntity: 'Yasnaya Polyana amateur première (30 Dec 1889)'
+    relatedEvidence: [fe-com-staging]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Лев Толстой "Плоды просвещения", программка домашнего спектакля. 1889.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%B2_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%22%D0%9F%D0%BB%D0%BE%D0%B4%D1%8B_%D0%BF%D1%80%D0%BE%D1%81%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%22%2C_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BA%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B3%D0%BE_%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B0%D0%BA%D0%BB%D1%8F._1889.jpg'
+    localPath: visuals/commons-programme-home-staging-1889.jpg
+    note: 'The actual playbill of the family première. Small scan (177×256 px) but legible as an archival document — the matched pair to the marquee.'
+  - id: VIS-06
+    type: photograph
+    subject: 'Leo Tolstoy, 1887 (Scherer & Nabholz studio)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Leo Tolstoi 1887.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1887.jpg'
+    localPath: visuals/commons-tolstoy-photo-1887.jpg
+    note: 'Studio photograph, Moscow 1887 — within the composition window (1886–1890).'
+  - id: VIS-07
+    type: portrait
+    subject: 'Ilya Repin — Portrait of Leo Tolstoy (1887)'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: []
+    holding: 'State Tretyakov Gallery / Wikimedia Commons'
+    archiveId: 'File:Ilya Efimovich Repin (1844-1930) - Portrait of Leo Tolstoy (1887).jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg'
+    localPath: visuals/commons-repin-portrait-1887.jpg
+    note: 'Canonical 1887 Repin portrait; the strongest author image for the composition years.'
+  - id: VIS-03
+    type: title-page
+    subject: 'Cover of «Плоды просвещения», 1892 Russian edition'
+    relatedEntity: 'The Fruits of Enlightenment (Russian edition)'
+    relatedEvidence: [fe-com-uncensored]
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Лев Толстой. Обложка книги Плоды просвещения, 1892.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%B2_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9._%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8_%D0%9F%D0%BB%D0%BE%D0%B4%D1%8B_%D0%BF%D1%80%D0%BE%D1%81%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%2C_1892.jpg'
+    localPath: visuals/commons-book-cover-1892.jpg
+    note: 'A slightly later edition cover (first publication was 1891, in the Yuryev memorial collection). Title-page comparandum.'
+  - id: VIS-04
+    type: poster
+    subject: 'Theatre playbill for «Плоды просвещения», 1898'
+    relatedEntity: 'The Fruits of Enlightenment (staging)'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Плоды просвещения, афиша 1898.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BB%D0%BE%D0%B4%D1%8B_%D0%BF%D1%80%D0%BE%D1%81%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%2C_%D0%B0%D1%84%D0%B8%D1%88%D0%B0_1898.jpg'
+    localPath: visuals/commons-poster-1898.jpg
+    note: 'Theatre/city not identified in Commons metadata; afterlife evidence of the play in the repertory.'
+  - id: VIS-05
+    type: stage-photo
+    subject: 'Scene from «Плоды просвещения», Maly Theatre, Moscow, 1911 revival'
+    relatedEntity: 'Maly Theatre'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Спектакль "Плоды просвещения", Малый театр 1911.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BF%D0%B5%D0%BA%D1%82%D0%B0%D0%BA%D0%BB%D1%8C_%22%D0%9F%D0%BB%D0%BE%D0%B4%D1%8B_%D0%BF%D1%80%D0%BE%D1%81%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%22%2C_%D0%9C%D0%B0%D0%BB%D1%8B%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_1911.jpg'
+    localPath: visuals/commons-maly-theatre-1911.jpg
+    note: '1911 revival, not the 1891 première; the best Maly production image on Commons.'
+  - id: VIS-08
+    type: photograph
+    subject: 'Leo Tolstoy, group photograph, 1892'
+    relatedEntity: 'Leo Tolstoy'
+    relatedEvidence: []
+    holding: 'Wikimedia Commons'
+    archiveId: 'File:Tolstoy1892.jpg'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Tolstoy1892.jpg'
+    localPath: visuals/commons-tolstoy-photo-1892.jpg
+    note: 'Group shot, 1892; others unidentified in Commons metadata. Contextual.'
+  - id: VIS-09
+    type: title-page
+    subject: 'The Fruits of Enlightenment (English trans.), New York 1891'
+    relatedEntity: 'The Fruits of Enlightenment (English translation)'
+    relatedEvidence: []
+    holding: 'Internet Archive'
+    archiveId: 'fruitsofenlighte00tols'
+    access: open
+    rights: PD
+    licence: PD
+    usable: true
+    url: 'https://archive.org/details/fruitsofenlighte00tols'
+    localPath: ''
+    note: 'Early English edition (US Book Co., 1891); title page via IA BookReader. Not downloaded (binary JP2 redirect). The Maude translation circulates the play as The Fruits of Culture.'
+  - id: VIS-GAP-premiere
+    type: stage-photo
+    subject: '1891 Alexandrinsky / Maly première photographs and K. Korovin set/costume designs'
+    relatedEntity: 'The Fruits of Enlightenment (staging)'
+    relatedEvidence: [fe-com-stageban]
+    holding: 'target: Bakhrushin Theatre Museum (Moscow) / St-Petersburg State Theatre Museum / Goskatalog'
+    archiveId: ''
+    access: not-found
+    rights: unknown
+    licence: unknown
+    usable: false
+    url: ''
+    localPath: ''
+    note: 'GAP — no PD photo or set design from the 1891 professional premières found on Commons/IA. Likely held (rights-reserved) by the Bakhrushin and St-Petersburg theatre museums; Goskatalog not yet systematically queried. Also unlocated: a photo of the Dec 1889 Yasnaya family production (only the programme survives openly) and the true 1891 Posrednik first-edition title page.'
+
+scholarship:
+  summary: >-
+    The English-language reception of The Fruits of Enlightenment (Tolstoy's title; the Maude
+    translation circulates it as The Fruits of Culture) is unusually warm for late Tolstoy and
+    strikingly uniform: it is read as his one successful stage comedy and the natural pendant to
+    the tragedy The Power of Darkness of the same years. Ernest J. Simmons (Introduction to
+    Tolstoy's Writings, 1968, ch. 11) calls it "a merry comedy in four acts, in which high society
+    and spiritualism were blisteringly satirized," with "wonderful peasant characters … who
+    provided a combination of farce and genuine distress over their lack of land" — naming the two
+    targets the literature consistently identifies: the spiritualist idleness of the gentry and the
+    land question the three peasants embody. Reference works file the play as social satire of "the
+    persistence of unenlightened attitudes towards the peasants amongst the Russian landed
+    aristocracy" (Wikipedia) and place it in the Russian social-comedy line of Gogol and Ostrovsky
+    (themselves heirs to Molière) — reinforced by the primary record, since Stakhovich's reading of
+    Gogol and Ostrovsky aloud sparked the play. The single most-cited fact in the English reception
+    is the Stanislavski connection: his amateur Society of Art and Literature staging of February
+    1891, playing Zvezdintsev himself, was "his first fully independent directorial work" and a
+    Moscow event that impressed the future Moscow Art Theatre co-founder Nemirovich-Danchenko
+    (Britannica; Stanislavski, My Life in Art) — so the comedy sits in the documented MAT
+    prehistory. The deeper spiritualism context (the scientist-spiritualists Butlerov and Wagner,
+    Mendeleev's 1875–76 debunking commission, the medium D. D. Home) is well documented in the
+    history-of-science literature but is NOT in the PSS Tom 27 apparatus, and is therefore
+    attributed strictly to general scholarship, never to the PSS.
+  triangulation:
+    - evidenceRef: fe-biryukov-mocks
+      conventionalView: 'The English literature instinctively pairs the two plays as the comic/tragic twins of the same years (Simmons treats both in one chapter; the comedy "contrasts sharply with" the tragedy) and reads the comedy as gentry self-satire with the peasants as the wise foil — but it does NOT draw the audience-inversion (written-for-the-people vs. written-by-the-class) as sharply as the dive, which depends on the project''s own Power of Darkness dive.'
+      relation: extends
+      source: 'Simmons (1968), ch. 11 ("contrasts sharply"); the project''s Power of Darkness dive; PSS Tom 27 apparatus (Yasnaya family theatre → Tsarskoye Selo court, no peasant audience).'
+    - evidenceRef: fe-com-prototypes
+      conventionalView: 'History-of-science scholarship independently documents Butlerov (chemist) and Wagner (zoologist) as the two eminent St-Petersburg scientist-spiritualists of exactly this milieu, divided from the sceptic Mendeleev — corroborating the PSS-stated prototype from outside the apparatus.'
+      relation: confirms
+      source: 'Encyclopedia.com, "A. M. Butlerov"; the 1875–76 Mendeleev commission record; Annals of Science (2025) on the Russian scientist-spiritualist milieu.'
+    - evidenceRef: fe-land-need
+      conventionalView: 'Reference works lead with this reading: the play satirises "unenlightened attitudes towards the peasants amongst the Russian landed aristocracy" (Wikipedia); Simmons names the peasants'' "genuine distress over their lack of land."'
+      relation: confirms
+      source: 'Wikipedia, "The Fruits of Enlightenment" (accessed June 2026); Simmons (1968), ch. 11.'
+    - evidenceRef: fe-ge-three-works
+      conventionalView: 'The English literature reads the spiritualism satire but does not routinely tie the comedy forward to the aesthetics treatise; the title''s irony (плоды просвещения = "fruits of enlightenment") and the parallel composition with What Is Art? make the false-enlightenment continuity the dive''s synthesis.'
+      relation: extends
+      source: 'The project''s What Is Art? dive; the 23 Jun 1889 letter to Ge (comedy + story + "about art" in parallel).'
+    - evidenceRef: fe-com-stageban
+      conventionalView: 'The English-language reception is largely silent on the stage ban (neither the Wikipedia nor the Britannica entry mentions Alexander III''s ruling); the censorship story is carried by the PSS apparatus and the Raskolnikov 1928 archival study, not the mainstream.'
+      relation: extends
+      source: 'PSS Tom 27 apparatus (Durnovo report to Alexander III, 26 Apr 1890; Feoktistov circular, 28 Apr 1890); F. Raskolnikov, Krasnaya nov no. 11 (1928).'
+    - evidenceRef: fe-diary-trash
+      conventionalView: 'Simmons reports exactly Tolstoy''s resistance — staging "was an amusement of rich and idle people," the work "insignificant and weak" — consistent with the self-disparaging letters and diary.'
+      relation: confirms
+      source: 'Simmons (1968), ch. 11; PSS Tom 27 letters/diary.'
+
+workRecord:
+  recordPath: 'website/src/works/plays/comedy/the-fruits-of-enlightenment/The Fruits of Enlightenment.md'
+  workId: the-fruits-of-enlightenment
+  fields:
+    - field: recordStatus
+      value: complete
+      evidenceRefs: [fe-com-uncensored, fe-com-staging]
+      source: 'dive synthesis (record promotable from draft once ingested)'
+      confidence: medium
+      note: 'Currently draft; the dive supplies dates, venues, prototypes, censorship — enough to promote. Final call at ingestion.'
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'CORRECTION: stub says false. First printed 1891 (Tolstoy died 1910).'
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'CORRECTION: stub says false. First publication was in Russia (Moscow, the Yuryev memorial collection), 1891, uncensored.'
+    - field: dateWritingStarted
+      value: '1886'
+      oldStyle: '1886'
+      approximate: true
+      evidenceRefs: [fe-com-simultaneous, fe-plan-lvov]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'Two plans + the first redaction «Исхитрилась!» begun autumn 1886, simultaneously with The Power of Darkness, in the same notebook. The séance source dates ≤ spring 1886.'
+    - field: dateWritingCompleted
+      value: '1890'
+      oldStyle: '1890'
+      approximate: true
+      evidenceRefs: [fe-com-staging, fe-diary-trash]
+      source: 'PSS Tom 27 commentary; diary/letters 1889–1890'
+      confidence: high
+      note: 'Drafted in 4 acts at Spasskoye (late Mar 1889); rewritten Dec 1889 for the staging; heavy post-staging expansion Jan–Feb 1890; proof corrections to June 1890. "Completed" taken as the 1890 proof stage.'
+    - field: dateFirstPublished
+      value: '1891'
+      oldStyle: '1891'
+      approximate: true
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'In «В память С. А. Юрьева. Сборник, изданный друзьями покойного» (Moscow, 1891), pp. 1–95; reprinted the same year in Part 13 of the collected works.'
+    - field: firstPublishedVenue
+      value: 'В память С. А. Юрьева (memorial collection), Moscow'
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'A memorial anthology for the late S. A. Yuryev; the comedy was offered to it after The Kreutzer Sonata was banned from the volume.'
+    - field: firstPublishedVenueType
+      value: book
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'The venue-type enum is journal·newspaper·book·samizdat — a memorial sbornik (collective volume) maps to `book`; reprinted same year in the collected works (also a book). (`anthology` is a genre value, not a venue type.)'
+    - field: dateFirstPublishedInRussia
+      value: '1891'
+      oldStyle: '1891'
+      approximate: true
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'Same as first publication — first appeared in Russia.'
+    - field: firstPublishedInRussiaVenue
+      value: 'В память С. А. Юрьева (memorial collection), Moscow'
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: ''
+    - field: firstPublishedInRussiaVenueType
+      value: book
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'Same as firstPublishedVenueType (book / memorial sbornik).'
+    - field: titleAlternatives
+      value:
+        - title: 'Исхитрилась!'
+          type: working
+          language: ru
+        - title: 'Комедия Спириты'
+          type: working
+          language: ru
+        - title: 'The Fruits of Culture'
+          type: translation
+          language: en
+      evidenceRefs: [fe-ishitrilas-title, fe-com-simultaneous]
+      source: 'PSS Tom 27 commentary; Maude translation'
+      confidence: high
+      note: 'Title evolution «Комедия Спириты» → «Исхитрилась!» → «Плоды просвещения». The Maude English translation circulates the play as The Fruits of Culture. type values use the works-schema enum (working · translation · subtitle · variant).'
+    - field: authoringLocations
+      value:
+        - 'Yasnaya Polyana'
+        - 'Spasskoye (Prince S. S. Urusov''s estate)'
+        - 'Moscow'
+      evidenceRefs: [fe-com-simultaneous, fe-annenkova-tanya]
+      source: 'PSS Tom 27 commentary; diary 1889'
+      confidence: high
+      note: 'Begun at Yasnaya (1886); the 4-act draft surge at Spasskoye (Mar–Apr 1889); rewrites at Yasnaya/Moscow (1889–90).'
+    - field: bans
+      value:
+        - banningAuthority: 'Main Administration for Press Affairs (E. M. Feoktistov), on Alexander III''s resolution (report of Minister of Internal Affairs I. N. Durnovo)'
+          authorityType: imperial-state
+          jurisdiction: Russia
+          scope: stage-ban
+          banDate: '1890-05-10'
+          banDateOldStyle: '1890-04-28'
+          banDateApproximate: false
+          banLiftedDate: '1894'
+          banLiftedDateOldStyle: '1894'
+          banLiftedDateApproximate: true
+          notes: 'Public stage prohibited while AMATEUR performance was expressly permitted (Alexander III: "unsuitable for the [public] stage, but on amateur theatres it may be permitted"). Print was uncensored. Feoktistov circular 28 Apr 1890 (OS), reaffirmed 11 Mar 1891. The Imperial stage opened first (Alexandrinsky, 26 Sept 1891 OS); provincial case-by-case from Nov 1893; a general circular of April 1894 permitted it everywhere.'
+      evidenceRefs: [fe-com-stageban]
+      source: 'PSS Tom 27 commentary; F. Raskolnikov (1928)'
+      confidence: high
+      note: 'Uses the new bans[].scope value `stage-ban` (works-schema v9, added for this case + The Power of Darkness). NS ban date computed from OS 28 Apr 1890 (+12 days). The amateur-exemption nuance is in notes per the schema gloss.'
+    - field: censoredVersionExists
+      value: false
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27 commentary'
+      confidence: high
+      note: 'Print was uncensored. The only pre-print text changes were two decency softenings introduced by S. A. Tolstaya in proof (e.g. «сопли» → neutral), which the PSS restores — author-side, not state censorship. A few words (incl. «монах», of the spirit Nikolai) were cut for the Tula STAGE permit only.'
+    - field: censorshipNotes
+      value: 'Print free and uncensored (1891). A stage-only ban: Alexander III ruled the play unsuitable for the public stage but permitted on amateur theatres (Apr 1890); the Feoktistov circular enforced it (28 Apr 1890 OS, reaffirmed 11 Mar 1891 after an unauthorised Kharkov staging). The public stage opened at the Imperial Alexandrinsky (26 Sept 1891 OS); a general permission followed in 1894. The dramatic censor had cleared the Tula amateur staging with a few words cut, including «монах».'
+      evidenceRefs: [fe-com-stageban, fe-com-uncensored]
+      source: 'PSS Tom 27 commentary; F. Raskolnikov, Krasnaya nov no. 11 (1928)'
+      confidence: high
+      note: ''
+    - field: synopsis
+      value: 'In a rich Moscow household gripped by a fashionable belief in spiritualism, three Kursk peasants wait for the landowner''s signature on a land sale he keeps refusing. The maid Tanya, in love with a peasant-lad, exploits the household''s séance mania: she persuades the master that the lad is a "medium" and, hidden, fakes the séance phenomena so that the "spirits" command him to sign the deed. He does; the land is sold; Tanya wins her marriage. A four-act comedy satirising the idle, superstitious gentry against the practical good sense of the servants and the real need of the peasants — the bitter "fruits of enlightenment."'
+      evidenceRefs: [fe-tanya-believed, fe-signed, fe-made-people]
+      source: 'dive synthesis from the play text'
+      confidence: high
+      note: 'Proposed; the record''s prose body already carries a similar summary.'
+    - field: themes
+      value:
+        - 'spiritualism'
+        - 'pseudo-science'
+        - 'social satire'
+        - 'the peasant land question'
+        - 'idleness of the gentry'
+        - 'superstition'
+      evidenceRefs: [fe-prof-mediumism, fe-land-need, fe-fedor-superstition, fe-let-wagner]
+      source: 'dive synthesis'
+      confidence: medium
+      note: 'Free-text theme tags; reconcile with any controlled themes vocabulary at ingestion.'
+    - field: relatedWorks
+      value:
+        - id: the-power-of-darkness
+          relationshipType: companion
+      evidenceRefs: [fe-com-simultaneous]
+      source: 'PSS Tom 27 commentary'
+      confidence: medium
+      note: 'The Power of Darkness = the tragic twin begun in the same autumn and the same notebook → `companion` (a valid relationshipType; the enum is cycle·sequel·prequel·revision·source·companion·adaptation). The Kreutzer Sonata link (written in parallel; both slated for collected-works vol. 13) is REAL but has no fitting relationshipType value (none of the enum covers mere contemporaneity), so it is intentionally NOT proposed as an edge — it lives in the dive prose/themes instead. Add a Kreutzer edge at ingestion only if the schema gains a contemporaneity/parallel value.'
+    - field: identifiers.jubileeEdition.volumes
+      value: '27'
+      evidenceRefs: [fe-com-uncensored]
+      source: 'PSS Tom 27'
+      confidence: high
+      note: 'Text (pp. 95–250), plans (433–437), first redaction «Исхитрилась!» (438–475), variants (476–480), and commentary (647–670) all in Tom 27. (Local-cache caveat: the fb2 dir jubilee-edition/vol27/ is mislabeled = Tom 61; the real Tom 27 fb2 is in jubilee-edition/vol87/.)'
+
+coverage:
+  - surface: 'Genesis & composition (séance source; the people around the work; the family staging)'
+    status: covered
+    note: 'Heavy: the Lvov séance, the same-notebook twin-birth with The Power of Darkness, the Stakhovich spark, the Spasskoye drafting, the daughter-initiated 1889 staging, the 1890 expansion.'
+  - surface: 'What the play says (close-read of pivotal scenes)'
+    status: covered
+    note: 'Whole play read (drama flex); the land-need refrain, Fyodor''s superstition verdict, the séance centrepiece (the Professor''s lecture + the fraud), the unfalsifiable finale, the Old Cook, the resolution.'
+  - surface: 'Redactions & textual history'
+    status: covered
+    note: 'The two plans + the keystone first redaction «Исхитрилась!» read first-class; the title evolution and the post-staging expansion traced; 7–8 redactions per the apparatus. Full manuscript collation not done (sampled, per novel-mode).'
+  - surface: 'Publication, censorship & translation'
+    status: covered
+    note: 'Uncensored print 1891 (Yuryev collection + collected works vol. 13); the stage-only ban (1890–1894); the English title variant (The Fruits of Culture).'
+  - surface: 'Reception & afterlife (gentry/court audiences; the Stanislavski landmark)'
+    status: covered
+    note: 'Amateur première (gentry); Tula + Tsarskoye Selo court reprises 1890; Stanislavski''s Feb 1891 production (MAT prehistory); Alexandrinsky 26 Sept 1891; Maly transfer Dec 1891 (secondary).'
+  - surface: 'Characters & prototypes'
+    status: covered
+    note: 'Six figures routed as character with prototypes[] (Zvezdintsev←Lvov, Sakhatov←Samarin, Krugosvetlov←Butlerov [denied portrait], Grossman←Feldman; Tanya/Semyon invented); the rest folded to prose.'
+  - surface: 'Visual & manuscript record'
+    status: partial
+    note: 'Medium sweep, 8 PD images cached (incl. the 1889 programme + Stanislavski 1891). No 1891-première photos / Korovin designs / 1889 production photo / Posrednik first-edition title page located openly — see VIS-GAP-premiere.'
+  - surface: 'The Gogol/Ostrovsky/Molière comedic lineage'
+    status: partial
+    note: 'Noted as a survey commonplace (corroborated by Stakhovich''s Gogol/Ostrovsky reading sparking the play), but no rigorous Molière-genealogy argument for this play specifically — context, not a sourced thesis.'
+
+contradictions:
+  - claim: 'S. A. Tolstaya''s role in the 1889 staging.'
+    correction: 'A common assumption casts Sofia Andreyevna as a driving force; the PSS Tom 27 apparatus credits the daughter T. L. Tolstaya with initiating the home theatrical and N. V. Davydov as director, and records S. A. Tolstaya''s role as editorial (two decency softenings in proof) and later as the author of a press account — not as organiser or performer.'
+    evidenceRef: fe-com-staging-cast
+
+notCovered:
+  - 'Full manuscript collation of all 7–8 redactions (the dive samples the plans + the «Исхитрилась!» first redaction as keystone, per novel-mode).'
+  - 'The play''s later Soviet and world stage history beyond the 1911 Maly revival.'
+  - 'A scene-level study of the Act-2 Grossman thought-reading "experiment" against the real Feldman/Cumberland thought-reading acts of the 1880s.'
+  - 'The First Distiller (Первый винокур, 1886) and the folk-tale cycle as the sibling "art for the people" set — flagged for a cluster cross-link / a later theme-dive, not dived here.'
+
+needsReview:
+  - item: 'Diary filename-year gotcha: the séance-milieu diary entry is filed v49_084_084_1883_04_18 but its bibl header reads "Дневник 1884 г." and the PSS-27 commentary cites it as 19 April 1884. The dive dates it 1884; confirm at ingestion (matches the project memory on this exact gotcha).'
+    phase: 2
+    why: 'TEI filename carries the wrong year; trust the bibl line + commentary.'
+  - item: 'Local-cache path gotcha: jubilee-edition/vol27/ is mislabeled (it is PSS Tom 61, Letters 1863–72); the real Tom 27 fb2 is in jubilee-edition/vol87/. The commentary was mined from vol87; the play/redaction TEI extracts carry the correct Tom 27 bibl. Worth a memory nugget; verify the offset (vol26→T.60, vol61→T.16, vol86→T.26, vol87→T.27) before reusing.'
+    phase: 2
+    why: 'Directory naming is systematically offset in this range; a naïve path would mine the wrong volume.'
+  - item: 'Maly Theatre première date: the PSS apparatus gives only the Alexandrinsky (26 Sept 1891 OS) as the first public/Imperial staging and names the Maly merely via the Garin-Vinding/Feldman makeup-lawsuit anecdote. English Wikipedia supplies "Maly, December 1891" (Tolstoy attending Jan 1892). Cite the Maly date as secondary-sourced, not PSS-anchored.'
+    phase: 3
+    why: 'Secondary-only date; do not present as from the apparatus.'
+  - item: 'Stanislavski-production venue: Wikipedia''s production list gives the German (Nemetsky) Club (20 Feb / OS 8 Feb 1891); the Fruits article says "on Tverskaya Street." Resolve against Benedetti or My Life in Art before asserting a venue. Date (Feb 1891), role (Zvezdintsev), and "first independent production" are consistent.'
+    phase: 3
+    why: 'Conflicting secondary venues.'
+  - item: 'Mendeleev''s 1875–76 anti-spiritualism commission and the medium D. D. Home are BACKGROUND context (history-of-science scholarship), NOT in the PSS Tom 27 apparatus. The play itself names «Юм» (Home); attribute the commission/Home framing to general scholarship, never to PSS.'
+    phase: 3
+    why: 'Source-provenance discipline; the apparatus''s spiritualism frame is narrower (Blavatsky via Lvov; Butlerov; Wagner; Charcot/Salpêtrière for Feldman).'
+  - item: 'Character page-names use a disambiguating "(The Fruits of Enlightenment)" suffix; the wiki has no character pages yet. Confirm the disambiguation convention at ingestion. (Works-schema enum values already reconciled to the live schema: titleAlternatives[].type=working, firstPublished*VenueType=book, relatedWorks[].relationshipType=companion; the Kreutzer parallel was left off as no relationshipType value fits contemporaneity.)'
+    phase: 4
+    why: 'Routing judgment; the schema-enum values are now reconciled.'
+  - item: 'Borderline character folds: Fyodor Ivanych (the valet — the play''s plain-sense moral voice), the Old Cook and the three Peasants (the social-cost / land-question figures), and Anna Pavlovna / Betsy / Vasily Leonidych are kept in the work''s overview prose rather than minted as nodes (no documented prototype, no recurrence). Revisit Fyodor Ivanych in particular at ingestion if a moral-voice node is wanted.'
+    phase: 4
+    why: 'Tiering-rule judgment calls.'
+
+archivesConsulted:
+  - 'primary-sources/tolstoydigital-TEI — PSS Tom 27 (play text, two plans, the «Исхитрилась!» first redaction, variants; commentary at texts_front/comments/v27_647_670); Toms 49–51 (diaries 1884–1890); Toms 64–65 (letters 1889–1890)'
+  - 'primary-sources/jubilee-edition/vol87 — PSS Tom 27 fb2 (editorial apparatus «История писания и печатания»); NB the vol27/ dir is mislabeled (= Tom 61)'
+  - 'website/src/wiki — vault status of entities (14 pages: family, Chertkov, Birukoff, Yasnaya Polyana, concepts)'
+  - 'docs/research/1886-the-power-of-darkness, /1897-1898-what-is-art, /1887-1889-the-kreutzer-sonata — sibling dives for grounding + cross-link'
+  - 'web — Simmons (1968), Britannica, Wikipedia (Fruits, Stanislavski), Encyclopedia.com (Butlerov, Mendeleev), Annals of Science (2025) on Russian scientific spiritualism'
+
+references:
+  primary:
+    - 'Л. Н. Толстой. Плоды просвещения. ПСС, Т. 27, с. 95–250 (текст); с. 433–435 (первый план), 436–437 (второй план), 438–475 (первая редакция «Исхитрилась!»), 476–480 (варианты). История писания и печатания (комментарий Н. К. Срезневского и др.), с. 647–670.'
+    - 'Дневники Л. Н. Толстого, ПСС Тт. 49–51 (1884; 1889–1890) — генезис, работа над комедией, стыд за домашний спектакль.'
+    - 'Письма Л. Н. Толстого, ПСС Тт. 64–65 (1889–1890) — к Н. Н. Ге, Л. Ф. Анненковой, П. И. Бирюкову, Н. П. Вагнеру, А. И. Аполлову, Г. А. Русанову и др.'
+  background:
+    - 'Ernest J. Simmons, Introduction to Tolstoy''s Writings (Univ. of Chicago Press, 1968), ch. 11 ("Dramatic Writings") — the standard English account; "high society and spiritualism … blisteringly satirized"; the peasants'' "distress over their lack of land"; the Stanislavski production. https://www.ourcivilisation.com/smartboard/shop/smmnsej/tolstoy/chap11.htm'
+    - 'Konstantin Stanislavski, My Life in Art (1924) — the Society of Art and Literature production of 1891 as his first independent directorial work.'
+    - 'Encyclopædia Britannica, "The Fruits of Enlightenment" (accessed June 2026) — the 1891 Stanislavski staging as "a major Moscow theatrical event" that impressed Nemirovich-Danchenko. https://www.britannica.com/topic/The-Fruits-of-Enlightenment'
+    - 'Wikipedia, "The Fruits of Enlightenment" and "Konstantin Stanislavski" (accessed June 2026) — staging chronology (Yasnaya 1889; Tula 1890; Stanislavski 1891; Alexandrinsky 1891; Maly Dec 1891).'
+    - 'Encyclopedia.com, "Aleksandr Mikhailovich Butlerov" and "Dmitrii Ivanovich Mendeleev" — Butlerov''s spiritualism; Mendeleev''s 1875–76 commission. Background — NOT in PSS.'
+    - '"Alexander N. Aksakov and the domestication of ''scientific spiritualism'' in Imperial Russia," Annals of Science (2025) — the Russian scientist-spiritualist milieu (Aksakov, Butlerov, Wagner). Background — NOT in PSS.'
+    - 'F. Raskolnikov, "Цензурные мытарства Л. Н. Толстого-драматурга," Красная новь, кн. 11 (1928), с. 139–142 — the stage-censorship dossier.'
+    - 'Aylmer & Louise Maude, the standard English translation (as The Fruits of Culture); A. N. Wilson, Tolstoy (1988); Rosamund Bartlett, Tolstoy: A Russian Life (2010) — general biography (Fruits is a minor entry; cite at the general level).'

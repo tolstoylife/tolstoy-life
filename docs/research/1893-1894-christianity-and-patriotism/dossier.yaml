@@ -1,0 +1,883 @@
+topic:
+  slug: 1893-1894-christianity-and-patriotism
+  title: "Christianity and Patriotism (Христианство и патриотизм)"
+  question: >-
+    Read Tolstoy's 1893–94 anti-patriotism polemic as a single work: its argument
+    (patriotism as a government-, press-, school-, and clergy-induced hypnosis,
+    incompatible with Christianity; the Franco-Russian alliance / Toulon 1893
+    festivities as the exhibit; the remedy of individual refusal to lie); its
+    genesis, redactions, censorship and translation lineage, reception, and place
+    in the non-resistance cluster.
+  date: "2026-06-07"
+  period: "Prophet period (post-1880)"
+  corpusSurface: "works (PSS Tom 39) + composition-window diary (Tom 52) + letters (Toms 66, 67, 84, 87); light visuals sweep"
+  dateRange: "composition 1893-10-08 / 1894-03-17 (OS); first publication 1894 (FR), Russia 1906"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE — flat citation ledger. quoteRu is byte-faithful to the named extract
+# (verify_quotes.py asserts this). quoteEn is a labelled working translation.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ---- The work itself: PSS Tom 39 pp.27–80 (v39_027_080) ----
+  - id: W1
+    genre: works
+    pssTom: 39
+    pages: "27 (preface)"
+    date: "1894-03-17 (OS, signed)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "вызвали во мне, вероятно так же как и во многих людях, сначала чувство комизма, потом недоумения, потом негодования"
+    quoteEn: "(working English) [the Franco-Russian festivities] aroused in me, probably as in many people, first a feeling of the comic, then of bewilderment, then of indignation."
+    significance: "The essay's own account of its emotional genesis — it began as a short journal article and grew into a treatise."
+    facsimile: ""
+  - id: W2
+    genre: works
+    pssTom: 39
+    pages: "27–28 (ch. I)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "все эти миллионы людей русских и французских вдруг вообразили себе, что они как-то особенно любят друг друга"
+    quoteEn: "(working English) all these millions of Russians and Frenchmen suddenly imagined that they somehow specially loved one another."
+    significance: "The absurd premise: squadron visits to Kronstadt (1891) and Toulon (1893) manufacture a sudden mutual 'love' between two peoples mostly set against each other by their governments."
+    facsimile: ""
+  - id: W3
+    genre: works
+    pssTom: 39
+    pages: "34 (ch. III)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Недавно профессор психиатрии Сикорский описал в Киевских университетских известиях исследованную им, как он называет это, психопатическую эпидемию малеванщины"
+    quoteEn: "(working English) Recently Professor of Psychiatry Sikorsky described in the Kiev University News what he investigated and calls a psychopathic epidemic — the malevanshchina."
+    significance: "The diagnostic frame: Tolstoy borrows the psychiatrist I. A. Sikorsky's term for a Kiev-province religious mania and applies it to mass patriotism."
+    facsimile: ""
+  - id: W4
+    genre: works
+    pssTom: 39
+    pages: "35 (ch. III)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "ружьями, штыками, крепостями, броненосцами, меленитами, динамитами"
+    quoteEn: "(working English) [the difference: the Toulon-Paris sufferers possess] rifles, bayonets, fortresses, ironclads, melinite, dynamite."
+    significance: "Why the patriotic 'epidemic' is graver than the peasant one: its sufferers hold the means of mass violence plus the post, telegraph, and press to spread it."
+    facsimile: ""
+  - id: W5
+    genre: works
+    pssTom: 39
+    pages: "44 (ch. V)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "кровь, раны, страдания, гниющие трупы и бессмысленная, напрасная смерть"
+    quoteEn: "(working English) blood, wounds, suffering, rotting corpses, and a senseless, useless death."
+    significance: "The fate of the deceived working people (the 'cannon fodder'), set against the gentlemen who mark map positions with pins after a good dinner."
+    facsimile: ""
+  - id: W6
+    genre: works
+    pssTom: 39
+    pages: "46 (ch. VI)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Дьявол — человекоубийца и отец лжи. И ложь всегда ведет к человекоубийству."
+    quoteEn: "(working English) The devil is a murderer and the father of lies. And the lie always leads to murder."
+    significance: "The moral core: the 'love' and the 'peace' of the festivities are a lie, and the lie is what leads to killing."
+    facsimile: ""
+  - id: W7
+    genre: works
+    pssTom: 39
+    pages: "53 (ch. IX)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Приходи лучше с нами работать, да и немца присылай. А отработаемся — гулять будем. И немца возьмем. Такие же люди."
+    quoteEn: "(working English) Better come and work with us, and send the German along too. And when we're done, we'll make merry. We'll take the German too. They're people just the same."
+    significance: "The peasant Prokofy's answer to the French war-agitator's plan to 'squeeze Germany from two sides' — the народ's own voice against patriotic hatred."
+    facsimile: ""
+  - id: W8
+    genre: works
+    pssTom: 39
+    pages: "55 (ch. X)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Я прожил полвека среди русского народа и в большой массе настоящего русского народа в продолжение всего этого времени ни разу не видал и не слышал проявления или выражения этого чувства патриотизма"
+    quoteEn: "(working English) I have lived half a century among the Russian people, and in the great mass of the real Russian people, in all that time, I have not once seen or heard any manifestation or expression of this feeling of patriotism."
+    significance: "The empirical claim grounding the whole argument: patriotism is not natural to the народ but instilled from above."
+    facsimile: ""
+  - id: W9
+    genre: works
+    pssTom: 39
+    pages: "62 (ch. XII)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Восторги толпы большей частью искусственно приготовляются теми, кому они нужны"
+    quoteEn: "(working English) The raptures of a crowd are for the most part artificially prepared by those who need them."
+    significance: "Introduces the Preobrazhensky-regiment anecdote (every tenth soldier ordered to cross himself) — manufactured 'spontaneous' enthusiasm; the festivities were staged the same way by the French government."
+    facsimile: ""
+  - id: W10
+    genre: works
+    pssTom: 39
+    pages: "66 (ch. XIII)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "не что иное, как предпочтение своего государства или народа всякому другому государству и народу"
+    quoteEn: "(working English) [patriotism is] nothing other than the preference of one's own state or people over every other state and people."
+    significance: "Tolstoy's definition — which he then calls not high but 'stupid and immoral,' a virtue of the ancient world with no material or moral basis in the Christian era."
+    facsimile: ""
+  - id: W11
+    genre: works
+    pssTom: 39
+    pages: "71 (ch. XIV)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "нет во всей истории ни одной войны, которая не была бы вызвана правительствами"
+    quoteEn: "(working English) in all of history there is not one war that was not provoked by governments."
+    significance: "The anti-state thesis: governments manufacture the hostility (patriotism) they then claim to pacify — the gypsy who peppers his horse then pretends to restrain it."
+    facsimile: ""
+  - id: W12
+    genre: works
+    pssTom: 39
+    pages: "72 (ch. XIV)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Патриотизм есть рабство."
+    quoteEn: "(working English) Patriotism is slavery."
+    significance: "The essay's most compressed verdict; patriotism is the basis on which all subordination to government rests."
+    facsimile: ""
+  - id: W13
+    genre: works
+    pssTom: 39
+    pages: "77 (ch. XVII)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "нужно только не лгать"
+    quoteEn: "(working English) one need only not lie."
+    significance: "The remedy: the greatest change needs no feats, only that each person stop affirming what he does not believe — the seed of the later 'do not lie' ethic."
+    facsimile: ""
+  - id: W14
+    genre: works
+    pssTom: 39
+    pages: "80 (ch. XVIII)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "как одна свеча зажигает бесконечное количество других"
+    quoteEn: "(working English) as one candle lights an infinite number of others."
+    significance: "The image of how truth spreads from one free person to the next, dissolving the apparatus of brute force."
+    facsimile: ""
+  - id: W15
+    genre: works
+    pssTom: 39
+    pages: "80 (ch. XVIII)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "«Мир оставляю вам, мир мой даю вам: да не смущается сердце ваше и да не устрашается», — сказал Христос."
+    quoteEn: "(working English) 'Peace I leave with you, my peace I give unto you: let not your heart be troubled, neither let it be afraid' — said Christ. (John 14:27)"
+    significance: "The closing — the peace Christ gives is already among us, to be acquired by each person's free confession of truth, not by treaties or congresses."
+    facsimile: ""
+  - id: W16
+    genre: works
+    pssTom: 39
+    pages: "75 (ch. XIV)"
+    date: "1894-03-17 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v39_027_080_Hristianstvo_i_patriotizm.txt
+    quoteRu: "Народы же, подчиняющиеся правительствам, не могут быть разумны, потому что подчинение правительствам уже есть признак величайшего неразумия."
+    quoteEn: "(working English) But peoples subordinate to governments cannot be rational, because subordination to governments is itself the sign of the greatest unreason."
+    significance: "The grounds on which Tolstoy rejects arbitration/peace-congress pacifism (he answers the «проповедники мира посредством арбитрации» directly): interstate arbitration cannot bring peace while peoples remain subordinate to governments. This is why he is not a conventional peace-movement pacifist."
+    facsimile: ""
+
+  # ---- Genesis: composition-window diary (Tom 52) ----
+  - id: D1
+    genre: diary
+    pssTom: 52
+    pages: "103–104"
+    date: "1893-11-03 (OS; TEI file dated 1893-10-06 — filename-date artifact)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v52_103_104_1893_10_06.txt
+    quoteRu: "Написал Тулон и не посылаю."
+    quoteEn: "(working English) I have written Toulon and am not sending it."
+    significance: "First diary record of a finished draft; he calls it 'Toulon' (his working title throughout) and already hesitates to publish."
+    facsimile: ""
+  - id: D2
+    genre: diary
+    pssTom: 52
+    pages: "104–107"
+    date: "1893-12-22 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v52_104_107_1893_12_22.txt
+    quoteRu: "это тяжелая, не кончающаяся работа над Тулоном, которую я не могу бросить"
+    quoteEn: "(working English) this heavy, unending work on Toulon, which I cannot abandon."
+    significance: "A month into the Moscow revision — stuck but unable to let it go; one of three 'events' he lists for the period."
+    facsimile: ""
+  - id: D3
+    genre: diary
+    pssTom: 52
+    pages: "112–114"
+    date: "1894-03-23 (OS; TEI file dated 1894-03-09 — filename-date artifact)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v52_112_114_1894_03_09.txt
+    quoteRu: "За всё это время писал Тулон и дней 5 тому назад кончил и решил не переводить и не печатать. И это облегчило меня."
+    quoteEn: "(working English) All this time I was writing Toulon, and finished it five days ago, and decided not to translate it and not to print it. And that relieved me."
+    significance: "The decision to suppress the finished essay — the 'relief' is the high point of his recurring wish to abandon it."
+    facsimile: ""
+  - id: D4
+    genre: diary
+    pssTom: 52
+    pages: "114–116"
+    date: "1894-04-21 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v52_114_116_1894_04_21.txt
+    quoteRu: "Тулон решил послать переводчикам. Все одобряют."
+    quoteEn: "(working English) Toulon — decided to send to the translators. Everyone approves."
+    significance: "The reversal: within a month the suppressed essay is released for translation and international publication."
+    facsimile: ""
+
+  # ---- Genesis: composition-window letters (Toms 66, 67, 84, 87) ----
+  - id: L1
+    genre: letter
+    pssTom: 66
+    pages: "414–415"
+    date: "1893-10-30 (OS)"
+    addressee: "D. A. Khilkov"
+    localPdf: ""
+    extract: extracts/v66_561_D_A_Xilkovu.txt
+    quoteRu: "Еще написал статью протест против франко-русских празднеств, которыми нас хотят уверить, что мы все сочувствуем. Эту статью пошлю в английские газеты."
+    quoteEn: "(working English) I have also written an article — a protest against the Franco-Russian festivities by which they want to assure us that we all sympathise. This article I shall send to the English papers."
+    significance: "Names the essay a 'protest' and fixes the English-press destination as of 30 Oct; an early working self-description of the piece."
+    facsimile: ""
+  - id: L2
+    genre: letter
+    pssTom: 87
+    pages: "231–233"
+    date: "1893-10-30 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v87_351_a30.txt
+    quoteRu: "и пошлю в «Daily Chronicle» и к Suttner"
+    quoteEn: "(working English) ...and [I] will send it to the Daily Chronicle and to Suttner [for her journal Die Waffen nieder, named in the same sentence]."
+    significance: "Both target outlets named — the English Daily Chronicle and Bertha von Suttner's pacifist journal; the essay is still unfinished at this point."
+    facsimile: ""
+  - id: L3
+    genre: letter
+    pssTom: 87
+    pages: "233–235"
+    date: "1893-11-03 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v87_352_noyabrya3.txt
+    quoteRu: "Но с Тулоном сделалось то, что он мне опротивел"
+    quoteEn: "(working English) But with Toulon what happened is that it became repugnant to me."
+    significance: "The abandonment crisis: an 'inner voice' tells him not to bother with such trifles; he is glad to hear it. Same day as the D1 'not sending it' diary note."
+    facsimile: ""
+  - id: L4
+    genre: letter
+    pssTom: 87
+    pages: "235–238"
+    date: "1893-11-05 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v87_353_a6.txt
+    quoteRu: "Это было очень глупо с моей стороны. Я опять ею занять, хотя хорошего в ней очень мало"
+    quoteEn: "(working English) That was very foolish of me. I am occupied with it again, though there is very little good in it."
+    significance: "The retraction, two days later — he disowns the 'inner voice' as foolish and resumes. The abandon→resume oscillation recurs through to April."
+    facsimile: ""
+  - id: L5
+    genre: letter
+    pssTom: 66
+    pages: "436–437"
+    date: "1893-11-27 / 1893-12-03 (OS)"
+    addressee: "G. A. Rusanov"
+    localPdf: ""
+    extract: extracts/v66_588_G_A_Rusanovu.txt
+    quoteRu: "Теперь пишу о Тулоне, гипнотизации патриотизма, кажется кончил."
+    quoteEn: "(working English) Now I am writing about Toulon, about the hypnotisation of patriotism; it seems I have finished."
+    significance: "Earliest explicit statement of the central concept — 'the hypnotisation of patriotism' — and a premature claim of completion."
+    facsimile: ""
+  - id: L6
+    genre: letter
+    pssTom: 87
+    pages: "253–258"
+    date: "1894-02-08 (OS)"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v87_363_fevralya8.txt
+    quoteRu: "Я все продолжаю толочь воду в Тулонской ступе"
+    quoteEn: "(working English) I keep on pounding water in the Toulon mortar [i.e. labouring in vain] — that is, I cannot finish it."
+    significance: "Mid-winter, still grinding; he attributes the block to 'something not thought through.'"
+    facsimile: ""
+  - id: L7
+    genre: letter
+    pssTom: 84
+    pages: "209–210"
+    date: "1894-02-03 (OS)"
+    addressee: "S. A. Tolstaya"
+    localPdf: ""
+    extract: extracts/v84_592_a3.txt
+    quoteRu: "Всё тот же так называемый Тулон, в котором я был вовлечен в разъяснения вопроса «патриотизма», и это очень интересно и, мне думается, ново и нужно, т. е. доказательство лжи и вреда этого патриотизма."
+    quoteEn: "(working English) Still the same so-called Toulon, in which I was drawn into clarifying the question of 'patriotism' — and it is very interesting and, I think, new and necessary: the demonstration of the lie and harm of this patriotism."
+    significance: "The clearest authorial thesis statement, to his wife: the piece grew from the Toulon events into a demonstration of 'the lie and harm of patriotism.'"
+    facsimile: ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map → wiki. A plan for the (separate) ingestion
+# step; the dive writes no vault pages. vaultStatus checked against website/src.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author of the essay"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W1, W8, D1, D3, L7]
+    ingestionPriority: 3
+  - name: "Patriotism (Tolstoy's critique)"
+    wikiType: concept
+    wikilinkTarget: "Patriotism"
+    vaultStatus: missing
+    role: "Central concept the essay defines and attacks — preference of one's state over others; an artificial hypnosis, incompatible with Christianity; 'slavery'"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W10, W11, W12, L5, L7]
+    ingestionPriority: 1
+    dependsOn: ["Christianity and Patriotism (work)"]
+  - name: "Christianity and Patriotism (work)"
+    wikiType: work
+    wikilinkTarget: "Christianity and Patriotism"
+    vaultStatus: missing
+    role: "The work itself — handled by the proposed workRecord (new works/ record), not a wiki page"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W1, W2, W15]
+    ingestionPriority: 1
+  - name: "Franco-Russian alliance festivities (Toulon, 1893)"
+    wikiType: event
+    wikilinkTarget: "Franco-Russian Alliance Festivities of 1893"
+    vaultStatus: missing
+    role: "The occasion and exhibit of the essay — the Russian squadron under Avelan at Toulon, Oct 1893, and the Paris receptions"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W2, W4, W9]
+    ingestionPriority: 1
+    dependsOn: ["Patriotism (Tolstoy's critique)"]
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Primary interlocutor through the composition crisis (Oct–Nov 1893, Feb 1894); arranged and undertook the English translation/publication"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L2, L3, L4, L6]
+    ingestionPriority: 3
+  - name: "Nikolai Leskov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Leskov"
+    vaultStatus: missing
+    role: "Novelist; advised Tolstoy (Oct 1893) to send the piece to the English rather than the German press; warm exchange via L. I. Veselitskaya"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Bertha von Suttner"
+    wikiType: person
+    wikilinkTarget: "Bertha von Suttner"
+    vaultStatus: missing
+    role: "Austrian pacifist, author of Die Waffen nieder!; Tolstoy considered sending the essay to her journal (S. A. Tolstaya's suggestion)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L2]
+    ingestionPriority: 2
+  - name: "Dmitry Khilkov"
+    wikiType: person
+    wikilinkTarget: "Dmitry Khilkov"
+    vaultStatus: missing
+    role: "Exiled ex-officer follower; recipient of the letter (30 Oct 1893) naming the essay a 'protest'; the seizure of his children recurs in the composition-window diary"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L1]
+    ingestionPriority: 2
+  - name: "Gavriil Rusanov"
+    wikiType: person
+    wikilinkTarget: "Gavriil Rusanov"
+    vaultStatus: missing
+    role: "Voronezh correspondent; recipient of the letter first articulating 'the hypnotisation of patriotism' (Nov/Dec 1893)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L5]
+    ingestionPriority: 2
+  - name: "Ivan Gorbunov-Posadov"
+    wikiType: person
+    wikilinkTarget: "Ivan Gorbunov-Posadov"
+    vaultStatus: missing
+    role: "Posrednik editor; sent Tolstoy the newspaper clipping of the Toulon bishop's speech that 'proved useful' (quoted in ch. II)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Ivan Sikorsky"
+    wikiType: person
+    wikilinkTarget: "Ivan Sikorsky"
+    vaultStatus: missing
+    role: "Kiev psychiatrist whose study of the malevanshchina 'psychopathic epidemic' Tolstoy adopts as the diagnostic frame for mass patriotism (ch. III)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W3]
+    ingestionPriority: 2
+  - name: "Jules Legras"
+    wikiType: person
+    wikilinkTarget: "Jules Legras"
+    vaultStatus: missing
+    role: "French Slavist; first translator (L'esprit chrétien et le patriotisme, Journal des Débats / Perrin, 1894); engaged by 5 Jan 1894"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Fyodor Avelan"
+    wikiType: person
+    wikilinkTarget: "Fyodor Avelan"
+    vaultStatus: missing
+    role: "Russian vice-admiral commanding the squadron received at Toulon, Oct 1893; named in ch. I (and one of the names later partly encrypted in redaction)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W2]
+    ingestionPriority: 3
+  - name: "Paul Déroulède"
+    wikiType: person
+    wikilinkTarget: "Paul Deroulede"
+    vaultStatus: missing
+    role: "French nationalist agitator (Ligue des patriotes); the unnamed 'guest' who visited Yasnaya Polyana to promote the alliance (ch. VIII–IX); encrypted to 'наш гость' in late redaction"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [W7]
+    ingestionPriority: 3
+  - name: "Tatyana Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; recipient of composition-window letters; conduit for the Suttner suggestion"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Sophia Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; proposed sending the essay to Suttner's journal; recipient of the clearest thesis-statement letter (3 Feb 1894)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [L7]
+    ingestionPriority: 3
+  - name: "Maria Schmidt"
+    wikiType: person
+    wikilinkTarget: "Maria Schmidt"
+    vaultStatus: missing
+    role: "Copyist; entered the final red-ink corrections into рук. №37"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — from the light visuals sweep. visuals/ is git-ignored (local cache);
+# licence + url are the gate for any later publication to website/src.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: tolstoy-1897-taylor
+    type: photograph
+    subject: "Leo Tolstoy, portrait (F. W. Taylor, 1897)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [W1]
+    holding: "Library of Congress, Prints & Photographs Division (ppmsca.37767)"
+    archiveId: "LC-LOT 13216-9"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    localPath: visuals/commons-tolstoy-1897-taylor.jpg
+    note: "Closest dated portrait to the 1893–94 composition period found via Commons (1897)."
+  - id: tolstoy-yasnaya-1890
+    type: photograph
+    subject: "Tolstoy and Sofia Tolstaya at Yasnaya Polyana (c.1890)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: []
+    holding: "Internet Archive Book Images; The American Review of Reviews, 1910"
+    archiveId: ""
+    access: open
+    rights: "No known copyright restrictions"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_and_his_wife_at_Yasnaya_Polyana_(The_American_Review_of_Reviews,_1910).jpg"
+    localPath: visuals/commons-tolstoy-yasnaya-1890.jpg
+    note: "Contextual: the estate where the essay was begun (it was finished in Moscow)."
+  - id: cronstadt-toulon-lithograph-1893
+    type: lithograph
+    subject: "Franco-Russian alliance commemorative lithograph: admirals Avelan and Gervais with the fleet (c.1893)"
+    relatedEntity: "Franco-Russian alliance festivities (Toulon, 1893)"
+    relatedEvidence: [W2, W4]
+    holding: "Musée Carnavalet, Paris (AFF1388)"
+    archiveId: "AFF1388"
+    access: open
+    rights: "Creative Commons Zero, Public Domain Dedication"
+    licence: CC0
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:CRONSTADT_TOULON_PAPIER_A_CIGARETTES_DUC_FILS_PARIS,_AFF1388.jpg"
+    localPath: visuals/commons-cronstadt-toulon-avelan-gervais-1893.jpg
+    note: "Directly illustrates the Kronstadt-1891 / Toulon-1893 events the essay opens with; an advertising lithograph (cigarette papers) — itself an example of the commercialised patriotic enthusiasm Tolstoy describes."
+  - id: fetes-franco-russes-paris-1893
+    type: engraving
+    subject: "Illuminations of the Hôtel de Ville during the Franco-Russian fêtes, Paris, 19 Oct 1893 (Fédor Hoffbauer)"
+    relatedEntity: "Franco-Russian alliance festivities (Toulon, 1893)"
+    relatedEvidence: [W2]
+    holding: "Musée Carnavalet, Paris (D.1345)"
+    archiveId: "D.1345"
+    access: open
+    rights: "Creative Commons Zero, Public Domain Dedication"
+    licence: CC0
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Illuminations_de_l%27H%C3%B4tel_de_Ville_lors_de_la_f%C3%AAte_nocturne_sur_la_place._F%C3%AAtes_Franco-Russes_%C3%A0_Paris,_le_19_octobre_1893,_D.1345.jpg"
+    localPath: visuals/commons-fetes-franco-russes-paris-1893.jpg
+    note: "The Paris reception of ch. I — flags, crowds, allegory."
+  - id: visite-avelan-1893
+    type: photograph
+    subject: "Straw triumphal arch at the Villette abattoirs for Avelan's visit, 20 Oct 1893"
+    relatedEntity: "Franco-Russian alliance festivities (Toulon, 1893)"
+    relatedEvidence: [W9]
+    holding: "Musée Carnavalet, Paris"
+    archiveId: ""
+    access: open
+    rights: "Creative Commons Zero, Public Domain Dedication"
+    licence: CC0
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Visite_de_l%27Amiral_Avellan._Paris_Mus%C3%A9es_20230515140058.jpg"
+    localPath: ""
+    note: "Identified but not downloaded (light-sweep ceiling); an arch of straw baskets — the pageantry the essay satirises. Fetch via docs/fetch_visuals.py if wanted."
+  - id: bertha-von-suttner-1903-pietzner
+    type: photograph
+    subject: "Bertha von Suttner (Carl Pietzner, 1903)"
+    relatedEntity: "Bertha von Suttner"
+    relatedEvidence: [L2]
+    holding: "Wiener Bilder, 8 (1903), Nr. 24"
+    archiveId: ""
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Bertha_von_Suttner_1903_Pietzner.png"
+    localPath: visuals/commons-bertha-von-suttner-1903-pietzner.png
+    note: "Closest Pietzner portrait to the essay period; the pacifist whose journal Tolstoy considered as an outlet."
+  - id: bertha-von-suttner-1906-pietzner
+    type: photograph
+    subject: "Bertha von Suttner (Carl Pietzner, 1906)"
+    relatedEntity: "Bertha von Suttner"
+    relatedEvidence: [L2]
+    holding: "Stadtchronik Wien"
+    archiveId: ""
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Bertha-von-Suttner-1906.jpg"
+    localPath: visuals/commons-bertha-von-suttner-1906-pietzner.jpg
+    note: "Higher-resolution alternative; same studio series, slightly later than the essay."
+  - id: elpidin-1895-geneva-title-page
+    type: title-page
+    subject: "First Russian printing: «Христианство и патриотизм», M. K. Elpidin, Geneva, 1895"
+    relatedEntity: "Christianity and Patriotism (work)"
+    relatedEvidence: []
+    holding: "unknown — no PD scan located on Wikimedia Commons"
+    archiveId: ""
+    access: not-found
+    rights: unknown
+    licence: unknown
+    usable: unknown
+    url: ""
+    localPath: ""
+    note: "Not found on Commons; the PSS follows this edition. Targeted search of imwerden.de / vtoraya-literatura.com / RGB recommended (see needsReview)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3), filled from extracts/_scholarship.md.
+# Attribute, don't assert; ground in primary first. 5 triangulation entries.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    Scholarship fits Christianity and Patriotism into Tolstoy's post-1880 non-resistance arc but rarely
+    analyses it on its own terms — the essay-level attention goes to The Kingdom of God Is Within You.
+    Maude (1910) gives it about six lines; Simmons (1946), Bartlett (2010) and Wilson (1988) treat the
+    anti-patriotism as biography rather than close reading; Christoyannopoulos (2013) gives the most
+    systematic placement, listing patriotism among the targets of Tolstoyan anarchism. The recurring
+    framing to resist is the blanket "pacifist" label: McKeogh (2009) usefully calls Tolstoy a
+    "dissident" rather than a peace-congress activist, but the literature tends to flatten the distinction
+    the primary text insists on — Tolstoy rejects arbitration/congress pacifism explicitly (W16; his 1899
+    Letter to the Peace Conference makes it sharper). Contested labels — "utopian/naïve," "Christian
+    Anarcho-Pacifist" — are reported here as the mainstream's words, to attribute, never to assert.
+  triangulation:
+    - evidenceRef: W3
+      conventionalView: "Scholars summarise Tolstoy's anti-patriotism as patriotic 'mass hypnosis' in general terms; none unpacks the specific psychiatric borrowing of Sikorsky's malevanshchina / 'psychopathic epidemic.'"
+      relation: extends
+      source: "Christoyannopoulos (2013); the 2024 Zdziechowski study paraphrases 'patriotic mass hypnosis' without naming Sikorsky; Maude (1910) does not analyse it."
+    - evidenceRef: W8
+      conventionalView: "Scholarship reads patriotism as an ideology imposed by elites, but rarely foregrounds Tolstoy's sharper inversion — that patriotism is not a natural feeling of the народ at all, but an artificial induction."
+      relation: extends
+      source: "Christoyannopoulos (2013) — Tolstoy 'challenges the myth of patriotism as ideology'; McKeogh (2009) treats it as political critique without the народ-specificity."
+    - evidenceRef: W9
+      conventionalView: "Widely cited core claim: governments manufacture patriotism via press, school, church and clergy."
+      relation: confirms
+      source: "Christoyannopoulos (2013); McKeogh (2009); Libertarianism.org (2024)."
+    - evidenceRef: W16
+      conventionalView: "The blanket 'pacifist' label collapses the distinction Tolstoy draws: he is read as a peace-movement figure, whereas he rejects arbitration/congress pacifism because peoples subordinate to governments cannot be rational interstate actors."
+      relation: complicates
+      source: "McKeogh (2009) partly supports ('dissident not activist'); Christoyannopoulos's title 'Christian Anarcho-Pacifist' (2013) risks the elision; Tolstoy's Letter to the Peace Conference (1899, primary) is the explicit pushback."
+    - evidenceRef: W13
+      conventionalView: "Scholarship absorbs the remedy into the general non-resistance / conscientious-objection frame; the specific 'не лгать' (do not lie) prescription is not isolated as the mechanism."
+      relation: extends
+      source: "No named scholar isolates it; Alston (2014) centres the lived Tolstoyan communities (the doing) rather than the diagnostic; McKeogh (2009) emphasises refusal of military service as the act."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORD — proposed fills for a NEW works/ record (none exists). READ-ONLY
+# to works/; a human applies these during ingestion. Model: bethink-yourselves.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/christianity-and-patriotism/Christianity and Patriotism.md"
+  workId: "christianity-and-patriotism"
+  fields:
+    - field: titleEn
+      value: "Christianity and Patriotism"
+      evidenceRefs: [W1]
+      source: "Tolstoy Digital TEI; English title from the 1894 Daily Chronicle / Free Age Press tradition"
+      confidence: high
+    - field: titleRu
+      value: "Христианство и патриотизм"
+      evidenceRefs: [W1]
+      source: "PSS Tom 39 p.27 (title)"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - { title: "Тулон", type: working, language: ru }
+        - { title: "Психопатическая эпидемия", type: working, language: ru }
+        - { title: "Наваждение", type: working, language: ru }
+        - { title: "Не лгать", type: working, language: ru }
+        - { title: "Гипнотизация и обеспечение мира", type: working, language: ru }
+        - { title: "Гипнотизация патриотизма", type: working, language: ru }
+        - { title: "Патриотизм и христианство", type: working, language: ru }
+        - { title: "L'esprit chrétien et le patriotisme", type: translation, language: fr }
+      evidenceRefs: [D1, L5]
+      source: "PSS Tom 39, История писания (рук. titles); French title from Perrin 1894"
+      confidence: high
+      note: "Working-title evolution from рук. №1 to №38, recorded in the editorial history."
+    - field: mainCategory
+      value: "Non-Fiction"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+    - field: subcategory
+      value: "Essays and Criticism"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+    - field: genre
+      value: "essay"
+      evidenceRefs: []
+      source: "PSS describes it as «статья» (article/essay)"
+      confidence: high
+    - field: language
+      value: "ru"
+      evidenceRefs: []
+      source: "composed in Russian"
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [D3]
+      source: "signed «Совсем, совсем, совсем кончено», 17 Mar 1894"
+      confidence: high
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: "first published 1894 (Tolstoy d. 1910)"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: "PSS history: first legal Russian printing 1906 (Обновление); publisher N. E. Felten prosecuted"
+      confidence: high
+      note: "Abroad first (Elpidin, Geneva 1895); legally in Russia only 1906."
+    - field: dateWritingStarted
+      value: "1893-10-20"
+      oldStyle: "1893-10-08"
+      approximate: false
+      evidenceRefs: [D1]
+      source: "PSS history: рук. №1 signed «1893. 8 октября, Я.П.» (OS); NS +12 days"
+      confidence: high
+    - field: dateWritingCompleted
+      value: "1894-03-29"
+      oldStyle: "1894-03-17"
+      approximate: false
+      evidenceRefs: [D3]
+      source: "рук. №37 signed «17 марта 1894» with «Совсем, совсем, совсем кончено» (OS); NS +12 days"
+      confidence: high
+      note: "Released to translators 21 Apr 1894 (OS) after a brief decision to suppress (diary D3→D4)."
+    - field: dateFirstPublished
+      value: "1894-05"
+      approximate: true
+      evidenceRefs: []
+      source: "PSS history: French translation (J. Legras) in Journal des Débats, May 1894"
+      confidence: high
+    - field: firstPublishedVenue
+      value: "Journal des Débats (Paris)"
+      evidenceRefs: []
+      source: "PSS Tom 39 history"
+      confidence: high
+      note: "Then as a Perrin pamphlet, 1894. English: Daily Chronicle, June 1894."
+    - field: firstPublishedVenueType
+      value: "newspaper"
+      evidenceRefs: []
+      source: "PSS Tom 39 history"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1906"
+      approximate: true
+      evidenceRefs: []
+      source: "PSS history: 1906 Обновление brochure"
+      confidence: high
+    - field: firstPublishedInRussiaVenue
+      value: "Obnovlenie (Обновление)"
+      evidenceRefs: []
+      source: "PSS Tom 39 history"
+      confidence: high
+    - field: authoringLocations
+      value:
+        - { country: Russia, region: "Tula Oblast", estate: "Yasnaya Polyana", coordinates: { lat: 54.0667, lon: 37.5167 } }
+        - { country: Russia, city: "Moscow" }
+      evidenceRefs: [D1, D2]
+      source: "Begun at Yasnaya Polyana (рук. №1 «Я.П.»); revised and signed in Moscow («17 марта 1894. Москва»)"
+      confidence: high
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: []
+      source: "PSS history: underground hectograph editions + smuggled printed copies (esp. Baltic provinces & Poland); 1901 censorship file"
+      confidence: high
+    - field: censoredVersionExists
+      value: "true"
+      evidenceRefs: []
+      source: "PSS history: 1911 S. A. Tolstaya Собрание соч. vol XVIII and 1913 Biryukov/Sytin PSS both printed with heavy censorship cuts"
+      confidence: high
+    - field: censorshipNotes
+      value: "Banned in Russia; circulated in underground hectographs and smuggled from abroad. Lifland gendarme inquiry 1901; import banned (Archive of the St Petersburg Censorship Committee, file 78, pt IV). First legal Russian printing 1906 (Обновление brochure with other banned articles); publisher N. E. Felten prosecuted. The 1911 and 1913 Russian collected-works printings were censored."
+      evidenceRefs: []
+      source: "PSS Tom 39, История писания и печатания"
+      confidence: high
+    - field: bans
+      value:
+        - { banningAuthority: "Main Administration for Press Affairs", authorityType: "imperial-state", jurisdiction: "Russia", scope: "complete-ban", banDateApproximate: true, banLiftedDate: "1906", banLiftedDateApproximate: true }
+      evidenceRefs: []
+      source: "PSS Tom 39 history (import ban confirmed 18 June 1901; first legal Russian publication 1906)"
+      confidence: medium
+      note: "Exact original ban date not given in the corpus history; lift inferred from the 1906 legal printing."
+    - field: excommunicationRelated
+      value: "false"
+      evidenceRefs: []
+      source: "Phase-3 confirmation: the 1901 Holy Synod decree (no. 557) cites Resurrection, the Critique of Dogmatic Theology and the harmonised Gospels — not C&P (Wikisource, Decree of Excommunication)."
+      confidence: high
+      note: "Do not present the excommunication as targeting the anti-patriotism writings; C&P is part of the broader heterodox corpus but is not implicated in the 1901 decree."
+    - field: relatedWorks
+      value:
+        - { id: "the-kingdom-of-god-is-within-you", relationshipType: companion }
+        - { id: "bethink-yourselves", relationshipType: companion }
+      evidenceRefs: []
+      source: "Non-resistance cluster: immediate predecessor (Kingdom of God, 1893) and later anti-war essay (Bethink Yourselves, 1904)"
+      confidence: high
+      note: "The patriotism-trilogy siblings «Патриотизм или мир?» (1896) and «Патриотизм и правительство» (1900) have no works/ records yet; add as companions once created (see needsReview)."
+    - field: themes
+      value: ["patriotism", "non-resistance", "anti-militarism", "Christianity", "public opinion", "the State", "pacifism"]
+      evidenceRefs: [W10, W11, W13]
+      source: "derived from the work text"
+      confidence: high
+    - field: identifiers.jubileeEdition
+      value: { volumes: "39", notes: "Work at Tom 39 pp.27–80; История писания и печатания at pp.229–234." }
+      evidenceRefs: [W1]
+      source: "PSS Tom 39"
+      confidence: high
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "What the work says (structural map of all 18 chapters)", status: covered, note: "Full structural read of v39_027_080." }
+  - { surface: "Genesis & composition (diary + letters)", status: covered, note: "Diary Tom 52 (4 entries) + letters Toms 66/67/84/87 (Leskov, Chertkov, Khilkov, Rusanov, Legras, S.A.)." }
+  - { surface: "Redactions & textual history", status: covered, note: "From PSS Tom 39 История писания: 39 redactions, 1384 leaves, title evolution, name-encryption list." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "FR/EN/DE first editions, Elpidin 1895 Russian-first-abroad, 1906 legal Russian, censorship file 1901." }
+  - { surface: "Reception & afterlife (Russian society + church)", status: covered, note: "Contemporary: The Spectator hostile review (1894), Zdziechowski correspondence (1895). Church: the 1901 excommunication does NOT cite C&P (Resurrection + religious-doctrinal writings). Gandhi channel runs via Kingdom of God, not C&P." }
+  - { surface: "Scholarly context (triangulation vs received view)", status: covered, note: "5 triangulation entries (1 confirms, 1 complicates, 3 extends); received view + labels-to-attribute from the Phase-3 gather." }
+  - { surface: "Place in the cluster (sibling works + prior dives)", status: covered, note: "Kingdom of God, What I Believe, Bethink Yourselves, fire-metaphor, christian-anarchism, tolstoyanism." }
+  - { surface: "The author's later verdict", status: partial, note: "The 1893–94 diary shows ambivalence at the time of writing; a later (post-1894) verdict not yet swept — flag." }
+  - { surface: "Visual & manuscript record", status: covered, note: "6 PD/CC0 images cached; Elpidin 1895 title page not found (needsReview); no manuscript facsimile rendered (1384 leaves held at GMT/RGB)." }
+  - { surface: "workRecord (new record proposal)", status: covered, note: "Full field set proposed; bans banDate + excommunicationRelated flagged medium-confidence." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRADICTIONS — intra-corpus (primary-vs-primary) only.
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: "The editorial history dates the abandonment diary entry to 3 Nov 1893 (PSS p.103) and the suppression entry to 23 Mar 1894 (p.112)."
+    correction: "Both are filed in the TEI under different filename dates (1893-10-06 and 1894-03-09 respectively) because each opens a multi-day entry; the entry texts carry the true dates («Нынче 3 Ноября 1893», «23 Марта. Москва»)."
+    evidenceRef: D1
+  - claim: "The editorial history quotes the 22 Dec 1893 diary as «Тяжелая, некончающаяся работа над Тулоном…»."
+    correction: "The diary text reads «это тяжелая, не кончающаяся работа над Тулоном, которую я не могу бросить» (lowercase, spaced «не кончающаяся»). Minor orthographic divergence between the apparatus paraphrase and the diary."
+    evidenceRef: D2
+
+# ─────────────────────────────────────────────────────────────────────────────
+notCovered:
+  - "The full redaction-by-redaction collation of the 39 manuscripts (1384 leaves) — only the title evolution and the name-encryption list are taken from the apparatus."
+  - "The printed PSS Tom 39 PDF was not cross-checked page-by-page (not held locally) — extraction relied on the tolstoydigital TEI; flagged in needsReview."
+  - "The patriotism-trilogy siblings «Патриотизм или мир?» (1896) and «Патриотизм и правительство» (1900) are cross-linked, not dived — separate works."
+  - "Tolstoy's correspondence with the translators after April 1894 (Turner's abandonment, Chertkov/Battersby, Henkel) beyond the composition window."
+
+needsReview:
+  - { item: "Cross-check W-series quotes against the printed PSS Tom 39 PDF (pp.27–80) — PDF not held locally; extraction via TEI only.", phase: 2, why: "Belt-and-braces byte-fidelity on the printed edition; the dive used the TEI." }
+  - { item: "RESOLVED (Phase 3): the 1901 Holy Synod excommunication does NOT cite C&P — its triggers were Resurrection, the Critique of Dogmatic Theology, and the harmonised Gospels (Wikisource decree). workRecord.excommunicationRelated=false confirmed.", phase: 3, why: "Was medium-confidence; now resolved. Do not present the excommunication as targeting the anti-patriotism writings." }
+  - { item: "Locate a PD scan of the Elpidin 1895 Geneva first Russian edition title page (imwerden.de / vtoraya-literatura.com / RGB).", phase: 2, why: "Visuals sweep found none on Commons." }
+  - { item: "Verify the PSS Tom 90 page ranges for «Патриотизм или мир?» (pp.45–53) and «Патриотизм и правительство» (pp.425–444) before creating their records — UNVERIFIED by the Phase-3 web search.", phase: 3, why: "Carried from the handoff; web search could not confirm Tom 90 pagination." }
+  - { item: "The Suttner-as-outlet claim is corpus-confirmed (evidence L2, Chertkov 30 Oct 1893) even though the Phase-3 web search flagged it unverified at archival level — the dive's own primary source settles it.", phase: 3, why: "Note for the scholarship reader: trust the primary extract over the secondary 'unverified' flag here." }
+  - { item: "Sweep post-1894 diaries/letters for Tolstoy's later verdict on the essay.", phase: 1, why: "The author's-later-verdict surface is only partial." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (works Tom 39; diaries Tom 52; letters Toms 66, 67, 84, 87)"
+  - "Wikimedia Commons (visuals)"
+  - "Musée Carnavalet, Paris (Toulon/Paris 1893 imagery, via Commons)"
+  - "Library of Congress P&P (Tolstoy 1897 portrait, via Commons)"
+
+references:
+  primary:
+    - "Л. Н. Толстой. Христианство и патриотизм. ПСС, Т. 39, с. 27–80. М.: ГИХЛ, 1956."
+    - "«Христианство и патриотизм». История писания и печатания и описание рукописей. ПСС, Т. 39, с. 229–234."
+    - "Л. Н. Толстой. Дневник 1893–1894. ПСС, Т. 52."
+    - "Л. Н. Толстой. Письма 1893–1894. ПСС, Тт. 66, 67, 84, 87."
+  background:
+    - "Maude, Aylmer (1910). The Life of Tolstoy: Later Years. Oxford UP. archive.org/details/in.ernet.dli.2015.96560 (C&P given ~six lines — UNVERIFIED at page level)."
+    - "Simmons, Ernest J. (1946). Leo Tolstoy. Little, Brown. archive.org/details/leotolstoy0001simm"
+    - "Bartlett, Rosamund (2010). Tolstoy: A Russian Life. Profile Books (ch. 'Sectarian, Anarchist, Holy Fool')."
+    - "Wilson, A. N. (1988). Tolstoy: A Biography. Norton."
+    - "Christoyannopoulos, Alexandre (2013). Tolstoy's Political Thought: Christian Anarcho-Pacifist Iconoclasm Then and Now. BASEES/Routledge."
+    - "McKeogh, Colm (2009). Tolstoy's Pacifism. Cambria Press."
+    - "Alston, Charlotte (2014). Tolstoy and his Disciples: The History of a Radical International Movement. Bloomsbury."
+    - "Kijewska-Trembecka, M. (2024). 'Marian Zdziechowski and Leo Tolstoy: on true Christianity and Polish patriotism.' Studies in East European Thought. doi:10.1007/s11212-024-09672-z (abstract verified)."
+    - "The Spectator (14 July 1894). 'Christianity and Patriotism' [anonymous review]. archive.spectator.co.uk/article/14th-july-1894/10/christianity-and-patriotism"
+    - "Wikisource. Decree of Excommunication of Leo Tolstoy [1901] — does NOT cite C&P."
+    - "Tolstoy, Leo. Letter to the Peace Conference [1899]. marxists.org (primary, for the not-arbitration-pacifist point)."
+    - "Naval Central Museum, St Petersburg — 'On the Way to the Franco-Russian Union: 125th Anniversary of the Toulon visit.' eng.navalmuseum.ru/exhibition?id=99"
+    - "Britannica — 'Bertha, baroness von Suttner.'"

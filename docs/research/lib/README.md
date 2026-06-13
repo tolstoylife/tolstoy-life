@@ -3,7 +3,7 @@
 Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
 
 - **`extract_tei.py`** — resolves tolstoydigital-TEI editorial markup into grep-able Russian
-  prose. Usage: `python3 extract_tei.py <path-to-xml> [substring] [--notes=auto|off|force]`.
+  prose. Usage: `python3 extract_tei.py <path-to-xml> [substring] [--notes=auto|off|force] [--choice=legacy|reg|orig|both]`.
   Requires `lxml`. This is the canonical copy; dives reference it rather than forking it.
   - **Note-encoded body recovery.** Most documents carry their text in `<p>` body elements,
     with `<note>`/`<noteGrp>` holding footnotes that are stripped. A handful of PSS documents
@@ -18,6 +18,17 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
     with editorial commentary, so verify against the source PDF. `--notes=off` forces the legacy
     strip-everything behaviour; `--notes=force` additionally dumps the comments apparatus after a
     normal body (for reading the editorial commentary).
+  - **Pre-reform orthography (`--choice`).** Pre-1918 texts encode old/new spelling as
+    `<choice><orig>стараго</orig><reg>старого</reg></choice>`. The default `legacy` mode
+    **drops** these pairs (the historical gap that gutted Tom 58 / 1880-era diaries and
+    letters) — but now prints a `# warning:` to stderr naming the count so a run is never
+    silently gutted. `--choice=reg` resolves to the modern-orthography `<reg>` reading and
+    is **recommended for every Prophet-period (pre-1918) extraction**; `--choice=orig`
+    keeps the pre-reform reading; `--choice=both` emits `reg [orig]` for collation.
+    Editorial `<sic>/<corr>` pairs are always resolved to `<corr>`, independent of this
+    flag. This supersedes the per-dive `_reg_extract.py` helper (e.g.
+    `lords-prayer/extracts/_reg_extract.py`), which is left in place only as that dive's
+    provenance record.
 - **`verify_quotes.py`** — mechanical byte-fidelity gate for a dive's dossier. Loads every
   `evidence[].quoteRu`, opens the named `extract` file, and asserts the (whitespace-normalised)
   quote appears **verbatim** in it — turning Phase 5's core credibility check into one deterministic
@@ -52,7 +63,7 @@ Canonical tooling for `corpus-dive` and the `docs/research/` thematic sweeps.
   stripped, and that a normal letter (`v78_170`) keeps its body while its editorial apparatus is
   not leaked. Run: `bash test-extract-tei.sh` (prints `PASS`).
 - **`test-corpus-dive-queue.sh`** — `--dry-run` command-generation check for the queue runner.
-- **`corpus-dive-queue.sh`** — overnight queue runner for `corpus-dive`. Spawns a fresh `claude -p` session per theme; skips blank lines and `#` comments; writes a batch summary to `docs/research/_batch-YYYY-MM-DD.md`. Pass `--skip-permissions` to append `--dangerously-skip-permissions` to each invocation (opt-in, OFF by default; required for truly unattended runs). Use `--dry-run` to print commands without executing. Usage: `corpus-dive-queue.sh --themes <file> [--model <tier>] [--skip-permissions] [--dry-run]`.
+- **`corpus-dive-queue.sh`** — overnight queue runner for `corpus-dive`. Spawns a fresh `claude -p` session per theme; skips blank lines and `#` comments; writes a batch summary to `docs/research/_batch-YYYY-MM-DD.md`. Pass `--skip-permissions` to append `--allow-dangerously-skip-permissions` to each invocation (opt-in, OFF by default; required for truly unattended runs; flag name current as of Claude Code 2.1.x — the older `--dangerously-skip-permissions` is no longer accepted). Use `--dry-run` to print commands without executing. Usage: `corpus-dive-queue.sh --themes <file> [--model <tier>] [--skip-permissions] [--dry-run]`.
   Headless permission behaviour (re-probed 2026-05-29): the skill is found, triggered, and arg-parsing works (EXIT=0). In `claude -p`, a tool that needs permission and isn't allowlisted is **cleanly denied** — the run continues/exits, it does **not** hang — *when the session runs with a controlled posture* (`--setting-sources project` + an `--allowedTools`/settings allow-list); read-only "safe" commands are auto-approved. This script sets no such posture (it inherits your user settings), so for truly unattended batches still pass `--skip-permissions` or supply a `.claude/settings.json` allow-list — otherwise a run may deny the writes the dive needs, or behave per whatever your user permission posture auto-approves.
 
 ## Single source of truth (forks removed)

@@ -1,0 +1,857 @@
+# On Life («О жизни») — corpus-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify: python3 docs/research/lib/verify_quotes.py docs/research/1886-1887-on-life/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+# Genesis / publication / censorship facts are drawn from the PSS Tom 26 commentary
+# (N. N. Gusev) and attributed in the prose; they are NOT byte-checked evidence rows
+# (the commentary is editorial apparatus, not public-domain Tolstoy text).
+
+topic:
+  slug: 1886-1887-on-life
+  title: "On Life (О жизни)"
+  question: >-
+    Document On Life as a work across the local Tolstoy corpus — the philosophical
+    capstone of the Prophet period and the metaphysics beneath the social ethic of
+    What Then Must We Do?. Its genesis in Tolstoy's near-fatal summer-1886 leg
+    illness and the reply-letter to A. K. Dieterichs on life and death; the diary
+    that drafts its whole argument in June 1886, months before that letter; its
+    growth through the working title «О жизни и смерти» into the 14 March 1887
+    lecture «Понятие жизни» read to N. Ya. Grot's Moscow Psychological Society, and
+    then into the book; what the text argues (the fundamental contradiction of the
+    animal personality that seeks a good it cannot keep; the world-teachers' shared
+    definitions of life that the Pharisees and scribes hide; reason — разум — as the
+    law of human life; the renunciation of the animal personality; love as the one
+    rational activity of true life and the abolition of the contradiction between
+    selves; and death not as destruction but as entry into a new relation to the
+    world — «нет смерти»); its seven redactions and the proofs Grot held; the 1888
+    Mamontov first edition banned and destroyed by the Holy Synod; its dispersed
+    publication (the «Неделя» 1889 partial, the Geneva and Christchurch editions)
+    and its translation lineage (S. A. Tolstaya's French De la vie; Hapgood's
+    English Life) — grounded in Tolstoy's own words, the Jubilee-Edition apparatus,
+    the composition-window diaries and letters, and the project's prior dives.
+  date: "2026-06-06"
+  period: "Prophet period (post-1880); composition 1886–1887 (Old Style); genesis summer–autumn 1886, finished Aug 1887, printed Jan 1888"
+  corpusSurface: "PSS Tom 26 (work «О жизни» pp. 313–442; the «Понятие жизни» lecture stenogram pp. 881–885; variants pp. 578–634 and the «Неделя» 1889 last-chapters variants pp. 451–456; Chertkov's simplified «Об истинной жизни» pp. 885–926; commentary pp. 748–844); diaries Tom 49 (1886–87); letters Tom 64 (1887–89) and Tom 63 tail"
+  dateRange: "1886 (genesis: illness + Dieterichs letter; June-1886 diary draft) – 1903 (Christchurch «Свободное слово» complete edition); 1888 first (banned) Russian edition; 1889 first legal Russian appearance («Неделя», partial) and French De la vie; 1888 English (Hapgood)"
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory.
+evidence:
+
+  # — The work's own text: «О жизни», PSS Tom 26, pp. 313–442 —
+  - id: onlife-text-01
+    genre: work
+    pssTom: 26
+    pages: "313 (Вступление)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Жизнь есть та мельница, которую хочет исследовать человек. Мельница нужна для того, чтобы она хорошо молола, жизнь нужна только затем, чтобы она была хорошая."
+    quoteEn: "(working English) Life is the mill that man wishes to investigate. The mill is needed in order that it should grind well; life is needed only in order that it should be good."
+    significance: "The introduction's governing parable: the miller who, having learned a little mechanics, ends by studying the river instead of the milling, and convinces himself the river is the mill. Science studies where life comes from («отчего») instead of how to live well («как») — and so loses the only question that gives the word 'life' its meaning."
+
+  - id: onlife-text-02
+    genre: work
+    pssTom: 26
+    pages: "324 (гл. I)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Живет всякий человек только для того, чтобы ему было хорошо, для своего блага."
+    quoteEn: "(working English) Every man lives only in order that it may be well with him, for his own good."
+    significance: "The opening axiom of ch. I, 'The fundamental contradiction of human life': life is the striving for one's own good — but the animal personality that seeks that good is surrounded by other beings each seeking the same, and is itself decaying toward death, so its good is impossible. This contradiction is the engine of the whole book."
+
+  - id: onlife-text-03
+    genre: work
+    pssTom: 26
+    pages: "326–327 (гл. II)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "«Жизнь — это подчинение разуму, дающее благо человеку», сказали стоики. «Жизнь — это любовь к Богу и ближнему, дающая благо человеку», сказал Христос, включая в свое определение все предшествующие."
+    quoteEn: "(working English) 'Life is submission to reason, which gives man his good,' said the Stoics. 'Life is love of God and of one's neighbour, which gives man his good,' said Christ, including in his definition all that came before."
+    significance: "The list of the world-teachers' definitions of life that resolve the contradiction (Confucius, the Brahmins, Buddha, Lao-Tzu, Hebrew wisdom, the Stoics, Christ). On Life is not a private mysticism but a claim to restate a perennial cross-traditional teaching that the 'Pharisees and scribes' (church and materialist science) hide."
+
+  - id: onlife-text-04
+    genre: work
+    pssTom: 26
+    pages: "347 (гл. X)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Разум для человека тот закон, по которому совершается его жизнь"
+    quoteEn: "(working English) Reason is for man the law by which his life is accomplished"
+    significance: "The hinge of the book (ch. X, 'Reason is the law by which man's life must be accomplished'). Reason (разум) is not a faculty but the law of human life — as organic law governs the plant and physical law the heavenly bodies — with the one difference that man must himself enact it. This is the primary-source answer to the 'woolly mysticism' framing: On Life makes reason, not feeling, the law of life."
+
+  - id: onlife-text-05
+    genre: work
+    pssTom: 26
+    pages: "363 (гл. XV)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Отречение от блага животной личности есть закон жизни человеческой."
+    quoteEn: "(working English) The renunciation of the good of the animal personality is the law of human life."
+    significance: "The book's central imperative (ch. XV). Renunciation is not heroism or merit but the unavoidable condition of human life: the animal personality is constantly perishing, so to locate life in it is contradiction and suffering; true life begins only when its good is renounced."
+
+  - id: onlife-text-06
+    genre: work
+    pssTom: 26
+    pages: "365 (гл. XVI)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Животная личность для человека — это лопата, которая дана разумному существу для того, чтобы ею копать и, копая, тупить ее и точить, тратить, а не отчищать и хранить."
+    quoteEn: "(working English) The animal personality is for man a spade, given to a rational being so that he should dig with it and, in digging, blunt and whet it, wear it out — not polish and preserve it."
+    significance: "Ch. XVI, 'The animal personality is the instrument of life.' The body is not an obstacle to life but its tool, to be spent, not hoarded — sealed with the Gospel paradox «И кто хочет жизнь свою сберечь, тот потеряет ее» (he who would save his life shall lose it)."
+
+  - id: onlife-text-07
+    genre: work
+    pssTom: 26
+    pages: "381 (гл. XXII)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "отрицательные философы нашего времени ( Шопенгауэр, Гартман), отрицающие жизнь и все-таки остающиеся в ней"
+    quoteEn: "(working English) the negative philosophers of our time (Schopenhauer, Hartmann), who deny life and yet remain in it"
+    significance: "Decisive against the standard 'On Life is warmed-over Schopenhauer' reading: Tolstoy names Schopenhauer and Hartmann as the pessimists he is refuting. He grants their diagnosis (the animal personality's good is impossible) but rejects their conclusion (denial of life / suicide), answering it with love. On Life is positioned against pessimism, not as its restatement."
+
+  - id: onlife-text-08
+    genre: work
+    pssTom: 26
+    pages: "381 (гл. XXII)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Любовь есть единственная разумная деятельность человека."
+    quoteEn: "(working English) Love is the only rational activity of man."
+    significance: "The pivot from the metaphysics to the ethic (ch. XXII): once reason has shown the impossibility of the personality's good, the one activity left open — the 'key made only to this lock' — is love. Love is not sentiment here but the rational consequence of the whole argument."
+
+  - id: onlife-text-09
+    genre: work
+    pssTom: 26
+    pages: "392 (гл. XXV)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "И нет иной любви, как той, чтобы положить душу свою за други свои. Любовь — только тогда любовь, когда она есть жертва собой."
+    quoteEn: "(working English) And there is no other love than to lay down one's soul for one's friends. Love is love only when it is the sacrifice of oneself."
+    significance: "Ch. XXV, 'Love is the single and complete activity of true life.' Love is defined as self-sacrifice — the mother feeding her child with her own body, the labourer wearing his body out for others — not as preference for chosen people (which Tolstoy treats as the 'wild stock' on which true love is grafted)."
+
+  - id: onlife-text-10
+    genre: work
+    pssTom: 26
+    pages: "392 (гл. XXV)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Жив только тот, кто любит."
+    quoteEn: "(working English) Only he who loves is alive."
+    significance: "The compression of the whole book: true life IS love (after 1 John, which Tolstoy quotes around it). Life and love are the same thing, set against the 'living death' of the personality that does not love."
+
+  - id: onlife-text-11
+    genre: work
+    pssTom: 26
+    pages: "398 (гл. XXVII)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "«Нет смерти», говорит людям голос истины."
+    quoteEn: "(working English) 'There is no death,' the voice of truth says to men."
+    significance: "The opening of the death movement (ch. XXVII, 'The fear of death is only the consciousness of the unresolved contradiction of life'). The fear of death is not fear of death — which man cannot know — but the consciousness that one is not living the true life one ought to. To the man who lives by reason and love there is no death; bodily death only destroys the spatial body and the temporal consciousness, not one's 'special relation to the world.'"
+
+  - id: onlife-text-12
+    genre: work
+    pssTom: 26
+    pages: "409 (гл. XXX)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Он, по преданию, говорил только: братья, любите друг друга!"
+    quoteEn: "(working English) He, by tradition, said only: brothers, love one another!"
+    significance: "From ch. XXX ('Life is a relation to the world. The movement of life is the establishment of a new, higher relation, and so death is entry into a new relation'): the aged John the Theologian, fallen into second childhood, able only to repeat 'love one another' — the figure of a man in whom the animal existence has been wholly consumed by a new relation to the world that no longer fits inside bodily life."
+
+  - id: onlife-text-13
+    genre: work
+    pssTom: 26
+    pages: "434 (Заключение)"
+    date: "1886–1887"
+    extract: extracts/v26_313_442_O_zhizni.txt
+    quoteRu: "Жизнь человека есть стремление к благу, и то, к чему он стремится, то и дано ему."
+    quoteEn: "(working English) Man's life is a striving for the good, and that toward which he strives is given to him."
+    significance: "The conclusion's frame (it opens and closes on this sentence), sealed with Matthew 11:28–30 ('Come unto me all ye that labour…'): death and suffering are visible only to the man who takes the law of his animal existence for the law of his life; for the man who lives by his own law there is neither death nor suffering."
+
+  # — The genesis proto-text: «Понятие жизни», the 14 Mar 1887 lecture stenogram, PSS Tom 26 pp. 881–885 —
+  # NB: a press stenogram ("по стенографическим записям", Novoe Vremya No. 3973, 22 Mar 1887),
+  # printed as PSS Appendix 1 — the reported lecture, not Tolstoy's polished prose; byte-faithful to the extract.
+  - id: onlife-ponjatie-01
+    genre: work
+    pssTom: 26
+    pages: "881–885"
+    date: "1887-03-14 (OS; lecture)"
+    extract: extracts/v26_881_885_Ponjatie_zhizni.txt
+    quoteRu: "Одно «я» говорит: «Я хочу жить, жить вечно»."
+    quoteEn: "(working English) One 'I' says: 'I want to live, to live forever.'"
+    significance: "From the lecture stenogram: the two warring selves — the animal 'I' that wants to live forever and the reasoning 'I' that knows it must soon die. The contradiction stated in the proto-text that became chs. I and VI–VIII of the book."
+
+  - id: onlife-ponjatie-02
+    genre: work
+    pssTom: 26
+    pages: "881–885"
+    date: "1887-03-14 (OS; lecture)"
+    extract: extracts/v26_881_885_Ponjatie_zhizni.txt
+    quoteRu: "И потому всякий человек всегда движется от одного предела к другому, т. е. живет. Это-то движение и есть сама жизнь."
+    quoteEn: "(working English) And therefore every man always moves from the one limit to the other, that is, lives. This movement is life itself."
+    significance: "The lecture's definition of life as movement between two limits — total absorption in the personality (least life) and total renunciation of it for the infinite world (most life). The dynamic image of life that the book's chs. XIV–XV unfold; preceded in the stenogram by the Bismarck-and-his-cook parable (both equally vain before eternity if reason lights their activity)."
+
+  # — Composition-window diaries: PSS Tom 49 (1886–87) —
+  - id: onlife-diary-01
+    genre: diary
+    pssTom: 49
+    pages: "127–129"
+    date: "1886-06-19 (OS)"
+    extract: extracts/v49_127_129_1886_06_19.txt
+    quoteRu: "Но разум есть в человеке. Он-то и уничтожает это противоречие."
+    quoteEn: "(working English) But reason is in man. It is precisely this that abolishes the contradiction."
+    significance: "The single most important genesis witness: a 19 June 1886 diary entry that drafts the whole argument of On Life — the contradiction of egoism abolished by reason-love, the seed-not-tree image, timelessness — written THREE MONTHS BEFORE the September-1886 Dieterichs letter the commentary names as the work's seed. The book's metaphysic is already complete in the diary."
+
+  - id: onlife-diary-02
+    genre: diary
+    pssTom: 49
+    pages: "127–129"
+    date: "1886-06-19 (OS)"
+    extract: extracts/v49_127_129_1886_06_19.txt
+    quoteRu: "Бессмертно только то, что не я. Разум — любовь — Бог — природа."
+    quoteEn: "(working English) Immortal is only that which is not-I. Reason — love — God — nature."
+    significance: "The same 19 June 1886 entry's closing identification of reason, love, God and nature as the one immortal thing — the equation the book spends 35 chapters unfolding (reason as the law of life; love as its activity; the not-I as what survives death)."
+
+  - id: onlife-diary-03
+    genre: diary
+    pssTom: 49
+    pages: "124"
+    date: "1886-05-25 (OS)"
+    extract: extracts/v49_124_124_1886_05_25.txt
+    quoteRu: "Смерть сон. Зачем бояться сна?"
+    quoteEn: "(working English) Death is sleep. Why fear sleep?"
+    significance: "The death-as-sleep argument (the book's chs. XXVIII–XXIX, where the daily loss of consciousness in sleep is the model for bodily death) already in the diary in May 1886, before the work began. Confirms the death theme preceded the Dieterichs letter."
+
+  - id: onlife-diary-04
+    genre: diary
+    pssTom: 49
+    pages: "129"
+    date: "1887-02-03 (OS)"
+    extract: extracts/v49_129_129_1887_02_03.txt
+    quoteRu: "Разум решает только основной вопрос как."
+    quoteEn: "(working English) Reason answers only the basic question: how."
+    significance: "From February 1887, while the work was in active composition: reason is not given to answer 'why?' and 'whence?' (the metaphysical questions science chases) but only 'how to live?' — and the answer is 'blessedly' (блаженно). The mill-parable thesis stated privately in the diary."
+
+  - id: onlife-diary-05
+    genre: diary
+    pssTom: 49
+    pages: "129"
+    date: "1886-10-18 (OS)"
+    extract: extracts/v49_129_129_1886_10_18.txt
+    quoteRu: "Так же странно и невероятно показалось бы зародышу, что будущая жизнь зародыша будет та сложная деятельность моего тела."
+    quoteEn: "(working English) It would seem just as strange and incredible to an embryo that the embryo's future life would be the complex activity of my body."
+    significance: "October 1886, exactly while the reply-letter to Dieterichs was turning into the book: the embryo analogy for the life of the dead continuing in the world — the argument of ch. XXXI. The diary tracks the work's growth in real time."
+
+  # — Composition & reception letters: PSS Tom 64 (1887–88) —
+  - id: onlife-let-01
+    genre: letter
+    pssTom: 64
+    pages: "27–28"
+    date: "1887-03-24 (OS)"
+    addressee: "N. L. Ozmidov"
+    extract: extracts/v64_039_N_L_Ozmidovu.txt
+    quoteRu: "жизнь есть совсем не та путаница и страдания, которые мы себе представляем под этим словом, а нечто очень простое, ясное, легкое и всегда радостное."
+    quoteEn: "(working English) life is not at all the tangle and suffering we imagine under that word, but something very simple, clear, light, and always joyful."
+    significance: "Ten days after the Psychological-Society lecture, Tolstoy states the book's intent to Ozmidov: he has been writing for over a month 'on what life is' and hopes to show, simply and clearly, that life is something joyful. The author's own gloss on the work's purpose — against any reading of it as gloom."
+
+  - id: onlife-let-02
+    genre: letter
+    pssTom: 64
+    pages: "112–113"
+    date: "1887-09/10 (OS)"
+    addressee: "V. I. Alekseev"
+    extract: extracts/v64_148_V_I_Alekseevu.txt
+    quoteRu: "Я начал с заглавием о жизни и смерти, но когда кончил, то вычеркнул слова «и смерти», потому что слова эти потеряли свой смысл."
+    quoteEn: "(working English) I began with the title 'On Life and Death,' but when I finished I struck out the words 'and death,' because those words had lost their meaning."
+    significance: "Tolstoy's own account of the title change: the working title «О жизни и смерти» became «О жизни» because, on the book's own argument, death is nothing — the words 'and death' lost their sense. The same letter has him pre-empting the charge his friends will make — «страшное слово: мистицизм?» (the dreadful word: mysticism?) — which he rejects."
+
+  - id: onlife-let-03
+    genre: letter
+    pssTom: 64
+    pages: "138"
+    date: "1888-01-24 (OS)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v64_181_N_N_Straxovu.txt
+    quoteRu: "Книга «о жизни» всё в духовной цензуре. Едва ли пропустят."
+    quoteEn: "(working English) The book 'On Life' is still in the spiritual censorship. They will hardly pass it."
+    significance: "January 1888: the printed book is held in the ecclesiastical (spiritual) censorship and Tolstoy foresees the ban. Three months later the Synod ordered all 600 copies surrendered and destroyed. The censorship verdict from the author's own hand, mid-process."
+
+# ── Entities (ingestion routing map → wiki) ─────────────────────────────────
+entities:
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-text-01, onlife-text-04, onlife-diary-01]
+    ingestionPriority: 1
+
+  - name: "Reason as the law of life (разум)"
+    wikiType: concept
+    wikilinkTarget: "Reason as the law of life"
+    vaultStatus: missing
+    role: "The book's keystone concept: reason (разум, разумное сознание) is not a human faculty but the law by which human life is accomplished, as organic law governs the plant — with the difference that man must himself enact it. Subordinating the animal personality to this law is true life."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-text-04, onlife-diary-04, onlife-diary-02]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "The animal personality and true life (животная личность / истинная жизнь)"
+    wikiType: concept
+    wikilinkTarget: "Animal personality (Tolstoy)"
+    vaultStatus: missing
+    role: "The book's central opposition: the 'animal personality' (животная личность) that seeks its own good and perishes, versus the 'true life' born when its good is renounced and it is subordinated to reason. The 'fundamental contradiction of human life' and its resolution."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-text-02, onlife-text-05, onlife-text-06]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "Reason as the law of life (разум)"]
+
+  - name: "Love as the activity of true life (любовь)"
+    wikiType: concept
+    wikilinkTarget: "Love (On Life)"
+    vaultStatus: missing
+    role: "Love as the one rational activity left to man once reason has shown the impossibility of the personality's good — defined as self-sacrifice, not preference; the abolition of the contradiction between selves; «жив только тот, кто любит»."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-text-08, onlife-text-09, onlife-text-10]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "Reason as the law of life (разум)"]
+
+  - name: "Death as a new relation to the world («нет смерти»)"
+    wikiType: concept
+    wikilinkTarget: "Death (On Life)"
+    vaultStatus: missing
+    role: "The book's doctrine of death: the fear of death is the consciousness of the unresolved contradiction of life; bodily death destroys the spatial body and temporal consciousness but not one's 'special relation to the world'; death is entry into a new, higher relation. «Нет смерти»."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-text-11, onlife-text-12, onlife-diary-03]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy", "The animal personality and true life (животная личность / истинная жизнь)"]
+
+  - name: "N. Ya. Grot"
+    wikiType: person
+    wikilinkTarget: "Nikolai Grot"
+    vaultStatus: missing
+    role: "Philosopher (1852–1899); from 1886 the moving spirit of the Moscow Psychological Society (its chairman from 1888) and founding editor of «Вопросы философии и психологии». He drew Tolstoy into the Society, hosted the 14 March 1887 lecture «Понятие жизни», and then held and stylistically corrected the proofs of the book through autumn 1887 — Tolstoy said Grot 'called the work to life.' The central new interlocutor of the On Life period."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-ponjatie-01, onlife-ponjatie-02]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "Birth/death 1852–1899. The proofs collaboration and the «Понятие жизни» venue are documented in the PSS Tom 26 commentary and Grot's own family letters; a wiki page is central to this dive."
+
+  - name: "A. K. Chertkova (Dieterichs)"
+    wikiType: person
+    wikilinkTarget: "Anna Chertkova"
+    vaultStatus: missing
+    role: "Anna Konstantinovna Dieterichs (1859–1927), later Chertkova ('Galya'), Posrednik collaborator and V. G. Chertkov's wife. The PSS commentary calls her the 'immediate instigator' (ближайшая виновница) of On Life: her September-1886 letter to Tolstoy on death and the fear of it, sent during his near-fatal illness, prompted the point-by-point reply that grew into the book."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy", "V. G. Chertkov"]
+    note: "1859–1927. The genesis-letter relationship is documented in the commentary (PSS t. 85 carries her letter); not in a byte-faithful extract here. A Commons portrait (K. A. Shapiro) is cached."
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Philosopher and critic (1828–1896); close reader of On Life, who compared it to Fichte, checked Hapgood's English translation, and received Tolstoy's January-1888 letter reporting the censorship. A standing Prophet-period correspondent."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-let-03]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Also proposed (missing) in the What I Believe and What Then Must We Do? dives — overdue independently."
+
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple and chief correspondent through the composition; the draft sheets «О жизни и смерти» passed through him and Anna Dieterichs in 1886. From late 1888 he made the author-approved simplified popular exposition «Об истинной жизни», read before peasants; later the Geneva/Christchurch publisher of the banned book."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "S. A. Tolstaya (Sofia Andreyevna)"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; copyist of the manuscript through its many redactions, and the book's first translator — she rendered it into French as De la vie (begun November 1887, edited by Prof. Tastevin, Paris 1889). She reported the transfer to the spiritual censorship and the ban."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Her French De la vie is the work's first foreign edition; complicates the 'wife opposed to the renunciation' frame — she is the translator who carried the metaphysical book to a European public."
+
+  - name: "Moscow Psychological Society"
+    wikiType: institution
+    wikilinkTarget: "Moscow Psychological Society"
+    vaultStatus: missing
+    role: "The learned society at Moscow University (founded 1885) under M. M. Troitsky and then N. Ya. Grot; publisher of «Вопросы философии и психологии». The venue of the 14 March 1887 lecture «Понятие жизни», the public birth of On Life as philosophy."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-ponjatie-01]
+    ingestionPriority: 2
+    dependsOn: ["N. Ya. Grot"]
+
+  - name: "«Понятие жизни» lecture, 14 March 1887"
+    wikiType: event
+    wikilinkTarget: "Ponyatie zhizni lecture"
+    vaultStatus: missing
+    role: "Tolstoy's reading of an early version of the work to the Moscow Psychological Society at the University on 14 March 1887 (OS) — the session declared closed to limit the crowd; ~70 members; Tolstoy, anxious, arrived late and began 'with the second part.' Reported in stenographic excerpt by «Новое время» (No. 3973, 22 March 1887) and «Русские ведомости»; the «Новое время» stenogram is the PSS «Понятие жизни» text."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-ponjatie-01, onlife-ponjatie-02]
+    ingestionPriority: 2
+    dependsOn: ["N. Ya. Grot", "Moscow Psychological Society"]
+
+  - name: "Holy Synod ban of On Life (1888)"
+    wikiType: event
+    wikilinkTarget: "Synod ban of On Life"
+    vaultStatus: missing
+    role: "The Moscow Spiritual Censorship Committee reviewed the printed 1888 edition, reported to the Holy Synod (25 Jan 1888 OS, No. 126) that Tolstoy set up as guide «не слово Божие, а единственно и исключительно человеческий разум», and on 5 April 1888 (OS) the Synod ordered the typography to surrender all 600 copies for destruction."
+    sources: [jubilee-edition]
+    evidenceRefs: [onlife-let-03]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "Documented in the PSS commentary citing N. Apostolov (Synod chancellery file No. 2264). The committee/Synod quotations are reported in the apparatus, not byte-extracted PD text — attribute, don't byte-claim."
+
+  - name: "N. L. Ozmidov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ozmidov"
+    vaultStatus: missing
+    role: "Tolstoyan correspondent and former Yasnaya Polyana neighbour; addressee of the 24 March 1887 letter stating the book's intent ('life is something simple, clear, light and always joyful'). Tolstoy first meant to print the work in Obolensky's Russkoe Bogatstvo."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-let-01]
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "V. I. Alekseev"
+    wikiType: person
+    wikilinkTarget: "Vasily Alekseev"
+    vaultStatus: missing
+    role: "Former tutor to the Tolstoy children and a trusted interlocutor; addressee of the autumn-1887 letter recording the title change (the words «и смерти» struck from the title) and Tolstoy's pre-emptive rejection of the 'mysticism' charge."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-let-02]
+    ingestionPriority: 3
+    dependsOn: ["Lev Tolstoy"]
+    note: "Also proposed (missing) in the What Then Must We Do? dive."
+
+  - name: "P. I. Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Tolstoy's biographer and Posrednik associate; carried the finished manuscript to Mamontov's typography in Moscow (3 August 1887) and asked Grot to hold the proofs; later editor of the 1913 collected edition that printed On Life from the surviving 1888 copy."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "EXISTS in the vault as `Pavel Birukoff.md` (the project's 'Birukoff' transliteration; id pavel-birukoff) — link there, do not create a duplicate 'Biryukov' page. This dive supplies On-Life-specific roles (carrying the manuscript; the 1913 edition) for that page."
+
+  - name: "L. E. Obolensky"
+    wikiType: person
+    wikilinkTarget: "Leonid Obolensky"
+    vaultStatus: missing
+    role: "Editor of Russkoe Bogatstvo; first asked (November 1886) to print an excerpt of Tolstoy's reply-letter on life and death, which redirected the work toward a journal article and then a book."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    note: "Same L. E. Obolensky as the What Then Must We Do? dive."
+
+  - name: "Isabel F. Hapgood"
+    wikiType: person
+    wikilinkTarget: "Isabel Hapgood"
+    vaultStatus: missing
+    role: "American translator; her authorized Life (Crowell, New York, 1888), checked by Strakhov, was the first English version — in 34 chapters (she merged XVIII and XIX)."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    note: "Same Isabel Hapgood as the What Then Must We Do? dive (where she made the first English What to Do?, 1887)."
+
+  - name: "M. K. Elpidine"
+    wikiType: person
+    wikilinkTarget: "Mikhail Elpidine"
+    vaultStatus: missing
+    role: "Geneva émigré publisher; issued the first complete foreign Russian edition of «О жизни» (Geneva, 1891), made from the banned 1888 edition."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    note: "Same M. K. Elpidine as the What I Believe and What Then Must We Do? dives."
+
+  - name: "Yasnaya Polyana"
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "Where the summer-1886 leg injury and illness that seeded the work occurred, and where much of the 1887 writing and proof-correcting was done."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [onlife-diary-01]
+    ingestionPriority: 3
+
+# ── Visual & manuscript record (Phase-2 sweep, medium intensity) ────────────
+# visuals/ is git-ignored (local cache); repopulate with: python3 docs/fetch_visuals.py 1886-1887-on-life
+visuals:
+  - id: vis-repin-tolstoy-1887
+    type: painting
+    subject: "Leo Tolstoy (seated portrait)"
+    relatedEntity: "Lev Tolstoy; Ilya Repin (artist)"
+    relatedEvidence: [onlife-text-04]
+    holding: "Wikimedia Commons (original in the Russian museum system)"
+    archiveId: "File:Ilya Efimovich Repin (1844-1930) - Portrait of Leo Tolstoy (1887).jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ilya_Efimovich_Repin_%281844-1930%29_-_Portrait_of_Leo_Tolstoy_%281887%29.jpg"
+    localPath: visuals/commons-repin-tolstoy-1887.jpg
+    note: "KEYSTONE. Repin painted Tolstoy in 1887 — exactly the On Life composition window; the bearded thinker of the treatise period."
+  - id: vis-ge-tolstoy-1884
+    type: portrait
+    subject: "Leo Tolstoy"
+    relatedEntity: "Lev Tolstoy; N. N. Ge (artist)"
+    holding: "Wikimedia Commons (State Tretyakov Gallery system)"
+    archiveId: "File:Nikolay Ge - Léon Tolstoï. 1884.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Nikolay_Ge_-_L%C3%A9on_Tolsto%C3%AF._1884.jpg"
+    localPath: visuals/commons-ge-tolstoy-1884.jpg
+    note: "Ge's 1884 portrait — Tolstoy just before the work; supplementary. (Same portrait used by the What I Believe / What Then Must We Do? dives.)"
+  - id: vis-grot-nikolai
+    type: portrait
+    subject: "N. Ya. Grot"
+    relatedEntity: "N. Ya. Grot"
+    relatedEvidence: [onlife-ponjatie-01]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Grot Nikolay Jakovjevich 2.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Grot_Nikolay_Jakovjevich_2.jpg"
+    localPath: visuals/commons-grot-nikolai.jpg
+    note: "The philosopher who hosted the 14 March 1887 lecture and held the proofs."
+  - id: vis-strakhov-nikolai
+    type: portrait
+    subject: "N. N. Strakhov"
+    relatedEntity: "N. N. Strakhov"
+    relatedEvidence: [onlife-let-03]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Nikolay Strakhov.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Nikolay_Strakhov.jpg"
+    localPath: visuals/commons-strakhov-nikolai.jpg
+    note: "Close reader of On Life; checked Hapgood's English translation."
+  - id: vis-chertkov-vladimir
+    type: portrait
+    subject: "V. G. Chertkov"
+    relatedEntity: "V. G. Chertkov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Chertkov by Kramskoy.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/49/Chertkov_by_Kramskoy.jpg"
+    localPath: visuals/commons-chertkov-vladimir.jpg
+    note: "Kramskoy portrait. Disciple; author of the simplified «Об истинной жизни» and the émigré publisher of the banned book."
+  - id: vis-anna-chertkova
+    type: portrait
+    subject: "A. K. Chertkova (née Dieterichs)"
+    relatedEntity: "A. K. Chertkova (Dieterichs)"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Anna Diterikhs.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Anna_Diterikhs.jpg"
+    localPath: visuals/commons-anna-chertkova.jpg
+    note: "Photograph by K. A. Shapiro. The 'immediate instigator': On Life began as Tolstoy's reply to her 1886 letter on death."
+  - id: vis-sofia-tolstaya-1875
+    type: photograph
+    subject: "S. A. Tolstaya"
+    relatedEntity: "S. A. Tolstaya"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Sofia Tolstaya, 1875.jpg"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Sofia_Tolstaya%2C_1875.jpg"
+    localPath: visuals/commons-sofia-tolstaya-1875.jpg
+    note: "Copyist and French translator (De la vie, 1889). 1875 portrait — the closest open period image found (an 1880s photograph was not located on Commons)."
+  - id: vis-onlife-1888-titlepage
+    type: title-page
+    subject: "«Сочинения графа Л. Н. Толстого. Часть тринадцатая. О жизни», Москва, тип. А. И. Мамонтова, 1888"
+    relatedEntity: "Holy Synod ban of On Life (1888)"
+    holding: "RGB (Lenin Library; S. A. Tolstaya's unbound copy) and the State Tolstoy Museum (2 copies) — only three known"
+    archiveId: ""
+    access: "not found openly"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST: the banned-and-destroyed first edition; only three copies survive (RGB / GTM). A title-page facsimile would be the keystone publication artefact; not on Commons or Internet Archive."
+  - id: vis-delavie-1889-titlepage
+    type: title-page
+    subject: "Comte Léon Tolstoï, De la vie (Paris, C. Marpon et E. Flammarion, [1889]) — S. A. Tolstaya's French translation"
+    relatedEntity: "S. A. Tolstaya"
+    holding: "BnF / Gallica (not confirmed)"
+    archiveId: ""
+    access: "not found openly"
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: ""
+    localPath: ""
+    note: "TO REQUEST/LOCATE: the first foreign edition; check Gallica/BnF and the Internet Archive. Not retrieved in this sweep."
+
+# ── Scholarship (secondary layer — Phase 3) ─────────────────────────────────
+scholarship:
+  summary: >-
+    English-language scholarship treats On Life as Tolstoy's most sustained
+    philosophical statement — the systematic metaphysic beneath the religious
+    turn, written after his near-fatal summer-1886 injury and turning a
+    meditation on death into a treatise on life, reason, love and the overcoming
+    of pessimism (the framing of the modern critical edition, Medzhibovskaya &
+    Denner, Northwestern UP, 2019, which prints the «Понятие жизни» talk and
+    contemporary responses; and of Gustafson's Resident and Stranger, 1986,
+    which reads it as the core of Tolstoy's metaphysics of life). Two received
+    framings recur and both are worth reading critically against the primary
+    text. The first is that On Life is a woolly mysticism: the primary record
+    pushes back hard — Tolstoy makes reason (разум), not feeling, the law of life
+    (ch. X), titles a chapter on the body as the 'instrument of life,' and the
+    Holy Synod banned the book precisely for elevating «единственно и
+    исключительно человеческий разум» over the word of God; Soina (in the
+    English-language reception) reads it as rational ethics in a Stoic-and-early-
+    Christian lineage, not mysticism. The second is that the book is a restatement
+    of Schopenhauer or of Buddhist/Eastern pessimism: Tolstoy names Schopenhauer
+    and Hartmann in ch. XXII as the 'negative philosophers' he is refuting,
+    granting their diagnosis and rejecting their conclusion in favour of love.
+    Contemporary Russian reception was philosophical, not only ecclesiastical:
+    Grot and the Moscow Psychological Society midwifed the work; Strakhov compared
+    it to Fichte; Prince D. N. Tsertelev gave a sympathetic account (Russkoe
+    obozrenie, 1890) and Prof. A. A. Kozlov a polemical one (Voprosy filosofii,
+    1890) — both prompted by S. A. Tolstaya's French De la vie. What the corpus
+    adds and the biographical literature underplays is the precise genesis: the
+    19 June 1886 diary already drafts the whole argument, months before the
+    Dieterichs letter the apparatus names as the seed; and the work's deep,
+    documented dependence on N. Ya. Grot and the Psychological Society for both
+    its public form and its proofs.
+  triangulation:
+    - evidenceRef: onlife-diary-01
+      conventionalView: "On Life grew out of Tolstoy's summer-1886 illness, beginning as a meditation on death prompted by A. K. Dieterichs's letter (Medzhibovskaya & Denner 2019; the PSS commentary)."
+      relation: extends
+      source: "Medzhibovskaya & Denner, On Life: A Critical Edition (Northwestern UP, 2019); PSS Tom 26 commentary (Gusev). The corpus shows the whole argument already drafted in the 19 June 1886 diary, before both the illness's worst and the September-1886 Dieterichs letter — the genesis is earlier and more internal than the reply-letter account implies."
+    - evidenceRef: onlife-text-04
+      conventionalView: "On Life is Tolstoy's mystical or religious meditation on the meaning of life and immortality."
+      relation: contradicts
+      source: "popular framing (Goodreads; The Marginalian); against it, the primary text makes разум the law of life (ch. X), and Soina (Ted K Archive trans.) reads On Life as rational ethics, not mysticism — as did the Synod, which banned it for exalting human reason over dogma."
+    - evidenceRef: onlife-text-07
+      conventionalView: "On Life restates Schopenhauerian / Buddhist pessimism about the suffering of existence."
+      relation: contradicts
+      source: "general 'Tolstoy and Schopenhauer' reception (e.g. McLaughlin; Brill CASS 2014 on War and Peace); the primary text names Schopenhauer and Hartmann as the pessimists Tolstoy refutes — he accepts their diagnosis of the personality and answers their conclusion with love."
+    - evidenceRef: onlife-text-08
+      conventionalView: "Tolstoy's ethic of love is sentimental / a religious feeling."
+      relation: complicates
+      source: "popular reception; the primary text defines love as «единственная разумная деятельность человека» — a rational consequence of the metaphysic, and explicitly NOT preference or feeling (ch. XXIII–XXIV), which the love-anthology readings flatten."
+    - evidenceRef: onlife-ponjatie-01
+      conventionalView: "On Life was presented in an early version at the Moscow Psychological Society (March 1887)."
+      relation: confirms
+      source: "Medzhibovskaya & Denner 2019 (which prints 'The Concept of Life: Tolstoy's Talk at the Moscow Psychological Society'); the corpus supplies the «Понятие жизни» stenogram and, via the commentary, Grot's central role in both the lecture and the proofs."
+    - evidenceRef: onlife-let-03
+      conventionalView: "On Life was banned by the religious censorship."
+      relation: extends
+      source: "standard biography (Simmons 1946; Bartlett 2011); the corpus + commentary supply the mechanism and date — the Moscow Spiritual Censorship Committee's report to the Synod (25 Jan 1888) and the Synod's 5 April 1888 order to destroy all 600 copies (Apostolov, Synod file No. 2264) — usually given only in passing."
+
+# ── Work-record proposal (READ-ONLY to works/; human ingestion applies) ──────
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/on-life/On Life.md   # PROPOSED — no record exists yet; treatises/ is the natural home (cf. the What I Believe / What Then Must We Do? proposals). Folder is a human decision."
+  workId: "on-life"
+  fields:
+    - field: titleRu
+      value: "О жизни"
+      evidenceRefs: [onlife-text-01]
+      source: jubilee-edition
+      confidence: high
+    - field: titleEn
+      value: "On Life"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Hapgood's 1888 English title was simply 'Life'; 'On Life' is the standard modern title (Medzhibovskaya & Denner 2019)."
+    - field: titleAlternatives
+      value: "[{title: 'О жизни и смерти', type: variant, language: ru}, {title: 'De la vie', type: translation, language: fr}, {title: 'Life', type: translation, language: en}, {title: 'Мысли о жизни', type: variant, language: ru}]"
+      evidenceRefs: [onlife-let-02]
+      source: jubilee-edition
+      confidence: high
+      note: "«О жизни и смерти» was the working title (struck to «О жизни» on completion); De la vie (S. A. Tolstaya, Paris 1889); Life (Hapgood, NY 1888); «Мысли о жизни» the title of the partial «Неделя» 1889 legal printing."
+    - field: genre
+      value: "essay   # philosophical / religious treatise; mirror the controlled value used for Confession & the What I Believe / What Then Must We Do? proposals"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+    - field: dateWritingStarted
+      value: "1886"
+      oldStyle: "1886"
+      approximate: true
+      evidenceRefs: [onlife-diary-01]
+      source: jubilee-edition
+      confidence: medium
+      note: "The argument is drafted in the 19 June 1886 diary; the reply-letter to A. K. Dieterichs that became the book was begun in early October 1886. The slug window 1886–1887 takes the genesis year."
+    - field: dateWritingCompleted
+      value: "1887"
+      oldStyle: "1887"
+      approximate: true
+      evidenceRefs: [onlife-let-02]
+      source: jubilee-edition
+      confidence: medium
+      note: "Manuscript finished 3 August 1887 (when «и смерти» was struck from the title); a substantial 'proof redaction' continued through printing (Aug–Dec 1887); the book was fully printed by January 1888."
+    - field: dateFirstPublished
+      value: "1888"
+      approximate: false
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "First edition: «Сочинения графа Л. Н. Толстого. Часть тринадцатая. О жизни», Moscow (Mamontov), 1888 — but banned and destroyed before distribution. First LEGAL appearance: partial, in «Неделя» 1889 («Мысли о жизни»). First foreign: French De la vie (1889) and English Life (Hapgood, 1888). First COMPLETE foreign Russian: Geneva (Elpidine) 1891; the standard reprint base is Christchurch («Свободное слово») 1903. Human to decide which event the field carries — see needsReview."
+    - field: firstPublishedVenue
+      value: "Сочинения графа Л. Н. Толстого. Часть тринадцатая. О жизни. Москва, тип. А. И. Мамонтова и К°, 1888 (banned and destroyed)"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "600 copies printed; the textually authoritative base per the PSS editors (closest to the author's final will). First legal appearance was the partial «Неделя» 1889."
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "Abroad from 1888–89 (Hapgood, De la vie) and within Russia in partial legal form from 1889 («Неделя»); complete Russian text abroad from 1891."
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: high
+      note: "In partial form only during Tolstoy's lifetime: the 1888 full edition was destroyed; «Неделя» (1889) printed selected chapters legally. A complete legal Russian text came after 1905."
+    - field: dateFirstPublishedInRussia
+      value: "1889"
+      approximate: true
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "Partial: chapters XXII–XXV, XXVII–XXXV + conclusion in «Неделя» 1889 under «Мысли о жизни». The full 1888 edition never reached the public."
+    - field: bans
+      value: "[{banningAuthority: 'Moscow Spiritual Censorship Committee → Holy Synod', authorityType: holy-synod, jurisdiction: 'Russian Empire', scope: complete-ban, banDate: '1888-04-17', banDateOldStyle: '1888-04-05', banDateApproximate: false, notes: 'The Committee reported to the Synod (25 Jan 1888 OS, No. 126) that Tolstoy set up as guide «не слово Божие, а единственно и исключительно человеческий разум» and that the book instils distrust of dogma and censures love of the fatherland; the Synod ordered all 600 copies of the 1888 edition surrendered for destruction (Apostolov, Synod file No. 2264).'}]"
+      evidenceRefs: [onlife-let-03]
+      source: jubilee-edition
+      confidence: high
+      note: "authorityType holy-synod; scope complete-ban (the prohibition). A post-printing total ban — distinct from What Then Must We Do?'s serialization-refused / passages-cut. The Synod also ordered all 600 copies surrendered for destruction, which the schema's `confiscation` scope could capture as a second bans[] entry (see needsReview). banDate NS with banDateOldStyle (5 Apr 1888 OS = 17 Apr 1888 NS)."
+    - field: censoredVersionExists
+      value: "false"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "Unlike What Then Must We Do?, On Life was not published in a bowdlerized cut form: the full 1888 edition was banned whole; the «Неделя» 1889 printing was a partial selection of chapters (not a censored rewrite). If the schema treats a partial authorized selection as a 'censored version,' revisit — see needsReview."
+    - field: samizdatCirculation
+      value: "true"
+      evidenceRefs: [onlife-let-03]
+      source: jubilee-edition
+      confidence: high
+      note: "After the ban Tolstoy circulated it by manuscript copying, lithography and hectography (two hectographed editions known, incl. one by the «Иисусова Братства»)."
+    - field: excommunicationRelated
+      value: "false   # PROPOSE false; route to needsReview"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: low
+      note: "The 1901 Synod edict names no individual works. On Life's exaltation of reason over dogma is part of the broader condemned teaching and the 1888 Synod ban is a direct institutional precedent, but a direct tie to the 1901 excommunication should not be asserted. See needsReview."
+    - field: relatedWorks
+      value: "[{id: what-then-must-we-do, relationshipType: sequel}, {id: what-i-believe, relationshipType: sequel}, {id: confession, relationshipType: sequel}]"
+      evidenceRefs: []
+      source: jubilee-edition
+      confidence: medium
+      note: "On Life is the philosophical capstone of the Prophet sequence — the metaphysic beneath the social ethic of What Then Must We Do?. relationshipType ∈ the controlled set; 'sequel' is the closest fit (the works schema may prefer a 'companion'/'related' value — flag for the ingestor). Target ids assume the proposed sibling records exist."
+    - field: "identifiers.jubileeEdition.volumes"
+      value: "26"
+      evidenceRefs: [onlife-text-01]
+      source: jubilee-edition
+      confidence: high
+      note: "PSS Tom 26, pp. 313–442 (text); 881–885 («Понятие жизни» lecture); 451–456 («Неделя» 1889 variants) and 578–634 (variants); 885–926 (Chertkov's «Об истинной жизни»); 748–844 (commentary)."
+
+# ── Coverage ledger (surfaces × status) ─────────────────────────────────────
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Triply grounded: the summer-1886 illness and the A. K. Dieterichs reply-letter (commentary); the 19 June / 25 May / 18 Oct 1886 and 3 Feb 1887 diaries (which draft the argument before and during the letter); and the Grot / Moscow Psychological Society lecture (14 March 1887) with the Ozmidov, Alekseev and Strakhov letters. The reply-letter → «О жизни и смерти» → «Понятие жизни» lecture → book chronology reconstructed from the apparatus."
+  - surface: "What the work says"
+    status: covered
+    note: "Deep structural read of the introduction, all 35 chapters, conclusion and 3 addenda (Tolstoy's own «Обзор содержания по главам» used as the spine); keystone passages (mill parable; the fundamental contradiction; the world-teachers; reason as the law of life; renunciation; the animal personality as instrument; the refutation of Schopenhauer/Hartmann; love as the only rational activity; «нет смерти»; death as a new relation; the conclusion) extracted byte-faithful."
+  - surface: "Redactions & textual history"
+    status: partial
+    note: "The seven redactions (incl. the heavy 'proof redaction' of Aug–Dec 1887) and the title change are summarized from the commentary; the 1.2 MB variants file (Tom 26 pp. 578–634) and the «Неделя» variants (pp. 451–456) were not collated. The base text is the 1888 edition."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "1888 Mamontov first edition (Часть 13) banned and destroyed by the Synod (5 Apr 1888); first legal Russian partial in «Неделя» 1889; French De la vie (S. A. Tolstaya & Tastevin, Paris 1889); English Life (Hapgood, NY 1888); Geneva (Elpidine) 1891; Christchurch («Свободное слово») 1903; Biryukov 1913. Danish/Czech/German/Italian translations noted."
+  - surface: "Reception & afterlife (Russian society + Church)"
+    status: covered
+    note: "Church: the Censorship Committee verdict and the Synod ban (with Archbishop Nikanor's letter). Society/philosophy: the Psychological-Society debate (Astafyev, Bugaev), Strakhov's Fichte comparison, Tsertelev's sympathetic account (Russkoe obozrenie 1890) and Kozlov's polemic (Voprosy filosofii 1890) — all from the commentary. Wider lay/working-class reception (the responses the critical edition collects) only sketched."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "The metaphysical capstone of the Prophet sequence — the philosophy of life and death beneath the social ethic of What Then Must We Do?; cross-linked to the prior dives."
+  - surface: "The author's later verdict"
+    status: partial
+    note: "Tolstoy's 19 March 1889 diary verdict on the French De la vie («очень показалось плохо-искусственно, хотя и не лживо») is recorded via the commentary; his later explicit judgments on the book itself were not separately swept."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Medium sweep: 7 PD images cached (keystone = Repin's 1887 Tolstoy; portraits of Grot, Strakhov, Chertkov, A. K. Dieterichs and S. A. Tolstaya; Ge's 1884 Tolstoy). Not openly available: a title-page facsimile of the banned 1888 edition (only 3 copies survive, RGB/GTM) and of the French De la vie (1889) — both logged to request."
+
+contradictions:
+  - claim: "The PSS commentary names A. K. Dieterichs's September-1886 letter on death as the 'immediate instigator' of On Life — i.e. the work began as Tolstoy's reply to it."
+    correction: "The corpus shows the argument already fully drafted in the 19 June 1886 diary (reason abolishing the contradiction of egoism; immortality as the not-I; the seed-not-tree image; God/nature beyond time) — before the illness's worst and the September letter. The Dieterichs letter is the occasion that turned a standing meditation into a written work, not the origin of its thought."
+    evidenceRef: onlife-diary-01
+
+notCovered:
+  - "The 1.2 MB variants file (Tom 26 pp. 578–634) and the «Неделя» variant list (pp. 451–456) — summarized from the commentary, not collated."
+  - "Chertkov's author-approved simplified exposition «Об истинной жизни» (Tom 26 pp. 885–926) — read structurally, not extracted; a separate popular re-telling rather than the work itself."
+  - "The full A. K. Dieterichs genesis letter and Tolstoy's point-by-point reply drafts (PSS t. 85; the apparatus's черновые варианты) — described from the commentary, not byte-extracted."
+  - "The wider contemporary lay/working-class reception (the philosophers', clergy's, journalists' and ordinary readers' responses collected in Medzhibovskaya & Denner 2019) beyond the named Russian critics and the Synod."
+  - "The Tolstoy–Grot correspondence on the proofs (Tom 64, e.g. v64_138 / v64_141) — the collaboration is documented from the commentary and the letters were extracted but not cited byte-faithful here."
+  - "The relation of On Life to Tolstoy's reading of Kant and Pascal (whose epigraphs head the book) and to the Stoics — flagged by the text and by scholarship, not pursued."
+
+needsReview:
+  - item: "dateFirstPublished — which event the field should carry (1888 banned-and-destroyed Mamontov ed. / 1888 English Life / 1889 French De la vie / 1889 «Неделя» partial Russian legal / 1891 Geneva complete Russian)."
+    phase: "4 (workRecord)"
+    why: "No clean first publication: the only complete authorized Russian edition (1888) was destroyed before sale; the work reached the public first in translation and in partial Russian form. Convention needed."
+  - item: "bans[].scope for the 1888 Synod ban — encoded as complete-ban; whether to add a second `confiscation` entry for the destroy order."
+    phase: "4 (workRecord)"
+    why: "complete-ban (∈ the works-schema controlled set) covers the prohibition; the Synod also ordered all 600 copies surrendered for destruction, which the schema's `confiscation` scope could capture as a second bans[] entry. Human ingestion call."
+  - item: "censoredVersionExists value (proposed false) given the partial «Неделя» 1889 legal selection."
+    phase: "4 (workRecord)"
+    why: "The «Неделя» printing was an authorized partial selection of chapters, not a censored rewrite; decide whether the schema's `censoredVersionExists` should be true for an abridged-but-not-altered legal version."
+  - item: "excommunicationRelated value (proposed false) for On Life."
+    phase: "4 (workRecord)"
+    why: "The 1901 edict names no works; On Life's rationalist theology is part of the condemned teaching and the 1888 Synod ban is a precedent, but a direct tie should not be asserted."
+  - item: "Proposed works/ folder (treatises) and exact filename for the new On Life record."
+    phase: "4 (workRecord)"
+    why: "treatises/ is the natural home; human ingestion decision (cf. the What I Believe / What Then Must We Do? folder questions)."
+  - item: "The Censorship-Committee and Synod quotations («не слово Божие…»; the destroy order) and the genesis details (Dieterichs as 'instigator', Grot's proofs) are drawn from the PSS Tom 26 commentary / Apostolov, not from byte-extracted PD primary documents."
+    phase: "3 (reception) / 1 (genesis)"
+    why: "Well-attested in the apparatus but attribute to the commentary, not as primary-verified; the underlying archival documents (Synod file No. 2264) were not independently consulted."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (PSS Tom 26 work «О жизни» / «Понятие жизни» lecture / commentary + variants; Tom 49 diaries 1886–87; Tom 64 letters 1887–88, incl. Ozmidov no. 39, Alekseev no. 148, Strakhov no. 181, Grot nos. 44/138/141)"
+  - "Wikimedia Commons (Repin 1887 + Ge 1884 Tolstoy; Grot; Strakhov; Chertkov; A. K. Dieterichs; S. A. Tolstaya 1875)"
+  - "Web scholarship sweep: Medzhibovskaya & Denner, On Life: A Critical Edition (Northwestern UP, 2018/2019; Project MUSE); Gustafson, Resident and Stranger (1986); O. S. Soina, 'Leo Tolstoy on the Meaning of Life' (trans., Ted K Archive); Brill CASS 48.4 (2014) on Tolstoy & Schopenhauer"
+  - "Not located openly: a title-page facsimile of the banned 1888 first edition (RGB / GTM, 3 copies) and of the French De la vie (1889); the Tolstoy–Dieterichs genesis correspondence (PSS t. 85)"
+
+references:
+  primary:
+    - "L. N. Tolstoy, «О жизни», PSS (Jubilee Edition) Tom 26, pp. 313–442 (text); «Понятие жизни» (lecture stenogram) pp. 881–885; variants pp. 578–634 and «Неделя» 1889 variants pp. 451–456; «Об истинной жизни» (Chertkov's simplified exposition) pp. 885–926; commentary (N. N. Gusev) pp. 748–844."
+    - "tolstoydigital-TEI corpus: diaries Tom 49 (1886–87); letters Tom 64 (1887–88, incl. to N. L. Ozmidov no. 39, V. I. Alekseev no. 148, N. N. Strakhov no. 181, N. Ya. Grot)."
+  background:
+    - "Inessa Medzhibovskaya (ed.) & Michael A. Denner (trans.), Leo Tolstoy, On Life: A Critical Edition (Northwestern University Press, 2019) — the modern authoritative edition; prints 'The Concept of Life: Tolstoy's Talk at the Moscow Psychological Society (March 14, 1887)' and contemporary responses."
+    - "Richard F. Gustafson, Leo Tolstoy: Resident and Stranger. A Study in Fiction and Theology (Princeton, 1986) — On Life as the core of Tolstoy's metaphysics of life."
+    - "O. S. Soina, 'Leo Tolstoy on the Meaning of Life' (English trans., The Ted K Archive) — On Life as rational ethics in a Stoic / early-Christian lineage."
+    - "Ernest J. Simmons, Leo Tolstoy (Boston, 1946); Rosamund Bartlett, Tolstoy: A Russian Life (2011) — biographical accounts of the 1886 illness, the lecture, and the ban."
+    - "N. Apostolov, «Толстой и русское самодержавие» (Gosizdat, 1930) — the Synod file (No. 2264) on the 1888 ban (via the PSS commentary)."
+    - "Isabel F. Hapgood (trans.), Life (Crowell, New York, 1888) — first English edition; S. A. Tolstaya & Prof. Tastevin (trans.), De la vie (Marpon & Flammarion, Paris, 1889) — first French edition."

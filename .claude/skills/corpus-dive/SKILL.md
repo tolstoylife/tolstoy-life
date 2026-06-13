@@ -1,10 +1,12 @@
 ---
 name: corpus-dive
-description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals + scholarship layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended."
-argument-hint: "<theme or research question> [--auto] [--confirm-scope] [--model <tier>]"
+description: "Primary-source research on one theme across the local Tolstoy corpus (tolstoydigital TEI + Jubilee Edition PDFs). Produces a cited index.md (+ a rendered index.html), a machine-readable dossier.yaml (evidence + entity + visuals + scholarship + work-record + coverage layers), and a draft dev-blog note — ingestion-ready. Use when asked to research a theme/concept across the corpus/PSS/TEI, or to run such research unattended. Add `--novel` for a full novel/novella dive — a work-subject dive that re-weights the spine (lighter close-read, heaviest genesis & reception, plus character/theme/marquee sections); use it whenever the subject is one of Tolstoy's novels or long narratives."
+argument-hint: "<theme or research question> [--auto] [--novel] [--confirm-scope] [--model <tier>]"
 triggers:
   - "corpus dive"
   - "corpus-dive"
+  - "novel dive"
+  - "novel-dive"
   - "research across the corpus"
   - "research across the PSS"
   - "research across the TEI"
@@ -16,14 +18,41 @@ Primary-source research on **one theme** across the local Tolstoy corpus. Produc
 coordinated, ingestion-ready outputs. Modeled on `docs/research/copyright-renunciation/`.
 Full design + rationale: `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.
 
+**The dive prepares the material; it never populates the vault.** Everything below gathers, cites,
+and structures evidence into `docs/research/<slug>/` — including the dossier's `entities` routing
+map and its `workRecord` proposals, which scope the wiki pages and works records this research
+*should* become. But the dive stops at the dossier: it never creates `website/src/wiki/**`
+pages or `website/src/works/**` records from that material. Turning the dossier into vault pages is
+a separate, later, human-in-the-loop step — the **LLM wiki ingestion method** — which reads the
+finished dive and writes the pages itself. So keep gathering and scoping everything; the dossier is
+the *plan and the pointer*, ingestion is the *writer*. Proposing a page is not creating it.
+
+## Phases at a glance
+
+| Phase | Produces |
+|---|---|
+| 0 · Scope | the scoping contract — question, corpus surface, keyword set, time-box |
+| 1 · Sweep | ranked candidate hits (TEI id + snippet + why-relevant) |
+| 2 · Extract & verify | verbatim extracts, working-EN translations, the visual-materials sweep |
+| 3 · Scholarly context | the `scholarship` layer + one bounded gap-fill loop |
+| 4 · Synthesize | `index.md`, `dossier.yaml`, the draft note, rendered `index.html` |
+| 5 · Verify | a clean verifier verdict (separate pass; never self-approve) |
+| 6 · Research handoff | the work-orders + coverage summary (`run-report.md` under `--auto`) |
+| 7 · Compact session | a `handoff`-skill document for the next agent |
+
 ## Arguments
 
 Parse `{{ARGUMENTS}}`:
 - **theme** (required) — everything that is not a flag; the research question/topic.
 - **`--auto`** — unattended mode (see Mode).
+- **`--novel`** — novel mode: the subject is a single novel/long narrative. A work-subject dive (so it
+  carries a `workRecord:`) with a re-weighted spine and three added index sections. **When set, read
+  `references/novel-mode.md` first and treat it as the governing overlay on the phases below** (see the
+  *Novel mode* section).
 - **`--confirm-scope`** — in `--auto`, approve the auto-drafted scope once, then detach.
 - **`--model <tier>`** — informational (the CLI already set the baseline); record the effective tier in the run-report.
 - **slug** = kebab-case of the theme (lowercase, non-alphanumeric → `-`).
+  - **Work dives** (subject is a single work — the dive carries a `workRecord:` block) prefix the slug with the composition window: `<startYear>[-<endYear>]-<slug>` (e.g. `1879-1882-a-confession`). Use the **composition** window, not first-publication, and a **range** whenever the work was written across years or its window overlaps neighbouring works (the Prophet-period canon overlaps heavily). This sorts work dives together and chronologically in `docs/research/`. Theme/reference dives stay bare. The slug is the identity key — it must equal the folder name and the dossier `topic.slug`.
 
 ## Hard boundaries
 
@@ -32,18 +61,68 @@ Parse `{{ARGUMENTS}}`:
   `dossier.yaml`, `index.md`, `index.html`, `run-report.md`, `session-log.md`), `docs/research/lib/`,
   `docs/research/_batch-<date>.md`, and `website/src/posts/notes/`.
 - **NEVER write/modify:** `primary-sources/**`, or anything under `website/` except
-  `website/src/posts/notes/`. **No vault writes** — ingestion is a separate human step.
+  `website/src/posts/notes/`. **No vault writes** — the dive never creates `website/src/wiki/**`
+  pages or `website/src/works/**` records, even when the dossier has fully scoped them. That
+  creation belongs to the separate LLM wiki ingestion method (see the intro); building the
+  `entities` / `workRecord` dossier layers is *planning the pages*, never *writing them*.
 
 ## Mode
 
 - **Interactive (default):** confirm the scoping contract at Phase 0; escalate genuine editorial
   judgment to the user.
-- **Autonomous (`--auto`):** auto-derive the scope and proceed; **never call `AskUserQuestion`**;
+- **Autonomous (`--auto`):** auto-derive the scope and proceed; never call `AskUserQuestion`;
   any decision needing a human goes to the dossier's `needsReview` and the run is not blocked;
   honor the time-box; save progress incrementally; terminate cleanly; write `run-report.md`.
   `--confirm-scope` adds exactly one approval (the contract) before detaching. An autonomous run
   must never publish: the note is always written with `draft: true` (never flipped to published),
   no vault writes, licence-gated downloads only.
+
+For **work dives**, `--auto` is the preferred way to run a dive while the reader is away: the
+composition/interlocutor sweep, the `workRecord:` fill, the standing sections, and the
+`coverage:` ledger all run with no human in the loop; any uncertain field, attribution, or
+judgment call goes to `needsReview`, never into the prose.
+
+The post-pilot evaluation gate is not run live under `--auto` — the dive instead records a
+self-assessment of its checks (written into `run-report.md` at Phase 6 handoff), each
+self-scored, with concerns routed to `needsReview`:
+- Did the interlocutor sweep yield people?
+- Is the Russian society/church reception covered?
+- Is the `workRecord` fill accurate and provenanced?
+- Is `coverage` honest (no `covered` that is really `partial`)?
+- Did `--choice=reg` extract cleanly?
+- Did the spine stay bare?
+
+The human retrospective is deferred to the reader's return; the self-assessment never blocks the run.
+
+## Novel mode (`--novel`)
+
+A novel-dive **is a work-subject dive** (single work → a `workRecord:` block) tuned for a long
+narrative. The work-dive spine was calibrated on the non-fiction treatises, where the textual layer is
+exhaustive (chapter-by-chapter keystones); for a 300–500-page novel that is both wrong and impossible.
+The mode re-weights *where the effort goes* — the genesis, redaction history, and reception carry a
+novel's depth; the text is read by *locating* its pivotal scenes, not marching through it.
+
+**When `--novel` is set, read `references/novel-mode.md` and treat it as the governing overlay on the
+phases below.** It is the distillation of three flagship novel-dives that re-balanced the spine by hand
+and converged on one shape. In brief, relative to the work-dive spine:
+
+- **Lighter close-read** — extract the full text once, close-read 3–5 pivotal scenes (one centrepiece
+  quoted in full), map the rest thematically (replaces the chapter-by-chapter deep read in Phase 2).
+- **Heaviest genesis & reception** — the composition-years witness sweep and the censorship-as-reception
+  pass get the most budget.
+- **Three added index sections** — *Characters & prototypes* (routes `character` + `prototypes[]`,
+  `person`, and `group` entities), a promoted *Themes* section, and a *Marquee question* section that
+  states the dive's contested claim and tests it as a hypothesis (`confirms`/`complicates`/`extends`).
+- **Heavy visuals** by default for a canonical novel.
+- **Flex, don't hard-code** — principals are not always fictional (route by what the figure is); a
+  separately-catalogued companion text gets its own `workRecord`; reception flexes by era; a
+  historically-sourced work adds a genesis source-research sub-step.
+
+**Hard gates are unchanged** (`--choice=reg --notes=auto`, `verify_quotes.py` exit 0, the bare voice,
+no vault writes, a record-creating `workRecord`, the separate-pass verifier, the Phase 6 + 7 handoffs).
+**One run at a time** — never start an `--auto` pass while an in-session run of the same dive is live
+(a concurrent `--auto` run once committed a duplicate narrative). Everything in `references/novel-mode.md`
+is an overlay; the boundaries, model routing, and gates in this file still hold.
 
 ## Model routing
 
@@ -62,11 +141,21 @@ Delegate sub-steps to subagents with the right tier (Agent tool `model` param). 
 ambiguity, re-run that step on opus. Escalating the model buys quality, not a fabrication licence —
 findings still unresolved after escalation go to `needsReview`, never into the prose unanchored.
 
+**Subagent I/O — write to a file, return a line.** Subagent final messages can be truncated by the
+harness to a terse stub ("Complete.") that drops the whole deliverable. So every dispatched
+sub-step (sweep, deep-read, commentary mine, scholarship, visuals channel, verifier) must write
+its structured deliverable to a named file under `docs/research/<slug>/` (e.g.
+`extracts/_sweep_<area>.md`, `extracts/_deepread.md`, `_verifier-report.md`) and return only a
+confirmation line (path + count/verdict); read the files back in the main context. If a subagent
+already ran and returned only a stub, re-dispatch it (SendMessage) asking it to persist its
+in-context work to a file. Remove purely-intermediate working files before the Phase-6 commit (keep
+`extracts/` PD-only).
+
 ## Phase 0 — Scope (front-gate)
 
 Draft a **scoping contract**: (1) restate the precise question; (2) corpus surface — genres
-(diaries / letters / works / notebooks / commentary) + date-range, **defaulting to the post-1880
-"Prophet" period with letters/correspondence first-class**; (3) layered **Russian** keyword set —
+(diaries / letters / works / notebooks / commentary) + date-range, defaulting to the post-1880
+"Prophet" period with letters/correspondence first-class; (3) layered Russian keyword set —
 high-confidence anchors → broader combinable terms, with orthographic / pre-reform variants;
 (4) stop-condition / time-box; (5) sweep mode — inline (narrow) vs fan-out (broad).
 Interactive: show the contract and confirm. `--auto`: record the scope contract (written in full to
@@ -78,30 +167,64 @@ angle, period, or emphasis), confirm the contract in prose and proceed — don't
 misfires or returns duplicate/empty answers, fall back to the framing the user already gave rather
 than re-firing it. The contract still gets written down; it just isn't gated behind a flaky picker.
 
+**Work-subject dives.** When the subject is a *single work* (not a scattered theme), the
+scope contract additionally pins: the PSS Tom(s) holding the work and each of its
+redactions; the composition window (writing start→finish, from the `works/` record +
+corpus); and the path to the work's `works/` record — or, when no record exists yet (common: only a
+handful of works are recorded so far), the path it *should* live at (derived from genre/category),
+with the `workRecord:` then proposing the record's **creation** rather than a fill. These drive the
+composition-years sweep (Phase 1), the deep read (Phase 2), the standing spine (Phase 4), and the
+`workRecord:` proposal (dossier). Everything below degrades gracefully for a pure theme: a spine
+section with no evidence is dropped and logged in the `coverage` ledger.
+
 ## Phase 1 — Sweep (scale-aware)
 
 - **Inline:** grep `primary-sources/tolstoydigital-TEI/texts/` with the keyword set; capture
   candidate hits with their TEI id (the filename encodes Tom — the PSS volume number — and, for
   diaries, the entry date).
-- **Fan-out (broad themes):** partition the corpus — diaries by decade, **letters by Tom-range
-  with a dedicated Prophet-period pass**, works — and dispatch parallel subagents that each return
+- **Fan-out (broad themes):** partition the corpus — diaries by decade, letters by Tom-range
+  with a dedicated Prophet-period pass, works — and dispatch parallel subagents that each return
   structured candidate hits (TEI id, snippet, why-relevant). Dedupe/rank in the main context.
-- A **post-1880 letter pass always runs**, regardless of mode.
+- A post-1880 letter pass always runs, regardless of mode.
+
+**Composition-years witness sweep (high priority — work dives).** Once the writing window is
+known, always sweep that window's diaries + letters for two things, not one: (1) Tolstoy's
+own genesis & reaction — the strain, urgency, and self-understanding while writing; (2) the
+people around the work — whom he met, corresponded with, and talked to during composition
+(visitors, key correspondents, conversation partners, named draft-readers). Diaries name the
+visits and conversations; letters name the correspondence network — sweep both for *people*,
+surfacing each as a `person` entity (with `ingestionPriority`) in the dossier routing map. This
+runs alongside the always-on post-1880 letter pass and feeds the Genesis section (Phase 4).
 
 ## Phase 2 — Extract & verify finalists
 
 - Run `python3 docs/research/lib/extract_tei.py <xml>` on each finalist → clean verbatim Russian
   to `docs/research/<slug>/extracts/<tei-id>.txt`.
+- **Read the work's own text deeply (work dives).** The subject text is known — read its TEI
+  in the holding Tom(s) as the primary source: a structural pass for the keystone passages,
+  chapter by chapter, not only a grep for theme hits. This is the raw material for the *What the
+  work says* section. **Novel mode (`--novel`) replaces this chapter-by-chapter read** with
+  extract-once → locate → close-read 3–5 pivotal scenes → map the rest thematically — a 500-page
+  novel can't be read exhaustively; see `references/novel-mode.md` (Phase 2).
+- **Pre-reform orthography:** run `extract_tei.py` with `--choice=reg` on any pre-1918 text
+  (every Prophet-period work qualifies) — it resolves `<choice><orig>/<reg>` spelling pairs to
+  modern orthography. Without the flag the legacy default drops those pairs and guts the text (it
+  now warns on stderr). Use `--choice=orig`/`both` only for deliberate orthographic collation.
+  This supersedes the per-dive `_reg_extract.py` helper.
 - Cross-check finalists against the printed PSS PDF (`pdftoppm` @ 220 dpi); if the PDF for the
-  relevant Tom is not held locally, note the gap in `needsReview` and proceed. For the **single
-  keystone citation**, save the page image to `extracts/`.
-- Produce **working-English** translations, explicitly labelled "(working English)".
+  relevant Tom is not held locally, note the gap in `needsReview` and proceed. For the single
+  keystone citation, save the page image to `extracts/`. Caution: the local
+  `primary-sources/archive-org/.../Complete Works/<N>.pdf` set is **Leo Wiener's English edition**
+  (Boston 1904), *not* the Russian PSS — its volume numbers don't map to PSS Toms (*A Confession* is
+  Wiener vol. XIII, not 23). A page from it is a PD *English* facsimile; a Russian first-edition or
+  manuscript facsimile needs another source (GTM / RGB / émigré scans), usually `needsReview`.
+- Produce working-English translations, explicitly labelled "(working English)".
 - Run the **visual-materials sweep** (below) in parallel.
 
 ### Visual-materials sweep
 
 Check, in order: local `primary-sources/`; State Tolstoy Museum collection
-(tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru); **Wikimedia Commons** (many
+(tolstoy-iss.kamiscloud.ru) + Goskatalog (web.goskatalog.ru); Wikimedia Commons (many
 late-period Tolstoy photographs are PD, including Chertkov's own); tolstoy.ru; émigré scan
 archives (vtoraya-literatura.com, imwerden.de). For each item record provenance, holding,
 access, rights, `licence`, and `usable`.
@@ -112,11 +235,11 @@ plus a handful per major entity, single channel (usually Commons); the default f
 per source channel, each told to *err toward more*, then dedup. Record the chosen intensity in the
 Method section / run-report.
 
-**Dedup contract (when fanning out).** Give each channel a **non-overlapping territory** so they
+**Dedup contract (when fanning out).** Give each channel a non-overlapping territory so they
 don't re-fetch the same picture — e.g. by *holding* (Commons vs Canadian archives vs Russian
 museums) and by *subject area*, and tell each channel which subjects another owns. Filename prefixes
-(`commons-`, `canada-`, `russia-`) prevent path collisions but **not content duplication**; so after
-the channels return, run a **dedup-by-subject pass in the main context** before writing the dossier
+(`commons-`, `canada-`, `russia-`) prevent path collisions but not content duplication; so after
+the channels return, run a dedup-by-subject pass in the main context before writing the dossier
 `visuals` block — one canonical entry per distinct image, noting cross-channel overlap rather than
 listing the same photo twice. (A heavy sweep can easily land 2× the files for 1× the subjects.)
 
@@ -144,9 +267,20 @@ unavailable (headless), degrade gracefully: document provenance, download nothin
 After the primary evidence is locked (Phase 2), add a *secondary* layer: web-search conventional
 Tolstoy scholarship + related facts, triangulate the dive's findings against the received view, and
 fill knowledge gaps. **Research-prototype rigor:** primary-source citations stay byte-faithful;
-secondary/scholarly claims are drafted from knowledge + web and **cited only when there is a clear
-source** (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
+secondary/scholarly claims are drafted from knowledge + web and cited only when there is a clear
+source (inline attribution + a References-list entry — see Synthesize; serve.py renders no Markdown
 `[^n]` footnotes), with genuine uncertainty sent to `needsReview`. No adversarial citation gate.
+
+**Ground in the project before the mainstream.** The dive's spine is the primary record — the words
+of Tolstoy and the people he trusted (Biryukov, Chertkov) — and the project's own prior dives
+(scan `docs/research/` for the relevant ones, e.g. `tolstoyanism`, `crisis`). Mainstream and academic
+scholarship is a contrast to read critically, never a baseline the dive "confirms": treat it with
+skepticism, attribute it, and watch for the subtle framing/word-choice that softens or inverts
+Tolstoy's message — the Sofia-centred "moralistic dogmatist who tried to impoverish his family" frame
+(Popoff; *The Last Station*) is the worked example. Don't let contested movement-labels ("Tolstoyan")
+or villain framings ("Chertkov the antagonist") stick in the dive's own voice; attribute them to the
+outside. §5 "Scholarly context" is a divergence map, not corroboration. (Memory:
+`corpus-dive-ground-in-primary-not-mainstream`.)
 
 1. **Assemble claims & gaps.** List the dive's main findings from the evidence ledger. Collect the
    open gaps from the dossier: `needsReview` items, `notCovered` candidates worth a quick check,
@@ -174,6 +308,13 @@ source** (inline attribution + a References-list entry — see Synthesize; serve
    wrong period) — goes to `notCovered` with a pointer, **not** a forced loop. Run the loop once,
    not open-endedly.
 
+**Reception pass (work dives).** For a work whose public/Church reception matters, run a dedicated
+light reception pass here, not just incidental mentions: name the contemporary critics and the
+clerical / Synod / press reaction (corpus commentary first, then targeted scholarship), each
+attributed. If reception is genuinely thin or out-of-scope, mark the `Reception & afterlife` surface
+`partial` / `not-covered` honestly — but don't let it default to `partial` for want of a deliberate
+look.
+
 Writes the dossier `scholarship:` block (see Synthesize), adds secondary sources to
 `references.background`, and updates `notCovered` / `needsReview` / `entities`. The "Scholarly
 context" prose section of `index.md` is composed in Synthesize.
@@ -191,13 +332,37 @@ context" prose section of `index.md` is composed in Synthesize.
    with provenance + access + rights; and what is not openly available + where to request it) *→
    Method* (the Phase 0 contract, updated with what actually happened) *→ References*. Close with
    a link to the dev-blog note.
+   **Work-dive standing sections (evidence-scaled).** When the subject is a work, the spine
+   additionally carries these — inserted where they fit the narrative, each present *only when
+   the corpus supports it* and otherwise dropped and logged in the `coverage` ledger (never
+   padded to fill the template): **Genesis & composition** (how/when/why it was written, from
+   the composition-year diaries+letters, *including the people around the work* — visitors,
+   correspondents, conversation partners — each carried into `entities`); **What the work says**
+   (a structural map of keystone passages read from the work's own TEI); **Redactions & textual
+   history** (the variants, which Tom holds each, what differs); **Publication, censorship &
+   translation** (first publication, ban, foreign first edition, Russian first legal printing,
+   translation lineage); **Reception & afterlife — the Russian society & church reaction first**
+   (critical/public debate, censorship, clergy and the Holy Synod, the 1901 excommunication where
+   the work bears on it; then wider influence); **Place in the cluster** (sibling works + prior
+   dives, via the cross-link rule below); and **The author's later verdict** (Tolstoy's own later
+   judgment on the work). Keep them bare and in the project voice.
+   **Cross-link contested labels (don't scrub).** Wherever a contested mainstream label appears —
+   most often in *Scholarly context*, but anywhere it surfaces — link its first prominent occurrence
+   to the project's dedicated dive on that term (`../<slug>/index.html`, the rendered sibling; a bare
+   `.md` link serves as raw text). The link keeps the label visible as the *mainstream's* word while
+   pointing at the dive that interrogates it — it does **not** license asserting the badge as fact in
+   the dive's own voice (that is Phase 3's "ground in the project before the mainstream" rule, which
+   this complements). Interlink sibling dives the same way, via a short *Links* line in Method.
+   Worked example: `biryukov-sofia-relationship` §5 (the `tolstoyanism` link) + §8 (sibling links);
+   memory `corpus-dive-ground-in-primary-not-mainstream`. Never link `tolstoyanism-christian-anarchism`
+   as authoritative — it is the superseded combined survey.
 2. **`docs/research/<slug>/dossier.yaml`** — schema:
    ```yaml
    topic: { slug, title, question, date, period, corpusSurface, dateRange }
    evidence:        # flat citation ledger
      - { id, genre, pssTom, pages, date, addressee, localPdf, extract, quoteRu, quoteEn,
          significance, facsimile }
-   entities:        # ingestion routing map → wiki
+   entities:        # ingestion routing map → wiki (a plan for the ingestion method to act on later; the dive writes no pages)
      - { name, wikiType, wikilinkTarget, vaultStatus, role, sources, evidenceRefs,
          ingestionPriority, dependsOn }   # last two optional — turn the map into a plan
    visuals:         # → images section
@@ -207,19 +372,39 @@ context" prose section of `index.md` is composed in Synthesize.
      summary:                   # short prose: the received view on this theme (English-first)
      triangulation:             # one entry per major finding vs scholarship
        - { evidenceRef, conventionalView, relation, source }
+   workRecord:      # proposed fills for the works/ frontmatter — READ-ONLY to works/; human ingestion applies
+     recordPath:    # path to the works/<…>/<Title>.md record
+     workId:        # the record's id field
+     fields:        # one entry per field the dive can source; omit fields it cannot determine
+       - { field, value, evidenceRefs, source, confidence, note,
+          oldStyle, approximate }   # oldStyle/approximate: sub-flags on date-typed entries only
+   coverage:        # surfaces × status — derives index.md "Material not covered"; resume reads this
+     - { surface, status, note }   # status ∈ covered | partial | not-covered
    contradictions:  - { claim, correction, evidenceRef }   # intra-corpus (primary-vs-primary) only — distinct from scholarship
    notCovered:      [ … ]
    needsReview:     - { item, phase, why }   # deferred human-judgment (autonomous never blocks)
    archivesConsulted: [ … ]
    references: { primary: [], background: [] }
    ```
-   - `wikiType` ∈ the 9 wiki types (`website/schema/wiki-schema.md`).
+   - `wikiType` ∈ the wiki types defined in `website/schema/wiki-schema.md` (12 as of v1.4 — the
+     latter two, `character` (with `prototypes[]`) and `group`, are what a novel-dive routes its
+     fictional characters and real-world sects/peoples to; see `references/novel-mode.md`).
    - `vaultStatus` ∈ exists | stub | missing — check `website/src/wiki/` and `website/src/works/`.
    - `sources` ids come from `website/schema/sources.yaml`.
    - `licence` ∈ PD | CC0 | CC-BY | CC-BY-SA | rights-reserved | unknown.
    - `relation` ∈ confirms | complicates | contradicts | extends — scholarship triangulation
      (`extends` = the corpus reaches below the scholarship's resolution); clear secondary sources
      also go in `references.background` (`source` omitted when there is no clear one).
+   - `workRecord.fields[].field` mirrors a `works/` frontmatter key (no new schema — it reflects
+     `website/schema/` + the record itself). The dive never writes `works/`; it *proposes*.
+     `confidence` ∈ high | medium | low. For a date-typed `field` *X*, `oldStyle` carries the Julian-calendar value and `approximate: true` the circa flag — these map to the record's **separate sibling keys** `*X*OldStyle` and `*X*Approximate` (e.g. `dateWritingStartedOldStyle` / `dateWritingStartedApproximate`, which the `works/` schema stores as their own flat frontmatter fields); here they ride as sub-flags on the one date entry, not standalone `field` entries.
+     **Shape the `value` to the works schema, not to convenience:** list-typed fields are object
+     arrays in `tolstoy-works-schema.md`, so propose them as such — `titleAlternatives` as
+     `{title, type, language}`, `bans` as `{banningAuthority, authorityType, jurisdiction, scope,
+     banDate}`, `relatedWorks` as `{id, relationshipType}` — so a human can apply the proposal
+     verbatim. Check the live record's existing field shapes before proposing.
+   - `coverage[].status` ∈ covered | partial | not-covered — the structured surface map the
+     "Material not covered" section is derived from and that multi-session resume reads first.
    - `ingestionPriority` (optional) ∈ 1 | 2 | 3 — the order the wiki pages should be written:
      **1** = central, write first (the entities the dive is *about*); **2** = supporting; **3** =
      peripheral / mentioned. `dependsOn` (optional) lists the `name`s of entities that should exist
@@ -246,33 +431,53 @@ deterministic one. Fix any mismatch (or, if the divergence is a genuine source v
 until it passes.
 
 Then dispatch a **verifier subagent (opus)** in a fresh context for the judgement-level checks the
-script cannot make. It checks: a sample of citations re-derived from TEI/PDF for **byte-fidelity**
-(belt-and-braces on top of `verify_quotes.py`); every **primary** `index.md` claim is source-anchored; **scholarly/secondary claims are
-*attributed* (not asserted) and a named source / References-list entry backs every claim — no
-byte-fidelity is demanded on secondary sources (prototype rigor); `scholarship.triangulation`
-entries reference valid `evidenceRef`s and use a valid `relation`**; dossier
+script cannot make. It checks: a sample of citations re-derived from TEI/PDF for byte-fidelity
+(belt-and-braces on top of `verify_quotes.py`); every primary `index.md` claim is source-anchored;
+scholarly/secondary claims are *attributed* (not asserted) and a named source / References-list
+entry backs every claim — no byte-fidelity is demanded on secondary sources (prototype rigor);
+`scholarship.triangulation` entries reference valid `evidenceRef`s and use a valid `relation`; dossier
 entities resolve to valid wiki types with accurate `vaultStatus`; translations are labelled; no
-editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and **no
-rights-reserved/unknown image was committed or placed in `website/src/`** (downloads into the
-git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier). Iterate until
+editorializing voice; `extracts/` holds only PD facsimiles, `visuals/` is git-ignored, and no
+rights-reserved/unknown image was committed or placed in `website/src/` (downloads into the
+git-ignored `visuals/` cache are fine; each carries a `licence` in the dossier).
+
+For **work dives** it additionally checks: `workRecord` proposals are evidence-anchored (no
+fabricated dates/venues) and their `field` names match the `works/` record schema; the
+`coverage` ledger is honest (no `covered` the evidence shows is really `partial`); and the
+standing spine sections obey the bare-voice / attribute-don't-assert rules.
+
+Iterate until
 the verdict is clean; in `--auto`, if it cannot converge after a few iterations, record the open
 items in `needsReview` and conclude the run rather than blocking indefinitely.
 
-## Phase 6 — Handoff
+## Phase 6 — Research handoff
 
 Produce a summary: what was covered, the `notCovered` queue, the **entity work-order** (which wiki
 pages this dive feeds — present the `missing`/`stub` entities in `ingestionPriority`-then-`dependsOn`
 order so it reads as a plan, not a flat list), the **visuals work-order** (images/facsimiles to
-acquire or request), and the draft note path. Remind that wiki ingestion is a separate, human-in-the-loop step — the
+acquire or request), the **work-record work-order** (the `workRecord` proposed fills grouped by confidence, for human ingestion into the `works/` record), the **coverage ledger** (covered / partial / not-covered surfaces), and the draft note path. Remind that wiki ingestion is a separate, human-in-the-loop step — the
 dossier is the pointer, not the writer. **Interactive:** print it. **`--auto`:** write it to
 `docs/research/<slug>/run-report.md` (scope contract, coverage, `notCovered`, `needsReview`,
-models used + rough cost note, output paths).
+models used + rough cost note, output paths, the **evaluation self-assessment** (work dives)).
+
+## Phase 7 — Compact the session (`handoff` skill)
+
+As the **final step of every dive**, invoke the native `handoff` skill to compact the whole session
+into a handoff document. This is deliberately separate from Phase 6: Phase 6 hands off the
+*research* (the work-orders, coverage ledger, and `notCovered` queue — what the later ingestion step
+consumes), whereas the `handoff` skill hands off the *session* (the conversation state, the
+decisions made, and the open threads — what a fresh agent needs to resume without re-reading the
+transcript). The two are complementary, not redundant: one points at the artifacts on disk, the
+other carries the context that lives only in this conversation.
+
+Run it in both modes. Under `--auto` it complements `run-report.md` (the report is the durable
+record; the handoff is the resume primer) rather than replacing it. This is the dive's last action —
+everything else is finished before the session is compacted.
 
 ## Multi-session dives
 
 A broad theme may exceed one session. At the start of any dive, if `docs/research/<slug>/`
-already exists, **resume** from its `session-log.md` and the dossier's `notCovered` queue rather
-than re-sweeping. For such dives, keep an append-only `docs/research/<slug>/session-log.md`
+already exists, **resume** from its `session-log.md`, the dossier's `coverage:` ledger (the structured surface map — read this first), and the `notCovered` queue (free-text overflow) rather than re-sweeping. For such dives, keep an append-only `docs/research/<slug>/session-log.md`
 (what each session covered) and treat `notCovered` as the resume queue.
 
 **Resuming a *completed* dive to add Phase 3** (enrich, not re-sweep): when the primary layer is

@@ -1,0 +1,1038 @@
+# A Confession (Исповедь) — corpus-dive dossier
+# Machine-readable companion to index.md. Primary evidence is byte-faithful
+# (verify with: python3 docs/research/lib/verify_quotes.py docs/research/1879-1882-a-confession/dossier.yaml).
+# Secondary/scholarly claims are attributed, not byte-checked (prototype rigor).
+
+topic:
+  slug: 1879-1882-a-confession
+  title: "A Confession (Исповедь)"
+  question: >-
+    Document A Confession as a work across the local Tolstoy corpus — its
+    genesis and composition, what the text says, its redactions, its
+    publication / censorship / translation history, its reception (Russian
+    society and the Church first), and its place in the Prophet-period canon —
+    grounded in Tolstoy's own words, the Jubilee-Edition apparatus, the
+    composition-window diaries and letters, and the project's prior dives.
+  date: "2026-06-06"
+  period: "Prophet period (post-1880); composition 1879–1882 (Old Style)"
+  corpusSurface: "PSS Tom 23 (work, variants, commentary); diaries Tom 48–49; letters Tom 62–63; sibling work Tom 23; echoes Tom 26, 66"
+  dateRange: "1877–1906 (composition roots to first legal Russian publication); later authorial verdict 1892"
+
+# ── Evidence ledger (primary; byte-faithful) ────────────────────────────────
+# extract paths are relative to this file's directory.
+evidence:
+
+  # — The work's own text: PSS Tom 23, pp. 1–59 —
+  - id: conf-text-01
+    genre: work
+    pssTom: 23
+    pages: "1 (ch. I)"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Я был крещен и воспитан в православной христианской вере. Меня учили ей и с детства и во всё время моего отрочества и юности. Но когда я 18-ти лет вышел со второго курса университета, я не верил уже ни во что из того, чему меня учили."
+    quoteEn: "(working English) I was baptized and brought up in the Orthodox Christian faith. I was taught it from childhood and throughout my boyhood and youth. But when, at eighteen, I left the second year of university, I no longer believed in anything I had been taught."
+    significance: "The opening sentences; the autobiographical frame — cradle faith already gone before the crisis begins."
+
+  - id: conf-text-02
+    genre: work
+    pssTom: 23
+    pages: "ch. II"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Без ужаса, омерзения и боли сердечной не могу вспомнить об этих годах. Я убивал людей на войне, вызывал на дуэли, чтоб убить, проигрывал в карты, проедал труды мужиков, казнил их, блудил, обманывал."
+    quoteEn: "(working English) I cannot recall those years without horror, loathing, and heartache. I killed men in war, challenged men to duels in order to kill them, lost at cards, devoured the labour of the peasants, punished them, fornicated, deceived."
+    significance: "The confessional self-indictment that gives the work its tone — an inventory, not literary description."
+
+  - id: conf-text-03
+    genre: work
+    pssTom: 23
+    pages: "ch. III"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Эти остановки жизни выражались всегда одинаковыми вопросами: Зачем? Ну, а потом?"
+    quoteEn: "(working English) These stoppages of life always expressed themselves in the same questions: Why? And then what?"
+    significance: "The germ of the crisis — the «остановка жизни» (arrest of life) and its recurring unanswerable questions."
+
+  - id: conf-text-04
+    genre: work
+    pssTom: 23
+    pages: "ch. IV"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Жизнь моя остановилась. Я мог дышать, есть, пить, спать, и не мог не дышать, не есть, не пить, не спать; но жизни не было, потому что не было таких желаний, удовлетворение которых я находил бы разумным."
+    quoteEn: "(working English) My life came to a stop. I could breathe, eat, drink, sleep, and could not help breathing, eating, drinking, sleeping; but there was no life, because there were no desires whose satisfaction I found reasonable."
+    significance: "The precise statement of the spiritual paralysis at the centre of the book."
+
+  - id: conf-text-05
+    genre: work
+    pssTom: 23
+    pages: "ch. IV"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "И это сделалось со мной в то время, когда со всех сторон было у меня то, что считается совершенным счастьем: это было тогда, когда мне не было пятидесяти лет."
+    quoteEn: "(working English) And this happened to me at a time when, on every side, I had what is considered perfect happiness: it was when I was not yet fifty."
+    significance: "The paradox at the heart of the book — despair at the summit of worldly fortune, not in adversity."
+
+  - id: conf-text-06
+    genre: work
+    pssTom: 23
+    pages: "ch. IV"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "И я пытаюсь сосать тот мед, который прежде утешал меня; но этот мед уже не радует меня, а белая и черная мышь — день и ночь — подтачивают ветку, за которую я держусь."
+    quoteEn: "(working English) And I try to suck the honey that once comforted me; but this honey no longer gladdens me, while the white mouse and the black — day and night — gnaw at the branch I cling to."
+    significance: "The parable of the traveller, the well, the dragon and the two mice — the book's central enduring image, here applied to himself."
+
+  - id: conf-text-07
+    genre: work
+    pssTom: 23
+    pages: "ch. V"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Есть ли в моей жизни такой смысл, который не уничтожался бы неизбежно предстоящей мне смертью?"
+    quoteEn: "(working English) Is there in my life any meaning that would not be destroyed by the death inevitably awaiting me?"
+    significance: "The sharpest single formulation of the book's governing question."
+
+  - id: conf-text-08
+    genre: work
+    pssTom: 23
+    pages: "ch. IX"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Разумное знание привело меня к признанию того, что жизнь бессмысленна, жизнь моя остановилась, и я хотел уничтожить себя. Оглянувшись на людей, на всё человечество, я увидал, что люди живут и утверждают, что знают смысл жизни."
+    quoteEn: "(working English) Rational knowledge led me to acknowledge that life is senseless; my life came to a stop and I wanted to destroy myself. Looking round at people, at all of humanity, I saw that people live and affirm that they know the meaning of life."
+    significance: "The pivot — the turn from reason's verdict toward the lived faith of the labouring people."
+
+  - id: conf-text-09
+    genre: work
+    pssTom: 23
+    pages: "ch. IX"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "вера есть знание смысла человеческой жизни, вследствие которого человек не уничтожает себя, а живет. Вера есть сила жизни."
+    quoteEn: "(working English) faith is the knowledge of the meaning of human life, by virtue of which a person does not destroy himself but lives. Faith is the force of life."
+    significance: "Tolstoy's working definition of faith — reframed as the life-sustaining force, not dogma."
+
+  - id: conf-text-10
+    genre: work
+    pssTom: 23
+    pages: "ch. XI"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Я заблудился не столько оттого, что неправильно мыслил, сколько оттого, что я жил дурно."
+    quoteEn: "(working English) I went astray not so much because I thought wrongly as because I lived badly."
+    significance: "The moral diagnosis — the error was in the life, not the logic; a hinge of the conversion."
+
+  - id: conf-text-11
+    genre: work
+    pssTom: 23
+    pages: "ch. XII"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Он — то, без чего нельзя жить. Знать бога и жить — одно и то же. Бог есть жизнь."
+    quoteEn: "(working English) He is that without which one cannot live. To know God and to live are one and the same thing. God is life."
+    significance: "The climactic recognition that saves him from suicide."
+
+  - id: conf-text-12
+    genre: work
+    pssTom: 23
+    pages: "ch. XV"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "И русские стали во имя христианской любви убивать своих братьев."
+    quoteEn: "(working English) And Russians began, in the name of Christian love, to kill their brothers."
+    significance: "The concrete trigger of the break with the Church — its blessing of war and killing."
+
+  - id: conf-text-13
+    genre: work
+    pssTom: 23
+    pages: "ch. XVI (closing dream)"
+    date: "1879–1882"
+    extract: extracts/v23_001_059_Ispoved.txt
+    quoteRu: "Бесконечность внизу отталкивает и ужасает меня; бесконечность вверху притягивает и утверждает меня."
+    quoteEn: "(working English) The infinity below repels and terrifies me; the infinity above draws me and affirms me."
+    significance: "The crux of the closing dream — the image on which the whole confession comes to rest."
+
+  # — Letters: genesis & circulation (PSS Tom 62–63) —
+  - id: conf-let-01
+    genre: letter
+    pssTom: 62
+    pages: "379–383"
+    date: "1878-01-27 (OS)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v62_385_N_N_Straxovu.txt
+    quoteRu: "Разум мне ничего не говорит и не может сказать на три вопроса, которые легко выразить одним: что я такое?"
+    quoteEn: "(working English) Reason tells me nothing, and can say nothing, to the three questions that may easily be put as one: what am I?"
+    significance: "The crisis-question «что я такое?» a year before drafting; same letter: «Я об этом начал писать и написал довольно много». A working title of the work was «Что я?»."
+
+  - id: conf-let-02
+    genre: letter
+    pssTom: 62
+    pages: "501–503"
+    date: "1879-11-19 (OS, unsent)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v62_535_N_N_Straxovu.txt
+    quoteRu: "Я очень занят работой для себя, которой никогда не напечатаю"
+    quoteEn: "(working English) I am very busy with work for myself, which I will never print."
+    significance: "The autumn-1879 drafting, named as private «работа для себя» — the self-description he used of A Confession before Chertkov persuaded him to publish. The letter was left unsent."
+
+  - id: conf-let-03
+    genre: letter
+    pssTom: 62
+    pages: "500–501"
+    date: "1879-11-01 (OS)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v62_533_N_N_Straxovu.txt
+    quoteRu: "Я очень занят, но не скажу, что пишу"
+    quoteEn: "(working English) I am very busy, but I will not say what I am writing."
+    significance: "Protective secrecy about the work in progress, November 1879."
+
+  - id: conf-let-04
+    genre: letter
+    pssTom: 62
+    pages: "503–504"
+    date: "1879-11-22 (OS)"
+    addressee: "A. A. Fet"
+    extract: extracts/v62_536_A_A_Fetu.txt
+    quoteRu: "Я очень занят. Из занятия моего ничего не выйдет, кроме моего удовлетворения, но все-таки очень занят."
+    quoteEn: "(working English) I am very busy. Nothing will come of my occupation except my own satisfaction, but I am very busy all the same."
+    significance: "The same secret work, the same week, to a different correspondent (Fet) — corroborating the active autumn-1879 drafting."
+
+  - id: conf-let-05
+    genre: letter
+    pssTom: 63
+    pages: "71–73"
+    date: "1881-07-01/08 (OS)"
+    addressee: "N. N. Strakhov"
+    extract: extracts/v63_060_H_N_Straxovu.txt
+    quoteRu: "Из большего сочинения, которое я после вас и кончил, и еще раз все прошел, я сделал еще из Евангелия извлечение без примечаний"
+    quoteEn: "(working English) Out of the larger work, which I finished after seeing you and have gone through once more, I have made besides an extract from the Gospel without notes."
+    significance: "By July 1881 the larger theological work was finished; same letter reports the Optina Pustyn pilgrimage («путешествие в Оптину пустынь»). The Jubilee editors tie the finished form of A Confession to this moment, as the preface to the Краткое изложение Евангелия."
+
+  - id: conf-let-06
+    genre: letter
+    pssTom: 63
+    pages: "80–83"
+    date: "1881-11 (OS)"
+    addressee: "V. I. Alekseev"
+    extract: extracts/v63_079_V_I_Alekseevu.txt
+    quoteRu: "Мне очень тяжело в Москве."
+    quoteEn: "(working English) Things are very hard for me in Moscow."
+    significance: "The Moscow despair of the move (echoing the work's urban horror). Same letter names the forming circle — N. F. Fedorov, the peasant Sutaev, Orlov — who had read his «Краткое изложение» and were «единомышленны» (of one mind) with him."
+
+  - id: conf-let-07
+    genre: letter
+    pssTom: 63
+    pages: "90–91"
+    date: "1882-03-03 (OS, unsent)"
+    addressee: "A. A. Tolstaya (Alexandrine)"
+    extract: extracts/v63_094_Gr_A_A_Tolstoj.txt
+    quoteRu: "Обличаемые спрятались за цензуру и штыки"
+    quoteEn: "(working English) Those exposed have hidden behind censorship and bayonets."
+    significance: "Tolstoy's combative stance toward the Church and the censor in spring 1882, while his anti-dogmatic writing was being suppressed. (Which 'book exposing the deceivers' the letter means — A Confession or the Critique of Dogmatic Theology — is not certain; see needsReview.)"
+
+  - id: conf-let-08
+    genre: letter
+    pssTom: 63
+    pages: "112–128"
+    date: "1882-12 (OS)"
+    addressee: "M. A. Engelhardt"
+    extract: extracts/v63_140_M_A_Engelgardtu.txt
+    quoteRu: "значение его в том, чтобы найти смысл жизни в этом мире. Исполнение пяти заповедей дает этот смысл."
+    quoteEn: "(working English) its significance is in finding the meaning of life in this world. Fulfilment of the five commandments gives that meaning."
+    significance: "The doctrine that follows from the Confession's resolution, stated in an epistolary manifesto; the «смысл жизни» formula is the work's own. Belongs to the cluster's next panel (What I Believe)."
+
+  # — Diaries: composition-window interior (PSS Tom 48–49) —
+  - id: conf-diary-01
+    genre: diary
+    pssTom: 48
+    pages: "69–70"
+    date: "1878-05-22 (OS)"
+    extract: extracts/v48_069_070_1878_05_22.txt
+    quoteRu: "Начал писать «свою жизнь»."
+    quoteEn: "(working English) Began to write 'my life'."
+    significance: "The earliest datable composition reference in the corpus window; same entry: «Читал Евангелие» and the reflection on church unity. The diary then falls silent across 1879–1880."
+
+  - id: conf-diary-02
+    genre: diary
+    pssTom: 49
+    pages: "58"
+    date: "1881-10-05 (OS)"
+    extract: extracts/v49_058_058_1881_10_05.txt
+    quoteRu: "Прошел месяц — самый мучительный в моей жизни. Переезд в Москву."
+    quoteEn: "(working English) A month has passed — the most agonizing of my life. The move to Moscow."
+    significance: "The Moscow move as moral catastrophe, the diary resumed after the long gap; same entry names Fedorov («святой») and the visit to Sutaev («Был в Торжке у Сютаева, утешенье»)."
+
+  - id: conf-diary-03
+    genre: diary
+    pssTom: 49
+    pages: "59"
+    date: "1882-12-22 (OS)"
+    extract: extracts/v49_059_059_1882_12_22.txt
+    quoteRu: "Опять пережил муки душевные ужасные. Больше месяца. Но не бесплодные."
+    quoteEn: "(working English) Again I have lived through terrible spiritual torments. More than a month. But not fruitless ones."
+    significance: "Late-crisis marker; the «Сей, сей» (Sow, sow) passage on doing good without seeing its fruit — the resolution maturing after the work was complete."
+
+  # — Sibling work & cluster (PSS Tom 23) —
+  - id: conf-sib-01
+    genre: work
+    pssTom: 23
+    pages: "304 (opening of «В чём моя вера?»)"
+    date: "1883–1884"
+    extract: extracts/v23_304_465_V_chem_moja_vera.txt
+    quoteRu: "Пять лет тому назад я поверил в учение Христа — и жизнь моя вдруг переменилась"
+    quoteEn: "(working English) Five years ago I came to believe in Christ's teaching — and my life suddenly changed."
+    significance: "What I Believe (the cluster's next panel) opens where A Confession ends — at the moment faith was recovered — and pins the temporal link ('five years ago')."
+
+  # — Echoes across the corpus —
+  - id: conf-echo-01
+    genre: letter
+    pssTom: 66
+    pages: "188–189"
+    date: "1892-04-01 (OS)"
+    addressee: "Georges Dumas (written in French; Russian per PSS)"
+    extract: extracts/v66_228_ZH_DyumaDumas.txt
+    quoteRu: "перемена, о которой я говорю в «Исповеди», произошла не сразу, но что те же идеи, которые яснее выражены в моих последних произведениях, находятся в зародыше в более ранних."
+    quoteEn: "(working English) the change I speak of in The Confession did not happen all at once, but the same ideas, expressed more clearly in my later works, are present in embryo in the earlier ones."
+    significance: "Tolstoy's own later verdict (1892) on the work — the change was gradual, not sudden — endorsing the embryo-in-the-earlier-work reading."
+
+  - id: conf-echo-02
+    genre: work
+    pssTom: 26
+    pages: "466–474"
+    date: "c.1884–1886"
+    extract: extracts/v26_466_474_Zapiski_sumashedshego.txt
+    quoteRu: "И вдруг арзамасский ужас шевельнулся во мне."
+    quoteEn: "(working English) And suddenly the Arzamas horror stirred in me."
+    significance: "Notes of a Madman — the only extended creative-prose return to the 1869 Arzamas terror that prefigures the crisis. Distinct imagery from A Confession's «остановка жизни»; do not conflate."
+
+# ── Intra-corpus contradictions (primary vs primary) ────────────────────────
+contradictions:
+  - claim: "A Confession (and the opening of What I Believe, «жизнь моя вдруг переменилась») presents the change as a sudden turn."
+    correction: "Tolstoy's 1892 letter to Dumas says the change «произошла не сразу» — gradual, present «в зародыше» in earlier works."
+    evidenceRef: "conf-sib-01 / conf-echo-01"
+
+# ── Entities (ingestion routing map → wiki) ─────────────────────────────────
+entities:
+  - name: "Lev Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-text-01, conf-let-01, conf-diary-01]
+    ingestionPriority: 1
+
+  - name: "The 'переворот' / spiritual crisis of 1879–82"
+    wikiType: concept
+    wikilinkTarget: "Spiritual crisis (perevorot)"
+    vaultStatus: missing
+    role: "The transformation A Confession narrates; Tolstoy's own word was «переворот», not 'crisis'/'conversion'."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-text-03, conf-text-04, conf-echo-01]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+    note: "See the project's crisis dive (docs/research/crisis); attribute 'crisis/conversion' to biographers, not Tolstoy."
+
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Philosopher and critic; Tolstoy's chief correspondent through the composition and first reader; accompanied him to Optina Pustyn."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-01, conf-let-02, conf-let-03, conf-let-05]
+    ingestionPriority: 1
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "S. A. Tolstaya (Sofia Andreyevna)"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; copyist of several manuscripts; diarist of the crisis; sought to publish the work in her collected editions (1885, 1911)."
+    sources: [tolstoydigital-tei, jubilee-edition, sophia-diary]
+    evidenceRefs: [conf-diary-02]
+    ingestionPriority: 2
+
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple and publisher; the «Свободное слово» (Christchurch, 1901) edition; the agent for distributing the suppressed text."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-07]
+    ingestionPriority: 2
+
+  - name: "A. A. Tolstaya (Alexandrine, the cousin, 1817–1904)"
+    wikiType: person
+    wikilinkTarget: "Alexandra Andreyevna Tolstaya"
+    vaultStatus: missing
+    role: "Lady-in-waiting and Orthodox interlocutor; the believer Tolstoy argued his new faith against; recipient of two key (unsent) confessional letters."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-07]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+    note: "DISTINCT from the existing wiki page 'Alexandra Tolstaya' (= the daughter Alexandra Lvovna, 1884–1979). Do NOT conflate; a new page is needed."
+
+  - name: "A. A. Fet"
+    wikiType: person
+    wikilinkTarget: "Afanasy Fet"
+    vaultStatus: missing
+    role: "Poet and neighbour; correspondent and pessimist foil during the crisis."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-04]
+    ingestionPriority: 2
+
+  - name: "N. F. Fedorov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Fedorov"
+    vaultStatus: missing
+    role: "Librarian of the Rumyantsev Museum and philosopher of the 'Common Task'; an early reader of the gospel synthesis; Tolstoy called him «святой»."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-06, conf-diary-02]
+    ingestionPriority: 2
+    dependsOn: ["Lev Tolstoy"]
+
+  - name: "V. K. Sutaev"
+    wikiType: person
+    wikilinkTarget: "Vasily Sutaev"
+    vaultStatus: missing
+    role: "Peasant sectarian from Tver; an exemplar of the simple living faith Tolstoy sought; visited 1881."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-06, conf-diary-02]
+    ingestionPriority: 2
+
+  - name: "S. A. Yuryev"
+    wikiType: person
+    wikilinkTarget: "Sergei Yuryev"
+    vaultStatus: missing
+    role: "Editor of Russkaya Mysl; accepted the work for the journal (1882); requested the censor's softenings."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    note: "From PSS Tom 23 commentary; no primary corpus quote in this dive."
+
+  - name: "M. K. Elpidin"
+    wikiType: person
+    wikilinkTarget: "Mikhail Elpidin"
+    vaultStatus: missing
+    role: "Émigré publisher in Geneva; the first separate edition of «Исповедь» (1884), where the title first appears in print."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "K. P. Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: "Ober-Procurator of the Holy Synod (1880–1905); the institutional obstacle behind the suppression and the later church conflict."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "Holy Synod"
+    wikiType: institution
+    wikilinkTarget: "Most Holy Synod"
+    vaultStatus: missing
+    role: "The governing body of the Russian Orthodox Church; its spiritual censorship banned the work (1882); its 1901 edict declared Tolstoy fallen away from the Church (naming no works)."
+    sources: [jubilee-edition]
+    evidenceRefs: [conf-text-12]
+    ingestionPriority: 2
+    note: "The 1901 edict names no individual works; «Исповедь» is not among them — see needsReview."
+
+  - name: "Russkaya Mysl (журнал «Русская мысль»)"
+    wikiType: institution
+    wikilinkTarget: "Russkaya Mysl (journal)"
+    vaultStatus: missing
+    role: "The Moscow journal that set the work in type for its May 1882 issue, from which it was cut by the spiritual censorship and destroyed."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+
+  - name: "Optina Pustyn"
+    wikiType: place
+    wikilinkTarget: "Optina Pustyn"
+    vaultStatus: missing
+    role: "The monastery Tolstoy visited (with Strakhov) in summer 1881 as the work neared its finished form."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-05]
+    ingestionPriority: 3
+
+  - name: "Rumyantsev Museum / Library, Moscow"
+    wikiType: place
+    wikilinkTarget: "Rumyantsev Museum"
+    vaultStatus: missing
+    role: "Where Tolstoy read and met Fedorov while wrestling with the questions that became A Confession."
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [conf-let-06]
+    ingestionPriority: 3
+    dependsOn: ["N. F. Fedorov"]
+
+  - name: "I. S. Turgenev"
+    wikiType: person
+    wikilinkTarget: "Ivan Turgenev"
+    vaultStatus: missing
+    role: "Novelist; called the work «исповедь» in 1882 correspondence (a step toward the eventual title)."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "L. D. Urusov"
+    wikiType: person
+    wikilinkTarget: "Leonid Urusov"
+    vaultStatus: missing
+    role: "Vice-governor of Tula, close friend; translated «Исповедь» into French for Revue nouvelle; Tolstoy's confidant on censorship; recipient of the 1885 letter accepting the title «Исповедь»."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+  - name: "V. I. Alekseev"
+    wikiType: person
+    wikilinkTarget: "Vasily Alekseev"
+    vaultStatus: missing
+    role: "The children's tutor and early convert; recipient of the 1881 circle letter; credited as the first educated man to confirm Tolstoy's new faith."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-06]
+    ingestionPriority: 3
+
+  - name: "M. A. Engelhardt"
+    wikiType: person
+    wikilinkTarget: "Mikhail Engelhardt"
+    vaultStatus: missing
+    role: "Young radical and addressee of Tolstoy's longest epistolary statement of the new doctrine (the 'five commandments' letter)."
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [conf-let-08]
+    ingestionPriority: 3
+
+  - name: "Pavel Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Biographer; the standard authorised Life is a key secondary anchor for the composition story."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+
+# ── Scholarship (secondary layer; attributed, not byte-checked) ─────────────
+scholarship:
+  summary: >-
+    The mainstream English biographical frame (Maude 1908–10; Simmons 1946;
+    Wilson 1988; Bartlett 2011) treats A Confession as the threshold document of
+    Tolstoy's 'conversion' — a mid-life crisis after Anna Karenina resolved into
+    a non-dogmatic Gospel faith. The key specialist corrective is Inessa
+    Medzhibovskaya's A Biography of a Long Conversion (2008), which reframes the
+    event as a decades-long philosophical project rather than a crisis-begotten
+    rupture — the position closest to this dive's primary findings. Gustafson
+    (1986) and Orwin (1993) likewise stress pre-1880 continuity. The Sofia-
+    centred 'moralistic dogmatist' picture and the retrospective 'Tolstoyanism'
+    label are later, partly hostile constructions to be attributed, not adopted.
+  triangulation:
+    - evidenceRef: conf-echo-01
+      conventionalView: "Popular biography frames the change as a sudden post-Anna Karenina crisis; specialist scholarship (Medzhibovskaya) argues a long, gradual conversion."
+      relation: confirms
+      source: "Medzhibovskaya 2008; Gustafson 1986; Orwin 1993"
+    - evidenceRef: conf-text-03
+      conventionalView: "English scholarship uses 'crisis'/'conversion' as settled category-words; none register that Tolstoy's own word was «переворот» (an overturning, not religious-technical 'conversion')."
+      relation: complicates
+      source: "Maude; Simmons; Wilson; Bartlett (terminology); cf. project crisis dive"
+    - evidenceRef: conf-text-12
+      conventionalView: "Reference and rare-book records corroborate the suppression spine: typeset for Russkaya Mysl 1882 and cut by Church censorship; Geneva (Elpidin) 1884; first legal Russian publication 1906 (Vsemirny Vestnik no. 1)."
+      relation: confirms
+      source: "Wikipedia, Confession (Leo Tolstoy); Lorne Bair Rare Books catalogue"
+
+# ── Work-record proposal (READ-ONLY to works/; human ingestion applies) ─────
+workRecord:
+  recordPath: website/src/works/non-fiction/personal-papers/confession/Confession.md
+  workId: confession
+  fields:
+    - field: titleAlternatives
+      value: ["Вступление к ненапечатанному сочинению", "Что я?", "Как я потерял смысл жизни и в чем нашел его"]
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary (Savodnik) — manuscript/proof titles"
+      confidence: high
+      note: "Working titles on the manuscripts and proofs; «Исповедь» was not Tolstoy's and first appears in Elpidin's 1884 edition."
+    - field: dateWritingStarted
+      value: "1879"
+      oldStyle: "1879"
+      approximate: true
+      evidenceRefs: [conf-diary-01, conf-let-02, conf-let-03]
+      source: "PSS Tom 23 commentary + composition-window letters/diaries"
+      confidence: medium
+      note: "Roots reach to 1877 (the catechism impulse, letter to Strakhov 6 Nov 1877). A complete untitled treatise was written in 1879 (the third proof is dated '1879'); A Confession grew from its reworked first chapter."
+    - field: dateWritingCompleted
+      value: "1881"
+      oldStyle: "1881"
+      approximate: true
+      evidenceRefs: [conf-let-05]
+      source: "PSS Tom 23 commentary (editor-hedged: 'by early July 1881 it existed in finished form')"
+      confidence: medium
+      note: "Editor-hedged. Proofs were corrected for the (suppressed) Russkaya Mysl printing in 1882; the third proof bears Tolstoy's date '1879'."
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary; scholarship"
+      confidence: high
+      note: "Currently false in the record — should be TRUE: published abroad 1884 (Elpidin) and legally in Russia 1906, both within Tolstoy's lifetime."
+    - field: dateFirstPublished
+      value: "1884"
+      oldStyle: ""
+      approximate: false
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary; scholarship (Elpidin first separate edition)"
+      confidence: high
+      note: "The 1882 Russkaya Mysl printing was cut and destroyed before circulation; the first ACTUAL publication is Elpidin's 1884 separate edition. (If the record means the first attempted printing, that is Russkaya Mysl 1882, suppressed.)"
+    - field: firstPublishedVenue
+      value: "M. Elpidin, Geneva"
+      evidenceRefs: []
+      source: "scholarship (Elpidin press, Geneva); PSS commentary localizes Geneva to the 1889 2nd ed."
+      confidence: medium
+      note: "Elpidin's press was in Geneva (Carouge) from 1865; the 1884 first edition is a Geneva imprint. Exact title-page wording (Genève vs Carouge) unconfirmed — see needsReview."
+    - field: firstPublishedVenueType
+      value: "book"
+      evidenceRefs: []
+      source: "derived"
+      confidence: high
+      note: "Separate émigré edition."
+    - field: dateFirstPublishedInRussia
+      value: "1906"
+      oldStyle: ""
+      approximate: false
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary; scholarship"
+      confidence: high
+    - field: firstPublishedInRussiaVenue
+      value: "Всемирный вестник (Vsemirny Vestnik), no. 1, St Petersburg"
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary"
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "journal"
+      evidenceRefs: []
+      source: "derived"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: []
+      source: "1906 < 1910"
+      confidence: high
+      note: "Currently false in the record — should be TRUE."
+    - field: authoringLocations
+      value: ["Yasnaya Polyana", "Moscow"]
+      evidenceRefs: [conf-let-02, conf-diary-02]
+      source: "Letter datelines (Я. П.) and the Moscow move (diary 1881)"
+      confidence: high
+    - field: bans
+      value: ["Russia: ecclesiastical censorship, July 1882 — cut from Russkaya Mysl (May 1882) and destroyed; effectively banned in Russia until 1906."]
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary"
+      confidence: high
+    - field: samizdatCirculation
+      value: true
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary (hectographed/lithographed copies sold across Russia, ~3 rubles each)"
+      confidence: high
+    - field: censoredVersionExists
+      value: true
+      evidenceRefs: []
+      source: "PSS Tom 23 commentary"
+      confidence: high
+      note: "The Russkaya Mysl text carried censor's softenings plus an editorial introduction and five churchly footnotes (chs XIII–XV); the Jubilee editors restore the text using Elpidin."
+    - field: excommunicationRelated
+      value: false
+      evidenceRefs: []
+      source: "scholarship (text of the 1901 Synod edict)"
+      confidence: medium
+      note: "The 1901 Synod edict names no individual works; «Исповедь» is not among them. A Confession belongs to the religious writings the Church opposed, but tying it to the excommunication overstates the record. Human to decide the field's intent — see needsReview."
+    - field: relatedWorks
+      value: ["What I Believe (В чём моя вера?)", "Critique of Dogmatic Theology (Критика догматического богословия)", "Union and Translation of the Four Gospels (Соединение и перевод четырёх евангелий)", "The Kingdom of God Is Within You"]
+      evidenceRefs: [conf-sib-01, conf-let-05, conf-let-08]
+      source: "Tolstoy's four-part project; corpus + commentary"
+      confidence: high
+      note: "A Confession is 'part 1' of the four-part enterprise; What I Believe is its doctrinal sequel."
+    - field: synopsis
+      value: "A frank autobiographical account of the spiritual crisis Tolstoy underwent in his early fifties: how, at the height of his fame and fortune, he lost any answer to the question why one should live, drifted toward suicide, searched science, philosophy and religion in vain, and recovered a will to live through the faith of the labouring peasantry — ending in a break with the institutional Church over its blessing of violence."
+      evidenceRefs: [conf-text-04, conf-text-07, conf-text-11, conf-text-12]
+      source: "the work itself"
+      confidence: high
+      note: "The record's prose body already carries an equivalent synopsis; this fills the empty synopsis FIELD."
+    - field: identifiers.jubileeEdition.volumes
+      value: "23"
+      evidenceRefs: []
+      source: "PSS Tom 23"
+      confidence: high
+    - field: identifiers.jubileeEdition.notes
+      value: "Text pp. 1–59; plans & variants pp. 488–511; editorial commentary pp. 515–537 (commentary by V. F. Savodnik)."
+      evidenceRefs: []
+      source: "PSS Tom 23"
+      confidence: high
+
+# ── Coverage ledger (surfaces × status; resume reads this first) ────────────
+coverage:
+  - surface: "The work's own text (structural read, keystone passages)"
+    status: covered
+    note: "16 chapters read; 13 keystones extracted from v23_001_059_Ispoved.txt."
+  - surface: "Composition-window diaries (1878; 1881–82)"
+    status: covered
+    note: "Tom 48 (1878) + Tom 49 (1881–82) swept and finalists extracted."
+  - surface: "1879–1880 diary interior"
+    status: not-covered
+    note: "The diary is silent across 1879–80 (Tolstoy kept notebooks); the corpus holds no diary for the most acute years. A finding, not a gap to fill from this corpus."
+  - surface: "Composition-window letters (Tom 62–63)"
+    status: covered
+    note: "Genesis and circulation letters to Strakhov, Fet, Alexandrine, Alekseev, Engelhardt extracted."
+  - surface: "Editorial commentary (composition / publication / textual history)"
+    status: covered
+    note: "PSS Tom 23 commentary (Savodnik) mined; facts attributed in prose."
+  - surface: "Redactions / variants"
+    status: partial
+    note: "Structure known from the commentary (variants №№1–13 from named mss/proofs); the Планы и варианты extract is present but not deeply read."
+  - surface: "Publication, censorship & translation history"
+    status: covered
+    note: "1882 suppression, 1884 Geneva Elpidin, 1906 Russia; English translation lineage (1885 → Maude 1921)."
+  - surface: "Reception & afterlife — Russian society & Church"
+    status: partial
+    note: "1880s critics named (commentary); 1901 Synod edict read via scholarship (names no works); a dedicated reception study not done."
+  - surface: "Sibling work (What I Believe)"
+    status: partial
+    note: "Opening + relationship only; full doctrinal read deferred."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "Heavy fan-out: 27 PD images cached (Tolstoy, circle, places, 1906 title page); manuscripts and émigré-edition scans rights-gated, not retrieved."
+  - surface: "Scholarship triangulation"
+    status: covered
+  - surface: "1901 excommunication primary text"
+    status: not-covered
+    note: "Read via scholarship; not extracted into the corpus evidence ledger."
+
+# ── notCovered (free-text resume queue) ─────────────────────────────────────
+notCovered:
+  - "Deep read of the Планы и варианты (variants) text — only the commentary's account is used."
+  - "Full read of What I Believe beyond the opening (the cluster's doctrinal panel)."
+  - "Primary text of the 1901 Synod edict and Tolstoy's «Ответ Синоду» — only summarised from scholarship."
+  - "The 1879–80 notebooks (the actual composition medium during the diary silence) — not in the local corpus."
+  - "A dedicated reception sweep of 1880s critics (Gromeka, Ostroumov, Gusev) — named only via the commentary."
+  - "Émigré-edition title-page scans (Elpidin 1884/1889/1895; Chertkov 1901) — held at GTM Moscow / British Library / Helsinki; no open scans located."
+
+# ── needsReview (deferred human judgment; autonomous never blocks) ──────────
+needsReview:
+  - item: "1884 Elpidin title-page imprint wording — Genève vs Carouge."
+    phase: 3
+    why: "'Geneva (Elpidin) 1884' is well-supported (Elpidin's press was in Geneva from 1865), but the physical 1884 title page was not byte-confirmed; PSS commentary attaches «Женева» only to the 1889 2nd edition. Confirm against a scan before treating the PSS attribution as an error."
+  - item: "Identity of the 'book exposing the deceivers' in the 1882 Alexandrine letter (conf-let-07)."
+    phase: 2
+    why: "May refer to A Confession or to the Critique of Dogmatic Theology (the larger anti-dogmatic work). Cited here for the censorship climate, not asserted as about A Confession specifically."
+  - item: "The 1884–85 'banned from Russkaya Mysl no.1' letters (Tom 63 v63_184, v63_294) most likely concern What I Believe, not A Confession."
+    phase: 1
+    why: "A Confession's Russkaya Mysl episode was 1882. The sweep surfaced 1884–85 RM-ban letters that some editors read as What I Believe; excluded from the A Confession publication narrative to avoid conflation."
+  - item: "Identity of the 'большое сочинение' finished by July 1881 (conf-let-05)."
+    phase: 2
+    why: "Identified in PSS notes as the Gospel union/translation (the larger theological work); A Confession was its preface/introduction («Вступление к ненапечатанному сочинению»). The извлечение is the Краткое изложение Евангелия."
+  - item: "excommunicationRelated field value for the works/ record."
+    phase: 4
+    why: "The 1901 edict names no works; «Исповедь» is not among them. Proposed false with a note; a human should decide whether the field means 'named in the edict' (false) or 'part of the condemned teaching' (arguably true)."
+  - item: "workRecord proposal SHAPE must be reshaped to the works/ schema before ingestion."
+    phase: 4
+    why: "Field NAMES are all real, but three values are simplified to flat arrays where the schema (tolstoy-works-schema.md) wants object arrays: titleAlternatives (objects with .title/.type/.language), bans (objects with banningAuthority/jurisdiction/banDate…), and relatedWorks (objects with .id/.relationshipType). The date sub-flags oldStyle/approximate ride on each date field here per the skill's convention and map to the record's flat sibling keys (…OldStyle / …Approximate). The human ingesting should reshape accordingly; the existing genre 'essay' was left unchanged (defensible)."
+  - item: "Alexandrine (А. А. Толстая, cousin, 1817–1904) vs the existing 'Alexandra Tolstaya' page (daughter Alexandra Lvovna, 1884–1979)."
+    phase: 4
+    why: "Two different people. The cousin needs a NEW wiki page; do not merge into the daughter's record."
+  - item: "Maude and Simmons quotations reached via secondary aggregation."
+    phase: 3
+    why: "Verbatim wording and page references should be confirmed against the printed editions before any are quoted in the wiki."
+
+# ── Archives consulted ──────────────────────────────────────────────────────
+archivesConsulted:
+  - "tolstoydigital-TEI corpus (texts/works, texts/diaries, texts/letters, texts/comments)"
+  - "PSS / Jubilee Edition Tom 23 (text, plans & variants, commentary by V. F. Savodnik)"
+  - "Wikimedia Commons (PD portraits/photographs)"
+  - "State Museum of L. N. Tolstoy (GTM/KAMIS, tolstoy-iss.kamiscloud.ru) — manuscripts & rare editions (rights-gated)"
+  - "Presidential Library of Russia (prlib.ru) + Internet Archive (1906 Vsemirny Vestnik scan)"
+  - "Web scholarship (Medzhibovskaya, Bartlett, Maude, Wikipedia, Lorne Bair Rare Books, tolstoy-lit.ru for the 1901 Synod edict)"
+
+# ── Visual & manuscript record (see _visuals_consolidated.md for full notes) ─
+visuals:
+  # — PD facsimile rendered from the local archive PDF (committed in extracts/) —
+  - id: facsimile-01
+    type: facsimile
+    subject: "Opening page of 'My Confession' (English), Wiener's Complete Works of Count Tolstoy, vol. XIII, Boston 1904"
+    relatedEvidence: conf-text-01
+    holding: "Internet Archive / local archive-org mirror (primary-sources/archive-org)"
+    archiveId: "TolstoyArchiveDotOrg Complete Works vol. XIII (13.pdf), p. 19"
+    access: "primary-sources/archive-org/TolstoyArchiveDotOrg/Complete Works/13.pdf"
+    rights: "Public domain (Tolstoy's text 1879–82; Wiener translation 1904, US copyright expired)"
+    licence: PD
+    usable: true
+    url: ""
+    localPath: extracts/v13_MyConfession_opening_facsimile-019.jpg
+    downloaded: true
+    note: "The English (Leo Wiener) edition opening, NOT the Russian original or a manuscript — the local archive PDF labelled Tom 23 turned out to be the English Wiener vol. XXIII; the Russian PSS Tom 23 is not held as a PDF. A true Russian-first-edition or manuscript facsimile remains to acquire (see notCovered)."
+
+  # — Tolstoy portraits (Wikimedia Commons, PD, downloaded) —
+  - id: commons-tolstoy-01
+    type: painting
+    subject: "Portrait of Lev Tolstoy (Kramskoy, 1873)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Wikimedia Commons (orig. State Tretyakov Gallery)"
+    archiveId: "File:Ivan Nikolayevich Kramskoi - Portrait of Leo Tolstoy (1873).jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Leo_Tolstoy_(1873).jpg"
+    rights: "PD (Kramskoy d. 1887)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Leo_Tolstoy_%281873%29.jpg"
+    localPath: visuals/commons-tolstoy-01.jpg
+    downloaded: true
+    note: "Canonical pre-crisis portrait; Tolstoy at 45."
+  - id: commons-tolstoy-02
+    type: painting
+    subject: "Portrait of Lev Tolstoy (Repin, 1887)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Wikimedia Commons (orig. State Tretyakov Gallery)"
+    archiveId: "File:Ilya Efimovich Repin (1844-1930) - Portrait of Leo Tolstoy (1887).jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg"
+    rights: "PD (Repin d. 1930; work 1887)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ilya_Efimovich_Repin_%281844-1930%29_-_Portrait_of_Leo_Tolstoy_%281887%29.jpg"
+    localPath: visuals/commons-tolstoy-02.jpg
+    downloaded: true
+    note: "Painted the year A Confession circulated in manuscript; the closest portrait in time — the keystone image."
+  - id: commons-tolstoy-03
+    type: photograph
+    subject: "Tolstoy, half-length (Sass studio, c.1880–1886)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Wikimedia Commons (orig. Library of Congress)"
+    archiveId: "File:Leo Tolstoy, portrait.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy,_portrait.jpg"
+    rights: "PD (pre-1900 photograph)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leo_Tolstoy%2C_portrait.jpg"
+    localPath: visuals/commons-tolstoy-03.jpg
+    downloaded: true
+    note: "Photograph from the composition period proper (LOC-dated 1880–1886)."
+  - id: commons-tolstoy-06
+    type: painting
+    subject: "Tolstoy mowing (Repin sketch, 1880–1881)"
+    relatedEntity: "Lev Tolstoy"
+    holding: "Wikimedia Commons (Russian National Library)"
+    archiveId: "File:1881Толстой косит.JPG"
+    access: "https://commons.wikimedia.org/wiki/File:1881%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%D0%BA%D0%BE%D1%81%D0%B8%D1%82.JPG"
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/1881%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%D0%BA%D0%BE%D1%81%D0%B8%D1%82.JPG"
+    localPath: visuals/commons-tolstoy-06.jpg
+    downloaded: true
+    note: "1880–81 — physical labour as discipline, a theme explicit in the text."
+  # — People & places (Wikimedia Commons, PD, downloaded) —
+  - id: commons-people-01
+    type: photograph
+    subject: "N. N. Strakhov"
+    relatedEntity: "N. N. Strakhov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:NNStrakhov.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:NNStrakhov.jpg"
+    rights: "PD (Strakhov d. 1896)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/b/b7/NNStrakhov.jpg"
+    localPath: visuals/commons-people-01-strakhov.jpg
+    downloaded: true
+    note: "Chief correspondent and first reader of the manuscript."
+  - id: commons-people-02
+    type: painting
+    subject: "V. G. Chertkov (Repin, c.1890)"
+    relatedEntity: "V. G. Chertkov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Chertkov_by_Repin.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Repin.jpg"
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Chertkov_by_Repin.jpg"
+    localPath: visuals/commons-people-02-chertkov.jpg
+    downloaded: true
+    note: "Disciple and distributor of the suppressed text."
+  - id: commons-people-03
+    type: photograph
+    subject: "S. A. Tolstaya (1875)"
+    relatedEntity: "S. A. Tolstaya"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Sofia_Tolstaya,_1875.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Sofia_Tolstaya,_1875.jpg"
+    rights: "PD"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Sofia_Tolstaya%2C_1875.jpg"
+    localPath: visuals/commons-people-03-sofia-tolstaya.jpg
+    downloaded: true
+    note: "Wife and copyist; witness to the breakdown."
+  - id: commons-people-04
+    type: painting
+    subject: "A. A. Fet (Repin, 1882)"
+    relatedEntity: "A. A. Fet"
+    holding: "Wikimedia Commons / Tretyakov"
+    archiveId: "File:Fet_by_Repin.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Fet_by_Repin.jpg"
+    rights: "PD (Repin d. 1930; Fet d. 1892)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fet_by_Repin.jpg"
+    localPath: visuals/commons-people-04-fet.jpg
+    downloaded: true
+    note: "Correspondent and pessimist foil; painted the year the text circulated."
+  - id: commons-people-05
+    type: photograph
+    subject: "A. A. Tolstaya (Alexandrine), 1860s"
+    relatedEntity: "A. A. Tolstaya (Alexandrine, the cousin)"
+    holding: "Wikimedia Commons"
+    archiveId: "File:A.A.Tolstay.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:A.A.Tolstay.jpg"
+    rights: "PD (d. 1904)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/8/85/A.A.Tolstay.jpg"
+    localPath: visuals/commons-people-05-alexandrine-tolstaya.jpg
+    downloaded: true
+    note: "The Orthodox cousin (1817–1904) — NOT the daughter Alexandra Lvovna."
+  - id: commons-people-06
+    type: drawing
+    subject: "N. F. Fedorov (pastel by L. Pasternak, pre-1903)"
+    relatedEntity: "N. F. Fedorov"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Pasternak_fedorov.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Pasternak_fedorov.jpg"
+    rights: "PD (Fedorov d. 1903; Pasternak d. 1945, work pre-1903)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pasternak_fedorov.jpg"
+    localPath: visuals/commons-people-06-fedorov.jpg
+    downloaded: true
+    note: "Rumyantsev librarian; early reader of the gospel synthesis."
+  - id: commons-people-07
+    type: photograph
+    subject: "V. K. Sutaev (Y. Steinberg, 1885)"
+    relatedEntity: "V. K. Sutaev"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Vasily_Sutaev.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Vasily_Sutaev.jpg"
+    rights: "PD (d. 1892)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/3/37/Vasily_Sutaev.jpg"
+    localPath: visuals/commons-people-07-sutaev.jpg
+    downloaded: true
+    note: "Peasant exemplar named in the text; one of few such peasants photographed."
+  - id: commons-people-08
+    type: painting
+    subject: "K. P. Pobedonostsev (Repin study, 1903)"
+    relatedEntity: "K. P. Pobedonostsev"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Pobedonostsev_by_repin.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Pobedonostsev_by_repin.jpg"
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/04/Pobedonostsev_by_repin.jpg"
+    localPath: visuals/commons-people-08-pobedonostsev.jpg
+    downloaded: true
+    note: "Ober-Procurator of the Holy Synod; behind the suppression."
+  - id: commons-people-09
+    type: painting
+    subject: "I. S. Turgenev (Repin, 1874)"
+    relatedEntity: "I. S. Turgenev"
+    holding: "Wikimedia Commons / Tretyakov"
+    archiveId: "File:Turgenev_by_Repin.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Turgenev_by_Repin.jpg"
+    rights: "PD (Repin d. 1930; Turgenev d. 1883)"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/7/72/Turgenev_by_Repin.jpg"
+    localPath: visuals/commons-people-09-turgenev.jpg
+    downloaded: true
+    note: "Called the work «исповедь» in 1882 — a step toward the eventual title."
+  - id: commons-people-12
+    type: photograph
+    subject: "Yasnaya Polyana (Tolstoy's house)"
+    relatedEntity: "Yasnaya Polyana"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Yasnaya_Polyana_main_building.jpg"
+    access: "https://commons.wikimedia.org/wiki/File:Yasnaya_Polyana_main_building.jpg"
+    rights: "PD"
+    licence: PD
+    usable: true
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Yasnaya_Polyana_main_building.jpg"
+    localPath: visuals/commons-people-12-yasnaya-polyana.jpg
+    downloaded: true
+    note: "Where the work was drafted; Tolstoy hid a cord from the beams (ch. IV)."
+  # — Print editions (one scan cached; others rights-gated / not openly available) —
+  - id: edition-01
+    type: title-page
+    subject: "Исповедь — first legal Russian publication, Vsemirny Vestnik, St Petersburg 1906"
+    relatedEvidence: conf-text-12
+    holding: "Presidential Library of Russia (prlib.ru) / Internet Archive (ispoved39)"
+    archiveId: "prlib.ru 903819 / IA ispoved39"
+    access: "https://archive.org/details/ispoved39"
+    rights: "PD (1906); prlib.ru scan non-commercial research use"
+    licence: PD
+    usable: true
+    url: "https://www.prlib.ru/sites/default/files/book_preview/6a7e8aa2-a877-4075-beae-906d9ab5bff3/10739121_doc1.jpg"
+    localPath: visuals/edition-01-vsemirny-vestnik-1906-titlepage.jpg
+    downloaded: true
+    note: "The first legal Russian printing. Full 61-page scan open-access at IA ispoved39."
+  - id: edition-05
+    type: title-page
+    subject: "«Исповедь графа Л. Н. Толстого. Вступление к ненапечатанному сочинению» — M. Elpidin, Geneva, 1884 (first separate edition)"
+    relatedEvidence: ""
+    holding: "GTM Moscow Rare Book Fund; RGB. No open scan located."
+    archiveId: ""
+    access: ""
+    rights: "PD by age (1884)"
+    licence: PD
+    usable: false
+    url: ""
+    localPath: ""
+    downloaded: false
+    note: "Where the title «Исповедь» first appears in print. No open-access scan found; contact GTM or RGB."
+  - id: edition-08
+    type: title-page
+    subject: "«Исповедь» — V. G. Chertkov, Свободное слово, Christchurch, England, 1901"
+    relatedEvidence: ""
+    holding: "Harvard / Helsinki / British Library; HathiTrust 103046923 (restricted)"
+    archiveId: "HathiTrust 103046923"
+    access: "https://catalog.hathitrust.org/Record/103046923"
+    rights: "PD by age (1901); HathiTrust scan restricted"
+    licence: PD
+    usable: false
+    url: ""
+    localPath: ""
+    downloaded: false
+    note: "Chertkov's émigré edition. No open-access title-page scan located."
+  - id: manuscript-01
+    type: manuscript
+    subject: "Autograph/fair-copy manuscript of A Confession (Yasnaya Polyana / GTM)"
+    relatedEvidence: ""
+    holding: "Museum-estate Yasnaya Polyana; State Museum of L. N. Tolstoy (GTM), Moscow"
+    archiveId: "Google Arts & Culture asset kgGdKlUgRRL5rg; PSS Tom 23 lists 10 manuscript witnesses"
+    access: "https://artsandculture.google.com/asset/manuscript-leo-tolstoy/kgGdKlUgRRL5rg"
+    rights: "Physical: Yasnaya Polyana / GTM. Digital image: no explicit licence."
+    licence: unknown
+    usable: false
+    url: "https://artsandculture.google.com/asset/manuscript-leo-tolstoy/kgGdKlUgRRL5rg"
+    localPath: ""
+    downloaded: false
+    note: "10 manuscript witnesses documented in the PSS apparatus (autograph drafts, copies in S. A. Tolstaya's/Kuzminskaya's/Vinogradov's/Ivanov's hands, three galley-proofs, and the autograph of the closing dream). Rights-gated; request from the holding museums."
+
+references:
+  primary:
+    - "L. N. Tolstoy, «Исповедь», PSS (Jubilee Edition) Tom 23, pp. 1–59 (text), 488–511 (plans & variants), 515–537 (commentary)."
+    - "tolstoydigital-TEI corpus: works v23_001_059_Ispoved; diaries Tom 48–49; letters Tom 62–63 (Strakhov, Fet, Alexandrine, Alekseev, Engelhardt); v23_304_465 (What I Believe); v26_466_474 (Notes of a Madman); v66_228 (to Dumas)."
+  background:
+    - "V. F. Savodnik, commentary to «Исповедь», PSS Tom 23 (1957) — composition, redactions, publication, title history."
+    - "Inessa Medzhibovskaya, Tolstoy and the Religious Culture of His Time: A Biography of a Long Conversion (Lexington, 2008)."
+    - "Aylmer Maude, The Life of Tolstoy (1908–10); Aylmer & Louise Maude (trans.), A Confession and What I Believe (Oxford, 1921)."
+    - "Ernest J. Simmons, Leo Tolstoy (1946); A. N. Wilson, Tolstoy (1988); Rosamund Bartlett, Tolstoy: A Russian Life (2011)."
+    - "Richard Gustafson, Leo Tolstoy: Resident and Stranger (1986); Donna Orwin, Tolstoy's Art and Thought 1847–1880 (1993)."
+    - "Tolstoy (ed. H. F. Battersby), Christ's Christianity (Kegan Paul, 1885) — first English appearance, as 'How I Came to Believe'."
+    - "Jane Kentish (trans.), A Confession and Other Religious Writings (Penguin, 1987); David Patterson (trans.), Confession (Norton, 1983)."
+    - "Определение Святейшего Синода, 20–22 Feb 1901 (tolstoy-lit.ru) — names no individual works."
+    - "Wikipedia, Confession (Leo Tolstoy); Wikipedia, Mikhail Elpidin; Lorne Bair Rare Books catalogue (Ispoved, Elpidine [Geneva], 1884)."

@@ -1,0 +1,1002 @@
+topic:
+  slug: 1903-after-the-ball
+  title: "After the Ball (После бала) — a 1903 work-subject dive"
+  question: >-
+    What does the corpus show about Tolstoy's 1903 story «После бала» — its
+    Kishinev-commission genesis, its real prototypes, the redaction history that
+    moved its ending from complicity to non-participation, and its posthumous
+    reception — and is the story really about «случай» (chance), as its frame asserts?
+  date: 2026-06-12
+  period: "Prophet period (post-1880); written 1903, published posthumously 1911"
+  corpusSurface: >-
+    PSS Tom 34 — the story (pp. 116–125), the planned/variant material
+    (pp. 484–490), and the two commentary apparatuses («История писания и
+    печатания» pp. 550–551, «Описание рукописей» pp. 551–553); PSS Tom 54 (the
+    1903 diary — the 9 June conception, the 9 and 20 August completion notes);
+    PSS Tom 74 (the 1903 letters to Sholom Aleichem). Composition window: a first
+    draft in two days (6–7 Aug 1903), polished to 20 Aug 1903, at Yasnaya Polyana.
+  dateRange: "1903-06-09 to 1903-08-20 (composition); 1911 (first publication)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE LEDGER — flat citation list. Every quoteRu is verbatim in its extract.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ---- The frame's thesis ----
+  - id: E01
+    genre: works
+    pssTom: 34
+    pages: "116"
+    date: "1903"
+    addressee: null
+    localPdf: "primary-sources/jubilee-edition/vol03/vol03.pdf (p.156 = PSS p.116)"
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'что всё дело в среде, что среда заедает. А я думаю, что всё дело в случае.'
+    quoteEn: '(working English) that it is all a matter of environment, that the environment devours one. But I think it is all a matter of chance.'
+    significance: >-
+      The opening frame. Ivan Vasilyevich rejects the company's social-determinist
+      thesis («среда заедает») with his own: «всё дело в случае». This is the
+      surface claim the dive's marquee tests.
+    facsimile: extracts/v34_116_Posle_bala_p116_facsimile-156.png
+
+  # ---- The «по закону» / suede-glove motif: ballroom ----
+  - id: E02
+    genre: works
+    pssTom: 34
+    pages: "121"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'натянув замшевую перчатку на правую руку, — «надо всё по закону», — улыбаясь сказал он'
+    quoteEn: '(working English) drawing a suede glove onto his right hand, "everything must be done according to the rules," he said, smiling.'
+    significance: >-
+      The colonel before the mazurka. «Надо всё по закону» — by the rules — is the
+      hinge phrase: the same suede glove and the same appeal to «закон» return at
+      the flogging (E05). The ballroom and the gauntlet are one man's single code.
+
+  # ---- The centrepiece: the flogging ----
+  - id: E03
+    genre: works
+    pssTom: 34
+    pages: "123"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'Он не говорил, а всхлипывал: «Братцы, помилосердуйте. Братцы, помилосердуйте». Но братцы не милосердовали'
+    quoteEn: '(working English) He did not speak but sobbed: "Brothers, have mercy. Brothers, have mercy." But the brothers showed no mercy.'
+    significance: >-
+      The Tatar deserter run through the gauntlet. The centrepiece of the story's
+      second half — the scene Tolstoy reworked hardest (E20).
+
+  - id: E04
+    genre: works
+    pssTom: 34
+    pages: "123"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'Это было что-то такое пестрое, мокрое, красное, неестественное, что я не поверил, чтобы это было тело человека.'
+    quoteEn: '(working English) It was something so mottled, wet, red, unnatural, that I could not believe it was the body of a man.'
+    significance: >-
+      The flogged man's back. The canonical defamiliarization («остранение»)
+      passage cited in the Formalist reception (Shklovsky): the body made strange
+      so the horror cannot be normalised.
+
+  - id: E05
+    genre: works
+    pssTom: 34
+    pages: "124"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'он своей сильной рукой в замшевой перчатке бил по лицу испуганного малорослого слабосильного солдата за то, что он недостаточно сильно опустил свою палку'
+    quoteEn: '(working English) with his strong hand in its suede glove he struck the face of a frightened, undersized, weak soldier because he had not brought his stick down hard enough.'
+    significance: >-
+      The colonel strikes a soldier for striking too softly («Будешь мазать?
+      Будешь?»). The suede glove of the mazurka bow (E02) is the same glove — the
+      loving father and the torturer are the one figure, the dive's central image.
+
+  # ---- The moral epistemology ----
+  - id: E06
+    genre: works
+    pssTom: 34
+    pages: "124"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: '«Очевидно, он что-то знает такое, чего я не знаю», думал я про полковника. «Если бы я знал то, что он знает, я бы понимал и то, что я видел, и это не мучило бы меня»'
+    quoteEn: '(working English) "Evidently he knows something that I do not know," I thought about the colonel. "If I knew what he knows, I would understand what I saw, and it would not torment me."'
+    significance: >-
+      The story's moral epistemology: the narrator cannot find the «knowledge»
+      that would justify the cruelty — and the failure to find it is the verdict.
+      Conscience operates by an absence, not an argument.
+
+  # ---- The published ending: non-participation ----
+  - id: E07
+    genre: works
+    pssTom: 34
+    pages: "125"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'не мог поступить в военную службу, как хотел прежде, и не только не служил в военной, но нигде не служил и никуда, как видите, не годился'
+    quoteEn: '(working English) I could not enter military service, as I had meant to before, and not only did not serve in the army but served nowhere at all and, as you see, was good for nothing.'
+    significance: >-
+      The published ending. Ivan's whole life turns on the refusal to participate —
+      «никуда не годился» framed not as failure but as the only honest response.
+      The keystone for the non-participation reading; contrast the variants E10–E11.
+
+  - id: E08
+    genre: works
+    pssTom: 34
+    pages: "125"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_116_125_Posle_bala.txt
+    quoteRu: 'Любовь? Любовь с этого дня пошла на убыль.'
+    quoteEn: '(working English) Love? Love began to fade from that day on.'
+    significance: >-
+      The love-plot resolution: the romance does not end in a quarrel but
+      withers, poisoned by what the lover saw in the beloved's father.
+
+  # ---- Variants: the ending evolution (keystone) ----
+  - id: E09
+    genre: works
+    pssTom: 34
+    pages: "487"
+    date: "1903-08-06"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_484_490_Posle_bala_Varianty.txt
+    quoteRu: 'Это было ужасно, но если оно делалось, значит оно было необходимо, оно было стихийно вроде как грозы, бури, и спорить с этим нельзя было'
+    quoteEn: '(working English) It was terrible, but if it was being done, then it was necessary; it was elemental, like a thunderstorm or a gale, and one could not argue with it.'
+    significance: >-
+      The first draft's ending («Дочь и отец», 6 Aug 1903). The narrator SUBMITS
+      to the cruelty as elemental necessity — there is no withdrawal, no
+      «не годился». The moral refusal is not yet in the story.
+
+  - id: E10
+    genre: works
+    pssTom: 34
+    pages: "489"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_484_490_Posle_bala_Varianty.txt
+    quoteRu: 'после университета поступил в военную службу и хотя и не сумел выработать в себе такой же твердости, как у полковника, как видите, вышел в отставку поручиком, все-таки считал, что военная служба хорошее дело'
+    quoteEn: '(working English) after university I entered military service, and although I did not manage to develop the same firmness as the colonel, I retired, as you see, a lieutenant — and still considered military service a good thing.'
+    significance: >-
+      Variant № 4 (рук. № 5). In this draft the narrator DOES enter the army and
+      thinks it a good thing — the exact opposite of the published «нигде не служил».
+      Resolves the scholarship's open question (did Ivan ever serve?): yes, in two
+      drafts. The textual proof that the non-participation ending was built in late.
+
+  - id: E11
+    genre: works
+    pssTom: 34
+    pages: "490"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_484_490_Posle_bala_Varianty.txt
+    quoteRu: 'я поступил, как хотел, в военную службу и старался выработать в себе такое же твердое сознание своего долга, — я так называл это, — как у полковника, и отчасти достигал этого. И только к старости теперь понял весь ужас того, что я видел и что сам делал'
+    quoteEn: '(working English) I entered military service, as I had wished, and tried to develop in myself the same firm sense of duty — so I called it — as the colonel had, and partly succeeded. And only now, in old age, have I understood the full horror of what I saw and what I myself did.'
+    significance: >-
+      Variant № 5 (рук. № 6). Here the narrator becomes LIKE the colonel and grasps
+      the horror only in old age — «что я видел и что сам делал». The complicity
+      ending. The published version cuts both this and E10: Tolstoy moved the verdict
+      from late guilt to immediate refusal.
+
+  # ---- Genesis: the Kishinev commission ----
+  - id: E12
+    genre: letters
+    pssTom: 74
+    pages: "118-119"
+    date: "1903-05-06"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    localPdf: null
+    extract: extracts/v74_144_RabinovichuSHolom_Alejxemu_6may.txt
+    quoteRu: 'виновник не только кишиневских ужасов, но всего того разлада, который поселяется в некоторой малой части — и не народной — русского населения[…]одно правительство. К сожалению, этого-то я не могу сказать в русском легальном издании.'
+    quoteEn: '(working English) the culprit not only of the Kishinev horrors but of all the discord that settles into a certain small — and not popular — part of the Russian population … is the government alone. Unfortunately, this is just what I cannot say in a legal Russian publication.'
+    significance: >-
+      The genesis seed, shared with the 1903 folk-tales cluster. Replying to Sholom
+      Aleichem's request for the Kishinev-pogrom relief almanac, Tolstoy names the
+      state as the true culprit — and names the censorship limit that kept «После
+      бала» unprintable in his lifetime. The story is the «eврейский сборник» idea
+      that could not be encoded enough to print.
+
+  - id: E13
+    genre: diaries
+    pssTom: 54
+    pages: "177"
+    date: "1903-06-09"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_177_178_1903_06_09.txt
+    quoteRu: 'Немного подвигаюсь в Николае Павловиче. Задумал три новые вещи. Умирать пора, а я задумываю. 1) Рассказ о бале и сквозь строй'
+    quoteEn: '(working English) Making a little progress on Nikolai Pavlovich [Nicholas I, i.e. Hadji Murat]. Conceived three new things. It is time to die, and I am conceiving things. 1) A story about a ball and running the gauntlet.'
+    significance: >-
+      The conception, 9 June 1903 — and in the same breath as «Николае Павловиче»,
+      the Nicholas I material of Hadji Murat. The two Nicholas-era works on military
+      cruelty were alive in Tolstoy's mind on the same day. The story's working idea
+      is already its whole structure: a ball + the gauntlet.
+
+  - id: E14
+    genre: comments
+    pssTom: 34
+    pages: "550"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_550_551_Istorija.txt
+    quoteRu: 'веселый бал в Казани, влюблен в Корейшу красавицу, дочь воинского начальника[…]танцую с нею; ее красавец старик-отец ласково берет ее и идет мазурку. И на утро после влюбленной бессонной ночи звуки барабана и сквозь строй гонит татарина, и воинский начальник велит больней бить. (Очень бы хорошо)'
+    quoteEn: '(working English) a gay ball in Kazan, in love with a Koreysh beauty, daughter of the military commander … I dance with her; her handsome old father tenderly takes her and dances the mazurka. And in the morning, after the love-struck sleepless night, the sounds of a drum, and he drives a Tatar through the gauntlet, and the military commander orders them to beat harder. (Would be very good.)'
+    significance: >-
+      Tolstoy's own sujet note (quoted in the commentary from the 1903 notebook).
+      Names the real ground: Kazan, the Koreysh family, the military commander as
+      both dancing father and flogging officer. The author-stated core of the
+      prototype.
+
+  - id: E15
+    genre: comments
+    pssTom: 34
+    pages: "550"
+    date: "1886"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_550_551_Istorija.txt
+    quoteRu: 'я знал одного такого, который накануне с красавицей дочерью танцовал мазурку на бале и уезжал раньше, чтобы на завтра рано утром распорядиться прогонянием на смерть сквозь строй бежавшего солдата татарина, засекал этого солдата до смерти и возвращался обедать в семью'
+    quoteEn: '(working English) I knew one such man, who the evening before had danced the mazurka with his beautiful daughter at a ball and left early so as to give orders the next morning for a runaway Tatar soldier to be driven to death through the gauntlet — flogged the soldier to death and returned to dine with his family.'
+    significance: >-
+      The commentary's most important find: the whole plot of «После бала» is
+      already in Tolstoy's 1886 essay «Николай Палкин» (PSS т. 26, с. 559),
+      seventeen years earlier — a Kazan-period recollection. The story is a long-held
+      memory finally written.
+
+  - id: E16
+    genre: comments
+    pssTom: 34
+    pages: "550"
+    date: "1898-1899"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_550_551_Istorija.txt
+    quoteRu: 'Самой экзекуции Толстой, однако, не наблюдал. В 1898—1899 гг. он встретился в Москве с писателем И. Н. Захарьиным (Якуниным), который рассказал, как ему пришлось по наряду присутствовать при наказании солдата'
+    quoteEn: '(working English) Tolstoy did not, however, witness the execution itself. In 1898–1899 he met in Moscow the writer I. N. Zakharyin (Yakunin), who told him how he had been ordered to attend the punishment of a soldier.'
+    significance: >-
+      Tolstoy never saw a gauntlet punishment. The second informant — Zakharyin-
+      Yakunin, c. 1898–99 — supplied the eyewitness detail; Tolstoy urged him to
+      write it («Вы непременно это напишите») and then wrote it himself.
+
+  - id: E17
+    genre: diaries
+    pssTom: 54
+    pages: "189"
+    date: "1903-08-09"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_189_189_1903_08_09.txt
+    quoteRu: 'Написал в один день Дочь и отец. Не дурно. Сказки кончил.'
+    quoteEn: '(working English) Wrote "Daughter and Father" in one day. Not bad. Finished the tales.'
+    significance: >-
+      9 Aug 1903. The first draft came in a single day — and in the same entry as
+      «Сказки кончил», the three Kishinev tales: the story and the tales are the
+      same midsummer's work.
+
+  - id: E18
+    genre: diaries
+    pssTom: 54
+    pages: "189"
+    date: "1903-08-20"
+    addressee: null
+    localPdf: null
+    extract: extracts/v54_189_189_1903_08_20.txt
+    quoteRu: 'За то «А вы говорите» недурно.'
+    quoteEn: '(working English) On the other hand, "But You Say" is not bad.'
+    significance: >-
+      20 Aug 1903 — the last copy's date. Tolstoy names the story by its then-title
+      «А вы говорите» and judges it the better of the summer's work, even as he is
+      «недоволен» with the tales. His own modest verdict.
+
+  # ---- Manuscript / redaction history ----
+  - id: E19
+    genre: comments
+    pssTom: 34
+    pages: "551"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_551_553_Rukopisi.txt
+    quoteRu: 'Первоначальное заглавие «А вы говорите» зачеркнуто Толстым и начато «Дочь»; затем и это слово зачеркнуто и надписано «После бала», с подзаголовком: «Рассказ».'
+    quoteEn: '(working English) The original title "But You Say" was crossed out by Tolstoy and "Daughter" begun; then this word too was crossed out and "After the Ball" written in, with the subtitle "A Story".'
+    significance: >-
+      The title's path — «Дочь и отец» → «Отец и дочь» → «А вы говорите» → «Дочь»
+      → «После бала» — across 12 manuscripts and 104 leaves. The final title shifts
+      the centre of gravity from the father-daughter pair to the morning «после».
+
+  - id: E20
+    genre: comments
+    pssTom: 34
+    pages: "551"
+    date: "1903"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_550_551_Istorija.txt
+    quoteRu: 'Особенно сильным переделкам подверглась вторая часть рассказа (сцена экзекуции), в первом наброске очень сжатая, и заключение. Однако окончательной отделки рассказ не получил и при жизни Толстого напечатан не был.'
+    quoteEn: '(working English) The second part of the story (the execution scene) — very compressed in the first draft — and the conclusion underwent especially heavy reworking. The story did not, however, receive its final polish and was not printed in Tolstoy''s lifetime.'
+    significance: >-
+      The commentary's own account of where the labour went: the flogging scene and
+      the ending. Confirms the variant evidence (E09–E11) and that the story was left
+      essentially finished but unpolished, unpublished in his life.
+
+  - id: E21
+    genre: comments
+    pssTom: 34
+    pages: "551"
+    date: "1911"
+    addressee: null
+    localPdf: null
+    extract: extracts/v34_550_551_Istorija.txt
+    quoteRu: 'Впервые рассказ «После бала» был напечатан в издании: «Посмертные художественные произведения Льва Николаевича Толстого под редакцией В. Черткова», I, М. 1911, стр. 117—128.'
+    quoteEn: '(working English) The story "After the Ball" was first printed in the edition: "Posthumous Artistic Works of Lev Nikolaevich Tolstoy, edited by V. Chertkov," vol. I, Moscow, 1911, pp. 117–128.'
+    significance: >-
+      First publication: posthumous, 1911, in Chertkov's «Посмертные художественные
+      произведения», vol. I. Published in Russia, but only after Tolstoy's death.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a PLAN for the later wiki-ingestion step;
+# the dive writes no vault pages).
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+
+  # --- Characters (fictional → character + prototypes[]) ---
+  - name: "Ivan Vasilyevich"
+    wikiType: character
+    wikilinkTarget: "Ivan Vasilyevich"
+    vaultStatus: missing
+    role: >-
+      The frame-narrator: an old, universally respected man who tells the company
+      the story of the ball and the flogging. Principal/titular voice.
+    prototypes:
+      - person: ""
+        name: "Sergei Nikolaevich Tolstoy"
+        basis: contemporary
+        certainty: probable
+        note: >-
+          The lived love-experience is the brother Sergei's Kazan courtship; the
+          narrator is a fictional frame, not a one-to-one portrait. Tolstoy's own
+          «Николай Палкин» recollection feeds the flogging he witnesses.
+        sourceId: ""
+    sources: []
+    evidenceRefs: [E01, E06, E07, E14, E15]
+    ingestionPriority: 1
+    dependsOn: ["Sergei Nikolaevich Tolstoy"]
+
+  - name: "The Colonel (Pyotr Vladislavich B.)"
+    wikiType: character
+    wikilinkTarget: "The Colonel (After the Ball)"
+    vaultStatus: missing
+    role: >-
+      Varenka's father — the tall, handsome colonel «à la Nicolas I» who dances the
+      mazurka in home-made boots and, hours later, directs the gauntlet and strikes
+      a soldier for striking too softly. The story's central doubled figure.
+    prototypes:
+      - person: ""
+        name: "Andrei Petrovich Koreysh"
+        basis: contemporary
+        certainty: probable
+        note: >-
+          The Kazan military commander, father of Varvara Koreysh. Per the Tolstoy
+          State Museum the same real man was both the dancing father and the flogging
+          officer; the «Николай Палкин» (1886) colonel is the same Kazan recollection.
+          Documented for the love-plot father; the dancing/flogging fusion rests on
+          one museum source — hence «probable», not «documented».
+        sourceId: ""
+    sources: []
+    evidenceRefs: [E02, E05, E14, E15]
+    ingestionPriority: 1
+    dependsOn: ["Andrei Petrovich Koreysh"]
+
+  - name: "Varenka B."
+    wikiType: character
+    wikilinkTarget: "Varenka B."
+    vaultStatus: missing
+    role: >-
+      The narrator's beloved — eighteen, in white with a rose-coloured sash; the
+      love that «began to fade» after the dawn flogging.
+    prototypes:
+      - person: ""
+        name: "Varvara Andreevna Koreysh"
+        basis: contemporary
+        certainty: probable
+        note: >-
+          Later Khvoshchinskaya; daughter of the Kazan military commander; courted by
+          Tolstoy's brother Sergei. The name «Корейш» is author-stated in the sujet
+          note (E14); the character/real-person mapping is the scholarly attribution.
+        sourceId: ""
+    sources: []
+    evidenceRefs: [E08, E14]
+    ingestionPriority: 2
+    dependsOn: ["Varvara Andreevna Koreysh"]
+
+  # --- People (person) ---
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author. Wrote the story at Yasnaya Polyana, 6–20 Aug 1903."
+    sources: []
+    evidenceRefs: [E13, E17, E18]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Sergei Nikolaevich Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Sergei Nikolaevich Tolstoy"
+    vaultStatus: missing
+    role: >-
+      Tolstoy's elder brother (1826–1904); his Kazan courtship of Varvara Koreysh is
+      the love-plot prototype. CAUTION: distinct from the existing vault page «Sergei
+      Tolstoy» (the SON, Sergei Lvovich, 1863–1947) — do not conflate; a new page.
+    sources: []
+    evidenceRefs: [E14]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Andrei Petrovich Koreysh"
+    wikiType: person
+    wikilinkTarget: "Andrei Petrovich Koreysh"
+    vaultStatus: missing
+    role: >-
+      Kazan military commander (воинский начальник); father of Varvara Koreysh; the
+      documented real figure behind the colonel — the dancing father and the flogging
+      officer in one. Spelling «Корейш» per Tolstoy's own note.
+    sources: []
+    evidenceRefs: [E14, E15]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Varvara Andreevna Koreysh"
+    wikiType: person
+    wikilinkTarget: "Varvara Andreevna Koreysh"
+    vaultStatus: missing
+    role: >-
+      The real beauty (later Khvoshchinskaya) courted by Sergei Nikolaevich Tolstoy
+      in Kazan; the prototype of Varenka.
+    sources: []
+    evidenceRefs: [E14]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Sholom Aleichem (Solomon N. Rabinovich)"
+    wikiType: person
+    wikilinkTarget: "Sholom Aleichem"
+    vaultStatus: missing
+    role: >-
+      Yiddish writer (1859–1916); his April 1903 request for the Kishinev relief
+      almanac is the story's genesis occasion. Already routed by the 1903-folk-tales
+      dive — same target page.
+    sources: []
+    evidenceRefs: [E12]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Alexander Goldenweiser (A. B. Goldenweiser)"
+    wikiType: person
+    wikilinkTarget: "Alexander Goldenweiser"
+    vaultStatus: missing
+    role: >-
+      Pianist and household intimate; present at Yasnaya Polyana 6–7 Aug 1903, his
+      memoir «Вблизи Толстого» is the key witness to the two-day first draft. Already
+      routed by the 1903-folk-tales dive.
+    sources: []
+    evidenceRefs: [E20]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Ivan Zakharyin-Yakunin"
+    wikiType: person
+    wikilinkTarget: "Ivan Zakharyin-Yakunin"
+    vaultStatus: missing
+    role: >-
+      Writer and publicist (I. N. Zakharyin, pen-name Yakunin, 1839–1906); described
+      a gauntlet punishment to Tolstoy in 1898–99 — the eyewitness detail Tolstoy
+      lacked. Borderline-mint (one-episode informant); record in prose if not minted.
+    sources: []
+    evidenceRefs: [E16]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Editor of «Посмертные художественные произведения» (1911), the story's first publication."
+    sources: []
+    evidenceRefs: [E21]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Nicholas I"
+    wikiType: person
+    wikilinkTarget: "Nicholas I"
+    vaultStatus: missing
+    role: >-
+      The reign the story indicts: the colonel is «à la Nicolas I», of «николаевской
+      выправки»; the gauntlet is the punishment of «Николай Палкин» (Nicholas the
+      Stick). Routed (missing) by the Hadji Murat dive — cross-reference, do not
+      duplicate. Peripheral here.
+    sources: []
+    evidenceRefs: [E13]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Nikolai Obolensky"
+    wikiType: person
+    wikilinkTarget: "Nikolai Obolensky"
+    vaultStatus: missing
+    role: >-
+      N. L. Obolensky, copyist of the final manuscript, which he dated «Ясная Поляна.
+      20 августа 1903 г.». Minor; fold into prose unless a page is wanted.
+    sources: []
+    evidenceRefs: [E19]
+    ingestionPriority: 3
+    dependsOn: []
+
+  # --- Concept ---
+  - name: "Running the gauntlet (сквозь строй / шпицрутены)"
+    wikiType: concept
+    wikilinkTarget: "Running the gauntlet"
+    vaultStatus: missing
+    role: >-
+      The military corporal punishment at the story's climax: the condemned man
+      marched between two files of soldiers who beat his bare back with rods
+      (шпицрутены). Institutionalised under Nicholas I; abolished in the Russian
+      army by Alexander II (1863), corporal punishment fully in 1904.
+    sources: []
+    evidenceRefs: [E03, E04, E13]
+    ingestionPriority: 2
+    dependsOn: []
+
+  # --- Event ---
+  - name: "Kishinev pogrom (1903)"
+    wikiType: event
+    wikilinkTarget: "Kishinev pogrom"
+    vaultStatus: missing
+    role: >-
+      The April 1903 pogrom whose relief almanac occasioned the story. Already routed
+      by the 1903-folk-tales dive — same target page; the genesis occasion, not a
+      subject of the story.
+    sources: []
+    evidenceRefs: [E12]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — research-cache provenance (visuals/ is git-ignored; extracts/ committed).
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: posle-bala-p116-facsimile
+    type: facsimile
+    subject: "Opening page of «После бала», PSS Tom 34 p.116 — the «всё дело в случае» frame"
+    relatedEntity: "After the Ball"
+    relatedEvidence: E01
+    holding: "Jubilee Edition (ПСС), Tom 34, p.116"
+    archiveId: "primary-sources/jubilee-edition/vol03/vol03.pdf p.156"
+    access: local
+    rights: "PD (Tolstoy's text)"
+    licence: PD
+    usable: true
+    url: ""
+    localPath: extracts/v34_116_Posle_bala_p116_facsimile-156.png
+    note: "Rendered with pdftoppm @200dpi. Committed (PD)."
+
+  - id: tolstoy-1897
+    type: photograph
+    subject: "Leo Tolstoy, 1897 (closest cleanly-dated PD photo to the 1903 writing)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: E13
+    holding: "Library of Congress Prints & Photographs"
+    archiveId: "File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    localPath: visuals/commons-tolstoy-1897.jpg
+    note: "F. W. Taylor, 1897. No PD Commons photo is specifically dated 1903 (work-order W3)."
+
+  - id: sergei-nikolaevich-tolstoy
+    type: photograph
+    subject: "Sergei Nikolaevich Tolstoy (1826–1904), elder brother — love-plot prototype"
+    relatedEntity: "Sergei Nikolaevich Tolstoy"
+    relatedEvidence: E14
+    holding: "Russian archive (via Wikimedia Commons)"
+    archiveId: "File:Sergey_Nikolaevich_Tolstoy.jpg"
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Sergey_Nikolaevich_Tolstoy.jpg"
+    localPath: visuals/commons-sergei-nikolaevich-tolstoy.jpg
+    note: "1860s portrait. The brother, NOT the son Sergei Lvovich."
+
+  - id: brothers-1902
+    type: photograph
+    subject: "Lev and Sergei Tolstoy at Yasnaya Polyana, 1902 (last photo of the brothers together)"
+    relatedEntity: "Sergei Nikolaevich Tolstoy"
+    relatedEvidence: E14
+    holding: "Russian archive (via Wikimedia Commons)"
+    archiveId: "File:Sergey_Tolstoy_and_Leo_Tolstoy.jpg"
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Sergey_Tolstoy_and_Leo_Tolstoy.jpg"
+    localPath: visuals/commons-brothers-1902.jpg
+    note: "1902 — the year before the story; the brother is the prototype."
+
+  - id: kazan-university-1832
+    type: engraving
+    subject: "Imperial Kazan University, 1832 (the story's setting)"
+    relatedEntity: "Running the gauntlet"
+    relatedEvidence: E14
+    holding: "V. S. Turin lithograph, 1834"
+    archiveId: "File:Kazan_University,_1832.jpg"
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Kazan_University,_1832.jpg"
+    localPath: visuals/commons-kazan-university-1832.jpg
+    note: "Tolstoy (and brother Sergei) studied at Kazan; the story is set in a provincial university town in the 1840s."
+
+  - id: gauntlet-russia-1845
+    type: engraving
+    subject: "«сквозь строй» / running the gauntlet in Russia (Geoffroy, 1845)"
+    relatedEntity: "Running the gauntlet"
+    relatedEvidence: E03
+    holding: "Charles-Michel Geoffroy, 1845"
+    archiveId: 'File:Gauntlet_in_Russia,_"skvoz_stroi"_(Geoffroy,_1845).JPG'
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: 'https://commons.wikimedia.org/wiki/File:Gauntlet_in_Russia,_%22skvoz_stroi%22_(Geoffroy,_1845).JPG'
+    localPath: visuals/commons-gauntlet-russia-1845.jpg
+    note: "1845 engraving specifically of the Russian сквозь строй — the closest image to the story's central scene."
+
+  - id: spitsruten-oscar-rex
+    type: painting
+    subject: "Der Spießrutenlauf (Oscar Rex, c. 1900) — the gauntlet painted"
+    relatedEntity: "Running the gauntlet"
+    relatedEvidence: E03
+    holding: "Oscar Rex (Austrian, 1857–1929)"
+    archiveId: "File:Oscar_Rex_Der_Spießrutenlauf.jpg"
+    access: web
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Oscar_Rex_Der_Spie%C3%9Frutenlauf.jpg"
+    localPath: visuals/commons-spitsruten-oscar-rex.jpg
+    note: "c. 1900 — painted while Tolstoy was alive; complements the 1845 engraving."
+
+  - id: yasnaya-polyana-1910
+    type: photograph
+    subject: "Yasnaya Polyana — where the story was written, Aug 1903"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: E17
+    holding: "Metropolitan Museum of Art (CC0)"
+    archiveId: "File:En_Route_to_the_House…Yasnaya_Polyana_MET_DP237975.jpg"
+    access: web
+    rights: "CC0"
+    licence: CC0
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:En_Route_to_the_House,_Visible_in_the_Distance_is_the_Village_of_Yasnaya_Polyana_MET_DP237975.jpg"
+    localPath: visuals/commons-yasnaya-polyana-1910.jpg
+    note: "Alexey Savelyev, 1910; the estate looked essentially the same in 1903."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Attribute, don't assert.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    English-language scholarship on «После бала» is thin and mostly pedagogical;
+    the richest readings are Russian (Soviet curriculum + Formalist) and
+    Zholkovsky's English/Russian structural work. The dominant frame is
+    «composition by contrast» — the ball and the dawn flogging as a mirror —
+    entrenched in the Soviet school curriculum as an anti-tsarist, anti-militarist
+    classic (Trostnikov 1965, Zhdanov 1971, via Zholkovsky). Shklovsky's
+    «остранение» (defamiliarization) is routinely illustrated by the flogged back
+    «пестрое, мокрое, красное, неестественное» (E04). The prototype — brother
+    Sergei Nikolaevich's Kazan courtship of Varvara Koreysh, the commander-father
+    as both dancer and flogger — is multiply attributed in Russian biography and
+    confirmed by the Tolstoy State Museum (2024). The «chance vs. environment»
+    frame is widely read as a decoy installed only to be bypassed by the
+    unmediated response of conscience; Zholkovsky reads Ivan's withdrawal as the
+    «principled non-participation characteristic of late Tolstoy». No specific
+    Eikhenbaum essay on the story was located (needsReview).
+  triangulation:
+    - evidenceRef: E07
+      conventionalView: >-
+        The opening «chance vs. environment» debate is the story's question; the
+        Soviet reading takes the cruelty as systemically mandated by tsarism, with
+        «случай» as Tolstoy's irony (it was a chance encounter, but what it reveals
+        is not accidental). Ivan's response is read as recognition of systemic evil.
+      relation: complicates
+      source: "Trostnikov (1965); Zhdanov (1971), via Zholkovsky (USC Dornsife)"
+    - evidenceRef: E07
+      conventionalView: >-
+        Zholkovsky reads Ivan's withdrawal («никуда не годился») not as paralysis
+        but as principled non-complicity — «characteristic of late Tolstoy» — the
+        frame performing the non-participation as a lived fact.
+      relation: confirms
+      source: "Zholkovsky, 'After the Ball' (USC Dornsife, English chapter)"
+    - evidenceRef: E10
+      conventionalView: >-
+        Scholarship notes the ending was «значительно изменён и расширён» in
+        revision and that a confessional «what I myself did» phrase was removed, but
+        does not reach the specific earlier endings.
+      relation: extends
+      source: "obrazovaka.ru (creation-history synthesis); the variants are PSS т.34"
+    - evidenceRef: E04
+      conventionalView: >-
+        The flogged back is the textbook «остранение» example; the story is taught
+        as «контраст как основа композиции».
+      relation: confirms
+      source: "Shklovsky (defamiliarization), via Russian pedagogy; Odintsov (1969)"
+    - evidenceRef: E15
+      conventionalView: >-
+        The prototype is brother Sergei Nikolaevich's Kazan romance with Varvara
+        Koreysh; the commander-father was both the dancing father and the flogging
+        officer.
+      relation: confirms
+      source: "Tolstoy State Museum (2024 exhibition); ru.wikipedia (Sergei Nikolaevich Tolstoy)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORD — PROPOSED CREATION (no works/ record exists yet). READ-ONLY to works/.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecord:
+  recordPath: "website/src/works/fiction/short-stories/after-the-ball/After the Ball.md"
+  workId: after-the-ball
+  note: >-
+    No works/ record exists for «После бала». This block PROPOSES the record's
+    creation (fiction → short-stories), for the human wiki-ingestion step to apply.
+    Live records keep date fields blank until a dive sources them; these are the
+    sourced proposals. NS dates are +13 days on the Julian originals (post-1900).
+  fields:
+    - field: titleEn
+      value: "After the Ball"
+      evidenceRefs: [E21]
+      source: "PSS т.34 (title); standard English title"
+      confidence: high
+    - field: titleRu
+      value: "После бала"
+      evidenceRefs: [E01, E21]
+      source: "PSS т.34, p.116"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - { title: "Дочь и отец", type: working, language: ru }
+        - { title: "Отец и дочь", type: working, language: ru }
+        - { title: "А вы говорите", type: working, language: ru }
+        - { title: "Дочь", type: working, language: ru }
+      evidenceRefs: [E17, E18, E19]
+      source: "PSS т.34 «Описание рукописей» pp.551–553; «История писания» p.550"
+      confidence: high
+    - field: mainCategory
+      value: "Fiction"
+      evidenceRefs: []
+      source: "Genre/category — short fiction"
+      confidence: high
+    - field: subcategory
+      value: "Short Stories"
+      evidenceRefs: []
+      source: "Genre/category — short fiction"
+      confidence: high
+    - field: genre
+      value: "short_story"
+      evidenceRefs: []
+      source: "PSS subtitle «(Рассказ)» (E01 head)"
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [E20]
+      source: "PSS «История писания» p.551"
+      confidence: medium
+      note: >-
+        A complete, published narrative, but the commentary states it «окончательной
+        отделки … не получил» (did not receive final polish). 'complete' with that caveat.
+    - field: publishedDuringLifetime
+      value: false
+      evidenceRefs: [E20, E21]
+      source: "PSS т.34 — «при жизни Толстого напечатан не был»; first printed 1911"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs: [E21]
+      source: "First printed 1911 (posthumous), in Russia"
+      confidence: high
+    - field: dateWritingStarted
+      value: "1903-08-19"
+      oldStyle: "1903-08-06"
+      approximate: false
+      evidenceRefs: [E14, E20]
+      source: "PSS «История писания» p.550 (first draft «Дочь и отец», 6 Aug 1903 OS)"
+      confidence: high
+      note: "Conception 9 June 1903 (E13); first DRAFT 6 Aug 1903 OS. NS = +13."
+    - field: dateWritingCompleted
+      value: "1903-09-02"
+      oldStyle: "1903-08-20"
+      approximate: false
+      evidenceRefs: [E18, E19]
+      source: "PSS «Описание рукописей» p.553 — last copy dated «20 августа 1903 г.» (Obolensky)"
+      confidence: high
+    - field: dateFirstPublished
+      value: "1911"
+      approximate: true
+      evidenceRefs: [E21]
+      source: "«Посмертные художественные произведения», т. I, М. 1911, с.117–128"
+      confidence: high
+      note: "Year only; exact month not pinned in the corpus."
+    - field: firstPublishedVenue
+      value: "Посмертные художественные произведения Л. Н. Толстого, под ред. В. Г. Черткова, т. I (Москва)"
+      evidenceRefs: [E21]
+      source: "PSS «История писания» p.551"
+      confidence: high
+    - field: firstPublishedVenueType
+      value: "book"
+      evidenceRefs: [E21]
+      source: "Posthumous collected-works volume"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1911"
+      approximate: true
+      evidenceRefs: [E21]
+      source: "Same 1911 volume, published in Moscow"
+      confidence: high
+    - field: firstPublishedInRussiaVenue
+      value: "Посмертные художественные произведения Л. Н. Толстого, под ред. В. Г. Черткова, т. I (Москва)"
+      evidenceRefs: [E21]
+      source: "PSS «История писания» p.551"
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "book"
+      evidenceRefs: [E21]
+      source: "Posthumous collected-works volume"
+      confidence: high
+    - field: authoringLocations
+      value:
+        - { country: "Russia", region: "Tula Oblast", city: "Yasnaya Polyana", estate: "Yasnaya Polyana Estate", dateFrom: "1903-08-19", dateFromOldStyle: "1903-08-06", dateTo: "1903-09-02", dateToOldStyle: "1903-08-20", notes: "First draft to final copy, Aug 1903" }
+      evidenceRefs: [E14, E17, E19]
+      source: "PSS «История писания» (Ясная Поляна); story dateline «Ясная Поляна. 20 августа 1903»"
+      confidence: high
+    - field: bans
+      value: []
+      evidenceRefs: [E12, E20]
+      source: "No formal banning event; withheld by Tolstoy as unprintable, then published freely posthumously 1911"
+      confidence: high
+      note: >-
+        bans: [] is correct — there was no banning authority. The lifetime
+        non-publication was self-withholding under anticipated censorship (E12), not
+        a ban. Capture in censorshipNotes, not bans[].
+    - field: censorshipNotes
+      value: >-
+        Not formally banned. Conceived for Sholom Aleichem's Kishinev-relief almanac
+        but withheld: Tolstoy told Sholom Aleichem (6 May 1903) that he could not say
+        in a legal Russian publication that «одно правительство» was the true culprit
+        of the Kishinev horrors. The story's anti-military content made it
+        unpublishable in his lifetime; first printed posthumously 1911 (Chertkov).
+      evidenceRefs: [E12, E20, E21]
+      source: "PSS т.74 (6 May 1903 letter); т.34 «История писания»"
+      confidence: high
+    - field: themes
+      value:
+        - "moral responsibility"
+        - "conscience"
+        - "non-participation"
+        - "corporal punishment"
+        - "military brutality"
+        - "love and disillusionment"
+        - "chance versus environment"
+      evidenceRefs: [E01, E06, E07]
+      source: "Read from the text"
+      confidence: medium
+    - field: relatedWorks
+      value:
+        - { id: "nikolai-palkin", relationshipType: "source" }
+      evidenceRefs: [E15]
+      source: "PSS «История писания» p.550 — the 1886 essay «Николай Палкин» (т.26 p.559) holds the whole plot"
+      confidence: medium
+      note: "Target record «nikolai-palkin» may not exist yet; proposed link."
+    - field: identifiers.jubileeEdition.volumes
+      value: "34"
+      evidenceRefs: [E01, E21]
+      source: "PSS Tom 34"
+      confidence: high
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status (drives «Material not covered»; resume reads this).
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - surface: "The work's own text (full close-read)"
+    status: covered
+    note: "Short-work flex: the whole ~10-page story read in full, act by act."
+  - surface: "Genesis & composition (diaries + letters + commentary)"
+    status: covered
+    note: "Kishinev commission, 9 June conception, two-day draft, the people around it."
+  - surface: "Prototypes / characters"
+    status: covered
+    note: "Love plot (Sergei + Koreysh) and flogging (Николай Палкин + Zakharyin) disentangled."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "12 MSS / 104 leaves summarised; the ending-evolution keystone extracted (E09–E11)."
+  - surface: "Publication, censorship & translation"
+    status: partial
+    note: "First publication 1911 pinned; the translation lineage (Maude etc.) not collated."
+  - surface: "Reception (Russian society & afterlife)"
+    status: covered
+    note: "Posthumous; Formalist + Soviet-curriculum + Zholkovsky; thin early reviews noted."
+  - surface: "Scholarly context (divergence map)"
+    status: covered
+    note: "Grounded in primary + siblings before mainstream; marquee triangulated."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "7 PD images + the PSS p.116 facsimile; 3 work-orders."
+  - surface: "Manuscript repository / scans"
+    status: not-covered
+    note: "Current GMT repository inferred not confirmed; no manuscript scans located."
+
+contradictions:
+  - claim: "The commentary cites the 6 May 1903 Sholom Aleichem letter as «(т. 73)» and quotes «в русском печатном издании»."
+    correction: "The letter itself is PSS т.74 №144 and reads «в русском легальном издании» (E12). The commentary's volume ref and wording differ from the letter; the letter is authoritative."
+    evidenceRef: E12
+
+notCovered:
+  - "Translation lineage (Aylmer Maude's English «After the Ball» and later versions) — not collated."
+  - "Full variant collation beyond the keystone endings (the №2/№3 university-praise cuts read but not transcribed in full)."
+  - "Whether the «Николай Палкин» colonel and the Koreysh commander are provably the same man (commentary says the recollection «relates apparently to the Kazan period»; the museum fuses them) — left as probable."
+  - "A photograph of Tolstoy specifically dated 1903; the 1911 «Посмертные» title page (work-orders W3, W1)."
+
+needsReview:
+  - item: "Ivan Zakharyin-Yakunin and Nikolai Obolensky are borderline mints (single-episode informant; minor copyist). Fold into prose or mint as priority-3 person pages?"
+    phase: 4
+    why: "wiki-schema tiering — not principal, no recurrence, attributed not documented role."
+  - item: "No specific Eikhenbaum essay on «После бала» was located; the «composition-by-contrast» reading may rest on his general Tolstoy monographs (1928/1931), not a stand-alone piece."
+    phase: 3
+    why: "Attribute precisely; the 2022 Springer article (paywalled) would resolve it."
+  - item: "completionStatus = complete vs. the commentary's «окончательной отделки не получил»."
+    phase: 4
+    why: "Editorial judgment on the works-schema enum; flagged with the caveat in the proposal."
+  - item: "The colonel's prototype certainty: documented for the love-plot father (Koreysh), but the dancing/flogging fusion rests on one (museum) source — kept «probable»."
+    phase: 4
+    why: "Do not over-claim prototypes[] certainty (novel-mode rule)."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI — works (v34 story + variants), comments (v34_550, v34_551), diaries (v54 1903), letters (v74 1903)"
+  - "primary-sources/jubilee-edition/vol03 (PSS Tom 34) — PDF facsimile of p.116"
+  - "Wikimedia Commons (PD images, API-resolved)"
+  - "Tolstoy State Museum (tolstoymuseum.ru) — 2024 prototype exhibition (web)"
+  - "Zholkovsky (USC Dornsife) — English + Russian structural readings (web)"
+  - "Sibling dives: docs/research/1903-folk-tales, docs/research/1896-1904-hadji-murat, docs/research/tolstoyanism"
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС т.34 — «После бала» (с.116–125), Планы и варианты (с.484–490), История писания и печатания (с.550–551), Описание рукописей (с.551–553)"
+    - "ПСС т.54 — Дневник 1903 (9 июня с.177; 9 и 20 августа с.189)"
+    - "ПСС т.74 — письмо С. Н. Рабиновичу (Шолом-Алейхему) №144 (6 мая 1903)"
+    - "ПСС т.26 — «Николай Палкин» (1886, с.559), quoted in the commentary"
+  background:
+    - "Tolstoy State Museum (2024), prototype exhibition note — tolstoymuseum.ru"
+    - "A. Zholkovsky, 'After the Ball' (USC Dornsife): English chapter + Russian 'Морфология и исторические корни рассказа Толстого «После бала»'"
+    - "V. Shklovsky — defamiliarization (остранение), via Russian pedagogy; A. Odintsov (1969)"
+    - "Trostnikov (1965), Zhdanov (1971) — Soviet 'standard interpretation' (via Zholkovsky)"
+    - "A. B. Goldenweiser, «Вблизи Толстого» I (М. 1922) — quoted in the PSS commentary"
+    - "I. N. Zakharyin-Yakunin, «Встречи и воспоминания» (СПб. 1903) — quoted in the PSS commentary"

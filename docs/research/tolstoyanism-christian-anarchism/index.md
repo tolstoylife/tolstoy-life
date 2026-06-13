@@ -14,7 +14,7 @@ Context: A survey of where Leo Tolstoy himself discusses the two labels most oft
 
 ## 1. Key findings
 
-- **A combined survey of two labels.** This is the original combined dive; its *Tolstoyism* half has since been superseded by the dedicated [tolstoyanism](../tolstoyanism/index.md) dive. Both labels are things said *about* Tolstoy that he repeatedly refused — the personal label, the political label, the school — while affirming the underlying substance under a different name: Christ's teaching, the Gospel.
+- **A combined survey of two labels.** This is the original combined dive; its *Tolstoyism* half has since been superseded by the dedicated [tolstoyanism](../tolstoyanism/index.html) dive. Both labels are things said *about* Tolstoy that he repeatedly refused — the personal label, the political label, the school — while affirming the underlying substance under a different name: Christ's teaching, the Gospel.
 - **Tolstoyism — the keystone is the 2 December 1897 diary** (to Makovický): «Никакого толстовства и моего учения не было и нет» — the plainest denial of the label in the corpus, and the unique self-rejection of «толстовство».
 - **Christian anarchism — two moves.** The 1900 Eltzbacher letter rejects "anarchist" as a *political* label while accepting the substance as a *religious* teaching, turning Eltzbacher's own index — which cites no Tolstoy page under «насилие» (violence) — into the evidence. The 1901 Sacy letter is the **only** place in the 90-volume PSS where Tolstoy uses «христианский анархизм» in his own voice, and even there as "Babism has much in common with Christian anarchism" — one step short of self-application.
 - **The 1894 diary "seed"** answers the Englishman's "how to be without government" structurally — six years before Eltzbacher made the question public — by reframing it: the only question open to a person is whether to subordinate conscience to the state, not what political order to build.
@@ -214,4 +214,4 @@ Companion documents:
 - [extract_tei.py](../lib/extract_tei.py) — the shared lxml-based TEI extractor (in `docs/research/lib/`) used to produce the readable Russian prose quoted in this document.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF file lookup.
 - [tolstoydigital-tei-reference.md](../tolstoydigital-tei-reference.md) — Reference for the TEI corpus and its relationship to the Jubilee Edition.
-- [copyright-renunciation/index.md](../copyright-renunciation/index.md) — sibling research essay on a related theme (the renunciation of literary property). Uses the same method and the same extractor.
+- [copyright-renunciation](../copyright-renunciation/index.html) — sibling research essay on a related theme (the renunciation of literary property). Uses the same method and the same extractor.

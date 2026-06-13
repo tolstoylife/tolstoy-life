@@ -1,0 +1,1757 @@
+# Dossier — Stories for the People (народные рассказы)
+# Theme-dive (plain; multiple workRecord proposals per the parked plan).
+# All quoteRu strings are byte-exact substrings of the named extract files.
+
+topic:
+  slug: stories-for-the-people
+  title: "Stories for the People (народные рассказы)"
+  question: >
+    Tolstoy's народные рассказы (1881–1887) as a project: why he wrote moral
+    parables for the people after rejecting conventional peasant fiction; how the
+    Posrednik machinery (Chertkov, Sytin, the kopeck booklets) carried them; what
+    the tales share as a moral core; whether they actually reached the popular
+    reader; and how the project relates forward to What Is Art? and sideways to
+    the two drama dives (The Power of Darkness, The Fruits of Enlightenment).
+  date: 2026-06-11
+  period: "1879–1910 (core composition window 1881–1887)"
+  corpusSurface: >
+    PSS Tom 25 tale TEIs (18 tales + Речь о народных изданиях + printed variants
+    + first redactions); per-tale История писания commentary TEIs (v25_665–890);
+    Tom 26 Цветник preface; letters Toms 62–64, 72, 82–86, 88, 90; diaries and
+    notebooks Toms 49–53.
+  dateRange: "1879–1910"
+
+evidence:
+
+  # ── Genesis: sources, first tale, the pivot to parable ─────────────────────
+
+  - id: E01
+    genre: letter
+    pssTom: 62
+    date: "1879-08-02/03 OS"
+    addressee: "В. В. Стасов"
+    extract: extracts/v62_523_V_V_Stasovu.txt
+    quoteRu: "Олонецкий мужик, певец былин — очень умный и хороший старик"
+    quoteEn: "(working English) An Olonets peasant, a singer of bylinas — a very intelligent and good old man."
+    significance: >
+      Tolstoy introduces V. P. Shchegolyonok to Stasov immediately after the
+      bylina-singer's 1879 stay at Yasnaya Polyana. The PSS note links the legends
+      Tolstoy recorded from him to «Чем люди живы», «Два старика», «Три старца» —
+      the oral taproot of the cycle.
+
+  - id: E02
+    genre: letter
+    pssTom: 83
+    date: "1881-07-25 OS"
+    addressee: "С. А. Толстая"
+    extract: extracts/v83_181_a25.txt
+    quoteRu: "Я два последние дня два раза начинал Петину историю"
+    quoteEn: "(working English) These last two days I have twice begun Petya's story."
+    significance: >
+      From the Samara khutor: the first tale («Чем люди живы», promised to
+      P. A. Bers's children's journal — hence «Петина история») is hard to start.
+      Earliest composition witness for the cycle.
+
+  - id: E03
+    genre: letter
+    pssTom: 90
+    date: "1881-12-01 approx OS"
+    addressee: "В. К. Истомин"
+    extract: extracts/v90_036_V_K_Istominu.txt
+    quoteRu: "Я переменил не больше 20 строк во всем, но они очень нужны, особенно в конце."
+    quoteEn: "(working English) I changed no more than 20 lines in the whole, but they are badly needed, especially at the end."
+    significance: >
+      Final proof corrections of «Чем люди живы» for «Детский отдых» (No. 12,
+      December 1881) — the PSS note records the last chapter was revised five times.
+
+  - id: E04
+    genre: letter
+    pssTom: 90
+    date: "1881-12-04 OS"
+    addressee: "В. К. Истомин"
+    extract: extracts/v90_037_V_K_Istominu.txt
+    quoteRu: "Синий карандаш на портках не мой, и исключить их потому нельзя, что тогда ангел будет без порток."
+    quoteEn: "(working English) The blue pencil on the breeches is not mine, and they cannot be cut, because then the angel would be without breeches."
+    significance: >
+      Tolstoy's comic defence of the peasant word «портки» against a copy-editor —
+      vernacular diction defended at the level of a single word.
+
+  - id: E05
+    genre: diary
+    pssTom: 49
+    date: "1883-06-11 OS"
+    extract: extracts/v49_102_103_1883_06_11.txt
+    quoteRu: "Думал о своих неудачных попытках романа из народного быта. Что за нелепость?! Задаться мыслью написать сочинение, в котором первое место бы занимала любовь, а действующие лица были бы мужики, т. е. люди, у которых любовь занимает не только не первое место, но у которых и нет той похотливой любви, о которой требуется писать."
+    quoteEn: "(working English) Thought about my failed attempts at a novel of peasant life. What an absurdity! To set out to write a work in which love would take first place, with peasants as the characters — that is, people for whom love not only does not take first place, but who do not even have that lustful love one is required to write about."
+    significance: >
+      The pivot, from inside the diary-gap years: the conventional love-plot novel
+      of peasant life is structurally impossible — the genre that replaces it is
+      the moral parable. The clearest genesis statement for the cycle's form.
+
+  - id: E06
+    genre: diary
+    pssTom: 49
+    date: "1883-03-26 OS"
+    extract: extracts/v49_073_074_1883_03_26.txt
+    quoteRu: "Пришли Златовратский и Маракуев. Златовратский программу народничества. Надменность, путаница и плачевность мысли поразительна."
+    quoteEn: "(working English) Zlatovratsky and Marakuev came. Zlatovratsky — the programme of Populism. The arrogance, confusion and lamentable quality of the thought is striking."
+    significance: >
+      Boundary-setting against Populist literature: the folk tales are not
+      народничество. Marakuev — soon a popular-editions publisher and attendee of
+      the Posrednik founding meetings — is in the room.
+
+  # ── The programme: Речь о народных изданиях & Цветник preface ─────────────
+
+  - id: E07
+    genre: speech
+    pssTom: 25
+    pages: "523–529"
+    date: "1883-12/1884-02 approx"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_523_529_Rech_o_narodnyh_izdanijah.txt
+    quoteRu: "Дело это, по моему, самое важное в мире, которому только может разумный человек посвятить свои силы. Дело — в духовном общении людей. Дело в распространении света истины. Дело — в единении людей около единой истины."
+    quoteEn: "(working English) This work is, in my view, the most important in the world to which a rational man can devote his powers. The work is the spiritual communion of people. The work is the spreading of the light of truth. The work is the uniting of people around a single truth."
+    significance: >
+      The founding document of the Posrednik concept, delivered at the Moscow
+      planning meetings (found in M. P. Shchepkin's archive). «Единение» — the
+      What Is Art? criterion — is already the stated goal in 1884.
+
+  - id: E08
+    genre: speech
+    pssTom: 25
+    pages: "523–529"
+    date: "1883-12/1884-02 approx"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_523_529_Rech_o_narodnyh_izdanijah.txt
+    quoteRu: "Надо признать то, что народ есть люди такие же, как мы, только их больше нас и они требовательнее и чутче к правде, и что потому все, что не совсем хорошо для нас, совсем дурно для народа."
+    quoteEn: "(working English) We must recognise that the people are people just like us, only there are more of them than us and they are more demanding and more sensitive to the truth; and that therefore everything that is not quite good for us is altogether bad for the people."
+    significance: >
+      The speech's central inversion: no separate "literature for the people" —
+      the people are the stricter audience. The tales are written as the best,
+      not the leftovers («ошурки»).
+
+  - id: E09
+    genre: work
+    pssTom: 26
+    pages: "307–309"
+    date: "1886"
+    localPdf: primary-sources/jubilee-edition/vol86/vol86.pdf
+    extract: extracts/v26_307_309_Predislovie_k_sborniku_Tsvetnik.txt
+    quoteRu: "Чтобы была правда в том, что описываешь, надо писать не то, что есть, а то, что должно быть, описывать не правду того, что есть, а правду царствия Божия, которое близится к нам, но которого еще нет."
+    quoteEn: "(working English) For there to be truth in what you describe, you must write not what is, but what ought to be — describe not the truth of what is, but the truth of the Kingdom of God, which is drawing near to us but is not yet."
+    significance: >
+      The Цветник preface — the poetics Tolstoy himself pointed aspiring popular
+      writers to (E11). Truth re-defined as what-ought-to-be: the criterion that
+      makes a miraculous legend "true" and a documentary novel "a lie".
+
+  - id: E10
+    genre: work
+    pssTom: 26
+    pages: "307–309"
+    date: "1886"
+    localPdf: primary-sources/jubilee-edition/vol86/vol86.pdf
+    extract: extracts/v26_307_309_Predislovie_k_sborniku_Tsvetnik.txt
+    quoteRu: "Какие бы чудеса ни описывались, какие бы звери ни разговаривали по-людски, какие бы ковры самолеты ни переносили людей, — и легенды, и притчи, и сказки будут правда, если в них будет правда царствия Божия."
+    quoteEn: "(working English) Whatever miracles are described, whatever beasts speak in human tongue, whatever flying carpets carry people — legends, parables and fairy tales will be truth, if the truth of the Kingdom of God is in them."
+    significance: >
+      The genre licence for the whole cycle: angels, devils and walking on water
+      are admissible — truthful — because the truth-criterion is moral, not
+      documentary.
+
+  - id: E11
+    genre: letter
+    pssTom: 64
+    date: "1887-04-21 OS"
+    addressee: "Ф. А. Желтов"
+    extract: extracts/v64_067_F_A_ZHeltovu.txt
+    quoteRu: "Я не могу вам вкратце выразить то, что я считаю нужным для писания, иначе, как указав вам на мои народные рассказы последнего времени и на предисловие к «Цветнику»"
+    quoteEn: "(working English) I cannot briefly express to you what I consider necessary for writing, other than by pointing you to my recent stories for the people and to the preface to Tsvetnik."
+    significance: >
+      Tolstoy names «мои народные рассказы» plus the Цветник preface as the model
+      for aspiring popular writers — the cycle owned as a deliberate aesthetic
+      programme, a decade before What Is Art? theorised it.
+
+  # ── Posrednik: founding, operations, economics ─────────────────────────────
+
+  - id: E12
+    genre: letter
+    pssTom: 85
+    date: "1884-12-08 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_038_a8.txt
+    quoteRu: "Ждите, что ничего из этого не выйдет. Я очень желаю успеха, но постоянно себя осаживаю, т. е. сомневаюсь в успехе."
+    quoteEn: "(working English) Expect that nothing will come of this. I very much wish for success, but I constantly rein myself in — that is, I doubt the success."
+    significance: >
+      Tolstoy's sober caution to Chertkov at Posrednik's inception — deliberately
+      damping the younger man's optimism while the first booklets are in
+      preparation.
+
+  - id: E13
+    genre: letter
+    pssTom: 85
+    date: "1885-01-02/03 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_041_yanvarya2_3.txt
+    quoteRu: "Но ни то ни другое не для народа."
+    quoteEn: "(working English) But neither the one nor the other is for the people."
+    significance: >
+      The «для народа» editorial filter applied: two candidate texts rejected as
+      unsuitable. The selection standard that governs the whole catalogue.
+
+  - id: E14
+    genre: letter
+    pssTom: 85
+    date: "1885-03-17/18 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_049_marta17_18.txt
+    quoteRu: "Поправляю его. Может быть, будет лучше. Еще написал небольшой рассказ"
+    quoteEn: "(working English) I am correcting it. Perhaps it will be better. I have also written a small story."
+    significance: >
+      Receipt of the anonymous Russian translation of Saillens' "Le père Martin"
+      from Chertkov; the reworking becomes «Где любовь, там и Бог». The workshop
+      mode: Chertkov commissions, Tolstoy reworks.
+
+  - id: E15
+    genre: letter
+    pssTom: 85
+    date: "1885-03-25/26 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_050_a25_26.txt
+    quoteRu: "Еще написал маленький рассказец, я думаю для картинки с текстом."
+    quoteEn: "(working English) I have also written a little story — I think for a picture with text."
+    significance: >
+      First mention of «Ильяс», conceived for the lubok-format text-with-picture
+      sheet — the cycle's forms are shaped by Posrednik's print formats from the
+      start.
+
+  - id: E16
+    genre: letter
+    pssTom: 85
+    date: "1885-04-26 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_054_a26.txt
+    quoteRu: "Пишу вам от Сытина. Хотел с ним послать назад свой рассказ"
+    quoteEn: "(working English) I am writing to you from Sytin's. I wanted to send my story back with him."
+    significance: >
+      Tolstoy physically at Sytin's office, routing a reworked tale toward Moscow
+      censorship — the count in the lubok-printer's shop is the institutional
+      image of the project.
+
+  - id: E17
+    genre: letter
+    pssTom: 85
+    date: "1885-05-02 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_055_maya2.txt
+    quoteRu: "Радость великую мне доставил Репин"
+    quoteEn: "(working English) Repin has given me great joy."
+    significance: >
+      Repin's picture (per the PSS note, for «Мартын» — «Где любовь, там и Бог»)
+      delights Tolstoy; Repin drew for Posrednik gratis. The first named-artist
+      commitment in the illustration programme.
+
+  - id: E18
+    genre: letter
+    pssTom: 85
+    date: "1885-05-10/11 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_059_a10_11.txt
+    quoteRu: "Чтоб развязать поскорее грех, я предложил Сытину их взять."
+    quoteEn: "(working English) To untie the sin as quickly as possible, I proposed that Sytin take them."
+    significance: >
+      Resolution of the double-edition conflict: Sofia Andreevna's slow-selling
+      edition of the tales transferred to Sytin — the letter records the terms
+      (900 rubles, at 1½ kopecks per copy). Concrete kopeck-economics of the
+      cheap editions.
+
+  - id: E19
+    genre: letter
+    pssTom: 85
+    date: "1885-05-10/11 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_060_a.txt
+    quoteRu: "чтобы ими заменять те, которые требуют в книжные лавки и земства, и чтобы Сытинския — наши шли глубже в народ"
+    quoteEn: "(working English) …so that they replace those ordered by bookshops and zemstvos, and so that the Sytin ones — ours — go deeper into the people."
+    significance: >
+      The two-tier distribution strategy in Tolstoy's own words: parity pricing
+      with the commercial lubok so that the Posrednik booklets reach «глубже в
+      народ» — deeper than the bookshop network.
+
+  - id: E20
+    genre: letter
+    pssTom: 85
+    date: "1885-08-29/30 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_077_a29_30.txt
+    quoteRu: "Сытину скажите, что он может печатать мои рассказы, но только как можно дешевле продавать их."
+    quoteEn: "(working English) Tell Sytin that he may print my stories, but only sell them as cheaply as possible."
+    significance: >
+      The standing pricing instruction: maximum cheapness as the condition of
+      permission — price policy as mission, not margin.
+
+  - id: E21
+    genre: letter
+    pssTom: 85
+    date: "1885-10-15/16 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_082_a15_16.txt
+    quoteRu: "Все это или почти все не хорошо. Я постараюсь придумать лучше."
+    quoteEn: "(working English) All of this, or almost all, is not good. I will try to think up better."
+    significance: >
+      Tolstoy catalogues the first cycle of tales with one-line summaries — then
+      judges the whole list «не хорошо» and promises better. The in-flight
+      self-critique that counterweights the project's outward success.
+
+  - id: E22
+    genre: letter
+    pssTom: 85
+    date: "1885-11-11 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v85_086_a11.txt
+    quoteRu: "Вся историйка написана в виду этого конца. Вся она груба и по форме и по содержанию"
+    quoteEn: "(working English) The whole little story was written for the sake of this ending. It is rough in both form and content."
+    significance: >
+      The «Свечка» ending controversy: Tolstoy refuses Chertkov's softening —
+      the tale was heard rough from a peasant teller and cannot be otherwise
+      «чтобы не быть фальшивою». Authenticity over edification.
+
+  - id: E23
+    genre: letter
+    pssTom: 63
+    date: "1885-04-16 OS"
+    addressee: "К. М. Сибиряков"
+    extract: extracts/v63_349_K_M_Sibiryakovu.txt
+    quoteRu: "есть в Петербурге очень мне близкий человек Чертков, мы с ним-то и толковали о таком журнале"
+    quoteEn: "(working English) There is in Petersburg a man very close to me, Chertkov — it is with him that I have been discussing such a journal."
+    significance: >
+      Funding outreach to the gold-magnate Sibiryakov for a popular journal —
+      Tolstoy as fundraiser and networker for the cheap-editions programme.
+
+  - id: E24
+    genre: letter
+    pssTom: 64
+    date: "1887-03 OS"
+    addressee: "тифлисские барышни (circular)"
+    extract: extracts/v64_040_NN_tiflisskim_baryshnyam.txt
+    quoteRu: "Книжки Сытинских изданий большие — так называемые романы все разосланы желавшим заняться их переделкой"
+    quoteEn: "(working English) The large Sytin booklets — the so-called novels — have all been sent out to those who wished to undertake their reworking."
+    significance: >
+      The lubok-reform campaign at scale: educated volunteers rewriting Sytin's
+      commercial popular novels — the tales' programme extended to the existing
+      market's whole stock.
+
+  - id: E25
+    genre: letter
+    pssTom: 64
+    date: "1887-07/08 approx OS"
+    addressee: "И. И. Петров"
+    extract: extracts/v64_114_I_I_Petrovu.txt
+    quoteRu: "Будьте так добры, попросите Сытина прислать мне всех вышедших Посредниковых книг по 50, но пожалуйста, скажите ему, чтобы не «даром», а за деньги"
+    quoteEn: "(working English) Be so kind as to ask Sytin to send me 50 copies of every Posrednik book published — but please tell him, not 'for free', but for money."
+    significance: >
+      Tolstoy's own order list follows (17 titles with copy-counts: «Чем люди
+      живы» 100, «Два старика» 100, «Где любовь» 100…) — the only primary-source
+      copy-count record of the 1885–87 catalogue in his hand, and he insists on
+      paying.
+
+  - id: E26
+    genre: letter
+    pssTom: 86
+    date: "1887-01-19/21 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v86_128_a19_21.txt
+    quoteRu: "Я выпросил туда у жены Поликушку"
+    quoteEn: "(working English) I begged Polikushka from my wife for it."
+    significance: >
+      The expansion programme: Tolstoy wrests his own pre-conversion work from
+      Sofia Andreevna's copyright for the cheap editions, then lists the world
+      classics (Voltaire, Rousseau, Lessing, Schiller, Cervantes…) to be adapted
+      — Posrednik as a world-literature canon for the people.
+
+  - id: E27
+    genre: letter
+    pssTom: 86
+    date: "1887-02-23 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v86_136_a23.txt
+    quoteRu: "Прошу всех печатать, где и как хотят, и прав собственности ни я ни мои наследники заявлять не будем."
+    quoteEn: "(working English) I ask everyone to print, where and how they wish, and neither I nor my heirs will assert property rights."
+    significance: >
+      The open-printing declaration, four years before the 1891 newspaper waiver
+      — asked to be announced via Posrednik. Copyright renunciation grows
+      directly out of the cheap-editions logic (see the copyright-renunciation
+      dive).
+
+  - id: E28
+    genre: letter
+    pssTom: 86
+    date: "1889-02-19/20 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v86_216_a19_20.txt
+    quoteRu: "Что Посредника и свою работу в нем вам покидать не надо. На мой взгляд это божье дело и вы делаете его волю."
+    quoteEn: "(working English) That you must not abandon Posrednik and your work in it. In my view it is God's work, and you are doing His will."
+    significance: >
+      Posrednik as «божье дело» — Tolstoy's most explicit sacralisation of the
+      enterprise, urging Chertkov to stay; Gorbunov-Posadov arrives in the same
+      letter as the new collaborator.
+
+  # ── Censorship & reception ─────────────────────────────────────────────────
+
+  - id: E29
+    genre: letter
+    pssTom: 64
+    date: "1886-12 (before 20) approx OS"
+    addressee: "И. Б. Файнерман"
+    extract: extracts/v64_001_I_B_Fajnermanu.txt
+    quoteRu: "только как можно избегайте нецензурного. Всё запрещают."
+    quoteEn: "(working English) …only avoid the uncensorable as far as you can. They are banning everything."
+    significance: >
+      Written as «Крестник» is banned from a Posrednik edition (printed there
+      only in 1906): censorship as the daily weather of the project by late 1886.
+
+  - id: E30
+    genre: commentary
+    pssTom: 25
+    pages: "665–674"
+    date: "1937 (apparatus, on events of 1887–1893)"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_665_674_Chem_ljudi_zhivy.txt
+    quoteRu: "рассказ был арестован Московским цензурным комитетом 4 февраля; затем в этом же году 10 октября Главное управление по делам печати запретило новое издание и потом вновь повторило свое распоряжение в 1888, 1891 и 1893 гг."
+    quoteEn: "(working English) …the story was arrested by the Moscow Censorship Committee on 4 February; then in the same year, on 10 October, the Main Directorate for Press Affairs banned a new edition, and repeated its order in 1888, 1891 and 1893."
+    significance: >
+      The censorship chronology of «Чем люди живы» from the PSS apparatus: the
+      cycle's founding devotional tale arrested in the February 1887 wave.
+
+  - id: E31
+    genre: commentary
+    pssTom: 25
+    pages: "715–719"
+    date: "1937 (apparatus, quoting the 1887 verdict)"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_715_719_Skazka_ob_Ivane_Durake_i_ego_dvuh_bratja.txt
+    quoteRu: "Сказка об Иване Дураке,— говорит он, — проводит, можно сказать принципиально мысли о возможности быть царству без войны, без денег, без науки, без купли и продажи, даже без царя"
+    quoteEn: "(working English) The Tale of Ivan the Fool — he says — advances, one may say as a matter of principle, ideas of the possibility of a kingdom existing without war, without money, without science, without buying and selling, even without a tsar."
+    significance: >
+      The spiritual censor Archimandrite Tikhon's 1887 verdict, preserved in the
+      apparatus — the censor reads the political fable exactly as written: a
+      constitution without army, money or tsar.
+
+  - id: E32
+    genre: commentary
+    pssTom: 25
+    pages: "715–719"
+    date: "1937 (apparatus, on events of 1887–1893)"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_715_719_Skazka_ob_Ivane_Durake_i_ego_dvuh_bratja.txt
+    quoteRu: "уже в тот же месяц была арестована Московским цензурным комитетом, а в октябре запрещена к перепечатке Главным управлением по делам печати. Запрещения повторялись в 1892 и потом в 1893 г."
+    quoteEn: "(working English) …already in the same month it was arrested by the Moscow Censorship Committee, and in October banned from reprinting by the Main Directorate for Press Affairs. The bans were repeated in 1892 and then in 1893."
+    significance: >
+      Ivan the Fool's ban chronology (the February 1887 2nd edition); in 1892 a
+      special order even banned street and market sales of earlier printings.
+
+  - id: E33
+    genre: commentary
+    pssTom: 25
+    pages: "725–734"
+    date: "1937 (apparatus, on the 1886 verdict)"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_725_734_Krestnik.txt
+    quoteRu: "Духовная цензура дала отзыв, что не знает «книги безбожнее этой»"
+    quoteEn: "(working English) The spiritual censorship gave the verdict that it knew of no book more godless than this."
+    significance: >
+      «Крестник» — a non-resistance legend built from Afanasyev — condemned by
+      the spiritual censorship in the strongest terms; Posrednik printed it only
+      in 1906.
+
+  - id: E34
+    genre: letter
+    pssTom: 64
+    date: "1888-10 OS"
+    addressee: "R. Saillens"
+    extract: extracts/v64_268_R_Sajyanu_R_Saillens.txt
+    quoteRu: "C’est ainsi, monsieur, qu’à mon grand regret je me suis rendu coupable envers vous d’un plagiat involontaire"
+    quoteEn: "(working English) [from the French original] Thus it is, monsieur, that to my great regret I have made myself guilty toward you of an involuntary plagiarism."
+    significance: >
+      The Saillens affair: «Где любовь, там и Бог» began as an anonymous Russian
+      translation of "Le père Martin" supplied by Chertkov; the unsigned-
+      publication convention for the tales caused the misattribution. Tolstoy's
+      letter is the fullest account of the workshop's authorship norms.
+
+  - id: E35
+    genre: letter
+    pssTom: 72
+    date: "1899-03-20 OS"
+    addressee: "R. Saillens"
+    extract: extracts/v72_072_RubenuSajyanuRubenSaillens.txt
+    quoteRu: "il y a plus de 15 que je me suis dédit de tous mes droits d’auteur pour tous mes ouvrages parus après 1881"
+    quoteEn: "(working English) [from the French original] …for more than 15 [years] I have renounced all my author's rights over all my works published after 1881."
+    significance: >
+      Eleven years on, Tolstoy confirms to Saillens both the printed source
+      attribution and the copyright renunciation covering the tales — the cycle
+      legally given away.
+
+  - id: E36
+    genre: letter
+    pssTom: 84
+    date: "1891-07-11 OS"
+    addressee: "С. А. Толстая (draft declaration)"
+    extract: extracts/v84_453_a11.txt
+    quoteRu: "Мой муж, Лев Николаевич Толстой, отказывается от авторского права на последние сочинения свои, предоставляя желающим безвозмездно печатать и издавать их. Сочинения эти следующие: Чем люди живы. Упустишь огонь не потушишь. Свечка."
+    quoteEn: "(working English) My husband, Lev Nikolaevich Tolstoy, renounces the author's right to his latest works, granting anyone who wishes to print and publish them without payment. These works are the following: What Men Live By. A Spark Neglected. The Candle."
+    significance: >
+      The canonical 1891 waiver list, drafted by Tolstoy for Sofia Andreevna to
+      publish — it opens with the народные рассказы, naming every major tale.
+      The cycle defines the corpus of renounced works.
+
+  # ── Retrospect: the What Is Art? arc and the 1910 verdict ──────────────────
+
+  - id: E37
+    genre: letter
+    pssTom: 88
+    date: "1897-07-23 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v88_458_iyulya23.txt
+    quoteRu: "я нашел и прочел. Там ничего нет дурного, неверного, но как пьеса это несценично."
+    quoteEn: "(working English) …I found and read [Ivan the Fool]. There is nothing bad or untrue in it, but as a play it is unstageable."
+    significance: >
+      While finishing «Что такое искусство?», Tolstoy re-reads an English stage
+      adaptation of Ivan the Fool — the tales are live reference points inside
+      the treatise's composition window.
+
+  - id: E38
+    genre: letter
+    pssTom: 88
+    date: "1897-07-15 OS"
+    addressee: "В. Г. Чертков"
+    extract: extracts/v88_456_iyulya15.txt
+    quoteRu: "Достаточно, если она доставляет радость единения людей в безгрешном чувстве веселья, приятности, умиления или торжественности. Но дело в том, что она тем лучше, чем больше она людей соединяет."
+    quoteEn: "(working English) It is enough if it gives the joy of uniting people in a sinless feeling of gaiety, pleasantness, tenderness or solemnity. The point is that it is the better, the more people it unites."
+    significance: >
+      The «единение» criterion in live correspondence during What Is Art?'s
+      completion — the same word the 1884 Речь used for the popular-editions
+      mission (E07). The 1880s practice and the 1898 theory share one vocabulary.
+
+  - id: E39
+    genre: diary
+    pssTom: 53
+    date: "1897-12-02 OS"
+    extract: extracts/v53_167_169_1897_12_02.txt
+    quoteRu: "Он составляет с Славянским Посредником центр маленькой, но думаю, что божеской работы."
+    quoteEn: "(working English) He, with the Slavic Posrednik, forms the centre of a small but, I think, divine work."
+    significance: >
+      Makovický's Slovak counterpart blessed in the same terms as the original —
+      «божеская работа» — while What Is Art? is on the desk: the project's
+      sacral framing persists into the treatise years.
+
+  - id: E40
+    genre: letter
+    pssTom: 82
+    pages: "206–210"
+    date: "1910-10-24 OS"
+    addressee: "И. И. Горбунов-Посадов"
+    extract: extracts/v82_278_I_I_Gorbunovu_Posadovu.txt
+    quoteRu: "Получил листовки, высланные вами Саше, и очень заинтересовался ими. Разобрал их на четыре сорта: самые хорошие, хорошие, посредственные и плохие."
+    quoteEn: "(working English) I received the leaflets you sent to Sasha and became very interested in them. I sorted them into four grades: the very good, the good, the mediocre and the bad."
+    significance: >
+      Two weeks before his death, Tolstoy grades the Posrednik leaflets like an
+      editor. His own top tier: «Три старца», «Кающийся грешник», «Зерно с
+      куриное яйцо», «Работник Емельян», «Ильяс», «Вражье лепко», «Где любовь,
+      там и бог», «Крестник», «Упустишь огонь»; «Много ли человеку земли нужно»
+      sits in the second grade — and Pushkin's «Станционный смотритель» in the
+      fourth. A terminal self-verdict scholarship does not cite.
+
+  # ── The tales themselves (keystone passages) ───────────────────────────────
+
+  - id: E41
+    genre: work
+    pssTom: 25
+    pages: "7–25"
+    date: "1881"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_007_025_Chem_ljudi_zhivy.txt
+    quoteRu: "Мы знаем, что мы перешли из смерти в жизнь, потому что любим братьев: не любящий брата пребывает в смерти"
+    quoteEn: "(working English) We know that we have passed from death unto life, because we love the brethren: he that loveth not his brother abideth in death. (1 John III:14, the tale's head epigraph)"
+    significance: >
+      The Gospel verse-block head — the epigraph→narrative→moral arc that defines
+      the cycle's devotional form.
+    facsimile: extracts/facsimile-v25-p007-chem-ljudi-zhivy-018.png
+
+  - id: E42
+    genre: work
+    pssTom: 25
+    pages: "7–25"
+    date: "1881"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_007_025_Chem_ljudi_zhivy.txt
+    quoteRu: "— Узнал я, что жив всякий человек не заботой о себе, а любовью."
+    quoteEn: "(working English) — I have learned that every man lives not by care for himself, but by love."
+    significance: >
+      The angel Mikhail's third word — the cycle's thesis sentence: self-provision
+      is an illusion; the social fabric of mutual pity is the actual life-support.
+
+  - id: E43
+    genre: work
+    pssTom: 25
+    pages: "7–25"
+    date: "1881"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_007_025_Chem_ljudi_zhivy.txt
+    quoteRu: "Понял я теперь, что кажется только людям, что они заботой о себе живы, а что живы они одною любовью. Кто в любви, тот в Боге и Бог в нем, потому что Бог есть любовь."
+    quoteEn: "(working English) I understood now that it only seems to people that they live by care for themselves — they live by love alone. He who is in love is in God, and God is in him, for God is love."
+    significance: >
+      The tale's closing theology: 1 John dramatised — God-in-the-neighbour as
+      the cycle's devotional centre.
+
+  - id: E44
+    genre: work
+    pssTom: 25
+    pages: "35–45"
+    date: "1885"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_035_045_Gde_ljubov_tam_i_bog.txt
+    quoteRu: "— Для Бога, Мартын, жить надо. Он тебе жизнь дает, для Него и жить надо. Когда для Него жить станешь, ни о чем тужить не станешь, и всё тебе легко покажется."
+    quoteEn: "(working English) — One must live for God, Martyn. He gives you life, and for Him one must live. When you begin to live for Him, you will grieve over nothing, and everything will seem easy to you."
+    significance: >
+      The pilgrim's counsel that turns the grieving cobbler around; Christ then
+      arrives only as the freezing soldier, the starving mother, the apple-thief
+      boy — Matthew 25 enacted before it is quoted.
+
+  - id: E45
+    genre: work
+    pssTom: 25
+    pages: "82–99"
+    date: "1885"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_082_099_Dva_starika.txt
+    quoteRu: "А то пойдешь за морем Христа искать, а в самом себе потеряешь."
+    quoteEn: "(working English) Or else you go seeking Christ across the sea — and lose Him in your own self."
+    significance: >
+      Elisei's realisation mid-detour: the pilgrimage tale's whole argument — the
+      diverted, costly act of mercy is the real arrival at the Sepulchre.
+
+  - id: E46
+    genre: work
+    pssTom: 25
+    pages: "82–99"
+    date: "1885"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_082_099_Dva_starika.txt
+    quoteRu: "— Тужить?! Нет, кум! В жизнь ни о чем, кроме о грехах, не тужил. Дороже души ничего нет."
+    quoteEn: "(working English) — Grieve?! No, friend! In all my life I have grieved over nothing but my sins. There is nothing dearer than the soul."
+    significance: >
+      Elisei's credo — the peasant voice carrying the cycle's scale of values in
+      a single saw.
+
+  - id: E47
+    genre: work
+    pssTom: 25
+    pages: "67–78"
+    date: "1885"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_067_078_Mnogo_li_cheloveku_zemli_nuzhno.txt
+    quoteRu: "Поднял работник скребку, выкопал Пахому могилу, ровно насколько он от ног до головы захватил — три аршина, и закопал его."
+    quoteEn: "(working English) The labourer picked up the spade, dug Pakhom a grave exactly as long as he measured from feet to head — three arshins — and buried him."
+    significance: >
+      The famous closing accounting: the answer to the title question is
+      grave-length. Acquisition as a contract with death — the
+      non-acquisitiveness vector at its starkest.
+
+  - id: E48
+    genre: work
+    pssTom: 25
+    pages: "115–138"
+    date: "1885"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_115_138_Skazka_ob_Ivane_Durake_i_ego_dvuh_bratjah_Semene_voine_i_Tarase_brjuhane_i_nemoj_sestre_Malane_i_o_starom_djavole_i_treh_chertenjatah.txt
+    quoteRu: "Только один обычай у него и есть в царстве: у кого мозоли на руках — полезай за стол, а у кого нет — тому объедки."
+    quoteEn: "(working English) There is only one custom in his kingdom: whoever has calluses on his hands — sit at the table; whoever has none — gets the scraps."
+    significance: >
+      The callus-test constitution of Ivan's kingdom: the labour-and-non-violence
+      ethic scaled up to a political fable — the tale the censors read correctly
+      (E31) and banned.
+
+  - id: E49
+    genre: work
+    pssTom: 25
+    pages: "100–105"
+    date: "1885–1886"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_100_105_Tri_startsa.txt
+    quoteRu: "А молясь, не говорите лишнего, как язычники: ибо они думают, что в многословии своем будут услышаны."
+    quoteEn: "(working English) But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking. (Matthew VI:7, the tale's head epigraph)"
+    significance: >
+      The epigraph that the narrative then enacts as reversal: the bishop's
+      correct catechesis is the heathen «многословие»; the hermits' wordless
+      prayer walks on water.
+
+  - id: E50
+    genre: work
+    pssTom: 25
+    pages: "100–105"
+    date: "1885–1886"
+    localPdf: primary-sources/jubilee-edition/vol85/vol85.pdf
+    extract: extracts/v25_100_105_Tri_startsa.txt
+    quoteRu: "И древний старец сказал: Молимся мы так: трое Вас, трое нас, помилуй нас."
+    quoteEn: "(working English) And the eldest hermit said: We pray thus — Three are Ye, three are we, have mercy on us."
+    significance: >
+      The artless prayer that out-prays the bishop — authority and literacy kneel
+      to simple faith; the cycle's anti-clerical edge in its gentlest form, and a
+      tale in Tolstoy's own 1910 top grade (E40).
+
+entities:
+
+  # priority 1 — the dive's core
+  - name: "Посредник (Posrednik publishing house)"
+    wikiType: institution
+    wikilinkTarget: "Posrednik"
+    vaultStatus: missing
+    role: >
+      The cheap-editions publishing enterprise (founded from the 1883–84 Moscow
+      meetings; Chertkov–Sytin operational partnership from late 1884; first
+      booklets spring 1885) that carried the народные рассказы to a mass peasant
+      readership at 1–1½ kopecks.
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [E07, E08, E12, E18, E19, E20, E25, E28]
+    ingestionPriority: 1
+  - name: "Народные рассказы (Stories for the People)"
+    wikiType: concept
+    wikilinkTarget: "Stories for the People"
+    vaultStatus: missing
+    role: >
+      The genre-set itself: Tolstoy's moral parables for the popular reader,
+      1881–1887 — the lived practice of "art for the people" a decade before
+      What Is Art?.
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [E05, E09, E10, E11, E21, E36, E40]
+    ingestionPriority: 1
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: >
+      Co-founder and operational head of Posrednik: commissioned tales, supplied
+      sources (the Saillens story), routed censorship, managed Sytin production —
+      the daily correspondent of the whole project (Toms 85–86).
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E12, E13, E14, E22, E27, E28, E34]
+    ingestionPriority: 1
+  - name: "Ivan Sytin"
+    wikiType: person
+    wikilinkTarget: "Ivan Sytin"
+    vaultStatus: missing
+    role: >
+      The lubok printer-publisher whose presses and pedlar network printed and
+      distributed Posrednik; took over Sofia Andreevna's edition at 1½ kopecks a
+      copy; Tolstoy's standing instruction to him: «как можно дешевле».
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E16, E18, E19, E20, E25]
+    ingestionPriority: 1
+    dependsOn: ["Посредник (Posrednik publishing house)"]
+  - name: "Vasily Shchegolyonok"
+    wikiType: person
+    wikilinkTarget: "Vasily Shchegolyonok"
+    vaultStatus: missing
+    role: >
+      Olonets bylina-singer; during his 1879 Yasnaya Polyana stay supplied the
+      oral legends behind «Чем люди живы», «Два старика», «Три старца».
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E01]
+    ingestionPriority: 1
+
+  # priority 2 — supporting
+  - name: "Pavel Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: >
+      Managed Posrednik's St Petersburg warehouse from 1885; called the work «и
+      разум, и воля, и сердце мое»; later Tolstoy's biographer.
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E29]
+    ingestionPriority: 2
+  - name: "Ivan Gorbunov-Posadov"
+    wikiType: person
+    wikilinkTarget: "Ivan Gorbunov-Posadov"
+    vaultStatus: missing
+    role: >
+      Joined 1889, led Posrednik from the 1890s; addressee of the 24 Oct 1910
+      four-grade ranking letter — the project's longest-serving editor.
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E28, E40]
+    ingestionPriority: 2
+    dependsOn: ["Посредник (Posrednik publishing house)"]
+  - name: "Ilya Repin"
+    wikiType: person
+    wikilinkTarget: "Ilya Repin"
+    vaultStatus: missing
+    role: >
+      Illustrated the tales gratis (the 1881 angel-and-cobbler drawing for «Чем
+      люди живы»; pictures for «Два брата и золото», «Вражье лепко»); redrew the
+      Christ figure for the Bouguereau picture-text.
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [E17]
+    ingestionPriority: 2
+  - name: "Nikolai Ge"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ge"
+    vaultStatus: missing
+    role: >
+      Painter of «Тайная вечеря» (1863), for which Tolstoy wrote a banned
+      picture-text (1886); produced a 12-drawing album for «Чем люди живы»
+      (1886), partly blocked by spiritual censorship.
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [E33]
+    ingestionPriority: 2
+  - name: "Aleksandra Kalmykova"
+    wikiType: person
+    wikilinkTarget: "Aleksandra Kalmykova"
+    vaultStatus: missing
+    role: >
+      Co-author of the Posrednik popular biography «Греческий учитель Сократ»
+      (1885–86), which Tolstoy substantially rewrote — the collaborative,
+      non-proprietary authorship model of the workshop.
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+  - name: "Ruben Saillens"
+    wikiType: person
+    wikilinkTarget: "Ruben Saillens"
+    vaultStatus: missing
+    role: >
+      French Baptist preacher-author of "Le père Martin" (1882), the
+      acknowledged source of «Где любовь, там и Бог»; recipient of Tolstoy's
+      «plagiat involontaire» letters (1888, 1899).
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E34, E35]
+    ingestionPriority: 2
+
+  # priority 3 — peripheral
+  - name: "Vladimir Istomin"
+    wikiType: person
+    wikilinkTarget: "Vladimir Istomin"
+    vaultStatus: missing
+    role: "Editor of «Детский отдых», first publisher of «Чем люди живы» (Dec 1881)."
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E03, E04]
+    ingestionPriority: 3
+  - name: "Alexander Afanasyev"
+    wikiType: person
+    wikilinkTarget: "Alexander Afanasyev"
+    vaultStatus: missing
+    role: >
+      Folklorist whose «Народные русские легенды» supplied plots for «Чем люди
+      живы» (analogue), «Кающийся грешник», «Как чертенок краюшку выкупал»,
+      «Крестник», «Работник Емельян».
+    sources: [jubilee-edition]
+    evidenceRefs: [E33]
+    ingestionPriority: 3
+  - name: "Archimandrite Tikhon (spiritual censor)"
+    wikiType: person
+    wikilinkTarget: "Archimandrite Tikhon (censor)"
+    vaultStatus: missing
+    role: >
+      Member of the spiritual censorship committee; author of the surviving 1887
+      verdict against «Сказка об Иване Дураке» (E31).
+    sources: [jubilee-edition]
+    evidenceRefs: [E31]
+    ingestionPriority: 3
+  - name: "Konstantin Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: >
+      Ober-Procurator of the Holy Synod; commonly linked to the February 1887
+      arrest wave, but the Tom 25 apparatus extracts do not name him for «Чем
+      люди живы» — see needsReview before asserting instigation.
+    sources: [jubilee-edition]
+    evidenceRefs: [E30]
+    ingestionPriority: 3
+  - name: "Vasily Marakuev"
+    wikiType: person
+    wikilinkTarget: "Vasily Marakuev"
+    vaultStatus: missing
+    role: >
+      Popular-books publisher («Народная библиотека», 1882); attendee of the
+      1884 founding meetings; present at the March 1883 Zlatovratsky evening (E06).
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [E06]
+    ingestionPriority: 3
+  - name: "Mitrofan Shchepkin"
+    wikiType: person
+    wikilinkTarget: "Mitrofan Shchepkin"
+    vaultStatus: missing
+    role: >
+      Moscow Duma member and economist; attendee of the founding meetings; the
+      «Речь о народных изданиях» autograph survived in his archive.
+    sources: [jubilee-edition]
+    evidenceRefs: [E07]
+    ingestionPriority: 3
+  - name: "Konstantin Sibiryakov"
+    wikiType: person
+    wikilinkTarget: "Konstantin Sibiryakov"
+    vaultStatus: missing
+    role: "Gold-magnate philanthropist solicited in 1885 to fund a popular journal alongside Posrednik."
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E23]
+    ingestionPriority: 3
+  - name: "Fyodor Zheltov"
+    wikiType: person
+    wikilinkTarget: "Fyodor Zheltov"
+    vaultStatus: missing
+    role: >
+      Molokan peasant writer; addressee of the 21 Apr 1887 letter in which
+      Tolstoy names the народные рассказы + Цветник preface as the model for
+      popular writing (E11).
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E11]
+    ingestionPriority: 3
+  - name: "Ivan Petrov"
+    wikiType: person
+    wikilinkTarget: "Ivan Petrov"
+    vaultStatus: missing
+    role: "Head of Sytin's popular-editions desk; recipient of Tolstoy's 17-title copy-count order (E25)."
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E25]
+    ingestionPriority: 3
+  - name: "Nikolai Leskov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Leskov"
+    vaultStatus: missing
+    role: >
+      Recruited to write for Posrednik (Tolstoy praised a Leskov piece for it in
+      Jan 1887); Sytin published his «Совестный Данила» and «Фигура» (1890).
+    sources: [tolstoydigital-tei]
+    evidenceRefs: []
+    ingestionPriority: 3
+  - name: "Лубок (lubok literature)"
+    wikiType: concept
+    wikilinkTarget: "Lubok"
+    vaultStatus: missing
+    role: >
+      The commercial cheap-print idiom (Sytin's core business) that Posrednik
+      adopted as format and price-point while replacing its content — and later
+      tried to reform wholesale (E24).
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E15, E24]
+    ingestionPriority: 2
+    dependsOn: ["Посредник (Posrednik publishing house)"]
+  - name: "Детский отдых (journal)"
+    wikiType: institution
+    wikilinkTarget: "Detsky Otdykh"
+    vaultStatus: missing
+    role: "Children's journal that first published «Чем люди живы» (No. 12, December 1881)."
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [E03]
+    ingestionPriority: 3
+
+visuals:
+
+  - id: facsimile-chem-ljudi-zhivy-p7
+    type: facsimile
+    subject: "PSS Tom 25, p. 7 — opening page of «Чем люди живы» with the 1 John epigraph block"
+    relatedEvidence: [E41, E42]
+    holding: "local render from jubilee-edition vol85.pdf (PD)"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    localPath: extracts/facsimile-v25-p007-chem-ljudi-zhivy-018.png
+    note: "Rendered at 220 dpi via pdftoppm; committed (PD facsimile channel)."
+
+  - id: repin-angel-shoemaker-1881
+    type: illustration
+    subject: "I. E. Repin, «Встреча ангела с сапожником Семёном» (1881) — illustration for «Чем люди живы»"
+    relatedEntity: "Ilya Repin"
+    relatedEvidence: [E17, E41]
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:1881%D0%A0%D0%B5%D0%BF%D0%B8%D0%BD%D0%92%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D0%BF%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC.JPG"
+    localPath: visuals/commons-repin-angel-shoemaker-1881.jpg
+    note: "KEYSTONE image — the canonical Repin–Tolstoy folk-tale drawing, predating Posrednik."
+
+  - id: ge-last-supper-1863
+    type: painting
+    subject: "N. N. Ge, «Тайная вечеря» (1863) — the painting whose Posrednik picture-text was banned 24 Feb 1886"
+    relatedEntity: "Nikolai Ge"
+    relatedEvidence: [E33]
+    holding: "State Russian Museum, St Petersburg (Ж-4141)"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ge_The_last_supper_1863.jpg"
+    localPath: visuals/commons-ge-last-supper-1863.jpg
+
+  - id: chertkov-portrait-kramskoy
+    type: painting
+    subject: "V. G. Chertkov, portrait by I. N. Kramskoy (1880s)"
+    relatedEntity: "Vladimir Chertkov"
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Kramskoy.jpg"
+    localPath: visuals/commons-chertkov-portrait-kramskoy.jpg
+    note: "Kramskoy died 1887, so the portrait is contemporary with the Posrednik founding years."
+
+  - id: chertkov-portrait-repin-c1890
+    type: painting
+    subject: "V. G. Chertkov, portrait by I. E. Repin (c. 1890)"
+    relatedEntity: "Vladimir Chertkov"
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Repin.jpg"
+    localPath: visuals/commons-repin-chertkov-portrait-c1890.jpg
+
+  - id: sytin-portrait-moravov-1908
+    type: painting
+    subject: "I. D. Sytin, portrait by A. V. Moravov (1908)"
+    relatedEntity: "Ivan Sytin"
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Sytin_Ivan_Dmitrievich.jpg"
+    localPath: visuals/commons-sytin-portrait-moravov-1908.jpg
+    note: "Small scan; post-Posrednik date but the canonical open portrait."
+
+  - id: shchegolonok-photo-1908pub
+    type: photo
+    subject: "V. P. Shchegolyonok, photograph (publ. 1908)"
+    relatedEntity: "Vasily Shchegolyonok"
+    relatedEvidence: [E01]
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Schegolenok_VP.jpg"
+    localPath: visuals/commons-shchegolonok-photo-1908.jpg
+
+  - id: shchegolonok-by-repin
+    type: painting
+    subject: "V. P. Shchegolyonok, portrait by I. E. Repin"
+    relatedEntity: "Vasily Shchegolyonok"
+    relatedEvidence: [E01]
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Shchegolenok_by_Repin.jpg"
+    localPath: visuals/commons-shchegolonok-by-repin-portrait.jpg
+    note: "The same Repin who illustrated the tales painted their oral source — the visual circle closes."
+
+  - id: gorbunov-posadov-with-tolstoy
+    type: photo
+    subject: "I. I. Gorbunov-Posadov with Tolstoy and P. Troubetzkoy (c. 1900)"
+    relatedEntity: "Ivan Gorbunov-Posadov"
+    relatedEvidence: [E40]
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:P._Troubetzkoy,_L._Tolstoy,_I._Gorbunov.JPG"
+    localPath: visuals/commons-gorbunov-posadov-with-tolstoy.jpg
+
+  - id: sytin-lubok-koltsov
+    type: lubok
+    subject: "Sytin press lubok collage sheet (Koltsov verses, 1906–1914) — the commercial idiom Posrednik adopted and contested"
+    relatedEntity: "Ivan Sytin"
+    holding: "Wikimedia Commons"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BB%D0%BB%D0%B0%D0%B6-%D0%BB%D1%83%D0%B1%D0%BE%D0%BA_%D0%BF%D0%BE_%D1%81%D1%82%D0%B8%D1%85%D0%B0%D0%BC_%D0%90.%D0%92._%D0%9A%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%D0%B0._1906~1914%D0%B3%D0%B3_%D0%A1%D1%8B%D1%82%D0%B8%D0%BD,%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.e1cr.jpg"
+    localPath: visuals/commons-sytin-lubok-koltsov-1906-1914.jpg
+    note: "Post-1885 sheet; best available proxy for the 1880s Sytin lubok idiom."
+
+  - id: posrednik-first-edition-covers
+    type: cover
+    subject: "Posrednik first-edition kopeck-booklet covers (1885–86)"
+    holding: "RGB; State Tolstoy Museum, Moscow"
+    access: not-digitised-openly
+    rights: PD
+    licence: PD
+    usable: with-clearance
+    url: null
+    localPath: null
+    note: >
+      Not on Commons or in local mirrors. Next channels: goskatalog.ru (object
+      type «книга», publisher «Посредник»/«Т-во И. Д. Сытина», 1884–1886);
+      search.rsl.ru. The visuals work-order's top item.
+
+  - id: ge-folk-tale-album-1886
+    type: illustration
+    subject: "N. N. Ge, 12-drawing album for «Чем люди живы» (1886)"
+    relatedEntity: "Nikolai Ge"
+    holding: "Tretyakov Gallery / State Tolstoy Museum"
+    access: not-digitised-openly
+    rights: PD
+    licence: PD
+    usable: with-clearance
+    url: null
+    localPath: null
+    note: "Documented in the apparatus and Ge literature; not in any open repository surfaced by this sweep."
+
+scholarship:
+  summary: >
+    English-language scholarship treats the народные рассказы appreciatively but
+    thinly: Gary Jahn's Cambridge Companion chapter (2002) is the main specialist
+    treatment, reading the tales as sophisticated stylisations of folk models
+    rather than didactic decline; R. F. Christian (1969), Hugh McLean (2008) and
+    the biographers (Wilson 1988, Bartlett 2010) place them as the first artistic
+    fruit of the conversion, the hinge between the 1872 Azbuka and the late
+    fiction. Jeffrey Brooks (When Russia Learned to Read, 1985) is the standard
+    account of the Posrednik economics: booklets at roughly a kopeck, twelve
+    million copies in the first four years. What Is Art? scholarship reports the
+    famous self-condemnation footnote but stops at the Beethoven/Shakespeare
+    verdicts. The "didactic decline" frame survives mainly in popular biography;
+    specialist work concedes the tales' relative critical neglect. The dive's
+    primary record both confirms this picture and reaches below it — the
+    operational letters, the censor's verdicts, and the 1910 grading letter are
+    not part of the anglophone conversation.
+  triangulation:
+    - evidenceRef: E11
+      conventionalView: >
+        Jahn (2002) infers a deliberate popular-literature programme from the
+        tales' formal properties; the Zheltov letter naming «мои народные
+        рассказы» as the model is not a known reference point in English
+        scholarship.
+      relation: extends
+      source: "Gary R. Jahn, 'Tolstoy as a Writer of Popular Literature', in Orwin (ed.), The Cambridge Companion to Tolstoy, CUP 2002, pp. 111–126"
+    - evidenceRef: E18
+      conventionalView: >
+        Brooks (1985) documents Posrednik's kopeck price-point and twelve million
+        copies in four years; the letter-level terms (the 900-ruble Sytin
+        transfer at 1½ kopecks) sit below the scholarship's resolution.
+      relation: confirms
+      source: "Jeffrey Brooks, When Russia Learned to Read, Princeton UP 1985, pp. 337–340"
+    - evidenceRef: E40
+      conventionalView: >
+        The What Is Art? footnote (PSS 30) exempting only «Бог правду видит» and
+        «Кавказский пленник» from Tolstoy's own «дурное искусство» is widely
+        cited — but no accessible scholarship registers that the народные
+        рассказы are thereby silently condemned, nor cites the 24 Oct 1910
+        grading letter in which Tolstoy still ranks nine of the tales «очень
+        хорошие». The tension between the public theoretical verdict (1898) and
+        the private editorial verdict (1910) is unregistered.
+      relation: extends
+      source: "What Is Art? (PSS 30 footnote; cf. docs/research/1897-1898-what-is-art/); PSS 82, no. 278"
+    - evidenceRef: E31
+      conventionalView: >
+        Censorship of Tolstoy is treated as pervasive (Brooks 1985; Hapgood 1887)
+        but the asymmetric pattern — secular organs arresting the political
+        tales, spiritual censorship condemning the heterodox legends, the pure
+        devotional tales circulating freely — is not delineated as an analytical
+        point.
+      relation: extends
+      source: "Isabel F. Hapgood, 'Count Tolstoi and the Public Censor', 1887"
+    - evidenceRef: E34
+      conventionalView: >
+        The Saillens adaptation is a settled biographical fact; scholarship does
+        not explore the structural cause — the unsigned-publication convention of
+        the Posrednik workshop — which the 1888 letter states explicitly.
+      relation: complicates
+      source: "secondary summaries (e.g. yeyebook.com Saillens/Tolstoy account); PSS 64, no. 268"
+    - evidenceRef: E01
+      conventionalView: >
+        Shchegolyonok's 1879 visit is documented biographically, but accessible
+        English scholarship does not name him as the plot source of specific
+        tales (the Twenty-Three Tales tradition garbles the date and identity).
+      relation: extends
+      source: "no clear source (PSS apparatus only)"
+    - evidenceRef: E05
+      conventionalView: >
+        The standard narrative reads the tales as the conversion's first artistic
+        fruit; the 1883 diary shows the *negative* genesis — the structural
+        impossibility of the peasant love-plot novel — which scholarship does not
+        cite as the form's origin.
+      relation: complicates
+      source: "R. F. Christian, Tolstoy: A Critical Introduction, CUP 1969"
+    - evidenceRef: E30
+      conventionalView: >
+        The drama's stage ban and the tales' mass circulation are separately
+        documented; the reception asymmetry — the same author, the same intended
+        audience, opposite outcomes across genres (The Power of Darkness failed
+        with the people; the tales reached them) — is not made as a point in
+        accessible scholarship.
+      relation: extends
+      source: "Jeffrey Brooks, When Russia Learned to Read, Princeton UP 1985; cf. docs/research/1886-the-power-of-darkness/"
+
+workRecords:
+
+  - recordPath: "website/src/works/fiction/short-stories/what-men-live-by/What Men Live By.md"
+    workId: what-men-live-by
+    action: create
+    fields:
+      - field: titleRu
+        value: "Чем люди живы?"
+        evidenceRefs: [E41]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: titleEn
+        value: "What Men Live By"
+        source: jubilee-edition
+        confidence: high
+      - field: mainCategory
+        value: Fiction
+        confidence: high
+      - field: subcategory
+        value: "Short Stories"
+        confidence: high
+      - field: genre
+        value: short_story
+        confidence: high
+      - field: dateWritingStarted
+        value: "1881"
+        evidenceRefs: [E02]
+        source: tolstoydigital-tei
+        confidence: medium
+        approximate: true
+        note: "Apparatus says written 1881; the July 1881 Samara letter (E02) shows composition under way mid-year («Петина история»)."
+      - field: dateWritingCompleted
+        value: "1881-12"
+        oldStyle: "1881-11/12"
+        evidenceRefs: [E03]
+        source: tolstoydigital-tei
+        confidence: high
+        approximate: true
+        note: "Final proof corrections sent to Istomin early December 1881 (OS)."
+      - field: dateFirstPublished
+        value: "1881-12"
+        evidenceRefs: [E03]
+        source: jubilee-edition
+        confidence: high
+        approximate: true
+      - field: firstPublishedVenue
+        value: "Детский отдых, 1881, № 12 (illus. N. A. Kiselyov)"
+        source: jubilee-edition
+        confidence: high
+      - field: firstPublishedVenueType
+        value: journal
+        confidence: high
+      - field: publishedDuringLifetime
+        value: true
+        confidence: high
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        confidence: high
+      - field: epigraph
+        value: "1 John III:14, III:17–18, IV:7–8, IV:12, IV:16, IV:20 (verse block)"
+        evidenceRefs: [E41]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: epigraphLanguage
+        value: ru
+        confidence: high
+      - field: epigraphSource
+        value: "First Epistle of John"
+        confidence: high
+      - field: bans
+        value:
+          - banningAuthority: "Moscow Censorship Committee"
+            authorityType: imperial-state
+            jurisdiction: "Russian Empire"
+            scope: confiscation
+            banDate: "1887-02-16"
+            banDateOldStyle: "1887-02-04"
+            banDateApproximate: false
+            banLiftedDate: "1905"
+            banLiftedDateApproximate: true
+            notes: "Posrednik edition arrested 4 Feb 1887 (OS)."
+          - banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати)"
+            authorityType: imperial-state
+            jurisdiction: "Russian Empire"
+            scope: complete-ban
+            banDate: "1887-10-22"
+            banDateOldStyle: "1887-10-10"
+            banDateApproximate: false
+            banLiftedDate: "1905"
+            banLiftedDateApproximate: true
+            notes: "New-edition ban 10 Oct 1887 (OS), repeated 1888, 1891, 1893."
+        evidenceRefs: [E30]
+        source: jubilee-edition
+        confidence: high
+      - field: relatedWorks
+        value:
+          - { id: where-love-is-god-is, relationshipType: cycle }
+          - { id: two-old-men, relationshipType: cycle }
+          - { id: how-much-land-does-a-man-need, relationshipType: cycle }
+          - { id: tale-of-ivan-the-fool, relationshipType: cycle }
+          - { id: the-three-hermits, relationshipType: cycle }
+        confidence: high
+        note: "The народные рассказы cycle (Tom 25)."
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+  - recordPath: "website/src/works/fiction/short-stories/where-love-is-god-is/Where Love Is, God Is.md"
+    workId: where-love-is-god-is
+    action: create
+    fields:
+      - field: titleRu
+        value: "Где любовь, там и Бог"
+        evidenceRefs: [E44]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: titleEn
+        value: "Where Love Is, God Is"
+        confidence: high
+      - field: titleAlternatives
+        value:
+          - { title: "Martin the Cobbler", type: translation, language: en }
+          - { title: "Дядя Мартын (source translation's title)", type: working, language: ru }
+        confidence: medium
+      - field: mainCategory
+        value: Fiction
+        confidence: high
+      - field: subcategory
+        value: "Short Stories"
+        confidence: high
+      - field: genre
+        value: short_story
+        confidence: high
+      - field: dateWritingStarted
+        value: "1885-03-29"
+        oldStyle: "1885-03-17"
+        evidenceRefs: [E14]
+        source: tolstoydigital-tei
+        confidence: high
+        approximate: true
+        note: "Received the anonymous Russian translation of Saillens' story from Chertkov 17 Mar 1885 (OS); reworking under way in the 17–18 Mar letter."
+      - field: dateFirstPublished
+        value: "1885"
+        evidenceRefs: [E14]
+        source: jubilee-edition
+        confidence: high
+        approximate: true
+        note: "Posrednik booklet; censorship approval 24 May 1885 (OS)."
+      - field: firstPublishedVenue
+        value: "Посредник (Sytin press), Moscow"
+        source: jubilee-edition
+        confidence: high
+      - field: firstPublishedVenueType
+        value: publisher
+        confidence: high
+      - field: publishedDuringLifetime
+        value: true
+        confidence: high
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        confidence: high
+      - field: bans
+        value: []
+        evidenceRefs: []
+        source: jubilee-edition
+        confidence: high
+        note: "Never banned — among the most widely circulated Posrednik titles (apparatus)."
+      - field: notes
+        value: >
+          Acknowledged adaptation: Tolstoy reworked an anonymous Russian
+          translation of Reuben Saillens' "Le père Martin" (1882); his 1888 and
+          1899 letters to Saillens call the misattribution «un plagiat
+          involontaire» and confirm the printed source-acknowledgment in Russian
+          editions.
+        evidenceRefs: [E34, E35]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: relatedWorks
+        value:
+          - { id: what-men-live-by, relationshipType: cycle }
+        confidence: high
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+  - recordPath: "website/src/works/fiction/short-stories/two-old-men/Two Old Men.md"
+    workId: two-old-men
+    action: create
+    fields:
+      - field: titleRu
+        value: "Два старика"
+        evidenceRefs: [E45]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: titleEn
+        value: "Two Old Men"
+        confidence: high
+      - field: mainCategory
+        value: Fiction
+        confidence: high
+      - field: subcategory
+        value: "Short Stories"
+        confidence: high
+      - field: genre
+        value: short_story
+        confidence: high
+      - field: dateWritingCompleted
+        value: "1885-06"
+        evidenceRefs: []
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+        note: "Apparatus: written before June 1885; sources = Shchegolyonok oral version + Kovalevsky 1871 + Daniil the Abbot."
+      - field: dateFirstPublished
+        value: "1885"
+        source: jubilee-edition
+        confidence: high
+        approximate: true
+        note: "Posrednik; text approved 4 Oct, cover 17 Oct 1885 (OS); illus. A. D. Kivshenko."
+      - field: firstPublishedVenue
+        value: "Посредник (Sytin press), Moscow"
+        confidence: high
+      - field: firstPublishedVenueType
+        value: publisher
+        confidence: high
+      - field: publishedDuringLifetime
+        value: true
+        confidence: high
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        confidence: high
+      - field: epigraph
+        value: "John IV:19–23 (the Samaritan woman — worship in spirit and in truth)"
+        evidenceRefs: []
+        source: tolstoydigital-tei
+        confidence: high
+      - field: bans
+        value: []
+        confidence: medium
+        note: "No ban recorded in the apparatus."
+      - field: relatedWorks
+        value:
+          - { id: what-men-live-by, relationshipType: cycle }
+        confidence: high
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+  - recordPath: "website/src/works/fiction/short-stories/how-much-land-does-a-man-need/How Much Land Does a Man Need?.md"
+    workId: how-much-land-does-a-man-need
+    action: fill
+    fields:
+      - field: publishedDuringLifetime
+        value: true
+        evidenceRefs: []
+        source: jubilee-edition
+        confidence: high
+        note: "CORRECTION — record currently says false; first published Русское богатство 1886."
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        source: jubilee-edition
+        confidence: high
+        note: "CORRECTION — record currently says false."
+      - field: dateWritingStarted
+        value: "1885-05"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+        note: "May–June 1885, in the same notebook cluster as «Зерно с куриное яйцо» and «Кающийся грешник»; the idea reaches back to Herodotus (IV) and the 1871 Bashkir steppe stay."
+      - field: dateWritingCompleted
+        value: "1885-06"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+      - field: dateFirstPublished
+        value: "1886-04"
+        source: jubilee-edition
+        confidence: high
+        approximate: true
+        note: "«Русское богатство», 1886; censor approval 5 Apr 1886 (OS); one phrase cut."
+      - field: firstPublishedVenue
+        value: "Русское богатство, 1886"
+        confidence: high
+      - field: firstPublishedVenueType
+        value: journal
+        confidence: high
+      - field: censoredVersionExists
+        value: true
+        confidence: medium
+        note: "One phrase cut by censorship at first publication (apparatus)."
+      - field: relatedWorks
+        value:
+          - { id: what-men-live-by, relationshipType: cycle }
+        confidence: high
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+  - recordPath: "website/src/works/fiction/short-stories/tale-of-ivan-the-fool/The Tale of Ivan the Fool.md"
+    workId: tale-of-ivan-the-fool
+    action: create
+    fields:
+      - field: titleRu
+        value: "Сказка об Иване-дураке и его двух братьях: Семене-воине и Тарасе-брюхане, и немой сестре Маланье, и о старом дьяволе и трех чертенятах"
+        evidenceRefs: [E48]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: titleEn
+        value: "The Tale of Ivan the Fool"
+        confidence: high
+      - field: mainCategory
+        value: Fiction
+        confidence: high
+      - field: subcategory
+        value: "Short Stories"
+        confidence: high
+      - field: genre
+        value: fairy_tale
+        confidence: medium
+        note: "Tolstoy's own genre word is «сказка»; check the controlled vocabulary — fall back to short_story if fairy_tale is not in the enum."
+      - field: dateWritingStarted
+        value: "1885-08"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+      - field: dateWritingCompleted
+        value: "1885-09"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+      - field: dateFirstPublished
+        value: "1886"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+        note: "Posrednik; censorship approval April 1886 (apparatus)."
+      - field: firstPublishedVenue
+        value: "Посредник (Sytin press), Moscow"
+        confidence: medium
+      - field: firstPublishedVenueType
+        value: publisher
+        confidence: medium
+      - field: publishedDuringLifetime
+        value: true
+        confidence: high
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        confidence: high
+      - field: bans
+        value:
+          - banningAuthority: "Moscow Censorship Committee"
+            authorityType: imperial-state
+            jurisdiction: "Russian Empire"
+            scope: confiscation
+            banDate: "1887-02"
+            banDateOldStyle: "1887-02"
+            banDateApproximate: true
+            banLiftedDate: "1906"
+            banLiftedDateApproximate: true
+            notes: "2nd edition (Feb 1887) arrested in the month of issue."
+          - banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати)"
+            authorityType: imperial-state
+            jurisdiction: "Russian Empire"
+            scope: complete-ban
+            banDate: "1887-10"
+            banDateOldStyle: "1887-10"
+            banDateApproximate: true
+            banLiftedDate: "1906"
+            banLiftedDateApproximate: true
+            notes: "Reprint ban Oct 1887; repeated 1892 and 1893; an 1892 order even banned street and market sales of earlier printings. The spiritual censor Archimandrite Tikhon's 1887 verdict survives in the apparatus (E31)."
+        evidenceRefs: [E31, E32]
+        source: jubilee-edition
+        confidence: high
+      - field: relatedWorks
+        value:
+          - { id: what-men-live-by, relationshipType: cycle }
+        confidence: high
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+  - recordPath: "website/src/works/fiction/short-stories/the-three-hermits/The Three Hermits.md"
+    workId: the-three-hermits
+    action: create
+    fields:
+      - field: titleRu
+        value: "Три старца"
+        evidenceRefs: [E50]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: titleEn
+        value: "The Three Hermits"
+        confidence: high
+      - field: mainCategory
+        value: Fiction
+        confidence: high
+      - field: subcategory
+        value: "Short Stories"
+        confidence: high
+      - field: genre
+        value: short_story
+        confidence: high
+      - field: dateWritingCompleted
+        value: "1885-06"
+        source: jubilee-edition
+        confidence: medium
+        approximate: true
+        note: "Apparatus: written June 1885; sources = Shchegolyonok oral version + the Augustine legend analogue."
+      - field: dateFirstPublished
+        value: "1886"
+        source: jubilee-edition
+        confidence: high
+        approximate: true
+      - field: firstPublishedVenue
+        value: "Нива, 1886, № 13"
+        source: jubilee-edition
+        confidence: high
+      - field: firstPublishedVenueType
+        value: journal
+        confidence: high
+      - field: publishedDuringLifetime
+        value: true
+        confidence: high
+      - field: publishedInRussiaDuringLifetime
+        value: true
+        confidence: high
+      - field: epigraph
+        value: "Matthew VI:7–8 (use not vain repetitions)"
+        evidenceRefs: [E49]
+        source: tolstoydigital-tei
+        confidence: high
+      - field: bans
+        value: []
+        confidence: medium
+        note: "No ban recorded; in Tolstoy's own 1910 top grade (E40)."
+      - field: relatedWorks
+        value:
+          - { id: what-men-live-by, relationshipType: cycle }
+        confidence: high
+      - field: identifiers.jubileeEdition.volumes
+        value: "25"
+        confidence: high
+
+coverage:
+  - { surface: "Genesis & composition (witness sweep, 1879–1887)", status: covered }
+  - { surface: "The programme texts (Речь о народных изданиях; Цветник preface)", status: covered }
+  - { surface: "Posrednik founding & operations (Chertkov letters)", status: covered }
+  - { surface: "Economics & distribution (pricing, print runs, lubok reform)", status: covered, note: "Letter-level terms covered; aggregate circulation figures rest on secondary sources (Brooks; GSE)." }
+  - { surface: "What the tales say (close-read of 6 keystones + set map)", status: covered }
+  - { surface: "Publication & censorship chronology", status: covered }
+  - { surface: "Redactions & textual history", status: partial, note: "Variant TEIs extracted, MSS counts recorded from the apparatus; variants not collated." }
+  - { surface: "Reception — Russian critics (thick journals)", status: partial, note: "Populist critique frame established; specific Mikhailovsky/Skabichevsky reviews unresolved (journal runs needed)." }
+  - { surface: "Reception — peasant readers", status: partial, note: "Circulation proves reach; Alchevskaya's «Что читать народу?» field evidence not accessible online — the strongest open thread." }
+  - { surface: "Reception — Church/Synod beyond censorship verdicts", status: partial }
+  - { surface: "Translation & international reach", status: partial, note: "Dole 1887 / Maude 1906 confirmed; per-tale first-translation dates partly unresolved." }
+  - { surface: "The What Is Art? arc (1897–98 letters + footnote)", status: covered }
+  - { surface: "The 1910 terminal self-verdict", status: covered }
+  - { surface: "Texts-for-pictures sub-genre (Scheffer, Bouguereau, Ge)", status: covered, note: "Light pass via apparatus + letters." }
+  - { surface: "Later folk tales (1903–06: Three Questions, Esarhaddon…)", status: not-covered, note: "Out of declared scope (Toms 34–35); «Ассирийский царь Ассархадон» appears in the 1910 letter (E40)." }
+  - { surface: "Visual record", status: partial, note: "Repin keystone + portraits secured; Posrednik covers and the Ge album not openly digitised — see visuals work-order." }
+
+contradictions:
+  - claim: >
+      What Is Art? (1898) consigns all of Tolstoy's own fiction to «дурное
+      искусство» except two 1872 Azbuka stories — by omission, the народные
+      рассказы included.
+    correction: >
+      The 24 Oct 1910 letter to Gorbunov-Posadov grades nine of the tales «очень
+      хорошие» among the Posrednik leaflets — the private editorial verdict
+      contradicts the public theoretical sweep. Both are primary; the tension is
+      the finding, not an error to resolve.
+    evidenceRef: E40
+
+notCovered:
+  - "The 1903–06 late folk tales (Toms 34–35) — a natural follow-up dive surface."
+  - "Alchevskaya's «Что читать народу?» peasant-reader responses to the tales (requires the printed volumes; Eklof 1986 and Tolstoy in Context ch. 5 as secondary channels)."
+  - "Specific thick-journal reviews 1885–87 (Mikhailovsky, Skabichevsky) — requires journal runs."
+  - "Robert C. Otto, Publishing for the People (1983 dissertation) — the fullest Posrednik institutional study; paywalled."
+  - "The Ge 12-drawing album's censorship file (v85_103 reports 10 of 12 passed; from a PSS footnote not carried into the extract)."
+  - "Posrednik catalogue numbers and the full non-Tolstoy list (Leskov, Garshin, Korolenko titles)."
+  - "The «Международный Посредник» multilingual project (v64_451) — planned, unrealised."
+
+needsReview:
+  - item: >
+      Pobedonostsev as instigator of the Feb 1887 arrests: asserted in the
+      commentary-mine digest but absent from the v25_665 apparatus extract (he
+      appears corpus-wide only in the Так что же нам делать apparatus). Verify
+      against the printed Tom 25 PDF or censorship-history scholarship before
+      the vault asserts instigation.
+    phase: extract
+    why: "agent claim not anchored in the extract bytes"
+  - item: >
+      Print-run arithmetic for the 1885 Sytin transfer (E18): 900 rubles at 1½
+      kopecks/copy implies 60,000 copies, not the 600,000 the letter-sweep stub
+      reported. Confirm the count (and whether the PSS note gives one) before
+      citing a figure.
+    phase: sweep
+    why: "order-of-magnitude discrepancy between agent note and letter arithmetic"
+  - item: >
+      The 1910 grading letter (E40) ranks only the leaflets Gorbunov-Posadov
+      happened to send — «Чем люди живы» is absent from the list entirely. Do
+      not read absence as demotion, and note several top-tier titles («Большая
+      медведица», «Камни», «Сестры») are later Posrednik leaflets, not Tom 25
+      tales.
+    phase: synthesize
+    why: "guard against over-reading the terminal ranking"
+  - item: >
+      «Сказка об Иване-дураке» first-publication venue: the apparatus digest
+      says Posrednik (approval Apr 1886); some traditions cite part 12 of the
+      1886 «Сочинения». Pin the venue before the works record is created.
+    phase: scholarship
+    why: "two candidate first-publication venues"
+  - item: >
+      genre value `fairy_tale` proposed for Ivan the Fool — verify against the
+      works schema's controlled genre vocabulary before applying (fallback:
+      short_story).
+    phase: synthesize
+    why: "possible enum gap"
+  - item: >
+      Multiple workRecords in one dossier (six) — sanctioned by the parked plan
+      for this dive (theme-dive whose keystones get records), but the dossier
+      schema documents a single workRecord block; ingestion should apply each
+      proposal as if it were a single-work dive's block.
+    phase: synthesize
+    why: "schema-shape deviation, deliberate"
+  - item: >
+      First English translation dates for Where Love Is, Two Old Men, Ivan the
+      Fool (Dole/Crowell window 1887–1891 vs Maude 1906) — partly unresolved.
+    phase: scholarship
+    why: "bibliographic gap"
+  - item: >
+      Tale keystone quotes were located by the deep-read subagent; all passed
+      grep spot-checks, but «Два старика»'s «за морем Христа искать» line occurs
+      in Elisei's deliberation paragraph — confirm the index prose attributes it
+      to the right scene.
+    phase: extract
+    why: "attribution nuance inside the tale"
+
+archivesConsulted:
+  - "tolstoydigital TEI corpus (texts/works, texts/letters, texts/diaries, texts_front/comments)"
+  - "Jubilee Edition PDFs (vol85 = PSS Tom 25; vol86 = Tom 26)"
+  - "Wikimedia Commons (API search + Special:FilePath downloads)"
+  - "tolstoy.ru mirror (journalism guide)"
+  - "RGB / goskatalog.ru / State Tolstoy Museum (pointers only — covers work-order)"
+
+references:
+  primary:
+    - "PSS Tom 25 (tales, Речь о народных изданиях, printed variants; apparatus pp. 665–890) — tolstoydigital TEI + jubilee-edition/vol85/vol85.pdf"
+    - "PSS Tom 26 (Предисловие к сборнику «Цветник», pp. 307–309) — tolstoydigital TEI"
+    - "PSS Toms 49, 53 (diaries 1881–1897)"
+    - "PSS Toms 62, 63, 64, 72, 82, 83, 84, 85, 86, 88, 90 (letters 1879–1910)"
+  background:
+    - "Gary R. Jahn, 'Tolstoy as a Writer of Popular Literature', in D. T. Orwin (ed.), The Cambridge Companion to Tolstoy, CUP 2002, pp. 111–126"
+    - "Jeffrey Brooks, When Russia Learned to Read: Literacy and Popular Literature, 1861–1917, Princeton UP 1985"
+    - "R. F. Christian, Tolstoy: A Critical Introduction, CUP 1969"
+    - "Hugh McLean, In Quest of Tolstoy, Academic Studies Press 2008; introduction to Master and Man and Other Stories, Penguin 2005"
+    - "A. N. Wilson, Tolstoy: A Biography, Norton 1988"
+    - "Rosamund Bartlett, Tolstoy: A Russian Life, Profile 2010"
+    - "Robert C. Otto, Publishing for the People: The Firm Posrednik 1885–1905, PhD diss., U. Wisconsin–Madison 1983 (ProQuest 8315019)"
+    - "Isabel F. Hapgood, 'Count Tolstoi and the Public Censor', 1887 (marxists.org)"
+    - "Boris Sorokin, Tolstoy in Prerevolutionary Russian Criticism, Ohio State UP 1979"
+    - "Ben Eklof, Russian Peasant Schools, UC Press 1986"
+    - "Gary R. Jahn, 'The Aesthetic Theory of Leo Tolstoy's What Is Art?', JAAC 34 (1975), 59–65"
+    - "'Posrednik Publishing House', Great Soviet Encyclopedia (via thefreedictionary.com)"
+    - "Wikipedia: What Is Art?; What Men Live By; The Three Hermits; The Empty Drum; Vladimir Chertkov; Khrystyna Alchevska; Nikolai Leskov; The Power of Darkness"
+    - "yeyebook.com, 'Where Love Is, God Is — Saillens adaptation account'"

@@ -1,0 +1,784 @@
+topic:
+  slug: 1903-folk-tales
+  title: "The народные рассказы of 1903 — Tolstoy's folk tales after Kishinev"
+  question: >-
+    Tolstoy's return to the народный рассказ form in 1903, sixteen years after the Posrednik
+    cycle: the genesis (the Kishinev pogrom and Sholom Aleichem's relief almanac), the moral core
+    (the unity of all life — «это ты» / tat tvam asi), the shift of vehicle, the censorship of the
+    anticlerical legend, and the place of the five tales in the What Is Art? arc opened by the
+    parent dive on the 1881–87 tales.
+  date: "2026-06-11"
+  period: "1903 (with the legend's genesis in Nov 1902)"
+  corpusSurface: "PSS Tom 34 (the five tales + their per-tale «История писания» commentary in texts_front/comments); Tom 54 (1903 diary); Tom 74 (1903 letters — the five to Sholom Aleichem + the Kishinev-mayor letter); Tom 88 (Chertkov letters, via commentary)"
+  dateRange: "1902-11 – 1903-12 (composition + first publication)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE — flat citation ledger. Every quoteRu is verbatim in its `extract`.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+  # --- Genesis: Kishinev and the commission ---
+  - id: E01
+    genre: letter
+    pssTom: 74
+    pages: "111"
+    date: "1903-05 (early)"
+    addressee: "Kishinev city mayor (collective letter)"
+    extract: extracts/v74_134_Kishinevskomugorodskomugolove.txt
+    quoteRu: 'глубоко потрясенные совершенным недавно в городе Кишиневе злодеянием, мы выражаем наше болезненное сострадание невинным жертвам зверства толпы, наш ужас перед этими зверствами русских людей, невыразимое омерзение и отвращение к подготовителям и подстрекателям толпы и безмерное негодование против попустителей этого ужасного дела.'
+    quoteEn: '(working English) deeply shaken by the atrocity recently committed in the town of Kishinev, we express our anguished compassion for the innocent victims of the mob''s savagery, our horror at these savageries of Russian people, our inexpressible loathing and revulsion at the instigators and inciters of the mob, and our boundless indignation at those who allowed this terrible deed.'
+    significance: "Tolstoy's public condemnation of the April 1903 pogrom — the collective protest letter signed «Лев Толстой [и другие подписи]». The civic act that precedes the literary one."
+    facsimile: null
+  - id: E02
+    genre: letter
+    pssTom: 74
+    pages: "118–119"
+    date: "1903-05-06"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_144_S_H_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'Я очень рад буду содействовать вашему сборнику и постараюсь написать что-либо соответствующее обстоятельствам.'
+    quoteEn: '(working English) I shall be very glad to contribute to your anthology and will try to write something suited to the circumstances.'
+    significance: "Tolstoy agrees to Sholom Aleichem's request for the Jewish relief almanac — the commission that produces the three tales."
+    facsimile: null
+  - id: E03
+    genre: letter
+    pssTom: 74
+    pages: "118–119"
+    date: "1903-05-06"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_144_S_H_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'виновник не только кишиневских ужасов, но всего того разлада, который поселяется в некоторой малой части — и не народной — русского населения[…]одно правительство. К сожалению, этого-то я не могу сказать в русском легальном издании.'
+    quoteEn: '(working English) the culprit not only of the Kishinev horrors but of all that discord which settles into a certain small — and not popular — part of the Russian population … is the government alone. Unfortunately, this is just what I cannot say in a legal Russian publication.'
+    significance: "The political core, and the reason the answer must come as coded legend, not statement: Tolstoy blames the government for the pogrom but cannot say so in a legal Russian outlet. The censorship constraint that shapes the form."
+    facsimile: null
+  - id: E04
+    genre: diary
+    pssTom: 54
+    pages: "169–170"
+    date: "1903-04-29 (OS)"
+    addressee: null
+    extract: extracts/v54_169_170_1903_04_29.txt
+    quoteRu: 'Написал письмо о Кишиневском событии и телеграмму.'
+    quoteEn: '(working English) Wrote a letter about the Kishinev event, and a telegram.'
+    significance: "The diary marks the civic response in late April 1903, before the tales are conceived."
+    facsimile: null
+
+  # --- The writing ---
+  - id: E05
+    genre: diary
+    pssTom: 54
+    pages: "187–188"
+    date: "1903-07-21 (OS)"
+    addressee: null
+    extract: extracts/v54_187_188_1903_07_21.txt
+    quoteRu: 'Пытался написать сказку, но не пошло.'
+    quoteEn: '(working English) Tried to write a tale, but it would not come.'
+    significance: "The first dated trace of work on the trio (per the PSS commentary, this is the attempt at «Асархадон»). The folk-tale form does not come easily after sixteen years."
+    facsimile: null
+  - id: E06
+    genre: diary
+    pssTom: 54
+    pages: "188"
+    date: "1903-07-25 (OS)"
+    addressee: null
+    extract: extracts/v54_188_188_1903_07_25.txt
+    quoteRu: 'Написал три сказки. Еще плохо, но может быть порядочно.'
+    quoteEn: '(working English) Wrote three tales. Still poor, but perhaps it may turn out decent.'
+    significance: "GENESIS DATE — the three Kishinev tales first exist on paper, with the characteristic self-deprecation. The keystone of the composition record."
+    facsimile: null
+  - id: E07
+    genre: diary
+    pssTom: 54
+    pages: "189"
+    date: "1903-08-09 (OS)"
+    addressee: null
+    extract: extracts/v54_189_189_1903_08_09.txt
+    quoteRu: 'Сказки кончил.'
+    quoteEn: '(working English) Finished the tales.'
+    significance: "Completion (followed by further revision and the wavering count — «не три, a две» on 20 Aug — before the third tale was restored to the set)."
+    facsimile: null
+  - id: E08
+    genre: commentary
+    pssTom: 34
+    pages: "554–556"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_554_556_Tri_skazki_Assirijskij_tsar_Asarhadon_Tr.txt
+    quoteRu: '«Три сказки» были написаны Толстым летом 1903 г. Сказки писались параллельно с рассказом «После бала».'
+    quoteEn: '(working English) The "Three Tales" were written by Tolstoy in the summer of 1903. They were written in parallel with the story "After the Ball".'
+    significance: "The PSS editorial framing: the three Kishinev tales are a coherent unit («Три сказки»), written together summer 1903."
+    facsimile: null
+
+  # --- The dispatch (the people network) ---
+  - id: E09
+    genre: letter
+    pssTom: 74
+    pages: "165–166"
+    date: "1903-08-20"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_217_S_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'для перевода их на жаргон и напечатания в еврейском Сборнике, издаваемом в пользу пострадавших в Кишиневе евреев.'
+    quoteEn: '(working English) for translation into Yiddish ["the jargon"] and printing in the Jewish anthology published in aid of the Jews who suffered in Kishinev.'
+    significance: "Sends the first two tales (Esarhaddon + Three Questions). The tales go out first in Yiddish, to a non-Russian readership."
+    facsimile: null
+  - id: E10
+    genre: letter
+    pssTom: 74
+    pages: "166"
+    date: "1903-08-22"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_219_S_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'Я послал вам две сказки, отложив приготовленную для вашего Сборника третью[…]из боязни, что она будет запрещена.'
+    quoteEn: '(working English) I sent you two tales, holding back the third I had prepared for your anthology … out of fear that it would be banned.'
+    significance: "The third tale (Work, Death and Sickness) was held back, then sent — censorship anxiety operating inside the gift itself."
+    facsimile: null
+  - id: E11
+    genre: letter
+    pssTom: 74
+    pages: "167–168"
+    date: "1903-08-25"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_222_S_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'Мысль сказки Царь Ассархадон принадлежит не мне, а взята мною из сказки неизвестного автора, напечатанной в немецком журнале Theosophischer Wegweiser'
+    quoteEn: '(working English) The idea of the tale "King Esarhaddon" is not mine but taken by me from a tale by an unknown author, printed in the German journal Theosophischer Wegweiser.'
+    significance: "Tolstoy's own attribution of the Esarhaddon kernel to the German theosophical parable «Das bist du» — the same source as «Это ты»."
+    facsimile: null
+  - id: E12
+    genre: letter
+    pssTom: 74
+    pages: "167–168"
+    date: "1903-08-25"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_222_S_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'Сказка Das bist du так хороша, что желательно бы было познакомить с нею как можно больше людей, и потому я перевел ее и посылаю вам для перевода на жаргон и напечатание в Сборнике.'
+    quoteEn: '(working English) The tale "Das bist du" is so good that it would be desirable to acquaint as many people as possible with it, and so I have translated it and am sending it to you for translation into Yiddish and printing in the anthology.'
+    significance: "Corrects the secondary record: «Это ты» WAS offered to Sholom Aleichem's almanac (in Tolstoy's own translation) — not a separate later work. A fourth contribution alongside the trio."
+    facsimile: null
+  - id: E13
+    genre: letter
+    pssTom: 74
+    pages: "182"
+    date: "1903-09-07"
+    addressee: "S. N. Rabinovich (Sholom Aleichem)"
+    extract: extracts/v74_241_C_N_RabinovichuSHolom_Alejxemu.txt
+    quoteRu: 'я не могу отступить от раз навсегда принятого мною правила предоставлять всем права печатания моих писаний. Отдаю я в пользу пострадавших поэтому только то, что могу отдать — право первого печатания.'
+    quoteEn: '(working English) I cannot depart from the rule I once and for all adopted, of granting everyone the right to print my writings. I therefore give to the sufferers only what I can give — the right of first printing.'
+    significance: "The copyright renunciation of 1891 in action: the relief fund receives only first-printing rights. Ties the cluster to the renunciation and the Posrednik economics of the parent dive."
+    facsimile: null
+
+  # --- What the tales say (keystone passages) ---
+  - id: E14
+    genre: work
+    pssTom: 34
+    pages: "126–130"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_126_130_Assirijskij_tsar_Asarhadon.txt
+    quoteRu: '— Да ведь Лаилиэ это ты, — сказал старец.'
+    quoteEn: '(working English) "But Lailie is you," said the old man.'
+    significance: "Esarhaddon — the hinge sentence. The king's victim IS the king; the same kernel («это ты») that names the twin tale."
+    facsimile: extracts/v34_126_Asarhadon_p126_facsimile-166.png
+  - id: E15
+    genre: work
+    pssTom: 34
+    pages: "126–130"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_126_130_Assirijskij_tsar_Asarhadon.txt
+    quoteRu: 'Жизнь одна во всем, и ты проявляешь в себе только часть этой одной жизни.'
+    quoteEn: '(working English) Life is one in all things, and you manifest in yourself only a part of this one life.'
+    significance: "The старец's teaching — the unity-of-life doctrine stated in its purest narrative form. The metaphysical centre of the whole cluster."
+    facsimile: null
+  - id: E16
+    genre: work
+    pssTom: 34
+    pages: "138–140"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_138_140_Eto_ty.txt
+    quoteRu: 'Все люди — братья, то есть все люди по существу своему один и тот же человек.'
+    quoteEn: '(working English) All people are brothers — that is, all people are in essence one and the same person.'
+    significance: "«Это ты» — the sage's formulation. The near-translation of «Das bist du» states the doctrine as bald proposition where Esarhaddon dramatises it."
+    facsimile: null
+  - id: E17
+    genre: work
+    pssTom: 34
+    pages: "138–140"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_138_140_Eto_ty.txt
+    quoteRu: 'Это та истина, которую я хотел внушить тебе и которая выражается словами: это ты.'
+    quoteEn: '(working English) This is the truth I wished to instil in you, and which is expressed in the words: this is you.'
+    significance: "The title line — the tale names itself on the tat tvam asi formula."
+    facsimile: null
+  - id: E18
+    genre: work
+    pssTom: 34
+    pages: "131–133"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_131_133_Trud_smert_i_bolezn.txt
+    quoteRu: 'труд не должен быть пугалом для одних и принудительной каторгой для других, а должен быть общим радостным делом, соединяющим людей'
+    quoteEn: '(working English) labour should not be a bugbear for some and forced penal toil for others, but a common joyful undertaking that unites people.'
+    significance: "Work, Death and Sickness — the resolution. God's three gifts were all meant to unite; the closing recognises the unity that separateness had subverted."
+    facsimile: null
+  - id: E19
+    genre: work
+    pssTom: 34
+    pages: "134–137"
+    date: "1903"
+    addressee: null
+    extract: extracts/v34_134_137_Tri_voprosa.txt
+    quoteRu: 'самое важное дело — ему добро сделать, потому что только для этого послан человек в жизнь.'
+    quoteEn: '(working English) the most important task is to do him good, because that alone is what a person is sent into life for.'
+    significance: "The Three Questions — the hermit's answer. Love-in-the-present resolves all three questions; the most-quoted line of the cluster."
+    facsimile: null
+  - id: E20
+    genre: work
+    pssTom: 34
+    pages: "100–115"
+    date: "1902–1903"
+    addressee: null
+    extract: extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    quoteRu: 'Так переделал, что люди верят не в его ученье, а в мое, которое они называют его именем.'
+    quoteEn: '(working English) I reworked it so that people believe not in his teaching but in mine, which they call by his name.'
+    significance: "The Destruction of Hell — the devil-in-the-cape on how the Church rebuilt hell after Christ destroyed it: the faith is reworked and kept under Christ's name. The thesis of the satire."
+    facsimile: null
+  - id: E21
+    genre: work
+    pssTom: 34
+    pages: "100–115"
+    date: "1902–1903"
+    addressee: null
+    extract: extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    quoteRu: 'Дело шло хорошо, но я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь.'
+    quoteEn: '(working English) Things were going well, but I feared they might notice the too-obvious deception — and so I invented the Church.'
+    significance: "The devil names the Church as his own invention. The line that made the legend unprintable in Russia until 1917."
+    facsimile: null
+
+  # --- Genesis of the legend and the theosophical source ---
+  - id: E22
+    genre: commentary
+    pssTom: 34
+    pages: "546–547"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_546_547_Razrushenie_ada_i_vosstanovlenie_ego_Ist.txt
+    quoteRu: 'Легенда «Разрушение ада и восстановление его» была задумана Толстым как «иллюстрация» к статье «Обращение к духовенству». Источником легенды послужила одна из легенд, рассказанных Толстому в 1879 г. В. П. Щеголенком'
+    quoteEn: '(working English) The legend "The Destruction of Hell and Its Restoration" was conceived by Tolstoy as an "illustration" to the article "Appeal to the Clergy". The source of the legend was one of the legends told to Tolstoy in 1879 by V. P. Shchegolyonok.'
+    significance: "Two cross-links to the parent dive: the legend's source is the skazitel' Shchegolyonok (who supplied the 1880s tales), and it was conceived as the companion-illustration to «Обращение к духовенству». Its roots predate the 1901 excommunication by twenty years."
+    facsimile: null
+  - id: E23
+    genre: commentary
+    pssTom: 34
+    pages: "546–547"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_546_547_Razrushenie_ada_i_vosstanovlenie_ego_Ist.txt
+    quoteRu: 'В России легенда «Разрушение ада и восстановление его» впервые появилась только в 1917 г.'
+    quoteEn: '(working English) In Russia the legend "The Destruction of Hell and Its Restoration" first appeared only in 1917.'
+    significance: "First published abroad in 1903 («Свободное слово», England); banned in Russia in 1906, 1910 and 1913; legal in Russia only after 1917. The one tale of the cluster not printed in Russia in Tolstoy's lifetime."
+    facsimile: null
+  - id: E24
+    genre: commentary
+    pssTom: 34
+    pages: "561"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_561_561_Eto_ty_Istorija_pisanija.txt
+    quoteRu: 'Эта же сказка дала Толстому повод к написанию «Ассирийского царя Асархадона»'
+    quoteEn: '(working English) This same tale gave Tolstoy the occasion for writing "Esarhaddon, King of Assyria".'
+    significance: "«Это ты» (a near word-for-word translation of «Das bist du», Theosophischer Wegweiser 1903 №5) and «Асархадон» are twins from one theosophical root — the close translation and the original elaboration."
+    facsimile: null
+  - id: E25
+    genre: commentary
+    pssTom: 34
+    pages: "554–556"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_554_556_Tri_skazki_Assirijskij_tsar_Asarhadon_Tr.txt
+    quoteRu: '«Ассирийский царь Асархадон», «Труд, смерть и болезнь» и «Три вопроса», под общим заглавием «Три сказки», появились впервые (в переводе на идиш) в еврейском сборнике «Гилф. Литературный сборник с иллюстрациями», издание «Фолксбилдунг», Варшава, издательство «Тушия»'
+    quoteEn: '(working English) "Esarhaddon, King of Assyria", "Work, Death and Sickness" and "The Three Questions", under the common title "Three Tales", first appeared (in Yiddish translation) in the Jewish anthology "Hilf: a Literary Collection with Illustrations", a Folksbildung edition, Warsaw, the Tushiya publishing house.'
+    significance: "First publication of the trio — in Yiddish, in the «Гилф» relief almanac. (The PSS-given censorship date — 4 Aug 1903 — precedes Tolstoy's own dispatch of the tales on 20–25 Aug; an internal inconsistency, see needsReview.)"
+    facsimile: null
+  - id: E26
+    genre: commentary
+    pssTom: 34
+    pages: "554–556"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_554_556_Tri_skazki_Assirijskij_tsar_Asarhadon_Tr.txt
+    quoteRu: 'На русском языке сказки «Ассирийский царь Асархадон» и «Три вопроса» («Труд, смерть и болезнь» была запрещена цензурой) появились впервые в издании'
+    quoteEn: '(working English) In Russian, the tales "Esarhaddon, King of Assyria" and "The Three Questions" ("Work, Death and Sickness" was banned by the censorship) first appeared in the edition…'
+    significance: "Asymmetric Russian reception: Esarhaddon + Three Questions printed in Russia 1903 (Posrednik, with 9 illustrations by N. I. Zhivoy); Work, Death and Sickness banned, first Russian printing 1906."
+    facsimile: null
+
+  # --- The metaphysical substrate (the 1903 diary) ---
+  - id: E27
+    genre: diary
+    pssTom: 54
+    pages: "154"
+    date: "1903-01-06 (OS)"
+    addressee: null
+    extract: extracts/v54_154_154_1903_01_06.txt
+    quoteRu: 'Какое счастие, что воспоминание исчезает со смертью и остается одно сознание'
+    quoteEn: '(working English) What happiness, that memory disappears with death and consciousness alone remains.'
+    significance: "Death-as-awakening — the world-picture of Work, Death and Sickness and of Esarhaddon's immersion, in the diary at the year's opening."
+    facsimile: null
+  - id: E28
+    genre: diary
+    pssTom: 54
+    pages: "162–163"
+    date: "1903-03-13 (OS)"
+    addressee: null
+    extract: extracts/v54_162_163_1903_03_13.txt
+    quoteRu: 'мы, люди, проделываем в своем шару окошечки, через которые смотрим на Бога, — кто сбоку, кто снизу, кто сверху, но видим все одно и то же'
+    quoteEn: '(working English) we people make little windows in our sphere, through which we look at God — one from the side, one from below, one from above — but we all see one and the same thing.'
+    significance: "The окошечко (little-window) parable of religious tolerance — the same all-religions-see-one-God idea that the anticlerical legend turns into satire and the tales into ethics."
+    facsimile: null
+  - id: E29
+    genre: diary
+    pssTom: 54
+    pages: "190–191"
+    date: "1903-09-03 (OS)"
+    addressee: null
+    extract: extracts/v54_190_191_1903_09_03.txt
+    quoteRu: 'я ошибаюсь не тогда, когда называю одного вместо другого, а тогда, когда считаю каждого отдельным существом.'
+    quoteEn: '(working English) I err not when I name one person instead of another, but when I count each as a separate being.'
+    significance: "The tat tvam asi insight in its sharpest diary form, written between the tales and their dispatch: the error is separateness itself. The private statement the tales encode for the public."
+    facsimile: null
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a PLAN for the separate wiki-ingestion step).
+# ingestionPriority: 1 central · 2 supporting · 3 peripheral. dependsOn = write first.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "Народные рассказы (Tolstoy's folk tales)"
+    wikiType: concept
+    wikilinkTarget: "Narodnye rasskazy"
+    vaultStatus: missing
+    role: "The genre the dive is about, in its 1903 phase — the moral folk tale revived for the Kishinev almanac. Proposed already by the parent dive stories-for-the-people; extend with the 1903 cluster."
+    sources: []
+    evidenceRefs: [E06, E08, E25]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Sholom Aleichem (Solomon N. Rabinovich)"
+    wikiType: person
+    wikilinkTarget: "Sholom Aleichem"
+    vaultStatus: missing
+    role: "Yiddish writer (1859–1916); editor of the «Гилф»/«Hilf» relief almanac; commissioned and translated the three tales. The dive's principal new person."
+    sources: []
+    evidenceRefs: [E02, E03, E09, E10, E11, E12, E13]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Kishinev pogrom (April 1903)"
+    wikiType: event
+    wikilinkTarget: "Kishinev pogrom"
+    vaultStatus: missing
+    role: "The anti-Jewish pogrom of 6–7 April 1903 (OS) in Kishinev — the occasion of the trio. Tolstoy condemned it publicly and blamed the government privately."
+    sources: []
+    evidenceRefs: [E01, E03, E04, E09]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Unity of life (tat tvam asi / «это ты»)"
+    wikiType: concept
+    wikilinkTarget: "Unity of life"
+    vaultStatus: missing
+    role: "The doctrine the cluster dramatises — the oneness of all living beings, that harming another is harming oneself. Tolstoy's 1903 metaphysics, mediated via Vedanta and the Theosophischer Wegweiser."
+    sources: []
+    evidenceRefs: [E14, E15, E16, E17, E24, E29]
+    ingestionPriority: 2
+    dependsOn: ["Народные рассказы (Tolstoy's folk tales)"]
+  - name: "Посредник (Posrednik publishing house)"
+    wikiType: institution
+    wikilinkTarget: "Posrednik"
+    vaultStatus: missing
+    role: "The cheap-editions publisher (co-founded by Tolstoy/Chertkov, 1884) that issued the Russian first editions of the trio (1903–06). Proposed by the parent dive; extend with the 1903 editions."
+    sources: []
+    evidenceRefs: [E26]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Tolstoy's closest disciple; published the legend and the trio abroad through «Свободное слово» (England); disputed the word «христианское» in the devil's mouth (Tolstoy refused to change it). Extend the existing page."
+    sources: []
+    evidenceRefs: [E22, E23]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vasily Shchegolyonok"
+    wikiType: person
+    wikilinkTarget: "Vasily Shchegolyonok"
+    vaultStatus: missing
+    role: "The skazitel' (folk reciter) who told Tolstoy the source legend of «Разрушение ада» in 1879. Proposed by the parent dive (which sourced his photo + Repin portrait); extend."
+    sources: []
+    evidenceRefs: [E22]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Theosophischer Wegweiser"
+    wikiType: institution
+    wikilinkTarget: "Theosophischer Wegweiser"
+    vaultStatus: missing
+    role: "German theosophical journal (Leipzig); its 1903 №5 carried the anonymous parable «Das bist du», the source of both «Это ты» and «Асархадон». A copy survived in the Yasnaya Polyana library."
+    sources: []
+    evidenceRefs: [E11, E24]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Nikolai Leskov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Leskov"
+    vaultStatus: missing
+    role: "Novelist; wrote «Час воли божией» (1890) on the Three Questions subject Tolstoy gave him; Tolstoy disliked the result. Proposed by the parent dive; extend."
+    sources: []
+    evidenceRefs: [E11]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Alexander Goldenweiser (A. B. Goldenweiser)"
+    wikiType: person
+    wikilinkTarget: "Alexander Goldenweiser"
+    vaultStatus: missing
+    role: "Pianist and intimate of the household; his memoir «Вблизи Толстого» is the key 1903 witness — recorded Tolstoy's account of the tales, the Esarhaddon source, the swan-legend behind Work Death and Sickness, and the «tat tvam asi» plan for «Это ты»."
+    sources: []
+    evidenceRefs: [E24]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Pavel Boulanger (P. A. Boulanger)"
+    wikiType: person
+    wikilinkTarget: "Pavel Boulanger"
+    vaultStatus: missing
+    role: "Close associate; wrote to Sholom Aleichem on Tolstoy's behalf about the Russian editions and the copyright terms; helped compile the Круг чтения aphorisms."
+    sources: []
+    evidenceRefs: [E13]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "«Обращение к духовенству» (Appeal to the Clergy)"
+    wikiType: concept
+    wikilinkTarget: "Appeal to the Clergy"
+    vaultStatus: missing
+    role: "Tolstoy's 1902 anticlerical treatise; «Разрушение ада» was conceived as its companion-illustration. Cross-reference, not a tale-record of this dive."
+    sources: []
+    evidenceRefs: [E22]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — see extracts/_visuals-sweep.md for full provenance. visuals/ is git-ignored.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: asarhadon-p126-facsimile
+    type: facsimile
+    subject: "Opening page of «Ассирийский царь Асархадон» (printed p.126), with the «Лаилиэ это ты» exchange"
+    relatedEntity: "Народные рассказы (Tolstoy's folk tales)"
+    relatedEvidence: [E14]
+    holding: "PSS Tom 34 = jubilee-edition/vol03/vol03.pdf, pdf p.166 (printed p.126)"
+    archiveId: "PSS т. 34, с. 126"
+    access: local
+    rights: "PD (Tolstoy's own text)"
+    licence: PD
+    usable: yes
+    url: null
+    localPath: extracts/v34_126_Asarhadon_p126_facsimile-166.png
+    note: "Rendered with pdftoppm @ 220 dpi. Committed in extracts/ (PD facsimile)."
+  - id: sholem-aleichem-portrait-1907
+    type: photograph
+    subject: "Sholom Aleichem (S. N. Rabinovich), portrait, 1907"
+    relatedEntity: "Sholom Aleichem (Solomon N. Rabinovich)"
+    relatedEvidence: [E02, E09]
+    holding: "Wikimedia Commons (File:Sholem_Aleichem_1907.jpg / File:SholemAleichem.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Sholem_Aleichem_1907.jpg"
+    localPath: visuals/commons-sholem-aleichem-1907b.jpg
+    note: "Two sizes downloaded; prefer the 296 KB version for print. No 1903-dated SA photo on Commons (these are 1907)."
+  - id: tolstoy-1903-photo
+    type: photograph
+    subject: "Leo Tolstoy, 1903 (the composition year)"
+    relatedEntity: "Народные рассказы (Tolstoy's folk tales)"
+    relatedEvidence: [E06]
+    holding: "Wikimedia Commons (File:Lev_Tolstoy_photo.jpg)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Lev_Tolstoy_photo.jpg"
+    localPath: visuals/commons-tolstoy-1903-photo.jpg
+    note: "Dated 1903 in Commons metadata; cropped head version also cached."
+  - id: kishinev-pogrom-sefer-torah
+    type: photograph
+    subject: "Sefer Torah funeral procession after the Kishinev pogrom, April 1903"
+    relatedEntity: "Kishinev pogrom (April 1903)"
+    relatedEvidence: [E01]
+    holding: "Wikimedia Commons (File:After_Kishinyov_pogrom.jpg)"
+    archiveId: "lechaim.ru/ARHIV/104"
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:After_Kishinyov_pogrom.jpg"
+    localPath: visuals/commons-kishinev-pogrom-sefer-torah.jpg
+    note: "SENSITIVE — aftermath of violence; use with contextual caption. Two further street-aftermath scenes also cached (commons-kishinev-pogrom-1903-1/2.jpg)."
+  - id: shchegolyonok-cross-ref
+    type: portrait
+    subject: "V. P. Shchegolyonok (photo 1908 + Repin portrait)"
+    relatedEntity: "Vasily Shchegolyonok"
+    relatedEvidence: [E22]
+    holding: "Already sourced in the parent dive (docs/research/stories-for-the-people/visuals/)"
+    archiveId: null
+    access: open
+    rights: PD
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Schegolenok_VP.jpg"
+    localPath: null
+    note: "CROSS-REFERENCE — do not re-fetch; reuse the parent dive's commons-shchegolonok-photo-1908.jpg + commons-shchegolonok-by-repin-portrait.jpg for the «Разрушение ада» genesis."
+  - id: hilf-almanac-warsaw-1903
+    type: document
+    subject: "Cover / title page of the «Гилф»/«Hilf» relief almanac (Warsaw, ed. Sholom Aleichem)"
+    relatedEntity: "Sholom Aleichem (Solomon N. Rabinovich)"
+    relatedEvidence: [E25]
+    holding: "Not openly digitised"
+    archiveId: null
+    access: request
+    rights: "PD (almanac 1903/04; SA d. 1916)"
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — request from YIVO (New York), Center for Jewish History, or the National Library of Israel (Yiddish periodicals). Search «הילף» / «Hilf: Zamlbukh». No open scan found 2026-06-11."
+  - id: zhivoy-posrednik-1903-illustrations
+    type: illustration
+    subject: "9 illustrations by N. I. Zhivoy for the 1903 Posrednik edition of «Асархадон» / «Три вопроса»"
+    relatedEntity: "Посредник (Posrednik publishing house)"
+    relatedEvidence: [E26]
+    holding: "Not openly digitised"
+    archiveId: null
+    access: request
+    rights: "PD (1903)"
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — request from RSL (the Posrednik archive) / RGALI. NB the PSS spelling is «Живого» = N. I. Zhivoy, not Zhivago."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Mainstream = contrast, not baseline.
+# Full sweep + sources: extracts/_scholarship.md.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    The 1903 tales are almost never the object of a study; they surface as support material inside
+    discussions of Tolstoy's pogrom response, his nonviolence, or his anticlericalism. The dominant
+    English container is Aylmer Maude's 1906 preface to Twenty-Three Tales, which classifies the trio
+    from the start as occasioned charity texts ("stories Tolstoy contributed in aid of the Jews")
+    rather than independent works of art. «Это ты»/«Асархадон»'s descent from the Theosophischer
+    Wegweiser «Das bist du», the Leskov relay behind «Три вопроса», and «Разрушение ада» as a literary
+    object are essentially untreated in English scholarship; the censorship arc (banned 1906/1910/1913,
+    Russia 1917) appears in no English article found. The received Kishinev account (Popoff 2013; the
+    standard biographies) stresses Tolstoy's active engagement but underemphasises the censorship
+    constraint he himself named — that he could not say in legal Russian print what he told Sholom
+    Aleichem. Schefski (1982, via Ivry 2014) notes the standing tension that Tolstoy, even here, engaged
+    Jews non-fictionally and never inhabited a Jewish character in his fiction.
+  triangulation:
+    - evidenceRef: E25
+      conventionalView: "The three tales are 'aid literature' — charitable gestures classified by their occasion (Maude 1906; Popoff 2013)."
+      relation: complicates
+      source: "Maude, A. 1906, preface to Twenty-Three Tales; Popoff, A. 2013, 'Tolstoy and Anti-Semitism'."
+    - evidenceRef: E24
+      conventionalView: "The «Das bist du» → «Это ты»/«Асархадон» source chain is noted as a fact but given no literary-critical reading in English scholarship."
+      relation: extends
+      source: "del Olmo 2023 (IPOA, Barcelona, partial); Theosophischer Wegweiser V/5 1903."
+    - evidenceRef: E11
+      conventionalView: "The Leskov relay (1887 «Цветник» sketch → «Час воли божией» 1890 → 1903) is treated as a biographical footnote, not interpreted."
+      relation: extends
+      source: "Wikipedia 'The Three Questions'; rvb.ru Leskov commentary."
+    - evidenceRef: E22
+      conventionalView: "«Разрушение ада» is read only as a by-product of the 1901 excommunication / anticlerical campaign, rarely as a literary object."
+      relation: extends
+      source: "Tishchenko 2017 (abstract only); MDPI Religions 2016 (inaccessible)."
+    - evidenceRef: E03
+      conventionalView: "Tolstoy's Kishinev response is presented as straightforwardly 'active' (Popoff 2013), eliding the censorship constraint he himself named."
+      relation: complicates
+      source: "Popoff 2013; Ivry 2014; Schefski 1982 (via Ivry)."
+    - evidenceRef: E15
+      conventionalView: "Scholarship treats Tolstoy's unity-of-life metaphysics as broadly 'Hindu scripture via Schopenhauer'; the specific theosophical-journal mediation is not examined."
+      relation: extends
+      source: "Love, J., 'Eastern Religion', in Tolstoy in Context (Cambridge, ed. Orwin); Kamalakaran, Russia Beyond 2014."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORDS — proposed CREATIONS (none of the five exist yet). genre: parable
+# (Johan-confirmed). Read-only to works/; the human ingestion step applies these.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecords:
+  - recordPath: "website/src/works/fiction/short-stories/esarhaddon-king-of-assyria/Esarhaddon, King of Assyria.md"
+    workId: esarhaddon-king-of-assyria
+    create: true
+    fields:
+      - { field: titleRu, value: "Ассирийский царь Асархадон", source: "PSS т.34 с.126", confidence: high }
+      - { field: titleEn, value: "Esarhaddon, King of Assyria", source: "Maude title", confidence: high }
+      - { field: genre, value: parable, source: "dive decision (Johan-confirmed); a legend/parable, not a short story", confidence: medium, note: "народный рассказ identity carried as the concept entity, not a genre value" }
+      - { field: mainCategory, value: "Fiction", source: "shelving (parent-dive convention)", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving (parent-dive convention; no Parables subcategory exists)", confidence: low, note: "shelf, not genre — flagged in needsReview" }
+      - { field: titleAlternatives, value: [{title: "Three Tales / Три сказки", type: variant, language: ru}], source: "PSS т.34 (common title of the trio)", confidence: high }
+      - { field: dateWritingStarted, value: "1903-08-03", evidenceRefs: [E05], source: "diary 21 Jul OS", confidence: medium, oldStyle: "1903-07-21", approximate: true }
+      - { field: dateWritingCompleted, value: "1903-08-22", evidenceRefs: [E07], source: "diary 9 Aug OS «Сказки кончил» (+ revision to late Aug)", confidence: medium, oldStyle: "1903-08-09", approximate: true }
+      - { field: dateFirstPublished, value: "1903", evidenceRefs: [E25], source: "«Гилф» almanac, Warsaw (Yiddish)", confidence: medium, approximate: true, note: "PSS censorship date 4 Aug 1903 precedes dispatch — see needsReview" }
+      - { field: firstPublishedVenue, value: "Сборник «Гилф» (Hilf), Warsaw (Folksbildung / Tushiya), Yiddish translation", evidenceRefs: [E25], source: "PSS т.34 с.556", confidence: medium }
+      - { field: firstPublishedVenueType, value: "almanac", source: "PSS", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1903-11", evidenceRefs: [E26], source: "Posrednik СХV, censor 10 Nov 1903 OS", confidence: medium, oldStyle: "1903-11-10", approximate: true }
+      - { field: firstPublishedInRussiaVenue, value: "Издание «Посредника» для интеллигентных читателей, СХV, Moscow (9 illustrations by N. I. Zhivoy)", evidenceRefs: [E26], source: "PSS т.34 с.556", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1903", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Posrednik 1903", confidence: high }
+      - { field: relatedWorks, value: [{id: work-death-and-sickness, relationshipType: cycle}, {id: the-three-questions, relationshipType: cycle}, {id: it-is-you, relationshipType: source}], source: "the «Три сказки» trio + shared Das-bist-du source with «Это ты»", confidence: high }
+  - recordPath: "website/src/works/fiction/short-stories/the-three-questions/The Three Questions.md"
+    workId: the-three-questions
+    create: true
+    fields:
+      - { field: titleRu, value: "Три вопроса", source: "PSS т.34 с.134", confidence: high }
+      - { field: titleEn, value: "The Three Questions", source: "Maude title", confidence: high }
+      - { field: genre, value: parable, source: "dive decision", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: dateWritingStarted, value: "1903-08-04", evidenceRefs: [E08], source: "first redaction 22 Jul OS (PSS); part of the trio", confidence: medium, oldStyle: "1903-07-22", approximate: true }
+      - { field: dateWritingCompleted, value: "1903-08-22", evidenceRefs: [E07], source: "with the trio", confidence: medium, oldStyle: "1903-08-09", approximate: true }
+      - { field: dateFirstPublished, value: "1903", evidenceRefs: [E25], source: "«Гилф» almanac (Yiddish)", confidence: medium, approximate: true }
+      - { field: firstPublishedVenue, value: "Сборник «Гилф» (Hilf), Warsaw, Yiddish translation", evidenceRefs: [E25], source: "PSS", confidence: medium }
+      - { field: dateFirstPublishedInRussia, value: "1903-11", evidenceRefs: [E26], source: "Posrednik СХV", confidence: medium, oldStyle: "1903-11-10", approximate: true }
+      - { field: firstPublishedInRussiaVenue, value: "Издание «Посредника» для интеллигентных читателей, СХV, Moscow", evidenceRefs: [E26], source: "PSS", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1903", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Posrednik 1903", confidence: high }
+      - { field: notes, value: "Originates in an 1887 sketch for Chertkov's «Цветник» almanac (pub. as «Мудрая девица»); Tolstoy gave the subject to Leskov, who wrote «Час воли божией» (1890), which Tolstoy disliked.", evidenceRefs: [E11], source: "PSS т.34 с.555–556", confidence: high }
+      - { field: relatedWorks, value: [{id: esarhaddon-king-of-assyria, relationshipType: cycle}, {id: work-death-and-sickness, relationshipType: cycle}], source: "the «Три сказки» trio", confidence: high }
+  - recordPath: "website/src/works/fiction/short-stories/work-death-and-sickness/Work, Death and Sickness.md"
+    workId: work-death-and-sickness
+    create: true
+    fields:
+      - { field: titleRu, value: "Труд, смерть и болезнь", source: "PSS т.34 с.131", confidence: high }
+      - { field: titleEn, value: "Work, Death and Sickness", source: "Maude title", confidence: high }
+      - { field: genre, value: parable, source: "dive decision; subtitled «Легенда»", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Легенда", type: subtitle, language: ru}], source: "PSS т.34 с.131", confidence: high }
+      - { field: dateWritingStarted, value: "1903-08-05", evidenceRefs: [E08], source: "first redaction 23 Jul OS (PSS)", confidence: medium, oldStyle: "1903-07-23", approximate: true }
+      - { field: dateWritingCompleted, value: "1903-08-22", evidenceRefs: [E07], source: "with the trio", confidence: medium, oldStyle: "1903-08-09", approximate: true }
+      - { field: dateFirstPublished, value: "1903", evidenceRefs: [E25], source: "«Гилф» almanac (Yiddish)", confidence: medium, approximate: true }
+      - { field: firstPublishedVenue, value: "Сборник «Гилф» (Hilf), Warsaw, Yiddish translation", evidenceRefs: [E25], source: "PSS", confidence: medium }
+      - { field: dateFirstPublishedInRussia, value: "1906", evidenceRefs: [E26], source: "Posrednik №615, Moscow (censor 4 Feb 1906 OS) — first printing IN RUSSIA; the first Russian-language printing was abroad («Свободное слово» №9, 1904)", confidence: medium, approximate: true }
+      - { field: firstPublishedInRussiaVenue, value: "«Посредник» №615, Moscow", source: "PSS т.34 с.556", confidence: medium }
+      - { field: publishedDuringLifetime, value: true, source: "1903 (Yiddish) / 1904", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Posrednik 1906", confidence: high }
+      - { field: bans, value: [{banningAuthority: "Russian imperial censorship", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "pre-publication-rejected", banDate: "1903", banDateApproximate: true, notes: "Banned from the 1903 Russian Posrednik edition of the trio (Tolstoy held it back fearing exactly this, per the 22 Aug 1903 letter, E10); first Russian printing 1906."}], evidenceRefs: [E10, E26], source: "PSS т.34 с.556", confidence: medium }
+      - { field: relatedWorks, value: [{id: esarhaddon-king-of-assyria, relationshipType: cycle}, {id: the-three-questions, relationshipType: cycle}], source: "the «Три сказки» trio", confidence: high }
+  - recordPath: "website/src/works/fiction/short-stories/it-is-you/It Is You.md"
+    workId: it-is-you
+    create: true
+    fields:
+      - { field: titleRu, value: "Это ты", source: "PSS т.34 с.138", confidence: high }
+      - { field: titleEn, value: "It Is You", source: "literal; English title uncertain", confidence: low, note: "alt renderings 'That Art Thou' / 'This Is You' — see needsReview" }
+      - { field: genre, value: parable, source: "dive decision; a Vedanta dialogue-parable", confidence: high }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Das bist du", type: variant, language: de}, {title: "tat tvam asi", type: variant, language: sa}], source: "PSS т.34 с.561; Tolstoy's letter E11", confidence: high }
+      - { field: dateWritingStarted, value: "1903", evidenceRefs: [E24], source: "Goldenweiser diary, early July 1903 OS", confidence: medium, approximate: true }
+      - { field: dateFirstPublished, value: "1906", evidenceRefs: [E24], source: "Posrednik №638 (paired with «Карма»)", confidence: medium, note: "also offered to the «Гилф» almanac in 1903 (E12), but documented first publication is 1906" }
+      - { field: firstPublishedVenue, value: "«Посредник» №638, Moscow (with «Карма»)", evidenceRefs: [E24], source: "PSS т.34 с.561", confidence: medium }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "Posrednik №638", confidence: medium }
+      - { field: firstPublishedInRussiaVenue, value: "«Посредник» №638, Moscow", source: "PSS", confidence: medium }
+      - { field: publishedDuringLifetime, value: true, source: "1906", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Posrednik 1906", confidence: high }
+      - { field: notes, value: "An almost word-for-word translation of the anonymous «Das bist du» (Theosophischer Wegweiser 1903 №5); the same source gave Tolstoy «Асархадон». Manuscript not preserved. Offered to the «Гилф» almanac in Tolstoy's translation in 1903 (E12), but its documented first publication is Posrednik 1906.", evidenceRefs: [E24, E12], source: "PSS т.34 с.561", confidence: high }
+      - { field: relatedWorks, value: [{id: esarhaddon-king-of-assyria, relationshipType: source}], source: "shared «Das bist du» source", confidence: high }
+  - recordPath: "website/src/works/fiction/short-stories/destruction-of-hell-and-its-restoration/The Destruction of Hell and Its Restoration.md"
+    workId: destruction-of-hell-and-its-restoration
+    create: true
+    fields:
+      - { field: titleRu, value: "Разрушение ада и восстановление его", source: "PSS т.34 с.100", confidence: high }
+      - { field: titleEn, value: "The Destruction of Hell and Its Restoration", source: "standard title", confidence: high }
+      - { field: genre, value: parable, source: "dive decision; a satirical «Легенда» — the loosest genre fit in the cluster", confidence: low, note: "anticlerical satire, not a moral parable; see needsReview" }
+      - { field: mainCategory, value: "Fiction", source: "shelving", confidence: medium }
+      - { field: subcategory, value: "Short Stories", source: "shelving", confidence: low }
+      - { field: titleAlternatives, value: [{title: "Легенда", type: subtitle, language: ru}], source: "PSS т.34 с.100", confidence: high }
+      - { field: dateWritingStarted, value: "1902-11-14", evidenceRefs: [E22], source: "begun 1 Nov 1902 OS (after «Обращение к духовенству», finished 31 Oct 1902 OS)", confidence: medium, oldStyle: "1902-11-01", approximate: false }
+      - { field: dateWritingCompleted, value: "1903-02", evidenceRefs: [E22], source: "'finished' Nov–Dec 1902 OS, additions to Feb 1903", confidence: medium, approximate: true }
+      - { field: dateFirstPublished, value: "1903", evidenceRefs: [E23], source: "«Свободное слово» (ed. Chertkov), Christchurch, England, «Листки для народа» №3", confidence: high }
+      - { field: firstPublishedVenue, value: "«Свободное слово» (ed. V. Chertkov), Christchurch, England, «Листки для народа» №3", evidenceRefs: [E23], source: "PSS т.34 с.547", confidence: high }
+      - { field: firstPublishedVenueType, value: "émigré press", source: "PSS", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1917", evidenceRefs: [E23], source: "first legal Russian printing only after the Revolution", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "abroad 1903", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "banned in Russia until 1917 — the one tale of the cluster not printed in Russia in Tolstoy's lifetime", confidence: high }
+      - { field: bans, value: [
+          {banningAuthority: "St Petersburg Censorship Committee", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "pre-publication-rejected", banDate: "1906-03-06", banDateOldStyle: "1906-02-21", notes: "Galley proofs from the «Ясная Поляна» (Maximov) press: «К напечатанию не дозволять»."},
+          {banningAuthority: "Committee for Press Affairs", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "confiscation", banDate: "1910", banDateApproximate: true, notes: "«Обновление» edition arrested; prosecution sought against N. E. Felten."},
+          {banningAuthority: "Committee for Press Affairs", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "confiscation", banDate: "1913", banDateApproximate: true, notes: "«Просвещение» collected-works volume (ed. Khiryakov) arrested."}
+        ], evidenceRefs: [E23], source: "PSS т.34 с.547", confidence: high }
+      - { field: excommunicationRelated, value: true, source: "conceived as illustration to «Обращение к духовенству», the post-excommunication anticlerical cluster", confidence: medium }
+      - { field: notes, value: "Conceived as a companion-illustration to the treatise «Обращение к духовенству» (1902); source = an 1879 oral legend from the skazitel' V. P. Shchegolyonok. Roots predate the 1901 excommunication by twenty years.", evidenceRefs: [E22], source: "PSS т.34 с.546", confidence: high }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "Genesis & composition (diary + letters)", status: covered, note: "Kishinev → commission → writing → dispatch fully traced; the people-network (Sholom Aleichem, Chertkov, Goldenweiser, Boulanger) surfaced." }
+  - { surface: "What the tales say (keystone passages)", status: covered, note: "All five read in full; keystones extracted per tale." }
+  - { surface: "Redactions & textual history", status: partial, note: "Manuscript-description apparatus extracted (v34_548, v34_557) but variants not collated; «Это ты» manuscript not preserved." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "«Гилф» Yiddish first ed.; Posrednik Russian eds.; «Разрушение ада» émigré 1903 + Russia 1917; ban arc documented." }
+  - { surface: "Reception & afterlife", status: partial, note: "Censorship-as-reception covered; Yiddish/Jewish reception of «Гилф» and critical reception of the trio thin (out-of-corpus)." }
+  - { surface: "Scholarly context", status: covered, note: "20 sources; triangulation done; the tales are largely untreated in English scholarship — mostly `extends`." }
+  - { surface: "Visual & manuscript record", status: covered, note: "1 PD facsimile + 7 Commons downloads; 2 work-orders (Гилф almanac, Zhivoy illustrations); Shchegolyonok cross-ref." }
+  - { surface: "The author's later verdict", status: partial, note: "Cross-referenced to the parent dive's 24 Oct 1910 grading letter (Esarhaddon in the 2nd tier); not re-extracted here." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRADICTIONS — intra-corpus / primary-vs-secondary corrections.
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: "«Это ты» was NOT sent to Sholom Aleichem and is a separate later work (scholarship sweep, drawing on the 1906 first-publication date)."
+    correction: "Tolstoy's own letter of 25 Aug 1903 (E12) shows he translated «Das bist du» and sent it to Sholom Aleichem for the almanac. Its documented first publication is 1906, but it WAS offered as a fourth contribution in 1903."
+    evidenceRef: E12
+  - claim: "The June 9 1903 diary plan «Крик беса при приближении Христа» is the seed of «Разрушение ада» (diary-sweep annotation)."
+    correction: "«Разрушение ада» was already written in Nov 1902 – early 1903 (E22). The June 1903 «Крик беса» is a separate, later, unrealised devil-idea — chronology rules it out as the legend's seed."
+    evidenceRef: E22
+  - claim: "The illustrator of the 1903 Posrednik edition was 'Zhivago' (visuals sweep)."
+    correction: "The PSS reads «с 9-ю иллюстрациями Н. И. Живого» — the illustrator is N. I. Zhivoy (Живой), not Zhivago."
+    evidenceRef: E26
+
+# ─────────────────────────────────────────────────────────────────────────────
+notCovered:
+  - "Variant collation: the manuscript-description apparatus (v34_548, v34_557) and the «Свободное слово»/«Гилф» textual variants are not collated."
+  - "Yiddish reception: the «Гилф» almanac's reception among Jewish readers, and Sholom Aleichem's own framing, are out of the local corpus."
+  - "Gary Jahn's 1990 Russian Language Journal article on Tolstoy and folklore — the most likely English specialist treatment of the folk-tale genre — was paywalled/unretrieved (Phase-3 completeness check; in scope, recommend library access)."
+  - "The 1905–06 Круг чтения недельные чтения (Алёша Горшок, Что я видел во сне present in the corpus; Корней Васильев, Божеское и человеческое, За что?, Молитва, Ягоды absent) — the natural third folk-tale dive."
+  - "«Обращение к духовенству» itself (the treatise «Разрушение ада» illustrates) — cross-referenced, not dived."
+
+# ─────────────────────────────────────────────────────────────────────────────
+needsReview:
+  - { item: "«Гилф» first-publication date: the PSS gives the censorship date as 4 Aug 1903, which PRECEDES Tolstoy's own dispatch of the tales (20–25 Aug 1903, E09–E11) — an internal inconsistency. Some secondary sources date the almanac to 1904. Lead with the PSS's 1903; verify the exact almanac date before asserting in a works record.", phase: 2, why: "Internal PSS inconsistency on a publication date that drives the workRecord firstPublished field." }
+  - { item: "English title of «Это ты» — 'It Is You' is a literal placeholder; 'That Art Thou' (the tat tvam asi rendering) may be preferable. Confirm against a published English edition before creating the works record.", phase: 4, why: "Low-confidence title field on a proposed record." }
+  - { item: "genre = parable for «Разрушение ада»: it is an anticlerical satirical legend, the loosest fit in the cluster. Confirm parable vs another value at ingestion (no better enum value exists).", phase: 4, why: "Genre fit is weakest for the one non-parable in the cluster." }
+  - { item: "Shelving: all five proposed under works/fiction/short-stories/ with subcategory 'Short Stories' (genre parable). Consider whether a dedicated 'Parables' subcategory is warranted for the народные рассказы — a taxonomy decision spanning the 1880s tales too.", phase: 4, why: "subcategory is a shelving choice distinct from genre; affects the parent dive's tales as well." }
+  - { item: "PARENT-DIVE FIX: the parent dive (stories-for-the-people) proposed genre `fairy_tale` for «The Tale of Ivan the Fool» — a value NOT in the works genre enum. Recommend resolving to `parable` (consistent with this dive), closing that dangling needsReview item.", phase: 4, why: "Cross-dive consistency; an enum-invalid genre proposal is still open in the parent." }
+  - { item: "OS→NS date conversions in the workRecords use +13 days for 1903 and are marked approximate; the well-attested values are the OldStyle diary dates. Verify NS conversions before asserting exact days.", phase: 4, why: "Composition dates derived by calendar conversion, not from an NS source." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI — PSS Tom 34 (5 tales + comments), Tom 54 (1903 diary), Tom 74 (1903 letters)"
+  - "primary-sources/jubilee-edition/vol03 (= PSS Tom 34 PDF) — keystone facsimile"
+  - "Wikimedia Commons — Sholom Aleichem, Tolstoy 1903, Kishinev pogrom (PD)"
+  - "docs/research/stories-for-the-people (parent dive) — shared entities + Shchegolyonok visuals"
+  - "Web (Phase 3): Maude 1906; Popoff 2013; Ivry 2014/Schefski 1982; Love (Tolstoy in Context); del Olmo 2023; Tishchenko 2017 — see extracts/_scholarship.md"
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС т. 34 (Художественные произведения 1900–1903): «Ассирийский царь Асархадон», «Труд, смерть и болезнь», «Три вопроса», «Это ты», «Разрушение ада и восстановление его» + История писания (с. 546–561)"
+    - "ПСС т. 54 — Дневник 1903"
+    - "ПСС т. 74 — письма 1903 (С. Н. Рабиновичу/Шолом-Алейхему №144, 217, 219, 222, 241; Кишиневскому городскому голове №134)"
+    - "ПСС т. 88 — письма к В. Г. Черткову 1903 (via commentary)"
+  background:
+    - "Maude, A. 1906. Preface to Twenty-Three Tales. marxists.org"
+    - "Popoff, A. 2013. Tolstoy and Anti-Semitism. russianliteratureandbiography.com"
+    - "Ivry, B. 2014. Was Leo Tolstoy Really an Anti-Semite? The Forward (cites Schefski 1982; Barats 1961)"
+    - "Love, J. Eastern Religion, in Tolstoy in Context, ed. D. T. Orwin. Cambridge UP"
+    - "del Olmo. 2023. Tolstoy's 'Esarhaddon, King of Assyria'. IPOA, U. Barcelona (partial)"
+    - "Tishchenko, I. Y. 2017. Artistic parameters … 'Destruction of Hell …'. Science and Education: A New Dimension. Philology (abstract only)"
+    - "Vahabzadeh, P. 2019. Violence and Nonviolence. U. Toronto Press (section on Esarhaddon + Three Questions)"

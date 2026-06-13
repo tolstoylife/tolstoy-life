@@ -1,0 +1,614 @@
+# Machine-readable dossier for the lords-prayer corpus-dive (index.md).
+# Created 2026-06-06 by a corpus-dive run (slug: lords-prayer).
+# Theme: what Tolstoy did to the LORD'S PRAYER (Отче наш) when he translated/harmonized
+# the Gospels (1880-81) — the family of renderings in PSS Tom 24 (full harmony Соединение и
+# перевод четырёх Евангелий; condensed Краткое изложение Евангелия; French Abrégé), his
+# reading of it as the abolition of petitionary prayer, the diary/letter reactions of the
+# composition years (Tom 63 letters; Tom 49 1881 diary), and a Swedish «Fader vår» rendering.
+# Focused follow-up to the gospel-translation dive (sibling: that dive owns the project history).
+# Russian quoteRu rows are byte-faithful vs the named extract (verify_quotes.py). The French
+# (Abrégé) row holds French in quoteRu, verified against extracts/abrege_lords_prayer.txt
+# (per the Abrégé precedent in the fire/gospel dossiers).
+# Harmony + GiB extracts are focused slices of the already-verified parent gospel-translation
+# extracts. The 1880 Tom 63 letters were re-extracted with extracts/_reg_extract.py to recover
+# pre-reform <choice><orig>/<reg> text that extract_tei.py drops (known pre-reform gap).
+
+topic:
+  slug: lords-prayer
+  title: "Tolstoy's Lord's Prayer: «Отче наш» rewritten — and a Swedish «Fader vår»"
+  question: >-
+    What did Tolstoy actually do to the Lord's Prayer when he translated and harmonized the
+    Gospels (1880-81)? Extract his own renderings across PSS Tom 24 (the close retranslation in
+    Matthew 6, the transformed Luke 11 version, the twelve-fold expansion and recitable prayer of
+    the Gospel in Brief, the French Abrégé); read his reading of the prayer as the abolition of
+    petitionary prayer; gather the diary/letter reactions DURING composition; and render the
+    result into a Swedish «Fader vår». Sibling to gospel-translation, which owns the project's
+    history; this dive drills into the single passage.
+  date: 2026-06-06
+  period: "prophet (composition 1880-81; Tom 24 first legal Russian printing 1957)"
+  corpusSurface: [gospel-harmony, works, letters, diaries]
+  dateRange: "1880-1881 (composition); afterlife to 1896 (Crowell English) / 1957 (Tom 24)"
+
+# =============================================================================================
+# Layer 1 — flat citation ledger.
+#   A. The anti-petitionary reading (prayer abolishes prayer)
+#   B. The renderings (A=Matthew, B=Luke, C=Gospel in Brief, D=Abrégé)
+#   C. Reactions during composition (Tom 63 letters; Tom 49 diary)
+# =============================================================================================
+evidence:
+
+  # ===== A. THE PRAYER THAT ABOLISHES PRAYER ====================================
+
+  - id: lp-abolish-question
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      Как еще яснее сказать, что не нужно молиться?
+    quoteEn: >-
+      How could it be said more plainly that one must not pray? (working English)
+    significance: >-
+      The hinge of Tolstoy's whole reading: the Lord's Prayer is not a formula to repeat but
+      Jesus's refutation of petitionary prayer (grounded in Matt 6:7-8, the Father "knows what you
+      need before you open your lips"). The model prayer, for Tolstoy, abolishes prayer-as-asking.
+    facsimile: null
+
+  - id: lp-abolish-content
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      Вся молитва должна состоять в желании царства Божия и в исполнении его правил, а все правила в том, чтобы не считать никого виновным, а всех любить и прощать.
+    quoteEn: >-
+      The whole prayer must consist in the desire for God's kingdom and in the fulfilment of its rules, and all the rules are: to hold no one guilty, but to love and forgive everyone. (working English)
+    significance: >-
+      What "prayer" reduces to once the asking is removed: wanting the kingdom and forgiving
+      everyone. The ethical core that the rewritten petitions all restate.
+    facsimile: null
+
+  - id: lp-abolish-gib
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/gib_lords_prayer.txt
+    quoteRu: >-
+      Ни молиться, ни поститься не нужно. Молиться не нужно потому, что отец знает всё, что людям нужно.
+    quoteEn: >-
+      Neither to pray nor to fast is needed. To pray is not needed, because the Father knows everything that people need. (working English)
+    significance: >-
+      The condensed redaction states the anti-petitionary reading flatly in the chapter on the
+      kingdom. The same point the French Abrégé makes (lp-D-abrege).
+    facsimile: null
+
+  # ===== B. THE RENDERINGS ======================================================
+
+  - id: lp-A-render
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      Так вот как молитесь: Отец! Чтобы было твое царство. Пусть будет твоя воля в тебе и во мне.
+    quoteEn: >-
+      So pray thus: Father! That thy kingdom be. May thy will be in thee and in me. (working English)
+    significance: >-
+      Version A — the close retranslation in the Sermon-on-the-Mount chapter (Matt 6:9-10). Collapses
+      the opening petitions and re-points "as in heaven, so on earth" to "in thee and in me"; drops
+      "who art in heaven" as absent from Luke.
+    facsimile: null
+
+  - id: lp-A-inthee-note
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      «Как на небе и на земле» я перевожу: «в тебе и во мне».
+    quoteEn: >-
+      'As in heaven and on earth' I translate: 'in thee and in me'. (working English)
+    significance: >-
+      Tolstoy's explicit note on the most striking re-pointing of Version A: heaven/earth becomes the
+      inner/outer of the praying person.
+    facsimile: null
+
+  - id: lp-A-bread-note
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      неверно переведено: «насущный» — хлеб на этот день; слово это значит: необходимый.
+    quoteEn: >-
+      …wrongly translated 'daily' — bread for this day; this word means: necessary. (working English)
+    significance: >-
+      Tolstoy's footnote on ἐπιούσιος: he rejects "daily" for "necessary." Confirmed by standard
+      scholarship — the ἐπί+οὐσία etymology that also produced the Vulgate "supersubstantialem"
+      (see scholarship.triangulation). His rendered line: "Денное пропитание дай нам с нужду."
+    facsimile: null
+
+  - id: lp-A-forgive
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      И прости нам наши вины за то, что мы прощаем всякому, кто виноват перед нами.
+    quoteEn: >-
+      And forgive us our faults because we forgive everyone who is at fault before us. (working English)
+    significance: >-
+      Version A's forgiveness clause. Tolstoy EXCISES "lead us not into temptation, but deliver us from
+      evil" entirely as verbiage that "contains no thought" and breaks the sense — the boldest cut in
+      any of his renderings.
+    facsimile: null
+
+  - id: lp-B-render
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      И Иисус сказал им: когда молитесь, говорите: Отец! да будешь ты свят в нас, да объявится царство твое, т. е. да будет воля твоя; да сойдет в нас дух твой и очистит нас.
+    quoteEn: >-
+      And Jesus said to them: when you pray, say: Father! mayest thou be holy in us, may thy kingdom be made manifest, that is, may thy will be done; may thy spirit descend into us and cleanse us. (working English)
+    significance: >-
+      Version B — the transformed prayer in the "On Prayer" (Luke 11) chapter, the deepest rewriting.
+      The kingdom petition is replaced by the descent of the spirit. See lp-B-variant-note for the
+      text-critical pedigree.
+    facsimile: null
+
+  - id: lp-B-bread
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      Дай нам питание духа, то, которое дает жизнь.
+    quoteEn: >-
+      Give us the nourishment of the spirit, that which gives life. (working English)
+    significance: >-
+      Version B's bread petition: "daily bread" becomes the food of the SPIRIT — the most explicit
+      spiritualizing of the material petition anywhere in the renderings.
+    facsimile: null
+
+  - id: lp-B-debts
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      И не взыскивай с нас всё, чем мы должны, потому что и мы не взыскиваем с тех, что нам должны. И не считайся с нами.
+    quoteEn: >-
+      And do not exact from us all that we owe, because we too do not exact from those who owe us. And do not reckon with us. (working English)
+    significance: >-
+      Version B's debt petition, recast as a plea not to be called to account — paired with Tolstoy's
+      gloss that we are insolvent debtors to reason (lp-B-debtors-gloss).
+    facsimile: null
+
+  - id: lp-B-variant-note
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      слова: да сойдет дух твой в нас и очистит нас встречаются в цитатах древних церковных писателей.
+    quoteEn: >-
+      the words 'may thy spirit descend into us and cleanse us' are found in citations of ancient church writers. (working English)
+    significance: >-
+      Tolstoy's own footnote shows he knew the "spirit" reading was a genuine ancient variant, not his
+      invention. Standard text-criticism CONFIRMS it (minuscules 700, 162; Marcion's Luke; Gregory of
+      Nyssa) — see scholarship.triangulation lp-B-variant-note.
+    facsimile: null
+
+  - id: lp-B-debtors-gloss
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "7–798"
+    date: 1880-1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/harmony_lords_prayer.txt
+    quoteRu: >-
+      Мы обязаны жизнью разумению, а не отдаем ему всю свою плотскую жизнь, и потому мы должники неоплатные.
+    quoteEn: >-
+      We owe our life to reason, yet do not give over to it our whole fleshly life, and so we are debtors who can never pay. (working English)
+    significance: >-
+      The metaphysics under the debt petition: разумение (reason/understanding) is the creditor — the
+      same keyword the sibling fire-metaphor dive tracks (John 1 Logos → разумение).
+    facsimile: null
+
+  - id: lp-C-surprise
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/gib_lords_prayer.txt
+    quoteRu: >-
+      Окончив свою работу, я к удивлению и радости своей нашел, что так называемая молитва господня есть не что иное, как в самой сжатой форме выраженное всё учение Иисуса в том самом порядке, в котором были расположены мною главы, и что каждое выражение молитвы соответствует смыслу и порядку глав.
+    quoteEn: >-
+      On finishing my work I found, to my surprise and joy, that the so-called Lord's Prayer is nothing other than the whole teaching of Jesus expressed in the most condensed form, in the very order in which I had arranged the chapters, and that each phrase of the prayer corresponds to the sense and order of the chapters. (working English)
+    significance: >-
+      Version C's premise (Gospel in Brief preface): the prayer maps phrase-by-phrase onto Tolstoy's
+      twelve chapters — which he treats as internal proof that his structure was the teaching's own.
+      A rhetorical, not text-critical, claim (see scholarship: extends).
+    facsimile: null
+
+  - id: lp-C-table-open
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/gib_lords_prayer.txt
+    quoteRu: >-
+      Человек — сын Бога.
+    quoteEn: >-
+      Man is the son of God. (working English) — Tolstoy's meaning for "Отче наш" (phrase 1 of 12)
+    significance: >-
+      The opening of the twelve-fold correspondence (Version C-table): "Отче наш" → "Man is the son of
+      God," the title of chapter I. The full table is in index.md.
+    facsimile: null
+
+  - id: lp-C-table-close
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/gib_lords_prayer.txt
+    quoteRu: >-
+      А будет твоя власть, и сила, и разум.
+    quoteEn: >-
+      But there will be thy power, and strength, and reason. (working English) — Tolstoy's meaning for the doxology (phrase 12 of 12)
+    significance: >-
+      The signature substitution that closes the twelve-fold table: "kingdom and power and GLORY"
+      becomes "power and strength and REASON (разум)." Glory → reason is the most concentrated
+      statement of Tolstoy's whole programme.
+    facsimile: null
+
+  - id: lp-Cbody-prayer
+    genre: gospel-harmony
+    pssTom: 24
+    pages: "801–938"
+    date: 1881
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/gib_lords_prayer.txt
+    quoteRu: >-
+      Молитесь только так: Отец наш безначальный и бесконечный, как небо! Пусть будет свято только твое существо. Пусть будет власть только твоя, так, чтобы воля твоя совершалась безначально и бесконечно на земле. Дай мне пищу жизни в настоящем. Ошибки мои прежние загладь и сотри так же, как и я заглаживаю и стираю все ошибки братьев моих, чтобы я не попал в соблазн, избавился от зла. Потому что твоя власть и сила и твое решение.
+    quoteEn: >-
+      Pray only thus: Our Father, without beginning and without end, like the sky! May thy being alone be holy. May power alone be thine, so that thy will be done, without beginning and without end, on earth. Give me the food of life in the present. My former mistakes, efface and wipe them out, just as I efface and wipe out all the mistakes of my brothers, so that I may not fall into temptation, and may be delivered from evil. Because thine is the power and the strength and thine the decision. (working English)
+    significance: >-
+      Version C-body — the recitable prayer in the body of the Gospel in Brief, the single form that
+      most reads like a prayer one could say. It is the base text for "Tolstojs Fader vår" (the Swedish
+      rendering). Note the close: "глава/glory" → "решение/decision" (Crowell 1896 English: "judgment").
+    facsimile: null
+
+  - id: lp-D-abrege
+    genre: works
+    pssTom: 24
+    pages: "941–969"
+    date: 1881-1883
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol84/vol84.pdf
+    extract: extracts/abrege_lords_prayer.txt
+    quoteRu: >-
+      La prière ne peut pas consister dans les demandes que nous faisons à Dieu. Notre Père connaît tous nos besoins avant même que nous ne les ayons formulés.
+    quoteEn: >-
+      Prayer cannot consist in the requests we make to God. Our Father knows all our needs even before we have formulated them. (working English, from Tolstoy's French — Abrégé de l'Évangile)
+    significance: >-
+      Version D — the French Abrégé carries the same anti-petitionary reading in Tolstoy's own French,
+      and uses the prayer's phrases as section-headings ("QUE TON RÈGNE VIENNE", etc.). quoteRu holds
+      French (verified vs the French extract, per the Abrégé precedent).
+    facsimile: null
+
+  # ===== C. REACTIONS DURING COMPOSITION (1880-81) ==============================
+
+  - id: lp-react-1880-conviction
+    genre: letters
+    pssTom: 63
+    pages: "12–13"
+    date: 1880-02-29
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_011_H_H_Straxovu.txt
+    quoteRu: >-
+      Бумаги измарал много с большим напряжением и не скажу радостью, но с уверенностью, что это так нужно.
+    quoteEn: >-
+      I have covered much paper, with great strain and — I will not say joy, but — with the conviction that it is necessary. (working English)
+    significance: >-
+      Early composition (Feb 1880): the labour is joyless but driven by necessity. The same letter says
+      he is still finishing the critique of Orthodox theology before the translation proper.
+    facsimile: null
+
+  - id: lp-react-1880-cannot-stop
+    genre: letters
+    pssTom: 63
+    pages: "15–16"
+    date: 1880-03-23
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_014_H_N_Straxovu.txt
+    quoteRu: >-
+      Я все работаю и не могу оторваться и часто счастлив своей работой, но очень часто слабею головой.
+    quoteEn: >-
+      I keep working and cannot tear myself away, and am often happy in my work, but very often my head grows weak. (working English)
+    significance: >-
+      The grip of the work (Mar 1880): absorption and happiness alternating with exhaustion — the
+      texture of the year the prayer was being translated.
+    facsimile: null
+
+  - id: lp-react-1880-sermon
+    genre: letters
+    pssTom: 63
+    pages: "6–9"
+    date: 1880-02-02
+    addressee: A. A. Tolstaya
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_006_Gr_A_A_Tolstoj.txt
+    quoteRu: >-
+      Особенно, когда вы прибавляете о том, что сущность учения в Нагорной проповеди.
+    quoteEn: >-
+      Especially when you add that the essence of the teaching is in the Sermon on the Mount. (working English)
+    significance: >-
+      The only place in the composition-year correspondence where the prayer's home text is named:
+      Tolstoy locates "the essence of the teaching" in the Sermon on the Mount (Matt 5-7), the chapter
+      that contains the Lord's Prayer.
+    facsimile: null
+
+  - id: lp-react-1880-tischendorf
+    genre: letters
+    pssTom: 63
+    pages: "21–22"
+    date: 1880-09-01
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_024_H_N_Straxovu.txt
+    quoteRu: >-
+      Очень благодарен вам за Тишендорфское евангелие.
+    quoteEn: >-
+      I am very grateful to you for the Tischendorf gospel. (working English)
+    significance: >-
+      The philological instrument arrives (Sep 1880): Strakhov sends Tischendorf's critical Greek New
+      Testament — the very text Tolstoy cites by name in his Luke footnote ("в греческом тексте
+      Тишендорфа"). Direct material link between the correspondence and the prayer's translation.
+    facsimile: null
+
+  - id: lp-react-1881-completed
+    genre: letters
+    pssTom: 63
+    pages: "71–73"
+    date: 1881-07-01
+    addressee: N. N. Strakhov
+    localPdf: primary-sources/jubilee-edition/vol29/vol29.pdf
+    extract: extracts/v63_060_H_N_Straxovu.txt
+    quoteRu: >-
+      Из большего сочинения, которое я после вас и кончил, и еще раз все прошел, я сделал еще из Евангелия извлечение без примечаний, но с коротким предисловием
+    quoteEn: >-
+      Out of the larger work, which I have finished since you were here and gone through once more, I have made an extract from the Gospel, without notes but with a short preface… (working English)
+    significance: >-
+      The completion statement (July 1881): the big harmony is finished and the condensed Gospel in
+      Brief made "with a short preface" — the preface where the twelve-fold prayer-correspondence
+      (Version C) stands.
+    facsimile: null
+
+  - id: lp-react-1881-burning-room
+    genre: diaries
+    pssTom: 49
+    pages: "37–38"
+    date: 1881-05-18
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol50/vol50.pdf
+    extract: extracts/v49_037_038_1881_05_18.txt
+    quoteRu: >-
+      нельзя сказать «трудно» бежать из горящей комнаты в единственную дверь.
+    quoteEn: >-
+      one cannot say it is 'difficult' to run from a burning room through the only door. (working English)
+    significance: >-
+      The temperature of the conviction the prayer encodes (diary, May 1881): the gospel as the single
+      door out of a burning house — the same fire-and-rescue register the sibling fire-metaphor dive
+      traces (Luke 12:49). The entry also has "царство небесное" on earth and the household calling him
+      a madman ("Кто-нибудь сумашедший — они или я").
+    facsimile: null
+
+# =============================================================================================
+# Layer 2 — entities (ingestion routing map → vault). vaultStatus checked vs website/src on 2026-06-06.
+# =============================================================================================
+entities:
+
+  - name: "The Lord's Prayer (Отче наш) in Tolstoy"
+    wikiType: concept
+    wikilinkTarget: "Otche nash (Tolstoy)"
+    vaultStatus: missing
+    role: "The subject of this dive: Tolstoy's family of renderings of the Lord's Prayer, his anti-petitionary reading, and the glory→reason / kingdom→spirit substitutions. A concept page anchored in the two works."
+    sources: [jubilee-edition]
+    evidenceRefs: [lp-abolish-question, lp-A-render, lp-B-render, lp-C-surprise, lp-Cbody-prayer, lp-C-table-close]
+    ingestionPriority: 1
+    dependsOn: ["Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)", "The Gospel in Brief (Краткое изложение Евангелия)"]
+
+  - name: "Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"
+    wikiType: work
+    wikilinkTarget: "Soedinenie i perevod chetyrekh Evangelij"
+    vaultStatus: missing
+    role: "The full harmony — holds Version A (Matthew) and Version B (Luke) of the prayer plus the anti-petitionary commentary. Owned by the parent gospel-translation dive; here it is the source of the prayer renderings."
+    sources: [jubilee-edition]
+    evidenceRefs: [lp-abolish-question, lp-abolish-content, lp-A-render, lp-A-inthee-note, lp-A-bread-note, lp-A-forgive, lp-B-render, lp-B-bread, lp-B-debts, lp-B-variant-note, lp-B-debtors-gloss]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: "The Gospel in Brief (Краткое изложение Евангелия)"
+    wikiType: work
+    wikilinkTarget: "Kratkoe izlozhenie Evangelija"
+    vaultStatus: missing
+    role: "The condensed redaction — holds Version C (the twelve-fold correspondence in its preface and the recitable prayer in its body). The base text for the Swedish rendering."
+    sources: [jubilee-edition]
+    evidenceRefs: [lp-abolish-gib, lp-C-surprise, lp-C-table-open, lp-C-table-close, lp-Cbody-prayer]
+    ingestionPriority: 1
+    dependsOn: ["Union and Translation of the Four Gospels (Соединение и перевод четырёх Евангелий)"]
+
+  - name: "разумение (reason / understanding)"
+    wikiType: concept
+    wikilinkTarget: "razumenie"
+    vaultStatus: missing
+    role: "Tolstoy's keyword: glory→разум in the prayer's close, and разумение as the creditor in the debt gloss. The same concept the sibling fire-metaphor dive tracks (John 1 Logos → разумение)."
+    sources: [jubilee-edition]
+    evidenceRefs: [lp-C-table-close, lp-B-debtors-gloss]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Nikolai Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "The confidant who hears the composition-year reactions and supplies the Tischendorf Greek NT — the philological instrument of the translation. Already mapped by the parent dive."
+    sources: []
+    evidenceRefs: [lp-react-1880-conviction, lp-react-1880-cannot-stop, lp-react-1880-tischendorf, lp-react-1881-completed]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: "Constantin von Tischendorf"
+    wikiType: person
+    wikilinkTarget: "Constantin von Tischendorf"
+    vaultStatus: missing
+    role: "His critical Greek New Testament is the text Tolstoy worked from and cites by name in the Luke footnote; Strakhov sent it to him in 1880."
+    sources: []
+    evidenceRefs: [lp-react-1880-tischendorf, lp-B-variant-note]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: "Abrégé de l'Évangile"
+    wikiType: work
+    wikilinkTarget: "Abrege de l'Evangile"
+    vaultStatus: missing
+    role: "Tolstoy's own French condensation; carries Version D — the prayer as anti-petitionary section-headings. Cross-linked by the fire-metaphor dive too."
+    sources: [jubilee-edition]
+    evidenceRefs: [lp-D-abrege]
+    ingestionPriority: 3
+    dependsOn: ["The Gospel in Brief (Краткое изложение Евангелия)"]
+
+# =============================================================================================
+# Layer 3 — visuals. No new images fetched (text dive); parent gospel-translation dive holds the
+# relevant PD visuals. visuals/ dir exists but is empty by design.
+# =============================================================================================
+visuals: []
+
+# =============================================================================================
+# Layer 4 — scholarship (secondary). English-first; attributed, read critically.
+# =============================================================================================
+scholarship:
+  summary: >-
+    On the project as a whole the received view holds (Matual 1992; Wilson 1988): Tolstoy's gospel is
+    a deliberately de-supernaturalized, ethics-first rendering, and the Lord's Prayer is a sharp
+    specimen of it. Two of his specific prayer-choices, often read as idiosyncratic, stand up against
+    text-critical scholarship: the Luke "Holy Spirit" reading is a genuine ancient variant (minuscules
+    700, 162; Marcion; Gregory of Nyssa), and his "necessary" for ἐπιούσιος follows the ἐπί+οὐσία
+    etymology behind the Vulgate "supersubstantialem." Where the dive extends the literature is the
+    prayer's role as Tolstoy's INTERNAL PROOF of his twelve-chapter structure (rhetorical, rarely
+    examined) and his reading of the model prayer as the ABOLITION of prayer (a stronger anti-liturgical
+    move than the general "rationalist gospel" label conveys).
+  triangulation:
+    - evidenceRef: lp-B-variant-note
+      conventionalView: "The Lukan 'May thy Holy Spirit come upon us and cleanse us' is a genuine ancient variant: attested in minuscules 700 and 162, in Marcion's Luke (c.150 CE), and expressly in Gregory of Nyssa (who says Luke has 'Holy Spirit' where Matthew has 'kingdom')."
+      relation: confirms
+      source: "Wikipedia, 'Textual variants in the Gospel of Luke' / 'Minuscule 700'; etimasthe.com on Gregory of Nyssa (2018)"
+    - evidenceRef: lp-A-bread-note
+      conventionalView: "ἐπιούσιος is a hapax across surviving Greek; the ἐπί+οὐσία etymology gives 'necessary for existence / supersubstantial' — the line behind Jerome's Vulgate 'supersubstantialem' (Matthew). Tolstoy's 'необходимый' tracks it."
+      relation: confirms
+      source: "Standard reference on ἐπιούσιος (hapax; Vetus Latina 'quotidianum' vs Vulgate 'supersubstantialem')"
+    - evidenceRef: lp-C-surprise
+      conventionalView: "Scholarship treats the harmony as confident rationalist exegesis; the prayer-as-proof-of-structure claim is Tolstoy's own internal warrant and is rarely examined as a rhetorical move."
+      relation: extends
+      source: "(the claim is in the Gospel in Brief preface; under-discussed in the accessible literature)"
+    - evidenceRef: lp-abolish-question
+      conventionalView: "The 'rationalist gospel' label (Matual 1992; Wilson 1988) captures the de-supernaturalizing but understates the specific reading of the model prayer as the abolition of petitionary prayer."
+      relation: extends
+      source: "Matual, Tolstoy's Translation of the Gospels (1992); Wilson, Tolstoy (1988)"
+
+# =============================================================================================
+# Intra-corpus observations (primary-vs-primary).
+# =============================================================================================
+contradictions:
+  - claim: "Tolstoy produced a single new translation of the Lord's Prayer."
+    correction: >-
+      Tom 24 holds at least four distinct Russian forms that agree in substance but differ in wording:
+      the Matthew close-retranslation (lp-A-render), the Luke transformed version with the spirit-variant
+      (lp-B-render), the twelve-fold preface correspondence (lp-C-surprise / lp-C-table-close), and the
+      recitable body prayer (lp-Cbody-prayer) — plus the French Abrégé (lp-D-abrege). The prayer is a
+      family of renderings, not one text.
+    evidenceRef: lp-Cbody-prayer
+
+notCovered:
+  - "No line-by-line collation of the published English (Crowell 1896; Wiener 1904; Walter Scott 1895-96) or French against the Russian. Crowell 1896 is quoted as a period parallel from page-image OCR (reference-grade, not byte-verified); only the Russian is byte-verified. The English-lineage question is owned by the parent gospel-translation dive."
+  - "The Greek column of the full harmony (Tolstoy prints Tischendorf's Greek above his Russian) is described but not transcribed."
+  - "The long Édouard Reuss quotation Tolstoy embeds in the Matthew chapter (the French exegete on the prayer, quoted at length and partly against) is noted but not mined — it is Reuss's voice, not Tolstoy's."
+  - "Swedish RECEPTION: no published Swedish translation of Tolstoy's prayer was sought or collated; the Swedish here is this dive's own working rendering. The broader 'Tolstoy's gospel work in Swedish' thread is flagged in the parent dive's notCovered (Walborg Hedberg / Bonnier 1891 etc.)."
+  - "The autograph manuscript pages of the prayer chapters (State Tolstoy Museum) are not openly available; would have to be requested (same gap as the parent dive)."
+
+needsReview:
+  - item: "Crowell 1896 'judgment' for решение vs the twelve-fold table's разум ('reason') for слава: the Gospel in Brief gives TWO different replacements for 'glory' (разум in the preface table, решение in the body prayer). Both are Tolstoy's; the Swedish renders them förnuft and avgörande respectively."
+    phase: 4
+    why: "Worth a note in any wiki page: the 'glory' substitution is not fixed; confirm both readings stand in the 1957 Tom 24 text (they do in the TEI/local extract)."
+  - item: "Manuscript sigla for the Luke 11:2 Holy Spirit variant (minuscules 700, 162) and the Gregory of Nyssa / Marcion attributions are from standard web reference (Wikipedia; etimasthe.com), not a critical apparatus checked in hand (NA28/Metzger)."
+    phase: 3
+    why: "Robust at the general level; confirm exact sigla against Metzger's Textual Commentary or NA28 before asserting numbers in a wiki page."
+  - item: "Swedish rendering register and key word-choices (härlighet→förnuft/avgörande; namn→väsen; allenast; förledas) are this dive's editorial choices, flagged in index.md for the reader's adjustment."
+    phase: 4
+    why: "Translation is editorial; the reader (a Swedish speaker) should sign off on register before any publication of the Swedish text."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ — v24_007_798 (full harmony), v24_801_938 (Gospel in Brief), v24_941_969 (Abrégé)"
+  - "primary-sources/tolstoydigital-TEI/texts/letters/ — Tom 63 (to Strakhov, A. A. Tolstaya, Fet, Alekseev, 1880-81)"
+  - "primary-sources/tolstoydigital-TEI/texts/diaries/ — Tom 49 (1881)"
+  - "primary-sources/archive-org/The gospels in brief (Crowell 1896) — OCR searchtext, the twelve-fold table + body prayer in period English (reference-grade)"
+  - "Web — Luke 11:2 'Holy Spirit' variant (Wikipedia: Textual variants in the Gospel of Luke; Minuscule 700; etimasthe.com on Gregory of Nyssa); ἐπιούσιος (standard reference: hapax, Vulgate supersubstantialem)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, Соединение и перевод четырёх Евангелий (ПСС Т. 24): молитва господня в главах «О молитве» и Нагорной проповеди"
+    - "Л. Н. Толстой, Краткое изложение Евангелия (ПСС Т. 24): предисловие (12-кратное соответствие) и текст молитвы в главе IV"
+    - "Л. Н. Толстой, Abrégé de l'Évangile (ПСС Т. 24)"
+    - "Л. Н. Толстой, Письма к Н. Н. Страхову, А. А. Толстой, А. А. Фету, В. И. Алексееву (ПСС Т. 63, 1880–81); Дневник (ПСС Т. 49, 1881)"
+    - "Tolstoy, The Gospels in Brief (New York: T. Y. Crowell, 1896, anonymous) — period English parallel of the twelve-fold correspondence and the body prayer"
+  background:
+    - "David Matual, Tolstoy's Translation of the Gospels: A Critical Study (Edwin Mellen, 1992)"
+    - "A. N. Wilson, Tolstoy (1988)"
+    - "'Textual variants in the Gospel of Luke' and 'Minuscule 700' (Wikipedia, accessed 2026); 'Reflections on Gregory of Nyssa #7' (etimasthe.com, 2018)"
+    - "Standard reference on ἐπιούσιος (hapax legomenon; Vetus Latina 'quotidianum'; Vulgate 'supersubstantialem')"

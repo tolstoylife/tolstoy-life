@@ -1,0 +1,811 @@
+topic:
+  slug: 1890-1898-father-sergius
+  title: "Father Sergius (Отец Сергий) — a novel-dive"
+  question: >-
+    Does Father Sergius dramatize Tolstoy's thesis that the pursuit of holiness
+    and asceticism is itself a form of pride — слава людская, the craving for human
+    esteem — and that humble, anonymous service (Pashenka) is the real thing? Read
+    the novella (begun 1890, finished 1898 for the Doukhobor emigration, published
+    posthumously 1911) against its composition record to test that claim, which
+    Tolstoy stated himself in the 1891 letters.
+  date: 2026-06-09
+  period: "Prophet period (post-1880); composed 1890–1898"
+  corpusSurface: >-
+    PSS Tom 31 (the novella pp. 5–46; plans & variants pp. 203–210; «История
+    писания и печатания» pp. 257–267; «Описание рукописей» pp. 267–269);
+    composition-years diaries (Toms 51–53) and letters (Toms 65, 72, 87).
+  dateRange: "1889–1911 (conception to first publication)"
+
+evidence:
+  # --- The text (PSS Tom 31, ch. refs from the close-read) ---
+  - id: E1
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. VII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "Очисти от скверны славы людской, обуревающей меня"
+    quoteEn: "(working English) Cleanse me of the defilement of human glory that besets me"
+    significance: >-
+      The centrepiece. Father Sergius names the marquee thesis in Tolstoy's own
+      vocabulary (слава людская) in a prayer — and falls with Marya within the
+      hour. The diagnosis and the failure are deliberately adjacent.
+    facsimile: ""
+  - id: E2
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. VII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "дьявол подменил всю его деятельность для бога деятельностью для людей."
+    quoteEn: "(working English) the devil had substituted, for all his activity for God, activity for people."
+    significance: >-
+      The hollowing-out, stated by the narrator just before the centrepiece prayer:
+      service-for-people has replaced service-for-God.
+    facsimile: ""
+  - id: E3
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. V)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "положил указательный палец левой руки на чурбан, взмахнул топором и ударил по нем ниже второго сустава."
+    quoteEn: "(working English) laid the index finger of his left hand on the chopping-block, swung the axe, and struck below the second joint."
+    significance: >-
+      The finger-cutting — the famous self-mutilation to resist Makovkina. A
+      victory of will, not of humility; ch. VII shows the will eventually losing.
+    facsimile: ""
+  - id: E4
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. VIII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "Я жил для людей под предлогом бога, она живет для бога, воображая, что она живет для людей."
+    quoteEn: "(working English) I lived for people under the pretext of God; she lives for God, imagining that she lives for people."
+    significance: >-
+      The thesis from the positive side: Pashenka's unselfconscious service is the
+      holiness Sergius counterfeited. She thinks herself a failure — which is what
+      makes her holiness real.
+    facsimile: ""
+  - id: E5
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. VIII)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "Чем меньше имело значения мнение людей, тем сильнее чувствовался бог."
+    quoteEn: "(working English) The less the opinion of people mattered, the more strongly God was felt."
+    significance: >-
+      The resolution (the 1898 chapter). Anonymity, not asceticism, is the cure —
+      the marquee's positive pole.
+    facsimile: ""
+  - id: E6
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. II)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "была за год тому назад любовницей Николая Павловича"
+    quoteEn: "(working English) had been, a year before, the mistress of Nikolai Pavlovich"
+    significance: >-
+      The plot hinge: the fiancée's past affair with the Tsar shatters Kasatsky and
+      drives the renunciation. Nicholas I appears as himself (routes person); this
+      strand was cut by censorship in 1911.
+    facsimile: ""
+  - id: E7
+    genre: work
+    pssTom: 31
+    pages: "203-210 (variant № 7)"
+    date: "1891"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_203_210_variants.txt
+    quoteRu: "взмахнув топором, ударил ее вдоль головы ниже темени"
+    quoteEn: "(working English) swinging the axe, struck her along the head below the crown"
+    significance: >-
+      The keystone variant. In the 1891 redaction Sergius murders Marya with an
+      axe and flees to drown himself; the 1898 reworking cut the killing entirely
+      (killer → broken man from whom recovery is possible).
+    facsimile: ""
+  # --- Diaries (composition-years witness sweep) ---
+  - id: E8
+    genre: diary
+    pssTom: 51
+    pages: "47-48"
+    date: "1890-06-06"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v51_047_048_1890_06_08.txt
+    quoteRu: "Начал Отца Сергия и вдумался в него. Весь интерес — психологические стадии, которые он проходит."
+    quoteEn: "(working English) Started Father Sergius and thought my way into it. The whole interest is the psychological stages he passes through."
+    significance: >-
+      The conception note: Tolstoy locates the work's interest in interior
+      development, not plot — the seed of the eight-chapter ladder. (In the 8 June
+      bundle file; no standalone 06_06 entry exists.)
+    facsimile: ""
+  - id: E9
+    genre: diary
+    pssTom: 51
+    pages: "78"
+    date: "1890-08-18"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v51_078_078_1890_08_18.txt
+    quoteRu: "Соблазн славы людской и прославления, — т. е. обман, чтоб скрыть веру."
+    quoteEn: "(working English) The temptation of human glory and of being glorified — i.e. a deceit, to hide faith."
+    significance: >-
+      The marquee stated in the diary before the letters: слава людская is the
+      work's true subject.
+    facsimile: ""
+  - id: E10
+    genre: diary
+    pssTom: 51
+    pages: "98-101"
+    date: "1890-10-31"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v51_098_101_1890_10_31.txt
+    quoteRu: "Большое самолюбие ( Кузмннский и Урусов ), честолюбие и потребность безукоризненности."
+    quoteEn: "(working English) Great self-love (Kuzminsky and Urusov), ambition, and a need for impeccability."
+    significance: >-
+      The author-stated prototype: Sergius's defining trait grounded in two real
+      men — A. M. Kuzminsky (brother-in-law) and L. D. Urusov (Tula vice-governor).
+      (TEI renders "Кузмннский," a source slip.)
+    facsimile: ""
+  # --- Letters (the marquee) ---
+  - id: E11
+    genre: letter
+    pssTom: 87
+    pages: "71-73"
+    date: "1891-02-16"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v87_280_a16.txt
+    quoteRu: "Борьба с похотью тут эпизод, или скорее одна ступень, главная борьба с другим — с славой людской."
+    quoteEn: "(working English) The struggle with lust is here an episode, or rather one step; the main struggle is with something else — with human glory."
+    significance: >-
+      The defining external statement of the dive. Against the carnal-temptation
+      reading, Tolstoy tells his closest collaborator that lust is one rung and the
+      true subject is слава людская.
+    facsimile: ""
+  - id: E12
+    genre: letter
+    pssTom: 65
+    pages: "268-269"
+    date: "1891-03-14"
+    addressee: "V. P. Zolotarev"
+    localPdf: ""
+    extract: extracts/v65_254_V_P_Zolotarevu.txt
+    quoteRu: "только в падении, осрамившись навеки перед людьми, он нашел настоящую опору в боге. Надо опустить руки, чтобы стать на ноги."
+    quoteEn: "(working English) only in the fall, having disgraced himself forever before people, did he find a true support in God. One must lower the hands in order to stand on the feet."
+    significance: >-
+      The second marquee statement — the clearest single-sentence account of the
+      novella's redemptive logic.
+    facsimile: ""
+  # --- The 1898 completion (the Doukhobors) ---
+  - id: E13
+    genre: diary
+    pssTom: 53
+    pages: "203-204"
+    date: "1898-07-17"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v53_203_204_1898_07_17.txt
+    quoteRu: "Решил отдать свои повести: Воскресение и Отец Сергий в печать для духоборов."
+    quoteEn: "(working English) Decided to give my novellas — Resurrection and Father Sergius — to print, for the Doukhobors."
+    significance: >-
+      The completion decision: the novella exists in finished form because of the
+      Doukhobor emigration to Canada. The same entry the Doukhobors dive cites for
+      Resurrection names this novella beside it.
+    facsimile: ""
+  - id: E14
+    genre: diary
+    pssTom: 53
+    pages: "203-204"
+    date: "1898-07-17"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v53_203_204_1898_07_17.txt
+    quoteRu: "Успокоение только тогда, когда человек живет для служения Богу среди людей."
+    quoteEn: "(working English) Peace comes only when a man lives to serve God among people."
+    significance: >-
+      The resolved meaning of ch. VIII, in the same 17 July 1898 entry — the
+      corrective to the hermit's solitary pride: service to God among people, not
+      apart from them.
+    facsimile: ""
+  - id: E15
+    genre: work
+    pssTom: 31
+    pages: "5-46 (ch. I)"
+    date: ""
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v31_005_046_main-text.txt
+    quoteRu: "погрозил пальцем и потом, уезжая, сказал:"
+    quoteEn: "(working English) wagged a finger at him, and then, departing, said:"
+    significance: >-
+      Nicholas I acts and speaks in the narration (the cadet-corps scene), confirming
+      the person routing — a historical figure appearing as himself, not a cipher.
+    facsimile: ""
+
+entities:
+  # --- Characters (fictional; wiki-schema v1.4) ---
+  - name: "Father Sergius (Stepan Kasatsky)"
+    wikiType: character
+    wikilinkTarget: "Father Sergius"
+    vaultStatus: missing
+    role: "Protagonist (titular). The proud officer turned monk turned hermit-healer turned wandering beggar."
+    sources: []
+    evidenceRefs: [E1, E2, E3, E5, E6, E10]
+    ingestionPriority: 1
+    dependsOn: ["Leo Tolstoy", "A. M. Kuzminsky", "L. D. Urusov"]
+    prototypes:
+      - person: ""
+        name: "A. M. Kuzminsky"
+        basis: author-stated
+        certainty: documented
+        note: "Named (with Urusov) by Tolstoy as the model for Sergius's vainglorious self-love, ambition, and craving for impeccability (31 Oct 1890 diary). Brother-in-law (married S. A. Tolstaya's sister Tatyana)."
+        sourceId: ""
+      - person: ""
+        name: "L. D. Urusov"
+        basis: author-stated
+        certainty: documented
+        note: "Named with Kuzminsky (31 Oct 1890 diary). Tula vice-governor; his articles/letters recur in the Aug 1890 work-days."
+        sourceId: ""
+      - person: ""
+        name: "Jacob the Monk / Serafim of Sarov (motif sources)"
+        basis: scholarly
+        certainty: conjectured
+        note: "Mainstream derives the finger-cutting and healer motifs from devotional sources; NOT verified against the PSS Tom 31 commentary in this dive — attributed to secondary sources only."
+        sourceId: ""
+  - name: "Praskovya Mikhailovna (Pashenka)"
+    wikiType: character
+    wikilinkTarget: "Pashenka (Father Sergius)"
+    vaultStatus: missing
+    role: "Principal — the moral centre. Sergius's poor cousin, a music teacher whose unselfconscious service is the holiness he never reached."
+    sources: []
+    evidenceRefs: [E4]
+    ingestionPriority: 2
+    dependsOn: ["Father Sergius (Stepan Kasatsky)"]
+  - name: "Makovkina"
+    wikiType: character
+    wikilinkTarget: "Makovkina"
+    vaultStatus: missing
+    role: "Principal — the divorcée who wagers she can seduce the hermit; provokes the finger-cutting; later takes vows."
+    sources: []
+    evidenceRefs: [E3]
+    ingestionPriority: 2
+    dependsOn: ["Father Sergius (Stepan Kasatsky)"]
+  - name: "Marya (the merchant's daughter)"
+    wikiType: character
+    wikilinkTarget: "Marya (Father Sergius)"
+    vaultStatus: missing
+    role: "Secondary but pivotal — the feeble-minded daughter with whom Sergius falls; in the early redaction his murder victim."
+    sources: []
+    evidenceRefs: [E7]
+    ingestionPriority: 2
+    dependsOn: ["Father Sergius (Stepan Kasatsky)"]
+  - name: "Countess Korotkova (Mary)"
+    wikiType: character
+    wikilinkTarget: "Mary (Father Sergius)"
+    vaultStatus: missing
+    role: "Secondary (backstory) — the fiancée, former mistress of Nicholas I, whose confession breaks Kasatsky."
+    sources: []
+    evidenceRefs: [E6]
+    ingestionPriority: 3
+    dependsOn: ["Father Sergius (Stepan Kasatsky)", "Nicholas I"]
+  # --- Persons appearing as themselves / in the genesis ---
+  - name: "Nicholas I"
+    wikiType: person
+    wikilinkTarget: "Nicholas I"
+    vaultStatus: missing
+    role: "Historical Tsar appearing as himself in the narration; his past affair with Kasatsky's fiancée is the plot hinge. The censored material in 1911."
+    sources: []
+    evidenceRefs: [E6, E15]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Instigated the work; received its first draft and the marquee letter; the 1898 Doukhobor logistics run through him; edited the 1911 first edition."
+    sources: []
+    evidenceRefs: [E11]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Pavel Birukoff"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Witness to the conception (late 1889/Jan 1890); correspondent on the work's progress; first biographer."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Maria Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: stub
+    role: "Tolstoy's daughter; copied the manuscripts (her hand dates the 1891 redaction). NOTE: the existing 'Maria Tolstaya' page may be the sister (Maria Nikolaevna) — disambiguation needed."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "L. D. Urusov"
+    wikiType: person
+    wikilinkTarget: "Leonid Urusov"
+    vaultStatus: missing
+    role: "Tula vice-governor; named prototype (with Kuzminsky) for Sergius's character."
+    sources: []
+    evidenceRefs: [E10]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "A. M. Kuzminsky"
+    wikiType: person
+    wikilinkTarget: "Alexander Kuzminsky"
+    vaultStatus: missing
+    role: "Tolstoy's brother-in-law; named prototype (with Urusov) for Sergius's character."
+    sources: []
+    evidenceRefs: [E10]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Konstantin Leontyev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Leontyev"
+    vaultStatus: missing
+    role: "Met at Optina (Feb 1890), preparing for secret tonsure; part of the monastic-milieu fieldwork."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Amvrosy of Optina"
+    wikiType: person
+    wikilinkTarget: "Amvrosy of Optina"
+    vaultStatus: missing
+    role: "Famous Optina elder; Tolstoy's sharply negative Feb 1890 impression fed the critical portrait of monastic starchestvo."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: ["Optina Pustyn"]
+  - name: "V. P. Zolotarev"
+    wikiType: person
+    wikilinkTarget: "Vasily Zolotarev"
+    vaultStatus: missing
+    role: "Correspondent who drew out the second marquee statement (14 Mar 1891)."
+    sources: []
+    evidenceRefs: [E12]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Maxim Gorky"
+    wikiType: person
+    wikilinkTarget: "Maxim Gorky"
+    vaultStatus: missing
+    role: "Heard Tolstoy tell the plot at Yasnaya Polyana, Oct 1900."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  # --- Place ---
+  - name: "Optina Pustyn"
+    wikiType: place
+    wikilinkTarget: "Optina Pustyn"
+    vaultStatus: missing
+    role: "Monastery Tolstoy visited Feb 1890; the milieu (and his hostile impression of it) behind the monastery and hermitage chapters."
+    sources: []
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+  # --- Group ---
+  - name: "Doukhobors"
+    wikiType: group
+    wikilinkTarget: "Doukhobors"
+    vaultStatus: missing
+    role: "The persecuted sect whose 1898–99 emigration to Canada the completed novella was published to fund (with Resurrection). groupType: religious-sect."
+    sources: []
+    evidenceRefs: [E13]
+    ingestionPriority: 2
+    dependsOn: []
+
+visuals:
+  - id: vis-01
+    type: photograph
+    subject: "Leo Tolstoy, 1897 (composition years)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ""
+    holding: "Library of Congress (via Wikimedia Commons)"
+    archiveId: "Commons pageid 39880503"
+    access: open
+    rights: "Public domain (pre-1931 US; photographer F. W. Taylor)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    localPath: "visuals/tolstoy_1897_taylor.jpg"
+    note: "Keystone portrait; embedded in index.md."
+  - id: vis-02
+    type: painting
+    subject: "Tolstoy resting in a wood (Repin, 1891)"
+    relatedEntity: "Leo Tolstoy; Ilya Repin"
+    relatedEvidence: ""
+    holding: "State Tretyakov Gallery, Moscow"
+    archiveId: "Commons pageid 6823737"
+    access: open
+    rights: "Public domain (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy03.jpg"
+    localPath: "visuals/tolstoy_repin_1891_painting.jpg"
+    note: "Painted in the drafting years."
+  - id: vis-03
+    type: photograph
+    subject: "Elder Amvrosy of Optina, c.1892"
+    relatedEntity: "Amvrosy of Optina; Optina Pustyn"
+    relatedEvidence: ""
+    holding: "Pre-revolutionary Russian archive (Commons)"
+    archiveId: "Commons pageid 20637613"
+    access: open
+    rights: "Public domain (anonymous, >100 yrs)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Amvrosiy_Optinskiy.jpg"
+    localPath: "visuals/amvrosy_optina_1892.jpg"
+    note: "The elder Tolstoy met Feb 1890; embedded in index.md."
+  - id: vis-04
+    type: photograph
+    subject: "Optina Pustyn monastery, pre-revolutionary"
+    relatedEntity: "Optina Pustyn"
+    relatedEvidence: ""
+    holding: "Russian archival source (Commons)"
+    archiveId: "Commons category: Pre-revolutionary photographs of Optina Hermitage"
+    access: open
+    rights: "Public domain (anonymous, before 1917)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/Category:Optina_Pustyn"
+    localPath: "visuals/optina_pustyn_prerevolutionary.jpg"
+    note: ""
+  - id: vis-05
+    type: film-poster
+    subject: "Poster, «Отец Сергий» (1918, dir. Protazanov)"
+    relatedEntity: "Father Sergius (1918 film); Ivan Mozzhukhin"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "Commons pageid 12460175"
+    access: open
+    rights: "Public domain (1918)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Otets_Sergiy_1918_Poster.jpg"
+    localPath: "visuals/father_sergius_1918_poster.jpg"
+    note: "The major adaptation; embedded in index.md."
+  - id: vis-06
+    type: film-still
+    subject: "Film still, «Отец Сергий» (1918); Mozzhukhin, Orlova"
+    relatedEntity: "Father Sergius (1918 film)"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "Commons pageid 90725000"
+    access: open
+    rights: "Public domain (1918)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Film_still_of_Father_Sergius_(1918).jpg"
+    localPath: "visuals/father_sergius_1918_film_still.jpg"
+    note: ""
+  - id: vis-07
+    type: production-still
+    subject: "Ivan Mozzhukhin as Father Sergius, 1917–18"
+    relatedEntity: "Ivan Mozzhukhin; Father Sergius (1918 film)"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "Commons pageid 481967"
+    access: open
+    rights: "Public domain (pre-1931 US / pre-1943 Russia)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Moszhuserge.jpg"
+    localPath: "visuals/mozzhukhin_father_sergius_1917-18.jpg"
+    note: ""
+  - id: vis-08
+    type: painting
+    subject: "Vladimir Chertkov (Repin, c.1890)"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: ""
+    holding: "Repin work (Russian museum)"
+    archiveId: "Commons pageid 3016383"
+    access: open
+    rights: "Public domain (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Chertkov_by_Repin.jpg"
+    localPath: "visuals/chertkov_by_repin_c1890.jpg"
+    note: "The instigator/editor."
+  - id: vis-09
+    type: photograph
+    subject: "Maria Lvovna Tolstaya (Birukoff, 1895)"
+    relatedEntity: "Maria Lvovna Tolstaya; Pavel Birukoff"
+    relatedEvidence: ""
+    holding: "Family archive (Commons)"
+    archiveId: "Commons pageid 39911181"
+    access: open
+    rights: "Public domain (photo 1895; Biryukov d. 1931)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Maria_L._Tolstoy._Photo_PI_Biryukov._Yasnaya_Polyana,_1895.jpeg"
+    localPath: "visuals/maria_lvovna_tolstaya_1895.jpeg"
+    note: "Copied the manuscripts."
+
+scholarship:
+  summary: >-
+    Unusually for a Tolstoy work, the mainstream already leads with pride/vainglory,
+    not lust, and frequently quotes Tolstoy's own "the main battle is with human
+    glory" line to do so (Britannica frames the work as a man who finds "sainthood
+    cannot be consciously sought, potentially Tolstoy's self-critique"; Edmund
+    Wilson, NYRB 1971, reads it as spiritual pride). So the marquee's contest is
+    about grounding, not reading. The mainstream supplies a hagiographic
+    source-genealogy (the finger-cutting from a hermit legend, the healer-figure
+    from the type of Serafim of Sarov, the monastic milieu from Optina/Ambrose) —
+    treated here as contrast, and unverified against the PSS.
+  triangulation:
+    - evidenceRef: E11
+      conventionalView: "The pride/vainglory reading is the received English-language reading (Britannica; Wilson 1971), argued thematically from the finished text."
+      relation: extends
+      source: "Wilson, Edmund (1971), NYRB; Encyclopædia Britannica, 'Father Sergius'"
+    - evidenceRef: E13
+      conventionalView: "Standard biography centres the 1898 Doukhobor-funding decision on Resurrection alone; Father Sergius is rarely named in the same financial decision."
+      relation: extends
+      source: "Project doukhobors and Resurrection dives (baseline); diary 17 Jul 1898"
+    - evidenceRef: E10
+      conventionalView: "The mainstream supplies a hagiographic genealogy (Jacob the Monk / Serafim of Sarov / Optina) for the plot-motifs."
+      relation: complicates
+      source: "Wikipedia / Grokipedia (motif sources); the author-stated character prototype is the firmer datum"
+    - evidenceRef: E7
+      conventionalView: "The axe-murder variant is essentially absent from the English-language literature, which reads only the published text."
+      relation: extends
+      source: "PSS Tom 31 «Планы и варианты» (variant № 7)"
+    - evidenceRef: E6
+      conventionalView: "Mainstream confirms Nicholas I as a named character and the betrayal plot; the specific Berlin-1912 restoration of this work's passages is thinly attested in English."
+      relation: confirms
+      source: "Wikipedia; encyclopedia.com; the Hadji Murat dive (the matched pattern)"
+    - evidenceRef: E12
+      conventionalView: "Mainstream agrees the work was unfinished, unpublished in his lifetime, first printed posthumously 1911."
+      relation: confirms
+      source: "Britannica; Wikipedia; the 18 Oct 1900 Ortt letter"
+
+workRecord:
+  recordPath: "website/src/works/fiction/novellas/father-sergius/Father Sergius.md"
+  workId: father-sergius
+  note: >-
+    No works/ record exists (confirmed). This is a record-CREATING proposal from
+    scratch, mirroring the location of master-and-man (fiction/novellas/). The dive
+    proposes; a human ingestion step creates the record.
+  fields:
+    - field: titleEn
+      value: "Father Sergius"
+      evidenceRefs: []
+      source: "standard English title (Maude)"
+      confidence: high
+      note: ""
+    - field: titleRu
+      value: "Отец Сергий"
+      evidenceRefs: []
+      source: "PSS Tom 31"
+      confidence: high
+      note: ""
+    - field: mainCategory
+      value: "Fiction"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+      note: ""
+    - field: subcategory
+      value: "Novellas"
+      evidenceRefs: []
+      source: "mirrors master-and-man"
+      confidence: high
+      note: ""
+    - field: genre
+      value: "novella"
+      evidenceRefs: []
+      source: "works-schema enum"
+      confidence: high
+      note: ""
+    - field: language
+      value: "ru"
+      evidenceRefs: []
+      source: "PSS Tom 31"
+      confidence: high
+      note: ""
+    - field: completionStatus
+      value: "incomplete"
+      evidenceRefs: [E12]
+      source: "PSS commentary + Ortt letter (Tolstoy considered it roughed-out, never finished)"
+      confidence: high
+      note: "enum: complete|incomplete|fragmentary"
+    - field: publishedDuringLifetime
+      value: false
+      evidenceRefs: []
+      source: "PSS «История писания»"
+      confidence: high
+      note: ""
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      evidenceRefs: []
+      source: "PSS «История писания»"
+      confidence: high
+      note: ""
+    - field: dateWritingStarted
+      value: "1890"
+      evidenceRefs: [E8]
+      source: "PSS «История писания» (conception late 1889/Jan 1890; drafting from 1890)"
+      confidence: high
+      note: ""
+      approximate: true
+    - field: dateWritingCompleted
+      value: "1898"
+      evidenceRefs: [E13]
+      source: "PSS «История писания» (final ch. VIII, summer 1898)"
+      confidence: high
+      note: ""
+      approximate: true
+    - field: dateFirstPublished
+      value: "1911"
+      evidenceRefs: []
+      source: "Посмертные художественные произведения, vol. 2 (Chertkov), Moscow 1911"
+      confidence: high
+      note: ""
+    - field: firstPublishedVenue
+      value: "Посмертные художественные произведения Л. Н. Толстого, т. 2 (под ред. В. Г. Черткова), Москва"
+      evidenceRefs: []
+      source: "PSS «История печатания»"
+      confidence: high
+      note: ""
+    - field: firstPublishedVenueType
+      value: "book"
+      evidenceRefs: []
+      source: "works-schema enum"
+      confidence: high
+      note: ""
+    - field: dateFirstPublishedInRussia
+      value: "1911"
+      evidenceRefs: []
+      source: "same (Moscow 1911)"
+      confidence: high
+      note: ""
+    - field: bans
+      value:
+        - banningAuthority: "Imperial Russian censorship (Main Administration for Press Affairs)"
+          authorityType: "imperial-state"
+          jurisdiction: "Russia"
+          scope: "passages-cut"
+          banDate: "1911"
+          banDateApproximate: true
+          notes: "The Moscow 1911 first edition cut references to Nicholas I and especially his love affairs (Kasatsky's cadet-corps adoration; the fiancée-as-mistress strand), marked by ellipses. Restored in square brackets in the Berlin 1912 edition (same editor). A censored printing, not a ban on the work."
+      evidenceRefs: [E6]
+      source: "PSS «История печатания»"
+      confidence: high
+      note: ""
+    - field: censoredVersionExists
+      value: true
+      evidenceRefs: [E6]
+      source: "PSS «История печатания»"
+      confidence: high
+      note: ""
+    - field: censoredVersionNotes
+      value: "Moscow 1911 (cut, ellipses) vs Berlin 1912 (restored in square brackets, 6 chapters vs 8). The cuts concerned Nicholas I and his love affairs."
+      evidenceRefs: [E6]
+      source: "PSS «История печатания»"
+      confidence: high
+      note: ""
+    - field: excommunicationRelated
+      value: false
+      evidenceRefs: []
+      source: "chronology"
+      confidence: high
+      note: "Unpublished in his lifetime; played no part in the Feb 1901 excommunication (proximate trigger was Resurrection). Thematic context only."
+    - field: authoringLocations
+      value: ["Yasnaya Polyana"]
+      evidenceRefs: [E8, E10]
+      source: "diaries (drafted mainly at Yasnaya Polyana; read at Pirogovo; Optina visit for fieldwork)"
+      confidence: medium
+      note: "Pirogovo and Optina were visits, not authoring locations."
+    - field: synopsis
+      value: "A brilliant, proud Guards officer, Stepan Kasatsky, renounces the world for the monastery after learning his fiancée had been the Tsar's mistress. As the monk Sergius he becomes a celebrated hermit-healer, but his sanctity is driven by vanity (слава людская); he mutilates himself to resist one temptation and falls to another. Broken, he abandons the hermitage, recognises true holiness in his obscure cousin Pashenka's self-forgetful service, and ends as a nameless wandering beggar at peace in anonymity."
+      evidenceRefs: [E1, E4, E5]
+      source: "the text"
+      confidence: high
+      note: ""
+
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Heavy: conception, Optina fieldwork, the prototype, the people network, the 1898 Doukhobor completion."
+  - surface: "What the work says (close-read)"
+    status: covered
+    note: "Centrepiece (ch. VII) + 4 pivotal scenes; themes mapped."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "4-stage history; keystone axe-murder variant first-class."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "1911 Moscow (cut) / Berlin 1912 (restored); Maude translation; 1918 film."
+  - surface: "Characters & prototypes"
+    status: covered
+    note: "Routing complete (character/person/group); author-stated prototype documented."
+  - surface: "Themes"
+    status: covered
+    note: ""
+  - surface: "Marquee question"
+    status: covered
+    note: "confirms + extends, grounded + tested vs scholarship."
+  - surface: "Reception & afterlife"
+    status: covered
+    note: "1911 reception, Church context (non-causal), film, translation."
+  - surface: "Scholarly context"
+    status: partial
+    note: "Reference works, criticism indexes, review-essays; the academic layer (Greenwood/Gustafson/Orwin/Bartlett) not read in full."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "9 PD images cached; 1911 title page + manuscript plates flagged request-only."
+  - surface: "The censored Nicholas-I text (verbatim)"
+    status: not-covered
+    note: "Described, not quoted; needs the printed Berlin 1912 text."
+
+contradictions:
+  - claim: "In the 1891 redaction, after his fall Sergius kills Marya with an axe and flees to drown himself (variant № 7)."
+    correction: "The 1898 final redaction cuts the murder entirely; in the published text the fall does not end in homicide. (A redaction change, not a primary-vs-primary contradiction in the canonical text.)"
+    evidenceRef: E7
+
+notCovered:
+  - "The verbatim bracketed Berlin-1912 text of the censored Nicholas-I passages (needs the printed Berlin edition)."
+  - "The notebook (Записная книжка) Sergius jottings cited in the commentary (e.g. «Отец Сергий ждет солнца») — not in the diary TEI; may be a separate TEI tree or PDF-only."
+  - "Page-level scan of the 1911 first-edition title page (Russian National Library, request-only)."
+  - "Manuscript plates of the 1890–1898 drafts (Russian State Library, fond 93, request-only)."
+  - "Academic Tolstoy-studies treatments of the novella (Greenwood 1975; Gustafson; Orwin; Bartlett) — not read in full; would need library access."
+
+needsReview:
+  - item: "The 'Maria Tolstaya' vault page needs disambiguation — the daughter Maria Lvovna (manuscript copyist) vs the sister Maria Nikolaevna. Marked vaultStatus: stub pending resolution; a wrong link would conflate two people."
+    phase: 4
+    why: "Two distinct Marias; the existing page's subject was not verified."
+  - item: "The hagiographic prototype claims (Jacob the Monk; Serafim of Sarov) are mainstream-asserted, not verified against the PSS Tom 31 commentary. Attributed to secondary sources only; verify before stating in the project's own voice."
+    phase: 3
+    why: "Both-directions accuracy: the author-stated Kuzminsky/Urusov prototype is the firm datum; the devotional-motif sources are secondary."
+  - item: "The 1898 Doukhobor-funding link to Resurrection (and The Devil) does not map to any works-schema relatedWorks.relationshipType (cycle/sequel/prequel/revision/source/companion/adaptation). Left relatedWorks: []; the thematic cluster is noted in prose. A human may decide whether to record it some other way."
+    phase: 4
+    why: "Schema vocab has no thematic-cluster relation; don't force a wrong relationshipType."
+  - item: "Character wikilinkTargets (Father Sergius, Pashenka, Makovkina, Marya, Mary) are proposed slugs; disambiguation suffixes (e.g. '(Father Sergius)') follow the schema's reused-name rule but should be confirmed at ingestion against any existing character pages."
+    phase: 4
+    why: "The character type is new (v1.4); no existing pages to collide with yet, but the naming convention should be set deliberately."
+
+archivesConsulted:
+  - "PSS (Jubilee Edition) Tom 31 — text, variants, «История писания и печатания», «Описание рукописей»"
+  - "PSS Toms 51–53 (diaries), 65/72/87 (letters) — tolstoydigital TEI"
+  - "Wikimedia Commons (visuals, PD)"
+  - "Russian National Library (РНБ) — 1911 first edition (catalogued, not openly scanned)"
+  - "Russian State Library (РГБ), fond 93 — manuscripts (request-only)"
+  - "State Tolstoy Museum / Goskatalog — not queried (Commons sufficient)"
+
+references:
+  primary:
+    - "PSS Tom 31 (Отец Сергий: text pp. 5–46; variants pp. 203–210; commentary pp. 257–269)"
+    - "PSS Tom 51 (diary 1890), Tom 52 (diary 1891), Tom 53 (diary 1895/1898)"
+    - "PSS Tom 87 (letters to Chertkov), Tom 65 (1891 letters), Tom 72 (1900 letters)"
+  background:
+    - "Wilson, Edmund (1971). 'Notes on Tolstoy.' The New York Review of Books, 25 Feb 1971."
+    - "Greenwood, E. B. (1975). 'Tolstoy the Ascetic? The Kreutzer Sonata, Father Sergius and Resurrection' (via criticism index; not read in full)."
+    - "Encyclopædia Britannica, 'Father Sergius' (work by Tolstoy), accessed June 2026."
+    - "Wikipedia, 'Father Sergius' and 'Father Sergius (1918 film),' accessed June 2026."
+    - "Tolstoy, Leo (1911). Father Sergius, trans. Louise and Aylmer Maude (Project Gutenberg #985)."
+    - "'Decree of Excommunication of Leo Tolstoy' (Holy Synod, 20–24 Feb 1901), Wikisource."

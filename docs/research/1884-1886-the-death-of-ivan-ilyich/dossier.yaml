@@ -1,0 +1,766 @@
+topic:
+  slug: 1884-1886-the-death-of-ivan-ilyich
+  title: "The Death of Ivan Ilyich (Смерть Ивана Ильича) — a corpus work-dive"
+  question: >
+    A single-work corpus dive on Tolstoy's novella «Смерть Ивана Ильича» (1884–1886):
+    its genesis and composition (from the PSS Tom 26 editorial history and the 1884–1886
+    diaries and letters), what the work says (a structural read of its own text), its three
+    redactions, its uncensored publication, and its place in the Prophet-period cluster as
+    Tolstoy's first major fiction after the religious conversion.
+  date: 2026-06-07
+  period: "Prophet period (post-1880)"
+  corpusSurface: "work text + variants + editorial history (PSS Tom 26); diaries (Tom 49); letters (Toms 63, 83, 85)"
+  dateRange: "1884–1886 (composition); conception from 1881"
+
+evidence:
+  # --- Genesis: diaries (Tom 49) ---
+  - id: G1
+    genre: diary
+    pssTom: 49
+    pages: "87"
+    date: "1884-04-27 (OS; filed in TEI as 1883 — cataloguing artifact)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v49_087_087_1883_04_27.txt
+    quoteRu: "Хочу начать и кончить новое"
+    quoteEn: "(working English) I want to begin and finish something new (either The Death of a Judge, or The Notes of a Not-Madman)."
+    significance: "First diary record of the literary work; the working title is still «смерть судьи». Anchors the 1884 start."
+    facsimile: ""
+  - id: G2
+    genre: diary
+    pssTom: 49
+    pages: "88–89"
+    date: "1884-04-30 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v49_088_089_1883_04_30.txt
+    quoteRu: "Смерть Ивана Ильича достал — хорошо и скорее могу"
+    quoteEn: "(working English) Got out The Death of Ivan Ilyich — good, and I can do it more quickly."
+    significance: "Title has shifted to «Смерть Ивана Ильича»; «достал» implies earlier embryonic drafts already existed."
+    facsimile: ""
+  - id: G3
+    genre: diary
+    pssTom: 49
+    pages: "89"
+    date: "1884-05-01 (OS)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v49_089_089_1883_05_01.txt
+    quoteRu: "мне нужен отдых от той работы, и эта, художественная, такая"
+    quoteEn: "(working English) I need a rest from that work, and this, the artistic kind, is such a rest."
+    significance: "Frames the novella as restorative artistic work set against his treatise labour — not as a doctrinal vehicle. Key to the framing watch."
+    facsimile: ""
+  # --- Genesis: letters (Toms 63, 83, 85) ---
+  - id: G4
+    genre: letter
+    pssTom: 85
+    pages: "67"
+    date: "1885-06-01/02"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v85_067_iyunya1_2.txt
+    quoteRu: "по содержанию ко всем"
+    quoteEn: "(working English) in content, to everyone (it relates to our circle only in form)."
+    significance: "Positions the work beyond his circle of followers a year before completion; the genesis of the «universal art» idea later theorised in What Is Art?."
+    facsimile: ""
+  - id: G5
+    genre: letter
+    pssTom: 63
+    pages: "282–283"
+    date: "1885-08-20 (OS, approx.)"
+    addressee: "Prince L. D. Urusov"
+    localPdf: ""
+    extract: extracts/v63_408_Kn_L_D_Urusovu.txt
+    quoteRu: "описаніе простой смерти простого человѣка"
+    quoteEn: "(working English) a description of the simple death of a simple man, describing it from within him."
+    significance: "The clearest statement of the artistic programme, plus the immediate motive (finishing for S. A. Tolstaya's new edition as a «surprise»). Pre-reform orthography retained in the letter text."
+    facsimile: ""
+  - id: G6
+    genre: letter
+    pssTom: 83
+    pages: "336"
+    date: "1885-10-23 (OS)"
+    addressee: "S. A. Tolstaya"
+    localPdf: ""
+    extract: extracts/v83_336_oktyabrya23.txt
+    quoteRu: "весь поглощен теперь этой работой, уже тянущейся несколько лет"
+    quoteEn: "(working English) wholly absorbed now in this work, already dragging on for several years (and now nearing its end)."
+    significance: "The canonical statement of absorption; «уже тянущейся несколько лет» supports the multi-year (not seven-month) composition span."
+    facsimile: ""
+  - id: G7
+    genre: letter
+    pssTom: 85
+    pages: "95"
+    date: "1886-01-16/17"
+    addressee: "V. G. Chertkov"
+    localPdf: ""
+    extract: extracts/v85_095_yanvarya16_17.txt
+    quoteRu: "скоро сталь путаться"
+    quoteEn: "(working English) soon got tangled (today I wrote a little of Ivan Ilyich and soon got tangled)."
+    significance: "The early-1886 strain note, just before the heavy galley revision. («сталь» for «стал» is in the extract — left verbatim.)"
+    facsimile: ""
+  # --- Editorial history & prototype (Tom 26 commentary) ---
+  - id: C1
+    genre: commentary
+    pssTom: 26
+    pages: "679–691"
+    date: "1936 (editorial)"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_679_691_Smert_Ivana_Ilicha_commentary.txt
+    quoteRu: "Иван Ильич Мечников умер 2 июля 1881 года"
+    quoteEn: "(working English) Ivan Ilyich Mechnikov died on 2 July 1881."
+    significance: "Fixes the prototype (Tula prosecutor) and the 1881 conception date; he was brother of the scientist Ilya Mechnikov."
+    facsimile: ""
+  - id: C2
+    genre: commentary
+    pssTom: 26
+    pages: "679–691"
+    date: "1936 (editorial)"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_679_691_Smert_Ivana_Ilicha_commentary.txt
+    quoteRu: "Повесть (1884—1886)"
+    quoteEn: "(working English) [The Death of Ivan Ilyich.] A tale (1884–1886)."
+    significance: "N. N. Strakhov's title-page instruction on the galleys — the authoritative contemporaneous dating, reproduced in lifetime editions; basis for the 1884–1886 slug."
+    facsimile: ""
+  - id: C3
+    genre: commentary
+    pssTom: 26
+    pages: "679–691"
+    date: "1936 (editorial)"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_679_691_Smert_Ivana_Ilicha_commentary.txt
+    quoteRu: "Нельзя, нельзя и нельзя так жить"
+    quoteEn: "(working English) One cannot, cannot, and cannot live as I have lived (and as we all live)."
+    significance: "The theme stated as a thesis on the first manuscript page (the marginal programme of the first redaction)."
+    facsimile: ""
+  # --- Redaction sample (variants, Tom 26) ---
+  - id: R1
+    genre: work-variant
+    pssTom: 26
+    pages: "505–528"
+    date: "1884–1885 (first redaction)"
+    addressee: ""
+    localPdf: ""
+    extract: extracts/v26_505_528_Smert_Ivana_Ilicha_Varianty.txt
+    quoteRu: "Я узнал о смерти Ивана Ильича в суде"
+    quoteEn: "(working English) I learned of the death of Ivan Ilyich at the court."
+    significance: "The first-person opening of the first redaction (frame-narrator Творогов), against the final third-person «В большом здании судебных учреждений…»."
+    facsimile: ""
+  # --- What the work says (Tom 26, main text) ---
+  - id: W1
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "что умер он, а не я"
+    quoteEn: "(working English) that it was he who had died and not I."
+    significance: "Ch. I — the colleagues' first thought; the moral premise (death evaded by displacement) stated at the social surface."
+    facsimile: extracts/pss-tom26-p61-ivan-ilyich-opening.png
+  - id: W2
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "Прошедшая история жизни Ивана Ильича была самая простая и обыкновенная и самая ужасная."
+    quoteEn: "(working English) The past history of Ivan Ilyich's life was the most simple and ordinary and the most terrible."
+    significance: "Ch. II — the thesis sentence; ordinariness itself is the horror; the structural hinge into the flashback."
+    facsimile: ""
+  - id: W3
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "легко, приятно и прилично"
+    quoteEn: "(working English) easily, pleasantly, and decorously."
+    significance: "Ch. II — the three-word creed of the false life; decorum («приличие») as his religion («по его вере»)."
+    facsimile: ""
+  - id: W4
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "так точно над ним знаменитый доктор делал тоже вид"
+    quoteEn: "(working English) so exactly over him the famous doctor put on the same air [as he had over defendants in court]."
+    significance: "Ch. IV — the false life mirrored back: the formality he perfected as judge now used against him."
+    facsimile: ""
+  - id: W5
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "люди смертны, потому Кай смертен"
+    quoteEn: "(working English) men are mortal, therefore Caius is mortal [— correct for Caius, but not for himself]."
+    significance: "Ch. VI — the Kiesewetter syllogism; abstract mortality that cannot be made personal. The crux for the phenomenological reception (Heidegger §51)."
+    facsimile: ""
+  - id: W6
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "Отчего же не потрудиться?"
+    quoteEn: "(working English) So why not take a little trouble? [We shall all die.]"
+    significance: "Ch. VII — Gerasim's frank acceptance of death and freely given compassion; the one authentic relation in the book."
+    facsimile: ""
+  - id: W7
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "Главное мучение Ивана Ильича была ложь"
+    quoteEn: "(working English) Ivan Ilyich's chief torment was the lie."
+    significance: "Ch. VII — the central social evil: the collective pretense that he is only ill, not dying."
+    facsimile: ""
+  - id: W8
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "вся моя жизнь сознательная жизнь, была «не то»"
+    quoteEn: "(working English) my whole life, my conscious life, was 'not the right thing.'"
+    significance: "Ch. XI — the central revelation; «не то» becomes the name of the false life. The turning point."
+    facsimile: ""
+  - id: W9
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "надо сделать, чтобы им не больно было"
+    quoteEn: "(working English) he must do something so that it should not hurt them."
+    significance: "Ch. XII — the resolution: pity for son and wife dissolves the self-justifying ego; «как хорошо и как просто»."
+    facsimile: ""
+  - id: W10
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "Вместо смерти был свет"
+    quoteEn: "(working English) Instead of death there was light."
+    significance: "Ch. XII — the climactic reversal; death negated from within by the inner turn."
+    facsimile: ""
+  - id: W11
+    genre: work
+    pssTom: 26
+    pages: "61–113"
+    date: "1886"
+    addressee: ""
+    localPdf: "jubilee-edition/vol86/vol86.pdf"
+    extract: extracts/v26_061_113_Smert_Ivana_Ilicha.txt
+    quoteRu: "Кончена смерть"
+    quoteEn: "(working English) Death is finished — it is no more."
+    significance: "Ch. XII — the final inversion of «Кончено!» (the man is finished) into «Кончена смерть» (death has ended)."
+    facsimile: ""
+
+entities:
+  - name: "Leo Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Leo Tolstoy"
+    vaultStatus: exists
+    role: "Author"
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [G1, G2, G3, G4, G5, G6, G7, W1, W8, W10]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Ivan Ilyich Mechnikov"
+    wikiType: person
+    wikilinkTarget: "Ivan Ilyich Mechnikov"
+    vaultStatus: missing
+    role: "Prototype of the protagonist; prosecutor of the Tula court (1836–1881)"
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [C1]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "T. A. Kuzminskaya"
+    wikiType: person
+    wikilinkTarget: "Tatyana Kuzminskaya"
+    vaultStatus: missing
+    role: "Tolstoy's sister-in-law; conduit of the prototype material (the dying man's reflections, from the widow)"
+    sources: [jubilee-edition]
+    evidenceRefs: [C1]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Prince L. D. Urusov"
+    wikiType: person
+    wikilinkTarget: "Leonid Urusov"
+    vaultStatus: missing
+    role: "Tula vice-governor and confidant; addressee of the artistic-programme letter"
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [G5]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "S. A. Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Commissioned the work for her edition; copyist of the final fair copy; recipient of the Oct–Dec 1885 progress letters"
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [G5, G6]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "V. G. Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Correspondent on the work's meaning/audience; one of the copyists"
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [G4, G7]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Ilya (Élie) Mechnikov"
+    wikiType: person
+    wikilinkTarget: "Ilya Mechnikov"
+    vaultStatus: missing
+    role: "Brother of the prototype; Nobel laureate (1908); his Yasnaya visit prompted Tolstoy's statement of the connection"
+    sources: [jubilee-edition, wikidata]
+    evidenceRefs: [C1]
+    ingestionPriority: 3
+    dependsOn: ["Ivan Ilyich Mechnikov"]
+  - name: "N. N. Ge (the elder)"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ge"
+    vaultStatus: missing
+    role: "Painter, resident at Yasnaya during the writing; one of the copyists"
+    sources: [tolstoydigital-tei, jubilee-edition]
+    evidenceRefs: [G7]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "N. N. Strakhov"
+    wikiType: person
+    wikilinkTarget: "Nikolai Strakhov"
+    vaultStatus: missing
+    role: "Supplied the title-page dating instruction «(1884—1886)» on the galleys"
+    sources: [jubilee-edition]
+    evidenceRefs: [C2]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "A. P. Ivanov"
+    wikiType: person
+    wikilinkTarget: "Alexander Ivanov (copyist)"
+    vaultStatus: missing
+    role: "Principal professional copyist of the manuscripts"
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "G. A. Zakharyin"
+    wikiType: person
+    wikilinkTarget: "Grigory Zakharyin"
+    vaultStatus: missing
+    role: "Physician who treated the dying Mechnikov; named source for the clinical fidelity of the death (via Golubov's 1909 lecture)"
+    sources: [jubilee-edition]
+    evidenceRefs: [C1]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "The false life («не то»)"
+    wikiType: concept
+    wikilinkTarget: "The False Life"
+    vaultStatus: missing
+    role: "The novella's central concept: the respectable, decorous life recognised at death as «не то» (not the right thing)"
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [W2, W3, W8]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "The decorous lie (приличная ложь)"
+    wikiType: concept
+    wikilinkTarget: "The Decorous Lie"
+    vaultStatus: missing
+    role: "The collective pretense around the dying man; propriety and falsehood made one"
+    sources: [tolstoydigital-tei]
+    evidenceRefs: [W7]
+    ingestionPriority: 2
+    dependsOn: ["The false life («не то»)"]
+# NOTE: the work itself is not a wiki entity — it is routed via the `workRecord:` block below
+# (a NEW works/ record at website/src/works/fiction/novellas/the-death-of-ivan-ilyich/),
+# which is ingestion-priority-1 and depends on the concept/person pages above.
+
+visuals:
+  - id: V01
+    type: photo
+    subject: "Leo Tolstoy, 1887 (Шерер и Набгольц)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons"
+    archiveId: "File:Leo_Tolstoi_1887.jpg"
+    access: open
+    rights: "PD-old-100"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_1887.jpg"
+    localPath: visuals/commons-leo-tolstoi-1887.jpg
+    note: "Closest dated photograph to the composition window (one year after first publication)."
+  - id: V02
+    type: portrait
+    subject: "Élie (Ilya Ilyich) Metchnikoff, c. 1905"
+    relatedEntity: "Ilya (Élie) Mechnikov"
+    relatedEvidence: [C1]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Élie_Metchnikoff-portrait.jpg"
+    access: open
+    rights: "PD-old"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:%C3%89lie_Metchnikoff-portrait.jpg"
+    localPath: visuals/commons-metchnikoff-portrait-1905.jpg
+    note: "Brother of the prototype; illustrates the Genesis section."
+  - id: V03
+    type: photo
+    subject: "Leo Tolstoy and Ilya Mechnikov together, 1909"
+    relatedEntity: "Ilya (Élie) Mechnikov"
+    relatedEvidence: ""
+    holding: "Wikimedia Commons (source: Огонёк №24, 1909)"
+    archiveId: "File:Leo_Tolstoy_&_Ilya_Mechnikov.jpg"
+    access: open
+    rights: "PD-RusEmpire"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_%26_Ilya_Mechnikov.jpg"
+    localPath: visuals/commons-tolstoy-mechnikov-1909.jpg
+    note: "Documents that Tolstoy and the prototype's brother eventually met (long after the novella)."
+  - id: V04
+    type: photo
+    subject: "Leo Tolstoy, half-length, c. 1880 (LCCN)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: ""
+    holding: "Library of Congress / Wikimedia Commons"
+    archiveId: "LCCN99615676"
+    access: open
+    rights: "PD-US / PD-old"
+    licence: PD
+    usable: true
+    url: "https://lccn.loc.gov/99615676"
+    localPath: visuals/commons-tolstoy-lccn-1880.jpg
+    note: "Best pre-composition portrait with clear provenance (1880)."
+  - id: V05
+    type: facsimile
+    subject: "PSS Tom 26 p. 61 — opening of «Смерть Ивана Ильича»"
+    relatedEntity: "The Death of Ivan Ilyich (works/ record — see workRecord)"
+    relatedEvidence: [W1]
+    holding: "Local: jubilee-edition/vol86/vol86.pdf (= PSS Tom 26, Гослитиздат 1936)"
+    archiveId: "vol86.pdf p.72 (PDF) = printed p.61"
+    access: local
+    rights: "PD (Tolstoy's text; pre-1928 scholarly edition)"
+    licence: PD
+    usable: true
+    url: ""
+    localPath: extracts/pss-tom26-p61-ivan-ilyich-opening.png
+    note: "Rendered at 220 dpi; «В большом здании судебных учреждений…». Committed PD facsimile."
+  - id: V06
+    type: title-page
+    subject: "1886 first edition — Сочинения графа Л. Н. Толстого, Часть 12 (S. A. Tolstaya ed.)"
+    relatedEntity: "The Death of Ivan Ilyich (works/ record — see workRecord)"
+    relatedEvidence: ""
+    holding: "GAP — not located"
+    archiveId: ""
+    access: ""
+    rights: ""
+    licence: unknown
+    usable: false
+    url: ""
+    localPath: ""
+    note: "Not found in Commons/archive.org during the sweep. Check РГБ digital catalogue / runivers.ru."
+
+scholarship:
+  summary: >
+    The English-language consensus treats the novella as a masterpiece of late Tolstoy and his
+    first major fiction after the religious conversion — a concentrated study of mortality, social
+    self-deception, and spiritual awakening, structurally distinguished by its death-first inversion.
+    Its philosophical afterlife (German modernism, and above all Heidegger) has shaped its reputation
+    as much as its literary reception; from the 1970s it became a core text of medical / end-of-life
+    humanities. It is read retrospectively as an exemplar of the «universal art» Tolstoy theorised in
+    What Is Art? (1898). Sources: Nabokov (1981), Heidegger (1927 §51), Irwin (2013), Jahn ed. (2018).
+  triangulation:
+    - evidenceRef: G3
+      conventionalView: "Near-universal: the novella is Tolstoy's first major post-conversion fiction; commonly read as a vehicle for the conversion's moral-religious message."
+      relation: complicates
+      source: "Jahn (ed.) 2018; Wikipedia; Nabokov 1981"
+    - evidenceRef: G4
+      conventionalView: "The «universal» reading is folded into the retrospective What Is Art? framing rather than tracked to the genesis."
+      relation: extends
+      source: "Morningside/university syllabi pairing the two texts"
+    - evidenceRef: C1
+      conventionalView: "The Mechnikov prototype is in specialist scholarship and the PSS apparatus but largely absent from the English mainstream."
+      relation: extends
+      source: "PSS Tom 26 commentary; cf. Jahn (ed.) 2018"
+    - evidenceRef: C2
+      conventionalView: "Scholarly consensus often gives composition as 1885–86 (some: October 1885)."
+      relation: complicates
+      source: "Jahn (ed.) 2018 'Writing and Publication'; PSS Tom 26 commentary (rebuts Sreznevsky/Balukhatyi)"
+    - evidenceRef: W5
+      conventionalView: "The Kiesewetter syllogism is universally cited as the crux linking the novella to Heidegger's death-analytic."
+      relation: confirms
+      source: "Heidegger 1927 §51; Irwin 2013"
+    - evidenceRef: W7
+      conventionalView: "The «decorous lie» is standard, typically framed as social critique of the Russian professional classes."
+      relation: complicates
+      source: "Jahn (ed.) 2018"
+    - evidenceRef: W10
+      conventionalView: "The ending is read either theologically (Nabokov: 'died into Life') or existentially (authentic being-toward-death)."
+      relation: complicates
+      source: "Nabokov 1981; Heidegger reception"
+    - evidenceRef: W6
+      conventionalView: "Gerasim is consistently identified as the one honest relation to the dying; the medical-humanities model of compassionate care."
+      relation: confirms
+      source: "Papadimos & Stawicki 2011; The Lancet 2009"
+
+workRecord:
+  recordPath: "website/src/works/fiction/novellas/the-death-of-ivan-ilyich/The Death of Ivan Ilyich.md"
+  workId: the-death-of-ivan-ilyich
+  note: >
+    No works/ record exists yet — this proposes a NEW record, modelled on the master-and-man novella
+    record. Field names mirror tolstoy-works-schema.md (v6). Date fields carry NS in the main key and
+    OS in the *OldStyle sibling (pre-1918). Ingestion should create the record and apply these.
+  fields:
+    - field: titleEn
+      value: "The Death of Ivan Ilyich"
+      evidenceRefs: [W1]
+      source: "PSS Tom 26"
+      confidence: high
+    - field: titleRu
+      value: "Смерть Ивана Ильича"
+      evidenceRefs: [W1, C2]
+      source: "PSS Tom 26"
+      confidence: high
+    - field: titleAlternatives
+      value:
+        - { title: "Смерть судьи", type: "working", language: "ru" }
+      evidenceRefs: [G1]
+      source: "PSS Tom 26 commentary; diary 27 Apr 1884"
+      confidence: high
+      note: "The working title (Смерть судьи / The Death of a Judge) before it became «Смерть Ивана Ильича». type uses the schema vocab value 'working'."
+    - field: mainCategory
+      value: "Fiction"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+    - field: subcategory
+      value: "Novellas"
+      evidenceRefs: []
+      source: "genre"
+      confidence: high
+    - field: genre
+      value: "novella"
+      evidenceRefs: []
+      source: "convention (often classed povest'/tale or novella)"
+      confidence: medium
+      note: "Russian «повесть» (tale); the project classes Master and Man as novella — follow that convention."
+    - field: language
+      value: "ru"
+      evidenceRefs: []
+      source: ""
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [C2]
+      source: "finished 25 Mar 1886"
+      confidence: high
+    - field: publishedDuringLifetime
+      value: true
+      evidenceRefs: []
+      source: "published 1886, Tolstoy d. 1910"
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: []
+      source: "first published in Russia, 1886"
+      confidence: high
+      note: "Contrast with the censored treatises of the same years; the fiction was published in Russia uncensored."
+    - field: dateWritingStarted
+      value: "1884-05-09"
+      oldStyle: "1884-04-27"
+      approximate: true
+      evidenceRefs: [G1, C2]
+      source: "diary 27 Apr 1884 (OS); PSS Tom 26 commentary dates literary work to Apr–May 1884"
+      confidence: medium
+      note: "First record of literary work; conception (sketches) from 1881. NS = OS + 12 days."
+    - field: dateWritingCompleted
+      value: "1886-04-06"
+      oldStyle: "1886-03-25"
+      approximate: false
+      evidenceRefs: [C2]
+      source: "date printed after the text (25 Mar 1886 OS)"
+      confidence: high
+    - field: dateFirstPublished
+      value: "1886"
+      approximate: true
+      evidenceRefs: [C2]
+      source: "Сочинения графа Л. Н. Толстого, ч. 12 (Moscow, 1886)"
+      confidence: medium
+      note: "Exact month within 1886 not pinned (after 25 March)."
+    - field: firstPublishedVenue
+      value: "Сочинения графа Л. Н. Толстого, ч. 12: Произведения последних годов (Москва, 1886), pp. 394–469"
+      evidenceRefs: [C2]
+      source: "PSS Tom 26 commentary"
+      confidence: high
+    - field: firstPublishedVenueType
+      value: "book"
+      evidenceRefs: []
+      source: "collected-works volume"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1886"
+      approximate: true
+      evidenceRefs: [C2]
+      source: "same as first publication (was first published in Russia)"
+      confidence: medium
+    - field: firstPublishedInRussiaVenue
+      value: "Сочинения графа Л. Н. Толстого, ч. 12: Произведения последних годов (Москва, 1886)"
+      evidenceRefs: [C2]
+      source: "PSS Tom 26 commentary"
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "book"
+      evidenceRefs: []
+      source: ""
+      confidence: high
+    - field: censoredVersionExists
+      value: false
+      evidenceRefs: []
+      source: "PSS Tom 26 apparatus records no censor intervention"
+      confidence: medium
+    - field: censorshipNotes
+      value: "Passed without censorship, unlike the contemporaneous religious treatises (What I Believe, What Then Must We Do?)."
+      evidenceRefs: []
+      source: "PSS Tom 26 apparatus; Jahn (ed.) 2018"
+      confidence: medium
+    - field: excommunicationRelated
+      value: false
+      evidenceRefs: []
+      source: "the 1901 excommunication attaches to the religious works + Resurrection, not this novella"
+      confidence: high
+    - field: themes
+      value: ["death", "mortality", "the false life", "decorum and propriety", "spiritual awakening", "compassion"]
+      evidenceRefs: [W2, W3, W7, W8, W9]
+      source: "the work's own text"
+      confidence: medium
+      note: "themes vocab is free-form; verify against any controlled list before applying."
+    - field: relatedWorks
+      value:
+        - { id: "what-is-art", relationshipType: "companion" }
+        - { id: "master-and-man", relationshipType: "companion" }
+      evidenceRefs: [G4]
+      source: "cluster (aesthetic theory it exemplifies; sibling post-conversion novella)"
+      confidence: low
+      note: "Verify target work ids exist; also consider companions On Life / A Confession once their record ids are confirmed."
+    - field: identifiers.jubileeEdition.volumes
+      value: "26"
+      evidenceRefs: [W1, C1]
+      source: "PSS Tom 26"
+      confidence: high
+
+coverage:
+  - surface: "Genesis & composition"
+    status: covered
+    note: "Diary + letter witnesses 1884–1886 + editorial history; the people surfaced as entities."
+  - surface: "What the work says"
+    status: covered
+    note: "Full 12-chapter structural read; 11 keystones in the ledger, 24 in _deepread.md."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "Three stages from the apparatus; first-person draft sampled from the variants."
+  - surface: "Publication & censorship"
+    status: covered
+    note: "First edition (vol. 12, 1886) and the uncensored-fiction contrast established."
+  - surface: "Translation history"
+    status: partial
+    note: "Outlined only; no edition-by-edition Maude/early-English lineage."
+  - surface: "Reception & afterlife (Russian society & critics)"
+    status: partial
+    note: "Mikhailovsky, Lisovsky, Stasov recovered (thin); full 1886 periodical survey out of web scope."
+  - surface: "Reception & afterlife (philosophical / medical)"
+    status: covered
+    note: "Heidegger §51 (precision-graded); medical-humanities afterlife."
+  - surface: "Place in the cluster"
+    status: covered
+    note: "Cross-linked to A Confession, What I Believe, What Then Must We Do?, On Life, What Is Art?."
+  - surface: "The author's later verdict"
+    status: not-covered
+    note: "No firmly-sourced later judgement in this corpus; the What Is Art? footnote neither names nor excludes the novella."
+  - surface: "Visual & manuscript record"
+    status: partial
+    note: "PD facsimile + 3 portraits; 1886 title page is a gap."
+
+contradictions:
+  - claim: "The genesis diary entries are dated 1883 (TEI filenames)."
+    correction: "They are 1884: each file's «# bibl» reads «Дневник 1884 г.» and the Tom 26 commentary dates them 1884; Tolstoy's diary was in a gap through early 1884. The filename year is a cataloguing artifact."
+    evidenceRef: G1
+  - claim: "Composition was a seven-month task, Aug 1885 – Mar 1886 (Sreznevsky)."
+    correction: "The PSS Tom 26 editor rejects this; literary work began Apr–May 1884 (Strakhov's title-page note «(1884—1886)»)."
+    evidenceRef: C2
+
+notCovered:
+  - "Systematic stage-by-stage collation of the three redactions (v26_505_528)."
+  - "Maude / early-English translation and edition lineage."
+  - "Full 1886 contemporary periodical reception (Русская мысль, Вестник Европы, Отечественные записки)."
+  - "The March 1886 letter to N. N. Ge naming the novella (quoted in the commentary; not in the TEI corpus)."
+  - "A PD facsimile of the 1886 first-edition title page (vol. 12)."
+
+needsReview:
+  - item: "Diary-year cataloguing mismatch: files v49_087/088/089 are named 1883 but are 1884 (per bibl + commentary). One-line PDF verification recommended."
+    phase: 2
+    why: "Date accuracy for the genesis evidence; the slug and chronology depend on 1884."
+  - item: "Stasov's «seventy pages» reaction is multiply attested in secondary sources but not traced to a dated letter in the corpus."
+    phase: 3
+    why: "Reception quote needs a primary/archival source before ingestion."
+  - item: "Whether Tolstoy's What Is Art? self-condemnation footnote includes or excludes The Death of Ivan Ilyich."
+    phase: 3
+    why: "Affects 'the author's later verdict'; resolve against PSS Tom 30."
+  - item: "Heidegger §51 exact German wording + the 'only prose fiction in Being and Time' claim."
+    phase: 3
+    why: "Precision of the philosophical-reception claim before ingestion."
+  - item: "Confirm works/ record ids for cluster relatedWorks (On Life, A Confession) and titleAlternatives.type vocab."
+    phase: 4
+    why: "workRecord proposal completeness."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/ (works, comments, diaries, letters)"
+  - "primary-sources/jubilee-edition/vol86/vol86.pdf (= PSS Tom 26)"
+  - "Wikimedia Commons API (imageinfo/extmetadata)"
+  - "archive.org advancedsearch"
+  - "web scholarship (Jahn UMN Electronic Study Edition; Tolstoy Studies Journal; Heidegger reception)"
+
+references:
+  primary:
+    - "Смерть Ивана Ильича — PSS Tom 26, pp. 61–113 (works/v26_061_113_Smert_Ivana_Ilicha)"
+    - "Варианты — PSS Tom 26, pp. 505–528 (works/v26_505_528_Smert_Ivana_Ilicha_Varianty)"
+    - "Editorial history — PSS Tom 26, pp. 679–691 (comments/v26_679_691_Smert_Ivana_Ilicha)"
+    - "Diaries 1884 — PSS Tom 49 (v49_087/088/089)"
+    - "Letters — PSS Toms 63 (Urusov), 83 (S. A. Tolstaya), 85 (Chertkov)"
+  background:
+    - "Nabokov, V. — Lectures on Russian Literature (1981)"
+    - "Heidegger, M. — Being and Time (1927), §51"
+    - "Irwin, W. — 'Death by Inauthenticity: Heidegger's Debt to Ivan Il'ich's Fall', Tolstoy Studies Journal 25 (2013)"
+    - "Jahn, G. R. (ed.) — The Death of Ivan Ilich: An Electronic Study Edition (Univ. of Minnesota, 2018)"
+    - "Papadimos, T. J. & Stawicki, S. P. A. (2011); The Lancet editorial (2009)"
+    - "Vogüé, M. de — Le Roman Russe (1886)"

@@ -8,7 +8,7 @@ tags: [research]
 
 Date: 2026-05-29
 
-Context: A focused corpus dive into the word *crisis* (Russian кризис) and its near-neighbours across the local Tolstoy corpus (the *Слово Толстого* / tolstoydigital TEI edition of the 90-volume Jubilee Edition, cross-checked against the Jubilee Edition PDFs). The dive was prompted by a photographed page from Pavel Birukoff's biography in its Swedish edition (*Leo Tolstoj: Hans liv och verk*) — Book IV, «Kritisk period» (The Critical Period), chapter 14, titled simply **«Krisen»** (The Crisis), p. 262 — in which the biographer reports that Tolstoy himself denied that any crisis «i egentlig mening» (in the proper sense) had ever taken place. The question is whether "crisis" is Tolstoy's own word for the transformation of his late forties, or a label applied to him from outside — the same gap the project has already noted for *"Tolstoyanism"*.
+Context: A focused corpus dive into the word *crisis* (Russian кризис) and its near-neighbours across the local Tolstoy corpus (the *Слово Толстого* / tolstoydigital TEI edition of the 90-volume Jubilee Edition, cross-checked against the Jubilee Edition PDFs). The dive was prompted by a photographed page from Pavel Birukoff's biography in its Swedish edition (*Leo Tolstoj: Hans liv och verk*) — Book IV, «Kritisk period» (The Critical Period), chapter 14, titled simply **«Krisen»** (The Crisis), p. 262 — in which the biographer reports that Tolstoy himself denied that any crisis «i egentlig mening» (in the proper sense) had ever taken place. The question is whether "crisis" is Tolstoy's own word for the transformation of his late forties, or a label applied to him from outside — the same gap the project has already noted for [*"Tolstoyanism"*](../tolstoyanism/index.html).
 
 ---
 
@@ -217,6 +217,7 @@ Full provenance and rights for every item are in `dossier.yaml` (`visuals:`).
 - **Sweep:** inline grep across `works / letters / diaries / notes / comments / krug_chtenija` (492 candidate hits), triaged in context.
 - **Extract & verify:** `docs/research/lib/extract_tei.py` for byte-faithful Russian; voice attribution (Tolstoy's body text vs. `<note>` apparatus) settled with the extractor's `inside_note()` rule and, where ambiguous, an lxml ancestor check. The keystone (PSS Tom 23, p. 40) was cross-checked against the Jubilee Edition PDF (`vol83`, physical page 78 = printed p. 40) and matches the TEI verbatim.
 - **One method note worth keeping:** the local `jubilee-edition/volNN/` folder numbers are **not** PSS Tom numbers (verified: vol22→Tom 56, vol23→Tom 57, vol24→Tom 58, vol49→Tom 40, vol57→Tom 80, vol83→Tom 23). Always resolve via [pss-volume-mapping.md](../pss-volume-mapping.md), never by assuming folder = Tom.
+- **Links.** The "label applied from outside" pattern recurs for the movement-name in [tolstoyanism](../tolstoyanism/index.html); the framing biography (Birukoff) and its editions are mapped in [biryukov-biography-editions](../biryukov-biography-editions/index.html), and the dedication-and-diaries questions around it are the [biryukov-sofia-relationship](../biryukov-sofia-relationship/index.html) dive.
 
 ---
 
@@ -233,7 +234,7 @@ Full provenance and rights for every item are in `dossier.yaml` (`visuals:`).
 
 *Framing source*
 
-- Birukoff (Бирюков) P. I. *Leo Tolstoj: Hans liv och verk* (Swedish ed.), Book IV «Kritisk period», ch. 14 «Krisen», p. 262 — **the framing source**, provided by the user as a photograph this session. NB: the local English archive-org file `primary-sources/archive-org/leotolstoyhislif00biriiala/` is **Vol I** (childhood–youth) of a different edition and does **not** contain this chapter; do not cite it for the "Crisis" framing. See also [biryukov-biography-editions](../biryukov-biography-editions/index.md) for the edition map.
+- Birukoff (Бирюков) P. I. *Leo Tolstoj: Hans liv och verk* (Swedish ed.), Book IV «Kritisk period», ch. 14 «Krisen», p. 262 — **the framing source**, provided by the user as a photograph this session. NB: the local English archive-org file `primary-sources/archive-org/leotolstoyhislif00biriiala/` is **Vol I** (childhood–youth) of a different edition and does **not** contain this chapter; do not cite it for the "Crisis" framing. See also [biryukov-biography-editions](../biryukov-biography-editions/index.html) for the edition map.
 
 *Scholarship on the transformation* (Phase 3 secondary layer; English-first, prototype-light rigor — attributed, not byte-verified)
 

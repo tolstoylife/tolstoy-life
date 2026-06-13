@@ -10,7 +10,7 @@ Date: 2026-05-30
 
 Context: A narrow primary-source dive into how Leo Tolstoy engaged the label *anarchist* — and the compound *Christian anarchism* («христианский анархизм») — across the local corpus: the tolstoydigital TEI texts and the Jubilee Edition (PSS). It documents what his own voice does with the terms. It does not adjudicate whether the labels are accurate.
 
-This is the second of three planned dives that split an earlier combined survey, [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.md): dive #1 took *Tolstoyism* ([tolstoyanism](../tolstoyanism/index.md)); this is *Christian anarchism*; dive #3 will take the bare label *Christian*. The Christian-anarchism evidence was already extracted, byte-checked, and cross-read against the printed PSS in the combined survey; this dive reuses those locked extracts verbatim and adds the structured layers the original lacked — a machine-readable [dossier.yaml](dossier.yaml), an entity routing map, a scholarly-context layer, and a visual record. The combined survey is superseded for the Christian-anarchism half once this lands.
+This is the second of three dives that split an earlier combined survey, [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html): dive #1 took *Tolstoyism* ([tolstoyanism](../tolstoyanism/index.html)); this is *Christian anarchism*; dive #3 took the bare label *Christian* ([christian](../christian/index.html)). The Christian-anarchism evidence was already extracted, byte-checked, and cross-read against the printed PSS in the combined survey; this dive reuses those locked extracts verbatim and adds the structured layers the original lacked — a machine-readable [dossier.yaml](dossier.yaml), an entity routing map, a scholarly-context layer, and a visual record. The combined survey is superseded for the Christian-anarchism half once this lands.
 
 ---
 
@@ -233,8 +233,10 @@ The dive is text-first; the visual record is light. The two page facsimiles belo
 
 - [dossier.yaml](dossier.yaml) — the machine-readable evidence / entity / visuals / scholarship ledger behind this index.
 - [extract_tei.py](../lib/extract_tei.py), [verify_quotes.py](../lib/verify_quotes.py) — the shared TEI extractor and the byte-fidelity gate.
-- [tolstoyanism/index.md](../tolstoyanism/index.md) — dive #1 (*Tolstoyism*), the sibling whose structure this follows.
-- [tolstoyanism-christian-anarchism/index.md](../tolstoyanism-christian-anarchism/index.md) — the legacy combined survey this dive supersedes for the *Christian anarchism* half.
+- [tolstoyanism](../tolstoyanism/index.html) — dive #1 (*Tolstoyism*), the sibling whose structure this follows.
+- [christian](../christian/index.html) — dive #3 (*Christian*).
+- [christian-communism-socialism](../christian-communism-socialism/index.html) — the companion survey on the *Christian socialism* / *Christian communism* labels.
+- [tolstoyanism-christian-anarchism](../tolstoyanism-christian-anarchism/index.html) — the legacy combined survey this dive supersedes for the *Christian anarchism* half.
 - [pss-volume-mapping.md](../pss-volume-mapping.md) — Tom number → local PDF lookup.
 
 ---
