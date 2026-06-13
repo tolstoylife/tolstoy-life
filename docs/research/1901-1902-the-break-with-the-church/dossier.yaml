@@ -1,0 +1,971 @@
+topic:
+  slug: 1901-1902-the-break-with-the-church
+  title: "The break with the Church — Tolstoy, the Holy Synod, and the 1901 excommunication"
+  question: >-
+    The 1901 break between Tolstoy and the Russian Orthodox Church: the Holy Synod's edict of
+    20–22 February 1901, Tolstoy's «Ответ Синоду», and the cluster of anticlerical works around it
+    («К духовенству», «Разрушение ада», «О веротерпимости») — read together with the constructive
+    counter-faith they were paired with («Религия и нравственность», «Как читать евангелие»,
+    «Учение Христа, изложенное для детей»). What the edict was and was not; how Tolstoy answered it;
+    and the thesis the cluster makes plain — that he had broken with the church (not God) on
+    principle long before, and 1901 only ratified, belatedly and (he argued) ambiguously, a
+    separation he had already made.
+  date: "2026-06-13"
+  period: "1893–1908, centred on the 1901–1902 cluster (the spine event = the Feb 1901 edict)"
+  corpusSurface: >-
+    PSS Tom 34 (the 1900–1903 statyi + the legend «Разрушение ада»: Reply to the Synod, To the
+    Clergy, On Religious Tolerance, The Restoration of Hell) and their «История писания» apparatus;
+    Tom 37 (The Teaching of Christ for Children + apparatus); Tom 39 (Religion and Morality, How to
+    Read the Gospels + apparatus); Tom 54 (the 1901–1902 diary, all 85 entries); Tom 73 (the
+    1901–1902 letters — to Nicholas II and the intermediary Grand Duke Nikolai Mikhailovich).
+  dateRange: "1893-08 – 1908-06 (composition); spine event 1901-02"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE — flat citation ledger. Every quoteRu is verbatim in its `extract` file
+# (checked by verify_quotes.py). Extracts produced with extract_tei.py --choice=reg --notes=auto.
+# OS = Old Style (Julian); NS = +13 days from 1900-03 on, +12 for 1893/1896.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # --- THE EDICT & THE REPLY (the spine) ---
+  - id: E01
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'Известный миру писатель, русский по рождению, православный по крещению и воспитанию, граф Толстой, в прельщении гордого ума своего, дерзко восстал на господа и на Христа его и на святое его достояние, явно перед всеми отрекся от вскормившей и воспитавшей его матери, церкви православной'
+    quoteEn: '(working English) The world-renowned writer, Russian by birth, Orthodox by baptism and upbringing, Count Tolstoy, in the seduction of his proud mind, has boldly risen up against the Lord and against His Christ and against His holy possession, has openly before all renounced the Orthodox Church that nourished and reared him.'
+    significance: "The edict's own words, quoted verbatim inside the Reply — the spine document carries the Synod's text inside it. The phrasing the dive attributes to the Synod, never adopts as its own voice."
+    facsimile: null
+  - id: E02
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'Постановление синода вообще имеет много недостатков. Оно незаконно или умышленно двусмысленно; оно произвольно, неосновательно, неправдиво и, кроме того, содержит в себе клевету и подстрекательство к дурным чувствам и поступкам.'
+    quoteEn: '(working English) The Synod''s ruling has many defects in general. It is unlawful or intentionally equivocal; it is arbitrary, unfounded, untruthful and, besides, contains slander and incitement to evil feelings and deeds.'
+    significance: "Tolstoy's structured indictment of the edict — the «незаконно или умышленно двусмысленно» line is the anathema-or-not point the scholarship now agrees with: the edict was neither a proper excommunication nor an honest statement of non-membership."
+    facsimile: null
+  - id: E03
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'Но отрекся я от нее не потому, что я восстал на господа, а напротив, только потому, что всеми силами души желал служить ему.'
+    quoteEn: '(working English) But I renounced it not because I had risen up against the Lord, but on the contrary, only because with all the powers of my soul I wished to serve Him.'
+    significance: "The hinge of the Reply and the dive's marquee: the break is with the church, not with God. He accepts the fact of the renunciation and inverts its meaning."
+    facsimile: null
+  - id: E04
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'верю в бога, которого понимаю как дух, как любовь, как начало всего.'
+    quoteEn: '(working English) I believe in God, whom I understand as spirit, as love, as the origin of all things.'
+    significance: "The positive credo at the centre of the Reply — answering the edict's charge that he «отвергает бога». The break is constructive, not a renunciation of faith."
+    facsimile: null
+  - id: E05
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'вызвало, как и должно было ожидать, в людях непросвещенных и нерассуждающих озлобление и ненависть ко мне, доходящие до угроз убийства'
+    quoteEn: '(working English) [the ruling] called forth, as was to be expected, in unenlightened and unreasoning people bitterness and hatred toward me, going as far as threats of murder.'
+    significance: "Tolstoy's own account of the violent edge of the public reaction — the death threats — which he reads as the edict's «подстрекательство». Reception evidence from the primary text itself."
+    facsimile: null
+  - id: E06
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'Вернуться же к тому, от чего я с такими страданиями только что вышел, я уже никак не могу, как не может летающая птица войти в скорлупу того яйца, из которого она вышла.'
+    quoteEn: '(working English) To return to what I have only just left with such suffering I am quite unable, just as a flying bird cannot re-enter the shell of the egg from which it came.'
+    significance: "The closing image of the Reply and the dive's keystone metaphor: the break is irreversible because it is a birth, not a defection. Answers every later call to «вернитесь к церкви»."
+    facsimile: null
+  - id: E07
+    genre: work
+    pssTom: 34
+    pages: "245–253"
+    date: "1901-04-17"
+    addressee: null
+    extract: extracts/v34_245_253_Otvet_na_opredelenie_Sinoda_ot_20_22_fevralja_i_na_poluchennye_mnoju_po_etomu_sluchaju_pisma.txt
+    quoteRu: 'Я начал с того, что полюбил свою православную веру более своего спокойствия, потом полюбил христианство более своей церкви, теперь же люблю истину более всего на свете.'
+    quoteEn: '(working English) I began by loving my Orthodox faith more than my peace; then I loved Christianity more than my church; and now I love truth more than anything in the world.'
+    significance: "The reversed Coleridge epigraph (the Reply opens with Coleridge on loving Christianity above truth) — Tolstoy says he travelled the opposite road. The autobiography of the whole break in one sentence."
+    facsimile: null
+
+  - id: E08
+    genre: commentary
+    pssTom: 34
+    pages: "575–577"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_575_577_Otvet_na_opredelenie_Sinoda_ot_20_22_fev.txt
+    quoteRu: 'Это определение, составленное Победоносцевым, было проредактировано митрополитом петербургским и ладожским Антонием и другими членами синода и одобрено Николаем II.'
+    quoteEn: '(working English) This edict, composed by Pobedonostsev, was revised by Metropolitan Antony of St Petersburg and Ladoga and other members of the Synod, and approved by Nicholas II.'
+    significance: "The PSS (Soviet, 1952) attribution: Pobedonostsev drafted, Antony edited, Nicholas II approved. CONTESTED — Kolstø (2022) reverses this from the archives (see scholarship.triangulation): the initiative was the Synod's bishops, Antony chiefly; Pobedonostsev opposed it. The dive presents both, attributed."
+    facsimile: null
+  - id: E09
+    genre: commentary
+    pssTom: 34
+    pages: "575–577"
+    date: "1952 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v34_575_577_Otvet_na_opredelenie_Sinoda_ot_20_22_fev.txt
+    quoteRu: 'Дальнейшая перепечатка статьи была запрещена духовной цензурой.'
+    quoteEn: '(working English) Further reprinting of the article was forbidden by the spiritual [ecclesiastical] censorship.'
+    significance: "The Reply first appeared in Russia only truncated (~100 lines of the sharpest passages cut) in the church journal «Миссионерское обозрение» (1901, no. 6); the ecclesiastical censorship then banned further reprints. The full text first appeared abroad (Chertkov) and complete-in-Russia only in 1905."
+    facsimile: null
+
+  # --- GENESIS: Tolstoy's own witness (the 1901–02 diary + letters) ---
+  - id: E10
+    genre: diary
+    pssTom: 54
+    pages: "90–93"
+    date: "1901-04-01"
+    addressee: null
+    extract: extracts/diary_v54_090_093_1901_03_19.txt
+    quoteRu: 'За это время было странное отлучение от церкви и вызванные им выражения сочувствия'
+    quoteEn: '(working English) During this time there was the strange excommunication from the church, and the expressions of sympathy it called forth.'
+    significance: "★ KEYSTONE. The first diary mention of the excommunication, on 19 March OS — almost a month after it was published. His word for it is «странное» (strange), paired at once with the «выражения сочувствия» it drew. No wound, no protest: detachment. The excommunication day itself (22 Feb) went unrecorded — a real-time silence."
+    facsimile: null
+  - id: E11
+    genre: diary
+    pssTom: 54
+    pages: "93"
+    date: "1901-04-10"
+    addressee: null
+    extract: extracts/diary_v54_093_093_1901_03_28.txt
+    quoteRu: 'стало совершенно ясно, что все наше православие есть колдовство от страха. И корень всего — вера в чудесное.'
+    quoteEn: '(working English) it became completely clear that our whole Orthodoxy is sorcery born of fear. And the root of it all is belief in the miraculous.'
+    significance: "His core diagnosis of the church, written in the weeks he was drafting the Reply — Orthodoxy as колдовство (sorcery) rooted in belief in the miraculous. The same charge the Reply makes of the sacraments."
+    facsimile: null
+  - id: E12
+    genre: diary
+    pssTom: 54
+    pages: "93–94"
+    date: "1901-04-13"
+    addressee: null
+    extract: extracts/diary_v54_093_094_1901_03_31.txt
+    quoteRu: 'Ответ Синоду, кажется, кончил.[…]Продолжаются приветствия и ругательства.'
+    quoteEn: '(working English) The Reply to the Synod, it seems, is finished. […] The greetings and the abuse continue.'
+    significance: "The dated completion of the Reply (31 March OS; the printed text bears 4 April). «Продолжаются приветствия и ругательства» — the divided public response (acclaim and abuse) in his own four words."
+    facsimile: null
+  - id: E13
+    genre: diary
+    pssTom: 54
+    pages: "98–100"
+    date: "1901-05-24"
+    addressee: null
+    extract: extracts/diary_v54_098_100_1901_05_11.txt
+    quoteRu: 'Меня уговаривают молиться, говеть и совершать все те действия, которые дают такое великое успокоение, когда веришь в их действительность.'
+    quoteEn: '(working English) People urge me to pray, to keep the fast, and to perform all those acts that give such great comfort when one believes in their efficacy.'
+    significance: "Direct witness to the post-excommunication pressure to reconcile with the church — people pressing him back to the rites. He refuses."
+    facsimile: null
+  - id: E14
+    genre: diary
+    pssTom: 54
+    pages: "113–115"
+    date: "1901-12-12"
+    addressee: null
+    extract: extracts/diary_v54_113_115_1901_11_29.txt
+    quoteRu: 'церковь не есть то, чем она себя определяет, собрание верующих со Христом во главе, a мирское учреждение.'
+    quoteEn: '(working English) the church is not what it defines itself to be — a body of believers with Christ at its head — but a worldly institution.'
+    significance: "The thesis of «О веротерпимости» stated in the diary BEFORE the essay was written — the church is a мирское учреждение (worldly institution). He continues: in the first case persecution is impossible, in the second necessary."
+    facsimile: null
+  - id: E15
+    genre: diary
+    pssTom: 54
+    pages: "126–127"
+    date: "1902-04-03"
+    addressee: null
+    extract: extracts/diary_v54_126_127_1902_03_21.txt
+    quoteRu: 'но ведь я знаю, что ваша мука — с известкой, вредна.'
+    quoteEn: '(working English) but I know that your flour is mixed with lime, it is harmful.'
+    significance: "★ The «flour with lime» refusal — his answer to the calls to «вернитесь к церкви». You tell me to keep buying flour from you, but I know it is adulterated. The plainest single image of why he will not return."
+    facsimile: null
+  - id: E16
+    genre: diary
+    pssTom: 54
+    pages: "151–152"
+    date: "1902-12-26"
+    addressee: null
+    extract: extracts/diary_v54_151_152_1902_12_13.txt
+    quoteRu: 'единственное средство в наше время служить человечеству состоит в разрушении извращенного христианства и установлении истинной христианской религии.'
+    quoteEn: '(working English) the only means in our time of serving humanity consists in destroying corrupted Christianity and establishing the true Christian religion.'
+    significance: "The whole church-break project in one year-end sentence: demolition AND reconstruction. The negative cluster (Reply, To the Clergy, Restoration of Hell) and the positive cluster (Religion and Morality, the gospel works) are two halves of this one programme."
+    facsimile: null
+  - id: E17
+    genre: letter
+    pssTom: 73
+    pages: "184–198"
+    date: "1902-01-29"
+    addressee: "Nicholas II (via Grand Duke Nikolai Mikhailovich)"
+    extract: extracts/letter_v73_204_NikolayuII.txt
+    quoteRu: 'пишу Вам как бы с того света, находясь в ожидании близкой смерти.'
+    quoteEn: '(working English) I write to you as if from the other world, awaiting near death.'
+    significance: "The letter to Nicholas II, written from his sickbed at Gaspra during the grave illness of winter 1901–02. The church break runs parallel to the political one: he carried the same indictment of persecuted faith straight to the throne. (The letter's Pobedonostsev passage is a recovered draft layer — see needsReview.)"
+    facsimile: null
+
+  # --- RELIGION AND MORALITY (1893) — the philosophical foundation ---
+  - id: E18
+    genre: work
+    pssTom: 39
+    pages: "3–26"
+    date: "1893-11-09"
+    addressee: null
+    extract: extracts/v39_003_026_Religija_i_nravstvennost.txt
+    quoteRu: 'религия есть установленное человеком между собой и вечным бесконечным миром или началом и первопричиной его известное отношение.'
+    quoteEn: '(working English) religion is a certain relation, established by a person between himself and the eternal infinite world, or its origin and first cause.'
+    significance: "The definition of religion — written 1893, eight years before the excommunication. This is the ground on which the whole break stands: religion is the individual's relation to the infinite, prior to and independent of any church. The same kernel the «Что такое религия» dive dates to Feb 1901."
+    facsimile: null
+  - id: E19
+    genre: work
+    pssTom: 39
+    pages: "3–26"
+    date: "1893-11-09"
+    addressee: null
+    extract: extracts/v39_003_026_Religija_i_nravstvennost.txt
+    quoteRu: 'наша церковно-государственная, низведенная на эту степень Августином, хотя она и называется не свойственным ей именем — христианской'
+    quoteEn: '(working English) our church-and-state [religion], lowered to this level by Augustine, although it is called by a name not proper to it — Christian.'
+    significance: "The deepest root of the break, stated in 1893: church-and-state Christianity is, in Tolstoy's taxonomy of three relations to the world, the SECOND (pagan, social-state) level wearing a name «не свойственное ей» — Christian. The institution he would be excommunicated from is, on his account, pre-Christian. (Cross-links the religion/church distinction the «Что такое религия» dive develops.)"
+    facsimile: null
+  - id: E20
+    genre: work
+    pssTom: 39
+    pages: "3–26"
+    date: "1893-11-09"
+    addressee: null
+    extract: extracts/v39_003_026_Religija_i_nravstvennost.txt
+    quoteRu: 'Утверждать, что социальный прогресс производит нравственность, всё равно что утверждать, что постройка печей производит тепло.'
+    quoteEn: '(working English) To assert that social progress produces morality is just like asserting that the building of stoves produces heat.'
+    significance: "The image that anchors the essay's answer to the German Ethical Society: heat comes from the sun (religion); the stove (the social form) only holds it. Morality cannot be founded apart from religion — so a church that corrupts religion corrupts morality at the root (the thesis the 1902 diary, E-series, and To the Clergy carry forward)."
+    facsimile: null
+  - id: E21
+    genre: commentary
+    pssTom: 39
+    pages: "225–228"
+    date: "1956 (PSS apparatus)"
+    addressee: null
+    extract: extracts/v39_225_228_Religija_i_nravstvennost_Istorija_pisani.txt
+    quoteRu: 'По-русски статья «Религия и нравственность» впервые была опубликована в журнале «Северный вестник» (1894, январь) с большими цензурными пропусками и искажениями и с измененным редакцией заглавием: «Противоречия эмпирической нравственности».'
+    quoteEn: '(working English) In Russian, "Religion and Morality" was first published in the journal "Severny Vestnik" (January 1894) with large censorship cuts and distortions, and with a title changed by the editors to "The Contradictions of Empirical Morality".'
+    significance: "The censorship pattern of the whole cluster, already in 1893–94: foreign editions first (German «Für Ethische Kultur» 1893–94, English «Contemporary Review» March 1894), the Russian printing cut, distorted, and retitled. The standalone edition was banned outright (Glavnoe upravlenie circular № 5412, 19 Sep 1894)."
+    facsimile: null
+
+  # --- HOW TO READ THE GOSPELS (1896) ---
+  - id: E22
+    genre: work
+    pssTom: 39
+    pages: "113–116"
+    date: "1896-07-04"
+    addressee: null
+    extract: extracts/v39_113_116_Kak_chitat_evangelie_i_v_chem_ego_suschnost.txt
+    quoteRu: 'у меня нет никакого учения, а понимаю я христианское учение так, как оно изложено в евангелиях.'
+    quoteEn: '(working English) I have no teaching of my own; I understand the Christian teaching as it is set forth in the Gospels.'
+    significance: "The constructive answer to the church's monopoly on interpretation: there is no «учение Толстого» (cross-links the tolstoyanism dive's keystone) — only the Gospels, read directly. The method that makes the church's mediation unnecessary."
+    facsimile: null
+  - id: E23
+    genre: work
+    pssTom: 39
+    pages: "113–116"
+    date: "1896-07-04"
+    addressee: null
+    extract: extracts/v39_113_116_Kak_chitat_evangelie_i_v_chem_ego_suschnost.txt
+    quoteRu: 'Пусть каждый, читая евангелие, подчеркнет всё то, что ему кажется вполне простым, ясным и понятным, — синим карандашом, отметив, кроме того, красным карандашом из отмеченного синим слова самого Христа'
+    quoteEn: '(working English) Let everyone, reading the Gospel, underline in blue pencil everything that seems to him fully simple, clear, and intelligible, and mark besides, in red pencil, the words of Christ himself among what is underlined in blue.'
+    significance: "The blue-and-red-pencil method: a layman's tool for stripping the church's gloss and finding the teaching directly — the practical inverse of «К духовенству»'s account of how the church teaches scripture to those who cannot judge it."
+    facsimile: null
+
+  # --- ON RELIGIOUS TOLERANCE (1901) ---
+  - id: E24
+    genre: work
+    pssTom: 34
+    pages: "291–298"
+    date: "1902-01-10"
+    addressee: null
+    extract: extracts/v34_291_298_O_veroterpimosti.txt
+    quoteRu: 'по самому определению своему, церковь не может быть веротерпима'
+    quoteEn: '(working English) by its very definition, the church cannot be tolerant.'
+    significance: "The pivot of «О веротерпимости» (occasioned by Stakhovich's freedom-of-conscience speech at the Oryol missionary congress): a church that claims to hold the one saving truth cannot, by definition, tolerate dissent — so the demand for a tolerant church is incoherent."
+    facsimile: null
+  - id: E25
+    genre: work
+    pssTom: 34
+    pages: "291–298"
+    date: "1902-01-10"
+    addressee: null
+    extract: extracts/v34_291_298_O_veroterpimosti.txt
+    quoteRu: 'учреждение, называющее себя христианской церковью, не есть христианское учреждение, а мирское учреждение, несогласное с христианством и скорее враждебное ему.'
+    quoteEn: '(working English) the institution calling itself the Christian church is not a Christian institution but a worldly one, at odds with Christianity and rather hostile to it.'
+    significance: "The sharpest statement of the dive's core: the church is not a degraded form of Christianity but a worldly institution hostile to it. The conclusion he says he first disbelieved («я не поверил ей») and then could not escape."
+    facsimile: null
+  - id: E26
+    genre: work
+    pssTom: 34
+    pages: "291–298"
+    date: "1902-01-10"
+    addressee: null
+    extract: extracts/v34_291_298_O_veroterpimosti.txt
+    quoteRu: 'Ей богу, мы одни составляем истинную церковь'
+    quoteEn: '(working English) By God, we alone constitute the true church.'
+    significance: "His reduction of every church's claim to infallibility to a bare oath — the same weight as any person saying «ей богу, я прав». Since the churches are many and each says this, the claim is self-cancelling; only force can sustain it."
+    facsimile: null
+  - id: E27
+    genre: work
+    pssTom: 34
+    pages: "291–298"
+    date: "1902-01-10"
+    addressee: null
+    extract: extracts/v34_291_298_O_veroterpimosti.txt
+    quoteRu: 'Веротерпимым может быть только истинное, свободное христианство, не связанное ни с какими мирскими учреждениями'
+    quoteEn: '(working English) Only true, free Christianity, bound to no worldly institutions, can be tolerant.'
+    significance: "The constructive close: the remedy is not a tolerant church but free Christianity, and (earlier in the essay) not «tolerance» from the church but the state's withdrawal of its exclusive support — separation, not reform."
+    facsimile: null
+
+  # --- TO THE CLERGY (1902) ---
+  - id: E28
+    genre: work
+    pssTom: 34
+    pages: "299–318"
+    date: "1902-11-14"
+    addressee: null
+    extract: extracts/v34_299_318_K_duhovenstvu.txt
+    quoteRu: 'Средство это есть внушение церковного учения людям в том состоянии, в котором они не могут обсудить того, что им передается.'
+    quoteEn: '(working English) This means is the suggestion of church teaching to people in a state in which they cannot weigh what is conveyed to them.'
+    significance: "The charge at the heart of «К духовенству»: the church's most powerful method is внушение (suggestion/hypnosis) to those who cannot judge — above all children. The corruption is moral as well as intellectual."
+    facsimile: null
+  - id: E29
+    genre: work
+    pssTom: 34
+    pages: "299–318"
+    date: "1902-11-14"
+    addressee: null
+    extract: extracts/v34_299_318_K_duhovenstvu.txt
+    quoteRu: 'Христианство, проповедуемое вами, есть прививка ложного христианства, как прививка оспы или дифтерита, делающая того, кому она прививается, уже неспособным принять истинное христианство.'
+    quoteEn: '(working English) The Christianity you preach is an inoculation of false Christianity — like a smallpox or diphtheria vaccination — making the one inoculated unable to receive true Christianity.'
+    significance: "The vaccination image — church Christianity as an inoculation that immunises against the real thing. The most concentrated form of the dive's thesis that the church does not merely fail to convey Christianity but actively blocks it."
+    facsimile: null
+  - id: E30
+    genre: work
+    pssTom: 34
+    pages: "299–318"
+    date: "1902-11-14"
+    addressee: null
+    extract: extracts/v34_299_318_K_duhovenstvu.txt
+    quoteRu: 'Положа руку на сердце, спросите себя, верите ли вы в то, что проповедуете?'
+    quoteEn: '(working English) Hand on heart, ask yourselves: do you believe what you preach?'
+    significance: "The direct appeal to the clergy's conscience — the work's rhetorical core. He answers for them: «нет, не верите». The address is to clergy of every confession (papas, cardinals, pastors), not the Orthodox alone — the break is with the church as such."
+    facsimile: null
+  - id: E31
+    genre: work
+    pssTom: 34
+    pages: "299–318"
+    date: "1902-11-14"
+    addressee: null
+    extract: extracts/v34_299_318_K_duhovenstvu.txt
+    quoteRu: 'в голове, в которую вбит клин троицы или бога, сделавшегося человеком и своим страданием искупившего род человеческий и потом опять улетевшего на небо, не может уже удержаться никакое разумное, твердое убеждение.'
+    quoteEn: '(working English) in a head into which the wedge of the Trinity has been driven — or of a God who became man and by his suffering redeemed the human race and then flew up to heaven again — no reasonable, firm conviction can hold any longer.'
+    significance: "The wedge-in-the-grain-bin image: drive in one absurd dogma and the mind can hold no firm conviction afterward. The intellectual half of the harm (the moral half is the inoculation, E29)."
+    facsimile: null
+
+  # --- THE RESTORATION OF HELL (1902) — reconcile/cross-link 1903-folk-tales ---
+  - id: E32
+    genre: work
+    pssTom: 34
+    pages: "100–115"
+    date: "1903-01"
+    addressee: null
+    extract: extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    quoteRu: 'Дело шло хорошо, но я боялся, как бы они не увидали слишком очевидного обмана, и тогда я выдумал церковь.'
+    quoteEn: '(working English) Things were going well, but I feared they might notice the too-obvious deception — and so I invented the church.'
+    significance: "The thesis of the satirical legend in the devil's own mouth: the church is the devil-in-the-cape's invention for keeping Christ's teaching from working. Conceived as a companion-illustration to «К духовенству». FULL treatment is in the 1903-folk-tales dive — cross-referenced, not duplicated, here."
+    facsimile: null
+  - id: E33
+    genre: work
+    pssTom: 34
+    pages: "100–115"
+    date: "1903-01"
+    addressee: null
+    extract: extracts/v34_100_115_Razrushenie_ada_i_vosstanovlenie_ego.txt
+    quoteRu: 'Так переделал, что люди верят не в его ученье, а в мое, которое они называют его именем.'
+    quoteEn: '(working English) I reworked it so that people believe not in his teaching but in mine, which they call by his name.'
+    significance: "The legend's mechanism — Christ's teaching kept under Christ's name but emptied of content. The fiction-side statement of E25/E29's argument. (Cross-link 1903-folk-tales for the genesis, the Shchegolyonok source, and the ban arc.)"
+    facsimile: null
+
+  # --- THE TEACHING OF CHRIST FOR CHILDREN (1907–08) — the constructive endpoint ---
+  - id: E34
+    genre: work
+    pssTom: 37
+    pages: "97–147"
+    date: "1908-06-25"
+    addressee: null
+    extract: extracts/v37_097_147_Uchenie_Hrista_izlozhennoe_dlja_detej.txt
+    quoteRu: 'Иисус Христос своим учением и жизнью открыл людям то, что дух божий живет в каждом человеке.'
+    quoteEn: '(working English) Jesus Christ, by his teaching and his life, revealed to people that the spirit of God lives in every person.'
+    significance: "The opening of the children's gospel — the teaching as Tolstoy would have children receive it, with comprehension questions after each chapter. The exact inverse of «К духовенству»'s account of how the church teaches children the Nicene Creed and the «священная история»."
+    facsimile: null
+  - id: E35
+    genre: work
+    pssTom: 37
+    pages: "97–147"
+    date: "1908-06-25"
+    addressee: null
+    extract: extracts/v37_097_147_Uchenie_Hrista_izlozhennoe_dlja_detej.txt
+    quoteRu: 'Иисус пососал губку и сказал громким голосом: — Кончено! Отец, в руки твои отдаю дух мой! — И, склонив голову, испустил дух.'
+    quoteEn: '(working English) Jesus sucked the sponge and said in a loud voice: "It is finished! Father, into thy hands I give my spirit!" — and, bowing his head, gave up the spirit.'
+    significance: "The children's gospel ends at the human death of Jesus — NO bodily resurrection. The de-mythologised faith embodied: exactly the «воскресение из мертвых» the Synod's edict charged him with denying, and which he denies plainly even in a book for children."
+    facsimile: null
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a PLAN for the separate wiki-ingestion step;
+# the dive writes no pages). ingestionPriority: 1 central · 2 supporting · 3 peripheral.
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  - name: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    wikiType: event
+    wikilinkTarget: "Excommunication of Tolstoy"
+    vaultStatus: missing
+    role: "The spine event: the Holy Synod's edict of 20–22 Feb 1901 (published 24 Feb), declaring Tolstoy outside the Church. Not a formal anathema but an отлучение. The event the whole dive turns on."
+    sources: [jubilee-edition, tolstoydigital-tei]
+    evidenceRefs: [E01, E02, E08, E10]
+    ingestionPriority: 1
+    dependsOn: ["Holy Synod of the Russian Orthodox Church"]
+  - name: "Holy Synod of the Russian Orthodox Church"
+    wikiType: institution
+    wikilinkTarget: "Holy Synod"
+    vaultStatus: missing
+    role: "The governing body of the Russian Orthodox Church that issued the 1901 edict; signed by seven hierarchs (Antony Vadkovsky chair, Theognost of Kiev, Vladimir of Moscow, et al.). The institution the dive's works indict as a мирское учреждение."
+    sources: [jubilee-edition]
+    evidenceRefs: [E08, E25]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Konstantin Pobedonostsev"
+    wikiType: person
+    wikilinkTarget: "Konstantin Pobedonostsev"
+    vaultStatus: missing
+    role: "Ober-Procurator of the Holy Synod (1880–1905). The PSS apparatus and popular account credit him with drafting the edict; Kolstø (2022) shows from the archives he opposed it. Either way the face of the church-state apparatus for Tolstoy — the model for Toporov in Resurrection, named in the diary and the Tsar letter."
+    sources: [jubilee-edition]
+    evidenceRefs: [E08, E17]
+    ingestionPriority: 1
+    dependsOn: []
+  - name: "Metropolitan Antony (Vadkovsky)"
+    wikiType: person
+    wikilinkTarget: "Antony Vadkovsky"
+    vaultStatus: missing
+    role: "Metropolitan of St Petersburg and Ladoga, chair of the Synod; edited (Kolstø: chiefly initiated) the edict and signed it first; replied to Sofia Tolstaya's protest letter. The senior churchman of the break."
+    sources: [jubilee-edition]
+    evidenceRefs: [E08]
+    ingestionPriority: 1
+    dependsOn: ["Holy Synod of the Russian Orthodox Church"]
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Tolstoy's closest disciple; published all the banned church-break works abroad through «Свободное слово» (Christchurch, England); the relay through whom news of the Tsar letter returned. Extend the existing page with the 1901–02 publishing role."
+    sources: [jubilee-edition]
+    evidenceRefs: [E09, E12, E17]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Sophia Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Tolstoy's wife; wrote protest letters to both Pobedonostsev and Metropolitan Antony after the edict (Feb–March 1901); Antony replied, but his answer did not satisfy her and Tolstoy did not read it. Extend the existing page with the 1901 protest."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "English translator and authorised biographer; rendered the Reply («A Reply to the Synod's Edict» / «My Reply to the Synod»), To the Clergy («An Appeal to the Clergy»), and others into English; his Life of Tolstoy (1910) Ch. 16 is the main English account of the excommunication's reception."
+    sources: [maude-biography-vol2]
+    evidenceRefs: []
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Nicholas II"
+    wikiType: person
+    wikilinkTarget: "Nicholas II"
+    vaultStatus: missing
+    role: "Tsar; approved the edict (per the PSS apparatus) and the addressee of Tolstoy's 16 Jan 1902 letter («как бы с того света»), which indicts the persecution of faith. Tolstoy addressed him as «любезный брат»."
+    sources: [jubilee-edition]
+    evidenceRefs: [E08, E17]
+    ingestionPriority: 2
+    dependsOn: []
+  - name: "Grand Duke Nikolai Mikhailovich"
+    wikiType: person
+    wikilinkTarget: "Nikolai Mikhailovich"
+    vaultStatus: missing
+    role: "Historian and Romanov; the intermediary who personally delivered Tolstoy's January 1902 letter to Nicholas II and relayed (via Chertkov) that it was received favourably. The channel between Yasnaya Polyana/Gaspra and the throne."
+    sources: [jubilee-edition]
+    evidenceRefs: [E17]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Mikhail Stakhovich"
+    wikiType: person
+    wikilinkTarget: "Mikhail Stakhovich"
+    vaultStatus: missing
+    role: "Marshal of the Oryol nobility; his September 1901 speech to the Oryol missionary congress calling for freedom of conscience occasioned «О веротерпимости» and a Russia-wide controversy."
+    sources: [jubilee-edition]
+    evidenceRefs: [E24]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Georg von Gizycki"
+    wikiType: person
+    wikilinkTarget: "Georg von Gizycki"
+    vaultStatus: missing
+    role: "Berlin philosophy professor; his 1893 letter on behalf of «Für Ethische Kultur» (two questions: what is religion; can morality be independent of religion) occasioned «Религия и нравственность»."
+    sources: [jubilee-edition]
+    evidenceRefs: [E18, E21]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "John of Kronstadt"
+    wikiType: person
+    wikilinkTarget: "John of Kronstadt"
+    vaultStatus: missing
+    role: "The most influential parish priest in Russia; the hardline clerical voice against Tolstoy — denounced him as a heretic «who surpassed all heretics» and (reportedly, 1908) prayed for his death. The opposite pole of the public reaction from the student demonstrations."
+    sources: []
+    evidenceRefs: [E05]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Pyotr Verigin"
+    wikiType: person
+    wikilinkTarget: "Pyotr Verigin"
+    vaultStatus: missing
+    role: "Exiled leader of the Doukhobors (the persecuted peasant sect Tolstoy championed); visited Tolstoy 4 Nov 1902 during the To the Clergy period, tying the church break to the sectarian-persecution cause that runs through «О веротерпимости» and the Tsar letter."
+    sources: [jubilee-edition]
+    evidenceRefs: []
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "«Свободное слово» (Svobodnoe Slovo / Free Word)"
+    wikiType: institution
+    wikilinkTarget: "Svobodnoe Slovo"
+    vaultStatus: missing
+    role: "V. G. Chertkov's émigré press at Christchurch, England — first publisher of the complete Reply, To the Clergy, On Religious Tolerance, and The Restoration of Hell, all banned in Russia. The publication channel of the whole cluster. (Distinct from the English-language Free Age Press partner.)"
+    sources: [jubilee-edition]
+    evidenceRefs: [E09]
+    ingestionPriority: 2
+    dependsOn: ["Vladimir Chertkov"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — see extracts/_visuals-sweep.md for full provenance. visuals/ is git-ignored;
+# `python3 docs/fetch_visuals.py 1901-1902-the-break-with-the-church` repopulates a clone.
+# No facsimile committed to extracts/ (the Wiener English PDFs are not the Russian PSS; the
+# edict facsimile is a work-order). All entries below are PD unless noted.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: repin-tolstoy-barefoot-1901
+    type: portrait
+    subject: "Ilya Repin, «Л. Н. Толстой босой» (Tolstoy barefoot, standing), oil, 1901"
+    relatedEntity: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    relatedEvidence: [E10]
+    holding: "State Russian Museum, St Petersburg"
+    archiveId: "Commons File:Ilya_Repin_-_Leo_Tolstoy_Barefoot_-_Google_Art_Project.jpg"
+    access: open
+    rights: "PD (Repin d. 1930; work pre-1931)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ilya_Repin_-_Leo_Tolstoy_Barefoot_-_Google_Art_Project.jpg"
+    localPath: visuals/commons-repin-tolstoy-barefoot-1901.jpg
+    note: "The painting exhibited at the 29th Peredvizhniki exhibition (St Petersburg, spring 1901) whose display drew a pro-Tolstoy demonstration weeks after the edict — visitors showered it with flowers. The keystone image."
+  - id: repin-pobedonostsev-1903
+    type: portrait
+    subject: "Ilya Repin, portrait study of K. P. Pobedonostsev (from the State Council commission), 1903"
+    relatedEntity: "Konstantin Pobedonostsev"
+    relatedEvidence: [E08]
+    holding: "State Russian Museum, St Petersburg"
+    archiveId: "Commons File:Pobedonostsev_by_repin.jpg"
+    access: open
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Pobedonostsev_by_repin.jpg"
+    localPath: visuals/commons-repin-pobedonostsev-1903.jpg
+    note: "Also cached: Makovsky's 1899 portrait (commons-makovsky-pobedonostsev-1899.jpg) and Serov's 1902 portrait (commons-serov-pobedonostsev-1902.jpg) — three painted portraits at the period of the edict."
+  - id: antony-vadkovsky-1904
+    type: photograph
+    subject: "Metropolitan Antony (Vadkovsky) of St Petersburg, photograph, 1904"
+    relatedEntity: "Metropolitan Antony (Vadkovsky)"
+    relatedEvidence: [E08]
+    holding: "Wikimedia Commons"
+    archiveId: "Commons File:Metropolitan_Anthony_of_Petersburg_(1904).jpg"
+    access: open
+    rights: "PD (anonymous pre-1930 photograph)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Metropolitan_Anthony_of_Petersburg_(1904).jpg"
+    localPath: visuals/commons-antony-vadkovsky-1904.jpg
+    note: "The senior signatory who edited the edict and replied to Sofia Tolstaya. Also cached: an 1899 archbishop-era photo and the LC/Bain Collection photo (commons-antony-vadkovsky-1899.jpg, -bain.jpg)."
+  - id: tolstoy-chekhov-gaspra-1901
+    type: photograph
+    subject: "Tolstoy and Chekhov at the Panina dacha near Gaspra, Crimea, 1901 (photographer P. A. Sergenko)"
+    relatedEntity: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    relatedEvidence: [E17]
+    holding: "Wikimedia Commons (Zeno Fotografie)"
+    archiveId: "Commons File:Sergenko...Tolstoj_und_Čechov_auf_der_Dača_von_Panina_(1).jpg"
+    access: open
+    rights: "PD (pre-1930 photograph)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Sergenko,_Petr_Alekseevi%C4%8D_-_Tolstoj_und_%C4%8Cechov_auf_der_Da%C4%8Da_von_Panina_(1)_(Zeno_Fotografie).jpg"
+    localPath: visuals/commons-tolstoy-chekhov-panina-1901-1.jpg
+    note: "Documents the Gaspra circle (Chekhov, Gorky visited) during the grave illness of winter 1901–02, after the edict. Two frames cached (-1, -2)."
+  - id: gaspra-house-1901-02
+    type: photograph
+    subject: "The Panina estate house at Gaspra, Crimea, where the Tolstoys lived 1901–1902"
+    relatedEntity: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    relatedEvidence: [E17]
+    holding: "State Historical Museum (ГИМ), Moscow"
+    archiveId: "Commons File:Россия._Крым._Гаспра._Дом...ГИМ_e1.jpg (Sherer, Nabgolts & Co.)"
+    access: open
+    rights: "PD (pre-1930 photograph)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F._%D0%9A%D1%80%D1%8B%D0%BC._%D0%93%D0%B0%D1%81%D0%BF%D1%80%D0%B0._%D0%94%D0%BE%D0%BC%2C_%D0%B3%D0%B4%D0%B5_%D0%B6%D0%B8%D0%BB%D0%B0_%D1%81%D0%B5%D0%BC%D1%8C%D1%8F_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D1%8B%D1%85_%D0%B2_1901_%D0%B8_1902%D0%B3%D0%B3_%D0%93%D0%98%D0%9C_e1.jpg"
+    localPath: visuals/commons-gaspra-house-tolstoy-1901-02-sherer.jpg
+    note: "Where On Religious Tolerance was written and the near-fatal illness (and the Tsar letter «как бы с того света») took place."
+  - id: repin-state-council-1903
+    type: painting
+    subject: "Ilya Repin, «Ceremonial Sitting of the State Council, 7 May 1901», oil, 1903 (Pobedonostsev among the assembled)"
+    relatedEntity: "Konstantin Pobedonostsev"
+    relatedEvidence: [E08]
+    holding: "State Russian Museum, St Petersburg"
+    archiveId: "Commons File:Ilya_Repin_-_Ceremonial_Sitting_of_the_State_Council...Google_Art_Project.jpg"
+    access: open
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Ilya_Repin_-_Ceremonial_Sitting_of_the_State_Council_on_7_May_1901_Marking_the_Centenary_of_its_Foundation_-_Google_Art_Project.jpg"
+    localPath: visuals/commons-repin-state-council-1903.jpg
+    note: "Context for the church-state apparatus; painted the same year as the edict. Full-canvas scan also cached (-full)."
+  - id: sofia-tolstaya-c1900
+    type: photograph
+    subject: "Sophia Andreevna Tolstaya, c.1900"
+    relatedEntity: "Sophia Tolstaya"
+    relatedEvidence: []
+    holding: "Wikimedia Commons"
+    archiveId: "Commons File:Sofia_Tolstaya_paints.jpg"
+    access: open
+    rights: "PD (anonymous pre-1930)"
+    licence: PD
+    usable: yes
+    url: "https://commons.wikimedia.org/wiki/File:Sofia_Tolstaya_paints.jpg"
+    localPath: null
+    note: "WORK-ORDER (manual fetch): Wikimedia throttled the agent; use the thumb URL https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sofia_Tolstaya_paints.jpg/1200px-Sofia_Tolstaya_paints.jpg and save as visuals/commons-sofia-tolstaya-c1900.jpg. She wrote the protest letter to Metropolitan Antony."
+  - id: synod-edict-facsimile
+    type: facsimile
+    subject: "«Определение Святейшего Синода» as printed in «Церковные ведомости» №8, 24 Feb 1901"
+    relatedEntity: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    relatedEvidence: [E08]
+    holding: "Not openly digitised — РНБ (serials); original signed file at РГИА f.796 op.182 d.2054"
+    archiveId: null
+    access: request
+    rights: "PD (1901 official publication)"
+    licence: PD
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — the printed edict facsimile. Request from the Russian National Library (РНБ) serials room or РГИА; LC Slavic Division holds pre-1917 Russian periodicals on microfilm. No open scan found 2026-06-13."
+  - id: excommunication-caricatures
+    type: illustration
+    subject: "Caricatures / popular prints of the 1901 excommunication (Tolstoy and the Synod)"
+    relatedEntity: "The 1901 excommunication of Tolstoy (Определение Синода № 557)"
+    relatedEvidence: []
+    holding: "Not openly digitised — ГИМ graphic arts / РНБ отдел эстампов"
+    archiveId: null
+    access: request
+    rights: unknown
+    licence: unknown
+    usable: no
+    url: null
+    localPath: null
+    note: "WORK-ORDER — post-1905 satirical prints are documented in secondary literature but not found on Commons. Request from ГИМ (Moscow) or РНБ print department; search «Толстой», «отлучение», «синод», 1901–1906."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). Mainstream = contrast, not baseline.
+# Full sweep + 26 sources: extracts/_scholarship.md.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    Mainstream scholarship agrees that Tolstoy had broken with the institutional Church by the early
+    1880s and that 1901 only made the rupture official. The single most important historiographical
+    point is the nature of the edict: it was NOT a formal анафема (anathema) but an отлучение — a
+    declaration that Tolstoy had, by his own public statements, placed himself outside the Church
+    («не числит его более членом церкви ... доколе он не раскается»). Tolstoy himself seized on this
+    («незаконно или умышленно двусмысленно»), and Kolstø (2022) calls it «both an excommunication
+    and not an excommunication» — a self-defeating attempt to do two incompatible things at once.
+    Kolstø's «Heretical Orthodoxy» (Cambridge, 2022) is the current benchmark and overturns the
+    Soviet-era attribution preserved in the PSS apparatus: the archival record shows the edict was
+    initiated by the Synod's own priestly members (Metropolitan Antony Vadkovsky chiefly), while
+    Ober-Procurator Pobedonostsev OPPOSED it, fearing it would amplify Tolstoy's prestige — which it
+    did. The public reaction backfired on the Church: crowds acclaimed Tolstoy in Moscow, Repin's
+    portrait was showered with flowers, and ~500 students marched on the Kazan Cathedral demanding
+    to be excommunicated too. Mainstream biography (Maude 1910; Bartlett 2010; Medzhibovskaya 2008)
+    treats the 1901–02 works piecemeal; the corpus clusters them as one sustained 18-month riposte.
+  triangulation:
+    - evidenceRef: E03
+      conventionalView: "1901 was the moment of rupture (the 'excommunication' that cast Tolstoy out)."
+      relation: extends
+      source: "Medzhibovskaya 2008, Tolstoy and the Religious Culture of His Time; Kolstø 2022, ch. 12. The corpus shows the break was self-declared ~20 years earlier (E18–E19, 1893) and only formalised in 1901."
+    - evidenceRef: E02
+      conventionalView: "The action is commonly called an 'excommunication' (anathema framing in the popular press)."
+      relation: complicates
+      source: "Kolstø 2022 ('both an excommunication and not'); Archim. Tikhon Shevkunov 2010 ('merely stated an accomplished fact'). Scholarship now agrees with Tolstoy's own «двусмысленно»: it was an отлучение, not an анафема."
+    - evidenceRef: E08
+      conventionalView: "Pobedonostsev drove the edict (PSS apparatus, 1952; Soviet historians; popular account)."
+      relation: contradicts
+      source: "Kolstø 2022 (archival): Metropolitan Antony Vadkovsky and the Synod's priestly members initiated it; Pobedonostsev opposed it. The PSS apparatus (E08) preserves the Soviet attribution the dive flags as superseded."
+    - evidenceRef: E04
+      conventionalView: "The 'excommunicated' framing casts Tolstoy implicitly as anti-religious / God-denying (the edict's own charge)."
+      relation: contradicts
+      source: "Tolstoy's Reply explicitly affirms faith in God (E04); the corpus and Kolstø 2022 show the break was a religious act, not its abandonment."
+    - evidenceRef: E25
+      conventionalView: "Biographies treat the 1901–02 anticlerical writings as separate occasional pieces."
+      relation: extends
+      source: "Maude 1910 ch. 16; Bartlett 2010. The corpus clusters Reply + To the Clergy + Restoration of Hell + On Religious Tolerance as one 18-month polemical unit with a shared thesis (church = мирское учреждение)."
+    - evidenceRef: E05
+      conventionalView: "The Church framed the edict as a protective pastoral measure."
+      relation: extends
+      source: "Long 1901; Maude 1910 ch. 16. Tolstoy read it as incitement to violence (E05); the documented backfire — acclaim, flowers at the Repin portrait, the student march — is Kolstø's central 'miscalculation' argument."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORDS — proposed CREATIONS (none of these 7 records exist yet; only 15 works
+# are recorded so far). READ-ONLY to works/; the human ingestion step applies these.
+# Restoration of Hell is RECONCILED, not duplicated (1903-folk-tales already proposes it).
+# ─────────────────────────────────────────────────────────────────────────────
+workRecords:
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/reply-to-the-synods-edict/A Reply to the Synod's Edict.md"
+    workId: reply-to-the-synods-edict
+    create: true
+    fields:
+      - { field: titleRu, value: "Ответ на определение Синода от 20—22 февраля и на полученные мною по этому случаю письма", source: "PSS т.34 с.245", confidence: high }
+      - { field: titleEn, value: "A Reply to the Synod's Edict of Excommunication, and to Letters Received by Me Concerning It", evidenceRefs: [E01], source: "Aylmer Maude title (also cited 'My Reply to the Synod')", confidence: high }
+      - { field: titleAlternatives, value: [{title: "My Reply to the Synod", type: translation, language: en}], source: "Maude/Crowell 1902", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "PSS heads it СТАТЬИ; shelving per user routing", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "shelving (a polemical article)", confidence: medium }
+      - { field: genre, value: essay, source: "PSS «статья»; a polemical reply", confidence: medium, note: "alt: religious — see needsReview" }
+      - { field: language, value: ru, source: "original", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished and published", confidence: high }
+      - { field: dateWritingCompleted, value: "1901-04-17", evidenceRefs: [E12], source: "text dated «4 апреля 1901»; diary 31 Mar OS «кончил»", confidence: high, oldStyle: "1901-04-04", approximate: false }
+      - { field: dateWritingStarted, value: "1901-04-06", source: "draft ready «вчерне» 24 Mar OS (PSS apparatus)", confidence: medium, oldStyle: "1901-03-24", approximate: true }
+      - { field: dateFirstPublished, value: "1901", evidenceRefs: [E09], source: "full text «Листки Свободного слова» №22, 1901 (Chertkov, England); truncated in «Миссионерское обозрение» №6, 1901", confidence: high }
+      - { field: firstPublishedVenue, value: "«Листки Свободного слова» №22 (ed. V. Chertkov), England", evidenceRefs: [E09], source: "PSS т.34 с.576", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1905", evidenceRefs: [E09], source: "first COMPLETE in Russia: Andreevich, «Л. Н. Толстой», изд. А. Е. Беляева, СПб. 1905; truncated 1901", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "Андреевич, «Л. Н. Толстой» (изд. А. Е. Беляева), СПб.", source: "PSS т.34 с.576", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1901 abroad; 1905/1906 Russia", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "1905 full (Andreevich); 1901 truncated", confidence: high }
+      - { field: excommunicationRelated, value: true, evidenceRefs: [E01], source: "this work IS the reply to the 1901 edict", confidence: high }
+      - { field: bans, value: [
+          {banningAuthority: "Spiritual (ecclesiastical) censorship", authorityType: "holy-synod", jurisdiction: "Russian Empire", scope: "complete-ban", banDate: "1901", banDateApproximate: true, notes: "After the truncated «Миссионерское обозрение» printing, further reprinting forbidden by the spiritual censorship (E09)."},
+          {banningAuthority: "Moscow Court Chamber (Московская судебная палата)", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "confiscation", banDate: "1911-05-02", banDateOldStyle: "1911-04-19", notes: "Excised, with thirty other articles, from vol. 20 of the 12th ed. of «Сочинения» (the edition S. A. Tolstaya was issuing)."}
+        ], evidenceRefs: [E09], source: "PSS т.34 с.576–577", confidence: high }
+      - { field: relatedWorks, value: [{id: an-appeal-to-the-clergy, relationshipType: companion}, {id: on-religious-tolerance, relationshipType: companion}, {id: destruction-of-hell-and-its-restoration, relationshipType: companion}], source: "the 1901–02 church-break cluster", confidence: high }
+      - { field: identifiers.jubileeEdition.volumes, value: "34", source: "PSS т.34 с.245–253", confidence: high }
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/an-appeal-to-the-clergy/An Appeal to the Clergy.md"
+    workId: an-appeal-to-the-clergy
+    create: true
+    fields:
+      - { field: titleRu, value: "К духовенству", source: "PSS т.34 с.299; Tolstoy's only hand-written title (ms. №1)", confidence: high }
+      - { field: titleEn, value: "An Appeal to the Clergy", evidenceRefs: [E28], source: "Aylmer Maude title", confidence: high }
+      - { field: titleAlternatives, value: [{title: "Обращение к духовенству", type: variant, language: ru}], source: "PSS т.34 с.588 — Chertkov's 1903 published title; PSS restores «К духовенству»", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "PSS СТАТЬИ", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "shelving", confidence: medium }
+      - { field: genre, value: essay, source: "PSS «статья»; a polemical address", confidence: medium, note: "alt: religious — see needsReview" }
+      - { field: language, value: ru, source: "original", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished", confidence: high }
+      - { field: dateWritingStarted, value: "1902-10-06", source: "begun 23 Sept 1902 OS (calendar + diary)", confidence: high, oldStyle: "1902-09-23", approximate: false }
+      - { field: dateWritingCompleted, value: "1902-11-14", source: "text dated «1 ноября 1902»; reworking stopped 31 Oct OS (PSS)", confidence: high, oldStyle: "1902-11-01", approximate: false }
+      - { field: dateFirstPublished, value: "1903", source: "«Свободное слово» (Chertkov, England) as «Обращение к духовенству»; also Hugo Steinitz, Berlin 1903", confidence: high }
+      - { field: firstPublishedVenue, value: "«Свободное слово» (ed. V. Chertkov), England (as «Обращение к духовенству»)", source: "PSS т.34 с.588", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "«Обновление», reprinted from the «Свободное слово» edition", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "«Обновление», Russia", source: "PSS т.34 с.588", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1903 abroad", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "1906 «Обновление»", confidence: high }
+      - { field: excommunicationRelated, value: true, evidenceRefs: [E28], source: "the post-excommunication address to clergy; companion of the Reply", confidence: medium, note: "directly affected = the broader anticlerical campaign the edict belongs to" }
+      - { field: relatedWorks, value: [{id: destruction-of-hell-and-its-restoration, relationshipType: companion}, {id: reply-to-the-synods-edict, relationshipType: companion}], source: "Restoration of Hell was conceived as an illustration to this work (PSS т.34 с.546)", confidence: high }
+      - { field: identifiers.jubileeEdition.volumes, value: "34", source: "PSS т.34 с.299–318", confidence: high }
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/on-religious-tolerance/On Religious Tolerance.md"
+    workId: on-religious-tolerance
+    create: true
+    fields:
+      - { field: titleRu, value: "О веротерпимости", source: "PSS т.34 с.291", confidence: high }
+      - { field: titleEn, value: "On Religious Tolerance", evidenceRefs: [E24], source: "Maude/Crowell 1902 title", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "PSS СТАТЬИ", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "shelving", confidence: medium }
+      - { field: genre, value: essay, source: "PSS «статья»", confidence: medium, note: "alt: religious" }
+      - { field: language, value: ru, source: "original", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished", confidence: high }
+      - { field: dateWritingCompleted, value: "1902-01-10", source: "text dated «28 декабря 1901 г.»; main work finished 28 Dec 1901 OS at Gaspra", confidence: high, oldStyle: "1901-12-28", approximate: false }
+      - { field: dateWritingStarted, value: "1901-12-23", source: "new version begun 10 Dec 1901 OS (PSS); occasioned by Stakhovich's Sept 1901 Oryol speech", confidence: medium, oldStyle: "1901-12-10", approximate: true }
+      - { field: dateFirstPublished, value: "1902", source: "«Свободное слово» №72 (Chertkov, England)", confidence: high }
+      - { field: firstPublishedVenue, value: "«Свободное слово» №72 (ed. V. Chertkov), England", source: "PSS т.34 с.586", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1906", source: "«Всемирный вестник» edition", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "«Всемирный вестник», Russia", source: "PSS т.34 с.586", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1902 abroad", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "1906 «Всемирный вестник»", confidence: high }
+      - { field: excommunicationRelated, value: true, evidenceRefs: [E25], source: "part of the 1901–02 cluster; the church-as-worldly-institution thesis", confidence: medium }
+      - { field: authoringLocations, value: [{country: "Russia", region: "Crimea", city: "Gaspra", notes: "Written during convalescence at the Panina estate, Gaspra"}], source: "PSS apparatus (ms. «Гаспра 1901»)", confidence: high }
+      - { field: relatedWorks, value: [{id: reply-to-the-synods-edict, relationshipType: companion}], source: "1901–02 cluster", confidence: high }
+      - { field: identifiers.jubileeEdition.volumes, value: "34", source: "PSS т.34 с.291–298", confidence: high }
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/religion-and-morality/Religion and Morality.md"
+    workId: religion-and-morality
+    create: true
+    fields:
+      - { field: titleRu, value: "Религия и нравственность", source: "PSS т.39 с.3", confidence: high }
+      - { field: titleEn, value: "Religion and Morality", evidenceRefs: [E18], source: "Tchertkoff/Battersby title (Contemporary Review 1894)", confidence: high }
+      - { field: titleAlternatives, value: [{title: "Religion und Moral", type: translation, language: de}, {title: "Противоречия эмпирической нравственности", type: variant, language: ru}], source: "German first ed. 1894; «Северный вестник» editorial retitle 1894 (E21)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "shelving", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "shelving", confidence: low, note: "philosophical essay; alt: Treatises — see needsReview" }
+      - { field: genre, value: essay, source: "a reply to two philosophical questions", confidence: medium, note: "alt: philosophical" }
+      - { field: language, value: ru, source: "original (occasioned by a German commission)", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished", confidence: high }
+      - { field: dateWritingCompleted, value: "1893-11-09", source: "text dated «28-го октября 1893 г.»; +12 for 1893", confidence: high, oldStyle: "1893-10-28", approximate: false }
+      - { field: dateWritingStarted, value: "1893-08-26", source: "first redaction 14 Aug 1893 OS (PSS), after Gizycki's 6 Aug 1893 NS letter", confidence: medium, oldStyle: "1893-08-14", approximate: true }
+      - { field: dateFirstPublished, value: "1893", source: "German «Für Ethische Kultur» nos. 52–53 (1893), 1 & 3 (1894), tr. S. Yu. Ber; Berlin separate ed. 1894", confidence: high }
+      - { field: firstPublishedVenue, value: "«Für Ethische Kultur» (Berlin), German translation", source: "PSS т.39 с.225–226", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1894", evidenceRefs: [E21], source: "«Северный вестник» Jan 1894 — censored, distorted, retitled «Противоречия эмпирической нравственности»", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "«Северный вестник» (Jan 1894), censored/retitled", evidenceRefs: [E21], source: "PSS т.39 с.226", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1893–94", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "1894 (censored)", confidence: high }
+      - { field: censoredVersionExists, value: true, evidenceRefs: [E21], source: "«Северный вестник» 1894 cut/distorted vs the German/English full text", confidence: high }
+      - { field: excommunicationRelated, value: false, source: "1893 foundation work, not cited in or directly affected by the 1901 edict", confidence: medium }
+      - { field: bans, value: [
+          {banningAuthority: "Main Directorate for Press Affairs (Главное управление по делам печати)", authorityType: "imperial-state", jurisdiction: "Russian Empire", scope: "complete-ban", banDate: "1894-10-01", banDateOldStyle: "1894-09-19", notes: "Standalone edition banned by circular № 5412; first standalone Russian ed. only «Посредник» 1908."}
+        ], evidenceRefs: [E21], source: "PSS т.39 с.227", confidence: high }
+      - { field: identifiers.jubileeEdition.volumes, value: "39", source: "PSS т.39 с.3–26", confidence: high }
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/how-to-read-the-gospels/How to Read the Gospels.md"
+    workId: how-to-read-the-gospels
+    create: true
+    fields:
+      - { field: titleRu, value: "Как читать евангелие и в чем его сущность?", source: "PSS т.39 с.113", confidence: high }
+      - { field: titleEn, value: "How to Read the Gospels", evidenceRefs: [E22], source: "standard title (Crowell 1899; marxists.org)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "shelving", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "shelving", confidence: medium }
+      - { field: genre, value: essay, source: "a short methodological essay", confidence: medium, note: "alt: religious" }
+      - { field: language, value: ru, source: "original", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished", confidence: high }
+      - { field: dateWritingCompleted, value: "1896-07-04", source: "text dated «22 июня 1896 г.»; +12 for 1896. CONTESTED: Chertkov ed. dated 22 July; PSS argues June", confidence: medium, oldStyle: "1896-06-22", approximate: true, note: "month contested — see needsReview" }
+      - { field: dateFirstPublished, value: "1897", source: "V. Chertkov ed., London, 1897", confidence: high }
+      - { field: firstPublishedVenue, value: "V. Chertkov edition, London", source: "PSS т.39 с.241", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "", source: "NOT STATED in PSS apparatus — see needsReview", confidence: low }
+      - { field: publishedDuringLifetime, value: true, source: "1897 London", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "no Russian first-publication recorded in the apparatus; London-first implies it was unprintable in Russia", confidence: low, note: "uncertain — see needsReview" }
+      - { field: excommunicationRelated, value: false, source: "1896 foundation work", confidence: high }
+      - { field: identifiers.jubileeEdition.volumes, value: "39", source: "PSS т.39 с.113–116", confidence: high }
+  - recordPath: "website/src/works/non-fiction/educational/the-teaching-of-christ-for-children/The Teaching of Christ Narrated for Children.md"
+    workId: the-teaching-of-christ-for-children
+    create: true
+    fields:
+      - { field: titleRu, value: "Учение Христа, изложенное для детей", source: "PSS т.37 с.97", confidence: high }
+      - { field: titleEn, value: "The Teaching of Christ Narrated for Children", evidenceRefs: [E34], source: "marxists.org title; no translator credited (see needsReview)", confidence: medium, note: "alt: 'The Teaching of Christ Set Forth for Children'" }
+      - { field: mainCategory, value: "Non-Fiction", source: "shelving", confidence: high }
+      - { field: subcategory, value: "Educational", source: "written for Tolstoy's peasant-children school (like 'The School at Yasnaya Polyana'); alt: Essays and Criticism — see needsReview", confidence: low }
+      - { field: genre, value: religious, source: "a gospel exposition retold for children", confidence: medium, note: "alt: anthology/primer — see needsReview" }
+      - { field: language, value: ru, source: "original", confidence: high }
+      - { field: completionStatus, value: complete, source: "finished and published", confidence: high }
+      - { field: dateWritingStarted, value: "1907-03-08", source: "begun 23 Feb 1907 OS (PSS т.56)", confidence: high, oldStyle: "1907-02-23", approximate: false }
+      - { field: dateWritingCompleted, value: "1908-06-25", source: "preface dated «12 июня 1908 г.»; final proofs corrected before 17 June 1908", confidence: high, oldStyle: "1908-06-12", approximate: true }
+      - { field: dateFirstPublished, value: "1908", source: "«Посредник» №717, Moscow", confidence: high }
+      - { field: firstPublishedVenue, value: "«Посредник» №717, Moscow", source: "PSS т.37 с.433", confidence: high }
+      - { field: firstPublishedVenueType, value: "book", source: "Posrednik imprint", confidence: medium }
+      - { field: dateFirstPublishedInRussia, value: "1908", source: "«Посредник» №717 — a Russian first edition (not foreign-first)", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "«Посредник» №717, Moscow", source: "PSS т.37 с.433", confidence: high }
+      - { field: publishedDuringLifetime, value: true, source: "1908", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "1908 Posrednik", confidence: high }
+      - { field: excommunicationRelated, value: false, source: "1907–08 constructive gospel work; not cited in/affected by the 1901 edict", confidence: medium }
+      - { field: relatedWorks, value: [{id: how-to-read-the-gospels, relationshipType: companion}], source: "the gospel method (1896) → the gospel retold (1908)", confidence: medium }
+      - { field: identifiers.jubileeEdition.volumes, value: "37", source: "PSS т.37 с.97–147", confidence: high }
+  # --- RECONCILE (do NOT duplicate): The Restoration of Hell already proposed by 1903-folk-tales ---
+  - recordPath: "website/src/works/fiction/short-stories/destruction-of-hell-and-its-restoration/The Destruction of Hell and Its Restoration.md"
+    workId: destruction-of-hell-and-its-restoration
+    create: false
+    fields:
+      - { field: NOTE, value: "RECONCILE — NOT a new proposal. This record is ALREADY proposed for creation by the 1903-folk-tales dive (genre: parable, Fiction/Short Stories, with full bans 1906/1910/1913 and the Shchegolyonok genesis). This church-break dive confirms two things to fold into that proposal at ingestion: (1) excommunicationRelated: true and the genesis tie — «Разрушение ада» was conceived as a companion-illustration to «К духовенству» (this dive's an-appeal-to-the-clergy), begun 1 Nov 1902 OS the day after To the Clergy was finished; (2) the alternate English title 'The Overthrow of Hell and Its Restoration' (Tchertkoff). Do NOT create a second record — the folk-tales dive owns it.", evidenceRefs: [E32, E33], source: "PSS т.34 с.546; docs/research/1903-folk-tales/dossier.yaml", confidence: high }
+      - { field: relatedWorks, value: [{id: an-appeal-to-the-clergy, relationshipType: companion}], source: "conceived as an illustration to To the Clergy", confidence: high, note: "add to the folk-tales proposal" }
+      - { field: titleAlternatives, value: [{title: "The Overthrow of Hell and Its Restoration", type: translation, language: en}], source: "V. Tchertkoff (marxists.org)", confidence: high, note: "add to the folk-tales proposal" }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status. Derives index.md "Material not covered".
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - { surface: "The edict & the Reply (the spine)", status: covered, note: "Edict promulgation/authorship/status, the Reply read in full, the truncation + ban arc, the bird/eggshell close — all anchored." }
+  - { surface: "Genesis & composition (diary + letters)", status: covered, note: "The 1901–02 diary (85 entries) + the Tsar-letter correspondence swept; the «странное» reaction, the Reply's completion, the flour-with-lime refusal, the people network surfaced. 1893/1896/1907–08 genesis from the apparatus." }
+  - { surface: "What the works say (keystone passages)", status: covered, note: "All 7 works read in full; keystones extracted per work. Restoration of Hell cross-referenced to 1903-folk-tales (full close-read there)." }
+  - { surface: "Redactions & textual history", status: partial, note: "Title histories (К духовенству vs Обращение к духовенству; the Birukov 1898/1893 date error) and ms. dating captured from the apparatus; variants not collated." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "Foreign-first / Russia-later pattern, the bans (Reply 1901+1911; Religion and Morality 1894; Restoration of Hell 1906/1910/1913 via folk-tales), and the confirmed English translation titles all documented." }
+  - { surface: "Reception & afterlife — Russian society & church", status: covered, note: "The edict's status (anathema vs отлучение), the backfire (acclaim, Repin portrait, student march), Sofia↔Antony exchange (secondary only), John of Kronstadt, the 2001/2010 refusals. Sofia's letter text itself is secondary/paywalled (needsReview)." }
+  - { surface: "Scholarly context", status: covered, note: "26 sources; Kolstø 2022 benchmark; triangulation incl. the Pobedonostsev-attribution reversal (contradicts the PSS apparatus). Kolstø ch.12 itself paywalled." }
+  - { surface: "Visual & manuscript record", status: covered, note: "13 PD images cached (Repin barefoot portrait, 3 Pobedonostsev portraits, Antony photos, Gaspra/Chekhov). Edict facsimile + caricatures = work-orders; Sofia photo = manual-fetch." }
+  - { surface: "Place in the cluster (sibling dives)", status: covered, note: "Cross-linked to what-is-religion, kingdom-of-god, christian-teaching, gospel-translation, christian-anarchism, tolstoyanism, 1903-folk-tales (Restoration of Hell)." }
+  - { surface: "The author's later verdict", status: partial, note: "The 13 Dec 1902 year-end summation (E16) and the bird/eggshell finality (E06) stand for it; no separate late-life re-assessment of these specific works extracted." }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRADICTIONS — intra-corpus / primary-vs-secondary corrections.
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:
+  - claim: "The 1901 action was a formal anathema (анафема) — Tolstoy was 'cursed' by the Church (popular/press framing)."
+    correction: "The edict was an отлучение — a declaration that Tolstoy had placed himself outside the Church («не числит его более своим членом ... доколе он не раскается»), explicitly not the liturgical anathema. Tolstoy himself flagged the ambiguity (E02); scholarship (Kolstø 2022) and the Church's own 2010 statement agree."
+    evidenceRef: E02
+  - claim: "Pobedonostsev drove / drafted the excommunication (PSS apparatus E08; Soviet historians; popular account)."
+    correction: "Kolstø (2022), from the archives, shows the initiative was the Synod's priestly members (Metropolitan Antony Vadkovsky chiefly); Pobedonostsev OPPOSED it, fearing it would amplify Tolstoy's prestige. The PSS apparatus preserves the superseded Soviet attribution; the dive presents both, attributed."
+    evidenceRef: E08
+  - claim: "«Религия и нравственность» was completed in 1898 (the date «28 октября 1898 г.» printed by Birukov in PSS-1913 vol. XV)."
+    correction: "The year is a known error (the PSS т.39 apparatus flags it twice): the essay was written and signed 28 October 1893; the later signed ms. is lost. Composition is Aug–Oct 1893, occasioned by Gizycki's August 1893 letter."
+    evidenceRef: E21
+
+# ─────────────────────────────────────────────────────────────────────────────
+notCovered:
+  - "The full text of Sofia Tolstaya's protest letter to Metropolitan Antony and his reply — held at РГИА / the Presidential Library; not openly digitised. Substance here is from Alexandra Tolstaya's «Father» (1953, paywalled) and the prlib.ru catalogue."
+  - "Kolstø 2022, «Heretical Orthodoxy», ch. 12 — the current scholarly benchmark — is behind the Cambridge paywall; all Kolstø citations are from the abstract, the H-Soz-Kult review, and secondary summaries, not the book."
+  - "Variant collation: the manuscript redactions (esp. To the Clergy's December 1902 inserts, the Restoration of Hell «о науке» reworking) are not collated."
+  - "The genesis diaries for the three foundation works (Religion and Morality 1893 = Tom 52; How to Read the Gospels 1896 = Tom 53; Teaching of Christ for Children 1907–08 = Tom 56) were not swept — their genesis here is from the apparatus only."
+  - "«Что такое религия и в чем сущность ее?» (Tom 35, written at Gaspra alongside this cluster) is the subject of its own dive (1901-1902-what-is-religion) — cross-referenced, not re-dived."
+  - "The Russian-language facsimile of the edict (Церковные ведомости №8, 1901) and the post-1905 excommunication caricatures — work-orders (РНБ / РГИА / ГИМ)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+needsReview:
+  - { item: "Edict authorship is contested: PSS apparatus (E08, Soviet 1952) says Pobedonostsev drafted it; Kolstø (2022, archival) says the Synod's bishops (Antony chiefly) initiated it and Pobedonostsev opposed it. The dive presents both, attributed; do not assert either as settled fact in a wiki page without weighing Kolstø directly.", phase: 3, why: "Primary apparatus vs current scholarship conflict on a central fact." }
+  - { item: "Genre/subcategory of the proposed records: essay (Essays and Criticism) chosen for the five articles; the alt `religious` (genre) and `Treatises` (subcategory, for Religion and Morality) are defensible. The Teaching of Christ for Children is hardest: proposed Non-Fiction/Educational + genre religious, but Essays and Criticism / genre anthology are alternatives. Confirm at ingestion.", phase: 4, why: "Shelving/genre choices on 7 proposed records using the existing controlled vocab; low confidence on the children's gospel." }
+  - { item: "«Как читать евангелие» — no Russian first-publication recorded in the PSS apparatus, and publishedInRussiaDuringLifetime is set false at low confidence. The composition month is also contested (Chertkov «22 июля», PSS argues June; the text dateline reads «22 июня»). Verify both before asserting in the record.", phase: 2, why: "Two low-confidence fields on a proposed record." }
+  - { item: "The Tsar-letter quote (E17, «как бы с того света») is from letter_v73_204; the genesis sweep flagged that the letter's Pobedonostsev passage is a draft layer recovered by --notes=auto mixing sent + draft text. The «как бы с того света» phrase is used; verify against PSS т.73 pp.184–198 before treating any of this letter as final-text.", phase: 2, why: "Draft/sent-text mixing risk in a recovered note layer." }
+  - { item: "excommunicationRelated is set true for the four 1901–02 works and false for the three foundation works. The field's project usage (per the kingdom-of-god dive) is broader than the strict schema wording ('cited in or directly affected by'); the foundation works fed the conflict without being named in the decree. Confirm the intended scope at ingestion.", phase: 4, why: "Interpretive boolean; the cluster is a gradient, not a clean true/false." }
+  - { item: "Restoration of Hell workRecord is a RECONCILE (create: false) pointing at the 1903-folk-tales proposal (workId destruction-of-hell-and-its-restoration). At ingestion, fold this dive's additions (excommunicationRelated, the To-the-Clergy companion tie, the Tchertkoff English title) into the single folk-tales record — do not create a duplicate.", phase: 4, why: "Two dives propose the same work; must be reconciled to one record." }
+  - { item: "Student demonstration venue: ~500 students marched on the Kazan Cathedral demanding to be excommunicated too; sources differ on St Petersburg vs Moscow (St Petersburg the more likely). Verify before asserting the city.", phase: 3, why: "Secondary-source ambiguity on a reception detail." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI — PSS Tom 34 (Reply, To the Clergy, On Religious Tolerance, Restoration of Hell + apparatus), Tom 37 (Teaching of Christ for Children + apparatus), Tom 39 (Religion and Morality, How to Read the Gospels + apparatus), Tom 54 (1901–02 diary, 85 entries), Tom 73 (1901–02 letters)"
+  - "docs/research/1903-folk-tales (Restoration of Hell — full close-read + workRecord owner)"
+  - "Sibling dives: 1901-1902-what-is-religion, 1890-1893-the-kingdom-of-god-is-within-you, 1894-1896-the-christian-teaching, gospel-translation, christian-anarchism, tolstoyanism"
+  - "Wikimedia Commons — Repin (barefoot portrait 1901, Pobedonostsev, State Council), Pobedonostsev (Makovsky 1899, Serov 1902), Antony Vadkovsky photos, Tolstoy+Chekhov Gaspra, Gaspra house (all PD)"
+  - "Web (Phase 3): Kolstø 2022 (Heretical Orthodoxy, via abstract + H-Soz-Kult review); Maude 1910 Life ch.16; Bartlett 2010; Medzhibovskaya 2008; Long 1901; Wikisource (Maude tr. of the Reply + the decree); OrthoChristian/Christianity Today (2001/2010 refusals) — see extracts/_scholarship.md (26 sources)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, ПСС т. 34 (Произведения 1900–1903): «Ответ на определение Синода…» (с. 245–253), «О веротерпимости» (с. 291–298), «К духовенству» (с. 299–318), «Разрушение ада и восстановление его» (с. 100–115) + История писания (с. 546–547, 575–577, 586–589)"
+    - "ПСС т. 37: «Учение Христа, изложенное для детей» (с. 97–147) + История писания (с. 433–434)"
+    - "ПСС т. 39: «Религия и нравственность» (с. 3–26), «Как читать евангелие и в чем его сущность?» (с. 113–116) + История писания (с. 225–228, 241)"
+    - "ПСС т. 54 — Дневник 1901–1902"
+    - "ПСС т. 73 — письма 1901–1902 (Николаю II; вел. кн. Николаю Михайловичу; П. А. Буланже)"
+  background:
+    - "Kolstø, P. 2022. Heretical Orthodoxy: Lev Tolstoi and the Russian Orthodox Church. Cambridge UP ('Ideas in Context'), ch. 12. [paywalled; via abstract + Zwahlen review, H-Soz-Kult 2024]"
+    - "Maude, A. 1910. The Life of Tolstoy: Later Years, ch. 16. Oxford UP. archive.org / Wikisource"
+    - "Bartlett, R. 2010. Tolstoy: A Russian Life. Profile / Houghton Mifflin"
+    - "Medzhibovskaya, I. 2008. Tolstoy and the Religious Culture of His Time: A Biography of a Long Conversion, 1845–1887. Lexington Books"
+    - "Long, R. E. C. 1901. Count Tolstoy in Thought and Action (contemporary account). marxists.org"
+    - "Wikisource: 'My Reply to the Synod' & 'Decree of Excommunication of Leo Tolstoy' (tr. Louise & Aylmer Maude)"
+    - "OrthoChristian.com (2010) / Christianity Today (2001) — the Church's refusals to reconsider (Shevkunov; Chaplin)"
+    - "Tolstoy, L. 1902. What is Religion? and Other New Articles and Letters (ed. V. Chertkov), T. Y. Crowell, NY — contains 'My Reply to the Synod', 'On Religious Tolerance'. archive.org"
