@@ -44,6 +44,10 @@ __pycache__/
 .env
 .env.local
 
+# Local Python venv for the docs/research corpus-dive tools (extract_tei.py,
+# verify_quotes.py) — system python3 lacks lxml. Run as .dive-venv/bin/python3
+.dive-venv/
+
 # Temporary files
 *.tmp
 *.skill
