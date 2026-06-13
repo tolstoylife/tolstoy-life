@@ -1,0 +1,1352 @@
+# Machine-readable dossier for the "I Cannot Be Silent" (Не могу молчать, 1908) corpus work-dive.
+# Created 2026-06-13. Slug: 1908-i-cannot-be-silent.
+# Subject: Tolstoy's May–June 1908 essay against capital punishment, written in his 80th-birthday
+# year and provoked by a newspaper report of twenty peasants hanged at Kherson. A Prophet-period
+# WORK dive (carries a workRecord block — RECORD-CREATING: no works/ record exists yet, so the
+# workRecord proposes the full field set for a new one, non-fiction / essays-and-criticism).
+# Every evidence[].quoteRu is byte-faithful from the named `extract` file (verify_quotes.py).
+# quoteEn is working English (labelled). PSS Tom 37 -> local PDF jubilee-edition/vol06/vol06.pdf
+# (verified: that PDF's <book-title> is "...Том 37"). Editorial history is B. M. Eikhenbaum's
+# "История писания и печатания" + "Описание рукописей" (PSS Tom 37) — cited as editorial history,
+# attributed. Twin dive: ../1908-the-law-of-violence-and-the-law-of-love (same Tom, same year;
+# its 12 May 1908 diary entry already cross-references the "20 hanged peasants" that drove THIS work).
+# This dive seeds the planned death-penalty theme-dive (P3) — reuse its evidence + entities.
+
+topic:
+  slug: 1908-i-cannot-be-silent
+  title: "I Cannot Be Silent (Не могу молчать) — a corpus work-dive"
+  question: >-
+    How did Tolstoy's 1908 essay against capital punishment Не могу молчать come to be written
+    (the Kherson hanging of twenty peasants, the failed phonograph dictation, the first draft of
+    13 May 1908); what does it argue (the symmetric condemnation of state and revolutionary
+    violence, and the personal-complicity demand that he be hanged alongside the condemned because
+    the executions are carried out in his name); how was its public appearance itself the story
+    (Russian newspapers fined for printing fragments, the complete text only illegal at home and
+    abroad through Chertkov); and how does its drafting — draft №1 named Stolypin and Nicholas II,
+    the final text removed them, and Chertkov's red-ink edits cut the most explicit "do the same to
+    me" coda — bear on reading the personal-complicity argument as the work's centre?
+  date: 2026-06-13
+  period: prophet
+  corpusSurface: [works, variants, diaries, comments, letters]
+  dateRange: "1908 (composition 13 May–15 June 1908 OS; publication July 1908; reception 1908–present)"
+
+# ---------------------------------------------------------------------------------------------
+# Layer 1 — flat citation ledger.
+#   OS = Old Style (Julian, used in Russia); NS = New Style (Gregorian). 1908: OS + 13 = NS.
+# ---------------------------------------------------------------------------------------------
+evidence:
+
+  # ===== A. THE WORK'S OWN TEXT (PSS Tom 37, pp. 83–96) =========================================
+
+  - id: opening-seven-sentences
+    genre: works
+    pssTom: 37
+    pages: "83"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      «Семь смертных приговоров: два в Петербурге, один в Москве, два в Пензе, два в Риге. Четыре казни: две в Херсоне, одна в Вильне, одна в Одессе».
+    quoteEn: >-
+      "Seven death sentences: two in Petersburg, one in Moscow, two in Penza, two in Riga. Four executions: two in Kherson, one in Vilna, one in Odessa." (working English)
+    significance: >-
+      The essay opens not with Tolstoy's voice but with a quoted newspaper tally of death sentences —
+      the bare list "in every paper" that he says has gone on "not a week, not a month, not a year, but
+      years," in a Russia that "until very recently had by law no death penalty." The form announces the
+      subject: the press normalisation of execution.
+    facsimile: extracts/v37_083_Ne_mogu_molchat_opening_facsimile.jpg
+
+  - id: kherson-report-in-text
+    genre: works
+    pssTom: 37
+    pages: "83"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Нынче, 9 мая, что-то ужасное. В газете стоят короткие слова: «Сегодня в Херсоне на Стрельбицком поле казнены через повешение двадцать крестьян за разбойное нападение на усадьбу землевладельца в Елисаветградском уезде».
+    quoteEn: >-
+      Today, 9 May, something horrible. In the paper stand short words: "Today in Kherson, on the Strelbitsky Field, twenty peasants were executed by hanging for an armed attack on the estate of a landowner in the Elisavetgrad district." (working English)
+    significance: >-
+      The triggering report, embedded verbatim in the essay's first chapter. (A footnote — number 19
+      in the TEI, an inline note this extract's --notes=auto run did not recover — records that the
+      papers later contradicted the figure of twenty; Tolstoy kept the text and substituted "twelve" for
+      "twenty," "leaving the rest as it was," because what is said applies "not to twelve alone but to all
+      the thousands." The corrected count survives in the marquee passage's "twenty or twelve.")
+
+  - id: twelve-hanged-bodies
+    genre: works
+    pssTom: 37
+    pages: "83–84"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Двенадцать мужей, отцов, сыновей, тех людей, на доброте, трудолюбии, простоте которых только и держится русская жизнь, схватили, посадили в тюрьмы, заковали в ножные кандалы.
+    quoteEn: >-
+      Twelve husbands, fathers, sons — those people on whose goodness, industry and simplicity Russian life alone holds together — were seized, put in prisons, shackled in leg-irons. (working English)
+    significance: >-
+      The hanging is then narrated in slow, clinical detail (the soaped nooses, the long-haired priest in
+      brocade, the doctor feeling the bodies). The unbearable physical particularity is the essay's
+      method — not argument but enforced witness.
+
+  - id: corruption-spreads-fire
+    genre: works
+    pssTom: 37
+    pages: "86"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      причиняют еще большее, величайшее зло всему народу, разнося быстро распространяющееся, как пожар по сухой соломе, развращение всех сословий русского народа.
+    quoteEn: >-
+      they inflict a still greater, the greatest evil on the whole people, spreading a swiftly-spreading corruption, like fire through dry straw, of all the classes of the Russian people. (working English)
+    significance: >-
+      The essay's hinge (chapter II): worse than the killings themselves is the moral corruption they
+      spread. The "fire in dry straw" image is the keystone the fire-metaphor dive traces across the
+      corpus — here applied to the contagion of state violence.
+
+  - id: children-play-at-hanging
+    genre: works
+    pssTom: 37
+    pages: "87"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      О казнях, повешениях, убийствах, бомбах пишут и говорят теперь, как прежде говорили о погоде. Дети играют в повешение.
+    quoteEn: >-
+      Of executions, hangings, murders, bombs they now write and speak as they used to speak of the weather. Children play at hanging. (working English)
+    significance: >-
+      The measure of the corruption: killing has become as ordinary as weather. (The same chapter gives
+      the executioners' market — only one hangman in all Russia in the 1880s; now a Moscow shopkeeper
+      and an Orel volunteer haggle over the per-head rate.)
+
+  - id: stop-doing-what-you-do
+    genre: works
+    pssTom: 37
+    pages: "89"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Ответ самый простой: перестать делать то, что вы делаете.
+    quoteEn: >-
+      The answer is the simplest: to stop doing what you do. (working English)
+    significance: >-
+      Chapter III's reply to the government's "but what is to be done to calm the people?" — the
+      non-resistance core in its negative, political form: not a programme but a cessation.
+
+  - id: revolutionaries-your-children
+    genre: works
+    pssTom: 37
+    pages: "91"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      они не только ваши ученики, они — ваше произведение, они ваши дети. Не будь вас — не было бы их
+    quoteEn: >-
+      they are not only your pupils, they are your product, they are your children. Were it not for you, they would not exist (working English)
+    significance: >-
+      The symmetric critique (chapter IV): the revolutionaries do exactly what the government does, by
+      the same means and the same justification — but the government is worse, and the revolutionaries
+      are its creation. "When you want to suppress them by force, you do what a man does who leans with
+      all his weight on a door that opens towards him."
+
+  - id: government-worse-than-revolution
+    genre: works
+    pssTom: 37
+    pages: "92"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Если есть разница между вами и ими, то никак не в вашу, а в их пользу.
+    quoteEn: >-
+      If there is a difference between you and them, it is by no means in your favour, but in theirs. (working English)
+    significance: >-
+      Tolstoy lists the mitigating circumstances for the revolutionaries (greater personal risk, youth,
+      they at least reject the religion whose God forbids killing) — and concludes the government, which
+      claims Christianity, has none. The even-handedness that estranged him from both sides.
+
+  - id: executioner-dvornik-morally-higher
+    genre: works
+    pssTom: 37
+    pages: "94"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      как ни низко пал этот несчастный дворник, он нравственно все-таки стоит несравненно выше вас
+    quoteEn: >-
+      however low this unhappy yard-keeper has fallen, morally he stands nonetheless incomparably higher than you (working English)
+    significance: >-
+      Chapter V's parable of the painter and the executioner-caretaker: the actual hangman hides and
+      fears people because he knows his deed is evil; the ministers and judges who order the killings feel
+      no shame. The hands-on executioner is morally above the desk-bound ones.
+
+  - id: for-me-complicity-dependency
+    genre: works
+    pssTom: 37
+    pages: "95"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      есть несомненная зависимость между моей просторной комнатой, моим обедом, моей одеждой, моим досугом и теми страшными преступлениями, которые совершаются для устранения тех, кто желал бы отнять у меня то, чем я пользуюсь.
+    quoteEn: >-
+      there is an undoubted dependence between my spacious room, my dinner, my clothing, my leisure, and those terrible crimes which are committed to remove those who would take from me what I enjoy. (working English)
+    significance: >-
+      The marquee argument's logical core (chapter VI): the executions are done "in the name of the
+      common good" and so "for me, living in Russia" — and Tolstoy's own comfort is materially secured by
+      them. The "для меня" (for me) anaphora runs the whole page. This is the personal-complicity claim.
+
+  - id: cannot-live-so
+    genre: works
+    pssTom: 37
+    pages: "95"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Нельзя так жить. Я по крайней мере не могу так жить, не могу и не буду.
+    quoteEn: >-
+      One cannot live so. I at least cannot live so, cannot and will not. (working English)
+    significance: >-
+      The title's sense — the refusal to be silent is the refusal to keep living in complicity. The phrase
+      "не могу" (I cannot) tolls through the chapter and supplies the title chosen later (the working title
+      was "On Capital Punishment"; "I Cannot Be Silent" was fixed in editing).
+
+  - id: marquee-hang-me-too
+    genre: works
+    pssTom: 37
+    pages: "95"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      надели на меня, так же как на тех двадцать или двенадцать крестьян, саван, колпак и так же столкнули с скамейки, чтобы я своей тяжестью затянул на своем старом горле намыленную петлю.
+    quoteEn: >-
+      put on me, just as on those twenty or twelve peasants, the shroud and cap and likewise push me off the bench, so that with my own weight I tighten the soaped noose on my old throat. (working English)
+    significance: >-
+      THE marquee passage. Having shown that the executions are carried out for him, Tolstoy asks for one
+      of two outcomes: prison, where he could know the horrors are no longer done for him — or, "best of
+      all," to be hanged alongside the condemned. "Twenty or twelve" carries the corrected count. The
+      demand is the personal-complicity argument taken to its literal end.
+
+  - id: brothers-come-to-yourselves
+    genre: works
+    pssTom: 37
+    pages: "96"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Люди-братья! Опомнитесь, одумайтесь, поймите, что вы делаете. Вспомните, кто вы.
+    quoteEn: >-
+      Brother-men! Come to your senses, think again, understand what you are doing. Remember who you are. (working English)
+    significance: >-
+      Chapter VII's closing direct address — to "all participants in these terrible deeds, from those who
+      put caps and nooses on people-brothers... up to you, the chief disposers." The address that draft №1
+      had aimed by name at Stolypin and Nicholas II is here generalised to every link in the chain.
+
+  - id: the-one-will-is-love
+    genre: works
+    pssTom: 37
+    pages: "96"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      Воля же эта хочет только одного: любви людей к людям.
+    quoteEn: >-
+      And that will wants only one thing: the love of people for people. (working English)
+    significance: >-
+      The essay against capital punishment closes, like the whole late doctrine, on the law of love —
+      grounding the political refusal in the one positive command.
+
+  - id: dateline
+    genre: works
+    pssTom: 37
+    pages: "96"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_083_096_Ne_mogu_molchat.txt
+    quoteRu: >-
+      31 мая 1908 г.
+    quoteEn: >-
+      31 May 1908. (working English)
+    significance: >-
+      The author's date on the canonical text (Yasnaya Polyana), = 13 June 1908 NS. It marks the
+      manuscript (рук. №15) Tolstoy sent to Chertkov; he went on revising into mid-June, but this is the
+      date the published essay carries.
+
+  # ===== B. THE FIRST DRAFT — VARIANTS (PSS Tom 37, pp. 391–399) ================================
+
+  - id: draft1-hang-as-21st
+    genre: variants
+    pssTom: 37
+    pages: "391–392"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_391_399_Ne_mogu_molchat_Varianty.txt
+    quoteRu: >-
+      надели бы на меня на 21-го или 21000 первого саван, колпак и так же столкнули с скамейки, чтобы я своей тяжестью затянул на своем старом горле петлю.
+    quoteEn: >-
+      they would put on me, as the twenty-first or the twenty-one-thousand-and-first, the shroud and cap and likewise push me off the bench, so that with my own weight I tighten the noose on my old throat. (working English)
+    significance: >-
+      The hang-me demand in variant №1 (the first rough draft, signed 14 May 1908). Here it is even more
+      literal: hang me "as the 21st or the 21,001st." The final text softened "21-го" to "так же как на
+      тех двадцать или двенадцать крестьян" and added "намыленную" (soaped) to the noose. The argument is
+      present from the very first sketch.
+
+  - id: draft1-names-stolypin-nicholas
+    genre: variants
+    pssTom: 37
+    pages: "393"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_391_399_Ne_mogu_molchat_Varianty.txt
+    quoteRu: >-
+      до вас, двух главных скрытных палачей, своим попустительством участвующих во всех этих преступлениях: Петру Столыпину и Николаю Романову.
+    quoteEn: >-
+      up to you, the two chief hidden executioners, who by your connivance take part in all these crimes: Pyotr Stolypin and Nikolai Romanov. (working English)
+    significance: >-
+      The single most consequential redaction. Draft №1 named the Prime Minister and the Tsar directly as
+      "the two chief hidden executioners" and addressed the appeal to them by name. The published text
+      removed every name and generalised the address (see entity:names-cut). The depersonalisation is what
+      lets the essay read as a universal moral appeal rather than a personal denunciation.
+
+  - id: draft1-for-me-from-the-start
+    genre: variants
+    pssTom: 37
+    pages: "391–392"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_391_399_Ne_mogu_molchat_Varianty.txt
+    quoteRu: >-
+      Для меня, для обеспечения моей жизни все эти высылки людей из места в место, для меня эти сотни тысяч голодных, блуждающих по России рабочих
+    quoteEn: >-
+      For me, for the securing of my life, all these deportations of people from place to place; for me these hundreds of thousands of hungry workers wandering about Russia (working English)
+    significance: >-
+      The "для меня" complicity anaphora is already in variant №1 — proof the personal-complicity
+      argument was not a late refinement but the seed of the whole piece, present in the first draft of
+      13–14 May before any of the structural reworking.
+
+  - id: draft1-assassins-karr
+    genre: variants
+    pssTom: 37
+    pages: "397"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_391_399_Ne_mogu_molchat_Varianty.txt
+    quoteRu: >-
+      Que Messieurs les assassins commencent par nous donner
+    quoteEn: >-
+      "Let the gentlemen assassins begin by setting us the example" — the quip of Alphonse Karr ("comme говорил шутник француз"), used in draft №4 against the government's "the revolutionaries began it." (working English)
+    significance: >-
+      A draft-stage epigram (variant №4) turning the government's "they started it" against it: let the
+      assassins (the state) set the example of not killing first. Dropped from the final text — one of the
+      sharper draft-only flourishes that the revisions pared away.
+
+  - id: draft1-signed-14-may
+    genre: variants
+    pssTom: 37
+    pages: "393"
+    date: 1908
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_391_399_Ne_mogu_molchat_Varianty.txt
+    quoteRu: >-
+      14 мая 1908.
+    quoteEn: >-
+      14 May 1908. (working English)
+    significance: >-
+      Variant №1 is signed and dated by Tolstoy "Лев Толстой. 14 мая 1908." — i.e. the first complete
+      rough draft existed two days after the failed phonograph dictation of 11 May. The seventeen
+      surviving manuscripts then carried it from this denunciation-by-name to the published appeal.
+
+  # ===== C. EDITORIAL HISTORY (B. M. Eikhenbaum, PSS Tom 37, pp. 425–427) — attributed ==========
+
+  - id: hist-trigger-report-text
+    genre: comments
+    pssTom: 37
+    pages: "425"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      «Херсон. 8 мая. Сегодня на стрельбищном поле казнены через повешение двадцать крестьян, осужденных военно-окружным судом за разбойное нападение на усадьбу землевладельца Лубенко в Елисаветградском уезде».
+    quoteEn: >-
+      "Kherson, 8 May. Today on the rifle-range field twenty peasants were executed by hanging, sentenced by a military district court for an armed attack on the estate of the landowner Lubenko in the Elisavetgrad district." (working English)
+    significance: >-
+      Eikhenbaum's editorial history reproduces the exact newspaper notice that triggered the essay,
+      supplying details the essay itself generalised away: the date (8 May 1908 OS), the "military
+      district court," and the landowner's name (Lubenko). The hanging that became the moral centre of
+      the work.
+
+  - id: hist-read-may-10-11
+    genre: comments
+    pssTom: 37
+    pages: "425"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      которое он прочел 10 мая в «Русских ведомостях» (1908, № 107 от 9 мая), а затем 11 мая в «Руси» (1908, № 127 от 9 мая).
+    quoteEn: >-
+      which he read on 10 May in Russkie Vedomosti (1908, no. 107 of 9 May), and then on 11 May in Rus' (1908, no. 127 of 9 May). (working English)
+    significance: >-
+      Pins exactly which papers carried the report and when Tolstoy read it (10–11 May OS) — the source
+      of the essay's "Today, 9 May" (the paper's dateline, not the day he read it).
+
+  - id: hist-phonograph-dictation
+    genre: comments
+    pssTom: 37
+    pages: "425"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      «Нет, это невозможно! Нельзя так жить!.. Нельзя так жить!.. Нельзя и нельзя. Каждый день столько смертных приговоров, столько казней.
+    quoteEn: >-
+      "No, this is impossible! One cannot live so!.. One cannot live so!.. One cannot and cannot. Every day so many death sentences, so many executions." (working English)
+    significance: >-
+      The words Tolstoy dictated into the Edison phonograph on reading the report — and could not finish
+      "from agitation" (Gusev). The essay grew out of a dictation he was too shaken to complete; the
+      phrase "Нельзя так жить" survives almost verbatim in the finished chapter VI.
+
+  - id: hist-nun-scene-march
+    genre: comments
+    pssTom: 37
+    pages: "425"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      «Каждый день десять казней!.. И это всё сделала церковь!.. А Христос велел не противиться злу!..»
+    quoteEn: >-
+      "Every day ten executions!.. And the church has done all this!.. And Christ commanded not to resist evil!.." (working English)
+    significance: >-
+      The pre-history: on 27 March 1908, weeks before the Kherson report, Tolstoy shouted this at a nun
+      visiting Yasnaya Polyana; Gusev "had never seen Lev Nikolaevich so agitated." The executions were
+      already consuming him; the May report broke the dam.
+
+  - id: hist-work-period
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      Работа над статьей продолжалась с 13 мая по 15 июня 1908 г.
+    quoteEn: >-
+      Work on the article continued from 13 May to 15 June 1908. (working English)
+    significance: >-
+      The composition window (OS) = 26 May–28 June 1908 NS. The essay was "finished" several times over
+      (29 May, 3 June to Chertkov) but revised to mid-June.
+
+  - id: hist-chertkov-cover-letter
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: V. G. Chertkov
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      «Это смертные казни так мучает меня, что я не могу быть спокоен, пока не выскажу всех тех чувств, которые во мне это вызывает»
+    quoteEn: >-
+      "These executions so torment me that I cannot be at peace until I have expressed all the feelings they arouse in me." — Tolstoy to Chertkov, ~1 June 1908, quoted in the editorial history. (working English)
+    significance: >-
+      Tolstoy's covering note when he sent the manuscript (рук. №15) to Chertkov — the personal urgency
+      that the essay's controlled prose disciplines.
+
+  - id: hist-chertkov-telegram
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: V. G. Chertkov
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      «Изменения вполне одобряю, издавайте скорей»
+    quoteEn: >-
+      "I fully approve the changes, publish quickly." — telegram to Chertkov, 9 June 1908. (working English)
+    significance: >-
+      Tolstoy's same-day telegram approving the changes Chertkov proposed (рук. №16). The published text
+      bears Chertkov's editorial hand with Tolstoy's explicit blessing — see entity:chertkov-redink and
+      the cut coda (entity:chertkov-cut-coda).
+
+  - id: hist-pub-fragments-fined
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      Статья в отрывках впервые была напечатана 4 июля 1908 г. в газетах: «Русские ведомости», «Слово», «Речь», «Современное слово» и др. Все эти газеты, напечатавшие отрывки из «Не могу молчать», были оштрафованы.
+    quoteEn: >-
+      The article was first printed in fragments on 4 July 1908 in the newspapers Russkie Vedomosti, Slovo, Rech', Sovremennoe Slovo and others. All these papers that printed extracts from I Cannot Be Silent were fined. (working English)
+    significance: >-
+      Publication as the story: the essay's first Russian appearance (4 July 1908 OS) was fragmentary and
+      cost every paper a fine. The full text could not be printed legally in Russia.
+
+  - id: hist-sevastopol-arrest
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      севастопольский издатель расклеил по городу номер своей газеты с отрывками из «Не могу молчать». Он был арестован.
+    quoteEn: >-
+      a Sevastopol publisher pasted up around the town the issue of his paper with extracts from I Cannot Be Silent. He was arrested. (working English)
+    significance: >-
+      Tolstoy invited his own prosecution; instead it was the publishers who paid. The Sevastopol arrest
+      is the sharpest instance — the essay as a punishable act.
+
+  - id: hist-tula-full-illegal
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      В августе 1908 г. статья полностью была напечатана в нелегальной типографии в Туле
+    quoteEn: >-
+      In August 1908 the article was printed in full at an illegal printing-house in Tula (working English)
+    significance: >-
+      The complete text reached Russian readers only through an illegal press (Tula, August 1908) and in
+      hectographed and manuscript copies — alongside the foreign editions. The censorship pattern of the
+      whole late doctrine.
+
+  - id: hist-ladyzhnikov-worldwide
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      опубликовано одновременно в газетах почти всех цивилизованных стран 15-го июля 1908 г. и произвело глубокое впечатление
+    quoteEn: >-
+      published simultaneously in the newspapers of almost all civilised countries on 15 July 1908, and produced a deep impression — from I. P. Ladyzhnikov's publisher's preface. (working English)
+    significance: >-
+      The international dimension: per Ladyzhnikov's preface the essay appeared simultaneously in the
+      world's press on 15 July 1908 (NS). The OS Russian fragments (4 July) and the NS international date
+      (15 July) are ~2 days apart and not fully reconciled — see needsReview.
+
+  - id: hist-letters-abusive-sympathetic
+    genre: comments
+    pssTom: 37
+    pages: "426"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      В архиве Толстого в ГМТ хранится двадцать одно «ругательное» и шестьдесят сочувственных писем.
+    quoteEn: >-
+      Tolstoy's archive at the State Tolstoy Museum holds twenty-one "abusive" and sixty sympathetic letters. (working English)
+    significance: >-
+      The measurable reception: 21 abusive + 60 sympathetic letters survive (the subject of a dedicated
+      scholarly study, Gnatyuk). The essay split its readers.
+
+  - id: hist-names-cut
+    genre: comments
+    pssTom: 37
+    pages: "425"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      Имена политических деятелей, фигурирующих в нем, он опустил и все резкие выражения по их адресу вычеркнул или же значительно смягчил.
+    quoteEn: >-
+      The names of the political figures appearing in it he omitted, and all the sharp expressions addressed to them he struck out or significantly softened. (working English)
+    significance: >-
+      Eikhenbaum states the depersonalisation directly: the first draft named Milyukov, Guchkov,
+      Shcheglovitov, Stolypin and Nicholas; the revision cut the names and softened the address. The
+      published essay is the de-named version.
+
+  - id: hist-first-draft-1917
+    genre: comments
+    pssTom: 37
+    pages: "427"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_425_427_Ne_mogu_molchat_Istorija.txt
+    quoteRu: >-
+      Первый набросок статьи «Не могу молчать» впервые был напечатан под редакцией В. И. Срезневского, в издании Толстовского музея в Петрограде в 1917 году.
+    quoteEn: >-
+      The first sketch of the article I Cannot Be Silent was first printed under the editorship of V. I. Sreznevsky, in the Tolstoy Museum's Petrograd edition of 1917. (working English)
+    significance: >-
+      The named first draft (variant №1) only became public in 1917, after the Revolution lifted the
+      censorship — the version that openly named Stolypin and Nicholas could not appear in their lifetimes.
+
+  # ===== D. MANUSCRIPT DESCRIPTION (B. M. Eikhenbaum, PSS Tom 37, pp. 427–432) — attributed =====
+
+  - id: ms-autograph-first-draft
+    genre: comments
+    pssTom: 37
+    pages: "427"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_427_432_Ne_mogu_molchat_Opisanie.txt
+    quoteRu: >-
+      Автограф. 9 лл. почтового формата и 2 отрезка. Первая черновая редакция статьи. Заглавия нет.
+    quoteEn: >-
+      Autograph. 9 leaves of letter format and 2 cuttings. The first rough redaction of the article. No title. (working English)
+    significance: >-
+      Manuscript №1 — the autograph first draft, untitled, published as variant №1. The seventeen
+      manuscripts run from this nine-leaf autograph to рук. №17, the copy from which the edition prints.
+      The facsimile of its first page is rendered in extracts/ (entity:facsimile-first-ms).
+    facsimile: extracts/v37_first_manuscript_facsimile.jpg
+
+  - id: ms-gusev-cover-title
+    genre: comments
+    pssTom: 37
+    pages: "427"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_427_432_Ne_mogu_molchat_Opisanie.txt
+    quoteRu: >-
+      На обложке помета Н. Н. Гусева: «О смертной казни» и дата: «15/V 08».
+    quoteEn: >-
+      On the cover, N. N. Gusev's note: "On Capital Punishment" and the date "15/V 08." (working English)
+    significance: >-
+      The working title. Gusev's cover note on manuscript №2 (15 May 1908) titles the piece "О смертной
+      казни" (On Capital Punishment) — the title carried through the drafts; the diary of 29 May still
+      calls it "О смертных казнях." "Не могу молчать" was a late choice, drawn from the text's own refrain.
+
+  - id: ms-chertkov-redink
+    genre: comments
+    pssTom: 37
+    pages: "429"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_427_432_Ne_mogu_molchat_Opisanie.txt
+    quoteRu: >-
+      В. Г. Чертков пометил в ней красными чернилами ряд новых абзацев, исправил пунктуацию и внес значительное число мелких исправлений, вставок и сокращений.
+    quoteEn: >-
+      V. G. Chertkov marked in it, in red ink, a number of new paragraphs, corrected the punctuation, and made a significant number of small corrections, insertions and abridgements. (working English)
+    significance: >-
+      The editorial collaboration, documented: Chertkov's red-ink markup of рук. №15 (new paragraphing,
+      punctuation, cuts), all approved by Tolstoy (telegram, 9 June). The manuscript description then
+      lists the edits line by line — the published text is a Tolstoy–Chertkov text.
+
+  - id: ms-chertkov-cut-coda
+    genre: comments
+    pssTom: 37
+    pages: "431"
+    date: 1956
+    addressee: null
+    localPdf: primary-sources/jubilee-edition/vol06/vol06.pdf
+    extract: extracts/v37_427_432_Ne_mogu_molchat_Opisanie.txt
+    quoteRu: >-
+      Перестаньте, а если не хотите перестать, то делайте то же и надо мною, потому что до тех пор, пока я жив, и вы будете делать то же, я не перестану обличать вас.
+    quoteEn: >-
+      Stop; and if you will not stop, then do the same to me too, because until I die, and while you go on doing the same, I will not cease to denounce you. (working English)
+    significance: >-
+      The most charged of Chertkov's cuts (p. 96, line 38). The manuscript's original ending carried this
+      explicit "do the same to me / I will not cease to denounce you" coda after "живет в вас"; Chertkov
+      cut it and the published text ends on the quieter "живет в вас." The literal "do the same to me"
+      demand was therefore pruned from the close — though the milder hang-me wish survives in chapter VI.
+      This bears directly on the marquee question (how literal the demand is meant to be).
+
+  # ===== E. THE 1908 DIARY (PSS Tom 56) — byte-faithful ========================================
+
+  - id: diary-phonograph-12may
+    genre: diaries
+    pssTom: 56
+    pages: "117"
+    date: "1908-05-12"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_117_117_1908_05_12.txt
+    quoteRu: >-
+      Вчера мне было особенно мучительно тяжело от известия о 20 повешенных крестьянах. Я начал диктовать в фонограф, но не мог продолжать.
+    quoteEn: >-
+      Yesterday it was especially agonisingly hard for me, from the news of the 20 hanged peasants. I began dictating into the phonograph, but could not continue. (working English)
+    significance: >-
+      Tolstoy's own record of the genesis (12 May 1908 OS). The same entry's opening sentence — "Read
+      parts of my work The Law of Violence and the Law of Love... and I finished it" — is the twin dive's
+      keystone: the two great 1908 statements meet in one diary page.
+
+  - id: diary-wrote-denunciation-14may
+    genre: diaries
+    pssTom: 56
+    pages: "117–118"
+    date: "1908-05-14"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_117_118_1908_05_14.txt
+    quoteRu: >-
+      Вчера, 13-го, написал обращение, обличение — не знаю, что — о казнях, и еще о Молочникове. Кажется, то, что нужно.
+    quoteEn: >-
+      Yesterday, the 13th, I wrote an appeal, a denunciation — I do not know what — about the executions, and also about Molochnikov. It seems to be what is needed. (working English)
+    significance: >-
+      Tolstoy dates the first draft to 13 May 1908 OS and is unsure of its genre ("an appeal, a
+      denunciation — I do not know what"). The generic uncertainty is itself a finding: the essay was born
+      formless, between sermon and indictment.
+
+  - id: diary-finished-on-capital-punishment-29may
+    genre: diaries
+    pssTom: 56
+    pages: "130–131"
+    date: "1908-05-29"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_130_132_1908_05_29.txt
+    quoteRu: >-
+      За это время кончил О смертных Казнях
+    quoteEn: >-
+      In this time I finished On Capital Punishment (working English)
+    significance: >-
+      29 May 1908 OS: Tolstoy calls the work by its working title, "О смертных Казнях" (On Capital
+      Punishment) — confirming the title was still unsettled two weeks before he sent it out. He thought
+      it finished; it was not.
+
+  - id: diary-finished-sent-chertkov-3june
+    genre: diaries
+    pssTom: 56
+    pages: "132"
+    date: "1908-06-03"
+    addressee: null
+    localPdf: null
+    extract: extracts/v56_132_133_1908_06_03.txt
+    quoteRu: >-
+      Кончил «Не могу[…]Молчать» и отослал Черткову.
+    quoteEn: >-
+      Finished "I Cannot Be Silent" and sent it off to Chertkov. (working English)
+    significance: >-
+      3 June 1908 OS — the title "Не могу молчать" now in place, the essay sent to Chertkov. The same
+      entry adds "Кончил почти и ту, большую" ("almost finished the big one too") — The Law of Violence
+      and the Law of Love. The two 1908 works were completed in the same breath.
+
+# ---------------------------------------------------------------------------------------------
+# Layer 2 — ingestion routing map (a PLAN for the later human-in-the-loop wiki step; the dive
+#   writes NO vault pages). ingestionPriority: 1 central · 2 supporting · 3 peripheral.
+# ---------------------------------------------------------------------------------------------
+entities:
+
+  - name: I Cannot Be Silent
+    wikiType: work
+    wikilinkTarget: "I Cannot Be Silent"
+    vaultStatus: missing
+    role: "The essay itself — the dive's subject. Routes to a NEW works/ record (see workRecord), not a wiki page. wikiType 'work' is the Tolstoy-Lab convention; in the main vault it is a works/ overview record."
+    sources: [pss-tom-37]
+    evidenceRefs: [marquee-hang-me-too, for-me-complicity-dependency, opening-seven-sentences]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Capital punishment in late-Imperial Russia
+    wikiType: concept
+    wikilinkTarget: "Capital Punishment"
+    vaultStatus: missing
+    role: "The essay's subject and the seed of the planned death-penalty theme-dive. The post-1905 execution wave; Russia's earlier near-abolition; the moral and spiritual argument against it."
+    sources: [pss-tom-37]
+    evidenceRefs: [opening-seven-sentences, kherson-report-in-text, children-play-at-hanging]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Vladimir Chertkov
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Publisher and editorial confidant; received the manuscript, edited it in red ink (with Tolstoy's telegraphed approval), and published it complete abroad through Free Age Press / Свободное слово."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-chertkov-cover-letter, hist-chertkov-telegram, ms-chertkov-redink, ms-chertkov-cut-coda]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Nikolai Gusev
+    wikiType: person
+    wikilinkTarget: "Nikolai Gusev"
+    vaultStatus: missing
+    role: "Tolstoy's secretary in 1908; copyist of the manuscripts (his cover-notes date the drafts and carry the working title), and the diary-witness to the phonograph attempt and the agitation. Arrested and exiled in 1909."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-phonograph-dictation, hist-nun-scene-march, ms-gusev-cover-title]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Pyotr Stolypin
+    wikiType: person
+    wikilinkTarget: "Pyotr Stolypin"
+    vaultStatus: missing
+    role: "Prime Minister; named in draft №1 as one of 'the two chief hidden executioners' and cut from the published text. His field courts-martial (1906–07) and the post-1905 repression are the essay's political context ('Stolypin's necktie')."
+    sources: [pss-tom-37]
+    evidenceRefs: [draft1-names-stolypin-nicholas, hist-names-cut]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Nicholas II
+    wikiType: person
+    wikilinkTarget: "Nicholas II"
+    vaultStatus: missing
+    role: "Tsar; named in draft №1 as the other of 'the two chief hidden executioners' (Николай Романов) and cut from the published text. The sovereign authority the essay's generalised address ultimately reaches."
+    sources: [pss-tom-37]
+    evidenceRefs: [draft1-names-stolypin-nicholas, hist-names-cut]
+    ingestionPriority: 1
+    dependsOn: []
+
+  - name: Kherson execution of 8 May 1908
+    wikiType: event
+    wikilinkTarget: "Kherson Execution 1908"
+    vaultStatus: missing
+    role: "The triggering event: twenty (later corrected to twelve) peasants hanged on the Strelbitsky Field, Kherson, for an armed raid on the Lubenko estate in the Elisavetgrad district. Known to the essay only through the newspaper notice — no independent corroboration found (needsReview)."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-trigger-report-text, kherson-report-in-text]
+    ingestionPriority: 2
+    dependsOn: [Capital punishment in late-Imperial Russia]
+
+  - name: Field courts-martial (1906–1907)
+    wikiType: event
+    wikilinkTarget: "Field Courts-Martial"
+    vaultStatus: missing
+    role: "Stolypin's military field courts (introduced August 1906), empowered to sentence and execute within 24 hours without appeal — the machinery behind the execution wave of 1906–09. Context for the essay. (wikiType could be concept; flagged.)"
+    sources: []
+    evidenceRefs: [opening-seven-sentences]
+    ingestionPriority: 2
+    dependsOn: [Capital punishment in late-Imperial Russia]
+
+  - name: Non-resistance to evil by force
+    wikiType: concept
+    wikilinkTarget: "Non-Resistance"
+    vaultStatus: missing
+    role: "The doctrine underlying the essay's 'stop doing what you do' and its symmetric condemnation of state and revolutionary violence. Shared spine with the twin treatise. The schema lists 'Non-resistance' as a concept; no page exists yet."
+    sources: [pss-tom-37]
+    evidenceRefs: [stop-doing-what-you-do, revolutionaries-your-children, the-one-will-is-love]
+    ingestionPriority: 2
+    dependsOn: []
+
+  - name: Free Age Press
+    wikiType: edition
+    wikilinkTarget: "Free Age Press"
+    vaultStatus: missing
+    role: "Chertkov's émigré press (Christchurch, England) / «Свободное слово» — the channel that published the complete text abroad and issued the Maude English translation. The schema lists 'Free Age Press series' as an edition."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-tula-full-illegal, hist-ladyzhnikov-worldwide]
+    ingestionPriority: 3
+    dependsOn: [Vladimir Chertkov]
+
+  - name: Aylmer and Louise Maude
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "Translators (with a translator role) of the authorised English 'I Cannot Be Silent' (Free Age Press, 1908), published the same year as the Russian text. Aylmer Maude's authorised Life of Tolstoy also dates to 1908."
+    sources: []
+    evidenceRefs: [hist-ladyzhnikov-worldwide]
+    ingestionPriority: 3
+    dependsOn: [Free Age Press]
+
+  - name: Ivan Ladyzhnikov
+    wikiType: person
+    wikilinkTarget: "Ivan Ladyzhnikov"
+    vaultStatus: missing
+    role: "Émigré publisher (Berlin) who issued the essay abroad with a publisher's preface noting its simultaneous worldwide appearance (15 July 1908). Identity/edition not independently confirmed (needsReview)."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-ladyzhnikov-worldwide]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Boris Eikhenbaum
+    wikiType: person
+    wikilinkTarget: "Boris Eikhenbaum"
+    vaultStatus: missing
+    role: "Author of the PSS Tom 37 editorial history and manuscript description for this essay (the dive's editorial-history source). The Formalist critic; his Young Tolstoy is a criticalWork example in the schema. Low ingestion priority."
+    sources: [pss-tom-37]
+    evidenceRefs: [hist-trigger-report-text, hist-names-cut, ms-chertkov-cut-coda]
+    ingestionPriority: 3
+    dependsOn: []
+
+  - name: Yasnaya Polyana
+    wikiType: place
+    wikilinkTarget: "Yasnaya Polyana"
+    vaultStatus: exists
+    role: "Where the essay was written and dated (31 May 1908) and where the March nun-scene and the phonograph dictation took place."
+    sources: [pss-tom-37]
+    evidenceRefs: [dateline, hist-nun-scene-march]
+    ingestionPriority: 3
+    dependsOn: []
+
+# ---------------------------------------------------------------------------------------------
+# Layer 3 — visual & manuscript record. visuals/ is git-ignored (local cache, refetch with
+#   docs/fetch_visuals.py); the two facsimiles in extracts/ are PD and committed.
+# ---------------------------------------------------------------------------------------------
+visuals:
+
+  - id: facsimile-opening-page
+    type: facsimile
+    subject: "PSS Tom 37, p. 83 — the opening page of «Не могу молчать»"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: opening-seven-sentences
+    holding: "Jubilee Edition (ПСС), Tom 37, self-rendered"
+    archiveId: null
+    access: open
+    rights: "Public domain (Tolstoy's text)"
+    licence: PD
+    usable: true
+    url: null
+    localPath: extracts/v37_083_Ne_mogu_molchat_opening_facsimile.jpg
+    note: "Rendered from jubilee-edition/vol06/vol06.pdf (= PSS Tom 37) at 220 dpi. Committed in extracts/."
+
+  - id: facsimile-first-ms
+    type: facsimile
+    subject: "First page of the first manuscript of «Не могу молчать» (Tolstoy's autograph, draft №1)"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: ms-autograph-first-draft
+    holding: "Jubilee Edition (ПСС), Tom 37, plate facing p. 83 (self-rendered)"
+    archiveId: null
+    access: open
+    rights: "Public domain (Tolstoy's manuscript)"
+    licence: PD
+    usable: true
+    url: null
+    localPath: extracts/v37_first_manuscript_facsimile.jpg
+    note: "The PSS plate captioned «Первая страница первой рукописи Не могу молчать» — Tolstoy's hand. Keystone for the redactions section (this is the draft that named Stolypin and Nicholas)."
+
+  - id: tolstoy-prokudin-gorsky-1908
+    type: photograph
+    subject: "Leo Tolstoy at Yasnaya Polyana, colour photograph, 23 May 1908"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: dateline
+    holding: Wikimedia Commons (orig. US Library of Congress)
+    archiveId: "File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg
+    localPath: visuals/commons-tolstoy-prokudin-gorsky-1908.jpg
+    note: "The keystone portrait: Prokudin-Gorsky's colour photograph of 23 May 1908 — the very weeks the essay was written."
+
+  - id: tolstoy-prokudin-gorsky-study-1908
+    type: photograph
+    subject: "Leo Tolstoy at his desk, Yasnaya Polyana study, May 1908"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: dateline
+    holding: Wikimedia Commons
+    archiveId: "File:Leo_Tolstoi_v_kabinetie.05.1908.ws.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoi_v_kabinetie.05.1908.ws.jpg
+    localPath: visuals/commons-tolstoy-prokudin-gorsky-study-1908.jpg
+    note: "Prokudin-Gorsky, May 1908, same session — Tolstoy at work, the composition context."
+
+  - id: tolstoy-bulla-1908
+    type: photograph
+    subject: "Leo Tolstoy, seated portrait, 1908"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: null
+    holding: Wikimedia Commons
+    archiveId: "File:Bulla_Tolstoy.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Bulla_Tolstoy.jpg
+    localPath: visuals/commons-tolstoy-bulla-1908.jpg
+    note: "Karl Bulla, 1908 — the most-reproduced portrait of Tolstoy's final years (his 80th-birthday year)."
+
+  - id: tolstoy-bulla-horse-1908
+    type: photograph
+    subject: "Leo Tolstoy on horseback at Yasnaya Polyana, 1908"
+    relatedEntity: I Cannot Be Silent
+    relatedEvidence: null
+    holding: Wikimedia Commons
+    archiveId: "File:Leo_Tolstoy_riding_a_horse_(K._Bulla,_1908).jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_riding_a_horse_(K._Bulla,_1908).jpg
+    localPath: visuals/commons-tolstoy-bulla-horse-1908.jpg
+    note: "Karl Bulla, 1908."
+
+  - id: chertkov-repin
+    type: painting
+    subject: "Vladimir Chertkov, oil portrait by Ilya Repin"
+    relatedEntity: Vladimir Chertkov
+    relatedEvidence: ms-chertkov-redink
+    holding: Wikimedia Commons
+    archiveId: "File:Repin_Vladimir_Chertkov.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg
+    localPath: visuals/commons-chertkov-repin.jpg
+    note: "Repin's standard reference portrait of Chertkov, the essay's editor and foreign publisher."
+
+  - id: stolypin-bulla-1906
+    type: photograph
+    subject: "Pyotr Stolypin, Prime Minister, 1906"
+    relatedEntity: Pyotr Stolypin
+    relatedEvidence: draft1-names-stolypin-nicholas
+    holding: Wikimedia Commons
+    archiveId: "File:Der_neue_russische_Ministerpräsident_Peter_Arkadjewitsch_Stolypin,_1906.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Der_neue_russische_Ministerpr%C3%A4sident_Peter_Arkadjewitsch_Stolypin%2C_1906.jpg
+    localPath: visuals/commons-stolypin-bulla-1906.jpg
+    note: "Stolypin, named in draft №1; his field courts carried out the executions the essay protests."
+
+  - id: nicholas-ii-portrait-1898
+    type: photograph
+    subject: "Tsar Nicholas II, official portrait, 1898"
+    relatedEntity: Nicholas II
+    relatedEvidence: draft1-names-stolypin-nicholas
+    holding: Wikimedia Commons
+    archiveId: "File:Portrait_of_Czar_Nicholas_II.jpg"
+    access: open
+    rights: Public domain
+    licence: PD
+    usable: true
+    url: https://commons.wikimedia.org/wiki/File:Portrait_of_Czar_Nicholas_II.jpg
+    localPath: visuals/commons-nicholas-ii-portrait-1898.jpg
+    note: "Nicholas II (Николай Романов), the other figure named in draft №1."
+
+# ---------------------------------------------------------------------------------------------
+# Layer 4 — secondary scholarship (Phase 3). Attributed, not asserted; no byte-fidelity demanded.
+# ---------------------------------------------------------------------------------------------
+scholarship:
+  summary: >-
+    English-language scholarship treats "I Cannot Be Silent" as a late-life political protest as much
+    as a text — legible as an event. Liza Knapp (Leo Tolstoy: A Very Short Introduction, 2019) gives it
+    a whole chapter, "Tolstoy cannot be silent," reading it as the capstone of the first-person voice
+    Tolstoy used "for his last thirty years, from Confession to 'I Cannot Be Silent'," and noting it
+    brings fiction's "devices, techniques and subject matter" to non-fiction. W. Gareth Jones titled an
+    anthology of Tolstoy's polemics after it (1989). Contemporaries cited it directly: Kropotkin (The
+    Terror in Russia, 1909) on the "degrading influence" of mass executions; Trotsky's 1908 tribute
+    called it "a curse upon the heads of those who serve as hangmen." The essay coincided with Tolstoy's
+    80th-birthday-jubilee year and the standing 1901 excommunication; the documented official response
+    was to fine publishers and arrest one, not to confront Tolstoy. The Tolstoy→Gandhi nonviolence
+    lineage is routed by scholarship through other texts (A Letter to a Hindu, The Kingdom of God Is
+    Within You), not this essay. The mainstream contested labels ("Christian anarchist," "conservative
+    anarchist" — Trotsky's phrase) are the outside's words; this dive points at the project's
+    Christian-anarchism and Tolstoyanism dives rather than adopting them.
+  triangulation:
+    - evidenceRef: marquee-hang-me-too
+      conventionalView: >-
+        Scholarship that engages the essay reads the first-person protest / personal implication as its
+        core (Knapp: the outward-addressed first-person voice; Trotsky: the "curse… on the hangmen";
+        Kropotkin and a 2016 Spanish commentary: individuals' unwitting participation in systemic
+        injustice). None contradicts the personal-complicity reading.
+      relation: confirms
+      source: "Knapp 2019 (OUP); Trotsky 1908 (Die Neue Zeit); Kropotkin 1909."
+    - evidenceRef: draft1-names-stolypin-nicholas
+      conventionalView: >-
+        No secondary source found discusses the variant-level decision to remove Stolypin's and
+        Nicholas's names; the published text's namelessness is noted (Wikisource) but not its drafting.
+        The corpus (variants + Eikhenbaum's history) supplies the depersonalisation that scholarship
+        does not reach.
+      relation: extends
+      source: null
+    - evidenceRef: ms-chertkov-cut-coda
+      conventionalView: >-
+        Scholarship reads the demand-to-be-hanged as the essay's literal rhetorical peak, but does not
+        register that Chertkov (with Tolstoy's approval) cut the most explicit "do the same to me / I
+        will not cease to denounce you" coda from the close. The corpus shows the published demand was
+        deliberately moderated in editing — complicating the "pure unmediated outburst" reading.
+      relation: complicates
+      source: null
+    - evidenceRef: hist-pub-fragments-fined
+      conventionalView: >-
+        The newspaper fines, the Sevastopol arrest, the Tula illegal printing, and the simultaneous
+        worldwide appearance are confirmed in the secondary literature and Tolstoy bibliography; the
+        publication-as-event framing is the standard one.
+      relation: confirms
+      source: "Knapp 2019; Wikisource; general Tolstoy bibliography."
+    - evidenceRef: kherson-report-in-text
+      conventionalView: >-
+        The Kherson / Strelbitsky / Elisavetgrad detail is confirmed only through Tolstoy's own text and
+        the Maude translation (which carries the twenty→twelve footnote). No independent archival record
+        of the specific 8 May 1908 hanging or the Lubenko estate raid was located; Kropotkin documents
+        comparable cases but not this one by name.
+      relation: complicates
+      source: "Wikisource / Maude translation; Kropotkin 1909 (analogous cases)."
+    - evidenceRef: corruption-spreads-fire
+      conventionalView: >-
+        Knapp reads the essay as bringing fictional technique to bear; the corpus supplies the specific
+        figure (corruption "like fire through dry straw") that the fire-metaphor dive traces — a concrete
+        image-level reading the biographical literature does not unpack.
+      relation: extends
+      source: "Knapp 2019; project fire-metaphor dive."
+
+# ---------------------------------------------------------------------------------------------
+# Layer 5 — proposed works/ record (RECORD-CREATING; the dive writes nothing to works/).
+#   Field names mirror website/schema/tolstoy-works-schema.md + the live sibling records.
+# ---------------------------------------------------------------------------------------------
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/i-cannot-be-silent/I Cannot Be Silent.md  (PROPOSED — does not exist yet)"
+  workId: i-cannot-be-silent
+  # Ingestion note: each field's `oldStyle:` sub-flag maps to the works schema's separate sibling
+  # key `<field>OldStyle` (e.g. dateWritingStarted -> dateWritingStartedOldStyle,
+  # dateWritingCompleted -> dateWritingCompletedOldStyle, dateFirstPublished -> dateFirstPublishedOldStyle,
+  # dateFirstPublishedInRussia -> dateFirstPublishedInRussiaOldStyle). It rides here as a sub-flag,
+  # not a standalone field entry.
+  fields:
+    - field: titleEn
+      value: "I Cannot Be Silent"
+      evidenceRefs: [hist-first-draft-1917]
+      source: "Standard English title (Maude translation, Free Age Press 1908)."
+      confidence: high
+    - field: titleRu
+      value: "Не могу молчать"
+      evidenceRefs: [opening-seven-sentences]
+      source: "PSS Tom 37 title (extract # bibl line)."
+      confidence: high
+    - field: titleAlternatives
+      value: >-
+        [{title: 'О смертной казни', type: working, language: ru},
+        {title: 'О смертных казнях', type: working, language: ru}]
+      evidenceRefs: [ms-gusev-cover-title, diary-finished-on-capital-punishment-29may]
+      source: "Working title 'On Capital Punishment' from Gusev's manuscript cover (15 May) and the 29 May diary. Shape each to {title, type, language}."
+      confidence: high
+    - field: mainCategory
+      value: "Non-Fiction"
+      evidenceRefs: []
+      source: "Mirrors the sibling essays-and-criticism records (Bethink Yourselves, What Is Art?)."
+      confidence: high
+    - field: subcategory
+      value: "Essays and Criticism"
+      evidenceRefs: []
+      source: "Per the dive brief and the works/non-fiction/essays-and-criticism/ directory (siblings: bethink-yourselves, what-is-art). A short polemical article (статья), not a systematic treatise."
+      confidence: high
+    - field: genre
+      value: "essay"
+      evidenceRefs: []
+      source: "The schema genre enum includes 'essay'; the TEI textClass tags it #statja (article/essay). Distinct from the twin treatise (genre: philosophical)."
+      confidence: high
+    - field: language
+      value: "ru"
+      evidenceRefs: []
+      source: "Original Russian."
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [dateline, diary-finished-sent-chertkov-3june]
+      source: "Finished and signed «31 мая 1908 г. Ясная Поляна»."
+      confidence: high
+    - field: dateWritingStarted
+      value: "1908-05-26"
+      evidenceRefs: [diary-wrote-denunciation-14may, hist-work-period]
+      source: "First draft 13 May 1908 OS (14 May diary, 'Вчера, 13-го, написал…'; editorial history 'с 13 мая') = 26 May 1908 NS (+13)."
+      confidence: high
+      oldStyle: "1908-05-13"
+    - field: dateWritingCompleted
+      value: "1908-06-13"
+      evidenceRefs: [dateline, hist-work-period]
+      source: "Author's date on the canonical text «31 мая 1908» OS = 13 June 1908 NS. Editorial history: revisions continued to 15 June OS; treat 31 May OS as the author's date, not a hard stop. See needsReview."
+      confidence: medium
+      oldStyle: "1908-05-31"
+      note: "The work was 'finished' several times (29 May, 3 June to Chertkov) and revised to mid-June; the published text carries 31 May OS."
+    - field: publishedDuringLifetime
+      value: "true"
+      evidenceRefs: [hist-pub-fragments-fined, hist-ladyzhnikov-worldwide]
+      source: "Appeared July 1908 (Russian newspaper fragments; complete abroad; illegal Tula printing) — Tolstoy died Nov 1910."
+      confidence: high
+    - field: publishedInRussiaDuringLifetime
+      value: "true"
+      evidenceRefs: [hist-pub-fragments-fined, hist-tula-full-illegal]
+      source: "Fragments printed legally in Russian newspapers 4 July 1908 OS — BUT only fragments, every paper fined, and the COMPLETE text reached Russia only via an illegal Tula press + hectographed copies. The boolean is true (legal newspaper printing); the heavy nuance must go in censorshipNotes. See needsReview."
+      confidence: medium
+      note: "Edge case: legally printed in Russia but only in fined fragments; the whole could not be printed legally. A reviewer may prefer false-with-note."
+    - field: dateFirstPublished
+      value: "1908-07-17"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "Earliest documented printing: Russian newspaper fragments 4 July 1908 OS = 17 July NS. The international simultaneous appearance is reported as 15 July 1908 (NS) — ~2 days earlier; the OS/NS sequencing is not fully reconciled. See needsReview."
+      confidence: low
+      oldStyle: "1908-07-04"
+      note: "First appearance anywhere is genuinely tangled (Russian fragments 4 July OS vs. worldwide 15 July NS per Ladyzhnikov). Flagged, not asserted."
+    - field: firstPublishedVenue
+      value: "Russian newspapers (Русские ведомости, Слово, Речь, Современное слово, and others), simultaneously, in fragments"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "Editorial history (Eikhenbaum, PSS Tom 37)."
+      confidence: high
+      note: "First COMPLETE venue: illegal Tula printing (Aug 1908) and abroad via Free Age Press / Свободное слово and the Ladyzhnikov edition — record in censorshipNotes / as editions."
+    - field: firstPublishedVenueType
+      value: "newspaper"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "First appearance was in newspapers."
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1908-07-17"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "Same Russian newspaper fragments, 4 July 1908 OS = 17 July NS."
+      confidence: medium
+      oldStyle: "1908-07-04"
+    - field: firstPublishedInRussiaVenue
+      value: "Русские ведомости, Слово, Речь, Современное слово (and others)"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "Editorial history."
+      confidence: high
+    - field: firstPublishedInRussiaVenueType
+      value: "newspaper"
+      evidenceRefs: [hist-pub-fragments-fined]
+      source: "Editorial history."
+      confidence: high
+    - field: bans
+      value: >-
+        [{banningAuthority: 'Russian Imperial censorship / press administration', authorityType: imperial-state,
+        jurisdiction: Russia, scope: passages-cut, banDate: 1908, banDateOldStyle: 1908,
+        notes: 'Newspapers that printed fragments on 4 July 1908 (OS) were fined; a Sevastopol publisher who posted the text publicly was arrested. The complete essay could not be printed legally in Russia in Tolstoy''s lifetime — it appeared only in an illegal Tula printing (Aug 1908), in hectographed/manuscript copies, and abroad.'}]
+      evidenceRefs: [hist-pub-fragments-fined, hist-sevastopol-arrest, hist-tula-full-illegal]
+      source: "Editorial history. Shape to the bans[] object array. scope could be complete-ban+confiscation; passages-cut chosen because the legal Russian appearance was fragmentary. See needsReview."
+      confidence: high
+    - field: excommunicationRelated
+      value: "false"
+      evidenceRefs: []
+      source: "The 1901 excommunication stands over Tolstoy but no source ties THIS essay to the decree; the essay's appearance coincided with the charged 80th-jubilee year (context, not a text-specific act)."
+      confidence: medium
+
+# ---------------------------------------------------------------------------------------------
+# Layer 6 — coverage ledger (surfaces × status). Resume reads this first.
+# ---------------------------------------------------------------------------------------------
+coverage:
+  - surface: "The work's own text (structural read of all 7 chapters)"
+    status: covered
+    note: "Short essay (14 PSS pages); read in full, keystones extracted across all chapters."
+  - surface: "Genesis & composition (trigger, phonograph, dates, the people around it)"
+    status: covered
+    note: "Eikhenbaum's editorial history + the 1908 diary (12/14/29 May, 3 June) + the Chertkov letters."
+  - surface: "Redactions & textual history (the named first draft, the depersonalisation, Chertkov's edits)"
+    status: covered
+    note: "Variants (draft №1) + manuscript description (17 MSS, Gusev covers, Chertkov red-ink edits incl. the cut coda) + the rendered first-MS facsimile."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Russian fragments + fines, Sevastopol arrest, Tula illegal printing, worldwide 15 July, Ladyzhnikov, Free Age Press / Maude. OS/NS reconciliation partial (needsReview)."
+  - surface: "Reception & afterlife (Russian society/church first)"
+    status: partial
+    note: "Censorship IS the lifetime reception event; 21 abusive + 60 sympathetic letters; Trotsky/Lenin/Kropotkin contemporary responses. No Synod/government statement on THIS essay specifically found; little discrete Russian critical commentary."
+  - surface: "Marquee question (personal complicity / hang-me)"
+    status: covered
+    note: "Triangulated confirms+extends+complicates against scholarship and the variants/manuscript redaction history."
+  - surface: "Scholarly context"
+    status: covered
+    note: "Knapp, Jones, Bartlett, Maude, Kropotkin, Trotsky, Lenin; the Stolypin field-courts context; attributed."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "2 PD facsimiles (committed) + 7 PD Commons images (cached). Edition title-pages not located (needsReview)."
+  - surface: "workRecord (record-creating)"
+    status: covered
+    note: "Full field set proposed; date and publishedInRussia edge-cases flagged."
+  - surface: "Independent corroboration of the Kherson execution"
+    status: not-covered
+    note: "No archival source for the 8 May 1908 Kherson/Lubenko hanging beyond Tolstoy's text + PSS; goes to needsReview."
+
+# ---------------------------------------------------------------------------------------------
+# Layer 7 — intra-corpus contradictions (primary-vs-primary only).
+# ---------------------------------------------------------------------------------------------
+contradictions:
+  - claim: "The report said twenty peasants were hanged (opening of ch I)."
+    correction: "The papers later contradicted it; Tolstoy substituted 'twelve' for 'twenty' in his footnote and left the rest, so the body says 'twelve' and the marquee says 'twenty or twelve.' Not an error — a documented self-correction inside the work."
+    evidenceRef: marquee-hang-me-too
+  - claim: "The text is dated 31 May 1908 (author's date)."
+    correction: "Composition continued to ~15 June 1908 OS (editorial history); the essay was 'finished' on 29 May and 3 June as well. The dateline marks the manuscript sent to Chertkov, not the end of revision."
+    evidenceRef: hist-work-period
+
+# ---------------------------------------------------------------------------------------------
+notCovered:
+  - "A page-by-page collation of which fragments the Russian newspapers were permitted to print vs. what was cut."
+  - "The full Chertkov edit-list (the manuscript description gives ~25 line-level changes) read as a complete editorial apparatus."
+  - "The 21 abusive + 60 sympathetic reader letters (GMT) read individually (Gnatyuk's study covers the abusive set)."
+  - "The non-Russian translation lineage beyond the 1908 Maude/Free Age Press English text."
+  - "The other Tolstoy capital-punishment articles (the planned death-penalty theme-dive will gather these — this dive seeds it)."
+  - "Independent archival confirmation of the Kherson execution (see needsReview)."
+
+needsReview:
+  - item: "OS/NS publication dates: Russian fragments 4 July OS (=17 July NS) vs. worldwide 15 July (NS per Ladyzhnikov) — ~2 days apart, sequence unresolved. Which is 'first published anywhere'?"
+    phase: 3
+    why: "dateFirstPublished is set low-confidence; the international release may precede the Russian fragments."
+  - item: "publishedInRussiaDuringLifetime = true is an edge case (only fined fragments were legal; the whole was illegal in Russia). A reviewer may prefer false-with-censorshipNotes."
+    phase: 4
+    why: "Boolean cannot carry the nuance; flagged for the ingestion step."
+  - item: "bans[].scope = passages-cut vs. complete-ban+confiscation — the legal appearance was fragmentary but the whole was effectively banned and one publisher arrested."
+    phase: 4
+    why: "Scope is documentation-only; choose at ingestion."
+  - item: "No independent corroboration of the 8 May 1908 Kherson / Strelbitsky / Lubenko-estate hanging beyond Tolstoy's text + PSS commentary."
+    phase: 3
+    why: "The triggering event rests on a single newspaper notice; flag before any wiki 'event' page asserts it as established fact."
+  - item: "The Ladyzhnikov edition (Berlin?) is named only in the editorial history; identity and exact imprint not independently confirmed."
+    phase: 3
+    why: "Entity Ivan-Ladyzhnikov + the edition routing are provisional."
+  - item: "Number of surviving manuscripts (17) is read off the manuscript description's numbering, not a stated total."
+    phase: 2
+    why: "Confirm before stating '17 manuscripts' as a precise figure."
+  - item: "A. F. Koni and V. A. Molochnikov surface in the 12 and 14 May diary entries but are only tangential to this essay; not routed as primary entities."
+    phase: 2
+    why: "Koni (jurist) belongs more to the death-penalty theme-dive; Molochnikov has his own Tom 37 work."
+  - item: "Edition title-page facsimiles (Free Age Press; Ladyzhnikov; the censored newspaper pages) not located on Commons/archive.org."
+    phase: 2
+    why: "Visual work-order: request from a research library / newspaper archive."
+
+archivesConsulted:
+  - "tolstoydigital TEI corpus: works/v37_083_096 (main text) + works/v37_391_399 (variants); comments/v37_425_427 + v37_427_432 (Eikhenbaum's editorial history & manuscript description); diaries/v56_* (May–June 1908)."
+  - "PSS Jubilee Edition Tom 37 = jubilee-edition/vol06/vol06.pdf (verified via <book-title>); pp. 83 and the first-MS plate rendered at 220 dpi."
+  - "Wikimedia Commons (7 PD images: Prokudin-Gorsky, Bulla, Repin/Chertkov, Stolypin, Nicholas II)."
+  - "State Tolstoy Museum (ГМТ) — named as the holder of the 21+60 letters and the manuscripts (not directly accessed)."
+  - "Web scholarship sweep: Knapp 2019, Jones 1989, Bartlett 2010, Maude 1908/1910, Kropotkin 1909, Trotsky 1908, Lenin 1908, Gnatyuk; Stolypin field-courts context (see references.background)."
+
+references:
+  primary:
+    - "Толстой Л. Н. Не могу молчать // ПСС в 90 тт. Т. 37. М., 1956. С. 83–96. (TEI works/v37_083_096_Ne_mogu_molchat)"
+    - "Толстой Л. Н. Не могу молчать. Планы и варианты // ПСС Т. 37. С. 391–399. (TEI works/v37_391_399_Ne_mogu_molchat_Varianty)"
+    - "Эйхенбаум Б. М. «Не могу молчать». История писания и печатания // ПСС Т. 37. С. 425–427. (TEI comments/v37_425_427)"
+    - "Эйхенбаум Б. М. «Не могу молчать». Описание рукописей // ПСС Т. 37. С. 427–432. (TEI comments/v37_427_432)"
+    - "Толстой Л. Н. Дневник 1908 г. // ПСС Т. 56. С. 117–133. (TEI diaries/v56_117_117_1908_05_12, v56_117_118_1908_05_14, v56_130_132_1908_05_29, v56_132_133_1908_06_03)"
+  background:
+    - "Knapp, Liza. Leo Tolstoy: A Very Short Introduction. OUP, 2019 — chapter 'Tolstoy cannot be silent.'"
+    - "Jones, W. Gareth, ed. Tolstoy: I Cannot Be Silent (Maude trans.). Bristol Classical Press, 1989."
+    - "Bartlett, Rosamund. Tolstoy: A Russian Life. Profile, 2010 (ch. 12)."
+    - "Maude, Aylmer. The Life of Tolstoy. 2 vols. Constable, 1908/1910; and the Maude English translation, Free Age Press, 1908."
+    - "Kropotkin, Peter. The Terror in Russia, I.3 'Executions.' 1909 (cites the essay)."
+    - "Trotsky, Leon. 'Tolstoy, Poet and Rebel.' Die Neue Zeit, 18 Sept 1908."
+    - "Lenin, V. I. 'Leo Tolstoy as the Mirror of the Russian Revolution.' Proletary, Sept 1908."
+    - "Gnatyuk, Kirill. ''Abusive letters' to Leo Tolstoy about his article 'I Cannot Be Silent'' (Academia.edu, in Russian)."
+    - "Context: Stolypin's field courts-martial (1906–07) and 'Stolypin's necktie' (Rodichev, Duma, 17 Nov 1907) — Wikipedia 'Pyotr Stolypin', 'Fedor Rodichev'; Spartacus-Educational."
+    - "Full source list + URLs in extracts/_scholarship_reception.md."
