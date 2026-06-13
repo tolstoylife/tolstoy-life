@@ -1,0 +1,735 @@
+topic:
+  slug: 1894-1896-the-christian-teaching
+  title: "The Christian Teaching (Христианское учение)"
+  question: >-
+    Does The Christian Teaching (1894–96) soften or systematise the ethic that
+    The Kingdom of God Is Within You (1890–93) argued polemically — doctrine as
+    calm catechism vs. doctrine as combative polemic? And what is its place in
+    the late religious cluster?
+  date: 2026-06-13
+  period: "Prophet period (post-1880)"
+  corpusSurface: >-
+    The work itself (PSS Tom 39); its composition-history commentary (Mishin,
+    Tom 39); the 1894–96 diaries (Toms 52–53) and letters (Toms 67, 84, 87) for
+    genesis and the people around the work; prior corpus-dives for the cluster;
+    English-first scholarship for the received view.
+  dateRange: "1894-03 .. 1896-10 (composition); 1898 (first publication)"
+
+# ── Work-subject metadata ────────────────────────────────────────────────
+work:
+  pssTom: 39
+  pssPages: "117–191"
+  mainTextTei: v39_117_191_Hristianskoe_uchenie
+  commentaryTei: v39_242_247_Hristianskoe_uchenie_Istorija_pisanija_i
+  compositionStart: "1894-03/04"   # begun between 23 March and 21 April 1894 (PSS commentary)
+  compositionRoughComplete: "1896-10-05"  # last authorial review of рук. №113 (M.L. Tolstaya's date)
+  structure: "Preface + 64 numbered chapters (PSS, from manuscript №113); Chertkov's 1898 editions regroup these into 8 titled parts with paragraphs renumbered 1–404"
+  recordPath: "website/src/works/non-fiction/treatises/the-christian-teaching/The Christian Teaching.md"
+  recordExists: false   # → the workRecord proposes CREATION
+
+# ── Evidence ledger (flat) ───────────────────────────────────────────────
+# genre: works | diary | letter | commentary. quoteRu copied byte-for-byte from
+# the named extract file (verify_quotes.py asserts this). Commentary entries are
+# PSS editorial apparatus (Mishin) — attributed, not byte-claimed as Tolstoy.
+evidence:
+  # --- the work itself (PSS Tom 39) ---
+  - id: E1
+    genre: works
+    pssTom: 39
+    pages: "118"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "начиная с Моисея, Исаии, Конфуция, древних греков, Будды, Сократа и до Паскаля, Спинозы, Фихте, Фейербаха"
+    quoteEn: "beginning with Moses, Isaiah, Confucius, the ancient Greeks, Buddha, Socrates and down to Pascal, Spinoza, Fichte, Feuerbach (working English)"
+    significance: "Preface. The recovered truth is not his private reading of the Gospel but the universal witness of mankind's best minds — the autobiographical Confession-in-miniature opens the treatise on a deliberately ecumenical footing."
+  - id: E2
+    genre: works
+    pssTom: 39
+    pages: "118"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "если я говорю истину, то истина эта не моя, а божья"
+    quoteEn: "if I speak the truth, this truth is not mine but God's (working English)"
+    significance: "Preface. The author disclaims authorship of the doctrine — it merely passes through him as through anyone who perceives truth. Sets the impersonal, non-polemical voice of the whole book."
+  - id: E3
+    genre: works
+    pssTom: 39
+    pages: "120"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Человек хочет быть зверем или ангелом, но не может быть ни тем, ни другим"
+    quoteEn: "Man wants to be a beast or an angel, but can be neither (working English)"
+    significance: "Ch. 4. The metaphysical core: the contradiction of human life (animal vs. spiritual)."
+  - id: E4
+    genre: works
+    pssTom: 39
+    pages: "120"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "ангел, рождающийся из зверя, — духовное существо, рождающееся из животного"
+    quoteEn: "an angel being born out of a beast — a spiritual being born out of an animal (working English)"
+    significance: "Ch. 4. Christianity's resolution of the contradiction: life is the birth of the spiritual self out of the animal — the generative image the whole architecture rests on."
+  - id: E5
+    genre: works
+    pssTom: 39
+    pages: "121"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Желание же блага всему существующему есть начало всякой жизни, есть любовь, есть бог"
+    quoteEn: "The desire for the good of all that exists is the source of all life, is love, is God (working English)"
+    significance: "Ch. 7. God defined immanently — known directly within as the desire-for-the-good-of-all = love. The positive doctrinal kernel, calmly stated."
+  - id: E6
+    genre: works
+    pssTom: 39
+    pages: "123"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "называется установлением царства божия"
+    quoteEn: "is called the establishment of the kingdom of God (working English)"
+    significance: "Ch. 9. The work of life = replacing division with union — 'the establishment of the kingdom of God.' Direct conceptual bridge to The Kingdom of God Is Within You."
+  - id: E7
+    genre: works
+    pssTom: 39
+    pages: "125"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "подобна пару, сжатому в паровике"
+    quoteEn: "like steam compressed in a boiler (working English)"
+    significance: "Ch. 13. Love is like steam in a boiler; the body's limits are the walls it needs to do its work — the obstacles to love are not evils but the very mechanism of the spiritual birth."
+  - id: E8
+    genre: works
+    pssTom: 39
+    pages: "127"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Есть три рода грехов, мешающих любви"
+    quoteEn: "There are three kinds of sins that obstruct love (working English)"
+    significance: "Ch. 15. The taxonomic backbone: every sin is analysed in three forms — прирожденные (innate), наследственные (inherited), личные (personal/contrived). The 'catechism' become a system."
+  - id: E9
+    genre: works
+    pssTom: 39
+    pages: "133"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Соблазн по-гречески σκάνδαλον — означает западню, ловушку"
+    quoteEn: "Soblazn — in Greek σκάνδαλον — means a snare, a trap (working English)"
+    significance: "Ch. 24. The second category of evil: соблазны (seductions/snares) are the false justifications that excuse sins. Tolstoy etymologises to fix the term."
+  - id: E10
+    genre: works
+    pssTom: 39
+    pages: "143"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "я делаю это не на свою ответственность, а потому, что исполняю волю высшей власти"
+    quoteEn: "I do this not on my own responsibility, but because I am carrying out the will of a higher power (working English)"
+    significance: "Ch. 31, the государственный (state) seduction. The diffusion-of-responsibility analysis of state violence — executions, war, land-seizure — as radical as anything in Kingdom of God, here folded calmly into the taxonomy. Cf. the Caiaphas reference (good-of-the-many)."
+  - id: E11
+    genre: works
+    pssTom: 39
+    pages: "150"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Пятый прием самый жестокий"
+    quoteEn: "The fifth method is the cruellest (working English)"
+    significance: "Ch. 35. The third category of evil: обманы веры (deceptions of faith), worked by five methods. The fifth and cruellest is instilling a false faith in children — the anti-Church critique at its sharpest."
+  - id: E12
+    genre: works
+    pssTom: 39
+    pages: "150"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "душа человеческая по природе христианка"
+    quoteEn: "the human soul is by nature Christian (working English)"
+    significance: "Ch. 35. Tolstoy cites Tertullian — the child arrives with a clean reason already disposed to truth, which the deceptions of faith then poison."
+  - id: E13
+    genre: works
+    pssTom: 39
+    pages: "157"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Истина не может войти в человека помимо разума"
+    quoteEn: "Truth cannot enter a man except through reason (working English)"
+    significance: "Ch. 38. The rationalist axis: reason (разум) is the one God-given instrument of knowledge; faith built against reason is deception. The ground of liberation from the deceptions of faith."
+  - id: E14
+    genre: works
+    pssTom: 39
+    pages: "186"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "молитва необходима не как средство избавления от мирских бедствий"
+    quoteEn: "prayer is necessary not as a means of deliverance from worldly afflictions (working English)"
+    significance: "Ch. 60. Prayer reconceived: not petition for worldly goods or relief, but a means of strengthening in the struggle with sins. The doctrine reaches into the inner life."
+  - id: E15
+    genre: works
+    pssTom: 39
+    pages: "186"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "молитва христианская бывает двоякая"
+    quoteEn: "Christian prayer is of two kinds (working English)"
+    significance: "Ch. 60. The two prayers — молитва временная (occasional, clarifying one's place before God, in solitude) and молитва ежечасная (hourly, the constant awareness of being a messenger). Grace, atonement and petition are rejected as no help in the struggle."
+  - id: E16
+    genre: works
+    pssTom: 39
+    pages: "191"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "Прежде чем был Авраам, я есмь"
+    quoteEn: "Before Abraham was, I am — John 8:58 (working English)"
+    significance: "Ch. 64. The future after death is a wrongly-posed question: the divine essence is timeless and spaceless — 'we are.' The serene metaphysical close."
+  - id: E17
+    genre: works
+    pssTom: 39
+    pages: "191"
+    extract: extracts/v39_117_191_Hristianskoe_uchenie.txt
+    quoteRu: "я радостно возвращаюсь к нему"
+    quoteEn: "I joyfully return to him (working English)"
+    significance: "Ch. 64, final paragraph. On Christ's dying words ('Into thy hands I commit my spirit'), Tolstoy ends on consolation, not indictment — the tonal signature that separates this book from Kingdom of God."
+  # --- composition-history commentary (PSS Tom 39, Mishin — attributed) ---
+  - id: E18
+    genre: commentary
+    pssTom: 39
+    pages: "242"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "приступил между 23 марта и 21 апреля 1894 г."
+    quoteEn: "began [work] between 23 March and 21 April 1894 — PSS commentary (working English)"
+    significance: "Pins the start of composition. (Mishin, PSS Tom 39 apparatus.)"
+  - id: E19
+    genre: commentary
+    pssTom: 39
+    pages: "243"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "нужно бросить катехизическую форму"
+    quoteEn: "the catechism form must be abandoned — Tolstoy, 2 Nov 1894, quoted in PSS commentary (working English)"
+    significance: "The formal turning-point: Tolstoy drops the question-and-answer catechism form (diary + letter to Chertkov, 2 Nov 1894). The 'catechism' becomes an ordered 'exposition of faith.'"
+  - id: E20
+    genre: commentary
+    pssTom: 39
+    pages: "243"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "Как хорошо, что я не кончил катехизиса"
+    quoteEn: "How good that I did not finish the catechism — Tolstoy diary 5 Nov 1895, quoted in PSS commentary (working English)"
+    significance: "The restart impulse — he is relieved not to have finished, because he means to 'write it differently and better.' The compositional churn that produced 115 manuscripts."
+  - id: E21
+    genre: commentary
+    pssTom: 39
+    pages: "245"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "считаю это писание неконченным"
+    quoteEn: "I consider this writing unfinished — Tolstoy to Chertkov 2 Sept 1897, quoted in PSS commentary (working English)"
+    significance: "Tolstoy's own status for the work: unfinished, far short of what he would have demanded 20 years earlier — yet useful enough to print 'as it is.' The author's disavowal that frames the 1898 publication."
+  - id: E22
+    genre: commentary
+    pssTom: 39
+    pages: "246"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "Статья разбита Чертковым на восемь частей"
+    quoteEn: "The article was divided by Chertkov into eight parts — PSS commentary (working English)"
+    significance: "Chertkov's editorial re-shaping of the 1898 text — 8 titled parts + paragraphs renumbered 1–404 'for the reader's convenience.' The popular English text carries Chertkov's shape; the PSS prints the manuscript's own chapter form."
+  - id: E23
+    genre: commentary
+    pssTom: 39
+    pages: "246"
+    extract: extracts/v39_242_247_commentary.txt
+    quoteRu: "2154 лл."
+    quoteEn: "2154 leaves — PSS commentary (working English)"
+    significance: "Scale of the manuscript labour: 2154 leaves across 115 numbered manuscripts (рук. №№ 1–115) over two and a half years."
+  # --- genesis: diaries & letters (1894–96) ---
+  - id: E24
+    genre: diary
+    pssTom: 52
+    date: "1894-04-21"
+    extract: extracts/d1894_04_21.txt
+    quoteRu: "катехизис, который напрасно затеял"
+    quoteEn: "the catechism, which I undertook in vain (working English)"
+    significance: "First diary mention — born already burdened with guilt about competing projects (the Maupassant preface)."
+  - id: E25
+    genre: diary
+    pssTom: 52
+    date: "1894-05-03"
+    extract: extracts/d1894_05_03.txt
+    quoteRu: "серьезнее и важнее и труднее, чем я думал"
+    quoteEn: "more serious and important and difficult than I had thought (working English)"
+    significance: "The scope dawns on him; the modest 'catechism' label is already too small."
+  - id: E26
+    genre: letter
+    pssTom: 67
+    date: "1894-05-08"
+    addressee: "N. N. Ge (the son)"
+    extract: extracts/L1894_05_08_Ge_son.txt
+    quoteRu: "катехизиса — изложения веры"
+    quoteEn: "the catechism — the exposition of faith (working English)"
+    significance: "Both titles coexist in his mind in May 1894; the design brief is to answer the universal child's/simple-person's questions briefly and convincingly."
+  - id: E27
+    genre: letter
+    pssTom: 67
+    date: "1894-09-04"
+    addressee: "A. A. Tolstaya"
+    extract: extracts/L1894_09_04_Tolstaya_AA.txt
+    quoteRu: "изложение в самой короткой и всем понятной форме"
+    quoteEn: "the exposition, in the shortest and universally comprehensible form (working English)"
+    significance: "The brevity-and-universal-clarity criterion, stated to the Orthodox kinswoman he expects to reject the content. Form, not content, is what he is anxious about."
+  - id: E28
+    genre: letter
+    pssTom: 67
+    date: "1894-10-22"
+    addressee: "E. I. Popov"
+    extract: extracts/L1894_10_22_Popov_a.txt
+    quoteRu: "опасность отвлеченного умствования"
+    quoteEn: "the danger of abstract reasoning (working English)"
+    significance: "KEYSTONE genesis letter. The named risk of the whole project is abstraction — never radicalism. (Commentary cites this letter as 23 Oct; the corpus TEI dates it 22 Oct — see needsReview.)"
+  - id: E29
+    genre: letter
+    pssTom: 67
+    date: "1894-10-22"
+    addressee: "E. I. Popov"
+    extract: extracts/L1894_10_22_Popov_a.txt
+    quoteRu: "чтобы было понятно Ваничке"
+    quoteEn: "so that it be comprehensible to Vanichka [and the yard-keeper] (working English)"
+    significance: "The one test he applies: accessibility to a child (his youngest son Vanichka, who would die Feb 1895) and a simple labourer. The accessibility benchmark, not a doctrinal one."
+  - id: E30
+    genre: letter
+    pssTom: 87
+    date: "1894-11-02"
+    addressee: "V. G. Chertkov"
+    extract: extracts/L1894_11_02_Chertkov.txt
+    quoteRu: "хочется писать не в катехизической форме"
+    quoteEn: "I want to write [it] not in the catechism form (working English)"
+    significance: "The rename decision confirmed to his chief editor the same day as the diary — the move from catechism to ordered exposition."
+  - id: E31
+    genre: diary
+    pssTom: 53
+    date: "1895-03-12"
+    extract: extracts/d1895_03_12.txt
+    quoteRu: "Рядом с этим кончать Катехизис"
+    quoteEn: "Alongside these — to finish the Catechism (working English)"
+    significance: "The catechism heads his entire late-period to-do list, set against the unfinished fiction (Father Sergius, The Forged Coupon, Hadji-Murat) — evidence he ranked it co-equal with the novels. Contradicts the 'minor work' filing."
+  - id: E32
+    genre: letter
+    pssTom: 87
+    date: "1895-12-01"
+    addressee: "V. G. Chertkov"
+    extract: extracts/L1895_12_01_Chertkov.txt
+    quoteRu: "то, чтó было катихизис"
+    quoteEn: "what was the catechism (working English)"
+    significance: "By Dec 1895 the rename has happened: he is rewriting 'what was the catechism' from scratch as the exposition of faith. (Byte-faithful to the pre-reform spelling «катихизис» / accented «чтó» in the letters volume.)"
+  - id: E33
+    genre: diary
+    pssTom: 53
+    date: "1896-07-19"
+    extract: extracts/d1896_07_19.txt
+    quoteRu: "совсем недоступно простолюдину и ребенку"
+    quoteEn: "quite inaccessible to the common man and the child (working English)"
+    significance: "Tolstoy's own verdict that the book FAILS his Vanichka test — coherent and complete, but too abstract. The central tension of the project in his own words."
+  - id: E34
+    genre: letter
+    pssTom: 84
+    date: "1896-09-26"
+    addressee: "S. A. Tolstaya"
+    extract: extracts/L1896_09_26_Tolstaya_SA.txt
+    quoteRu: "если умру, не исправив"
+    quoteEn: "if I die without correcting it [they will still understand what I wanted to say] (working English)"
+    significance: "The rough-completion announcement to his wife, with the testamentary frame — a measure of the weight he placed on the unpolished text."
+  - id: E35
+    genre: letter
+    pssTom: 87
+    date: "1896-10-12"
+    addressee: "V. G. Chertkov"
+    extract: extracts/L1896_10_12_Chertkov.txt
+    quoteRu: "более простом и сокращенном виде"
+    quoteEn: "[I have begun it again] in a simpler and shortened form (working English)"
+    significance: "Having 'finished' it, he immediately restarts a shorter version (8 chapters that day, Tanya copying) — the simplification drive that never reached the end. The work is declared done and condemned in the same breath."
+
+# ── Entities (ingestion routing map → wiki). The dive writes NO pages. ────
+entities:
+  - name: "The Christian Teaching (work)"
+    wikiType: work
+    wikilinkTarget: "The Christian Teaching"
+    vaultStatus: missing
+    role: "the work itself — see workRecord block (this is a works/ record, not a wiki page)"
+    sources: [jubilee-edition]
+    evidenceRefs: [E1, E8, E16]
+    ingestionPriority: 1
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Editor, English translator, first publisher; running confidant during composition; physically present at Yasnaya Polyana repeatedly; imposed the 8-part/1–404 structure on the 1898 text"
+    sources: [jubilee-edition]
+    evidenceRefs: [E22, E30, E32, E35]
+    ingestionPriority: 1
+  - name: "Evgeny Ivanovich Popov"
+    wikiType: person
+    wikilinkTarget: "Evgeny Popov"
+    vaultStatus: missing
+    role: "Correspondent / draft-reader / copyist; addressee of the keystone «опасность отвлеченного умствования» / «понятно Ваничке» letter"
+    sources: [jubilee-edition]
+    evidenceRefs: [E28, E29]
+    ingestionPriority: 2
+  - name: "Tatyana Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Tatyana Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; copyist — copied chapters the day Tolstoy wrote them and routed texts to Chertkov"
+    sources: [jubilee-edition]
+    evidenceRefs: [E35]
+    ingestionPriority: 2
+  - name: "Sophia Andreevna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Sophia Tolstaya"
+    vaultStatus: exists
+    role: "Wife; progress confidante and (per PSS apparatus) a copyist; received the 'finished in rough … if I die' news"
+    sources: [jubilee-edition]
+    evidenceRefs: [E34]
+    ingestionPriority: 2
+  - name: "Pavel Ivanovich Biryukov"
+    wikiType: person
+    wikilinkTarget: "Pavel Birukoff"
+    vaultStatus: exists
+    role: "Posrednik circle; copyist (per PSS apparatus); later edited the 1913 Russian collected edition that reprinted the work"
+    sources: [jubilee-edition]
+    evidenceRefs: [E22]
+    ingestionPriority: 3
+  - name: "Maria Lvovna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; copyist and the hand that dated the manuscripts (incl. «5 окт. 1896» on рук. №113). DISAMBIGUATION NEEDED — confirm the existing 'Maria Tolstaya.md' is the daughter (Maria Lvovna), not the sister (Maria Nikolaevna). See needsReview."
+    sources: [jubilee-edition]
+    evidenceRefs: [E23]
+    ingestionPriority: 3
+    dependsOn: []
+  - name: "Alexandra Andreevna Tolstaya"
+    wikiType: person
+    wikilinkTarget: "Alexandra Tolstaya"
+    vaultStatus: stub
+    role: "Tolstoy's elder kinswoman (the lady-in-waiting), Orthodox correspondent; addressee of the brevity/clarity statement. DISAMBIGUATION NEEDED — the existing 'Alexandra Tolstaya.md' may be the daughter Alexandra Lvovna, not A. A. Tolstaya. See needsReview."
+    sources: [jubilee-edition]
+    evidenceRefs: [E27]
+    ingestionPriority: 3
+  - name: "Nikolai Nikolaevich Ge (the son)"
+    wikiType: person
+    wikilinkTarget: "Nikolai Ge (the younger)"
+    vaultStatus: missing
+    role: "Correspondent; recipient of the design-brief letter; the catechism conceived partly as a tool for his children's education"
+    sources: [jubilee-edition]
+    evidenceRefs: [E26]
+    ingestionPriority: 3
+  - name: "Ivan Lvovich Tolstoy (Vanichka)"
+    wikiType: person
+    wikilinkTarget: "Ivan Tolstoy"
+    vaultStatus: missing
+    role: "Tolstoy's youngest son (d. Feb 1895); the namesake of the comprehensibility test «понятно Ваничке». Not a contributor."
+    sources: [jubilee-edition]
+    evidenceRefs: [E29]
+    ingestionPriority: 3
+  - name: "Deceptions of faith (обман веры)"
+    wikiType: concept
+    wikilinkTarget: "Deception of faith"
+    vaultStatus: missing
+    role: "The third category of evil in the work's taxonomy — false faith instilled by five methods; the systematic form of Tolstoy's anti-Church critique"
+    sources: [jubilee-edition]
+    evidenceRefs: [E11, E12, E13]
+    ingestionPriority: 3
+  - name: "Tolstoyan prayer (временная / ежечасная)"
+    wikiType: concept
+    wikilinkTarget: "Prayer (Tolstoy)"
+    vaultStatus: missing
+    role: "Prayer reconceived as a means in the struggle with sins (occasional + hourly), not petition; grace and atonement rejected"
+    sources: [jubilee-edition]
+    evidenceRefs: [E14, E15]
+    ingestionPriority: 3
+
+# ── Visuals (→ images section). visuals/ is git-ignored; url drives fetch. ──
+visuals:
+  - id: V01
+    type: photograph
+    subject: "Leo Tolstoy, bust portrait, 1896 (Scherer, Nabholz & Co., Moscow)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [E33]
+    holding: "State Tolstoy Museum (GTM) → Wikimedia Commons"
+    archiveId: "GTM catalogue 0003600084"
+    access: open
+    rights: "PD-old (photograph 1896)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%B2_%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B9_%28%D0%A8%D0%B5%D1%80%D0%B5%D1%80_%D0%B8_%D0%9D%D0%B0%D0%B1%D0%B3%D0%BE%D0%BB%D1%8C%D1%86%2C_1896%29.jpg"
+    localPath: "visuals/commons-tolstoy-scherer-nabgolts-1896.jpg"
+    note: "KEYSTONE — dated 1896, the exact composition year."
+  - id: V04
+    type: portrait
+    subject: "Vladimir G. Chertkov, portrait, 1890s (Ilya Repin)"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: [E30, E22]
+    holding: "Wikimedia Commons"
+    access: open
+    rights: "PD-old-100 (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg"
+    localPath: "visuals/commons-chertkov-repin-1890s.jpg"
+    note: "KEYSTONE for the genesis figure — contemporaneous with Chertkov's editor/publisher role."
+  - id: V06
+    type: title-page
+    subject: "The Christian Teaching — 1898 first-edition title page (US co-edition: Frederick A. Stokes Company, New York; 'translated by V. Tchertkoff')"
+    relatedEntity: ["Leo Tolstoy", "Vladimir Chertkov"]
+    relatedEvidence: [E21, E22]
+    holding: "Library of Congress → Internet Archive christianteachin01tols → Wikimedia Commons"
+    archiveId: "IA christianteachin01tols (leaf 9)"
+    access: open
+    rights: "PD-US (published 1898)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:The_Christian_teaching_(IA_christianteachin01tols).pdf"
+    localPath: "visuals/commons-christian-teaching-1898-titlepage.jpg"
+    note: "KEYSTONE first edition. The NY Stokes/Knickerbocker co-edition, same year as the London Brotherhood Publishing Co. edition; Chertkov named as translator. Confirms (with primary evidence) the 'reprinted in New York' the PSS noted."
+  - id: V02
+    type: portrait
+    subject: "Leo Tolstoy, oil portrait, 1887 (Ilya Repin)"
+    relatedEntity: "Leo Tolstoy"
+    holding: "Tretyakov Gallery → Wikimedia Commons"
+    access: open
+    rights: "PD-old-100"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Ilya_Efimovich_Repin_(1844-1930)_-_Portrait_of_Leo_Tolstoy_(1887).jpg"
+    localPath: "visuals/commons-repin-tolstoy-1887.jpg"
+    note: "The canonical Repin 'thinker' portrait; seven years before composition. Atmosphere."
+  - id: V09
+    type: photograph
+    subject: "Tatyana L. Tolstaya, c. 1883"
+    relatedEntity: "Tatyana Tolstaya"
+    holding: "Wikimedia Commons"
+    access: open
+    rights: "PD-old (pre-1910)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tatyana_Sukhotina-Tolstaya_19_years.jpg"
+    localPath: "visuals/commons-tatyana-tolstaya-19yo.jpg"
+    note: "The daughter who copied chapters as he wrote them. Secondary; earlier than the work."
+  - id: V10
+    type: manuscript
+    subject: "Manuscript of «Христианское учение» — 2154 leaves, 115 redactions"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [E23]
+    holding: "GTM (State Tolstoy Museum) / RGB manuscript dept., Moscow"
+    access: restricted
+    rights: "digitisation not publicly licensed"
+    licence: unknown
+    usable: false
+    url: "https://tolstoymuseum.ru/  (request)"
+    localPath: null
+    note: "NOT DOWNLOADED. No facsimile on Commons/IA. Request from GTM/RGB. The PSS Tom 39 text is the functional substitute. GAP — see needsReview."
+
+# ── Scholarship (secondary layer; ground in primary first, attribute) ─────
+scholarship:
+  summary: >-
+    The Anglophone scholarship represents Tolstoy's late religion almost entirely
+    through The Kingdom of God Is Within You (polemic) and What Is Religion?
+    (compression); The Christian Teaching is rarely treated as a text in its own
+    right — where it surfaces it is mined for a quotation. The diagnostic case is
+    Stepanova (2020), a study of Tolstoy's faith that cites the work exactly once,
+    in passing. Aylmer Maude's contemporary filing — "written later, put on one
+    side, and published in 1898 without final revision" — is the framing the
+    literature inherited: minor, abstract, unfinished restatement. The neglect is
+    structural; it is the reception's judgment, not the author's (Tolstoy ranked
+    the catechism at the head of his late to-do list, co-equal with the unfinished
+    novels). Read mainstream framing as a foil, not a baseline.
+  triangulation:
+    - evidenceRef: E8
+      conventionalView: "The late religious statement is Kingdom of God (polemic) + What Is Religion? (compression); the calm systematic middle term is largely unrecognised as a distinct achievement."
+      relation: extends
+      source: "Stepanova 2020; Maude 1910; absence across surveyed scholarship"
+    - evidenceRef: E10
+      conventionalView: "Filed as an unfinished, abstract restatement — implicitly milder because less polemical."
+      relation: complicates
+      source: "Maude 1910 ('without final revision'); primary text v39_117_191 chs 31, 33–43"
+    - evidenceRef: E28
+      conventionalView: "Where noted, the work is called 'abstract' — but as a defect of execution, not as the author's own consciously-named risk."
+      relation: extends
+      source: "keystone letter to Popov 22 Oct 1894; diary 19 July 1896 (E33)"
+    - evidenceRef: E31
+      conventionalView: "'Minor' / 'put on one side' (Maude) — i.e. peripheral."
+      relation: contradicts
+      source: "Tolstoy diary 12 March 1895 vs Maude 1910"
+    - evidenceRef: E21
+      conventionalView: "The work is unfinished and was published only with an editor's caveat."
+      relation: confirms
+      source: "PSS commentary ll. 45–47; editor's preface (Chertkov 1898)"
+    - evidenceRef: E22
+      conventionalView: "Readers cite the Chertkov 8-part form; few flag that the PSS prints the 64-chapter manuscript."
+      relation: extends
+      source: "PSS commentary l. 51; PSS prints рук. №113"
+
+# ── workRecord (proposed CREATION — READ-ONLY to works/; human applies) ───
+workRecord:
+  recordPath: "website/src/works/non-fiction/treatises/the-christian-teaching/The Christian Teaching.md"
+  workId: the-christian-teaching
+  action: create   # no works/ record exists yet
+  fields:
+    - field: title
+      value: "The Christian Teaching"
+      confidence: high
+      source: "PSS Tom 39; standard English title (1898 Chertkov ed.)"
+    - field: titleEn
+      value: "The Christian Teaching"
+      confidence: high
+    - field: titleRu
+      value: "Христианское учение"
+      evidenceRefs: [E18]
+      confidence: high
+      source: "PSS Tom 39"
+    - field: titleAlternatives
+      value:
+        - { title: "Катехизис", type: working, language: ru }
+        - { title: "Изложение веры", type: working, language: ru }
+        - { title: "Закон божий", type: working, language: ru }
+        - { title: "Учение блага", type: working, language: ru }
+        - { title: "Христианское учение о жизни", type: working, language: ru }
+        - { title: "Das christliche Glaubensbekenntnis", type: translation, language: de }
+      evidenceRefs: [E19, E20, E26, E32]
+      confidence: medium
+      note: "Working titles documented in the PSS manuscript apparatus (рук. №№ 1–115): «Закон божий» (May 1894) → «Учение блага» (3 Aug 1894) → «Изложение веры» (from late 1895) → «Христианское учение»; «Христианское учение о жизни» is the Oct 1896 restart's title. German title is a placeholder — verify the actual title of any German edition (low confidence)."
+    - field: mainCategory
+      value: "Non-Fiction"
+      confidence: high
+    - field: subcategory
+      value: "Treatises"
+      confidence: high
+      note: "Mirrors the directory taxonomy; same shelf as The Kingdom of God Is Within You."
+    - field: genre
+      value: "religious"
+      confidence: medium
+      note: "A systematic exposition of religious doctrine (catechism-descended). 'religious' if the works genre enum carries it; otherwise 'philosophical' as used for The Kingdom of God Is Within You — verify against the live genre enum."
+    - field: language
+      value: "ru"
+      confidence: high
+    - field: completionStatus
+      value: "incomplete"
+      evidenceRefs: [E21, E33, E35]
+      confidence: medium
+      note: "JUDGMENT CALL. Structurally whole (Preface + 64 chapters + conclusion) and published 1898, but Tolstoy explicitly disowned it as «неконченным» ('unfinished'); the 1898 editor's preface told readers it 'was not intended by the author for printing in its present form'; he twice began rewriting it shorter (the Oct 1896 8-chapter restart) and never did. 'incomplete' reflects the author's own status, not a broken-off text. See needsReview."
+    - field: publishedDuringLifetime
+      value: true
+      confidence: high
+      note: "First published abroad 1898, in Tolstoy's lifetime."
+    - field: publishedInRussiaDuringLifetime
+      value: false
+      confidence: high
+      note: "First Russian printings were posthumous — the 12th ed. of the Сочинения (part 14, Moscow 1911) and the Biryukov-edited Собрание сочинений (vol. XV, Moscow 1913); Tolstoy died 1910."
+    - field: dateWritingStarted
+      value: "1894"
+      oldStyle: "1894"
+      approximate: true
+      evidenceRefs: [E18, E24]
+      confidence: high
+      note: "Begun between 23 March and 21 April 1894 (PSS commentary); Russia was on the Julian calendar, so the figure is Old Style."
+    - field: dateWritingCompleted
+      value: "1896-10"
+      oldStyle: "1896-10"
+      approximate: true
+      evidenceRefs: [E34, E35]
+      confidence: medium
+      note: "Finished in rough; last authorial review of рук. №113 dated «5 окт. 1896» (Old Style). He kept meaning to redo it, so 'completed' marks the rough completion, not a polished end."
+    - field: dateFirstPublished
+      value: "1898"
+      approximate: false
+      evidenceRefs: [E22]
+      confidence: high
+    - field: firstPublishedVenue
+      value: "V. Chertkov, Purleigh, Essex, England (Russian); Brotherhood Publishing Co., London, and Frederick A. Stokes Co., New York (English, trans. V. Chertkov)"
+      confidence: medium
+      note: "All 1898. English vs Russian precedence not established — Chertkov began the English translation May 1897. NOT 'Free Age Press' (founded 1900). See needsReview / the publication section."
+    - field: firstPublishedVenueType
+      value: "book"
+      confidence: high
+    - field: dateFirstPublishedInRussia
+      value: "1911"
+      oldStyle: "1911"
+      approximate: true
+      confidence: medium
+      note: "Posthumous. In the 12th ed. of the Сочинения Л. Н. Толстого, part 14, Moscow 1911; also Biryukov ed., vol. XV, 1913."
+    - field: firstPublishedInRussiaVenue
+      value: "Сочинения Л. Н. Толстого, 12-е изд., ч. 14, Moscow"
+      confidence: medium
+    - field: authoringLocations
+      value:
+        - { country: Russia, region: "Tula Oblast", city: "Yasnaya Polyana", estate: "Yasnaya Polyana Estate", dateFrom: "1894", dateTo: "1896", notes: "Primary location; winters partly at the Moscow (Khamovniki) house. Approximate." }
+      confidence: medium
+      note: "Yasnaya Polyana is the primary site across the diaries; Moscow winters likely contributed. Coordinates as on the Kingdom of God record."
+    - field: manuscripts
+      value:
+        - { draftLabel: "115 redactions", dateCreated: "1894-1896", currentRepository: "State Museum of Leo Tolstoy", repositoryCity: "Moscow", repositoryCountry: "Russia", notes: "2154 leaves across 115 numbered manuscripts (рук. №№ 1–115); the printing source was рук. №113 (full copy, dated «5 окт. 1896»). See PSS Tom 39 apparatus." }
+      evidenceRefs: [E23]
+      confidence: high
+    - field: transcriptions
+      value:
+        - { transcriberName: "Tatyana Lvovna Tolstaya", relationToAuthor: "daughter", notes: "Copied chapters as written; routed texts to Chertkov." }
+        - { transcriberName: "Maria Lvovna Tolstaya", relationToAuthor: "daughter", notes: "Copyist; dated the manuscripts (incl. рук. №113)." }
+        - { transcriberName: "Vladimir Chertkov", relationToAuthor: "disciple/editor", notes: "Copyist and editor." }
+        - { transcriberName: "Sophia Andreevna Tolstaya", relationToAuthor: "wife", notes: "Per PSS apparatus." }
+        - { transcriberName: "Evgeny Popov, Pavel Biryukov, F. A. Strakhov, P. P. Kandidov, F. A. Ushakov, M. A. Schmidt", relationToAuthor: "disciples/circle", notes: "Among the copyists named in the PSS apparatus." }
+      evidenceRefs: [E22, E35]
+      confidence: high
+      note: "Copyists per PSS Tom 39 apparatus; Tatyana corroborated copying in the genesis letters. Shape to the works schema's transcriptions[] sub-fields on application."
+    - field: themes
+      value: ["the recovered Christian faith", "the meaning of life", "the three kinds of sin", "temptations (соблазны)", "deceptions of faith (обманы веры)", "reason as the instrument of truth", "prayer", "non-resistance", "chastity", "critique of the church", "critique of the state"]
+      confidence: high
+    - field: synopsis
+      value: "A calm, systematic exposition of Tolstoy's religion: life as the birth of the spiritual self out of the animal; a tripartite anatomy of what obstructs love — sins (грехи), seductions (соблазны) and deceptions of faith (обманы веры) — and the path of liberation, struggle and prayer. Begun in 1894 as a question-and-answer catechism, rewritten as an ordered statement of faith, and published unfinished abroad by Chertkov in 1898."
+      confidence: high
+    - field: relatedWorks
+      value:
+        - { id: the-kingdom-of-god-is-within-you, relationshipType: companion }
+        - { id: what-is-religion, relationshipType: companion }
+      confidence: high
+      note: "Kingdom of God = the polemical statement of the same doctrine, written just before; What Is Religion? = the later comparative compression. ('companion' per the relatedWorks enum; the precise relation — systematic restatement — goes in notes.)"
+    - field: identifiers
+      value:
+        jubileeEdition: { volumes: "39", notes: "ПСС, том 39, с. 117–191 (text); с. 242–247 (history/manuscripts)" }
+      confidence: high
+      note: "wikidata / gutenberg / internetArchive not resolved here; the 1898 English text is IA christianteachin01tols. See needsReview."
+
+# ── Coverage ledger ──────────────────────────────────────────────────────
+coverage:
+  - { surface: "Genesis & composition", status: covered, note: "Full naming-arc + strain + people, from diaries/letters and PSS commentary." }
+  - { surface: "What the work says", status: covered, note: "Preface + all 64 chapters read; keystones for each section block." }
+  - { surface: "Redactions & textual history", status: covered, note: "115 manuscripts / 2154 leaves; catechism→exposition rename; рук. №113 the print source." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "1898 Chertkov editions (Purleigh RU; Brotherhood London + Stokes NY EN); Chertkov's 8-part/1–404 editing; posthumous first Russian printing 1911. English vs Russian precedence open." }
+  - { surface: "Reception & afterlife (Russia/Church/press)", status: partial, note: "Genuinely thin — no contemporary review located; not singled out in the 1901 excommunication. Thinness IS the finding, with an open-archive caveat." }
+  - { surface: "Scholarly context", status: covered, note: "Neglect hypothesis confirmed; triangulation done (extends/complicates/confirms/contradicts)." }
+  - { surface: "Place in the cluster", status: covered, note: "Kingdom of God (polemic sibling), What Is Religion (later compression), gospel-translation (textual base), christian-anarchism (the contested label)." }
+  - { surface: "The author's later verdict", status: covered, note: "1897 permission-letter («неконченным»); the never-finished shorter rewrite." }
+  - { surface: "Visual & manuscript record", status: covered, note: "Tolstoy 1896 photo, Chertkov 1890s, 1898 title page (PD); manuscript facsimile not openly available (GAP)." }
+  - { surface: "Characters & prototypes", status: not-covered, note: "Non-fiction treatise — no fictional cast; entities are the genesis people + a few concepts." }
+
+# ── Contradictions (intra-corpus: primary vs primary) ────────────────────
+contradictions:
+  - claim: "The Christian Teaching is a minor work Tolstoy 'put on one side.'"
+    correction: "Tolstoy's own 12 March 1895 diary heads his entire late-period to-do list with the catechism, above Father Sergius, The Forged Coupon and Hadji-Murat — he ranked it co-equal with the unfinished novels."
+    evidenceRef: E31
+
+# ── Not covered (with pointers) ──────────────────────────────────────────
+notCovered:
+  - "Variant collation across the 115 manuscripts — only the rename arc and рук. №113 (print source) are traced; the textual differences between redactions are not collated (would need the PSS variants apparatus / RGB)."
+  - "Chapter X §5 — the paragraph Tolstoy asked Chertkov to delete (5 Apr 1898) and then let stand: not identified in the PSS text here (Chertkov's renumbering complicates the reference). Pointer: PSS commentary l. 49; cross-check рук. №113."
+  - "The Spir / Kant / Berkeley idealist reading that feeds the book's metaphysics (diary 2 May & 10 Oct 1896) — noted in the genesis sweep, not pursued as a sub-theme."
+  - "A separate Russian «Христианское учение» (Purleigh, 1898) title-page image was not located in open repositories (the US Stokes title page stands in)."
+
+# ── needsReview (deferred human judgment) ────────────────────────────────
+needsReview:
+  - { item: "completionStatus = incomplete vs complete", phase: 4, why: "Judgment call: structurally whole and published, but author-disowned as unfinished. 'incomplete' chosen to reflect the author's own status; a reader may prefer 'complete' with a disavowal note." }
+  - { item: "Popov keystone-letter date: 22 Oct vs 23 Oct 1894", phase: 1, why: "The PSS commentary cites the «Ваничка/умствование» letter as 23 Oct 1894 (т. 67, с. 253); the corpus TEI dates the file 22 Oct. Reconcile before the date drives any record." }
+  - { item: "Khilkov 12 March 1895 letter", phase: 1, why: "PSS commentary cites a Khilkov letter of 12 March 1895 (т. 67, с. 47), but t. 67 is the 1894 letters and no such file was found at that date — likely a mis-cite in the apparatus. Not load-bearing for the dive." }
+  - { item: "firstPublishedVenue precedence (English vs Russian 1898)", phase: 4, why: "Both the Russian (Purleigh) and English (London Brotherhood / NY Stokes) editions are dated 1898; which appeared first is not established. The prompt's 'Free Age Press 1898' is wrong (FAP founded 1900)." }
+  - { item: "Maria Tolstaya.md disambiguation", phase: 4, why: "Confirm the existing vault page is the daughter Maria Lvovna (copyist/dater), not the sister Maria Nikolaevna, before routing the copyist entity to it." }
+  - { item: "Alexandra Tolstaya.md disambiguation", phase: 4, why: "Confirm whether the existing page is A. A. Tolstaya (the kinswoman correspondent) or the daughter Alexandra Lvovna; route accordingly (vaultStatus tentatively 'stub')." }
+  - { item: "genre enum value (religious vs philosophical)", phase: 4, why: "Confirm the works genre enum carries 'religious'; if not, use 'philosophical' as on the Kingdom of God record." }
+  - { item: "1901 excommunication decree — works enumerated?", phase: 3, why: "The best online transcription of the Synod decree marks the list of offences as missing; 'The Christian Teaching not singled out' is sourced as far as possible but rests on an incomplete transcription." }
+  - { item: "Manuscript facsimile (V10)", phase: 2, why: "2154 leaves at GTM/RGB; no open facsimile. Request from GTM if a manuscript image is wanted for the works record." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (works, comments, diaries, letters — Toms 39, 52, 53, 67, 84, 87)"
+  - "Wikimedia Commons (PD portraits + 1898 first-edition scan via IA christianteachin01tols)"
+  - "Internet Archive (christianteachin01tols — 1898 Stokes edition)"
+  - "prior corpus-dives: 1890-1893-the-kingdom-of-god-is-within-you, 1901-1902-what-is-religion, gospel-translation, christian-anarchism"
+  - "GTM / RGB manuscript depts — documented only (manuscript not openly licensed)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, «Христианское учение», ПСС Т. 39, с. 117–191 (TEI v39_117_191_Hristianskoe_uchenie)"
+    - "В. С. Мишин, «Христианское учение». История писания и печатания и описание рукописей, ПСС Т. 39, с. 242–247 (TEI v39_242_247)"
+    - "Diaries 1894–96, ПСС Т. 52–53; Letters 1894–96, ПСС Т. 67, 84, 87"
+  background:
+    - "Aylmer Maude, The Life of Tolstoy: Later Years (1910) — https://archive.org/details/in.ernet.dli.2015.96560"
+    - "Aylmer Maude, 'Tolstoy's Teaching' (1902)"
+    - "Elena Stepanova, 'Leo Tolstoy's Faith…', State, Religion and Church 2020(2), 24–47 — https://cyberleninka.ru/article/n/leo-tolstoy-s-faith-the-equivalence-of-state-of-mind-and-content"
+    - "Inessa Medzhibovskaya, Tolstoy and the Religious Culture of His Time (2008)"
+    - "Richard F. Gustafson, Leo Tolstoy: Resident and Stranger (1986) — counter-authority for the religious work as central"
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2010)"
+    - "Tolstoyans, 'Publishing Enterprises' (Brotherhood Publishing Co. from 1895; Free Age Press from 1900) — https://tolstoyans.wordpress.com/tolstoyan-enterprises/publishing-enterprises/"
+    - "The Christian Teaching, 1898 (ed./trans. V. G. Chertkov) — IA christianteachin01tols — https://archive.org/details/christianteachin01tols"
