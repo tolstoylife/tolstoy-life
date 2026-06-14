@@ -71,6 +71,10 @@ REFERENCE_SLUGS = {
     "tolstoydigital-tei-reference",
     "pss-volume-mapping",
     "biryukov-biography-editions",
+    # Visual-resource surveys: catalogues of where Tolstoy appears in art and
+    # photographs — reference material, not a work or theme dive.
+    "tolstoy-in-art",
+    "tolstoy-in-photographs",
 }
 
 # A handful of dives carry a workRecord but read as theme dives (the index plan
