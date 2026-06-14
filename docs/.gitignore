@@ -7,6 +7,10 @@
 !/architecture/architecture-review.html
 !/design/period-colours-preview.html
 !/research/evidence-index/index.html
+# Generated research landing page + its promoted visualizations
+# (build_research_index.py; auto-runs in serve.py --build-only).
+!/research/index.html
+!/research/visualizations/*.html
 
 # Research-dive visual caches. Third-party images (portraits, photographs)
 # fetched for local viewing — PD or not — live here and are NOT committed, so

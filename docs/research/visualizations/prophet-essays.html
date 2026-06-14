@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prophet Period — essays, translations, correspondence</title>
+<style>
+  :root {
+    --bg: #14161a;
+    --panel: #1c1f25;
+    --ink: #e8e4da;
+    --ink-dim: #9a958a;
+    --ink-faint: #5d594f;
+    --line: #2e323a;
+    --green: #54b87f;
+    --amber: #e0a93e;
+    --red: #d4596a;
+    --blue: #6aa3d8;
+    --violet: #a08cc8;
+    --fiction: #4a5568;
+    --accent: #c8b68a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1rem 4rem;
+    background: var(--bg); color: var(--ink);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 1240px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; font-weight: 650; letter-spacing: .01em; margin: 0 0 .3rem; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin: 3.2rem 0 .2rem; color: var(--accent); }
+  h2 .num { color: var(--ink-faint); font-weight: 500; margin-right: .5em; }
+  p.lede { color: var(--ink-dim); max-width: 72ch; margin: .2rem 0 1rem; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.2rem; overflow-x: auto; }
+  svg { display: block; font: inherit; }
+  svg text { fill: var(--ink-dim); }
+  .legend { display: flex; flex-wrap: wrap; gap: 1.1em; font-size: .82rem; color: var(--ink-dim); margin: .6rem 0 .9rem; }
+  .legend span { display: inline-flex; align-items: center; gap: .45em; }
+  .sw { width: 13px; height: 13px; border-radius: 3px; display: inline-block; }
+  #tip {
+    position: fixed; pointer-events: none; z-index: 10; display: none;
+    background: #262a31; border: 1px solid #3d4250; border-radius: 7px;
+    padding: .55em .8em; font-size: .82rem; line-height: 1.45; max-width: 340px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.5); color: var(--ink);
+  }
+  #tip .t { font-weight: 600; }
+  #tip .ru { color: var(--ink-dim); font-style: italic; }
+  #tip .en { color: var(--ink-dim); margin-top: .25em; }
+  .note { font-size: .8rem; color: var(--ink-faint); max-width: 80ch; margin-top: .8rem; }
+  .note a { color: var(--ink-dim); }
+  .bars3 { display: grid; grid-template-columns: 240px 1fr 130px; gap: .45rem .9rem; align-items: center; font-size: .87rem; }
+  .bars3 .lbl { text-align: right; color: var(--ink); }
+  .bars3 .sub { color: var(--ink-faint); font-size: .76rem; display: block; }
+  .track { background: #262a31; border-radius: 4px; height: 22px; position: relative; overflow: hidden; }
+  .fill { position: absolute; inset: 0 auto 0 0; border-radius: 4px 0 0 4px; }
+  .pct { color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+  footer { margin-top: 3.5rem; font-size: .8rem; color: var(--ink-faint); border-top: 1px solid var(--line); padding-top: 1rem; max-width: 90ch; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Prophet Period, 1879–1910</h1>
+  <p class="lede">The essays and treatises, what exists in English, where everything sits in time — and the
+  correspondence threads running underneath, from Chertkov's 941 letters down to the three Tolstoy wrote Gandhi.
+  Built from the project's own verified data: the work-dives, the translation-gap ledger, and the 9,087-letter
+  tolstoydigital TEI corpus.</p>
+
+  <h2><span class="num">1</span>The corpus in time — essays over fiction, correspondence underneath</h2>
+  <p class="lede">Every bar spans composition years. Essay color = English-translation status. The strips below
+  show letters per year to each major correspondent (darker = more letters that year). Hover anything.</p>
+  <div class="panel">
+    <div class="legend" id="leg1"></div>
+    <div id="viz-timeline"></div>
+  </div>
+  <p class="note">Fiction &amp; drama (grey lane) are all fully translated — they're context for where the essays
+  sit. Letter strips count letters <em>by</em> Tolstoy with a date in the TEI file (1,101 of 9,087 letters are
+  undated and excluded). Gandhi's row is nearly empty by design: the thread is three letters, Oct 1909 – Sep 1910,
+  the last finished two months before Tolstoy died.</p>
+
+  <h2><span class="num">2</span>How long each work waited for English</h2>
+  <p class="lede">Years from the end of composition to the first published English edition. The story has three
+  acts: censorship-era smuggling (1–3 years), the Free Age Press machine (same-year English, often before legal
+  Russian publication), and the wisdom anthologies — which mostly never arrived.</p>
+  <div class="panel"><div id="viz-lag"></div></div>
+  <p class="note">Two outliers tell the tale: <em>The Law of Violence and the Law of Love</em> (1908) waited 40
+  years for complete English; <em>Круг чтения</em> waited 89 years for even a partial edition — Sekirin's 1997
+  <em>Calendar of Wisdom</em> drops all 52 weekly readings, so a complete English version still doesn't exist.</p>
+
+  <h2><span class="num">3</span>How much of each body of writing is in English</h2>
+  <p class="lede">The polemics were translated as fast as Tolstoy wrote them. The gap is concentrated in the
+  private channel (letters) and the compression endpoint (the anthologies).</p>
+  <div class="panel"><div class="bars3" id="viz-share"></div></div>
+  <p class="note">Letters: R.&nbsp;F. Christian's two-volume selection (1978) gives 608 of 8,500+ — about 7%.
+  The Chertkov correspondence — the largest single thread — has no English edition at all. Diaries: selection
+  only (Christian 1985). Source: the late-voice dive's translation-gap ledger, web-verified 2026-06-12.</p>
+
+  <h2><span class="num">4</span>The correspondence threads, 1840–1910</h2>
+  <p class="lede">Letters per year to each correspondent, each row scaled to its own peak. Read top to bottom:
+  the early correspondents (aunt Ergolskaya, cousin A.&nbsp;A. Tolstaya, Fet, Strakhov) fade as the Prophet-period
+  circle — Chertkov, Biryukov, Gorbunov-Posadov, Maude — takes over. Gandhi enters in the final fourteen months.</p>
+  <div class="panel"><div id="viz-streams"></div></div>
+  <p class="note">The shaded band is the Prophet period. The Chertkov thread runs 1883–1910 without a break —
+  941 letters, none translated. The three Gandhi letters: 25 Sep 1909 (reply to Gandhi's first letter from
+  Johannesburg), 25 Apr 1910 (on <em>Indian Home Rule</em>), 7 Sep 1910 (the long letter on non-resistance, read
+  aloud at Tolstoy Farm after his death).</p>
+
+  <footer>
+    <strong>Sources.</strong> Translation statuses: <code>docs/research/late-voice-encryption-compression/translation-gaps.md</code>
+    (web-verified 2026-06-12) and the per-work dive dossiers (first-English facts for the early treatises).
+    Letter counts: filename + TEI-date analysis of <code>primary-sources/tolstoydigital-TEI/texts/letters/</code>
+    (9,087 files; Chertkov = PSS Toms 85–89 + 10 named letters elsewhere; Sofia Tolstaya = Toms 83–84).
+    Composition spans: the work-dive slugs in <code>docs/research/</code>. Items marked "not yet project-verified"
+    rest on general knowledge and await a verification pass.
+    Session artifact, 2026-06-12 · <code>_generated/research/session-prophet-essays-viz-2026-06-12/</code>
+  </footer>
+</main>
+
+<div id="tip"></div>
+
+<script>
+/* ---------- data ---------- */
+const STATUS = {
+  complete:    { c: 'var(--green)',  label: 'translated — complete' },
+  selection:   { c: 'var(--amber)',  label: 'translated — selection only' },
+  uncertain:   { c: 'var(--violet)', label: 'English exists — completeness unverified' },
+  untranslated:{ c: 'var(--red)',    label: 'untranslated' },
+  unverified:  { c: 'var(--blue)',   label: 'translated — not yet project-verified' },
+};
+
+const ESSAYS = [
+ { t:"A Confession", ru:"Исповедь", s:1879, e:1882, lane:0, en:1885, by:"1885, in “Christ's Christianity” (Kegan Paul); Maude 1921", st:"complete", dive:1 },
+ { t:"Examination of Dogmatic Theology", ru:"Исследование догматического богословия", s:1879, e:1880, lane:0, en:1904, by:"Leo Wiener 1904 — the first and only English version", st:"complete", dive:1 },
+ { t:"Four Gospels Harmonised and Translated", ru:"Соединение и перевод четырёх Евангелий", s:1880, e:1882, lane:0, en:1895, by:"Brotherhood/Walter Scott 1895–96, broke off at Part II; complete: Wiener 1904", st:"complete", dive:1 },
+ { t:"What I Believe", ru:"В чём моя вера?", s:1882, e:1884, lane:0, en:1885, by:"Popoff (London) and “My Religion” (Smith, NY), both 1885 — both via the French", st:"complete", dive:1 },
+ { t:"What Then Must We Do?", ru:"Так что же нам делать?", s:1882, e:1886, lane:0, en:1887, by:"Hapgood, “What to Do?” 1887; Maude 1925", st:"complete", dive:1 },
+ { t:"On Life", ru:"О жизни", s:1886, e:1887, lane:0, en:1888, by:"Hapgood, “Life” 1888 — authorized, checked by Strakhov", st:"complete", dive:1 },
+ { t:"The Kingdom of God Is Within You", ru:"Царство Божие внутри вас", s:1890, e:1893, lane:0, en:1894, by:"Constance Garnett 1894", st:"complete", dive:1 },
+ { t:"Christianity and Patriotism", ru:"Христианство и патриотизм", s:1893, e:1894, lane:0, en:1896, by:"Walter Scott 1896; Wiener", st:"complete", dive:1 },
+ { t:"What Is Art?", ru:"Что такое искусство?", s:1897, e:1898, lane:0, en:1899, by:"Maude 1899 — the first unexpurgated text in any language", st:"complete", dive:1 },
+ { t:"The Slavery of Our Times", ru:"Рабство нашего времени", s:1900, e:1900, lane:0, en:1900, by:"Maude, Free Age Press 1900 — same year", st:"complete", dive:1 },
+ { t:"What Is Religion, and Wherein Lies Its Essence?", ru:"Что такое религия…", s:1901, e:1902, lane:0, en:1902, by:"Tchertkoff/Fifield 1902 — same year", st:"complete", dive:1 },
+ { t:"Bethink Yourselves!", ru:"Одумайтесь!", s:1904, e:1904, lane:0, en:1904, by:"Tchertkoff, Free Age Press 1904 — same year", st:"complete", dive:1 },
+ { t:"The Law of Violence and the Law of Love", ru:"Закон насилия и закон любви", s:1908, e:1908, lane:0, en:1948, by:"Mary Koutouzow Tolstoy, 1948 — a 40-year wait", st:"complete", dive:1 },
+
+ { t:"Thou Shalt Not Kill", ru:"Не убий", s:1900, e:1900, lane:1, en:1900, by:"Maude, FAP leaflet 1900", st:"complete", dive:0 },
+ { t:"Patriotism and Government", ru:"Патриотизм и правительство", s:1900, e:1900, lane:1, en:1900, by:"Maude, FAP 1900 — not yet project-verified", st:"unverified", dive:0 },
+ { t:"To the Tsar and His Assistants", ru:"Царю и его помощникам", s:1901, e:1901, lane:1, en:1903, by:"Maude, Essays and Letters 1903", st:"complete", dive:0 },
+ { t:"Reply to the Synod's Edict", ru:"Ответ на определение Синода", s:1901, e:1901, lane:1, en:null, by:"Maude, “My Reply to the Synod” (year unpinned)", st:"complete", dive:0 },
+ { t:"To the Clergy", ru:"К духовенству", s:1902, e:1902, lane:1, en:null, by:"English extant; print edition unconfirmed", st:"uncertain", dive:0 },
+ { t:"To the Working People", ru:"К рабочему народу", s:1902, e:1902, lane:1, en:null, by:"English extant; print translator unconfirmed", st:"uncertain", dive:0 },
+ { t:"The Destruction of Hell and Its Restoration", ru:"Разрушение ада и восстановление его", s:1902, e:1902, lane:1, en:1903, by:"Tchertkoff, The Open Court 1903", st:"complete", dive:0 },
+ { t:"On Shakespeare and the Drama", ru:"О Шекспире и о драме", s:1903, e:1904, lane:1, en:1906, by:"Tchertkoff & Mayo 1906 (published with the Russian)", st:"complete", dive:0 },
+ { t:"Reminiscences", ru:"Воспоминания", s:1903, e:1906, lane:1, en:null, by:"partial English only (via Maude's Life etc.) — not yet project-checked", st:"unverified", dive:0 },
+ { t:"Thou Shalt Not Kill Anyone", ru:"Не убий никого", s:1907, e:1907, lane:1, en:1907, by:"Maude, “Thou Shalt Kill No One” 1907", st:"complete", dive:0 },
+ { t:"I Cannot Be Silent", ru:"Не могу молчать", s:1908, e:1908, lane:1, en:1908, by:"L. & A. Maude, FAP 1908 — same year", st:"complete", dive:0 },
+ { t:"A Letter to a Hindu", ru:"Письмо к индусу", s:1908, e:1908, lane:1, en:1909, by:"Gandhi printed it in Indian Opinion, 1909 — not yet project-verified", st:"unverified", dive:0 },
+
+ { t:"Thoughts of Wise People for Every Day", ru:"Мысли мудрых людей на каждый день", s:1903, e:1903, lane:2, en:null, by:"no English edition found", st:"untranslated", dive:1 },
+ { t:"The Circle of Reading", ru:"Круг чтения", s:1904, e:1908, lane:2, en:1997, by:"Sekirin, “A Calendar of Wisdom” 1997 — omits all 52 weekly readings; no complete English exists", st:"selection", dive:1 },
+ { t:"For Every Day", ru:"На каждый день", s:1909, e:1909, lane:2, en:2011, by:"Sekirin, “Wise Thoughts for Every Day” 2011 — completeness unverified", st:"uncertain", dive:1 },
+ { t:"The Path of Life", ru:"Путь жизни", s:1910, e:1910, lane:2, en:1919, by:"Wolfe 1919; Cote 2002 — the one anthology genuinely covered", st:"complete", dive:1 },
+];
+
+const FICTION = [
+ { t:"Stories for the People", s:1881, e:1886 },
+ { t:"The Death of Ivan Ilyich", s:1884, e:1886 },
+ { t:"The Power of Darkness", s:1886, e:1886 },
+ { t:"The Fruits of Enlightenment", s:1886, e:1890 },
+ { t:"The Kreutzer Sonata", s:1887, e:1889 },
+ { t:"The Devil", s:1889, e:1909, n:"posthumous 1911" },
+ { t:"Resurrection", s:1889, e:1899 },
+ { t:"The Forged Coupon", s:1889, e:1904, n:"posthumous 1911" },
+ { t:"Father Sergius", s:1890, e:1898, n:"posthumous 1911" },
+ { t:"Master and Man", s:1894, e:1895 },
+ { t:"Hadji Murat", s:1896, e:1904, n:"posthumous 1912" },
+ { t:"The Living Corpse", s:1900, e:1900, n:"unfinished; posthumous 1911" },
+ { t:"After the Ball", s:1903, e:1903, n:"posthumous 1911" },
+ { t:"1903 folk tales", s:1903, e:1903 },
+ { t:"Круг чтения weekly tales", s:1905, e:1906 },
+];
+
+const EVENTS = [
+ { y:1881,    l:"Alexander II assassinated; letter to the new tsar" },
+ { y:1891,    l:"Famine relief; copyright renunciation" },
+ { y:1901,    l:"Excommunicated by the Synod" },
+ { y:1904,    l:"Russo-Japanese War" },
+ { y:1908.9,  l:"A Letter to a Hindu → Gandhi replies" },
+ { y:1910.85, l:"Death at Astapovo" },
+];
+
+const LETTERS = {"Chertkov": {"1883": 1, "1884": 28, "1885": 27, "1886": 14, "1887": 42, "1888": 32, "1889": 36, "1890": 28, "1891": 28, "1892": 22, "1893": 31, "1894": 29, "1895": 16, "1896": 21, "1897": 47, "1898": 60, "1899": 41, "1900": 28, "1901": 33, "1902": 28, "1903": 31, "1904": 25, "1905": 20, "1906": 17, "1907": 27, "1908": 16, "1909": 52, "1910": 62}, "Sofia Tolstaya": {"1862": 2, "1863": 1, "1864": 22, "1865": 6, "1866": 12, "1867": 16, "1869": 4, "1870": 1, "1871": 12, "1872": 4, "1874": 3, "1876": 7, "1877": 8, "1878": 15, "1879": 11, "1880": 9, "1881": 18, "1882": 38, "1883": 27, "1884": 35, "1885": 55, "1886": 13, "1887": 26, "1888": 11, "1889": 16, "1890": 9, "1891": 49, "1892": 72, "1893": 33, "1894": 41, "1895": 18, "1896": 26, "1897": 29, "1898": 37, "1899": 11, "1900": 18, "1901": 3, "1902": 5, "1903": 3, "1904": 9, "1905": 6, "1906": 2, "1907": 4, "1908": 5, "1909": 12, "1910": 19}, "Strakhov": {"1870": 2, "1871": 1, "1872": 34, "1873": 10, "1874": 13, "1875": 12, "1876": 14, "1877": 21, "1878": 17, "1879": 14, "1880": 13, "1881": 5, "1882": 5, "1884": 3, "1885": 3, "1886": 3, "1887": 5, "1888": 3, "1889": 5, "1890": 6, "1891": 11, "1892": 2, "1893": 4, "1894": 6, "1895": 8, "1903": 2, "1904": 1, "1905": 2, "1910": 2}, "Fet": {"1858": 2, "1859": 2, "1860": 7, "1861": 2, "1862": 1, "1863": 1, "1864": 1, "1865": 6, "1866": 2, "1867": 2, "1869": 6, "1870": 11, "1871": 7, "1872": 5, "1873": 7, "1874": 8, "1875": 13, "1876": 15, "1877": 16, "1878": 13, "1879": 11, "1880": 3, "1881": 1}, "Biryukov": {"1885": 3, "1886": 4, "1887": 12, "1888": 9, "1889": 19, "1890": 10, "1891": 10, "1892": 6, "1893": 5, "1894": 1, "1895": 1, "1896": 1, "1897": 19, "1898": 13, "1899": 4, "1900": 4, "1901": 5, "1902": 3, "1903": 3, "1904": 4, "1905": 3, "1906": 5, "1907": 1, "1909": 4, "1910": 3}, "Stasov": {"1878": 2, "1879": 2, "1880": 3, "1881": 1, "1883": 2, "1884": 1, "1885": 2, "1887": 3, "1892": 1, "1893": 7, "1894": 5, "1896": 4, "1897": 9, "1899": 3, "1900": 4, "1901": 2, "1902": 9, "1903": 10, "1904": 11, "1905": 6, "1906": 7, "1907": 1}, "Ergolskaya": {"1840": 1, "1845": 1, "1848": 3, "1850": 7, "1851": 10, "1852": 9, "1853": 1, "1854": 3, "1855": 5, "1856": 5, "1857": 10, "1858": 3, "1859": 2, "1860": 6, "1861": 2, "1862": 7, "1865": 3, "1866": 2, "1900": 1}, "Gorbunov-Posadov": {"1890": 4, "1891": 4, "1892": 6, "1894": 1, "1896": 1, "1898": 1, "1903": 3, "1904": 1, "1905": 12, "1906": 13, "1907": 5, "1908": 4, "1909": 8, "1910": 2}, "Aylmer Maude": {"1897": 12, "1898": 7, "1899": 2, "1900": 8, "1901": 9, "1902": 3, "1903": 14, "1904": 5, "1905": 3, "1906": 1, "1907": 1, "1908": 1, "1909": 3, "1910": 3}, "Gandhi": {"1909": 1, "1910": 2}, "A.A. Tolstaya": {"1857": 3, "1858": 4, "1859": 8, "1860": 2, "1862": 6, "1863": 1, "1865": 7, "1866": 1, "1867": 1, "1868": 1, "1869": 1, "1872": 10, "1873": 2, "1874": 6, "1876": 4, "1877": 4, "1878": 9, "1879": 6, "1880": 1, "1882": 2, "1884": 6, "1885": 1, "1886": 1, "1888": 1, "1891": 6, "1894": 3, "1895": 1, "1897": 1, "1901": 1, "1903": 4}, "ALL": {"1840": 1, "1844": 2, "1845": 2, "1847": 1, "1848": 3, "1849": 9, "1850": 10, "1851": 16, "1852": 18, "1853": 9, "1854": 6, "1855": 22, "1856": 50, "1857": 48, "1858": 20, "1859": 32, "1860": 25, "1861": 42, "1862": 44, "1863": 28, "1864": 57, "1865": 57, "1866": 32, "1867": 53, "1868": 16, "1869": 27, "1870": 21, "1871": 27, "1872": 67, "1873": 40, "1874": 65, "1875": 82, "1876": 65, "1877": 69, "1878": 102, "1879": 60, "1880": 32, "1881": 35, "1882": 50, "1883": 34, "1884": 87, "1885": 126, "1886": 72, "1887": 136, "1888": 94, "1889": 159, "1890": 183, "1891": 246, "1892": 256, "1893": 200, "1894": 280, "1895": 199, "1896": 174, "1897": 246, "1898": 322, "1899": 223, "1900": 212, "1901": 179, "1902": 218, "1903": 335, "1904": 275, "1905": 187, "1906": 259, "1907": 339, "1908": 327, "1909": 677, "1910": 596}};
+
+const THREADS = [
+ { k:"Ergolskaya",       who:"T. A. Ergolskaya (aunt)",            n:96,  note:"the formative early thread" },
+ { k:"A.A. Tolstaya",    who:"A. A. Tolstaya (cousin)",            n:104, note:"the spiritual sparring partner of the middle years" },
+ { k:"Fet",              who:"Afanasy Fet",                        n:156, note:"the literary friendship; ends at the crisis" },
+ { k:"Sofia Tolstaya",   who:"Sofia Tolstaya (wife)",              n:842, note:"PSS Toms 83–84" },
+ { k:"Strakhov",         who:"Nikolai Strakhov",                   n:247, note:"philosophy & editing; fades after 1882" },
+ { k:"Stasov",           who:"Vladimir Stasov",                    n:100, note:"the art-world channel" },
+ { k:"Chertkov",         who:"Vladimir Chertkov",                  n:941, note:"PSS Toms 85–89 + 10 elsewhere; none in English" },
+ { k:"Biryukov",         who:"Pavel Biryukov",                     n:170, note:"biographer; the Tolstoyan network" },
+ { k:"Gorbunov-Posadov", who:"Ivan Gorbunov-Posadov",              n:75,  note:"Posrednik publishing" },
+ { k:"Aylmer Maude",     who:"Aylmer Maude",                       n:83,  note:"the English translation channel itself" },
+ { k:"Gandhi",           who:"Mohandas Gandhi",                    n:3,   note:"Oct 1909 – Sep 1910" },
+];
+
+/* ---------- helpers ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+function el(name, attrs, parent) {
+  const e = document.createElementNS(NS, name);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+const tip = document.getElementById('tip');
+function bindTip(node, html) {
+  node.addEventListener('mousemove', ev => {
+    tip.style.display = 'block';
+    tip.innerHTML = html;
+    const w = tip.offsetWidth, vw = window.innerWidth;
+    tip.style.left = Math.min(ev.clientX + 14, vw - w - 12) + 'px';
+    tip.style.top = (ev.clientY + 16) + 'px';
+  });
+  node.addEventListener('mouseleave', () => tip.style.display = 'none');
+}
+function packRows(items, gap = 0.4) {
+  const rows = [];
+  for (const it of [...items].sort((a, b) => a.s - b.s || b.e - a.e)) {
+    let r = rows.findIndex(end => end + gap <= it.s);
+    if (r < 0) { r = rows.length; rows.push(it.e); } else rows[r] = it.e;
+    it.row = r;
+  }
+  return rows.length;
+}
+
+/* ---------- V1: timeline ---------- */
+(function () {
+  const Y0 = 1878, Y1 = 1911.4, W = 1190, ML = 195, MR = 14;
+  const x = y => ML + (y - Y0) / (Y1 - Y0) * (W - ML - MR);
+  const BAR = 17, RGAP = 5;
+
+  const lanes = [
+    { name: "Treatises & long essays", items: ESSAYS.filter(d => d.lane === 0) },
+    { name: "Appeals & articles",      items: ESSAYS.filter(d => d.lane === 1) },
+    { name: "Wisdom anthologies",      items: ESSAYS.filter(d => d.lane === 2) },
+    { name: "Fiction & drama",         items: FICTION, fiction: true },
+  ];
+  let yCur = 46;
+  for (const ln of lanes) {
+    ln.y = yCur;
+    ln.rows = packRows(ln.items);
+    yCur += ln.rows * (BAR + RGAP) + 26;
+  }
+  const stripKeys = ["Chertkov", "Sofia Tolstaya", "Biryukov", "Aylmer Maude", "Gorbunov-Posadov", "Strakhov", "Stasov", "Gandhi"];
+  const stripY = yCur + 14, STRIP = 16;
+  const H = stripY + stripKeys.length * (STRIP + 4) + 30;
+
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, width: '100%' }, null);
+  document.getElementById('viz-timeline').appendChild(svg);
+
+  // year grid
+  for (let y = 1880; y <= 1910; y += 5) {
+    el('line', { x1: x(y), x2: x(y), y1: 28, y2: H - 18, stroke: 'var(--line)', 'stroke-width': 1 }, svg);
+    el('text', { x: x(y), y: 20, 'text-anchor': 'middle', 'font-size': 12 }, svg).textContent = y;
+  }
+  // events
+  for (const ev of EVENTS) {
+    const g = el('g', {}, svg);
+    el('line', { x1: x(ev.y), x2: x(ev.y), y1: 28, y2: H - 18, stroke: 'var(--accent)', 'stroke-width': 1, 'stroke-dasharray': '2 4', opacity: .55 }, g);
+    const dot = el('circle', { cx: x(ev.y), cy: 32, r: 4.5, fill: 'var(--accent)' }, g);
+    bindTip(g, `<span class="t">${Math.floor(ev.y)}</span> — ${ev.l}`);
+  }
+
+  for (const ln of lanes) {
+    el('text', { x: ML - 12, y: ln.y + 4, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': 600, fill: 'var(--ink)' }, svg).textContent = ln.name;
+    for (const d of ln.items) {
+      const bx = x(d.s), bw = Math.max(x(d.e + 0.85) - bx, 9);
+      const by = ln.y + d.row * (BAR + RGAP);
+      const fill = ln.fiction ? 'var(--fiction)' : STATUS[d.st].c;
+      const r = el('rect', { x: bx, y: by, width: bw, height: BAR, rx: 3.5, fill, opacity: ln.fiction ? .55 : .92 }, svg);
+      if (!ln.fiction && (d.st === 'uncertain' || d.st === 'unverified')) {
+        r.setAttribute('fill-opacity', .28);
+        r.setAttribute('stroke', fill); r.setAttribute('stroke-width', 1.4); r.setAttribute('stroke-dasharray', '4 2.5');
+      }
+      if (bw > 56) {
+        const lab = el('text', { x: bx + 5, y: by + 12.5, 'font-size': 10.5, fill: ln.fiction ? 'var(--ink-dim)' : '#10130f', 'font-weight': 600, 'pointer-events': 'none' }, svg);
+        if (!ln.fiction && (d.st === 'uncertain' || d.st === 'unverified')) lab.setAttribute('fill', 'var(--ink)');
+        lab.textContent = d.t.length > bw / 6.2 ? d.t.slice(0, bw / 6.2 - 1) + '…' : d.t;
+      }
+      const span = d.s === d.e ? d.s : `${d.s}–${d.e}`;
+      bindTip(r, ln.fiction
+        ? `<span class="t">${d.t}</span> <span class="ru">${span}</span>${d.n ? `<div class="en">${d.n}</div>` : ''}<div class="en">fully translated (context lane)</div>`
+        : `<span class="t">${d.t}</span><br><span class="ru">${d.ru} · ${span}</span><div class="en">English: ${d.by}</div><div class="en">${STATUS[d.st].label}${d.dive ? ' · has a corpus-dive' : ''}</div>`);
+    }
+  }
+
+  // correspondence strips
+  el('text', { x: ML - 12, y: stripY - 8, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': 600, fill: 'var(--ink)' }, svg).textContent = 'Letters per year →';
+  stripKeys.forEach((k, i) => {
+    const meta = THREADS.find(t => t.k === k);
+    const yy = stripY + i * (STRIP + 4);
+    const max = Math.max(...Object.values(LETTERS[k]));
+    el('text', { x: ML - 12, y: yy + 12, 'text-anchor': 'end', 'font-size': 11 }, svg).textContent = `${meta.who.replace(/ \(.*/, '')} · ${meta.n}`;
+    for (let y = Math.ceil(Y0); y <= 1910; y++) {
+      const c = LETTERS[k][y] || 0;
+      const cell = el('rect', {
+        x: x(y) + 0.5, y: yy, width: x(y + 1) - x(y) - 1, height: STRIP, rx: 2,
+        fill: k === 'Gandhi' ? 'var(--amber)' : 'var(--blue)',
+        opacity: c ? 0.15 + 0.85 * (c / max) : 0.04
+      }, svg);
+      bindTip(cell, `<span class="t">${meta.who}</span> — ${y}<div class="en">${c} letter${c === 1 ? '' : 's'}${c ? '' : ' (none dated this year)'}</div>`);
+    }
+  });
+
+  // legend
+  const leg = document.getElementById('leg1');
+  for (const s of ['complete', 'selection', 'uncertain', 'untranslated', 'unverified']) {
+    leg.insertAdjacentHTML('beforeend',
+      `<span><span class="sw" style="background:${STATUS[s].c}${(s === 'uncertain' || s === 'unverified') ? ';opacity:.45;border:1.5px dashed ' + STATUS[s].c.replace('var(', '').replace(')', '') : ''}"></span>${STATUS[s].label}</span>`);
+  }
+  leg.insertAdjacentHTML('beforeend', `<span><span class="sw" style="background:var(--fiction);opacity:.55"></span>fiction &amp; drama (context)</span><span><span class="sw" style="background:var(--accent);border-radius:50%;width:10px;height:10px"></span>event</span>`);
+})();
+
+/* ---------- V2: translation lag ---------- */
+(function () {
+  const rows = [
+    { t: "Examination of Dogmatic Theology", y: 1880, en: 1904, grp: "Censorship era — smuggled abroad, translated in 1–3 years (except the theology)" },
+    { t: "A Confession", y: 1882, en: 1885 },
+    { t: "Four Gospels Harmonised", y: 1882, en: 1895, note: "partial 1895; complete (Wiener) 1904", en2: 1904 },
+    { t: "What I Believe", y: 1884, en: 1885 },
+    { t: "What Then Must We Do?", y: 1886, en: 1887 },
+    { t: "On Life", y: 1887, en: 1888 },
+    { t: "The Kingdom of God Is Within You", y: 1893, en: 1894 },
+    { t: "Christianity and Patriotism", y: 1894, en: 1896 },
+    { t: "What Is Art?", y: 1898, en: 1899 },
+    { t: "The Slavery of Our Times", y: 1900, en: 1900, grp: "Free Age Press era — same-year English, sometimes before legal Russian print" },
+    { t: "Thou Shalt Not Kill", y: 1900, en: 1900 },
+    { t: "To the Tsar and His Assistants", y: 1901, en: 1903 },
+    { t: "What Is Religion…?", y: 1902, en: 1902 },
+    { t: "The Destruction of Hell…", y: 1902, en: 1903 },
+    { t: "Bethink Yourselves!", y: 1904, en: 1904 },
+    { t: "On Shakespeare and the Drama", y: 1904, en: 1906 },
+    { t: "Thou Shalt Not Kill Anyone", y: 1907, en: 1907 },
+    { t: "I Cannot Be Silent", y: 1908, en: 1908 },
+    { t: "The Law of Violence and the Law of Love", y: 1908, en: 1948, hot: 1 },
+    { t: "Мысли мудрых людей (1903)", y: 1903, en: null, grp: "The anthologies — the gap", hot: 1 },
+    { t: "Круг чтения (1904–08)", y: 1908, en: 1997, partial: 1, hot: 1, note: "partial only (Sekirin 1997); complete English: still none" },
+    { t: "На каждый день (1909)", y: 1909, en: 2011, partial: 1, unv: 1, note: "Sekirin 2011; completeness unverified" },
+    { t: "Путь жизни (1910)", y: 1910, en: 1919 },
+  ];
+  const W = 1190, ML = 290, MR = 150, RH = 25, MAXLAG = 92;
+  let yOff = 0;
+  rows.forEach(r => { if (r.grp) yOff += 24; r._y = 0; });
+  const H = rows.length * RH + 70 + yOff;
+  const x = lag => ML + Math.min(lag, MAXLAG) / MAXLAG * (W - ML - MR);
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, width: '100%' }, null);
+  document.getElementById('viz-lag').appendChild(svg);
+
+  for (const g of [0, 10, 20, 40, 60, 80]) {
+    el('line', { x1: x(g), x2: x(g), y1: 34, y2: H - 26, stroke: 'var(--line)' }, svg);
+    el('text', { x: x(g), y: H - 10, 'text-anchor': 'middle', 'font-size': 11 }, svg).textContent = g + ' yrs';
+  }
+  let gOff = 0;
+  rows.forEach((r, i) => {
+    if (r.grp) gOff += 24;
+    const yy = 44 + i * RH + gOff;
+    if (r.grp) el('text', { x: 4, y: yy - 9, 'font-size': 11, fill: 'var(--accent)', 'font-style': 'italic' }, svg).textContent = r.grp;
+    el('text', { x: ML - 10, y: yy + 11, 'text-anchor': 'end', 'font-size': 12, fill: r.hot ? 'var(--ink)' : 'var(--ink-dim)', 'font-weight': r.hot ? 600 : 400 }, svg).textContent = r.t;
+    const never = r.en === null;
+    const lag = never ? MAXLAG : r.en - r.y;
+    const color = never ? 'var(--red)' : r.partial ? 'var(--amber)' : lag <= 3 ? 'var(--green)' : 'var(--blue)';
+    const bw = Math.max(x(lag) - x(0), 3);
+    const bar = el('rect', { x: x(0), y: yy + 1, width: bw, height: 15, rx: 3, fill: color, opacity: never ? .5 : .9 }, svg);
+    if (never) { bar.setAttribute('stroke', 'var(--red)'); bar.setAttribute('stroke-dasharray', '5 3'); bar.setAttribute('fill-opacity', .18); }
+    if (r.en2) el('circle', { cx: x(r.en2 - r.y), cy: yy + 8.5, r: 4, fill: 'var(--green)' }, svg);
+    const labTxt = never ? '— still none (123 yrs)' : lag === 0 ? 'same year' : `${lag} yr${lag > 1 ? 's' : ''} → ${r.en}${r.unv ? ' (unverified)' : r.partial ? ' (partial)' : ''}`;
+    const labX = r.en2 ? x(r.en2 - r.y) + 10 : x(lag) + 8;
+    el('text', { x: labX, y: yy + 13, 'font-size': 11, fill: never ? 'var(--red)' : 'var(--ink-dim)' }, svg).textContent = labTxt;
+    bindTip(bar, `<span class="t">${r.t}</span><div class="en">composition ended ${r.y}; ${never ? 'no English edition found' : `first English ${r.en}`}${r.note ? '<br>' + r.note : ''}</div>`);
+  });
+})();
+
+/* ---------- V3: share translated ---------- */
+(function () {
+  const rows = [
+    { l: "Late treatises & articles", sub: "26 works tracked here", pct: 100, c: 'var(--green)', txt: "all in English", note: "3 with edition details unconfirmed" },
+    { l: "Fiction & drama", sub: "novels, novellas, plays, tales", pct: 100, c: 'var(--green)', txt: "all in English" },
+    { l: "Wisdom anthologies", sub: "the 4 late compilations", pct: 25, c: 'var(--amber)', txt: "1 of 4 complete", note: "1 selection, 1 unverified, 1 untranslated" },
+    { l: "Letters", sub: "8,500+ in PSS; 608 in Christian 1978", pct: 7, c: 'var(--red)', txt: "~7%" },
+    { l: "Letters to Chertkov", sub: "941 letters, 1883–1910", pct: 0, c: 'var(--red)', txt: "0%" },
+    { l: "Diaries", sub: "PSS Toms 46–58", pct: 12, c: 'var(--red)', txt: "selection only", note: "Christian 1985; share approximate" },
+  ];
+  const host = document.getElementById('viz-share');
+  for (const r of rows) {
+    host.insertAdjacentHTML('beforeend', `
+      <div class="lbl">${r.l}<span class="sub">${r.sub}</span></div>
+      <div class="track"><div class="fill" style="width:${Math.max(r.pct, 0.8)}%;background:${r.c}"></div></div>
+      <div class="pct">${r.txt}${r.note ? `<span class="sub">${r.note}</span>` : ''}</div>`);
+  }
+})();
+
+/* ---------- V4: correspondence ridgeline ---------- */
+(function () {
+  const Y0 = 1845, Y1 = 1911, W = 1190, ML = 210, MR = 155, RH = 52, AH = 44;
+  const x = y => ML + (y - Y0) / (Y1 - Y0) * (W - ML - MR);
+  const H = THREADS.length * RH + 64;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, width: '100%' }, null);
+  document.getElementById('viz-streams').appendChild(svg);
+
+  el('rect', { x: x(1879.5), y: 24, width: x(1910.9) - x(1879.5), height: H - 50, fill: 'var(--accent)', opacity: .06 }, svg);
+  el('text', { x: x(1895), y: 38, 'text-anchor': 'middle', 'font-size': 11.5, fill: 'var(--accent)', opacity: .9 }, svg).textContent = '— the Prophet period —';
+  for (let y = 1850; y <= 1910; y += 10) {
+    el('line', { x1: x(y), x2: x(y), y1: 24, y2: H - 26, stroke: 'var(--line)' }, svg);
+    el('text', { x: x(y), y: H - 10, 'text-anchor': 'middle', 'font-size': 11 }, svg).textContent = y;
+  }
+
+  THREADS.forEach((t, i) => {
+    const base = 52 + i * RH + AH;
+    const data = LETTERS[t.k];
+    const max = Math.max(...Object.values(data));
+    const pts = [];
+    for (let y = Y0; y <= 1910; y++) pts.push([x(y + 0.5), base - (data[y] || 0) / max * AH]);
+    const path = `M ${x(Y0)} ${base} L ` + pts.map(p => p.join(' ')).join(' L ') + ` L ${x(1911)} ${base} Z`;
+    const color = t.k === 'Gandhi' ? 'var(--amber)' : t.k === 'Chertkov' ? 'var(--red)' : 'var(--blue)';
+    el('path', { d: path, fill: color, opacity: t.k === 'Gandhi' ? .85 : .42 }, svg);
+    el('path', { d: path.replace(/ Z$/, ''), fill: 'none', stroke: color, 'stroke-width': 1.2, opacity: .9 }, svg);
+    el('line', { x1: ML, x2: W - MR, y1: base, y2: base, stroke: 'var(--line)' }, svg);
+    el('text', { x: ML - 10, y: base - 4, 'text-anchor': 'end', 'font-size': 12, 'font-weight': 600, fill: 'var(--ink)' }, svg).textContent = t.who;
+    el('text', { x: W - MR + 8, y: base - 4, 'font-size': 11 }, svg).textContent = `${t.n} letters · peak ${max}/yr`;
+    const hit = el('rect', { x: ML, y: base - AH - 4, width: W - MR - ML, height: AH + 6, fill: 'transparent' }, svg);
+    hit.addEventListener('mousemove', ev => {
+      const box = svg.getBoundingClientRect();
+      const yr = Math.round(Y0 + ((ev.clientX - box.left) * (W / box.width) - ML) / (W - ML - MR) * (Y1 - Y0) - 0.5);
+      const c = data[yr] || 0;
+      tip.style.display = 'block';
+      tip.innerHTML = `<span class="t">${t.who}</span> — ${yr}<div class="en">${c} letter${c === 1 ? '' : 's'} · ${t.note}</div>`;
+      tip.style.left = Math.min(ev.clientX + 14, window.innerWidth - tip.offsetWidth - 12) + 'px';
+      tip.style.top = (ev.clientY + 16) + 'px';
+    });
+    hit.addEventListener('mouseleave', () => tip.style.display = 'none');
+  });
+})();
+</script>
+</body>
+</html>

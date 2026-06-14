@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Jubilee Edition — corpus-dive coverage map</title>
+<style>
+  .pss {
+    --bg: #14161a; --panel: #1c1f25; --ink: #e8e4da; --ink-dim: #9a958a; --ink-faint: #5d594f;
+    --line: #2e323a; --green: #54b87f; --amber: #e0a93e; --red: #d4596a; --blue: #6aa3d8;
+    --violet: #a08cc8; --fiction: #4a5568; --accent: #c8b68a;
+    background: var(--bg); color: var(--ink); border-radius: 12px;
+    padding: 1.8rem 1.4rem 2.4rem; max-width: 1240px; margin: 0 auto;
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .pss * { box-sizing: border-box; }
+  .pss .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); border:0; }
+  .pss h1 { font-size: 1.55rem; font-weight: 650; letter-spacing: .01em; margin: 0 0 .35rem; }
+  .pss h2 { font-size: 1.05rem; font-weight: 600; margin: 2.4rem 0 .2rem; color: var(--accent); }
+  .pss p.lede { color: var(--ink-dim); max-width: 76ch; margin: .2rem 0 1.1rem; }
+  .pss .stats { display:flex; flex-wrap:wrap; gap:.5rem; margin:.9rem 0 1.2rem; }
+  .pss .stat { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:.5rem .7rem; min-width:96px; }
+  .pss .stat .n { font-size:1.25rem; font-weight:650; font-variant-numeric:tabular-nums; line-height:1; }
+  .pss .stat .l { font-size:.7rem; color:var(--ink-dim); margin-top:.25rem; display:block; }
+  .pss .legend { display:flex; flex-wrap:wrap; gap:1em; font-size:.8rem; color:var(--ink-dim); margin:.4rem 0 1rem; }
+  .pss .legend span { display:inline-flex; align-items:center; gap:.45em; }
+  .pss .sw { width:13px; height:13px; border-radius:3px; display:inline-block; }
+  .pss .detail { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:.9rem 1.05rem; min-height:118px; margin-bottom:1.2rem; }
+  .pss .detail .dh { display:flex; align-items:baseline; gap:.6em; flex-wrap:wrap; }
+  .pss .detail .dt { font-weight:650; font-size:1.02rem; }
+  .pss .detail .dp { font-size:.78rem; color:var(--ink-faint); }
+  .pss .detail .ds { font-size:.78rem; font-weight:600; padding:.1em .55em; border-radius:20px; }
+  .pss .detail .dc { color:var(--ink-dim); margin:.35rem 0 .5rem; font-size:.9rem; }
+  .pss .detail .row { font-size:.82rem; margin:.18rem 0; line-height:1.45; }
+  .pss .detail .row b { font-weight:600; color:var(--ink); }
+  .pss .detail .row.dv b { color:var(--green); } .pss .detail .row.qd b { color:var(--amber); } .pss .detail .row.xx b { color:var(--ink-faint); }
+  .pss .detail .hint { color:var(--ink-faint); font-size:.85rem; font-style:italic; }
+  .pss .band { margin-top:1.1rem; }
+  .pss .band .bh { font-size:.82rem; color:var(--ink); font-weight:600; margin:0 0 .15rem; }
+  .pss .band .bn { font-size:.72rem; color:var(--ink-faint); margin:0 0 .55rem; }
+  .pss .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(86px, 1fr)); gap:.4rem; }
+  .pss .vol { position:relative; border:1px solid var(--line); border-left:3px solid var(--c); border-radius:7px;
+    padding:.4rem .5rem .45rem; min-height:56px; cursor:default; background:var(--vbg); transition:transform .08s, border-color .08s; outline:none; }
+  .pss .vol:hover, .pss .vol:focus { transform:translateY(-1px); border-color:var(--c); border-left-color:var(--c); }
+  .pss .vol:focus { box-shadow:0 0 0 2px color-mix(in srgb, var(--c) 55%, transparent); }
+  .pss .vol .tn { font-weight:650; font-variant-numeric:tabular-nums; font-size:.92rem; }
+  .pss .vol .ct { font-size:.65rem; color:var(--ink-dim); line-height:1.22; margin-top:.12rem; }
+  .pss .vol .qb { position:absolute; top:.32rem; right:.36rem; font-size:.58rem; font-weight:650; color:#14161a;
+    background:var(--amber); border-radius:10px; padding:.04em .42em; line-height:1.5; }
+  .pss .vol .dot { position:absolute; top:.4rem; right:.42rem; width:7px; height:7px; border-radius:50%; background:var(--green); }
+  .pss .backlog { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:.5rem; margin-top:.6rem; }
+  .pss .bk { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:.55rem .7rem; }
+  .pss .bk .bt { font-weight:600; font-size:.9rem; }
+  .pss .bk .bkind { font-size:.62rem; font-weight:650; text-transform:uppercase; letter-spacing:.04em; padding:.08em .45em; border-radius:4px; margin-left:.4em; vertical-align:.08em; }
+  .pss .bk .bkind.work { background:color-mix(in srgb, var(--violet) 22%, var(--panel)); color:var(--violet); }
+  .pss .bk .bkind.theme { background:color-mix(in srgb, var(--blue) 20%, var(--panel)); color:var(--blue); }
+  .pss .bk .toms { margin-top:.35rem; display:flex; flex-wrap:wrap; gap:.25rem; }
+  .pss .bk .tch { font-size:.66rem; font-variant-numeric:tabular-nums; background:#262a31; border:1px solid var(--line); border-radius:4px; padding:.04em .4em; color:var(--ink-dim); }
+  .pss .bk .tch.hot { border-color:var(--amber); color:var(--amber); }
+  .pss .note { font-size:.78rem; color:var(--ink-faint); max-width:84ch; margin-top:.9rem; }
+  .pss footer { margin-top:2.6rem; font-size:.76rem; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:.9rem; max-width:92ch; }
+  .pss footer code { color:var(--ink-dim); }
+</style>
+</head>
+<body style="margin:0; background:#14161a;">
+<div class="pss">
+  <h2 class="sr-only">A coverage map of all 90 volumes of Tolstoy's Jubilee Edition, colour-coded by corpus-dive status: fully dived, partly dived, queued, evidence-only, or outside the dive scope.</h2>
+  <h1>The Jubilee Edition — corpus-dive coverage</h1>
+  <p class="lede">All 90 volumes of the <em>Полное собрание сочинений</em> (Moscow, 1928–58), coloured by where the project's corpus-dives have reached. Fiction and the major treatises are largely worked; the remaining Prophet-period non-fiction is queued. Hover or focus any volume for its contents and dive status.</p>
+
+  <div class="stats" id="stats"></div>
+  <div class="legend" id="legend"></div>
+
+  <div class="detail" id="detail"></div>
+
+  <div id="bands"></div>
+
+  <h2>The remaining backlog — 11 dives</h2>
+  <p class="lede">The second wave of the Prophet-period non-fiction plan. Volume chips in amber are the heavily-queued frontier (Toms 36, 38, 90).</p>
+  <div class="backlog" id="backlog"></div>
+
+  <p class="note">The first wave shipped in two days (2026-06-13 → 14): A Letter to a Hindu, I Cannot Be Silent, Against the death penalty, On Shakespeare and the Drama, The Christian Teaching, and The break with the Church. Diaries (Toms 46–58) and letters (Toms 59–89) are read as evidence inside every dive but have never been dived as subjects — only the three Gandhi letters (Toms 80–82) have been pulled into one. Volume year-splits for the diaries are indicative; pre-Prophet fiction labels (Toms 1–22) are broad.</p>
+
+  <footer>
+    <strong>Sources.</strong> Dive status: the completed dossiers in <code>docs/research/</code> + the backlog plan <code>docs/research/_prophet-period-nonfiction-dives.md</code> (2026-06-13). Volume contents: the works TEI in <code>primary-sources/tolstoydigital-TEI/texts/works/</code> (grouped by Tom) and <code>docs/research/pss-volume-mapping.md</code>. Style reused &amp; expanded from <code>_generated/research/session-prophet-essays-viz-2026-06-12/</code>.
+    Session artifact, 2026-06-14 · <code>_generated/research/session-pss-coverage-map-2026-06-14/</code>
+  </footer>
+</div>
+
+<script>
+const S = {
+  dived:    { c:'var(--green)',  l:'fully dived' },
+  partial:  { c:'var(--amber)',  l:'partly dived — work queued' },
+  planned:  { c:'var(--violet)', l:'queued — not yet dived' },
+  evidence: { c:'var(--blue)',   l:'evidence only — never a dive subject' },
+  outside:  { c:'var(--fiction)',l:'outside the dive scope' },
+  index:    { c:'var(--ink-faint)', l:'reference volume' },
+};
+
+const TAG = {
+  1:'Juvenilia 1829–49', 2:'Childhood · Boyhood', 3:'Youth · Sevastopol', 4:'Caucasus & army tales',
+  5:'Stories, late 1850s', 6:'The Cossacks', 7:'1860s prose', 8:'Pedagogy — the school',
+  9:'War and Peace I', 10:'War and Peace II', 11:'War and Peace III', 12:'War and Peace IV',
+  13:'W&P — drafts', 14:'W&P — drafts', 15:'W&P — drafts', 16:'W&P drafts · 1870s', 17:'1870s prose',
+  18:'Anna Karenina I', 19:'Anna Karenina II', 20:'Anna Karenina — drafts', 21:'Azbuka · ABC', 22:'Russian readers',
+  23:'Confession · What I Believe', 24:'The Four Gospels', 25:'What Then…? · folk tales',
+  26:'On Life · Ivan Ilyich · Power of Darkness', 27:'Kreutzer · The Devil · Fruits', 28:'The Kingdom of God',
+  29:'Famine writings · Master and Man', 30:'What Is Art? · prefaces', 31:'Father Sergius · Two Wars',
+  32:'Resurrection', 33:'Resurrection — drafts', 34:'Slavery · the 1901 break · Living Corpse',
+  35:'Hadji Murat · Shakespeare', 36:'Great Sin · End of the Age · 1905', 37:'I Cannot Be Silent · Hindu',
+  38:'1909–10 late essays', 39:'Christian Teaching · Carthago', 40:'Thoughts of Wise People',
+  41:'Circle of Reading I', 42:'Circle of Reading II', 43:'For Every Day I', 44:'For Every Day II', 45:'The Path of Life',
+  46:'Diaries 1847–54', 47:'Diaries 1854–57', 48:'Diaries 1858–80', 49:'Diaries 1881–87', 50:'Diaries 1888–89',
+  51:'Diary 1890', 52:'Diaries 1891–94', 53:'Diaries 1895–99', 54:'Diaries 1900–03', 55:'Diaries 1904–06',
+  56:'Diaries 1907–08', 57:'Diary 1909', 58:'Diary 1910 · notebooks',
+  59:'Letters', 60:'Letters', 61:'Letters', 62:'Letters', 63:'Letters', 64:'Letters', 65:'Letters', 66:'Letters',
+  67:'Letters', 68:'Letters', 69:'Letters', 70:'Letters', 71:'Letters', 72:'Letters', 73:'Letters', 74:'Letters',
+  75:'Letters', 76:'Letters', 77:'Letters', 78:'Letters', 79:'Letters', 80:'Letters — Gandhi thread',
+  81:'Letters — Gandhi thread', 82:'Letters — Gandhi thread', 83:'Letters — S. A. Tolstaya', 84:'Letters — S. A. Tolstaya',
+  85:'Letters — Chertkov', 86:'Letters — Chertkov', 87:'Letters — Chertkov', 88:'Letters — Chertkov', 89:'Letters — Chertkov',
+  90:'Supplementary — Patriotism · land', 91:'Indexes (1964)',
+};
+
+const RICH = {
+  23:{ s:'dived', d:['A Confession','What I Believe','Examination of Dogmatic Theology'], n:'Covered by the early treatise dives.' },
+  24:{ s:'dived', d:['The Four Gospels Harmonised & Translated (the gospel-translation dive)'] },
+  25:{ s:'dived', d:['What Then Must We Do?','the folk tales (Stories for the People dive)'] },
+  26:{ s:'partial', d:['On Life','The Death of Ivan Ilyich','The Power of Darkness'], x:['Kholstomer; Notes of a Madman — fiction'] },
+  27:{ s:'dived', d:['The Kreutzer Sonata','The Devil','The Fruits of Enlightenment','Father Sergius (drafts)'] },
+  28:{ s:'dived', d:['The Kingdom of God Is Within You'] },
+  29:{ s:'partial', d:['Master and Man'], x:['minor folk tales (Peter the Publican, etc.)'] },
+  30:{ s:'partial', d:['What Is Art?'] },
+  31:{ s:'partial', d:['Father Sergius'], x:['Three Parables; I svet vo tme svetit — fiction/drama'] },
+  32:{ s:'dived', d:['Resurrection'] },
+  33:{ s:'dived', d:['Resurrection (variants & drafts)'] },
+  34:{ s:'partial', d:['The Slavery of Our Times','the 1901 break-with-Church cluster','death-penalty pieces','The Living Corpse','After the Ball'] },
+  35:{ s:'partial', d:['Hadji Murat','What Is Religion?','On Shakespeare and the Drama'] },
+  36:{ s:'partial', d:['Bethink Yourselves!','The Forged Coupon'], x:['Fyodor Kuzmich; Father Vasily; Alyosha Gorshok — fiction'], n:'The single largest queued block of essays.' },
+  37:{ s:'partial', d:['I Cannot Be Silent','A Letter to a Hindu','The Law of Violence and the Law of Love','The Teaching of Christ for Children','death-penalty pieces'], x:['The Killers (Pavel Kudryash) — fiction'] },
+  38:{ s:'partial', d:['Capital Punishment and Christianity','Three Days in the Village'], x:['Khodynka; There Are No Guilty People in the World — fiction'], n:'The densest late volume — mostly queued.' },
+  39:{ s:'partial', d:['The Christian Teaching','Christianity and Patriotism','Religion and Morality','How to Read the Gospels'] },
+  40:{ s:'planned', n:'Plus Lao Tze, Krishna, La Bruyère selections — the compiler Tolstoy.' },
+  41:{ s:'partial', d:['the Круг чтения weekly tales'] },
+  42:{ s:'partial', d:['the Круг чтения weekly tales'] },
+  43:{ s:'planned' },
+  44:{ s:'planned' },
+  45:{ s:'planned', n:'Translation mapped by the late-voice dive; no work-record yet.' },
+  90:{ s:'partial', d:['The Slavery of Our Times (variants)'], n:'A major queued block: Patriotism and Government, the Henry-George land letters, the Letter to a Non-Commissioned Officer.' },
+};
+
+const BACKLOG = [
+  { id:'5',  kind:'theme', title:'Art & aesthetics satellites', toms:[26,30,31,38] },
+  { id:'8',  kind:'work',  title:'The Great Sin', toms:[36] },
+  { id:'9',  kind:'theme', title:'The land question & Henry George', toms:[36,90,35,29] },
+  { id:'10', kind:'work',  title:'The End of the Age', toms:[36] },
+  { id:'11', kind:'theme', title:'1905: revolution & the state', toms:[36,35,38] },
+  { id:'12', kind:'work',  title:'Patriotism and Government', toms:[90] },
+  { id:'13', kind:'theme', title:'Against patriotism & war', toms:[90,31,39,37,38,34] },
+  { id:'14', kind:'work',  title:'Reminiscences', toms:[34,38] },
+  { id:'—',  kind:'theme', title:'The famine relief writings', toms:[29,39] },
+  { id:'—',  kind:'theme', title:'Science, education & culture', toms:[38,37] },
+  { id:'—',  kind:'theme', title:'The wisdom anthologies', toms:[40,41,42,43,44,45] },
+];
+
+function statusOf(t) {
+  if (RICH[t]) return RICH[t].s;
+  if (t <= 22) return 'outside';
+  if (t >= 46 && t <= 89) return 'evidence';
+  if (t === 91) return 'index';
+  return 'outside';
+}
+function queuedFor(t) { return BACKLOG.filter(b => b.toms.includes(t)); }
+
+const BANDS = [
+  { title:'Part 1 — Fiction & essays', range:'Toms 1–45', note:'Early fiction and pedagogy (1–22) sit outside the dive scope; the religious-philosophical works and essays (23–45) are where the dives concentrate.', from:1, to:45 },
+  { title:'Part 2 — Diaries & notebooks', range:'Toms 46–58', note:'Read as evidence inside the dives — never dived as a subject. Year-splits indicative.', from:46, to:58 },
+  { title:'Part 3 — Letters', range:'Toms 59–89', note:'Mined as evidence; only the three Gandhi letters (80–82) have been drawn into a dive.', from:59, to:89 },
+  { title:'Supplementary & indexes', range:'Toms 90–91', note:'Tom 90 gathers late uncollected essays (a major queued block); Tom 91 is the 1964 index.', from:90, to:91 },
+];
+
+const detail = document.getElementById('detail');
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function showDetail(t) {
+  const st = statusOf(t), meta = S[st], r = RICH[t] || {};
+  const band = BANDS.find(b => t >= b.from && t <= b.to);
+  const q = queuedFor(t);
+  let h = `<div class="dh"><span class="dt">Tom ${t}</span>`;
+  h += `<span class="dp">${band ? esc(band.title) : ''}</span>`;
+  h += `<span class="ds" style="background:color-mix(in srgb, ${meta.c} 26%, var(--panel)); color:${meta.c}">${meta.l}</span></div>`;
+  h += `<div class="dc">${esc(TAG[t] || '')}</div>`;
+  if (r.d && r.d.length) h += `<div class="row dv"><b>✓ dived:</b> ${esc(r.d.join('; '))}</div>`;
+  if (q.length) h += `<div class="row qd"><b>◷ queued:</b> ${q.map(b => esc((b.id !== '—' ? b.id + '. ' : '') + b.title)).join('; ')}</div>`;
+  if (r.x && r.x.length) h += `<div class="row xx"><b>⊘ out of scope:</b> ${esc(r.x.join('; '))}</div>`;
+  if (t >= 80 && t <= 82) h += `<div class="row dv"><b>✓ used:</b> the Gandhi correspondence — drawn into the Letter to a Hindu dive.</div>`;
+  if (r.n) h += `<div class="row" style="color:var(--ink-dim); font-style:italic">${esc(r.n)}</div>`;
+  detail.innerHTML = h;
+}
+function defaultDetail() {
+  detail.innerHTML = `<div class="hint">Hover or focus a volume to see its contents, what's been dived, and what's still queued.</div>
+    <div class="row" style="margin-top:.5rem"><b style="color:var(--green)">6</b> dives shipped (first wave) · <b style="color:var(--amber)">11</b> queued · the frontier is Toms <b style="color:var(--amber)">36</b>, <b style="color:var(--amber)">38</b>, <b style="color:var(--amber)">90</b>.</div>`;
+}
+
+const bandsEl = document.getElementById('bands');
+BANDS.forEach(b => {
+  const sec = document.createElement('div');
+  sec.className = 'band';
+  let cells = '';
+  for (let t = b.from; t <= b.to; t++) {
+    const st = statusOf(t), c = S[st].c, q = queuedFor(t).length;
+    const vbg = `color-mix(in srgb, ${c} 13%, var(--panel))`;
+    const badge = q ? `<span class="qb">${q}</span>` : (t >= 80 && t <= 82 ? `<span class="dot"></span>` : '');
+    cells += `<div class="vol" tabindex="0" data-t="${t}" style="--c:${c}; --vbg:${vbg}">${badge}<div class="tn">${t}</div><div class="ct">${esc(TAG[t] || '')}</div></div>`;
+  }
+  sec.innerHTML = `<p class="bh">${esc(b.title)} <span style="color:var(--ink-faint); font-weight:400">· ${esc(b.range)}</span></p><p class="bn">${esc(b.note)}</p><div class="grid">${cells}</div>`;
+  bandsEl.appendChild(sec);
+});
+
+document.querySelectorAll('.vol').forEach(v => {
+  const t = +v.dataset.t;
+  v.addEventListener('mouseenter', () => showDetail(t));
+  v.addEventListener('focus', () => showDetail(t));
+});
+bandsEl.addEventListener('mouseleave', defaultDetail);
+defaultDetail();
+
+const order = ['dived','partial','planned','evidence','outside','index'];
+const counts = {}; order.forEach(k => counts[k] = 0);
+for (let t = 1; t <= 91; t++) counts[statusOf(t)]++;
+document.getElementById('stats').innerHTML = order.map(k =>
+  `<div class="stat"><span class="n" style="color:${S[k].c}">${counts[k]}</span><span class="l">${S[k].l}</span></div>`).join('');
+
+document.getElementById('legend').innerHTML = order.map(k =>
+  `<span><span class="sw" style="background:${S[k].c}"></span>${S[k].l}</span>`).join('')
+  + `<span><span class="sw" style="background:var(--amber); border-radius:50%; width:10px; height:10px"></span>badge = queued dives drawing on that volume</span>`;
+
+document.getElementById('backlog').innerHTML = BACKLOG.map(b => {
+  const toms = b.toms.map(t => `<span class="tch${queuedFor(t).length >= 3 ? ' hot' : ''}">Tom ${t}</span>`).join('');
+  return `<div class="bk"><span class="bt">${b.id !== '—' ? b.id + '. ' : ''}${esc(b.title)}</span><span class="bkind ${b.kind}">${b.kind}</span><div class="toms">${toms}</div></div>`;
+}).join('');
+</script>
+</body>
+</html>

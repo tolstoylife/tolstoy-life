@@ -1106,6 +1106,12 @@ def collect_orphan_html_files() -> dict:
             continue
         if path.name == "INDEX.html":
             continue
+        # Generated-and-committed pages (not hand-authored orphans): the research
+        # landing page and its promoted visualizations are built by
+        # build_research_index.py, not part of the chronological notes feed.
+        rel = path.relative_to(ROOT).as_posix()
+        if rel == "research/index.html" or rel.startswith("research/visualizations/"):
+            continue
         if path.with_suffix(".md").exists():
             continue
         if len(parts) == 1:
@@ -1122,6 +1128,30 @@ def merge_doc_files(*sources: dict) -> dict:
         for folder, files in src.items():
             merged.setdefault(folder, []).extend(files)
     return merged
+
+
+def build_research_index_page(verbose=True):
+    """Regenerate docs/research/index.html from the dives (decoupled, best-effort).
+
+    Mirrors build_evidence_index.py but is wired into the build so the research
+    landing page is correct by construction — it never needs a hand rebuild as
+    new dives ship. Loaded by path so serve.py stays import-free; a failure
+    (missing PyYAML, a malformed dossier) warns and skips rather than breaking
+    the whole docs build.
+    """
+    import importlib.util
+    gen = ROOT / "research" / "lib" / "build_research_index.py"
+    if not gen.exists():
+        return
+    try:
+        spec = importlib.util.spec_from_file_location("build_research_index", gen)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        mod.build(verbose=False)
+        if verbose:
+            print("  ✓ research/index.html")
+    except Exception as exc:  # noqa: BLE001 — never let it break the docs build
+        print(f"  ! research/index.html skipped: {exc}")
 
 
 def build_all(verbose=True):
@@ -1141,6 +1171,8 @@ def build_all(verbose=True):
     (ROOT / "INDEX.html").write_text(index_html, encoding="utf-8")
     if verbose:
         print(f"  ✓ INDEX.html")
+    build_research_index_page(verbose=verbose)
+    if verbose:
         orphans = sum(len(v) for v in html_docs.values())
         suffix = f" + {orphans} hand-authored HTML" if orphans else ""
         print(f"\n{count} documents converted{suffix}.")
