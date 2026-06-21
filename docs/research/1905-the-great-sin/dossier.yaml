@@ -1,0 +1,688 @@
+topic:
+  slug: 1905-the-great-sin
+  title: "The Great Sin (Великий грех)"
+  question: >-
+    Does The Great Sin (1905) confirm, complicate, or contradict Tolstoy's
+    Christian-anarchist anti-statism? He calls private property in land «великий
+    грех» — the great sin at the root of the people's poverty and the 1905
+    unrest — and endorses Henry George's single tax (a STATE-administered fiscal
+    reform) as its just, practical remedy. Is the single tax a transitional
+    concession, a lesser evil, or a genuine exception to his denial of the
+    state's coercive legitimacy?
+  date: 2026-06-21
+  period: "Prophet period (post-1880); written during the 1905 Revolution"
+  corpusSurface: >-
+    The work itself (PSS Tom 36, pp. 206–230); its variants (Tom 36, pp.
+    464–475) and composition-history commentary (Gorbachev, Tom 36, pp.
+    656–665); the 1905 diaries (Tom 55) and the 1905 letters to Chertkov (Tom
+    89) for genesis and the people around the work; prior corpus-dives for the
+    cluster; English-first scholarship for the received view.
+  dateRange: "1905-04-21 .. 1905-07 (composition); July 1905 (first publication)"
+
+# ── Work-subject metadata ────────────────────────────────────────────────
+work:
+  pssTom: 36
+  pssPages: "206–230"
+  mainTextTei: v36_206_230_Velikij_greh
+  variantsTei: v36_464_475_Velikij_greh_Varianty
+  commentaryTei: v36_656_665_Velikij_greh
+  compositionStart: "1905-04-21"   # diary: «Начал писать Народные Заступники» (Old Style)
+  compositionRoughComplete: "1905-07"  # introduction reworked into July; sent to Русская мысль early July
+  structure: "9 chapters in the final redaction (introduction + I–IX); originally two separate pieces — «Народные заступники» and the Henry George essay — merged. Two chapters and parts of others cut at Chertkov's suggestion (printed in PSS as variants)."
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/the-great-sin/The Great Sin.md"
+  recordExists: false   # → the workRecord proposes CREATION
+
+# ── Evidence ledger (flat) ───────────────────────────────────────────────
+# genre: works | diary | letter | commentary. quoteRu copied byte-for-byte from
+# the named extract file (verify_quotes.py asserts this). Commentary entries are
+# PSS editorial apparatus (Gorbachev) — attributed, not byte-claimed as Tolstoy.
+# Variants preserve pre-reform orthography where the TEI carries it.
+evidence:
+  # --- the work itself (PSS Tom 36) ---
+  - id: E1
+    genre: works
+    pssTom: 36
+    pages: "206"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "есть лишение большинства народа несомненного, естественного права каждого человека пользоваться частью той земли, на которой он родился"
+    quoteEn: "is the deprivation of the majority of the people of the unquestionable, natural right of every man to use part of the land on which he was born (working English)"
+    significance: "Introduction. The thesis stated flat: the basic evil — under which Russia, Europe and America all suffer — is not political oppression but the denial of the natural right to land. Everything else in the essay hangs from this."
+  - id: E2
+    genre: works
+    pssTom: 36
+    pages: "209"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "Хлеба не хватает, а хлеба не хватает оттого, что земли нет"
+    quoteEn: "There is not enough bread, and there is not enough bread because there is no land (working English)"
+    significance: "Ch. I close. The argument's empirical floor — the Palm-Saturday road to Tula, the peasants selling their last cow and horse, every story reduced to the one cause. Tolstoy grounds the abstraction in reported peasant speech before he reaches for George."
+  - id: E3
+    genre: works
+    pssTom: 36
+    pages: "210"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "Мы толкуем об отмене рабства, но мы не отменили рабства, мы отменили лишь более грубую форму его: личное рабство"
+    quoteEn: "We talk of the abolition of slavery, but we have not abolished slavery, we have only abolished its cruder form: personal slavery (working English)"
+    significance: "Ch. II — Henry George quoted at length (from Nikolaev's Russian translation). The governing analogy of the whole essay: land monopoly is the surviving, subtler form of slavery. Tolstoy hands the economic argument to George and adds the Russian gloss himself."
+  - id: E4
+    genre: works
+    pssTom: 36
+    pages: "215"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "таково дело милитаризма, война, и таково самое близкое и настоятельное дело — частная земельная собственность"
+    quoteEn: "such is the affair of militarism, war, and such is the nearest and most pressing matter — private land property (working English)"
+    significance: "Ch. III. Tolstoy files land property in the same list as cannibalism, human sacrifice, judicial torture, serfdom, capital punishment and war — institutions humanity has overcome or is overcoming. The land question is the next on the moral ladder."
+  - id: E5
+    genre: works
+    pssTom: 36
+    pages: "216"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "Средство это, употребляемое и до сих пор по отношению к Джорджу, было замалчивание"
+    quoteEn: "This means, used to this day with respect to George, was suppression by silence (working English)"
+    significance: "Ch. III. The reception story of George himself: Gladstone, Spencer (who recanted his Social Statics and bought up the old editions), Parnell, the Oxford students, the Catholic party and orthodox political economy all turned on him — but the chief weapon was замалчивание, killing the idea by ignoring it. Tolstoy reads George's neglect as proof of his truth."
+  - id: E6
+    genre: works
+    pssTom: 36
+    pages: "220"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "Наши грехи всегда перед нами"
+    quoteEn: "Our sins are always before us (working English)"
+    significance: "Ch. V, after the keystone parable of the penned cows (people keep the cows fenced and devise endless 'improvements' rather than break the fence to the pasture). Russia, unlike colonial Europe, has no distant colony onto which to displace the exploitation — its starving feeders stand in plain sight."
+  - id: E7
+    genre: works
+    pssTom: 36
+    pages: "222"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "теперь же люди, делающие такое же зло среди нас, делают это во имя «народа», ради истинного служения ему"
+    quoteEn: "now people doing the same evil among us do it in the name of 'the people,' for the sake of truly serving it (working English)"
+    significance: "Ch. VI (epigraph Matthew 23:27–28, the whited sepulchres). The structural charge: the liberal/socialist/revolutionary intelligentsia who 'serve the people' are the new Pharisees — the false servants of God reborn as false servants of the народ, sharing the same three signs (loose lives, no real love of the served, mutual anathema)."
+  - id: E8
+    genre: works
+    pssTom: 36
+    pages: "224"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "не имеют религии. А без религии человек не может жить сам разумной жизнью"
+    quoteEn: "have no religion. And without religion a man cannot himself live a rational life (working English)"
+    significance: "Ch. VII. The diagnosis under the diagnosis: governmental and anti-governmental reformers alike miss the one thing the people need because they are without religion, and so cannot truly love and therefore cannot know what others need. The land question is finally a religious question."
+  - id: E9
+    genre: works
+    pssTom: 36
+    pages: "226"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "захват земли неработающими людьми есть великий грех"
+    quoteEn: "the seizure of land by non-working people is the great sin (working English)"
+    significance: "Ch. VII — the title phrase, spoken (in Tolstoy's reading) by the old peasant who, hearing a newspaper article on the 'agrarian' congress read aloud at Tula station, understands nothing of the jargon but grasps that it concerns a great, ancient sin, and crosses himself. The illiterate peasant's gesture carries the essay's whole thesis."
+  - id: E10
+    genre: works
+    pssTom: 36
+    pages: "227"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "нужно только сознание своего греха всеми людьми, совершающими его или участвующими в нем, и желание избавления от него"
+    quoteEn: "only the consciousness of their sin is needed, by all who commit it or take part in it, and the desire to be free of it (working English)"
+    significance: "Ch. VIII. The non-political remedy. What unties the sin is NOT reforms, socialist projects, revolution, or philanthropic land-purchase schemes — only the conscience of those complicit, as with serfdom. The moral-individualist lever asserted against every external programme."
+  - id: E11
+    genre: works
+    pssTom: 36
+    pages: "226"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "«Великие общественные преобразования, — говорит Мадзини, — всегда были и будут лишь следствием великих религиозных движений»"
+    quoteEn: "'Great social transformations,' says Mazzini, 'always have been and will be only the consequence of great religious movements' (working English)"
+    significance: "Ch. VIII epigraph. Tolstoy frames the coming land emancipation as a religious movement, not a political one — borrowing Mazzini (via Nikiforov's Posrednik anthology) to make the historical case."
+  - id: E12
+    genre: works
+    pssTom: 36
+    pages: "229"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "при существующем государственном строе и обязательных податях невозможно придумать какого-либо другого лучшего, более справедливого, практического и мирного решения"
+    quoteEn: "under the existing state structure and obligatory taxes it is impossible to devise any other better, more just, practical and peaceful solution (working English)"
+    significance: "Ch. IX — THE MARQUEE QUOTE. Tolstoy endorses George's single tax not absolutely but conditionally: GIVEN the state and its compulsory taxes (institutions he does not himself endorse), this is their most just possible form. The conditional clause is the whole answer to the anarchism-vs-fiscal-reform tension — the single tax is the least-unjust shape of an order he still wants abolished, not an embrace of the state."
+  - id: E13
+    genre: works
+    pssTom: 36
+    pages: "228"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "Освобождение крестьян в России совершено не Александром II, а теми людьми, которые поняли грех крепостного права"
+    quoteEn: "The emancipation of the peasants in Russia was accomplished not by Alexander II, but by those people who understood the sin of serfdom (working English)"
+    significance: "Ch. IX. The governing historical analogy: serfdom fell (1861) because conscience moved private men — Novikov, Radishchev, the Decembrists — not because the Tsar decreed it. Land emancipation will come the same way, by moral awakening, not by state action. This is how Tolstoy keeps an anti-statist account of a reform that the state would in fact have to administer."
+  - id: E14
+    genre: works
+    pssTom: 36
+    pages: "230"
+    extract: extracts/v36_206_230_Velikij_greh.txt
+    quoteRu: "мы, русские паразиты, вскормленные и получившие досуг для умственной работы трудами народа, поймем наш грех"
+    quoteEn: "we, Russian parasites, fed and given leisure for mental work by the labour of the people, will understand our sin (working English)"
+    significance: "Ch. IX, the closing sentence. Tolstoy folds himself — the landowner-writer — into the indicted class. The first-person complicity (cf. the 21 April diary, the peasant who reproached him to his face) is the essay's moral signature and the seam between its anarchism and its reform programme."
+  # --- the variants (PSS Tom 36, pp. 464–475; pre-reform orthography) ---
+  - id: E15
+    genre: works
+    pssTom: 36
+    pages: "474"
+    extract: extracts/v36_464_475_Velikij_greh_Varianty.txt
+    quoteRu: "жизнь народа слагается не вследствие внешних форм, которые могут быть наложены на него внешними влияниями, а внутренней деятельностью отдельных личностей"
+    quoteEn: "the life of the people is formed not as a result of external forms which may be imposed on it by external influences, but by the inner activity of individual persons (working English)"
+    significance: "Variant № 15 — the FIRST introduction (proof-set for Chertkov's «Свободное слово», then withdrawn). This anarchist sentence is the marquee tension made textual: Chertkov flagged it as standing 'in contradiction' with the rest of the essay, which insists the external form of land-use MUST change — and Tolstoy let it be lifted out of the article and printed separately. His own editor surgically divided the two voices. (Pre-reform orthography as in the TEI.)"
+  - id: E16
+    genre: works
+    pssTom: 36
+    pages: "473"
+    extract: extracts/v36_464_475_Velikij_greh_Varianty.txt
+    quoteRu: "Конституция обезпечит право достаточных, праздных, паразитных сословий, но не права народа"
+    quoteEn: "The constitution will secure the right of the propertied, idle, parasitic classes, but not the rights of the people (working English)"
+    significance: "Variant № 13 (cut). Tolstoy's verdict on the 1905 constitutional movement: a parliament will entrench the propertied, not free the landless. The anti-constitutional edge that the published essay softened. (Pre-reform «обезпечит».)"
+  - id: E17
+    genre: works
+    pssTom: 36
+    pages: "471"
+    extract: extracts/v36_464_475_Velikij_greh_Varianty.txt
+    quoteRu: "есть великий грех, такой же, каким был грех крепостного права и грех не прошедший, a настоящий, и не временный, а постоянно совершаемый"
+    quoteEn: "is a great sin, the same as the sin of serfdom was — and a sin not past but present, not temporary but constantly committed (working English)"
+    significance: "Variant № 8 (cut). The sharpest statement of the serfdom analogy and of the sin's PRESENT, ongoing character — the landowner re-commits it every day he holds the land. Cut from the final text, where the same idea survives more diffusely."
+  # --- composition-history commentary (PSS Tom 36, Gorbachev — attributed) ---
+  - id: E18
+    genre: commentary
+    pssTom: 36
+    pages: "656"
+    extract: extracts/v36_656_665_Velikij_greh_commentary.txt
+    quoteRu: "Статья «Великий грех» создалась в результате скрещения двух замыслов"
+    quoteEn: "The article 'The Great Sin' came about as the result of the crossing of two plans — PSS commentary (working English)"
+    significance: "Pins the dual genesis: «Народные заступники» (an attack on the intelligentsia 'defenders of the people') + the Henry George essay, merged into one. (Gorbachev, PSS Tom 36 apparatus.)"
+  - id: E19
+    genre: commentary
+    pssTom: 36
+    pages: "656"
+    extract: extracts/v36_656_665_Velikij_greh_commentary.txt
+    quoteRu: "приехал из Англии Чертков, который предложил Толстому сделать в статье ряд сокращений"
+    quoteEn: "Chertkov arrived from England and proposed that Tolstoy make a series of cuts in the article — PSS commentary (working English)"
+    significance: "The editorial intervention: Chertkov came to Yasnaya Polyana on 24 May 1905 and proposed the cuts (two whole chapters + parts of others); Tolstoy accepted them and regretted it («выбросил многое. Мне жалко»). The cut material is what the PSS prints as variants — including the anarchist sentence (E15)."
+  - id: E20
+    genre: commentary
+    pssTom: 36
+    pages: "664"
+    extract: extracts/v36_656_665_Velikij_greh_commentary.txt
+    quoteRu: "с редакционным примечанием, оговаривающим расхождение редакции с автором по существенным и важным вопросам"
+    quoteEn: "with an editorial note specifying the editors' divergence from the author on substantial and important questions — PSS commentary (working English)"
+    significance: "First publication: July 1905, Русская мысль, with an editorial note disclaiming the editors' agreement with the author on substantial points; reprinted the same year as a Posrednik brochure, in English in The Times, and (as «Великий грех. О земельной собственности») in Chertkov's «Свободное слово» No. 98. First in a collected edition only in 1911 (12th ed., confiscated)."
+  # --- genesis: 1905 diaries (Tom 55) and letters (Tom 89) ---
+  - id: E21
+    genre: diary
+    pssTom: 55
+    date: "1905-04-16"
+    extract: extracts/v55_134_134_1905_04_16.txt
+    quoteRu: "очень хочется и изложение веры и о Генри Джорже, которого прочел по Николаеву и вновь восхищен"
+    quoteEn: "I very much want both the exposition of faith and [to write] about Henry George, whom I read in Nikolaev's [translation] and am again delighted by (working English)"
+    significance: "The earliest 1905 diary trace of the project — the George strand named, and the renewed enthusiasm (he had championed George since the 1880s) traced to S. D. Nikolaev's translation. The «изложение веры» he names in the same breath is a different work; the two ambitions sit side by side."
+  - id: E22
+    genre: diary
+    pssTom: 55
+    date: "1905-04-21"
+    extract: extracts/v55_135_137_1905_04_21.txt
+    quoteRu: "Начал писать: Народные Заступники. Недурно. И Генри Джоржа"
+    quoteEn: "Began writing: The People's Defenders. Not bad. And Henry George (working English)"
+    significance: "The composition-start marker and the original title. The two pieces that Gorbachev says were later merged are here still two: «Народные заступники» and the George essay. Sets the dated slug from Old Style 21 April 1905."
+  - id: E23
+    genre: diary
+    pssTom: 55
+    date: "1905-04-21"
+    extract: extracts/v55_135_137_1905_04_21.txt
+    quoteRu: "он жестко упрекал меня за то, что я говорю, а скупаю землю. Было и больно и хорошо"
+    quoteEn: "he harshly reproached me for the fact that I speak [against it] yet buy up land. It was both painful and good (working English)"
+    significance: "The personal-complicity seam, the same day he began the essay: a peasant (Pyotr Osipov, in the company of A. S. Buturlin) reproached Tolstoy to his face for preaching against land-owning while himself acquiring land. The first-person «мы, русские паразиты» of the closing (E14) is not rhetoric — it is this reproach absorbed."
+  - id: E24
+    genre: letter
+    pssTom: 89
+    date: "1905-04-17"
+    addressee: "V. G. Chertkov"
+    extract: extracts/L_v89_738_Chertkov_1905_04_17.txt
+    quoteRu: "как теперь начаты мною о заступниках народа и о неправедности земельной собственности и Генри Джордже"
+    quoteEn: "as now begun by me — about the defenders of the people, and about the unrighteousness of land property, and Henry George (working English)"
+    significance: "The genesis confirmed to his chief editor the day after the first diary note — the two strands named together. Tolstoy files the piece among «статьи на злобы дня» (topical articles) written «для своего удовлетворения», a self-deprecating register that undersells what became one of his central land statements."
+  - id: E25
+    genre: diary
+    pssTom: 55
+    date: "1905-05-04"
+    extract: extracts/v55_138_139_1905_05_04.txt
+    quoteRu: "За это время окончил Великий Грех"
+    quoteEn: "In this time I finished The Great Sin (working English)"
+    significance: "First 'finished' marker — two weeks of writing. The title «Великий грех» is now fixed (the «Народные заступники» chapter survives as ch. VI). The revising would run another two months."
+  - id: E26
+    genre: diary
+    pssTom: 55
+    date: "1905-06-06"
+    extract: extracts/v55_144_146_1905_06_06.txt
+    quoteRu: "Сократил Великий Грех, выбросил многое. Мне жалко"
+    quoteEn: "I shortened The Great Sin, threw out much. I regret it (working English)"
+    significance: "After Chertkov's 24 May–3 June visit. The diary records the author's reluctant assent to the cuts — the regret that makes the variants (E15–E17) more than discarded drafts: they are the essay Tolstoy would have preferred to print."
+  - id: E27
+    genre: diary
+    pssTom: 55
+    date: "1905-05-24"
+    extract: extracts/v55_140_144_1905_05_24.txt
+    quoteRu: "владение землею включает неизбежно власть над людьми, живущими на ней, владение же орудиями труда дает власть только над теми людьми, которые подчиняются этой власти"
+    quoteEn: "ownership of land inevitably includes power over the people living on it, whereas ownership of tools of labour gives power only over those people who submit to that power (working English)"
+    significance: "A diary note written while finishing the essay — the distinction that separates Tolstoy's land critique from the socialists' war on capital: land monopoly is uniquely coercive because it commands the bodies of those who must live on it. The intellectual ground for putting land, not capital, at the root."
+
+# ── Entities (ingestion routing map → wiki). The dive writes NO pages. ────
+entities:
+  - name: "The Great Sin (work)"
+    wikiType: work
+    wikilinkTarget: "The Great Sin"
+    vaultStatus: missing
+    role: "the work itself — see workRecord block (this is a works/ record, not a wiki page)"
+    sources: [jubilee-edition]
+    evidenceRefs: [E1, E9, E12]
+    ingestionPriority: 1
+  - name: "Henry George"
+    wikiType: person
+    wikilinkTarget: "Henry George"
+    vaultStatus: missing
+    role: "American political economist (1839–1897); Progress and Poverty (1879); founder of the single-tax / land-value-tax movement. THE CENTRE OF THE ESSAY'S INTELLECTUAL DEBT — Tolstoy quotes him at length (ch. II, IX) and stakes the whole remedy on his single tax. Championed by Tolstoy since the 1880s. Seeds the P9 land-question dive."
+    sources: [jubilee-edition]
+    evidenceRefs: [E3, E5, E12]
+    ingestionPriority: 1
+  - name: "Vladimir Chertkov"
+    wikiType: person
+    wikilinkTarget: "Vladimir Chertkov"
+    vaultStatus: exists
+    role: "Disciple, editor, publisher. Came to Yasnaya Polyana 24 May–3 June 1905 and proposed the cuts that produced the variants; flagged and excised the anarchist sentence (E15) as contradicting the reform argument; published the essay (and its withdrawn first introduction, as «Необходимый переворот») via «Свободное слово»."
+    sources: [jubilee-edition]
+    evidenceRefs: [E19, E24, E26]
+    ingestionPriority: 1
+  - name: "Sergei Dmitrievich Nikolaev"
+    wikiType: person
+    wikilinkTarget: "Sergei Nikolaev"
+    vaultStatus: missing
+    role: "S. D. Nikolaev (1861–1920), Henry George's foremost Russian translator (Posrednik); Tolstoy read George «по Николаеву» and drew The Great Sin's George quotations from Nikolaev's «Избранные речи и статьи Генри Джорджа» (Posrednik, 1904), incl. the George biography Nikolaev compiled. Tolstoy wrote the 1906 preface to Nikolaev's Russian translation of George's Social Problems. A key node in the Russian Georgist network; seeds P9. (Scholarship: Wenzer 1997.)"
+    sources: [jubilee-edition]
+    evidenceRefs: [E21, E3]
+    ingestionPriority: 2
+  - name: "Maria Lvovna Obolenskaya (Tolstaya)"
+    wikiType: person
+    wikilinkTarget: "Maria Tolstaya"
+    vaultStatus: exists
+    role: "Daughter; copied the final text for sending to Русская мысль (per Makovitsky, 1 July 1905). DISAMBIGUATION NEEDED — confirm the existing 'Maria Tolstaya.md' is the daughter Maria Lvovna (m. Obolenskaya), not the sister Maria Nikolaevna. Same caution as the Christian Teaching dive. See needsReview."
+    sources: [jubilee-edition]
+    evidenceRefs: [E20]
+    ingestionPriority: 3
+  - name: "Dušan Makovický"
+    wikiType: person
+    wikilinkTarget: "Dushan Makovitsky"
+    vaultStatus: missing
+    role: "Tolstoy's resident doctor and diarist (Яснополянские записки); the doctor of ch. VII who reads the newspaper article on the 'agrarian' congress aloud to peasants at Tula station (commentary identifies him). His notes date several composition events. Loose-match the vault before marking missing (transliteration gotcha)."
+    sources: [jubilee-edition]
+    evidenceRefs: [E9, E20]
+    ingestionPriority: 3
+  - name: "Giuseppe Mazzini"
+    wikiType: person
+    wikilinkTarget: "Giuseppe Mazzini"
+    vaultStatus: missing
+    role: "Italian revolutionary; quoted (ch. VIII epigraph) on great social transformations as consequences of religious movements — Tolstoy drew the line from Nikiforov's Posrednik anthology «Избранные мысли Иосифа Мадзини» (1905). A recurring Tolstoy touchstone."
+    sources: [jubilee-edition]
+    evidenceRefs: [E11]
+    ingestionPriority: 3
+  - name: "Aleksandr Sergeevich Buturlin"
+    wikiType: person
+    wikilinkTarget: "Alexander Buturlin"
+    vaultStatus: missing
+    role: "Physician, old acquaintance; present 20 April 1905 when the peasant Pyotr Osipov reproached Tolstoy for buying land (E23). Peripheral — a witness to the complicity episode. Verify any vault page."
+    sources: [jubilee-edition]
+    evidenceRefs: [E23]
+    ingestionPriority: 3
+  - name: "Private property in land (the great sin)"
+    wikiType: concept
+    wikilinkTarget: "Private property in land"
+    vaultStatus: missing
+    role: "The essay's subject: land monopoly framed as «великий грех» — the surviving form of slavery, a present and ongoing sin, the root of poverty. The moral-religious framing of the land question, distinct from the economic 'agrarian question.'"
+    sources: [jubilee-edition]
+    evidenceRefs: [E1, E4, E9]
+    ingestionPriority: 2
+    dependsOn: ["Henry George"]
+  - name: "The single tax (единый налог / land-value taxation)"
+    wikiType: concept
+    wikilinkTarget: "Single tax"
+    vaultStatus: missing
+    role: "George's remedy: tax the value of land (not labour or improvements) to dissolve the monopoly. Endorsed by Tolstoy as the best solution «при существующем государственном строе» — the node where his anti-statism meets a state fiscal mechanism. Central to P9."
+    sources: [jubilee-edition]
+    evidenceRefs: [E12]
+    ingestionPriority: 2
+    dependsOn: ["Henry George"]
+
+# ── Visuals (→ images section). visuals/ is git-ignored; url drives fetch. ──
+# Light sweep, 8 PD images (manifest: visuals/_visuals.md). All licence PD, usable.
+visuals:
+  - id: V01
+    type: portrait
+    subject: "Henry George, 1888 oil portrait (George de Forest Brush)"
+    relatedEntity: "Henry George"
+    relatedEvidence: [E3, E12]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Henry George by George de Forest Brush.png"
+    access: open
+    rights: "PD (painted 1888; Brush d. 1941)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Henry_George_by_George_de_Forest_Brush.png"
+    localPath: "visuals/commons-henry-george-1888-brush-portrait.png"
+    note: "KEYSTONE — the mature George of the Progress-and-Poverty / single-tax era that Tolstoy read and championed. The centre of the essay's intellectual debt."
+  - id: V02
+    type: photograph
+    subject: "Henry George, 1865 daguerreotype (age 26)"
+    relatedEntity: "Henry George"
+    holding: "Wikimedia Commons"
+    archiveId: "File:Henry George.jpg"
+    access: open
+    rights: "PD (George d. 1897; image 1865)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Henry_George.jpg"
+    localPath: "visuals/commons-henry-george-1865-daguerreotype.jpg"
+    note: "Young George, before Progress and Poverty — a photographic alternative to the 1888 portrait."
+  - id: V03
+    type: photograph
+    subject: "Leo Tolstoy, c. 1905 (age 75)"
+    relatedEntity: "Leo Tolstoy"
+    relatedEvidence: [E22, E25]
+    holding: "Wikimedia Commons (digitised from the pamphlet «A Great Iniquity», p. 8)"
+    archiveId: "File:Tolstoy - A Great Iniquity djvu p8.jpg"
+    access: open
+    rights: "PD (pre-1910 photograph)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Tolstoy_-_A_Great_Iniquity_djvu_p8.jpg"
+    localPath: "visuals/commons-tolstoy-c1905-age75.jpg"
+    note: "KEYSTONE for the work — the composition-year likeness, AND its source is the frontispiece of «A Great Iniquity», the 1905 English translation of The Great Sin itself. Doubly on-theme; confirms the pamphlet edition existed."
+  - id: V04
+    type: photograph
+    subject: "Leo Tolstoy, 1908 colour portrait (Prokudin-Gorsky)"
+    relatedEntity: "Leo Tolstoy"
+    holding: "Wikimedia Commons (Prokudin-Gorsky collection)"
+    archiveId: "File:L.N.Tolstoy Prokudin-Gorsky.jpg"
+    access: open
+    rights: "PD (Prokudin-Gorsky d. 1944; taken 23 May 1908)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+    localPath: "visuals/commons-tolstoy-1908-prokudin-gorsky.jpg"
+    note: "The iconic colour portrait, three years after the essay — atmosphere, not composition-year."
+  - id: V05
+    type: portrait
+    subject: "Vladimir Chertkov, portrait (Ilya Repin, 1890s)"
+    relatedEntity: "Vladimir Chertkov"
+    relatedEvidence: [E19, E26]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Repin Vladimir Chertkov.jpg"
+    access: open
+    rights: "PD (Repin d. 1930)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg"
+    localPath: "visuals/commons-chertkov-repin-portrait.jpg"
+    note: "The editor who proposed the cuts and excised the anarchist sentence. Best-known likeness."
+  - id: V06
+    type: title-page
+    subject: "Henry George, «Progress and Poverty», 1881 (5th ed.) title page"
+    relatedEntity: "Henry George"
+    relatedEvidence: [E3]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Progress and Poverty (1881 edition).jpg"
+    access: open
+    rights: "PD (first published 1879)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Progress_and_Poverty_(1881_edition).jpg"
+    localPath: "visuals/commons-progress-and-poverty-1881-titlepage.jpg"
+    note: "The book whose argument the essay rests on. NB: the Nikolaev Russian translation (Posrednik 1904) Tolstoy actually used was not on Commons — see notCovered/gap."
+  - id: V07
+    type: illustration
+    subject: "1905 Russian agrarian unrest (American political cartoon, C. L. Bartholomew)"
+    relatedEntity: "The Great Sin (work)"
+    holding: "Wikimedia Commons (via DPLA)"
+    archiveId: "File:(Untitled) - DPLA - 4210c46cb6b1143159feccb06e611633.jpg"
+    access: open
+    rights: "PD (Bartholomew 1869–1949; contemporary, pre-1920)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:(Untitled)_-_DPLA_-_4210c46cb6b1143159feccb06e611633.jpg"
+    localPath: "visuals/commons-1905-agrarian-unrest-cartoon.jpg"
+    note: "Optional backdrop — the 1905 land troubles, but an outside (American) view, not a Russian peasant photo. A clean PD Russian-peasant image was not surfaced in the light sweep (gap)."
+
+# ── Scholarship (secondary layer; ground in primary first, attribute) ─────
+scholarship:
+  summary: >-
+    The specialist English study is Kenneth Wenzer, "Tolstoy's Georgist Spiritual
+    Political Economy (1897–1910): Anarchism and Land Reform" (Am. J. of Economics
+    and Sociology, 1997) — the dive's chief triangulation partner. The received
+    view squarely confirms that George and the single tax were a lifelong, often-
+    restated Tolstoy commitment (read «по Николаеву» from the mid-1880s, intensified
+    after George's 1897 death; To the Working People 1902, the 1906 prefaces, the
+    1909 dream-conversation diary), not a one-off 1905 intervention. On the central
+    tension the scholarship splits — exactly as the marquee hypothesis predicts:
+    Wenzer reads the single-tax endorsement as a "concession" / "weakness" inside an
+    unresolved two-stage logic (pragmatic reform now; the state "melts away" through
+    moral change later), and notes Tolstoy "compartmentalized" rather than resolved
+    it; the single-tax movement's own commentary (Lebrun) reads the same endorsement
+    as genuine and foundational. Both camps agree he endorsed a state fiscal
+    mechanism; they disagree on whether that compromises or merely defers his anti-
+    statism. The corpus reaches below where the debate stops: Chertkov physically cut
+    the anarchist paragraph from the introduction (E15), and the contemporary English
+    translator's footnote already flagged that Tolstoy recommends George's scheme
+    "only under conditions of State organization and compulsory taxation" — the
+    conditional reading is embedded in the 1905 apparatus, not a later invention.
+    Read the movement-aligned (Georgist) framing as an interested party, per dive
+    method; the Sofia-centred "moralist who impoverished his family" frame does not
+    arise here, but the "lone prophet" picture is complicated by the documented
+    editorial hedging on both the Russian and English sides.
+  triangulation:
+    - evidenceRef: E12
+      conventionalView: "The single-tax endorsement contradicts (or at best sits unresolved with) Tolstoy's Christian-anarchist rejection of state coercion; Wenzer reads it as a 'concession/weakness' within a two-stage logic Tolstoy never philosophically resolved ('compartmentalized')."
+      relation: complicates
+      source: "Wenzer 1997 (Am. J. Econ. & Sociology 56:4); the 1905 English 'A Great Iniquity' translator's footnote"
+    - evidenceRef: E15
+      conventionalView: "Scholarship debates Tolstoy's intent in the abstract (concession vs. genuine endorsement) but cannot pin the mechanism."
+      relation: extends
+      source: "Wenzer 1997 ('unresolved'); the PSS variant apparatus (Tom 36, var. № 15) + Chertkov's documented cut"
+    - evidenceRef: E20
+      conventionalView: "The essay's reception is usually given as 'published in Russian Thought 1905.'"
+      relation: complicates
+      source: "tolstoy.ru journalism guide — the editors' disclaimer AND their excision of the «Так думают либералы…» paragraph (a Russian-side cut paralleling Chertkov's English-side cut)"
+    - evidenceRef: E3
+      conventionalView: "Tolstoy's Georgism is a lifelong commitment via Nikolaev's translations; he is, after George's 1897 death, the movement's foremost literary champion."
+      relation: confirms
+      source: "Wenzer 1997; Lebrun 1956"
+    - evidenceRef: E13
+      conventionalView: "The serfdom→land-emancipation analogy is read as Tolstoy's rhetorical frame for moral (not legislative) change; the movement reads land-liberation as a genuine, permanent solution like serf-emancipation."
+      relation: complicates
+      source: "Lebrun 1956 (Prosper Australia) — movement reading, read critically as an interested party"
+
+# ── workRecord (proposed CREATION — READ-ONLY to works/; human applies) ───
+workRecord:
+  recordPath: "website/src/works/non-fiction/essays-and-criticism/the-great-sin/The Great Sin.md"
+  workId: the-great-sin
+  action: create   # no works/ record exists yet
+  fields:
+    - field: title
+      value: "The Great Sin"
+      confidence: high
+      source: "PSS Tom 36; the standard English title of the «Великий грех» essay; the 1905 English translation appeared as 'A Great Iniquity'."
+    - field: titleEn
+      value: "The Great Sin"
+      confidence: high
+    - field: titleRu
+      value: "Великий грех"
+      evidenceRefs: [E18]
+      confidence: high
+      source: "PSS Tom 36"
+    - field: titleAlternatives
+      value:
+        - { title: "A Great Iniquity", type: translation, language: en }
+        - { title: "Народные заступники", type: working, language: ru }
+        - { title: "Великий грех. О земельной собственности", type: variant, language: ru }
+      evidenceRefs: [E20, E22]
+      confidence: high
+      note: "«Народные заступники» (The People's Defenders) was the working title of the strand begun 21 April; «О земельной собственности» (On Land Property) was the subtitle of Chertkov's «Свободное слово» edition. 'A Great Iniquity' is the 1905 English translation's title (trans. V. G. Chertkov & Isabella Fyvie Mayo) — confirmed via The Times, 1 Aug 1905 and the Free Age Press pamphlet. Shape to the titleAlternatives object array on application."
+    - field: mainCategory
+      value: "Non-Fiction"
+      confidence: high
+    - field: subcategory
+      value: "Essays and Criticism"
+      confidence: high
+      note: "Mirrors the directory taxonomy; same shelf as Bethink Yourselves! and What Is Art?. It is essay-length (~25 pp, Tom 36 pp. 206–230), polemical and occasional — an essay, not a systematic treatise. Low shelving doubt; see needsReview only if a reader prefers treatises by subject-weight."
+    - field: genre
+      value: "essay"
+      confidence: high
+      note: "Per the live works genre enum (v9). Matches the Bethink Yourselves! record (the closest analog — a 1904 polemical essay in the same Tom 36 publicistic band)."
+    - field: language
+      value: "ru"
+      confidence: high
+    - field: completionStatus
+      value: "complete"
+      evidenceRefs: [E25, E20]
+      confidence: high
+      note: "Finished, revised, published in Tolstoy's lifetime (July 1905). Complete despite the cut chapters — those are authorial-then-editorial excisions, not an unfinished text."
+    - field: publishedDuringLifetime
+      value: true
+      confidence: high
+      note: "First published July 1905 (Русская мысль; Posrednik brochure; The Times)."
+    - field: publishedInRussiaDuringLifetime
+      value: true
+      evidenceRefs: [E20]
+      confidence: high
+      note: "JUDGMENT CALL but well-grounded: it appeared LEGALLY in Russia in the July 1905 Русская мысль and as a Posrednik brochure the same year — during Tolstoy's lifetime. (Distinct from many late essays that were Russia-banned.) The 1911 collected-edition printing was separately confiscated, but the 1905 journal/brochure printing was not. See needsReview to confirm the journal printing was not itself censored beyond the editorial disclaimer."
+    - field: dateWritingStarted
+      value: "1905-04-21"
+      oldStyle: "1905-04-21"
+      approximate: false
+      evidenceRefs: [E22]
+      confidence: high
+      note: "Diary, «Начал писать: Народные Заступники» (Old Style; Russia on the Julian calendar). The George strand was conceived a few days earlier (16–17 April)."
+    - field: dateWritingCompleted
+      value: "1905-07"
+      oldStyle: "1905-07"
+      approximate: true
+      evidenceRefs: [E25, E26]
+      confidence: medium
+      note: "First 'finished' 4 May (E25); then revised, cut at Chertkov's suggestion (E26), the introduction reworked into a second redaction in late June; the final text was sent to Русская мысль in early July 1905. 'Completed' marks that July send-off (Old Style)."
+    - field: dateFirstPublished
+      value: "1905"
+      approximate: false
+      evidenceRefs: [E20]
+      confidence: high
+      note: "July 1905."
+    - field: firstPublishedVenue
+      value: "Русская мысль (Russian Thought), Moscow, July 1905, with an editorial note disclaiming agreement; reprinted same year as a Posrednik brochure and in «Свободное слово» No. 98; in English as 'A Great Iniquity' in The Times (London), 1 Aug 1905 (trans. Chertkov & I. F. Mayo)"
+      evidenceRefs: [E20]
+      confidence: high
+      note: "The Русская мысль journal printing is the editio princeps the PSS follows. Shape firstPublishedVenueType = magazine/journal."
+    - field: censorshipNotes
+      value: "Published legally in Russia (Русская мысль, July 1905) but the liberal editors added a note disclaiming agreement with the author «по существенным и важным вопросам» and dropped the third introductory paragraph («Так думают либералы…») — restored in the PSS from manuscript № 16. The English 'A Great Iniquity' carries a translator's footnote flagging that Tolstoy recommends George's scheme only 'under conditions of State organization and compulsory taxation'. The 1911 collected-edition printing (12th ed., part 16) was separately confiscated."
+      evidenceRefs: [E20]
+      confidence: high
+      note: "Twin editorial interventions on the introduction (Russian editors + Chertkov) — see the marquee section. The «Так думают либералы…» paragraph survives in the corpus main text (PSS restored it)."
+    - field: firstPublishedVenueType
+      value: "journal"
+      confidence: high
+      note: "Русская мысль was a 'thick journal' (literary-political monthly). 'journal' is the live venueType enum value (VENUE_TYPES = journal | newspaper | book | samizdat — 'magazine' is NOT valid). The English 'A Great Iniquity' first ran in The Times (newspaper)."
+    - field: dateFirstPublishedInRussia
+      value: "1905"
+      approximate: false
+      evidenceRefs: [E20]
+      confidence: high
+      note: "Same July 1905 Русская мысль printing — first publication and first-in-Russia coincide."
+    - field: firstPublishedInRussiaVenue
+      value: "Русская мысль, Moscow"
+      confidence: high
+    - field: authoringLocations
+      value:
+        - { country: Russia, region: "Tula Oblast", estate: "Yasnaya Polyana", dateFrom: "1905-04", dateTo: "1905-07", coordinates: { lat: 54.0667, lon: 37.5167 }, notes: "Composed entirely at Yasnaya Polyana across April–July 1905 (the diaries are all «Я. П.»). Chertkov's editorial visit was also there, 24 May–3 June." }
+      evidenceRefs: [E22, E25]
+      confidence: high
+      note: "Coordinates as on the Bethink Yourselves! record."
+    - field: manuscripts
+      value:
+        - { draftLabel: "16 manuscripts (рукописи №№ 1–16)", dateCreated: "1905", currentRepository: "State Museum of Leo Tolstoy (GTM, фонд Черткова) and Tolstoy Museum archive (АТБ)", repositoryCity: "Moscow", repositoryCountry: "Russia", notes: "Begun in the «Синий альбом» autograph titled «Народные заступники»; 16 numbered manuscripts incl. a 446-unit working bundle (№ 3); the print source was рук. № 6 (text taken to Chertkov, marked «Последняя редакция, привезенная В. Г. Июнь 1905») + рук. № 16 (the final introduction, «Июль 1905»). See PSS Tom 36 apparatus." }
+      evidenceRefs: [E19]
+      confidence: high
+    - field: transcriptions
+      value:
+        - { transcriberName: "Maria Lvovna Obolenskaya (Tolstaya)", relationToAuthor: "daughter", notes: "Copied the final text for Русская мысль; her copy (not preserved) was the one sent." }
+        - { transcriberName: "Yulia Ivanovna Igumnova", relationToAuthor: "secretary/copyist", notes: "Among the copyists named in the PSS apparatus." }
+        - { transcriberName: "Maria Aleksandrovna Schmidt", relationToAuthor: "disciple/copyist", notes: "Named in the PSS apparatus." }
+        - { transcriberName: "Aleksandra Lvovna Tolstaya", relationToAuthor: "daughter", notes: "Copyist; wrote dating notes on the manuscripts." }
+        - { transcriberName: "Dušan Makovický", relationToAuthor: "doctor/copyist", notes: "Copyist and diarist of the composition." }
+      evidenceRefs: [E20]
+      confidence: medium
+      note: "Copyists per PSS Tom 36 apparatus. Shape to the works schema's transcriptions[] sub-fields on application."
+    - field: themes
+      value: ["private property in land", "Henry George and the single tax", "the 1905 Revolution", "the agrarian question", "land monopoly as slavery", "the intelligentsia as false 'defenders of the people'", "serfdom and emancipation", "non-resistance", "moral individualism vs political reform", "religion as the ground of social change", "personal complicity"]
+      confidence: high
+    - field: synopsis
+      value: "An essay written during the 1905 Revolution arguing that the root evil of Russian (and European and American) life is not political oppression but the private ownership of land — «великий грех», the surviving form of slavery and the cause of the people's poverty. Tolstoy presents Henry George's single tax as the just, practical remedy «under the existing state structure», but insists the change will come not from constitutions, socialism or revolution but, as with serfdom, from the awakened conscience of the complicit. Begun as two pieces («Народные заступники» + a Henry George essay) and merged; cut at Chertkov's suggestion; published July 1905 in Русская мысль with an editorial disclaimer."
+      confidence: high
+    - field: relatedWorks
+      value:
+        - { id: the-slavery-of-our-times, relationshipType: companion }
+        - { id: the-kingdom-of-god-is-within-you, relationshipType: companion }
+        - { id: to-the-working-people, relationshipType: companion }
+      confidence: medium
+      note: "Slavery of Our Times = the economic/labour critique this extends to land; Kingdom of God = the anti-statism the single tax tests; To the Working People (1902) = the immediate predecessor that already carried George to a peasant audience (belongs to the P9 cluster). Use 'companion' per the relatedWorks enum; the precise relations go in notes. The id slugs must be confirmed against any future records (several of these have no works/ record yet)."
+    - field: identifiers
+      value:
+        internetArchive: ["greatiniquity00tolsuoft"]
+        jubileeEdition: { volumes: "36", notes: "ПСС, том 36, с. 206–230 (text); с. 464–475 (variants); с. 656–665 (history/manuscripts, Gorbachev)" }
+      confidence: high
+      note: "internetArchive greatiniquity00tolsuoft = the 1905/06 English 'A Great Iniquity' pamphlet (trans. Chertkov & Mayo). wikidata / gutenberg not resolved here."
+
+# ── Coverage ledger ──────────────────────────────────────────────────────
+coverage:
+  - { surface: "Genesis & composition", status: covered, note: "Dual-plan origin, the dated arc (16 Apr–July 1905), the peasant-reproach complicity seam, Chertkov's cuts — from the 1905 diaries, the 17 Apr Chertkov letter, and the PSS commentary." }
+  - { surface: "What the work says", status: covered, note: "All 9 chapters read; keystones for the thesis, the George argument, the parables (penned cows; whited sepulchres), the religious diagnosis, the marquee single-tax clause, the serfdom analogy." }
+  - { surface: "Redactions & textual history", status: covered, note: "16 manuscripts; the «Народные заступники»→«Великий грех» merger; the two cut chapters + the withdrawn first introduction, read in the PSS variants (E15–E17)." }
+  - { surface: "Publication, censorship & translation", status: covered, note: "Русская мысль July 1905 + editorial disclaimer + the cut «Так думают либералы…» paragraph; Posrednik brochure; Свободное слово No. 98; English 'A Great Iniquity' (Chertkov & I. F. Mayo), The Times 1 Aug 1905 + Free Age Press pamphlet 1906; 1911 collected-ed. confiscation. Commentary + scholarship sweep." }
+  - { surface: "Reception & afterlife (Russia/foreign)", status: partial, note: "Covered: the Русская мысль disclaimer, the 1905-Revolution/SR-socialization-vs-Marxist-nationalization framing, the transatlantic single-tax-press amplification (The Public Chicago, British 'Land Values'). Open: named, quoted contemporary Russian critical replies (Kadet/SD/SR) to THIS essay — only the editors' disclaimer found; a deeper Russian-language pass needed." }
+  - { surface: "Scholarly context", status: covered, note: "Wenzer 1997 the anchor; triangulation done (complicates/extends/confirms). The anarchism-vs-single-tax debate mapped (Wenzer 'concession/weakness' vs Lebrun 'foundational')." }
+  - { surface: "Place in the cluster", status: covered, note: "Slavery of Our Times (extends), Kingdom of God (tests the anti-statism), christian-anarchism, christian-communism-socialism, copyright-renunciation (property-renunciation); seeds the P9 land-question-henry-george theme-dive." }
+  - { surface: "The author's later verdict", status: partial, note: "The 6 June «Мне жалко» over the cuts is the nearest contemporary verdict; Tolstoy kept restating the Georgist case to 1910 (the 1909 dream-conversation diary, per Wenzer), but a later judgment on THIS essay specifically not sought." }
+  - { surface: "Visual & manuscript record", status: covered, note: "8 PD images (Henry George 1888 = keystone; Tolstoy c.1905 from the A Great Iniquity pamphlet; Chertkov Repin; Progress and Poverty title page). Gaps: Nikolaev's Russian George translation title page + a PD Russian-peasant photo not surfaced. Manuscript facsimile not pursued (GTM/АТБ)." }
+  - { surface: "Characters & prototypes", status: not-covered, note: "Non-fiction essay — no fictional cast. The 'characters' are the reported peasants of chs. I and VII (the old man who crosses himself; the woman offering her child); real but unnamed, not entity-routable except as types." }
+
+# ── Contradictions (intra-corpus: primary vs primary) ────────────────────
+contradictions:
+  - claim: "Tolstoy rejects all external/state mechanisms for changing the people's life (the pure anarchist line, stated in variant № 15: life is formed 'by the inner activity of individuals,' not external forms)."
+    correction: "The published essay insists the EXTERNAL form of land-use must change and endorses George's STATE-administered single tax as the remedy 'under the existing state structure and obligatory taxes' (E12). Chertkov flagged the contradiction and the anarchist sentence (E15) was lifted out of the article and printed separately — the tension was managed editorially, not resolved doctrinally."
+    evidenceRef: E15
+
+# ── Not covered (with pointers) ──────────────────────────────────────────
+notCovered:
+  - "The P9 cluster satellites — To the Working People (Tom 35, 1902), The First Step (Tom 29, 1891), The Only Possible Solution of the Land Question (Tom 36, 1906), the two Henry George prefaces (Tom 36, 1906), Letter to a Peasant on the Land (Tom 90, 1905), How the Working People Can Free Themselves (Tom 90, 1905) — cross-referenced only; they belong to docs/research/land-question-henry-george/ (P9), which this dive seeds."
+  - "Variant collation beyond the cut chapters — the 446-unit working bundle (рук. № 3) and the fine redaction differences are not collated; only the merger arc and the Chertkov cuts are traced (would need the full PSS variants apparatus / GTM)."
+  - "The Gandhi connection — Gandhi reprinted Tolstoy's land/non-resistance arguments; The Great Sin's afterlife in the Indian land-reform / Bhoodan tradition is out of scope (belongs with 1908-a-letter-to-a-hindu)."
+  - "The 1905-Revolution agrarian politics in depth (Stolypin reforms 1906, the SR land programme) — sketched as context only."
+
+# ── needsReview (deferred human judgment) ────────────────────────────────
+needsReview:
+  - { item: "publishedInRussiaDuringLifetime = true", phase: 4, why: "The essay appeared legally in Russia (Русская мысль + Posrednik, July 1905), so true is right — but confirm the July 1905 journal/brochure printing was not itself censored beyond the editors' disclaimer (the 1911 collected-edition printing was separately confiscated). If the journal text was cut, a censorshipNotes line is warranted." }
+  - { item: "Maria Tolstaya.md disambiguation", phase: 4, why: "Confirm the existing vault page is the daughter Maria Lvovna (m. Obolenskaya, the copyist here), not the sister Maria Nikolaevna, before routing — same caution carried by the Christian Teaching dive." }
+  - { item: "Makovitsky / Mazzini / Nikolaev / Buturlin vault transliterations", phase: 4, why: "All routed missing on a loose grep; loose-match the vault under alternative transliterations (Makovický/Makovitsky/Makovitский; Маццини; Николаев) before the ingestor creates a duplicate page. Transliteration gotcha." }
+  - { item: "firstPublishedVenueType for a 'thick journal'", phase: 4, why: "RESOLVED: Русская мысль = 'journal' (the live VENUE_TYPES enum is journal | newspaper | book | samizdat; 'magazine' is not valid). The English first ran in The Times = 'newspaper'." }
+  - { item: "Fels / 'Land Values Publication Dept' pamphlet", phase: 3, why: "RESOLVED in part: 'A Great Iniquity' = trans. Chertkov & Isabella Fyvie Mayo, The Times 1 Aug 1905, then a Free Age Press pamphlet (1906) + US single-tax press (The Public, 19 Aug 1905). OPEN: whether Joseph Fels / a 'Land Values Publication Department' specifically issued or funded a pamphlet — plausible but unconfirmed; only Free Age Press + The Public confirmed." }
+  - { item: "Named contemporary Russian critical replies", phase: 3, why: "Only the Русская мысль editors' disclaimer found as in-period reaction; named/quoted Kadet/SD/SR polemical replies to The Great Sin specifically were not surfaced (English-first sweep). A deeper Russian-language pass would strengthen the reception section." }
+  - { item: "relatedWorks id slugs", phase: 4, why: "the-slavery-of-our-times, the-kingdom-of-god-is-within-you, to-the-working-people — confirm each id against the live works/ records (several have no record yet); don't assert a relatedWorks link to a non-existent id." }
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI (works, comments, diaries, letters — Toms 36, 55, 89)"
+  - "prior corpus-dives: 1900-the-slavery-of-our-times, 1890-1893-the-kingdom-of-god-is-within-you, christian-anarchism, christian-communism-socialism, copyright-renunciation"
+  - "Wikimedia Commons (PD portraits — visuals sweep)"
+  - "English-first Tolstoy scholarship + Georgist literature (scholarship sweep)"
+
+references:
+  primary:
+    - "Л. Н. Толстой, «Великий грех», ПСС Т. 36, с. 206–230 (TEI v36_206_230_Velikij_greh)"
+    - "Л. Н. Толстой, Варианты к статье «Великий грех», ПСС Т. 36, с. 464–475 (TEI v36_464_475_Velikij_greh_Varianty)"
+    - "Н. В. Горбачев, «Великий грех». История писания и печатания, ПСС Т. 36, с. 656–665 (TEI v36_656_665_Velikij_greh)"
+    - "Дневник 1905 г., ПСС Т. 55 (entries 16/21 Apr, 4/19/24 May, 6/18 June 1905); Письма к В. Г. Черткову 1905 г., ПСС Т. 89 (17 Apr 1905)"
+    - "Генри Джордж, «Избранные речи и статьи», пер. С. Д. Николаева, изд. «Посредник», М. 1904 (Tolstoy's source for the George quotations)"
+  background:
+    - "Kenneth C. Wenzer, 'Tolstoy's Georgist Spiritual Political Economy (1897–1910): Anarchism and Land Reform,' American Journal of Economics and Sociology 56(4), 1997, 639–667 — https://ditext.com/wenzer/tolstoy.html (the anchor specialist study; the 'concession/weakness', two-stage-logic reading)"
+    - "Leo Tolstoy (trans. V. G. Tchertkoff & Isabella Fyvie Mayo), 'A Great Iniquity', The Times (London), 1 Aug 1905; Free Age Press pamphlet, Christchurch 1906 — https://en.wikisource.org/wiki/A_Great_Iniquity · IA https://archive.org/details/greatiniquity00tolsuoft (the English text + the translator's footnote flagging the state/tax conditionality)"
+    - "Victor Lebrun, 'Tolstoy and George' (1956; repr. Prosper Australia 2007) — https://www.prosper.org.au/2007/11/tolstoy-and-george/ (the movement reading: a genuine, foundational endorsement; 'discovered George at the beginning of 1885')"
+    - "tolstoy.ru — journalism guide, «Великий грех» (1905): Русская мысль July 1905, the editors' disclaimer + the excised «Так думают либералы…» paragraph, Posrednik & «Свободное слово» editions — https://tolstoy.ru/creativity/journalismguide/254.php"
+    - "'Henry George', Encyclopædia Britannica + Wikipedia (1839–1897; Progress and Poverty 1879; the single tax; 1886 NYC mayoral run, 2nd ahead of T. Roosevelt; died during the 1897 campaign)"
+    - "Rosamund Bartlett, Tolstoy: A Russian Life (2011); A. N. Wilson, Tolstoy (1988); Aylmer Maude (the 'bridge to Vancouver Island' transitional-stage analogy, via Wenzer) — treat the George/land strand; not quoted at page level in this dive"
