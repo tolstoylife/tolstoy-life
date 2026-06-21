@@ -1,0 +1,797 @@
+# Corpus-dive dossier — Art & aesthetics satellites
+# Layer: reference. Primary evidence + entity/visual/scholarship/work-record/coverage maps.
+# A multi-work theme dive: four short pieces orbiting What Is Art? — each PROPOSES a works/ record.
+# The dive PROPOSES vault pages and records; it never writes them.
+
+topic:
+  slug: art-aesthetics-satellites
+  title: "Art & aesthetics satellites — the What Is Art? prefaces and case-studies"
+  question: >-
+    Four short Tolstoy pieces that apply his What Is Art? (1897–98) religious-art test to
+    specific cases: the Maupassant preface (1893–94), the preface to the English edition of
+    What Is Art? (1898), On Gogol (1888/1909), and the preface to Carpenter's "Modern Science"
+    (1898). For each: does it confirm, complicate, or extend the doctrine — and where does the
+    case strain the theory? The Maupassant preface is the doctrine's seedbed; the Carpenter
+    preface is its science twin; Gogol is the religious-turn writer the test vindicates; the
+    English preface turns the integrity-of-transmission test on the treatise's own censored text.
+  date: 2026-06-21
+  period: "Prophet period (post-1880); the four pieces span 1888–1909, clustered around What Is Art? (1897–98)"
+  corpusSurface: "work texts + variants (Toms 26, 30, 31, 38); composition-window commentary (история писания, Toms 26, 30, 31, 38); the What Is Art? genesis-draft cluster (Tom 30) as supporting genesis only"
+  dateRange: "1888 .. 1909 (composition windows of the four pieces)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVIDENCE LEDGER — flat citation list. quoteRu verified verbatim against `extract`.
+# ─────────────────────────────────────────────────────────────────────────────
+evidence:
+
+  # ── A · Preface to the Works of Maupassant (Tom 30, 1893–94) ──
+  - id: maup-three-conditions
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "Из этих трех условий: 1) правильного, т. е. нравственного, отношения автора к предмету, 2) ясности изложения или красоты формы, что одно и то же, и 3) искренности, т. е. непритворного чувства любви или ненависти к тому, что изображает художник, из этих трех условий Мопассан обладал только двумя последними и был совершенно лишен первого."
+    quoteEn: "(working English) Of these three conditions — (1) a correct, i.e. moral, relation of the author to the subject; (2) clarity of exposition, or beauty of form, which is one and the same; and (3) sincerity, i.e. an unfeigned feeling of love or hatred toward what the artist depicts — of these three conditions Maupassant possessed only the last two, and was entirely deprived of the first."
+    significance: "MARQUEE. The full triad — the 'three conditions of true artistic creation' — stated three years before What Is Art? systematised them. Conditions (2) clarity and (3) sincerity map onto two WIA infection-conditions; condition (1) the moral relation is the added content/religious criterion. The commentary itself calls the preface «вступительную часть к трактату «Что такое искусство?»»."
+  - id: maup-talent-defined
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "Автор обладал тем особенным, называемым талантом, даром, который состоит в способности усиленного, напряженного внимания, смотря по вкусам автора, направляемого на тот или другой предмет, вследствие которого человек, одаренный этой способностью, видит в тех предметах, на которые он направляет свое внимание, нечто новое, такое, чего не видят другие."
+    quoteEn: "(working English) The author possessed that special gift, called talent, which consists in a capacity for intensified, concentrated attention — directed, according to the author's tastes, on one subject or another — by virtue of which the person endowed with this capacity sees in the objects on which he directs his attention something new, such as others do not see."
+    significance: "Talent defined as a faculty of seeing, independent of moral content — so a writer can have it in full and still be 'bad art'. Sets up the strain Maupassant puts on the theory."
+  - id: maup-sincerity
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "обладал и тем условием достоинства художественного произведения, без которого художественное произведение не производит действия, — искренностью, т. е. не притворялся, что любит или ненавидит, а точно любил и ненавидел то, что описывал."
+    quoteEn: "(working English) He possessed too that condition of a work of art's worth, without which a work of art produces no effect — sincerity, i.e. he did not pretend to love or hate, but actually loved and hated what he described."
+    significance: "Sincerity named the condition 'without which a work of art produces no effect' — the decisive infection-condition in WIA. Tolstoy grants Maupassant this fully, which is exactly what makes him a hard case for the content criterion."
+  - id: maup-moral-relation
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "правильного, нравственного, отношения к тому, что он изображал, т. е. знания различия между добром и злом, он любил и изображал то, чего не надо было любить и изображать, и не любил, и не изображал того, что надо было любить и изображать."
+    quoteEn: "(working English) [deprived of] a correct, moral relation to what he depicted, i.e. knowledge of the difference between good and evil, he loved and depicted what ought not to be loved and depicted, and did not love and did not depict what ought to be loved and depicted."
+    significance: "Spells out the moral relation as 'knowledge of the difference between good and evil' — the content/religious criterion of WIA in embryo."
+  - id: maup-cement
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "цемент, который связывает всякое художественное произведение в одно целое и оттого производит иллюзию отражения жизни, есть неединство лиц и положений, а единство самобытного нравственного отношения автора к предмету."
+    quoteEn: "(working English) the cement that binds every work of art into a single whole, and thereby produces the illusion of reflecting life, is not unity of persons and situations, but the unity of the author's own distinctive moral relation to the subject."
+    significance: "Raises the moral relation from a per-passage judgment to the structural principle of artistic unity — directly anticipates WIA's account of what makes a work cohere. (Verbatim oddity «есть неединство» parses as «есть не единство… а единство».)"
+  - id: maup-artist-sees
+    genre: works
+    pssTom: 30
+    pages: "3-24"
+    date: "1893-1894"
+    extract: extracts/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.txt
+    quoteRu: "Художник только потому и художник, что он видит предметы не так, как он хочет их видеть, а так, как они есть."
+    quoteEn: "(working English) An artist is an artist only because he sees things not as he wants to see them, but as they are."
+    significance: "Resolves the strain: true talent (truthful vision) tends to correct a defective moral relation over a career — Maupassant 'wishing to praise love, ended by cursing it' (the Balaam figure). Vision, fully exercised, bends toward truth."
+  - id: maup-var-conditions
+    genre: works
+    pssTom: 30
+    pages: "273-302"
+    date: "1893-1894 (вариант)"
+    extract: extracts/v30_273_302_Predislovie_k_sochinenijam_Gjui_de_Mopassana_Varianty.txt
+    quoteRu: "ценность художественного произведения определяется, по моему мнению, тремя условиями: степенью важности и качеством содержания, искренностью автора, т. е. любовью к тому, что он описывает, и красотой формы."
+    quoteEn: "(working English) the value of a work of art is determined, in my opinion, by three conditions: by the degree of importance and the quality of the content, by the sincerity of the author, i.e. love for what he describes, and by beauty of form."
+    significance: "Draft form of the triad, in a different order and weighting (the first condition is here 'importance and quality of content', not yet 'a correct, i.e. moral, relation of the author to the subject'). The redaction's key move was sharpening condition 1 from content to the author's stance toward the content."
+
+  # ── B · Preface to the English edition of What Is Art? (Tom 30, 1898) ──
+  - id: engwia-true-form
+    genre: works
+    pssTom: 30
+    pages: "204-206"
+    date: "1898-03-29"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "Книга эта моя «Что такое искусство?» выходит теперь в первый раз в ее настоящем виде."
+    quoteEn: "(working English) This book of mine, What Is Art?, now appears for the first time in its true form."
+    significance: "The thesis of the preface — the authentic text is the one being prefaced (Maude's English), not any Russian edition. Dates the integral text to the 1898 English translation."
+  - id: engwia-mutilated
+    genre: works
+    pssTom: 30
+    pages: "204-206"
+    date: "1898-03-29"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "Она вышла в России в нескольких изданиях, но во всех в таком изуродованном цензурою виде, что я прошу всех тех, кого интересуют мои взгляды на искусство, судить о них только по книге в ее настоящем виде."
+    quoteEn: "(working English) It came out in Russia in several editions, but in all of them in a form so mutilated by the censorship that I ask everyone interested in my views on art to judge them only by the book in its true form."
+    significance: "Makes the translation the safeguard and the standard of record; the Russian printings are explicitly disavowed as evidence of his views."
+  - id: engwia-wholeness
+    genre: works
+    pssTom: 30
+    pages: "204-206"
+    date: "1898-03-29"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "уже некоторая доля ее цельности и искренности была вынута из нее"
+    quoteEn: "(working English) already a certain part of its wholeness and sincerity had been taken out of it."
+    significance: "MARQUEE (meta-plane). Tolstoy describes the censored book in the treatise's own currency — цельность (wholeness/integrity) and искренность (sincerity, the decisive condition of true art in WIA). A text drained of these cannot do art's work."
+  - id: engwia-christ-censored
+    genre: works
+    pssTom: 30
+    pages: "204-206"
+    date: "1898-03-29"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "там, где я говорю о Христе, шедшем на крест за исповедуемую им истину, цензор вычеркнул это и поставил «за род человеческий»"
+    quoteEn: "(working English) where I speak of Christ, who went to the cross for the truth he professed, the censor struck this out and put 'for the human race'."
+    significance: "Concrete proof that the censored text does not merely subtract Tolstoy's meaning but inserts its opposite (the Redemption dogma he rejects) under his signature — the strongest case for needing an uncensored vessel."
+  - id: engwia-not-mine
+    genre: works
+    pssTom: 30
+    pages: "204-206"
+    date: "1898-03-29"
+    extract: extracts/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.txt
+    quoteRu: "Появилась книга, подписанная моим именем, содержащая мысли, выдаваемые за мои, но не принадлежащие мне."
+    quoteEn: "(working English) There appeared a book signed with my name, containing thoughts put forward as mine but not belonging to me."
+    significance: "States the failure of faithful transmission directly — the authorial signature no longer guarantees the feeling transmitted. The meta-plane breakdown the English text repairs."
+
+  # ── C · On Gogol (Tom 38, 1909 article; Tom 26, 1888 note) ──
+  - id: gogol-threefold
+    genre: works
+    pssTom: 38
+    pages: "50-53"
+    date: "1909-03"
+    extract: extracts/v38_050_053_O_Gogole.txt
+    quoteRu: "Гоголь — огромный талант, прекрасное сердце и небольшой, несмелый, робкий ум."
+    quoteEn: "(working English) Gogol — an enormous talent, a fine heart, and a small, timid, fearful mind."
+    significance: "The 1909 article's organising thesis — Gogol's gift and his moral feeling are affirmed; only the mind that tried to systematise them is faulted. The religious-art test does not condemn the religious turn, it condemns the bad theory laid over it."
+  - id: gogol-talent-heart
+    genre: works
+    pssTom: 38
+    pages: "50-53"
+    date: "1909-03"
+    extract: extracts/v38_050_053_O_Gogole.txt
+    quoteRu: "Но как только хочет он писать художественные произведения на нравственно-религиозные темы или придать уже написанным произведениям несвойственный им нравственно-религиозный поучительный смысл, выходит ужасная, отвратительная чепуха, как это проявляется во второй части «Мертвых Душ», в заключительной сцене к «Ревизору» и во многих письмах."
+    quoteEn: "(working English) But the moment he wants to write artistic works on moral-religious themes, or to lend already-written works a moral-religious didactic sense not proper to them, out comes terrible, repulsive nonsense, as appears in the second part of Dead Souls, in the closing scene of The Inspector General, and in many of the letters."
+    significance: "MARQUEE (the strain). Tolstoy does NOT despise Gogol's preaching — the religious letters are praised. What fails is the fusion: art bent to doctrine. The test vindicates the penitent man and the sincere religious feeling, not the moralising fiction, which Tolstoy still judges failed art — more discriminating than a flat 'religious art good' reading of WIA would predict."
+  - id: gogol-diagnosis
+    genre: works
+    pssTom: 38
+    pages: "50-53"
+    date: "1909-03"
+    extract: extracts/v38_050_053_O_Gogole.txt
+    quoteRu: "Происходит это от того, что, с одной стороны, Гоголь приписывает искусству несвойственное ему высокое значение, а с другой — еще менее свойственное религии низкое значение церковное, и хочет объяснить это воображаемое высокое значение своих произведений этой церковной верой."
+    quoteEn: "(working English) This comes about because, on the one hand, Gogol ascribes to art a high significance not proper to it, and on the other a still-less-proper low significance to religion — the church significance — and wants to explain this imagined high significance of his works by that church faith."
+    significance: "The diagnosis is symmetrical and is pure What Is Art? doctrine: art over-valued (the Hegelian 'служение красоте' cult), true religion under-valued (collapsed into церковность). Gogol's error is doctrinal mis-placement, not the religious turn as such."
+  - id: gogol-public-comic
+    genre: works
+    pssTom: 26
+    pages: "648-651"
+    date: "1888-01 .. 1888-02"
+    extract: extracts/v26_648_651_O_Gogole.txt
+    quoteRu: "Гоголь же тот, который отрекается от своих ошибок и кается в них, того Гоголя мы не хотим знать и называем его сумашедшим."
+    quoteEn: "(working English) But the Gogol who renounces his errors and repents of them — that Gogol we do not wish to know, and we call him a madman."
+    significance: "The 1888 note's core grievance, stated as defence: the literary public keeps the comic Gogol and discards the penitent one — exactly the verdict the religious-art test reverses. (sic: «сумашедшим» per source.)"
+  - id: gogol-canon-inversion
+    genre: works
+    pssTom: 26
+    pages: "648-651"
+    date: "1888-01 .. 1888-02"
+    extract: extracts/v26_648_651_O_Gogole.txt
+    quoteRu: "Всех учат тому, что Гоголь был велик, когда он писал свои повести, как Тарас Бульба, в которой восхваляются военные подвиги — убийство, и когда писал ревизора, в котором осмеиваются все без исключения люди целого города, но что Гоголь, пишущий о том, что ему открыло учение Христа, есть падший, сумашедший Гоголь."
+    quoteEn: "(working English) Everyone is taught that Gogol was great when he wrote his tales, such as Taras Bulba, in which military exploits — murder — are extolled, and when he wrote The Inspector General, in which all the people of a whole town without exception are mocked; but that the Gogol who writes of what the teaching of Christ revealed to him is the fallen, mad Gogol."
+    significance: "The inversion the religious-art test performs: by the moral-religious measure the celebrated works glorify killing or mere mockery; the despised late writing is the one touched by «учение Христа». The literary canon and the religious-art canon point opposite ways. (sic: «сумашедший».)"
+  - id: gogol-belinsky
+    genre: works
+    pssTom: 26
+    pages: "648-651"
+    date: "1888-01 .. 1888-02"
+    extract: extracts/v26_648_651_O_Gogole.txt
+    quoteRu: "Белинский первый осудил Переписку и сказал: Проповедник кнута, апостол невежества и мракобесия, панегирист татарских нравов и т. п."
+    quoteEn: "(working English) Belinsky was the first to condemn the Correspondence and said: a preacher of the knout, an apostle of ignorance and obscurantism, a panegyrist of Tatar mores, and so on."
+    significance: "Names the antagonist directly. Tolstoy sets the religious-art test explicitly against the radical-critic consensus (Belinsky's 1847 letter); the crowd's reverence for Belinsky is itself, for Tolstoy, the symptom. This is the polemic he declined to finish (per the 1888 commentary)."
+  - id: gogol-rebirth
+    genre: works
+    pssTom: 26
+    pages: "648-651"
+    date: "1888-01 .. 1888-02"
+    extract: extracts/v26_648_651_O_Gogole.txt
+    quoteRu: "есть нетолько неизбежное, но и самое важное событие в жизни человека — есть рождение к истинной жизни."
+    quoteEn: "(working English) [this inner event — liberation from evil, repentance, the striving to return to the path of good] is not only the inevitable but the most important event in a man's life; it is birth into true life."
+    significance: "The 1888 note universalises Gogol's case: every person passes through purity → temptation → repentance; Gogol's 'rebirth' is the normal and highest human event. The defence applies Tolstoy's own conversion-pattern, not special pleading for a genius. (sic: «нетолько».)"
+  - id: gogol-var-slavophiles
+    genre: works
+    pssTom: 38
+    pages: "280"
+    date: "1909 (вариант)"
+    extract: extracts/v38_280_280_O_Gogole_Varianty.txt
+    quoteRu: "Гоголь же был даже не самобытным софистом, а усвоил все сложные и искусственные софизмы славянофилов того времени: Хомякова и особенно Аксаковых."
+    quoteEn: "(working English) Gogol was not even an original sophist, but absorbed all the complex, artificial sophisms of the Slavophiles of that time: Khomyakov and especially the Aksakovs."
+    significance: "A cut variant naming the Slavophiles (Khomyakov, the Aksakovs) as the source of Gogol's «софизмы»; the published 1909 article generalises this to «славянофильство» and removes the named targets — softening the polemic, consistent with Tolstoy's 1888 reluctance to fight Belinsky head-on."
+
+  # ── D · Preface to Carpenter's "Modern Science" (Tom 31, 1897–98) ──
+  - id: carp-superstition
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "распространено и укоренилось суеверие, по которому считается, что для блага человечества совсем не нужно распространение истинных религиозных и нравственных знаний, а нужно только изучение опытных наук"
+    quoteEn: "(working English) [in Russian society there is] spread and rooted the superstition that for the good of mankind there is no need at all to spread true religious and moral knowledge, but only to study the experimental sciences."
+    significance: "The opening endorsement. Tolstoy names the target a суеверие (superstition) — equating faith in experimental science with religious superstition — and frames the Russian intelligentsia as its worst case."
+  - id: carp-how-to-live
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "Людям надо жить. А для того, чтобы жить, им надо знать, как жить. И все люди всегда — плохо ли, хорошо ли — узнавали это и, сообразно с этим знанием, жили, двигались вперед, и это знание того, как должно жить людям, со времен Моисея, Солона, Конфуция считалось всегда наукой, самой наукой наук."
+    quoteEn: "(working English) People must live. And in order to live, they must know how to live. And all people have always — well or badly — learned this and, in accordance with this knowledge, lived and moved forward; and this knowledge of how people should live has, since the times of Moses, Solon, and Confucius, always been considered a science, the very science of sciences."
+    significance: "MARQUEE. The positive claim — the religious-science twin of the religious-art test. True science is the knowledge of how to live; experimental science has usurped its place."
+  - id: carp-trivia
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "Она с торжеством объявляет ему, сколько миллионов миль от солнца до земли, сколько миллионов колебаний эфира в секунду для света и сколько колебаний воздуха для звука; рассказывает о химическом составе млечного пути, новом элементе — гелии, о микроорганизмах и их испражнениях, о тех точках руки, в которых сосредоточивается электричество, об икс-лучах и тому подобном."
+    quoteEn: "(working English) It triumphantly announces to him how many millions of miles from the sun to the earth, how many millions of ether-vibrations per second for light and how many air-vibrations for sound; it tells of the chemical composition of the Milky Way, of the new element helium, of microorganisms and their excretions, of those points on the hand where electricity is concentrated, of X-rays and the like."
+    significance: "The 'trivia' charge made concrete — modern science studies spectacular minutiae while the working man asks only «как жить». (Helium and X-rays date the indictment to the 1890s frontier of physics.)"
+  - id: carp-upper-classes
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "Более же выгодно изучать то, что может содействовать благосостоянию тех высших классов, к которым принадлежат люди, занимающиеся наукой; более же легко изучать всё не живое."
+    quoteEn: "(working English) It is more profitable to study what may contribute to the well-being of those upper classes to which the people engaged in science belong; and it is easier to study everything that is not living."
+    significance: "LOAD-BEARING PARALLEL. The exact structural twin of the WIA charge against art: science, like upper-class art, selects its objects to serve the leisured class that funds it, then disguises the selection as the neutral law «наука для науки»."
+  - id: carp-counterfeit
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "науки религиозные, нравственные, общественные, считаются царствующей наукой не науками и предоставлены богословам, философам, юристам, историкам, политико-экономам, которые заняты только тем, чтобы под видом научных исследований доказывать, что существующий строй жизни, выгодами которого они пользуются, есть тот самый, который должен существовать"
+    quoteEn: "(working English) the religious, moral, and social sciences are not regarded as sciences by the reigning science, and are handed over to theologians, philosophers, jurists, historians, and political economists, who are occupied solely with proving, under the guise of scientific research, that the existing order of life — by whose advantages they profit — is the very one that ought to exist."
+    significance: "The 'counterfeit priesthood' charge in the science register: the moral sciences are exiled, and what remains justifies the status quo."
+  - id: carp-remedy
+    genre: works
+    pssTom: 31
+    pages: "87-95"
+    date: "1897-1898"
+    extract: extracts/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.txt
+    quoteRu: "должна прежде всего отречься от своего опытного метода, по которому она считает своим делом только изучение того, что есть, а вернуться к тому единственному разумному и плодотворному пониманию науки, по которому предмет ее есть изучение того, как должны жить люди."
+    quoteEn: "(working English) [Our science] must first of all renounce its experimental method — by which it regards its task as merely the study of what is — and return to the one reasonable and fruitful understanding of science, by which its subject is the study of how people should live."
+    significance: "The closing prescription, mirroring WIA's demand that art renounce the pursuit of pleasure for the transmission of religious feeling. The study of «что есть» is permitted only insofar as it serves the study of «как должны жить люди»."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENTITIES — ingestion routing map (a plan; the dive writes no pages)
+# ─────────────────────────────────────────────────────────────────────────────
+entities:
+  # ── The four subject works (routing label 'work' — real home is a works/ record, see workRecords) ──
+  - name: "The Works of Guy de Maupassant (preface)"
+    wikiType: work
+    wikilinkTarget: "The Works of Guy de Maupassant"
+    vaultStatus: missing
+    role: "Subject work — record-creating (see workRecords). The seedbed of What Is Art?."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-three-conditions, maup-moral-relation]
+    ingestionPriority: 1
+  - name: "Preface to the English Edition of What Is Art?"
+    wikiType: work
+    wikilinkTarget: "Preface to the English Edition of What Is Art?"
+    vaultStatus: missing
+    role: "Subject work — record-creating. Companion text to What Is Art?."
+    sources: [jubilee-edition]
+    evidenceRefs: [engwia-true-form, engwia-wholeness]
+    ingestionPriority: 1
+    dependsOn: ["What Is Art?"]
+  - name: "On Gogol"
+    wikiType: work
+    wikilinkTarget: "On Gogol"
+    vaultStatus: missing
+    role: "Subject work — record-creating (1909 article; the 1888 unfinished note flagged for a possible second record, see needsReview)."
+    sources: [jubilee-edition]
+    evidenceRefs: [gogol-threefold, gogol-talent-heart]
+    ingestionPriority: 1
+  - name: "Preface to Carpenter's Modern Science"
+    wikiType: work
+    wikilinkTarget: "Preface to Carpenter's Modern Science"
+    vaultStatus: missing
+    role: "Subject work — record-creating. The science twin of the What Is Art? religious-art test."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-how-to-live, carp-upper-classes]
+    ingestionPriority: 1
+  - name: "What Is Art?"
+    wikiType: work
+    wikilinkTarget: "What Is Art?"
+    vaultStatus: exists
+    role: "The governing theory the cluster orbits; existing works/ record (id what-is-art)."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-three-conditions, gogol-diagnosis, carp-how-to-live]
+    ingestionPriority: 2
+
+  # ── People — the subjects (priority 1) ──
+  - name: "Guy de Maupassant"
+    wikiType: person
+    wikilinkTarget: "Guy de Maupassant"
+    vaultStatus: missing
+    role: "French writer (1850–1893); the test-case writer of real talent + sincerity whom Tolstoy still rules 'bad art' for lacking the moral relation."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-three-conditions, maup-sincerity]
+    ingestionPriority: 1
+  - name: "Nikolai Gogol"
+    wikiType: person
+    wikilinkTarget: "Nikolai Gogol"
+    vaultStatus: missing
+    role: "Russian writer (1809–1852); the religious-turn writer Tolstoy reads as a self-portrait and vindicates against the radical-critic consensus."
+    sources: [jubilee-edition]
+    evidenceRefs: [gogol-threefold, gogol-public-comic]
+    ingestionPriority: 1
+  - name: "Edward Carpenter"
+    wikiType: person
+    wikilinkTarget: "Edward Carpenter"
+    vaultStatus: missing
+    role: "English socialist writer (1844–1929); author of 'Modern Science: A Criticism', which Tolstoy prefaced and extended into the religious-science argument."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-superstition, carp-how-to-live]
+    ingestionPriority: 1
+
+  # ── People — the genesis network (priority 2) ──
+  - name: "Aylmer Maude"
+    wikiType: person
+    wikilinkTarget: "Aylmer Maude"
+    vaultStatus: missing
+    role: "Tolstoy's authorised English translator/biographer; his 1898 translation is the first complete, uncensored What Is Art?. Central to the English-edition preface."
+    sources: [jubilee-edition]
+    evidenceRefs: [engwia-true-form, engwia-mutilated]
+    ingestionPriority: 2
+    dependsOn: ["What Is Art?"]
+  - name: "Sergei Lvovich Tolstoy"
+    wikiType: person
+    wikilinkTarget: "Sergei Tolstoy"
+    vaultStatus: exists
+    role: "Tolstoy's eldest son (1863–1947); translated Carpenter's 'Modern Science' into Russian (credited only as 'edited by L. N. Tolstoy')."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-superstition]
+    ingestionPriority: 2
+    note: "vault page id sergei-tolstoy (the son) — distinct from brother Sergei N. Tolstoy. Verify identity at ingestion."
+  - name: "Lev Pavlovich Nikiforov"
+    wikiType: person
+    wikilinkTarget: "Lev Nikiforov"
+    vaultStatus: missing
+    role: "Translator of the Posrednik Maupassant edition; requested the preface from Tolstoy (Jan 1893)."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-three-conditions]
+    ingestionPriority: 2
+  - name: "Vladimir Posse"
+    wikiType: person
+    wikilinkTarget: "Vladimir Posse"
+    vaultStatus: missing
+    role: "Editor of «Жизнь для всех»; commissioned the 1909 Gogol article for the birth-centenary."
+    sources: [jubilee-edition]
+    evidenceRefs: [gogol-threefold]
+    ingestionPriority: 2
+  - name: "John Coleman Kenworthy"
+    wikiType: person
+    wikilinkTarget: "John Kenworthy"
+    vaultStatus: missing
+    role: "English Tolstoyan; the intermediary who sent Carpenter's collection to Tolstoy (1896) at Carpenter's request."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-superstition]
+    ingestionPriority: 2
+
+  # ── People — mentioned / antagonists (priority 3) ──
+  - name: "Vissarion Belinsky"
+    wikiType: person
+    wikilinkTarget: "Vissarion Belinsky"
+    vaultStatus: missing
+    role: "Radical critic whose 1847 letter savaged Gogol's Correspondence; Tolstoy's named antagonist in both Gogol texts."
+    sources: [jubilee-edition]
+    evidenceRefs: [gogol-belinsky]
+    ingestionPriority: 3
+  - name: "Ivan Turgenev"
+    wikiType: person
+    wikilinkTarget: "Ivan Turgenev"
+    vaultStatus: missing
+    role: "Gave Tolstoy «La maison Tellier» in 1881 — the framing anecdote of the Maupassant preface. (Also appears in the Shakespeare dive.)"
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-talent-defined]
+    ingestionPriority: 3
+  - name: "Lyubov Gurevich"
+    wikiType: person
+    wikilinkTarget: "Lyubov Gurevich"
+    vaultStatus: missing
+    role: "Publisher of «Северный вестник»; requested the Carpenter preface (25 April 1897)."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-superstition]
+    ingestionPriority: 3
+  - name: "Akim Volynsky (Flekser)"
+    wikiType: person
+    wikilinkTarget: "Akim Volynsky"
+    vaultStatus: missing
+    role: "Editor of «Северный вестник»; handled the Carpenter-preface proofs and added the Greek epigraph."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-superstition]
+    ingestionPriority: 3
+
+  # ── Concepts ──
+  - name: "Three conditions of artistic creation"
+    wikiType: concept
+    wikilinkTarget: "Three conditions of artistic creation"
+    vaultStatus: missing
+    role: "Tolstoy's triad — (1) a correct/moral relation of the author to the subject, (2) clarity/beauty of form, (3) sincerity — first stated in the Maupassant preface, later systematised in What Is Art?."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-three-conditions, maup-var-conditions]
+    ingestionPriority: 2
+    dependsOn: ["What Is Art?"]
+  - name: "Infection theory of art (заражение)"
+    wikiType: concept
+    wikilinkTarget: "Infection theory of art"
+    vaultStatus: missing
+    role: "Tolstoy's definition of art (from What Is Art?); the sincerity criterion these satellites apply. Also proposed by the On Shakespeare dive — route once, cross-reference."
+    sources: [jubilee-edition]
+    evidenceRefs: [maup-sincerity, engwia-wholeness]
+    ingestionPriority: 2
+    dependsOn: ["What Is Art?"]
+  - name: "True science as the knowledge of how to live"
+    wikiType: concept
+    wikilinkTarget: "True science as the knowledge of how to live"
+    vaultStatus: missing
+    role: "Tolstoy's religious-science test (from the Carpenter preface): real science is the study of «как должны жить люди»; experimental science usurps that place — the science twin of the religious-art test."
+    sources: [jubilee-edition]
+    evidenceRefs: [carp-how-to-live, carp-remedy]
+    ingestionPriority: 2
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VISUALS — see visuals/_visuals-sweep.md. Cache git-ignored; licences recorded.
+# ─────────────────────────────────────────────────────────────────────────────
+visuals:
+  - id: maupassant-nadar-portrait
+    type: photograph
+    subject: "Guy de Maupassant (Atelier Nadar)"
+    relatedEntity: "Guy de Maupassant"
+    relatedEvidence: [maup-three-conditions]
+    holding: "Wikimedia Commons"
+    archiveId: "File:M._Guy_de_Maupassant_-_btv1b53220355t.jpg"
+    access: open
+    rights: "Public domain (subject d.1893; pre-1893 studio portrait)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:M._Guy_de_Maupassant_-_btv1b53220355t.jpg"
+    localPath: visuals/commons-maupassant-nadar-1890s.jpg
+    note: "Atelier Nadar studio portrait (BnF source dates it 1890–1900; Maupassant died 1893 → PD by age)."
+  - id: gogol-moller-portrait
+    type: portrait
+    subject: "Nikolai Gogol (by F. Möller, 1841)"
+    relatedEntity: "Nikolai Gogol"
+    relatedEvidence: [gogol-threefold]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Моллер Фёдор - Портрет Н. В. Гоголя.jpg"
+    access: open
+    rights: "Public domain (painted 1841; artist d.1874)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BB%D0%BB%D0%B5%D1%80_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%9D._%D0%92._%D0%93%D0%BE%D0%B3%D0%BE%D0%BB%D1%8F.jpg"
+    localPath: visuals/commons-gogol-moller-1841.jpg
+    note: "The canonical Gogol likeness, Otto F. T. von Möller, 1841."
+  - id: carpenter-hollyer-portrait
+    type: photograph
+    subject: "Edward Carpenter (by F. Hollyer, c.1890)"
+    relatedEntity: "Edward Carpenter"
+    relatedEvidence: [carp-how-to-live]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Carpenter_Edward_(1844-1929)_-_1890_ca.jpg"
+    access: open
+    rights: "Public domain (subject d.1929; photographer Hollyer d.1933; photo c.1890)"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Carpenter_Edward_(1844-1929)_-_1890_ca.jpg"
+    localPath: visuals/commons-carpenter-hollyer-1890.jpg
+    note: "Low resolution (271×383). Higher-res PD alternative: File:Edward_Carpenter,_1894.jpg (Roger Fry). Swap if print use is needed."
+  - id: tolstoy-1897-photograph
+    type: photograph
+    subject: "Leo Tolstoy, 1897"
+    relatedEntity: "What Is Art?"
+    relatedEvidence: [engwia-true-form]
+    holding: "Wikimedia Commons"
+    archiveId: "File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    access: open
+    rights: "Public domain"
+    licence: PD
+    usable: true
+    url: "https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1897,_black_and_white,_37767u.jpg"
+    localPath: visuals/commons-tolstoy-1898-taylor-1897.jpg
+    note: "F. W. Taylor, 1897 — the What Is Art? composition period."
+  - id: maude-portrait-wanted
+    type: portrait
+    subject: "Aylmer Maude"
+    relatedEntity: "Aylmer Maude"
+    relatedEvidence: [engwia-true-form]
+    holding: "Wikimedia Commons (only CC BY-SA candidate found)"
+    archiveId: "File:Aylmer_Maude_(1858-1938).jpg"
+    access: open
+    rights: "CC BY-SA 4.0 (Lafayette studio, 1919) — NOT public domain"
+    licence: CC-BY-SA
+    usable: false
+    url: "https://commons.wikimedia.org/wiki/File:Aylmer_Maude_(1858-1938).jpg"
+    localPath: ""
+    note: "Not downloaded — only a CC BY-SA 4.0 candidate found. Work-order: try the National Portrait Gallery / Bodleian open-access collections for an earlier PD portrait, or omit (Maude is tertiary colour here)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCHOLARSHIP — secondary layer (Phase 3). See extracts/_scholarship.md.
+# ─────────────────────────────────────────────────────────────────────────────
+scholarship:
+  summary: >-
+    Mainstream Tolstoy scholarship does not treat these four as a cluster; it treats What Is Art?
+    as the centre and these as satellites of uneven visibility. The Maupassant preface has the
+    settled status: Aylmer Maude's editorial apparatus (Tolstoy on Art, 1924) presents it as the
+    "discriminating preface" stating the very "three conditions" later carried into What Is Art?
+    ch. 15, so it is implicitly read as the treatise's germ. The English-edition preface is well
+    documented as the authorial note fronting the first uncensored text of the treatise; rare-book
+    records confirm The Brotherhood Publishing Company (London, 1898) as the first English edition
+    and Maude as the authorised translator — which corrects the dive brief's "Grant Richards"
+    (that belongs to the later 1903 Essays and Letters volume). The Carpenter preface has a small
+    science-critique literature (a Visions for Sustainability article; the MIT redingtn Carpenter
+    pages) reading Tolstoy's endorsement as helping spread Carpenter beyond English. The Gogol
+    pieces are the thinnest — the 1909 centenary article is barely discussed in English at all.
+    Across the cluster, critics (Bayley, Jahn) read What Is Art? itself as over-reaching (it dooms
+    Beethoven, Shakespeare, War and Peace), so the prefaces' case-verdicts inherit that reputation
+    for over-application — a frame the dive's close-reads push back on (the Gogol read rescues only
+    the religious feeling, not the moralising fiction — more discriminating than the caricature).
+  triangulation:
+    - evidenceRef: maup-three-conditions
+      conventionalView: "Maude frames the preface as a 'discriminating' one that states the three conditions later systematised in What Is Art? ch.15; modern summaries map its triad onto the treatise's three conditions of contagiousness."
+      relation: confirms
+      source: "Maude, Tolstoy on Art (1924); marxists.org / ccel.org reprints"
+    - evidenceRef: maup-var-conditions
+      conventionalView: "Scholarship treats the genesis link as an editorial adjacency (Maude prints the preface beside the WIA prefaces) rather than an argued thesis — the PSS commentary states it outright («вступительную часть к трактату»)."
+      relation: extends
+      source: "Maude editorial framing; PSS Tom 30 commentary (dive primary)"
+    - evidenceRef: maup-sincerity
+      conventionalView: "The essay's own English text states the verdict — Maupassant has talent, clearness, sincerity but is 'entirely devoid of the first condition'."
+      relation: confirms
+      source: "Tolstoy, The Works of Guy de Maupassant (Maude trans.), marxists.org"
+    - evidenceRef: engwia-mutilated
+      conventionalView: "What Is Art? was 'first published in English in 1898 due to difficulties with the Russian censors'; Maude's is 'the first unexpurgated version … in any language'."
+      relation: confirms
+      source: "Wikipedia, What Is Art?; Aylmer and Louise Maude, Wikipedia"
+    - evidenceRef: engwia-true-form
+      conventionalView: "First English edition = The Brotherhood Publishing Company, London, 1898, trans. A. Maude; Grant Richards belongs to the later 1903 Essays and Letters volume."
+      relation: contradicts
+      source: "Raptis Rare Books; Biblio.com (corrects the dive brief's 'Grant Richards')"
+    - evidenceRef: engwia-christ-censored
+      conventionalView: "Maude's reproduced preface and standard accounts confirm the censorship and Tolstoy's disavowal; the specific 'for the truth' → 'for the human race' substitution is carried only in the primary text."
+      relation: extends
+      source: "Maude headnote (quoted widely); PSS Tom 30 commentary (dive primary)"
+    - evidenceRef: gogol-belinsky
+      conventionalView: "Gogol's Selected Passages 'was heartily appreciated by Tolstoy … engaged in a religious quest'; Belinsky's 1847 letter is the canonical condemnation."
+      relation: confirms
+      source: "zenosbooks note on Selected Passages; Belinsky letter, marxists.org"
+    - evidenceRef: gogol-rebirth
+      conventionalView: "English scholarship does not develop the 'Tolstoy reads Gogol as a self-portrait' reading about the 1909 article; it is consonant with the religious-quest framing but not an established thesis."
+      relation: extends
+      source: "(no dedicated source found; dive primary, Tom 26 + Tom 38)"
+    - evidenceRef: gogol-threefold
+      conventionalView: "No English-language treatment of the 1909 article surfaced; English coverage stops at Selected Passages reception — the article is a minor occasional centenary piece."
+      relation: confirms
+      source: "(absence of sources; searched 2026-06)"
+    - evidenceRef: carp-how-to-live
+      conventionalView: "Treated in the science-critique literature as Tolstoy's endorsement of Carpenter's anti-positivism; the explicit 'twin of the art test' framing is the dive's."
+      relation: extends
+      source: "Visions for Sustainability, 'Lev Tolstoy and modern science'; MIT redingtn Carpenter pages"
+    - evidenceRef: carp-superstition
+      conventionalView: "'Tolstoy's imprimatur helped spread Modern Science beyond the English-speaking world'; Tolstoy ranked Carpenter 'a worthy successor to Carlyle and Ruskin'."
+      relation: confirms
+      source: "MIT redingtn Carpenter pages; Journal of Leo Tolstoi notes, marxists.org"
+    - evidenceRef: carp-upper-classes
+      conventionalView: "Critics read What Is Art?'s religious criterion as over-reaching (it dooms Beethoven, Shakespeare, War and Peace); the case-verdicts in these prefaces inherit that reputation for over-application."
+      relation: complicates
+      source: "Bayley & Jahn (via Wikipedia, What Is Art?); Jahn, The Aesthetic Theory of Tolstoy's What Is Art? (1975)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WORK RECORDS — PROPOSE CREATION (no records exist). Read-only to works/.
+# Shapes match the LIVE works schema (v9). Human ingestion applies.
+# ─────────────────────────────────────────────────────────────────────────────
+workRecords:
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/the-works-of-guy-de-maupassant/The Works of Guy de Maupassant.md"
+    workId: the-works-of-guy-de-maupassant
+    create: true
+    fields:
+      - { field: titleEn, value: "The Works of Guy de Maupassant", source: "Maude title ('The Works of Guy de Maupassant' / 'Introduction to the Works of Guy de Maupassant')", confidence: high }
+      - { field: titleRu, value: "Предисловие к сочинениям Гюи де Мопассана", source: "PSS Tom 30", confidence: high }
+      - { field: titleAlternatives, value: [{title: "Introduction to the Works of Guy de Maupassant", type: translation, language: en}], source: "Maude, Tolstoy on Art (1924)", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "directory taxonomy", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "directory taxonomy (mirrors What Is Art?; no 'Prefaces' subcategory exists — see needsReview)", confidence: medium }
+      - { field: genre, value: essay, source: "criticism / preface; the schema genre enum has no 'preface' value (see needsReview)", confidence: medium }
+      - { field: language, value: ru, confidence: high }
+      - { field: completionStatus, value: complete, source: "finished and published 1894", confidence: high }
+      - { field: publishedDuringLifetime, value: true, evidenceRefs: [maup-three-conditions], source: "Posrednik, Moscow, 1894", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Posrednik (Moscow), 1894", confidence: high }
+      - { field: dateWritingStarted, value: "1893-09-17", oldStyle: "1893-09-05", approximate: true, evidenceRefs: [maup-three-conditions], source: "commentary: first autograph «в первых числах сентября» 1893; copy dated 5 Sept 1893 (OS)", confidence: medium, note: "OS 1893-09-05 → NS 1893-09-17 (12-day offset). Approximate (first-draft start)." }
+      - { field: dateWritingCompleted, value: "1894-04-14", oldStyle: "1894-04-02", approximate: false, evidenceRefs: [maup-three-conditions], source: "commentary: signed «Л. Толстой. 2 апреля 1894. Воронеж»", confidence: high, note: "OS 1894-04-02 → NS 1894-04-14. Proof corrections continued into May 1894." }
+      - { field: dateFirstPublished, value: "1894-06-10", oldStyle: "1894-05-29", approximate: true, source: "commentary: preface to «Монт-Ориоль» (Posrednik), out of press 29 May 1894 (OS)", confidence: medium, note: "OS 1894-05-29 → NS 1894-06-10. Re-used as the preface to «На воде» (the PSS copy-text)." }
+      - { field: firstPublishedVenue, value: "Издание «Посредник», Moscow (preface to «Монт-Ориоль», trans. L. P. Nikiforov)", source: "PSS Tom 30 commentary", confidence: high }
+      - { field: firstPublishedVenueType, value: book, source: "book preface", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1894-06-10", oldStyle: "1894-05-29", approximate: true, source: "same Posrednik edition (Russia)", confidence: medium }
+      - { field: firstPublishedInRussiaVenue, value: "Издание «Посредник», Moscow", source: "PSS Tom 30 commentary", confidence: high }
+      - { field: firstPublishedInRussiaVenueType, value: book, source: "PSS Tom 30 commentary", confidence: high }
+      - { field: authoringLocations, value: ["Yasnaya Polyana", "Moscow (Khamovniki)", "Voronezh (signed)"], source: "commentary: written at Yasnaya Polyana / Moscow, closed at Voronezh 2 Apr 1894 OS", confidence: medium, note: "Shape to the works schema authoringLocations object form on ingestion." }
+      - { field: relatedWorks, value: [{id: what-is-art, relationshipType: prequel}], evidenceRefs: [maup-three-conditions, maup-var-conditions], source: "commentary: «можно рассматривать как вступительную часть к трактату «Что такое искусство?»» — the preface is the doctrine's seedbed", confidence: high, note: "relationshipType 'prequel' captures the preparatory-stage sense; ingestion may prefer 'source'." }
+      - { field: themes, value: ["aesthetics", "Maupassant", "three conditions of art", "talent vs. moral relation", "sincerity", "religious art"], source: "dive synthesis", confidence: medium }
+      - { field: identifiers.jubileeEdition.volumes, value: "30", source: "PSS Tom 30, pp. 3–24 (text); 273–302 (variants); 487–508 (commentary)", confidence: high }
+      - { field: wordCount, value: 6866, wordCountEdition: "Jubilee Edition (PSS), Tom 30 — TEI extract", source: "word count of the cleaned TEI extract", confidence: low, note: "Approximate; cleaned TEI text, not a typeset count." }
+
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/preface-to-the-english-edition-of-what-is-art/Preface to the English Edition of What Is Art.md"
+    workId: preface-to-the-english-edition-of-what-is-art
+    create: true
+    fields:
+      - { field: titleEn, value: "Preface to the English Edition of What Is Art?", source: "descriptive English title", confidence: high }
+      - { field: titleRu, value: "Предисловие к английскому изданию трактата «Что такое искусство?»", source: "PSS Tom 30", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "directory taxonomy", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "directory taxonomy (no 'Prefaces' subcategory — see needsReview)", confidence: medium }
+      - { field: genre, value: essay, source: "preface (no 'preface' genre in schema — see needsReview)", confidence: medium }
+      - { field: language, value: ru, confidence: high }
+      - { field: completionStatus, value: complete, source: "short authorial note, finished", confidence: high }
+      - { field: publishedDuringLifetime, value: true, evidenceRefs: [engwia-true-form], source: "Свободного слова №1, Purleigh 1898 (Chertkov); the English edition it fronts, Brotherhood Publishing Co. 1898", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: false, source: "first published abroad (Свободное слово, Purleigh 1898); no Russian lifetime printing of the preface confirmed", confidence: low, note: "NEEDS REVIEW — verify whether the preface itself was printed in Russia before 1910." }
+      - { field: dateWritingStarted, value: "1898-03-29", oldStyle: "1898-03-17", approximate: false, evidenceRefs: [engwia-true-form], source: "signed «17 марта» (OS); same-day note to Chertkov", confidence: high, note: "OS 1898-03-17 → NS 1898-03-29. Essentially same-day composition." }
+      - { field: dateWritingCompleted, value: "1898-03-29", oldStyle: "1898-03-17", approximate: false, source: "same-day note", confidence: high }
+      - { field: dateFirstPublished, value: "1898", approximate: true, source: "commentary: «Свободного слова», №1, Purleigh 1898 (Chertkov)", confidence: medium }
+      - { field: firstPublishedVenue, value: "Сборник «Свободного слова», №1 (изд. В. Г. Черткова), Purleigh", source: "PSS Tom 30 commentary", confidence: high }
+      - { field: firstPublishedVenueType, value: book, source: "almanac / collection", confidence: medium }
+      - { field: relatedWorks, value: [{id: what-is-art, relationshipType: companion}], evidenceRefs: [engwia-true-form, engwia-mutilated], source: "the preface to the English edition of What Is Art?", confidence: high }
+      - { field: censorshipNotes, value: "The preface exists because every Russian lifetime edition of What Is Art? was mutilated — first by the secular censor, then by the spiritual (church) censor, who cut whole passages and inserted the Redemption dogma Tolstoy rejected (replacing 'Christ went to the cross for the truth he professed' with 'for the human race'). Maude's 1898 English translation (Brotherhood Publishing Co., London, as a supplement to The New Order) is the first complete, uncensored text. Tolstoy's preface asks readers to judge his views only by the English text.", evidenceRefs: [engwia-christ-censored, engwia-not-mine], source: "preface text + PSS Tom 30 commentary; publisher corroborated by Raptis/Biblio rare-book records", confidence: high }
+      - { field: themes, value: ["censorship", "translation", "integrity of the text", "What Is Art?", "sincerity"], source: "dive synthesis", confidence: medium }
+      - { field: identifiers.jubileeEdition.volumes, value: "30", source: "PSS Tom 30, pp. 204–206", confidence: high }
+      - { field: wordCount, value: 877, wordCountEdition: "Jubilee Edition (PSS), Tom 30 — TEI extract", source: "word count of the cleaned TEI extract", confidence: low }
+
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/on-gogol/On Gogol.md"
+    workId: on-gogol
+    create: true
+    fields:
+      - { field: titleEn, value: "On Gogol", source: "descriptive English title", confidence: high }
+      - { field: titleRu, value: "О Гоголе", source: "PSS Tom 38", confidence: high }
+      - { field: mainCategory, value: "Non-Fiction", source: "directory taxonomy", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "directory taxonomy", confidence: high }
+      - { field: genre, value: essay, source: "occasional critical article", confidence: high }
+      - { field: language, value: ru, confidence: high }
+      - { field: completionStatus, value: complete, source: "1909 article finished & published; the 1888 Tom-26 note is a separate, unfinished fragment (see needsReview)", confidence: medium }
+      - { field: publishedDuringLifetime, value: true, evidenceRefs: [gogol-threefold], source: "Русское слово, 24 March 1909 (OS)", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "Русское слово (Moscow daily), 24 March 1909 (OS)", confidence: high }
+      - { field: dateWritingStarted, value: "1909-03-17", oldStyle: "1909-03-04", approximate: true, evidenceRefs: [gogol-threefold], source: "commentary (Mishin) + Gusev diary: Posse's request 4 March 1909 (OS); diary note 5 March", confidence: medium, note: "OS 1909-03-04 → NS 1909-03-17 (13-day offset)." }
+      - { field: dateWritingCompleted, value: "1909-04-04", oldStyle: "1909-03-22", approximate: true, evidenceRefs: [gogol-threefold], source: "commentary: «О Гоголе написал и дал» 22 March 1909 (OS)", confidence: medium, note: "OS 1909-03-22 → NS 1909-04-04." }
+      - { field: dateFirstPublished, value: "1909-04-06", oldStyle: "1909-03-24", approximate: false, evidenceRefs: [gogol-threefold], source: "Русское слово No. 68, 24 March 1909 (OS), as 'Толстой о Гоголе'", confidence: high, note: "OS 1909-03-24 → NS 1909-04-06." }
+      - { field: firstPublishedVenue, value: "Русское слово (Russkoe Slovo), No. 68", source: "PSS Tom 38 commentary", confidence: high }
+      - { field: firstPublishedVenueType, value: newspaper, source: "PSS Tom 38 commentary", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1909-04-06", oldStyle: "1909-03-24", approximate: false, source: "same Русское слово printing (Russia)", confidence: high }
+      - { field: firstPublishedInRussiaVenue, value: "Русское слово (Russkoe Slovo), No. 68", source: "PSS Tom 38 commentary", confidence: high }
+      - { field: firstPublishedInRussiaVenueType, value: newspaper, source: "PSS Tom 38 commentary", confidence: high }
+      - { field: authoringLocations, value: ["Yasnaya Polyana"], source: "commentary: written March 1909 at Yasnaya Polyana", confidence: high }
+      - { field: themes, value: ["Gogol", "religious art", "Selected Passages from Correspondence with Friends", "the religious turn", "Belinsky", "criticism"], source: "dive synthesis", confidence: medium }
+      - { field: identifiers.jubileeEdition.volumes, value: "38", source: "PSS Tom 38, pp. 50–53 (1909 article); 280 (variant). Earlier 1888 note in Tom 26, pp. 648–651", confidence: high }
+      - { field: wordCount, value: 719, wordCountEdition: "Jubilee Edition (PSS), Tom 38 — TEI extract (1909 article)", source: "word count of the cleaned TEI extract", confidence: low, note: "1909 article only; the 1888 Tom-26 note adds ~1186 words." }
+      - { field: notes, value: "Tolstoy wrote on Gogol twice: an unfinished, unpublished note of Jan–Feb 1888 (Tom 26, pp. 648–651), abandoned because he 'did not want to enter into polemic with Belinsky', and this completed 1909 birth-centenary article. Both defend Gogol's late religious turn (Selected Passages from Correspondence with Friends) against the radical-critic consensus. See needsReview on whether the 1888 fragment merits its own record.", source: "PSS Tom 26 + Tom 38 commentary", confidence: high }
+
+  - recordPath: "website/src/works/non-fiction/essays-and-criticism/preface-to-carpenters-modern-science/Preface to Carpenter's Modern Science.md"
+    workId: preface-to-carpenters-modern-science
+    create: true
+    fields:
+      - { field: titleEn, value: "Preface to Edward Carpenter's 'Modern Science'", source: "descriptive English title (the essay is also published in English as 'Modern Science', Dole trans. 1899)", confidence: high }
+      - { field: titleRu, value: "Предисловие к статье Эдуарда Карпентера «Современная наука»", source: "PSS Tom 31", confidence: high }
+      - { field: titleAlternatives, value: [{title: "Modern Science", type: translation, language: en}], source: "N. H. Dole, Complete Works of Lyof N. Tolstoï (Crowell, 1899, vol. 11)", confidence: medium }
+      - { field: mainCategory, value: "Non-Fiction", source: "directory taxonomy", confidence: high }
+      - { field: subcategory, value: "Essays and Criticism", source: "directory taxonomy (no 'Prefaces' subcategory — see needsReview)", confidence: medium }
+      - { field: genre, value: essay, source: "preface (no 'preface' genre in schema — see needsReview)", confidence: medium }
+      - { field: language, value: ru, confidence: high }
+      - { field: completionStatus, value: complete, source: "finished and published 1898", confidence: high }
+      - { field: publishedDuringLifetime, value: true, evidenceRefs: [carp-how-to-live], source: "«Северный вестник» №3, 1898", confidence: high }
+      - { field: publishedInRussiaDuringLifetime, value: true, source: "«Северный вестник» (St Petersburg), №3, 1898", confidence: high }
+      - { field: dateWritingStarted, value: "1897-11-02", oldStyle: "1897-10-21", approximate: false, evidenceRefs: [carp-how-to-live], source: "commentary + diary: began the preface on receiving the proof, 21 Oct 1897 (OS)", confidence: medium, note: "OS 1897-10-21 → NS 1897-11-02 (12-day offset)." }
+      - { field: dateWritingCompleted, value: "1898-02-28", oldStyle: "1898-02-16", approximate: true, evidenceRefs: [carp-remedy], source: "commentary: fair copy dated 28 Nov 1897 (OS); a dating supplement mailed 16 Feb 1898 (OS), final corrections 19 Feb 1898", confidence: medium, note: "Main draft done 28 Nov 1897 (OS); the Feb 1898 supplement is the firm end of work. OS 1898-02-16 → NS 1898-02-28." }
+      - { field: dateFirstPublished, value: "1898-03-13", oldStyle: "1898-03-01", approximate: true, source: "«Северный вестник» №3, 1898 (issue released 1 March 1898 OS)", confidence: medium, note: "OS 1898-03-01 → NS 1898-03-13." }
+      - { field: firstPublishedVenue, value: "«Северный вестник» (Severny Vestnik), №3, 1898", source: "PSS Tom 31 commentary", confidence: high }
+      - { field: firstPublishedVenueType, value: journal, source: "PSS Tom 31 commentary", confidence: high }
+      - { field: dateFirstPublishedInRussia, value: "1898-03-13", oldStyle: "1898-03-01", approximate: true, source: "same «Северный вестник» printing (Russia)", confidence: medium }
+      - { field: firstPublishedInRussiaVenue, value: "«Северный вестник» (Severny Vestnik), №3, 1898", source: "PSS Tom 31 commentary", confidence: high }
+      - { field: firstPublishedInRussiaVenueType, value: journal, source: "PSS Tom 31 commentary", confidence: high }
+      - { field: authoringLocations, value: ["Yasnaya Polyana"], source: "commentary: written Oct–Nov 1897 at Yasnaya Polyana", confidence: medium }
+      - { field: epigraph, value: "Παντί λόγῳ λόγος ἴσος ἀντίκειται", epigraphLanguage: "grc", source: "added by «Северный вестник» editor Volynsky (from Carpenter's article), absent from Tolstoy's manuscripts", confidence: high, note: "Not authorial — an editorial epigraph; record with care or omit." }
+      - { field: relatedWorks, value: [{id: what-is-art, relationshipType: companion}], evidenceRefs: [carp-how-to-live, carp-upper-classes], source: "the science twin of the What Is Art? religious-art test, written the same months", confidence: medium }
+      - { field: themes, value: ["science", "religious science", "positivism", "Edward Carpenter", "how to live", "division of labour", "What Is Art?"], source: "dive synthesis", confidence: medium }
+      - { field: identifiers.jubileeEdition.volumes, value: "31", source: "PSS Tom 31, pp. 87–95 (text); 282–285 (commentary)", confidence: high }
+      - { field: wordCount, value: 2689, wordCountEdition: "Jubilee Edition (PSS), Tom 31 — TEI extract", source: "word count of the cleaned TEI extract", confidence: low }
+      - { field: notes, value: "Tolstoy's preface; the article 'Modern Science: A Criticism' is Carpenter's own English original, translated into Russian by Tolstoy's eldest son Sergei Lvovich Tolstoy (credited only 'edited by L. N. Tolstoy', which led to later mis-attribution of the translation to Tolstoy himself). An English translation of the preface exists (N. H. Dole, 1899; an anon. W. M. Reeves booklet).", source: "PSS Tom 31 commentary + Phase-3 scholarship", confidence: high }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COVERAGE — surfaces × status (derives 'Material not covered'; resume reads this)
+# ─────────────────────────────────────────────────────────────────────────────
+coverage:
+  - surface: "Composition windows & genesis (incl. the people)"
+    status: covered
+    note: "All four pieces pinned OS+NS from their Tom commentaries (история писания); the people sweep yielded Maupassant/Nikiforov/Turgenev/Birukoff (Maupassant), Maude/Chertkov (English preface), Posse/Belinsky/Pushkin (Gogol), Carpenter/Kenworthy/Sergei L. Tolstoy/Gurevich/Volynsky (Carpenter)."
+  - surface: "What each piece says (keystones)"
+    status: covered
+    note: "26 verbatim keystones across the four pieces; each tied to a What Is Art? criterion. The marquees: Maupassant's three conditions, the English preface's цельность/искренность hook, Gogol's talent/heart/preaching calibration, Carpenter's 'how to live' science test."
+  - surface: "Redactions & textual history"
+    status: covered
+    note: "Maupassant variants (the draft three-conditions in a different order; the cut beauty-stratum that fed What Is Art?); Gogol 1909 variant (named Slavophiles cut to a generic label); the What Is Art? genesis-draft cluster (v30_213–v30_270) read as supporting genesis only."
+  - surface: "Publication, censorship & translation"
+    status: covered
+    note: "Maupassant Posrednik 1894; the English preface's whole censorship story (Brotherhood Publishing Co. confirmed, Grant Richards corrected); Gogol Русское слово 1909; Carpenter «Северный вестник» 1898. English-translation status resolved per piece (Maupassant: Maude; English preface: it IS the English edition; Carpenter: Dole 1899; Gogol: likely untranslated)."
+  - surface: "Reception & afterlife"
+    status: partial
+    note: "Only the Maupassant preface and the English-edition preface have a settled received literature. The Carpenter preface has a small science-critique niche; the Gogol articles have essentially no dedicated English scholarship — the dive's reads run ahead of the secondary literature there."
+  - surface: "Scholarly context (triangulation)"
+    status: covered
+    note: "12 triangulation entries; the 'What Is Art? over-reaches' frame named and attributed (Bayley, Jahn), with the dive's more-discriminating Gogol read flagged as its own primary-grounded contribution."
+  - surface: "Connective tissue / marquee (the religious-art test applied)"
+    status: covered
+    note: "Each piece triangulated as a hypothesis: Maupassant EXTENDS (the doctrine's seedbed); English preface EXTENDS onto the meta-plane + CONFIRMS; Gogol CONFIRMS + EXTENDS (with a documented strain on 'vindicates'); Carpenter EXTENDS to science (with two visible seams)."
+  - surface: "Visual & manuscript record"
+    status: covered
+    note: "4 PD images cached (Maupassant/Nadar, Gogol/Möller, Carpenter/Hollyer, Tolstoy 1897) + provenance. Aylmer Maude portrait is a work-order item (only a CC BY-SA candidate found). No manuscript facsimiles rendered (the keystones are typeset PSS text)."
+
+# ─────────────────────────────────────────────────────────────────────────────
+contradictions:   # intra-corpus (primary-vs-primary) only
+  - claim: "The launch brief's publisher for the 1898 English What Is Art?: 'Grant Richards'."
+    correction: "The PSS Tom 30 commentary names Brotherhood Publishing Co. / The New Order, and independent rare-book records (Raptis, Biblio) confirm The Brotherhood Publishing Company, London, 1898 as the first English edition. 'Grant Richards' belongs to the later World's Classics Essays and Letters (1903) — a different, collected-essays volume. This is a brief-vs-source correction, not intra-corpus, recorded here for the ingestion record."
+    evidenceRef: engwia-true-form
+
+notCovered:
+  - "Tolstoy's earlier scattered remarks on Maupassant (1881–1890 diaries/letters) — characterised from the Tom 30 commentary, not independently swept from those decades' diaries."
+  - "Carpenter's own English 'Modern Science: A Criticism' (the article Tolstoy prefaces) — not Tolstoy's text; available in Carpenter's collections (Internet Archive)."
+  - "Gogol's «Выбранные места из переписки с друзьями» itself (the object of both Gogol pieces) — not in this corpus; English: Jesse Zeldin (1969)."
+  - "The fine-grained collation of the Maupassant preface's ~20 manuscripts / 4 proof passes — only the keystone redaction moves are characterised from the commentary."
+  - "Tolstoy's March-1909 grading marks on each piece of Gogol's Selected Passages (embedded in the article extract) — noted as a distinctive primary artifact; not transcribed into an evidence table this pass."
+
+needsReview:
+  - item: "Shelving gap: the works schema Non-Fiction subcategories are Treatises / Personal Papers / Essays and Criticism / Educational — there is NO 'Prefaces' subcategory, and the genre enum has no 'preface' value. All four pieces (three prefaces + the Gogol article) are shelved under Essays and Criticism / genre essay. Flag for a possible vocab decision (do not invent vocab in the dive)."
+    phase: 0
+    why: "Three of the four records are prefaces; the schema cannot mark them as such. A 'Prefaces' subcategory or a 'preface' genre value would need a Johan-approved schema change."
+  - item: "Preface to the English Edition of What Is Art? — publishedInRussiaDuringLifetime set false (first published abroad, Свободное слово, Purleigh 1898). Confirm whether the preface itself was printed in Russia before Tolstoy's death."
+    phase: 4
+    why: "Affects publishedInRussiaDuringLifetime; the preface attacks Russian censorship, so a Russian lifetime printing is unlikely but unconfirmed."
+  - item: "On Gogol — whether the unfinished, unpublished 1888 Tom-26 note merits its own separate workRecord, or stays folded into the on-gogol (1909) record as a noted earlier attempt."
+    phase: 4
+    why: "Two distinct texts 21 years apart; the proposal currently makes one record for the published 1909 article and notes the 1888 fragment. Ingestion decision."
+  - item: "Maupassant preface — exact Maude volume/pagination (Tolstoy on Art, 1924; Essays and Letters / Recollections and Essays, World's Classics). Confirm before citing a page. The 1903 Essays and Letters World's Classics printing is associated with Grant Richards — the likely source of the brief's publisher slip."
+    phase: 3
+    why: "titleAlternatives/translation provenance; exact pagination not pinned."
+  - item: "Aylmer Maude portrait — no PD image found (only a CC BY-SA 4.0 Lafayette 1919 studio portrait). Try NPG / Bodleian open-access collections, or omit."
+    phase: 2
+    why: "Visuals work-order; Maude is central to the English-preface story but tertiary as an image."
+  - item: "Gogol articles (1888 + 1909) — likely untranslated into English; route both to the translation-gaps ledger. Do not assert 'translated'."
+    phase: 3
+    why: "No English translation surfaced; English coverage addresses only Gogol's Selected Passages (the object), not Tolstoy's articles."
+  - item: "OS→NS conversions for all four pieces are derived (+12 days 1880s–90s, +13 days 1909), not directly sourced from the commentary in every case. Verify if a slug or chronology depends on a specific NS date."
+    phase: 4
+    why: "Standard offset applied; the commentary gives OS dates."
+  - item: "Carpenter preface — Sergei Lvovich Tolstoy (eldest son) is the translator; some English sources err calling him 'older brother' / 'Count Sergius'. Vault page sergei-tolstoy is the son — confirm at ingestion, distinct from brother Sergei N. Tolstoy."
+    phase: 1
+    why: "Person disambiguation; a wrong link would conflate son and brother."
+
+archivesConsulted:
+  - "primary-sources/tolstoydigital-TEI/texts/works/ (the four works + variants, Toms 26, 30, 31, 38; the What Is Art? genesis-draft cluster, Tom 30)"
+  - "primary-sources/tolstoydigital-TEI/texts/comments/ (история писания + описание рукописей, Toms 26, 30, 31, 38)"
+  - "Wikimedia Commons API (4 PD portraits)"
+  - "Web scholarship: Maude (Tolstoy on Art, archive.org); marxists.org (Maupassant essay, Belinsky letter, Journal of Leo Tolstoi notes); Wikipedia (What Is Art?, Maude); Raptis/Biblio rare-book records; Visions for Sustainability; MIT redingtn Carpenter pages; edwardcarpenter.net"
+
+references:
+  primary:
+    - "Толстой Л. Н. Предисловие к сочинениям Гюи де Мопассана // ПСС, Т. 30. М.: ГИХЛ, 1951. С. 3–24 (варианты 273–302; комм. 487–508)."
+    - "Толстой Л. Н. Предисловие к английскому изданию трактата «Что такое искусство?» // ПСС, Т. 30. С. 204–206 (комм. 509–555)."
+    - "Толстой Л. Н. О Гоголе [1909] // ПСС, Т. 38. С. 50–53 (вариант 280; комм. 498). [1888] // ПСС, Т. 26. С. 648–651 (комм. 874–877)."
+    - "Толстой Л. Н. Предисловие к статье Эдуарда Карпентера «Современная наука» // ПСС, Т. 31. С. 87–95 (комм. 282–285)."
+  background:
+    - "Aylmer Maude (trans./ed.), Tolstoy on Art (Oxford, 1924) — incl. the Maupassant and What Is Art? prefaces — archive.org/stream/tolstoyonart00tolsuoft."
+    - "Leo Tolstoy (Maude trans.), The Works of Guy de Maupassant (1894) — marxists.org/archive/tolstoy/1894/works-of-guy-de-maupassant.html."
+    - "What Is Art? — Wikipedia (censorship history; Brotherhood Publishing Co., 1898); Aylmer and Louise Maude — Wikipedia."
+    - "Raptis Rare Books / Biblio.com — What Is Art?, The Brotherhood Publishing Company, London, 1898 (first English edition)."
+    - "V. G. Belinsky, Letter to N. V. Gogol (1847) — marxists.org/subject/art/lit_crit/works/belinsky/gogol.htm."
+    - "'Lev Tolstoy and modern science', Visions for Sustainability (Univ. of Turin OJS); MIT redingtn Carpenter course pages; Journal of Leo Tolstoi, Vol. 1 — Notes (marxists.org)."
+    - "Leo Tolstoy (N. H. Dole trans.), Modern Science (preface to Carpenter), Complete Works of Lyof N. Tolstoï (Crowell, 1899, vol. 11) — en.wikisource.org."
+    - "Gary R. Jahn, The Aesthetic Theory of Leo Tolstoy's 'What Is Art?' (1975); John Bayley on What Is Art? (via Wikipedia)."
+    - "Edward Carpenter (1844–1929) bibliography — edwardcarpenter.net."
