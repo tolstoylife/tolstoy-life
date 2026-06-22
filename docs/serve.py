@@ -485,7 +485,8 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 MD = markdown.Markdown(extensions=[
     TableExtension(),
     FencedCodeExtension(),
-    "nl2br",
+    # ponytail: no nl2br — a single newline in wrapped source is a soft wrap, not a
+    # <br> (Markdown spec). Intended breaks still work via two trailing spaces.
     "sane_lists",
     "attr_list",
 ])

@@ -28,7 +28,7 @@ one mode and finish it.
 | **Reception** | Russian/Church first, incidental | **Heaviest reception.** Censorship-as-reception earns a dedicated pass. The era flexes (see *Flex*) — do not assume a living-author ban. |
 | **Characters / prototypes** | n/a | **New standing section** → routes `character` (+ `prototypes[]`), `person`, and `group` entities. |
 | **Themes** | folded into "what it says" | **Promoted to its own section.** |
-| **Marquee question** | n/a | **New standing section.** The dive's central contested claim is stated up front and *tested as a hypothesis* (`confirms` / `complicates` / `extends`). |
+| **Marquee question** | n/a | **New standing section.** Names Tolstoy's own central concern in the work, in his terms, and shows it from his words. Not an academic puzzle laid over the text; if scholarship frames it as a contested claim, that is an attributed contrast, never the spine. |
 | **Visuals** | light default | **Heavy** four-channel fan-out is the default for a canonical novel with a rich illustration record. |
 
 ## Phase-by-phase overlay
@@ -37,11 +37,12 @@ one mode and finish it.
 holding the work and each redaction; the composition window; the path to the `works/` record — or,
 when no record exists yet, the path it *should* live at: **most un-dived novels have no `works/`
 record**, so the `workRecord` is a record-*creating* proposal from scratch, not a fill — don't stall
-hunting for a record that isn't there). Additionally: (1) **name the marquee question** — the one
-contested claim this dive will test, framed as a hypothesis rather than discovered late. For the
-doctrinal late works it is usually a **causal** claim (did the communion scene cause the
-excommunication); for the early/aesthetic works it is more often **interpretive/developmental** (is
-this the pivot where a lifelong thesis first appears). Both are valid marquees — don't force a causal
+hunting for a record that isn't there). Additionally: (1) **name the marquee question** — Tolstoy's
+own central concern in this work, stated in his terms, the thread the dive will follow through his
+words. For the doctrinal late works it is often a **causal** thread (did the communion scene precede
+the excommunication); for the early/aesthetic works it is more often **developmental** (is this the
+work where a lifelong concern first surfaces). Frame it from the work, not from an academic puzzle laid
+over it (see "Let Tolstoy speak; don't adopt academia's relabels" in the base). Don't force a causal
 claim onto a work that has none. (2) set **visuals intensity** (heavy is the novel default; drop to
 light only if the illustration record is thin);
 (3) **flag any companion text** (an afterword, epilogue, or framing essay the PSS catalogues
@@ -73,9 +74,10 @@ chapter by chapter." Instead:
    Tolstoy fiction has no such layer; add it only when the evidence shows one.
 
 **Phase 3 — Scholarly context & reception.** Unchanged in mechanism (ground in the project before the
-mainstream; attribute, don't assert; `confirms`/`complicates`/`contradicts`/`extends` triangulation).
-Two novel emphases: run the **reception pass heavy**, and **test the marquee hypothesis here** against
-the scholarship. **Reception flexes by era** — see *Flex* (for an uncensored early work, "heavy"
+mainstream; attribute, don't assert; the optional `confirms`/`complicates`/`contradicts`/`extends`
+mapping is a light contrast tool, not the spine). Two novel emphases: run the **reception pass heavy**,
+and, where scholarship frames the marquee as contested, set its reading beside Tolstoy's as an
+attributed contrast — never let the academic puzzle become the dive's own question. **Reception flexes by era** — see *Flex* (for an uncensored early work, "heavy"
 reweights toward **literary-critical** reception, not censorship-as-reception).
 
 **Phase 4 — Synthesize.** Build the novel spine below. Emit the new entity types in the dossier
@@ -96,9 +98,10 @@ as in *Hadji Murat*) or mid-spine (after *Publication & censorship*, as in *Resu
 
 1. **Key findings** — tight bulleted exec-summary; no new claims.
 2. **Why this matters**
-3. **The marquee question (hypothesis tested)** — state the contested claim, stage the evidence
-   (verbatim RU + working-EN + TEI id / PSS Tom), report the outcome as `confirms` / `complicates` /
-   `extends`.
+3. **The marquee question** — state Tolstoy's own central concern in his terms, stage the evidence
+   from his words (verbatim RU + working-EN + TEI id / PSS Tom). Where scholarship frames it as a
+   contested claim, add that as an attributed contrast — don't make the academic puzzle the section's
+   spine or title.
 4. **Genesis & composition** *(heaviest)* — the seed; the gestation / redaction history; **the people
    around the work**; + the optional **source-research** sub-section.
 5. **What the work says** — the centrepiece (quoted in full) + 3–5 pivotal scenes (mapped lightly).
@@ -158,7 +161,8 @@ The three runs surfaced variations the mode must **flex** to, not bake in:
    Phase 2.6). Most fiction has none.
 5. **Redactions: sample, don't collate** — but extract the single keystone variant first-class when it
    changes the reading.
-6. **The marquee is a hypothesis, not a foregone conclusion.** Report what the evidence actually does.
+6. **Follow the evidence, not a foregone conclusion.** Report what Tolstoy's words actually show, even
+   if it is messier than the marquee you named at the start.
    The three runs each produced a *real* outcome this way, not a confirmation of a prior.
 
 ## Reference implementations

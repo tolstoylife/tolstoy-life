@@ -2,13 +2,15 @@ topic:
   slug: 1905-the-great-sin
   title: "The Great Sin (Великий грех)"
   question: >-
-    Does The Great Sin (1905) confirm, complicate, or contradict Tolstoy's
-    Christian-anarchist anti-statism? He calls private property in land «великий
-    грех» — the great sin at the root of the people's poverty and the 1905
-    unrest — and endorses Henry George's single tax (a STATE-administered fiscal
-    reform) as its just, practical remedy. Is the single tax a transitional
-    concession, a lesser evil, or a genuine exception to his denial of the
-    state's coercive legitimacy?
+    What does Tolstoy say in The Great Sin (1905), in his own terms? He calls
+    private property in land «великий грех» — the great sin, the surviving form
+    of slavery, the root of the people's poverty and the 1905 unrest — and says
+    the cure is not legislation but the awakened conscience of those who profit
+    from it, as with serfdom. Henry George's single tax enters only as a
+    conditional concession «при существующем государственном строе» — given a
+    state and taxes that already exist, the least unjust way to hold land. (The
+    academic framing of this as "anarchism vs. a state fiscal reform" is recorded
+    as an attributed contrast, not the dive's spine.)
   date: 2026-06-21
   period: "Prophet period (post-1880); written during the 1905 Revolution"
   corpusSurface: >-
@@ -134,7 +136,7 @@ evidence:
     extract: extracts/v36_206_230_Velikij_greh.txt
     quoteRu: "при существующем государственном строе и обязательных податях невозможно придумать какого-либо другого лучшего, более справедливого, практического и мирного решения"
     quoteEn: "under the existing state structure and obligatory taxes it is impossible to devise any other better, more just, practical and peaceful solution (working English)"
-    significance: "Ch. IX — THE MARQUEE QUOTE. Tolstoy endorses George's single tax not absolutely but conditionally: GIVEN the state and its compulsory taxes (institutions he does not himself endorse), this is their most just possible form. The conditional clause is the whole answer to the anarchism-vs-fiscal-reform tension — the single tax is the least-unjust shape of an order he still wants abolished, not an embrace of the state."
+    significance: "Ch. IX — the keystone clause. Tolstoy endorses George's single tax not absolutely but conditionally: GIVEN the state and its compulsory taxes (institutions he does not himself endorse), this is their most just possible form — the least-unjust shape of an order he still wants abolished, not an embrace of the state. The change he actually calls for is moral (conscience, ch. VIII), not fiscal."
   - id: E13
     genre: works
     pssTom: 36
@@ -150,7 +152,7 @@ evidence:
     extract: extracts/v36_206_230_Velikij_greh.txt
     quoteRu: "мы, русские паразиты, вскормленные и получившие досуг для умственной работы трудами народа, поймем наш грех"
     quoteEn: "we, Russian parasites, fed and given leisure for mental work by the labour of the people, will understand our sin (working English)"
-    significance: "Ch. IX, the closing sentence. Tolstoy folds himself — the landowner-writer — into the indicted class. The first-person complicity (cf. the 21 April diary, the peasant who reproached him to his face) is the essay's moral signature and the seam between its anarchism and its reform programme."
+    significance: "Ch. IX, the closing sentence. Tolstoy folds himself — the landowner-writer — into the indicted class. The first-person complicity (cf. the 21 April diary, the peasant who reproached him to his face) is the essay's moral signature and the seam between its inward moral demand (conscience; inner activity) and its reform programme."
   # --- the variants (PSS Tom 36, pp. 464–475; pre-reform orthography) ---
   - id: E15
     genre: works
@@ -159,7 +161,7 @@ evidence:
     extract: extracts/v36_464_475_Velikij_greh_Varianty.txt
     quoteRu: "жизнь народа слагается не вследствие внешних форм, которые могут быть наложены на него внешними влияниями, а внутренней деятельностью отдельных личностей"
     quoteEn: "the life of the people is formed not as a result of external forms which may be imposed on it by external influences, but by the inner activity of individual persons (working English)"
-    significance: "Variant № 15 — the FIRST introduction (proof-set for Chertkov's «Свободное слово», then withdrawn). This anarchist sentence is the marquee tension made textual: Chertkov flagged it as standing 'in contradiction' with the rest of the essay, which insists the external form of land-use MUST change — and Tolstoy let it be lifted out of the article and printed separately. His own editor surgically divided the two voices. (Pre-reform orthography as in the TEI.)"
+    significance: "Variant № 15 — the withdrawn first introduction (proof-set for Chertkov's «Свободное слово»). The key sentence of the one paragraph Chertkov set apart and had printed separately as «Необходимый переворот»: the people's life is formed by the inner moral activity of individuals, not by external forms imposed from outside. Chertkov's recorded reason (8 July 1905 letter, per the PSS commentary — see E28) was that it stood against the rest of the essay, which insists the external forms of land-use must change. The primary fact, in his circle's own terms; the academic 'anarchism' label is not the dive's. (Pre-reform orthography as in the TEI.)"
   - id: E16
     genre: works
     pssTom: 36
@@ -192,7 +194,7 @@ evidence:
     extract: extracts/v36_656_665_Velikij_greh_commentary.txt
     quoteRu: "приехал из Англии Чертков, который предложил Толстому сделать в статье ряд сокращений"
     quoteEn: "Chertkov arrived from England and proposed that Tolstoy make a series of cuts in the article — PSS commentary (working English)"
-    significance: "The editorial intervention: Chertkov came to Yasnaya Polyana on 24 May 1905 and proposed the cuts (two whole chapters + parts of others); Tolstoy accepted them and regretted it («выбросил многое. Мне жалко»). The cut material is what the PSS prints as variants — including the anarchist sentence (E15)."
+    significance: "The editorial intervention: Chertkov came to Yasnaya Polyana on 24 May 1905 and proposed the cuts (two whole chapters + parts of others); Tolstoy accepted them and regretted it («выбросил многое. Мне жалко»). The cut material is what the PSS prints as variants — including the withdrawn paragraph (E15)."
   - id: E20
     genre: commentary
     pssTom: 36
@@ -201,6 +203,14 @@ evidence:
     quoteRu: "с редакционным примечанием, оговаривающим расхождение редакции с автором по существенным и важным вопросам"
     quoteEn: "with an editorial note specifying the editors' divergence from the author on substantial and important questions — PSS commentary (working English)"
     significance: "First publication: July 1905, Русская мысль, with an editorial note disclaiming the editors' agreement with the author on substantial points; reprinted the same year as a Posrednik brochure, in English in The Times, and (as «Великий грех. О земельной собственности») in Chertkov's «Свободное слово» No. 98. First in a collected edition only in 1911 (12th ed., confiscated)."
+  - id: E28
+    genre: commentary
+    pssTom: 36
+    pages: "665"
+    extract: extracts/v36_656_665_Velikij_greh_commentary.txt
+    quoteRu: "абзац этот, утверждающий независимость жизни народа от внешних форм, стоит в противоречии со всем предыдущим, где утверждается необходимость внешнего изменения форм пользования землей"
+    quoteEn: "this paragraph, asserting the independence of the people's life from external forms, stands in contradiction with all the preceding, where the necessity of an external change in the forms of land use is asserted — PSS commentary, paraphrasing Chertkov's letter of 8 July 1905 (n.s.) (working English)"
+    significance: "Chertkov's RECORDED REASON for setting the one paragraph of the withdrawn first introduction (E15) apart and printing it separately as «Необходимый переворот». The primary editorial fact at the heart of the dive: Tolstoy's closest friend and editor judged the inward-only statement to stand against the essay's insistence that the outward forms of land-use must change, and — with Tolstoy's assent — parted the two. Reported in the PSS commentary (Gorbachev); the letter is in АТБ. (In the same letter Chertkov also softened «происходят от» to «связаны с», reasoning that land-property's evil itself springs from a deeper evil, human egoism.)"
   # --- genesis: 1905 diaries (Tom 55) and letters (Tom 89) ---
   - id: E21
     genre: diary
@@ -282,7 +292,7 @@ entities:
     wikiType: person
     wikilinkTarget: "Vladimir Chertkov"
     vaultStatus: exists
-    role: "Disciple, editor, publisher. Came to Yasnaya Polyana 24 May–3 June 1905 and proposed the cuts that produced the variants; flagged and excised the anarchist sentence (E15) as contradicting the reform argument; published the essay (and its withdrawn first introduction, as «Необходимый переворот») via «Свободное слово»."
+    role: "Disciple, editor, publisher. Came to Yasnaya Polyana 24 May–3 June 1905 and proposed the cuts that produced the variants; set apart and separately published the one paragraph (E15) he judged to stand against the essay's argument (his reason in his 8 July 1905 letter, per the PSS commentary — E28); published the essay (and that paragraph, as «Необходимый переворот») via «Свободное слово»."
     sources: [jubilee-edition]
     evidenceRefs: [E19, E24, E26]
     ingestionPriority: 1
@@ -415,7 +425,7 @@ visuals:
     usable: true
     url: "https://commons.wikimedia.org/wiki/File:Repin_Vladimir_Chertkov.jpg"
     localPath: "visuals/commons-chertkov-repin-portrait.jpg"
-    note: "The editor who proposed the cuts and excised the anarchist sentence. Best-known likeness."
+    note: "The editor who proposed the cuts and set apart the withdrawn paragraph (E15). Best-known likeness."
   - id: V06
     type: title-page
     subject: "Henry George, «Progress and Poverty», 1881 (5th ed.) title page"
@@ -449,27 +459,23 @@ scholarship:
   summary: >-
     The specialist English study is Kenneth Wenzer, "Tolstoy's Georgist Spiritual
     Political Economy (1897–1910): Anarchism and Land Reform" (Am. J. of Economics
-    and Sociology, 1997) — the dive's chief triangulation partner. The received
-    view squarely confirms that George and the single tax were a lifelong, often-
-    restated Tolstoy commitment (read «по Николаеву» from the mid-1880s, intensified
-    after George's 1897 death; To the Working People 1902, the 1906 prefaces, the
-    1909 dream-conversation diary), not a one-off 1905 intervention. On the central
-    tension the scholarship splits — exactly as the marquee hypothesis predicts:
-    Wenzer reads the single-tax endorsement as a "concession" / "weakness" inside an
-    unresolved two-stage logic (pragmatic reform now; the state "melts away" through
-    moral change later), and notes Tolstoy "compartmentalized" rather than resolved
-    it; the single-tax movement's own commentary (Lebrun) reads the same endorsement
-    as genuine and foundational. Both camps agree he endorsed a state fiscal
-    mechanism; they disagree on whether that compromises or merely defers his anti-
-    statism. The corpus reaches below where the debate stops: Chertkov physically cut
-    the anarchist paragraph from the introduction (E15), and the contemporary English
-    translator's footnote already flagged that Tolstoy recommends George's scheme
-    "only under conditions of State organization and compulsory taxation" — the
-    conditional reading is embedded in the 1905 apparatus, not a later invention.
-    Read the movement-aligned (Georgist) framing as an interested party, per dive
-    method; the Sofia-centred "moralist who impoverished his family" frame does not
-    arise here, but the "lone prophet" picture is complicated by the documented
-    editorial hedging on both the Russian and English sides.
+    and Sociology, 1997) — the dive's main scholarly point of contrast. On one
+    point scholarship simply agrees with the corpus: George and the single tax were
+    a lifelong, often-restated Tolstoy commitment (read «по Николаеву» from the
+    mid-1880s, intensified after George's 1897 death; To the Working People 1902,
+    the 1906 prefaces, the 1909 dream-conversation diary), not a one-off 1905
+    intervention. Where scholarship turns the essay into a debate, the dive does not
+    follow it into the academy's vocabulary: Wenzer reads the single-tax endorsement
+    as a "concession/weakness" and a contradiction of Tolstoy's "anarchism"; the
+    single-tax movement's own commentary (Lebrun) reads the same endorsement as
+    genuine and foundational. Both argue Tolstoy's intent in the abstract, in terms
+    (anarchism, concession, contradiction) that are theirs, not his — recorded here
+    attributed and read critically, never as the dive's spine. The corpus reaches
+    below where the debate stops: Chertkov set the inward-only paragraph apart and
+    recorded his reason (E15, E28), and the 1905 English translator's footnote
+    already flagged the «existing state structure» conditionality — the conditional
+    reading is in the 1905 apparatus, not a later invention. (The Sofia-centred
+    "moralist who impoverished his family" frame does not arise here.)
   triangulation:
     - evidenceRef: E12
       conventionalView: "The single-tax endorsement contradicts (or at best sits unresolved with) Tolstoy's Christian-anarchist rejection of state coercion; Wenzer reads it as a 'concession/weakness' within a two-stage logic Tolstoy never philosophically resolved ('compartmentalized')."
@@ -575,7 +581,7 @@ workRecord:
       value: "Published legally in Russia (Русская мысль, July 1905) but the liberal editors added a note disclaiming agreement with the author «по существенным и важным вопросам» and dropped the third introductory paragraph («Так думают либералы…») — restored in the PSS from manuscript № 16. The English 'A Great Iniquity' carries a translator's footnote flagging that Tolstoy recommends George's scheme only 'under conditions of State organization and compulsory taxation'. The 1911 collected-edition printing (12th ed., part 16) was separately confiscated."
       evidenceRefs: [E20]
       confidence: high
-      note: "Twin editorial interventions on the introduction (Russian editors + Chertkov) — see the marquee section. The «Так думают либералы…» paragraph survives in the corpus main text (PSS restored it)."
+      note: "Twin editorial interventions on the introduction (Russian editors + Chertkov) — see the section 'The great sin, and the one remedy'. The «Так думают либералы…» paragraph survives in the corpus main text (PSS restored it)."
     - field: firstPublishedVenueType
       value: "journal"
       confidence: high
@@ -633,20 +639,20 @@ workRecord:
 # ── Coverage ledger ──────────────────────────────────────────────────────
 coverage:
   - { surface: "Genesis & composition", status: covered, note: "Dual-plan origin, the dated arc (16 Apr–July 1905), the peasant-reproach complicity seam, Chertkov's cuts — from the 1905 diaries, the 17 Apr Chertkov letter, and the PSS commentary." }
-  - { surface: "What the work says", status: covered, note: "All 9 chapters read; keystones for the thesis, the George argument, the parables (penned cows; whited sepulchres), the religious diagnosis, the marquee single-tax clause, the serfdom analogy." }
+  - { surface: "What the work says", status: covered, note: "All 9 chapters read; keystones for the thesis, the George argument, the parables (penned cows; whited sepulchres), the religious diagnosis, the conditional single-tax clause, the serfdom analogy." }
   - { surface: "Redactions & textual history", status: covered, note: "16 manuscripts; the «Народные заступники»→«Великий грех» merger; the two cut chapters + the withdrawn first introduction, read in the PSS variants (E15–E17)." }
   - { surface: "Publication, censorship & translation", status: covered, note: "Русская мысль July 1905 + editorial disclaimer + the cut «Так думают либералы…» paragraph; Posrednik brochure; Свободное слово No. 98; English 'A Great Iniquity' (Chertkov & I. F. Mayo), The Times 1 Aug 1905 + Free Age Press pamphlet 1906; 1911 collected-ed. confiscation. Commentary + scholarship sweep." }
   - { surface: "Reception & afterlife (Russia/foreign)", status: partial, note: "Covered: the Русская мысль disclaimer, the 1905-Revolution/SR-socialization-vs-Marxist-nationalization framing, the transatlantic single-tax-press amplification (The Public Chicago, British 'Land Values'). Open: named, quoted contemporary Russian critical replies (Kadet/SD/SR) to THIS essay — only the editors' disclaimer found; a deeper Russian-language pass needed." }
-  - { surface: "Scholarly context", status: covered, note: "Wenzer 1997 the anchor; triangulation done (complicates/extends/confirms). The anarchism-vs-single-tax debate mapped (Wenzer 'concession/weakness' vs Lebrun 'foundational')." }
-  - { surface: "Place in the cluster", status: covered, note: "Slavery of Our Times (extends), Kingdom of God (tests the anti-statism), christian-anarchism, christian-communism-socialism, copyright-renunciation (property-renunciation); seeds the P9 land-question-henry-george theme-dive." }
+  - { surface: "Scholarly context", status: covered, note: "Wenzer 1997 the main scholarly contrast; the academic 'anarchism vs. single tax' debate (Wenzer 'concession/weakness' vs Lebrun 'foundational') recorded as attributed contrast, read critically — not the dive's spine. The dive leads with Tolstoy's own framing (land as sin; conscience as cure)." }
+  - { surface: "Place in the cluster", status: covered, note: "Slavery of Our Times (extends), Kingdom of God (the refusal of state coercion the single tax answers to), christian-anarchism, christian-communism-socialism, copyright-renunciation (property-renunciation); seeds the P9 land-question-henry-george theme-dive." }
   - { surface: "The author's later verdict", status: partial, note: "The 6 June «Мне жалко» over the cuts is the nearest contemporary verdict; Tolstoy kept restating the Georgist case to 1910 (the 1909 dream-conversation diary, per Wenzer), but a later judgment on THIS essay specifically not sought." }
   - { surface: "Visual & manuscript record", status: covered, note: "8 PD images (Henry George 1888 = keystone; Tolstoy c.1905 from the A Great Iniquity pamphlet; Chertkov Repin; Progress and Poverty title page). Gaps: Nikolaev's Russian George translation title page + a PD Russian-peasant photo not surfaced. Manuscript facsimile not pursued (GTM/АТБ)." }
   - { surface: "Characters & prototypes", status: not-covered, note: "Non-fiction essay — no fictional cast. The 'characters' are the reported peasants of chs. I and VII (the old man who crosses himself; the woman offering her child); real but unnamed, not entity-routable except as types." }
 
 # ── Contradictions (intra-corpus: primary vs primary) ────────────────────
 contradictions:
-  - claim: "Tolstoy rejects all external/state mechanisms for changing the people's life (the pure anarchist line, stated in variant № 15: life is formed 'by the inner activity of individuals,' not external forms)."
-    correction: "The published essay insists the EXTERNAL form of land-use must change and endorses George's STATE-administered single tax as the remedy 'under the existing state structure and obligatory taxes' (E12). Chertkov flagged the contradiction and the anarchist sentence (E15) was lifted out of the article and printed separately — the tension was managed editorially, not resolved doctrinally."
+  - claim: "In the withdrawn paragraph (variant № 15), Tolstoy writes that the people's life is formed by the inner moral activity of individuals, not by external forms imposed from outside."
+    correction: "The published essay insists the EXTERNAL form of land-use must change, and endorses George's single tax as the remedy 'under the existing state structure and obligatory taxes' (E12). Chertkov judged the two to stand in contradiction (8 July 1905 letter, per the commentary — E28) and set the inward-only paragraph apart, printed separately as «Необходимый переворот» — the two emphases parted editorially, with Tolstoy's assent, not reconciled in argument."
     evidenceRef: E15
 
 # ── Not covered (with pointers) ──────────────────────────────────────────

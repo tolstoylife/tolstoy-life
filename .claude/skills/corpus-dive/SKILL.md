@@ -111,8 +111,9 @@ and converged on one shape. In brief, relative to the work-dive spine:
 - **Heaviest genesis & reception** — the composition-years witness sweep and the censorship-as-reception
   pass get the most budget.
 - **Three added index sections** — *Characters & prototypes* (routes `character` + `prototypes[]`,
-  `person`, and `group` entities), a promoted *Themes* section, and a *Marquee question* section that
-  states the dive's contested claim and tests it as a hypothesis (`confirms`/`complicates`/`extends`).
+  `person`, and `group` entities), a promoted *Themes* section, and a *Marquee question* section built
+  on Tolstoy's own central concern in the work, stated in his terms and shown from his words (not an
+  academic puzzle laid over it — see "Let Tolstoy speak; don't adopt academia's relabels").
 - **Heavy visuals** by default for a canonical novel.
 - **Flex, don't hard-code** — principals are not always fictional (route by what the figure is); a
   separately-catalogued companion text gets its own `workRecord`; reception flexes by era; a
@@ -279,8 +280,24 @@ skepticism, attribute it, and watch for the subtle framing/word-choice that soft
 Tolstoy's message — the Sofia-centred "moralistic dogmatist who tried to impoverish his family" frame
 (Popoff; *The Last Station*) is the worked example. Don't let contested movement-labels ("Tolstoyan")
 or villain framings ("Chertkov the antagonist") stick in the dive's own voice; attribute them to the
-outside. §5 "Scholarly context" is a divergence map, not corroboration. (Memory:
+outside. §5 "Scholarly context" is a small, attributed divergence map, not corroboration — keep it
+minimal, and where scholarship adds nothing a reader needs, leave it out. (Memory:
 `corpus-dive-ground-in-primary-not-mainstream`.)
+
+**Let Tolstoy speak; don't adopt academia's relabels.** tolstoy.life exists to let Tolstoy speak
+through his own works, letters, and diary — his words are the spine; the prose only stages and
+translates them. Academia and the church rename what he does: living by the practical teaching of Jesus
+becomes "Tolstoyanism"; the claim that the Kingdom of God is reachable by following that teaching
+becomes "anarchism" (or "communism," "moralism"). These relabels are the outside system's vocabulary —
+they shrink a critique of the whole order down to a critique of one institution (the state) and drift
+in meaning over time ("Christian anarchism" read very differently in 1905 than it does in 2026). **Do
+not organize a dive around them or use them in the dive's own voice.** When a source forces a label,
+name it as the outside view, attribute it, cross-link the dive that interrogates it (`tolstoyanism`,
+`christian-anarchism`), then return to his words — described in his terms (following Christ; the
+anti-property / anti-state / anti-money stance is downstream of that, in that order). Don't swing the
+other way into a counter-argument against academia either: litigating "the system" is a separate
+project and just another frame laid over the text. The fix is subtractive — drop the frame, let him
+speak.
 
 1. **Assemble claims & gaps.** List the dive's main findings from the evidence ledger. Collect the
    open gaps from the dossier: `needsReview` items, `notCovered` candidates worth a quick check,
@@ -294,13 +311,16 @@ outside. §5 "Scholarly context" is a divergence map, not corroboration. (Memory
    `author, year, work/title, url`. Lightweight fan-out (the search-and-triage shape of the
    `deep-research` skill) — **not** its full adversarial harness. Distinct from Phase 2's
    *visual-materials* sweep (images), which is unchanged.
-3. **Triangulate.** Classify each major finding against the conventional view: `confirms`
+3. **Map scholarship against the dive's findings (optional, light).** A contrast tool, not the dive's
+   spine — the findings come from Tolstoy's words first, and scholarship is set beside them, attributed.
+   Where it helps a reader, classify a finding against the conventional view: `confirms`
    (scholarship agrees), `complicates` (nuance / partial), `contradicts` (the primary source pushes
    back on the received narrative), `extends` (scholarship does not reach this — the corpus supplies
    primary grounding for a point scholars argued only thematically, or addresses one the literature
-   leaves open). `contradicts` and `extends` are the high-value cases. Each entry ties to its primary
-   `evidenceRef` and, *where there is a clear source*, an inline-attributed secondary citation (a
-   References-list entry — not a `[^n]` footnote).
+   leaves open). Each entry ties to its primary `evidenceRef` and, *where there is a clear source*, an
+   inline-attributed secondary citation (a References-list entry — not a `[^n]` footnote). Never frame
+   the dive's central question as the academic puzzle ("was Tolstoy really an X?") — that debate is the
+   distraction, not the dive.
 4. **Completeness loop (bounded, once).** Ask what scholars treat as central that the corpus sweep
    missed. If a real gap emerges (a key text, letter, episode, sub-theme), loop back for **one**
    targeted Phase 1→2 mini sweep+extract for it, then return. A gap that can't be resolved in-scope

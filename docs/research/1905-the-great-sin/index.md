@@ -1,7 +1,7 @@
 ---
 layer: reference
 title: "The Great Sin (Великий грех, 1905) — Tolstoy on private property in land"
-lastUpdated: 2026-06-21
+lastUpdated: 2026-06-22
 tags: [research, corpus-dive, work-dive, prophet-period, land-question, henry-george]
 ---
 
@@ -15,17 +15,17 @@ A primary-source corpus-dive on Tolstoy's 1905 essay on the private ownership of
 
 - **The thesis is moral before it is economic.** The root evil of Russian (and European and American) life is not political oppression but the deprivation of every man's natural right to the land he was born on. Tolstoy files land property in the same list as cannibalism, serfdom, judicial torture, capital punishment and war — institutions humanity has overcome or is overcoming. Land is the next on the moral ladder.
 
-- **The marquee tension is real and was managed editorially, not resolved.** Tolstoy the Christian anarchist denies the state any legitimate coercive role; yet here he endorses Henry George's single tax — a state-administered fiscal reform. The published essay frames the single tax conditionally: it is the best solution **«при существующем государственном строе и обязательных податях»** (under the existing state structure and obligatory taxes). And his editor Chertkov physically cut the anarchist sentence — "the life of the people is formed not by external forms but by the inner activity of individuals" — out of the introduction because it contradicted the reform argument, and let it be printed separately. The two voices were divided by scissors.
+- **The single tax is a conditional answer, not a programme.** Tolstoy endorses Henry George's single tax only **«при существующем государственном строе и обязательных податях»** (under the existing state structure and obligatory taxes) — given a state and taxes that already exist, the least unjust way to hold land. The change he actually calls for is not fiscal but moral: as with serfdom, the sin ends when the people who profit from it wake to it (ch. VIII).
 
 - **The remedy is conscience, not legislation.** What unties the sin is not constitutions, socialism, revolution, or land-purchase schemes, but the consciousness of the complicit — exactly as serfdom fell (in Tolstoy's reading) not by Alexander II's decree but because private men understood its sin. This is how Tolstoy keeps an anti-statist account of a reform a state would in fact administer.
 
 - **Tolstoy indicts himself.** He folds the landowner-writer into the guilty class — «мы, русские паразиты». The day before he began the essay, a peasant reproached him to his face for preaching against land-owning while buying up land: «было и больно и хорошо».
 
-- **Scholarship agrees the tension is unresolved.** The specialist study (Wenzer 1997) independently reads the single-tax endorsement as a "concession" / "weakness" within a two-stage logic Tolstoy "compartmentalized" rather than resolved — strong outside support for reading the essay as *complicating*, not contradicting, his anti-statism. The contemporary English translator's footnote already flagged the same conditionality in 1905.
+- **Chertkov cut a paragraph, and recorded why.** Preparing the first proofs, Chertkov — Tolstoy's closest friend and editor — set one paragraph of the introduction apart and had it printed separately (as «Необходимый переворот»). His reason, in a letter of 8 July 1905 and reported in the PSS commentary: the paragraph, which says the people's life is independent of external forms, «стоит в противоречии со всем предыдущим» — it stands against all the preceding, where the essay insists the outward forms of land-use must change. The corpus shows the seam — the cut, the two merged pieces, the regretted excisions — that outside readers can only infer.
 
 ## Why this matters
 
-The Great Sin is the clearest single case in the late corpus of Tolstoy endorsing a concrete, state-administered policy. Every other late essay tells the reader to withdraw consent from the state; this one tells him that, as long as the state and its taxes exist, there is a just way to levy them. It is therefore the sharpest test of how seriously to take his anarchism — and the dive's value is that the corpus shows the seam (Chertkov's cut, the two merged pieces, the regretted excisions) where the scholarship can only infer it. It is also the gateway to the whole land-question cluster (the single tax, To the Working People, the Henry George prefaces) that the next theme-dive will gather.
+In The Great Sin Tolstoy names the private ownership of land a sin — «великий грех», the surviving form of slavery and the root of the people's poverty — and locates the cure not in any reform a state could pass but in the awakened conscience of those who profit from it, exactly as he reads the fall of serfdom. Henry George's single tax enters only as a conditional concession: given a state and taxes that already exist, the least unjust way to hold land. The dive's value is that the corpus shows the editorial seam — Chertkov's cut, the two merged pieces, the regretted excisions — that outside readers can only infer. It is also the gateway to the whole land-question cluster (the single tax, To the Working People, the Henry George prefaces) that the next theme-dive will gather.
 
 ## The shape of the question
 
@@ -98,27 +98,31 @@ The PSS apparatus (Gorbachev, Tom 36, pp. 656–665) describes sixteen manuscrip
 
 The decisive intervention was Chertkov's. He came to Yasnaya Polyana on 24 May 1905 and «предложил Толстому сделать в статье ряд сокращений» — "proposed that Tolstoy make a series of cuts in the article" (working English; commentary). Two whole chapters and parts of others were cut; Tolstoy accepted and regretted it. The cut material is what the PSS prints as **variants** (Tom 36, pp. 464–475), which makes them more than discarded drafts — they are the essay Tolstoy would have preferred to print. They are sharper than the published text: the constitution «обезпечит право достаточных, праздных, паразитных сословий, но не права народа» (will secure the right of the propertied, idle, parasitic classes, but not the rights of the people — variant № 13); land property is «великий грех… и грех не прошедший, a настоящий, и не временный, а постоянно совершаемый» (a great sin… not past but present, not temporary but constantly committed — variant № 8).
 
-One cut matters above all the others, and it is the heart of the marquee question (next section): variant № 15.
+One cut matters above all the others (next section): variant № 15 — the withdrawn first introduction, and the paragraph Chertkov set apart from it.
 
-## The marquee question — anarchism vs. the single tax
+## The great sin, and the one remedy
 
-The hypothesis the dive tested: does The Great Sin **confirm, complicate, or contradict** Tolstoy's anti-statism? He denies the state any legitimate coercive role (see [The Kingdom of God Is Within You](../1890-1893-the-kingdom-of-god-is-within-you/index.html) and [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html), the [christian-anarchism](../christian-anarchism/index.html) dive). Yet he here endorses Henry George's single tax — a state-administered fiscal reform. Is the single tax a transitional concession, a lesser evil, or a genuine exception?
+Read in Tolstoy's own order, the essay is religious before it is economic. Private property in land is «великий грех», a sin of the same kind as serfdom — and, like serfdom, it falls only when the people who commit it and profit from it wake to it:
 
-The answer the corpus gives is **complicates, not contradicts** — and it gives it in two pieces of hard evidence the scholarship can only infer.
+> «…нужно только сознание своего греха всеми людьми, совершающими его или участвующими в нем, и желание избавления от него.»
+>
+> (…only the consciousness of their sin is needed, by all who commit it or take part in it, and the desire to be free of it.) — working English; ch. VIII, PSS Tom 36, p. 227.
 
-First, the **conditional clause** in chapter IX. Tolstoy does not endorse the single tax absolutely. He endorses it «при существующем государственном строе и обязательных податях» — *given* the state and its compulsory taxes, institutions he does not himself endorse, this is their most just possible form. The single tax is the least-unjust shape of an order he still wants abolished.
+The single tax is not his programme but his answer to a narrower question — *given* a state and its compulsory taxes, institutions he does not himself endorse, what is the least unjust way to hold land? He states it conditionally, and the condition is the whole of it:
 
-Second, and decisively, the **cut anarchist sentence**. The first introduction (proof-set for Chertkov's «Свободное слово», then withdrawn — variant № 15) contained this:
+> «…при существующем государственном строе и обязательных податях невозможно придумать какого-либо другого лучшего, более справедливого, практического и мирного решения.»
+>
+> (…under the existing state structure and obligatory taxes it is impossible to devise any other better, more just, practical and peaceful solution.) — working English; ch. IX, p. 229.
+
+The essay also carries, in its making, one fact the corpus can show and outside readers can only infer. Preparing the first proofs of the introduction for the «Свободное слово» edition, Chertkov — Tolstoy's closest friend and editor — set one paragraph apart from the withdrawn first introduction (variant № 15) and had it printed separately, after the introduction, under the title «Необходимый переворот» ("A Necessary Revolution"). Its key sentence:
 
 > «…жизнь народа слагается не вследствие внешних форм, которые могут быть наложены на него внешними влияниями, а внутренней деятельностью отдельных личностей.»
 >
 > (…the life of the people is formed not as a result of external forms which may be imposed on it by external influences, but by the inner activity of individual persons.) — working English; PSS Tom 36, p. 474.
 
-This is the pure anarchist line — and it stands in flat contradiction with the rest of the essay, which insists the *external form* of land use must change. Chertkov flagged exactly that contradiction; the sentence was lifted out of the article and printed separately (as «Необходимый переворот»). Tolstoy's own editor surgically divided the two voices because they would not lie down together. The tension was managed by scissors, not by argument — which is the strongest possible evidence that it was real and unresolved.
+Chertkov gave his reason in a letter of 8 July 1905 (new style), reported in the PSS commentary: this paragraph, which asserts "the independence of the people's life from external forms," «стоит в противоречии со всем предыдущим, где утверждается необходимость внешнего изменения форм пользования землей» — *stands in contradiction with all the preceding, where the necessity of an external change in the forms of land use is asserted.* So Tolstoy's two emphases — that the real change is inward and moral, and that the outward form of land-holding must change — were set side by side, and then, by his own editor and with his assent, gently parted: the inward-only statement lifted out of the article and printed on its own.
 
-The scholarship arrives independently at the same place. Kenneth Wenzer's "Tolstoy's Georgist Spiritual Political Economy (1897–1910): Anarchism and Land Reform" (1997) reads the endorsement as a «concession» and a «weakness» inside a two-stage logic — the single tax as the only workable reform *now*, the state «melting away» through moral change *later* — and concedes Tolstoy «compartmentalized» rather than resolved it. The single-tax movement's own commentary (Lebrun 1956) reads it the opposite way, as a genuine and foundational endorsement with no hedge; but that is movement-aligned reading by interested parties. Both camps agree he endorsed a state fiscal mechanism; they disagree only on whether that compromises or merely defers his anti-statism. The contemporary English translator's footnote to "A Great Iniquity" had already, in 1905, flagged that Tolstoy recommends George's scheme "only under conditions of State organization and compulsory taxation."
-
-So: The Great Sin **complicates** the anti-statism. It does not abandon it — the remedy is still conscience, not legislation (chapter VIII), and serfdom is the model precisely because (in Tolstoy's telling) it fell by moral awakening, not state decree. But it concedes a state mechanism as the just interim form, and the concession sat badly enough that the text had to be cut to hold it.
+That is the primary record: what Tolstoy wrote, and what his closest friend did with it, in their own terms. *Academic readers put it differently.* Kenneth Wenzer (1997) frames the single-tax endorsement as a "concession" or "weakness" and treats it as a contradiction of Tolstoy's "anarchism" — a puzzle of political theory Tolstoy himself never poses, and a label («anarchism») the project's [christian-anarchism](../christian-anarchism/index.html) dive interrogates rather than adopts. Set that reading beside Tolstoy's own and they part ways at the root: his order is sin, conscience, the following of Christ, with the single tax downstream of all three.
 
 ## Where the theme clusters
 
@@ -127,7 +131,7 @@ So: The Great Sin **complicates** the anti-statism. It does not abandon it — t
 | Genre | TEI id | Pages | Material |
 |---|---|---|---|
 | works | `v36_206_230_Velikij_greh` | 206–230 | the essay, 9 chapters |
-| works (variants) | `v36_464_475_Velikij_greh_Varianty` | 464–475 | 16 cut passages incl. the anarchist sentence (№ 15) |
+| works (variants) | `v36_464_475_Velikij_greh_Varianty` | 464–475 | 16 cut passages incl. the withdrawn paragraph (№ 15) |
 | commentary | `v36_656_665_Velikij_greh` | 656–665 | Gorbachev, история писания |
 
 **Diary (PSS Tom 55, 1905):**
@@ -150,11 +154,11 @@ So: The Great Sin **complicates** the anti-statism. It does not abandon it — t
 
 ## Scholarly context
 
-The specialist English study is Kenneth Wenzer's "Tolstoy's Georgist Spiritual Political Economy (1897–1910): Anarchism and Land Reform" (*American Journal of Economics and Sociology*, 1997) — the dive's chief triangulation partner. The received view **confirms** the dive's reading of the George commitment: it was lifelong and often-restated, not a one-off 1905 intervention. Tolstoy read George «по Николаеву» from about 1885 (Lebrun), became the movement's foremost literary champion after George's death in 1897 (Wenzer), and returned to the single tax repeatedly — *To the Working People* (1902), the 1906 prefaces to George (the *Social Problems* Russian edition Nikolaev translated), and the famous October 1909 diary entry recording a dream-conversation with Henry George.
+The specialist English study is Kenneth Wenzer's "Tolstoy's Georgist Spiritual Political Economy (1897–1910): Anarchism and Land Reform" (*American Journal of Economics and Sociology*, 1997) — the dive's main scholarly point of contrast. On one point scholarship simply agrees with the corpus: the George commitment was lifelong and often-restated, not a one-off 1905 intervention. Tolstoy read George «по Николаеву» from about 1885 (Lebrun), became the movement's foremost literary champion after George's death in 1897 (Wenzer), and returned to the single tax repeatedly — *To the Working People* (1902), the 1906 prefaces to George (the *Social Problems* Russian edition Nikolaev translated), and the famous October 1909 diary entry recording a dream-conversation with Henry George.
 
-On the central tension the scholarship is split, which is what the "complicates" reading predicts. Wenzer treats it as a "concession/weakness" Tolstoy never resolved (above); the Georgist movement reads it as foundational. The corpus reaches **below** where the debate stops: scholarship argues Tolstoy's intent in the abstract, while the dive can point at the mechanism — the cut sentence, the regretted excisions, the two merged pieces.
+Where scholarship turns the essay into a debate, the corpus does not follow it. Academics split over whether the single tax compromises Tolstoy's "anarchism" — Wenzer reads the endorsement as a "concession/weakness" Tolstoy never resolved; the Georgist movement (Lebrun) reads it as foundational. Both are arguing his intent in the abstract, in a vocabulary (anarchism, concession, contradiction) that is theirs, not his. The corpus reaches **below** where the debate stops: it can point at the mechanism — the cut paragraph, Chertkov's recorded reason, the regretted excisions, the two merged pieces — and let Tolstoy's own terms (sin, conscience, the following of Christ) stand as written.
 
-One scholarly convergence is worth flagging because the corpus corroborates it directly. The *Русская мысль* editors did not only add a disclaimer; they dropped the third introductory paragraph («Так думают либералы…»). So **both** the Russian liberal editors **and** Chertkov on the English/émigré side performed editorial surgery on the introduction — the Russians cutting the "liberals think" paragraph, Chertkov cutting the anarchist paragraph. The PSS restored the «Так думают либералы…» paragraph from manuscript № 16, so the corpus main text carries the very passage the journal cut — the parallel is visible inside the project's own sources.
+One scholarly convergence is worth flagging because the corpus corroborates it directly. The *Русская мысль* editors did not only add a disclaimer; they dropped the third introductory paragraph («Так думают либералы…»). So **both** the Russian liberal editors **and** Chertkov on the English/émigré side performed editorial surgery on the introduction — the Russians cutting the "liberals think" paragraph, Chertkov setting apart the inner-life paragraph. The PSS restored the «Так думают либералы…» paragraph from manuscript № 16, so the corpus main text carries the very passage the journal cut — the parallel is visible inside the project's own sources.
 
 Caveat: this was an English-first sweep. Named, quoted contemporary Russian critical replies (Kadet / Social-Democrat / Socialist-Revolutionary) to *The Great Sin* specifically were not surfaced — only the editors' disclaimer and the single-tax-press amplification. A deeper Russian-language pass would strengthen the reception record. (See *Material not covered*.)
 
@@ -174,9 +178,9 @@ The documented foreign uptake was movement amplification (The Times → the sing
 
 ## Place in the cluster
 
-The Great Sin extends [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html) (the economic/labour critique, here turned onto land) and tests the anti-statism of [The Kingdom of God Is Within You](../1890-1893-the-kingdom-of-god-is-within-you/index.html). It sits beside the [christian-anarchism](../christian-anarchism/index.html) and [christian-communism-socialism](../christian-communism-socialism/index.html) dives (the political theology the single tax strains) and the [copyright-renunciation](../copyright-renunciation/index.html) dive (the renunciation-of-property strand — Tolstoy gave up his own copyrights in the same spirit the essay asks landowners to give up land).
+The Great Sin extends [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html) (the economic/labour critique, here turned onto land) and stands with [The Kingdom of God Is Within You](../1890-1893-the-kingdom-of-god-is-within-you/index.html) (the refusal of state coercion the single tax must answer to). It sits beside the [christian-anarchism](../christian-anarchism/index.html) and [christian-communism-socialism](../christian-communism-socialism/index.html) dives — where the labels academia attaches to this strand of Tolstoy's thought are interrogated, not adopted — and the [copyright-renunciation](../copyright-renunciation/index.html) dive (the renunciation-of-property strand — Tolstoy gave up his own copyrights in the same spirit the essay asks landowners to give up land).
 
-It is the **marquee text of the land-question cluster** and seeds the planned `land-question-henry-george` theme-dive (P9), which will carry the satellites cross-referenced but not deep-dived here: *To the Working People* (Tom 35, 1902), *The First Step* (Tom 29, 1891), *The Only Possible Solution of the Land Question* (Tom 36, 1906), the two Henry George prefaces (Tom 36, 1906), *Letter to a Peasant on the Land* (Tom 90, 1905), and *How the Working People Can Free Themselves* (Tom 90, 1905). The Henry George, S. D. Nikolaev and single-tax entities this dive routes are the cluster's spine.
+It is the **central text of the land-question cluster** and seeds the planned `land-question-henry-george` theme-dive (P9), which will carry the satellites cross-referenced but not deep-dived here: *To the Working People* (Tom 35, 1902), *The First Step* (Tom 29, 1891), *The Only Possible Solution of the Land Question* (Tom 36, 1906), the two Henry George prefaces (Tom 36, 1906), *Letter to a Peasant on the Land* (Tom 90, 1905), and *How the Working People Can Free Themselves* (Tom 90, 1905). The Henry George, S. D. Nikolaev and single-tax entities this dive routes are the cluster's spine.
 
 ## The author's later verdict
 
@@ -202,10 +206,10 @@ Also held: a 1888 oil portrait and an 1865 daguerreotype of George; the Repin po
 
 ## Method
 
-A work-subject corpus-dive (single work → one proposed `workRecord`), not `--novel`. The scope was fixed by the prompt: pin the composition window from the corpus, route Henry George as the central person entity, triangulate the anti-statism tension, and seed the P9 land-question dive without deep-diving its satellites.
+A work-subject corpus-dive (single work → one proposed `workRecord`), not `--novel`. The scope: pin the composition window from the corpus, route Henry George as the central person entity, let Tolstoy's own framing lead (land as «великий грех»; conscience, not legislation, as the cure) with scholarship kept as an attributed contrast, and seed the P9 land-question dive without deep-diving its satellites. (Re-cut 2026-06-22 to lead with Tolstoy's religious framing and demote the academic "anarchism vs. the single tax" puzzle to attributed contrast — see the dev-blog note.)
 
 - **Sources read:** the essay, its variants and its composition-history commentary (PSS Tom 36); the 1905 diaries (Tom 55, seven entries 16 Apr–18 Jun); the 17 Apr 1905 letter to Chertkov (Tom 89). Extracted with `extract_tei.py --choice=reg --notes=auto` (pre-reform orthography resolved to modern, as for every Prophet-period text; variants keep their pre-reform spelling where the TEI carries it).
-- **Byte-fidelity:** `verify_quotes.py` passes 27/27 — every cited Russian quotation appears verbatim in its extract.
+- **Byte-fidelity:** `verify_quotes.py` passes 28/28 — every cited Russian quotation appears verbatim in its extract.
 - **Scholarship + visuals:** an English-first scholarship sweep (anchor: Wenzer 1997) and a light Wikimedia-Commons visuals sweep, both run as separate passes.
 - **Verification:** a separate-pass verifier (Phase 5), never self-approved.
 - **Links:** prior dives cross-linked above — [The Slavery of Our Times](../1900-the-slavery-of-our-times/index.html), [The Kingdom of God Is Within You](../1890-1893-the-kingdom-of-god-is-within-you/index.html), [christian-anarchism](../christian-anarchism/index.html), [christian-communism-socialism](../christian-communism-socialism/index.html), [copyright-renunciation](../copyright-renunciation/index.html). The dive proposes a `works/` record (`the-great-sin`) but writes no vault pages — ingestion is a separate, human-in-the-loop step.
