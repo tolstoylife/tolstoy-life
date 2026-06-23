@@ -100,6 +100,30 @@ Three deliverables, staged in the dive folder:
    serving as the machine-English version and as the neutral third reference for the translation
    diagnostic. Optional per work; see Machine translation below.
 
+## The canonical edition (the spine)
+
+Two different roles hide under "which version":
+
+- **Spine = the canonical edition** — what the work *is*. The authoritative text the marks anchor to.
+- **Default-to-open** — what *loads first* in the reader. A reading convenience (set to the 1905 English).
+
+**The spine is the Russian PSS established text — always.** Four reasons, all pointing the same way:
+
+1. **His voice.** The governing principle: the Russian is what Tolstoy wrote; every translation is one
+   filter removed. The canonical text has to be his words.
+2. **The marks are defined against it.** A cut *is* a passage absent from the PSS established text; a
+   softening *is* a change to it. The Russian PSS is the ruler everything else is measured with;
+   translations are projections of it.
+3. **Translations are plural and each is biased** — nothing derivative can be canonical, by definition.
+4. **The PSS editors already did the edition-scholarship.** Where two Russian editions differ
+   (Русская мысль vs «Свободное слово»), they established the base text and recorded the other as
+   variants. We defer to that — we don't re-adjudicate which Russian edition is "right."
+
+So translations never compete for spine; they are *derived versions* measured against it. Among multiple
+Russian editions, the PSS established text is the spine and the others are edition-diffs against it.
+The spine's chapter structure also sets the **section anchors** every version aligns to in split-view.
+This doesn't fight the English mission: English is how we *serve* the work; Russian is what it *is*.
+
 ## The encoding vocabulary
 
 The marks are **CriticMarkup** — an existing plain-text standard for editorial change-tracking (deleted /
@@ -229,6 +253,7 @@ expected and marks future work.
 
 ## Settled in this brainstorm
 
+- **Spine (canonical edition)** = the Russian PSS established text — always; translations are derived versions.
 - **Default version** = the 1905 English where it exists, machine English otherwise, Russian one click away.
 - **Default reading state** = bare focus mode; all enrichments opt-in.
 - **Overview** = distilled from `index.md` (phase 1: mostly as-is), dense fact / lean opinion, in Tolstoy's terms.
