@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-06-22
+lastUpdated: 2026-06-23
 tags: [research, planning, design, website-launch]
 title: "Interactive reader's editions — bundling each dive's text (design)"
 ---
@@ -39,6 +39,22 @@ with toggleable layers summoned from a side rail — wikilinks, the passages Tol
 the censor cut, edition and translation differences, modal info boxes on the entities. Spec 1 produces
 the content those layers render; spec 2 builds the reader.
 
+## Governing principle — Tolstoy's voice, not the mainstream filter
+
+The reading text, the overview page, and the dives all present the work **in Tolstoy's own terms** —
+his voice, his version. Too many resources treat him as a specimen, filtering his words through the
+mainstream society's vocabulary and values to explain what he "really meant." We don't.
+
+The anti-example (Standard Ebooks' overview of *The Kingdom of God Is Within You*): "the most
+influential work of Christian anarchism… if it didn't itself claim to merely be pointing out Christian
+anarchism as the plain meaning of the gospels." It reaches for a label Tolstoy refused, *notices* he'd
+refuse it, and applies it anyway. Exactly the failure to avoid.
+
+This is already the dives' rule (`corpus-dive-ground-in-primary-not-mainstream`): lead with Tolstoy's /
+Biryukov's / Chertkov's words; mainstream scholarship is contrast to read critically, never a baseline
+to confirm. The guardrail that keeps it honest cuts **both** ways: present what he wrote in his terms —
+neither softened by mainstream labels nor sharpened past what he actually said (`ingestion-accuracy-both-directions`).
+
 ## Where the text lives — `works/`, not `wiki/`
 
 The site already has the destination in skeleton:
@@ -63,15 +79,25 @@ is wrong for this design — the reading text is an **enriched reader's edition*
 
 Three deliverables, staged in the dive folder:
 
-1. **The enriched text** — the work's text as a reader's edition: one reading spine in **English**
-   (the period translation where one exists in the public domain; otherwise the machine pass), marked
-   up with the encoding below, wikilinks embedded. The mission is an English-language resource, so
-   English is the default spine; the Russian is always available as a switchable edition.
-2. **The overview-page draft** — the reader-facing "about this work" body for the future
-   `works/.../Work-Title.md` record. The dossier's `workRecord` already supplies the schema frontmatter;
-   this is the prose around it (significance, a short genesis summary, links to the key entities).
+1. **The enriched text — one file per version.** A work has several *versions* of the same text:
+   the **Russian** (Tolstoy's original, from the corpus), the **1905 English** (the period translation
+   made in his lifetime, where a public-domain one exists), and a **machine English** (fresh, neutral).
+   Each version is its **own standalone file** (`<slug>.ru.md`, `<slug>.en-1905.md`, `<slug>.en-machine.md`)
+   so two can sit side by side in a split-view later and the Russian is never buried under the English.
+   All version files share the **same section anchors** (the work's own structure — Great Sin is intro +
+   I–IX) so the columns line up. The editorial marks and wikilinks are written into each version *in its
+   own language* — the Russian carries the byte-true variant from `extracts/`, the English carries a
+   labelled machine rendering of it — all **derived from the one dossier**, not hand-duplicated.
+   Default version the reader opens: the 1905 English where it exists, machine English otherwise, with
+   Russian one click away.
+2. **The overview-page draft** — the reader-facing "about this work" page, **distilled from the dive's
+   `index.md`** (phase 1: mostly as-is, with the research scaffolding — coverage, needs-review,
+   methodology — trimmed off). **Dense with fact, lean on opinion, in Tolstoy's terms** (see the
+   governing principle). Progressive disclosure, like the e-reader: a light orientation first, the
+   detail beneath. The dossier's `workRecord` supplies the schema frontmatter; this is the prose around
+   it. This page **is** the work's node in the graph — see "The work's page" below.
 3. **The machine-translation pass** — a one-pass English translation, labelled "machine, unverified,"
-   serving as the **Machine EN** edition and as the neutral third reference for the translation
+   serving as the machine-English version and as the neutral third reference for the translation
    diagnostic. Optional per work; see Machine translation below.
 
 ## The encoding vocabulary
@@ -130,6 +156,11 @@ the single tax that [[Henry George]] proposed.
 Plus a **minimal focus-mode reading template** and CSS so the layers are visible and toggleable in the
 preview. This is preview-grade only — the real rail, theming, and bookmarks are spec 2.
 
+**Default reading state is bare.** The marks live in the file, but the default view shows *none* of
+them — clean focus mode, pleasing typography, the text alone. Wikilinks, footnotes, cut-reveals, and
+the version switcher are all **opt-in**, summoned by the reader. For spec 1 this is free: default CSS
+hides the marks; a toggle reveals them.
+
 ## Machine translation
 
 - **Rides the dive.** When a work's text is bundled, generate its machine pass then. Never a
@@ -148,8 +179,8 @@ preview. This is preview-grade only — the real rail, theming, and bookmarks ar
 - `primary-sources/**` and the dive's `extracts/**` (byte-faithful originals) are **untouched**. The
   enriched text is openly a reader's edition, derived from them.
 - `verify_quotes.py` still guards every locked quote against the extracts — the existing gate is unchanged.
-- The reading text is **English-spine + Russian-available**; the Russian column is the corpus text, not
-  a re-typing.
+- The Russian version is the corpus text, not a re-typing; the English versions are the period
+  translation and the labelled machine pass.
 
 ## How it's built and run
 
@@ -161,30 +192,54 @@ preview. This is preview-grade only — the real rail, theming, and bookmarks ar
 - **Pilot: The Great Sin.** Its period English ("A Great Iniquity," trans. Tchertkoff & Mayo, *The Times*
   1905) is public-domain and identified on Wikisource; its cut/variant data is the richest in the corpus.
 
-## Wiki scope (the question you flagged)
+## The work's page (and wiki scope)
 
-Settled: the reader edition **embeds** `[[wikilinks]]` (toggleable) and the dive **proposes** the
-`works/` record (as it already does). It does **not** itself create wiki entity pages — those stay the
-separate human-in-the-loop ingestion step. Embedded wikilinks may point at not-yet-created pages; that's
+**One page, not two.** The overview page **is** the work's node in the graph — there is no separate
+`wiki/` stub for the work. `[[The Great Sin]]` resolves to the overview page; backlinks collect there.
+
+```
+[[The Great Sin]] ──► works/non-fiction/.../The Great Sin.md   (type: work — the node itself)
+                                  │  its text links out ▼
+                                  └─► wiki/Henry George.md       (type: person — an entity)
+```
+
+`wiki/` stays for the entities a text points *at* — people, concepts, places. A **work** is a
+first-class node too, but it lives in `works/` because it carries the schema record *and* the reading
+experience (versions, library, progress) an entity never has. Give the overview a `type: work` so the
+graph can tell a work-node from a person-node (the Tolstoy-Lab already found it wants that 13th type) —
+but type is a label, not a second home. A separate `wiki/the-great-sin.md` would just be two pages
+fighting over which is "the work," and they'd drift.
+
+The reader edition **embeds** `[[wikilinks]]` (toggleable) and the dive **proposes** the `works/` record
+(as it already does). It does **not** create the wiki *entity* pages — those stay the separate
+human-in-the-loop ingestion step. Embedded wikilinks may point at not-yet-created entity pages; that's
 expected and marks future work.
 
 ## Out of scope (spec 2 or beyond)
 
 - The full e-reader UI: focus mode polish, the docked rail, theming, TOC, **bookmarks, highlights,
   personal annotations, persistence**. (Drawn in the rail from day one, built last.)
+- **"My Library", reading progress (1% opened → 100% read), PWA offline caching, reader comments, and
+  the per-work update/commit log.** All website-app features — the overview page is *designed to host*
+  them, but they're built in spec 2.
 - Corpus-wide machine translation as a batch job.
 - The reader's *own* highlights/bookmarks baked into source files — that's browser state, not text.
 - Editorial "this is important" highlighting — fights the bare-voice rule.
 - Changes to `corpus-dive` internals beyond adding the companion step.
 
-## Open questions to confirm before/within the plan
+## Settled in this brainstorm
 
-1. **Overview draft origin** — author the reader-facing overview fresh, or distill it from the existing
-   research `index.md`? (They overlap; `index.md` is dense and cited, the overview is lighter.)
-2. **Per-edition file mechanics** — one file per edition (`<slug>.en-period.md`, `<slug>.en-machine.md`,
-   `<slug>.ru.md`) that the switcher loads, vs. one spine file with the others referenced. The marks
-   live on the spine; alternate editions are parallel reference texts.
-3. **Do cuts/softenings show in every edition or only the spine?** A cut is an edition fact (it lives in
-   the Russian variants); decide whether the Russian column shows its own marks or only the spine does.
-4. **Period-English sourcing/cleanup** — fetching and cleaning the PD translation (footnotes, section
-   numbering) is real per-work work; budget for it.
+- **Default version** = the 1905 English where it exists, machine English otherwise, Russian one click away.
+- **Default reading state** = bare focus mode; all enrichments opt-in.
+- **Overview** = distilled from `index.md` (phase 1: mostly as-is), dense fact / lean opinion, in Tolstoy's terms.
+- **One file per version**, shared section anchors; cuts shown in every version, in its own language, all derived from the dossier.
+- **One page per work** — the overview page is the graph node (`type: work`), homed in `works/`; no separate wiki stub.
+- **Tolstoy's voice** is the governing principle for text, overview, and dives alike.
+
+## Left for the implementation plan
+
+- **Companion step shape** — a small standalone skill vs. a `--bundle-text` mode on a finished dive.
+- **`pymdownx.critic` availability** — confirm the package is installed; else the ~30-line inline pattern.
+- **Period-English sourcing/cleanup** — fetching and cleaning the PD translation (footnotes, section
+  numbering) is real per-work work; budget for it.
+- **Section-anchor scheme** — the exact mechanism that keeps version files aligned for split-view.
