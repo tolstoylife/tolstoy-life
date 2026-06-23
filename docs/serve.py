@@ -33,6 +33,7 @@ def require(package, pip_name=None):
                                "--break-system-packages", "-q"])
 
 require("markdown")
+require("pymdownx", "pymdown-extensions")
 import markdown
 from markdown.extensions.tables import TableExtension
 from markdown.extensions.fenced_code import FencedCodeExtension
@@ -482,6 +483,8 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 
 # ── Markdown → HTML ────────────────────────────────────────────────────────────
 
+from markdown.extensions.wikilinks import WikiLinkExtension
+
 MD = markdown.Markdown(extensions=[
     TableExtension(),
     FencedCodeExtension(),
@@ -489,7 +492,15 @@ MD = markdown.Markdown(extensions=[
     # <br> (Markdown spec). Intended breaks still work via two trailing spaces.
     "sane_lists",
     "attr_list",
+    "footnotes",            # the work's own authorial/translator notes ([^n])
+    "pymdownx.critic",      # editorial marks: {--cut--} {++add++} {~~a~>b~~} {>>note<<} {==hi==}
+    WikiLinkExtension(base_url="/wiki/", end_url=".html", html_class="wikilink"),
 ])
+
+def render_body(text: str) -> str:
+    """Convert a Markdown string (CriticMarkup, footnotes, [[wikilinks]]) to an HTML fragment."""
+    MD.reset()
+    return MD.convert(text)
 
 def md_to_html(md_path: Path) -> str:
     """Convert a markdown file to a full HTML page."""
@@ -533,8 +544,7 @@ def md_to_html(md_path: Path) -> str:
             lede = para_match.group(1)[:160].strip()
 
     # Convert markdown
-    MD.reset()
-    body_html = MD.convert(text)
+    body_html = render_body(text)
 
     # Relative path for breadcrumb
     rel = md_path.relative_to(ROOT)

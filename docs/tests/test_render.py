@@ -1,0 +1,23 @@
+import pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))  # docs/
+import serve
+
+def test_critic_deletion_renders_del():
+    html = serve.render_body("a {--cut here--} b")
+    assert "<del" in html and "cut here" in html
+
+def test_critic_substitution_renders_old_and_new():
+    html = serve.render_body("x {~~springs from~>is connected with~~} y")
+    assert "springs from" in html and "is connected with" in html
+
+def test_critic_comment_renders_note():
+    html = serve.render_body("x {>>Chertkov softened this<<} y")
+    assert "Chertkov softened this" in html
+
+def test_footnote_renders():
+    html = serve.render_body("Body text[^1]\n\n[^1]: the footnote")
+    assert "the footnote" in html and ("footnote" in html)
+
+def test_wikilink_renders_link():
+    html = serve.render_body("the single tax that [[Henry George]] proposed")
+    assert "Henry George" in html and "wikilink" in html
