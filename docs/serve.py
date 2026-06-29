@@ -606,6 +606,8 @@ def md_to_html(md_path: Path) -> str:
 <div id="ann-tooltip"></div>
 <div id="ann-bar">
   <button id="ann-export">Copy annotations</button>
+  <button id="ann-import">Import…</button>
+  <input id="ann-import-file" type="file" accept="application/json" hidden>
   <button class="danger" id="ann-clear">Clear all</button>
 </div>
 
@@ -635,11 +637,15 @@ def md_to_html(md_path: Path) -> str:
   // ── Fuzzy text anchor ────────────────────────────────────────────────────
   function getContext(range) {{
     const selected = range.toString();
-    const container = range.commonAncestorContainer;
-    const full = (container.textContent || container.innerText || '');
+    let el = range.commonAncestorContainer;
+    if (el.nodeType === 3) el = el.parentNode;
+    const para = el.closest('[id^="p-"]');
+    if (!para) return null;
+    const full = para.textContent || '';
     const start = full.indexOf(selected);
     if (start === -1) return null;
     return {{
+      paraId: para.id,
       text: selected,
       before: full.slice(Math.max(0, start - 30), start),
       after: full.slice(start + selected.length, start + selected.length + 30)
@@ -648,20 +654,14 @@ def md_to_html(md_path: Path) -> str:
 
   // ── Rendering ────────────────────────────────────────────────────────────
   function findAndWrap(ann, index) {{
-    const main = document.querySelector('main');
-    if (!main) return;
-    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    const para = ann.anchor.paraId ? document.getElementById(ann.anchor.paraId) : null;
+    const scope = para || document.querySelector('main');
+    if (!scope) return;
+    const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) {{
       const idx = node.textContent.indexOf(ann.anchor.text);
       if (idx === -1) continue;
-      const before10 = ann.anchor.before.slice(-10);
-      const after10 = ann.anchor.after.slice(0, 10);
-      const nodeText = node.textContent;
-      const contextOk = (!before10 || nodeText.slice(Math.max(0,idx-10), idx).includes(before10.slice(-4)))
-                     || (!after10  || nodeText.slice(idx + ann.anchor.text.length, idx + ann.anchor.text.length + 10).includes(after10.slice(0,4)));
-      if (!contextOk && ann.anchor.before && ann.anchor.after) continue;
-
       const before = node.textContent.slice(0, idx);
       const after = node.textContent.slice(idx + ann.anchor.text.length);
       const mark = document.createElement('mark');
@@ -793,26 +793,44 @@ def md_to_html(md_path: Path) -> str:
 
   function updateBar() {{
     const anns = loadDoc();
-    bar.style.display = anns.length > 0 ? 'flex' : 'none';
+    const has = anns.length > 0;
+    // Keep the bar present so Import is reachable on a page with no annotations
+    // (e.g. right after Clear all). Export/Clear only show when there's something.
+    bar.style.display = 'flex';
+    document.getElementById('ann-export').style.display = has ? '' : 'none';
+    document.getElementById('ann-clear').style.display = has ? '' : 'none';
   }}
 
   document.getElementById('ann-export').addEventListener('click', () => {{
     const anns = loadDoc();
     if (!anns.length) return;
-    const lines = ['# Annotations — ' + DOC_KEY, ''];
-    anns.forEach((a, i) => {{
-      lines.push('## ' + (i+1) + '. ' + a.created.slice(0,10));
-      lines.push('> ' + a.anchor.text);
-      lines.push('');
-      lines.push(a.comment);
-      lines.push('');
-    }});
-    navigator.clipboard.writeText(lines.join('\\n')).then(() => {{
+    const payload = JSON.stringify({{ [DOC_KEY]: anns }}, null, 2);
+    navigator.clipboard.writeText(payload).then(() => {{
       const btn = document.getElementById('ann-export');
-      const orig = btn.textContent;
-      btn.textContent = 'Copied!';
+      const orig = btn.textContent; btn.textContent = 'Copied!';
       setTimeout(() => {{ btn.textContent = orig; }}, 1800);
     }});
+  }});
+
+  function mergeImported(obj) {{
+    const incoming = obj[DOC_KEY] || [];
+    if (!incoming.length) return;
+    const anns = loadDoc();
+    const seen = new Set(anns.map(a => a.anchor.paraId + '|' + a.anchor.text + '|' + a.comment));
+    incoming.forEach(a => {{
+      const key = (a.anchor.paraId||'') + '|' + a.anchor.text + '|' + a.comment;
+      if (!seen.has(key)) {{ anns.push(a); seen.add(key); }}
+    }});
+    saveDoc(anns); renderAll();
+  }}
+
+  document.getElementById('ann-import').addEventListener('click', () => {{
+    const pasted = prompt('Paste exported annotations JSON:');
+    if (pasted) {{ try {{ mergeImported(JSON.parse(pasted)); }} catch {{ alert('Not valid JSON.'); }} }}
+  }});
+  document.getElementById('ann-import-file').addEventListener('change', e => {{
+    const f = e.target.files[0]; if (!f) return;
+    f.text().then(t => {{ try {{ mergeImported(JSON.parse(t)); }} catch {{ alert('Not valid JSON.'); }} }});
   }});
 
   document.getElementById('ann-clear').addEventListener('click', () => {{
