@@ -32,6 +32,17 @@ def build_smil(section_id, xhtml_href, audio_href, timing):
             f'clipEnd="{clock(c["end"])}"/></par>')
     return _SMIL.format(sec=section_id, xhtml=xhtml_href, pars="\n".join(pars))
 
+def page_list_nav(seg):
+    items = []
+    for sec in seg["sections"]:
+        for p in sec["paragraphs"]:
+            if p.get("pss"):
+                anchor = "page-" + p["pss"].replace(":", "-")
+                items.append(f'<li><a href="text/{sec["id"]}.xhtml#{anchor}">'
+                             f'PSS {p["pss"]}</a></li>')
+    return ('<nav epub:type="page-list" hidden="hidden"><ol>'
+            + "".join(items) + "</ol></nav>")
+
 import os
 from ebooklib import epub
 from reader.build_xhtml import render_section_xhtml
