@@ -31,3 +31,71 @@ def build_smil(section_id, xhtml_href, audio_href, timing):
             f'<audio src="{audio_href}" clipBegin="{clock(c["begin"])}" '
             f'clipEnd="{clock(c["end"])}"/></par>')
     return _SMIL.format(sec=section_id, xhtml=xhtml_href, pars="\n".join(pars))
+
+import os
+from ebooklib import epub
+from reader.build_xhtml import render_section_xhtml
+
+_A11Y = [   # schema.org accessibility metadata (EPUB Accessibility 1.1 / WCAG 2.1 AA)
+    ("schema:accessMode", "textual"), ("schema:accessMode", "auditory"),
+    ("schema:accessModeSufficient", "textual"),
+    ("schema:accessModeSufficient", "textual,auditory"),
+    ("schema:accessibilityFeature", "synchronizedAudioText"),
+    ("schema:accessibilityFeature", "readingOrder"),
+    ("schema:accessibilityFeature", "structuralNavigation"),
+    ("schema:accessibilityFeature", "displayTransformability"),
+    ("schema:accessibilityHazard", "none"),
+    ("schema:accessibilitySummary",
+     "Read-along edition with sentence-level synchronized narration."),
+]
+
+def build_epub(seg, timing, out_path, meta, audio_root="."):
+    book = epub.EpubBook()
+    book.set_identifier(f"tolstoy-life-{seg['work']}-{seg['version']}")
+    book.set_title(meta["title"]); book.set_language(meta["lang"])
+    book.add_author(meta["author"])
+    book.add_metadata("DC", "source", meta["source"])
+    book.add_metadata("DC", "contributor", meta["translator"], {"role": "trl"})
+    book.add_metadata("DC", "date", meta["date"])
+    book.add_metadata(None, "meta", "EPUB Accessibility 1.1",
+                      {"property": "dcterms:conformsTo"})
+    for prop, val in _A11Y:
+        book.add_metadata(None, "meta", val, {"property": prop})
+    book.add_metadata(None, "meta", "-epub-media-overlay-active",
+                      {"property": "media:active-class"})
+
+    spine, total = ["nav"], 0.0
+    for sec in seg["sections"]:
+        sid = sec["id"]
+        x = render_section_xhtml(seg, sid, meta["title"], meta["lang"])
+        item = epub.EpubHtml(title=sec["heading"], file_name=f"text/{sid}.xhtml",
+                             lang=meta["lang"])
+        # ebooklib must get bytes: it feeds str content to lxml, which rejects the
+        # <?xml encoding?> declaration and silently yields an empty body (then its
+        # pagebreak scan crashes). Bytes parse cleanly.
+        item.content = x.encode("utf-8")
+        audio_href = "../" + timing["audio"][sid]
+        smil = build_smil(sid, f"{sid}.xhtml", audio_href, timing)
+        smil_item = epub.EpubSMIL(uid=f"smil-{sid}", file_name=f"smil/{sid}.smil",
+                                  content=smil.encode("utf-8"))
+        item.media_overlay = smil_item.get_id()
+        dur = section_duration(sid, timing); total += dur
+        book.add_metadata(None, "meta", clock(dur),
+                          {"property": "media:duration",
+                           "refines": f"#{smil_item.get_id()}"})
+        # audio file as an EpubItem
+        ap = os.path.join(audio_root, timing["audio"][sid])
+        audio_bytes = open(ap, "rb").read() if os.path.exists(ap) else b"\x00"
+        book.add_item(epub.EpubItem(uid=f"audio-{sid}",
+            file_name=timing["audio"][sid], media_type="audio/mp4",
+            content=audio_bytes))
+        book.add_item(smil_item); book.add_item(item)
+        spine.append(item)
+    book.add_metadata(None, "meta", clock(total), {"property": "media:duration"})
+
+    book.toc = [epub.Link(f"text/{s['id']}.xhtml", s["heading"], s["id"])
+                for s in seg["sections"]]
+    book.add_item(epub.EpubNcx()); book.add_item(epub.EpubNav())
+    book.spine = spine
+    epub.write_epub(out_path, book)
+    return out_path
