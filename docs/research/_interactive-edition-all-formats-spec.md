@@ -1,6 +1,6 @@
 ---
 layer: reference
-lastUpdated: 2026-06-28
+lastUpdated: 2026-06-29
 tags: [research, planning, design, website-launch, epub, audiobook]
 title: "Interactive reader's editions — all formats from one source (design)"
 ---
@@ -52,16 +52,50 @@ enriched source, and `tl` is reached for only when a work's text must be *manufa
 
 Everything downstream keys to stable IDs in the text. **IDs are the granularity knob** — a reader
 syncs/links at the finest level the markup carries IDs — so we deliberately carry two layers, because
-they do different jobs:
+they do different jobs.
 
-- **Paragraph IDs — the shared coordinate across versions.** `id="p-0004"`, zero-padded, stable.
-  Paragraphs correspond across Russian/English; sentences usually do not (one English sentence ≠ one
-  Russian sentence). So **citations, cross-version alignment, annotations, and deep-links anchor on
-  paragraphs.** Stable across re-segmentation.
-- **Sentence IDs — within-version, for read-along only.** Each sentence is a `<span id="p-0004-s02">`
-  nested inside its paragraph, carrying *that* version's audio sync. Nesting under the paragraph ID
-  keeps paragraph anchors stable even when sentences are re-split. (EPUB3 explicitly allows mixing
-  granularities.)
+**There is no mandated HTML/EPUB format for these IDs** (the only rules: unique within the document, a
+valid name). What we follow is the scholarly text-addressing tradition the project already lives in —
+**TEI** (`<p>`/`<s>` with `xml:id`+`@n`; the corpus is TEI), **canonical citation** (`section.paragraph`,
+the lineage behind e.g. Public Domain Review's `#p-1-1`), and **W3C Web Annotation selectors** as the
+annotation-anchoring fallback. So our scheme is a convention, chosen to match those.
+
+- **Paragraph ID = the public, citable coordinate.** Section-scoped and hierarchical:
+  **`p-4-12`** (§IV, ¶12). Reads as a citation, survives edits elsewhere (section-scoping confines
+  renumbering to one section), and is what **citations, cross-version alignment, annotations, and
+  deep-links** anchor to. Paragraphs correspond across versions; sentences usually do not.
+- **Sentence ID = internal read-along plumbing**, nested under the paragraph: **`p-4-12-s2`**. *Not* a
+  public coordinate — just where that version's audio attaches. (Like PDR, the public address carries no
+  sentence; the sentence layer lives underneath it.)
+
+**Number by element *type*, not by position in the flow** — otherwise a figure or table shifts every
+number after it. Each block type gets its own section-scoped, typed counter:
+
+| Element | ID | Note |
+|---|---|---|
+| Paragraph | `p-4-12` | the citable unit |
+| Sentence | `p-4-12-s2` | read-along only |
+| Heading | the section anchor (`sec-4`) | not counted as a paragraph |
+| Figure | `fig-4-1` | own counter |
+| Table | `tbl-4-1` | own counter |
+| Blockquote | `bq-4-2` | own counter (nested `p-` inside still count) |
+| List item | `li-4-3-1` | own counter |
+| Footnote/endnote | `note-12` / `noteref-12` | the noteref/aside scheme |
+
+For **read-along**, only text-bearing units sync (paragraphs/sentences, headings, list items, table
+cells); structural containers (figure/table/list) get a `<seq>` wrapper with the *escapable/skippable*
+`epub:type` so a reader can skip past them, and footnotes are *skippable*. For **The Great Sin** this is
+easy mode — a plain essay (intro + I–IX): prose, a couple of scripture quotes, the translator's
+footnotes; essentially no figures/tables. The scheme is built to survive War and Peace and the plays
+(where the unit becomes speaker-turns — a future `sp-` type).
+
+**Two rules that make the IDs durable:**
+1. **Never renumber after publishing.** Once IDs are public, citations/annotations point at them
+   forever. If you later split `p-4-12`, append (`p-4-12a` / `p-4-12b`) — don't shift `p-4-13` onward.
+2. **The spine defines the coordinate.** Paragraph IDs are set by the **PSS Russian** structure; each
+   translation *maps onto* the spine's paragraph IDs (a translation that splits a spine paragraph reuses
+   `p-4-12` on both halves, or `p-4-12` / `p-4-12b`). This keeps PSS the source of truth for the
+   coordinate system too.
 
 This is the single most load-bearing decision: read-along, annotations, alignment, citation, and
 deep-linking all ride these IDs.
@@ -103,7 +137,7 @@ chapter markers), so emitting the map is a handful of lines. Voice (`bm_daniel`)
 are unchanged. The existing per-sentence WAV cache is preserved.
 
 ### EPUB3 (ebooklib + hand-built read-along)
-A new builder. Clean reading text, each sentence wrapped `<span class="sentence" id="p-0004-s02">`, with
+A new builder. Clean reading text, each sentence wrapped `<span class="sentence" id="p-4-12-s2">`, with
 a SMIL Media-Overlay file (one `<par>` per sentence, `clipBegin/clipEnd` straight from `timing.json`)
 that gives real **highlight-as-it-reads in Apple Books**. Key facts from the research:
 
@@ -187,12 +221,50 @@ become cheap later:
 1. **IDs fix annotations** (above) — robust, portable, shareable.
 2. **Cross-version alignment** — click an English paragraph, jump to the same Russian paragraph.
 3. **The timing map is more than read-along** — trivially also yields WebVTT subtitles (web read-along
-   *and* a shareable text+narration video), resume-across-formats (stop the audio at `p-0004`, open the
-   reader there), and per-paragraph permalinks (`…/#p-0004`) for "cite this passage".
+   *and* a shareable text+narration video), resume-across-formats (stop the audio at `p-4-12`, open the
+   reader there), and per-paragraph permalinks (`…/#p-4-12`) for "cite this passage".
 4. **Citations as a feature** — IDs + PSS page data → *"A Great Iniquity, §IV — PSS 36:218"* with a
    stable deep link.
 5. **"Watch the text grow"** — the CriticMarkup cuts/insertions keyed to IDs render the textual history.
 6. **Wiki entities → in-book glossary** — via the noteref/aside pattern.
+
+## Alignment with wiki ingestion
+
+The e-reader text is an ingestion **source** and a link **consumer** — never an ingestion *engine*.
+This keeps it inside the standing rule: grow the vault by reading→synthesise→cite primary, never
+mechanical bulk import (`feedback_llm_wiki_ingestion`).
+
+- **It feeds the queue, doesn't fill it.** The marked-up text surfaces the people/places/concepts
+  Tolstoy names as `[[wikilinks]]`. A link whose entity page doesn't exist yet is a *dangling link* —
+  the same "future ingestion work" marker the vault already tolerates. The reader edition **does not
+  create entity pages**; that stays the separate, source-grounded, human-in-the-loop step.
+- **It makes ingestion cite more precisely.** With paragraph IDs, an ingested claim can cite the exact
+  passage (`A Great Iniquity §IV, the-great-sin/#p-4-12`), so the reader text becomes a *citable
+  substrate* for the vault, not just another page.
+- **It closes the loop.** Once an entity *is* ingested, it becomes the target the reader links to (the
+  wikilink modal on the web; the noteref/aside glossary entry in the EPUB).
+- **Hazard to honor:** wikilinks resolve **by title**, and the vault uses non-obvious transliterations
+  (`Biryukov → Pavel Birukoff.md` — `reference_vault_transliteration_gotcha`). The author/segmenter must
+  loose-match an existing vault title before writing a link or marking it dangling, or ingestion will
+  later duplicate the page.
+
+## Accessibility (both legs)
+
+Target: **WCAG 2.1 AA for both the web and EPUB legs.**
+
+- **EPUB leg — designed in, and gated.** EPUB Accessibility 1.1 (which conforms to WCAG 2.1 AA),
+  declared via `dcterms:conformsTo`, with structural navigation, reading order,
+  `displayTransformability`, and `synchronizedAudioText` for the read-along. **ACE by DAISY** runs as a
+  build gate alongside EPUBCheck.
+- **Web leg — inherits a harness, but the new interactive parts need explicit care.** The production
+  site is the Eleventy (eleventy-excellent) build, which already runs **pa11y-ci**, so the static reader
+  page inherits a WCAG harness (`serve.py` is only a preview, not the compliance target). The reader's
+  *new* interactive parts must be specced for a11y in spec 2:
+  - **Toggle rail** — keyboard operable, `aria-pressed` state.
+  - **Read-along highlight** — honor `prefers-reduced-motion`, provide a pause/stop control, and treat
+    the auto-advancing highlight as a motion/cognitive concern (don't trap focus).
+  - **Annotations** — keyboard-reachable selection and focus management.
+  - **Editorial-mark colors** (cut/note highlights) — meet contrast minimums; never color-only meaning.
 
 ## Fidelity & guardrails
 
@@ -230,7 +302,13 @@ chapters is mechanical repetition (the whole audiobook already exists, so it's c
 
 - **Goal** = prove a repeatable pipeline (generators over hand-polish).
 - **One source** = CriticMarkup Markdown; `tl` is a tool (cleaning + epub-build), not a rival source.
-- **Two-layer IDs** = paragraph (shared coordinate) + sentence (within-version read-along).
+- **Two-layer IDs** = section-scoped paragraph (`p-4-12`, the public/citable coordinate) + nested
+  sentence (`p-4-12-s2`, read-along plumbing); typed counters per element (`fig-`/`tbl-`/…); spine
+  defines the coordinate; never renumber after publishing.
+- **Accessibility** = WCAG 2.1 AA both legs (EPUB Accessibility 1.1 + ACE; web inherits pa11y-ci, new
+  interactive parts specced in spec 2).
+- **Wiki ingestion** = the e-reader is an ingestion source + link consumer, never an engine; no bulk
+  entity-page creation.
 - **Spine** = the Russian PSS established text; **default version** = the 1905 English; **default state**
   = bare.
 - **Read-along** = sentence-level; SMIL hand-built from `timing.json`; ebooklib packages.
