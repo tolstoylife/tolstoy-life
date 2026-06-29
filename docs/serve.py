@@ -497,10 +497,17 @@ MD = markdown.Markdown(extensions=[
     WikiLinkExtension(base_url="/wiki/", end_url=".html", html_class="wikilink"),
 ])
 
+# serve.py lives in docs/, so the repo root isn't on sys.path by default — add it
+# so the shared reader/ helpers import (web + EPUB share the same ID rule).
+_REPO_ROOT = str(Path(__file__).resolve().parent.parent)
+if _REPO_ROOT not in sys.path:
+    sys.path.insert(0, _REPO_ROOT)
+from reader.paragraph_ids import add_paragraph_ids
+
 def render_body(text: str) -> str:
     """Convert a Markdown string (CriticMarkup, footnotes, [[wikilinks]]) to an HTML fragment."""
     MD.reset()
-    return MD.convert(text)
+    return add_paragraph_ids(MD.convert(text))
 
 def md_to_html(md_path: Path) -> str:
     """Convert a markdown file to a full HTML page."""
