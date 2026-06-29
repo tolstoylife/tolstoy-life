@@ -73,3 +73,33 @@ def parse(md):
             sec["paragraphs"].append({"id": pid, "sentences": sentences})
         sections.append(sec)
     return {"sections": sections, "notes": notes}
+
+def segment(md_path, version, work, spine="ru", spine_doc=None):
+    doc = parse(Path(md_path).read_text(encoding="utf-8"))
+    if spine_doc is not None:
+        for s_sec, t_sec in zip(spine_doc["sections"], doc["sections"]):
+            if len(s_sec["paragraphs"]) != len(t_sec["paragraphs"]):
+                raise ValueError(
+                    f"paragraph count mismatch in {t_sec['id']}: spine has "
+                    f"{len(s_sec['paragraphs'])}, {version} has {len(t_sec['paragraphs'])}")
+        if len(spine_doc["sections"]) != len(doc["sections"]):
+            raise ValueError("section count mismatch between spine and " + version)
+    return {"work": work, "version": version, "spine": spine, **doc}
+
+def main():
+    ap = argparse.ArgumentParser(description="Markdown -> segments.json")
+    ap.add_argument("md")
+    ap.add_argument("--version", required=True)
+    ap.add_argument("--work", required=True)
+    ap.add_argument("--spine", default="ru")
+    ap.add_argument("--spine-json", help="segments.json of the spine, to align against")
+    ap.add_argument("-o", "--out", required=True)
+    a = ap.parse_args()
+    spine_doc = json.loads(Path(a.spine_json).read_text()) if a.spine_json else None
+    doc = segment(a.md, version=a.version, work=a.work, spine=a.spine, spine_doc=spine_doc)
+    Path(a.out).write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"wrote {a.out}: {len(doc['sections'])} sections, "
+          f"{sum(len(s['paragraphs']) for s in doc['sections'])} paragraphs")
+
+if __name__ == "__main__":
+    main()
