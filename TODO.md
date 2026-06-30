@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-06-11
+Last updated: 2026-06-30
 
 ---
 
@@ -153,6 +153,18 @@ A standing research site generated from the Graphify corpus graph + the dive dos
 - [x] **Phase 1 — stand it up** (2026-06-11). Repo + Eleventy machinery (copied from `website/`, trimmed) builds green; corpus sync (`_generator/sync.sh`, **shipped = git-tracked only**, md+yaml only); full pipeline ran end-to-end from a session: extract → label → export = **696 nodes / 946 edges / 56 communities / 66 topic-hub articles**, ~19 min cold, 2.5M tokens in, $0 (claude-cli). Wrinkle fixed: graphify falls back to `.gitignore` (which hides `_raw/`) — the Lab's `.graphifyignore` is load-bearing. Handoff: `_generated/research/session-tolstoy-lab-phase1-2026-06-11/handoff.md` (local-only).
 - [x] **Phase 2 — the generator** (2026-06-12). `_generator/build_pages.py` written and proven: **523 entity pages · 22 works records (multi-workRecord dives included) · 60 topic hubs · 36 dives rendered · 39 open threads**, all six additions in. Validator clean (545 files, with a Lab-only 13th wiki type `work`); Eleventy green (663 files); 0 dead wikilinks; the plan's three cross-dive thread checks pass. **`regenerate.sh` ran end-to-end as one command in 54 s** — the incremental cache works (276/304 semantic-cache hits on first re-run, then all-cached). Lab commits `202e5e9` (machinery) + `ac4d627` (first generated site). Found en route: `build_evidence_index.py`'s `WIKI_TYPES` is stale at 9 types (pre-v1.4) — flagged as a separate fix.
 - [ ] **Phase 3 — evaluate**: side-by-side of ~3 dual-existence entities (e.g. Chertkov) vs the curated wiki; evaluation note in the Lab README + LOG entry; follow-ups (prose pass? alias table?) decided with Johan.
+
+### 10. Interactive reader's editions — build → read → re-dive loop
+*Design: `docs/superpowers/specs/2026-06-30-interactive-reader-editions-workflow-design.md`. Machinery: `reader/` (repo root). Memory: `project_reader_editions_workflow`.*
+
+Turn each prophet-period work into a reader's edition (web + read-along EPUB + synced audio) from one source, read it to form editorial voice, then feed that into LLM ingestion — **Phase 3 IS the ingestion front door**; the academic dive drops to cited substrate.
+
+- [x] **Plumbing** (2026-06-30) — bundle convention, works schema v10 `readerDefault`, annotation wrench-flag, works tracker, spec/plan banners.
+- [x] **Pilot — The Great Sin, English leg** (2026-06-30) — faithful 1905 *A Great Iniquity* edition built (10 sections, ~54 min, 346 clips), read-along **proven in Thorium**; three latent `build_epub` bugs fixed (now EPUBCheck-clean + guard tests); `reader.build_epub` CLI added. **Apple Books dropped** — media-overlay read-along is fixed-layout-only, so reflowable editions use Thorium / Readium / Kobo / the web edition (see `reference_applebooks_reflowable_readalong` memory).
+- [ ] **The Great Sin — Russian spine** — author `the-great-sin.ru.md`, hand-align paragraphs (Russian & English breaks diverge), segment with `--spine-json` for the cross-version coordinate.
+- [ ] **The Great Sin — Phase 3** — reconcile reading reflections against the existing dive → overview page + paired-entity steer, in Johan's voice. The ingestion front door.
+- [ ] **Machine-translation leg** — the faithful one-pass `.en-machine.md` (unattended; fallback reading text + fidelity ruler).
+- [ ] **A Confession** — first full from-scratch loop; then one-by-one off the works tracker. Once proven, 1b runs as a token-gated nightly queue (precedent: `corpus-dive-queue.sh`).
 
 ---
 

@@ -118,7 +118,7 @@ Once The Great Sin and A Confession prove the loop, the **machine build (1b) bec
 ## Verification (how we know the loop holds)
 
 - **Phase 1:** `python3 -m pytest reader/tests/ -v` green; build The Great Sin → its `build/` holds segments.json, timing.json, `.epub`, per-section audio; `verify_quotes.py` passes on the Russian; EPUB validates (EPUBCheck/ACE skip-with-warn).
-- **Read-along proof:** the EPUB highlights sentence-by-sentence **in sync in Apple Books on a device**.
+- **Read-along proof:** the EPUB highlights sentence-by-sentence in sync in **Thorium Reader** (the EPUB3 media-overlay reference reader), with the *recorded* voice firing — not Thorium's silent TTS fallback. *Correction (2026-06-30, pilot): the original target was Apple Books, but Apple Books renders media-overlay read-along **only for fixed-layout books** (per Apple's Books Asset Guide: "read aloud content is supported only in fixed-layout books") — a reflowable prose edition gets no narration control there, on Mac or device, by design. We keep the edition reflowable (resizable type, accessibility) and treat **Thorium / Readium / Kobo and the web edition** as the read-along surfaces. EPUBCheck-clean confirms the file itself is correct; a fixed-layout Apple-only variant is possible but deliberately out of scope.*
 - **Phase 2:** annotations save with the fix flag; the fix-list exports; reflections land in `annotations.md`.
 - **Phase 3:** The Great Sin taken from reflections → overview page + entity steer, in Johan's voice, with the dive as cited substrate.
 - **Tracker:** renders as a sortable table, columns correct, status reflects the real state of at least The Great Sin and A Confession.
