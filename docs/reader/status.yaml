@@ -1,0 +1,17 @@
+# Reader-editions loop status — the hand-kept half of the works tracker.
+#
+# The tracker derives the first two stages from disk on its own: a work is
+# "dived" if it has a dossier, and "built" once its bundle's build/ folder holds
+# a segments file. The later stages can't be seen from artifacts, so set them here.
+#
+# One entry per work, keyed by its workId (the bundle/record folder name):
+#   <workId>:
+#     stage: dived | built | read | re-dived | ingested   # furthest reached
+#     ready: true | false                                  # ready for LLM ingestion
+#
+# Works with no entry fall back to whatever the tracker can derive. Leave a work
+# out until it has a human-judgment stage worth recording.
+
+the-great-sin:
+  stage: dived
+  ready: false

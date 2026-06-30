@@ -1199,6 +1199,26 @@ def build_research_index_page(verbose=True):
         print(f"  ! research/index.html skipped: {exc}")
 
 
+def build_works_tracker_page(verbose=True):
+    """Regenerate docs/reader/index.html (the works tracker) from the dives, the
+    works records, and the hand-kept status file. Same best-effort contract as the
+    research index: loaded by path, a failure warns and skips rather than breaking
+    the whole docs build."""
+    import importlib.util
+    gen = ROOT / "reader" / "lib" / "build_works_tracker.py"
+    if not gen.exists():
+        return
+    try:
+        spec = importlib.util.spec_from_file_location("build_works_tracker", gen)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        mod.build(verbose=False)
+        if verbose:
+            print("  ✓ reader/index.html")
+    except Exception as exc:  # noqa: BLE001 — never let it break the docs build
+        print(f"  ! reader/index.html skipped: {exc}")
+
+
 def build_all(verbose=True):
     md_docs = collect_md_files()
     html_docs = collect_orphan_html_files()
@@ -1217,6 +1237,7 @@ def build_all(verbose=True):
     if verbose:
         print(f"  ✓ INDEX.html")
     build_research_index_page(verbose=verbose)
+    build_works_tracker_page(verbose=verbose)
     if verbose:
         orphans = sum(len(v) for v in html_docs.values())
         suffix = f" + {orphans} hand-authored HTML" if orphans else ""

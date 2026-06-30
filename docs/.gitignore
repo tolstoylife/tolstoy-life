@@ -11,6 +11,8 @@
 # (build_research_index.py; auto-runs in serve.py --build-only).
 !/research/index.html
 !/research/visualizations/*.html
+# Generated reader-editions works tracker (build_works_tracker.py; auto-runs in serve.py).
+!/reader/index.html
 
 # Research-dive visual caches. Third-party images (portraits, photographs)
 # fetched for local viewing — PD or not — live here and are NOT committed, so
