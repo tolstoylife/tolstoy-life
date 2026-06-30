@@ -5,7 +5,7 @@ text, and a shorter README live in [`projects/audiobook/`](../projects/audiobook
 This doc is the durable record of *what was learned* and *why each setting is
 what it is*, so a future agent doesn't re-derive it.
 
-Last updated: 2026-06-26.
+Last updated: 2026-06-28.
 
 ## Goal
 
@@ -72,8 +72,41 @@ generates audio only for new/changed works and writes `_generated/audio/<work>.m
    higher bitrate is wasted.
 
 10. **Per-call model reload (~5 s).** `kokoro-tts-tool` reloads Kokoro on every
-    invocation, so the 387-sentence book takes ~40 min cold. Fine for now (the
+    invocation, so the ~410-sentence book takes ~40 min cold. Fine for now (the
     build is resumable). For the nightly pipeline, batch synthesis in one process.
+
+12. **Merge very short sentences into a neighbour.** A 2–4 word clip synthesized
+    alone rises instead of falling — Kokoro can't land a declarative cadence
+    without runway ("Simply the landowners.", "But we are wrong.", "What then?").
+    `merge_short` in the build glues each short unit forward into the next (last
+    one backward), so they share one synth call. This *also* folds "Part One."
+    into the chapter's first sentence, which fixes the headers' rising "Part
+    One-ee" tail — superseding the separate header fix in finding #4 (the
+    Roman→word conversion still happens; it's just no longer synthesized alone).
+
+13. **Pronunciation respellings live in a `SUBS` dict in the build**, applied at
+    synth time so the source text stays faithful (same place as `live`→`liv`).
+    Validated by ear (auditioned against the raw reading): `Labouchere`→
+    `Labooshair`, `Radischeff`→`Rahdeeshef` (Radishchev), `Yasnaya Poliana`→
+    `Yasnaya Polyahna`, and the scripture ref `(Matt, xxiii. 27, 28)`→spoken
+    "Matthew twenty-three, verses twenty-seven and twenty-eight". Novikoff,
+    Komaroff, Decembrists, Toynbee, Parnell were auditioned and left as-is.
+
+14. **Split over-long sentences** so Kokoro doesn't speed-read them (a ~90-word
+    sentence gets compressed and rushed). The build now reads flow text generated
+    with `flow_preprocess.py --split-long 45` — sentences over 45 words split once
+    at the comma nearest the middle. Same fidelity trade-off as the semicolons
+    (adds a full stop Tolstoy didn't write), accepted for listenability.
+
+15. **The text we narrate is the 1905 Mayo/Tchertkoff translation, verbatim.** A
+    line-by-line check against the Russian original confirmed the phrasings that
+    sound odd ("clambered out" = слезла; "exhaustion of the strength of nations"
+    = истощение сил народов; "Socialistic organisation" = социалистическое
+    устройство — Tolstoy's own word for the educated classes' engineered future
+    society, not a translator's narrowing) are faithful, not transcription
+    errors. The only real defects were transcriber artifacts, now fixed in
+    `chapters/`: the "Transcription/Markup: Andy Carloff" credit line (removed),
+    a stray editorial "(?)" in ch03 (removed), and a missing space in ch04.
 
 11. **Sideloaded audiobooks don't iCloud-sync** (by design). Manual import only:
     AirDrop → Files → Share → Copy to Books, or Finder cable sync. EPUBs/PDFs
@@ -106,10 +139,14 @@ From `projects/audiobook/`:
   flow text, where George's semicolons are rewritten. Now that `synthesize`
   phrases well, test narrating the *original* punctuation and possibly retire
   `flow_preprocess` — resolving the fidelity question by making it moot.
-- **Short-sentence pitch wobble** — minor Kokoro trait; try merging very short
-  sentences with a neighbour so the model has more context.
-- **Proper-noun pronunciation** — Yasnaya Polyana, Novikoff, Radischeff, etc. not
-  yet validated. (Read-along would also let a reader *see* a fumbled name.)
+- ~~**Short-sentence pitch wobble**~~ — **resolved** (finding #12, `merge_short`).
+- ~~**Proper-noun pronunciation**~~ — **resolved by ear** for the names that
+  actually fumbled (finding #13). Remaining names validated as fine. Read-along
+  would still let a reader *see* any future fumble.
+- **One footnote idea** (parked): "Socialistic organisation" is Tolstoy's literal
+  word but his referent is the whole engineered Western future-society (liberal +
+  social-democrat + socialist). Worth a translator's footnote in a future
+  read-along/EPUB edition — not the audio.
 - **Incremental nightly pipeline** — hash each work; regenerate on change;
   Whisper transcript validation (catches dropped/repeated/mispronounced words);
   per-work proper-noun substitution dict; `_generated/audio/<work>.m4b`.
