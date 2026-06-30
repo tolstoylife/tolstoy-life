@@ -402,6 +402,11 @@ mark.annotation {
   padding: 0 1px;
 }
 mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+/* A "needs a text fix" note (the wrench): same highlight, dashed underline + a small wrench. */
+mark.annotation.needs-fix { border-bottom-style: dashed; }
+mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-align: super; margin-left: 1px; opacity: 0.8; }
+.ann-fix { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--ink-soft); margin: 0.5rem 0 0; cursor: pointer; user-select: none; }
+.ann-fix input { margin: 0; }
 
 #ann-popover {
   position: fixed;
@@ -598,6 +603,7 @@ def md_to_html(md_path: Path) -> str:
 <div id="ann-popover">
   <div class="ann-quote" id="ann-quote"></div>
   <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <label class="ann-fix"><input type="checkbox" id="ann-fix"> 🔧 Needs a text fix</label>
   <div class="ann-actions">
     <button id="ann-cancel">Cancel</button>
     <button class="primary" id="ann-save">Save</button>
@@ -665,7 +671,7 @@ def md_to_html(md_path: Path) -> str:
       const before = node.textContent.slice(0, idx);
       const after = node.textContent.slice(idx + ann.anchor.text.length);
       const mark = document.createElement('mark');
-      mark.className = 'annotation';
+      mark.className = 'annotation' + (ann.needsFix ? ' needs-fix' : '');
       mark.dataset.index = index;
       mark.textContent = ann.anchor.text;
       const afterNode = document.createTextNode(after);
@@ -735,7 +741,9 @@ def md_to_html(md_path: Path) -> str:
     const comment = annText.value.trim();
     if (!comment || !pendingAnchor) {{ hidePopover(); return; }}
     const anns = loadDoc();
-    anns.push({{ anchor: pendingAnchor, comment, created: new Date().toISOString() }});
+    const ann = {{ anchor: pendingAnchor, comment, created: new Date().toISOString() }};
+    if (document.getElementById('ann-fix').checked) ann.needsFix = true;  // optional fix flag (the wrench)
+    anns.push(ann);
     saveDoc(anns);
     hidePopover();
     renderAll();
@@ -751,6 +759,7 @@ def md_to_html(md_path: Path) -> str:
   function hidePopover() {{
     popover.style.display = 'none';
     annText.value = '';
+    document.getElementById('ann-fix').checked = false;
     pendingAnchor = null;
     if (pendingRange) {{ window.getSelection().removeAllRanges(); pendingRange = null; }}
   }}
