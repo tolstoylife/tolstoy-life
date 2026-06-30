@@ -30,3 +30,59 @@ def test_epub_is_written_and_has_overlay(tmp_path):
     assert "media:active-class" in content
     assert "schema:accessMode" in content or "accessMode" in content
     assert "dcterms:conformsTo" in content
+
+
+def test_smil_srcs_resolve_to_real_files(tmp_path):
+    """Every SMIL text/audio src must resolve to a real file in the zip. A wrong
+    relative path (missing ../text/) keeps the fragment ids valid but points at a
+    nonexistent file, which silently kills read-along in Apple Books."""
+    import re, posixpath
+    seg = segment("reader/tests/fixtures/mini.en-1905.md",
+                  version="en-1905", work="the-great-sin")
+    (tmp_path / "audio").mkdir()
+    (tmp_path / "audio" / "the-great-sin.sec-1.m4a").write_bytes(b"\x00")
+    out = build_epub(seg, TIMING, str(tmp_path / "out.epub"), META,
+                     audio_root=str(tmp_path))
+    z = zipfile.ZipFile(out)
+    names = set(z.namelist())
+    smils = [n for n in names if n.endswith(".smil")]
+    assert smils, "no SMIL in package"
+    for n in smils:
+        base = posixpath.dirname(n)
+        for src in re.findall(r'src="([^"]+)"', z.read(n).decode()):
+            full = posixpath.normpath(posixpath.join(base, src.split("#")[0]))
+            assert full in names, f"{n}: src {src!r} -> {full} missing from epub"
+
+
+def test_active_class_backed_by_css_and_valid_contributor(tmp_path):
+    """EPUBCheck regressions: a declared media:active-class needs a CSS that the
+    content doc actually LINKS and that defines it (CSS-030 — ebooklib strips
+    inline <link>s, so the link must be registered via its API), and the
+    translator role must use the marc:relators refines pattern, not a bare role=
+    attribute on dc:contributor (RSC-005)."""
+    import re, posixpath
+    seg = segment("reader/tests/fixtures/mini.en-1905.md",
+                  version="en-1905", work="the-great-sin")
+    (tmp_path / "audio").mkdir()
+    (tmp_path / "audio" / "the-great-sin.sec-1.m4a").write_bytes(b"\x00")
+    out = build_epub(seg, TIMING, str(tmp_path / "out.epub"), META,
+                     audio_root=str(tmp_path))
+    z = zipfile.ZipFile(out)
+    names = z.namelist()
+    opf = next(z.read(n).decode() for n in names if n.endswith(".opf"))
+    assert 'scheme="marc:relators"' in opf       # translator role the EPUB3 way
+    assert "<dc:contributor role=" not in opf    # ...not the invalid attribute
+
+    if "media:active-class" in opf:
+        for doc_name in [n for n in names if n.startswith("EPUB/text/") and n.endswith(".xhtml")]:
+            doc = z.read(doc_name).decode()
+            hrefs = [re.search(r'href="([^"]+)"', tag).group(1)
+                     for tag in re.findall(r"<link[^>]*>", doc)
+                     if "stylesheet" in tag and re.search(r'href="([^"]+)"', tag)]
+            assert hrefs, f"{doc_name}: head links no stylesheet"
+            defines = []
+            for h in hrefs:
+                target = posixpath.normpath(posixpath.join(posixpath.dirname(doc_name), h))
+                if target in names:
+                    defines.append("-epub-media-overlay-active" in z.read(target).decode())
+            assert any(defines), f"{doc_name}: no linked CSS defines the active-class"
