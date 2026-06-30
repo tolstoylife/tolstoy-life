@@ -183,10 +183,10 @@ Fourteen dives — **8 standalone work-dives** (the marquee essays) + **6 themat
 | 2 | **I Cannot Be Silent** | work-dive | `1908-i-cannot-be-silent` | F★ | [full ↓](#p2) |
 | 3 | Against the death penalty | theme | `death-penalty` | F cluster (6) | [full ↓](#p3) |
 | 4 | **On Shakespeare and the Drama** | work-dive | `1903-1906-on-shakespeare-and-the-drama` | A★ | [full ↓](#p4) |
-| 5 | Art & aesthetics satellites | theme | `art-aesthetics-satellites` | A cluster (4) | template |
+| 5 | Art & aesthetics satellites | theme | `art-aesthetics-satellites` | A cluster (4) | [full ↓](#p7) |
 | 6 | **The Christian Teaching** | work-dive | `1894-1896-the-christian-teaching` | B★ | [full ↓](#p5) |
 | 7 | The break with the Church (1901) | theme | `1901-break-with-the-church` | B cluster (7) | [full ↓](#p6) |
-| 8 | **The Great Sin** | work-dive | `1905-the-great-sin` | C★ | template |
+| 8 | **The Great Sin** | work-dive | `1905-the-great-sin` | C★ | [full ↓](#p8) |
 | 9 | The land question & Henry George | theme | `land-question-henry-george` | C cluster (6) | template |
 | 10 | **The End of the Age** | work-dive | `1905-the-end-of-the-age` | D★ | template |
 | 11 | 1905: revolution & the state | theme | `1905-revolution-and-the-state` | D cluster (7) | template |
@@ -354,7 +354,48 @@ Read the prior sibling dives first and cross-link: 1901-1902-what-is-religion, 1
 Gates: --choice=reg --notes=auto, verify_quotes.py exit 0, bare voice, no vault writes (propose only), separate-pass verifier, Phase 6 run-report + Phase 7 handoff. Commit, do NOT push. Plain language.
 ```
 
-The remaining dives (5, 8–14, famine, science/education, anthologies) use the [template](#prompt-template) — every member, path, and Tom is in [the inventory](#the-inventory).
+### P7 — Art & aesthetics satellites (theme-dive) {#p7}
+
+```
+/corpus-dive Art & aesthetics satellites — the short pieces orbiting What Is Art?, where Tolstoy applies his religious-art test to specific writers and cases — a multi-work theme dive carrying several workRecord proposals (like docs/research/1903-folk-tales/ and docs/research/stories-for-the-people/). NOT --novel.
+
+SCOPE (the cluster, all confirmed):
+- Preface to the Works of Maupassant (Предисловие к сочинениям Гюи де Мопассана) — works/v30_003_024_Predislovie_k_sochinenijam_Gjui_de_Mopassana.xml (Tom 30, 1893–94); variants works/v30_273_302_Predislovie_k_sochinenijam_Gjui_de_Mopassana_Varianty.xml
+- Preface to the English edition of What Is Art? (Предисловие к английскому изданию ЧТИ) — works/v30_204_206_Predislovie_k_anglijskomu_izdaniju_traktata_Chto_takoe_iskusstvo.xml (Tom 30, 1898; published English exists — defer to it, working glosses only)
+- On Gogol (О Гоголе) — works/v38_050_053_O_Gogole.xml (Tom 38, 1909), with the earlier piece works/v26_648_651_O_Gogole.xml (Tom 26) and variants works/v38_280_280_O_Gogole_Varianty.xml
+- Preface to Carpenter's "Modern Science" (Предисловие к статье Эдуарда Карпентера «Современная наука») — works/v31_087_095_Predislovie_k_state_Eduarda_Karpentera_Sovremennaja_nauka.xml (Tom 31, 1898)
+
+SUPPORTING DRAFTS (fold in as genesis material — do NOT give these their own workRecords): the What Is Art? genesis-draft cluster — works/v30_213_215_…, v30_216_225_…, v30_226_230_…, v30_231_239_Nauka_i_iskusstvo.xml, v30_240_242_O_nauke_i_iskusstve.xml, v30_243_270_O_tom_chto_nazyvajut_iskusstvom.xml. Use them to show how the doctrine took shape; they belong to What Is Art?, not to this cluster's records.
+
+KEY FACTS to pin in Phase 0:
+- Confirm each piece's composition window from its Tom's commentary (история писания); the TEI headers carry PSS publication years, not composition. Set each dated slug from the COMPOSITION window. Cluster slug: art-aesthetics-satellites.
+- No works/ records exist for any of these → each workRecord PROPOSES creation (non-fiction; essays-and-criticism, or prefaces if the schema has a subcategory — flag any shelving gap in needsReview, don't invent vocab).
+- Connective tissue (test as hypotheses, don't assert): each piece is the religious-art test applied to a case — Maupassant a writer Tolstoy admired despite himself; Gogol the religious-turn writer; Carpenter the science-vs-art boundary. Triangulate confirms/complicates/extends against the What Is Art? doctrine; note where a case strains the theory.
+- Route Guy de Maupassant, Nikolai Gogol, and Edward Carpenter as person entities. Ernest Crosby already appears in the Shakespeare dive — cross-reference, don't duplicate.
+
+Read the prior sibling dives first and cross-link them (ground in the project before the mainstream): 1897-1898-what-is-art (the governing theory this cluster orbits) and 1903-1906-on-shakespeare-and-the-drama (the marquee case-study, already dived — this cluster is its satellites). Don't let mainstream aesthetic-criticism framings stick in the dive's own voice; attribute and read critically.
+
+Gates: --choice=reg --notes=auto, verify_quotes.py exit 0, bare voice, no vault writes (propose only), separate-pass verifier, Phase 6 run-report + Phase 7 handoff. Commit, do NOT push. Plain language.
+```
+
+### P8 — The Great Sin {#p8}
+
+```
+/corpus-dive The Great Sin (Великий грех), Tolstoy's 1905 essay on the private ownership of land — a work-subject dive (single work → one workRecord), NOT --novel. Main text: works/v36_206_230_Velikij_greh.xml (PSS Tom 36). Variants: works/v36_464_475_Velikij_greh_Varianty.xml. Commentary (история писания): comments/v36_656_665_Velikij_greh.xml.
+
+KEY FACTS to pin in Phase 0:
+- Written 1905, during and about the Revolution of 1905; pin the exact composition window and redaction dates from the v36 commentary (история писания) — the TEI header carries the PSS publication year, not composition. Set the dated slug 1905-the-great-sin from the COMPOSITION window.
+- No works/ record exists yet → the workRecord PROPOSES creation (non-fiction; essays-and-criticism — it is essay-length, ~25 pp, Tom 36 pp. 206–230; judge essays-and-criticism vs treatises by length/form and flag any shelving doubt in needsReview, don't invent vocab).
+- Marquee-question candidate (test as hypothesis, don't assert): Tolstoy's claim that private property in land is «великий грех» — the great sin/iniquity at the root of the people's poverty and the 1905 unrest — and that Henry George's single tax (единый налог / land-value taxation) is its just and practical remedy. THE CONTESTED TENSION TO TRIANGULATE: this is the clearest case of Tolstoy the Christian anarchist — who denies the state any legitimate coercive role — endorsing a STATE-administered fiscal reform. Does The Great Sin confirm, complicate, or contradict his anti-statism (does he frame the single tax as a transitional concession, a lesser evil, or a genuine exception)? Triangulate confirms/complicates/contradicts/extends against The Kingdom of God Is Within You and The Slavery of Our Times.
+- HENRY GEORGE IS THE CENTRE OF THE INTELLECTUAL DEBT. Route Henry George (1839–1897, American political economist, Progress and Poverty 1879, the single-tax movement) as a person entity (ingestionPriority 1); Tolstoy had read and championed George since the 1880s. This dive SEEDS the land-question theme-dive (P9, land-question-henry-george) — note that in the Phase 7 handoff so the cluster reuses it; do NOT deep-dive the cluster satellites here (To the Working People, The First Step, the George prefaces, etc. — they belong to P9), only cross-reference them.
+- English translation exists — "A Great Iniquity" (1905; it appeared in The Times of London and as a single-tax-movement pamphlet). Confirm the translator/edition from the commentary or scholarship; defer to the published edition, use working glosses only for quoted passages.
+
+Cross-link prior dives: 1900-the-slavery-of-our-times (the economic/labour critique this extends), 1890-1893-the-kingdom-of-god-is-within-you (the anti-statism the single tax tests), christian-communism-socialism, christian-anarchism, copyright-renunciation (the renunciation-of-property strand). Ground in primary + prior dives before mainstream scholarship.
+
+Gates: --choice=reg --notes=auto, verify_quotes.py exit 0, record-creating workRecord, Genesis + reception (the 1905 context + Russian/foreign reception) + marquee sections, bare voice, no vault writes, separate-pass verifier, Phase 6 + 7 handoffs. Commit, don't push. Plain language.
+```
+
+The remaining dives (9–14, famine, science/education, anthologies) use the [template](#prompt-template) — every member, path, and Tom is in [the inventory](#the-inventory).
 
 ---
 
