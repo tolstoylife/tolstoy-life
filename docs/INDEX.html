@@ -348,6 +348,11 @@ mark.annotation {
   padding: 0 1px;
 }
 mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
+/* A "needs a text fix" note (the wrench): same highlight, dashed underline + a small wrench. */
+mark.annotation.needs-fix { border-bottom-style: dashed; }
+mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-align: super; margin-left: 1px; opacity: 0.8; }
+.ann-fix { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--ink-soft); margin: 0.5rem 0 0; cursor: pointer; user-select: none; }
+.ann-fix input { margin: 0; }
 
 #ann-popover {
   position: fixed;
@@ -434,7 +439,7 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
 <header class="doc-header">
   <p class="eyebrow">tolstoy.life · build log</p>
   <h1>Notes</h1>
-  <p class="meta">Dated entries from research and design · generated 22 June 2026, 13:55</p>
+  <p class="meta">Dated entries from research and design · generated 30 June 2026, 18:12</p>
 </header>
 <main>
   <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
@@ -558,6 +563,11 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-title">Art & aesthetics satellites — the What Is Art? prefaces and case-studies</div>
         <div class="card-meta">research · updated 21 Jun 2026</div>
         <div class='card-lede'>Four short pieces orbit Tolstoy's treatise [What Is Art?](../1897-1898-what-is-art/index.html) (1897–98): the **preface to the works of Maup…</div>
+      </a>
+      <a class="index-card" href="/audiobook-pipeline.html">
+        <div class="card-title">Audiobook pipeline — reference & findings</div>
+        <div class="card-meta"> · updated 28 Jun 2026</div>
+        <div class='card-lede'>Agent-facing reference for the local TTS audiobook pipeline. The working code,</div>
       </a>
       <a class="index-card" href="/research/biryukov-biography-editions/extracts/az-lib-vol1-roman-chapter-probe.html">
         <div class="card-title">az.lib.ru Vol I — "Глава 10. Роман" probe (and Vol I OCR provenance)</div>
@@ -909,6 +919,31 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-meta">research · updated 13 Jun 2026</div>
         <div class='card-lede'>**VERDICT: CLEAN-WITH-NOTES** — substantively sound; 0 must-fix, 4 nice-to-fix (internal-consistency / vocab-precision items only). The publ…</div>
       </a>
+      <a class="index-card" href="/research/_interactive-edition-all-formats-spec.html">
+        <div class="card-title">Interactive reader's editions — all formats from one source (design)</div>
+        <div class="card-meta">research · updated 30 Jun 2026</div>
+        <div class='card-lede'>This is the design for producing **all the reader-facing formats of a work** — the interactive web</div>
+      </a>
+      <a class="index-card" href="/research/_interactive-edition-bundled-text.html">
+        <div class="card-title">Interactive reader's editions — bundling each dive's text (design)</div>
+        <div class="card-meta">research · updated 23 Jun 2026</div>
+        <div class='card-lede'>This is the design for bundling the **text of the work** into each corpus-dive folder as an</div>
+      </a>
+      <a class="index-card" href="/superpowers/plans/2026-06-29-interactive-reader-editions.html">
+        <div class="card-title">Interactive Reader's Editions — Implementation Plan</div>
+        <div class="card-meta">superpowers · updated 30 Jun 2026</div>
+        <div class='card-lede'>**Goal:** From one marked-up Markdown source per version of *The Great Sin*, produce all three reader formats — the interactive web edition …</div>
+      </a>
+      <a class="index-card" href="/research/_interactive-edition-plan.html">
+        <div class="card-title">Interactive Reader's Editions — Spec 1 Implementation Plan</div>
+        <div class="card-meta">research · updated 23 Jun 2026</div>
+        <div class='card-lede'>**Goal:** Make a finished corpus-dive renderable as an interactive reader's edition in the local `serve.py` preview, and prove it end-to-end…</div>
+      </a>
+      <a class="index-card" href="/superpowers/specs/2026-06-30-interactive-reader-editions-workflow-design.html">
+        <div class="card-title">Interactive Reader's Editions — the go-forward workflow (design)</div>
+        <div class="card-meta">superpowers · updated 30 Jun 2026</div>
+        <div class='card-lede'>The pipeline **machinery is already built** (`reader/` at the repo root — `segment.py`, `speech.py`, `build_xhtml.py`, `build_epub.py`, `val…</div>
+      </a>
       <a class="index-card" href="/architecture/internal-operations.html">
         <div class="card-title">Internal Operations — Tolstoy Research Platform</div>
         <div class="card-meta">architecture · updated 25 Apr 2026</div>
@@ -1109,6 +1144,11 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-meta">research · updated 11 May 2026</div>
         <div class='card-lede'>Context: The local copies of the Jubilee Edition (*Полное собрание сочинений*, PSS) at `primary-sources/jubilee-edition/volNN/volNN.pdf` are…</div>
       </a>
+      <a class="index-card" href="/.pytest_cache/README.html">
+        <div class="card-title">pytest cache directory #</div>
+        <div class="card-meta">.pytest_cache · updated 23 Jun 2026</div>
+        <div class='card-lede'>This directory contains data from the pytest's cache plugin,</div>
+      </a>
       <a class="index-card" href="/research/crisis/annotations.html">
         <div class="card-title">Reader annotations — "crisis" dive</div>
         <div class="card-meta">research · updated 29 May 2026</div>
@@ -1128,6 +1168,11 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-title">Reader annotations — late-voice-encryption-compression</div>
         <div class="card-meta">research · updated 12 Jun 2026</div>
         <div class='card-lede'>Reader (Johan) annotations on the rendered dive, captured per the convention that annotations are *interpretive steer*, kept out of the bare…</div>
+      </a>
+      <a class="index-card" href="/reader/index.html">
+        <div class="card-title">Reader-editions works tracker</div>
+        <div class="card-meta">reader · updated 30 Jun 2026</div>
+        <div class='card-lede'>Every work the dives have surfaced — the run-list for the reader editions and the progress board for where each sits in the loop (dived → bu…</div>
       </a>
       <a class="index-card" href="/research/1889-1899-resurrection/extracts/_reception.html">
         <div class="card-title">Reception — *Resurrection* (Воскресение, 1899)</div>
@@ -1608,6 +1653,11 @@ mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
         <div class="card-title">The Forged Coupon (Фальшивый купон)</div>
         <div class="card-meta">research · updated 12 Jun 2026</div>
         <div class='card-lede'>A single-work corpus dive on Tolstoy's late, unfinished novella *The Forged Coupon*, run in the `--novel` mode. The dive's centre is the wor…</div>
+      </a>
+      <a class="index-card" href="/research/free-age-press/index.html">
+        <div class="card-title">The Free Age Press</div>
+        <div class="card-meta">research · updated 28 Jun 2026</div>
+        <div class='card-lede'>Context: A web-sourced, fact-checked overview of the **Free Age Press (FAP)** — Vladimir Chertkov's English-language Tolstoy publishing oper…</div>
       </a>
       <a class="index-card" href="/research/1886-1890-the-fruits-of-enlightenment/index.html">
         <div class="card-title">The Fruits of Enlightenment (Плоды просвещения, 1886–1890) — a corpus novel-dive</div>
