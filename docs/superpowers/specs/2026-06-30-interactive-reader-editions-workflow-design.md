@@ -89,13 +89,15 @@ A master table of every prophet-period work, built **from the works metadata** (
 
 ---
 
-## Small additions needed (everything else is built)
+## Small additions (status — the plumbing landed 2026-06-30)
 
-1. **Self-contained bundle + gitignore** — adopt `docs/reader/<cat>/<subcat>/<id>/` with the `build/` subfolder; add a `docs/reader/**/build/` ignore rule. Point the audiobook contract at `build/audio/`.
-2. **Canonical-translation flag** — add a "reader default" marker to the existing `translationEditions[]` in the work's sidecar `.data.yaml` (works schema §8). Johan sets it in light-prep. *Schema change → present the exact field + get a nod before writing* (per the explain-schema-before-editing rule).
-3. **Annotation fix flag** — add the optional flag to `serve.py`'s annotation model. The seam is identified: backward-compatible, no migration.
-4. **Works tracker generator** — a small script that assembles the sortable table from metadata + dives + status.
-5. **Update the existing plan + spec** — `docs/superpowers/plans/2026-06-29-interactive-reader-editions.md` and the all-formats spec, to reflect this workflow (self-contained bundle, canonical flag, Phase-3-as-ingestion-front-door).
+Everything else was already built; these were the gaps. The first four landed this session:
+
+1. **Self-contained bundle + gitignore** — ✓ done. `docs/reader/<cat>/<subcat>/<id>/` is the tracked bundle; `docs/reader/**/build/` is ignored (regenerable artifacts). The audiobook now writes timing + per-section audio into the bundle's `build/` (derived from the segments-file path, so audio → `build/audio/`).
+2. **Canonical-translation flag** — ✓ done. Added `translationEditions[].readerDefault` (boolean) to the works schema §8 (v10), Johan-approved. *Correction to this spec:* the schema defines the translation arrays as a `.data.yaml` sidecar, but **no sidecars exist yet** — so the flag is live in the schema and the tracker reads it, but it stays blank until a work's sidecar is first authored in light-prep.
+3. **Annotation fix flag** — ✓ done. `serve.py` annotations carry an optional `needsFix` boolean (the wrench): a checkbox in the popover, a dashed underline + wrench on the mark, carried through the existing export/import. Backward-compatible, no migration.
+4. **Works tracker generator** — ✓ done. `docs/reader/lib/build_works_tracker.py` → `docs/reader/index.html`: a sortable, searchable, CSV-exportable table built from the dives + works records + the hand-kept `docs/reader/status.yaml`. Auto-runs in `serve.py`; it surfaces the gap (53 of 68 works have no record yet). *Note:* it lists every dived work, not only prophet-period ones — the Period column marks which belong.
+5. **Update the existing plan + spec** — ✓ done. This status block, plus a "superseded paths" banner on `docs/superpowers/plans/2026-06-29-interactive-reader-editions.md` and on the all-formats spec, both pointing here as the source of truth.
 
 ---
 
