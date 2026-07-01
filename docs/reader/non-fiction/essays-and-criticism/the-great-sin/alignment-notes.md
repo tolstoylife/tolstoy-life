@@ -59,10 +59,15 @@ regenerated).
 - Fixed 5 OCR homoglyphs (Latin letters sitting inside Cyrillic words): 3×
   «зa»→«за», «тело to человека»→«тело человека», «Ha-днях»→«На-днях». The two
   remaining Latin runs (Мф. **XXIII**, Александр **II**) are Roman numerals — kept.
-- Added the closing dateline **«Ясная Поляна, июль 1905 г.»** to parallel the
-  English "Yasnaya Poliana, July, 1905." — editorial: the PSS reading text omits
-  it; the manuscript was signed «Июль 1905» (A. L. Tolstaya's hand, per the
-  PSS commentary), and the place is Yasnaya Polyana.
+- Added a closing dateline to parallel the English "Yasnaya Poliana, July,
+  1905." — the PSS reading text has none. First pass added the full
+  **«Ясная Поляна, июль 1905 г.»** to visually match the English; on review
+  (2026-07-01) that was reverted in favour of the **manuscript form,
+  «Июль 1905»** (no place) — what A. L. Tolstaya actually signed, per the
+  PSS commentary. Keeping strictly to the attested wording matches how every
+  other spine fix was handled (breaks moved, wording untouched; OCR fixes
+  correct transcription, they don't add content) — inventing "Ясная Поляна"
+  would have been the one exception.
 
 ## Caveat
 
