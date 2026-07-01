@@ -55,7 +55,11 @@ regenerated).
 ## Other spine cleanups
 
 - Stripped one PSS editorial footnote marker (³⁷) at the Henry George citation
-  in Part II — apparatus, not Tolstoy's text; the English carries no notes.
+  in Part II — apparatus, not Tolstoy's text; the English carries no notes. (The
+  printed scan also carries a *second* editorial footnote in Part II — marker ¹
+  on «своих статей», citing «Речи и статьи Генри Джорджа». Изд. «Посредника»,
+  стр. 143 и 144. — but that marker and its citation never entered the extract,
+  so there was nothing to strip. Same apparatus category; noted for provenance.)
 - Fixed 5 OCR homoglyphs (Latin letters sitting inside Cyrillic words): 3×
   «зa»→«за», «тело to человека»→«тело человека», «Ha-днях»→«На-днях». The two
   remaining Latin runs (Мф. **XXIII**, Александр **II**) are Roman numerals — kept.
@@ -69,8 +73,23 @@ regenerated).
   correct transcription, they don't add content) — inventing "Ясная Поляна"
   would have been the one exception.
 
-## Caveat
+## Proofread against the scan (2026-07-01)
 
-The Russian is machine-extracted from the TEI/PSS and **not fully proofread**
-against the printed scan. The alignment and the fixes above are verified;
-subtler in-word errors may remain and want a separate reading pass.
+The Russian was machine-extracted from the TEI/PSS. It has now been checked
+paragraph-by-paragraph against the printed scan (PSS Tom 36 =
+`primary-sources/jubilee-edition/vol05/vol05.pdf`, pp. 206–230) — a full read
+plus a word-level automated diff against the scan's own independent OCR, with
+every disagreement adjudicated by rendering the actual page image and reading
+it. **Result: clean.** No wording errors beyond the fixes already listed above;
+every one of the ~35 raw diffs was either an already-recorded fix or noise in
+the scan's OCR layer (dropped letters, stray mid-word spaces, letter-spaced
+emphasis the OCR mangled) where the extract's wording was the correct one. All
+proper names and numbers (Александр II, Новиков, Радищев, Parnell, Toynbee,
+Gladstone, Spencer, Labouchère, Mazzini, the rent/wage/year figures) verified;
+the «Мф. XXIII» citation confirmed against the page image (OCR garbles it as
+«X X III»). The «Марфа, Марфа» epigraph on the same scan page belongs to the
+*preceding* essay («Конец века») and is correctly excluded here.
+
+Caveat on the caveat: this is a verification pass (extract vs. scan-OCR +
+visual spot-check of every conflict), not a word-perfect human transcription
+against the physical book. It's strong evidence the text is right, not a proof.
