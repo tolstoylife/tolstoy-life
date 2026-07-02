@@ -25,11 +25,34 @@ These were rejoined:
 - Part II: *"We naturally" + "despise poverty, and it is reasonable…"*
 - Part IX: *"…with whom he comes in" + "contact."*
 
-**Consequence — deferred:** rejoining shifts 3 sentence boundaries in Part II
-and Part IX, so the English **audio + EPUB for those two chapters is now stale**
-and must be regenerated at the next audio pass (separate `projects/audiobook`
-repo). The current English build keeps working until then; `build/` is
-regenerable and gitignored.
+**Consequence — resolved 2026-07-02:** rejoining shifted 3 sentence boundaries
+in Part II and Part IX, which left the English audio + timing for those two
+chapters (`sec-3`, `sec-10`) out of sync with the renumbered text — the voice
+skipped and jumped while the highlight moved normally down the page. Both
+chapters were regenerated (re-synth in the `projects/audiobook` repo, then a
+`reader.build_epub` restitch). `build/` is regenerable and gitignored, so the
+fix left no tracked change beyond this note.
+
+**Watch out — the wav cache is keyed by sentence ID, not by the text.** A plain
+rebuild does *not* fix this: `build_audiobook.py` reuses any
+`wav_full_bm_daniel/<id>.wav` that already exists without checking whether the
+text still matches, so once a rejoin renumbers the sentences, the old (wrong)
+recording sits under a reused ID and gets served again. The fix was to delete
+*all* of `sec-3` and `sec-10`'s cached wavs — every renumbered clip, not just
+the audibly-broken ones, because a shifted sentence that happens to be the same
+length would slip past a words-per-second check while still being the wrong
+recording — then let the build re-synthesize them from the corrected text. Only
+those two chapters were renumbered, so the other eight kept their cache and came
+out timing-identical. (Same trap applies to any future pronunciation respell: it
+won't take until you also delete that sentence's cached wav.)
+
+Verified: the words-per-second check went from 13 impossible-rate sentences
+(7 in `sec-3`, 6 in `sec-10`) to 0 across all ten chapters; the eight untouched
+chapters' timing is byte-identical to before; every read-along slot fits inside
+its chapter's audio; EPUBCheck clean. Final ear-check in Thorium is still worth
+doing. Still open (deferred, not blocking): the "Kvas" pronunciation respell
+(Part I) and the high-pitched "I asked" dialogue tags — voice-quality notes,
+separate from this alignment fix.
 
 ## Russian break adjustments (per section)
 
