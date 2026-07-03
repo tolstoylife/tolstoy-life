@@ -1,0 +1,348 @@
+/* Annotations — W3C Web Annotation shape, localStorage, Notes panel.
+   One record per note:
+     { "@context": "http://www.w3.org/ns/anno.jsonld", id, type: "Annotation",
+       created, motivation: "commenting",
+       body: [ {TextualBody, purpose:"commenting", value} (+ needs-fix tag) ],
+       target: { source: "<docKey>#<paraId>",
+                 selector: [ TextQuoteSelector {exact,prefix,suffix},
+                             TextPositionSelector {start,end} ] } }
+   TextPosition offsets are relative to the target paragraph's text content —
+   the paragraph id (p-N-M) is the stable cross-version coordinate. */
+(function () {
+  'use strict';
+  const R = window.READER || {};
+  const DOC_KEY = R.docKey || location.pathname;
+  const STORE_KEY = 'tolstoy_annotations';
+  const CONTEXT = 'http://www.w3.org/ns/anno.jsonld';
+
+  // ── Storage ────────────────────────────────────────────────────────────
+  function loadAll() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+  function saveAll(data) { localStorage.setItem(STORE_KEY, JSON.stringify(data)); }
+  function loadDoc() { return (loadAll()[DOC_KEY] || []).map(migrate); }
+  function saveDoc(anns) {
+    const all = loadAll();
+    if (anns.length === 0) delete all[DOC_KEY];
+    else all[DOC_KEY] = anns;
+    saveAll(all);
+  }
+
+  // Legacy {anchor:{paraId,text,before,after}, comment} → W3C shape.
+  function migrate(a) {
+    if (!a.anchor) return a;
+    return makeAnnotation({
+      paraId: a.anchor.paraId || '',
+      exact: a.anchor.text,
+      prefix: a.anchor.before || '',
+      suffix: a.anchor.after || '',
+      start: null, end: null,
+    }, a.comment, !!a.needsFix, a.created);
+  }
+
+  function makeAnnotation(anchor, comment, needsFix, created) {
+    const body = [{ type: 'TextualBody', value: comment, format: 'text/plain', purpose: 'commenting' }];
+    if (needsFix) body.push({ type: 'TextualBody', value: 'needs-fix', purpose: 'tagging' });
+    const selector = [{
+      type: 'TextQuoteSelector',
+      exact: anchor.exact, prefix: anchor.prefix, suffix: anchor.suffix,
+    }];
+    if (anchor.start != null) {
+      selector.push({ type: 'TextPositionSelector', start: anchor.start, end: anchor.end });
+    }
+    return {
+      '@context': CONTEXT,
+      id: 'urn:uuid:' + (crypto.randomUUID ? crypto.randomUUID() : Date.now() + '-' + Math.random().toString(36).slice(2)),
+      type: 'Annotation',
+      created: created || new Date().toISOString(),
+      motivation: 'commenting',
+      body,
+      target: {
+        source: DOC_KEY + (anchor.paraId ? '#' + anchor.paraId : ''),
+        selector,
+      },
+    };
+  }
+
+  // ── Accessors ──────────────────────────────────────────────────────────
+  const sel = (ann, type) => ((ann.target && ann.target.selector) || []).find(s => s.type === type);
+  const quoteSel = ann => sel(ann, 'TextQuoteSelector');
+  const posSel = ann => sel(ann, 'TextPositionSelector');
+  const paraIdOf = ann => ((ann.target && ann.target.source) || '').split('#')[1] || '';
+  const bodies = ann => Array.isArray(ann.body) ? ann.body : (ann.body ? [ann.body] : []);
+  const commentOf = ann => (bodies(ann).find(b => b.purpose !== 'tagging') || {}).value || '';
+  const needsFix = ann => bodies(ann).some(b => b.purpose === 'tagging' && b.value === 'needs-fix');
+
+  // ── Anchor capture from a selection ────────────────────────────────────
+  function getContext(range) {
+    const selected = range.toString();
+    let el = range.commonAncestorContainer;
+    if (el.nodeType === 3) el = el.parentNode;
+    const para = el.closest('[id^="p-"]');
+    if (!para) return null;
+    const full = para.textContent || '';
+    const start = full.indexOf(selected);
+    if (start === -1) return null;
+    return {
+      paraId: para.id,
+      exact: selected,
+      prefix: full.slice(Math.max(0, start - 30), start),
+      suffix: full.slice(start + selected.length, start + selected.length + 30),
+      start,
+      end: start + selected.length,
+    };
+  }
+
+  // ── Re-anchor + render: wrap the quote in <mark>, preferring the match
+  //    nearest the stored TextPosition. Single-text-node quotes only (v1). ──
+  function findAndWrap(ann) {
+    const q = quoteSel(ann);
+    if (!q || !q.exact) return;
+    const para = paraIdOf(ann) ? document.getElementById(paraIdOf(ann)) : null;
+    const scope = para || document.querySelector('main');
+    if (!scope) return;
+    const pos = posSel(ann);
+    const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT);
+    let node, offset = 0, best = null;
+    while ((node = walker.nextNode())) {
+      if (node.parentNode.closest('mark.annotation')) { offset += node.textContent.length; continue; }
+      let idx = node.textContent.indexOf(q.exact);
+      while (idx !== -1) {
+        const abs = offset + idx;
+        const dist = pos ? Math.abs(abs - pos.start) : (best ? Infinity : 0);
+        if (!best || dist < best.dist) best = { node, idx, dist };
+        if (!pos) break; // no position stored: first match wins
+        idx = node.textContent.indexOf(q.exact, idx + 1);
+      }
+      if (!pos && best) break;
+      offset += node.textContent.length;
+    }
+    if (!best) return;
+    const { node: n, idx } = best;
+    const after = n.textContent.slice(idx + q.exact.length);
+    const mark = document.createElement('mark');
+    mark.className = 'annotation' + (needsFix(ann) ? ' needs-fix' : '');
+    mark.dataset.annId = ann.id;
+    mark.textContent = q.exact;
+    const afterNode = document.createTextNode(after);
+    n.textContent = n.textContent.slice(0, idx);
+    n.parentNode.insertBefore(mark, n.nextSibling);
+    n.parentNode.insertBefore(afterNode, mark.nextSibling);
+    attachMark(mark, ann);
+  }
+
+  function renderAll() {
+    document.querySelectorAll('mark.annotation').forEach(m => {
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    document.querySelector('main') && document.querySelector('main').normalize();
+    loadDoc().forEach(findAndWrap);
+    renderPanel();
+  }
+
+  // ── Marks: hover tooltip, click → Notes panel entry ────────────────────
+  const tooltip = document.getElementById('ann-tooltip');
+
+  function attachMark(mark, ann) {
+    mark.addEventListener('mouseenter', e => {
+      tooltip.textContent = commentOf(ann);
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    mark.addEventListener('mousemove', positionTooltip);
+    mark.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+    mark.addEventListener('click', e => {
+      e.stopPropagation();
+      const panel = document.getElementById('notes-panel');
+      if (panel && window.readerPanels) {
+        if (!panel.classList.contains('open')) window.readerPanels.toggle(panel);
+        renderPanel();
+        const entry = panel.querySelector(`[data-ann-id="${CSS.escape(ann.id)}"]`);
+        if (entry) { entry.scrollIntoView({ block: 'center' }); flash(entry); }
+      }
+    });
+  }
+
+  function positionTooltip(e) {
+    const pad = 12;
+    let x = e.clientX + pad;
+    let y = e.clientY - tooltip.offsetHeight - pad;
+    if (x + tooltip.offsetWidth > innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
+    if (y < pad) y = e.clientY + pad;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  function flash(el) {
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash');
+  }
+
+  // ── Notes panel ────────────────────────────────────────────────────────
+  function renderPanel() {
+    const list = document.getElementById('notes-list');
+    if (!list) return;
+    const anns = loadDoc();
+    list.innerHTML = '';
+    if (!anns.length) {
+      list.innerHTML = '<li class="notes-empty">No notes on this page yet — select some text to make one.</li>';
+    }
+    anns.forEach(ann => {
+      const li = document.createElement('li');
+      li.className = 'note-entry';
+      li.dataset.annId = ann.id;
+      const q = quoteSel(ann) || { exact: '' };
+      const quote = document.createElement('p');
+      quote.className = 'note-quote';
+      quote.textContent = q.exact;
+      const body = document.createElement('p');
+      body.className = 'note-body';
+      body.textContent = commentOf(ann);
+      const meta = document.createElement('div');
+      meta.className = 'note-meta';
+      const when = document.createElement('span');
+      when.textContent = (ann.created || '').slice(0, 10) + (needsFix(ann) ? ' · 🔧 needs fix' : '');
+      const del = document.createElement('button');
+      del.className = 'note-del';
+      del.textContent = 'Delete';
+      del.addEventListener('click', e => {
+        e.stopPropagation();
+        if (!confirm('Delete this note?\n\n"' + commentOf(ann) + '"')) return;
+        saveDoc(loadDoc().filter(a => a.id !== ann.id));
+        renderAll();
+      });
+      meta.append(when, del);
+      li.append(quote, body, meta);
+      li.addEventListener('click', () => {
+        const mark = document.querySelector(`mark.annotation[data-ann-id="${CSS.escape(ann.id)}"]`);
+        if (mark) { mark.scrollIntoView({ behavior: 'smooth', block: 'center' }); flash(mark); }
+      });
+      list.appendChild(li);
+    });
+  }
+  document.addEventListener('notes-panel-open', renderPanel);
+
+  // ── Export / import (W3C JSON-LD AnnotationCollection) ────────────────
+  function exportCollection() {
+    const anns = loadDoc();
+    return {
+      '@context': CONTEXT,
+      type: 'AnnotationCollection',
+      label: 'tolstoy.life notes — ' + DOC_KEY,
+      total: anns.length,
+      items: anns,
+    };
+  }
+
+  function importAny(obj) {
+    let items = [];
+    if (Array.isArray(obj)) items = obj;
+    else if (obj && Array.isArray(obj.items)) items = obj.items;          // AnnotationCollection
+    else if (obj && Array.isArray(obj[DOC_KEY])) items = obj[DOC_KEY];    // legacy export
+    items = items.map(migrate).filter(a => a.target && quoteSel(a));
+    if (!items.length) { alert('No annotations for this document in that JSON.'); return; }
+    const anns = loadDoc();
+    const key = a => paraIdOf(a) + '|' + (quoteSel(a) || {}).exact + '|' + commentOf(a);
+    const seen = new Set(anns.map(key));
+    items.forEach(a => { if (!seen.has(key(a))) { anns.push(a); seen.add(key(a)); } });
+    saveDoc(anns);
+    renderAll();
+  }
+
+  bindClick('notes-export', btn => {
+    const payload = JSON.stringify(exportCollection(), null, 2);
+    navigator.clipboard.writeText(payload).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    });
+  });
+  bindClick('notes-download', () => {
+    const blob = new Blob([JSON.stringify(exportCollection(), null, 2)], { type: 'application/ld+json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'notes-' + DOC_KEY.split('/').pop() + '.jsonld';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  bindClick('notes-import', () => {
+    const pasted = prompt('Paste annotation JSON (W3C collection or a previous export):');
+    if (pasted) { try { importAny(JSON.parse(pasted)); } catch { alert('Not valid JSON.'); } }
+  });
+  bindClick('notes-clear', () => {
+    if (confirm('Delete all notes on this page?')) { saveDoc([]); renderAll(); }
+  });
+
+  function bindClick(id, fn) {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => fn(el));
+  }
+
+  // ── Popover (select text → write a note) ───────────────────────────────
+  const popover = document.getElementById('ann-popover');
+  const annText = document.getElementById('ann-text');
+  const annQuote = document.getElementById('ann-quote');
+  let pendingAnchor = null;
+
+  document.getElementById('ann-save').addEventListener('click', () => {
+    const comment = annText.value.trim();
+    if (!comment || !pendingAnchor) { hidePopover(); return; }
+    const anns = loadDoc();
+    anns.push(makeAnnotation(pendingAnchor, comment, document.getElementById('ann-fix').checked));
+    saveDoc(anns);
+    hidePopover();
+    renderAll();
+  });
+  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
+
+  annText.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
+    if (e.key === 'Escape') hidePopover();
+  });
+
+  function hidePopover() {
+    popover.style.display = 'none';
+    annText.value = '';
+    document.getElementById('ann-fix').checked = false;
+    if (pendingAnchor) window.getSelection().removeAllRanges();
+    pendingAnchor = null;
+  }
+
+  function showPopover(x, y, anchor) {
+    pendingAnchor = anchor;
+    annQuote.textContent = '"' + anchor.exact.slice(0, 120) + (anchor.exact.length > 120 ? '…' : '') + '"';
+    popover.style.display = 'block';
+    let px = x, py = y + 12;
+    if (px + popover.offsetWidth > innerWidth - 16) px = innerWidth - popover.offsetWidth - 16;
+    if (py + popover.offsetHeight > innerHeight - 16) py = y - popover.offsetHeight - 12;
+    popover.style.left = px + 'px';
+    popover.style.top = py + 'px';
+    setTimeout(() => annText.focus(), 50);
+  }
+
+  document.addEventListener('mouseup', e => {
+    if (e.target.closest('#ann-popover,#notes-panel,#tools-overlay,#toc-drawer,#topbar,#transport')) return;
+    const s = window.getSelection();
+    if (!s || s.isCollapsed) return;
+    const text = s.toString().trim();
+    if (text.length < 3) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    const range = s.getRangeAt(0);
+    if (!main.contains(range.commonAncestorContainer)) return;
+    const anchor = getContext(range);
+    if (!anchor) return;
+    showPopover(e.clientX, e.clientY, anchor);
+  });
+
+  document.addEventListener('mousedown', e => {
+    if (!popover.contains(e.target)) hidePopover();
+  });
+
+  // ── Init (persist any legacy-shape migration back to storage) ──────────
+  const initial = loadDoc();
+  if (initial.length) saveDoc(initial);
+  renderAll();
+})();

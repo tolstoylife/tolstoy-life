@@ -5,6 +5,13 @@ docs/ document server — tolstoy.life
 Converts all .md files in docs/ to HTML on startup (and on request),
 then serves them with live navigation via INDEX.html.
 
+Every page gets the universal reading shell (top bar, TOC drawer, Tools
+overlay, themes, annotations). Reader-edition bundles — a `<work>.<version>.md`
+beside `build/segments.<version>.json` — additionally render from segments
+with sentence spans, a version switch, editorial layers, and (where
+`build/timing.<version>.json` + audio exist) read-along.
+Static shell assets live in reader/assets/{shell.css,shell.js,annotations.js,readalong.js}.
+
 Usage:
     cd /Volumes/Graugear/Tolstoy/docs
     python3 serve.py            # serves on http://localhost:7866
@@ -15,11 +22,13 @@ Usage:
 import argparse
 import http.server
 import importlib.util
+import json
 import os
 import re
 import socketserver
 import sys
 from datetime import datetime
+from html import escape as esc
 from pathlib import Path
 
 # ── Dependencies ───────────────────────────────────────────────────────────────
@@ -56,435 +65,147 @@ HTML_META = {
     "design/period-colours-preview.html":     {"layer": "blog", "date": "2026-04-26"},
 }
 
-# ── Design tokens ──────────────────────────────────────────────────────────────
+# ── Page chrome (the reading shell) ────────────────────────────────────────────
+# Styling lives in reader/assets/shell.css; behaviour in shell.js /
+# annotations.js / readalong.js. These constants are plain strings (not
+# f-strings) so their braces need no doubling.
 
-CSS = """
-:root {
-  --ink: #1e1a17;
-  --ink-soft: #4a4038;
-  --paper: #faf7f2;
-  --rule: #d9d1c5;
-  --accent: #6b4423;
-  --accent-soft: #8c6a4a;
-  --measure: 38rem;
-  --measure-wide: 52rem;
-}
+# Applies saved theme/type settings before first paint (no flash).
+HEAD_SNIPPET = """
+(function(){try{var s=JSON.parse(localStorage.getItem('tolstoy_reader_settings')||'{}');
+var h=document.documentElement;h.dataset.theme=s.theme||'paper';
+h.style.setProperty('--font-scale',s.fontScale||1);
+if(s.measure)h.style.setProperty('--measure',s.measure+'ch');
+var L=s.layers||{};['wikilinks','cuts','footnotes'].forEach(function(k){
+h.dataset['l'+k[0].toUpperCase()+k.slice(1)]=L[k]?'on':'off';});}catch(e){}})();
+""".strip()
 
-*, *::before, *::after { box-sizing: border-box; }
-
-html { font-size: 150%; -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; padding: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
-               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  font-feature-settings: "kern", "liga", "onum";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Layout ── */
-.site-header {
-  max-width: var(--measure-wide);
-  margin: 0 auto;
-  padding: 1.4rem 1.5rem 1rem;
-  display: flex;
-  align-items: baseline;
-  gap: 1.2rem;
-  border-bottom: 1px solid var(--rule);
-}
-.site-header a.home {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  text-decoration: none;
-  font-style: italic;
-  white-space: nowrap;
-}
-.site-header a.home:hover { color: var(--accent); }
-.breadcrumb {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
-.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
-.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
-
-header.doc-header {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
-  border-bottom: 1px solid var(--rule);
-}
-header.doc-header .eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 0 0 0.8rem;
-}
-header.doc-header h1 {
-  font-size: 2.2rem;
-  line-height: 1.15;
-  margin: 0 0 0.5rem;
-  font-weight: 600;
-  letter-spacing: -0.012em;
-}
-header.doc-header .meta {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin: 0;
-  font-variant-numeric: oldstyle-nums;
-}
-
-main {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 6rem;
-}
-
-/* ── Typography ── */
-h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
-h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
-h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
-h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
-p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
-ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
-li { margin-bottom: 0.55rem; }
-li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
-strong { font-weight: 600; }
-em { font-style: italic; }
-a { color: var(--accent); text-decoration: underline;
-    text-decoration-thickness: 1px; text-underline-offset: 2px; }
-a:hover { color: var(--ink); }
-blockquote {
-  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
-  border-left: 2px solid var(--accent-soft);
-  color: var(--ink-soft); font-style: italic;
-}
-hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
-
-figure { margin: 1.8rem 0; }
-main img {
-  max-width: 100%; height: auto; display: block;
-  margin: 1.8rem auto 0.5rem;
-  border: 1px solid var(--rule); border-radius: 2px;
-  background: #fff;
-}
-/* An italic line immediately after an image reads as its caption. */
-main img + em, figcaption {
-  display: block; font-size: 0.82rem; color: var(--ink-soft);
-  font-style: italic; text-align: center; margin: 0 auto 1.4rem;
-  max-width: var(--measure);
-}
-
-code, kbd, samp {
-  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 0.88em;
-  background: rgba(107,68,35,0.07);
-  padding: 0.08em 0.34em;
-  border-radius: 2px;
-}
-pre {
-  background: rgba(107,68,35,0.05);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 1rem 1.2rem;
-  overflow-x: auto;
-  margin: 0 0 1.4rem;
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-pre code { background: none; padding: 0; font-size: inherit; }
-
-table {
-  width: 100%; border-collapse: collapse;
-  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
-}
-th, td {
-  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
-  border-bottom: 1px solid var(--rule); vertical-align: top;
-}
-th {
-  font-weight: 600; font-size: 0.82rem;
-  letter-spacing: 0.06em; text-transform: uppercase;
-  color: var(--accent-soft); font-style: italic;
-  border-bottom: 1px solid var(--accent-soft);
-}
-
-/* ── Index page ── */
-.featured-section {
-  max-width: var(--measure-wide);
-  margin: 1rem auto 2.5rem;
-  padding: 0 1.5rem;
-}
-.featured-card {
-  display: block;
-  padding: 1.7rem 1.9rem;
-  background: rgba(107, 68, 35, 0.06);
-  border: 1px solid var(--accent-soft);
-  border-radius: 4px;
-  text-decoration: none;
-  color: var(--ink);
-  transition: border-color 0.15s, background 0.15s;
-}
-.featured-card:hover {
-  border-color: var(--accent);
-  background: rgba(107, 68, 35, 0.10);
-  color: var(--ink);
-}
-.featured-card .eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 0 0 0.7rem;
-}
-.featured-card .card-title {
-  font-size: 1.42rem;
-  font-weight: 600;
-  margin: 0 0 0.4rem;
-  line-height: 1.25;
-  letter-spacing: -0.005em;
-}
-.featured-card .card-meta {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  margin: 0 0 0.85rem;
-}
-.featured-card .card-lede {
-  font-size: 0.97rem;
-  color: var(--ink);
-  line-height: 1.55;
-  margin: 0;
-}
-
-.index-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: 0.8rem;
-  margin: 0 0 2.5rem;
-}
-.index-card {
-  display: block;
-  padding: 1rem 1.1rem;
-  background: rgba(107,68,35,0.04);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  text-decoration: none;
-  color: var(--ink);
-  transition: border-color 0.15s, background 0.15s;
-}
-.index-card:hover {
-  border-color: var(--accent-soft);
-  background: rgba(107,68,35,0.07);
-  color: var(--ink);
-}
-.index-card .card-title {
-  font-size: 0.97rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem;
-  line-height: 1.3;
-}
-.index-card .card-meta {
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-  font-style: italic;
-}
-.index-card .card-lede {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin: 0.35rem 0 0;
-  line-height: 1.45;
-}
-
-.section-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 2.5rem 0 0.8rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
-}
-
-/* ── Blog feed (dated entries) ── */
-.year-label {
-  font-size: 1.05rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  font-weight: 400;
-  margin: 3rem 0 0.6rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
-  font-variant-numeric: oldstyle-nums;
-}
-.post-list { list-style: none; padding: 0; margin: 0 0 2rem; }
-.post-entry { margin: 0; border-bottom: 1px solid var(--rule); }
-.post-entry:last-child { border-bottom: none; }
-.post-entry a {
-  display: block;
-  padding: 0.95rem 0;
-  text-decoration: none;
-  color: var(--ink);
-  transition: background 0.15s;
-}
-.post-entry a:hover { background: rgba(107, 68, 35, 0.04); }
-.post-row {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.post-entry time {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  font-variant-numeric: oldstyle-nums;
-  flex: 0 0 6rem;
-}
-.post-title {
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: var(--ink);
-  flex: 1 1 auto;
-  line-height: 1.3;
-}
-.post-folder {
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-}
-.post-lede {
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-  margin: 0.35rem 0 0 7rem;
-  line-height: 1.5;
-}
-@media (max-width: 30rem) {
-  .post-entry time { flex-basis: 100%; }
-  .post-lede { margin-left: 0; }
-}
-
-footer {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
-  border-top: 1px solid var(--rule);
-  font-size: 0.88rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  text-align: center;
-}
-
-/* ── Annotations ── */
-mark.annotation {
-  background: rgba(107, 68, 35, 0.13);
-  border-bottom: 1.5px solid var(--accent-soft);
-  cursor: pointer;
-  border-radius: 1px;
-  padding: 0 1px;
-}
-mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
-/* A "needs a text fix" note (the wrench): same highlight, dashed underline + a small wrench. */
-mark.annotation.needs-fix { border-bottom-style: dashed; }
-mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-align: super; margin-left: 1px; opacity: 0.8; }
-.ann-fix { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--ink-soft); margin: 0.5rem 0 0; cursor: pointer; user-select: none; }
-.ann-fix input { margin: 0; }
-
-#ann-popover {
-  position: fixed;
-  z-index: 1000;
-  background: var(--paper);
-  border: 1px solid var(--accent-soft);
-  border-radius: 4px;
-  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
-  padding: 0.9rem 1rem;
-  width: 22rem;
-  display: none;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-}
-#ann-popover .ann-quote {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  margin: 0 0 0.6rem;
-  border-left: 2px solid var(--accent-soft);
-  padding-left: 0.6rem;
-  line-height: 1.4;
-  max-height: 3.5rem;
-  overflow: hidden;
-}
-#ann-popover textarea {
-  width: 100%;
-  font-family: inherit;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  padding: 0.5rem 0.6rem;
-  background: #fff;
-  color: var(--ink);
-  resize: vertical;
-  min-height: 4rem;
-  outline: none;
-}
-#ann-popover textarea:focus { border-color: var(--accent-soft); }
-#ann-popover .ann-actions {
-  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
-}
-#ann-popover button {
-  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
-  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
-  background: var(--paper); color: var(--ink-soft);
-}
-#ann-popover button.primary {
-  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
-}
-#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
-#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
-
-#ann-tooltip {
-  position: fixed; z-index: 999;
-  background: var(--ink); color: var(--paper);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 0.85rem; line-height: 1.5;
-  padding: 0.6rem 0.85rem; border-radius: 3px;
-  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
-  pointer-events: none; display: none; white-space: pre-wrap;
-}
-
-#ann-bar {
-  position: fixed; bottom: 1.2rem; right: 1.4rem;
-  display: none; gap: 0.5rem; z-index: 998;
-}
-#ann-bar button {
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
-  cursor: pointer; border: 1px solid var(--accent-soft);
-  background: var(--paper); color: var(--ink-soft);
-  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
-}
-#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
-#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
-#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+TOC_DRAWER = """
+<nav id="toc-drawer" aria-label="Contents">
+  <button class="panel-close" title="Close">✕</button>
+  <h2>Contents</h2>
+  <ol></ol>
+</nav>
 """
+
+NOTES_PANEL = """
+<aside id="notes-panel" role="dialog" aria-label="Notes">
+  <button class="panel-close" title="Close">✕</button>
+  <h2>Notes</h2>
+  <ul id="notes-list"></ul>
+  <div class="notes-actions">
+    <button id="notes-export">Copy JSON-LD</button>
+    <button id="notes-download">Download</button>
+    <button id="notes-import">Import…</button>
+    <button id="notes-clear" class="danger">Clear all</button>
+  </div>
+</aside>
+"""
+
+TOOLS_DISPLAY = """
+  <h3>Display</h3>
+  <div class="tool-row"><label>Text size</label>
+    <div class="seg-buttons"><button id="font-smaller">A−</button><button id="font-larger">A+</button></div>
+    <output id="font-scale-out">100%</output></div>
+  <div class="tool-row"><label for="measure-range">Line length</label>
+    <input type="range" id="measure-range" min="48" max="82" step="1" value="66">
+    <output id="measure-out">66 ch</output></div>
+  <div class="tool-row"><label>Theme</label>
+    <div class="seg-buttons">
+      <button data-theme-pick="paper">Paper</button>
+      <button data-theme-pick="sepia">Sepia</button>
+      <button data-theme-pick="dark">Dark</button>
+    </div><output></output></div>
+"""
+
+TOOLS_LAYERS = """
+  <h3>Layers</h3>
+  <div class="tool-row"><label for="layer-wikilinks">Wiki links</label><input type="checkbox" id="layer-wikilinks" data-layer="wikilinks"></div>
+  <div class="tool-row"><label for="layer-cuts">Editorial cuts</label><input type="checkbox" id="layer-cuts" data-layer="cuts"></div>
+  <div class="tool-row"><label for="layer-footnotes">Footnotes</label><input type="checkbox" id="layer-footnotes" data-layer="footnotes"></div>
+"""
+
+ANNOTATION_UI = """
+<div id="ann-popover">
+  <div class="ann-quote" id="ann-quote"></div>
+  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
+  <label class="ann-fix"><input type="checkbox" id="ann-fix"> 🔧 Needs a text fix</label>
+  <div class="ann-actions">
+    <button id="ann-cancel">Cancel</button>
+    <button class="primary" id="ann-save">Save</button>
+  </div>
+</div>
+<div id="ann-tooltip"></div>
+"""
+
+TRANSPORT = """
+<div id="transport">
+  <button id="rl-play" title="Play / pause">▶</button>
+  <span class="rl-section" id="rl-sec">–/–</span>
+  <input type="range" id="rl-seek" min="0" max="100" step="0.1" value="0" title="Seek">
+  <span class="rl-time" id="rl-time">0:00 / 0:00</span>
+  <button id="rl-speed" title="Playback speed">1×</button>
+  <a href="/reader/index.html" title="Back to the library">⌂</a>
+</div>
+"""
+
+
+def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
+               kind="doc", home_html="", breadcrumb="", tools_extra="",
+               readalong=False, lang="en"):
+    """Wrap rendered content in the universal reading shell."""
+    tools = f"""
+<aside id="tools-overlay" role="dialog" aria-label="Reading tools">
+  <button class="panel-close" title="Close">✕</button>
+{TOOLS_DISPLAY}
+{tools_extra}
+</aside>"""
+    transport = TRANSPORT if readalong else ""
+    readalong_js = '\n<script src="/reader/assets/readalong.js"></script>' if readalong else ""
+    audio_attr = ' data-audio="true"' if readalong else ""
+    return f"""<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title} — tolstoy.life docs</title>
+<script>{HEAD_SNIPPET}</script>
+<link rel="stylesheet" href="/reader/assets/shell.css">
+</head>
+<body data-kind="{kind}"{audio_attr}>
+<div id="progress"></div>
+<header id="topbar">
+  <div class="tb-group">
+    <button id="tb-contents" title="Table of contents">Contents</button>
+    {home_html}
+    {breadcrumb}
+  </div>
+  <div class="tb-group">
+    <button id="tb-notes" title="Your notes on this page">Notes</button>
+    <button id="tb-tools" title="Display, layers, version">Tools</button>
+    <button id="tb-zen" title="Fullscreen reading">Focus</button>
+  </div>
+</header>
+{TOC_DRAWER}
+{tools}
+{NOTES_PANEL}
+<header class="doc-header">
+  <p class="eyebrow">{eyebrow}</p>
+  <h1>{heading}</h1>
+  <p class="meta">{meta_line}</p>
+</header>
+<main>
+{body_html}
+</main>
+<footer>tolstoy.life · public documentation</footer>
+{ANNOTATION_UI}
+{transport}
+<script>window.READER = {json.dumps(config)};</script>
+<script src="/reader/assets/shell.js"></script>
+<script src="/reader/assets/annotations.js"></script>{readalong_js}
+</body>
+</html>"""
+
 
 # ── Markdown → HTML ────────────────────────────────────────────────────────────
 
@@ -508,14 +229,153 @@ _REPO_ROOT = str(Path(__file__).resolve().parent.parent)
 if _REPO_ROOT not in sys.path:
     sys.path.insert(0, _REPO_ROOT)
 from reader.paragraph_ids import add_paragraph_ids
+from reader import ids as reader_ids
 
 def render_body(text: str) -> str:
     """Convert a Markdown string (CriticMarkup, footnotes, [[wikilinks]]) to an HTML fragment."""
     MD.reset()
     return add_paragraph_ids(MD.convert(text))
 
+
+# ── Work reader (reader-edition bundles) ───────────────────────────────────────
+
+def work_version_of(md_path: Path):
+    """`the-great-sin.en-1905.md` + sibling `build/segments.en-1905.json`
+    → ("the-great-sin", "en-1905"); anything else → None."""
+    stem = md_path.stem
+    if "." not in stem:
+        return None
+    work, _, version = stem.rpartition(".")
+    if (md_path.parent / "build" / f"segments.{version}.json").exists():
+        return (work, version)
+    return None
+
+
+def _load_json(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _version_label(version: str) -> str:
+    if version.startswith("en-machine"):
+        return "MT"
+    if version.startswith("en"):
+        return "EN"
+    if version.startswith("ru"):
+        return "RU"
+    return version.upper()
+
+
+def _version_order(version: str):
+    return (0 if version.startswith("ru")
+            else 2 if version.startswith("en-machine") else 1, version)
+
+
+def _render_sentence_web(text: str) -> str:
+    """Sentence display text → HTML: [^label] markers become noterefs, the rest
+    is escaped. The web twin of build_xhtml._render_sentence (same ids, no
+    epub: attributes)."""
+    out = []
+    for part in re.split(r"(\[\^\w+\])", text):
+        m = re.fullmatch(r"\[\^(\w+)\]", part)
+        if m:
+            label = m.group(1)
+            nid = reader_ids.note_id(int(label)) if label.isdigit() else f"note-{label}"
+            out.append(f'<a class="noteref" href="#{nid}"><sup>{esc(label)}</sup></a>')
+        else:
+            out.append(esc(part))
+    return "".join(out)
+
+
+def work_page_html(md_path: Path, work: str, version: str) -> str:
+    """Render a reader-edition page from its segments.json — each sentence a
+    <span class="sentence" id=…> inside <p id=…>, exactly the coordinates
+    timing.json and the EPUB use."""
+    bundle = md_path.parent
+    seg = _load_json(bundle / "build" / f"segments.{version}.json")
+
+    meta_path = bundle / f"meta.{version}.json"
+    meta = _load_json(meta_path) if meta_path.exists() else {}
+
+    # Body: sections → paragraphs → sentence spans (+ end-of-text notes)
+    parts = []
+    for sec in seg["sections"]:
+        parts.append(f'<h2 id="{sec["id"]}">{esc(sec["heading"])}</h2>')
+        for p in sec["paragraphs"]:
+            spans = " ".join(
+                f'<span class="sentence" id="{s["id"]}">{_render_sentence_web(s["display"])}</span>'
+                for s in p["sentences"])
+            parts.append(f'<p id="{p["id"]}">{spans}</p>')
+    notes = seg.get("notes") or []
+    if notes:
+        asides = "\n".join(f'<aside id="{n["id"]}"><p>{n["html"]}</p></aside>' for n in notes)
+        parts.append(f'<section class="work-notes">{asides}</section>')
+    body_html = "\n".join(parts)
+
+    # Version switch: sibling editions that exist as both segments + md
+    versions = sorted(
+        (p.name[len("segments."):-len(".json")] for p in (bundle / "build").glob("segments.*.json")),
+        key=_version_order)
+    links = []
+    for v in versions:
+        if not (bundle / f"{work}.{v}.md").exists():
+            continue
+        cur = " current" if v == version else ""
+        links.append(f'<a class="version-link{cur}" data-v="{v}" '
+                     f'href="{work}.{v}.html">{_version_label(v)}</a>')
+    version_html = ""
+    if len(links) > 1:
+        version_html = ('\n  <h3>Version</h3>\n  <div class="tool-row">'
+                        f'<div class="seg-buttons">{"".join(links)}</div></div>')
+
+    # Return affordances: the library (works tracker) + the work's overview
+    # (v1: the corpus dive, the closest thing to an overview page in docs/)
+    home_html = '<a href="/reader/index.html">‹ Library</a>'
+    dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
+    if dive:
+        rel_dive = dive.relative_to(ROOT).with_suffix(".html")
+        home_html += f'\n    <a href="/{rel_dive}">Overview</a>'
+
+    title = meta.get("title") or work.replace("-", " ").title()
+    author = meta.get("author", "")
+    date = meta.get("date", "")
+    eyebrow = " · ".join(x for x in [author, date, "reader edition"] if x)
+    meta_bits = []
+    if meta.get("translator"):
+        meta_bits.append(f"Translated by {esc(meta['translator'])}")
+    if meta.get("source"):
+        meta_bits.append(esc(meta["source"]))
+    rel = md_path.relative_to(ROOT)
+    meta_bits.append(f'<a href="/{rel}">view source</a>')
+
+    doc_key = "docs/" + str(rel.with_suffix(""))
+    config = {"docKey": doc_key, "kind": "work", "work": work, "version": version}
+    timing = bundle / "build" / f"timing.{version}.json"
+    readalong = timing.exists() and version.startswith("en")
+    if readalong:
+        config["readalong"] = {"timing": f"build/timing.{version}.json"}
+
+    return page_shell(
+        title=esc(title),
+        eyebrow=esc(eyebrow),
+        heading=esc(title),
+        meta_line=" · ".join(meta_bits),
+        body_html=body_html,
+        config=config,
+        kind="work",
+        home_html=home_html,
+        tools_extra=TOOLS_LAYERS + version_html,
+        readalong=readalong,
+        lang="ru" if version.startswith("ru") else "en",
+    )
+
+
 def md_to_html(md_path: Path) -> str:
-    """Convert a markdown file to a full HTML page."""
+    """Convert a markdown file to a full HTML page (or a work-reader page
+    when the file is a reader-edition version with built segments)."""
+    wv = work_version_of(md_path)
+    if wv:
+        return work_page_html(md_path, *wv)
+
     text = md_path.read_text(encoding="utf-8")
 
     # Strip YAML frontmatter
@@ -547,14 +407,6 @@ def md_to_html(md_path: Path) -> str:
         if m and m.group(1).strip() == title.strip():
             text = text[m.end():].lstrip("\n")
 
-    # Extract lede
-    lede = frontmatter.get("description", "")
-    if not lede:
-        stripped = text.strip()
-        para_match = re.search(r"^(?!>)([A-Za-z].{20,})", stripped, re.MULTILINE)
-        if para_match:
-            lede = para_match.group(1)[:160].strip()
-
     # Convert markdown
     body_html = render_body(text)
 
@@ -567,294 +419,21 @@ def md_to_html(md_path: Path) -> str:
 
     breadcrumb = ""
     if folder and folder != ".":
-        breadcrumb = f"""
-        <span class="breadcrumb">
-          <a href="/INDEX.html">Index</a>
-          <span>›</span>
-          {folder}
-        </span>"""
+        breadcrumb = f'<span class="breadcrumb">{esc(folder)}</span>'
 
     doc_key = "docs/" + str(rel.with_suffix(""))
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} — tolstoy.life docs</title>
-<style>{CSS}</style>
-</head>
-<body>
-<div class="site-header">
-  <a class="home" href="/INDEX.html">tolstoy.life / docs</a>
-  {breadcrumb}
-</div>
-<header class="doc-header">
-  <p class="eyebrow">{folder or "docs"}</p>
-  <h1>{title}</h1>
-  <p class="meta">Last modified {mtime} · <a href="/{rel.with_suffix('.md')}">view source</a></p>
-</header>
-<main>
-{body_html}
-</main>
-<footer>tolstoy.life · public documentation</footer>
-
-<!-- Annotation UI -->
-<div id="ann-popover">
-  <div class="ann-quote" id="ann-quote"></div>
-  <textarea id="ann-text" placeholder="Your comment…" autocomplete="off"></textarea>
-  <label class="ann-fix"><input type="checkbox" id="ann-fix"> 🔧 Needs a text fix</label>
-  <div class="ann-actions">
-    <button id="ann-cancel">Cancel</button>
-    <button class="primary" id="ann-save">Save</button>
-  </div>
-</div>
-<div id="ann-tooltip"></div>
-<div id="ann-bar">
-  <button id="ann-export">Copy annotations</button>
-  <button id="ann-import">Import…</button>
-  <input id="ann-import-file" type="file" accept="application/json" hidden>
-  <button class="danger" id="ann-clear">Clear all</button>
-</div>
-
-<script>
-(function() {{
-  const DOC_KEY = {repr(doc_key)};
-  const STORE_KEY = 'tolstoy_annotations';
-
-  // ── Storage ──────────────────────────────────────────────────────────────
-  function loadAll() {{
-    try {{ return JSON.parse(localStorage.getItem(STORE_KEY) || '{{}}'); }}
-    catch {{ return {{}}; }}
-  }}
-  function saveAll(data) {{
-    localStorage.setItem(STORE_KEY, JSON.stringify(data));
-  }}
-  function loadDoc() {{
-    return loadAll()[DOC_KEY] || [];
-  }}
-  function saveDoc(anns) {{
-    const all = loadAll();
-    if (anns.length === 0) delete all[DOC_KEY];
-    else all[DOC_KEY] = anns;
-    saveAll(all);
-  }}
-
-  // ── Fuzzy text anchor ────────────────────────────────────────────────────
-  function getContext(range) {{
-    const selected = range.toString();
-    let el = range.commonAncestorContainer;
-    if (el.nodeType === 3) el = el.parentNode;
-    const para = el.closest('[id^="p-"]');
-    if (!para) return null;
-    const full = para.textContent || '';
-    const start = full.indexOf(selected);
-    if (start === -1) return null;
-    return {{
-      paraId: para.id,
-      text: selected,
-      before: full.slice(Math.max(0, start - 30), start),
-      after: full.slice(start + selected.length, start + selected.length + 30)
-    }};
-  }}
-
-  // ── Rendering ────────────────────────────────────────────────────────────
-  function findAndWrap(ann, index) {{
-    const para = ann.anchor.paraId ? document.getElementById(ann.anchor.paraId) : null;
-    const scope = para || document.querySelector('main');
-    if (!scope) return;
-    const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT);
-    let node;
-    while ((node = walker.nextNode())) {{
-      const idx = node.textContent.indexOf(ann.anchor.text);
-      if (idx === -1) continue;
-      const before = node.textContent.slice(0, idx);
-      const after = node.textContent.slice(idx + ann.anchor.text.length);
-      const mark = document.createElement('mark');
-      mark.className = 'annotation' + (ann.needsFix ? ' needs-fix' : '');
-      mark.dataset.index = index;
-      mark.textContent = ann.anchor.text;
-      const afterNode = document.createTextNode(after);
-      node.textContent = before;
-      node.parentNode.insertBefore(mark, node.nextSibling);
-      node.parentNode.insertBefore(afterNode, mark.nextSibling);
-      attachTooltip(mark, ann, index);
-      break;
-    }}
-  }}
-
-  function renderAll() {{
-    document.querySelectorAll('mark.annotation').forEach(m => {{
-      m.replaceWith(document.createTextNode(m.textContent));
-    }});
-    const anns = loadDoc();
-    anns.forEach((ann, i) => findAndWrap(ann, i));
-    updateBar();
-  }}
-
-  // ── Tooltip ──────────────────────────────────────────────────────────────
-  const tooltip = document.getElementById('ann-tooltip');
-
-  function attachTooltip(mark, ann, index) {{
-    mark.addEventListener('mouseenter', e => {{
-      tooltip.textContent = ann.comment;
-      tooltip.style.display = 'block';
-      positionTooltip(e);
-    }});
-    mark.addEventListener('mousemove', positionTooltip);
-    mark.addEventListener('mouseleave', () => {{ tooltip.style.display = 'none'; }});
-    mark.addEventListener('click', e => {{
-      e.stopPropagation();
-      showDeleteConfirm(index, mark);
-    }});
-  }}
-
-  function positionTooltip(e) {{
-    const pad = 12;
-    let x = e.clientX + pad;
-    let y = e.clientY - tooltip.offsetHeight - pad;
-    if (x + tooltip.offsetWidth > window.innerWidth - pad) x = e.clientX - tooltip.offsetWidth - pad;
-    if (y < pad) y = e.clientY + pad;
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = y + 'px';
-  }}
-
-  // ── Delete confirm ────────────────────────────────────────────────────────
-  function showDeleteConfirm(index, mark) {{
-    const anns = loadDoc();
-    const comment = anns[index] ? anns[index].comment : '';
-    if (confirm('Delete this annotation?\\n\\n"' + comment + '"')) {{
-      anns.splice(index, 1);
-      saveDoc(anns);
-      renderAll();
-    }}
-  }}
-
-  // ── Popover ───────────────────────────────────────────────────────────────
-  const popover = document.getElementById('ann-popover');
-  const annText = document.getElementById('ann-text');
-  const annQuote = document.getElementById('ann-quote');
-  let pendingAnchor = null;
-  let pendingRange = null;
-
-  document.getElementById('ann-save').addEventListener('click', () => {{
-    const comment = annText.value.trim();
-    if (!comment || !pendingAnchor) {{ hidePopover(); return; }}
-    const anns = loadDoc();
-    const ann = {{ anchor: pendingAnchor, comment, created: new Date().toISOString() }};
-    if (document.getElementById('ann-fix').checked) ann.needsFix = true;  // optional fix flag (the wrench)
-    anns.push(ann);
-    saveDoc(anns);
-    hidePopover();
-    renderAll();
-  }});
-
-  document.getElementById('ann-cancel').addEventListener('click', hidePopover);
-
-  annText.addEventListener('keydown', e => {{
-    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) document.getElementById('ann-save').click();
-    if (e.key === 'Escape') hidePopover();
-  }});
-
-  function hidePopover() {{
-    popover.style.display = 'none';
-    annText.value = '';
-    document.getElementById('ann-fix').checked = false;
-    pendingAnchor = null;
-    if (pendingRange) {{ window.getSelection().removeAllRanges(); pendingRange = null; }}
-  }}
-
-  function showPopover(x, y, anchor, range) {{
-    pendingAnchor = anchor;
-    pendingRange = range;
-    annQuote.textContent = '"' + anchor.text.slice(0, 120) + (anchor.text.length > 120 ? '…' : '') + '"';
-    popover.style.display = 'block';
-    let px = x, py = y + 12;
-    if (px + popover.offsetWidth > window.innerWidth - 16) px = window.innerWidth - popover.offsetWidth - 16;
-    if (py + popover.offsetHeight > window.innerHeight - 16) py = y - popover.offsetHeight - 12;
-    popover.style.left = px + 'px';
-    popover.style.top = py + 'px';
-    setTimeout(() => annText.focus(), 50);
-  }}
-
-  // ── Selection listener ────────────────────────────────────────────────────
-  document.addEventListener('mouseup', e => {{
-    if (popover.contains(e.target)) return;
-    const sel = window.getSelection();
-    if (!sel || sel.isCollapsed) return;
-    const text = sel.toString().trim();
-    if (text.length < 3) return;
-    const main = document.querySelector('main');
-    if (!main) return;
-    const range = sel.getRangeAt(0);
-    if (!main.contains(range.commonAncestorContainer)) return;
-    const anchor = getContext(range);
-    if (!anchor) return;
-    showPopover(e.clientX, e.clientY, anchor, range);
-  }});
-
-  document.addEventListener('mousedown', e => {{
-    if (!popover.contains(e.target)) hidePopover();
-  }});
-
-  // ── Export / clear bar ────────────────────────────────────────────────────
-  const bar = document.getElementById('ann-bar');
-
-  function updateBar() {{
-    const anns = loadDoc();
-    const has = anns.length > 0;
-    // Keep the bar present so Import is reachable on a page with no annotations
-    // (e.g. right after Clear all). Export/Clear only show when there's something.
-    bar.style.display = 'flex';
-    document.getElementById('ann-export').style.display = has ? '' : 'none';
-    document.getElementById('ann-clear').style.display = has ? '' : 'none';
-  }}
-
-  document.getElementById('ann-export').addEventListener('click', () => {{
-    const anns = loadDoc();
-    if (!anns.length) return;
-    const payload = JSON.stringify({{ [DOC_KEY]: anns }}, null, 2);
-    navigator.clipboard.writeText(payload).then(() => {{
-      const btn = document.getElementById('ann-export');
-      const orig = btn.textContent; btn.textContent = 'Copied!';
-      setTimeout(() => {{ btn.textContent = orig; }}, 1800);
-    }});
-  }});
-
-  function mergeImported(obj) {{
-    const incoming = obj[DOC_KEY] || [];
-    if (!incoming.length) return;
-    const anns = loadDoc();
-    const seen = new Set(anns.map(a => a.anchor.paraId + '|' + a.anchor.text + '|' + a.comment));
-    incoming.forEach(a => {{
-      const key = (a.anchor.paraId||'') + '|' + a.anchor.text + '|' + a.comment;
-      if (!seen.has(key)) {{ anns.push(a); seen.add(key); }}
-    }});
-    saveDoc(anns); renderAll();
-  }}
-
-  document.getElementById('ann-import').addEventListener('click', () => {{
-    const pasted = prompt('Paste exported annotations JSON:');
-    if (pasted) {{ try {{ mergeImported(JSON.parse(pasted)); }} catch {{ alert('Not valid JSON.'); }} }}
-  }});
-  document.getElementById('ann-import-file').addEventListener('change', e => {{
-    const f = e.target.files[0]; if (!f) return;
-    f.text().then(t => {{ try {{ mergeImported(JSON.parse(t)); }} catch {{ alert('Not valid JSON.'); }} }});
-  }});
-
-  document.getElementById('ann-clear').addEventListener('click', () => {{
-    if (confirm('Delete all annotations on this page?')) {{
-      saveDoc([]);
-      renderAll();
-    }}
-  }});
-
-  // ── Init ──────────────────────────────────────────────────────────────────
-  renderAll();
-}})();
-</script>
-</body>
-</html>"""
+    return page_shell(
+        title=esc(title),
+        eyebrow=esc(folder or "docs"),
+        heading=esc(title),
+        meta_line=f"Last modified {mtime} · <a href=\"/{rel.with_suffix('.md')}\">view source</a>",
+        body_html=body_html,
+        config={"docKey": doc_key, "kind": "doc"},
+        kind="doc",
+        home_html='<a href="/INDEX.html">tolstoy.life / docs</a>',
+        breadcrumb=breadcrumb,
+    )
 
 
 # ── Index builder ──────────────────────────────────────────────────────────────
@@ -991,6 +570,18 @@ def extract_meta(path: Path) -> dict:
             "layer": ext.get("layer", "reference"),
             "date": ext.get("date", ""),
         }
+    wv = work_version_of(path) if path.suffix == ".md" else None
+    if wv:
+        work, version = wv
+        meta_path = path.parent / f"meta.{version}.json"
+        meta = _load_json(meta_path) if meta_path.exists() else {}
+        title = meta.get("title") or work.replace("-", " ").title()
+        return {
+            "title": f"{title} ({_version_label(version)} reader edition)",
+            "lede": "",
+            "layer": "reference",
+            "date": "",
+        }
     fm = _parse_frontmatter_md(path)
     return {
         "title": _extract_title_md(path),
@@ -1099,7 +690,8 @@ def build_index(docs: dict) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes — tolstoy.life</title>
-<style>{CSS}</style>
+<script>{HEAD_SNIPPET}</script>
+<link rel="stylesheet" href="/reader/assets/shell.css">
 </head>
 <body>
 <div class="site-header">
@@ -1256,6 +848,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         ".txt": "text/plain; charset=utf-8",
         ".md": "text/plain; charset=utf-8",
         ".py": "text/plain; charset=utf-8",
+        ".m4a": "audio/mp4",
+        ".jsonld": "application/ld+json",
     }
 
     def __init__(self, *args, **kwargs):
