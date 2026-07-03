@@ -98,6 +98,20 @@ generates audio only for new/changed works and writes `_generated/audio/<work>.m
     at the comma nearest the middle. Same fidelity trade-off as the semicolons
     (adds a full stop Tolstoy didn't write), accepted for listenability.
 
+16. **Probe pronunciations with espeak-ng IPA before auditioning by ear.**
+    `espeak-ng -v en-gb -q --ipa "<word>"` prints exactly what the g2p will
+    hand the voice — respelling candidates can be screened in seconds without
+    synthesizing anything. Found this way (2026-07-03, voice-notes pass): a
+    word-initial **kv- cluster is unreachable** — English phonotactics has
+    none, so espeak letter-names the K ("Kvas"/"kvass"/any kv-spelling →
+    two-syllable "kay-v…"). Dictionary English kvass is /kvɑːs/ (like
+    "kvetch"), but the closest the engine can be *spelled* into is
+    `quahss` → /kwɑːs/ — accepted. espeak's raw-phoneme notation (`[[kvA:s]]`)
+    works in espeak itself but is mangled by the phonemizer layer inside
+    `kokoro-tts-tool`, and the CLI exposes no phoneme input — a true /kv/
+    would need driving kokoro-onnx directly with hand phonemes (one-off,
+    cache-fragile; not done).
+
 15. **The text we narrate is the 1905 Mayo/Tchertkoff translation, verbatim.** A
     line-by-line check against the Russian original confirmed the phrasings that
     sound odd ("clambered out" = слезла; "exhaustion of the strength of nations"
