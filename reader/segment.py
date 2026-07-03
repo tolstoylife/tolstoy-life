@@ -20,12 +20,17 @@ def resolve_reading_text(md):
 # ── Sentence split (ported from build_audiobook.split_sents) ───────────────────
 def split_sentences(text):
     text = re.sub(r"(\d)\.(\d)", r"\1<DOT>\2", text)        # protect 1.40
+    # `…?" I asked.` is one sentence: keep the attribution glued to its quote.
+    # (Split off, "I asked." is a 2-word clip Kokoro can't land — it rises
+    # instead of falling. Voice notes 2026-07-03; finding 12 in the audio doc.)
+    text = re.sub(r'(?<=["”])\s+(?=I\s+(?:asked|said|replied|answered|repeated|exclaimed|thought)\b)',
+                  "<ATTR>", text)
     # Split on whitespace after terminal punctuation. A footnote marker may sit
     # between the punctuation and the space ("cow.[^1] I") — keep it glued to the
     # sentence it ends, then split on a sentinel so the boundary still fires.
     text = re.sub(r'(?<=[.!?"])(\[\^\w+\])?\s+(?=["“(A-ZА-Я])', r"\1<SPLIT>", text)
     parts = text.split("<SPLIT>")
-    return [p.replace("<DOT>", ".").strip() for p in parts if p.strip()]
+    return [p.replace("<DOT>", ".").replace("<ATTR>", " ").strip() for p in parts if p.strip()]
 
 # ── Heading spoken form (ported from build_audiobook.spoken_header) ────────────
 _ROMAN = {"I":"One","II":"Two","III":"Three","IV":"Four","V":"Five",

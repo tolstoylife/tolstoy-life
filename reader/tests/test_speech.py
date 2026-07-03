@@ -15,3 +15,16 @@ def test_strips_footnote_marker():
 
 def test_ellipsis_normalised():
     assert to_speech("well... maybe") == "well… maybe"
+
+def test_respell_kvass():
+    assert to_speech("Just enough for Kvas.") == "Just enough for kvass."
+
+def test_money_spelled_out():
+    assert "one dollar forty a day" in to_speech("work for an average of $1.40 a day, it is no wonder")
+
+def test_professions_list_gets_full_stops():
+    out = to_speech('These men—the nobles, merchants, Government officials, doctors, '
+                    'engineers, professors, teachers, artists, students, advocates, '
+                    'chiefly townspeople, the so-called "intellectuals"—are now in Russia')
+    assert "the nobles. Merchants." in out
+    assert "Chiefly townspeople. The so-called" in out

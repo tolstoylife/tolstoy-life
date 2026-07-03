@@ -9,11 +9,20 @@ _CONJ = r"(?:and|but|or|nor|yet|so|for)\b"
 # Pronunciation respellings for Kokoro's g2p (verbatim from build_audiobook.py SUBS).
 _SUBS = [
     (r"\blive\b", "liv"),
+    (r"\bKvas\b", "kvass"),                  # capitalized form reads as "K-Vas"
+    (r"\$1\.40", "one dollar forty"),        # spell out money — the decimal dot reads as a full stop
     (r"\bLabouchere\b", "Labooshair"),
     (r"\bRadischeff\b", "Rahdeeshef"),
     (r"Yasnaya Poliana", "Yasnaya Polyahna"),
     (r"\(Matt[.,] xxiii\. 27, 28\)",
      "Matthew twenty-three, verses twenty-seven and twenty-eight"),
+    # The Part I professions list rushes at reading speed; give each item a full
+    # stop — the one pause Kokoro honors (never splice silence at commas: it
+    # breaks the pitch contour). Voice note 2026-07-03.
+    (r"the nobles, merchants, Government officials, doctors, engineers, "
+     r"professors, teachers, artists, students, advocates, chiefly townspeople, the so-called",
+     "the nobles. Merchants. Government officials. Doctors. Engineers. "
+     "Professors. Teachers. Artists. Students. Advocates. Chiefly townspeople. The so-called"),
 ]
 
 def _fix_ellipsis(t):

@@ -18,3 +18,11 @@ def test_split_sentences_basic():
 def test_split_protects_decimals():
     out = split_sentences("It cost 1.40 rubles. That is dear.")
     assert out == ["It cost 1.40 rubles.", "That is dear."]
+
+def test_split_keeps_quote_attribution_glued():
+    out = split_sentences('"Why doesn\'t your son live at home?" I asked. He waved his hand.')
+    assert out == ['"Why doesn\'t your son live at home?" I asked.', "He waved his hand."]
+
+def test_split_after_quote_still_splits_without_attribution():
+    out = split_sentences('"Where is he?" The peasant pointed.')
+    assert out == ['"Where is he?"', "The peasant pointed."]
