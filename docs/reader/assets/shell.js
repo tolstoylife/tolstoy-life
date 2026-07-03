@@ -85,26 +85,32 @@
   })();
 
   // ── Display controls ──
-  const scaleOut = document.getElementById('font-scale-out');
   function setScale(v) {
     v = Math.min(1.25, Math.max(0.8, Math.round(v * 100) / 100));
     H.style.setProperty('--font-scale', v);
-    if (scaleOut) scaleOut.value = Math.round(v * 100) + '%';
     saveSettings({ fontScale: v });
   }
   function getScale() { return parseFloat(H.style.getPropertyValue('--font-scale')) || S.fontScale || 1; }
   bind('font-smaller', () => setScale(getScale() - 0.05));
   bind('font-larger', () => setScale(getScale() + 0.05));
-  if (scaleOut) scaleOut.value = Math.round(getScale() * 100) + '%';
+
+  // Paint the fill left of a slider's knob (the track is a plain input).
+  function paintSlider(el, colorVar) {
+    const pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+    el.style.background = `linear-gradient(to right, var(${colorVar}) ${pct}%, var(--slider-track) ${pct}%)`;
+  }
+  window.paintSlider = paintSlider;
 
   const measure = document.getElementById('measure-range');
   const measureOut = document.getElementById('measure-out');
   if (measure) {
     measure.value = S.measure || 66;
     measureOut.value = measure.value + ' ch';
+    paintSlider(measure, '--accent');
     measure.addEventListener('input', () => {
       H.style.setProperty('--measure', measure.value + 'ch');
       measureOut.value = measure.value + ' ch';
+      paintSlider(measure, '--accent');
       saveSettings({ measure: +measure.value });
     });
   }
@@ -145,12 +151,12 @@
   });
 
   // ── Reading-position hairline ──
-  const progress = document.getElementById('progress');
+  const progressFill = document.querySelector('#progress .fill');
   function paintProgress() {
     const max = document.documentElement.scrollHeight - window.innerHeight;
-    progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+    progressFill.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
   }
-  if (progress) {
+  if (progressFill) {
     addEventListener('scroll', paintProgress, { passive: true });
     paintProgress();
   }
@@ -169,6 +175,8 @@
   document.addEventListener('fullscreenchange', () => {
     const zen = !!document.fullscreenElement;
     document.body.classList.toggle('zen', zen);
+    const icon = document.getElementById('zen-icon');
+    if (icon) icon.setAttribute('href', zen ? '#i-min' : '#i-focus');
     if (zen) wakeChrome();
   });
   document.addEventListener('mousemove', () => {

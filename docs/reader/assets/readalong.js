@@ -110,19 +110,24 @@
       return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0');
     }
 
+    const playIcon = document.getElementById('rl-play-icon');
+
     function paint() {
       const dur = audio.duration || 0;
       if (!seeking) {
         seek.max = dur || 100;
         seek.value = audio.currentTime;
+        if (window.paintSlider) window.paintSlider(seek, '--accent-soft');
       }
       timeOut.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
-      playBtn.textContent = audio.paused ? '▶' : '⏸';
+      playIcon.setAttribute('href', audio.paused ? '#i-play' : '#i-pause');
     }
 
     audio.addEventListener('timeupdate', () => {
-      const c = clipAt(audio.currentTime);
-      if (c) highlight(c.el);
+      if (!audio.paused) {          // don't wash the heading before play starts
+        const c = clipAt(audio.currentTime);
+        if (c) highlight(c.el);
+      }
       paint();
     });
     audio.addEventListener('loadedmetadata', paint);
@@ -138,7 +143,10 @@
     playBtn.addEventListener('click', () => {
       if (audio.paused) audio.play(); else audio.pause();
     });
-    seek.addEventListener('input', () => { seeking = true; });
+    seek.addEventListener('input', () => {
+      seeking = true;
+      if (window.paintSlider) window.paintSlider(seek, '--accent-soft');
+    });
     seek.addEventListener('change', () => {
       audio.currentTime = +seek.value;
       seeking = false;

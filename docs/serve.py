@@ -80,6 +80,20 @@ var L=s.layers||{};['wikilinks','cuts','footnotes'].forEach(function(k){
 h.dataset['l'+k[0].toUpperCase()+k.slice(1)]=L[k]?'on':'off';});}catch(e){}})();
 """.strip()
 
+# Inline icon symbols — copied from the UI drafts (Tabler-outline style):
+# _generated/design/session-reader-ui-drafts-2026-07-03/reader-ui-drafts.html
+ICONS = """
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-list" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><line x1="8.5" y1="9" x2="15.5" y2="9"/><line x1="8.5" y1="13" x2="15.5" y2="13"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><line x1="4" y1="8" x2="20" y2="8"/><circle cx="14" cy="8" r="2.6"/><line x1="4" y1="16" x2="20" y2="16"/><circle cx="9" cy="16" r="2.6"/></symbol>
+  <symbol id="i-focus" viewBox="0 0 24 24"><path d="M4 8 V4 H8"/><path d="M16 4 H20 V8"/><path d="M20 16 V20 H16"/><path d="M8 20 H4 V16"/></symbol>
+  <symbol id="i-min" viewBox="0 0 24 24"><path d="M4 8 H8 V4"/><path d="M20 8 H16 V4"/><path d="M4 16 H8 V20"/><path d="M20 16 H16 V20"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><line x1="9" y1="5" x2="9" y2="19"/><line x1="15" y1="5" x2="15" y2="19"/></symbol>
+</svg>
+"""
+
 TOC_DRAWER = """
 <nav id="toc-drawer" aria-label="Contents">
   <button class="panel-close" title="Close">✕</button>
@@ -104,25 +118,25 @@ NOTES_PANEL = """
 
 TOOLS_DISPLAY = """
   <h3>Display</h3>
-  <div class="tool-row"><label>Text size</label>
-    <div class="seg-buttons"><button id="font-smaller">A−</button><button id="font-larger">A+</button></div>
-    <output id="font-scale-out">100%</output></div>
-  <div class="tool-row"><label for="measure-range">Line length</label>
-    <input type="range" id="measure-range" min="48" max="82" step="1" value="66">
-    <output id="measure-out">66 ch</output></div>
-  <div class="tool-row"><label>Theme</label>
-    <div class="seg-buttons">
-      <button data-theme-pick="paper">Paper</button>
-      <button data-theme-pick="sepia">Sepia</button>
-      <button data-theme-pick="dark">Dark</button>
-    </div><output></output></div>
+  <div class="tool-row"><span>Text size</span>
+    <span class="stepper"><button id="font-smaller" title="Smaller" aria-label="Smaller text">−</button><span class="aa">Aa</span><button id="font-larger" title="Larger" aria-label="Larger text">+</button></span></div>
+  <div class="tool-slider">
+    <div class="tool-row"><span>Line length</span><output id="measure-out">66 ch</output></div>
+    <input type="range" class="track" id="measure-range" min="48" max="82" step="1" value="66" aria-label="Line length">
+  </div>
+  <div class="tool-row"><span>Theme</span>
+    <span class="dots">
+      <button class="dot paper" data-theme-pick="paper" title="Paper" aria-label="Paper theme"></button>
+      <button class="dot sepia" data-theme-pick="sepia" title="Sepia" aria-label="Sepia theme"></button>
+      <button class="dot dark" data-theme-pick="dark" title="Dark" aria-label="Dark theme"></button>
+    </span></div>
 """
 
 TOOLS_LAYERS = """
   <h3>Layers</h3>
-  <div class="tool-row"><label for="layer-wikilinks">Wiki links</label><input type="checkbox" id="layer-wikilinks" data-layer="wikilinks"></div>
-  <div class="tool-row"><label for="layer-cuts">Editorial cuts</label><input type="checkbox" id="layer-cuts" data-layer="cuts"></div>
-  <div class="tool-row"><label for="layer-footnotes">Footnotes</label><input type="checkbox" id="layer-footnotes" data-layer="footnotes"></div>
+  <label class="tool-row">Wikilinks <input type="checkbox" class="sw" data-layer="wikilinks"></label>
+  <label class="tool-row">Editorial cuts <input type="checkbox" class="sw" data-layer="cuts"></label>
+  <label class="tool-row">Footnotes <input type="checkbox" class="sw" data-layer="footnotes"></label>
 """
 
 ANNOTATION_UI = """
@@ -140,9 +154,9 @@ ANNOTATION_UI = """
 
 TRANSPORT = """
 <div id="transport">
-  <button id="rl-play" title="Play / pause">▶</button>
+  <button id="rl-play" title="Play / pause" aria-label="Play or pause"><svg class="ic"><use id="rl-play-icon" href="#i-play"/></svg></button>
   <span class="rl-section" id="rl-sec">–/–</span>
-  <input type="range" id="rl-seek" min="0" max="100" step="0.1" value="0" title="Seek">
+  <input type="range" class="track" id="rl-seek" min="0" max="100" step="0.1" value="0" title="Seek" aria-label="Seek">
   <span class="rl-time" id="rl-time">0:00 / 0:00</span>
   <button id="rl-speed" title="Playback speed">1×</button>
   <a href="/reader/index.html" title="Back to the library">⌂</a>
@@ -151,7 +165,7 @@ TRANSPORT = """
 
 
 def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
-               kind="doc", home_html="", breadcrumb="", tools_extra="",
+               kind="doc", home_html="", tools_extra="",
                readalong=False, lang="en"):
     """Wrap rendered content in the universal reading shell."""
     tools = f"""
@@ -173,17 +187,18 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
 <link rel="stylesheet" href="/reader/assets/shell.css">
 </head>
 <body data-kind="{kind}"{audio_attr}>
-<div id="progress"></div>
+{ICONS}
+<div id="progress"><div class="fill"></div></div>
 <header id="topbar">
   <div class="tb-group">
-    <button id="tb-contents" title="Table of contents">Contents</button>
-    {home_html}
-    {breadcrumb}
+    <button id="tb-contents" title="Contents" aria-label="Contents"><svg class="ic"><use href="#i-list"/></svg></button>
+    <span class="tb-title">{title}</span>
+    <span class="tb-group tb-links">{home_html}</span>
   </div>
   <div class="tb-group">
-    <button id="tb-notes" title="Your notes on this page">Notes</button>
-    <button id="tb-tools" title="Display, layers, version">Tools</button>
-    <button id="tb-zen" title="Fullscreen reading">Focus</button>
+    <button id="tb-notes" title="Notes" aria-label="Notes"><svg class="ic"><use href="#i-note"/></svg></button>
+    <button id="tb-zen" title="Focus — fullscreen reading" aria-label="Focus"><svg class="ic"><use id="zen-icon" href="#i-focus"/></svg></button>
+    <button id="tb-tools" class="gear" title="Tools" aria-label="Tools"><svg class="ic"><use href="#i-tools"/></svg></button>
   </div>
 </header>
 {TOC_DRAWER}
@@ -324,8 +339,7 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
                      f'href="{work}.{v}.html">{_version_label(v)}</a>')
     version_html = ""
     if len(links) > 1:
-        version_html = ('\n  <h3>Version</h3>\n  <div class="tool-row">'
-                        f'<div class="seg-buttons">{"".join(links)}</div></div>')
+        version_html = f'\n  <h3>Version</h3>\n  <div class="seg">{"".join(links)}</div>'
 
     # Return affordances: the library (works tracker) + the work's overview
     # (v1: the corpus dive, the closest thing to an overview page in docs/)
@@ -417,10 +431,6 @@ def md_to_html(md_path: Path) -> str:
 
     mtime = datetime.fromtimestamp(md_path.stat().st_mtime).strftime("%-d %B %Y")
 
-    breadcrumb = ""
-    if folder and folder != ".":
-        breadcrumb = f'<span class="breadcrumb">{esc(folder)}</span>'
-
     doc_key = "docs/" + str(rel.with_suffix(""))
 
     return page_shell(
@@ -432,7 +442,6 @@ def md_to_html(md_path: Path) -> str:
         config={"docKey": doc_key, "kind": "doc"},
         kind="doc",
         home_html='<a href="/INDEX.html">tolstoy.life / docs</a>',
-        breadcrumb=breadcrumb,
     )
 
 
