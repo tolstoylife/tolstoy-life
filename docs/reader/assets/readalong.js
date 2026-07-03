@@ -155,9 +155,9 @@
       applySpeed(SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]);
     });
 
-    // ── Click a sentence to seek to it (a plain click, not a selection) ──
+    // ── Click a sentence (or a section heading) to seek to it ──
     document.querySelector('main').addEventListener('click', e => {
-      const span = e.target.closest('.sentence');
+      const span = e.target.closest('.sentence, h2[id^="sec-"]');
       if (!span || e.target.closest('a, mark.annotation')) return;
       if (!window.getSelection().isCollapsed) return;
       const clip = timing.clips[span.id];

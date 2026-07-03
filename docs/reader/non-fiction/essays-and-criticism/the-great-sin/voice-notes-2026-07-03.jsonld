@@ -1,0 +1,163 @@
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": "AnnotationCollection",
+  "label": "tolstoy.life notes — docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905",
+  "total": 5,
+  "items": [
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "urn:uuid:7f2d3418-fe15-4ac1-8639-12d0112f28f2",
+      "type": "Annotation",
+      "created": "2026-07-03T16:37:51.578Z",
+      "motivation": "commenting",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Voice reading: needs a longer pause after each comma.",
+          "format": "text/plain",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "source": "docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905#p-1-2-s2",
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "the nobles, merchants, Government officials, doctors, engineers, professors, teachers, artists, students, advocates, chiefly townspeople,",
+            "prefix": "These men—",
+            "suffix": " the so-called \"intellectuals\""
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 10,
+            "end": 147
+          }
+        ]
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "urn:uuid:7c2906c9-2c22-45d0-aaa0-af92783f4ade",
+      "type": "Annotation",
+      "created": "2026-07-03T16:42:32.357Z",
+      "motivation": "commenting",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Voice reading: rising pitch, should be more monotone or dropping pitch because of ending sentence",
+          "format": "text/plain",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "source": "docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905#p-2-3",
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": " I asked.",
+            "prefix": "oesn't your son live at home?\"",
+            "suffix": ""
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 36,
+            "end": 45
+          }
+        ]
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "urn:uuid:1914536c-e42e-4cdd-8c20-c901bb673794",
+      "type": "Annotation",
+      "created": "2026-07-03T16:44:14.772Z",
+      "motivation": "commenting",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "same as above",
+          "format": "text/plain",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "source": "docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905#p-2-6",
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": " I asked.",
+            "prefix": "\"What business in town?\"",
+            "suffix": ""
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 24,
+            "end": 33
+          }
+        ]
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "urn:uuid:b06eb23a-86d5-4e4b-8a45-590bfac786c7",
+      "type": "Annotation",
+      "created": "2026-07-03T16:46:25.815Z",
+      "motivation": "commenting",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Pronunciation:  K-Vas should be kvass",
+          "format": "text/plain",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "source": "docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905#p-2-4-s3",
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": " Kvas.",
+            "prefix": "Just enough for",
+            "suffix": ""
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 15,
+            "end": 21
+          }
+        ]
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "urn:uuid:a67863c5-70a0-4aa8-92cc-da75280f7f14",
+      "type": "Annotation",
+      "created": "2026-07-03T16:54:21.002Z",
+      "motivation": "commenting",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Voice: too long pause for the dot",
+          "format": "text/plain",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "source": "docs/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905#p-3-7-s8",
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "$1.40",
+            "prefix": "ave to work for an average of ",
+            "suffix": " a day, it is no wonder that g"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 58,
+            "end": 63
+          }
+        ]
+      }
+    }
+  ]
+}

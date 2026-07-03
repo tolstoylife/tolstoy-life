@@ -79,7 +79,8 @@
     const selected = range.toString();
     let el = range.commonAncestorContainer;
     if (el.nodeType === 3) el = el.parentNode;
-    const para = el.closest('[id^="p-"]');
+    // anchor to the enclosing paragraph — or a heading (they carry ids too)
+    const para = el.closest('[id^="p-"], h2[id], h3[id]');
     if (!para) return null;
     const full = para.textContent || '';
     const start = full.indexOf(selected);
@@ -96,9 +97,10 @@
 
   // ── Re-anchor + render: wrap the quote in <mark>, preferring the match
   //    nearest the stored TextPosition. Single-text-node quotes only (v1). ──
-  function findAndWrap(ann) {
+  function findAndWrap(ann, exactOverride) {
     const q = quoteSel(ann);
     if (!q || !q.exact) return;
+    const exact = exactOverride || q.exact;
     const para = paraIdOf(ann) ? document.getElementById(paraIdOf(ann)) : null;
     const scope = para || document.querySelector('main');
     if (!scope) return;
@@ -107,24 +109,29 @@
     let node, offset = 0, best = null;
     while ((node = walker.nextNode())) {
       if (node.parentNode.closest('mark.annotation')) { offset += node.textContent.length; continue; }
-      let idx = node.textContent.indexOf(q.exact);
+      let idx = node.textContent.indexOf(exact);
       while (idx !== -1) {
         const abs = offset + idx;
         const dist = pos ? Math.abs(abs - pos.start) : (best ? Infinity : 0);
         if (!best || dist < best.dist) best = { node, idx, dist };
         if (!pos) break; // no position stored: first match wins
-        idx = node.textContent.indexOf(q.exact, idx + 1);
+        idx = node.textContent.indexOf(exact, idx + 1);
       }
       if (!pos && best) break;
       offset += node.textContent.length;
     }
-    if (!best) return;
+    if (!best) {
+      // a quote with edge whitespace can start in the gap BETWEEN sentence
+      // spans (its own text node) — retry with the trimmed quote
+      if (!exactOverride && exact !== exact.trim()) findAndWrap(ann, exact.trim());
+      return;
+    }
     const { node: n, idx } = best;
-    const after = n.textContent.slice(idx + q.exact.length);
+    const after = n.textContent.slice(idx + exact.length);
     const mark = document.createElement('mark');
     mark.className = 'annotation' + (needsFix(ann) ? ' needs-fix' : '');
     mark.dataset.annId = ann.id;
-    mark.textContent = q.exact;
+    mark.textContent = exact;
     const afterNode = document.createTextNode(after);
     n.textContent = n.textContent.slice(0, idx);
     n.parentNode.insertBefore(mark, n.nextSibling);
@@ -137,7 +144,7 @@
       m.replaceWith(document.createTextNode(m.textContent));
     });
     document.querySelector('main') && document.querySelector('main').normalize();
-    loadDoc().forEach(findAndWrap);
+    loadDoc().forEach(a => findAndWrap(a));
     renderPanel();
   }
 
@@ -251,21 +258,30 @@
     renderAll();
   }
 
+  // Human-readable export — for pasting notes straight into a chat.
+  function exportText() {
+    const anns = loadDoc();
+    const lines = ['Notes — ' + DOC_KEY, ''];
+    anns.forEach((a, i) => {
+      const q = ((quoteSel(a) || {}).exact || '').trim();
+      lines.push(`${i + 1}. [${paraIdOf(a) || '—'}] "${q}"${needsFix(a) ? ' 🔧' : ''}`);
+      lines.push('   ' + commentOf(a).replace(/\n/g, '\n   '));
+      lines.push('');
+    });
+    return lines.join('\n');
+  }
+
+  function copyFeedback(btn) {
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = orig; }, 1800);
+  }
+  bindClick('notes-copytext', btn => {
+    navigator.clipboard.writeText(exportText()).then(() => copyFeedback(btn));
+  });
   bindClick('notes-export', btn => {
     const payload = JSON.stringify(exportCollection(), null, 2);
-    navigator.clipboard.writeText(payload).then(() => {
-      const orig = btn.textContent;
-      btn.textContent = 'Copied!';
-      setTimeout(() => { btn.textContent = orig; }, 1800);
-    });
-  });
-  bindClick('notes-download', () => {
-    const blob = new Blob([JSON.stringify(exportCollection(), null, 2)], { type: 'application/ld+json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'notes-' + DOC_KEY.split('/').pop() + '.jsonld';
-    a.click();
-    URL.revokeObjectURL(a.href);
+    navigator.clipboard.writeText(payload).then(() => copyFeedback(btn));
   });
   bindClick('notes-import', () => {
     const pasted = prompt('Paste annotation JSON (W3C collection or a previous export):');
@@ -345,4 +361,7 @@
   const initial = loadDoc();
   if (initial.length) saveDoc(initial);
   renderAll();
+
+  // Exposed for tests / preview verification.
+  window.readerNotes = { exportText, exportCollection };
 })();

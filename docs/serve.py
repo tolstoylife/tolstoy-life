@@ -108,8 +108,8 @@ NOTES_PANEL = """
   <h2>Notes</h2>
   <ul id="notes-list"></ul>
   <div class="notes-actions">
+    <button id="notes-copytext">Copy as text</button>
     <button id="notes-export">Copy JSON-LD</button>
-    <button id="notes-download">Download</button>
     <button id="notes-import">Import…</button>
     <button id="notes-clear" class="danger">Clear all</button>
   </div>

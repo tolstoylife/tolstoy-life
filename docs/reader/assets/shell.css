@@ -293,7 +293,8 @@ a.noteref sup { font-size: 13px; color: var(--accent); margin-left: 2px; }
   box-decoration-break: clone;
   padding: 1px 0;
 }
-body[data-kind="work"][data-audio="true"] .sentence { cursor: pointer; }
+body[data-kind="work"][data-audio="true"] .sentence,
+body[data-kind="work"][data-audio="true"] main h2 { cursor: pointer; }
 
 .work-notes { margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1.2rem; }
 .work-notes aside { font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
@@ -513,11 +514,11 @@ mark.annotation.needs-fix { border-bottom-style: dashed; }
 mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-align: super; margin-left: 1px; opacity: 0.8; }
 mark.annotation.flash { animation: entry-flash 1.2s; }
 /* Margin marker: a thin bar beside any line-block that carries a note. */
-main :is(p, li, blockquote):has(mark.annotation)::before {
+main :is(p, li, blockquote, h2, h3):has(mark.annotation)::before {
   content: ""; position: absolute; left: -1.05rem; top: 0.35em; bottom: 0.35em;
   width: 3px; border-radius: 2px; background: var(--accent-soft); opacity: 0.55;
 }
-main li:has(mark.annotation), main blockquote:has(mark.annotation) { position: relative; }
+main :is(li, blockquote, h2, h3):has(mark.annotation) { position: relative; }
 
 @keyframes entry-flash {
   0%, 45% { background: var(--hl); }
