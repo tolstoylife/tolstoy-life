@@ -165,7 +165,7 @@ TRANSPORT = """
 
 
 def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
-               kind="doc", home_html="", tools_extra="",
+               kind="doc", home_html="", crumb_html="", tools_extra="",
                readalong=False, lang="en"):
     """Wrap rendered content in the universal reading shell."""
     tools = f"""
@@ -177,6 +177,8 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
     transport = TRANSPORT if readalong else ""
     readalong_js = '\n<script src="/reader/assets/readalong.js"></script>' if readalong else ""
     audio_attr = ' data-audio="true"' if readalong else ""
+    ident = (f'<nav class="tb-crumb">{crumb_html}</nav>' if crumb_html
+             else f'<span class="tb-title">{title}</span>')
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -192,7 +194,7 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
 <header id="topbar">
   <div class="tb-group">
     <button id="tb-contents" title="Contents" aria-label="Contents"><svg class="ic"><use href="#i-list"/></svg></button>
-    <span class="tb-title">{title}</span>
+    {ident}
     <span class="tb-group tb-links">{home_html}</span>
   </div>
   <div class="tb-group">
@@ -354,18 +356,25 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
     if len(links) > 1:
         version_html = f'\n  <h3>Version</h3>\n  <div class="seg">{"".join(links)}</div>'
 
-    # Return affordances: the library (works tracker) + the work's overview
-    # (the bundle's overview.md; before one exists, the corpus dive stands in)
-    home_html = '<a href="/reader/index.html">‹ Library</a>'
+    # Top-bar breadcrumb: Library › work title → the overview page (the
+    # corpus dive stands in until the bundle has an overview.md)
     if (bundle / "overview.md").exists():
-        home_html += '\n    <a href="overview.html">Overview</a>'
+        up = "overview.html"
     else:
         dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
-        if dive:
-            rel_dive = dive.relative_to(ROOT).with_suffix(".html")
-            home_html += f'\n    <a href="/{rel_dive}">Overview</a>'
+        up = f"/{dive.relative_to(ROOT).with_suffix('.html')}" if dive else ""
 
     title = meta.get("title") or work.replace("-", " ").title()
+    # The crumb names the work (the overview's title) — this edition may
+    # carry its own published title (e.g. "A Great Iniquity"), kept in the
+    # page heading below.
+    here_title = title
+    if up == "overview.html":
+        here_title = _extract_title_md(bundle / "overview.md") or title
+    here = (f'<a class="here" href="{up}">{esc(here_title)}</a>' if up
+            else f'<span class="here">{esc(here_title)}</span>')
+    crumb_html = ('<a href="/reader/index.html">Library</a>'
+                  '<span class="sep">›</span>' + here)
     author = meta.get("author", "")
     date = meta.get("date", "")
     eyebrow = " · ".join(x for x in [author, date, "reader edition"] if x)
@@ -392,7 +401,7 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
         body_html=body_html,
         config=config,
         kind="work",
-        home_html=home_html,
+        crumb_html=crumb_html,
         tools_extra=TOOLS_LAYERS + version_html,
         readalong=readalong,
         lang="ru" if version.startswith("ru") else "en",
@@ -453,13 +462,15 @@ def md_to_html(md_path: Path) -> str:
     # button for the best edition instead of the generic docs crumb.
     eyebrow = folder or "docs"
     home_html = '<a href="/INDEX.html">tolstoy.life / docs</a>'
+    crumb_html = ""
     if md_path.name == "overview.md":
         editions = bundle_editions(md_path.parent)
         if editions:
             work, version = editions[0]
             eyebrow = "reader edition · overview"
-            home_html = ('<a href="/reader/index.html">‹ Library</a>\n    '
-                         f'<a class="tb-read" href="{work}.{version}.html">Read ›</a>')
+            crumb_html = ('<a href="/reader/index.html">Library</a>'
+                          f'<span class="sep">›</span><span class="here">{esc(title)}</span>')
+            home_html = f'<a class="tb-read" href="{work}.{version}.html">Read ›</a>'
 
     return page_shell(
         title=esc(title),
@@ -470,6 +481,7 @@ def md_to_html(md_path: Path) -> str:
         config={"docKey": doc_key, "kind": "doc"},
         kind="doc",
         home_html=home_html,
+        crumb_html=crumb_html,
     )
 
 
@@ -787,6 +799,9 @@ def collect_orphan_html_files() -> dict:
         if rel == "research/index.html" or rel.startswith("research/visualizations/"):
             continue
         if path.with_suffix(".md").exists():
+            continue
+        # A bundle's index.html is the generated twin of its overview.md
+        if path.name == "index.html" and (path.parent / "overview.md").exists():
             continue
         if len(parts) == 1:
             folder = "_root"
