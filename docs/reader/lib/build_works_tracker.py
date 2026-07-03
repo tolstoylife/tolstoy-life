@@ -344,6 +344,17 @@ CSS = """
 body { margin:0; background:var(--bg); color:var(--ink);
   font:15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
 a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+/* Top bar — the reader shell's bar in the Library's dark palette (sans, modern) */
+.topbar { position:sticky; top:0; z-index:300;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:9px 16px; border-bottom:1px solid var(--line);
+  background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }
+.topbar .tb-group { display:flex; align-items:center; gap:10px; min-width:0; }
+.topbar a { font-size:12px; color:var(--ink-dim); } .topbar a:hover { color:var(--ink); text-decoration:none; }
+.topbar .tb-brand { font-size:13px; color:var(--accent); }
+.topbar .sep { font-size:12px; color:var(--ink-faint); }
+.topbar .tb-here { font-size:13px; font-weight:600; color:var(--ink); }
 .wrap { max-width:1280px; margin:0 auto; padding:2.2rem 1.3rem 4rem; }
 header.top { border-bottom:1px solid var(--line); padding-bottom:1.2rem; margin-bottom:1.4rem; }
 .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 .4rem; }
@@ -365,7 +376,7 @@ button.csv { background:var(--panel); border:1px solid var(--line); color:var(--
 button.csv:hover { border-color:var(--accent); color:var(--ink); }
 table { width:100%; border-collapse:collapse; font-size:.84rem; }
 th, td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
-th { position:sticky; top:0; background:var(--bg); color:var(--accent); font-weight:600; cursor:pointer;
+th { position:sticky; top:40px; background:var(--bg); color:var(--accent); font-weight:600; cursor:pointer;
   white-space:nowrap; user-select:none; font-size:.74rem; letter-spacing:.03em; text-transform:uppercase; }
 th:hover { color:var(--ink); }
 th[aria-sort="ascending"]::after { content:" ▲"; font-size:.7em; }
@@ -504,6 +515,17 @@ def render(rows, meta):
 <style>{CSS}</style>
 </head>
 <body>
+<header class="topbar">
+  <div class="tb-group">
+    <a class="tb-brand" href="/INDEX.html">tolstoy.life</a>
+    <span class="sep">›</span>
+    <span class="tb-here">Library</span>
+  </div>
+  <div class="tb-group tb-links">
+    <a href="/INDEX.html">Docs</a>
+    <a href="research/index.html">Research index</a>
+  </div>
+</header>
 <div class="wrap">
 <header class="top">
   <p class="eyebrow">tolstoy.life · reader editions</p>
@@ -513,7 +535,7 @@ def render(rows, meta):
   focus on the prophet period; the Period column marks which works belong to it, and the table sorts by date.
   Click a column to sort; type to filter. Generated from the dives, the works records, and the hand-kept
   status file; it rebuilds on every docs build.</p>
-  <p class="crumb"><a href="/INDEX.html">← all notes</a> · <a href="research/index.html">research index</a> · {esc(n)} works · latest dive {esc(updated)}</p>
+  <p class="crumb">{esc(n)} works · latest dive {esc(updated)}</p>
 </header>
 
 <div class="stats">{stats}</div>
