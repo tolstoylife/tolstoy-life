@@ -222,20 +222,36 @@ def _translations_from_sidecar(path):
 
 # ── Loop status ───────────────────────────────────────────────────────────────
 
-def bundle_built(record_path):
-    """A work is 'built' if its bundle's build/ folder exists with a segments file."""
+def bundle_dir(record_path):
+    """…/works/<cat>/<subcat>/<wid>/… → the work's reader bundle dir, or None."""
     if not record_path:
-        return False
+        return None
     parts = Path(record_path).parts
     if "works" not in parts:
-        return False
+        return None
     i = parts.index("works")
     try:
         cat, subcat, wid = parts[i + 1], parts[i + 2], parts[i + 3]
     except IndexError:
+        return None
+    return DOCS / "reader" / cat / subcat / wid
+
+
+def bundle_built(record_path):
+    """A work is 'built' if its bundle's build/ folder exists with a segments file."""
+    bdir = bundle_dir(record_path)
+    if not bdir:
         return False
-    build = DOCS / "reader" / cat / subcat / wid / "build"
+    build = bdir / "build"
     return build.is_dir() and any(build.glob("segments*.json"))
+
+
+def overview_href(record_path):
+    """Bundle overview page (relative to docs/reader/index.html), or ''."""
+    bdir = bundle_dir(record_path)
+    if bdir and (bdir / "overview.md").exists():
+        return f"{bdir.relative_to(READER).as_posix()}/"
+    return ""
 
 
 def furthest_stage(derived, declared):
@@ -296,6 +312,7 @@ def _finish_row(seed, records, status, dived):
         "recordExists": record_exists,
         "ready": ready,
         "diveHref": seed["diveHref"],
+        "overviewHref": overview_href(seed["recordPath"]),
         "sortYear": _year(seed["slug"], seed["dates"] or rec.get("dates", "")),
     }
 
@@ -428,8 +445,11 @@ COLUMNS = [
 def render_cell(row, key):
     if key == "title":
         inner = esc(row["title"])
-        if row["diveHref"]:
-            inner = f'<a href="{esc(row["diveHref"])}">{inner}</a>'
+        # overview page (the work's own front page) beats the dive; the
+        # overview links onward to the dive itself
+        href = row.get("overviewHref") or row["diveHref"]
+        if href:
+            inner = f'<a href="{esc(href)}">{inner}</a>'
         return f'<td class="title" data-sort="{esc(row["title"].lower())}">{inner}</td>'
     if key == "stage":
         s = row["stage"]

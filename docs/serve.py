@@ -285,6 +285,19 @@ def _version_order(version: str):
             else 2 if version.startswith("en-machine") else 1, version)
 
 
+def _read_order(version: str):
+    """Which edition the overview's Read button opens first: published EN,
+    then RU, then machine translation."""
+    return (0 if version.startswith("en") and not version.startswith("en-machine")
+            else 1 if version.startswith("ru") else 2, version)
+
+
+def bundle_editions(bundle: Path):
+    """Reader editions in a bundle dir, best-read-first: [(work, version), …]."""
+    found = [wv for p in sorted(bundle.glob("*.md")) for wv in [work_version_of(p)] if wv]
+    return sorted(found, key=lambda wv: _read_order(wv[1]))
+
+
 def _render_sentence_web(text: str) -> str:
     """Sentence display text → HTML: [^label] markers become noterefs, the rest
     is escaped. The web twin of build_xhtml._render_sentence (same ids, no
@@ -342,12 +355,15 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
         version_html = f'\n  <h3>Version</h3>\n  <div class="seg">{"".join(links)}</div>'
 
     # Return affordances: the library (works tracker) + the work's overview
-    # (v1: the corpus dive, the closest thing to an overview page in docs/)
+    # (the bundle's overview.md; before one exists, the corpus dive stands in)
     home_html = '<a href="/reader/index.html">‹ Library</a>'
-    dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
-    if dive:
-        rel_dive = dive.relative_to(ROOT).with_suffix(".html")
-        home_html += f'\n    <a href="/{rel_dive}">Overview</a>'
+    if (bundle / "overview.md").exists():
+        home_html += '\n    <a href="overview.html">Overview</a>'
+    else:
+        dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
+        if dive:
+            rel_dive = dive.relative_to(ROOT).with_suffix(".html")
+            home_html += f'\n    <a href="/{rel_dive}">Overview</a>'
 
     title = meta.get("title") or work.replace("-", " ").title()
     author = meta.get("author", "")
@@ -433,15 +449,27 @@ def md_to_html(md_path: Path) -> str:
 
     doc_key = "docs/" + str(rel.with_suffix(""))
 
+    # A bundle's overview.md is the work's front page: Library + a Read
+    # button for the best edition instead of the generic docs crumb.
+    eyebrow = folder or "docs"
+    home_html = '<a href="/INDEX.html">tolstoy.life / docs</a>'
+    if md_path.name == "overview.md":
+        editions = bundle_editions(md_path.parent)
+        if editions:
+            work, version = editions[0]
+            eyebrow = "reader edition · overview"
+            home_html = ('<a href="/reader/index.html">‹ Library</a>\n    '
+                         f'<a class="tb-read" href="{work}.{version}.html">Read ›</a>')
+
     return page_shell(
         title=esc(title),
-        eyebrow=esc(folder or "docs"),
+        eyebrow=esc(eyebrow),
         heading=esc(title),
         meta_line=f"Last modified {mtime} · <a href=\"/{rel.with_suffix('.md')}\">view source</a>",
         body_html=body_html,
         config={"docKey": doc_key, "kind": "doc"},
         kind="doc",
-        home_html='<a href="/INDEX.html">tolstoy.life / docs</a>',
+        home_html=home_html,
     )
 
 
@@ -829,6 +857,9 @@ def build_all(verbose=True):
             html_path = md_path.with_suffix(".html")
             html = md_to_html(md_path)
             html_path.write_text(html, encoding="utf-8")
+            if md_path.name == "overview.md":
+                # the bundle's front page: the bare folder URL serves it too
+                (md_path.parent / "index.html").write_text(html, encoding="utf-8")
             if verbose:
                 print(f"  ✓ {md_path.relative_to(ROOT)}")
             count += 1
@@ -873,6 +904,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         path = self.path.split("?")[0].lstrip("/")
         if path == "" or path == "INDEX.html":
             build_all(verbose=False)
+        elif (ROOT / path).is_dir() and (ROOT / path / "overview.md").exists():
+            html = md_to_html(ROOT / path / "overview.md")
+            (ROOT / path / "index.html").write_text(html, encoding="utf-8")
         else:
             md_equiv = ROOT / Path(path).with_suffix(".md")
             if md_equiv.exists():
