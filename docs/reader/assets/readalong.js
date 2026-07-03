@@ -37,6 +37,11 @@
     let activeEl = null;
     let lastUserScroll = 0;
     let seeking = false;
+    // ponytail: sections are fetched whole as blob URLs — serve.py speaks no
+    // HTTP Range, so a plain src is only seekable once fully buffered. Blobs
+    // are always seekable; cache is per-section, a few MB each. Swap back to
+    // plain src when the reader lives on a Range-capable host.
+    const blobs = {};
 
     let speed = (settings && settings.load().speed) || 1;
     applySpeed(speed);
@@ -46,12 +51,23 @@
       return R.readalong.timing.replace(/[^/]+$/, '') + path;
     }
 
-    function loadSection(sec, seekTo, autoplay) {
+    async function loadSection(sec, seekTo, autoplay) {
       curSec = sec;
-      audio.src = base(timing.audio[sec]);
-      audio.playbackRate = speed;
-      if (seekTo != null) audio.currentTime = seekTo;
       secOut.textContent = (sections.indexOf(sec) + 1) + '/' + sections.length;
+      if (!blobs[sec]) {
+        const r = await fetch(base(timing.audio[sec]));
+        blobs[sec] = URL.createObjectURL(await r.blob());
+        if (curSec !== sec) return;   // superseded by a later click mid-fetch
+      }
+      audio.src = blobs[sec];
+      audio.playbackRate = speed;
+      if (seekTo != null) {
+        // src was just swapped: readyState still reflects the OLD file until
+        // the load algorithm runs, so a synchronous seek gets discarded.
+        // Always wait for the new metadata.
+        audio.addEventListener('loadedmetadata',
+          () => { audio.currentTime = seekTo; }, { once: true });
+      }
       if (autoplay) audio.play();
       paint();
     }
@@ -145,5 +161,13 @@
     });
 
     loadSection(curSec, 0, false);
+
+    // Exposed for the sync check (docs/tests + preview verification).
+    window.readerReadalong = {
+      audio,
+      get section() { return curSec; },
+      get active() { return activeEl && activeEl.id; },
+      clipAt,
+    };
   }
 })();

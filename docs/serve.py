@@ -855,6 +855,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
+    def end_headers(self):
+        # Dev server: always revalidate, so shell.css/js edits show on reload.
+        self.send_header("Cache-Control", "no-cache")
+        super().end_headers()
+
     def do_GET(self):
         path = self.path.split("?")[0].lstrip("/")
         if path == "" or path == "INDEX.html":
