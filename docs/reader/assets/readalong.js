@@ -155,6 +155,15 @@
       applySpeed(SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]);
     });
 
+    // Spacebar toggles play — except while typing or on a focused control
+    // (a focused button already toggles via its own click on Space).
+    addEventListener('keydown', e => {
+      if (e.code !== 'Space' || e.target.closest('input, textarea, select, button, a, [contenteditable]')) return;
+      e.preventDefault();                    // keep the page from scrolling
+      if (e.repeat) return;
+      if (audio.paused) audio.play(); else audio.pause();
+    });
+
     // ── Click a sentence (or a section heading) to seek to it ──
     document.querySelector('main').addEventListener('click', e => {
       const span = e.target.closest('.sentence, h2[id^="sec-"]');

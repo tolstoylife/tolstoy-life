@@ -6,8 +6,11 @@
 
 :root {
   --font-scale: 1;
-  --measure: 66ch;
+  --measure: 56ch;
   --measure-wide: 52rem;
+  /* Read-along wash: the page background nudged toward the ink — subtle,
+     theme-aware (darkens on light themes, lightens on dark). */
+  --rl-wash: color-mix(in srgb, var(--paper) 88%, var(--ink));
 
   --ink: #1e1a17;
   --ink-soft: #4a4038;
@@ -303,7 +306,7 @@ a.noteref sup { font-size: 13px; color: var(--accent); margin-left: 2px; }
 /* ── Work reader: sentences, notes ── */
 .sentence { border-radius: 2px; }
 .sentence.rl-active, h2.rl-active {
-  background: var(--hl);
+  background: var(--rl-wash);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   padding: 1px 0;
@@ -500,11 +503,21 @@ button.dot[aria-pressed="true"] { border: 1.5px solid var(--accent); }
 }
 .note-body { margin: 0; white-space: pre-wrap; color: var(--ink); }
 .note-meta { font-size: 11px; color: var(--ink-soft); margin-top: 0.3rem; display: flex; gap: 0.6rem; align-items: baseline; }
-.note-meta .note-del {
-  margin-left: auto; background: none; border: none; cursor: pointer;
+.note-meta button {
+  background: none; border: none; cursor: pointer;
   color: var(--ink-soft); font-family: var(--sans); font-size: 11px;
 }
+.note-meta .note-edit, .note-meta .note-save { margin-left: auto; }
+.note-meta .note-edit:hover, .note-meta .note-save:hover { color: var(--accent); }
+.note-meta .note-save { color: var(--accent); font-weight: 600; }
 .note-meta .note-del:hover { color: #a03b2e; }
+.note-entry textarea {
+  width: 100%; font-family: var(--sans); font-size: 13px; line-height: 1.5;
+  border: 0.5px solid var(--ctl-border); border-radius: 6px; padding: 0.5rem 0.6rem;
+  background: var(--paper); color: var(--ink);
+  resize: vertical; min-height: 4rem; outline: none; margin: 0.2rem 0 0.1rem;
+}
+.note-entry textarea:focus { border-color: var(--accent); }
 .notes-empty { color: var(--ink-soft); font-style: italic; }
 .notes-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; }
 .notes-actions button {

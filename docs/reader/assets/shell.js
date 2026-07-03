@@ -104,7 +104,7 @@
   const measure = document.getElementById('measure-range');
   const measureOut = document.getElementById('measure-out');
   if (measure) {
-    measure.value = S.measure || 66;
+    measure.value = S.measure || 56;
     measureOut.value = measure.value + ' ch';
     paintSlider(measure, '--accent');
     measure.addEventListener('input', () => {

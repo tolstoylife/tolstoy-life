@@ -65,6 +65,14 @@
     };
   }
 
+  function setComment(ann, value) {
+    const b = bodies(ann).find(b => b.purpose !== 'tagging');
+    if (b) b.value = value;
+    else ann.body = [{ type: 'TextualBody', value, format: 'text/plain', purpose: 'commenting' }].concat(bodies(ann));
+    ann.modified = new Date().toISOString();
+    return ann;
+  }
+
   // ── Accessors ──────────────────────────────────────────────────────────
   const sel = (ann, type) => ((ann.target && ann.target.selector) || []).find(s => s.type === type);
   const quoteSel = ann => sel(ann, 'TextQuoteSelector');
@@ -211,6 +219,10 @@
       meta.className = 'note-meta';
       const when = document.createElement('span');
       when.textContent = (ann.created || '').slice(0, 10) + (needsFix(ann) ? ' · 🔧 needs fix' : '');
+      const edit = document.createElement('button');
+      edit.className = 'note-edit';
+      edit.textContent = 'Edit';
+      edit.addEventListener('click', e => { e.stopPropagation(); startEdit(); });
       const del = document.createElement('button');
       del.className = 'note-del';
       del.textContent = 'Delete';
@@ -220,7 +232,40 @@
         saveDoc(loadDoc().filter(a => a.id !== ann.id));
         renderAll();
       });
-      meta.append(when, del);
+      meta.append(when, edit, del);
+
+      // Edit in place: the body text becomes a textarea, Save/Cancel replace the meta row.
+      function startEdit() {
+        const ta = document.createElement('textarea');
+        ta.value = commentOf(ann);
+        ta.addEventListener('click', e => e.stopPropagation());
+        ta.addEventListener('keydown', e => {
+          e.stopPropagation();               // Esc cancels the edit, not the panel
+          if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) save();
+          if (e.key === 'Escape') renderPanel();
+        });
+        const row = document.createElement('div');
+        row.className = 'note-meta';
+        const saveBtn = document.createElement('button');
+        saveBtn.className = 'note-save';
+        saveBtn.textContent = 'Save';
+        saveBtn.addEventListener('click', e => { e.stopPropagation(); save(); });
+        const cancelBtn = document.createElement('button');
+        cancelBtn.className = 'note-cancel';
+        cancelBtn.textContent = 'Cancel';
+        cancelBtn.addEventListener('click', e => { e.stopPropagation(); renderPanel(); });
+        row.append(saveBtn, cancelBtn);
+        body.replaceWith(ta);
+        meta.replaceWith(row);
+        ta.focus();
+        function save() {
+          const v = ta.value.trim();
+          if (!v) return;                    // emptying a note isn't deleting it
+          setComment(ann, v);
+          saveDoc(loadDoc().map(a => a.id === ann.id ? ann : a));
+          renderAll();
+        }
+      }
       li.append(quote, body, meta);
       li.addEventListener('click', () => {
         const mark = document.querySelector(`mark.annotation[data-ann-id="${CSS.escape(ann.id)}"]`);
