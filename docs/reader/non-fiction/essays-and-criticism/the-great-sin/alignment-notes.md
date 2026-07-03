@@ -49,10 +49,24 @@ won't take until you also delete that sentence's cached wav.)
 Verified: the words-per-second check went from 13 impossible-rate sentences
 (7 in `sec-3`, 6 in `sec-10`) to 0 across all ten chapters; the eight untouched
 chapters' timing is byte-identical to before; every read-along slot fits inside
-its chapter's audio; EPUBCheck clean. Final ear-check in Thorium is still worth
-doing. Still open (deferred, not blocking): the "Kvas" pronunciation respell
-(Part I) and the high-pitched "I asked" dialogue tags — voice-quality notes,
-separate from this alignment fix.
+its chapter's audio; EPUBCheck clean. Confirmed working by a full Thorium
+read-through (Johan, 2026-07-03).
+
+**Deferred audio backlog (not blocking).** Voice-quality notes from the read-through,
+separate from the alignment fix — each pronunciation fix is a respelling in
+`reader/speech.py` `_SUBS` plus deleting that sentence's cached wav (the wav cache is
+keyed by sentence ID, not text, so the respell won't take until the wav is cleared):
+- **"Kvas"** (Part I) — read as two beats "K-Vas"; want one syllable.
+- **"Alexander II"** (Part IX, `p-10-6-s1`) — read as letters; should be "Alexander the
+  Second."
+- **"I asked"** dialogue tags — high-pitched where they should be flat (prosody, not a
+  respelling; may not be worth chasing).
+- **Other pronunciations** and **pausing between paragraphs / after headings**
+  (the `PARA_GAP` / `CHAP_GAP` tuning) — flagged in the read-through, not yet itemised.
+
+Reader-text and content items from the same read-through (missing italics, wanted
+footnotes, the English-title question) are filed as dive steer in
+`docs/research/1905-the-great-sin/annotations.md`.
 
 ## Russian break adjustments (per section)
 
