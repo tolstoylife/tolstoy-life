@@ -9,7 +9,7 @@ _CONJ = r"(?:and|but|or|nor|yet|so|for)\b"
 # Pronunciation respellings for Kokoro's g2p (verbatim from build_audiobook.py SUBS).
 _SUBS = [
     (r"\blive\b", "liv"),
-    (r"\bKvas\b", "kvass"),                  # capitalized form reads as "K-Vas"
+    (r"\bKvas\b", "quahss"),                 # any kv- onset reads as "key-v…" (no English /kv/); quahss -> kwɑːs
     (r"\$1\.40", "one dollar forty"),        # spell out money — the decimal dot reads as a full stop
     (r"\bLabouchere\b", "Labooshair"),
     (r"\bRadischeff\b", "Rahdeeshef"),

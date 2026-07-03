@@ -17,7 +17,7 @@ def test_ellipsis_normalised():
     assert to_speech("well... maybe") == "well… maybe"
 
 def test_respell_kvass():
-    assert to_speech("Just enough for Kvas.") == "Just enough for kvass."
+    assert to_speech("Just enough for Kvas.") == "Just enough for quahss."
 
 def test_money_spelled_out():
     assert "one dollar forty a day" in to_speech("work for an average of $1.40 a day, it is no wonder")
