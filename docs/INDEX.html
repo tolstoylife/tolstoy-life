@@ -4,433 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes — tolstoy.life</title>
-<style>
-:root {
-  --ink: #1e1a17;
-  --ink-soft: #4a4038;
-  --paper: #faf7f2;
-  --rule: #d9d1c5;
-  --accent: #6b4423;
-  --accent-soft: #8c6a4a;
-  --measure: 38rem;
-  --measure-wide: 52rem;
-}
-
-*, *::before, *::after { box-sizing: border-box; }
-
-html { font-size: 150%; -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; padding: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino,
-               "URW Palladio L", P052, Charter, Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  font-feature-settings: "kern", "liga", "onum";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Layout ── */
-.site-header {
-  max-width: var(--measure-wide);
-  margin: 0 auto;
-  padding: 1.4rem 1.5rem 1rem;
-  display: flex;
-  align-items: baseline;
-  gap: 1.2rem;
-  border-bottom: 1px solid var(--rule);
-}
-.site-header a.home {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  text-decoration: none;
-  font-style: italic;
-  white-space: nowrap;
-}
-.site-header a.home:hover { color: var(--accent); }
-.breadcrumb {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
-.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
-.breadcrumb span { color: var(--rule); margin: 0 0.3em; }
-
-header.doc-header {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
-  border-bottom: 1px solid var(--rule);
-}
-header.doc-header .eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 0 0 0.8rem;
-}
-header.doc-header h1 {
-  font-size: 2.2rem;
-  line-height: 1.15;
-  margin: 0 0 0.5rem;
-  font-weight: 600;
-  letter-spacing: -0.012em;
-}
-header.doc-header .meta {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin: 0;
-  font-variant-numeric: oldstyle-nums;
-}
-
-main {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 6rem;
-}
-
-/* ── Typography ── */
-h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 1rem; font-weight: 600; letter-spacing: -0.012em; }
-h2 { font-size: 1.6rem; line-height: 1.25; margin: 3rem 0 0.4rem; font-weight: 600; letter-spacing: -0.005em; }
-h3 { font-size: 1.18rem; line-height: 1.3; margin: 2.4rem 0 0.6rem; font-weight: 600; }
-h4 { font-size: 1rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
-p { margin: 0 0 1.1rem; hyphens: auto; -webkit-hyphens: auto; }
-ol, ul { padding-left: 1.4rem; margin: 0 0 1.3rem; }
-li { margin-bottom: 0.55rem; }
-li > ol, li > ul { margin-top: 0.4rem; margin-bottom: 0.2rem; }
-strong { font-weight: 600; }
-em { font-style: italic; }
-a { color: var(--accent); text-decoration: underline;
-    text-decoration-thickness: 1px; text-underline-offset: 2px; }
-a:hover { color: var(--ink); }
-blockquote {
-  margin: 1.4rem 0; padding: 0 0 0 1.2rem;
-  border-left: 2px solid var(--accent-soft);
-  color: var(--ink-soft); font-style: italic;
-}
-hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
-
-figure { margin: 1.8rem 0; }
-main img {
-  max-width: 100%; height: auto; display: block;
-  margin: 1.8rem auto 0.5rem;
-  border: 1px solid var(--rule); border-radius: 2px;
-  background: #fff;
-}
-/* An italic line immediately after an image reads as its caption. */
-main img + em, figcaption {
-  display: block; font-size: 0.82rem; color: var(--ink-soft);
-  font-style: italic; text-align: center; margin: 0 auto 1.4rem;
-  max-width: var(--measure);
-}
-
-code, kbd, samp {
-  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 0.88em;
-  background: rgba(107,68,35,0.07);
-  padding: 0.08em 0.34em;
-  border-radius: 2px;
-}
-pre {
-  background: rgba(107,68,35,0.05);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 1rem 1.2rem;
-  overflow-x: auto;
-  margin: 0 0 1.4rem;
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-pre code { background: none; padding: 0; font-size: inherit; }
-
-table {
-  width: 100%; border-collapse: collapse;
-  margin: 1.4rem 0 1.8rem; font-size: 0.94rem;
-}
-th, td {
-  text-align: left; padding: 0.6rem 0.8rem 0.6rem 0;
-  border-bottom: 1px solid var(--rule); vertical-align: top;
-}
-th {
-  font-weight: 600; font-size: 0.82rem;
-  letter-spacing: 0.06em; text-transform: uppercase;
-  color: var(--accent-soft); font-style: italic;
-  border-bottom: 1px solid var(--accent-soft);
-}
-
-/* ── Index page ── */
-.featured-section {
-  max-width: var(--measure-wide);
-  margin: 1rem auto 2.5rem;
-  padding: 0 1.5rem;
-}
-.featured-card {
-  display: block;
-  padding: 1.7rem 1.9rem;
-  background: rgba(107, 68, 35, 0.06);
-  border: 1px solid var(--accent-soft);
-  border-radius: 4px;
-  text-decoration: none;
-  color: var(--ink);
-  transition: border-color 0.15s, background 0.15s;
-}
-.featured-card:hover {
-  border-color: var(--accent);
-  background: rgba(107, 68, 35, 0.10);
-  color: var(--ink);
-}
-.featured-card .eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 0 0 0.7rem;
-}
-.featured-card .card-title {
-  font-size: 1.42rem;
-  font-weight: 600;
-  margin: 0 0 0.4rem;
-  line-height: 1.25;
-  letter-spacing: -0.005em;
-}
-.featured-card .card-meta {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  margin: 0 0 0.85rem;
-}
-.featured-card .card-lede {
-  font-size: 0.97rem;
-  color: var(--ink);
-  line-height: 1.55;
-  margin: 0;
-}
-
-.index-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: 0.8rem;
-  margin: 0 0 2.5rem;
-}
-.index-card {
-  display: block;
-  padding: 1rem 1.1rem;
-  background: rgba(107,68,35,0.04);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  text-decoration: none;
-  color: var(--ink);
-  transition: border-color 0.15s, background 0.15s;
-}
-.index-card:hover {
-  border-color: var(--accent-soft);
-  background: rgba(107,68,35,0.07);
-  color: var(--ink);
-}
-.index-card .card-title {
-  font-size: 0.97rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem;
-  line-height: 1.3;
-}
-.index-card .card-meta {
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-  font-style: italic;
-}
-.index-card .card-lede {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin: 0.35rem 0 0;
-  line-height: 1.45;
-}
-
-.section-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  margin: 2.5rem 0 0.8rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
-}
-
-/* ── Blog feed (dated entries) ── */
-.year-label {
-  font-size: 1.05rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-  font-weight: 400;
-  margin: 3rem 0 0.6rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
-  font-variant-numeric: oldstyle-nums;
-}
-.post-list { list-style: none; padding: 0; margin: 0 0 2rem; }
-.post-entry { margin: 0; border-bottom: 1px solid var(--rule); }
-.post-entry:last-child { border-bottom: none; }
-.post-entry a {
-  display: block;
-  padding: 0.95rem 0;
-  text-decoration: none;
-  color: var(--ink);
-  transition: background 0.15s;
-}
-.post-entry a:hover { background: rgba(107, 68, 35, 0.04); }
-.post-row {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.post-entry time {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  font-variant-numeric: oldstyle-nums;
-  flex: 0 0 6rem;
-}
-.post-title {
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: var(--ink);
-  flex: 1 1 auto;
-  line-height: 1.3;
-}
-.post-folder {
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent-soft);
-  font-style: italic;
-}
-.post-lede {
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-  margin: 0.35rem 0 0 7rem;
-  line-height: 1.5;
-}
-@media (max-width: 30rem) {
-  .post-entry time { flex-basis: 100%; }
-  .post-lede { margin-left: 0; }
-}
-
-footer {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
-  border-top: 1px solid var(--rule);
-  font-size: 0.88rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  text-align: center;
-}
-
-/* ── Annotations ── */
-mark.annotation {
-  background: rgba(107, 68, 35, 0.13);
-  border-bottom: 1.5px solid var(--accent-soft);
-  cursor: pointer;
-  border-radius: 1px;
-  padding: 0 1px;
-}
-mark.annotation:hover { background: rgba(107, 68, 35, 0.22); }
-/* A "needs a text fix" note (the wrench): same highlight, dashed underline + a small wrench. */
-mark.annotation.needs-fix { border-bottom-style: dashed; }
-mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-align: super; margin-left: 1px; opacity: 0.8; }
-.ann-fix { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--ink-soft); margin: 0.5rem 0 0; cursor: pointer; user-select: none; }
-.ann-fix input { margin: 0; }
-
-#ann-popover {
-  position: fixed;
-  z-index: 1000;
-  background: var(--paper);
-  border: 1px solid var(--accent-soft);
-  border-radius: 4px;
-  box-shadow: 0 4px 18px rgba(30,26,23,0.13);
-  padding: 0.9rem 1rem;
-  width: 22rem;
-  display: none;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-}
-#ann-popover .ann-quote {
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  font-style: italic;
-  margin: 0 0 0.6rem;
-  border-left: 2px solid var(--accent-soft);
-  padding-left: 0.6rem;
-  line-height: 1.4;
-  max-height: 3.5rem;
-  overflow: hidden;
-}
-#ann-popover textarea {
-  width: 100%;
-  font-family: inherit;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  padding: 0.5rem 0.6rem;
-  background: #fff;
-  color: var(--ink);
-  resize: vertical;
-  min-height: 4rem;
-  outline: none;
-}
-#ann-popover textarea:focus { border-color: var(--accent-soft); }
-#ann-popover .ann-actions {
-  display: flex; gap: 0.5rem; margin-top: 0.6rem; justify-content: flex-end;
-}
-#ann-popover button {
-  font-family: inherit; font-size: 0.82rem; padding: 0.3rem 0.75rem;
-  border-radius: 2px; cursor: pointer; border: 1px solid var(--rule);
-  background: var(--paper); color: var(--ink-soft);
-}
-#ann-popover button.primary {
-  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
-}
-#ann-popover button.primary:hover { background: var(--ink); border-color: var(--ink); }
-#ann-popover button:not(.primary):hover { border-color: var(--accent-soft); color: var(--ink); }
-
-#ann-tooltip {
-  position: fixed; z-index: 999;
-  background: var(--ink); color: var(--paper);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 0.85rem; line-height: 1.5;
-  padding: 0.6rem 0.85rem; border-radius: 3px;
-  max-width: 22rem; box-shadow: 0 3px 12px rgba(30,26,23,0.18);
-  pointer-events: none; display: none; white-space: pre-wrap;
-}
-
-#ann-bar {
-  position: fixed; bottom: 1.2rem; right: 1.4rem;
-  display: none; gap: 0.5rem; z-index: 998;
-}
-#ann-bar button {
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 0.82rem; padding: 0.4rem 0.9rem; border-radius: 2px;
-  cursor: pointer; border: 1px solid var(--accent-soft);
-  background: var(--paper); color: var(--ink-soft);
-  box-shadow: 0 2px 8px rgba(30,26,23,0.1);
-}
-#ann-bar button:hover { border-color: var(--accent); color: var(--ink); }
-#ann-bar button.danger { border-color: #c0392b55; color: #c0392b; }
-#ann-bar button.danger:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
-</style>
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('tolstoy_reader_settings')||'{}');
+var h=document.documentElement;h.dataset.theme=s.theme||'paper';
+h.style.setProperty('--font-scale',s.fontScale||1);
+if(s.measure)h.style.setProperty('--measure',s.measure+'ch');
+var L=s.layers||{};['wikilinks','cuts','footnotes'].forEach(function(k){
+h.dataset['l'+k[0].toUpperCase()+k.slice(1)]=L[k]?'on':'off';});}catch(e){}})();</script>
+<link rel="stylesheet" href="/reader/assets/shell.css">
 </head>
 <body>
 <div class="site-header">
@@ -439,7 +19,7 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
 <header class="doc-header">
   <p class="eyebrow">tolstoy.life · build log</p>
   <h1>Notes</h1>
-  <p class="meta">Dated entries from research and design · generated 30 June 2026, 18:12</p>
+  <p class="meta">Dated entries from research and design · generated 3 July 2026, 17:53</p>
 </header>
 <main>
   <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
@@ -527,6 +107,11 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
       <a class="index-card" href="/research/1879-1882-a-confession/extracts/_scholarship.html">
         <div class="card-title">A Confession (Исповедь) — Secondary scholarship layer</div>
         <div class="card-meta">research · updated 6 Jun 2026</div>
+        
+      </a>
+      <a class="index-card" href="/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.en-1905.html">
+        <div class="card-title">A Great Iniquity (EN reader edition)</div>
+        <div class="card-meta">reader · updated 1 Jul 2026</div>
         
       </a>
       <a class="index-card" href="/research/1908-a-letter-to-a-hindu/index.html">
@@ -919,6 +504,11 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
         <div class="card-meta">research · updated 13 Jun 2026</div>
         <div class='card-lede'>**VERDICT: CLEAN-WITH-NOTES** — substantively sound; 0 must-fix, 4 nice-to-fix (internal-consistency / vocab-precision items only). The publ…</div>
       </a>
+      <a class="index-card" href="/superpowers/specs/2026-07-03-interactive-reader-prototype-design.html">
+        <div class="card-title">Interactive Reader — prototype (v1) design</div>
+        <div class="card-meta">superpowers · updated 3 Jul 2026</div>
+        <div class='card-lede'>The reading surface for tolstoy.life: a clean e-reader by default, with</div>
+      </a>
       <a class="index-card" href="/research/_interactive-edition-all-formats-spec.html">
         <div class="card-title">Interactive reader's editions — all formats from one source (design)</div>
         <div class="card-meta">research · updated 30 Jun 2026</div>
@@ -936,7 +526,7 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
       </a>
       <a class="index-card" href="/research/_interactive-edition-plan.html">
         <div class="card-title">Interactive Reader's Editions — Spec 1 Implementation Plan</div>
-        <div class="card-meta">research · updated 23 Jun 2026</div>
+        <div class="card-meta">research · updated 3 Jul 2026</div>
         <div class='card-lede'>**Goal:** Make a finished corpus-dive renderable as an interactive reader's edition in the local `serve.py` preview, and prove it end-to-end…</div>
       </a>
       <a class="index-card" href="/superpowers/specs/2026-06-30-interactive-reader-editions-workflow-design.html">
@@ -1169,9 +759,14 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
         <div class="card-meta">research · updated 12 Jun 2026</div>
         <div class='card-lede'>Reader (Johan) annotations on the rendered dive, captured per the convention that annotations are *interpretive steer*, kept out of the bare…</div>
       </a>
+      <a class="index-card" href="/research/1905-the-great-sin/annotations.html">
+        <div class="card-title">Reader annotations — The Great Sin (2026-07-03 read-through)</div>
+        <div class="card-meta">research · updated 3 Jul 2026</div>
+        <div class='card-lede'>Reader (Johan) annotations captured while reading the finished English read-along</div>
+      </a>
       <a class="index-card" href="/reader/index.html">
         <div class="card-title">Reader-editions works tracker</div>
-        <div class="card-meta">reader · updated 30 Jun 2026</div>
+        <div class="card-meta">reader · updated 3 Jul 2026</div>
         <div class='card-lede'>Every work the dives have surfaced — the run-list for the reader editions and the progress board for where each sits in the loop (dived → bu…</div>
       </a>
       <a class="index-card" href="/research/1889-1899-resurrection/extracts/_reception.html">
@@ -1664,6 +1259,11 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
         <div class="card-meta">research · updated 11 Jun 2026</div>
         <div class='card-lede'>A single-work corpus dive on Tolstoy's four-act comedy *The Fruits of Enlightenment* (*Плоды просвещения*), written across 1886–1890 and fir…</div>
       </a>
+      <a class="index-card" href="/reader/non-fiction/essays-and-criticism/the-great-sin/the-great-sin.ru.html">
+        <div class="card-title">The Great Sin (RU reader edition)</div>
+        <div class="card-meta">reader · updated 1 Jul 2026</div>
+        
+      </a>
       <a class="index-card" href="/research/1905-the-great-sin/extracts/_scholarship.html">
         <div class="card-title">The Great Sin (Великий грех, 1905) — Secondary-source / scholarship layer</div>
         <div class="card-meta">research · updated 21 Jun 2026</div>
@@ -1673,6 +1273,11 @@ mark.annotation.needs-fix::after { content: "🔧"; font-size: 0.72em; vertical-
         <div class="card-title">The Great Sin (Великий грех, 1905) — Tolstoy on private property in land</div>
         <div class="card-meta">research · updated 22 Jun 2026</div>
         <div class='card-lede'>A primary-source corpus-dive on Tolstoy's 1905 essay on the private ownership of land — the work in which he calls land monopoly «великий гр…</div>
+      </a>
+      <a class="index-card" href="/reader/non-fiction/essays-and-criticism/the-great-sin/alignment-notes.html">
+        <div class="card-title">The Great Sin — Russian spine alignment notes</div>
+        <div class="card-meta">reader · updated 3 Jul 2026</div>
+        <div class='card-lede'>How `the-great-sin.ru.md` (PSS «Великий грех», t. 36, pp. 206–230) was made</div>
       </a>
       <a class="index-card" href="/research/jubilee-edition-tei-corpus/index.html">
         <div class="card-title">The Jubilee Edition and the tolstoydigital TEI/XML corpus</div>
