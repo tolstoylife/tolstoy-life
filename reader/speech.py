@@ -6,6 +6,16 @@ import re
 
 _CONJ = r"(?:and|but|or|nor|yet|so|for)\b"
 
+# Audio-only sentence merges (speechGroup). A sentence whose id is here is glued
+# into the NEXT sentence of its paragraph before segments.json is written, so a
+# too-short leading clip gets spoken with its neighbour's context and stops rising
+# in pitch. The pair then highlights as one read-along unit (Option A). Explicit by
+# id, NOT a word-count rule — a blanket "short sentence" rule would wrongly flatten
+# legitimate rising questions ("Why is this?", "Whence this dreadful perversity?").
+# ponytail: forward-merge only; add backward-merge if a short paragraph-final clip
+# ever needs it. Applied in reader/segment.py.
+MERGE_FORWARD = {"p-7-3-s1"}   # "But we are wrong." -> glue into the long next sentence
+
 # Pronunciation respellings for Kokoro's g2p (verbatim from build_audiobook.py SUBS).
 _SUBS = [
     (r"\blive\b", "liv"),
@@ -31,6 +41,27 @@ _SUBS = [
      r"professors, teachers, artists, students, advocates, chiefly townspeople, the so-called",
      "the nobles. Merchants. Government officials. Doctors. Engineers. "
      "Professors. Teachers. Artists. Students. Advocates. Chiefly townspeople. The so-called"),
+    # The welfare infinitive-list (p-6-7-s1) rushes like the two noun lists — full-stop
+    # each "to …" item for air. Internal commas (books, arbitrary banishments; schools,
+    # common and agricultural) are kept. Voice note 2026-07-04.
+    (r"to abolish the censorship of books, arbitrary banishments, and to organize "
+     r"everywhere schools, common and agricultural, to increase the number of hospitals, "
+     r"to cancel passports and monopolies, to institute strict inspection in the factories, "
+     r"to reward maimed workers, to mark boundaries between properties, to contribute "
+     r"through banks to the purchase of land by peasants, and much else",
+     "to abolish the censorship of books, arbitrary banishments. And to organize "
+     "everywhere schools, common and agricultural. To increase the number of hospitals. "
+     "To cancel passports and monopolies. To institute strict inspection in the factories. "
+     "To reward maimed workers. To mark boundaries between properties. To contribute "
+     "through banks to the purchase of land by peasants. And much else"),
+    # Wanted pause after "God," (p-7-8-s2): the engine never splices at commas, so make
+    # it a full stop in speech only (the page keeps the comma). Voice note 2026-07-04.
+    (r"God, Whom they have served", "God. Whom they have served"),
+    # "…support us, their parasites." (p-6-6-s1): after the comma Kokoro renders the
+    # closing appositive as a HIGH rising tag (~149 Hz). An em-dash in speech only keeps
+    # a beat but drops "their parasites" ~38 Hz so it falls. Page keeps the comma.
+    # Picked by pitch measurement (parselmouth). Voice note 2026-07-04.
+    (r"support us, their parasites\.", "support us — their parasites."),
 ]
 
 def _fix_ellipsis(t):

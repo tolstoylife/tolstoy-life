@@ -68,6 +68,55 @@ Reader-text and content items from the same read-through (missing italics, wante
 footnotes, the English-title question) are filed as dive steer in
 `docs/research/1905-the-great-sin/annotations.md`.
 
+## Short-phrase pitch — the audio-only merge (2026-07-04)
+
+Kokoro rises in pitch on a very short clip (2–4 words) synthesized on its own,
+where it should fall. We can't set pitch directly, so the only lever is
+**context**: hand the synthesizer more words at once. Two mechanisms now do this,
+both keeping the page text faithful and the read-along mapping intact.
+
+**1. The sentence merge (`speechGroup`).** A too-short leading sentence is glued
+into the next sentence of its paragraph *before* `segments.json` is written — one
+combined clip, one highlight unit (the pair lights up together during read-along).
+Because the merge happens before the shared file, everything downstream (clips,
+timing, SMIL) stays consistent; no change to the audio or EPUB builders. Which
+sentences merge is an **explicit list** by ID in `reader/speech.py`
+(`MERGE_FORWARD`), *not* a word-count rule — a blanket "short sentence" rule would
+wrongly flatten legitimate rising **questions** ("Why is this?", "Whence this
+dreadful perversity?"). Configured here: `p-7-3-s1` "But we are wrong." → glued
+into its long following sentence.
+
+**2. Two speech-only respellings** (`reader/speech.py` `_SUBS`; the page keeps its
+punctuation):
+- **welfare list** (`p-6-7-s1`) — full-stop-flattened like the two noun lists, so
+  the "to abolish… to organize… to increase…" run gets air. (It's an infinitive
+  list, so it reads a touch more clipped than the noun lists; kept because the
+  pacing win outweighs it. Revisit if a later ear-check disagrees.)
+- **pause after "God,"** (`p-7-8-s2`) — "God," → "God." in speech only; the full
+  stop gives the wanted pause.
+- **"…their parasites."** (`p-6-6-s1`) — after the comma Kokoro rendered the closing
+  appositive as a high rising tag (**~149 Hz**); an em-dash in speech only ("support
+  us — their parasites.") keeps a beat but drops it to **~111 Hz** so it falls. Page
+  keeps the comma. Picked by measuring the final-word pitch with **parselmouth**
+  (praat) — the reusable way to settle "does it rise or fall" without guessing.
+
+**Comma pause length is a Kokoro constant (~140 ms) — no lever.** Measured three
+ways: slowing to speed 0.93 keeps commas at ~145 ms (it stretches the *words*, not
+the pauses); commas→semicolons gives ~147 ms (Kokoro treats them the same). The only
+thing that lengthens a comma is a full stop, which resets pitch — so it's a per-spot
+tool (the lists, "God,"), never a global default. Comma pacing is accepted as-is.
+
+**Accepted as Kokoro limits** (no clean lever; documented so they're not
+re-litigated):
+- **Section headings** ("Part One." etc.) rise when spoken alone. Merging a heading
+  (`<h2>`) into the first sentence (`<p>`) can't share one read-along highlight
+  cleanly, so left as-is.
+- **"Why is this?"** (`p-8-4-s1`) — a one-sentence paragraph with no neighbour to
+  merge into; and it's a question, which is *meant* to rise.
+
+Earlier backlog items are resolved: **Kvas** → "quahss", **Alexander II** →
+"Alexander the Second" (both in `_SUBS`).
+
 ## Russian break adjustments (per section)
 
 Native PSS paragraphing → English coordinate. Every split/merge is at a real

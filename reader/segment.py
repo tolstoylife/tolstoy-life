@@ -5,7 +5,7 @@ are validated as paragraph-parallel."""
 import re, json, sys, argparse
 from pathlib import Path
 from reader import ids
-from reader.speech import to_speech
+from reader.speech import to_speech, MERGE_FORWARD
 
 # ── CriticMarkup → reading text ────────────────────────────────────────────────
 def resolve_reading_text(md):
@@ -55,6 +55,26 @@ def _note_defs(md):
     body = re.sub(r"^\[\^(\w+)\]:[ \t]*(.+)$", repl, md, flags=re.M)
     return body, notes
 
+def merge_speech_groups(sentences):
+    """Glue each MERGE_FORWARD sentence into the next one in its paragraph: joined
+    display + joined speech, keeping the first id. Runs before segments.json is
+    written, so clips / timeline / SMIL stay consistent (1 sentence = 1 clip = 1
+    <par>) — the merged pair is just one small read-along unit (Option A). A flagged
+    sentence with no following sentence is left alone (can't merge forward)."""
+    out, i = [], 0
+    while i < len(sentences):
+        s = sentences[i]
+        if s["id"] in MERGE_FORWARD and i + 1 < len(sentences):
+            nxt = sentences[i + 1]
+            out.append({"id": s["id"],
+                        "display": s["display"] + " " + nxt["display"],
+                        "speech": s["speech"] + " " + nxt["speech"]})
+            i += 2
+        else:
+            out.append(s)
+            i += 1
+    return out
+
 def parse(md):
     body, notes = _note_defs(md)
     # split into sections on '## ' headings; text before the first heading is ignored here
@@ -75,7 +95,8 @@ def parse(md):
             for sk, sent in enumerate(split_sentences(reading), start=1):
                 sentences.append({"id": ids.sentence_id(pid, sk),
                                   "display": sent, "speech": to_speech(sent)})
-            sec["paragraphs"].append({"id": pid, "sentences": sentences})
+            sec["paragraphs"].append({"id": pid,
+                                      "sentences": merge_speech_groups(sentences)})
         sections.append(sec)
     return {"sections": sections, "notes": notes}
 
