@@ -52,7 +52,7 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 ROOT = Path(__file__).parent.resolve()
 
-SKIP_DIRS  = {".git", ".claude", ".omc", "__pycache__", "node_modules"}
+SKIP_DIRS  = {".git", ".claude", ".omc", ".pytest_cache", "__pycache__", "node_modules"}
 SKIP_FILES = {"serve.py"}
 PASSTHROUGH_EXTENSIONS = {".html", ".pdf", ".pptx", ".mp3", ".jpg", ".png",
                            ".svg", ".yaml", ".yml", ".skill", ".json"}
@@ -685,6 +685,11 @@ def build_index(docs: dict) -> str:
     for e in blog:
         by_year.setdefault(sort_key(e)[:4], []).append(e)
 
+    def folder_label(f: str) -> str:
+        if not f:
+            return "General"
+        return {"pwa": "PWA"}.get(f, f.replace("-", " ").title())
+
     blog_html = ""
     for year in sorted(by_year.keys(), reverse=True):
         posts = ""
@@ -709,14 +714,57 @@ def build_index(docs: dict) -> str:
           </a>
         </li>"""
         blog_html += f"""
-    <h2 class="year-label">{year}</h2>
+    <h3 class="year-label">{year}</h3>
     <ul class="post-list">{posts}
     </ul>"""
 
+    # ── Embedded centerpiece: the corpus-in-time timeline (chart 1 of the
+    # prophet-essays visualizations, shown via its #embed-timeline mode) ──
+    viz = ROOT / "research" / "visualizations" / "prophet-essays.html"
+    viz_html = ""
+    if viz.exists():
+        viz_html = """
+  <section class="viz">
+    <iframe class="viz-frame" src="/research/visualizations/prophet-essays.html#embed-timeline"
+      height="940" loading="lazy" title="The Prophet-period corpus in time"></iframe>
+    <p class="viz-caption">From the prophet-essays visualizations —
+      <a href="/research/visualizations/prophet-essays.html">see all four →</a></p>
+  </section>"""
+    else:
+        print("  ! prophet-essays.html missing — index built without the chart",
+              file=sys.stderr)
+
+    # ── Section-nav cards: one per major area, counts from the docs dict ──
+    folder_counts: dict[str, int] = {}
+    for e in entries:
+        folder_counts[e["folder"]] = folder_counts.get(e["folder"], 0) + 1
+    nav_cards = f"""
+      <a class="nav-card" href="/research/index.html">
+        <div class="nc-title">Research</div>
+        <div class="nc-meta">{folder_counts.get('research', 0)} docs · corpus-dive landing page</div>
+      </a>
+      <a class="nav-card" href="/reader/index.html">
+        <div class="nc-title">Library</div>
+        <div class="nc-meta">{folder_counts.get('reader', 0)} docs · reader editions &amp; works tracker</div>
+      </a>"""
+    for f in sorted(folder_counts):
+        if f in ("research", "reader"):
+            continue
+        anchor = f or "general"
+        nav_cards += f"""
+      <a class="nav-card" href="#ref-{anchor}">
+        <div class="nc-title">{folder_label(f)}</div>
+        <div class="nc-meta">{folder_counts[f]} doc{'s' if folder_counts[f] != 1 else ''}</div>
+      </a>"""
+
+    # ── Reference docs grouped by top-level folder ──
+    by_folder: dict[str, list] = {}
+    for e in reference:
+        by_folder.setdefault(e["folder"], []).append(e)
     ref_html = ""
-    if reference:
+    for f in sorted(by_folder):
         cards = ""
-        for e in reference:
+        for e in by_folder[f]:
             last = fmt_date(e["date"], e["mtime"])
             lede_html = (
                 f"<div class='card-lede'>{e['lede']}</div>" if e["lede"] else ""
@@ -724,11 +772,11 @@ def build_index(docs: dict) -> str:
             cards += f"""
       <a class="index-card" href="{e['href']}">
         <div class="card-title">{e['title']}</div>
-        <div class="card-meta">{e['folder']} · updated {last}</div>
+        <div class="card-meta">updated {last}</div>
         {lede_html}
       </a>"""
-        ref_html = f"""
-    <p class="section-label">Reference — engineering specs and operational notes</p>
+        ref_html += f"""
+    <h2 id="ref-{f or 'general'}">{folder_label(f)}<span class="count">{len(by_folder[f])}</span></h2>
     <div class="index-grid">{cards}
     </div>"""
 
@@ -738,29 +786,102 @@ def build_index(docs: dict) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Notes — tolstoy.life</title>
-<script>{HEAD_SNIPPET}</script>
-<link rel="stylesheet" href="/reader/assets/shell.css">
+<title>Docs — tolstoy.life</title>
+<style>
+:root {{
+  --bg:#14161a; --panel:#1c1f25; --panel-2:#21252c; --ink:#e8e4da;
+  --ink-dim:#9a958a; --ink-faint:#5d594f; --line:#2e323a;
+  --green:#54b87f; --amber:#e0a93e; --blue:#6aa3d8; --violet:#a08cc8;
+  --accent:#c8b68a;
+}}
+*,*::before,*::after {{ box-sizing:border-box; }}
+body {{
+  margin:0; padding:0; background:var(--bg); color:var(--ink);
+  font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}}
+a {{ color:var(--accent); text-decoration:none; }}
+a:hover {{ text-decoration:underline; }}
+.topbar {{ position:sticky; top:0; z-index:300;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:9px 16px; border-bottom:1px solid var(--line);
+  background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }}
+.topbar .tb-group {{ display:flex; align-items:center; gap:10px; min-width:0; }}
+.topbar a {{ font-size:12px; color:var(--ink-dim); }} .topbar a:hover {{ color:var(--ink); text-decoration:none; }}
+.topbar .tb-brand {{ font-size:13px; color:var(--accent); }}
+.topbar .sep {{ font-size:12px; color:var(--ink-faint); }}
+.topbar .tb-here {{ font-size:13px; font-weight:600; color:var(--ink); }}
+.wrap {{ max-width:1180px; margin:0 auto; padding:2.4rem 1.4rem 4rem; }}
+header.top {{ border-bottom:1px solid var(--line); padding-bottom:1.4rem; margin-bottom:1.8rem; }}
+.eyebrow {{ font-size:.74rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 .5rem; }}
+h1 {{ font-size:2rem; font-weight:650; letter-spacing:.01em; margin:0 0 .5rem; }}
+p.lede {{ color:var(--ink-dim); max-width:74ch; margin:.2rem 0 0; }}
+p.meta {{ font-size:.78rem; color:var(--ink-faint); margin-top:1rem; }}
+h2 {{ font-size:1.2rem; font-weight:600; color:var(--accent); margin:2.8rem 0 .3rem; }}
+h2 .count {{ color:var(--ink-faint); font-weight:500; font-size:.9rem; margin-left:.4em; }}
+.viz {{ margin:1.6rem 0 0; }}
+.viz-frame {{ width:100%; border:1px solid var(--line); border-radius:10px; background:var(--bg); display:block; }}
+.viz-caption {{ font-size:.78rem; color:var(--ink-faint); margin:.5rem 0 0; }}
+.nav-grid {{ display:grid; grid-template-columns:repeat(auto-fill, minmax(210px,1fr)); gap:.7rem; margin-top:.6rem; }}
+.nav-card {{ display:block; background:var(--panel); border:1px solid var(--line); border-radius:9px;
+  padding:.75rem .95rem .85rem; transition:transform .08s, border-color .08s; }}
+.nav-card:hover {{ transform:translateY(-1px); border-color:var(--accent); text-decoration:none; }}
+.nc-title {{ font-weight:600; color:var(--ink); }}
+.nc-meta {{ font-size:.74rem; color:var(--ink-faint); margin-top:.25rem; }}
+.year-label {{ font-size:.95rem; font-weight:600; color:var(--ink-dim); margin:1.6rem 0 .3rem; }}
+.post-list {{ list-style:none; margin:0; padding:0; }}
+.post-entry a {{ display:block; padding:.5rem .6rem; border-radius:8px; color:inherit; }}
+.post-entry a:hover {{ background:var(--panel); text-decoration:none; }}
+.post-row {{ display:flex; flex-wrap:wrap; gap:.7em; align-items:baseline; }}
+.post-row time {{ font-size:.78rem; color:var(--ink-faint); font-variant-numeric:tabular-nums; min-width:7.5em; }}
+.post-title {{ font-weight:600; color:var(--ink); }}
+.post-folder {{ font-size:.68rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.05em; }}
+.post-lede {{ font-size:.83rem; color:var(--ink-dim); margin:.15rem 0 0 8.6em; max-width:74ch; }}
+.index-grid {{ display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:.7rem; margin-top:.5rem; }}
+.index-card {{ display:block; background:var(--panel); border:1px solid var(--line); border-radius:9px;
+  padding:.8rem .95rem .9rem; transition:transform .08s, border-color .08s; }}
+.index-card:hover {{ transform:translateY(-1px); border-color:var(--accent); text-decoration:none; }}
+.card-title {{ font-weight:600; color:var(--ink); line-height:1.35; }}
+.card-meta {{ font-size:.72rem; color:var(--ink-faint); margin:.3rem 0 .45rem; }}
+.card-lede {{ font-size:.83rem; color:var(--ink-dim); line-height:1.45; }}
+footer {{ margin-top:3rem; border-top:1px solid var(--line); padding-top:1rem; color:var(--ink-faint); font-size:.78rem; }}
+</style>
 </head>
 <body>
-<div class="site-header">
-  <a class="home" href="/INDEX.html">tolstoy.life / notes</a>
-</div>
-<header class="doc-header">
-  <p class="eyebrow">tolstoy.life · build log</p>
-  <h1>Notes</h1>
-  <p class="meta">Dated entries from research and design · generated {now}</p>
+<header class="topbar">
+  <div class="tb-group">
+    <a class="tb-brand" href="/INDEX.html">tolstoy.life</a>
+    <span class="sep">›</span>
+    <span class="tb-here">Docs</span>
+  </div>
+  <div class="tb-group tb-links">
+    <a href="/reader/index.html">Library</a>
+    <a href="/research/index.html">Research index</a>
+  </div>
 </header>
-<main>
-  <p style="color:var(--ink-soft);font-style:italic;margin-bottom:2rem">
-    A chronological log of design and architecture work. Dated entries
-    are mirrored to <a href="https://tolstoy.life/notes/">tolstoy.life/notes/</a>.
-    Engineering specs and operational notes live below.
-  </p>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">tolstoy.life · docs</p>
+  <h1>Docs</h1>
+  <p class="lede">The project's public build log and engineering shelf — dated notes from research
+  and design, and the reference docs behind the platform. Dated entries are mirrored to
+  <a href="https://tolstoy.life/notes/">tolstoy.life/notes/</a>.</p>
+  <p class="meta">Generated {now}</p>
+</header>
+{viz_html}
+<section>
+  <h2>Browse</h2>
+  <div class="nav-grid">{nav_cards}
+  </div>
+</section>
+<section>
+  <h2>Notes</h2>
   {blog_html}
-  {ref_html}
-</main>
-<footer>tolstoy.life · public build log</footer>
+</section>
+{ref_html}
+<footer>tolstoy.life · public build log · generated by <code>docs/serve.py</code></footer>
+</div>
 </body>
 </html>"""
 
