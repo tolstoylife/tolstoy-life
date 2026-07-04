@@ -75,14 +75,22 @@ generates audio only for new/changed works and writes `_generated/audio/<work>.m
     invocation, so the ~410-sentence book takes ~40 min cold. Fine for now (the
     build is resumable). For the nightly pipeline, batch synthesis in one process.
 
-12. **Merge very short sentences into a neighbour.** A 2–4 word clip synthesized
-    alone rises instead of falling — Kokoro can't land a declarative cadence
-    without runway ("Simply the landowners.", "But we are wrong.", "What then?").
-    `merge_short` in the build glues each short unit forward into the next (last
-    one backward), so they share one synth call. This *also* folds "Part One."
-    into the chapter's first sentence, which fixes the headers' rising "Part
-    One-ee" tail — superseding the separate header fix in finding #4 (the
-    Roman→word conversion still happens; it's just no longer synthesized alone).
+12. **Merge very short sentences into a neighbour — but at the SEGMENT level,
+    not the build.** A 2–4 word clip synthesized alone rises instead of falling —
+    Kokoro can't land a declarative cadence without runway ("But we are wrong.").
+    The original `merge_short` lived in `build_audiobook.py` and was **removed**:
+    merging *after* `segments.json` changed the sentence count, which broke the
+    read-along contract (1 sentence = 1 SMIL `<par>` = 1 highlight). The correct
+    home is `reader/segment.py` (`merge_speech_groups`), which glues the pair
+    *before* `segments.json` is written — so clips, timing, and SMIL all stay
+    consistent and the pair simply highlights as one read-along unit (2026-07-04).
+    Which sentences merge is an **explicit id list** (`reader/speech.py`
+    `MERGE_FORWARD`), **not** a word-count rule — a blanket "short sentence" rule
+    would wrongly flatten legitimate rising *questions* ("Why is this?", "Whence
+    this dreadful perversity?"). It does **not** fold "Part One." into the first
+    sentence (that would span an `<h2>`+`<p>`, which one highlight can't) — headings
+    that rise when spoken alone are an accepted limit; finding #4's Roman→word
+    conversion still applies.
 
 13. **Pronunciation respellings live in a `SUBS` dict in the build**, applied at
     synth time so the source text stays faithful (same place as `live`→`liv`).
@@ -111,6 +119,20 @@ generates audio only for new/changed works and writes `_generated/audio/<work>.m
     `kokoro-tts-tool`, and the CLI exposes no phoneme input — a true /kv/
     would need driving kokoro-onnx directly with hand phonemes (one-off,
     cache-fragile; not done).
+
+17. **Measure prosody with parselmouth — don't guess by ear alone.**
+    `pip install praat-parselmouth`; `Sound(wav).to_pitch()` gives the F0 contour,
+    short-time RMS gives pause lengths. The objective probe for "does this rise or
+    fall" (companion to finding #16's espeak IPA probe). Settled two things this
+    way (2026-07-04): (a) a **rising terminal appositive** — "…support us, their
+    parasites." rose to ~149 Hz on the closing tag; swapping the comma for an
+    **em-dash in speech only** ("support us — their parasites.", page keeps the
+    comma) drops it to ~111 Hz so it falls. (b) **Comma pause length is a fixed
+    Kokoro constant (~140 ms) — no lever.** Measured: slowing to `--speed 0.93`
+    keeps commas at ~145 ms (it stretches the *words*); commas→semicolons gives
+    ~147 ms (Kokoro treats them the same). The only thing that lengthens a comma is
+    a full stop, which resets pitch — so it's a per-spot tool (finding #5's lists,
+    the "God," pause), never a global default.
 
 15. **The text we narrate is the 1905 Mayo/Tchertkoff translation, verbatim.** A
     line-by-line check against the Russian original confirmed the phrasings that
@@ -153,7 +175,8 @@ From `projects/audiobook/`:
   flow text, where George's semicolons are rewritten. Now that `synthesize`
   phrases well, test narrating the *original* punctuation and possibly retire
   `flow_preprocess` — resolving the fidelity question by making it moot.
-- ~~**Short-sentence pitch wobble**~~ — **resolved** (finding #12, `merge_short`).
+- ~~**Short-sentence pitch wobble**~~ — **resolved** (finding #12, segment-level
+  `speechGroup` in `reader/segment.py`; the old build-level `merge_short` was removed).
 - ~~**Proper-noun pronunciation**~~ — **resolved by ear** for the names that
   actually fumbled (finding #13). Remaining names validated as fine. Read-along
   would still let a reader *see* any future fumble.

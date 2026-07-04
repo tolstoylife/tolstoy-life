@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-07-03
+Last updated: 2026-07-04
 
 ---
 
@@ -166,6 +166,7 @@ Turn each prophet-period work into a reader's edition (web + read-along EPUB + s
 - [x] **The Great Sin — RU dateline + proofread** (2026-07-01) — resolved the closing dateline to the attested manuscript form «Июль 1905» (no place), reverting the first-pass «Ясная Поляна…» that only existed to mirror the English. Full proofread of `the-great-sin.ru.md` against the printed scan (Tom 36 = local `vol05`) came back **clean** — no wording errors beyond the already-recorded fixes; a real second PSS footnote in Part II exists in the scan but never entered the extract. Both recorded in `alignment-notes.md`.
 - [x] **Reader v1 — overview pages + breadcrumbs + Library bar** (2026-07-03, morning) — work overview page as the bundle's front page, top-bar breadcrumb (Library › work), Library top bar, RU edition self-titles «Великий грех». 4 commits pushed.
 - [x] **Reader tweaks + voice-notes audio pass** (2026-07-03, evening) — reader: spacebar play/pause, 56ch default measure, read-along wash de-yellowed (theme-aware), annotation editing. Audio: Johan's 5 voice notes → 3 engine rules (`reader/speech.py`/`segment.py`): quote-attribution stays one sentence (fixed all 5 `?" I asked` clips, not just the 2 flagged), Kvas→`quahss` (kv- onset unpronounceable — see `docs/audiobook-pipeline.md` finding 16), `$1.40`→"one dollar forty" (restored a rule lost in the flow_preprocess port), professions-list pacing via full stops. 9 clips resynthesized, timing 338 clips, EPUB rebuilt, 12+39 tests green. 3 commits local (`78eb1022`, `5a9ee30b`, `4376fdfe`), not pushed.
+- [x] **Reader — audio-only sentence merge (`speechGroup`) + short-phrase pitch pass** (2026-07-04) — new engine feature: a flagged short sentence is glued into its neighbour *before* `segments.json` (in `reader/segment.py`, driven by explicit id list `speech.py MERGE_FORWARD`), so a too-short clip gets spoken with context and stops rising, while read-along still highlights the pair as one unit — no audio/EPUB-builder changes. Used it for "But we are wrong."; also flattened the welfare list, added the "God," pause, and fixed the rising "…their parasites." tail (comma→em-dash in speech, measured 149→111 Hz with parselmouth). Settled that comma pause length has no lever (fixed ~140 ms Kokoro constant). Headings + "Why is this?" accepted as limits. 45 tests green; commit `9d5da688`, pushed. Reusable for A Confession onward.
 - [ ] **The Great Sin — Phase 3** — reconcile reading reflections against the existing dive → overview page + paired-entity steer, in Johan's voice. The ingestion front door. (Voice notes now consumed by the audio pass; the *reading* annotations in `docs/research/1905-the-great-sin/annotations.md` are the Phase-3 input.)
 - [ ] **Machine-translation leg** — the faithful one-pass `.en-machine.md` (unattended; fallback reading text + fidelity ruler).
 - [ ] **A Confession** — first full from-scratch loop; then one-by-one off the works tracker. Once proven, 1b runs as a token-gated nightly queue (precedent: `corpus-dive-queue.sh`).
