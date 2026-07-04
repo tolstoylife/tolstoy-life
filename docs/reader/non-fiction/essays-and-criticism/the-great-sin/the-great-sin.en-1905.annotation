@@ -1,0 +1,1284 @@
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "about": {
+    "dc:creator": [
+      "Leo Tolstoy"
+    ],
+    "dc:date": "1904-12-31T23:00:00.000Z",
+    "dc:format": "application/epub+zip",
+    "dc:identifier": [
+      "urn:thorium:709bf8e5-18de-459b-86e7-5b2af7daf987",
+      "tolstoy-life-the-great-sin-en-1905"
+    ],
+    "dc:publisher": [],
+    "dc:title": "A Great Iniquity"
+  },
+  "generated": "2026-07-03T08:18:42.869Z",
+  "generator": {
+    "homepage": "https://thorium.edrlab.org",
+    "id": "https://github.com/edrlab/thorium-reader/releases/tag/v3.4.0",
+    "name": "Thorium 3.4.0",
+    "type": "Software"
+  },
+  "id": "urn:uuid:32d5ca89-dc43-45a5-942e-390785943e94",
+  "items": [
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "Here's why the new title A great iniquity is very bad: \"iniquity\" resides in a system of money and ownership and governments. \"Sin\" an is a religious word, so changing The great sin is completely reverring the perspective. Also notice how \"A\" instead of \"The\" is softening the stance.\n\nWe need to investigate what influence the editor of The London Times had on T/Chertkov, if any."
+      },
+      "created": "2026-07-03T07:47:06.782Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:32ad70dd-389b-466d-9f87-0eaf7cc9446f",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 95,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-14-s1"
+          },
+          {
+            "end": 6661,
+            "start": 6566,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "And I think that Henry George is right, that the removal of the sin of landed property is near,",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.8218643145788002
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/30[p-10-14]/2[p-10-14-s1]/1,:0,:95)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/30[p-10-14]/2[p-10-14-s1]/1,:0,:95"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "The solution of Henry George is often labelled as \"Single tax\" but he keeps repeating the same words as T about faith and religion as the means to remove landed property."
+      },
+      "created": "2026-07-03T07:40:53.745Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:67faa4aa-d1cb-431b-944e-9b7b60667e6d",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 114,
+              "start": 2,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-13"
+          },
+          {
+            "end": 6565,
+            "start": 6453,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "he ground is plowed; the seed is set; the good tree will grow. So little now; only the eye of faith can see it.\"",
+            "prefix": "\"T",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.8035898158221946
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/28[p-10-13],/2[p-10-13-s1]/1:2,/4[p-10-13-s2]/1:49)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/28[p-10-13],/2[p-10-13-s1]/1:2,/4[p-10-13-s2]/1:49"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "The key sentence in the whole essay and emphasized in the online version. The footnote 13 in the online version:\n\nIn view of a seeming contradiction in the eyes of some readers of Tolstoy between his support of Henry George’s scheme and his simultaneous denial of all coercive State power, it is important to pay particular attention to these words italicised by the author himself. Tolstoy here emphasises a reservation, that he recommends Henry George’s scheme only under conditions of State organisation and compulsory taxation. It goes without saying, that if the Christian teaching as Tolstoy understands it were to be thoroughly applied to life, then there would be neither coercive government nor compulsory taxation, and in the distribution of the land there would be practised amongst men a voluntary agreement of a yet freer and more just kind than the single tax system of Henry George. (Trans).\n\nThis is an important point: T doesn't see this as the full solution. The religious awakening is the solution not Henry Georges practical solution for a world with governments and landed property. The sentence is confusing though since it praises HG propsal as \"perfection\", \"impossible to invent any better\" etc.\n\nPerhaps we can look in the drafts to find out if T used differents phrasings.\n\nMy personal reflection: this is one of two major unresolved issues that iare never adressed in the essay. #2 how can you have money if you remove the evils of landed property?"
+      },
+      "created": "2026-07-03T07:38:28.521Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:4ef13823-78c4-4c33-9474-a4dd58c904d4",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 297,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-11-s2"
+          },
+          {
+            "end": 6224,
+            "start": 5927,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "And the more should it be so that the method of solving the land problem has been elaborated by Henry George to such a degree of perfection that, under the existing State organization and compulsory taxation it is impossible to invent any other better, more just, practical, and peaceful solution.",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.7323544839912962
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/24[p-10-11]/4[p-10-11-s2]/1,:0,:297)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/24[p-10-11]/4[p-10-11-s2]/1,:0,:297"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T07:26:36.231Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:cd68717b-197c-4366-9b9e-031c5a81a0fb",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 130,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-9-s6"
+          },
+          {
+            "end": 4201,
+            "start": 4071,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "As then the Church justified the serf right, so now that which occupies the place of the Church—Science—justifies landed property.",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.5223738148896487
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/20[p-10-9]/12[p-10-9-s6]/1,:0,:130)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/20[p-10-9]/12[p-10-9-s6]/1,:0,:130"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "Pronounciation",
+        "type": "TextualBody",
+        "value": "Alexander roman two"
+      },
+      "created": "2026-07-03T07:24:41.272Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:8ad87c29-ad61-4f0f-8a74-64992fdaa65e",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 73,
+              "start": 60,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-6-s1"
+          },
+          {
+            "end": 2477,
+            "start": 2464,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "Alexander II.",
+            "prefix": "",
+            "suffix": ",",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.328804981349083
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/14[p-10-6]/2[p-10-6-s1]/1,:60,:73)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/14[p-10-6]/2[p-10-6-s1]/1,:60,:73"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "The change will occur through an inner awakening. We of course now nowadays that none of this happened."
+      },
+      "created": "2026-07-03T07:17:18.125Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:5ecf6a9e-38cc-403a-81a8-f6497a8bf236",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IX"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 91,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-10-4-s1"
+          },
+          {
+            "end": 1202,
+            "start": 1111,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "It is this feeling in regard to landed property which must awaken in the well-to-do classes",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.18819698088281006
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/22!/4/2/10[p-10-4]/2[p-10-4-s1]/1,:0,:91)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/10[p-10-4]/2[p-10-4-s1]/1,:0,:91"
+          }
+        ],
+        "source": "EPUB/text/sec-10.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "another explanation of what T considers Religion and this is including people outside of \"Christian\" nations."
+      },
+      "created": "2026-07-03T07:10:31.668Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:f0078012-662e-4dbd-bde1-ed40baeca8e7",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VII"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 447,
+              "start": 209,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-8-8-s1"
+          },
+          {
+            "end": 3895,
+            "start": 3657,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "religious people—that is, by people who are serious, simple, laborious, and who live not for their own profit, vanity, or ambition, and not for the attainment of external results, but for the fulfillment before God of their human vocation",
+            "prefix": "",
+            "suffix": ".",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.5777807598954443
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/18!/4/2/18[p-8-8]/2[p-8-8-s1]/1,:209,:447)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/18[p-8-8]/2[p-8-8-s1]/1,:209,:447"
+          }
+        ],
+        "source": "EPUB/text/sec-8.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "The definition of Religion from T should not be confused with neither the academic nor theological explanation."
+      },
+      "created": "2026-07-03T07:07:46.265Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:1d291657-2244-4e76-b7c7-f1fca11be0af",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VII"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 413,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-8-7"
+          },
+          {
+            "end": 2873,
+            "start": 2460,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "Without religion one cannot really love men, and without loving men one cannot know what they require, and what is more, and what is less, necessary for them. Only those who are not religious, and therefore do not truly love, can invent trifling, unimportant improvements in the condition of the people without seeing that chief evil from which others are suffering, and which they themselves are partly producing",
+            "prefix": "",
+            "suffix": ".",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.4447144557505601
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/18!/4/2/16[p-8-7],/2[p-8-7-s1]/1:0,/4[p-8-7-s2]/1:254)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/16[p-8-7],/2[p-8-7-s1]/1:0,/4[p-8-7-s2]/1:254"
+          }
+        ],
+        "source": "EPUB/text/sec-8.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "being religious is leading a rational life."
+      },
+      "created": "2026-07-03T07:03:09.137Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:fe42c9f0-a0e0-4349-a61b-7ad3e4d01d72",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VII"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 211,
+              "start": 197,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-8-6-s1"
+          },
+          {
+            "end": 2006,
+            "start": 1992,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": " rational life",
+            "prefix": "a",
+            "suffix": ",",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.3533157907020164
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/18!/4/2/14[p-8-6]/2[p-8-6-s1]/1,:197,:211)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/14[p-8-6]/2[p-8-6-s1]/1,:197,:211"
+          }
+        ],
+        "source": "EPUB/text/sec-8.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "important point and the core of T\nanti-governmental could be referring to the anarchists."
+      },
+      "created": "2026-07-03T07:01:19.662Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:91c2a965-de14-41d6-bc62-3236a04bfd6e",
+      "modified": "2026-07-03T07:04:32.499Z",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VII"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 150,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-8-6-s1"
+          },
+          {
+            "end": 1945,
+            "start": 1795,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "It comes from the circumstance that these men, both governmental and anti-governmental, who are organizing the welfare of the people, have no religion",
+            "prefix": "",
+            "suffix": "—for",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.3533157907020164
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/18!/4/2/14[p-8-6]/2[p-8-6-s1]/1,:0,:150)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/14[p-8-6]/2[p-8-6-s1]/1,:0,:150"
+          }
+        ],
+        "source": "EPUB/text/sec-8.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "Wording about Church and Science respectively."
+      },
+      "created": "2026-07-03T06:58:17.407Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:d319bef6-433a-4423-8881-4469047b1691",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VI"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 135,
+              "start": 0,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-7-7-s2"
+          },
+          {
+            "end": 3029,
+            "start": 2894,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "Hence stakes, inquisitions, slaughters in the former case, and executions, imprisonments, revolutions, and manslaughters in the latter.",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.717252890969163
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/16!/4/2/16[p-7-7]/4[p-7-7-s2]/1,:0,:135)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/16[p-7-7]/4[p-7-7-s2]/1,:0,:135"
+          }
+        ],
+        "source": "EPUB/text/sec-7.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T06:55:56.700Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:efe0ed29-87a5-4b6a-822d-6931cfdbf205",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part VI"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 1119,
+              "start": 728,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-7-3"
+          },
+          {
+            "end": 1686,
+            "start": 1295,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": " Much evil have the self-proclaimed servants of God done in their time, thanks to the teaching which they called Theology, but the servants of the people, thanks to the teaching which they call Science, if they have done less evil it is only because they have not yet had time to do it, but already on their conscience there lie rivers of blood and great divisions and exasperation among men",
+            "prefix": "crowd.",
+            "suffix": ".",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.21605692455947137
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/16!/4/2/8[p-7-3],/9:0,/10[p-7-3-s5]/1:390)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/8[p-7-3],/9:0,/10[p-7-3-s5]/1:390"
+          }
+        ],
+        "source": "EPUB/text/sec-7.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T06:52:42.765Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:3a320e05-8c85-491b-aa0d-8356c210e606",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part V"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 639,
+              "start": 609,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-6-8-s1"
+          },
+          {
+            "end": 5069,
+            "start": 5039,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "pseudo-defenders of the people",
+            "prefix": "",
+            "suffix": ",",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.6563000266808965
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/14!/4/2/18[p-6-8]/2[p-6-8-s1]/1,:609,:639)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/18[p-6-8]/2[p-6-8-s1]/1,:609,:639"
+          }
+        ],
+        "source": "EPUB/text/sec-6.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T06:51:55.213Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:7fdcffdd-8b2f-4b30-87a0-aa93c99b0459",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part V"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 493,
+              "start": 484,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-6-6-s1"
+          },
+          {
+            "end": 3999,
+            "start": 3990,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "parasites",
+            "prefix": "",
+            "suffix": ".",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.5218477632515119
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/14!/4/2/14[p-6-6]/2[p-6-6-s1]/1,:484,:493)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/14[p-6-6]/2[p-6-6-s1]/1,:484,:493"
+          }
+        ],
+        "source": "EPUB/text/sec-6.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T06:48:24.805Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:384f7462-2531-4fa9-bfd9-5f3fa850b132",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IV"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 291,
+              "start": 231,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-5-8-s2"
+          },
+          {
+            "end": 4511,
+            "start": 4451,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "private landed property is an evil which should be abolished",
+            "prefix": "",
+            "suffix": ",",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.767456165158371
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/12!/4/2/18[p-5-8]/4[p-5-8-s2]/1,:231,:291)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/18[p-5-8]/4[p-5-8-s2]/1,:231,:291"
+          }
+        ],
+        "source": "EPUB/text/sec-5.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "wording"
+      },
+      "created": "2026-07-03T06:46:01.325Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:a316fbc7-2ed0-4e4c-bdf1-3f743f224ac2",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part III"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 152,
+              "start": 109,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-4-1-s5"
+          },
+          {
+            "end": 1281,
+            "start": 1238,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "most obvious evil, private property in land",
+            "prefix": "",
+            "suffix": ".",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.17554887518825302
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/10!/4/2/4[p-4-1]/10[p-4-1-s5]/1,:109,:152)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/4[p-4-1]/10[p-4-1-s5]/1,:109,:152"
+          }
+        ],
+        "source": "EPUB/text/sec-4.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "means what exactly and what did it mean to T?"
+      },
+      "created": "2026-07-03T06:40:18.755Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:4d6e65e1-a41a-4258-87ad-5728d155281e",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part IV"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 313,
+              "start": 296,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-5-2-s1"
+          },
+          {
+            "end": 513,
+            "start": 496,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "political economy",
+            "prefix": "",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.10293410633484162
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/12!/4/2/6[p-5-2]/2[p-5-2-s1]/1,:296,:313)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/6[p-5-2]/2[p-5-2-s1]/1,:296,:313"
+          }
+        ],
+        "source": "EPUB/text/sec-5.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "",
+        "type": "TextualBody",
+        "value": "I feel this p should get more explanation + footnote"
+      },
+      "created": "2026-07-03T06:38:18.905Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:17424ed4-7d95-43cb-85dc-a266a2920eec",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part III"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 741,
+              "start": 217,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-4-7"
+          },
+          {
+            "end": 6151,
+            "start": 5627,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": " This hushing up was effected so successfully that a member of the British Parliament, Labouchere, could publicly say, without meeting any refutation, that \"he was not such a visionary as Henry George. He did not propose to take the land from the landlords and rent it out again. What he was in favor of was putting a tax on land values.\" That is, whilst attributing to George what he could not possibly have said, Labouchere, by way of correcting these imaginary fantasies, suggested that which Henry George did indeed say.",
+            "prefix": "up.",
+            "suffix": "",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.7684252635542169
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/10!/4/2/16[p-4-7],/5:0,/12[p-4-7-s6]/1:185)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/16[p-4-7],/5:0,/12[p-4-7-s6]/1:185"
+          }
+        ],
+        "source": "EPUB/text/sec-4.xhtml"
+      },
+      "type": "Annotation"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "body": {
+        "color": "yellow",
+        "format": "text/plain",
+        "highlight": "solid",
+        "tag": "Transcription",
+        "type": "TextualBody",
+        "value": "is emphasisized in the online version"
+      },
+      "created": "2026-07-03T06:29:46.083Z",
+      "creator": {
+        "id": "urn:uuid:6e361bcc-b557-40b5-b910-0955ff3c6531",
+        "name": "",
+        "type": "Organization"
+      },
+      "id": "urn:uuid:3eb046e3-7507-4c0d-b447-9a2532b0cd2b",
+      "modified": "2026-07-03T06:30:55.794Z",
+      "motivation": "highlighting",
+      "target": {
+        "meta": {
+          "headings": [
+            {
+              "level": 2,
+              "txt": "Part II"
+            }
+          ]
+        },
+        "selector": [
+          {
+            "refinedBy": {
+              "end": 48,
+              "start": 41,
+              "type": "TextPositionSelector"
+            },
+            "type": "CssSelector",
+            "value": "#p-3-12-s4"
+          },
+          {
+            "end": 7984,
+            "start": 7977,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "minimum",
+            "prefix": "",
+            "suffix": ";",
+            "type": "TextQuoteSelector"
+          },
+          {
+            "type": "ProgressionSelector",
+            "value": 0.8686128135689852
+          },
+          {
+            "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+            "type": "FragmentSelector",
+            "value": "epubcfi(/6/8!/4/2/26[p-3-12]/8[p-3-12-s4]/1,:41,:48)"
+          },
+          {
+            "type": "CfiSelector",
+            "value": "/4/2/26[p-3-12]/8[p-3-12-s4]/1,:41,:48"
+          }
+        ],
+        "source": "EPUB/text/sec-3.xhtml"
+      },
+      "type": "Annotation"
+    }
+  ],
+  "title": "A Great Iniquity2",
+  "type": "AnnotationSet"
+}
