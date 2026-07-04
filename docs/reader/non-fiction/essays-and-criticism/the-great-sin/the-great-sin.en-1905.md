@@ -194,7 +194,7 @@ But not only do those concerned with the welfare of the people, while inventing 
 
 The Russian people—owing to their agricultural environment, their love for this form of life, their Christian trend of character, owing to the circumstance that they, almost alone of all European nations, continue to be an agricultural nation and desire to remain such—are, as it were, providentially placed by historic conditions for the solution of what is called the labor question, in such a position as to stand in the front of the true progressive movement of all mankind. Yet this Russian people are invited by its fancied representatives and leaders to follow in the wake of the dying-out and entangled European and American nations, to become depraved, and to relinquish its own calling as quickly as possible in order to become like Europeans in general.
 
-Astounding is the poverty of thought of these men, who do not think with their own minds, but only servilely repeat whatever is given forth bytheir European models; but still more astounding is the hardness of their hearts, their cruelty.
+Astounding is the poverty of thought of these men, who do not think with their own minds, but only servilely repeat whatever is given forth by their European models; but still more astounding is the hardness of their hearts, their cruelty.
 
 ## Part VI
 
@@ -266,7 +266,7 @@ It is this feeling in regard to landed property which must awaken in the well-to
 
 Possessing hundreds, thousands, scores of thousands of acres, trading in land, profiting one way or the other by landed property, and living luxuriously, thanks to the oppression of the people, possible through this cruel and obvious injustice—to argue in various committees and assemblies about the improvement of the conditions of the peasant's life without surrendering one's own exclusively advantageous position growing from this injustice, is not only an unkind but a detestable and evil thing, equally condemnable by common sense, honesty, and Christianity. It is necessary, not to invent cunning devices for the improvement of men deprived of their lawful right to the land, but to understand one's own sin in relation to them, and before all else to cease to participate in it, whatever this may cost. Only such moral activity of every man can and will contribute to the solution of the question now standing before humanity.
 
-The emancipation of the serfs in Russia was effected not by Alexander II., but by those men who understood the sin of serfdom, and independently of their own advantages endeavored to free themselves from it, and it was chiefly effected by such men as Novikoff, Radischeff, the Decembrists, those men who were ready to suffer and did themselves suffer (without making any one else suffer) in the name of loyalty to that which they recognized as the truth.
+The emancipation of the serfs in Russia was effected not by Alexander II, but by those men who understood the sin of serfdom, and independently of their own advantages endeavored to free themselves from it, and it was chiefly effected by such men as Novikoff, Radischeff, the Decembrists, those men who were ready to suffer and did themselves suffer (without making any one else suffer) in the name of loyalty to that which they recognized as the truth.
 
 The same must take place in relation to the land.
 

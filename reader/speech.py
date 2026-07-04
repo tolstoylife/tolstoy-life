@@ -14,6 +14,14 @@ _SUBS = [
     (r"\bLabouchere\b", "Labooshair"),
     (r"\bRadischeff\b", "Rahdeeshef"),
     (r"Yasnaya Poliana", "Yasnaya Polyahna"),
+    (r"\bAlexander II\b\.?", "Alexander the Second"),   # regnal number reads as letters; also kills the abbrev-dot's spoken stop
+    (r"\bper cent\.", "per cent"),                       # the archaic abbreviation dot reads as a full stop
+    # The Part IV policy list rushes like the Part I professions list — full-stop
+    # each item (the one pause Kokoro honors). Voice note 2026-07-04.
+    (r"Tariffs, colonies, income taxes, military and naval budgets, socialistic "
+     r"assemblies, unions, syndicates, the election of presidents, diplomatic connections",
+     "Tariffs. Colonies. Income taxes. Military and naval budgets. Socialistic "
+     "assemblies. Unions. Syndicates. The election of presidents. Diplomatic connections"),
     (r"\(Matt[.,] xxiii\. 27, 28\)",
      "Matthew twenty-three, verses twenty-seven and twenty-eight"),
     # The Part I professions list rushes at reading speed; give each item a full

@@ -226,3 +226,87 @@ audio (same wav-cache rule as the pronunciation fixes — delete the clip's wav)
 5. **Route B & C out of the dive:** the reader-text emphasis/footnotes (B) and the
    audio items (C) are not dive work — they land in the reader bundle. Listed here so
    nothing is lost.
+
+---
+
+## Second read-through (2026-07-04)
+
+A finer pass over the finished edition, listening and reading line by line. The
+first five notes (the professions list, the two "I asked" clips, Kvas, "$1.40")
+were already resolved by the 2026-07-03 audio pass and are not repeated here. The
+new digs below extend — they do not replace — sections A/B/C above.
+
+### New re-dive / ingestion steer
+
+- **The title is Tolstoy's own phrase, used inside the body.** `p-9-3-s1`
+  ("undoing **the great sin**") and the peasant scene in Part VII ("the great, the
+  old sin") show «великий грех» recurring in the text itself. So the English title
+  *A Great Iniquity* diverges from a phrase Tolstoy repeats in his own voice —
+  concrete support for the standing title-reframing concern (headline, top of file).
+
+- **"Employment" is Henry George's English, not a translation artifact** (`p-3-8`,
+  Part II). That whole passage — including "$1.40 a day" and "Adam had no difficulty
+  in finding employment, neither had Robinson Crusoe" — is Tolstoy *quoting George*.
+  The oddity Johan flagged (Crusoe had *work* but could not have *employment*) is in
+  George's own text; in the Russian essay Tolstoy quotes George in Russian, and the
+  Chertkov/Mayo edition restores George's English wording. For the re-dive: identify
+  the George source of the Part II quotations and note this as a translation-layer
+  point, not a mistranslation.
+
+- **Two registers for the wrong of private property: "sin/evil" (religious) and
+  "injustice" (secular).** `p-4-1-s5` "most obvious evil, private property in land";
+  `p-4-3-s1` "the evil and injustice of private property"; `p-5-8-s2` "an evil which
+  should be abolished"; `p-4-4-s2` "fundamental injustice be destroyed". Tolstoy
+  leans on the religious register but reaches for the legal/secular one too. Johan
+  flags "destroyed" (`p-4-4-s2`) as unclear — what mechanism of abolition is meant
+  (and is it Tolstoy or George being quoted there?). Extends A6.
+
+- **Who is entitled to the land: those who cultivate it.** `p-8-10-s12`
+  "the seizure of the land by those who do not cultivate it is a great sin", and the
+  recurring "lawful / legitimate right to the land" (`p-9-8` area, `p-10-5-s2`). This
+  is the use-right / labour-desert principle. Johan's question on `p-10-5-s2`: *which*
+  law — natural/God's law (a birthright to use land) or State statute (which denies
+  it)? Worth surfacing as its own thread; ties to Henry George's natural-rights case.
+
+- **"Government became ashamed" — change by conscience, not legislation** (`p-9-8-s1`,
+  the serfdom-emancipation analogy). Reinforces A5 and the Alexander II passage
+  (`p-10-6`): emancipation came from men who felt the sin, not from the decree.
+
+- **Phrases flagged for the translation-diagnostic / voice notes:**
+  - `p-5-4-s2` "strength of nations" — reads oddly against Tolstoy's rejection of
+    patriotism; here it is descriptive/critical (militarism and commerce *exhaust*
+    the nations' strength), not an endorsement of national greatness. Confirm against
+    the Russian.
+  - `p-5-5-s2` "Russian people in Russia" — redundant in English; likely «русский
+    народ в России» distinguishing the home peasantry from Russians/Europeans abroad.
+  - `p-6-10-s2` "dying-out" — "the dying-out and entangled European and American
+    nations"; Tolstoy's decay-of-the-West framing.
+  - `p-4-1-s5` "flesh-eating" — listed among the evils (with militarism and war) but
+    set below private property in land as the "most obvious". A vegetarianism touch;
+    keep it period-accurate, don't harden into a later label (cf. ingestion-accuracy).
+
+- **`political economy`** (`p-5-2-s1`) — Johan wants this as a concept/wikilink: the
+  19th-c. discipline vs. what the term meant to Tolstoy. Carried from B2; now a
+  concept-page candidate for ingestion.
+
+- **The keystone reservation, reconfirmed** (`p-10-11-s2`) — the italics are the
+  **author's own** (the translator's footnote states the words were "italicised by
+  the author himself"). So restoring the emphasis in the reader text (B1) is faithful
+  to Tolstoy, not to the translators. The tension and Johan's two open questions are
+  already logged at A1.
+
+### Audio — this session
+
+Resolved in `reader/speech.py` + the edition `.md` (pending the next audio rebuild):
+- `bytheir` → `by their` (`p-6-11-s1`, text typo).
+- `Alexander II.` → `Alexander II` in the text; speech respell → "Alexander the Second".
+- `per cent.` — kept on the page (archaic abbreviation), speech drops the dot's stop.
+- Part IV policy list (`p-5-4-s1`) — full-stop-flattened for air, like the Part I list.
+
+Still open — **short-phrase pitch ceiling** (Kokoro rises on a 2–4 word clip
+synthesized alone): section headers "Part I / Part IV…", "But we are wrong."
+(`p-7-3-s1`), "Why is this?" (`p-8-4-s1`), the terminal "…their parasites."
+(`p-6-6-s1`), and the wanted pause after "God," (`p-7-8-s2`). The welfare list
+(`p-6-7-s1`) is an infinitive-phrase list, messier than the two noun lists — not a
+clean full-stop flatten. These need the audio-only merge mechanism (a `speechGroup`
+field that keeps read-along granularity) or acceptance as a model limit.
