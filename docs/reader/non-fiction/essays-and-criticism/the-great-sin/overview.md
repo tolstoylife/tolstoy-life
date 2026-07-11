@@ -31,8 +31,8 @@ into a single charge.
 Landed property is filed among the wrongs humanity has begun to outgrow —
 cannibalism, human sacrifice, judicial torture, serfdom, capital punishment, war —
 and named the next one due to fall. George's case is taken up without reserve:
-land monopoly is the surviving form of slavery, the root of poverty, and it is
-returned to again and again. What is granted only as a concession is the practical
+private property in land is the surviving form of slavery, the root of poverty,
+and it is returned to again and again. What is granted only as a concession is the practical
 measure: given a state and its taxes — institutions the essay does not itself
 endorse — the solution George worked out is the least unjust way to hold land
 while they last. The change actually asked for is moral. As serfdom fell not by

@@ -310,3 +310,127 @@ synthesized alone): section headers "Part I / Part IV…", "But we are wrong."
 (`p-6-7-s1`) is an infinitive-phrase list, messier than the two noun lists — not a
 clean full-stop flatten. These need the audio-only merge mechanism (a `speechGroup`
 field that keeps read-along granularity) or acceptance as a model limit.
+
+---
+
+## Dive-index read-through (2026-07-11)
+
+The first pass Johan made over the **dive `index.md` itself** (not the reader
+edition). IDs like `[p-0-1]` are the index's own rendered paragraphs. Where the
+earlier sections A/B/C steered *what to add*, most of these steer *how the dive's own
+prose frames the work* — so they land differently (see "the scope question" below).
+
+**The throughline — the dive prose editorialises.** The recurring charge across
+these notes: the index imports modern political-economic labels that are **not in
+Tolstoy's text** — *land monopoly*, *single tax as its remedy*, *Socialist-
+Revolutionaries*, *George-derived*, *Georgist-Tolstoyan* — and by doing so files a
+religious/moral argument under libertarian/economic categories. Worse, the academic-
+debate framing (note 8 → 7) stages a false binary ("does the single tax compromise
+his anarchism?") that **misdirects from the question Johan holds central: why is
+landed property a sin but not money or other private property?** Johan reads this as
+the same move as priests who call themselves Christian — correct labels used to
+divert from the property critique. This is calibration for the overview and the wiki
+ingestion, and (open question) possibly for the dive prose itself.
+
+### The notes
+
+1. **`[p-0-1]` "he calls land monopoly"** — Tolstoy speaks of land "completely
+   monopolised" in passing but overwhelmingly calls landed property *cruel and
+   sinful*; he does not frame it as "land monopoly." Using that keyword ties T/Henry
+   George to a modern libertarian/anarchist reading. *(New — objects to the index's
+   word, not the source.)*
+
+2. **`[p-0-1]` "endorses Henry George's single tax as its remedy"** — "single tax"
+   never appears in the text. Tolstoy endorses George's *plan*, but as a measure
+   *under present conditions*; the actual remedy is the voluntary religious awakening
+   by which owners come to see landed property as immoral and abandon it — as chattel
+   slavery came to be seen. Single tax is not "the remedy." **Explicitly not a request
+   to change the overview** — Johan's point is calibration: "we need to be very careful
+   with what words we use; the last thing I want is people being told what Tolstoy
+   thinks before they've read him." *(Substance logged at A1; newly aimed at the index
+   prose + stated as a principle.)*
+
+3. **`[p-1-3]` "Tolstoy endorses Henry George's single tax"** — same: he endorses HG's
+   *plan*, does not mention a single tax. *(Same as 2, second index spot.)*
+
+4. **`[p-1-6]` «Необходимый переворот» — translation.** = **"A Necessary Revolution"**
+   (literally *a necessary overturning/upheaval*). The title Chertkov gave the cut
+   paragraph he printed separately. *(New; the index glosses it lower down but not at
+   this first occurrence — a Russian-gloss-consistency point.)*
+
+5. **`[p-6-2]` the variants = "the essay Tolstoy would have preferred to print"** —
+   Johan: since tolstoy.life wants to be the voice of Tolstoy, we should somehow
+   *feature* the cut material (PSS variants, Tom 36 pp. 464–475). *(New — a
+   product/editorial idea, ties to A1's "pull the variant wording.")*
+
+6. **`[p-6-1]` "Gorbachev"** — the cut-analysis rests on the PSS scholar's (Gorbachev's)
+   textual research; Johan doesn't doubt it but feels we lack **Tolstoy's and Chertkov's
+   own voices and their dialogue about the cuts.** *(New — foreground the primary
+   exchange over the secondary apparatus; the dive has «Мне жалко» + «стоит в
+   противоречии» but wants more.)*
+
+7. **`[p-7-11]` "contradiction of Tolstoy's 'anarchism'"** — for Johan the big
+   contradiction in the text is between **landed property and money / other private
+   property** — a *religious* question. Framing it as T's "hypocritical anarchism"
+   shifts focus off "why is money not also evil." "I feel this is a deliberate
+   misdirection." *(Extends A1 open-Q #2 + A4; the misdirection charge is new.)*
+
+8. **`[p-9-2]` "Academics split over whether the single tax compromises Tolstoy's
+   'anarchism'…"** — "This is the misdirection in full bloom. The academics debate two
+   sides of the text in order to establish that one of them must be right." *(New — the
+   scholarship framing itself is the problem.)*
+
+9. **`[p-10-2]` "moral-economy register ('iniquity') rather than the literal 'sin'"** —
+   Johan: "I've added a note on these two titles before." *(Already logged — the title
+   headline at the top of this file.)*
+
+10. **`[p-11-1]` "Socialist-Revolutionaries"** — odd narrowing. Tolstoy's "revolutionists"
+    include the anarchists/libertarian socialists **and** the Marxist communists and
+    socialists; he faults them all — plus Social Democrats and Liberals (and, Johan
+    adds, Conservatives) — as hypocrites who use reform to avoid abolishing landed
+    property outright. If the dive calls the socialists/communists/anarchists sinful it
+    must include the reformist camps too. *(New.)*
+
+11. **`[p-11-1]` "Tolstoy's George-derived position rejected both as sinful"** — "Really
+    bad sentence." Tolstoy doesn't call them sinful *because he read Henry George and
+    derived that opinion from him.* Reducing a religious conviction to an economic
+    borrowing is "editorializing that I don't like." *(New.)*
+
+12. **`[p-11-2]` "Georgist-Tolstoyan"** — "Too categorizing. T is not a follower of HG,
+    he's a follower of Christ." *(New — extends the "don't let labels stick" rule.)*
+
+13. **`[p-13-1]` «Мне жалко» — translation.** = **"I regret it"** / literally "I feel
+    sorry." Diary, 6 June 1905, over Chertkov's cuts. *(New; glossed earlier in the
+    index, bare at this paragraph.)*
+
+### Resolved (2026-07-11): leave the old dive; the corrections live in the re-dive
+
+Johan's decision: **we are doing a re-dive, so the old machine dive stays untouched** —
+`index.md` and `dossier.yaml` remain the honest-but-tool-shaped substrate (loaded labels
+and all), kept as the historical record. The corrected framing does **not** get edited
+into the old dive; it is carried into the **re-dive products** — the refined overview, the
+wiki entities, and the works record.
+
+So notes 1, 2, 3, 7, 8, 10, 11, 12 become a **constraint on the re-dive, not an edit to
+the substrate.** The re-dive must not reproduce the phrases that *misstate the text*:
+
+- **"land monopoly"** (dive `[p-0-1]`, Stage 3 head) — Tolstoy names *private ownership
+  of land / landed property* the great sin; "land monopoly" is not his framing.
+- **"single tax as its remedy" / single tax as the remedy** (`[p-0-1]`, Stage 4 head) —
+  the remedy is the moral/religious awakening by which owners come to abandon landed
+  property; George's scheme is only a conditional measure "under the existing state and
+  its taxes." (The dive's own Key-Findings bullet already states this correctly — the
+  offenders are the abstract lede and the stage heads.)
+- **"Socialist-Revolutionaries" / "Marxists… rejected both as sinful"** (`[p-11-1]`) —
+  too narrow: Tolstoy's "revolutionists" span the anarchists/libertarian socialists *and*
+  the Marxist communists/socialists, and he faults the reformist camps too (Social
+  Democrats, Liberals). The re-dive should not single out two parties as "the" targets.
+- **"George-derived position"** (`[p-11-1]`) — a religious conviction, not an economic
+  opinion borrowed from George. Don't reduce the moral judgment to its practical source.
+- **"Georgist-Tolstoyan"** (`[p-11-2]`) — don't categorise Tolstoy as a Georgist; "he is
+  not a follower of Henry George, he is a follower of Christ." Name the reception strand
+  by its works, not the label.
+
+The interpretive steer (the misdirection critique, the money-vs-land religious question,
+featuring the variants, foregrounding the Chertkov–Tolstoy cutting dialogue, and the
+enrichments in sections A/B) also feeds the re-dive, not the old substrate.
