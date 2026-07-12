@@ -58,6 +58,47 @@ English softens just what the essay means to press. Who settled on that title is
 question worth its own note; the point here is that the title is already an
 interpretation — and a softening one.
 
+## The cut
+
+The essay was finished in May 1905, and then made shorter. Chertkov — his closest
+friend and the editor who would publish him abroad — came to Yasnaya Polyana that
+month and proposed a series of cuts; two whole chapters and parts of others came
+out. He agreed, and within days regretted it. The diary, 6 June: «Сократил
+Великий Грех, выбросил многое. Мне жалко» (I shortened The Great Sin, threw out
+much. I am sorry for it). What was taken out was not lost — it survives among the
+discarded drafts printed in the
+<abbr title="Полное собрание сочинений (Complete Works)">PSS</abbr> (Tom 36,
+pp. 464–475) — so the essay first written can be read against the one that went to
+print.
+
+It was the sharper text. Where the published essay names the wrong, a cut passage
+holds it open as unfinished: land ownership «есть великий грех… и грех не
+прошедший, а настоящий, и не временный, а постоянно совершаемый» (is a great sin…
+a sin not past but present, not temporary but constantly committed). And where the
+published essay argues that no law can reach the wrong, a cut passage said as much
+of the very reforms 1905 was demanding: «никакая конституция не обезпечит его прав.
+Конституция обезпечит право достаточных, праздных, паразитных сословий, но не права
+народа» (no constitution will secure the people's rights; a constitution will
+secure the right of the propertied, idle, parasitic classes — but not the rights of
+the people).
+
+One cut is the only one whose reason is on record. Preparing the proofs, Chertkov
+lifted a single paragraph out of the opening and printed it on its own, under a
+title of his own giving — «Необходимый переворот» (A Necessary Revolution). Its
+sentence: «жизнь народа слагается не вследствие внешних форм… а внутренней
+деятельностью отдельных личностей» (the life of a people is shaped not by the
+outward forms imposed on it from without, but by the inner activity of individual
+persons). His reason, in a letter that July: it «стоит в противоречии со всем
+предыдущим» (stands in contradiction with all that precedes it) — against the
+essay's insistence that the outward forms of land-holding must change. So the two
+things the essay holds together — that the real change is inward, and that the
+outward arrangement must go — were quietly parted, and the inward-only half set
+outside the essay.
+
+The text that went to print is a shade gentler than the one written: the sin a
+little less absolute, the politics a little less bare. It was cut with his assent,
+and against his own regret.
+
 ## What the essay leaves open
 
 Two questions the essay raises and does not settle. The solution George worked out
