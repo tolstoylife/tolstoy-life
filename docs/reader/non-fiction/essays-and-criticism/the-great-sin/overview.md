@@ -110,8 +110,8 @@ be undone, what becomes of money, which the essay leaves in place?
 
 ## Around this work
 
-- [The corpus dive](/research/1905-the-great-sin/index.html) — the primary-source
+- [The corpus dive](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/index.html) — the primary-source
   research behind this page: genesis, the merged two plans, the Chertkov cut,
   reception
-- [Reading annotations](/research/1905-the-great-sin/annotations.html) — notes
+- [Reading annotations](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/annotations.html) — notes
   from the 2026 read-through
