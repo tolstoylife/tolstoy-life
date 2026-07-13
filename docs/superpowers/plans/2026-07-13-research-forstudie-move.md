@@ -20,24 +20,24 @@
 
 ---
 
-## Pre-flight: confirm the classification (editorial — do with Johan before Task 2)
+## Pre-flight: classification (confirmed with Johan 2026-07-13)
 
-The move-map below is the plan's core. Most rows are unambiguous or confirmed against an existing live `works/` page (✓). **These rows need Johan's yes/no before the move** — they're editorial calls about his research, not mechanical:
+The move-map below is the plan's core. Most rows are unambiguous or confirmed against an existing live `works/` page (✓). The editorial calls were **settled with Johan on 2026-07-13** and are already baked into the move-map and TSV — no further sign-off needed:
 
-| Dive | Recommended home | Why it's a judgment call |
+| Dive | Home (confirmed) | Note |
 |---|---|---|
-| `1896-1904-hadji-murat` | `fiction/novellas/` | Scholars call it a *povest* / short novel — novellas vs novels. |
-| `1894-1896-the-christian-teaching` | `non-fiction/treatises/` | Systematic religious teaching — treatise vs essays-and-criticism. |
-| `1901-1902-what-is-religion` | `non-fiction/essays-and-criticism/` | Essay vs treatise. |
-| `1900-1910-against-the-death-penalty` | `themes/against-the-death-penalty/` | A **cluster** of death-penalty essays, not one work — drops the date. Alt: keep under `works/non-fiction/essays-and-criticism/` with the date name. |
-| `1901-1902-the-break-with-the-church` | `themes/break-with-the-church/` | Excommunication cluster (7 works). Same theme-vs-works tension. |
-| `1903-folk-tales` | `themes/folk-tales-1903/` | 5-tale cluster. Alt: `works/fiction/short-stories/` with the date name. |
-| `1905-1906-krug-chtenija-tales` | `themes/krug-chtenija-tales/` | Tales cluster. |
-| `art-aesthetics-satellites` | `themes/` | Satellite essays around *What Is Art?* — theme vs `_meta` reference. |
-| `late-voice-encryption-compression` | `themes/` | Methodology/analysis — theme vs `_meta`. |
-| `biryukov-biography-editions` | `_meta/` | Source-editions reference (methodology), not a Tolstoy concept — `_meta` vs `themes`. |
+| `1896-1904-hadji-murat` | `works/fiction/novels/` | Johan's call: a short **novel**, not a novella. |
+| `1894-1896-the-christian-teaching` | `works/non-fiction/treatises/` | Systematic religious teaching. |
+| `1901-1902-what-is-religion` | `works/non-fiction/essays-and-criticism/` | Essay. |
+| `1900-1910-against-the-death-penalty` | `themes/against-the-death-penalty/` | Cluster of death-penalty essays → `themes/`, date dropped. |
+| `1901-1902-the-break-with-the-church` | `themes/break-with-the-church/` | Excommunication cluster → `themes/`, date dropped. |
+| `1903-folk-tales` | `themes/folk-tales/` | 5-tale cluster → `themes/`, date dropped. |
+| `1905-1906-krug-chtenija-tales` | `themes/krug-chtenija-tales/` | Tales cluster → `themes/`, date dropped. |
+| `art-aesthetics-satellites` | `themes/` | Satellite essays around *What Is Art?*. |
+| `late-voice-encryption-compression` | `themes/` | Methodology/analysis. |
+| `biryukov-biography-editions` | `_meta/` | Source-editions reference (methodology). |
 
-If Johan changes any, edit the move-map (Task 1) before Task 2 runs.
+The four cluster-dives are the only **renames** (they drop their date prefix into `themes/`); the bare slugs above are the recommended names — adjust in the TSV if a different slug reads better.
 
 ---
 
@@ -64,7 +64,7 @@ If Johan changes any, edit the move-map (Task 1) before Task 2 runs.
 | `1893-1894-christianity-and-patriotism` | `works/non-fiction/essays-and-criticism/` |
 | `1894-1895-master-and-man` | `works/fiction/novellas/` ✓ |
 | `1894-1896-the-christian-teaching` | `works/non-fiction/treatises/` *(JC)* |
-| `1896-1904-hadji-murat` | `works/fiction/novellas/` *(JC)* |
+| `1896-1904-hadji-murat` | `works/fiction/novels/` |
 | `1897-1898-what-is-art` | `works/non-fiction/essays-and-criticism/` ✓ |
 | `1900-the-slavery-of-our-times` | `works/non-fiction/treatises/` |
 | `1900-the-living-corpse` | `works/plays/drama/` |
@@ -77,8 +77,8 @@ If Johan changes any, edit the move-map (Task 1) before Task 2 runs.
 | `1908-the-law-of-violence-and-the-law-of-love` | `works/non-fiction/treatises/` |
 
 **Theme-dives → `themes/` (keep folder name).**
-`biryukov-sofia-relationship`, `christian`, `christian-anarchism`, `christian-communism-socialism`, `copyright-renunciation`, `crisis`, `doukhobors`, `fire-metaphor`, `free-age-press`, `gospel-translation`, `lords-prayer`, `stories-for-the-people`, `tolstoyanism`, `tolstoyanism-christian-anarchism`, plus `art-aesthetics-satellites` *(JC)* and `late-voice-encryption-compression` *(JC)*.
-Plus the four cluster-dives above if Johan confirms `themes/` for them.
+`biryukov-sofia-relationship`, `christian`, `christian-anarchism`, `christian-communism-socialism`, `copyright-renunciation`, `crisis`, `doukhobors`, `fire-metaphor`, `free-age-press`, `gospel-translation`, `lords-prayer`, `stories-for-the-people`, `tolstoyanism`, `tolstoyanism-christian-anarchism`, `art-aesthetics-satellites`, and `late-voice-encryption-compression`.
+Plus the four cluster-dives, which **rename** (drop their date) into `themes/`: `1900-1910-against-the-death-penalty → against-the-death-penalty`, `1901-1902-the-break-with-the-church → break-with-the-church`, `1903-folk-tales → folk-tales`, `1905-1906-krug-chtenija-tales → krug-chtenija-tales`.
 
 **Reference/planning → `_meta/`.**
 `jubilee-edition-tei-corpus`, `tolstoy-in-art`, `tolstoy-in-photographs`, `biryukov-biography-editions` *(JC)*, and the loose files: `pss-volume-mapping.{md,html}`, `tolstoydigital-tei-reference.{md,html}`, every `_*.md` / `_*.html` (the `_grounding-*`, `_handoff-*`, `_interactive-edition-*`, `_prophet-period-*`, `_research-index-plan` plans).
@@ -93,7 +93,7 @@ Plus the four cluster-dives above if Johan confirms `themes/` for them.
 **Files:**
 - Create: `docs/research/_meta/move-map.tsv`
 
-The map is a two-column TSV: current path (relative to `docs/research/`) → destination dir (relative to `docs/research/`). The mover and the link-rewriter both read it, so it is the single source of truth.
+The map is a two-column TSV: current path → **full** destination path (dir **plus** final folder name), both relative to `docs/research/`. Using the full path makes the four cluster-dive **renames** explicit (they drop their date prefix into `themes/`). The mover and the link-rewriter both read it, so it is the single source of truth.
 
 - [ ] **Step 1: Create `_meta/` and write the map**
 
@@ -104,18 +104,22 @@ mkdir -p docs/research/_meta
 Write `docs/research/_meta/move-map.tsv` with one line per folder from the move-map above, e.g.:
 
 ```
-1879-1882-a-confession	works/non-fiction/personal-papers
-1886-the-power-of-darkness	works/plays/drama
-1889-1899-resurrection	works/fiction/novels
-doukhobors	themes
-tolstoyanism	themes
-jubilee-edition-tei-corpus	_meta
-tolstoy-in-art	_meta
-pss-volume-mapping.md	_meta
-_prophet-period-nonfiction-dives.md	_meta
+1879-1882-a-confession	works/non-fiction/personal-papers/1879-1882-a-confession
+1886-the-power-of-darkness	works/plays/drama/1886-the-power-of-darkness
+1889-1899-resurrection	works/fiction/novels/1889-1899-resurrection
+1896-1904-hadji-murat	works/fiction/novels/1896-1904-hadji-murat
+doukhobors	themes/doukhobors
+tolstoyanism	themes/tolstoyanism
+1900-1910-against-the-death-penalty	themes/against-the-death-penalty
+1901-1902-the-break-with-the-church	themes/break-with-the-church
+1903-folk-tales	themes/folk-tales
+1905-1906-krug-chtenija-tales	themes/krug-chtenija-tales
+jubilee-edition-tei-corpus	_meta/jubilee-edition-tei-corpus
+pss-volume-mapping.md	_meta/pss-volume-mapping.md
+_prophet-period-nonfiction-dives.md	_meta/_prophet-period-nonfiction-dives.md
 ```
 
-(Full list = every row of the move-map. Infra that stays at root is NOT listed.)
+(Full list = every row of the move-map. Keep-name rows repeat the folder name in the destination; the four cluster rows are the only renames. Infra that stays at root is NOT listed.)
 
 - [ ] **Step 2: Sanity-check the map covers everything moveable**
 
@@ -171,10 +175,10 @@ root="docs/research"
 for ln in open(f"{root}/_meta/move-map.tsv"):
     ln=ln.strip()
     if not ln: continue
-    src, dest = ln.split("\t")
-    os.makedirs(f"{root}/{dest}", exist_ok=True)
-    subprocess.run(["git","mv",f"{root}/{src}",f"{root}/{dest}/"], check=True)
-    print(f"moved {src} -> {dest}/")
+    src, dest = ln.split("\t")          # dest = full new path incl. final name
+    os.makedirs(os.path.dirname(f"{root}/{dest}"), exist_ok=True)
+    subprocess.run(["git","mv",f"{root}/{src}",f"{root}/{dest}"], check=True)
+    print(f"moved {src} -> {dest}")
 PY
 ```
 
@@ -324,7 +328,7 @@ for ln in open("docs/research/_meta/move-map.tsv"):
     src,dest=ln.split("\t")
     if "." in src.split("/")[-1]:  # a loose file, not a dive dir
         continue
-    pairs.append((src, f"{dest}/{src}"))
+    pairs.append((src, dest))          # dest = full new path (handles renames)
 pairs.sort(key=lambda p: -len(p[0]))   # longest-first so no partial clobber
 targets=["AGENTS.md","TODO.md","MANIFEST.md",
          "docs/reader/non-fiction/essays-and-criticism/the-great-sin/alignment-notes.md"]
@@ -375,7 +379,7 @@ for ln in open("docs/research/_meta/move-map.tsv"):
     if not ln: continue
     src,dest=ln.split("\t")
     if "." in src.split("/")[-1]: continue
-    pairs.append((src, f"{dest}/{src}"))
+    pairs.append((src, dest))          # dest = full new path (handles renames)
 pairs.sort(key=lambda p: -len(p[0]))
 for t in glob.glob("website/src/posts/notes/*.md"):
     s=open(t).read(); o=s

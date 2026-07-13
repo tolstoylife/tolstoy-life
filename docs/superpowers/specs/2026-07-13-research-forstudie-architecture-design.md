@@ -85,9 +85,11 @@ Pages carry the **live `wiki-schema` v1.4 shape** from the start, so graduation 
 
 Rejected: full verified schema now (too much upfront burden; forces QID/date checks early) and a lighter förstudie-only header (makes graduation a convert, and the two headers drift).
 
-### 6. `_meta/` for infra and planning
+### 6. `_meta/` for reference and planning; build machinery stays at root
 
-`evidence-index/`, `visualizations/`, `lib/`, `jubilee-edition-tei-corpus/`, `tolstoy-in-art/`, `tolstoy-in-photographs/`, and the top-level `_*.md` / `_*.html` planning docs move under `research/_meta/`, out of the dive namespace so `works/`, `themes/`, and `wiki/` contain only dives and entity pages.
+`jubilee-edition-tei-corpus/`, `tolstoy-in-art/`, `tolstoy-in-photographs/`, `biryukov-biography-editions/`, and the top-level `_*.md` / `_*.html` planning docs move under `research/_meta/`, out of the dive namespace so `works/`, `themes/`, and `wiki/` contain only dives and entity pages.
+
+**Exception — build machinery stays at the `research/` root:** `lib/`, `visualizations/`, `evidence-index/` (and `.omc/`). They are referenced by stable paths in `serve.py`, and once the index generators glob `works/` + `themes/` they skip this infra for free — so leaving it at the root keeps `serve.py` to a one-line change instead of rewriting ~6 path constants. (Refinement agreed 2026-07-13, after the move-plan surfaced the reference cost.)
 
 ---
 
