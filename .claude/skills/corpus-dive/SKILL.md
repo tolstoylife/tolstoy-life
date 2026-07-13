@@ -15,11 +15,11 @@ triggers:
 # corpus-dive
 
 Primary-source research on **one theme** across the local Tolstoy corpus. Produces three
-coordinated, ingestion-ready outputs. Modeled on `docs/research/copyright-renunciation/`.
+coordinated, ingestion-ready outputs. Modeled on `docs/research/themes/copyright-renunciation/`.
 Full design + rationale: `docs/superpowers/specs/2026-05-29-corpus-dive-design.md`.
 
 **The dive prepares the material; it never populates the vault.** Everything below gathers, cites,
-and structures evidence into `docs/research/<slug>/` — including the dossier's `entities` routing
+and structures evidence into `<dive-dir>/` — including the dossier's `entities` routing
 map and its `workRecord` proposals, which scope the wiki pages and works records this research
 *should* become. But the dive stops at the dossier: it never creates `website/src/wiki/**`
 pages or `website/src/works/**` records from that material. Turning the dossier into vault pages is
@@ -52,14 +52,21 @@ Parse `{{ARGUMENTS}}`:
 - **`--confirm-scope`** — in `--auto`, approve the auto-drafted scope once, then detach.
 - **`--model <tier>`** — informational (the CLI already set the baseline); record the effective tier in the run-report.
 - **slug** = kebab-case of the theme (lowercase, non-alphanumeric → `-`).
-  - **Work dives** (subject is a single work — the dive carries a `workRecord:` block) prefix the slug with the composition window: `<startYear>[-<endYear>]-<slug>` (e.g. `1879-1882-a-confession`). Use the **composition** window, not first-publication, and a **range** whenever the work was written across years or its window overlaps neighbouring works (the Prophet-period canon overlaps heavily). This sorts work dives together and chronologically in `docs/research/`. Theme/reference dives stay bare. The slug is the identity key — it must equal the folder name and the dossier `topic.slug`.
+  - **Work dives** (subject is a single work — the dive carries a `workRecord:` block) prefix the slug with the composition window: `<startYear>[-<endYear>]-<slug>` (e.g. `1879-1882-a-confession`). Use the **composition** window, not first-publication, and a **range** whenever the work was written across years or its window overlaps neighbouring works (the Prophet-period canon overlaps heavily). This sorts work dives together and chronologically within their subcat folder. Theme/reference dives stay bare. The slug is the identity key — it must equal the folder name and the dossier `topic.slug`.
+  - **Placement (`<dive-dir>`).** The slug is only the identity — the *parent directory* depends on what the dive is about:
+    - **work dive** → `docs/research/works/<genre>/<subcat>/<slug>/`, with `<genre>/<subcat>` **mirrored from the work's own page** under `website/src/works/<genre>/<subcat>/…` (the live site already made that editorial call — e.g. *A Confession* → `non-fiction/personal-papers`, *The Fruits of Enlightenment* → `plays/comedy`, *Hadji Murat* → `fiction/novels`). This is the same `works/`-record lookup Phase 0 already does; when the work has no site page yet, use the `<genre>/<subcat>` the dive derives for the proposed record. Interactive: show the resolved folder and confirm. `--auto`: use it, and note in the run-report when the work's title can't be matched to a site page (loose-match transliteration variants before giving up — memory `reference_vault_transliteration_gotcha`).
+    - **theme dive** → `docs/research/themes/<slug>/`.
+    - **reference / methodology dive** → `docs/research/_meta/<slug>/`.
+    Everywhere below, **`<dive-dir>`** is this resolved folder; only the parent changes (`slug = folder name = topic.slug` is unchanged).
 
 ## Hard boundaries
 
 - **READ freely:** `primary-sources/**` (TEI corpus + PSS PDFs); anywhere under `website/` (read-only).
-- **WRITE only to:** `docs/research/<slug>/` (and everything under it — `extracts/`, `visuals/`,
-  `dossier.yaml`, `index.md`, `index.html`, `run-report.md`, `session-log.md`), `docs/research/lib/`,
-  `docs/research/_batch-<date>.md`, and `website/src/posts/notes/`.
+- **WRITE only to:** `<dive-dir>/` — the dive's resolved folder (see *Placement* under Arguments): a
+  work dive → `docs/research/works/<genre>/<subcat>/<slug>/`, a theme dive → `docs/research/themes/<slug>/`,
+  a reference/methodology dive → `docs/research/_meta/<slug>/`. Write everything under it — `extracts/`,
+  `visuals/`, `dossier.yaml`, `index.md`, `index.html`, `run-report.md`, `session-log.md`. Also
+  `docs/research/lib/`, `docs/research/_meta/_batch-<date>.md`, and `website/src/posts/notes/`.
 - **NEVER write/modify:** `primary-sources/**`, or anything under `website/` except
   `website/src/posts/notes/`. **No vault writes** — the dive never creates `website/src/wiki/**`
   pages or `website/src/works/**` records, even when the dossier has fully scoped them. That
@@ -145,7 +152,7 @@ findings still unresolved after escalation go to `needsReview`, never into the p
 **Subagent I/O — write to a file, return a line.** Subagent final messages can be truncated by the
 harness to a terse stub ("Complete.") that drops the whole deliverable. So every dispatched
 sub-step (sweep, deep-read, commentary mine, scholarship, visuals channel, verifier) must write
-its structured deliverable to a named file under `docs/research/<slug>/` (e.g.
+its structured deliverable to a named file under `<dive-dir>/` (e.g.
 `extracts/_sweep_<area>.md`, `extracts/_deepread.md`, `_verifier-report.md`) and return only a
 confirmation line (path + count/verdict); read the files back in the main context. If a subagent
 already ran and returned only a stub, re-dispatch it (SendMessage) asking it to persist its
@@ -160,7 +167,7 @@ Draft a **scoping contract**: (1) restate the precise question; (2) corpus surfa
 high-confidence anchors → broader combinable terms, with orthographic / pre-reform variants;
 (4) stop-condition / time-box; (5) sweep mode — inline (narrow) vs fan-out (broad).
 Interactive: show the contract and confirm. `--auto`: record the scope contract (written in full to
-`docs/research/<slug>/run-report.md` at Phase 6) and proceed.
+`<dive-dir>/run-report.md` at Phase 6) and proceed.
 
 **Don't let the gate become a wall.** If the user's framing already answers the scope (they named the
 angle, period, or emphasis), confirm the contract in prose and proceed — don't re-block on
@@ -200,7 +207,7 @@ runs alongside the always-on post-1880 letter pass and feeds the Genesis section
 ## Phase 2 — Extract & verify finalists
 
 - Run `python3 docs/research/lib/extract_tei.py <xml>` on each finalist → clean verbatim Russian
-  to `docs/research/<slug>/extracts/<tei-id>.txt`.
+  to `<dive-dir>/extracts/<tei-id>.txt`.
 - **Read the work's own text deeply (work dives).** The subject text is known — read its TEI
   in the holding Tom(s) as the primary source: a structural pass for the keystone passages,
   chapter by chapter, not only a grep for theme hits. This is the raw material for the *What the
@@ -245,7 +252,7 @@ the channels return, run a dedup-by-subject pass in the main context before writ
 listing the same photo twice. (A heavy sweep can easily land 2× the files for 1× the subjects.)
 
 **Two image channels (the rights gate is at *publication*, not download):**
-- `docs/research/<slug>/visuals/` is **git-ignored** (a local research cache — see `docs/.gitignore`).
+- `<dive-dir>/visuals/` is **git-ignored** (a local research cache — see `docs/.gitignore`).
   Download freely into it for local viewing and embedding — PD *or* rights-uncertain — since the
   public repo never redistributes it. On a fresh clone the cache is empty — `python3
   docs/fetch_visuals.py [slug]` repopulates it from the dossier `url:` fields. Always record
@@ -253,7 +260,7 @@ listing the same photo twice. (A heavy sweep can easily land 2× the files for 1
   dossier anyway: that metadata is the gate for the *separate* step of publishing an image to
   `website/src/` (the actually-public surface). Never put a rights-reserved/unknown image into
   `website/src/` without cleared rights.
-- `docs/research/<slug>/extracts/` **is committed** — put only PD material there: facsimiles you
+- `<dive-dir>/extracts/` **is committed** — put only PD material there: facsimiles you
   render yourself from the local PSS PDFs (`pdftoppm`), which are PD (Tolstoy's own text).
 
 Robust Commons fetch: resolve the real `File:` page (don't guess filenames) — the Commons API
@@ -274,7 +281,7 @@ source (inline attribution + a References-list entry — see Synthesize; serve.p
 
 **Ground in the project before the mainstream.** The dive's spine is the primary record — the words
 of Tolstoy and the people he trusted (Biryukov, Chertkov) — and the project's own prior dives
-(scan `docs/research/` for the relevant ones, e.g. `tolstoyanism`, `crisis`). Mainstream and academic
+(scan `docs/research/works/` and `docs/research/themes/` for the relevant ones, e.g. `tolstoyanism`, `crisis`). Mainstream and academic
 scholarship is a contrast to read critically, never a baseline the dive "confirms": treat it with
 skepticism, attribute it, and watch for the subtle framing/word-choice that softens or inverts
 Tolstoy's message — the Sofia-centred "moralistic dogmatist who tried to impoverish his family" frame
@@ -341,7 +348,7 @@ context" prose section of `index.md` is composed in Synthesize.
 
 ## Phase 4 — Synthesize the outputs
 
-1. **`docs/research/<slug>/index.md`** — frontmatter `layer: reference`. Spine: *Key findings* (the first section — a tight bulleted exec-summary of the dive's own conclusions, reusing its own figures; no new claims) *→ Why this matters
+1. **`<dive-dir>/index.md`** — frontmatter `layer: reference`. Spine: *Key findings* (the first section — a tight bulleted exec-summary of the dive's own conclusions, reusing its own figures; no new claims) *→ Why this matters
    → The shape of the question* (staged; each stage a verbatim RU quote + working-EN translation +
    TEI id / PSS Tom + pages) *→ Where the theme clusters* (tables by genre, incl. a Letters table:
    Tom / letter id / date / addressee / one-line material) *→ Scholarly context* (the received
@@ -376,7 +383,7 @@ context" prose section of `index.md` is composed in Synthesize.
    Worked example: `biryukov-sofia-relationship` §5 (the `tolstoyanism` link) + §8 (sibling links);
    memory `corpus-dive-ground-in-primary-not-mainstream`. Never link `tolstoyanism-christian-anarchism`
    as authoritative — it is the superseded combined survey.
-2. **`docs/research/<slug>/dossier.yaml`** — schema:
+2. **`<dive-dir>/dossier.yaml`** — schema:
    ```yaml
    topic: { slug, title, question, date, period, corpusSurface, dateRange }
    evidence:        # flat citation ledger
@@ -434,7 +441,7 @@ context" prose section of `index.md` is composed in Synthesize.
 3. **`website/src/posts/notes/<YYYY-MM-DD>-<slug>.md`** — frontmatter `title` / `description` / `date` /
    `tags` / `draft: true`. A short recap in the project voice (simple, factual, minimal editorial),
    linking to `index.md`. Stays `draft: true` until the user publishes.
-4. **`docs/research/<slug>/index.html`** — generated from `index.md`, never hand-written. The docs
+4. **`<dive-dir>/index.html`** — generated from `index.md`, never hand-written. The docs
    tree has one canonical generator: `python3 docs/serve.py --build-only` converts every
    `docs/**/*.md` to a sibling `.html` (house CSS, breadcrumb header, per-document annotation UI) and
    rebuilds `docs/INDEX.html` so the new dive is listed. Run it after `index.md` is final. The `.html`
@@ -444,7 +451,7 @@ context" prose section of `index.md` is composed in Synthesize.
 ## Phase 5 — Verify (separate pass; never self-approve)
 
 **First, run the mechanical gate:** `python3 docs/research/lib/verify_quotes.py
-docs/research/<slug>/dossier.yaml`. It asserts every `evidence[].quoteRu` appears verbatim in its
+<dive-dir>/dossier.yaml`. It asserts every `evidence[].quoteRu` appears verbatim in its
 named `extract` file (and that declared `facsimile:` files exist). This must exit 0 (PASS) before
 the human-judgement verifier runs — it turns byte-fidelity from a sampled LLM check into a complete
 deterministic one. Fix any mismatch (or, if the divergence is a genuine source variant, re-extract)
@@ -477,7 +484,7 @@ pages this dive feeds — present the `missing`/`stub` entities in `ingestionPri
 order so it reads as a plan, not a flat list), the **visuals work-order** (images/facsimiles to
 acquire or request), the **work-record work-order** (the `workRecord` proposed fills grouped by confidence, for human ingestion into the `works/` record), the **coverage ledger** (covered / partial / not-covered surfaces), and the draft note path. Remind that wiki ingestion is a separate, human-in-the-loop step — the
 dossier is the pointer, not the writer. **Interactive:** print it. **`--auto`:** write it to
-`docs/research/<slug>/run-report.md` (scope contract, coverage, `notCovered`, `needsReview`,
+`<dive-dir>/run-report.md` (scope contract, coverage, `notCovered`, `needsReview`,
 models used + rough cost note, output paths, the **evaluation self-assessment** (work dives)).
 
 ## Phase 7 — Compact the session (`handoff` skill)
@@ -496,8 +503,8 @@ everything else is finished before the session is compacted.
 
 ## Multi-session dives
 
-A broad theme may exceed one session. At the start of any dive, if `docs/research/<slug>/`
-already exists, **resume** from its `session-log.md`, the dossier's `coverage:` ledger (the structured surface map — read this first), and the `notCovered` queue (free-text overflow) rather than re-sweeping. For such dives, keep an append-only `docs/research/<slug>/session-log.md`
+A broad theme may exceed one session. At the start of any dive, if `<dive-dir>/`
+already exists, **resume** from its `session-log.md`, the dossier's `coverage:` ledger (the structured surface map — read this first), and the `notCovered` queue (free-text overflow) rather than re-sweeping. For such dives, keep an append-only `<dive-dir>/session-log.md`
 (what each session covered) and treat `notCovered` as the resume queue.
 
 **Resuming a *completed* dive to add Phase 3** (enrich, not re-sweep): when the primary layer is
@@ -507,7 +514,7 @@ voice untouched; add only the `scholarship:` block, the "Scholarly context" sect
 secondary references, then re-verify.
 
 **Retrofitting a pre-corpus-dive survey** (the `index.md` predates this skill — e.g. an early
-`docs/research/<slug>/` written in the hand-authored copyright-renunciation style, with `extracts/`
+`<dive-dir>/` written in the hand-authored copyright-renunciation style, with `extracts/`
 but **no `dossier.yaml`**): treat the existing prose as **locked Phase-2 output**, not raw material.
 Do **not** re-sweep, re-translate, or rewrite the narrative — its quotes are already byte-faithful
 and its voice is already settled. Instead:
