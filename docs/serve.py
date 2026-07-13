@@ -361,7 +361,7 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
     if (bundle / "overview.md").exists():
         up = "overview.html"
     else:
-        dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
+        dive = next(ROOT.glob(f"research/works/**/*-{work}/index.md"), None)
         up = f"/{dive.relative_to(ROOT).with_suffix('.html')}" if dive else ""
 
     title = meta.get("title") or work.replace("-", " ").title()
