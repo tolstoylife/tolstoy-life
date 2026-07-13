@@ -537,9 +537,10 @@ no Phase-3 handoff — the *whole structured apparatus* is being added under a f
 translations labelled; minimal editorial. Interactive → escalate genuine editorial judgment to the
 user; `--auto` → defer to `needsReview`.
 
-**Unwrapped prose (nl2br).** serve.py renders Markdown with the `nl2br` extension, so every source
-newline *inside* a block becomes a literal `<br>` in the HTML — a hard-wrapped paragraph renders as a
-ragged column of `<br>`s. Write each paragraph, blockquote, and list-item as **one source line** (do
-not hard-wrap); make the `Date:` / `Context:` preamble two separate paragraphs (blank line between);
-keep a blank line before every list (and after a bold/italic label that precedes one). Headings,
+**Prose wrapping.** serve.py renders **standard Markdown** (no `nl2br`): a single newline *inside* a
+block is a soft wrap that collapses to a space, **not** a `<br>` — so you may hard-wrap paragraphs,
+blockquotes, and list-items freely and they still render as flowing text. Separate paragraphs with a
+blank line; keep the `Date:` / `Context:` preamble as **two paragraphs** (blank line between) so they
+don't run together on one line; keep a blank line before every list (and after a bold/italic label
+that precedes one). A *deliberate* hard break needs two trailing spaces (or a blank line). Headings,
 frontmatter, tables, fenced code, and raw `<figure>` HTML are unaffected.
