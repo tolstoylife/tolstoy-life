@@ -66,7 +66,7 @@ keyed by sentence ID, not text, so the respell won't take until the wav is clear
 
 Reader-text and content items from the same read-through (missing italics, wanted
 footnotes, the English-title question) are filed as dive steer in
-`docs/research/1905-the-great-sin/annotations.md`.
+`docs/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/annotations.md`.
 
 ## Short-phrase pitch — the audio-only merge (2026-07-04)
 
@@ -121,7 +121,7 @@ Earlier backlog items are resolved: **Kvas** → "quahss", **Alexander II** →
 
 Native PSS paragraphing → English coordinate. Every split/merge is at a real
 sentence boundary; no wording changed. The starting text is the native extract
-`docs/research/1905-the-great-sin/extracts/v36_206_230_Velikij_greh.txt`; the
+`docs/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/extracts/v36_206_230_Velikij_greh.txt`; the
 committed `the-great-sin.ru.md` is the curated result (source of truth, not
 regenerated).
 

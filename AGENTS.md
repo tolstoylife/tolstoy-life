@@ -204,7 +204,7 @@ Working sessions that produce artifacts (reports, decks, snapshots, drafts, hand
 
 **1. Per-session folder.** Use an existing `_generated/` subdir — `sessions/`, `research/`, `editorial/`, `design/`, `PWA/`, `architecture/`, `project/`, `reports/`, `scripts/`, `sync-audit/`, `github-org-profile/`. Inside it, create a folder named `session-<topic>-YYYY-MM-DD/` where `<topic>` is 2–4 kebab-case words. If no existing subdir fits, ask before inventing a new one.
 
-Long-running multi-session research workspaces (e.g. `_generated/research/christian-communism-socialism/`) keep their topic-folder shape; the session-folder rule is for single-session output.
+Long-running multi-session research workspaces (e.g. `_generated/research/themes/christian-communism-socialism/`) keep their topic-folder shape; the session-folder rule is for single-session output.
 
 **2. Default to self-contained HTML.** Renderable in a browser with no build step. Exceptions:
 
