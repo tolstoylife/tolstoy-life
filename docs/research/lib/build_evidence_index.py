@@ -281,37 +281,42 @@ def aggregate(dossiers, live_by_id, live_by_stem):
                     "significance": collapse_ws(row.get("significance")) or None,
                 })
 
-        # Attach visuals by relatedEntity (name match within this dive)
+        # Attach visuals by relatedEntity (name match within this dive).
+        # relatedEntity may be one name or a list of names (a shared source, e.g.
+        # a book scan tied to both its author and its publisher); file under each.
         for vis in visuals:
-            rel_entity = collapse_ws(vis.get("relatedEntity"))
-            if not rel_entity:
-                continue
-            key = dive_name_to_key.get(rel_entity) or slugify_py(rel_entity)
-            acc = entities.get(key)
-            if acc is None:
-                continue  # visual references an entity with no entity row; skip
-            # Dedup across dives on the stable identity: url first (same image
-            # cached under different per-dive localPaths), then localPath, then id.
-            ident = vis.get("url") or vis.get("localPath") or vis.get("id")
-            existing = acc["_visual_by_ident"].get(ident)
-            if existing is not None:
-                if slug != existing["dive"] and slug not in existing["alsoInDives"]:
-                    existing["alsoInDives"].append(slug)
-                continue
-            v = {
-                "dive": slug,
-                "id": vis.get("id"),
-                "type": vis.get("type"),
-                "subject": collapse_ws(vis.get("subject")) or None,
-                "relatedEvidence": vis.get("relatedEvidence"),
-                "licence": vis.get("licence"),
-                "usable": vis.get("usable"),
-                "url": vis.get("url"),
-                "localPath": repo_rel(rel, vis.get("localPath")),
-                "alsoInDives": [],
-            }
-            acc["_visual_by_ident"][ident] = v
-            acc["visuals"].append(v)
+            related = vis.get("relatedEntity")
+            names = related if isinstance(related, list) else [related]
+            for name in names:
+                rel_entity = collapse_ws(name)
+                if not rel_entity:
+                    continue
+                key = dive_name_to_key.get(rel_entity) or slugify_py(rel_entity)
+                acc = entities.get(key)
+                if acc is None:
+                    continue  # visual references an entity with no entity row; skip
+                # Dedup across dives on the stable identity: url first (same image
+                # cached under different per-dive localPaths), then localPath, then id.
+                ident = vis.get("url") or vis.get("localPath") or vis.get("id")
+                existing = acc["_visual_by_ident"].get(ident)
+                if existing is not None:
+                    if slug != existing["dive"] and slug not in existing["alsoInDives"]:
+                        existing["alsoInDives"].append(slug)
+                    continue
+                v = {
+                    "dive": slug,
+                    "id": vis.get("id"),
+                    "type": vis.get("type"),
+                    "subject": collapse_ws(vis.get("subject")) or None,
+                    "relatedEvidence": vis.get("relatedEvidence"),
+                    "licence": vis.get("licence"),
+                    "usable": vis.get("usable"),
+                    "url": vis.get("url"),
+                    "localPath": repo_rel(rel, vis.get("localPath")),
+                    "alsoInDives": [],
+                }
+                acc["_visual_by_ident"][ident] = v
+                acc["visuals"].append(v)
 
     # Finalize each entity: vaultStatus live, reconcile priority, sort, lint.
     finalized = {}
