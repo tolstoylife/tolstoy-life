@@ -376,7 +376,10 @@ context" prose section of `index.md` is composed in Synthesize.
    **Cross-link contested labels (don't scrub).** Wherever a contested mainstream label appears —
    most often in *Scholarly context*, but anywhere it surfaces — link its first prominent occurrence
    to the project's dedicated dive on that term (`../<slug>/index.html`, the rendered sibling; a bare
-   `.md` link serves as raw text). The link keeps the label visible as the *mainstream's* word while
+   `.md` link serves as raw text). **Keep this flat `../<slug>/` form even though dives now live in
+   nested subcats** — serve.py resolves each `../<slug>/…` link by slug to the sibling's real location
+   at render time, so the bare-slug convention is correct by construction; don't hand-write nested
+   `../../../` paths. The link keeps the label visible as the *mainstream's* word while
    pointing at the dive that interrogates it — it does **not** license asserting the badge as fact in
    the dive's own voice (that is Phase 3's "ground in the project before the mainstream" rule, which
    this complements). Interlink sibling dives the same way, via a short *Links* line in Method.
