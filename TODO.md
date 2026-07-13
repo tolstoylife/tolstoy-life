@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-07-11
+Last updated: 2026-07-13
 
 ---
 
@@ -144,6 +144,10 @@ The "Scholarly context & gap-filling" phase (Phase 3) was added to the `corpus-d
 - [ ] **Batch-review all corpus dives' open judgment-calls** (Johan, 2026-06-08) — go through every dive's `dossier.yaml → needsReview` in one pass: per-dive title/role/date calls and contested attributions. Concrete examples queued from the *What Is Religion* dive: «сущность» vs «назначение» as the canonical title form; whether Biryukov was **co-translator** vs **reviser** of the 1902 French edition (needs the French title page). Johan will review all dives together later.
 - [ ] **Works-record category/subcategory taxonomy** (Johan, 2026-06-08) — settle the controlled vocab across dives. Johan is **not** keen on `Treatises`; the religious works currently propose `Essays and Criticism` (after *What Is Art?*). Needs a dedicated cross-dive pass, not per-dive guesses.
 - [ ] **Guard against sub-agent scope-drift in `corpus-dive`** (2026-06-08) — during the *What Is Religion* dive, a sub-agent scoped to do **only** the visuals sweep instead ran the entire dive (`index.md` + `dossier.yaml` + note) **and committed it unsupervised** (`d57e99b2`), bypassing the opus-synthesis + separate-verifier discipline. Caught and corrected in a review pass (`1b4eee3a` + `_verifier-report.md`), but it shouldn't have been possible. Fix: spawn dive sub-agents in a no-commit / read-only-to-git posture; tighten sub-agent prompts to "write file X, return one confirmation line — do NOT synthesise the dive or run git"; keep all commits with the orchestrator, after the separate verify pass. Consider encoding this in the `corpus-dive` SKILL.md (model-routing / subagent-I-O section).
+- [x] **corpus-dive now targets the reorganised tree** (2026-07-13) — the skill births new dives in `works/<genre>/<subcat>/` (mirrored from the work's live-site page), `themes/`, or `_meta/` instead of flat `docs/research/<slug>/`; `<dive-dir>` defined once, all output paths updated, `novel-mode.md` example paths fixed, stale `nl2br` note corrected. serve.py gained a render-time resolver for the 542 flat-era `../<slug>/…` cross-links the move broke (486/540 resolve; `docs/test_dive_links.py`). Commits `001e32a4`, `0e74db1e`, `72b4a9c9` (branch later history-rewritten → `da517fed`).
+- [ ] **Send the GitHub Support GC request** (2026-07-13) — the 557 rights-reserved `visuals/` images were purged from `great-sin-redive-pass2` history and force-pushed, but GitHub can still serve the old blobs by direct SHA until it garbage-collects. Note drafted (scratchpad `github-support-note.md`); **Johan to submit** via support.github.com.
+- [ ] **Fix 6 genuinely-dangling dive cross-links** (2026-07-13) — the link resolver leaves these (they need content edits, not resolution): `../../../AGENTS.md` and `../../../TODO.md` (from `doukhobors`, `biryukov-biography-editions`), four links into `biryukov-vol3/`/`biryukov-vol4/` (Vol IV is on the unmerged `biryukov-vol4` branch), and `../research-practices.md`.
+- [ ] **(optional) Reclaim 333 MB locally after the image purge** (2026-07-13) — once confident no undo is needed: drop `backup/pre-image-purge` + `refs/original` + `git gc`. Also: ~10 memory files still cite the pre-move flat `docs/research/<slug>/` paths (a new reorg memory documents the change; per-file path fixes deferred).
 
 ### 9. Tolstoy Lab — the graph-populated research site
 *Plan (approved 2026-06-11): `~/.claude/plans/abundant-launching-fox.md`. Repo: `/Volumes/Graugear/Tolstoy-Lab/` (own git repo, **no remote by design**).*
