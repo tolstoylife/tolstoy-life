@@ -71,7 +71,7 @@ The 1915 first edition is the authorial last word for Vol III. Evidence:
 
 ### 1.4. Vol IV: Berlin 1922 is the only edition, and the project's English translation is complete
 
-Birukoff signed the Vol IV foreword from Geneva on 15 December 1922 and died nine years later (10 October 1931) without producing a later authorial revision. The az.lib.ru file at `text_1922_tolstoy06.shtml` is the authoritative text. The project's English translation of Vol IV (chs 1–19) was completed in session 2026-05-27 (commit `b90cb207`); the editorial ledger sits at [`docs/research/doukhobors/biryukov-vol4/en/translation-notes.md`](../../../docs/research/doukhobors/biryukov-vol4/en/translation-notes.md). No source revision is implied by this research project.
+Birukoff signed the Vol IV foreword from Geneva on 15 December 1922 and died nine years later (10 October 1931) without producing a later authorial revision. The az.lib.ru file at `text_1922_tolstoy06.shtml` is the authoritative text. The project's English translation of Vol IV (chs 1–19) was completed in session 2026-05-27 (commit `b90cb207`); the editorial ledger sits at `docs/research/doukhobors/biryukov-vol4/en/translation-notes.md` — on the unmerged `biryukov-vol4` branch only, not on the active line. No source revision is implied by this research project.
 
 ### 1.5. Vols I–II: the cheap probe partially settles it
 
@@ -402,6 +402,6 @@ Total new English translation effort beyond what's already done: ≈ 50–80 ses
 
 - Project orientation: [`handoff-2026-05-28.md`](handoff-2026-05-28.md).
 - Session log: [`session-log.md`](session-log.md).
-- Research conventions: [`../research-practices.md`](../research-practices.md).
-- The TODO items that motivated this work: [`TODO.md`](../../../TODO.md) §8 (Vol III gap-recapture) and §9 (Vol I/II audit).
-- Existing per-volume work: [`docs/research/doukhobors/biryukov-vol3/`](../../../docs/research/doukhobors/biryukov-vol3/) and [`biryukov-vol4/`](../../../docs/research/doukhobors/biryukov-vol4/).
+- Research conventions: [`AGENTS.md`](../../../../AGENTS.md), "Content and accuracy standards".
+- The TODO items that motivated this work: [`TODO.md`](../../../../TODO.md) §8 (Vol III gap-recapture) and §9 (Vol I/II audit).
+- Existing per-volume work: [`biryukov-vol3/`](../../themes/doukhobors/biryukov-vol3/) (inside the Doukhobors dive) and `biryukov-vol4/` (on the unmerged `biryukov-vol4` branch only).
