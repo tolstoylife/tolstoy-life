@@ -299,6 +299,15 @@ a.wikilink {
   border-bottom: 1px dotted var(--accent);
 }
 
+/* An entity with no page written yet. Most entities are in this state — the
+   vault is a universe, not a queue — so this reads as "not yet", not as an
+   error: muted rather than coloured, and the underline breaks up. */
+a.wikilink-missing {
+  color: var(--ink-soft);
+  border-bottom-color: var(--rule);
+  border-bottom-style: dashed;
+}
+
 /* Footnote marker */
 a.noteref { text-decoration: none; }
 a.noteref sup { font-size: 13px; color: var(--accent); margin-left: 2px; }

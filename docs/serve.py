@@ -30,7 +30,7 @@ import sys
 from datetime import datetime
 from html import escape as esc
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 # ── Dependencies ───────────────────────────────────────────────────────────────
 
@@ -259,10 +259,27 @@ if _REPO_ROOT not in sys.path:
 from reader.paragraph_ids import add_paragraph_ids
 from reader import ids as reader_ids
 
+_WIKILINK_A_RE = re.compile(r'<a class="wikilink" href="/research/wiki/([^"]+)\.html"')
+
+def mark_missing_wikilinks(html: str) -> str:
+    """Flag `[[links]]` whose page isn't written yet, so a dead end is visible.
+
+    Most entities legitimately have no page — the vault is a universe, not a
+    queue — so these stay clickable and keep their layer-toggle behaviour; they
+    just stop looking like a promise the preview can keep.
+    """
+    def repl(mo):
+        name = unquote(mo.group(1))
+        if (ROOT / "research" / "wiki" / f"{name}.md").exists():
+            return mo.group(0)
+        return mo.group(0).replace(
+            'class="wikilink"', 'class="wikilink wikilink-missing" title="No page yet"')
+    return _WIKILINK_A_RE.sub(repl, html)
+
 def render_body(text: str) -> str:
     """Convert a Markdown string (CriticMarkup, footnotes, [[wikilinks]]) to an HTML fragment."""
     MD.reset()
-    return add_paragraph_ids(MD.convert(text))
+    return add_paragraph_ids(mark_missing_wikilinks(MD.convert(text)))
 
 
 # ── Dive cross-link resolution (post-2026-07 folder move) ───────────────────────
