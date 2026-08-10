@@ -30,6 +30,7 @@ import sys
 from datetime import datetime
 from html import escape as esc
 from pathlib import Path
+from urllib.parse import quote
 
 # ── Dependencies ───────────────────────────────────────────────────────────────
 
@@ -228,6 +229,15 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
 
 from markdown.extensions.wikilinks import WikiLinkExtension
 
+def wiki_url(label: str, base: str, end: str) -> str:
+    """`[[Henry George]]` → `/research/wiki/Henry%20George.html`.
+
+    The extension's default builder substitutes underscores for spaces, but the
+    filename here IS the title (the Obsidian convention that keeps wikilinks
+    working in the vault), so the space is preserved and percent-encoded instead.
+    """
+    return f"{base}{quote(label)}{end}"
+
 MD = markdown.Markdown(extensions=[
     TableExtension(),
     FencedCodeExtension(),
@@ -237,7 +247,8 @@ MD = markdown.Markdown(extensions=[
     "attr_list",
     "footnotes",            # the work's own authorial/translator notes ([^n])
     "pymdownx.critic",      # editorial marks: {--cut--} {++add++} {~~a~>b~~} {>>note<<} {==hi==}
-    WikiLinkExtension(base_url="/wiki/", end_url=".html", html_class="wikilink"),
+    WikiLinkExtension(base_url="/research/wiki/", end_url=".html",
+                      html_class="wikilink", build_url=wiki_url),
 ])
 
 # serve.py lives in docs/, so the repo root isn't on sys.path by default — add it
