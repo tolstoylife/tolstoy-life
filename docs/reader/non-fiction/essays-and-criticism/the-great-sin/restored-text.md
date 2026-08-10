@@ -1,0 +1,159 @@
+---
+title: The Great Sin — the restored text
+---
+
+# The Great Sin — the restored text
+
+**What this is.** The passages cut from «Великий грех» before it went to print in 1905, each set back into the published text at the seam it was taken from — the sentence cut away from, the recovered passage, the sentence cut back to. The cuts were proposed by Chertkov, assented to, and within days regretted; what came out survives among the discarded drafts printed in <abbr title="Полное собрание сочинений — the 90-volume Jubilee edition of the complete works">PSS</abbr> Tom 36. This page restores only what the apparatus documents as removed. It reverses no softening that is merely suspected, and it carries no project translation out of the recovered Russian: the English beside each passage is a plain reading gloss, not a version.
+
+The recovered Russian is kept verbatim in its pre-reform spelling — hard signs and yat intact, «Въ Россіи происходятъ теперь неперестающія волненія» — so that the change of orthography marks, without any editorial sign, exactly where the published text stops and the recovered text begins. The published paragraphs around each passage are given in the modern spelling of the reading edition.
+
+## How the cuts are keyed, and why placement can be wrong
+
+The editors of Tom 36 name the four excisions as one set, in their own words: everything excluded «по инициативе Черткова и с согласия Толстого (первая глава, конец второй, шестая и конец седьмой — по первоначальному счету)» — the first chapter, the end of the second, the sixth, and the end of the seventh, by the essay's **original** numbering. They print them as variants **№№ 9–12**. A fifth passage, the «Необходимый переворот» paragraph, was diverted from the introduction; it is treated on its own below.
+
+That original numbering cannot be turned into published chapter numbers by arithmetic alone, because the essay grew and shrank between drafts. But it can be fixed another way. Two whole chapters — the original first and sixth — were removed, and the introduction («Введение») is a later, separate text, not one of the nine. That leaves the nine surviving chapters to become I–IX in order: original 2→I, 3→II, 4→III, 5→IV, [6 removed], 7→V, 8→VI, 9→VII, 10→VIII, 11→IX. The apparatus confirms this mapping from the other side: describing an earlier draft it notes that the original fourth chapter is «третьей в окончательной редакции», the seventh «пятой», the eighth «шестой» — original 4→III, 7→V, 8→VI, exactly as the mapping requires.
+
+So the placements below are not free guesses; each is stated with its reasoning, and where a join is soft rather than firm it is said to be soft. This is the one openly fallible step, and it is meant to be the easiest thing on the page to check.
+
+---
+
+## The introduction's inner-activity paragraph — «Необходимый переворот»
+
+**Where it belongs, and how firmly.** This paragraph stood near the end of the essay's introduction — not the short published Введение, but an earlier, fuller introduction that Chertkov set in proof (printed as variant № 15). That whole first proof of the introduction was published separately in the émigré paper *Свободное слово*, № 17–18, under a title of Chertkov's giving, «Необходимый переворот» (A Necessary Revolution). Within that publication this one paragraph was lifted out of the introduction's body and set after it with an editorial note — Chertkov's reason, in a letter of 8 July, being that it «стоит в противоречии со всем предыдущим», stands in contradiction with all that precedes it. Because the published Введение is a different, shorter text that replaced the whole proof introduction, this paragraph has no exact seam in the reading edition. It is shown here against the close of the published Введение for orientation only; of the five, this placement is the softest.
+
+*Published (the close of the Введение):*
+
+> Вот эту-то мою мысль мне хотелось сообщить в этой статье тем людям, которые в эту важную для России минуту хотят искренно служить не своим личным целям, а истинному благу русского народа.
+
+*Restored — from variant № 15, the proof introduction:*
+
+> Я думаю и высказывалъ нѣсколько разъ мысль о томъ, что жизнь народа слагается не вслѣдствіе внѣшнихъ формъ, которыя могутъ быть наложены на него внѣшними вліяніями, а внутренней дѣятельностью отдѣльныхъ личностей, и что поэтому въ этой внутренней дѣятельности — главное дѣло каждаго человѣка. Я думаю такъ и теперь.
+
+*Gloss.* I think, and have said several times, that the life of a people is shaped not by outward forms, which may be laid upon it by outward influences, but by the inner activity of individual persons — and that therefore the chief work of every man lies in that inner activity. I think so still.
+
+**What the removal changed.** The essay holds two things together: that the real change is inward, and that the outward arrangement of land-holding must go. Chertkov judged the two in contradiction and parted them, setting the inward-only half outside the essay under its own title. What the reader of the finished essay never sees is that the writer had put both halves in the same opening breath.
+
+---
+
+## The removed first chapter — № 9
+
+**Where it belongs, and how firmly.** This is the whole original first chapter. The original second chapter became published chapter I, so the first chapter stood before it, at the very opening. The short published Введение now occupies that slot, and covers the same ground far more briefly — the political agitation of the town classes, and what a working man of the people would make of it — so the recovered chapter reads as the fuller opening the Введение stands in for. The slot is firm (the opening); the exact join is soft, because the Введение is a replacement rather than a trimmed survival of this chapter.
+
+*Published (the close of the Введение):*
+
+> Вот эту-то мою мысль мне хотелось сообщить в этой статье тем людям, которые в эту важную для России минуту хотят искренно служить не своим личным целям, а истинному благу русского народа.
+
+*Restored — variant № 9, «первая глава… по первоначальному счету»:*
+
+> Въ Россіи происходятъ теперь неперестающія волненія. Рабочіе городскіе, слесаря, ткачи, хлебопеки, портные, кучера, типографщики, желѣзнодорожные, приказчики, всѣ люди, получающіе несравненно больше жалованія и лучшее содержаніе, чѣмъ сельскіе рабочіе, дѣлаютъ стачки, требуютъ увеличенія жалованія, уменьшенія часовъ работы, всякаго улучшенія. (Есть такіе желѣзнодорожные служащіе, которые, работая шесть часовъ, требуютъ уменьшенія до пяти часовъ.)
+>
+> Забастовываютъ ученики школъ, музыканты, живописцы, дѣвицы въ институтахъ, не говоря уже про гимназистовъ и студентовъ. Всѣ они забастовываютъ, т. е. пугаютъ кого то тѣмъ, что если не исполнятъ ихъ требованій, то они перестанутъ пріобрѣтать тѣ знанія и искусства, благодаря которымъ они устраиваются на шеѣ народа такъ, чтобы получать содержаніе въ десять и сто разъ больше, чѣмъ то, что получаетъ самый трудолюбивый крестьянинъ. Главныя же волненія происходятъ среди адвокатовъ, журналистовъ, бойкихъ говоруновъ — дворянъ, профессоровъ, техниковъ, докторовъ, вообще всѣхъ тѣхъ людей, которые или ничего не дѣлаютъ или дѣлаютъ очень мало и получаютъ за это очень малое и часто ненужное и даже вредное дѣло очень большое вознагражденіе, сбираемое съ народа. Всѣ эти люди придумываютъ различныя, самыя многообразныя и совершенно несогласныя между собою средства осчастливленія народа: это и свобода печати, и свобода собраній, и патріаршество, и техническое обученіе, и пенсіи рабочимъ, и, главное, представительство.
+>
+> Одни утверждаютъ, что для блага народа нуженъ земскій соборъ только какъ совѣщательное учрежденіе, другіе, что нужно двѣ палаты, третьи, что нужна только одна. Одни хотятъ, чтобы выборы были такіе, другіе — иные. Разсужденіямь нѣтъ конца. Одни говоротъ, что нужна республика, другіе — конституціонная монархія, третьи отстаиваютъ самодержавіе навсегда, другіе на нѣкоторое время. Одни говорятъ, что всего можно достигнуть мирнымъ путемъ, другіе утверждаютъ что нельзя пренебрегать и немирными средствами, т. е. убійствами, что, какъ говорилъ Каіаффа, лучше погибнуть одному человѣку, чѣмъ цѣлому народу. И удивительное дѣло, люди, которые большею частью не умѣютъ распорядиться съ своимъ имуществомъ, со своей семьей, съ самими собою, люди очень сомнительной нравственности и ума, твердо, непоколебимо увѣрены въ томъ, что они знаютъ, хотя каждый по своему, несомнѣнно знаютъ, что нужно для блага 140 милліоновъ людей. Всѣ эти люди собираются отдѣльными кружками и совершенно серьезно разсуждаютъ, какъ наилучшимъ образомъ осчастливить тотъ народъ, съ котораго тѣмъ или инымъ путемъ отбирается часто его послѣднее достояніе для ихъ, во всякомъ случаѣ роскошной, въ сравненіи съ трудовой и суровой народной жизнью. Всѣ подраздѣлены на фракціи, секціи, подсекціи, группы и, совершенно какъ у настоящихъ, у нихъ есть свои «центры, правые, лѣвые, и крайніе лѣвые». Все какъ за границей. И говорятъ о томъ же, о чемъ говорятъ за границей.
+>
+> Говорятъ въ умѣренныхъ кругахъ о конституціи, о всеобщей или невсеобщей подачѣ голосовъ, о министерствахъ, о подоходныхъ налогахъ, объ отдѣленіи церкви отъ государства, [въ] болѣе передовыхъ — о пенсіи рабочимъ, объ обобществленіи орудій труда. Въ самыхъ красныхъ — о томъ, какимъ способомъ какъ можно скорѣе захватить власть, какъ распорядиться съ тѣми, которые удерживаютъ ее.
+>
+> Разговоры всѣ эти очень мало интересны и содержательны, такъ какъ въ нихъ нѣтъ ни одной мысли, которая не была бы десятки лѣтъ бита и перебита на всѣхъ европейскихъ собраніяхъ, парламентахъ, съѣздахъ. Все это старо и комично въ Россіи гдѣ всѣ эти разсужденія, споры и предположенія не имѣютъ никакой возможности осуществленія и были бы вполнѣ невинны, если бы они не вызывали того всеобщаго, повальнаго раздраженія, озлобленія, озвѣренія, выражающагося, проявляющаяся убійствами и казнями.
+>
+> Что бы подумалъ человѣкъ изъ народа, изъ настоящаго, трудового 100 милліоннаго народа, благомъ котораго такъ озабочены эти люди, если бы онъ могъ ясно понять то, что дѣлается теперь подъ видомъ служенія его благу всѣми этими волнующимися людьми? Что бы онъ подумалъ, если бы онъ услыхалъ всѣ эти разсужденія о томъ, какія для его блага приняты рѣшенія на съѣздѣ журналистовъ и врачей, какъ для правильной церковной жизни народа нужно возстановленіе выборнаго начала и патріархата, какъ составилась новая партія истинно русскихъ людей, какъ известный деятель A. сдѣлалъ несколько шаговъ впередъ, а другой, столь же знаменитый дѣятель, нѣсколько шаговъ влѣво, какъ «Московскія ведомости» идутъ рука объ руку съ соціаль-демократами и какъ въ Горемыкинской комиссіи решено, что для возстановленія поколебленнаго крестьянскаго быта необходимо позаботиться о размежеваніи, — чтобы подумалъ и сказалъ бы настоящій, работающій человѣкъ изъ народа, который прочелъ бы все это?
+>
+> «Что же имъ больше дѣлать, сказалъ бы такой человѣкъ, одно слово: господа», однимъ этимъ обычнымъ, многосодержательнымъ, снисходительнымъ, презрительнымъ словомъ опредѣливъ всю эту дѣтскую, но только не дѣтски-невинную, самоувѣренную, озабоченную деятельность, вызываемую не нуждой, не серьезной мыслью, нравственными требованіями, а только избыткомъ тѣлеснаго удовлетворенія и праздности.
+>
+> Такъ бы добродушно, насмешливо, я думаю, отнесся человѣкъ изъ народа къ людямъ, занимающимся такими разсужденіями. Но если бы онъ понялъ, что эти самыя разсужденія были причиной всѣхъ тѣхъ стачекъ, бунтовъ, разгромовъ, казней, стрѣльбы солдатъ по народу и всѣхъ тѣхъ неперестающихзь убійствъ, которыя совершаются теперь во всѣхъ концахъ Россіи, и, главное, того озвѣренія, которое охватило нѣкоторую часть русскаго населенія, онъ, вероятно, уже не снисходительно, не насмешливо отнесся бы къ этимъ господамъ, а съ омерзеніемъ и ужасомъ отвернулся бы отъ нихъ и отрекся бы отъ всякой солидарности съ ними.
+
+*Gloss.* Unceasing disturbances are now going on in Russia. Town workers — locksmiths, weavers, bakers, tailors, coachmen, printers, railwaymen, shop-clerks, all of them earning incomparably more, and better kept, than the country labourer — go on strike, demand higher pay, shorter hours, every kind of betterment. (There are railwaymen who, working six hours, demand a reduction to five.)
+
+School pupils strike, and musicians, painters, girls in the institutes, to say nothing of the gymnasium boys and the students. They all strike — that is, they frighten someone with the threat that, if their demands are not met, they will stop acquiring the knowledge and the arts by which they settle themselves on the neck of the people so as to draw ten and a hundred times the keep of the most industrious peasant. But the chief disturbances are among the lawyers, the journalists, the glib talkers — noblemen, professors, engineers, doctors, all those who do nothing, or very little, and receive for that very little, often needless and even harmful, work a very large reward gathered from the people. All these people devise the most various and mutually contradictory means of making the people happy: freedom of the press, freedom of assembly, a patriarchate, technical education, pensions for workmen, and, above all, representation.
+
+Some maintain that for the people's good a Zemsky Sobor is needed, but only as a consultative body; others that two chambers are needed; a third that only one is. Some want the elections one way, others another. The arguments are endless. Some say a republic is needed, others a constitutional monarchy, a third defend autocracy for ever, others for a time. Some say all can be reached peacefully; others that unpeaceful means — that is, killings — must not be scorned, that, as Caiaphas said, it is better that one man perish than a whole people. And, wonderful to say, people who for the most part cannot manage their own property, their own family, their own selves — people of very doubtful morals and sense — are firmly, unshakably certain that they know, each in his own way, beyond doubt, what is needed for the good of a hundred and forty million people. All of them gather in separate circles and quite seriously discuss how best to make happy that people from whom, by one road or another, its last possession is often taken to keep them in a life that is, in any case, luxurious beside the working, harsh life of the people. All are divided into factions, sections, sub-sections, groups, and, exactly as with the real ones, they have their own "centre, right, left, and extreme left." Everything as abroad. And they talk of the same things they talk of abroad.
+
+In the moderate circles they talk of a constitution, of universal or restricted suffrage, of ministries, of income tax, of the separation of church from state; in the more advanced, of pensions for workmen, of the socialization of the instruments of labour; in the reddest, of how to seize power as fast as possible, and of what to do with those who hold on to it.
+
+All these talks are of very little interest or substance, for there is not one thought in them that has not for decades been thrashed and re-thrashed at every European meeting, parliament, congress. All of it is stale and comic in Russia, where these reasonings, disputes and proposals have no possibility whatever of being realized, and would be quite harmless were they not calling up that general, wholesale irritation, embitterment, brutalization, that shows itself in killings and executions.
+
+What would a man of the people think — of the real, labouring hundred-million people, for whose good these people are so concerned — if he could clearly grasp what is now being done, under the guise of serving his good, by all these agitated people? What would he think if he heard all these discussions: what decisions have been taken for his good at the congress of journalists and doctors; how, for the right church life of the people, the elective principle and the patriarchate must be restored; how a new party of truly Russian men has been formed; how the well-known public man A. has taken several steps forward, and another, no less famous, several steps to the left; how the *Moskovskiya Vedomosti* go hand in hand with the social-democrats; and how the Goremykin commission has decided that, to restore the shaken peasant economy, the land must be re-parcelled — what would the real, working man of the people think, and say, who read all this?
+
+"What else have they to do — one word: gentlefolk," such a man would say, defining with this one habitual, pregnant, condescending, contemptuous word all this childish — but not childishly innocent — self-assured, busy activity, called up not by need, not by serious thought or moral demand, but only by a surplus of bodily satisfaction and idleness.
+
+So good-naturedly, mockingly, I think, would a man of the people regard those engaged in such reasonings. But if he understood that these very reasonings were the cause of all those strikes, riots, wreckings, executions, of the soldiers' firing on the people and of all the unceasing killings now being done in every corner of Russia — and, above all, of that brutalization which has seized a part of the Russian population — he would probably no longer regard these gentlefolk condescendingly or mockingly, but would turn from them in loathing and horror, and renounce all fellowship with them.
+
+**What the removal changed.** This chapter is the essay's opening charge against the intelligentsia — «Народные заступники», the people's defenders — carried at full length, ending on the working man's one contemptuous word for it all: «господа», gentlefolk. The published Введение keeps the argument but not the scene, so the finished essay opens on the reasoned statement of the wrong rather than on this long, concrete portrait of the political noise the peasant sees through.
+
+---
+
+## The cut end of chapter II — № 10
+
+**Where it belongs, and how firmly.** This is the end of the original second chapter, which became published chapter I — the road to Tula. The firmest join on the page: chapter I now closes on the parasites «присосавшихся к нему и распложающихся на нем», fastened on the people and breeding upon it, and this passage opens «И вотъ эти то самые паразиты» — "And it is these very parasites" — continuing that exact sentence. The whole passage stands in angle brackets in the apparatus, marking it as text the author had himself struck: he cut it before Chertkov proposed anything.
+
+*Published (the close of chapter I):*
+
+> Он не может не верить в это, потому что ему ясно, что размножающийся народ, живущий земледелием, не может продолжать существовать, когда ему оставлена только малая часть земли, которой он должен кормить себя и всех паразитов, присосавшихся к нему и распложающихся на нем.
+
+*Restored — variant № 10, «конец второй [главы]… по первоначальному счету»; struck by the author's own hand, shown here as the apparatus prints it, in angle brackets:*
+
+> ⟨И вотъ эти то самые паразиты, оправдывающіеся всѣ, отъ царя до ветеринара, тѣмъ, что они служатъ народу, придумываютъ для народа всѣ возможныя блага, но только не говоря о томъ одномъ, что одно нужно русскому рабочему народу, о чемъ онъ не переставая говорить и думаетъ, отъ недостатка чего онъ постоянно страдаетъ, вырождается и вымираетъ (о томъ, что земля должна быть общей). Если и говорятъ объ этомъ, то въ томъ смыслѣ, что это не главное, второстепенное, даже очень несущественное дѣло и что надо многое другое сдѣлать, прежде чѣмь, между прочимъ, заняться и этимъ дѣломъ. А если и заняться этимъ дѣломъ, то совсемъ не такъ, какъ хочетъ народъ, а такъ, чтобы не нарушилось теченіе той пріятной жизни, которую ведутъ всѣ эти люди, озабоченные благомъ невѣжественнаго и не понимающаго своихъ интересовъ народа.⟩
+
+*Gloss.* And it is these very parasites — all of them justifying themselves, from the tsar down to the veterinary, by the claim that they serve the people — who devise for the people every possible good, saying only nothing of the one thing the Russian working people needs, of which it never ceases to speak and think, from the lack of which it constantly suffers, degenerates and dies out: that the land must be common. If they do speak of it, it is in the sense that this is not the main thing but a secondary, even a very inessential matter, and that much else must be done before, among other things, this matter too is taken up. And if it is taken up, then not at all as the people wants, but so that the pleasant course of life led by all these people — concerned for the good of an ignorant people that does not understand its own interests — shall not be disturbed.
+
+*Published (the opening of chapter II):*
+
+> «Что такое человек? — говорит Генри Джордж в одной из своих статей.
+
+**What the removal changed.** The passage names the one thing the parasites never say — «земля должна быть общей», the land must be common — and names the class of them from the tsar down. Struck by the author before the editing began, it shows the essay reaching a bare statement and then pulling back from it; the finished chapter closes on the image of the parasites and leaves the plain demand for the George quotations that follow to imply.
+
+---
+
+## The removed chapter between IV and V — № 11
+
+**Where it belongs, and how firmly.** This is the whole original sixth chapter. The original fifth chapter became published IV, and the original seventh became published V, so the removed sixth stood between them. Its subject fits the seam: chapter IV ends on the intelligentsia who look everywhere but where the trouble is, and chapter V opens on the cows shut in the enclosure — and between them ran this chapter, on the one thing the people asks and the educated answer it gives. A whole chapter, so the join is between chapters and clean; the position is firm.
+
+*Published (the close of chapter IV):*
+
+> В России, где 100-миллионная масса людей не переставая страдает от захвата земли частными владельцами и не переставая вопит об этом, отношение людей, мнимо отыскивающих везде, но только не там, где оно находится, средство улучшения народного быта, совершенно напоминает то, что бывает на сцене, когда все зрители прекрасно видят того, кто спрятался, и актеры должны бы видеть, но притворяются, что не видят, нарочно отвлекают внимание друг друга и видят всё, но только не то, что одно нужно, но чего они не хотят видеть.
+
+*Restored — variant № 11, «шестая [глава]… по первоначальному счету»:*
+
+> Русскій народъ не переставая проситъ одного: чтобы переставали позволять тѣмъ, кто не работаетъ на землѣ, отнимать ее у тѣхъ, кто кормится съ нея.
+>
+> «Это онъ говоритъ отъ своей глупости и отъ своего необразованія, — отвѣчаетъ на это человѣкъ, живущій трудами народа и озабоченный его благомъ. — Народъ не понимаетъ того, что ему нужно. Ему нужна свобода печати, свобода вѣры. Ему нужно то, что мы называемъ наукой и образованіемъ. Ему нужно представительство. То, что онъ не читаетъ и не любитъ читать нашихъ книгъ, это не важно, важно, чтобы мы могли писать, а его мы пріучимъ любить наши писанія. То, что онъ, несмотря на всякія гоненія, всегда удерживалъ свои вѣрованія и укрѣплялся въ нихъ, ничего не значитъ, мы желаемъ имѣть свободу проповѣдывать свои вѣры безпрепятственно. То, что онъ считаетъ ни на что не нужной глупостью, то, что мы называемъ наукой и образованіемъ, происходитъ отъ его невѣжества. Онъ будетъ любить все это, когда будетъ такимъ же, [какъ] мы. Болѣе же всего ему нужно представительство. То, что онъ не хочетъ участвовать въ грѣхахъ власти, происходитъ отъ его глупости, и мы образуемъ его. Мало того, мы устроимъ ему всеобщую фабрику, такъ что онъ будетъ жить въ городахъ и работать опредѣленные часы при электрическомъ свѣтѣ и даромъ будетъ, какъ въ богадѣльняхъ, получать всѣ необходимые и одинаковые для всѣхъ предметы», говорятъ самые передовые люди.
+>
+> Да вѣдь русскій народъ весь земледѣльческій и хочетъ оставаться такимъ, зачѣмъ же ему все то, что вы предлагаете, и что можетъ быть нужно промышленнымъ народамъ?
+>
+> «Это ничего не значитъ, — отвѣчаетъ вамъ русскій самый передовой соціалистъ, — если русскій народъ еще не пролетарій, то это отъ того, что онъ отсталъ. Онъ долженъ опролетаритъся; самъ Марксъ сказалъ это».
+>
+> Все это до такой степени глупо, что простой, неученый человѣкъ никогда не могъ бы сказать этого. Утверждать такія нелѣпости можетъ только человѣкъ, изучившій ту ужасную схоластику, которая въ наше время называется наукой. По этой наукѣ выходитъ, что жизнь человѣческая слагается не по духовнымъ свойствамъ людей, не по степени развитія ихъ разума и совѣсти, а по какимъ то законамъ, которые открылъ Гегель, Контъ, Спенсеръ, Марксъ, Энгельсъ, и т. п. По этой то наукѣ освобожденіе земли отъ большихъ собственниковъ теперь, сейчасъ не нужно, такъ какъ въ будущемъ это освобожденіе произойдетъ само собою вмѣстѣ съ уничтоженіемъ всякаго права собственности на орудія труда.
+
+*Gloss.* The Russian people asks unceasingly for one thing: that those who do not work the land should cease to be allowed to take it from those who feed themselves upon it.
+
+"That he says out of his stupidity and his want of education," answers the man who lives by the people's labour and is concerned for its good. "The people does not understand what it needs. It needs freedom of the press, freedom of faith. It needs what we call science and education. It needs representation. That it does not read and does not like to read our books does not matter; what matters is that we should be able to write, and we shall train it to love our writings. That it has, despite every persecution, always held to its beliefs and grown firm in them, means nothing; we wish the freedom to preach our faiths unhindered. That it counts as useless folly what we call science and education comes of its ignorance. It will love all this when it has become such as we are. Above all it needs representation. That it does not wish to take part in the sins of power comes of its stupidity, and we shall educate it. More than that, we shall set up for it a universal factory, so that it will live in the towns and work fixed hours by electric light and receive free, as in the almshouses, all the necessary articles, the same for all," say the most advanced people.
+
+But the Russian people is wholly agricultural and wishes to remain so; what does it want with all that you propose, which may be needed by industrial peoples?
+
+"That means nothing," the most advanced Russian socialist answers you; "if the Russian people is not yet a proletariat, that is because it is backward. It must be proletarianized; Marx himself said so."
+
+All this is so stupid that a simple, unlearned man could never have said it. Only a man who has studied that dreadful scholasticism which in our day is called science can affirm such absurdities. By this science it turns out that human life is shaped not by the spiritual qualities of men, not by the degree of development of their reason and conscience, but by certain laws discovered by Hegel, Comte, Spencer, Marx, Engels, and the like. By this science the freeing of the land from the great proprietors is not needed now, at once, since in the future this freeing will come about of itself, together with the abolition of all right of property in the instruments of labour.
+
+**What the removal changed.** This chapter puts the argument as a dialogue — the people's one plain request, and the educated answer that it does not know what it needs and must be given the press, representation, the factory, proletarianization instead. Named against it are Hegel, Comte, Spencer, Marx, Engels, and the whole of what is called science. The finished essay keeps the charge against the intelligentsia but not this direct exchange, and not the naming of the thinkers; the socialist answer that the people «должен опролетариться» is among the sharpest things the essay lost.
+
+---
+
+## The reworked end of chapter V — № 12
+
+**Where it belongs, and how firmly.** This is a special case. The original seventh chapter became published chapter V, and its ending was not simply struck but reworked: the passage below is the earlier state of the sentence that now closes chapter V. So the reader can set the two side by side — the recovered ending, then the published one that replaced it. The position is firm; what differs from the other four is that this is a variant of surviving text, not text lifted clean out.
+
+*Published (the close of chapter V, second-to-last paragraph):*
+
+> Русский народ по своему земледельческому положению, по своей любви к этой форме жизни, по тому, что он почти один из европейских народов продолжает быть земледельческим народом и желает оставаться им, как будто умышленно поставлен исторической судьбой так, чтобы с разрешения того, что называется рабочим вопросом, стать во главе истинно прогрессивного движения человечества. И вот этот-то русский народ призывается его мнимыми представителями и руководителями к тому, чтобы итти в хвосте вымирающих и запутавшихся европейских и американских народов и как можно скорее развратиться и отречься от своего призвания, для того чтобы быть похожим на Европейца.
+
+*Restored — variant № 12, «конец седьмой [главы]… по первоначальному счету», the ending before it was reworked:*
+
+> Поистинѣ удивительно скудоуміе русскихъ интеллигентовъ — паразитовъ, не пмѣющихъ ни одной своей мысли, ни одного своего вывода изъ своего наблюденія и умѣющихъ только рабски повторять то, что говорятъ европейскіе интеллигенты — паразиты. Удивительно это скудоуміе, но еще удивительнѣе сухость сердца, жестокость и лицемѣріе этихъ людей.
+
+*Gloss.* Truly astonishing is the poverty of mind of the Russian intelligentsia-parasites, who have not one thought of their own, not one conclusion of their own drawn from their own observation, and who can only slavishly repeat what the European intelligentsia-parasites say. Astonishing is this poverty of mind, but still more astonishing is the dryness of heart, the cruelty and the hypocrisy of these people.
+
+*Published (what the reworking made of that same ending — the last paragraph of chapter V):*
+
+> Удивительна бедность мысли этих людей, не думающих своим умом и только рабски повторяющих то, что говорят их европейские образцы, но еще удивительнее сухость сердца, жестокость и лицемерие этих людей.
+
+**What the reworking changed.** The two endings share their close word for word — «но еще удивительнее сухость сердца, жестокость и лицемерие этих людей». What went in the rework is the word «паразиты». The earlier ending called them «русских интеллигентов — паразитов» and «европейские интеллигенты — паразиты», parasites twice over; the published ending softens both to «этих людей» and «их европейские образцы» — these people, their European models. The label that the essay presses everywhere else, and that it turns on itself in the last line — «мы, русские паразиты» — was lifted off the intelligentsia here.
