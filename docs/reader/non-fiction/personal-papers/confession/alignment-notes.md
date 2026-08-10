@@ -48,3 +48,5 @@ Three small transmission faults in `confession.ru.md` surfaced during the machin
 ## Open item from the translation
 
 - **Capitalization of "God".** The PSS text lowercases `бог` throughout («бога нет», «бог есть жизнь»). That reads as a Soviet editorial convention rather than Tolstoy's manuscript, so the English capitalizes God: lowercasing it would carry an edition artefact into the translation as though it were authorial. Worth confirming against the printed page.
+
+- **Evidence that the capitalization call was right.** The Great Sin's spine (PSS Tom 36, «Великий грех», 1905) capitalizes «Бог» throughout — «Бог», «Бога», «Богу», every occurrence — while this spine (Tom 23) lowercases throughout. The same edition series treating the same word differently from one volume to the next looks like a per-volume house decision rather than anything authorial, which supports capitalizing in the English here. Noted 2026-08-10 while translating The Great Sin; still worth confirming against the printed page.

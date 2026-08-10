@@ -179,3 +179,23 @@ the «Мф. XXIII» citation confirmed against the page image (OCR garbles it as
 Caveat on the caveat: this is a verification pass (extract vs. scan-OCR +
 visual spot-check of every conflict), not a word-perfect human transcription
 against the physical book. It's strong evidence the text is right, not a proof.
+
+## Spine defects found while translating (2026-08-10)
+
+Rendering every sentence into English is the closest reading the text gets, and it surfaced a handful of small transmission faults in `the-great-sin.ru.md` that the July proofread did not catch. **None is repaired in the spine** — repairing the source text is a separate decision — and each is translated as intended in `the-great-sin.en-machine.md` rather than mirrored, so the English does not carry a digitization artefact forward as if it were Tolstoy's.
+
+These need adjudicating against the page image rather than assuming, because the 2026-07-01 pass above reported the text clean. The likeliest explanation for the stray-space cases is that a word-level diff normalizes whitespace and so cannot see them; that pass explicitly treated mid-word spaces as noise in the *scan's* OCR layer, and these are in the extract.
+
+- **`слитком` for `слишком` (II ¶7)** — «зарабатывает он слитком мало», immediately followed by the same phrase spelled correctly: «А зарабатывает он слишком мало». A single letter substitution, so a homoglyph sweep would not catch it. The identical typo was found in `confession.ru.md` (ch. I, para 4), which suggests a shared source or a shared OCR pass rather than a one-off.
+- **`е сть` (VII ¶1)** — «есть» split by a stray space: «в жизни всего мира е сть одно наиболее назревшее».
+- **`мог о бы` (II ¶10)** — «как мог о бы Он облегчить бедность», read as «как мог бы».
+- **`я придумывают` for `и придумывают` (V ¶1)** — «люди начинают бояться… я придумывают различные средства». A я/и confusion; the grammar requires «и».
+- **`придумывают` for `придумывать` (VII ¶9)** — «Такие люди не будут… придумывают такие или иные улучшения». After «не будут» the infinitive is required.
+- **`с телегами` for `с телятами` (I ¶1)** — «Народ обозами едет на базар, с телегами, курами, лошадьми, коровами». «Обозами» already means *in trains of carts*, so «с телегами» ("with carts") is redundant, and every other item in the list is livestock. Read as «телятами» ("calves") — which is also what the 1905 English has. This one is a reading, not a certainty, and is the most worth checking against the page.
+- **Stray comma in `торгуя, землями` (IX ¶5).**
+
+## Quotation marks in the machine English (2026-08-10)
+
+`the-great-sin.en-machine.md` uses curly double quotes; `the-great-sin.en-1905.md` uses straight ones. The Great Sin plan asked the machine layer to mirror the 1905 file's convention and described that convention as curly, which is not what the file actually contains. Rather than follow the description or the file, the machine layer follows **A Confession's machine leg**, which settled on curly quotes: the machine Englishes are the set that needs to read consistently with each other, and the difference also makes it visible at a glance which English column a reader is in. Dialogue that the Russian marks with an opening dash is rendered with quotation marks, as English convention and the Confession precedent both do.
+
+Capitalization of «Бог» does not arise here: this spine already capitalizes throughout — «Бог», «Бога», «Богу» — so the English simply follows the source. That is worth noting alongside the opposite decision taken for A Confession, whose spine lowercases; see that bundle's alignment notes.
