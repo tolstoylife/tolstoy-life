@@ -215,6 +215,32 @@ blockquote {
 }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 
+/* Parallel excerpt card: a Russian passage and its English, always shown together.
+   Used on the restored-text page; the orthography (pre-reform vs modern) still
+   marks restored vs published across cards. */
+.pair {
+  margin: 1.5rem 0;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.pair .pair-cap {
+  margin: 0; padding: 0.5rem 1.2rem;
+  font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-soft); font-style: normal;
+  border-bottom: 1px solid var(--rule-soft);
+  background: color-mix(in srgb, var(--paper) 60%, var(--rule) 40%);
+}
+.pair .ru, .pair .en { padding: 1rem 1.2rem; }
+.pair .ru p:first-child, .pair .en p:first-child { margin-top: 0; }
+.pair .ru p:last-child, .pair .en p:last-child { margin-bottom: 0; }
+.pair .en {
+  border-top: 1px solid var(--rule-soft);
+  background: var(--rl-wash);
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
 figure { margin: 1.8rem 0; }
 main img {
   max-width: 100%; height: auto; display: block;
