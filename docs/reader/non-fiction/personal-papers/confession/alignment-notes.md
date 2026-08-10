@@ -35,4 +35,16 @@ The "XI." heading is absent from the e-text; chapters X and XI run together ther
 ## Open items
 
 - **Verify the chapter XI heading against the printed page** (Wiener vol. XIII facsimile) when convenient. The placement is well-evidenced from both sides of the join, but it has not been checked against the scan.
-- **`бог 1 и 3` (Russian ch. IX)** reads like an OCR-mangled "God, one and threefold" — «бог 1 и 3» where the numerals stand in for the Trinity formula. Worth a facsimile check against PSS t. 23; not repaired, since the reading is a guess.
+- **`бог 1 и 3` (Russian ch. IX)** reads like an OCR-mangled "God, one and threefold" — «бог 1 и 3» where the numerals stand in for the Trinity formula. Worth a facsimile check against PSS t. 23; not repaired, since the reading is a guess. The machine translation renders it "God, one and three", following this reading.
+
+## Spine defects found while translating (2026-08-10)
+
+Three small transmission faults in `confession.ru.md` surfaced during the machine-translation pass. None is repaired in the spine — repairing the source text is a separate decision — and each is translated as intended rather than mirrored, so the English does not carry a digitization artefact forward as if it were Tolstoy's.
+
+- **`слитком` (ch. I, para 4)** is a typo for `слишком`: "one should not take all this *too* seriously". A single letter substitution, so the homoglyph sweep would not have caught it.
+- **Unclosed `«` (ch. III, para 14)** — the paragraph opens `«Случилось то, что случается…` with no closing quote anywhere. The English renders the paragraph without the stray mark.
+- **Stray semicolon (ch. V, para 11)** — inside the sciences' reply, `мы не имеем; ответов и этим не занимаемся` splits "have no answers" across the punctuation. Read as `мы не имеем ответов`.
+
+## Open item from the translation
+
+- **Capitalization of "God".** The PSS text lowercases `бог` throughout («бога нет», «бог есть жизнь»). That reads as a Soviet editorial convention rather than Tolstoy's manuscript, so the English capitalizes God: lowercasing it would carry an edition artefact into the translation as though it were authorial. Worth confirming against the printed page.
