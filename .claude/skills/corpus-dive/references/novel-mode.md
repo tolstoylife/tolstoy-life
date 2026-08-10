@@ -172,20 +172,20 @@ share. *Father Sergius* (2026-06-09) was the **first run under the codified mode
 a derivation — and it held up with no overlay change needed. Read the nearest analogue when scoping a
 new novel-dive.
 
-- `docs/research/1889-1899-resurrection/` — wholly-invented cast; marquee = **`complicates`**
+- `docs/research/works/fiction/novels/1889-1899-resurrection/` — wholly-invented cast; marquee = **`complicates`**
   (communion → excommunication, with the Pobedonostsev-caricature axis). Pre-schema-v1.4 run: its
   characters were routed as `concept` stopgaps and later re-routed.
-- `docs/research/1887-1889-the-kreutzer-sonata/` — companion-text precedent (the Afterword's own
+- `docs/research/works/fiction/novellas/1887-1889-the-kreutzer-sonata/` — companion-text precedent (the Afterword's own
   record); marquee = **`extends`** (Tolstoy owns the doctrine but withholds the modality —
   ideal-not-rule).
-- `docs/research/1896-1904-hadji-murat/` — first to apply v1.4 natively (historical principals →
+- `docs/research/works/fiction/novels/1896-1904-hadji-murat/` — first to apply v1.4 natively (historical principals →
   `person`; Butler/Marya Dmitrievna → `character`); heaviest genesis (the source-research campaign);
   posthumous passages-cut censorship; marquee = **`extends`** (the *What Is Art?* contradiction was
   lived, not reconciled).
-- `docs/research/1890-1898-father-sergius/` — **the mode's first validation run** (above three
+- `docs/research/works/fiction/novellas/1890-1898-father-sergius/` — **the mode's first validation run** (above three
   *derived* it; this one ran under the codified overlay). Wholly-fictional cast with one historical
   walk-on → the **person-in-a-fictional-cast middle case** (Nicholas I, the censored love-affairs
   strand → `person`); marquee = **`confirms` + `extends`** (the driver is слава людская / vanity, not
   lust; the cure is anonymity, not asceticism); finished 1898 for the Doukhobor emigration fund.
 
-The written proposal that specced this mode: `docs/research/1889-1899-resurrection/novel-dive-proposal.md`.
+The written proposal that specced this mode: `docs/research/works/fiction/novels/1889-1899-resurrection/novel-dive-proposal.md`.

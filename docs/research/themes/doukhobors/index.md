@@ -226,7 +226,7 @@ The PSS commentary (`texts/comments/`) supplies the dating and provenance: v39_2
 
 ## 5. The Biryukov biography on the Doukhobors
 
-The project's source hierarchy ranks the Biryukov biography third in authority, after Tolstoy's own works and his diaries and letters (see [AGENTS.md](../../../AGENTS.md), "Content and accuracy standards"). It is worth being precise about what is, and is not, in the Jubilee Edition.
+The project's source hierarchy ranks the Biryukov biography third in authority, after Tolstoy's own works and his diaries and letters (see [AGENTS.md](../../../../AGENTS.md), "Content and accuracy standards"). It is worth being precise about what is, and is not, in the Jubilee Edition.
 
 **The Jubilee Edition does not contain Biryukov's biography.** The 90 volumes are Tolstoy's own works, letters, and diaries. P. I. Biryukov's *Биография Л. Н. Толстого* is a separate four-volume work (1906–1923). What the Jubilee Edition *does* contain is Tolstoy's **afterword to Biryukov's 1895 article** "The Persecution of Christians in Russia in 1895" (PSS Tom 39, pp. 99–105; §3.3 above) — Biryukov wrote the documentary article, Tolstoy the afterword — and the editorial commentary that frames it. Biryukov's name is therefore present in the Jubilee Edition's Doukhobor record, but as the author of a source-article and as a member of the relief circle, not as a biographer.
 

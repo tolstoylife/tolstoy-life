@@ -171,16 +171,18 @@ def discover(research_dir):
     seen_dirs = set()
 
     # Folder dives: prefer dossier.yaml's topic block; fall back to index.md.
-    folder_slugs = set()
-    for p in research_dir.glob("*/dossier.yaml"):
-        folder_slugs.add(p.parent.name)
-    for p in research_dir.glob("*/index.md"):
-        folder_slugs.add(p.parent.name)
+    # Dives live nested under works/<genre>/<subcat>/ and themes/<slug>/;
+    # _meta/, lib/, visualizations/, evidence-index/ are excluded by construction.
+    folder_by_slug = {}
+    for pat in ("works/*/*/*/dossier.yaml", "themes/*/dossier.yaml",
+                "works/*/*/*/index.md", "themes/*/index.md"):
+        for p in research_dir.glob(pat):
+            folder_by_slug.setdefault(p.parent.name, p.parent)
 
-    for slug in sorted(folder_slugs):
+    for slug in sorted(folder_by_slug):
         if slug in NON_DIVE_DIRS:
             continue
-        folder = research_dir / slug
+        folder = folder_by_slug[slug]
         dossier = folder / "dossier.yaml"
         topic, lede = {}, ""
         data = {}
@@ -197,7 +199,8 @@ def discover(research_dir):
                 "date": fm.get("date") or fm.get("lastUpdated"),
                 "period": fm.get("period"),
             }
-        href = f"{slug}/index.html" if (folder / "index.html").exists() \
+        rel = folder.relative_to(research_dir).as_posix()
+        href = f"{rel}/index.html" if (folder / "index.html").exists() \
             or (folder / "index.md").exists() else None
         if href is None:
             continue

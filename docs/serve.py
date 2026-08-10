@@ -254,6 +254,57 @@ def render_body(text: str) -> str:
     return add_paragraph_ids(MD.convert(text))
 
 
+# ── Dive cross-link resolution (post-2026-07 folder move) ───────────────────────
+# The move relocated every dive from flat  research/<slug>/  into
+# research/{works/<genre>/<subcat>,themes,_meta}/<slug>/  (and renamed a few
+# slugs). Existing dives still link each other with the old flat  ../<slug>/… ,
+# which now misses on both ends. Rewrite those `../…` links at render time to the
+# real location — move-map.tsv gives old-path → new-path, and current folder names
+# cover dives written since. Links that don't resolve (website/ draft-note
+# pointers, not-yet-created siblings) are left untouched.
+_DIVE_ALIAS = None
+
+def _dive_alias() -> dict:
+    """old-slug / current-folder-name / moved-file-path → new root-relative path."""
+    global _DIVE_ALIAS
+    if _DIVE_ALIAS is None:
+        research = ROOT / "research"
+        alias = {}
+        for idx in (list(research.glob("works/**/index.md"))
+                    + list(research.glob("themes/*/index.md"))
+                    + list(research.glob("_meta/*/index.md"))):
+            alias[idx.parent.name] = idx.parent.relative_to(ROOT).as_posix()
+        mm = research / "_meta" / "move-map.tsv"
+        if mm.exists():
+            for line in mm.read_text(encoding="utf-8").splitlines():
+                if "\t" not in line:
+                    continue
+                old, new = (x.strip() for x in line.split("\t", 1))
+                if old and new:
+                    alias.setdefault(old, "research/" + new)   # current names win
+        _DIVE_ALIAS = alias
+    return _DIVE_ALIAS
+
+_DIVE_HREF_RE = re.compile(r'(href=")(\.\./[^"#]*)(#[^"]*)?(")')
+
+def resolve_dive_links(html: str) -> str:
+    """Rewrite flat-era `../<slug>/…` dive links to their real post-move URL."""
+    alias = _dive_alias()
+    research = ROOT / "research"
+    def repl(mo):
+        pre, raw, frag, post = mo.group(1), mo.group(2), mo.group(3) or "", mo.group(4)
+        rest = re.sub(r"^(\.\./)+", "", raw)
+        if rest in alias:                             # a moved file/dir, matched whole
+            return f"{pre}/{alias[rest]}{frag}{post}"
+        seg0 = rest.split("/", 1)[0]
+        if seg0 in alias:                             # a dive dir + trailing /index.html
+            return f"{pre}/{alias[seg0]}{rest[len(seg0):]}{frag}{post}"
+        if (research / rest).exists():                # never moved (lib/, shared docs)
+            return f"{pre}/research/{rest}{frag}{post}"
+        return mo.group(0)                            # dangling → leave as authored
+    return _DIVE_HREF_RE.sub(repl, html)
+
+
 # ── Work reader (reader-edition bundles) ───────────────────────────────────────
 
 def work_version_of(md_path: Path):
@@ -361,7 +412,7 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
     if (bundle / "overview.md").exists():
         up = "overview.html"
     else:
-        dive = next(ROOT.glob(f"research/*-{work}/index.md"), None)
+        dive = next(ROOT.glob(f"research/works/**/*-{work}/index.md"), None)
         up = f"/{dive.relative_to(ROOT).with_suffix('.html')}" if dive else ""
 
     title = meta.get("title") or work.replace("-", " ").title()
@@ -448,6 +499,9 @@ def md_to_html(md_path: Path) -> str:
 
     # Convert markdown
     body_html = render_body(text)
+    # Dives authored `../<slug>/…` against the old flat layout; fix those links.
+    if (ROOT / "research") in md_path.parents:
+        body_html = resolve_dive_links(body_html)
 
     # Relative path for breadcrumb
     rel = md_path.relative_to(ROOT)

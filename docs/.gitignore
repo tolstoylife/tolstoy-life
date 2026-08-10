@@ -21,4 +21,6 @@
 # gate lives at website/src/ (the actually-published surface), not at download.
 # Facsimiles we render ourselves from local PSS PDFs (PD: Tolstoy's own text)
 # go in <slug>/extracts/ instead, which IS committed.
-research/*/visuals/
+# `**` so this keeps matching after dives were nested under works/…/themes/… (2026-07-13):
+# `research/*/visuals/` only matched flat research/<slug>/visuals/.
+research/**/visuals/

@@ -66,13 +66,62 @@ keyed by sentence ID, not text, so the respell won't take until the wav is clear
 
 Reader-text and content items from the same read-through (missing italics, wanted
 footnotes, the English-title question) are filed as dive steer in
-`docs/research/1905-the-great-sin/annotations.md`.
+`docs/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/annotations.md`.
+
+## Short-phrase pitch — the audio-only merge (2026-07-04)
+
+Kokoro rises in pitch on a very short clip (2–4 words) synthesized on its own,
+where it should fall. We can't set pitch directly, so the only lever is
+**context**: hand the synthesizer more words at once. Two mechanisms now do this,
+both keeping the page text faithful and the read-along mapping intact.
+
+**1. The sentence merge (`speechGroup`).** A too-short leading sentence is glued
+into the next sentence of its paragraph *before* `segments.json` is written — one
+combined clip, one highlight unit (the pair lights up together during read-along).
+Because the merge happens before the shared file, everything downstream (clips,
+timing, SMIL) stays consistent; no change to the audio or EPUB builders. Which
+sentences merge is an **explicit list** by ID in `reader/speech.py`
+(`MERGE_FORWARD`), *not* a word-count rule — a blanket "short sentence" rule would
+wrongly flatten legitimate rising **questions** ("Why is this?", "Whence this
+dreadful perversity?"). Configured here: `p-7-3-s1` "But we are wrong." → glued
+into its long following sentence.
+
+**2. Two speech-only respellings** (`reader/speech.py` `_SUBS`; the page keeps its
+punctuation):
+- **welfare list** (`p-6-7-s1`) — full-stop-flattened like the two noun lists, so
+  the "to abolish… to organize… to increase…" run gets air. (It's an infinitive
+  list, so it reads a touch more clipped than the noun lists; kept because the
+  pacing win outweighs it. Revisit if a later ear-check disagrees.)
+- **pause after "God,"** (`p-7-8-s2`) — "God," → "God." in speech only; the full
+  stop gives the wanted pause.
+- **"…their parasites."** (`p-6-6-s1`) — after the comma Kokoro rendered the closing
+  appositive as a high rising tag (**~149 Hz**); an em-dash in speech only ("support
+  us — their parasites.") keeps a beat but drops it to **~111 Hz** so it falls. Page
+  keeps the comma. Picked by measuring the final-word pitch with **parselmouth**
+  (praat) — the reusable way to settle "does it rise or fall" without guessing.
+
+**Comma pause length is a Kokoro constant (~140 ms) — no lever.** Measured three
+ways: slowing to speed 0.93 keeps commas at ~145 ms (it stretches the *words*, not
+the pauses); commas→semicolons gives ~147 ms (Kokoro treats them the same). The only
+thing that lengthens a comma is a full stop, which resets pitch — so it's a per-spot
+tool (the lists, "God,"), never a global default. Comma pacing is accepted as-is.
+
+**Accepted as Kokoro limits** (no clean lever; documented so they're not
+re-litigated):
+- **Section headings** ("Part One." etc.) rise when spoken alone. Merging a heading
+  (`<h2>`) into the first sentence (`<p>`) can't share one read-along highlight
+  cleanly, so left as-is.
+- **"Why is this?"** (`p-8-4-s1`) — a one-sentence paragraph with no neighbour to
+  merge into; and it's a question, which is *meant* to rise.
+
+Earlier backlog items are resolved: **Kvas** → "quahss", **Alexander II** →
+"Alexander the Second" (both in `_SUBS`).
 
 ## Russian break adjustments (per section)
 
 Native PSS paragraphing → English coordinate. Every split/merge is at a real
 sentence boundary; no wording changed. The starting text is the native extract
-`docs/research/1905-the-great-sin/extracts/v36_206_230_Velikij_greh.txt`; the
+`docs/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/extracts/v36_206_230_Velikij_greh.txt`; the
 committed `the-great-sin.ru.md` is the curated result (source of truth, not
 regenerated).
 
@@ -130,3 +179,23 @@ the «Мф. XXIII» citation confirmed against the page image (OCR garbles it as
 Caveat on the caveat: this is a verification pass (extract vs. scan-OCR +
 visual spot-check of every conflict), not a word-perfect human transcription
 against the physical book. It's strong evidence the text is right, not a proof.
+
+## Spine defects found while translating (2026-08-10)
+
+Rendering every sentence into English is the closest reading the text gets, and it surfaced a handful of small transmission faults in `the-great-sin.ru.md` that the July proofread did not catch. **None is repaired in the spine** — repairing the source text is a separate decision — and each is translated as intended in `the-great-sin.en-machine.md` rather than mirrored, so the English does not carry a digitization artefact forward as if it were Tolstoy's.
+
+These need adjudicating against the page image rather than assuming, because the 2026-07-01 pass above reported the text clean. The likeliest explanation for the stray-space cases is that a word-level diff normalizes whitespace and so cannot see them; that pass explicitly treated mid-word spaces as noise in the *scan's* OCR layer, and these are in the extract.
+
+- **`слитком` for `слишком` (II ¶7)** — «зарабатывает он слитком мало», immediately followed by the same phrase spelled correctly: «А зарабатывает он слишком мало». A single letter substitution, so a homoglyph sweep would not catch it. The identical typo was found in `confession.ru.md` (ch. I, para 4), which suggests a shared source or a shared OCR pass rather than a one-off.
+- **`е сть` (VII ¶1)** — «есть» split by a stray space: «в жизни всего мира е сть одно наиболее назревшее».
+- **`мог о бы` (II ¶10)** — «как мог о бы Он облегчить бедность», read as «как мог бы».
+- **`я придумывают` for `и придумывают` (V ¶1)** — «люди начинают бояться… я придумывают различные средства». A я/и confusion; the grammar requires «и».
+- **`придумывают` for `придумывать` (VII ¶9)** — «Такие люди не будут… придумывают такие или иные улучшения». After «не будут» the infinitive is required.
+- **`с телегами` for `с телятами` (I ¶1)** — «Народ обозами едет на базар, с телегами, курами, лошадьми, коровами». «Обозами» already means *in trains of carts*, so «с телегами» ("with carts") is redundant, and every other item in the list is livestock. Read as «телятами» ("calves") — which is also what the 1905 English has. This one is a reading, not a certainty, and is the most worth checking against the page.
+- **Stray comma in `торгуя, землями` (IX ¶5).**
+
+## Quotation marks in the machine English (2026-08-10)
+
+`the-great-sin.en-machine.md` uses curly double quotes; `the-great-sin.en-1905.md` uses straight ones. The Great Sin plan asked the machine layer to mirror the 1905 file's convention and described that convention as curly, which is not what the file actually contains. Rather than follow the description or the file, the machine layer follows **A Confession's machine leg**, which settled on curly quotes: the machine Englishes are the set that needs to read consistently with each other, and the difference also makes it visible at a glance which English column a reader is in. Dialogue that the Russian marks with an opening dash is rendered with quotation marks, as English convention and the Confession precedent both do.
+
+Capitalization of «Бог» does not arise here: this spine already capitalizes throughout — «Бог», «Бога», «Богу» — so the English simply follows the source. That is worth noting alongside the opposite decision taken for A Confession, whose spine lowercases; see that bundle's alignment notes.

@@ -46,6 +46,14 @@ WORKS = REPO_ROOT / "website" / "src" / "works"
 STATUS_FILE = READER / "status.yaml"
 OUT_NAME = "index.html"                        # docs/reader/index.html
 
+
+def dive_dossiers():
+    """Every dive's dossier.yaml — now nested under works/ and themes/
+    (work-dives at works/<genre>/<subcat>/<dive>/, theme-dives at themes/<dive>/;
+    _meta/ reference material is excluded by construction)."""
+    yield from sorted(RESEARCH.glob("works/*/*/*/dossier.yaml"))
+    yield from sorted(RESEARCH.glob("themes/*/dossier.yaml"))
+
 # The loop the editions move through, in order. The first two are derived from
 # artifacts on disk; the rest are human-judgment stages set in status.yaml.
 LOOP_STAGES = ["dived", "built", "read", "re-dived", "ingested"]
@@ -79,7 +87,7 @@ def pluck_field(fields, name):
     return None
 
 
-def work_rows_from_dossier(slug, data):
+def work_rows_from_dossier(slug, data, dive_href):
     """Yield one row-seed per work a dossier documents. A dossier is one of:
       - single-work: a top-level `work:` block (+ optional `workRecord:`),
       - multi-work:  a `workRecords:` list,
@@ -94,7 +102,7 @@ def work_rows_from_dossier(slug, data):
             "recordPath": record_path or "", "recordExists": bool(record_exists),
             "pss": pss or "", "dates": dates or "", "genre": genre or "",
             "period": base_period, "diveDate": dive_date,
-            "diveHref": f"research/{slug}/index.html",
+            "diveHref": dive_href,
         }
 
     work = data.get("work")
@@ -270,10 +278,11 @@ def assemble():
     rows, seen = [], set()
 
     # 1) Every work a dossier documents.
-    for dossier in sorted(RESEARCH.glob("*/dossier.yaml")):
+    for dossier in dive_dossiers():
         slug = dossier.parent.name
         data = load_yaml(dossier)
-        for seed in work_rows_from_dossier(slug, data):
+        dive_href = f"research/{dossier.parent.relative_to(RESEARCH).as_posix()}/index.html"
+        for seed in work_rows_from_dossier(slug, data, dive_href):
             rows.append(_finish_row(seed, records, status, dived=True))
             seen.add(seed["workId"])
 
@@ -569,7 +578,7 @@ def build(verbose=True):
     rows = assemble()
     # The page's "updated" is the latest dive date, not a wall-clock stamp.
     dive_dates = []
-    for dossier in RESEARCH.glob("*/dossier.yaml"):
+    for dossier in dive_dossiers():
         topic = (load_yaml(dossier).get("topic") or {})
         if topic.get("date"):
             dive_dates.append(str(topic["date"]))

@@ -160,23 +160,29 @@ def build_live_vault_index():
 # ── Dossier loading ───────────────────────────────────────────────────────────
 
 def load_dossiers(research_dir):
-    """Return [(slug, data)] for every <slug>/dossier.yaml, sorted by slug."""
+    """Return [(slug, rel, data)] for every dive's dossier.yaml, sorted by slug.
+    Dives are nested under works/<genre>/<subcat>/ and themes/<slug>/; slug is the
+    bare folder name (identity), rel is the research-relative path (for file refs).
+    _meta/ reference material is excluded by construction."""
     dossiers = []
-    for path in sorted(research_dir.glob("*/dossier.yaml")):
+    paths = list(research_dir.glob("works/*/*/*/dossier.yaml")) \
+          + list(research_dir.glob("themes/*/dossier.yaml"))
+    for path in sorted(paths, key=lambda p: p.parent.name):
         slug = path.parent.name
         if slug == OUT_DIRNAME:
             continue
+        rel = path.parent.relative_to(research_dir).as_posix()
         with open(path, encoding="utf-8") as fh:
             data = yaml.safe_load(fh) or {}
-        dossiers.append((slug, data))
+        dossiers.append((slug, rel, data))
     return dossiers
 
 
-def repo_rel(slug, p):
+def repo_rel(rel, p):
     """Rewrite a dive-relative path (extract/facsimile/localPath) to repo-relative."""
     if not p:
         return None
-    return f"docs/research/{slug}/{p}"
+    return f"docs/research/{rel}/{p}"
 
 
 # ── Aggregation ───────────────────────────────────────────────────────────────
@@ -196,7 +202,7 @@ def aggregate(dossiers, live_by_id, live_by_stem):
     topic_dates = []
     evidence_total = visual_total = 0
 
-    for slug, data in dossiers:
+    for slug, rel, data in dossiers:
         d = data.get("topic", {}).get("date")
         if d:
             topic_dates.append(str(d))
@@ -268,44 +274,49 @@ def aggregate(dossiers, live_by_id, live_by_stem):
                     "date": str(row.get("date")) if row.get("date") is not None else None,
                     "addressee": collapse_ws(row.get("addressee")) or None,
                     "localPdf": row.get("localPdf"),
-                    "extract": repo_rel(slug, row.get("extract")),
-                    "facsimile": repo_rel(slug, row.get("facsimile")),
+                    "extract": repo_rel(rel, row.get("extract")),
+                    "facsimile": repo_rel(rel, row.get("facsimile")),
                     "quoteRu": collapse_ws(row.get("quoteRu")) or None,
                     "quoteEn": collapse_ws(row.get("quoteEn")) or None,
                     "significance": collapse_ws(row.get("significance")) or None,
                 })
 
-        # Attach visuals by relatedEntity (name match within this dive)
+        # Attach visuals by relatedEntity (name match within this dive).
+        # relatedEntity may be one name or a list of names (a shared source, e.g.
+        # a book scan tied to both its author and its publisher); file under each.
         for vis in visuals:
-            rel_entity = collapse_ws(vis.get("relatedEntity"))
-            if not rel_entity:
-                continue
-            key = dive_name_to_key.get(rel_entity) or slugify_py(rel_entity)
-            acc = entities.get(key)
-            if acc is None:
-                continue  # visual references an entity with no entity row; skip
-            # Dedup across dives on the stable identity: url first (same image
-            # cached under different per-dive localPaths), then localPath, then id.
-            ident = vis.get("url") or vis.get("localPath") or vis.get("id")
-            existing = acc["_visual_by_ident"].get(ident)
-            if existing is not None:
-                if slug != existing["dive"] and slug not in existing["alsoInDives"]:
-                    existing["alsoInDives"].append(slug)
-                continue
-            v = {
-                "dive": slug,
-                "id": vis.get("id"),
-                "type": vis.get("type"),
-                "subject": collapse_ws(vis.get("subject")) or None,
-                "relatedEvidence": vis.get("relatedEvidence"),
-                "licence": vis.get("licence"),
-                "usable": vis.get("usable"),
-                "url": vis.get("url"),
-                "localPath": repo_rel(slug, vis.get("localPath")),
-                "alsoInDives": [],
-            }
-            acc["_visual_by_ident"][ident] = v
-            acc["visuals"].append(v)
+            related = vis.get("relatedEntity")
+            names = related if isinstance(related, list) else [related]
+            for name in names:
+                rel_entity = collapse_ws(name)
+                if not rel_entity:
+                    continue
+                key = dive_name_to_key.get(rel_entity) or slugify_py(rel_entity)
+                acc = entities.get(key)
+                if acc is None:
+                    continue  # visual references an entity with no entity row; skip
+                # Dedup across dives on the stable identity: url first (same image
+                # cached under different per-dive localPaths), then localPath, then id.
+                ident = vis.get("url") or vis.get("localPath") or vis.get("id")
+                existing = acc["_visual_by_ident"].get(ident)
+                if existing is not None:
+                    if slug != existing["dive"] and slug not in existing["alsoInDives"]:
+                        existing["alsoInDives"].append(slug)
+                    continue
+                v = {
+                    "dive": slug,
+                    "id": vis.get("id"),
+                    "type": vis.get("type"),
+                    "subject": collapse_ws(vis.get("subject")) or None,
+                    "relatedEvidence": vis.get("relatedEvidence"),
+                    "licence": vis.get("licence"),
+                    "usable": vis.get("usable"),
+                    "url": vis.get("url"),
+                    "localPath": repo_rel(rel, vis.get("localPath")),
+                    "alsoInDives": [],
+                }
+                acc["_visual_by_ident"][ident] = v
+                acc["visuals"].append(v)
 
     # Finalize each entity: vaultStatus live, reconcile priority, sort, lint.
     finalized = {}
@@ -393,7 +404,7 @@ def aggregate(dossiers, live_by_id, live_by_stem):
 
     meta = {
         "generator": "build_evidence_index.py",
-        "builtFrom": [slug for slug, _ in dossiers],
+        "builtFrom": [slug for slug, _, _ in dossiers],
         "diveCount": len(dossiers),
         "entityCount": len(entities_sorted),
         "evidenceRowCount": evidence_total,

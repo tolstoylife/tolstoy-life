@@ -1,0 +1,73 @@
+# The Great Sin — where the 1905 English departs from the Russian
+
+**What this is.** A fidelity report on `the-great-sin.en-1905.md` (*A Great Iniquity*, translated by V. G. Chertkov and I. F. Mayo, 1905), measured against `the-great-sin.ru.md` (<abbr title="Полное собрание сочинений — the 90-volume Complete Works">PSS</abbr> vol. 36) and against `the-great-sin.en-machine.md`, the project's raw machine English of the same spine. Written 2026-08-10.
+
+**Method.** The machine English was made first, from the Russian alone, without the 1905 translation open — so it is an independent reading of the spine rather than a revision of Chertkov and Mayo. The two Englishes were then compared paragraph by paragraph. All three versions share one paragraph coordinate: paragraph *n* of section *k* is the same place in the work in every version, so every finding below can be checked in the reader by looking at the same paragraph in all three columns.
+
+**What counts as a finding.** A dropped clause or sentence; a term softened or blunted; a clause added with no source in the Russian; a mistranslation. Ordinary period style, word order, and synonyms of equal weight are not findings — this is a fidelity report, not a style critique. The 1905 English is a fluent and often vigorous translation, and most of it renders the Russian faithfully; what follows is the residue.
+
+**Why this is a separate report and not marks in the text.** Putting highlight marks in `the-great-sin.en-1905.md` would mean editing that file, and the read-along audio (338 clips) and the EPUB are built from it. The audio cache is keyed by clip ID rather than by text, so any change under an unchanged ID would silently keep stale audio. Whether to mark the text at all, where, and with what rebuild protocol, is therefore Johan's decision, to be made with this report in hand.
+
+---
+
+## The finding that runs through the whole essay
+
+**Sections II and IX — the Henry George quotations are not translated from Tolstoy's Russian; they are replaced with George's original English.**
+
+Tolstoy quotes George at length in Russian, in a compressed and partly paraphrased form. The 1905 translators went back to George's English and printed that instead. The result is that the English reader gets George, while the Russian reader got Tolstoy's George — and the two are not the same text. This is visible everywhere the two diverge:
+
+- **II ¶1 and ¶3** — the Russian attributes the passages to «одной из своих статей» ("one of his articles") and «в другом месте» ("in another place"); the 1905 makes them "one of his speeches" and "another part of the same speech." The source of the quotation is silently changed.
+- **II ¶3** — the Russian has «даже в средних городах» ("even in middling towns"); the 1905 has "or even to Burlington," George's own American example, which the Russian reader never saw.
+- **II ¶5** — the Russian states a fact: «у нас рабочие люди бедны, а праздные богаты» ("with us the working people are poor and the idle rich"). George's English, restored by the 1905, says instead that "we are accustomed to think of the working man as a poor man." Tolstoy's flat assertion becomes a remark about habits of mind.
+- **II ¶11** — the manna passage in the 1905 is substantially longer than the Russian, carrying whole clauses with no source in the spine: "as the soil of Great Britain is held, as the soil even of our new States is being held," the graded holdings of twenty and a hundred square miles, and "even to the clothes off their backs."
+- **IX ¶12** — the Russian closes with «в воздухе уже чувствуется веяние весны» ("in the air there is already felt the breath of spring"); the 1905 prints George's "the times are ripe for it." The image Tolstoy chose to end on is gone.
+- **IX ¶1–2** — the 1905 drops the quotation marks from the George passage altogether and marks it only with a parenthetical "(wrote Henry George)". A reader cannot see where George's words stop and Tolstoy's resume.
+
+The same thing happens once outside George: at **VI ¶1** the epigraph is given in the King James wording rather than translated from the Russian text Tolstoy quotes, and at **III ¶7** Labouchere is quoted in what appears to be his actual English rather than through Tolstoy's Russian.
+
+None of this is careless — restoring an author's own words is a defensible editorial choice, and for Chertkov, who knew George's work, an obvious one. But it means the 1905 cannot be used to see what Tolstoy's Russian readers read, which is the one job the machine layer exists to do.
+
+## Dropped
+
+- **II ¶7** — the Russian ends the George quotation and then adds, in Tolstoy's own voice, «и за 50 копеек в России» ("and for fifty kopecks in Russia"). The 1905 drops it. This is the sentence that turns George's American wage figure into a statement about Russia, which is the whole reason the quotation is in this essay.
+- **II ¶7** — the Russian also carries «А зарабатывает он слишком мало потому, что отдает часть своей работы тем, кто владеет землей» ("and they earn too little because they give up a part of their work to those who own the land"). Dropped. The reader is left with the fact of low wages and not the cause, which is the argument.
+- **III ¶9** — the section ends in the Russian «так что среди большинства так называемых образованных людей оно известно только по имени» ("so that among the majority of so-called educated people it is known only by name"). The 1905 stops at "the noisy teaching of Socialism." The closing verdict on how completely George has been buried is lost.
+- **V ¶11** — the Russian names three things: «сухость сердца, жестокость и лицемерие этих людей» ("the dryness of heart, the cruelty and the hypocrisy of these men"). The 1905 gives only "the hardness of their hearts, their cruelty." Hypocrisy is dropped — and section VI opens immediately with the "Woe unto you… hypocrites" epigraph, which the dropped word was there to set up.
+- **VI ¶6** — the Russian says of God's servants that «эти служители Его и не любили Его, не искали общения с Ним» ("did not love Him, did not seek communion with Him"). The 1905 drops "did not love Him." The paragraph's stated subject is the absence of love, so the clause that names it is the one that goes missing.
+- **IX ¶5** — the Russian has «Только такая внутренняя нравственная деятельность каждого человека» ("only such an *inner* moral activity of each man"). The 1905 drops «внутренняя» — "Only such moral activity of every man." Inner as against outer activity is the distinction the last three sections are built on.
+- **Introduction ¶5** — «хотят искренно служить» ("wish *sincerely* to serve") loses "sincerely." A small word, but the essay is about people who serve the people insincerely.
+
+## Softened or blunted
+
+- **III ¶1** — «самое близкое и настоятельное дело» ("the nearest and most *urgent* business") becomes "the nearest and most obvious evil." Urgency is replaced by obviousness; a thing that must be done now becomes a thing that is easy to see.
+- **III ¶4** — «все свои огромные духовные силы» ("all his enormous *spiritual* powers") becomes "his great mental powers." Both the "all" and the spiritual character of George's work go. The essay's later argument is that this change can only come from religious feeling, so describing George's effort as mental cuts against it.
+- **IV ¶9** — «мнимо отыскивающих везде, но только не там, где оно находится» ("who *ostensibly* seek everywhere except where it is") becomes "vainly searching everywhere but where it really is." The charge changes from pretending to search to searching without success — and the simile that follows, of actors who see the hidden man and pretend not to, is precisely about pretence.
+- **VI ¶3** — «Среди нас есть точно такие же люди» ("Among us there are men *exactly the same*") becomes "Among us there are many such people." Tolstoy is claiming identity between the inquisitors and his contemporaries; the 1905 turns it into a claim about numbers.
+- **VI ¶8** — the Russian says these men ignore what is wanted by «тот, кому они служат» ("the one whom they serve"), which covers both God and the people and holds the two halves of the parallel together. The 1905 capitalizes it into "the One they profess to serve" and attaches it to God alone, so the parallel with the servants of the people collapses at the point where it is being drawn.
+- **VII ¶3** — «странное заблуждение» ("strange delusion") becomes "dreadful perversity." An error becomes a wickedness, which is a heavier charge than Tolstoy makes here.
+- **VII ¶10** — «захват земли неработающими людьми» ("the seizure of the land by men who *do not work*") becomes "by those who do not cultivate it." The accusation narrows from idleness to not farming, which would exempt everyone the essay is aimed at.
+- **I ¶45** — «распложающихся на нем» ("breeding upon it") becomes "crawling about them." The parasites stop multiplying; Tolstoy's image is that they increase, and he closes the essay by counting himself among them.
+
+## Added with no source in the Russian
+
+- **V ¶10** — the 1905 gives the Russian people "their Christian trend of character" and says they are "providentially placed by historic conditions." Neither is in the Russian, which has only «как будто умышленно поставлен исторической судьбой» ("placed by historical destiny as though on purpose"). A claim about national Christian character is put into Tolstoy's mouth.
+- **V ¶4** — «с спокойным духом забавляться» ("amuse themselves with an easy mind") becomes "with unawakened conscience amuse themselves." The Russian describes a calm state; the English supplies a moral verdict on it.
+- **VIII ¶6** — «Не нужно никаких жертв» ("No sacrifices are needed") becomes "No artificial sacrifices are necessary." The added word reverses the sentence: Tolstoy is saying that nothing needs to be given, only that the sin be recognized, and the 1905 leaves room for sacrifice of the genuine sort. The companion passage at **IX ¶4** pulls the other way — «люди готовы были жертвовать» ("ready to sacrifice") becomes "ready to sacrifice everything."
+- **IX ¶16** — the dateline in the spine is «Июль 1905». The 1905 prints "Yasnaya Poliana, July, 1905," adding the place.
+
+## Mistranslated
+
+- **IX ¶5** — «десятками тысяч десятин» ("tens of thousands of *dessiatinas*") becomes "scores of thousands of acres." A dessiatina is about 2.7 acres, so the holdings Tolstoy is describing are reported at roughly a third of their size.
+- **V ¶7** — «отменить паспорты, выкупы» ("to abolish passports and *redemption payments*") becomes "to cancel passports and monopolies." The redemption payments were the debt the emancipated peasants owed for their land; replacing them with monopolies removes a land burden from a list of land burdens.
+- **V ¶8** — «в то развращение» ("that corruption," in the moral sense) becomes "into the deprivations." A moral consequence of landlessness is turned into a material one, in a sentence that is already listing the material ones.
+- **IX ¶9** — «инвентари» (the Inventory Rules, a specific pre-emancipation measure regulating serf obligations) becomes "material improvements." A named historical half-measure becomes a vague good thing, in a list whose point is that half-measures were tried and failed.
+- **VI ¶3** — Tolstoy's «во имя "народа", ради истинного служения ему» is rendered "in the name of 'the people,' 'for the true service of the people.'" The second phrase is put in quotation marks as though it too were a slogan being reported; in the Russian it is Tolstoy's own description.
+- **V ¶1** — «пережевали себе хвосты» ("have chewed their own tails") becomes "have chewed each other's tails." The cows stop devouring themselves and start on one another, which is a different picture of what confinement does.
+- **I ¶23** — the peasant says «Я на одной (лошади) ухожу (землю), а на зиму пустил и сам не рад. Съела скотину на отделку» — he works the land with one horse, kept the second over the winter and regretted it, and it ate the stock's feed to the last. The 1905 has "I've kept them both over the winter" (the allotments, not the horses) and "The cattle have eaten up everything," which reverses what ate what. The small economic point — that the second horse was the ruinous thing — is lost.
+
+## Formatting choices worth knowing about
+
+- **II ¶4 and ¶6** — Tolstoy's own interjections between the George quotations are printed in parentheses in the 1905. In the Russian they are unmarked paragraphs in his own voice, carrying the same weight as the rest of the essay. Bracketing them reads as though the author were the one interrupting.
+- **Section headings** — the Russian has bare numerals, «I» through «IX»; the 1905 prints "Part I" through "Part IX". The machine English follows the Russian.
+- **The title** — «Великий грех» is literally *The Great Sin*, the phrase the essay turns on and repeats at VII ¶10, VIII ¶3 and IX ¶14. The 1905 chose *A Great Iniquity*, which softens a sin into a wrong and makes it one of several rather than the one.
+- **«развязать»** — Tolstoy's word for what must happen to the sin is "to untie" or "to loose," and he keeps the knot image across VII ¶10, VIII ¶3–4 and IX ¶14–15, ending with «развязки» ("the loosing"). The 1905 renders it four different ways — "come to an end," "undoing," "removal," "undo" — so the reader cannot see that one word is being repeated.

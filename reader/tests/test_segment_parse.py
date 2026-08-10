@@ -1,4 +1,4 @@
-from reader.segment import parse, heading_speech
+from reader.segment import parse, heading_speech, merge_speech_groups
 
 MD = open("reader/tests/fixtures/mini.en-1905.md").read()
 
@@ -34,3 +34,26 @@ def test_parse_resolves_marks_in_display():
 def test_parse_collects_notes():
     notes = parse(MD)["notes"]
     assert notes == [{"id": "note-1", "label": "1", "html": "A cow without milk."}]
+
+def test_merge_speech_groups_glues_flagged_sentence_forward():
+    # p-7-3-s1 ("But we are wrong.") is the configured merge; it absorbs the next
+    # sentence, keeps its own id, and the paragraph loses one sentence.
+    sents = [
+        {"id": "p-7-3-s1", "display": "But we are wrong.", "speech": "But we are wrong."},
+        {"id": "p-7-3-s2", "display": "Among us there are many.", "speech": "Among us there are many."},
+        {"id": "p-7-3-s3", "display": "The end.", "speech": "The end."},
+    ]
+    out = merge_speech_groups(sents)
+    assert [s["id"] for s in out] == ["p-7-3-s1", "p-7-3-s3"]
+    assert out[0]["display"] == "But we are wrong. Among us there are many."
+    assert out[0]["speech"] == "But we are wrong. Among us there are many."
+
+def test_merge_speech_groups_leaves_unflagged_untouched():
+    sents = [{"id": "p-1-1-s1", "display": "A short one.", "speech": "A short one."},
+             {"id": "p-1-1-s2", "display": "Another.", "speech": "Another."}]
+    assert merge_speech_groups(sents) == sents
+
+def test_merge_speech_groups_flagged_last_sentence_is_safe():
+    # a flagged sentence with nothing after it can't merge forward — left alone
+    sents = [{"id": "p-7-3-s1", "display": "But we are wrong.", "speech": "But we are wrong."}]
+    assert merge_speech_groups(sents) == sents

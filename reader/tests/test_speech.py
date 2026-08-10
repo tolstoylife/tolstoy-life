@@ -28,3 +28,25 @@ def test_professions_list_gets_full_stops():
                     'chiefly townspeople, the so-called "intellectuals"—are now in Russia')
     assert "the nobles. Merchants." in out
     assert "Chiefly townspeople. The so-called" in out
+
+def test_welfare_list_gets_full_stops():
+    out = to_speech(
+        "For the welfare of the people we endeavor to abolish the censorship of books, "
+        "arbitrary banishments, and to organize everywhere schools, common and agricultural, "
+        "to increase the number of hospitals, to cancel passports and monopolies, to institute "
+        "strict inspection in the factories, to reward maimed workers, to mark boundaries "
+        "between properties, to contribute through banks to the purchase of land by peasants, "
+        "and much else.")
+    assert "banishments. And to organize" in out          # item boundary -> full stop
+    assert "agricultural. To increase" in out              # internal commas kept, item split
+    assert out.rstrip().endswith("And much else.")
+
+def test_god_comma_becomes_pause():
+    # page keeps the comma; speech gets a full stop so Kokoro pauses after "God"
+    out = to_speech("God, Whom they have served and are serving so zealously, has expressed")
+    assert out.startswith("God. Whom they have served")
+
+def test_parasites_ending_gets_emdash():
+    # comma -> em-dash in speech only, so the closing "their parasites" tag falls
+    out = to_speech("in order to support us, their parasites.")
+    assert "support us — their parasites." in out

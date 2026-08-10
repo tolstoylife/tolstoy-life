@@ -133,7 +133,7 @@ def test_ru_page_has_no_transport():
 
 def test_plain_doc_gets_shell_and_annotation_only():
     dive = (pathlib.Path(__file__).resolve().parents[1]
-            / "research/1905-the-great-sin/index.md")
+            / "research/works/non-fiction/essays-and-criticism/1905-the-great-sin/index.md")
     html = serve.md_to_html(dive)
     assert 'id="topbar"' in html and 'id="ann-popover"' in html
     assert 'id="transport"' not in html
