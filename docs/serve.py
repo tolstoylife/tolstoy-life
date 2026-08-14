@@ -410,13 +410,33 @@ _PAGE_LABELS = {
 _HUB_APPARATUS = ["restored-text.md", "translation-diagnostic.md", "alignment-notes.md"]
 
 
-def _edition_label(version: str, readalong: bool = False, verbose: bool = False) -> str:
+def _edition_year(bundle: Path, version: str) -> str:
+    """4-digit year for an edition whose version tag isn't itself a year
+    (e.g. en-wiener → 1904, read from meta.<version>.json's date)."""
+    meta_path = bundle / f"meta.{version}.json"
+    if meta_path.exists():
+        m = re.search(r"\d{4}", str(_load_json(meta_path).get("date", "")))
+        if m:
+            return m.group()
+    return ""
+
+
+def _edition_label(version: str, readalong: bool = False, verbose: bool = False,
+                   year: str = "") -> str:
     # verbose = the spelled-out drawer/body form; terse (default) = the crumb form.
     if version.startswith("en-machine"):
         base = "English (machine translation)" if verbose else "English (machine)"
     elif version.startswith("en"):
-        yr = version.split("-", 1)[1] if "-" in version else ""
-        base = f"English, {yr}" if yr[:4].isdigit() else "English"
+        suffix = version.split("-", 1)[1] if "-" in version else ""
+        if suffix[:4].isdigit():
+            base = f"English, {suffix}"
+        elif year:
+            # named-translator edition (e.g. en-wiener): year from meta.json,
+            # translator spelled out in the drawer/body form only.
+            name = suffix.replace("-", " ").title()
+            base = f"English, {year} ({name})" if verbose and name else f"English, {year}"
+        else:
+            base = "English"
     elif version.startswith("ru"):
         base = "Русский (Russian version)" if verbose else "Русский"
     else:
@@ -430,7 +450,7 @@ def _page_label(md_path: Path, work: str) -> str:
         return "Overview"
     wv = work_version_of(md_path)
     if wv:
-        return _edition_label(wv[1])
+        return _edition_label(wv[1], year=_edition_year(md_path.parent, wv[1]))
     return (_PAGE_LABELS.get(md_path.name) or _extract_title_md(md_path)
             or md_path.stem.replace("-", " ").title())
 
@@ -477,7 +497,8 @@ def work_hub_html(bundle: Path, work: str, dive_dir, current_url: str) -> str:
         items.append((u(ov), "Overview"))
     for w, v in bundle_editions(bundle):
         ra = (bundle / "build" / f"timing.{v}.json").exists() and v.startswith("en")
-        items.append((u(bundle / f"{w}.{v}.md"), _edition_label(v, ra, verbose=True)))
+        items.append((u(bundle / f"{w}.{v}.md"),
+                      _edition_label(v, ra, verbose=True, year=_edition_year(bundle, v))))
     for name in _HUB_APPARATUS:
         if (bundle / name).exists():
             items.append((u(bundle / name), _PAGE_LABELS[name]))
