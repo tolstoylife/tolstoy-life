@@ -18,7 +18,7 @@ would erase any meaning his life could hold brought him close to suicide; and ho
 found the will to live again in the faith of the labouring people — ending in a break
 with the Church he had returned to.
 
-- [English, 1904 (Wiener)](confession.en-wiener.html)
+- [English, 1904 (Wiener) · read-along](confession.en-wiener.html)
 - [Русский](confession.ru.html) (Russian version)
 - [English (machine translation)](confession.en-machine.html)
 - [Alignment notes](alignment-notes.html)
