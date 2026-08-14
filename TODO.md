@@ -1,6 +1,6 @@
 # Tolstoy Research Platform — Backlog
 
-Last updated: 2026-07-13
+Last updated: 2026-08-14
 
 ---
 
@@ -184,6 +184,8 @@ Turn each prophet-period work into a reader's edition (web + read-along EPUB + s
 **Next on A Confession: `translation-diagnostic.md`, as its own session** — it needs both finished texts loaded side by side and is comparison work, not composition. One finding already banked: Wiener renders «я очень рано стал много читать и думать» as "since I began to read philosophical works at fifteen years of age", inventing the subject matter and an age the Russian never gives. Then B4–B9 (segment → audio → EPUB → tests → gated sidecar → commit). Then one-by-one off the works tracker; once proven, 1b runs as a token-gated nightly queue (precedent: `corpus-dive-queue.sh`).
 
 Two small verification jobs still open on this bundle, both wanting a facsimile: the ch. XI heading placement (from B2) and `«бог 1 и 3»` in ch. IX, which the machine leg renders "God, one and three" on the strength of a guess.
+
+- [x] **A Confession — overview page + per-work nav + Wiener audiobook** (2026-08-14, main branch `confession-reader-nav`; builder fix on audiobook-repo branch `per-work-clip-cache`). Wrote `confession/overview.md` in the "Blend" voice from the corpus dive — that one file is what switches on the whole per-work nav (`serve.py` gates the Library link + work crumb + Contents-hub drawer on a bundle having an `overview.md`; Confession had none, so its pages rendered as plain docs). Confession now matches The Great Sin, verified in-browser (crumb + drawer auto-listing Overview · English 1904 (Wiener) · Русский · English (machine) · Alignment notes · The corpus dive). serve.py label patch: an English edition whose version tag is a name not a year (`en-wiener`) reads "English, 1904 (Wiener)" in the drawer / terse "English, 1904" in the crumb, year pulled from `meta.json`; year-tagged editions unaffected. **Audiobook built** (the reader-editions "build the audio" step): 919 Wiener sentences → 16 sections + `timing.en-wiener.json`, bm_daniel; **web read-along confirmed playing with the sentence highlight in sync**. Had to fix a silent trap first — both works number sentences identically (`p-1-1-s1`…) and the builder cached clips in one shared folder keyed by ID, so a naive build would have spliced Great Sin's voice onto Confession; `build_audiobook.py` now caches per work, Great Sin's clips preserved under their own name. Audio + timing live in the gitignored `build/` (local scratch, same as Great Sin); committed = `overview.md` + serve.py patch + the one-line works-tracker row (`reader/index.html` Confession row now links to the reader edition, not the dive). **Read-along EPUB not built** — the web reader is the primary surface now (Memory `feedback_web_reader_replaces_thorium`); build it only if a distributable EPUB is wanted. **Still the next A Confession job:** `translation-diagnostic.md` as its own session (unchanged).
 
 ---
 
