@@ -412,12 +412,12 @@ _HUB_APPARATUS = ["restored-text.md", "translation-diagnostic.md", "alignment-no
 
 def _edition_label(version: str, readalong: bool = False) -> str:
     if version.startswith("en-machine"):
-        base = "English (machine)"
+        base = "English (machine translation)"
     elif version.startswith("en"):
         yr = version.split("-", 1)[1] if "-" in version else ""
         base = f"English, {yr}" if yr[:4].isdigit() else "English"
     elif version.startswith("ru"):
-        base = "Русский"
+        base = "Русский (Russian version)"
     else:
         base = version.upper()
     return base + (" · read-along" if readalong else "")
