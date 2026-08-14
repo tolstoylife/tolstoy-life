@@ -160,7 +160,14 @@ body {
   padding: 2px 10px; color: var(--accent);
 }
 #topbar a.tb-read:hover { border-color: var(--accent); }
-@media (max-width: 40rem) { #topbar .tb-links { display: none; } }
+#topbar .tb-div { color: var(--ctl-border); font-size: 12px; user-select: none; }
+#topbar .tb-crumb .sub {
+  font-family: var(--serif); font-size: 14px; color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis;
+}
+@media (max-width: 40rem) {
+  #topbar .tb-home, #topbar .tb-lib, #topbar .tb-div { display: none; }
+}
 
 /* Zen: chrome fades when idle, returns on mouse-move. */
 body.zen #topbar, body.zen #transport { opacity: 0; pointer-events: none; }
@@ -380,6 +387,17 @@ body[data-kind="work"][data-audio="true"] main h2 { cursor: pointer; }
   line-height: 1.35;
 }
 #toc-drawer a:hover { color: var(--accent); }
+#toc-drawer h2.work {
+  font-family: var(--serif); font-size: 15px; font-weight: 600; font-style: normal;
+  letter-spacing: 0; text-transform: none; color: var(--ink); margin: 0 0 0.9rem;
+}
+#toc-drawer .hub { list-style: none; padding: 0; margin: 0 0 1.4rem; }
+#toc-drawer .hub li { margin: 0; }
+#toc-drawer .hub a.current { color: var(--accent); font-weight: 600; cursor: default; }
+#toc-drawer h3.onpage {
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-style: italic;
+  color: var(--accent-soft); font-weight: 400; margin: 0 0 0.5rem;
+}
 
 /* ── Panels: shared chrome ── */
 .panel-close {

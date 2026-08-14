@@ -9,14 +9,21 @@ translation published the same year was titled *A Great Iniquity*. Source text:
 <abbr title="Полное собрание сочинений — the 90-volume Jubilee edition of the complete works">PSS</abbr>
 Tom 36, pp. 206–230.
 
-**Read:** [English, 1905](the-great-sin.en-1905.html) (read-along) · [Русский](the-great-sin.ru.html)
-
 The essay argues that the deepest cause of the people's poverty is not the
 political order but the private ownership of land, which it names a great sin, of
 the same kind as serfdom and slavery. It takes up Henry George's case against
 landed property in full, presents the solution George worked out as the just way
 to hold land while states and taxes remain, and locates the real cure not in law
 but in a change of conscience.
+
+- [English, 1905 · read-along](the-great-sin.en-1905.html)
+- [Русский](the-great-sin.ru.html) (Russian version)
+- [English (machine translation)](the-great-sin.en-machine.html)
+- [Restored text](restored-text.html)
+- [Fidelity report](translation-diagnostic.html)
+- [Alignment notes](alignment-notes.html)
+- [The corpus dive](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/index.html)
+- [Reading annotations](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/annotations.html)
 
 ## The argument
 
@@ -60,9 +67,7 @@ interpretation — and a softening one.
 
 ## The cut
 
-The essay was finished in May 1905, and then made shorter. Chertkov — his closest
-friend and the editor who would publish him abroad — came to Yasnaya Polyana that
-month and proposed a series of cuts; two whole chapters and parts of others came
+The essay was finished in May 1905, and then made shorter. Chertkov came to Yasnaya Polyana that month and proposed a series of cuts; two whole chapters and parts of others came
 out. He agreed, and within days regretted it. The diary, 6 June: «Сократил
 Великий Грех, выбросил многое. Мне жалко» (I shortened The Great Sin, threw out
 much. I am sorry for it). What was taken out was not lost — it survives among the
@@ -75,8 +80,7 @@ It was the sharper text. Where the published essay names the wrong, a cut passag
 holds it open as unfinished: land ownership «есть великий грех… и грех не
 прошедший, а настоящий, и не временный, а постоянно совершаемый» (is a great sin…
 a sin not past but present, not temporary but constantly committed). And where the
-published essay argues that no law can reach the wrong, a cut passage said as much
-of the very reforms 1905 was demanding: «никакая конституция не обезпечит его прав.
+published essay holds that no law can put the wrong right, a cut passage turned that claim straight onto the very reforms 1905 was demanding: «никакая конституция не обезпечит его прав.
 Конституция обезпечит право достаточных, праздных, паразитных сословий, но не права
 народа» (no constitution will secure the people's rights; a constitution will
 secure the right of the propertied, idle, parasitic classes — but not the rights of
@@ -88,7 +92,7 @@ The text that went to print is a shade gentler than the one written: the sin a
 little less absolute, the politics a little less bare. It was cut with his assent,
 and against his own regret.
 
-The essay was softened a second time, in English, by the same hand. The 1905 translation Chertkov made with Mayo blunts the Russian where it is most exact. Three separate words — «последствия», «следствием», «результатов» — all come out as one English "result", and the opening sentence loses with them its warning of what will follow. The Mazzini epigraph that opens section VIII loses its «лишь»: great changes «всегда были и будут лишь следствием великих религиозных движений» — always and only the consequence of religious movements — become "always have been and will be the result of," the sole cause made one cause among several. The title had already done as much at the threshold. The same editor had, in *What Is Art?*, been the channel that carried the uncensored text past the Russian censor; here he cut the Russian himself, and then his English cut it again. The findings are set out in the fidelity report listed below.
+The essay was softened a second time, in English, by the same hand. The 1905 translation Chertkov made with Mayo blunts the Russian where it is most exact. Three separate words — «последствия», «следствием», «результатов» — all come out as one English "result", and the opening sentence loses with them its warning of what will follow. The Mazzini epigraph that opens section VIII loses its «лишь»: great changes «всегда были и будут лишь следствием великих религиозных движений» — always and only the consequence of religious movements — become "always have been and will be the result of," the sole cause made one cause among several. The title had already done as much at the threshold. The same editor had, in *What Is Art?*, been the channel that carried the uncensored text past the Russian censor; here he cut the Russian himself, and then his English cut it again. The findings are set out in the fidelity report.
 
 ## What the essay leaves open
 
@@ -98,11 +102,3 @@ just or more peaceful one could be devised — and the real remedy is held, in t
 same breath, to be a religious awakening rather than that practical measure.
 Praise and reservation stand together, unreconciled. And if landed property is to
 be undone, what becomes of money, which the essay leaves in place?
-
-## Around this work
-
-- [The restored text](restored-text.html) — the passages cut before publication, set back at their seams, with the pre-reform Russian and a reading gloss
-- [The fidelity report](translation-diagnostic.html) — where the 1905 English departs from the Russian, the second softening set out in full
-- [Alignment notes](alignment-notes.html) — the spine defects the read-through and the translation surfaced, and what still awaits a facsimile check
-- [The corpus dive](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/index.html) — the primary-source research behind this page: genesis, the merged two plans, the Chertkov cut, reception
-- [Reading annotations](/research/works/non-fiction/essays-and-criticism/1905-the-great-sin/annotations.html) — notes from the 2026 read-through
