@@ -166,7 +166,8 @@ TRANSPORT = """
 
 
 def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
-               kind="doc", home_html="", crumb_html="", tools_extra="",
+               kind="doc", home_html="", lib_html="", crumb_html="",
+               hub_title="", hub_html="", tools_extra="",
                readalong=False, lang="en"):
     """Wrap rendered content in the universal reading shell."""
     tools = f"""
@@ -180,6 +181,23 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
     audio_attr = ' data-audio="true"' if readalong else ""
     ident = (f'<nav class="tb-crumb">{crumb_html}</nav>' if crumb_html
              else f'<span class="tb-title">{title}</span>')
+    div = '<span class="tb-div">|</span>'
+    _fixed = [x for x in (home_html, lib_html) if x]
+    left_nav = (div.join(_fixed) + div if _fixed else "") + (
+        '<button id="tb-contents" title="Contents" aria-label="Contents">'
+        '<svg class="ic"><use href="#i-list"/></svg></button>') + ident
+    if hub_html:
+        drawer = f"""<nav id="toc-drawer" aria-label="Contents">
+  <button class="panel-close" title="Close">✕</button>
+  <h2 class="work">{hub_title}</h2>
+  <ul class="hub">
+{hub_html}
+  </ul>
+  <h3 class="onpage">On this page</h3>
+  <ol></ol>
+</nav>"""
+    else:
+        drawer = TOC_DRAWER
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -194,9 +212,7 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
 <div id="progress"><div class="fill"></div></div>
 <header id="topbar">
   <div class="tb-group">
-    <button id="tb-contents" title="Contents" aria-label="Contents"><svg class="ic"><use href="#i-list"/></svg></button>
-    {ident}
-    <span class="tb-group tb-links">{home_html}</span>
+    {left_nav}
   </div>
   <div class="tb-group">
     <button id="tb-notes" title="Notes" aria-label="Notes"><svg class="ic"><use href="#i-note"/></svg></button>
@@ -204,7 +220,7 @@ def page_shell(*, title, eyebrow, heading, meta_line, body_html, config,
     <button id="tb-tools" class="gear" title="Tools" aria-label="Tools"><svg class="ic"><use href="#i-tools"/></svg></button>
   </div>
 </header>
-{TOC_DRAWER}
+{drawer}
 {tools}
 {NOTES_PANEL}
 <header class="doc-header">
@@ -379,6 +395,124 @@ def bundle_editions(bundle: Path):
     return sorted(found, key=lambda wv: _read_order(wv[1]))
 
 
+# ── Per-work navigation: the Docs | Library | ☰ Work crumb + the Contents hub ────
+# The Contents drawer lists every page of a work (its editions + apparatus pages +
+# the research dive/annotations), auto-built from the bundle folder and its dive
+# folder so it stays in sync as pages come and go.
+
+_PAGE_LABELS = {
+    "restored-text.md": "Restored text",
+    "translation-diagnostic.md": "Fidelity report",
+    "alignment-notes.md": "Alignment notes",
+    "index.md": "The corpus dive",
+    "annotations.md": "Reading annotations",
+}
+_HUB_APPARATUS = ["restored-text.md", "translation-diagnostic.md", "alignment-notes.md"]
+
+
+def _edition_label(version: str, readalong: bool = False) -> str:
+    if version.startswith("en-machine"):
+        base = "English (machine)"
+    elif version.startswith("en"):
+        yr = version.split("-", 1)[1] if "-" in version else ""
+        base = f"English, {yr}" if yr[:4].isdigit() else "English"
+    elif version.startswith("ru"):
+        base = "Русский"
+    else:
+        base = version.upper()
+    return base + (" · read-along" if readalong else "")
+
+
+def _page_label(md_path: Path, work: str) -> str:
+    """Short label for a work's page — shared by the crumb tail and the hub."""
+    if md_path.name == "overview.md":
+        return "Overview"
+    wv = work_version_of(md_path)
+    if wv:
+        return _edition_label(wv[1])
+    return (_PAGE_LABELS.get(md_path.name) or _extract_title_md(md_path)
+            or md_path.stem.replace("-", " ").title())
+
+
+_WORK_INDEX = None
+
+def _work_index():
+    """One row per reader bundle: (bundle_dir, work_slug, work_title, dive_dir|None).
+
+    ponytail: memoized for the process — a bundle or page added while serve.py is
+    running appears on restart (same contract as _DIVE_ALIAS).
+    """
+    global _WORK_INDEX
+    if _WORK_INDEX is None:
+        rows = []
+        for ov in sorted(ROOT.glob("reader/**/overview.md")):
+            bundle = ov.parent
+            eds = bundle_editions(bundle)
+            work = eds[0][0] if eds else bundle.name
+            title = _extract_title_md(ov) or work.replace("-", " ").title()
+            dive = next(ROOT.glob(f"research/works/**/*-{work}/index.md"), None)
+            rows.append((bundle, work, title, dive.parent if dive else None))
+        _WORK_INDEX = rows
+    return _WORK_INDEX
+
+
+def work_context(md_path: Path):
+    """The work a page belongs to — whether it lives in the reader bundle or in
+    the research dive folder — or None for a plain doc page."""
+    parent = md_path.parent
+    for bundle, work, title, dive_dir in _work_index():
+        if parent == bundle or parent == dive_dir:
+            return (bundle, work, title, dive_dir)
+    return None
+
+
+def work_hub_html(bundle: Path, work: str, dive_dir, current_url: str) -> str:
+    """The per-work page list for the Contents drawer, in reading order."""
+    def u(p: Path) -> str:
+        return "/" + p.relative_to(ROOT).with_suffix(".html").as_posix()
+    items = []  # (href, label)
+    ov = bundle / "overview.md"
+    if ov.exists():
+        items.append((u(ov), "Overview"))
+    for w, v in bundle_editions(bundle):
+        ra = (bundle / "build" / f"timing.{v}.json").exists() and v.startswith("en")
+        items.append((u(bundle / f"{w}.{v}.md"), _edition_label(v, ra)))
+    for name in _HUB_APPARATUS:
+        if (bundle / name).exists():
+            items.append((u(bundle / name), _PAGE_LABELS[name]))
+    if dive_dir:
+        for name in ("index.md", "annotations.md"):
+            if (dive_dir / name).exists():
+                items.append((u(dive_dir / name), _PAGE_LABELS[name]))
+    lis = []
+    for href, label in items:
+        cur = ' class="current" aria-current="page"' if href == current_url else ""
+        lis.append(f'    <li><a href="{href}"{cur}>{esc(label)}</a></li>')
+    return "\n".join(lis)
+
+
+def nav_for(md_path: Path) -> dict:
+    """Top-bar identity + Contents hub for a page: Docs | Library | ☰ Work ›
+    Subpage, with the drawer listing every page of the work. Plain docs get
+    just the Docs link."""
+    nav = {"home_html": '<a class="tb-home" href="/INDEX.html">Docs</a>',
+           "lib_html": "", "crumb_html": "", "hub_title": "", "hub_html": ""}
+    ctx = work_context(md_path)
+    if not ctx:
+        return nav
+    bundle, work, title, dive_dir = ctx
+    current_url = "/" + md_path.relative_to(ROOT).with_suffix(".html").as_posix()
+    nav["lib_html"] = '<a class="tb-lib" href="/reader/index.html">Library</a>'
+    nav["hub_title"] = esc(title)
+    nav["hub_html"] = work_hub_html(bundle, work, dive_dir, current_url)
+    ov_url = "/" + (bundle / "overview.md").relative_to(ROOT).with_suffix(".html").as_posix()
+    crumb = f'<a class="here" href="{ov_url}">{esc(title)}</a>'
+    if md_path.name != "overview.md":
+        crumb += f'<span class="sep">›</span><span class="sub">{esc(_page_label(md_path, work))}</span>'
+    nav["crumb_html"] = crumb
+    return nav
+
+
 def _render_sentence_web(text: str) -> str:
     """Sentence display text → HTML: [^label] markers become noterefs, the rest
     is escaped. The web twin of build_xhtml._render_sentence (same ids, no
@@ -435,25 +569,9 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
     if len(links) > 1:
         version_html = f'\n  <h3>Version</h3>\n  <div class="seg">{"".join(links)}</div>'
 
-    # Top-bar breadcrumb: Library › work title → the overview page (the
-    # corpus dive stands in until the bundle has an overview.md)
-    if (bundle / "overview.md").exists():
-        up = "overview.html"
-    else:
-        dive = next(ROOT.glob(f"research/works/**/*-{work}/index.md"), None)
-        up = f"/{dive.relative_to(ROOT).with_suffix('.html')}" if dive else ""
-
+    # Top bar + Contents hub: Docs | Library | ☰ Work › <edition>
     title = meta.get("title") or work.replace("-", " ").title()
-    # The crumb names the work (the overview's title) — this edition may
-    # carry its own published title (e.g. "A Great Iniquity"), kept in the
-    # page heading below.
-    here_title = title
-    if up == "overview.html":
-        here_title = _extract_title_md(bundle / "overview.md") or title
-    here = (f'<a class="here" href="{up}">{esc(here_title)}</a>' if up
-            else f'<span class="here">{esc(here_title)}</span>')
-    crumb_html = ('<a href="/reader/index.html">Library</a>'
-                  '<span class="sep">›</span>' + here)
+    nav = nav_for(md_path)
     author = meta.get("author", "")
     date = meta.get("date", "")
     eyebrow = " · ".join(x for x in [author, date, "reader edition"] if x)
@@ -480,7 +598,11 @@ def work_page_html(md_path: Path, work: str, version: str) -> str:
         body_html=body_html,
         config=config,
         kind="work",
-        crumb_html=crumb_html,
+        home_html=nav["home_html"],
+        lib_html=nav["lib_html"],
+        crumb_html=nav["crumb_html"],
+        hub_title=nav["hub_title"],
+        hub_html=nav["hub_html"],
         tools_extra=TOOLS_LAYERS + version_html,
         readalong=readalong,
         lang="ru" if version.startswith("ru") else "en",
@@ -540,19 +662,13 @@ def md_to_html(md_path: Path) -> str:
 
     doc_key = "docs/" + str(rel.with_suffix(""))
 
-    # A bundle's overview.md is the work's front page: Library + a Read
-    # button for the best edition instead of the generic docs crumb.
+    # Top bar + Contents hub. Docs | Library | ☰ Work › Subpage for any page
+    # that belongs to a work (bundle page OR its research dive/annotations);
+    # a plain doc keeps just the Docs link.
+    nav = nav_for(md_path)
     eyebrow = folder or "docs"
-    home_html = '<a href="/INDEX.html">tolstoy.life / docs</a>'
-    crumb_html = ""
-    if md_path.name == "overview.md":
-        editions = bundle_editions(md_path.parent)
-        if editions:
-            work, version = editions[0]
-            eyebrow = "reader edition · overview"
-            crumb_html = ('<a href="/reader/index.html">Library</a>'
-                          f'<span class="sep">›</span><span class="here">{esc(title)}</span>')
-            home_html = f'<a class="tb-read" href="{work}.{version}.html">Read ›</a>'
+    if nav["hub_html"] and (ROOT / "reader") in md_path.parents:
+        eyebrow = "reader edition · overview" if md_path.name == "overview.md" else "reader edition"
 
     return page_shell(
         title=esc(title),
@@ -562,8 +678,11 @@ def md_to_html(md_path: Path) -> str:
         body_html=body_html,
         config={"docKey": doc_key, "kind": "doc"},
         kind="doc",
-        home_html=home_html,
-        crumb_html=crumb_html,
+        home_html=nav["home_html"],
+        lib_html=nav["lib_html"],
+        crumb_html=nav["crumb_html"],
+        hub_title=nav["hub_title"],
+        hub_html=nav["hub_html"],
     )
 
 

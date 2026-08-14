@@ -77,10 +77,16 @@
       list.appendChild(li);
     });
     if (!hs.length) {
-      const p = document.createElement('p');
-      p.className = 'notes-empty';
-      p.textContent = 'No sections in this document.';
-      list.replaceWith(p);
+      const onpage = toc.querySelector('h3.onpage');
+      if (onpage) {                 // hub drawer: no in-page TOC, drop the label + list
+        list.remove();
+        onpage.remove();
+      } else {
+        const p = document.createElement('p');
+        p.className = 'notes-empty';
+        p.textContent = 'No sections in this document.';
+        list.replaceWith(p);
+      }
     }
   })();
 
