@@ -60,9 +60,7 @@ interpretation — and a softening one.
 
 ## The cut
 
-The essay was finished in May 1905, and then made shorter. Chertkov — his closest
-friend and the editor who would publish him abroad — came to Yasnaya Polyana that
-month and proposed a series of cuts; two whole chapters and parts of others came
+The essay was finished in May 1905, and then made shorter. Chertkov came to Yasnaya Polyana that month and proposed a series of cuts; two whole chapters and parts of others came
 out. He agreed, and within days regretted it. The diary, 6 June: «Сократил
 Великий Грех, выбросил многое. Мне жалко» (I shortened The Great Sin, threw out
 much. I am sorry for it). What was taken out was not lost — it survives among the
@@ -75,8 +73,7 @@ It was the sharper text. Where the published essay names the wrong, a cut passag
 holds it open as unfinished: land ownership «есть великий грех… и грех не
 прошедший, а настоящий, и не временный, а постоянно совершаемый» (is a great sin…
 a sin not past but present, not temporary but constantly committed). And where the
-published essay argues that no law can reach the wrong, a cut passage said as much
-of the very reforms 1905 was demanding: «никакая конституция не обезпечит его прав.
+published essay holds that no law can put the wrong right, a cut passage turned that claim straight onto the very reforms 1905 was demanding: «никакая конституция не обезпечит его прав.
 Конституция обезпечит право достаточных, праздных, паразитных сословий, но не права
 народа» (no constitution will secure the people's rights; a constitution will
 secure the right of the propertied, idle, parasitic classes — but not the rights of

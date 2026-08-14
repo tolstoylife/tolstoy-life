@@ -23,7 +23,7 @@ So the placements below are not free guesses; each is stated with its reasoning,
 **Where it belongs, and how firmly.** This paragraph stood near the end of the essay's introduction — not the short published Введение, but an earlier, fuller introduction that Chertkov set in proof (printed as variant № 15). That whole first proof of the introduction was published separately in the émigré paper *Свободное слово*, № 17–18, under a title of Chertkov's giving, «Необходимый переворот» (A Necessary Revolution). Within that publication this one paragraph was lifted out of the introduction's body and set after it with an editorial note — Chertkov's reason, in a letter of 8 July, being that it «стоит в противоречии со всем предыдущим», stands in contradiction with all that precedes it. Because the published Введение is a different, shorter text that replaced the whole proof introduction, this paragraph has no exact seam in the reading edition. It is shown here against the close of the published Введение for orientation only; of the five, this placement is the softest.
 
 <div class="pair">
-<p class="pair-cap">Published — the close of the Введение</p>
+<p class="pair-cap">Published — the close of the introduction (Введение)</p>
 <div class="ru" lang="ru"><p>Вот эту-то мою мысль мне хотелось сообщить в этой статье тем людям, которые в эту важную для России минуту хотят искренно служить не своим личным целям, а истинному благу русского народа.</p></div>
 <div class="en" lang="en"><p>This is the thought I wished to convey in this article to those who, at this moment so important for Russia, wish sincerely to serve, not their own personal ends, but the true good of the Russian people.</p></div>
 </div>
@@ -43,7 +43,7 @@ So the placements below are not free guesses; each is stated with its reasoning,
 **Where it belongs, and how firmly.** This is the whole original first chapter. The original second chapter became published chapter I, so the first chapter stood before it, at the very opening. The short published Введение now occupies that slot, and covers the same ground far more briefly — the political agitation of the town classes, and what a working man of the people would make of it — so the recovered chapter reads as the fuller opening the Введение stands in for. The slot is firm (the opening); the exact join is soft, because the Введение is a replacement rather than a trimmed survival of this chapter.
 
 <div class="pair">
-<p class="pair-cap">Published — the close of the Введение</p>
+<p class="pair-cap">Published — the close of the introduction (Введение)</p>
 <div class="ru" lang="ru"><p>Вот эту-то мою мысль мне хотелось сообщить в этой статье тем людям, которые в эту важную для России минуту хотят искренно служить не своим личным целям, а истинному благу русского народа.</p></div>
 <div class="en" lang="en"><p>This is the thought I wished to convey in this article to those who, at this moment so important for Russia, wish sincerely to serve, not their own personal ends, but the true good of the Russian people.</p></div>
 </div>
