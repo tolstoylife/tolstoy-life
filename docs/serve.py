@@ -410,14 +410,15 @@ _PAGE_LABELS = {
 _HUB_APPARATUS = ["restored-text.md", "translation-diagnostic.md", "alignment-notes.md"]
 
 
-def _edition_label(version: str, readalong: bool = False) -> str:
+def _edition_label(version: str, readalong: bool = False, verbose: bool = False) -> str:
+    # verbose = the spelled-out drawer/body form; terse (default) = the crumb form.
     if version.startswith("en-machine"):
-        base = "English (machine translation)"
+        base = "English (machine translation)" if verbose else "English (machine)"
     elif version.startswith("en"):
         yr = version.split("-", 1)[1] if "-" in version else ""
         base = f"English, {yr}" if yr[:4].isdigit() else "English"
     elif version.startswith("ru"):
-        base = "Русский (Russian version)"
+        base = "Русский (Russian version)" if verbose else "Русский"
     else:
         base = version.upper()
     return base + (" · read-along" if readalong else "")
@@ -476,7 +477,7 @@ def work_hub_html(bundle: Path, work: str, dive_dir, current_url: str) -> str:
         items.append((u(ov), "Overview"))
     for w, v in bundle_editions(bundle):
         ra = (bundle / "build" / f"timing.{v}.json").exists() and v.startswith("en")
-        items.append((u(bundle / f"{w}.{v}.md"), _edition_label(v, ra)))
+        items.append((u(bundle / f"{w}.{v}.md"), _edition_label(v, ra, verbose=True)))
     for name in _HUB_APPARATUS:
         if (bundle / name).exists():
             items.append((u(bundle / name), _PAGE_LABELS[name]))
