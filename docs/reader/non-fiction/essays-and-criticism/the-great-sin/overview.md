@@ -17,8 +17,8 @@ to hold land while states and taxes remain, and locates the real cure not in law
 but in a change of conscience.
 
 - [English, 1905 · read-along](the-great-sin.en-1905.html)
-- [Русский](the-great-sin.ru.html)
-- [English (machine)](the-great-sin.en-machine.html)
+- [Русский](the-great-sin.ru.html) (Russian version)
+- [English (machine translation)](the-great-sin.en-machine.html)
 - [Restored text](restored-text.html)
 - [Fidelity report](translation-diagnostic.html)
 - [Alignment notes](alignment-notes.html)
